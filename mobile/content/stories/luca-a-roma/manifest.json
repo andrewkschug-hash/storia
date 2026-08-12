@@ -1,0 +1,350 @@
+{
+  "id": "luca-a-roma",
+  "title": "Luca in Rome",
+  "titleIt": "Luca a Roma",
+  "slug": "luca-a-roma",
+  "level": 1,
+  "synopsis": "Luca arriva a Roma, trova una casa, conosce Sofia e gli amici, lavora, aiuta Marco e fa un viaggio — poi torna a casa.",
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "giulia",
+    "nonna-rosa",
+    "padrone"
+  ],
+  "locationIds": [
+    "roma",
+    "stazione",
+    "bar-centrale",
+    "appartamento-luca",
+    "quartiere",
+    "lavoro-caffe",
+    "casa-nonna",
+    "centro",
+    "strada",
+    "fuori-roma"
+  ],
+  "chapters": [
+    {
+      "id": "luca-a-roma-01",
+      "number": 1,
+      "title": "Arrival",
+      "titleIt": "Arrivo",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "luca-a-roma-02",
+      "number": 2,
+      "title": "The city",
+      "titleIt": "La città",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "luca-a-roma-03",
+      "number": 3,
+      "title": "A place to stay",
+      "titleIt": "Un posto",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "luca-a-roma-04",
+      "number": 4,
+      "title": "The apartment",
+      "titleIt": "L'appartamento",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "luca-a-roma-05",
+      "number": 5,
+      "title": "Sofia",
+      "titleIt": "Sofia",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "luca-a-roma-06",
+      "number": 6,
+      "title": "The neighborhood",
+      "titleIt": "Il quartiere",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "luca-a-roma-07",
+      "number": 7,
+      "title": "Work",
+      "titleIt": "Il lavoro",
+      "difficultyLevel": 1,
+      "file": "chapter-07.json"
+    },
+    {
+      "id": "luca-a-roma-08",
+      "number": 8,
+      "title": "Looking for work",
+      "titleIt": "Cercare lavoro",
+      "difficultyLevel": 1,
+      "file": "chapter-08.json"
+    },
+    {
+      "id": "luca-a-roma-09",
+      "number": 9,
+      "title": "An opportunity",
+      "titleIt": "Un lavoro",
+      "difficultyLevel": 1,
+      "file": "chapter-09.json"
+    },
+    {
+      "id": "luca-a-roma-10",
+      "number": 10,
+      "title": "First day",
+      "titleIt": "Primo giorno",
+      "difficultyLevel": 1,
+      "file": "chapter-10.json"
+    },
+    {
+      "id": "luca-a-roma-11",
+      "number": 11,
+      "title": "Marco",
+      "titleIt": "Marco",
+      "difficultyLevel": 1,
+      "file": "chapter-11.json"
+    },
+    {
+      "id": "luca-a-roma-12",
+      "number": 12,
+      "title": "A problem",
+      "titleIt": "Un problema",
+      "difficultyLevel": 1,
+      "file": "chapter-12.json"
+    },
+    {
+      "id": "luca-a-roma-13",
+      "number": 13,
+      "title": "Helping Marco",
+      "titleIt": "Aiutare Marco",
+      "difficultyLevel": 2,
+      "file": "chapter-13.json"
+    },
+    {
+      "id": "luca-a-roma-14",
+      "number": 14,
+      "title": "Time pressure",
+      "titleIt": "Poco tempo",
+      "difficultyLevel": 2,
+      "file": "chapter-14.json"
+    },
+    {
+      "id": "luca-a-roma-15",
+      "number": 15,
+      "title": "A plan",
+      "titleIt": "Un piano",
+      "difficultyLevel": 2,
+      "file": "chapter-15.json"
+    },
+    {
+      "id": "luca-a-roma-16",
+      "number": 16,
+      "title": "Leaving Rome",
+      "titleIt": "Partire",
+      "difficultyLevel": 2,
+      "file": "chapter-16.json"
+    },
+    {
+      "id": "luca-a-roma-17",
+      "number": 17,
+      "title": "The trip",
+      "titleIt": "Il viaggio",
+      "difficultyLevel": 2,
+      "file": "chapter-17.json"
+    },
+    {
+      "id": "luca-a-roma-18",
+      "number": 18,
+      "title": "A surprise",
+      "titleIt": "Una sorpresa",
+      "difficultyLevel": 2,
+      "file": "chapter-18.json"
+    },
+    {
+      "id": "luca-a-roma-19",
+      "number": 19,
+      "title": "Solving it",
+      "titleIt": "Risolvere",
+      "difficultyLevel": 2,
+      "file": "chapter-19.json"
+    },
+    {
+      "id": "luca-a-roma-20",
+      "number": 20,
+      "title": "Home again",
+      "titleIt": "Tornare a casa",
+      "difficultyLevel": 2,
+      "file": "chapter-20.json"
+    },
+    {
+      "id": "luca-a-roma-21",
+      "number": 21,
+      "title": "After the trip",
+      "titleIt": "Dopo il viaggio",
+      "difficultyLevel": 2,
+      "file": "chapter-21.json"
+    },
+    {
+      "id": "luca-a-roma-22",
+      "number": 22,
+      "title": "An evening with Sofia",
+      "titleIt": "Una sera con Sofia",
+      "difficultyLevel": 2,
+      "file": "chapter-22.json"
+    },
+    {
+      "id": "luca-a-roma-23",
+      "number": 23,
+      "title": "With Giulia at the café",
+      "titleIt": "Con Giulia al caffè",
+      "difficultyLevel": 2,
+      "file": "chapter-23.json"
+    },
+    {
+      "id": "luca-a-roma-24",
+      "number": 24,
+      "title": "Sunday",
+      "titleIt": "La domenica",
+      "difficultyLevel": 2,
+      "file": "chapter-24.json"
+    },
+    {
+      "id": "luca-a-roma-25",
+      "number": 25,
+      "title": "Fewer people",
+      "titleIt": "Meno persone",
+      "difficultyLevel": 2,
+      "file": "chapter-25.json"
+    },
+    {
+      "id": "luca-a-roma-26",
+      "number": 26,
+      "title": "Bad news",
+      "titleIt": "Una notizia difficile",
+      "difficultyLevel": 2,
+      "file": "chapter-26.json"
+    },
+    {
+      "id": "luca-a-roma-27",
+      "number": 27,
+      "title": "Sofia’s opinion",
+      "titleIt": "L’opinione di Sofia",
+      "difficultyLevel": 2,
+      "file": "chapter-27.json"
+    },
+    {
+      "id": "luca-a-roma-28",
+      "number": 28,
+      "title": "Marco’s week",
+      "titleIt": "La settimana di Marco",
+      "difficultyLevel": 2,
+      "file": "chapter-28.json"
+    },
+    {
+      "id": "luca-a-roma-29",
+      "number": 29,
+      "title": "Nonna’s idea",
+      "titleIt": "L’idea della nonna",
+      "difficultyLevel": 2,
+      "file": "chapter-29.json"
+    },
+    {
+      "id": "luca-a-roma-30",
+      "number": 30,
+      "title": "We try",
+      "titleIt": "Proviamo",
+      "difficultyLevel": 2,
+      "file": "chapter-30.json"
+    },
+    {
+      "id": "luca-a-roma-31",
+      "number": 31,
+      "title": "The plan",
+      "titleIt": "Il piano",
+      "difficultyLevel": 2,
+      "file": "chapter-31.json"
+    },
+    {
+      "id": "luca-a-roma-32",
+      "number": 32,
+      "title": "Doubts",
+      "titleIt": "I dubbi",
+      "difficultyLevel": 2,
+      "file": "chapter-32.json"
+    },
+    {
+      "id": "luca-a-roma-33",
+      "number": 33,
+      "title": "A problem",
+      "titleIt": "Un problema",
+      "difficultyLevel": 2,
+      "file": "chapter-33.json"
+    },
+    {
+      "id": "luca-a-roma-34",
+      "number": 34,
+      "title": "Saturday morning",
+      "titleIt": "Sabato mattina",
+      "difficultyLevel": 2,
+      "file": "chapter-34.json"
+    },
+    {
+      "id": "luca-a-roma-35",
+      "number": 35,
+      "title": "The room fills",
+      "titleIt": "La sala si riempie",
+      "difficultyLevel": 2,
+      "file": "chapter-35.json"
+    },
+    {
+      "id": "luca-a-roma-36",
+      "number": 36,
+      "title": "Luca speaks",
+      "titleIt": "Luca parla",
+      "difficultyLevel": 2,
+      "file": "chapter-36.json"
+    },
+    {
+      "id": "luca-a-roma-37",
+      "number": 37,
+      "title": "More hours",
+      "titleIt": "Più ore",
+      "difficultyLevel": 2,
+      "file": "chapter-37.json"
+    },
+    {
+      "id": "luca-a-roma-38",
+      "number": 38,
+      "title": "Dinner with Sofia",
+      "titleIt": "Cena con Sofia",
+      "difficultyLevel": 2,
+      "file": "chapter-38.json"
+    },
+    {
+      "id": "luca-a-roma-39",
+      "number": 39,
+      "title": "A place for Marco",
+      "titleIt": "Un posto per Marco",
+      "difficultyLevel": 2,
+      "file": "chapter-39.json"
+    },
+    {
+      "id": "luca-a-roma-40",
+      "number": 40,
+      "title": "For now",
+      "titleIt": "Per adesso",
+      "difficultyLevel": 2,
+      "file": "chapter-40.json"
+    }
+  ]
+}

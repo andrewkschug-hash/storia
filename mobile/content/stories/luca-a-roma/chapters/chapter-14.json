@@ -1,0 +1,284 @@
+{
+  "id": "luca-a-roma-14",
+  "storyId": "luca-a-roma",
+  "number": 14,
+  "title": "Time pressure",
+  "titleIt": "Poco tempo",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe",
+    "roma"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "giulia"
+  ],
+  "events": [
+    {
+      "id": "ev-14-complicated",
+      "summary": "A phone message: Marco must leave soon; the group needs a plan.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco",
+        "giulia"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Marco must leave soon",
+        "There is a message on the phone",
+        "The group must do something today"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il problema non è facile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "problema",
+            "non",
+            "essere",
+            "facile"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Marco deve partire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "dovere",
+            "partire"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Marco non ha molto tempo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "non",
+            "avere",
+            "molto",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "C'è un messaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "messaggio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Devo partire presto.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "partire",
+            "presto"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il messaggio dice di andare.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "messaggio",
+            "dire",
+            "di",
+            "andare"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non posso stare qui.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "potere",
+            "stare",
+            "qui"
+          ],
+          "phrases": [
+            {
+              "surface": "Non posso",
+              "literalEn": "I cannot",
+              "naturalEn": "I can't",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Cosa facciamo adesso?",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "fare",
+            "adesso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Il gruppo ascolta Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "gruppo",
+            "ascoltare",
+            "marco"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca vuole aiutare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "aiutare"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Dobbiamo fare un piano.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "fare",
+            "un",
+            "piano"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sì, oggi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Dove sei domani?",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "essere",
+            "domani"
+          ],
+          "phrases": [
+            {
+              "surface": "Dove sei?",
+              "literalEn": "Where are you?",
+              "naturalEn": "Where are you?",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Non lo so.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch14_q01",
+      "chapterId": "luca-a-roma-14",
+      "type": "event",
+      "question": "What new urgency appears for Marco?",
+      "questionIt": "Cosa deve fare Marco presto?",
+      "choices": [
+        "He must leave soon",
+        "He must buy a house",
+        "He must become padrone"
+      ],
+      "correctChoice": 0,
+      "explanation": "A message makes clear that Marco has little time and must leave soon.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch14_q02",
+      "chapterId": "luca-a-roma-14",
+      "type": "direct",
+      "question": "How do the friends learn about the urgency?",
+      "choices": [
+        "From a message",
+        "From a newspaper",
+        "From a tourist"
+      ],
+      "correctChoice": 0,
+      "explanation": "A phone message tells them Marco must leave soon.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q03",
+      "chapterId": "luca-a-roma-14",
+      "type": "sequence",
+      "question": "What do they realize they need next?",
+      "questionIt": "Di cosa hanno bisogno?",
+      "choices": [
+        "A plan",
+        "A bigger apartment",
+        "A new café"
+      ],
+      "correctChoice": 0,
+      "explanation": "With little time left, they need a piano (plan).",
+      "difficulty": 1
+    }
+  ]
+}

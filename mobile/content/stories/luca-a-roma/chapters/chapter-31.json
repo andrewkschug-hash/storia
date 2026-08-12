@@ -1,0 +1,881 @@
+{
+  "id": "luca-a-roma-31",
+  "storyId": "luca-a-roma",
+  "number": 31,
+  "title": "The plan",
+  "titleIt": "Il piano",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe",
+    "quartiere"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "giulia"
+  ],
+  "events": [
+    {
+      "id": "ev-31-plan",
+      "summary": "The friends turn permission into a plan: messages, roles, food limits, early arrival—with soft uncertainty.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco",
+        "giulia"
+      ],
+      "locationIds": [
+        "lavoro-caffe",
+        "quartiere"
+      ],
+      "rememberedFacts": [
+        "Sofia writes messages; Marco talks in the neighborhood",
+        "Giulia plans the room; Luca takes the door",
+        "Some people answer maybe; the plan exists but people are not sure"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Dopo il sì del padrone, il gruppo aveva un piano piccolo da fare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "il",
+            "si_yes",
+            "del",
+            "padrone",
+            "il",
+            "gruppo",
+            "avere",
+            "un",
+            "piano",
+            "piccolo",
+            "dare",
+            "fare"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Si sono incontrati al caffè la mattina presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "essere",
+            "incontrare",
+            "al",
+            "caffe",
+            "la",
+            "mattina",
+            "presto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Io scrivo messaggi alle persone del quartiere, una dopo l’altra.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "scrivere",
+            "messaggio",
+            "alle",
+            "persona",
+            "del",
+            "quartiere",
+            "una",
+            "dopo",
+            "altro"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Io cammino e parlo, ma non posso dire che vengono tutti.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "camminare",
+            "e",
+            "parlare",
+            "ma",
+            "non",
+            "potere",
+            "dire",
+            "che",
+            "venire",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Io preparo la sala: tavoli, luce, un posto per la musica.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "preparare",
+            "la",
+            "sala",
+            "tavolo",
+            "luce",
+            "un",
+            "posto",
+            "per",
+            "la",
+            "musica"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Io resto alla porta e dico buongiorno a chi entra.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "restare",
+            "alla",
+            "portare",
+            "e",
+            "dire",
+            "buongiorno",
+            "a",
+            "chi",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Il piano sembrava chiaro, ma nessuno era davvero sicuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "piano",
+            "sembrare",
+            "chiaro",
+            "ma",
+            "nessuno",
+            "essere",
+            "davvero",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Avere un sì non è avere la festa. Dobbiamo ancora fare tutto insieme.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "un",
+            "si_yes",
+            "non",
+            "essere",
+            "avere",
+            "la",
+            "festa",
+            "dovere",
+            "ancora",
+            "fare",
+            "tutto",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Lo so. Non so se è abbastanza.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "non",
+            "sapere",
+            "se",
+            "essere",
+            "abbastanza"
+          ],
+          "phrases": [
+            {
+              "surface": "Lo so",
+              "literalEn": "it I know",
+              "naturalEn": "I know",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Ma adesso abbiamo un ordine chiaro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "adesso",
+            "avere",
+            "un",
+            "ordine",
+            "chiaro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Mentre parlavano, un cliente è entrato e ha preso un caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mentre",
+            "parlare",
+            "un",
+            "cliente",
+            "essere",
+            "entrare",
+            "e",
+            "avere",
+            "prendere",
+            "un",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Poi è uscito senza dire niente della festa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "essere",
+            "uscire",
+            "senza",
+            "dire",
+            "niente",
+            "della",
+            "festa"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Nel pomeriggio Sofia ha scritto messaggi, uno dopo l’altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "sofia",
+            "avere",
+            "scrivere",
+            "messaggio",
+            "uno",
+            "dopo",
+            "altro"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Sabato c’è caffè, pane e amici. Costa poco.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "ce",
+            "caffe",
+            "pane",
+            "e",
+            "amico",
+            "costare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Se puoi, vieni. Qualche persona ha risposto subito. Qualche persona ha detto forse.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "potere",
+            "venire",
+            "qualche",
+            "persona",
+            "avere",
+            "rispondere",
+            "subito",
+            "qualche",
+            "persona",
+            "avere",
+            "dire",
+            "forse"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Altre non hanno risposto. Sofia ha guardato il telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "altro",
+            "non",
+            "avere",
+            "rispondere",
+            "sofia",
+            "avere",
+            "guardare",
+            "il",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Non è un no. Ma non è un sì.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "no",
+            "ma",
+            "non",
+            "essere",
+            "un",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Non rispondono, e non mi piace.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "rispondere",
+            "e",
+            "non",
+            "mi",
+            "piacere"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Marco ha parlato vicino ai negozi con due persone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "parlare",
+            "vicino",
+            "ai",
+            "negozio",
+            "con",
+            "due",
+            "persona"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Uno ha detto vediamo. L’altro ha chiesto a che ora.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "uno",
+            "avere",
+            "dire",
+            "vedere",
+            "altro",
+            "avere",
+            "chiedere",
+            "a",
+            "che",
+            "ora"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Non posso dire che vengono. Posso solo dire che ho parlato.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "potere",
+            "dire",
+            "che",
+            "venire",
+            "potere",
+            "solo",
+            "dire",
+            "che",
+            "avere",
+            "parlare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s22",
+          "text": "Luca, al lavoro, ascoltava e pensava a sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "al",
+            "lavorare",
+            "ascoltare",
+            "e",
+            "pensare",
+            "a",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Meglio di niente. Ma non è ancora gente nella sala.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "meglio",
+            "di",
+            "niente",
+            "ma",
+            "non",
+            "essere",
+            "ancora",
+            "gente",
+            "nella",
+            "sala"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Giulia ha preparato un piano per la sala. Poi ha guardato la cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "preparare",
+            "un",
+            "piano",
+            "per",
+            "la",
+            "sala",
+            "poi",
+            "avere",
+            "guardare",
+            "la",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il caffè non può fare tutto. Pane sì, caffè sì. Cose grandi no.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "caffe",
+            "non",
+            "potere",
+            "fare",
+            "tutto",
+            "pane",
+            "si_yes",
+            "caffe",
+            "si_yes",
+            "cosa",
+            "grande",
+            "no"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Va bene. Piccolo è meglio. Se costa poco, il padrone ha meno paura.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "piccolo",
+            "essere",
+            "meglio",
+            "se",
+            "costare",
+            "poco",
+            "il",
+            "padrone",
+            "avere",
+            "meno",
+            "paura"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Sabato mattina dobbiamo arrivare presto, prima dei clienti.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "mattina",
+            "dovere",
+            "arrivare",
+            "presto",
+            "prima",
+            "dei",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Io arrivo presto con i messaggi nuovi, se ci sono.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "arrivare",
+            "presto",
+            "con",
+            "i",
+            "messaggio",
+            "nuovo",
+            "se",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Io aiuto, se posso. Questa settimana cerco lavoro e ho poco tempo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "aiutare",
+            "se",
+            "potere",
+            "questo",
+            "settimana",
+            "cercare",
+            "lavorare",
+            "e",
+            "avere",
+            "poco",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Luca ha ascoltato. Non era un sì forte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ascoltare",
+            "non",
+            "essere",
+            "un",
+            "si_yes",
+            "forte"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Ci penso io alla porta. Tu fai quello che puoi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "pensare",
+            "io",
+            "alla",
+            "portare",
+            "tu",
+            "fare",
+            "quello",
+            "che",
+            "potere"
+          ],
+          "phrases": [
+            {
+              "surface": "Ci penso io",
+              "literalEn": "I think about it I",
+              "naturalEn": "I’ll take care of it",
+              "tokenStart": 0,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Se la gente viene, dobbiamo essere pronti.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "la",
+            "gente",
+            "venire",
+            "dovere",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Se non viene, il padrone vede una sala vuota.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "non",
+            "venire",
+            "il",
+            "padrone",
+            "vedere",
+            "una",
+            "sala",
+            "vuoto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s34",
+          "text": "Il problema aveva un ordine, ma restava aperto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "problema",
+            "avere",
+            "un",
+            "ordine",
+            "ma",
+            "restare",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La sera i quattro si sono incontrati un momento vicino alla piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "i",
+            "quattro",
+            "si",
+            "essere",
+            "incontrare",
+            "un",
+            "momento",
+            "vicino",
+            "alla",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Qualche persona viene, forse. Non lo so ancora.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "qualche",
+            "persona",
+            "venire",
+            "forse",
+            "non",
+            "lo",
+            "sapere",
+            "ancora"
+          ],
+          "phrases": [
+            {
+              "surface": "Non lo so",
+              "literalEn": "I it not know",
+              "naturalEn": "I don’t know",
+              "tokenStart": 4,
+              "tokenEnd": 6
+            }
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Ho ascoltato forse e vediamo. Poco di sicuro.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ascoltare",
+            "forse",
+            "e",
+            "vedere",
+            "poco",
+            "di",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il piano c’è. Adesso non c’è la gente.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "piano",
+            "ce",
+            "adesso",
+            "non",
+            "ce",
+            "la",
+            "gente"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Domani continuiamo. Oggi abbiamo organizzato insieme.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "continuare",
+            "oggi",
+            "avere",
+            "organizzare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Avere un piano aiuta. Non chiude il problema.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "un",
+            "piano",
+            "aiutare",
+            "non",
+            "chiudere",
+            "il",
+            "problema"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Quando sono andati a casa, la festa non era ancora arrivata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "essere",
+            "andare",
+            "a",
+            "casa",
+            "la",
+            "festa",
+            "non",
+            "essere",
+            "ancora",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Avevano un piano piccolo, senza sapere chi veniva sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "un",
+            "piano",
+            "piccolo",
+            "senza",
+            "sapere",
+            "chi",
+            "venire",
+            "sabato"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch31_q01",
+      "chapterId": "luca-a-roma-31",
+      "type": "event",
+      "question": "What do the friends start doing after the owner’s yes?",
+      "choices": [
+        "They organize: messages, roles, and a plan for the room",
+        "They sell the café",
+        "They leave Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "They turn permission into a practical plan.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch31_q02",
+      "chapterId": "luca-a-roma-31",
+      "type": "character",
+      "question": "What limit does Giulia name for the café?",
+      "choices": [
+        "Bread and coffee yes; big things no",
+        "Only music, no food",
+        "They must close on Saturday"
+      ],
+      "correctChoice": 0,
+      "explanation": "She says the café cannot do everything.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch31_q03",
+      "chapterId": "luca-a-roma-31",
+      "type": "inference",
+      "question": "Why is the plan still uncertain at the end?",
+      "choices": [
+        "They have a plan and messages, but not sure who is coming",
+        "The owner said no again",
+        "Marco left the city"
+      ],
+      "correctChoice": 0,
+      "explanation": "Organizing is done; attendance is not.",
+      "difficulty": 2
+    }
+  ]
+}

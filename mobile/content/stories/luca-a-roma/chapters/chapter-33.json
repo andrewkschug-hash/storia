@@ -1,0 +1,998 @@
+{
+  "id": "luca-a-roma-33",
+  "storyId": "luca-a-roma",
+  "number": 33,
+  "title": "A problem",
+  "titleIt": "Un problema",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe",
+    "quartiere",
+    "strada"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "giulia"
+  ],
+  "events": [
+    {
+      "id": "ev-33-marco-work",
+      "summary": "Marco misses a meet for a work talk; he explains work/time/money conflict with Saturday needs; availability stays uncertain.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco",
+        "giulia"
+      ],
+      "locationIds": [
+        "quartiere",
+        "strada",
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Marco was late because of a work conversation",
+        "He needs money and may have a talk near Saturday",
+        "Saturday is tomorrow and his presence is not fully sure"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo Sofia e Marco avevano un appuntamento in piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "sofia",
+            "e",
+            "marco",
+            "avere",
+            "un",
+            "appuntamento",
+            "in",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ma Marco non c’era.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "marco",
+            "non",
+            "ce"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sofia ha aspettato, ha guardato la strada, e poi ha chiamato Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "aspettare",
+            "avere",
+            "guardare",
+            "la",
+            "strada",
+            "e",
+            "poi",
+            "avere",
+            "chiamare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Marco non arriva. Hai sue notizie. Doveva essere qui prima.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "marco",
+            "non",
+            "arrivare",
+            "avere",
+            "suo",
+            "notizia",
+            "dovere",
+            "essere",
+            "qui",
+            "prima"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "No. Ieri ha detto di venire. Adesso cerco. Aspetta lì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "ieri",
+            "avere",
+            "dire",
+            "di",
+            "venire",
+            "adesso",
+            "cercare",
+            "aspettare",
+            "li"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca ha chiesto a Giulia di restare al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "chiedere",
+            "a",
+            "giulia",
+            "di",
+            "restare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Poi è uscito verso il quartiere. Mentre camminava, aveva un po’ di paura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "essere",
+            "uscire",
+            "verso",
+            "il",
+            "quartiere",
+            "mentre",
+            "camminare",
+            "avere",
+            "un",
+            "poco",
+            "di",
+            "paura"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Marco aveva già avuto problemi di soldi. Se non arriva, sabato abbiamo un problema.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "marco",
+            "avere",
+            "gia",
+            "avere",
+            "problema",
+            "di",
+            "soldi",
+            "se",
+            "non",
+            "arrivare",
+            "sabato",
+            "avere",
+            "un",
+            "problema"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "La sala non si prepara da sola.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "sala",
+            "non",
+            "si",
+            "preparare",
+            "dare",
+            "solo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca ha sentito le parole di Giulia prima di uscire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "sentire",
+            "le",
+            "parola",
+            "di",
+            "giulia",
+            "prima",
+            "di",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Ci ha pensato mentre camminava.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "avere",
+            "pensare",
+            "mentre",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Ha cercato vicino ai negozi e vicino alla stazione. Non l’ha trovato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "cercare",
+            "vicino",
+            "ai",
+            "negozio",
+            "e",
+            "vicino",
+            "alla",
+            "stazione",
+            "non",
+            "avere",
+            "trovare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Poi ha visto Sofia, ancora in piazza, stanca di aspettare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "avere",
+            "vedere",
+            "sofia",
+            "ancora",
+            "in",
+            "piazza",
+            "stanco",
+            "di",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Forse ha dimenticato. O forse ha un problema di soldi.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "avere",
+            "dimenticare",
+            "o",
+            "forse",
+            "avere",
+            "un",
+            "problema",
+            "di",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Lo cerchiamo ancora un po’. Poi dobbiamo tornare al lavoro. Hanno camminato insieme.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "cercare",
+            "ancora",
+            "un",
+            "poco",
+            "poi",
+            "dovere",
+            "tornare",
+            "al",
+            "lavorare",
+            "avere",
+            "camminare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Dopo un’ora hanno visto Marco vicino a un ufficio piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "ora",
+            "avere",
+            "vedere",
+            "marco",
+            "vicino",
+            "a",
+            "un",
+            "ufficio",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Marco li ha visti e si è fermato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "li",
+            "avere",
+            "vedere",
+            "e",
+            "si",
+            "essere",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Sembrava stanco, non contento di arrivare tardi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "stanco",
+            "non",
+            "contento",
+            "di",
+            "arrivare",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Scusa. C’era una persona per un lavoro. Dovevo parlare.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa",
+            "ce",
+            "una",
+            "persona",
+            "per",
+            "un",
+            "lavorare",
+            "dovere",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Non ho visto l’orario. Potevi chiamare. Noi ti aspettavamo. Il quartiere aspetta anche sabato.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "vedere",
+            "orario",
+            "potere",
+            "chiamare",
+            "noi",
+            "ti",
+            "aspettare",
+            "il",
+            "quartiere",
+            "aspettare",
+            "anche",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Hai ragione. Ho pensato al lavoro e ai soldi.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ragione",
+            "avere",
+            "pensare",
+            "al",
+            "lavorare",
+            "e",
+            "ai",
+            "soldi"
+          ],
+          "phrases": [
+            {
+              "surface": "Hai ragione",
+              "literalEn": "you have reason",
+              "naturalEn": "you’re right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non ho pensato a voi subito.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "pensare",
+            "a",
+            "voi",
+            "subito"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Luca ha ascoltato. Il lavoro di Marco era importante, e gli amici anche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ascoltare",
+            "il",
+            "lavorare",
+            "di",
+            "marco",
+            "essere",
+            "importante",
+            "e",
+            "gli",
+            "amico",
+            "anche"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Va bene. Adesso sei qui. Che notizia c’è, del lavoro?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "adesso",
+            "essere",
+            "qui",
+            "che",
+            "notizia",
+            "ce",
+            "del",
+            "lavorare"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Niente di sicuro. Hanno detto vediamo. Forse una chiamata sabato mattina.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "niente",
+            "di",
+            "sicuro",
+            "avere",
+            "dire",
+            "vedere",
+            "forse",
+            "una",
+            "chiamata",
+            "sabato",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Sabato mattina? Proprio quando dobbiamo preparare la sala?",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "mattina",
+            "proprio",
+            "quando",
+            "dovere",
+            "preparare",
+            "la",
+            "sala"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Non lo so ancora. Se c’è una chiamata, non posso dire di no.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere",
+            "ancora",
+            "se",
+            "ce",
+            "una",
+            "chiamata",
+            "non",
+            "potere",
+            "dire",
+            "di",
+            "no"
+          ],
+          "phrases": [
+            {
+              "surface": "Non lo so",
+              "literalEn": "I it not know",
+              "naturalEn": "I don’t know",
+              "tokenStart": 0,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Ho bisogno di soldi. Capisco. Tu hai ragione a cercare lavoro.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "bisogno",
+            "di",
+            "soldi",
+            "capire",
+            "tu",
+            "avere",
+            "ragione",
+            "a",
+            "cercare",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Voglio aiutare sabato. Non posso dire sì su tutto l’orario.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "aiutare",
+            "sabato",
+            "non",
+            "potere",
+            "dire",
+            "si_yes",
+            "su",
+            "tutto",
+            "orario"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Ti dico quando so. Sofia ha guardato Luca senza chiudere il problema.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ti",
+            "dire",
+            "quando",
+            "sapere",
+            "sofia",
+            "avere",
+            "guardare",
+            "luca",
+            "senza",
+            "chiudere",
+            "il",
+            "problema"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Allora andiamo al caffè. Giulia deve sapere. Sabato è domani.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "andare",
+            "al",
+            "caffe",
+            "giulia",
+            "dovere",
+            "sapere",
+            "sabato",
+            "essere",
+            "domani"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "I tre sono tornati verso il caffè. Giulia li ha guardati dalla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "tre",
+            "essere",
+            "tornare",
+            "verso",
+            "il",
+            "caffe",
+            "giulia",
+            "li",
+            "avere",
+            "guardare",
+            "dalla",
+            "portare"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sabato abbiamo bisogno di te, Marco. Non di vediamo.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "avere",
+            "bisogno",
+            "di",
+            "tu",
+            "marco",
+            "non",
+            "di",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Forse ho una chiamata di lavoro sabato mattina. Se posso, vengo dopo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "avere",
+            "una",
+            "chiamata",
+            "di",
+            "lavorare",
+            "sabato",
+            "mattina",
+            "se",
+            "potere",
+            "venire",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "E se non puoi? Non è un lavoro per due sole persone.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "se",
+            "non",
+            "potere",
+            "non",
+            "essere",
+            "un",
+            "lavorare",
+            "per",
+            "due",
+            "sapere",
+            "persona"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Facciamo il piano con quello che sappiamo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "fare",
+            "il",
+            "piano",
+            "con",
+            "quello",
+            "che",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s37",
+          "text": "Se Marco arriva tardi, cambiamo il lavoro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "marco",
+            "arrivare",
+            "tardi",
+            "cambiare",
+            "il",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Non siamo sicuri di essere lì quando serve.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "sicuro",
+            "di",
+            "essere",
+            "li",
+            "quando",
+            "servire"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Non esco senza dire niente. Vi chiamo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "uscire",
+            "senza",
+            "dire",
+            "niente",
+            "voi",
+            "chiamare"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Se la chiamata è lunga, arrivo dopo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "la",
+            "chiamata",
+            "essere",
+            "lungo",
+            "arrivare",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Va bene. Io preparo lo stesso. Ma sabato non è chiaro.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "io",
+            "preparare",
+            "lo",
+            "stesso",
+            "ma",
+            "sabato",
+            "non",
+            "essere",
+            "chiaro"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Era già sera. Domani era sabato. Il piano aveva ancora problemi aperti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "gia",
+            "sera",
+            "domani",
+            "essere",
+            "sabato",
+            "il",
+            "piano",
+            "avere",
+            "ancora",
+            "problema",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Abbiamo un piano. Non siamo sicuri.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "un",
+            "piano",
+            "non",
+            "essere",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "E non so se tutti quelli che servono ci sono.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "non",
+            "sapere",
+            "se",
+            "tutto",
+            "quello",
+            "che",
+            "servire",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Domani vediamo. Oggi sappiamo il problema.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "vedere",
+            "oggi",
+            "sapere",
+            "il",
+            "problema"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Quando Luca è tornato a casa, ha pensato al sabato e a Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "luca",
+            "essere",
+            "tornare",
+            "a",
+            "casa",
+            "avere",
+            "pensare",
+            "al",
+            "sabato",
+            "e",
+            "a",
+            "marco"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "La festa era domani. Il sì del padrone c’era.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "festa",
+            "essere",
+            "domani",
+            "il",
+            "si_yes",
+            "del",
+            "padrone",
+            "ce"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Le persone, e Marco, non erano sicuri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "persona",
+            "e",
+            "marco",
+            "non",
+            "essere",
+            "sicuro"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch33_q01",
+      "chapterId": "luca-a-roma-33",
+      "type": "event",
+      "question": "Why is Marco late?",
+      "choices": [
+        "He was talking about a possible job",
+        "He left Rome",
+        "He was at Nonna Rosa’s house"
+      ],
+      "correctChoice": 0,
+      "explanation": "He had a work conversation and lost track of time.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch33_q02",
+      "chapterId": "luca-a-roma-33",
+      "type": "inference",
+      "question": "Why might Marco be late or unavailable on Saturday morning?",
+      "choices": [
+        "He may have a work call and needs money",
+        "He forgot the festa forever",
+        "He sold the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "Work, time, and money conflict with Saturday needs.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch33_q03",
+      "chapterId": "luca-a-roma-33",
+      "type": "character",
+      "question": "What does Giulia make clear to Marco?",
+      "choices": [
+        "Saturday they need him, not only “we’ll see”",
+        "He should stay home",
+        "He should sell the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "She is direct about needing him for Saturday.",
+      "difficulty": 2
+    }
+  ]
+}

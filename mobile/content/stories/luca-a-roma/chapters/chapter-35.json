@@ -1,0 +1,987 @@
+{
+  "id": "luca-a-roma-35",
+  "storyId": "luca-a-roma",
+  "number": 35,
+  "title": "The room fills",
+  "titleIt": "La sala si riempie",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe"
+  ],
+  "characterIds": [
+    "luca",
+    "giulia",
+    "sofia",
+    "marco",
+    "padrone",
+    "nonna-rosa"
+  ],
+  "events": [
+    {
+      "id": "ev-35-festa",
+      "summary": "People arrive gradually; the room fills; the owner notices; someone plans to return—evidence, not a permanent save.",
+      "characterIds": [
+        "luca",
+        "giulia",
+        "sofia",
+        "marco",
+        "padrone",
+        "nonna-rosa"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Nonna Rosa arrives first, then more neighborhood people",
+        "The owner is surprised to see full tables",
+        "A customer says she will return next week"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Nel primo pomeriggio la sala era ancora quasi vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "primo",
+            "pomeriggio",
+            "la",
+            "sala",
+            "essere",
+            "ancora",
+            "quasi",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca stava alla porta e diceva buongiorno a chi passava, ma pochi entravano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "stare",
+            "alla",
+            "porta",
+            "e",
+            "dire",
+            "buongiorno",
+            "a",
+            "chi",
+            "passare",
+            "ma",
+            "poco",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Forse non viene nessuno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "non",
+            "venire",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Aspetta. È presto. Le persone del quartiere mangiano e poi escono.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare",
+            "essere",
+            "presto",
+            "le",
+            "persona",
+            "del",
+            "quartiere",
+            "mangiare",
+            "e",
+            "poi",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Giulia ha portato caffè a un tavolo vuoto, solo per fare qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "portare",
+            "caffe",
+            "a",
+            "un",
+            "tavolo",
+            "vuoto",
+            "solo",
+            "per",
+            "fare",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il padrone guardava dalla cucina, senza sorridere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "guardare",
+            "dalla",
+            "cucina",
+            "senza",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Marco guardava il pane e non parlava molto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "guardare",
+            "il",
+            "pane",
+            "e",
+            "non",
+            "parlare",
+            "molto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Poi è arrivata Nonna Rosa, con un’amica vecchia e con una voce forte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "essere",
+            "arrivare",
+            "nonna",
+            "rosa",
+            "con",
+            "amico",
+            "vecchio",
+            "e",
+            "con",
+            "una",
+            "voce",
+            "forte"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Allora, siamo qui. Dov’è il caffè? E il pane?",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "essere",
+            "qui",
+            "dove_e",
+            "il",
+            "caffe",
+            "e",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Marco ha sorriso e ha portato pane e acqua. La sala non era più del tutto vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "sorridere",
+            "e",
+            "avere",
+            "portare",
+            "pane",
+            "e",
+            "acqua",
+            "la",
+            "sala",
+            "non",
+            "essere",
+            "piu",
+            "del",
+            "tutto",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "nonna",
+            "rosa",
+            "essere",
+            "arrivare",
+            "tre",
+            "persona",
+            "del",
+            "quartiere",
+            "poi",
+            "una",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Vedi? Adesso comincia.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "vedere",
+            "adesso",
+            "cominciare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Luca ha continuato a stare alla porta, un po’ meno stanco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "continuare",
+            "a",
+            "stare",
+            "alla",
+            "porta",
+            "un",
+            "poco",
+            "meno",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Una signora ha chiesto l’orario. Sofia ha risposto chiaro e giusto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "signore",
+            "avere",
+            "chiedere",
+            "orario",
+            "sofia",
+            "avere",
+            "rispondere",
+            "chiaro",
+            "e",
+            "giusto"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "In un’ora la sala era quasi piena. C’era musica, voci, e c’era caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "ora",
+            "la",
+            "sala",
+            "essere",
+            "quasi",
+            "pieno",
+            "ce",
+            "musica",
+            "voce",
+            "e",
+            "ce",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Sofia parlava con la gente. Giulia serviva. Marco aiutava con i piatti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "parlare",
+            "con",
+            "la",
+            "gente",
+            "giulia",
+            "servire",
+            "marco",
+            "aiutare",
+            "con",
+            "i",
+            "piatto"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Il padrone è uscito dalla cucina e ha guardato i tavoli pieni, un po’ sorpreso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "essere",
+            "uscire",
+            "dalla",
+            "cucina",
+            "e",
+            "avere",
+            "guardare",
+            "i",
+            "tavolo",
+            "pieno",
+            "un",
+            "poco",
+            "sorpreso"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Tanta gente. Non lo vedevo da tanto tempo.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "tanto",
+            "gente",
+            "non",
+            "lo",
+            "vedere",
+            "dare",
+            "tanto",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Sono persone del quartiere. Volevano una ragione per venire.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "persona",
+            "del",
+            "quartiere",
+            "volere",
+            "una",
+            "ragione",
+            "per",
+            "venire"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Una signora ha detto che il caffè le piaceva, e che tornava la settimana dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "signore",
+            "avere",
+            "dire",
+            "che",
+            "il",
+            "caffe",
+            "le",
+            "piacere",
+            "e",
+            "che",
+            "tornare",
+            "la",
+            "settimana",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Luca ha portato acqua a un tavolo e ha ascoltato le persone parlare di Roma e di lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "portare",
+            "acqua",
+            "a",
+            "un",
+            "tavolo",
+            "e",
+            "avere",
+            "ascoltare",
+            "le",
+            "persona",
+            "parlare",
+            "di",
+            "roma",
+            "e",
+            "di",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non capiva tutte le parole, ma capiva la cosa importante: la sala viveva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "capire",
+            "tutto",
+            "le",
+            "parola",
+            "ma",
+            "capire",
+            "la",
+            "cosa",
+            "importante",
+            "la",
+            "sala",
+            "vivere"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Tu stai bene alla porta. Le persone ti vedono e entrano.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "stare",
+            "bene",
+            "alla",
+            "porta",
+            "le",
+            "persona",
+            "ti",
+            "vedere",
+            "e",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Grazie. Oggi lavoro qui con voi, non da solo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "oggi",
+            "lavorare",
+            "qui",
+            "con",
+            "voi",
+            "non",
+            "dare",
+            "solo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Il padrone ha servito due caffè e ha guardato di nuovo la sala.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "avere",
+            "servire",
+            "due",
+            "caffe",
+            "e",
+            "avere",
+            "guardare",
+            "di",
+            "nuovo",
+            "la",
+            "sala"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Funziona, almeno oggi. Non so di lunedì.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "funzionare",
+            "almeno",
+            "oggi",
+            "non",
+            "sapere",
+            "di",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Oggi conta. Le persone sono qui adesso.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "contare",
+            "le",
+            "persona",
+            "essere",
+            "qui",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Qualche cliente ha chiesto se c’era festa anche la settimana dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualche",
+            "cliente",
+            "avere",
+            "chiedere",
+            "se",
+            "ce",
+            "festa",
+            "anche",
+            "la",
+            "settimana",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Non ogni sabato. Ma il caffè è aperto. Potete tornare.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ogni",
+            "sabato",
+            "ma",
+            "il",
+            "caffe",
+            "essere",
+            "aprire",
+            "potere",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Marco ha portato pane a Nonna Rosa e ha ascoltato le voci vicino ai tavoli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "portare",
+            "pane",
+            "a",
+            "nonna",
+            "rosa",
+            "e",
+            "avere",
+            "ascoltare",
+            "le",
+            "voce",
+            "vicino",
+            "ai",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Quando una famiglia è entrata tardi, Luca ha trovato un posto vicino alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "una",
+            "famiglia",
+            "essere",
+            "entrare",
+            "tardi",
+            "luca",
+            "avere",
+            "trovare",
+            "un",
+            "posto",
+            "vicino",
+            "alla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La musica restava non troppo forte. Le persone restavano a parlare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "musica",
+            "restare",
+            "non",
+            "troppo",
+            "forte",
+            "le",
+            "persona",
+            "restare",
+            "a",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Giulia ha guardato Luca e ha fatto un piccolo segno: andava bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "guardare",
+            "luca",
+            "e",
+            "avere",
+            "fare",
+            "un",
+            "piccolo",
+            "segno",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Il padrone non ha fatto grandi parole. Ha solo lavorato e guardato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "non",
+            "avere",
+            "fare",
+            "grande",
+            "parola",
+            "avere",
+            "solo",
+            "lavorare",
+            "e",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Il problema non era ancora finito. Era solo un pomeriggio pieno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "problema",
+            "non",
+            "essere",
+            "ancora",
+            "finire",
+            "essere",
+            "solo",
+            "un",
+            "pomeriggio",
+            "pieno"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Ma dopo settimane di tavoli vuoti, oggi c’erano clienti e amici insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "dopo",
+            "settimana",
+            "di",
+            "tavolo",
+            "vuoto",
+            "oggi",
+            "ce",
+            "cliente",
+            "e",
+            "amico",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "avere",
+            "chiamare",
+            "luca",
+            "e",
+            "gli",
+            "avere",
+            "dire",
+            "di",
+            "restare",
+            "vicino",
+            "alla",
+            "porta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s38",
+          "text": "Le persone entrano se vedono qualcuno. Tu resta lì.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "persona",
+            "entrare",
+            "se",
+            "vedere",
+            "qualcuno",
+            "tu",
+            "restare",
+            "li"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Va bene. Resto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "restare"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Sofia ha messo il telefono sul tavolo. Adesso il telefono non serviva più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "mettere",
+            "il",
+            "telefono",
+            "sul",
+            "tavolo",
+            "adesso",
+            "il",
+            "telefono",
+            "non",
+            "servire",
+            "piu"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "La festa piccola funzionava, almeno per queste ore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "festa",
+            "piccolo",
+            "funzionare",
+            "almeno",
+            "per",
+            "questo",
+            "ora"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Luca ha sentito meno paura, ma non ha detto che il problema era finito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "sentire",
+            "meno",
+            "paura",
+            "ma",
+            "non",
+            "avere",
+            "dire",
+            "che",
+            "il",
+            "problema",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Il padrone vedeva clienti. Questo era più importante delle parole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "vedere",
+            "cliente",
+            "questo",
+            "essere",
+            "piu",
+            "importante",
+            "delle",
+            "parola"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Verso sera qualche persona è partita, e qualche persona è restata ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "verso",
+            "sera",
+            "qualche",
+            "persona",
+            "essere",
+            "partire",
+            "e",
+            "qualche",
+            "persona",
+            "essere",
+            "restare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Adesso Luca sapeva una cosa: le persone potevano tornare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "luca",
+            "sapere",
+            "una",
+            "cosa",
+            "le",
+            "persona",
+            "potere",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Doveva ancora chiedere il resto. Non oggi, ma presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "ancora",
+            "chiedere",
+            "il",
+            "restare",
+            "non",
+            "oggi",
+            "ma",
+            "presto"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch35_q01",
+      "chapterId": "luca-a-roma-35",
+      "type": "sequence",
+      "question": "How does the room fill?",
+      "choices": [
+        "It starts almost empty; Nonna Rosa comes first, then more people",
+        "It is full before anyone arrives",
+        "Everyone leaves immediately"
+      ],
+      "correctChoice": 0,
+      "explanation": "Arrivals are gradual and organic.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch35_q02",
+      "chapterId": "luca-a-roma-35",
+      "type": "event",
+      "question": "How does the owner react when the room fills?",
+      "choices": [
+        "He is a little surprised; he had not seen this in a long time",
+        "He closes the café forever",
+        "He leaves Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "He notices the tables and customers without a victory speech.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch35_q03",
+      "chapterId": "luca-a-roma-35",
+      "type": "inference",
+      "question": "What does the full room prove for now?",
+      "choices": [
+        "People can come back — evidence of a possible future, not a permanent save",
+        "The café is sold the same day",
+        "Marco is leaving forever"
+      ],
+      "correctChoice": 0,
+      "explanation": "A customer plans to return; the café is not declared saved forever.",
+      "difficulty": 2
+    }
+  ]
+}

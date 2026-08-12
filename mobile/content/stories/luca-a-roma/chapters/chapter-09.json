@@ -1,0 +1,267 @@
+{
+  "id": "luca-a-roma-09",
+  "storyId": "luca-a-roma",
+  "number": 9,
+  "title": "An opportunity",
+  "titleIt": "Un lavoro",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "lavoro-caffe",
+    "roma"
+  ],
+  "characterIds": [
+    "luca",
+    "padrone"
+  ],
+  "events": [
+    {
+      "id": "ev-09-opportunity",
+      "summary": "The café owner offers Luca work starting tomorrow.",
+      "characterIds": [
+        "luca",
+        "padrone"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Luca can work at the café",
+        "The padrone offered Luca a job",
+        "Luca starts tomorrow"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca torna al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "tornare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Nel caffè c'è il padrone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "caffe",
+            "ce",
+            "il",
+            "padrone"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca parla con il padrone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "parlare",
+            "con",
+            "il",
+            "padrone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s04",
+          "text": "Vuoi lavorare qui?",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "lavorare",
+            "qui"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Sì, posso lavorare qui?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "potere",
+            "lavorare",
+            "qui"
+          ],
+          "phrases": [
+            {
+              "surface": "posso lavorare",
+              "literalEn": "I can to work",
+              "naturalEn": "I can work",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Sì, va bene.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "andare",
+            "bene"
+          ],
+          "phrases": [
+            {
+              "surface": "va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay / all right",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s08",
+          "text": "Luca può lavorare nel caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "potere",
+            "lavorare",
+            "nel",
+            "caffe"
+          ],
+          "phrases": [
+            {
+              "surface": "può lavorare",
+              "literalEn": "can to work",
+              "naturalEn": "can work",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Luca ha un lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "un",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Domani Luca lavora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "luca",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il lavoro non è difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "lavoro",
+            "non",
+            "essere",
+            "difficile"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch09_q01",
+      "chapterId": "luca-a-roma-09",
+      "type": "character",
+      "question": "Who offers Luca a job?",
+      "questionIt": "Chi offre un lavoro a Luca?",
+      "choices": [
+        "The café owner (padrone)",
+        "Sofia",
+        "Marco"
+      ],
+      "correctChoice": 0,
+      "explanation": "The padrone tells Luca he can work there.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch09_q02",
+      "chapterId": "luca-a-roma-09",
+      "type": "direct",
+      "question": "What does the owner tell Luca?",
+      "choices": [
+        "He can work there",
+        "There is no work",
+        "He must leave Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "The owner says Luca può lavorare at the café.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch09_q03",
+      "chapterId": "luca-a-roma-09",
+      "type": "event",
+      "question": "When does Luca start the job?",
+      "choices": [
+        "Tomorrow",
+        "Next month",
+        "Never"
+      ],
+      "correctChoice": 0,
+      "explanation": "He is told he starts tomorrow.",
+      "difficulty": 1
+    }
+  ]
+}

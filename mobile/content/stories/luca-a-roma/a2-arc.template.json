@@ -1,0 +1,19 @@
+{
+  "targetCEFR": "A2",
+  "title": "Luca's new life",
+  "titleIt": "La nuova vita",
+  "storyObjective": "Luca settles into life in Rome. Work, friendships, and everyday problems become richer — the same people, more natural Italian.",
+  "narrativeStage": "Luca's new life.",
+  "targetVocabularySize": 500,
+  "vocabularyReuseGoal": 0.68,
+  "sentenceComplexityTarget": {
+    "averageWordCount": 10,
+    "maxClauses": 3
+  },
+  "characters": ["luca", "sofia", "marco", "giulia", "nonna-rosa", "padrone"],
+  "locations": ["roma", "quartiere", "lavoro-caffe", "appartamento-luca"],
+  "comprehensionTypes": ["direct", "event", "sequence"],
+  "adaptiveOpportunities": ["aspettare", "lavoro", "aiutare", "problema"],
+  "audioStatus": "not_generated",
+  "chapters": []
+}

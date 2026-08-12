@@ -1,0 +1,281 @@
+{
+  "id": "luca-a-roma-08",
+  "storyId": "luca-a-roma",
+  "number": 8,
+  "title": "Looking for work",
+  "titleIt": "Cercare lavoro",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "quartiere",
+    "lavoro-caffe",
+    "roma"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia"
+  ],
+  "events": [
+    {
+      "id": "ev-08-search-work",
+      "summary": "Luca asks about work at a café and waits for an answer.",
+      "characterIds": [
+        "luca",
+        "sofia"
+      ],
+      "locationIds": [
+        "lavoro-caffe",
+        "quartiere"
+      ],
+      "rememberedFacts": [
+        "Luca is looking for work at a café",
+        "Sofia told him to ask there"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Oggi Luca cerca un lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "cercare",
+            "un",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca cammina nel quartiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "camminare",
+            "nel",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sofia aiuta Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "aiutare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Chiedi al caffè.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiedere",
+            "al",
+            "caffe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "C'è un caffè vicino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "caffe",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca va al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Luca entra nel caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "entrare",
+            "nel",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Buongiorno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Scusa, cerco un lavoro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa",
+            "cercare",
+            "un",
+            "lavoro"
+          ],
+          "phrases": [
+            {
+              "surface": "Scusa",
+              "literalEn": "Excuse / Sorry",
+              "naturalEn": "Excuse me",
+              "tokenStart": 0,
+              "tokenEnd": 0
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca aspetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Non so.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "sapere"
+          ],
+          "phrases": [
+            {
+              "surface": "Non so",
+              "literalEn": "I do not know",
+              "naturalEn": "I don't know",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Aspetta un momento.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare",
+            "un",
+            "momento"
+          ],
+          "phrases": [
+            {
+              "surface": "un momento",
+              "literalEn": "a moment",
+              "naturalEn": "a moment",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "It goes well",
+              "naturalEn": "Okay / All right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch08_q01",
+      "chapterId": "luca-a-roma-08",
+      "type": "event",
+      "question": "Where does Luca ask about work?",
+      "questionIt": "Dove chiede lavoro Luca?",
+      "choices": [
+        "At a café",
+        "At the train station",
+        "At Sofia’s house"
+      ],
+      "correctChoice": 0,
+      "explanation": "He goes to a café and asks about a job.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch08_q02",
+      "chapterId": "luca-a-roma-08",
+      "type": "direct",
+      "question": "How does Luca start when he asks?",
+      "choices": [
+        "He says “excuse me” (scusa)",
+        "He demands a contract",
+        "He leaves without speaking"
+      ],
+      "correctChoice": 0,
+      "explanation": "He politely says scusa when he asks about work.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch08_q03",
+      "chapterId": "luca-a-roma-08",
+      "type": "sequence",
+      "question": "What does Luca do after asking?",
+      "choices": [
+        "He waits for an answer",
+        "He starts work immediately",
+        "He buys the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "After asking, he waits to hear back.",
+      "difficulty": 1
+    }
+  ]
+}

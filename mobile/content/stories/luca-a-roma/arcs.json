@@ -1,0 +1,100 @@
+{
+  "arcs": [
+    {
+      "id": "luca-a-roma-a1",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "A1",
+      "title": "Luca arrives in Rome",
+      "titleIt": "Luca arriva a Roma",
+      "description": "Simple everyday stories",
+      "narrativeStage": "Luca arrives in Rome.",
+      "chapterStart": 1,
+      "chapterEnd": 20,
+      "status": "available"
+    },
+    {
+      "id": "luca-a-roma-a1-plus",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "A1+",
+      "title": "Luca finds his place",
+      "titleIt": "Luca trova il suo posto",
+      "description": "Simple everyday stories",
+      "narrativeStage": "Luca finds his place.",
+      "chapterStart": 21,
+      "chapterEnd": 24,
+      "status": "available"
+    },
+    {
+      "id": "luca-a-roma-a2",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "A2",
+      "title": "Luca's new life",
+      "titleIt": "La nuova vita",
+      "description": "Longer adventures and conversations",
+      "narrativeStage": "Luca's new life.",
+      "chapterStart": 25,
+      "chapterEnd": 40,
+      "status": "available"
+    },
+    {
+      "id": "luca-a-roma-a2-plus",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "A2+",
+      "title": "New problems",
+      "titleIt": "Nuovi problemi",
+      "description": "Longer adventures and conversations",
+      "narrativeStage": "New problems.",
+      "chapterStart": 41,
+      "chapterEnd": 40,
+      "status": "planned"
+    },
+    {
+      "id": "luca-a-roma-b1",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "B1",
+      "title": "Bigger decisions",
+      "titleIt": "Decisioni più grandi",
+      "description": "More natural conversations and complex situations",
+      "narrativeStage": "Bigger decisions.",
+      "chapterStart": 41,
+      "chapterEnd": 60,
+      "status": "planned"
+    },
+    {
+      "id": "luca-a-roma-b1-plus",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "B1+",
+      "title": "Relationships and work",
+      "titleIt": "Relazioni e lavoro",
+      "description": "More natural conversations and complex situations",
+      "narrativeStage": "Relationships and work.",
+      "chapterStart": 61,
+      "chapterEnd": 60,
+      "status": "planned"
+    },
+    {
+      "id": "luca-a-roma-b2",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "B2",
+      "title": "More complicated adult life",
+      "titleIt": "Una vita più complicata",
+      "description": "Rich, natural Italian",
+      "narrativeStage": "More complicated adult life.",
+      "chapterStart": 61,
+      "chapterEnd": 80,
+      "status": "planned"
+    },
+    {
+      "id": "luca-a-roma-c1",
+      "storyId": "luca-a-roma",
+      "cefrLevel": "C1",
+      "title": "Natural Italian",
+      "titleIt": "Italiano naturale",
+      "description": "Authentic Italian storytelling",
+      "narrativeStage": "Natural Italian.",
+      "chapterStart": 81,
+      "chapterEnd": 100,
+      "status": "planned"
+    }
+  ]
+}

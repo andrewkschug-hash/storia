@@ -1,0 +1,156 @@
+{
+  "characters": [
+    {
+      "id": "luca",
+      "name": "Luca",
+      "gender": "male",
+      "ageDescription": "young adult",
+      "description": "A young Italian man who has just moved to Rome to start a new life.",
+      "storyRole": "protagonist",
+      "relationships": [
+        "Friend of Sofia",
+        "Becomes friend of Marco",
+        "Meets Giulia and Nonna Rosa"
+      ],
+      "knownLocationIds": [
+        "roma",
+        "bar-centrale",
+        "appartamento-luca"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian male"
+      }
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "gender": "female",
+      "ageDescription": "young adult",
+      "description": "A warm, practical Roman who helps Luca find his footing in the city.",
+      "storyRole": "friend and guide",
+      "relationships": [
+        "Friend of Luca",
+        "Knows Marco",
+        "Close to Nonna Rosa"
+      ],
+      "knownLocationIds": [
+        "roma",
+        "bar-centrale",
+        "quartiere",
+        "lavoro-caffe"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian female"
+      }
+    },
+    {
+      "id": "marco",
+      "name": "Marco",
+      "gender": "male",
+      "ageDescription": "young adult",
+      "description": "Sofia's friend who works nearby and later needs help with a serious problem.",
+      "storyRole": "friend in need",
+      "relationships": [
+        "Friend of Sofia",
+        "Becomes friend of Luca"
+      ],
+      "knownLocationIds": [
+        "roma",
+        "lavoro-caffe",
+        "stazione"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian male, slightly more reserved"
+      }
+    },
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "gender": "female",
+      "ageDescription": "young adult",
+      "description": "A colleague who helps Luca at work and joins the group later.",
+      "storyRole": "coworker and ally",
+      "relationships": [
+        "Works with Luca",
+        "Friend of Sofia"
+      ],
+      "knownLocationIds": [
+        "lavoro-caffe",
+        "roma"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian female, clear and bright"
+      }
+    },
+    {
+      "id": "nonna-rosa",
+      "name": "Nonna Rosa",
+      "gender": "female",
+      "ageDescription": "elderly",
+      "description": "Sofia's grandmother — wise, kind, and full of practical advice.",
+      "storyRole": "elder guide",
+      "relationships": [
+        "Grandmother of Sofia",
+        "Warm toward Luca"
+      ],
+      "knownLocationIds": [
+        "casa-nonna",
+        "quartiere"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "older Italian female, warm"
+      }
+    },
+    {
+      "id": "narrator",
+      "name": "Narratore",
+      "gender": "neutral",
+      "ageDescription": "n/a",
+      "description": "Story narrator voice identity (used for audio in Phase 7).",
+      "storyRole": "narrator",
+      "relationships": [],
+      "knownLocationIds": [],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "clear Italian narrative"
+      }
+    },
+    {
+      "id": "padrone",
+      "name": "Il padrone",
+      "gender": "male",
+      "ageDescription": "middle-aged",
+      "description": "Owner of the café where Luca finds work.",
+      "storyRole": "employer",
+      "relationships": [
+        "Employs Luca and Giulia"
+      ],
+      "knownLocationIds": [
+        "lavoro-caffe"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, direct"
+      }
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "id": "luca-a-roma-29",
+  "storyId": "luca-a-roma",
+  "number": 29,
+  "title": "Nonna’s idea",
+  "titleIt": "L’idea della nonna",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "casa-nonna"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "nonna-rosa"
+  ],
+  "events": [
+    {
+      "id": "ev-29-nonna",
+      "summary": "Nonna Rosa suggests a Saturday neighborhood festa as a try; they must ask the padrone.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco",
+        "nonna-rosa"
+      ],
+      "locationIds": [
+        "casa-nonna"
+      ],
+      "rememberedFacts": [
+        "Nonna suggests a Saturday festa so people come",
+        "They must get the padrone’s yes first"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Venerdì Luca, Sofia e Marco sono andati da Nonna Rosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "luca",
+            "sofia",
+            "e",
+            "marco",
+            "essere",
+            "andare",
+            "dare",
+            "nonna",
+            "rosa"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "La casa era piccola e calda, con cose vecchie e belle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "casa",
+            "essere",
+            "piccolo",
+            "e",
+            "caldo",
+            "con",
+            "cosa",
+            "vecchio",
+            "e",
+            "bello"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Entrate. Avete fame? C’è pane e qualcosa da mangiare.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "entrare",
+            "avere",
+            "fame",
+            "ce",
+            "pane",
+            "e",
+            "qualcosa",
+            "dare",
+            "mangiare"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Grazie, nonna. Prima dobbiamo parlare con te.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "nonna",
+            "prima",
+            "dovere",
+            "parlare",
+            "con",
+            "tu"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Si sono seduti, e Luca ha spiegato la notizia del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "essere",
+            "sedere",
+            "e",
+            "luca",
+            "avere",
+            "spiegare",
+            "la",
+            "notizia",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ha detto dei clienti pochi e del padrone che forse vende.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "dire",
+            "dei",
+            "cliente",
+            "poco",
+            "e",
+            "del",
+            "padrone",
+            "che",
+            "forse",
+            "vendere"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Nonna Rosa ha ascoltato con calma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "avere",
+            "ascoltare",
+            "con",
+            "calma"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Io cerco lavoro e non trovo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "cercare",
+            "lavorare",
+            "e",
+            "non",
+            "trovare"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Qui al caffè i soldi non sono abbastanza.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "al",
+            "caffe",
+            "i",
+            "soldi",
+            "non",
+            "essere",
+            "abbastanza"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Quel caffè lo conosco da tanti anni.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "caffe",
+            "lo",
+            "conoscere",
+            "dare",
+            "tanto",
+            "anno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Le persone del quartiere anche.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "persona",
+            "del",
+            "quartiere",
+            "anche"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sì. Ma adesso pochi clienti entrano.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "ma",
+            "adesso",
+            "poco",
+            "cliente",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Perché nessuno chiama le persone? Un caffè non vive solo.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "nessuno",
+            "chiamare",
+            "le",
+            "persona",
+            "un",
+            "caffe",
+            "non",
+            "vivere",
+            "solo"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Vive con la gente. Se la gente non viene, chiude.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "vivere",
+            "con",
+            "la",
+            "gente",
+            "se",
+            "la",
+            "gente",
+            "non",
+            "venire",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Che idea hai, nonna? Serve un piano piccolo.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "idea",
+            "avere",
+            "nonna",
+            "servire",
+            "un",
+            "piano",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Sabato. Una festa piccola del quartiere.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "una",
+            "festa",
+            "piccolo",
+            "del",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Pane, caffè, musica, amici. Non cambia tutto in un giorno.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "pane",
+            "caffe",
+            "musica",
+            "amico",
+            "non",
+            "cambiare",
+            "tutto",
+            "in",
+            "un",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "È una prova. Le persone vengono se c’è una ragione.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "una",
+            "provare",
+            "le",
+            "persona",
+            "venire",
+            "se",
+            "ce",
+            "una",
+            "ragione"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Il padrone non ha deciso. Magari non vuole una festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "padrone",
+            "non",
+            "avere",
+            "decidere",
+            "magari",
+            "non",
+            "volere",
+            "una",
+            "festa"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "E se nessuno viene? Io prendo il pane e mangio da solo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "se",
+            "nessuno",
+            "venire",
+            "io",
+            "prendere",
+            "il",
+            "pane",
+            "e",
+            "mangiare",
+            "dare",
+            "solo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Sofia ha guardato Marco. Capiva la paura sotto le parole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "guardare",
+            "marco",
+            "capire",
+            "la",
+            "paura",
+            "sotto",
+            "le",
+            "parola"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Allora lo facciamo piccolo. Pochi soldi. Tante persone chiamate.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "lo",
+            "fare",
+            "piccolo",
+            "poco",
+            "soldi",
+            "tanto",
+            "persona",
+            "chiamata"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Allora gli diciamo. Non aspettiamo.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "gli",
+            "dire",
+            "non",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Gli diamo una ragione per restare, non per vendere.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "gli",
+            "dare",
+            "una",
+            "ragione",
+            "per",
+            "restare",
+            "non",
+            "per",
+            "vendere"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Io posso aiutare. Non ho soldi, ma ho tempo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "potere",
+            "aiutare",
+            "non",
+            "avere",
+            "soldi",
+            "ma",
+            "avere",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Io conosco gente. Posso dire alle persone del quartiere.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "conoscere",
+            "gente",
+            "potere",
+            "dire",
+            "alle",
+            "persona",
+            "del",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Io non so ancora. Se il padrone dice no, il piano finisce.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "sapere",
+            "ancora",
+            "se",
+            "il",
+            "padrone",
+            "dire",
+            "no",
+            "il",
+            "piano",
+            "finire"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Se dice no, capiamo. Se dice sì, proviamo sabato.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "dire",
+            "no",
+            "capire",
+            "se",
+            "dire",
+            "si_yes",
+            "provare",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca ha ascoltato. Non era solo il suo problema al lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ascoltare",
+            "non",
+            "essere",
+            "solo",
+            "il",
+            "suo",
+            "problema",
+            "al",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Era una cosa del gruppo, qui a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "cosa",
+            "del",
+            "gruppo",
+            "qui",
+            "a",
+            "roma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Prima serve Giulia. Lei organizza bene la sala.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "servire",
+            "giulia",
+            "lei",
+            "organizzare",
+            "bene",
+            "la",
+            "sala"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "E serve il sì del padrone. Senza di lui non apriamo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "servire",
+            "il",
+            "si_yes",
+            "del",
+            "padrone",
+            "senza",
+            "di",
+            "lui",
+            "non",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Prima parlate con Giulia e con il padrone. Poi, se dicono sì, io vengo sabato.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "parlare",
+            "con",
+            "giulia",
+            "e",
+            "con",
+            "il",
+            "padrone",
+            "poi",
+            "se",
+            "dire",
+            "si_yes",
+            "io",
+            "venire",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Va bene. Ci pensiamo noi. Grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "ci",
+            "pensare",
+            "noi",
+            "grazie"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Hanno mangiato un poco di pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "mangiare",
+            "un",
+            "poco",
+            "di",
+            "pane"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Non avere troppa paura. Provare è meglio di aspettare.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "troppo",
+            "paura",
+            "provare",
+            "essere",
+            "meglio",
+            "di",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Lo so. Ma non so se funziona.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "ma",
+            "non",
+            "sapere",
+            "se",
+            "funzionare"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Non lo sappiamo ancora. Prima chiediamo il sì al caffè.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere",
+            "ancora",
+            "prima",
+            "chiedere",
+            "il",
+            "si_yes",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Nella strada avevano un’idea e una domanda aperta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "strada",
+            "avere",
+            "idea",
+            "e",
+            "una",
+            "domanda",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "La festa non era ancora un piano sicuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "festa",
+            "non",
+            "essere",
+            "ancora",
+            "un",
+            "piano",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Serviva il sì del padrone. Domani dovevano chiedere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "servire",
+            "il",
+            "si_yes",
+            "del",
+            "padrone",
+            "domani",
+            "dovere",
+            "chiedere"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch29_q01",
+      "chapterId": "luca-a-roma-29",
+      "type": "event",
+      "question": "What idea does Nonna Rosa suggest?",
+      "choices": [
+        "A small Saturday gathering at the café",
+        "Selling the café quickly",
+        "A trip outside Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "Bread, coffee, music, friends — as a try.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch29_q02",
+      "chapterId": "luca-a-roma-29",
+      "type": "character",
+      "question": "How can Marco help?",
+      "choices": [
+        "With time and hands, not money",
+        "By paying the owner",
+        "By leaving the group"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says he has no money but has time.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch29_q03",
+      "chapterId": "luca-a-roma-29",
+      "type": "sequence",
+      "question": "What must they do first?",
+      "choices": [
+        "Talk with Giulia and the owner",
+        "Buy a train ticket",
+        "Close the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "Nonna says talk first, then she will come.",
+      "difficulty": 2
+    }
+  ]
+}

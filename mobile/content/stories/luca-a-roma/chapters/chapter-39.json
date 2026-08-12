@@ -1,0 +1,1063 @@
+{
+  "id": "luca-a-roma-39",
+  "storyId": "luca-a-roma",
+  "number": 39,
+  "title": "A place for Marco",
+  "titleIt": "Un posto per Marco",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe",
+    "quartiere"
+  ],
+  "characterIds": [
+    "luca",
+    "marco",
+    "giulia",
+    "sofia",
+    "padrone"
+  ],
+  "events": [
+    {
+      "id": "ev-39-marco-work",
+      "summary": "Luca locks in a partial schedule; Marco gets busy-day help at the café; a message from Luca’s mother points to a job offer.",
+      "characterIds": [
+        "luca",
+        "marco",
+        "giulia",
+        "padrone",
+        "sofia"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Luca’s schedule keeps Monday and Wednesday evenings free",
+        "Marco helps on busy days for little pay — a foothold, not a full job",
+        "Luca’s mother will call about a job proposal outside Rome"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo Luca ha parlato con il padrone, come deciso con Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "luca",
+            "avere",
+            "parlare",
+            "con",
+            "il",
+            "padrone",
+            "come",
+            "decidere",
+            "con",
+            "sofia"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "piu",
+            "ora",
+            "ma",
+            "non",
+            "tutto",
+            "lunedi",
+            "e",
+            "mercoledi",
+            "sera",
+            "volere",
+            "tempo",
+            "libero"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Martedì e giovedì posso fare di più. Sabato e domenica, come serve.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "martedi",
+            "e",
+            "giovedi",
+            "potere",
+            "fare",
+            "di",
+            "piu",
+            "sabato",
+            "e",
+            "domenica",
+            "come",
+            "servire"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Va bene. Sei chiaro. Facciamo un orario giusto con Giulia.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "essere",
+            "chiaro",
+            "fare",
+            "un",
+            "orario",
+            "giusto",
+            "con",
+            "giulia"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Giulia ha ascoltato dalla porta e ha preso carta per il piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "ascoltare",
+            "dalla",
+            "porta",
+            "e",
+            "avere",
+            "prendere",
+            "carta",
+            "per",
+            "il",
+            "piano"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Bene. Così so chi è in sala, e quando. Non cambio ogni giorno.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "cosi",
+            "sapere",
+            "chi",
+            "essere",
+            "in",
+            "sala",
+            "e",
+            "quando",
+            "non",
+            "cambiare",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Mentre facevano l’orario, Marco è arrivato alla porta del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mentre",
+            "fare",
+            "orario",
+            "marco",
+            "essere",
+            "arrivare",
+            "alla",
+            "porta",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Scusa. Posso parlare un momento? Ho bisogno di dirvi una cosa.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa",
+            "potere",
+            "parlare",
+            "un",
+            "momento",
+            "avere",
+            "bisogno",
+            "di",
+            "dire",
+            "una",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Il padrone ha fatto segno di sì. Luca ha messo i piatti sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "avere",
+            "fare",
+            "segno",
+            "di",
+            "si_yes",
+            "luca",
+            "avere",
+            "mettere",
+            "i",
+            "piatto",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Cerco lavoro. Non ho trovato un posto grande. Ma posso aiutare qui.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "cercare",
+            "lavorare",
+            "non",
+            "avere",
+            "trovare",
+            "un",
+            "posto",
+            "grande",
+            "ma",
+            "potere",
+            "aiutare",
+            "qui"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Nei giorni pieni. Poche ore. Non chiedo un lavoro per sempre.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "nei",
+            "giorno",
+            "pieno",
+            "poco",
+            "ora",
+            "non",
+            "chiedere",
+            "un",
+            "lavorare",
+            "per",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca ha guardato Giulia. Lei ha guardato il padrone, poi ha parlato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "guardare",
+            "giulia",
+            "lei",
+            "avere",
+            "guardare",
+            "il",
+            "padrone",
+            "poi",
+            "avere",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "I giorni pieni abbiamo bisogno di una persona in più. Lo abbiamo visto.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "i",
+            "giorno",
+            "pieno",
+            "avere",
+            "bisogno",
+            "di",
+            "una",
+            "persona",
+            "in",
+            "piu",
+            "lo",
+            "avere",
+            "vedere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s14",
+          "text": "Poche ore. Pochi soldi. Non è un lavoro grande. Se vuoi, proviamo.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "poco",
+            "ora",
+            "poco",
+            "soldi",
+            "non",
+            "essere",
+            "un",
+            "lavorare",
+            "grande",
+            "se",
+            "volere",
+            "provare"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Voglio. Grazie. Per me è già un inizio.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "grazie",
+            "per",
+            "io",
+            "essere",
+            "gia",
+            "un",
+            "iniziare"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Marco ha fatto un segno di sì, e niente di più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "fare",
+            "un",
+            "segno",
+            "di",
+            "si_yes",
+            "e",
+            "niente",
+            "di",
+            "piu"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Se lavori qui, ci vediamo di più. Va bene per me.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "lavorare",
+            "qui",
+            "ci",
+            "vedere",
+            "di",
+            "piu",
+            "andare",
+            "bene",
+            "per",
+            "io"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 7,
+              "tokenEnd": 8
+            }
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Per me anche. Gli amici e un po’ di soldi. Meglio di niente.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "io",
+            "anche",
+            "gli",
+            "amico",
+            "e",
+            "un",
+            "poco",
+            "di",
+            "soldi",
+            "meglio",
+            "di",
+            "niente"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Luca era contento in un modo tranquillo. Il problema di Marco restava.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento",
+            "in",
+            "un",
+            "modo",
+            "tranquillo",
+            "il",
+            "problema",
+            "di",
+            "marco",
+            "restare"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Ma c’era un primo giorno vero al caffè, con le persone del posto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "ce",
+            "un",
+            "primo",
+            "giorno",
+            "vero",
+            "al",
+            "caffe",
+            "con",
+            "le",
+            "persona",
+            "del",
+            "posto"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Nel pomeriggio Sofia è passata, perché voleva sentire la notizia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "sofia",
+            "essere",
+            "passare",
+            "perche",
+            "volere",
+            "sentire",
+            "la",
+            "notizia"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Marco aiuta nei giorni pieni. Non è tanto, ma è un posto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "marco",
+            "aiutare",
+            "nei",
+            "giorno",
+            "pieno",
+            "non",
+            "essere",
+            "tanto",
+            "ma",
+            "essere",
+            "un",
+            "posto"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Bene. Non sei più solo a cercare. Hai qualcosa di vero.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "non",
+            "essere",
+            "piu",
+            "solo",
+            "a",
+            "cercare",
+            "avere",
+            "qualcosa",
+            "di",
+            "vero"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Marco ha detto poco. Sì. Grazie. Poi ha guardato l’orario di Giulia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "dire",
+            "poco",
+            "si_yes",
+            "grazie",
+            "poi",
+            "avere",
+            "guardare",
+            "orario",
+            "di",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Giulia ha fatto vedere i giorni: sabato pieno, e qualche sera della settimana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "fare",
+            "vedere",
+            "i",
+            "giorno",
+            "sabato",
+            "pieno",
+            "e",
+            "qualche",
+            "sera",
+            "della",
+            "settimana"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Tu vieni quando la sala è piena. Io organizzo. Luca ha le sue ore.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "venire",
+            "quando",
+            "la",
+            "sala",
+            "essere",
+            "pieno",
+            "io",
+            "organizzare",
+            "luca",
+            "avere",
+            "le",
+            "suo",
+            "ora"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
+          "text": "Chiaro. Io faccio quello che serve, e niente di più.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiaro",
+            "io",
+            "fare",
+            "quello",
+            "che",
+            "servire",
+            "e",
+            "niente",
+            "di",
+            "piu"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Proviamo due settimane. Poi guardiamo i clienti e i soldi.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "provare",
+            "due",
+            "settimana",
+            "poi",
+            "guardare",
+            "i",
+            "cliente",
+            "e",
+            "i",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Nessuno ha detto che il caffè era sicuro per sempre. Ma oggi funzionava meglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "avere",
+            "dire",
+            "che",
+            "il",
+            "caffe",
+            "essere",
+            "sicuro",
+            "per",
+            "sempre",
+            "ma",
+            "oggi",
+            "funzionare",
+            "meglio"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Luca ha visto le ore nuove sul suo orario: più lavoro, ma non tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "vedere",
+            "le",
+            "ora",
+            "nuovo",
+            "sul",
+            "suo",
+            "orario",
+            "piu",
+            "lavorare",
+            "ma",
+            "non",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Lunedì e mercoledì sera restavano liberi, come aveva detto a Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lunedi",
+            "e",
+            "mercoledi",
+            "sera",
+            "restare",
+            "libero",
+            "come",
+            "avere",
+            "dire",
+            "a",
+            "sofia"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sofia è restata un poco, perché voleva stare lì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "essere",
+            "restare",
+            "un",
+            "poco",
+            "perche",
+            "volere",
+            "stare",
+            "li"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Io sono qui perché voglio. Non solo perché Luca ha un problema.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "qui",
+            "perche",
+            "volere",
+            "non",
+            "solo",
+            "perche",
+            "luca",
+            "avere",
+            "un",
+            "problema"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Lo so. E mi piace.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "e",
+            "mi",
+            "piacere"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Marco ha preso un po’ d’acqua e ha chiesto dell’orario di sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "prendere",
+            "un",
+            "poco",
+            "acqua",
+            "e",
+            "avere",
+            "chiedere",
+            "orario",
+            "di",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "La sera i quattro hanno mangiato vicino al caffè, con pane e qualcosa da bere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "i",
+            "quattro",
+            "avere",
+            "mangiare",
+            "vicino",
+            "al",
+            "caffe",
+            "con",
+            "pane",
+            "e",
+            "qualcosa",
+            "dare",
+            "bere"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Era una cena dopo un giorno lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "cena",
+            "dopo",
+            "un",
+            "giorno",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Il caffè resta. Marco aiuta. Luca ha un orario chiaro. Io organizzo.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "caffe",
+            "restare",
+            "marco",
+            "aiutare",
+            "luca",
+            "avere",
+            "un",
+            "orario",
+            "chiaro",
+            "io",
+            "organizzare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s40",
+          "text": "Anch’io sono qui perché scelgo.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "essere",
+            "qui",
+            "perche",
+            "scegliere"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "A Roma, allora. E a questo lavoro piccolo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "roma",
+            "allora",
+            "e",
+            "a",
+            "questo",
+            "lavorare",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Luca ha ascoltato. La vita del gruppo sembrava più sicura, ma non chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ascoltare",
+            "la",
+            "vita",
+            "del",
+            "gruppo",
+            "sembrare",
+            "piu",
+            "sicuro",
+            "ma",
+            "non",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Quando è tornato a casa, ha visto un messaggio della mamma sul telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "essere",
+            "tornare",
+            "a",
+            "casa",
+            "avere",
+            "vedere",
+            "un",
+            "messaggio",
+            "della",
+            "mamma",
+            "sul",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Ti chiamo domani. Ho una proposta di lavoro. Non è a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ti",
+            "chiamare",
+            "domani",
+            "avere",
+            "una",
+            "proposta",
+            "di",
+            "lavorare",
+            "non",
+            "essere",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Luca ha letto le parole due volte. Non ha risposto subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "leggere",
+            "le",
+            "parola",
+            "due",
+            "volta",
+            "non",
+            "avere",
+            "rispondere",
+            "subito"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Ha messo il telefono sul tavolo e ha guardato l’orario di Giulia, già pronto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "mettere",
+            "il",
+            "telefono",
+            "sul",
+            "tavolo",
+            "e",
+            "avere",
+            "guardare",
+            "orario",
+            "di",
+            "giulia",
+            "gia",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Domani c’era la chiamata. Oggi c’era un posto per Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "ce",
+            "la",
+            "chiamata",
+            "oggi",
+            "ce",
+            "un",
+            "posto",
+            "per",
+            "marco"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Prima di dormire ha scritto a Sofia: Domani parla la mamma. Ti dico dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "dormire",
+            "avere",
+            "scrivere",
+            "a",
+            "sofia",
+            "domani",
+            "parlare",
+            "la",
+            "mamma",
+            "ti",
+            "dire",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Poi ha chiuso la luce. Il caffè restava. Il futuro, ancora aperto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "avere",
+            "chiudere",
+            "la",
+            "luce",
+            "il",
+            "caffe",
+            "restare",
+            "il",
+            "futuro",
+            "ancora",
+            "aprire"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch39_q01",
+      "type": "event",
+      "question": "What opportunity does Marco get?",
+      "choices": [
+        "A few paid hours helping at the café on busy days",
+        "He becomes the new owner",
+        "A permanent full-time office job"
+      ],
+      "correctChoice": 0,
+      "explanation": "Busy-day help: few hours, little money, a start.",
+      "chapterId": "luca-a-roma-39",
+      "difficulty": 2
+    },
+    {
+      "id": "ch39_q02",
+      "type": "inference",
+      "question": "Why is Marco’s work only a foothold?",
+      "choices": [
+        "It is few hours and little money, tried for two weeks, not a big permanent job",
+        "He already owns two cafés",
+        "Sofia pays his rent forever"
+      ],
+      "correctChoice": 0,
+      "explanation": "The owner frames it as a small trial.",
+      "chapterId": "luca-a-roma-39",
+      "difficulty": 2
+    },
+    {
+      "id": "ch39_q03",
+      "type": "character",
+      "question": "How is the group’s schedule changing?",
+      "choices": [
+        "Luca has clearer hours with some free evenings; Giulia organizes; Marco helps when busy",
+        "Everyone stops working",
+        "The café closes on weekdays"
+      ],
+      "correctChoice": 0,
+      "explanation": "Partial hours + organizing + Marco’s busy-day role.",
+      "chapterId": "luca-a-roma-39",
+      "difficulty": 2
+    }
+  ]
+}

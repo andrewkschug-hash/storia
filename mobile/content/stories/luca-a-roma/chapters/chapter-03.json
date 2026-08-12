@@ -1,0 +1,255 @@
+{
+  "id": "luca-a-roma-03",
+  "storyId": "luca-a-roma",
+  "number": 3,
+  "title": "A place to stay",
+  "titleIt": "Un posto",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "roma",
+    "centro",
+    "strada"
+  ],
+  "characterIds": [
+    "luca"
+  ],
+  "events": [
+    {
+      "id": "ev-03-search-home",
+      "summary": "Luca looks for a small apartment near the center; money is tight.",
+      "characterIds": [
+        "luca"
+      ],
+      "locationIds": [
+        "roma",
+        "centro"
+      ],
+      "rememberedFacts": [
+        "Luca needs an apartment",
+        "Luca wants something near the center",
+        "Apartments cost a lot"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca cerca un posto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "un",
+            "posto"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca cerca una casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "una",
+            "casa"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca vuole un appartamento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "un",
+            "appartamento"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Vuole un appartamento piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "un",
+            "appartamento",
+            "piccolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Luca cammina molto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "camminare",
+            "molto"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Cammina per la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "per",
+            "la",
+            "strada"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Cerca vicino al centro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cercare",
+            "vicino",
+            "al",
+            "centro"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Un appartamento costa molto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "appartamento",
+            "costare",
+            "molto"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Luca non ha molti soldi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "avere",
+            "molto",
+            "soldi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s10",
+          "text": "Luca è stanco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Ma Luca vuole una casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "luca",
+            "volere",
+            "una",
+            "casa"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Domani cerca ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "cercare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca vuole un posto a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "un",
+            "posto",
+            "a",
+            "roma"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch03_q01",
+      "chapterId": "luca-a-roma-03",
+      "type": "direct",
+      "question": "What is Luca looking for?",
+      "choices": [
+        "A place to live near the center",
+        "A train ticket",
+        "A restaurant job"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca searches for an apartment or house near the city center.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch03_q02",
+      "chapterId": "luca-a-roma-03",
+      "type": "event",
+      "question": "What problem does Luca face while looking?",
+      "choices": [
+        "Housing costs a lot",
+        "There are no streets",
+        "The bar is closed"
+      ],
+      "correctChoice": 0,
+      "explanation": "Places near the center cost a lot, and Luca has few soldi.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch03_q03",
+      "chapterId": "luca-a-roma-03",
+      "type": "character",
+      "question": "How much money does Luca have?",
+      "choices": [
+        "Not much",
+        "A lot",
+        "Enough for any apartment"
+      ],
+      "correctChoice": 0,
+      "explanation": "He has few soldi, so expensive apartments are a problem.",
+      "difficulty": 1
+    }
+  ]
+}

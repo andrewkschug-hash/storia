@@ -1,0 +1,685 @@
+{
+  "id": "luca-a-roma-24",
+  "storyId": "luca-a-roma",
+  "number": 24,
+  "title": "Sunday",
+  "titleIt": "La domenica",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "appartamento-luca",
+    "quartiere",
+    "lavoro-caffe"
+  ],
+  "characterIds": [
+    "luca",
+    "nonna-rosa"
+  ],
+  "events": [
+    {
+      "id": "ev-24-sunday",
+      "summary": "A quiet Sunday; Luca calls home and thinks about his new life.",
+      "characterIds": [
+        "luca",
+        "nonna-rosa"
+      ],
+      "locationIds": [
+        "appartamento-luca"
+      ],
+      "rememberedFacts": [
+        "Luca calls his family on Sunday",
+        "He is happy in Rome"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Oggi è domenica e Luca non lavora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "domenica",
+            "e",
+            "luca",
+            "non",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca si sveglia tardi e prepara il caffè a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "si",
+            "svegliare",
+            "tardi",
+            "e",
+            "preparare",
+            "il",
+            "caffe",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "La domenica è tranquilla nel quartiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "domenica",
+            "essere",
+            "tranquillo",
+            "nel",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca guarda la strada dalla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "strada",
+            "dalla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Poi Luca pensa alla famiglia e al telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "luca",
+            "pensare",
+            "alla",
+            "famiglia",
+            "e",
+            "al",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca chiama Nonna Rosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "chiamare",
+            "nonna",
+            "rosa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s07",
+          "text": "Pronto?",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "pronto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Ciao, Nonna. Sono Luca.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "nonna",
+            "essere",
+            "luca"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Ciao, Luca! Come stai?",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca",
+            "come",
+            "stare"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Bene, grazie. Sto bene a Roma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "grazie",
+            "stare",
+            "bene",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Ho una casa e un lavoro al caffè.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "una",
+            "casa",
+            "e",
+            "un",
+            "lavoro",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sono felice qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "felice",
+            "qui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Bene, Luca. Sono contenta.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Hai amici a Roma?",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "amico",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sì, ho Sofia, Giulia e Marco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "avere",
+            "sofia",
+            "giulia",
+            "e",
+            "marco"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Sono gentili e mi aiutano.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "gentile",
+            "e",
+            "mi",
+            "aiutare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Nonna Rosa ascolta e sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "ascoltare",
+            "e",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Ti voglio bene, Nonna.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ti",
+            "volere",
+            "bene",
+            "nonna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s19",
+          "text": "Anche io ti voglio bene, Luca.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "io",
+            "ti",
+            "volere",
+            "bene",
+            "luca"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Bene. La tua vita a Roma è bella.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "la",
+            "tuo",
+            "vita",
+            "a",
+            "roma",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Luca guarda la piazza dal telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "piazza",
+            "dal",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Ieri Luca è andato al negozio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "luca",
+            "essere",
+            "andare",
+            "al",
+            "negozio"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Oggi resta a casa e parla con la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "restare",
+            "a",
+            "casa",
+            "e",
+            "parlare",
+            "con",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "La domenica è importante per Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "domenica",
+            "essere",
+            "importante",
+            "per",
+            "luca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Dopo la chiamata Luca cammina nel quartiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "la",
+            "chiamata",
+            "luca",
+            "camminare",
+            "nel",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Vede la piazza e il caffè dove lavora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vedere",
+            "la",
+            "piazza",
+            "e",
+            "il",
+            "caffe",
+            "dove",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Roma è casa adesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "roma",
+            "essere",
+            "casa",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Luca torna al suo appartamento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "tornare",
+            "al",
+            "suo",
+            "appartamento"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "La sera è tranquilla e Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "essere",
+            "tranquillo",
+            "e",
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Domani c'è un nuovo lunedì di lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "ce",
+            "un",
+            "nuovo",
+            "lunedi",
+            "di",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Luca pensa alla settimana e al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "pensare",
+            "alla",
+            "settimana",
+            "e",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La famiglia è lontana, ma Luca sta bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "lontano",
+            "ma",
+            "luca",
+            "stare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Nonna Rosa è contenta per Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "essere",
+            "contento",
+            "per",
+            "luca"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Luca beve un caffè e guarda la piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "bere",
+            "un",
+            "caffe",
+            "e",
+            "guardare",
+            "la",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La domenica a Roma è tranquilla e bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "domenica",
+            "a",
+            "roma",
+            "essere",
+            "tranquillo",
+            "e",
+            "bello"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Luca legge e beve caffè a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "leggere",
+            "e",
+            "bere",
+            "caffe",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "La chiamata con Nonna Rosa è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "chiamata",
+            "con",
+            "nonna",
+            "rosa",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Luca è felice con la sua vita a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice",
+            "con",
+            "la",
+            "suo",
+            "vita",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Domani Luca torna al lavoro con i suoi amici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "luca",
+            "tornare",
+            "al",
+            "lavoro",
+            "con",
+            "i",
+            "suo",
+            "amico"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "La domenica aiuta Luca a pensare e a stare bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "domenica",
+            "aiutare",
+            "luca",
+            "a",
+            "pensare",
+            "e",
+            "a",
+            "stare",
+            "bene"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch24_q01",
+      "chapterId": "luca-a-roma-24",
+      "type": "event",
+      "question": "What does Luca do on Sunday?",
+      "questionIt": "Cosa fa Luca la domenica?",
+      "choices": [
+        "He calls his family and rests",
+        "He works a long shift at the café",
+        "He leaves Rome on a train"
+      ],
+      "correctChoice": 0,
+      "explanation": "On domenica Luca does not work; he calls Nonna Rosa and stays home.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch24_q02",
+      "chapterId": "luca-a-roma-24",
+      "type": "character",
+      "question": "Who does Luca talk to on the phone?",
+      "choices": [
+        "Nonna Rosa",
+        "Marco",
+        "The café owner"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca chiama Nonna Rosa and tells her about his life in Rome.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch24_q03",
+      "chapterId": "luca-a-roma-24",
+      "type": "inference",
+      "question": "What does the sentence about yesterday suggest?",
+      "choices": [
+        "Luca is starting to use past tense in the story",
+        "Luca is moving back home",
+        "The café closed forever"
+      ],
+      "correctChoice": 0,
+      "explanation": "\"Ieri Luca è andato al negozio\" is a light past-tense moment before A2 chapters.",
+      "difficulty": 2
+    }
+  ]
+}

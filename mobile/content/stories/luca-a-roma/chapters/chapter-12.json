@@ -1,0 +1,270 @@
+{
+  "id": "luca-a-roma-12",
+  "storyId": "luca-a-roma",
+  "number": 12,
+  "title": "A problem",
+  "titleIt": "Un problema",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "lavoro-caffe",
+    "roma"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco"
+  ],
+  "events": [
+    {
+      "id": "ev-12-marco-problem",
+      "summary": "Marco needs money for a ticket and feels stressed about work.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Marco has a money problem",
+        "Marco needs a ticket",
+        "Marco is tired and stressed"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Marco torna al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "tornare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Marco non è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "non",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Marco ha un problema.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "un",
+            "problema"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca e Sofia ascoltano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "sofia",
+            "ascoltare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Non ho soldi.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Devo comprare un biglietto.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "comprare",
+            "un",
+            "biglietto"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Il lavoro è difficile.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "lavoro",
+            "essere",
+            "difficile"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Sono stanco.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "stanco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Che cosa fai?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "cosa",
+            "fare"
+          ],
+          "phrases": [
+            {
+              "surface": "Che cosa fai?",
+              "literalEn": "What thing do you do?",
+              "naturalEn": "What are you doing? / What’s going on?",
+              "tokenStart": 0,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Non lo so.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere"
+          ],
+          "phrases": [
+            {
+              "surface": "Non lo so",
+              "literalEn": "I do not know it",
+              "naturalEn": "I don't know",
+              "tokenStart": 0,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Non ho tempo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sofia vuole aiutare Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "volere",
+            "aiutare",
+            "marco"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca vuole aiutare Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "aiutare",
+            "marco"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch12_q01",
+      "chapterId": "luca-a-roma-12",
+      "type": "event",
+      "question": "What problem does Marco have?",
+      "questionIt": "Qual è il problema di Marco?",
+      "choices": [
+        "He needs money for a ticket",
+        "He lost his apartment key",
+        "He hates the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "Marco needs money for a ticket and feels stressed.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch12_q02",
+      "chapterId": "luca-a-roma-12",
+      "type": "character",
+      "question": "How does Marco seem?",
+      "questionIt": "Come sta Marco?",
+      "choices": [
+        "Tired and unsure",
+        "Happy and relaxed",
+        "Angry at Luca"
+      ],
+      "correctChoice": 0,
+      "explanation": "He is tired and says “Non lo so,” showing he is unsure.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch12_q03",
+      "chapterId": "luca-a-roma-12",
+      "type": "direct",
+      "question": "What phrase shows Marco does not know what to do?",
+      "choices": [
+        "“Non lo so”",
+        "“Ci vediamo”",
+        "“Buongiorno”"
+      ],
+      "correctChoice": 0,
+      "explanation": "Marco says “Non lo so” when he cannot see a clear solution.",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "activeProvider": "elevenlabs",
+  "generationVersion": 1,
+  "characters": {
+    "luca": {
+      "provider": "elevenlabs",
+      "voiceId": "N2lVS1w4EtoT3dr4eOWO",
+      "voiceName": "Callum - Husky Trickster",
+      "language": "it-IT",
+      "speakingStyle": "young Italian male",
+      "gender": "male"
+    },
+    "sofia": {
+      "provider": "elevenlabs",
+      "voiceId": "FGY2WhTYpPnrIDTdsKH5",
+      "voiceName": "Laura - Enthusiast, Quirky Attitude",
+      "language": "it-IT",
+      "speakingStyle": "young Italian female",
+      "gender": "female"
+    },
+    "marco": {
+      "provider": "elevenlabs",
+      "voiceId": "SOYHLrjzK2X1ezoPC6cr",
+      "voiceName": "Harry - Fierce Warrior",
+      "language": "it-IT",
+      "speakingStyle": "young Italian male, slightly more reserved",
+      "gender": "male"
+    },
+    "giulia": {
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "language": "it-IT",
+      "speakingStyle": "young Italian female, clear and bright",
+      "gender": "female"
+    },
+    "nonna-rosa": {
+      "provider": "elevenlabs",
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative",
+      "language": "it-IT",
+      "speakingStyle": "older Italian female, warm"
+    },
+    "narrator": {
+      "provider": "elevenlabs",
+      "voiceId": "onwK4e9ZLuTAKqWW03F9",
+      "voiceName": "Daniel - Steady Broadcaster",
+      "language": "it-IT",
+      "speakingStyle": "clear Italian narrative",
+      "gender": "male"
+    },
+    "padrone": {
+      "provider": "elevenlabs",
+      "voiceId": "cjVigY5qzO86Huf0OWal",
+      "voiceName": "Eric - Smooth, Trustworthy",
+      "language": "it-IT",
+      "speakingStyle": "middle-aged Italian male, direct",
+      "gender": "male"
+    }
+  }
+}

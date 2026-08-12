@@ -1,0 +1,735 @@
+{
+  "id": "luca-a-roma-25",
+  "storyId": "luca-a-roma",
+  "number": 25,
+  "title": "Fewer people",
+  "titleIt": "Meno persone",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe",
+    "appartamento-luca"
+  ],
+  "characterIds": [
+    "luca",
+    "giulia",
+    "padrone"
+  ],
+  "events": [
+    {
+      "id": "ev-25-empty",
+      "summary": "The café has fewer customers and the owner looks worried.",
+      "characterIds": [
+        "luca",
+        "giulia",
+        "padrone"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Fewer customers come",
+        "Luca worries about rent"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Lunedì mattina il caffè era diverso dal solito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lunedi",
+            "mattina",
+            "il",
+            "caffe",
+            "essere",
+            "diverso",
+            "dal",
+            "solito"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "C’erano meno clienti e la sala era tranquilla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "meno",
+            "cliente",
+            "e",
+            "la",
+            "sala",
+            "essere",
+            "tranquillo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca è arrivato presto e ha aperto la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "arrivare",
+            "presto",
+            "e",
+            "avere",
+            "aprire",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ha guardato la sala e i tavoli vuoti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "guardare",
+            "la",
+            "sala",
+            "e",
+            "i",
+            "tavolo",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ha preparato i tavoli con calma come sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "preparare",
+            "i",
+            "tavolo",
+            "con",
+            "calma",
+            "come",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Poi ha aspettato i clienti vicino alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "avere",
+            "aspettare",
+            "i",
+            "cliente",
+            "vicino",
+            "alla",
+            "porta"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Quella mattina sono entrati solo pochi clienti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quello",
+            "mattina",
+            "essere",
+            "entrare",
+            "solo",
+            "poco",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Giulia ha guardato i tavoli e non ha sorriso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "guardare",
+            "i",
+            "tavolo",
+            "e",
+            "non",
+            "avere",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Questa settimana è strana. Quasi nessuno entra.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "settimana",
+            "essere",
+            "strano",
+            "quasi",
+            "nessuno",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Dipende dal tempo, forse.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dipendere",
+            "dal",
+            "tempo",
+            "forse"
+          ],
+          "phrases": [
+            {
+              "surface": "Dipende",
+              "literalEn": "it depends",
+              "naturalEn": "it depends",
+              "tokenStart": 0,
+              "tokenEnd": 0
+            }
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Fuori non faceva freddo quel giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "non",
+            "fare",
+            "freddo",
+            "quello",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il problema sembrava un altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "problema",
+            "sembrare",
+            "un",
+            "altro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Il padrone è arrivato tardi quella mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "essere",
+            "arrivare",
+            "tardi",
+            "quello",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Ha guardato i tavoli vuoti per un tempo lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "guardare",
+            "i",
+            "tavolo",
+            "vuoto",
+            "per",
+            "un",
+            "tempo",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non ha detto niente ai colleghi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "dire",
+            "niente",
+            "ai",
+            "collega"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Questo era peggio di una domanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "peggio",
+            "di",
+            "una",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Lavoriamo. Vediamo come va la giornata.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "lavorare",
+            "vedere",
+            "come",
+            "andare",
+            "la",
+            "giornata"
+          ],
+          "phrases": [
+            {
+              "surface": "Vediamo",
+              "literalEn": "we see",
+              "naturalEn": "we’ll see",
+              "tokenStart": 1,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Luca ha servito i pochi clienti con calma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "servire",
+            "i",
+            "poco",
+            "cliente",
+            "con",
+            "calma"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Ha portato caffè e ha ascoltato le loro voci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "portare",
+            "caffe",
+            "e",
+            "avere",
+            "ascoltare",
+            "le",
+            "loro",
+            "voce"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Ogni cliente era importante quel giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ogni",
+            "cliente",
+            "essere",
+            "importante",
+            "quello",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Ogni conto era importante per il caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ogni",
+            "conto",
+            "essere",
+            "importante",
+            "per",
+            "il",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Nel pomeriggio la sala restava ancora quasi vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "la",
+            "sala",
+            "restare",
+            "ancora",
+            "quasi",
+            "vuoto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s23",
+          "text": "Il padrone è preoccupato. Io lo vedo.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "padrone",
+            "essere",
+            "preoccupato",
+            "io",
+            "lo",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Anch’io. Se il caffè va male, il mio lavoro va male.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "se",
+            "il",
+            "caffe",
+            "andare",
+            "ma",
+            "il",
+            "mio",
+            "lavorare",
+            "andare",
+            "ma"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Luca ha pensato al tempo e al lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "pensare",
+            "al",
+            "tempo",
+            "e",
+            "al",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Ha pensato anche ad un altro problema.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "pensare",
+            "anche",
+            "a",
+            "un",
+            "altro",
+            "problema"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Perché ci sono così pochi clienti adesso?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "perche",
+            "ci",
+            "essere",
+            "cosi",
+            "poco",
+            "cliente",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Non lo sapeva e voleva capire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere",
+            "e",
+            "volere",
+            "capire"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Alla sera il padrone ha chiamato Luca e Giulia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "sera",
+            "il",
+            "padrone",
+            "avere",
+            "chiamare",
+            "luca",
+            "e",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Domani mattina parliamo. È importante.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "mattina",
+            "parlare",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Non ha detto altro in quel momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "dire",
+            "altro",
+            "in",
+            "quello",
+            "momento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s32",
+          "text": "La sera Luca è tornato a casa e ha contato i soldi per l’affitto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "luca",
+            "essere",
+            "tornare",
+            "a",
+            "casa",
+            "e",
+            "avere",
+            "contare",
+            "i",
+            "soldi",
+            "per",
+            "affitto"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Aveva abbastanza per questo mese, ma non per tanti mesi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "abbastanza",
+            "per",
+            "questo",
+            "mese",
+            "ma",
+            "non",
+            "per",
+            "tanto",
+            "mese"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Si è seduto vicino alla finestra e ha pensato al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "essere",
+            "sedere",
+            "vicino",
+            "alla",
+            "finestra",
+            "e",
+            "avere",
+            "pensare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Prima di dormire ha scritto un messaggio a Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "dormire",
+            "avere",
+            "scrivere",
+            "un",
+            "messaggio",
+            "a",
+            "sofia"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Ha detto solo che il lavoro era strano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "dire",
+            "solo",
+            "che",
+            "il",
+            "lavorare",
+            "essere",
+            "strano"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Sofia ha risposto tardi: “Va bene. Parliamo presto.”",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "rispondere",
+            "tardi",
+            "andare",
+            "bene",
+            "parlare",
+            "presto"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Luca ha letto il messaggio due volte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "leggere",
+            "il",
+            "messaggio",
+            "due",
+            "volta"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Domani al caffè voleva capire di più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "al",
+            "caffe",
+            "volere",
+            "capire",
+            "di",
+            "piu"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch25_q01",
+      "chapterId": "luca-a-roma-25",
+      "type": "event",
+      "question": "What is different at the café?",
+      "choices": [
+        "There are fewer customers",
+        "The café is full",
+        "Luca loses his key"
+      ],
+      "correctChoice": 0,
+      "explanation": "Many tables stay empty.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch25_q02",
+      "chapterId": "luca-a-roma-25",
+      "type": "character",
+      "question": "Who looks worried without saying much?",
+      "choices": [
+        "The owner",
+        "Sofia",
+        "Marco"
+      ],
+      "correctChoice": 0,
+      "explanation": "The padrone looks at empty tables and says little.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch25_q03",
+      "chapterId": "luca-a-roma-25",
+      "type": "inference",
+      "question": "Why does Luca count his money?",
+      "choices": [
+        "Because rent still matters if work goes badly",
+        "Because he wants a new train ticket",
+        "Because Sofia asked for money"
+      ],
+      "correctChoice": 0,
+      "explanation": "He has enough for this month, not for many months.",
+      "difficulty": 2
+    }
+  ]
+}

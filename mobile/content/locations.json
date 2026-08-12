@@ -1,0 +1,63 @@
+{
+  "locations": [
+    {
+      "id": "roma",
+      "name": "Roma",
+      "city": "Roma",
+      "description": "The city where Luca begins his new life."
+    },
+    {
+      "id": "stazione",
+      "name": "La stazione",
+      "city": "Roma",
+      "description": "The train station where Luca arrives."
+    },
+    {
+      "id": "bar-centrale",
+      "name": "Bar Centrale",
+      "city": "Roma",
+      "description": "A small neighborhood bar where Luca meets Sofia."
+    },
+    {
+      "id": "appartamento-luca",
+      "name": "L'appartamento di Luca",
+      "city": "Roma",
+      "description": "Luca's small apartment near the center."
+    },
+    {
+      "id": "quartiere",
+      "name": "Il quartiere",
+      "city": "Roma",
+      "description": "Sofia's neighborhood with shops, streets, and familiar faces."
+    },
+    {
+      "id": "lavoro-caffe",
+      "name": "Il caffè",
+      "city": "Roma",
+      "description": "The café where Luca finds work."
+    },
+    {
+      "id": "casa-nonna",
+      "name": "Casa di Nonna Rosa",
+      "city": "Roma",
+      "description": "Nonna Rosa's warm home in the neighborhood."
+    },
+    {
+      "id": "centro",
+      "name": "Il centro",
+      "city": "Roma",
+      "description": "The busy center of Rome."
+    },
+    {
+      "id": "strada",
+      "name": "La strada",
+      "city": "Roma",
+      "description": "The streets Luca walks every day."
+    },
+    {
+      "id": "fuori-roma",
+      "name": "Fuori Roma",
+      "description": "Places outside Rome visited during the group's trip."
+    }
+  ]
+}

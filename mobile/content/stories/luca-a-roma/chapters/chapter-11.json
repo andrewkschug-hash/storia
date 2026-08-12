@@ -1,0 +1,260 @@
+{
+  "id": "luca-a-roma-11",
+  "storyId": "luca-a-roma",
+  "number": 11,
+  "title": "Marco",
+  "titleIt": "Marco",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "lavoro-caffe",
+    "roma"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "giulia"
+  ],
+  "events": [
+    {
+      "id": "ev-11-meet-marco",
+      "summary": "Sofia brings her friend Marco to the café; Luca meets him.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Marco is Sofia’s friend",
+        "Luca meets Marco at the café"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca lavora nel caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "lavorare",
+            "nel",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Giulia lavora con Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "lavorare",
+            "con",
+            "luca"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sofia arriva al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "arrivare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Con Sofia c'è Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "con",
+            "sofia",
+            "ce",
+            "marco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Marco è un amico di Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "essere",
+            "un",
+            "amico",
+            "di",
+            "sofia"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ciao, sono Marco.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "essere",
+            "marco"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ciao, sono Luca.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "essere",
+            "luca"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Come stai?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "stare"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Bene.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s10",
+          "text": "Prendiamo un caffè insieme.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "prendere",
+            "un",
+            "caffe",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sì, va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "andare",
+            "bene"
+          ],
+          "phrases": [
+            {
+              "surface": "va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay / all right",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca conosce Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "conoscere",
+            "marco"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il gruppo è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "gruppo",
+            "essere",
+            "felice"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch11_q01",
+      "chapterId": "luca-a-roma-11",
+      "type": "character",
+      "question": "Who does Luca meet at the café in this chapter?",
+      "questionIt": "Chi incontra Luca al caffè?",
+      "choices": [
+        "Marco, Sofia’s friend",
+        "A new padrone",
+        "Only tourists"
+      ],
+      "correctChoice": 0,
+      "explanation": "Sofia brings her friend Marco; Luca meets him.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch11_q02",
+      "chapterId": "luca-a-roma-11",
+      "type": "direct",
+      "question": "How is Marco connected to Sofia?",
+      "choices": [
+        "He is her friend",
+        "He is her boss",
+        "He is a stranger to her"
+      ],
+      "correctChoice": 0,
+      "explanation": "Marco is introduced as Sofia’s friend.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch11_q03",
+      "chapterId": "luca-a-roma-11",
+      "type": "event",
+      "question": "Where does the meeting with Marco happen?",
+      "questionIt": "Dove incontrano Marco?",
+      "choices": [
+        "At the café",
+        "At the station",
+        "At Nonna Rosa’s house"
+      ],
+      "correctChoice": 0,
+      "explanation": "They meet at the café where Luca works.",
+      "difficulty": 1
+    }
+  ]
+}

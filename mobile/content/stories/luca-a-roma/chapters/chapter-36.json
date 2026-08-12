@@ -1,0 +1,1085 @@
+{
+  "id": "luca-a-roma-36",
+  "storyId": "luca-a-roma",
+  "number": 36,
+  "title": "Luca speaks",
+  "titleIt": "Luca parla",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe"
+  ],
+  "characterIds": [
+    "luca",
+    "giulia",
+    "sofia",
+    "marco",
+    "padrone",
+    "nonna-rosa"
+  ],
+  "events": [
+    {
+      "id": "ev-36-speak",
+      "summary": "Luca asks people to return on ordinary weekdays; Sofia stands as an equal friend; the owner responds to what he saw today.",
+      "characterIds": [
+        "luca",
+        "giulia",
+        "sofia",
+        "marco",
+        "padrone",
+        "nonna-rosa"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Luca asks people to come back on normal weekdays, not only for the festa",
+        "Sofia supports him as an equal friend",
+        "The owner says today worked and will talk about hours tomorrow"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Più tardi, quando la sala era piena, Giulia ha fatto un segno a Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "piu",
+            "tardi",
+            "quando",
+            "la",
+            "sala",
+            "essere",
+            "pieno",
+            "giulia",
+            "avere",
+            "fare",
+            "un",
+            "segno",
+            "a",
+            "luca"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Parla. Due parole. Le persone sono qui anche per questo posto.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "parlare",
+            "due",
+            "parola",
+            "le",
+            "persona",
+            "essere",
+            "qui",
+            "anche",
+            "per",
+            "questo",
+            "posto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Io? Non so. Ho paura.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "sapere",
+            "avere",
+            "paura"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ci pensiamo noi, se vuoi. Ma mi sembra che tu puoi.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "pensare",
+            "noi",
+            "se",
+            "volere",
+            "ma",
+            "mi",
+            "sembrare",
+            "che",
+            "tu",
+            "potere"
+          ],
+          "phrases": [
+            {
+              "surface": "Mi sembra",
+              "literalEn": "it seems to me",
+              "naturalEn": "it seems to me",
+              "tokenStart": 6,
+              "tokenEnd": 7
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Luca ha guardato Nonna Rosa. Lei ha sorriso e ha detto: “Va bene così.”",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "guardare",
+            "nonna",
+            "rosa",
+            "lei",
+            "avere",
+            "sorridere",
+            "e",
+            "avere",
+            "dire",
+            "andare",
+            "bene",
+            "cosi"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 11,
+              "tokenEnd": 12
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Allora Luca si è fermato nella sala, vicino ai tavoli pieni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "allora",
+            "luca",
+            "si",
+            "essere",
+            "fermare",
+            "nella",
+            "sala",
+            "vicino",
+            "ai",
+            "tavolo",
+            "pieno"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Buona sera. Io lavoro qui. Qualche mese fa sono arrivato a Roma, solo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "sera",
+            "io",
+            "lavorare",
+            "qui",
+            "qualche",
+            "mese",
+            "fare",
+            "essere",
+            "arrivare",
+            "a",
+            "roma",
+            "solo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Adesso ho una casa, un lavoro e amici. Questo caffè è una parte di tutto questo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "avere",
+            "una",
+            "casa",
+            "un",
+            "lavorare",
+            "e",
+            "amico",
+            "questo",
+            "caffe",
+            "essere",
+            "una",
+            "partire",
+            "di",
+            "tutto",
+            "questo"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Se vi piace, tornate. Non solo oggi. Anche lunedì, anche giovedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "voi",
+            "piacere",
+            "tornare",
+            "non",
+            "solo",
+            "oggi",
+            "anche",
+            "lunedi",
+            "anche",
+            "giovedi"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Abbiamo bisogno di persone nei giorni della settimana. Non solo di una festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "bisogno",
+            "di",
+            "persona",
+            "nei",
+            "giorno",
+            "della",
+            "settimana",
+            "non",
+            "solo",
+            "di",
+            "una",
+            "festa"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Qualche persona ha sorriso. Qualche persona ha detto “bene” piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualche",
+            "persona",
+            "avere",
+            "sorridere",
+            "qualche",
+            "persona",
+            "avere",
+            "dire",
+            "bene",
+            "piano"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il padrone ascoltava vicino alla cucina, senza parlare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "ascoltare",
+            "vicino",
+            "alla",
+            "cucina",
+            "senza",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Marco ha portato un caffè a Nonna Rosa, e lei ha ascoltato Luca bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "portare",
+            "un",
+            "caffe",
+            "a",
+            "nonna",
+            "rosa",
+            "e",
+            "lei",
+            "avere",
+            "ascoltare",
+            "luca",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s14",
+          "text": "Dopo le parole, la festa è continuata. La musica non era troppo forte. Le persone restavano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "le",
+            "parola",
+            "la",
+            "festa",
+            "essere",
+            "continuare",
+            "la",
+            "musica",
+            "non",
+            "essere",
+            "troppo",
+            "forte",
+            "le",
+            "persona",
+            "restare"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Hai detto poco, e hai detto tanto. Va bene.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "dire",
+            "poco",
+            "e",
+            "avere",
+            "dire",
+            "tanto",
+            "andare",
+            "bene"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 7,
+              "tokenEnd": 8
+            }
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Il padrone ti ha ascoltato. L’ho visto.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "padrone",
+            "ti",
+            "avere",
+            "ascoltare",
+            "avere",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Va bene. Io volevo solo dire una cosa vera.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "io",
+            "volere",
+            "solo",
+            "dire",
+            "una",
+            "cosa",
+            "vero"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Una famiglia ha chiesto l’orario della settimana. Giulia ha spiegato, contenta di fare di più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "famiglia",
+            "avere",
+            "chiedere",
+            "orario",
+            "della",
+            "settimana",
+            "giulia",
+            "avere",
+            "spiegare",
+            "contento",
+            "di",
+            "fare",
+            "di",
+            "piu"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Sofia era vicino a Luca, non come una persona che aiuta un ragazzo nuovo, ma come un’amica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "essere",
+            "vicino",
+            "a",
+            "luca",
+            "non",
+            "come",
+            "una",
+            "persona",
+            "che",
+            "aiutare",
+            "un",
+            "ragazzo",
+            "nuovo",
+            "ma",
+            "come",
+            "amico"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Hai chiesto la cosa giusta. Tornare, non solo stare qui un giorno.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "chiedere",
+            "la",
+            "cosa",
+            "giusto",
+            "tornare",
+            "non",
+            "solo",
+            "stare",
+            "qui",
+            "un",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Sì. Se tornano, il padrone vede lavoro. Se no, resta un giorno bello.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "se",
+            "tornare",
+            "il",
+            "padrone",
+            "vedere",
+            "lavorare",
+            "se",
+            "no",
+            "restare",
+            "un",
+            "giorno",
+            "bello"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Quando la luce è cambiata, qualche persona è partita, e qualche persona è restata ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "la",
+            "luce",
+            "essere",
+            "cambiare",
+            "qualche",
+            "persona",
+            "essere",
+            "partire",
+            "e",
+            "qualche",
+            "persona",
+            "essere",
+            "restare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Il padrone ha chiamato Luca vicino alla cucina, con voce non forte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "avere",
+            "chiamare",
+            "luca",
+            "vicino",
+            "alla",
+            "cucina",
+            "con",
+            "voce",
+            "non",
+            "forte"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Oggi il caffè ha funzionato. Ho visto i tavoli. Ho visto le persone.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "il",
+            "caffe",
+            "avere",
+            "funzionare",
+            "avere",
+            "vedere",
+            "i",
+            "tavolo",
+            "avere",
+            "vedere",
+            "le",
+            "persona"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Non so ancora tutto. Ma oggi sì. Hai chiesto bene.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "sapere",
+            "ancora",
+            "tutto",
+            "ma",
+            "oggi",
+            "si_yes",
+            "avere",
+            "chiedere",
+            "bene"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Grazie per aver detto sì a questa festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "per",
+            "avere",
+            "dire",
+            "si_yes",
+            "a",
+            "questo",
+            "festa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
+          "text": "Voi avete fatto il lavoro. Io ho solo aperto la cucina.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "voi",
+            "avere",
+            "fare",
+            "il",
+            "lavorare",
+            "io",
+            "avere",
+            "solo",
+            "aprire",
+            "la",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Luca ha ascoltato. Il padrone non parlava del futuro. Parlava di oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ascoltare",
+            "il",
+            "padrone",
+            "non",
+            "parlare",
+            "del",
+            "futuro",
+            "parlare",
+            "di",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "E Giulia?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Anche lei. Domani parliamo di ore e di lavoro. Non adesso.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "lei",
+            "domani",
+            "parlare",
+            "di",
+            "ora",
+            "e",
+            "di",
+            "lavorare",
+            "non",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Giulia ha sentito e ha fatto un piccolo segno a Luca: più tardi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "sentire",
+            "e",
+            "avere",
+            "fare",
+            "un",
+            "piccolo",
+            "segno",
+            "a",
+            "luca",
+            "piu",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Sofia ha detto a Luca di bere acqua e di restare un momento fermo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "dire",
+            "a",
+            "luca",
+            "di",
+            "bere",
+            "acqua",
+            "e",
+            "di",
+            "restare",
+            "un",
+            "momento",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Hai parlato chiaro. Adesso lasciamo lavorare la sala.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "parlare",
+            "chiaro",
+            "adesso",
+            "lasciare",
+            "lavorare",
+            "la",
+            "sala"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Marco ha lavato i piatti e ha detto poco, come sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "lavare",
+            "i",
+            "piatto",
+            "e",
+            "avere",
+            "dire",
+            "poco",
+            "come",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La gente resta. Questo aiuta più di tante parole.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "gente",
+            "restare",
+            "questo",
+            "aiutare",
+            "piu",
+            "di",
+            "tanto",
+            "parola"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Hai ragione.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ragione"
+          ],
+          "phrases": [
+            {
+              "surface": "Hai ragione",
+              "literalEn": "you have reason",
+              "naturalEn": "you’re right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Nonna Rosa ha pagato il caffè e ha detto che tornava giovedì, se poteva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "avere",
+            "pagare",
+            "il",
+            "caffe",
+            "e",
+            "avere",
+            "dire",
+            "che",
+            "tornare",
+            "giovedi",
+            "se",
+            "potere"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il padrone ha sentito quella cosa e ha guardato il conto di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "avere",
+            "sentire",
+            "quello",
+            "cosa",
+            "e",
+            "avere",
+            "guardare",
+            "il",
+            "conto",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Tornate. Lavoriamo. Vediamo la settimana.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tornare",
+            "lavorare",
+            "vedere",
+            "la",
+            "settimana"
+          ],
+          "phrases": [
+            {
+              "surface": "Vediamo",
+              "literalEn": "we see",
+              "naturalEn": "we’ll see",
+              "tokenStart": 2,
+              "tokenEnd": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s40",
+          "text": "Sofia ha sorriso, vera, non come una persona che spiega tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "sorridere",
+            "vero",
+            "non",
+            "come",
+            "una",
+            "persona",
+            "che",
+            "spiegare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Quando la festa era più piccola, il padrone ha chiuso un poco la musica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "la",
+            "festa",
+            "essere",
+            "piu",
+            "piccolo",
+            "il",
+            "padrone",
+            "avere",
+            "chiudere",
+            "un",
+            "poco",
+            "la",
+            "musica"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Oggi è abbastanza. Domani è lunedì. Lavoriamo.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "abbastanza",
+            "domani",
+            "essere",
+            "lunedi",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Luca ha aiutato a mettere i piatti in cucina e ha pensato alle ore di Giulia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "aiutare",
+            "a",
+            "mettere",
+            "i",
+            "piatto",
+            "in",
+            "cucina",
+            "e",
+            "avere",
+            "pensare",
+            "alle",
+            "ora",
+            "di",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Il sì del padrone non c’era ancora sul futuro. C’era sul giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "si_yes",
+            "del",
+            "padrone",
+            "non",
+            "ce",
+            "ancora",
+            "sul",
+            "futuro",
+            "ce",
+            "sul",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Domani sentiamo il padrone. Oggi abbiamo fatto abbastanza.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "sentire",
+            "il",
+            "padrone",
+            "oggi",
+            "avere",
+            "fare",
+            "abbastanza"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Sì. Oggi le persone sono arrivate. Domani chiediamo il resto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "oggi",
+            "le",
+            "persona",
+            "essere",
+            "arrivare",
+            "domani",
+            "chiedere",
+            "il",
+            "restare"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Sofia ha guardato la sala ancora piena e ha parlato piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "guardare",
+            "la",
+            "sala",
+            "ancora",
+            "pieno",
+            "e",
+            "avere",
+            "parlare",
+            "piano"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Oggi conta. Domani vediamo le ore.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "contare",
+            "domani",
+            "vedere",
+            "le",
+            "ora"
+          ],
+          "phrases": [
+            {
+              "surface": "Vediamo",
+              "literalEn": "we see",
+              "naturalEn": "we’ll see",
+              "tokenStart": 3,
+              "tokenEnd": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch36_q01",
+      "chapterId": "luca-a-roma-36",
+      "type": "event",
+      "question": "What does Luca ask for?",
+      "choices": [
+        "That people return on ordinary weekdays, not only for one festa",
+        "That the café be sold",
+        "That Marco leave Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "His request is about normal life continuing.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch36_q02",
+      "chapterId": "luca-a-roma-36",
+      "type": "character",
+      "question": "How is Sofia with Luca in this chapter?",
+      "choices": [
+        "As an equal friend, not a magical helper",
+        "As his boss",
+        "As a stranger"
+      ],
+      "correctChoice": 0,
+      "explanation": "She stands with him as a friend and keeps him practical.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch36_q03",
+      "chapterId": "luca-a-roma-36",
+      "type": "inference",
+      "question": "Why does the owner respond more openly?",
+      "choices": [
+        "Because he saw full tables and people today",
+        "Because Luca gave a long inspirational speech about journeys",
+        "Because Marco bought the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "He responds to what he actually saw.",
+      "difficulty": 2
+    }
+  ]
+}

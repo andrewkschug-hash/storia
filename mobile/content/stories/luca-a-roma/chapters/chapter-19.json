@@ -1,0 +1,286 @@
+{
+  "id": "luca-a-roma-19",
+  "storyId": "luca-a-roma",
+  "number": 19,
+  "title": "Solving it",
+  "titleIt": "Risolvere",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "fuori-roma"
+  ],
+  "characterIds": [
+    "luca",
+    "sofia",
+    "marco",
+    "giulia"
+  ],
+  "events": [
+    {
+      "id": "ev-19-solve",
+      "summary": "Together they find the suitcase and ticket and solve the problem.",
+      "characterIds": [
+        "luca",
+        "sofia",
+        "marco",
+        "giulia"
+      ],
+      "locationIds": [
+        "fuori-roma"
+      ],
+      "rememberedFacts": [
+        "The group solves the problem together",
+        "They find the ticket and the suitcase"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il gruppo vuole risolvere il problema.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "gruppo",
+            "volere",
+            "risolvere",
+            "il",
+            "problema"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca cerca nella valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "nella",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Aspetta, la valigia è qui.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare",
+            "la",
+            "valigia",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Giulia trova la valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "trovare",
+            "la",
+            "valigia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Il biglietto è nella valigia.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "biglietto",
+            "essere",
+            "nella",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ecco il biglietto!",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "ecco",
+            "il",
+            "biglietto"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Insieme risolviamo il problema.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "insieme",
+            "risolvere",
+            "il",
+            "problema"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Sì, insieme è facile.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "insieme",
+            "essere",
+            "facile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Il treno parte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "treno",
+            "partire"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il gruppo è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "gruppo",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Marco dice grazie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "dire",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Grazie, amici.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "amico"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ci vediamo a Roma.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "vedere",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il problema è risolto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "problema",
+            "essere",
+            "risolvere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Ieri Luca è andato in città con Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "luca",
+            "essere",
+            "andare",
+            "in",
+            "citta",
+            "con",
+            "sofia"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch19_q01",
+      "chapterId": "luca-a-roma-19",
+      "type": "event",
+      "question": "How is the problem solved?",
+      "questionIt": "Come risolvono il problema?",
+      "choices": [
+        "They find the suitcase and ticket together",
+        "They abandon Marco",
+        "They buy a new train"
+      ],
+      "correctChoice": 0,
+      "explanation": "Working together, they find the valigia and the ticket.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch19_q02",
+      "chapterId": "luca-a-roma-19",
+      "type": "character",
+      "question": "Who solves the problem?",
+      "questionIt": "Chi risolve il problema?",
+      "choices": [
+        "The friends, together",
+        "Only the train conductor alone",
+        "Only Nonna Rosa from Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "They resolve it as a group.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch19_q03",
+      "chapterId": "luca-a-roma-19",
+      "type": "sequence",
+      "question": "What comes after they find what was missing?",
+      "questionIt": "Cosa succede dopo?",
+      "choices": [
+        "The problem is resolved",
+        "They get stuck forever",
+        "They start a new job on the train"
+      ],
+      "correctChoice": 0,
+      "explanation": "Finding the suitcase and ticket means the crisis is over.",
+      "difficulty": 2
+    }
+  ]
+}

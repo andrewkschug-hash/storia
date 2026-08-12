@@ -1,0 +1,253 @@
+{
+  "id": "luca-a-roma-01",
+  "storyId": "luca-a-roma",
+  "number": 1,
+  "title": "Arrival",
+  "titleIt": "Arrivo",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "roma",
+    "stazione",
+    "bar-centrale"
+  ],
+  "characterIds": [
+    "luca"
+  ],
+  "events": [
+    {
+      "id": "ev-01-arrive",
+      "summary": "Luca arrives in Rome, tired and hungry, and enters a bar.",
+      "characterIds": [
+        "luca"
+      ],
+      "locationIds": [
+        "roma",
+        "stazione",
+        "bar-centrale"
+      ],
+      "rememberedFacts": [
+        "Luca is in Rome",
+        "Luca is tired and hungry",
+        "Luca finds a bar near the station"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca arriva a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "arrivare",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "È alla stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "alla",
+            "stazione"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "È mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca è stanco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "stanco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Luca ha fame.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "fame"
+          ],
+          "phrases": [
+            {
+              "surface": "ha fame",
+              "literalEn": "has hunger",
+              "naturalEn": "is hungry",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca vuole mangiare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "mangiare"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Luca cerca un bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "un",
+            "bar"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "C'è un bar vicino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "bar",
+            "vicino"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Luca va al bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "al",
+            "bar"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca entra nel bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "entrare",
+            "nel",
+            "bar"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Buongiorno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca vuole qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca mangia qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "mangiare",
+            "qualcosa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch01_q01",
+      "chapterId": "luca-a-roma-01",
+      "type": "direct",
+      "question": "Where does Luca arrive?",
+      "choices": [
+        "In Rome",
+        "In Milan",
+        "In Naples"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca arrives in Rome and goes to the station.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch01_q02",
+      "chapterId": "luca-a-roma-01",
+      "type": "character",
+      "question": "How does Luca feel when he arrives?",
+      "choices": [
+        "Tired and hungry",
+        "Angry and busy",
+        "Calm and full"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca is stanco (tired) and has fame (is hungry).",
+      "difficulty": 1
+    },
+    {
+      "id": "ch01_q03",
+      "chapterId": "luca-a-roma-01",
+      "type": "event",
+      "question": "What does Luca do near the station?",
+      "choices": [
+        "He enters a bar",
+        "He buys a ticket home",
+        "He finds an apartment"
+      ],
+      "correctChoice": 0,
+      "explanation": "Looking for something to eat, Luca finds a bar nearby, goes in, and eats.",
+      "difficulty": 1
+    }
+  ]
+}

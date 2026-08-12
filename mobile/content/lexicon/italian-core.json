@@ -1,0 +1,5692 @@
+{
+  "lexicon": [
+    {
+      "lemmaId": "essere",
+      "italian": "essere",
+      "english": "to be",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "sono",
+        "sei",
+        "è",
+        "siamo",
+        "siete",
+        "ero",
+        "eri",
+        "era",
+        "eravamo",
+        "eravate",
+        "erano",
+        "stato",
+        "stata",
+        "stati",
+        "state"
+      ]
+    },
+    {
+      "lemmaId": "avere",
+      "italian": "avere",
+      "english": "to have",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "ho",
+        "hai",
+        "ha",
+        "abbiamo",
+        "avete",
+        "hanno",
+        "avevo",
+        "avevi",
+        "aveva",
+        "avevamo",
+        "avevate",
+        "avevano",
+        "avuto",
+        "avuta",
+        "avuti",
+        "aver",
+        "avrebbero"
+      ]
+    },
+    {
+      "lemmaId": "andare",
+      "italian": "andare",
+      "english": "to go",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "vado",
+        "vai",
+        "va",
+        "andiamo",
+        "andate",
+        "vanno",
+        "andato",
+        "andata",
+        "andati",
+        "andavo",
+        "andava",
+        "andremo",
+        "andrà",
+        "andando"
+      ]
+    },
+    {
+      "lemmaId": "fare",
+      "italian": "fare",
+      "english": "to do / to make",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12,
+      "inflections": [
+        "faccio",
+        "fai",
+        "fa",
+        "facciamo",
+        "fate",
+        "fanno",
+        "fatto",
+        "fatta",
+        "facevo",
+        "faceva",
+        "facendo",
+        "farò",
+        "faremo",
+        "far",
+        "facevano"
+      ]
+    },
+    {
+      "lemmaId": "dire",
+      "italian": "dire",
+      "english": "to say / to tell",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 14,
+      "inflections": [
+        "dico",
+        "dici",
+        "dice",
+        "diciamo",
+        "dite",
+        "dicono",
+        "detto",
+        "dicevo",
+        "diceva",
+        "dicendo",
+        "dirò",
+        "dir"
+      ]
+    },
+    {
+      "lemmaId": "potere",
+      "italian": "potere",
+      "english": "to be able to / can",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 7,
+      "inflections": [
+        "posso",
+        "puoi",
+        "può",
+        "possiamo",
+        "potete",
+        "possono",
+        "potevo",
+        "poteva",
+        "potuto",
+        "potremo",
+        "potrà",
+        "potevi",
+        "potevano"
+      ]
+    },
+    {
+      "lemmaId": "volere",
+      "italian": "volere",
+      "english": "to want",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "voglio",
+        "vuoi",
+        "vuole",
+        "vogliamo",
+        "volete",
+        "vogliono",
+        "volevo",
+        "voleva",
+        "voluto",
+        "vorrei",
+        "vorrebbe",
+        "volevano"
+      ]
+    },
+    {
+      "lemmaId": "dovere",
+      "italian": "dovere",
+      "english": "to have to / must",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12,
+      "inflections": [
+        "devo",
+        "devi",
+        "deve",
+        "dobbiamo",
+        "dovete",
+        "devono",
+        "dovevo",
+        "doveva",
+        "dovuto",
+        "dovremo",
+        "dovrà",
+        "dovevano",
+        "dovremmo"
+      ]
+    },
+    {
+      "lemmaId": "sapere",
+      "italian": "sapere",
+      "english": "to know (facts)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8,
+      "inflections": [
+        "so",
+        "sai",
+        "sa",
+        "sappiamo",
+        "sapete",
+        "sanno",
+        "sapevo",
+        "sapeva",
+        "saputo",
+        "saprò"
+      ],
+      "notes": "Contrast with conoscere (to know people/places)."
+    },
+    {
+      "lemmaId": "vedere",
+      "italian": "vedere",
+      "english": "to see",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2,
+      "inflections": [
+        "vedo",
+        "vedi",
+        "vede",
+        "vediamo",
+        "vedete",
+        "vedono",
+        "visto",
+        "vedevo",
+        "vedeva",
+        "vedendo",
+        "vedrò",
+        "visti"
+      ]
+    },
+    {
+      "lemmaId": "dare",
+      "italian": "dare",
+      "english": "to give",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 13,
+      "inflections": [
+        "do",
+        "dai",
+        "dà",
+        "diamo",
+        "date",
+        "danno",
+        "dato",
+        "data",
+        "davo",
+        "dava",
+        "darò"
+      ]
+    },
+    {
+      "lemmaId": "stare",
+      "italian": "stare",
+      "english": "to stay / to be (health/state; Come stai?)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2,
+      "inflections": [
+        "sto",
+        "stai",
+        "sta",
+        "stiamo",
+        "state",
+        "stanno",
+        "stavo",
+        "stava",
+        "stavamo",
+        "stando",
+        "starò"
+      ]
+    },
+    {
+      "lemmaId": "venire",
+      "italian": "venire",
+      "english": "to come",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 28,
+      "inflections": [
+        "vengo",
+        "vieni",
+        "viene",
+        "veniamo",
+        "venite",
+        "vengono",
+        "venuto",
+        "venuta",
+        "venivo",
+        "veniva",
+        "verrà"
+      ]
+    },
+    {
+      "lemmaId": "prendere",
+      "italian": "prendere",
+      "english": "to take",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 11,
+      "inflections": [
+        "prendo",
+        "prendi",
+        "prende",
+        "prendiamo",
+        "prendete",
+        "prendono",
+        "preso",
+        "prendevo",
+        "prendeva"
+      ]
+    },
+    {
+      "lemmaId": "parlare",
+      "italian": "parlare",
+      "english": "to speak / to talk",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 9,
+      "inflections": [
+        "parlo",
+        "parli",
+        "parla",
+        "parliamo",
+        "parlate",
+        "parlano",
+        "parlato",
+        "parlavo",
+        "parlava",
+        "parlando",
+        "parlavano"
+      ]
+    },
+    {
+      "lemmaId": "mangiare",
+      "italian": "mangiare",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "mangio",
+        "mangi",
+        "mangia",
+        "mangiamo",
+        "mangiate",
+        "mangiano",
+        "mangiato",
+        "mangiavo",
+        "mangiava"
+      ]
+    },
+    {
+      "lemmaId": "bere",
+      "italian": "bere",
+      "english": "to drink",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 38,
+      "inflections": [
+        "bevo",
+        "bevi",
+        "beve",
+        "beviamo",
+        "bevete",
+        "bevono",
+        "bevuto",
+        "bevevo",
+        "beveva"
+      ]
+    },
+    {
+      "lemmaId": "lavorare",
+      "italian": "lavorare",
+      "english": "to work",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 9,
+      "inflections": [
+        "lavoro",
+        "lavori",
+        "lavora",
+        "lavoriamo",
+        "lavorate",
+        "lavorano",
+        "lavorato",
+        "lavoravo",
+        "lavorava",
+        "lavorando"
+      ]
+    },
+    {
+      "lemmaId": "abitare",
+      "italian": "abitare",
+      "english": "to live (reside)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2,
+      "inflections": [
+        "abito",
+        "abiti",
+        "abita",
+        "abitiamo",
+        "abitate",
+        "abitano"
+      ]
+    },
+    {
+      "lemmaId": "cercare",
+      "italian": "cercare",
+      "english": "to look for",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "cerco",
+        "cerchi",
+        "cerca",
+        "cerchiamo",
+        "cercate",
+        "cercano",
+        "cercato",
+        "cercavo",
+        "cercava",
+        "cercando"
+      ]
+    },
+    {
+      "lemmaId": "trovare",
+      "italian": "trovare",
+      "english": "to find",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4,
+      "inflections": [
+        "trovo",
+        "trovi",
+        "trova",
+        "troviamo",
+        "trovate",
+        "trovano",
+        "trovato",
+        "trovavo",
+        "trovava"
+      ]
+    },
+    {
+      "lemmaId": "guardare",
+      "italian": "guardare",
+      "english": "to look / to watch",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 17,
+      "inflections": [
+        "guardo",
+        "guardi",
+        "guarda",
+        "guardiamo",
+        "guardate",
+        "guardano",
+        "guardato",
+        "guardava"
+      ]
+    },
+    {
+      "lemmaId": "camminare",
+      "italian": "camminare",
+      "english": "to walk",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 2,
+      "inflections": [
+        "cammino",
+        "cammini",
+        "cammina",
+        "camminiamo",
+        "camminate",
+        "camminano",
+        "camminato",
+        "camminava",
+        "camminavano"
+      ]
+    },
+    {
+      "lemmaId": "entrare",
+      "italian": "entrare",
+      "english": "to enter",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "entro",
+        "entri",
+        "entra",
+        "entriamo",
+        "entrate",
+        "entrano",
+        "entrato",
+        "entrata",
+        "entrava",
+        "entravano"
+      ]
+    },
+    {
+      "lemmaId": "uscire",
+      "italian": "uscire",
+      "english": "to go out",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21,
+      "inflections": [
+        "esco",
+        "esci",
+        "esce",
+        "usciamo",
+        "uscite",
+        "escono",
+        "uscito",
+        "uscita",
+        "uscivo",
+        "usciva"
+      ]
+    },
+    {
+      "lemmaId": "arrivare",
+      "italian": "arrivare",
+      "english": "to arrive",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "arrivo",
+        "arrivi",
+        "arriva",
+        "arriviamo",
+        "arrivate",
+        "arrivano",
+        "arrivato",
+        "arrivata",
+        "arrivava",
+        "arrivando",
+        "arrivati",
+        "arriveranno"
+      ]
+    },
+    {
+      "lemmaId": "partire",
+      "italian": "partire",
+      "english": "to leave / to depart",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 14,
+      "inflections": [
+        "parto",
+        "parti",
+        "parte",
+        "partiamo",
+        "partite",
+        "partono",
+        "partito",
+        "partita",
+        "partiva"
+      ]
+    },
+    {
+      "lemmaId": "aiutare",
+      "italian": "aiutare",
+      "english": "to help",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 7,
+      "inflections": [
+        "aiuto",
+        "aiuti",
+        "aiuta",
+        "aiutiamo",
+        "aiutate",
+        "aiutano",
+        "aiutato",
+        "aiutava",
+        "aiutando",
+        "aiutati"
+      ]
+    },
+    {
+      "lemmaId": "conoscere",
+      "italian": "conoscere",
+      "english": "to know / to meet (people, places)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5,
+      "inflections": [
+        "conosco",
+        "conosci",
+        "conosce",
+        "conosciamo",
+        "conoscete",
+        "conoscono",
+        "conosciuto",
+        "conoscevo",
+        "conosceva"
+      ]
+    },
+    {
+      "lemmaId": "chiamarsi",
+      "italian": "chiamarsi",
+      "english": "to be called",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "mi chiamo",
+        "ti chiami",
+        "si chiama",
+        "ci chiamiamo",
+        "vi chiamate",
+        "si chiamano"
+      ]
+    },
+    {
+      "lemmaId": "sentire",
+      "italian": "sentire",
+      "english": "to hear / to feel",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 26,
+      "inflections": [
+        "sento",
+        "senti",
+        "sente",
+        "sentiamo",
+        "sentite",
+        "sentono",
+        "sentito",
+        "sentivo",
+        "sentiva"
+      ]
+    },
+    {
+      "lemmaId": "tornare",
+      "italian": "tornare",
+      "english": "to return",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 9,
+      "inflections": [
+        "torno",
+        "torni",
+        "torna",
+        "torniamo",
+        "tornate",
+        "tornano",
+        "tornato",
+        "tornata",
+        "tornava"
+      ]
+    },
+    {
+      "lemmaId": "lasciare",
+      "italian": "lasciare",
+      "english": "to leave / to let",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 16,
+      "inflections": [
+        "lascio",
+        "lasci",
+        "lascia",
+        "lasciamo",
+        "lasciate",
+        "lasciano",
+        "lasciato",
+        "lasciava"
+      ]
+    },
+    {
+      "lemmaId": "aspettare",
+      "italian": "aspettare",
+      "english": "to wait",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8,
+      "inflections": [
+        "aspetto",
+        "aspetti",
+        "aspetta",
+        "aspettiamo",
+        "aspettate",
+        "aspettano",
+        "aspettato",
+        "aspettavo",
+        "aspettava",
+        "aspettando",
+        "aspettavamo",
+        "aspettavano"
+      ]
+    },
+    {
+      "lemmaId": "capire",
+      "italian": "capire",
+      "english": "to understand",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 23,
+      "inflections": [
+        "capisco",
+        "capisci",
+        "capisce",
+        "capiamo",
+        "capite",
+        "capiscono",
+        "capito",
+        "capivo",
+        "capiva"
+      ]
+    },
+    {
+      "lemmaId": "chiedere",
+      "italian": "chiedere",
+      "english": "to ask",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8,
+      "inflections": [
+        "chiedo",
+        "chiedi",
+        "chiede",
+        "chiediamo",
+        "chiedete",
+        "chiedono",
+        "chiesto",
+        "chiedevo",
+        "chiedeva"
+      ]
+    },
+    {
+      "lemmaId": "rispondere",
+      "italian": "rispondere",
+      "english": "to answer",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 25,
+      "inflections": [
+        "rispondo",
+        "rispondi",
+        "risponde",
+        "rispondiamo",
+        "rispondete",
+        "rispondono",
+        "risposto",
+        "rispondeva"
+      ]
+    },
+    {
+      "lemmaId": "comprare",
+      "italian": "comprare",
+      "english": "to buy",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12,
+      "inflections": [
+        "comprato",
+        "comprava",
+        "compriamo"
+      ]
+    },
+    {
+      "lemmaId": "pagare",
+      "italian": "pagare",
+      "english": "to pay",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24,
+      "inflections": [
+        "pagato",
+        "pagava",
+        "paghiamo",
+        "paga"
+      ]
+    },
+    {
+      "lemmaId": "aprire",
+      "italian": "aprire",
+      "english": "to open",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 4,
+      "inflections": [
+        "aperto",
+        "aperta",
+        "apriva",
+        "apriamo",
+        "apre",
+        "aperti"
+      ]
+    },
+    {
+      "lemmaId": "chiudere",
+      "italian": "chiudere",
+      "english": "to close",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 16,
+      "inflections": [
+        "chiuso",
+        "chiusa",
+        "chiudeva",
+        "chiudiamo",
+        "chiude"
+      ]
+    },
+    {
+      "lemmaId": "vivere",
+      "italian": "vivere",
+      "english": "to live",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 7,
+      "inflections": [
+        "vissuto",
+        "vivevo",
+        "viveva",
+        "viviamo",
+        "vive",
+        "vivo",
+        "viva"
+      ]
+    },
+    {
+      "lemmaId": "piacere",
+      "italian": "piacere",
+      "english": "to like",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 22,
+      "inflections": [
+        "piace",
+        "piacciono",
+        "piaceva",
+        "piaciuto"
+      ]
+    },
+    {
+      "lemmaId": "portare",
+      "italian": "portare",
+      "english": "to bring / to carry",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 16,
+      "inflections": [
+        "portato",
+        "portava",
+        "portiamo"
+      ]
+    },
+    {
+      "lemmaId": "chiamare",
+      "italian": "chiamare",
+      "english": "to call",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24,
+      "inflections": [
+        "chiamato",
+        "chiamava",
+        "chiamiamo",
+        "chiama",
+        "chiamo"
+      ]
+    },
+    {
+      "lemmaId": "incontrare",
+      "italian": "incontrare",
+      "english": "to meet",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "inflections": [
+        "incontrato",
+        "incontrava",
+        "incontriamo",
+        "incontrati"
+      ]
+    },
+    {
+      "lemmaId": "ascoltare",
+      "italian": "ascoltare",
+      "english": "to listen",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 7,
+      "inflections": [
+        "ascoltato",
+        "ascoltava",
+        "ascoltiamo",
+        "ascoltata",
+        "ascolta",
+        "ascolti",
+        "ascolto"
+      ]
+    },
+    {
+      "lemmaId": "viaggiare",
+      "italian": "viaggiare",
+      "english": "to travel",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 17
+    },
+    {
+      "lemmaId": "presentare",
+      "italian": "presentare",
+      "english": "to introduce",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "costare",
+      "italian": "costare",
+      "english": "to cost",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 3,
+      "inflections": [
+        "costato",
+        "costa",
+        "costava"
+      ]
+    },
+    {
+      "lemmaId": "imparare",
+      "italian": "imparare",
+      "english": "to learn",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22,
+      "inflections": [
+        "imparato",
+        "impari",
+        "imparando",
+        "imparava"
+      ]
+    },
+    {
+      "lemmaId": "cambiare",
+      "italian": "cambiare",
+      "english": "to change",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "inflections": [
+        "cambiato",
+        "cambiava",
+        "cambiamo",
+        "cambia",
+        "cambierà",
+        "cambiar",
+        "cambiata",
+        "cambio",
+        "cambiando"
+      ]
+    },
+    {
+      "lemmaId": "io",
+      "italian": "io",
+      "english": "I",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 13,
+      "inflections": [
+        "me"
+      ]
+    },
+    {
+      "lemmaId": "tu",
+      "italian": "tu",
+      "english": "you (singular)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22,
+      "inflections": [
+        "te"
+      ]
+    },
+    {
+      "lemmaId": "lui",
+      "italian": "lui",
+      "english": "he",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 23
+    },
+    {
+      "lemmaId": "lei",
+      "italian": "lei",
+      "english": "she / you (formal)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22
+    },
+    {
+      "lemmaId": "noi",
+      "italian": "noi",
+      "english": "we",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 28
+    },
+    {
+      "lemmaId": "voi",
+      "italian": "voi",
+      "english": "you (plural)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 35,
+      "inflections": [
+        "vi"
+      ]
+    },
+    {
+      "lemmaId": "loro",
+      "italian": "loro",
+      "english": "they",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 25
+    },
+    {
+      "lemmaId": "mi",
+      "italian": "mi",
+      "english": "me / myself",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22
+    },
+    {
+      "lemmaId": "ti",
+      "italian": "ti",
+      "english": "you / yourself",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 28
+    },
+    {
+      "lemmaId": "si",
+      "italian": "si",
+      "english": "oneself / himself / herself (reflexive pronoun)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "ci",
+      "italian": "ci",
+      "english": "us / ourselves / there",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "questo",
+      "italian": "questo",
+      "english": "this",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6,
+      "inflections": [
+        "questa",
+        "questi",
+        "queste"
+      ]
+    },
+    {
+      "lemmaId": "quello",
+      "italian": "quello",
+      "english": "that",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 26,
+      "inflections": [
+        "quella",
+        "quelli",
+        "quelle",
+        "quel"
+      ]
+    },
+    {
+      "lemmaId": "chi",
+      "italian": "chi",
+      "english": "who",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 35
+    },
+    {
+      "lemmaId": "che",
+      "italian": "che",
+      "english": "that / which / what",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12
+    },
+    {
+      "lemmaId": "niente",
+      "italian": "niente",
+      "english": "nothing",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 25
+    },
+    {
+      "lemmaId": "qualcosa",
+      "italian": "qualcosa",
+      "english": "something",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "qualcuno",
+      "italian": "qualcuno",
+      "english": "someone",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 32
+    },
+    {
+      "lemmaId": "il",
+      "italian": "il",
+      "english": "the (masculine singular)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2
+    },
+    {
+      "lemmaId": "lo",
+      "italian": "lo",
+      "english": "the (masculine singular, special)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12
+    },
+    {
+      "lemmaId": "la",
+      "italian": "la",
+      "english": "the (feminine singular)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2
+    },
+    {
+      "lemmaId": "i",
+      "italian": "i",
+      "english": "the (masculine plural)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "gli",
+      "italian": "gli",
+      "english": "the (masculine plural, special)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24
+    },
+    {
+      "lemmaId": "le",
+      "italian": "le",
+      "english": "the (feminine plural)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "un",
+      "italian": "un",
+      "english": "a / an (masculine)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "uno",
+      "italian": "uno",
+      "english": "a / one (masculine)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "una",
+      "italian": "una",
+      "english": "a / an (feminine)",
+      "partOfSpeech": "article",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "a",
+      "italian": "a",
+      "english": "to / at",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "ad"
+      ]
+    },
+    {
+      "lemmaId": "di",
+      "italian": "di",
+      "english": "of / from",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 11
+    },
+    {
+      "lemmaId": "da",
+      "italian": "da",
+      "english": "from / by",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 17
+    },
+    {
+      "lemmaId": "in",
+      "italian": "in",
+      "english": "in / into",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "su",
+      "italian": "su",
+      "english": "on / about",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 30
+    },
+    {
+      "lemmaId": "con",
+      "italian": "con",
+      "english": "with",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 9
+    },
+    {
+      "lemmaId": "per",
+      "italian": "per",
+      "english": "for / by",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2
+    },
+    {
+      "lemmaId": "tra",
+      "italian": "tra",
+      "english": "between / among",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27
+    },
+    {
+      "lemmaId": "del",
+      "italian": "del",
+      "english": "of the (masc.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "della",
+      "italian": "della",
+      "english": "of the (fem.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "dei",
+      "italian": "dei",
+      "english": "of the (masc. plural)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 23,
+      "inflections": [
+        "degli"
+      ]
+    },
+    {
+      "lemmaId": "delle",
+      "italian": "delle",
+      "english": "of the (fem. plural)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 38
+    },
+    {
+      "lemmaId": "nel",
+      "italian": "nel",
+      "english": "in the (masc.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "nella",
+      "italian": "nella",
+      "english": "in the (fem.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4
+    },
+    {
+      "lemmaId": "nei",
+      "italian": "nei",
+      "english": "in the (masc. plural)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 38
+    },
+    {
+      "lemmaId": "nelle",
+      "italian": "nelle",
+      "english": "in the (fem. plural)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "al",
+      "italian": "al",
+      "english": "to the / at the (masc.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "alla",
+      "italian": "alla",
+      "english": "to the / at the (fem.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "ai",
+      "italian": "ai",
+      "english": "to the (masc. plural)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "inflections": [
+        "agli"
+      ]
+    },
+    {
+      "lemmaId": "alle",
+      "italian": "alle",
+      "english": "to the (fem. plural)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29
+    },
+    {
+      "lemmaId": "dal",
+      "italian": "dal",
+      "english": "from the (masc.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 25
+    },
+    {
+      "lemmaId": "dalla",
+      "italian": "dalla",
+      "english": "from the (fem.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "sul",
+      "italian": "sul",
+      "english": "on the (masc.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 18
+    },
+    {
+      "lemmaId": "sulla",
+      "italian": "sulla",
+      "english": "on the (fem.)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 34
+    },
+    {
+      "lemmaId": "e",
+      "italian": "e",
+      "english": "and",
+      "partOfSpeech": "conjunction",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6
+    },
+    {
+      "lemmaId": "ma",
+      "italian": "ma",
+      "english": "but",
+      "partOfSpeech": "conjunction",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2
+    },
+    {
+      "lemmaId": "o",
+      "italian": "o",
+      "english": "or",
+      "partOfSpeech": "conjunction",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 26
+    },
+    {
+      "lemmaId": "perche",
+      "italian": "perché",
+      "english": "why / because",
+      "partOfSpeech": "conjunction",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 15,
+      "inflections": [
+        "perché",
+        "Perché"
+      ]
+    },
+    {
+      "lemmaId": "se",
+      "italian": "se",
+      "english": "if",
+      "partOfSpeech": "conjunction",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "quando",
+      "italian": "quando",
+      "english": "when",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "dove",
+      "italian": "dove",
+      "english": "where",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 14
+    },
+    {
+      "lemmaId": "come",
+      "italian": "come",
+      "english": "how / like",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5,
+      "inflections": [
+        "com'è",
+        "Com’è",
+        "Com'è"
+      ]
+    },
+    {
+      "lemmaId": "molto",
+      "italian": "molto",
+      "english": "very / a lot",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "anche",
+      "italian": "anche",
+      "english": "also / too",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6,
+      "inflections": [
+        "anch'io",
+        "Anch’io",
+        "Anch'io"
+      ]
+    },
+    {
+      "lemmaId": "gia",
+      "italian": "già",
+      "english": "already",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "ancora",
+      "italian": "ancora",
+      "english": "still / again",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2
+    },
+    {
+      "lemmaId": "qui",
+      "italian": "qui",
+      "english": "here",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "li",
+      "italian": "lì",
+      "english": "there",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 27
+    },
+    {
+      "lemmaId": "ora",
+      "italian": "ora",
+      "english": "now",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 17,
+      "notes": "Also a noun meaning “hour”; story uses adverb sense.",
+      "inflections": [
+        "ore"
+      ]
+    },
+    {
+      "lemmaId": "oggi",
+      "italian": "oggi",
+      "english": "today",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "domani",
+      "italian": "domani",
+      "english": "tomorrow",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "sempre",
+      "italian": "sempre",
+      "english": "always",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 33
+    },
+    {
+      "lemmaId": "mai",
+      "italian": "mai",
+      "english": "never",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 7
+    },
+    {
+      "lemmaId": "bene",
+      "italian": "bene",
+      "english": "well; okay (also in “va bene” = all right)",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2
+    },
+    {
+      "lemmaId": "poco",
+      "italian": "poco",
+      "english": "a little / few",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 13,
+      "inflections": [
+        "po'",
+        "po’",
+        "pochi",
+        "poca",
+        "poche"
+      ]
+    },
+    {
+      "lemmaId": "troppo",
+      "italian": "troppo",
+      "english": "too much",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4,
+      "inflections": [
+        "troppi",
+        "troppa",
+        "troppe"
+      ]
+    },
+    {
+      "lemmaId": "insieme",
+      "italian": "insieme",
+      "english": "together",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 10
+    },
+    {
+      "lemmaId": "solo",
+      "italian": "solo",
+      "english": "only / alone",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22,
+      "inflections": [
+        "sola"
+      ]
+    },
+    {
+      "lemmaId": "poi",
+      "italian": "poi",
+      "english": "then / later",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 18
+    },
+    {
+      "lemmaId": "prima",
+      "italian": "prima",
+      "english": "before / first",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24
+    },
+    {
+      "lemmaId": "dopo",
+      "italian": "dopo",
+      "english": "after",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "non",
+      "italian": "non",
+      "english": "not",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "allora",
+      "italian": "allora",
+      "english": "so / then",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22
+    },
+    {
+      "lemmaId": "adesso",
+      "italian": "adesso",
+      "english": "now",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 14
+    },
+    {
+      "lemmaId": "presto",
+      "italian": "presto",
+      "english": "soon / early",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 14
+    },
+    {
+      "lemmaId": "tardi",
+      "italian": "tardi",
+      "english": "late",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "fuori",
+      "italian": "fuori",
+      "english": "outside",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 17
+    },
+    {
+      "lemmaId": "dentro",
+      "italian": "dentro",
+      "english": "inside",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 26
+    },
+    {
+      "lemmaId": "si_yes",
+      "italian": "sì",
+      "english": "yes (sì)",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "no",
+      "italian": "no",
+      "english": "no",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 15
+    },
+    {
+      "lemmaId": "ciao",
+      "italian": "ciao",
+      "english": "hi / bye",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "buongiorno",
+      "italian": "buongiorno",
+      "english": "good morning",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "scusa",
+      "italian": "scusa",
+      "english": "sorry / excuse me (informal)",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "grazie",
+      "italian": "grazie",
+      "english": "thank you",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "prego",
+      "italian": "prego",
+      "english": "you're welcome / please",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "ecco",
+      "italian": "ecco",
+      "english": "here is / there is",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 19
+    },
+    {
+      "lemmaId": "due",
+      "italian": "due",
+      "english": "two",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 23
+    },
+    {
+      "lemmaId": "tre",
+      "italian": "tre",
+      "english": "three",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 29
+    },
+    {
+      "lemmaId": "luca",
+      "italian": "Luca",
+      "english": "Luca (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "sofia",
+      "italian": "Sofia",
+      "english": "Sofia (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "marco",
+      "italian": "Marco",
+      "english": "Marco (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 11
+    },
+    {
+      "lemmaId": "giulia",
+      "italian": "Giulia",
+      "english": "Giulia (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 10
+    },
+    {
+      "lemmaId": "rosa",
+      "italian": "Rosa",
+      "english": "Rosa (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 15
+    },
+    {
+      "lemmaId": "nonna",
+      "italian": "nonna",
+      "english": "grandmother",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 15
+    },
+    {
+      "lemmaId": "roma",
+      "italian": "Roma",
+      "english": "Rome",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "stazione",
+      "italian": "stazione",
+      "english": "station",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "bar",
+      "italian": "bar",
+      "english": "café / bar",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "appartamento",
+      "italian": "appartamento",
+      "english": "apartment",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "casa",
+      "italian": "casa",
+      "english": "house / home",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3,
+      "inflections": [
+        "case"
+      ]
+    },
+    {
+      "lemmaId": "quartiere",
+      "italian": "quartiere",
+      "english": "neighborhood",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6
+    },
+    {
+      "lemmaId": "caffe",
+      "italian": "caffè",
+      "english": "coffee / café",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "centro",
+      "italian": "centro",
+      "english": "center / downtown",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "strada",
+      "italian": "strada",
+      "english": "street / road",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2,
+      "inflections": [
+        "strade"
+      ]
+    },
+    {
+      "lemmaId": "lavoro",
+      "italian": "lavoro",
+      "english": "work / job",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 7,
+      "inflections": [
+        "lavori"
+      ]
+    },
+    {
+      "lemmaId": "citta",
+      "italian": "città",
+      "english": "city",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 17
+    },
+    {
+      "lemmaId": "treno",
+      "italian": "treno",
+      "english": "train",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 16
+    },
+    {
+      "lemmaId": "telefono",
+      "italian": "telefono",
+      "english": "telephone",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24
+    },
+    {
+      "lemmaId": "messaggio",
+      "italian": "messaggio",
+      "english": "message",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 14,
+      "inflections": [
+        "messaggi"
+      ]
+    },
+    {
+      "lemmaId": "porta",
+      "italian": "porta",
+      "english": "door",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4
+    },
+    {
+      "lemmaId": "chiave",
+      "italian": "chiave",
+      "english": "key",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4,
+      "inflections": [
+        "chiavi"
+      ]
+    },
+    {
+      "lemmaId": "stanza",
+      "italian": "stanza",
+      "english": "room",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4
+    },
+    {
+      "lemmaId": "affitto",
+      "italian": "affitto",
+      "english": "rent",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 4
+    },
+    {
+      "lemmaId": "soldi",
+      "italian": "soldi",
+      "english": "money",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3,
+      "inflections": [
+        "soldo"
+      ]
+    },
+    {
+      "lemmaId": "problema",
+      "italian": "problema",
+      "english": "problem",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12,
+      "inflections": [
+        "problemi"
+      ]
+    },
+    {
+      "lemmaId": "viaggio",
+      "italian": "viaggio",
+      "english": "trip / journey",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 16
+    },
+    {
+      "lemmaId": "piano",
+      "italian": "piano",
+      "english": "floor / plan",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 14,
+      "inflections": [
+        "piani"
+      ]
+    },
+    {
+      "lemmaId": "amico",
+      "italian": "amico",
+      "english": "friend",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 11,
+      "notes": "Used for male singular and mixed plural amici.",
+      "inflections": [
+        "amica",
+        "amici",
+        "amiche"
+      ]
+    },
+    {
+      "lemmaId": "ragazza",
+      "italian": "ragazza",
+      "english": "girl / girlfriend",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22
+    },
+    {
+      "lemmaId": "ragazzo",
+      "italian": "ragazzo",
+      "english": "boy / boyfriend",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 23
+    },
+    {
+      "lemmaId": "mattina",
+      "italian": "mattina",
+      "english": "morning",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "sera",
+      "italian": "sera",
+      "english": "evening",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 20,
+      "inflections": [
+        "sere"
+      ]
+    },
+    {
+      "lemmaId": "giorno",
+      "italian": "giorno",
+      "english": "day",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 10,
+      "inflections": [
+        "giorni"
+      ]
+    },
+    {
+      "lemmaId": "tempo",
+      "italian": "tempo",
+      "english": "time / weather",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12
+    },
+    {
+      "lemmaId": "persona",
+      "italian": "persona",
+      "english": "person",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21,
+      "inflections": [
+        "persone"
+      ]
+    },
+    {
+      "lemmaId": "famiglia",
+      "italian": "famiglia",
+      "english": "family",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24
+    },
+    {
+      "lemmaId": "nome",
+      "italian": "nome",
+      "english": "name",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 40
+    },
+    {
+      "lemmaId": "cosa",
+      "italian": "cosa",
+      "english": "what / thing",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 12,
+      "inflections": [
+        "cose"
+      ]
+    },
+    {
+      "lemmaId": "indirizzo",
+      "italian": "indirizzo",
+      "english": "address",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "piazza",
+      "italian": "piazza",
+      "english": "square / plaza",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6
+    },
+    {
+      "lemmaId": "negozio",
+      "italian": "negozio",
+      "english": "shop / store",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6,
+      "inflections": [
+        "negozi"
+      ]
+    },
+    {
+      "lemmaId": "ristorante",
+      "italian": "ristorante",
+      "english": "restaurant",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 30
+    },
+    {
+      "lemmaId": "ufficio",
+      "italian": "ufficio",
+      "english": "office",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 33
+    },
+    {
+      "lemmaId": "autobus",
+      "italian": "autobus",
+      "english": "bus",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 5
+    },
+    {
+      "lemmaId": "metro",
+      "italian": "metro",
+      "english": "subway / metro",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 6
+    },
+    {
+      "lemmaId": "biglietto",
+      "italian": "biglietto",
+      "english": "ticket",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 12
+    },
+    {
+      "lemmaId": "acqua",
+      "italian": "acqua",
+      "english": "water",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "pizza",
+      "italian": "pizza",
+      "english": "pizza",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "pasta",
+      "italian": "pasta",
+      "english": "pasta",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 38
+    },
+    {
+      "lemmaId": "prezzo",
+      "italian": "prezzo",
+      "english": "price",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 28
+    },
+    {
+      "lemmaId": "euro",
+      "italian": "euro",
+      "english": "euro",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4
+    },
+    {
+      "lemmaId": "domanda",
+      "italian": "domanda",
+      "english": "question",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 25,
+      "inflections": [
+        "domande"
+      ]
+    },
+    {
+      "lemmaId": "italiano",
+      "italian": "italiano",
+      "english": "Italian",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "aiuto",
+      "italian": "aiuto",
+      "english": "help",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 13
+    },
+    {
+      "lemmaId": "posto",
+      "italian": "posto",
+      "english": "place / seat",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3
+    },
+    {
+      "lemmaId": "colloquio",
+      "italian": "colloquio",
+      "english": "interview",
+      "partOfSpeech": "noun",
+      "difficulty": 3,
+      "frequency": "medium",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "capo",
+      "italian": "capo",
+      "english": "boss",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 9
+    },
+    {
+      "lemmaId": "collega",
+      "italian": "collega",
+      "english": "colleague",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "inflections": [
+        "colleghi",
+        "colleghe"
+      ]
+    },
+    {
+      "lemmaId": "padrone",
+      "italian": "padrone",
+      "english": "landlord / owner",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 9
+    },
+    {
+      "lemmaId": "fame",
+      "italian": "fame",
+      "english": "hunger (in “avere fame” = to be hungry)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1
+    },
+    {
+      "lemmaId": "sete",
+      "italian": "sete",
+      "english": "thirst (in “avere sete” = to be thirsty)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 17
+    },
+    {
+      "lemmaId": "appuntamento",
+      "italian": "appuntamento",
+      "english": "appointment / date",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 33
+    },
+    {
+      "lemmaId": "freddo",
+      "italian": "freddo",
+      "english": "cold",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 25
+    },
+    {
+      "lemmaId": "caldo",
+      "italian": "caldo",
+      "english": "hot / warm",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 29,
+      "inflections": [
+        "calda"
+      ]
+    },
+    {
+      "lemmaId": "stanco",
+      "italian": "stanco",
+      "english": "tired",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "stanca",
+        "stanchi",
+        "stanche"
+      ]
+    },
+    {
+      "lemmaId": "felice",
+      "italian": "felice",
+      "english": "happy",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 4,
+      "inflections": [
+        "felici"
+      ]
+    },
+    {
+      "lemmaId": "piccolo",
+      "italian": "piccolo",
+      "english": "small",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 3,
+      "inflections": [
+        "piccola",
+        "piccoli",
+        "piccole"
+      ]
+    },
+    {
+      "lemmaId": "grande",
+      "italian": "grande",
+      "english": "big / great",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2,
+      "inflections": [
+        "grandi"
+      ]
+    },
+    {
+      "lemmaId": "nuovo",
+      "italian": "nuovo",
+      "english": "new",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 5,
+      "inflections": [
+        "nuova",
+        "nuovi",
+        "nuove"
+      ]
+    },
+    {
+      "lemmaId": "vicino",
+      "italian": "vicino",
+      "english": "near / close",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "vicina",
+        "vicini"
+      ]
+    },
+    {
+      "lemmaId": "economico",
+      "italian": "economico",
+      "english": "cheap / affordable",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24
+    },
+    {
+      "lemmaId": "buono",
+      "italian": "buono",
+      "english": "good",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24,
+      "inflections": [
+        "buona",
+        "buoni",
+        "buone"
+      ]
+    },
+    {
+      "lemmaId": "bello",
+      "italian": "bello",
+      "english": "beautiful / nice",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 2,
+      "inflections": [
+        "bella",
+        "belli",
+        "belle"
+      ]
+    },
+    {
+      "lemmaId": "facile",
+      "italian": "facile",
+      "english": "easy",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 13,
+      "inflections": [
+        "facili"
+      ]
+    },
+    {
+      "lemmaId": "difficile",
+      "italian": "difficile",
+      "english": "difficult",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 9,
+      "inflections": [
+        "difficili"
+      ]
+    },
+    {
+      "lemmaId": "importante",
+      "italian": "importante",
+      "english": "important",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 7,
+      "inflections": [
+        "importanti"
+      ]
+    },
+    {
+      "lemmaId": "libero",
+      "italian": "libero",
+      "english": "free / available",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 22,
+      "inflections": [
+        "libera",
+        "liberi"
+      ]
+    },
+    {
+      "lemmaId": "pronto",
+      "italian": "pronto",
+      "english": "ready",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21,
+      "inflections": [
+        "pronta",
+        "pronti"
+      ]
+    },
+    {
+      "lemmaId": "giusto",
+      "italian": "giusto",
+      "english": "right / correct",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "inflections": [
+        "giusta",
+        "giuste",
+        "giusti"
+      ]
+    },
+    {
+      "lemmaId": "sbagliato",
+      "italian": "sbagliato",
+      "english": "wrong",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "primo",
+      "italian": "primo",
+      "english": "first",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 10,
+      "inflections": [
+        "prima",
+        "primi"
+      ]
+    },
+    {
+      "lemmaId": "altro",
+      "italian": "altro",
+      "english": "other / another",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24,
+      "inflections": [
+        "altra",
+        "altri",
+        "altre"
+      ]
+    },
+    {
+      "lemmaId": "ogni",
+      "italian": "ogni",
+      "english": "every / each",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21
+    },
+    {
+      "lemmaId": "tutto",
+      "italian": "tutto",
+      "english": "all / everything",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 20,
+      "inflections": [
+        "tutti",
+        "tutte",
+        "tutta"
+      ]
+    },
+    {
+      "lemmaId": "mio",
+      "italian": "mio",
+      "english": "my / mine",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 6,
+      "inflections": [
+        "mia",
+        "miei",
+        "mie"
+      ]
+    },
+    {
+      "lemmaId": "tuo",
+      "italian": "tuo",
+      "english": "your / yours",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 38,
+      "inflections": [
+        "tua",
+        "tuoi",
+        "tue"
+      ]
+    },
+    {
+      "lemmaId": "suo",
+      "italian": "suo",
+      "english": "his / her / its",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 21,
+      "inflections": [
+        "sua",
+        "suoi",
+        "sue"
+      ]
+    },
+    {
+      "lemmaId": "nostro",
+      "italian": "nostro",
+      "english": "our / ours",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 26,
+      "inflections": [
+        "nostra",
+        "nostri",
+        "nostre"
+      ]
+    },
+    {
+      "lemmaId": "gentile",
+      "italian": "gentile",
+      "english": "kind / polite",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 13,
+      "inflections": [
+        "gentili"
+      ]
+    },
+    {
+      "lemmaId": "simpatico",
+      "italian": "simpatico",
+      "english": "nice / likable",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 5,
+      "inflections": [
+        "simpatica"
+      ]
+    },
+    {
+      "lemmaId": "pulito",
+      "italian": "pulito",
+      "english": "clean",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 4
+    },
+    {
+      "lemmaId": "tranquillo",
+      "italian": "tranquillo",
+      "english": "quiet / calm",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 13,
+      "inflections": [
+        "tranquilla",
+        "tranquilli"
+      ]
+    },
+    {
+      "lemmaId": "rumoroso",
+      "italian": "rumoroso",
+      "english": "noisy",
+      "partOfSpeech": "adjective",
+      "difficulty": 3,
+      "frequency": "low",
+      "introducedChapter": 38,
+      "inflections": [
+        "rumorosa"
+      ]
+    },
+    {
+      "lemmaId": "sicuro",
+      "italian": "sicuro",
+      "english": "sure / safe",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 24,
+      "inflections": [
+        "sicura"
+      ]
+    },
+    {
+      "lemmaId": "ce",
+      "italian": "c'è",
+      "english": "there is / there are (c’è)",
+      "partOfSpeech": "expression",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "notes": "Written c’è; plural often ci sono (not separate lemma yet).",
+      "inflections": [
+        "c'è",
+        "C'è",
+        "c'era",
+        "c'erano"
+      ]
+    },
+    {
+      "lemmaId": "opportunita",
+      "italian": "opportunità",
+      "english": "opportunity",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 9
+    },
+    {
+      "lemmaId": "idea",
+      "italian": "idea",
+      "english": "idea",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 13
+    },
+    {
+      "lemmaId": "valigia",
+      "italian": "valigia",
+      "english": "suitcase",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 16
+    },
+    {
+      "lemmaId": "sorpresa",
+      "italian": "sorpresa",
+      "english": "surprise",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 18
+    },
+    {
+      "lemmaId": "risolvere",
+      "italian": "risolvere",
+      "english": "to solve",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 19,
+      "inflections": [
+        "risolvo",
+        "risolvi",
+        "risolve",
+        "risolviamo",
+        "risolto",
+        "risolveva",
+        "risolvendo"
+      ]
+    },
+    {
+      "lemmaId": "gruppo",
+      "italian": "gruppo",
+      "english": "group",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 11
+    },
+    {
+      "lemmaId": "momento",
+      "italian": "momento",
+      "english": "moment",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 8
+    },
+    {
+      "lemmaId": "dove_e",
+      "italian": "dov'è",
+      "english": "where is",
+      "partOfSpeech": "expression",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 18,
+      "notes": "Contraction of dove + è; one token in text.",
+      "inflections": [
+        "dov'è",
+        "Dov'è"
+      ]
+    },
+    {
+      "lemmaId": "iniziare",
+      "italian": "iniziare",
+      "english": "to begin / to start",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 16,
+      "inflections": [
+        "inizio",
+        "inizi",
+        "inizia",
+        "iniziamo",
+        "iniziato",
+        "iniziava",
+        "iniziando",
+        "iniziata"
+      ]
+    },
+    {
+      "lemmaId": "passare",
+      "italian": "passare",
+      "english": "to pass / to go by",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 17,
+      "inflections": [
+        "passo",
+        "passi",
+        "passa",
+        "passiamo",
+        "passato",
+        "passava",
+        "passando",
+        "passata"
+      ]
+    },
+    {
+      "lemmaId": "ieri",
+      "italian": "ieri",
+      "english": "yesterday",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "settimana",
+      "italian": "settimana",
+      "english": "week",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "settimane"
+      ]
+    },
+    {
+      "lemmaId": "mese",
+      "italian": "mese",
+      "english": "month",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "mesi"
+      ]
+    },
+    {
+      "lemmaId": "sabato",
+      "italian": "sabato",
+      "english": "Saturday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "domenica",
+      "italian": "domenica",
+      "english": "Sunday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "pomeriggio",
+      "italian": "pomeriggio",
+      "english": "afternoon",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "notte",
+      "italian": "notte",
+      "english": "night",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "forse",
+      "italian": "forse",
+      "english": "maybe",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "quindi",
+      "italian": "quindi",
+      "english": "so / therefore",
+      "partOfSpeech": "conjunction",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "pero",
+      "italian": "però",
+      "english": "but / however",
+      "partOfSpeech": "conjunction",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "però",
+        "Però"
+      ]
+    },
+    {
+      "lemmaId": "mentre",
+      "italian": "mentre",
+      "english": "while",
+      "partOfSpeech": "conjunction",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "senza",
+      "italian": "senza",
+      "english": "without",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "cosi",
+      "italian": "così",
+      "english": "so / like this",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "così",
+        "Così"
+      ]
+    },
+    {
+      "lemmaId": "quasi",
+      "italian": "quasi",
+      "english": "almost",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "abbastanza",
+      "italian": "abbastanza",
+      "english": "enough / quite",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "davvero",
+      "italian": "davvero",
+      "english": "really",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "magari",
+      "italian": "magari",
+      "english": "maybe / I wish",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "stesso",
+      "italian": "stesso",
+      "english": "same",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "stessa",
+        "stessi",
+        "stesse"
+      ]
+    },
+    {
+      "lemmaId": "volta",
+      "italian": "volta",
+      "english": "time (occasion)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "volte"
+      ]
+    },
+    {
+      "lemmaId": "cliente",
+      "italian": "cliente",
+      "english": "customer",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "clienti"
+      ]
+    },
+    {
+      "lemmaId": "tavolo",
+      "italian": "tavolo",
+      "english": "table",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "tavoli"
+      ]
+    },
+    {
+      "lemmaId": "conto",
+      "italian": "conto",
+      "english": "bill / account",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "conti"
+      ]
+    },
+    {
+      "lemmaId": "festa",
+      "italian": "festa",
+      "english": "party / celebration",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "notizia",
+      "italian": "notizia",
+      "english": "news",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "notizie"
+      ]
+    },
+    {
+      "lemmaId": "chiamata",
+      "italian": "chiamata",
+      "english": "phone call",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "chiamate"
+      ]
+    },
+    {
+      "lemmaId": "mamma",
+      "italian": "mamma",
+      "english": "mom",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "papa",
+      "italian": "papà",
+      "english": "dad",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "papà"
+      ]
+    },
+    {
+      "lemmaId": "stipendio",
+      "italian": "stipendio",
+      "english": "salary",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 37,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "bisogno",
+      "italian": "bisogno",
+      "english": "need",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "solito",
+      "italian": "solito",
+      "english": "usual",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "solita"
+      ]
+    },
+    {
+      "lemmaId": "preoccupato",
+      "italian": "preoccupato",
+      "english": "worried",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "preoccupata",
+        "preoccupati"
+      ]
+    },
+    {
+      "lemmaId": "contento",
+      "italian": "contento",
+      "english": "glad / content",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "contenta",
+        "contenti"
+      ]
+    },
+    {
+      "lemmaId": "vecchio",
+      "italian": "vecchio",
+      "english": "old",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "vecchia",
+        "vecchi",
+        "vecchie"
+      ]
+    },
+    {
+      "lemmaId": "speciale",
+      "italian": "speciale",
+      "english": "special",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 30,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "speciali"
+      ]
+    },
+    {
+      "lemmaId": "prossimo",
+      "italian": "prossimo",
+      "english": "next",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 37,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "prossima"
+      ]
+    },
+    {
+      "lemmaId": "ultimo",
+      "italian": "ultimo",
+      "english": "last",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "ultima",
+        "ultimi"
+      ]
+    },
+    {
+      "lemmaId": "meglio",
+      "italian": "meglio",
+      "english": "better",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "peggio",
+      "italian": "peggio",
+      "english": "worse",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "nessuno",
+      "italian": "nessuno",
+      "english": "nobody / no",
+      "partOfSpeech": "pronoun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "nessuna"
+      ]
+    },
+    {
+      "lemmaId": "gente",
+      "italian": "gente",
+      "english": "people",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "ne",
+      "italian": "ne",
+      "english": "of it / of them (clitic)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "ragione",
+      "italian": "ragione",
+      "english": "reason / right",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "pensare",
+      "italian": "pensare",
+      "english": "to think",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "penso",
+        "pensi",
+        "pensa",
+        "pensiamo",
+        "pensate",
+        "pensano",
+        "pensato",
+        "pensavo",
+        "pensava",
+        "pensando"
+      ]
+    },
+    {
+      "lemmaId": "sembrare",
+      "italian": "sembrare",
+      "english": "to seem",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "sembro",
+        "sembra",
+        "sembrano",
+        "sembrava",
+        "sembrato"
+      ]
+    },
+    {
+      "lemmaId": "dipendere",
+      "italian": "dipendere",
+      "english": "to depend",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "dipende",
+        "dipendono",
+        "dipendeva"
+      ]
+    },
+    {
+      "lemmaId": "importare",
+      "italian": "importare",
+      "english": "to matter",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "importa",
+        "importano",
+        "importava"
+      ]
+    },
+    {
+      "lemmaId": "decidere",
+      "italian": "decidere",
+      "english": "to decide",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "decido",
+        "decidi",
+        "decide",
+        "decidiamo",
+        "deciso",
+        "decisa",
+        "decideva",
+        "deciderà"
+      ]
+    },
+    {
+      "lemmaId": "ricordare",
+      "italian": "ricordare",
+      "english": "to remember",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 28,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "ricordo",
+        "ricordi",
+        "ricorda",
+        "ricordiamo",
+        "ricordato",
+        "ricordava"
+      ]
+    },
+    {
+      "lemmaId": "dimenticare",
+      "italian": "dimenticare",
+      "english": "to forget",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 31,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "dimentico",
+        "dimentichi",
+        "dimentica",
+        "dimentichiamo",
+        "dimenticato",
+        "dimenticava"
+      ]
+    },
+    {
+      "lemmaId": "scegliere",
+      "italian": "scegliere",
+      "english": "to choose",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 30,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "scelgo",
+        "scegli",
+        "sceglie",
+        "scegliamo",
+        "scelto",
+        "scelta",
+        "sceglieva"
+      ]
+    },
+    {
+      "lemmaId": "rimanere",
+      "italian": "rimanere",
+      "english": "to remain",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "rimango",
+        "rimani",
+        "rimane",
+        "rimaniamo",
+        "rimasto",
+        "rimasta",
+        "rimaneva"
+      ]
+    },
+    {
+      "lemmaId": "restare",
+      "italian": "restare",
+      "english": "to stay",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "resto",
+        "resti",
+        "resta",
+        "restiamo",
+        "restato",
+        "restava",
+        "restavano",
+        "restata"
+      ]
+    },
+    {
+      "lemmaId": "vendere",
+      "italian": "vendere",
+      "english": "to sell",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "vendo",
+        "vendi",
+        "vende",
+        "vendiamo",
+        "venduto",
+        "vendeva"
+      ]
+    },
+    {
+      "lemmaId": "offrire",
+      "italian": "offrire",
+      "english": "to offer",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 36,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "offro",
+        "offri",
+        "offre",
+        "offriamo",
+        "offerto",
+        "offriva"
+      ]
+    },
+    {
+      "lemmaId": "accettare",
+      "italian": "accettare",
+      "english": "to accept",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 32,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "accetto",
+        "accetti",
+        "accetta",
+        "accettiamo",
+        "accettato",
+        "accettava"
+      ]
+    },
+    {
+      "lemmaId": "spiegare",
+      "italian": "spiegare",
+      "english": "to explain",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "spiego",
+        "spieghi",
+        "spiega",
+        "spieghiamo",
+        "spiegato",
+        "spiegava"
+      ]
+    },
+    {
+      "lemmaId": "servire",
+      "italian": "servire",
+      "english": "to serve / to be needed",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "servo",
+        "servi",
+        "serve",
+        "serviamo",
+        "servito",
+        "serviva"
+      ]
+    },
+    {
+      "lemmaId": "preparare",
+      "italian": "preparare",
+      "english": "to prepare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "preparo",
+        "prepari",
+        "prepara",
+        "prepariamo",
+        "preparato",
+        "preparava",
+        "preparando"
+      ]
+    },
+    {
+      "lemmaId": "organizzare",
+      "italian": "organizzare",
+      "english": "to organize",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 30,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "organizzo",
+        "organizzi",
+        "organizza",
+        "organizziamo",
+        "organizzato"
+      ]
+    },
+    {
+      "lemmaId": "aumentare",
+      "italian": "aumentare",
+      "english": "to increase",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "aumenta",
+        "aumentano",
+        "aumentato",
+        "aumentava"
+      ]
+    },
+    {
+      "lemmaId": "telefonare",
+      "italian": "telefonare",
+      "english": "to call (by phone)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "telefoni",
+        "telefona",
+        "telefoniamo",
+        "telefonato"
+      ]
+    },
+    {
+      "lemmaId": "funzionare",
+      "italian": "funzionare",
+      "english": "to work / to function",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 30,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "funziona",
+        "funzionano",
+        "funzionava",
+        "funzionato"
+      ]
+    },
+    {
+      "lemmaId": "lettera",
+      "italian": "lettera",
+      "english": "letter",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 40,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "futuro",
+      "italian": "futuro",
+      "english": "future",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "abstract",
+      "inflections": []
+    },
+    {
+      "lemmaId": "proposta",
+      "italian": "proposta",
+      "english": "proposal",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 40,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "fino",
+      "italian": "fino",
+      "english": "until / up to",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "durante",
+      "italian": "durante",
+      "english": "during",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 32,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "piu",
+      "italian": "più",
+      "english": "more",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "più",
+        "Più"
+      ]
+    },
+    {
+      "lemmaId": "meno",
+      "italian": "meno",
+      "english": "less",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "qualche",
+      "italian": "qualche",
+      "english": "some",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "proprio",
+      "italian": "proprio",
+      "english": "really / own",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "paura",
+      "italian": "paura",
+      "english": "fear",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "svegliare",
+      "italian": "svegliare",
+      "english": "to wake",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "sveglio",
+        "sveglia",
+        "svegliato",
+        "svegliata",
+        "svegliarsi"
+      ]
+    },
+    {
+      "lemmaId": "finestra",
+      "italian": "finestra",
+      "english": "window",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "finestre"
+      ]
+    },
+    {
+      "lemmaId": "diverso",
+      "italian": "diverso",
+      "english": "different",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "diversa",
+        "diversi",
+        "diverse"
+      ]
+    },
+    {
+      "lemmaId": "sorridere",
+      "italian": "sorridere",
+      "english": "to smile",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "sorride",
+        "sorriso",
+        "sorridiva"
+      ]
+    },
+    {
+      "lemmaId": "orario",
+      "italian": "orario",
+      "english": "schedule / on time",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "lunedi",
+      "italian": "lunedì",
+      "english": "Monday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "lunedì"
+      ]
+    },
+    {
+      "lemmaId": "dormire",
+      "italian": "dormire",
+      "english": "to sleep",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "dormo",
+        "dorme",
+        "dormiamo",
+        "dormito",
+        "dormiva"
+      ]
+    },
+    {
+      "lemmaId": "scrivere",
+      "italian": "scrivere",
+      "english": "to write",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "scrivo",
+        "scrive",
+        "scriviamo",
+        "scritto",
+        "scriveva"
+      ]
+    },
+    {
+      "lemmaId": "continuare",
+      "italian": "continuare",
+      "english": "to continue",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "continuo",
+        "continua",
+        "continuiamo",
+        "continuato",
+        "continuava",
+        "continuare",
+        "continuata"
+      ]
+    },
+    {
+      "lemmaId": "fermare",
+      "italian": "fermare",
+      "english": "to stop",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "fermo",
+        "ferma",
+        "fermiamo",
+        "fermato",
+        "fermata",
+        "fermati",
+        "fermava"
+      ]
+    },
+    {
+      "lemmaId": "finire",
+      "italian": "finire",
+      "english": "to finish",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "finisco",
+        "finisce",
+        "finiamo",
+        "finito",
+        "finita",
+        "finiva"
+      ]
+    },
+    {
+      "lemmaId": "cominciare",
+      "italian": "cominciare",
+      "english": "to begin",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "comincio",
+        "comincia",
+        "cominciamo",
+        "cominciato",
+        "cominciava"
+      ]
+    },
+    {
+      "lemmaId": "mettere",
+      "italian": "mettere",
+      "english": "to put",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 32,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "metto",
+        "mette",
+        "mettiamo",
+        "messo",
+        "messa",
+        "metteva"
+      ]
+    },
+    {
+      "lemmaId": "sedere",
+      "italian": "sedere",
+      "english": "to sit",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "siedo",
+        "siede",
+        "sediamo",
+        "seduto",
+        "seduta",
+        "seduti"
+      ]
+    },
+    {
+      "lemmaId": "davanti",
+      "italian": "davanti",
+      "english": "in front of",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "almeno",
+      "italian": "almeno",
+      "english": "at least",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 35,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "finalmente",
+      "italian": "finalmente",
+      "english": "finally",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 37,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "verso",
+      "italian": "verso",
+      "english": "toward",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "sotto",
+      "italian": "sotto",
+      "english": "under",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 40,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "cena",
+      "italian": "cena",
+      "english": "dinner",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 38,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "cuore",
+      "italian": "cuore",
+      "english": "heart",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "forte",
+      "italian": "forte",
+      "english": "strong / loud",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "forti"
+      ]
+    },
+    {
+      "lemmaId": "giovane",
+      "italian": "giovane",
+      "english": "young",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "giovani"
+      ]
+    },
+    {
+      "lemmaId": "pane",
+      "italian": "pane",
+      "english": "bread",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "vino",
+      "italian": "vino",
+      "english": "wine",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 38,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "musica",
+      "italian": "musica",
+      "english": "music",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "voce",
+      "italian": "voce",
+      "english": "voice",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "voci"
+      ]
+    },
+    {
+      "lemmaId": "luce",
+      "italian": "luce",
+      "english": "light",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "luci"
+      ]
+    },
+    {
+      "lemmaId": "venerdi",
+      "italian": "venerdì",
+      "english": "Friday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "venerdì"
+      ]
+    },
+    {
+      "lemmaId": "giovedi",
+      "italian": "giovedì",
+      "english": "Thursday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 28,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "giovedì"
+      ]
+    },
+    {
+      "lemmaId": "parte",
+      "italian": "parte",
+      "english": "part",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 32,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "parti"
+      ]
+    },
+    {
+      "lemmaId": "pieno",
+      "italian": "pieno",
+      "english": "full",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "piena",
+        "pieni"
+      ]
+    },
+    {
+      "lemmaId": "vuoto",
+      "italian": "vuoto",
+      "english": "empty",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "vuota",
+        "vuoti"
+      ]
+    },
+    {
+      "lemmaId": "signore",
+      "italian": "signore",
+      "english": "sir / gentleman",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "signora"
+      ]
+    },
+    {
+      "lemmaId": "ordine",
+      "italian": "ordine",
+      "english": "order",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "piatto",
+      "italian": "piatto",
+      "english": "plate / dish",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 34,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "piatti"
+      ]
+    },
+    {
+      "lemmaId": "cinque",
+      "italian": "cinque",
+      "english": "five",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 34,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "dieci",
+      "italian": "dieci",
+      "english": "ten",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 34,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "quattro",
+      "italian": "quattro",
+      "english": "four",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 31,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "sala",
+      "italian": "sala",
+      "english": "room / hall",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "cucina",
+      "italian": "cucina",
+      "english": "kitchen",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "lavare",
+      "italian": "lavare",
+      "english": "to wash",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 34,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "lavo",
+        "lava",
+        "laviamo",
+        "lavato"
+      ]
+    },
+    {
+      "lemmaId": "cucinare",
+      "italian": "cucinare",
+      "english": "to cook",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 24,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "cucino",
+        "cuciniamo",
+        "cucinato"
+      ]
+    },
+    {
+      "lemmaId": "martedi",
+      "italian": "martedì",
+      "english": "Tuesday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "martedì"
+      ]
+    },
+    {
+      "lemmaId": "mercoledi",
+      "italian": "mercoledì",
+      "english": "Wednesday",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "mercoledì"
+      ]
+    },
+    {
+      "lemmaId": "fretta",
+      "italian": "fretta",
+      "english": "hurry",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "lontano",
+      "italian": "lontano",
+      "english": "far",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "lontana"
+      ]
+    },
+    {
+      "lemmaId": "strano",
+      "italian": "strano",
+      "english": "strange",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "strana"
+      ]
+    },
+    {
+      "lemmaId": "calma",
+      "italian": "calma",
+      "english": "calm",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "anno",
+      "italian": "anno",
+      "english": "year",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 29,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "anni"
+      ]
+    },
+    {
+      "lemmaId": "occupato",
+      "italian": "occupato",
+      "english": "busy",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 23,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "occupata"
+      ]
+    },
+    {
+      "lemmaId": "leggere",
+      "italian": "leggere",
+      "english": "to read",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "leggo",
+        "legge",
+        "leggiamo",
+        "letto"
+      ]
+    },
+    {
+      "lemmaId": "contare",
+      "italian": "contare",
+      "english": "to count",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "conta",
+        "contiamo",
+        "contato"
+      ]
+    },
+    {
+      "lemmaId": "tanto",
+      "italian": "tanto",
+      "english": "so much / many",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 22,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "tanti",
+        "tante",
+        "tanta"
+      ]
+    },
+    {
+      "lemmaId": "parola",
+      "italian": "parola",
+      "english": "word",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": [
+        "parole"
+      ]
+    },
+    {
+      "lemmaId": "chiaro",
+      "italian": "chiaro",
+      "english": "clear",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 32,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "chiara",
+        "chiari"
+      ]
+    },
+    {
+      "lemmaId": "vero",
+      "italian": "vero",
+      "english": "true / real",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 31,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "vera",
+        "vere",
+        "veri"
+      ]
+    },
+    {
+      "lemmaId": "segno",
+      "italian": "segno",
+      "english": "sign",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 34,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "carta",
+      "italian": "carta",
+      "english": "paper / letter paper",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 40,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "rumore",
+      "italian": "rumore",
+      "english": "noise",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 38,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "sorpreso",
+      "italian": "sorpreso",
+      "english": "surprised",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 35,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "vita",
+      "italian": "vita",
+      "english": "life",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 21,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "modo",
+      "italian": "modo",
+      "english": "way",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 31,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    },
+    {
+      "lemmaId": "subito",
+      "italian": "subito",
+      "english": "immediately",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 27,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "alcuno",
+      "italian": "alcuno",
+      "english": "some / a few",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 38,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "alcuna",
+        "alcuni",
+        "alcune"
+      ]
+    },
+    {
+      "lemmaId": "lungo",
+      "italian": "lungo",
+      "english": "long",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "quanto",
+      "italian": "quanto",
+      "english": "how much / how long",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 26,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": []
+    },
+    {
+      "lemmaId": "provare",
+      "italian": "provare",
+      "english": "to try",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 30,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "mixed",
+      "inflections": [
+        "provo",
+        "provi",
+        "prova",
+        "proviamo",
+        "provato"
+      ]
+    },
+    {
+      "lemmaId": "giornata",
+      "italian": "giornata",
+      "english": "day (the whole day)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 25,
+      "cefrLevel": "A2",
+      "cefrConfidence": 0.7,
+      "frequencyBand": "common",
+      "register": "neutral",
+      "topic": "everyday",
+      "abstractness": "concrete",
+      "inflections": []
+    }
+  ]
+}

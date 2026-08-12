@@ -1,0 +1,1644 @@
+{
+  "sentences": {
+    "luca-a-roma-01:s05": {
+      "phraseReinforces": [
+        "ha_fame"
+      ],
+      "reinforces": [
+        "avere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca ha fame oggi.",
+          "lemmas": [
+            "luca",
+            "avere",
+            "fame",
+            "oggi"
+          ],
+          "phraseReinforces": [
+            "ha_fame"
+          ],
+          "reinforces": [
+            "avere"
+          ],
+          "phrases": [
+            {
+              "surface": "ha fame",
+              "literalEn": "has hunger",
+              "naturalEn": "is hungry",
+              "tokenStart": 1,
+              "tokenEnd": 2
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-01:s06": {
+      "reinforces": [
+        "mangiare",
+        "volere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca vuole mangiare oggi.",
+          "lemmas": [
+            "luca",
+            "volere",
+            "mangiare",
+            "oggi"
+          ],
+          "reinforces": [
+            "mangiare",
+            "volere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-01:s07": {
+      "reinforces": [
+        "cercare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca cerca un bar oggi.",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "un",
+            "bar",
+            "oggi"
+          ],
+          "reinforces": [
+            "cercare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-01:s08": {
+      "reinforces": [
+        "vicino"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "C'è un bar vicino oggi.",
+          "lemmas": [
+            "ce",
+            "un",
+            "bar",
+            "vicino",
+            "oggi"
+          ],
+          "reinforces": [
+            "vicino"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-01:s09": {
+      "reinforces": [
+        "andare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca va al bar oggi.",
+          "lemmas": [
+            "luca",
+            "andare",
+            "al",
+            "bar",
+            "oggi"
+          ],
+          "reinforces": [
+            "andare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-02:s05": {
+      "reinforces": [
+        "cercare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca cerca un bar oggi.",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "un",
+            "bar",
+            "oggi"
+          ],
+          "reinforces": [
+            "cercare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-02:s07": {
+      "reinforces": [
+        "andare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca va al bar oggi.",
+          "lemmas": [
+            "luca",
+            "andare",
+            "al",
+            "bar",
+            "oggi"
+          ],
+          "reinforces": [
+            "andare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-02:s10": {
+      "reinforces": [
+        "mangiare",
+        "volere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca vuole mangiare oggi.",
+          "lemmas": [
+            "luca",
+            "volere",
+            "mangiare",
+            "oggi"
+          ],
+          "reinforces": [
+            "mangiare",
+            "volere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-03:s02": {
+      "reinforces": [
+        "casa",
+        "cercare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca cerca una casa oggi.",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "una",
+            "casa",
+            "oggi"
+          ],
+          "reinforces": [
+            "casa",
+            "cercare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-04:s01": {
+      "reinforces": [
+        "trovare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Oggi Luca trova un appartamento piccolo.",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "trovare",
+            "un",
+            "appartamento",
+            "piccolo"
+          ],
+          "reinforces": [
+            "trovare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-04:s03": {
+      "reinforces": [
+        "vicino",
+        "essere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "L'appartamento è molto vicino al centro.",
+          "lemmas": [
+            "appartamento",
+            "essere",
+            "molto",
+            "vicino",
+            "al",
+            "centro"
+          ],
+          "reinforces": [
+            "vicino",
+            "essere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-05:s06": {
+      "phraseReinforces": [
+        "come_stai"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Come stai oggi?",
+          "lemmas": [
+            "come",
+            "stare",
+            "oggi"
+          ],
+          "phraseReinforces": [
+            "come_stai"
+          ],
+          "phrases": [
+            {
+              "surface": "Come stai?",
+              "literalEn": "How do you stay?",
+              "naturalEn": "How are you?",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-05:s13": {
+      "phraseReinforces": [
+        "ci_vediamo"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Ci vediamo, Luca.",
+          "lemmas": [
+            "ci",
+            "vedere",
+            "luca"
+          ],
+          "phraseReinforces": [
+            "ci_vediamo"
+          ],
+          "phrases": [
+            {
+              "surface": "Ci vediamo",
+              "literalEn": "We see each other",
+              "naturalEn": "See you",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-07:s01": {
+      "reinforces": [
+        "casa",
+        "avere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca ha una casa a Roma oggi.",
+          "lemmas": [
+            "luca",
+            "avere",
+            "una",
+            "casa",
+            "a",
+            "roma",
+            "oggi"
+          ],
+          "reinforces": [
+            "casa",
+            "avere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-07:s04": {
+      "reinforces": [
+        "lavoro",
+        "volere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca vuole un lavoro oggi.",
+          "lemmas": [
+            "luca",
+            "volere",
+            "un",
+            "lavoro",
+            "oggi"
+          ],
+          "reinforces": [
+            "lavoro",
+            "volere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-07:s06": {
+      "reinforces": [
+        "cercare",
+        "lavoro"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Cerchi un lavoro oggi?",
+          "lemmas": [
+            "cercare",
+            "un",
+            "lavoro",
+            "oggi"
+          ],
+          "reinforces": [
+            "cercare",
+            "lavoro"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-07:s09": {
+      "reinforces": [
+        "potere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Posso aiutare oggi.",
+          "lemmas": [
+            "potere",
+            "aiutare",
+            "oggi"
+          ],
+          "reinforces": [
+            "potere",
+            "aiutare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-08:s01": {
+      "reinforces": [
+        "cercare",
+        "lavoro"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Oggi Luca cerca un lavoro qui.",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "cercare",
+            "un",
+            "lavoro",
+            "qui"
+          ],
+          "reinforces": [
+            "cercare",
+            "lavoro"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-08:s10": {
+      "reinforces": [
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca aspetta qui.",
+          "lemmas": [
+            "luca",
+            "aspettare",
+            "qui"
+          ],
+          "reinforces": [
+            "aspettare"
+          ]
+        },
+        {
+          "id": "moment",
+          "text": "Luca aspetta un momento.",
+          "lemmas": [
+            "luca",
+            "aspettare",
+            "un",
+            "momento"
+          ],
+          "reinforces": [
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-08:s13": {
+      "phraseReinforces": [
+        "va_bene"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Va bene, Sofia.",
+          "lemmas": [
+            "andare",
+            "bene",
+            "sofia"
+          ],
+          "phraseReinforces": [
+            "va_bene"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "goes well",
+              "naturalEn": "all right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-11:s08": {
+      "phraseReinforces": [
+        "come_stai"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Come stai oggi?",
+          "lemmas": [
+            "come",
+            "stare",
+            "oggi"
+          ],
+          "phraseReinforces": [
+            "come_stai"
+          ],
+          "phrases": [
+            {
+              "surface": "Come stai?",
+              "literalEn": "How do you stay?",
+              "naturalEn": "How are you?",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-12:s10": {
+      "phraseReinforces": [
+        "non_lo_so"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Non lo so oggi.",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere",
+            "oggi"
+          ],
+          "phraseReinforces": [
+            "non_lo_so"
+          ],
+          "phrases": [
+            {
+              "surface": "Non lo so",
+              "literalEn": "I do not know it",
+              "naturalEn": "I don't know",
+              "tokenStart": 0,
+              "tokenEnd": 2
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-16:s08": {
+      "reinforces": [
+        "andare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Sì, andiamo adesso.",
+          "lemmas": [
+            "si_yes",
+            "andare",
+            "adesso"
+          ],
+          "reinforces": [
+            "andare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-18:s04": {
+      "reinforces": [
+        "cercare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Marco cerca il biglietto ora.",
+          "lemmas": [
+            "marco",
+            "cercare",
+            "il",
+            "biglietto",
+            "ora"
+          ],
+          "reinforces": [
+            "cercare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-18:s05": {
+      "reinforces": [
+        "trovare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Non trovo il biglietto ora.",
+          "lemmas": [
+            "non",
+            "trovare",
+            "il",
+            "biglietto",
+            "ora"
+          ],
+          "reinforces": [
+            "trovare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-19:s03": {
+      "reinforces": [
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "inflected",
+          "text": "Aspettiamo, la valigia è qui.",
+          "lemmas": [
+            "aspettare",
+            "la",
+            "valigia",
+            "essere",
+            "qui"
+          ],
+          "reinforces": [
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-20:s04": {
+      "reinforces": [
+        "casa",
+        "essere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca è a casa adesso.",
+          "lemmas": [
+            "luca",
+            "essere",
+            "a",
+            "casa",
+            "adesso"
+          ],
+          "reinforces": [
+            "casa",
+            "essere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-20:s15": {
+      "phraseReinforces": [
+        "ci_vediamo"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Ci vediamo oggi.",
+          "lemmas": [
+            "ci",
+            "vedere",
+            "oggi"
+          ],
+          "phraseReinforces": [
+            "ci_vediamo"
+          ],
+          "phrases": [
+            {
+              "surface": "Ci vediamo",
+              "literalEn": "We see each other",
+              "naturalEn": "See you",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-25:s32": {
+      "reinforces": [
+        "tornare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "La sera Luca è tornato a casa e ha contato i soldi per l’affitto, ancora una volta.",
+          "lemmas": [
+            "la",
+            "sera",
+            "luca",
+            "essere",
+            "tornare",
+            "a",
+            "casa",
+            "e",
+            "avere",
+            "contare",
+            "i",
+            "soldi",
+            "per",
+            "affitto",
+            "ancora",
+            "una",
+            "volta"
+          ],
+          "reinforces": [
+            "tornare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-26:s13": {
+      "reinforces": [
+        "vendere",
+        "cambiare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Forse vendo il caffè o forse cambio tutto questa settimana.",
+          "lemmas": [
+            "forse",
+            "vendere",
+            "il",
+            "caffe",
+            "o",
+            "forse",
+            "cambiare",
+            "tutto",
+            "questo",
+            "settimana"
+          ],
+          "reinforces": [
+            "vendere",
+            "cambiare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-26:s34": {
+      "reinforces": [
+        "piano",
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Bene. Dobbiamo fare un piano al caffè, non solo aspettare.",
+          "lemmas": [
+            "bene",
+            "dovere",
+            "fare",
+            "un",
+            "piano",
+            "al",
+            "caffe",
+            "non",
+            "solo",
+            "aspettare"
+          ],
+          "reinforces": [
+            "piano",
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-27:s01": {
+      "reinforces": [
+        "vedere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Mercoledì Luca ha visto Sofia vicino alla piazza, come sempre.",
+          "lemmas": [
+            "mercoledi",
+            "luca",
+            "avere",
+            "vedere",
+            "sofia",
+            "vicino",
+            "alla",
+            "piazza",
+            "come",
+            "sempre"
+          ],
+          "reinforces": [
+            "vedere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-27:s31": {
+      "reinforces": [
+        "andare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Va bene. Venerdì andiamo da lei, dopo il lavoro, insieme.",
+          "lemmas": [
+            "andare",
+            "bene",
+            "venerdi",
+            "andare",
+            "dare",
+            "lei",
+            "dopo",
+            "il",
+            "lavorare",
+            "insieme"
+          ],
+          "reinforces": [
+            "andare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-28:s12": {
+      "reinforces": [
+        "trovare",
+        "ricordare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Il viaggio è passato. Il biglietto e la valigia li abbiamo trovati. Ricordi ancora?",
+          "lemmas": [
+            "il",
+            "viaggio",
+            "essere",
+            "passare",
+            "il",
+            "biglietto",
+            "e",
+            "la",
+            "valigia",
+            "li",
+            "avere",
+            "trovare",
+            "ricordare",
+            "ancora"
+          ],
+          "reinforces": [
+            "trovare",
+            "ricordare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-28:s14": {
+      "reinforces": [
+        "cercare",
+        "trovare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Sì. Ma il lavoro no. Cerco e non trovo un posto.",
+          "lemmas": [
+            "si_yes",
+            "ma",
+            "il",
+            "lavorare",
+            "no",
+            "cercare",
+            "e",
+            "non",
+            "trovare",
+            "un",
+            "posto"
+          ],
+          "reinforces": [
+            "cercare",
+            "trovare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-28:s22": {
+      "reinforces": [
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Magari. Adesso cerco ancora. Non voglio solo aspettare gli amici.",
+          "lemmas": [
+            "magari",
+            "adesso",
+            "cercare",
+            "ancora",
+            "non",
+            "volere",
+            "solo",
+            "aspettare",
+            "gli",
+            "amico"
+          ],
+          "reinforces": [
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-29:s23": {
+      "reinforces": [
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Allora gli diciamo. Non aspettiamo troppo.",
+          "lemmas": [
+            "allora",
+            "gli",
+            "dire",
+            "non",
+            "aspettare",
+            "troppo"
+          ],
+          "reinforces": [
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-29:s25": {
+      "reinforces": [
+        "aiutare",
+        "lavorare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Io posso ancora aiutare. Non ho soldi, ma ho tempo e posso lavorare.",
+          "lemmas": [
+            "io",
+            "potere",
+            "ancora",
+            "aiutare",
+            "non",
+            "avere",
+            "soldi",
+            "ma",
+            "avere",
+            "tempo",
+            "e",
+            "potere",
+            "lavorare"
+          ],
+          "reinforces": [
+            "aiutare",
+            "lavorare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-30:s01": {
+      "reinforces": [
+        "arrivare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Il giorno dopo, sabato non era ancora arrivato. Prima dovevano chiedere.",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "sabato",
+            "non",
+            "essere",
+            "ancora",
+            "arrivare",
+            "prima",
+            "dovere",
+            "chiedere"
+          ],
+          "reinforces": [
+            "arrivare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-30:s33": {
+      "reinforces": [
+        "piano"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "La notizia difficile aveva adesso un piano piccolo, ma chiaro.",
+          "lemmas": [
+            "la",
+            "notizia",
+            "difficile",
+            "avere",
+            "adesso",
+            "un",
+            "piano",
+            "piccolo",
+            "ma",
+            "chiaro"
+          ],
+          "reinforces": [
+            "piano"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-31:s19": {
+      "reinforces": [
+        "parlare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Marco ha parlato vicino ai negozi con due persone del quartiere.",
+          "lemmas": [
+            "marco",
+            "avere",
+            "parlare",
+            "vicino",
+            "ai",
+            "negozio",
+            "con",
+            "due",
+            "persona",
+            "del",
+            "quartiere"
+          ],
+          "reinforces": [
+            "parlare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-31:s38": {
+      "reinforces": [
+        "piano"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Il piano c’è. Adesso non c’è ancora la gente.",
+          "lemmas": [
+            "il",
+            "piano",
+            "ce",
+            "adesso",
+            "non",
+            "ce",
+            "ancora",
+            "la",
+            "gente"
+          ],
+          "reinforces": [
+            "piano"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-32:s06": {
+      "reinforces": [
+        "organizzare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Hai ragione. Organizzare è una cosa importante.",
+          "lemmas": [
+            "avere",
+            "ragione",
+            "organizzare",
+            "essere",
+            "una",
+            "cosa",
+            "importante"
+          ],
+          "reinforces": [
+            "organizzare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-32:s15": {
+      "reinforces": [
+        "lavorare",
+        "ora"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Se il caffè resta, che lavoro c’è per me adesso?",
+          "lemmas": [
+            "se",
+            "il",
+            "caffe",
+            "restare",
+            "che",
+            "lavorare",
+            "ce",
+            "per",
+            "io",
+            "adesso"
+          ],
+          "reinforces": [
+            "lavorare",
+            "ora"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-33:s05": {
+      "reinforces": [
+        "cercare",
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "No. Ieri ha detto di venire. Adesso cerco Marco. Aspetta lì.",
+          "lemmas": [
+            "no",
+            "ieri",
+            "avere",
+            "dire",
+            "di",
+            "venire",
+            "adesso",
+            "cercare",
+            "marco",
+            "aspettare",
+            "li"
+          ],
+          "reinforces": [
+            "cercare",
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-33:s19": {
+      "reinforces": [
+        "lavorare",
+        "orario"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Scusa. C’era una persona per un lavoro. Dovevo parlare. Non ho visto l’orario.",
+          "lemmas": [
+            "scusa",
+            "ce",
+            "una",
+            "persona",
+            "per",
+            "un",
+            "lavorare",
+            "dovere",
+            "parlare",
+            "non",
+            "avere",
+            "vedere",
+            "orario"
+          ],
+          "reinforces": [
+            "lavorare",
+            "orario"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-33:s34": {
+      "reinforces": [
+        "chiamata",
+        "lavorare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Forse ho una chiamata di lavoro sabato mattina. Se posso, vengo dopo al caffè.",
+          "lemmas": [
+            "forse",
+            "avere",
+            "una",
+            "chiamata",
+            "di",
+            "lavorare",
+            "sabato",
+            "mattina",
+            "se",
+            "potere",
+            "venire",
+            "dopo",
+            "al",
+            "caffe"
+          ],
+          "reinforces": [
+            "chiamata",
+            "lavorare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-34:s03": {
+      "reinforces": [
+        "aprire"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Quando ha aperto la porta, Giulia era già nella sala, con i tavoli aperti e pronti.",
+          "lemmas": [
+            "quando",
+            "avere",
+            "aprire",
+            "la",
+            "porta",
+            "giulia",
+            "essere",
+            "gia",
+            "nella",
+            "sala",
+            "con",
+            "i",
+            "tavolo",
+            "aprire",
+            "e",
+            "pronto"
+          ],
+          "reinforces": [
+            "aprire"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-34:s18": {
+      "reinforces": [
+        "mettere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Hanno messo i piatti, l’acqua e il caffè vicino ai tavoli. Luca ha lavato i tavoli due volte.",
+          "lemmas": [
+            "avere",
+            "mettere",
+            "i",
+            "piatto",
+            "acqua",
+            "e",
+            "il",
+            "caffe",
+            "vicino",
+            "ai",
+            "tavolo",
+            "luca",
+            "avere",
+            "lavare",
+            "i",
+            "tavolo",
+            "due",
+            "volta"
+          ],
+          "reinforces": [
+            "mettere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-35:s04": {
+      "reinforces": [
+        "aspettare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Aspetta un momento. È presto. Le persone del quartiere mangiano e poi escono.",
+          "lemmas": [
+            "aspettare",
+            "un",
+            "momento",
+            "essere",
+            "presto",
+            "le",
+            "persona",
+            "del",
+            "quartiere",
+            "mangiare",
+            "e",
+            "poi",
+            "uscire"
+          ],
+          "reinforces": [
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-35:s20": {
+      "reinforces": [
+        "tornare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Una signora ha detto che il caffè le piaceva, e che tornava la settimana dopo, di sicuro.",
+          "lemmas": [
+            "una",
+            "signore",
+            "avere",
+            "dire",
+            "che",
+            "il",
+            "caffe",
+            "le",
+            "piacere",
+            "e",
+            "che",
+            "tornare",
+            "la",
+            "settimana",
+            "dopo",
+            "di",
+            "sicuro"
+          ],
+          "reinforces": [
+            "tornare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-36:s09": {
+      "reinforces": [
+        "tornare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Se vi piace, tornate qui. Non solo oggi. Anche lunedì, anche giovedì.",
+          "lemmas": [
+            "se",
+            "voi",
+            "piacere",
+            "tornare",
+            "qui",
+            "non",
+            "solo",
+            "oggi",
+            "anche",
+            "lunedi",
+            "anche",
+            "giovedi"
+          ],
+          "reinforces": [
+            "tornare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-36:s24": {
+      "reinforces": [
+        "funzionare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Oggi il caffè ha funzionato bene. Ho visto i tavoli. Ho visto le persone.",
+          "lemmas": [
+            "oggi",
+            "il",
+            "caffe",
+            "avere",
+            "funzionare",
+            "bene",
+            "avere",
+            "vedere",
+            "i",
+            "tavolo",
+            "avere",
+            "vedere",
+            "le",
+            "persona"
+          ],
+          "reinforces": [
+            "funzionare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-37:s12": {
+      "reinforces": [
+        "scegliere"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Luca ha sentito le parole “se volete” e ha capito che poteva scegliere le ore.",
+          "lemmas": [
+            "luca",
+            "avere",
+            "sentire",
+            "le",
+            "parola",
+            "se",
+            "volere",
+            "e",
+            "avere",
+            "capire",
+            "che",
+            "potere",
+            "scegliere",
+            "le",
+            "ora"
+          ],
+          "reinforces": [
+            "scegliere"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-37:s14": {
+      "reinforces": [
+        "organizzare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Anch’io accetto. Ma voglio anche organizzare la settimana, non solo servire.",
+          "lemmas": [
+            "anche",
+            "accettare",
+            "ma",
+            "volere",
+            "anche",
+            "organizzare",
+            "la",
+            "settimana",
+            "non",
+            "solo",
+            "servire"
+          ],
+          "reinforces": [
+            "organizzare"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-38:s09": {
+      "reinforces": [
+        "volere",
+        "lavorare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Voglio restare a Roma e voglio lavorare. Ma non voglio solo il lavoro ogni giorno.",
+          "lemmas": [
+            "volere",
+            "restare",
+            "a",
+            "roma",
+            "e",
+            "volere",
+            "lavorare",
+            "ma",
+            "non",
+            "volere",
+            "solo",
+            "il",
+            "lavorare",
+            "ogni",
+            "giorno"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-38:s26": {
+      "reinforces": [
+        "restare",
+        "libero"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Lunedì e mercoledì, la sera, voglio restare libero per gli amici.",
+          "lemmas": [
+            "lunedi",
+            "e",
+            "mercoledi",
+            "la",
+            "sera",
+            "volere",
+            "restare",
+            "libero",
+            "per",
+            "gli",
+            "amico"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-39:s02": {
+      "reinforces": [
+        "ora",
+        "libero"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero per casa e amici.",
+          "lemmas": [
+            "volere",
+            "piu",
+            "ora",
+            "ma",
+            "non",
+            "tutto",
+            "lunedi",
+            "e",
+            "mercoledi",
+            "sera",
+            "volere",
+            "tempo",
+            "libero",
+            "per",
+            "casa",
+            "e",
+            "amico"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-39:s14": {
+      "reinforces": [
+        "provare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Poche ore. Pochi soldi. Non è un lavoro grande. Se vuoi, proviamo due settimane.",
+          "lemmas": [
+            "poco",
+            "ora",
+            "poco",
+            "soldi",
+            "non",
+            "essere",
+            "un",
+            "lavorare",
+            "grande",
+            "se",
+            "volere",
+            "provare",
+            "due",
+            "settimana"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-40:s05": {
+      "reinforces": [
+        "lavorare",
+        "mese"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Inizia il mese prossimo. Ci sono più soldi di adesso al caffè.",
+          "lemmas": [
+            "iniziare",
+            "il",
+            "mese",
+            "prossimo",
+            "ci",
+            "essere",
+            "piu",
+            "soldi",
+            "di",
+            "adesso",
+            "al",
+            "caffe"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-40:s20": {
+      "reinforces": [
+        "restare",
+        "roma"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Per adesso resto a Roma. Questo lavoro, questa casa, e queste persone sono abbastanza.",
+          "lemmas": [
+            "per",
+            "adesso",
+            "restare",
+            "a",
+            "roma",
+            "questo",
+            "lavorare",
+            "questo",
+            "casa",
+            "e",
+            "questo",
+            "persona",
+            "essere",
+            "abbastanza"
+          ]
+        }
+      ]
+    },
+    "luca-a-roma-40:s22": {
+      "reinforces": [
+        "proposta",
+        "restare"
+      ],
+      "variants": [
+        {
+          "id": "extended",
+          "text": "Grazie. La proposta è buona. Ma per adesso resto qui a Roma. Non parto.",
+          "lemmas": [
+            "grazie",
+            "la",
+            "proposta",
+            "essere",
+            "buono",
+            "ma",
+            "per",
+            "adesso",
+            "restare",
+            "qui",
+            "a",
+            "roma",
+            "non",
+            "partire"
+          ]
+        }
+      ]
+    }
+  }
+}

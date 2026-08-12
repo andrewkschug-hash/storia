@@ -1,0 +1,263 @@
+{
+  "id": "luca-a-roma-02",
+  "storyId": "luca-a-roma",
+  "number": 2,
+  "title": "The city",
+  "titleIt": "La città",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "roma",
+    "strada",
+    "bar-centrale",
+    "centro"
+  ],
+  "characterIds": [
+    "luca"
+  ],
+  "events": [
+    {
+      "id": "ev-02-explore",
+      "summary": "Luca walks the streets of Rome, returns to the bar, still tired but happy.",
+      "characterIds": [
+        "luca"
+      ],
+      "locationIds": [
+        "roma",
+        "strada",
+        "bar-centrale"
+      ],
+      "rememberedFacts": [
+        "Luca walks a lot in Rome",
+        "Rome is big",
+        "Luca still goes to the bar"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Oggi Luca cammina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca cammina per la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "camminare",
+            "per",
+            "la",
+            "strada"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Roma è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "roma",
+            "essere",
+            "grande"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s05",
+          "text": "Luca cerca un bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "cercare",
+            "un",
+            "bar"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "C'è un bar vicino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "bar",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Luca va al bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "al",
+            "bar"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Luca entra nel bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "entrare",
+            "nel",
+            "bar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Luca ha ancora fame.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ancora",
+            "fame"
+          ],
+          "phrases": [
+            {
+              "surface": "ha ancora fame",
+              "literalEn": "has still hunger",
+              "naturalEn": "is still hungry",
+              "tokenStart": 1,
+              "tokenEnd": 3
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca vuole mangiare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "mangiare"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca è stanco, ma sta bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "stanco",
+            "ma",
+            "stare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Roma è bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "roma",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca mangia qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "mangiare",
+            "qualcosa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch02_q01",
+      "chapterId": "luca-a-roma-02",
+      "type": "event",
+      "question": "What does Luca do in the city?",
+      "choices": [
+        "He walks the streets",
+        "He starts a new job",
+        "He leaves Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca walks through Rome and sees that the city is big and beautiful.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch02_q02",
+      "chapterId": "luca-a-roma-02",
+      "type": "direct",
+      "question": "What does Luca think about Rome?",
+      "choices": [
+        "It is big and beautiful",
+        "It is small and quiet",
+        "It is empty and cold"
+      ],
+      "correctChoice": 0,
+      "explanation": "The chapter stresses that Rome is grande and bella.",
+      "difficulty": 1
+    },
+    {
+      "id": "ch02_q03",
+      "chapterId": "luca-a-roma-02",
+      "type": "sequence",
+      "question": "After walking, where does Luca go again?",
+      "choices": [
+        "Back to the bar",
+        "To the train station",
+        "To Sofia’s house"
+      ],
+      "correctChoice": 0,
+      "explanation": "He returns to the bar; he is still hungry but feels well (sta bene).",
+      "difficulty": 1
+    }
+  ]
+}

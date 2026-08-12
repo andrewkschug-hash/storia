@@ -1,0 +1,964 @@
+{
+  "id": "luca-a-roma-32",
+  "storyId": "luca-a-roma",
+  "number": 32,
+  "title": "Doubts",
+  "titleIt": "I dubbi",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "lavoro-caffe",
+    "quartiere"
+  ],
+  "characterIds": [
+    "luca",
+    "giulia",
+    "padrone",
+    "sofia",
+    "marco"
+  ],
+  "events": [
+    {
+      "id": "ev-32-doubts",
+      "summary": "Replies stay weak; Giulia raises hours if the café survives; Marco’s time is limited; Luca grows unsure.",
+      "characterIds": [
+        "luca",
+        "giulia",
+        "padrone",
+        "sofia",
+        "marco"
+      ],
+      "locationIds": [
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Few people have confirmed; many said maybe or nothing",
+        "Giulia asks what work looks like if the café stays",
+        "Marco helps but has little time because of job search"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Due giorni dopo, la festa era più vicina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "giorno",
+            "dopo",
+            "la",
+            "festa",
+            "essere",
+            "piu",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "I messaggi erano meno chiari del piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "messaggio",
+            "essere",
+            "meno",
+            "chiaro",
+            "del",
+            "piano"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Poche persone avevano detto sì. Tante avevano detto forse, o niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poco",
+            "persona",
+            "avere",
+            "dire",
+            "si_yes",
+            "tanto",
+            "avere",
+            "dire",
+            "forse",
+            "o",
+            "niente"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Se viene poca gente, il padrone vede una sala vuota.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "venire",
+            "poco",
+            "gente",
+            "il",
+            "padrone",
+            "vedere",
+            "una",
+            "sala",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "È peggio di non fare niente.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "peggio",
+            "di",
+            "non",
+            "fare",
+            "niente"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Hai ragione. Organizzare è una cosa. Avere persone qui è un’altra.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ragione",
+            "organizzare",
+            "essere",
+            "una",
+            "cosa",
+            "avere",
+            "persona",
+            "qui",
+            "essere",
+            "altro"
+          ],
+          "phrases": [
+            {
+              "surface": "Hai ragione",
+              "literalEn": "you have reason",
+              "naturalEn": "you’re right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Il padrone ascoltava da vicino e non sorridiva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "ascoltare",
+            "dare",
+            "vicino",
+            "e",
+            "non",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Guardava i tavoli vuoti. Io sono stanco. Una festa è bella.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare",
+            "i",
+            "tavolo",
+            "vuoto",
+            "io",
+            "essere",
+            "stanco",
+            "una",
+            "festa",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Ma il caffè deve funzionare ogni giorno.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "il",
+            "caffe",
+            "dovere",
+            "funzionare",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Lo sappiamo. Per questo vogliamo le persone qui, non solo messaggi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "per",
+            "questo",
+            "volere",
+            "le",
+            "persona",
+            "qui",
+            "non",
+            "solo",
+            "messaggio"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Durante il giorno la sala restava quasi vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "durante",
+            "il",
+            "giorno",
+            "la",
+            "sala",
+            "restare",
+            "quasi",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Allora non possiamo solo aspettare. Dobbiamo parlare ancora, se possiamo.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "non",
+            "potere",
+            "solo",
+            "aspettare",
+            "dovere",
+            "parlare",
+            "ancora",
+            "se",
+            "potere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Non so se sabato prova qualcosa, se la gente non viene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "sapere",
+            "se",
+            "sabato",
+            "provare",
+            "qualcosa",
+            "se",
+            "la",
+            "gente",
+            "non",
+            "venire"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Nel pomeriggio Giulia ha parlato chiaro vicino ai tavoli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "giulia",
+            "avere",
+            "parlare",
+            "chiaro",
+            "vicino",
+            "ai",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Se il caffè resta, che lavoro c’è per me?",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "il",
+            "caffe",
+            "restare",
+            "che",
+            "lavorare",
+            "ce",
+            "per",
+            "io"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Poche ore, o un lavoro vero. Non voglio solo un altro dopo.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "poco",
+            "ora",
+            "o",
+            "un",
+            "lavorare",
+            "vero",
+            "non",
+            "volere",
+            "solo",
+            "un",
+            "altro",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Voglio capire le ore, i soldi, il posto.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "capire",
+            "le",
+            "ora",
+            "i",
+            "soldi",
+            "il",
+            "posto"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Il padrone ha guardato Giulia senza dire sì o no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "avere",
+            "guardare",
+            "giulia",
+            "senza",
+            "dire",
+            "si_yes",
+            "o",
+            "no"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Prima vediamo sabato. Poi parliamo di ore e di soldi.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "vedere",
+            "sabato",
+            "poi",
+            "parlare",
+            "di",
+            "ora",
+            "e",
+            "di",
+            "soldi"
+          ],
+          "phrases": [
+            {
+              "surface": "vediamo",
+              "literalEn": "we see",
+              "naturalEn": "we’ll see",
+              "tokenStart": 1,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Adesso non posso decidere. Giulia ha accettato, ma per lei era importante.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "non",
+            "potere",
+            "decidere",
+            "giulia",
+            "avere",
+            "accettare",
+            "ma",
+            "per",
+            "lei",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Hai ragione a chiedere. Se sabato non funziona, anche le ore restano un problema.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ragione",
+            "a",
+            "chiedere",
+            "se",
+            "sabato",
+            "non",
+            "funzionare",
+            "anche",
+            "le",
+            "ora",
+            "restare",
+            "un",
+            "problema"
+          ],
+          "phrases": [
+            {
+              "surface": "Hai ragione",
+              "literalEn": "you have reason",
+              "naturalEn": "you’re right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Io lavoro qui. Se il caffè chiude, resto senza lavoro.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "lavorare",
+            "qui",
+            "se",
+            "il",
+            "caffe",
+            "chiudere",
+            "restare",
+            "senza",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Se resta, voglio ore. Il padrone è tornato in cucina senza altre parole.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "restare",
+            "volere",
+            "ora",
+            "il",
+            "padrone",
+            "essere",
+            "tornare",
+            "in",
+            "cucina",
+            "senza",
+            "altro",
+            "parola"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Luca ha pensato all’affitto e alle ore di Giulia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "pensare",
+            "affitto",
+            "e",
+            "alle",
+            "ora",
+            "di",
+            "giulia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Ha pensato anche alle persone che non rispondevano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "pensare",
+            "anche",
+            "alle",
+            "persona",
+            "che",
+            "non",
+            "rispondere"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Più tardi un cliente ha chiesto se il caffè chiudeva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "piu",
+            "tardi",
+            "un",
+            "cliente",
+            "avere",
+            "chiedere",
+            "se",
+            "il",
+            "caffe",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Non ancora. Sabato c’è una festa piccola. Può venire, se vuole.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ancora",
+            "sabato",
+            "ce",
+            "una",
+            "festa",
+            "piccolo",
+            "potere",
+            "venire",
+            "se",
+            "volere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Il cliente ha detto che forse veniva con la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cliente",
+            "avere",
+            "dire",
+            "che",
+            "forse",
+            "venire",
+            "con",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Una famiglia non era tanta gente, ma era meglio di niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "famiglia",
+            "non",
+            "essere",
+            "tanto",
+            "gente",
+            "ma",
+            "essere",
+            "meglio",
+            "di",
+            "niente"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Se parliamo, qualcuno ascolta. Dipende da noi, in parte.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "parlare",
+            "qualcuno",
+            "ascoltare",
+            "dipendere",
+            "dare",
+            "noi",
+            "in",
+            "partire"
+          ],
+          "phrases": [
+            {
+              "surface": "Dipende",
+              "literalEn": "it depends",
+              "naturalEn": "it depends",
+              "tokenStart": 4,
+              "tokenEnd": 4
+            }
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "L’altra parte non risponde, e io non so perché.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "altro",
+            "partire",
+            "non",
+            "rispondere",
+            "e",
+            "io",
+            "non",
+            "sapere",
+            "perche"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La sera Luca ha chiamato Sofia e ha spiegato i messaggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "luca",
+            "avere",
+            "chiamare",
+            "sofia",
+            "e",
+            "avere",
+            "spiegare",
+            "i",
+            "messaggio"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Allora domani io e Marco andiamo di nuovo nel quartiere.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "domani",
+            "io",
+            "e",
+            "marco",
+            "andare",
+            "di",
+            "nuovo",
+            "nel",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Non aspettiamo solo messaggi.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "aspettare",
+            "solo",
+            "messaggio"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Io resto al caffè. Il padrone ha bisogno di vedere il nostro lavoro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "restare",
+            "al",
+            "caffe",
+            "il",
+            "padrone",
+            "avere",
+            "bisogno",
+            "di",
+            "vedere",
+            "il",
+            "nostro",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Sofia ha ascoltato senza grandi parole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "ascoltare",
+            "senza",
+            "grande",
+            "parola"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s37",
+          "text": "Dopo, Marco ha chiamato Luca. Sembrava stanco e preoccupato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "marco",
+            "avere",
+            "chiamare",
+            "luca",
+            "sembrare",
+            "stanco",
+            "e",
+            "preoccupato"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Aiuto, se posso. Ma questa settimana cerco lavoro. Ho bisogno di soldi.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "aiutare",
+            "se",
+            "potere",
+            "ma",
+            "questo",
+            "settimana",
+            "cercare",
+            "lavorare",
+            "avere",
+            "bisogno",
+            "di",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Se arriva una chiamata per un posto, non posso dire di no.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "arrivare",
+            "una",
+            "chiamata",
+            "per",
+            "un",
+            "posto",
+            "non",
+            "potere",
+            "dire",
+            "di",
+            "no"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Lo so. Chiedo solo se sabato ci sei.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "chiedere",
+            "solo",
+            "se",
+            "sabato",
+            "ci",
+            "essere"
+          ],
+          "phrases": [
+            {
+              "surface": "Lo so",
+              "literalEn": "it I know",
+              "naturalEn": "I know",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Voglio essere lì. Non sono sicuro di tutto l’orario.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "essere",
+            "li",
+            "non",
+            "essere",
+            "sicuro",
+            "di",
+            "tutto",
+            "orario"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Ti dico quando so. Dopo la chiamata Luca ha pensato all’affitto.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "ti",
+            "dire",
+            "quando",
+            "sapere",
+            "dopo",
+            "la",
+            "chiamata",
+            "luca",
+            "avere",
+            "pensare",
+            "affitto"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Se sabato non funzionava, il futuro del lavoro era difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "sabato",
+            "non",
+            "funzionare",
+            "il",
+            "futuro",
+            "del",
+            "lavorare",
+            "essere",
+            "difficile"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Abbiamo un piano. Non siamo sicuri.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "un",
+            "piano",
+            "non",
+            "essere",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "E adesso non so se Marco c’è davvero.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "adesso",
+            "non",
+            "sapere",
+            "se",
+            "marco",
+            "ce",
+            "davvero"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Il piano restava, ma sembrava più difficile di ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "piano",
+            "restare",
+            "ma",
+            "sembrare",
+            "piu",
+            "difficile",
+            "di",
+            "ieri"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch32_q01",
+      "chapterId": "luca-a-roma-32",
+      "type": "event",
+      "question": "What becomes clear about the replies?",
+      "choices": [
+        "Few people have said yes; many said maybe or nothing",
+        "Everyone confirmed",
+        "Sofia cancelled the festa"
+      ],
+      "correctChoice": 0,
+      "explanation": "The responses are weaker than hoped.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch32_q02",
+      "chapterId": "luca-a-roma-32",
+      "type": "character",
+      "question": "What does Giulia want to understand if the café stays?",
+      "choices": [
+        "What the work looks like: hours, money, a real place",
+        "Whether to sell the café",
+        "Whether to leave Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "She wants something concrete, not another temporary promise.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch32_q03",
+      "chapterId": "luca-a-roma-32",
+      "type": "inference",
+      "question": "Why is Luca more unsure at the end?",
+      "choices": [
+        "Weak replies and Marco’s limited time make Saturday feel fragile",
+        "The owner closed the café",
+        "Sofia said nobody should come"
+      ],
+      "correctChoice": 0,
+      "explanation": "Organizing did not guarantee people or Marco’s availability.",
+      "difficulty": 2
+    }
+  ]
+}

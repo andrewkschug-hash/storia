@@ -1,0 +1,678 @@
+{
+  "id": "luca-a-roma-21",
+  "storyId": "luca-a-roma",
+  "number": 21,
+  "title": "After the trip",
+  "titleIt": "Dopo il viaggio",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "appartamento-luca",
+    "strada",
+    "lavoro-caffe",
+    "quartiere"
+  ],
+  "characterIds": [
+    "luca",
+    "giulia",
+    "padrone",
+    "marco"
+  ],
+  "events": [
+    {
+      "id": "ev-21-routine",
+      "summary": "Luca settles back into weekday café work after the trip.",
+      "characterIds": [
+        "luca",
+        "giulia",
+        "padrone"
+      ],
+      "locationIds": [
+        "appartamento-luca",
+        "lavoro-caffe"
+      ],
+      "rememberedFacts": [
+        "Luca is back in his Rome routine",
+        "He works at the café every morning"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Dopo il viaggio Luca torna alla sua vita a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "il",
+            "viaggio",
+            "luca",
+            "tornare",
+            "alla",
+            "suo",
+            "vita",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Oggi è lunedì e Luca si sveglia presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "lunedi",
+            "e",
+            "luca",
+            "si",
+            "svegliare",
+            "presto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca ha una casa e un lavoro al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "una",
+            "casa",
+            "e",
+            "un",
+            "lavoro",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ogni mattina Luca va al lavoro nel quartiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ogni",
+            "mattina",
+            "luca",
+            "andare",
+            "al",
+            "lavoro",
+            "nel",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Oggi Luca va al lavoro più presto perché deve parlare con Marco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "andare",
+            "al",
+            "lavoro",
+            "piu",
+            "presto",
+            "perche",
+            "dovere",
+            "parlare",
+            "con",
+            "marco"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca prepara qualcosa da mangiare perché ha fame.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "preparare",
+            "qualcosa",
+            "da",
+            "mangiare",
+            "perche",
+            "avere",
+            "fame"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Poi Luca esce di casa e cammina nella strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "luca",
+            "uscire",
+            "di",
+            "casa",
+            "e",
+            "camminare",
+            "nella",
+            "strada"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s08",
+          "text": "Il quartiere è tranquillo la mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "quartiere",
+            "essere",
+            "tranquillo",
+            "la",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Luca conosce la piazza e i negozi del quartiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "conoscere",
+            "la",
+            "piazza",
+            "e",
+            "i",
+            "negozio",
+            "del",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Cammina verso il caffè dove lavora ogni giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "verso",
+            "il",
+            "caffe",
+            "dove",
+            "lavorare",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Quando arriva, vede la porta del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "arrivare",
+            "vedere",
+            "la",
+            "porta",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Giulia è già al lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "essere",
+            "gia",
+            "al",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Buongiorno, Giulia.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Buongiorno, Luca. Oggi arrivi presto.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "luca",
+            "oggi",
+            "arrivare",
+            "presto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s15",
+          "text": "Sì, devo parlare con il padrone.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "dovere",
+            "parlare",
+            "con",
+            "il",
+            "padrone"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Il padrone arriva e guarda la sala del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "arrivare",
+            "e",
+            "guardare",
+            "la",
+            "sala",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Luca, oggi il caffè è occupato.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "oggi",
+            "il",
+            "caffe",
+            "essere",
+            "occupato"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Va bene. Posso aiutare.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "bene",
+            "potere",
+            "aiutare"
+          ],
+          "phrases": [
+            {
+              "surface": "Va bene",
+              "literalEn": "it goes well",
+              "naturalEn": "okay / all right",
+              "tokenStart": 0,
+              "tokenEnd": 1
+            }
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Giulia e Luca preparano i tavoli per i clienti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "e",
+            "luca",
+            "preparare",
+            "i",
+            "tavolo",
+            "per",
+            "i",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "I clienti arrivano presto il lunedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "cliente",
+            "arrivare",
+            "presto",
+            "il",
+            "lunedi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Luca serve acqua e caffè ai clienti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "servire",
+            "acqua",
+            "e",
+            "caffe",
+            "ai",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Giulia aiuta Luca quando un cliente chiede qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "aiutare",
+            "luca",
+            "quando",
+            "un",
+            "cliente",
+            "chiedere",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Non è difficile, Luca.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "difficile",
+            "luca"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Grazie, Giulia.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il padrone guarda Luca e dice grazie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "guardare",
+            "luca",
+            "e",
+            "dire",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Bene, Luca. Oggi lavori bene.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "luca",
+            "oggi",
+            "lavorare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Luca è felice e non è stanco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice",
+            "e",
+            "non",
+            "essere",
+            "stanco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s28",
+          "text": "Il pomeriggio il caffè è più tranquillo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "pomeriggio",
+            "il",
+            "caffe",
+            "essere",
+            "piu",
+            "tranquillo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca guarda la piazza dalla finestra del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "piazza",
+            "dalla",
+            "finestra",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Roma è bella e Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "roma",
+            "essere",
+            "bello",
+            "e",
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "La sera Luca torna a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "luca",
+            "tornare",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Domani c'è di nuovo lavoro, ma oggi va bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "ce",
+            "di",
+            "nuovo",
+            "lavoro",
+            "ma",
+            "oggi",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca dorme bene la notte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "dormire",
+            "bene",
+            "la",
+            "notte"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "La sua vita a Roma è bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "suo",
+            "vita",
+            "a",
+            "roma",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca conosce il quartiere e il lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "conoscere",
+            "il",
+            "quartiere",
+            "e",
+            "il",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Dopo il viaggio tutto è più facile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "il",
+            "viaggio",
+            "tutto",
+            "essere",
+            "piu",
+            "facile"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Luca ha amici e un lavoro importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "amico",
+            "e",
+            "un",
+            "lavoro",
+            "importante"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch21_q01",
+      "chapterId": "luca-a-roma-21",
+      "type": "event",
+      "question": "Why does Luca go to work early today?",
+      "questionIt": "Perché Luca va al lavoro presto oggi?",
+      "choices": [
+        "He must talk with Marco",
+        "He is leaving Rome",
+        "The café is closed"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca goes early because he must speak with Marco (deve parlare con Marco).",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q02",
+      "chapterId": "luca-a-roma-21",
+      "type": "character",
+      "question": "Who helps Luca with the customers?",
+      "choices": [
+        "Giulia",
+        "Sofia",
+        "Nonna Rosa"
+      ],
+      "correctChoice": 0,
+      "explanation": "Giulia works with Luca and helps when a customer asks for something.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q03",
+      "chapterId": "luca-a-roma-21",
+      "type": "direct",
+      "question": "What does the owner say about the café today?",
+      "questionIt": "Cosa dice il padrone del caffè oggi?",
+      "choices": [
+        "The café is busy today",
+        "The café is closed today",
+        "Luca must leave Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "The padrone tells Luca that the café is occupato (busy) today.",
+      "difficulty": 2
+    }
+  ]
+}
