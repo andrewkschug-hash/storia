@@ -201,7 +201,7 @@ describe('Phase 7 provider selection', () => {
         language: 'it-IT',
         speed: 'normal',
       }),
-    ).rejects.toThrow(/GOOGLE_TTS_API_KEY is not configured/);
+    ).rejects.toThrow(/Google TTS is not configured/);
   });
 });
 

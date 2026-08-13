@@ -289,6 +289,11 @@ function gatewayStatus() {
         id: 'google' as const,
         label: PROVIDER_LABEL.google,
         configured: providerConfigured('google'),
+        auth: process.env.GOOGLE_TTS_API_KEY
+          ? 'api-key'
+          : providerConfigured('google')
+            ? 'adc'
+            : null,
       },
     },
   };

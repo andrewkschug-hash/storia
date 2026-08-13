@@ -38,7 +38,25 @@ Either:
 
 The key must include **voices_read** (or be unrestricted). Scoped keys without that permission return 401 in Voice Lab even when the key is otherwise valid.
 
-Do **not** put the key in the Expo app. Skip Azure and Google until Luca / Sofia / Narrator feel right.
+Do **not** put the key in the Expo app.
+
+### Google Cloud TTS (local ADC)
+
+After ElevenLabs quota is a problem, use the Storia TTS Google Cloud project:
+
+```bash
+gcloud auth login
+gcloud auth application-default login
+gcloud config set project YOUR_STORIA_TTS_PROJECT_ID
+```
+
+Then in `services/tts-gateway/.env`:
+
+```
+GOOGLE_CLOUD_PROJECT=YOUR_STORIA_TTS_PROJECT_ID
+```
+
+Restart the gateway. Voice Lab should show **Google: Cloud TTS ready**. Do not paste a service-account JSON into the repo. Skip generating the A2 library until a tiny Italian preview sounds right.
 
 ### 3. Voice Lab
 
@@ -84,7 +102,8 @@ Credentials stay in `services/tts-gateway` environment variables:
 
 - `ELEVENLABS_API_KEY`
 - `AZURE_SPEECH_KEY` / `AZURE_SPEECH_REGION`
-- `GOOGLE_TTS_API_KEY`
+- `GOOGLE_CLOUD_PROJECT` (Application Default Credentials; preferred)
+- `GOOGLE_TTS_API_KEY` (optional fallback only)
 - `TTS_PROVIDER` (default `elevenlabs`)
 
 Never put keys in the Expo bundle. The client only receives approved audio URLs or cache keys. See `services/tts-gateway/.env.example`.

@@ -213,7 +213,7 @@ export default function VoiceLabScreen() {
           <StatusLine label="TTS Gateway" on={connected} onText="Connected" offText="Not running" colors={colors} />
           <StatusLine label="ElevenLabs" on={eleven} onText="API configured" offText="Not configured" colors={colors} />
           <StatusLine label="Azure" on={azure} onText="API configured" offText="Not configured" colors={colors} />
-          <StatusLine label="Google" on={google} onText="API configured" offText="Not configured" colors={colors} />
+          <StatusLine label="Google" on={google} onText="Cloud TTS ready" offText="Not configured" colors={colors} />
 
           <View style={styles.row}>
             <LabButton label="Check connection" onPress={() => void refreshGateway()} />

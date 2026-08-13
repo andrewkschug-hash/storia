@@ -24,8 +24,8 @@ export function friendlyGatewayError(e: unknown): string {
   if (/AZURE_SPEECH/i.test(message)) {
     return 'Azure is not configured. You can ignore Azure for now and use ElevenLabs.';
   }
-  if (/GOOGLE_TTS/i.test(message)) {
-    return 'Google is not configured. You can ignore Google for now and use ElevenLabs.';
+  if (/GOOGLE_TTS|Google TTS is not configured|application-default login/i.test(message)) {
+    return 'Google Cloud TTS is not configured. In PowerShell run gcloud auth application-default login, set GOOGLE_CLOUD_PROJECT in services/tts-gateway/.env, then restart the gateway.';
   }
   return message;
 }

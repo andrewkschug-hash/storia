@@ -6,6 +6,7 @@ import type {
   VoiceInfo,
 } from './types';
 import { audioCacheKey } from './cacheKey';
+import { googleAdcAccessToken, googleQuotaProject, googleTtsConfigured } from './env';
 import { toPublicVoices, voicesForItalianTTS } from './voiceCatalog';
 
 export type {
@@ -170,25 +171,41 @@ export class AzureTTSProvider implements TTSProvider {
   }
 }
 
+type GoogleVoiceRow = {
+  name?: string;
+  ssmlGender?: string;
+  languageCodes?: string[];
+};
+
+function googleVoiceRank(name: string): number {
+  const n = name.toLowerCase();
+  if (n.includes('chirp')) return 0;
+  if (n.includes('neural2')) return 1;
+  if (n.includes('studio')) return 2;
+  if (n.includes('wavenet')) return 3;
+  if (n.includes('standard')) return 4;
+  return 5;
+}
+
 export class GoogleTTSProvider implements TTSProvider {
   readonly id = 'google' as const;
 
   constructor(private readonly env: NodeJS.Dict<string | undefined>) {}
 
   async listVoices(language = 'it-IT'): Promise<VoiceInfo[]> {
-    const key = requireEnv(this.env, 'GOOGLE_TTS_API_KEY');
-    const res = await fetch(
-      `https://texttospeech.googleapis.com/v1/voices?languageCode=${encodeURIComponent(language)}&key=${encodeURIComponent(key)}`,
+    const data = await this.googleJson<{ voices?: GoogleVoiceRow[] }>(
+      `https://texttospeech.googleapis.com/v1/voices?languageCode=${encodeURIComponent(language)}`,
+      { method: 'GET' },
     );
-    if (!res.ok) throw new Error(`Google voices failed: ${res.status}`);
-    const data = (await res.json()) as {
-      voices?: { name: string; ssmlGender?: string; languageCodes?: string[] }[];
-    };
+    const lang = language.toLowerCase();
+    const voices = (data.voices ?? [])
+      .filter((v) => (v.languageCodes ?? []).some((code) => code.toLowerCase().startsWith(lang.slice(0, 2))))
+      .sort((a, b) => googleVoiceRank(a.name ?? '') - googleVoiceRank(b.name ?? ''));
     return toPublicVoices(
       this.id,
-      (data.voices ?? []).map((v) => ({
-        id: v.name,
-        name: v.name,
+      voices.map((v) => ({
+        id: v.name ?? 'unknown',
+        name: v.name ?? 'unknown',
         language: v.languageCodes?.[0] ?? language,
         gender: v.ssmlGender === 'FEMALE' ? 'female' : v.ssmlGender === 'MALE' ? 'male' : 'neutral',
       })),
@@ -196,9 +213,8 @@ export class GoogleTTSProvider implements TTSProvider {
   }
 
   async generateSpeech(req: GenerateSpeechRequest): Promise<GenerateSpeechResult> {
-    const key = requireEnv(this.env, 'GOOGLE_TTS_API_KEY');
-    const res = await fetch(
-      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${encodeURIComponent(key)}`,
+    const data = await this.googleJson<{ audioContent?: string }>(
+      'https://texttospeech.googleapis.com/v1/text:synthesize',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -212,8 +228,6 @@ export class GoogleTTSProvider implements TTSProvider {
         }),
       },
     );
-    if (!res.ok) throw new Error(`Google generate failed: ${res.status} ${await res.text()}`);
-    const data = (await res.json()) as { audioContent?: string };
     if (!data.audioContent) throw new Error('Google TTS returned no audio');
     const audio = Buffer.from(data.audioContent, 'base64').buffer;
     return {
@@ -229,6 +243,33 @@ export class GoogleTTSProvider implements TTSProvider {
         generationVersion: Number(this.env.TTS_GENERATION_VERSION ?? 1),
       }),
     };
+  }
+
+  private async googleJson<T>(url: string, init: RequestInit): Promise<T> {
+    if (!googleTtsConfigured(this.env)) {
+      throw new Error(
+        'Google TTS is not configured. Run gcloud auth application-default login, or set GOOGLE_TTS_API_KEY.',
+      );
+    }
+    const headers = new Headers(init.headers);
+    let requestUrl = url;
+    const apiKey = this.env.GOOGLE_TTS_API_KEY;
+    if (apiKey) {
+      const u = new URL(url);
+      u.searchParams.set('key', apiKey);
+      requestUrl = u.toString();
+    } else {
+      headers.set('Authorization', `Bearer ${await googleAdcAccessToken(this.env)}`);
+      const project = googleQuotaProject(this.env);
+      if (project) headers.set('x-goog-user-project', project);
+    }
+    const res = await fetch(requestUrl, { ...init, headers });
+    if (!res.ok) {
+      const detail = await res.text();
+      const label = init.method === 'GET' ? 'voices' : 'generate';
+      throw new Error(`Google ${label} failed: ${res.status} ${detail}`);
+    }
+    return (await res.json()) as T;
   }
 }
 
