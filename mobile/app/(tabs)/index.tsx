@@ -13,7 +13,7 @@ import { getChapter } from '@/src/content';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 
 type Props = {
   children: ReactNode;

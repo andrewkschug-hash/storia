@@ -8,7 +8,7 @@ import { ScreenContent } from '@/src/components/ScreenContent';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import type { VocabBrowseItem } from '@/src/vocabulary/catalog';
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 

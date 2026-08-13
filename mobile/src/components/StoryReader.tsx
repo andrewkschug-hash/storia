@@ -14,7 +14,7 @@ import { ReaderSentence } from '@/src/components/ReaderSentence';
 import { ChapterEndNotes } from '@/src/components/ChapterEndNotes';
 import type { ChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 import { Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 

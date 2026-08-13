@@ -17,7 +17,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { getAccount, signInWithPassword, signUpWithPassword } from '@/src/account/storage';
 import { isSupabaseConfigured } from '@/src/lib/supabase';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 import { palette, Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 

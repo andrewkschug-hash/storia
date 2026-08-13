@@ -9,7 +9,7 @@ import { DictionarySheet } from '@/src/components/DictionarySheet';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { markOnboardingComplete } from '@/src/onboarding/storage';
 import type { DictionaryLookup } from '@/src/vocabulary/types';
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 

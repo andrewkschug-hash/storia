@@ -16,7 +16,7 @@ import { ScreenContent } from '@/src/components/ScreenContent';
 import { StoriesLevelList } from '@/src/components/StoriesLevelList';
 import { getChapter, getContentBundle } from '@/src/content';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
-import { useLayout } from '@/src/theme/layout';
+import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 

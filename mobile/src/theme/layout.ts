@@ -1,6 +1,3 @@
-import { useMemo } from 'react';
-import { useWindowDimensions } from 'react-native';
-
 import { Spacing } from '@/src/theme/tokens';
 
 /** Phone-first breakpoints for web + tablet layouts. */
@@ -39,22 +36,4 @@ export function contentPaddingHorizontal(width: number, size: LayoutSize): numbe
   if (size === 'desktop') return Spacing.xl;
   if (size === 'tablet') return Spacing.lg;
   return Spacing.lg;
-}
-
-export function useLayout() {
-  const { width, height } = useWindowDimensions();
-  return useMemo(() => {
-    const size = layoutSizeForWidth(width);
-    return {
-      width,
-      height,
-      size,
-      isPhone: size === 'phone',
-      isTablet: size === 'tablet',
-      isDesktop: size === 'desktop',
-      isCompactHeight: height < 700,
-      contentMaxWidth: contentMaxWidth(size),
-      paddingHorizontal: contentPaddingHorizontal(width, size),
-    };
-  }, [width, height]);
 }
