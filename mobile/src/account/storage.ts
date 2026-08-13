@@ -1,6 +1,11 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { User } from '@supabase/supabase-js';
 
+import {
+  defaultAvatarIdForEmail,
+  isAvatarId,
+  type AvatarId,
+} from '@/src/account/avatars';
 import { getSupabase, isSupabaseConfigured } from '@/src/lib/supabase';
 
 const KEY = 'storia.localAccount';
@@ -14,11 +19,18 @@ export type LocalAccount = {
   displayName: string;
   createdAt: string;
   role: AccountRole;
+  avatarId: AvatarId;
 };
 
 export type SaveAccountInput = {
   email: string;
   displayName: string;
+  avatarId?: AvatarId;
+};
+
+export type UpdateProfileInput = {
+  displayName?: string;
+  avatarId?: AvatarId;
 };
 
 export type PasswordAuthInput = {
@@ -60,6 +72,7 @@ function normalizeAccount(raw: unknown): LocalAccount | null {
     displayName,
     createdAt,
     role: roleForEmail(email),
+    avatarId: isAvatarId(row.avatarId) ? row.avatarId : defaultAvatarIdForEmail(email),
   };
 }
 
@@ -71,14 +84,41 @@ function displayNameFromUser(user: User, fallback?: string): string {
   return local?.trim() || 'Learner';
 }
 
-function accountFromUser(user: User, fallbackName?: string): LocalAccount {
+function avatarIdFromUser(user: User, fallback?: AvatarId): AvatarId {
+  const meta = user.user_metadata?.avatar_id;
+  if (isAvatarId(meta)) return meta;
+  if (fallback && isAvatarId(fallback)) return fallback;
+  return defaultAvatarIdForEmail(user.email ?? '');
+}
+
+function accountFromUser(user: User, fallback?: { displayName?: string; avatarId?: AvatarId }): LocalAccount {
   const email = (user.email ?? '').trim();
   return {
     email,
-    displayName: displayNameFromUser(user, fallbackName),
+    displayName: displayNameFromUser(user, fallback?.displayName),
     createdAt: user.created_at ?? new Date().toISOString(),
     role: roleForEmail(email),
+    avatarId: avatarIdFromUser(user, fallback?.avatarId),
   };
+}
+
+async function persistRemoteProfile(userId: string, displayName: string, avatarId: AvatarId): Promise<void> {
+  try {
+    await getSupabase().auth.updateUser({
+      data: { display_name: displayName, avatar_id: avatarId },
+    });
+  } catch {
+    /* local cache still saved */
+  }
+  try {
+    await getSupabase().from('storia_profiles').upsert({
+      id: userId,
+      display_name: displayName,
+      avatar_id: avatarId,
+    });
+  } catch {
+    /* profile table is optional until the Storia migration is applied */
+  }
 }
 
 async function readLocalAccount(): Promise<LocalAccount | null> {
@@ -105,7 +145,11 @@ export async function getAccount(): Promise<LocalAccount | null> {
         await AsyncStorage.removeItem(KEY);
         return null;
       }
-      const account = accountFromUser(user);
+      const local = await readLocalAccount();
+      const account = accountFromUser(user, {
+        displayName: local?.displayName,
+        avatarId: local?.avatarId,
+      });
       await writeLocalAccount(account);
       return account;
     } catch {
@@ -129,8 +173,35 @@ export async function saveAccount(input: SaveAccountInput): Promise<LocalAccount
     displayName,
     createdAt: existing?.createdAt ?? new Date().toISOString(),
     role: roleForEmail(email),
+    avatarId:
+      input.avatarId && isAvatarId(input.avatarId)
+        ? input.avatarId
+        : existing?.avatarId ?? defaultAvatarIdForEmail(email),
   };
   await writeLocalAccount(account);
+  return account;
+}
+
+export async function updateAccountProfile(patch: UpdateProfileInput): Promise<LocalAccount> {
+  const current = await getAccount();
+  if (!current) throw new Error('Not signed in.');
+  const displayName = patch.displayName?.trim() ?? current.displayName;
+  const avatarId = patch.avatarId ?? current.avatarId;
+  if (!displayName) throw new Error('Display name is required.');
+  if (!isAvatarId(avatarId)) throw new Error('Choose a profile picture.');
+
+  const account: LocalAccount = { ...current, displayName, avatarId };
+  await writeLocalAccount(account);
+
+  if (isSupabaseConfigured()) {
+    try {
+      const { data } = await getSupabase().auth.getUser();
+      const userId = data.user?.id;
+      if (userId) await persistRemoteProfile(userId, displayName, avatarId);
+    } catch {
+      /* local cache still saved */
+    }
+  }
   return account;
 }
 
@@ -148,26 +219,20 @@ export async function signUpWithPassword(input: PasswordAuthInput): Promise<Loca
     return saveAccount({ email, displayName });
   }
 
+  const avatarId = defaultAvatarIdForEmail(email);
   const { data, error } = await getSupabase().auth.signUp({
     email,
     password,
-    options: { data: { display_name: displayName } },
+    options: { data: { display_name: displayName, avatar_id: avatarId } },
   });
   if (error) throw new Error(error.message);
   if (!data.session?.user) {
     throw new Error('Check your email to confirm your account, then sign in.');
   }
 
-  const account = accountFromUser(data.session.user, displayName);
+  const account = accountFromUser(data.session.user, { displayName, avatarId });
   await writeLocalAccount(account);
-  try {
-    await getSupabase().from('storia_profiles').upsert({
-      id: data.session.user.id,
-      display_name: displayName,
-    });
-  } catch {
-    /* profile table is optional until the Storia migration is applied */
-  }
+  await persistRemoteProfile(data.session.user.id, displayName, avatarId);
   return account;
 }
 
@@ -187,9 +252,17 @@ export async function signInWithPassword(input: PasswordAuthInput): Promise<Loca
   if (error) throw new Error(error.message);
   const user = data.session?.user ?? data.user;
   if (!user?.email) throw new Error('Sign in failed.');
-  const account = accountFromUser(user);
+  const local = await readLocalAccount();
+  const account = accountFromUser(user, {
+    displayName: local?.displayName,
+    avatarId: local?.avatarId,
+  });
   await writeLocalAccount(account);
   return account;
+}
+
+export async function signOutAccount(): Promise<void> {
+  await clearAccount();
 }
 
 export async function clearAccount(): Promise<void> {

@@ -4,8 +4,9 @@ import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { getAccount } from '@/src/account/storage';
+import { getAccount, type LocalAccount } from '@/src/account/storage';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { ScreenContent } from '@/src/components/ScreenContent';
@@ -24,11 +25,15 @@ export default function HomeScreen() {
   const { story, progress, loading, error, service, refresh } = useReadingProgress();
   const { home, refresh: refreshVocab, summary } = useVocabulary(progress);
   const [gateReady, setGateReady] = useState(false);
+  const [account, setAccount] = useState<LocalAccount | null>(null);
 
   useFocusEffect(
     useCallback(() => {
       void refresh();
       void refreshVocab();
+      void getAccount().then((next) => {
+        if (next) setAccount(next);
+      });
     }, [refresh, refreshVocab]),
   );
 
@@ -40,6 +45,7 @@ export default function HomeScreen() {
         router.replace('/account' as Href);
         return;
       }
+      setAccount(local);
       const onboarded = await hasCompletedOnboarding();
       if (!onboarded) {
         router.replace('/onboarding' as Href);
@@ -87,13 +93,24 @@ export default function HomeScreen() {
         }}
         showsVerticalScrollIndicator={false}>
         <ScreenContent>
-          <Text
-            style={[
-              Typography.brand,
-              { color: colors.text, fontSize: brandSize, lineHeight: brandSize + 6 },
-            ]}>
-            Storia
-          </Text>
+          <View style={styles.topRow}>
+            <Text
+              style={[
+                Typography.brand,
+                { color: colors.text, fontSize: brandSize, lineHeight: brandSize + 6 },
+              ]}>
+              Storia
+            </Text>
+            {account ? (
+              <Pressable
+                onPress={() => router.push('/(tabs)/profile')}
+                accessibilityRole="button"
+                accessibilityLabel="Open profile"
+                style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}>
+                <AvatarBadge avatarId={account.avatarId} size="sm" />
+              </Pressable>
+            ) : null}
+          </View>
           <Text
             style={[
               Typography.heroTitle,
@@ -241,6 +258,11 @@ function DevLink({
 }
 
 const styles = StyleSheet.create({
+  topRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   section: {
     marginTop: Spacing.xl,
   },

@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { defaultAvatarIdForEmail, isAvatarId } from '@/src/account/avatars';
 import {
   DEVELOPER_EMAIL,
   canAccessDeveloperTools,
@@ -10,7 +11,9 @@ import {
   isDeveloperEmail,
   roleForEmail,
   saveAccount,
+  signOutAccount,
   signUpWithPassword,
+  updateAccountProfile,
 } from '@/src/account/storage';
 
 vi.mock('@react-native-async-storage/async-storage', () => {
@@ -30,6 +33,13 @@ vi.mock('@react-native-async-storage/async-storage', () => {
 
 vi.mock('react-native', () => ({
   Platform: { OS: 'web' },
+}));
+
+vi.mock('@/src/lib/supabase', () => ({
+  isSupabaseConfigured: () => false,
+  getSupabase: () => {
+    throw new Error('Supabase is not configured in tests.');
+  },
 }));
 
 describe('local account persistence', () => {
@@ -52,6 +62,8 @@ describe('local account persistence', () => {
     expect(saved.email).toBe('alex@example.com');
     expect(saved.role).toBe('learner');
     expect(saved.createdAt).toMatch(/^\d{4}-/);
+    expect(isAvatarId(saved.avatarId)).toBe(true);
+    expect(saved.avatarId).toBe(defaultAvatarIdForEmail('alex@example.com'));
 
     const loaded = await getAccount();
     expect(loaded).toEqual(saved);
@@ -74,6 +86,27 @@ describe('local account persistence', () => {
   it('clears the account', async () => {
     await saveAccount({ displayName: 'Alex', email: 'alex@example.com' });
     await clearAccount();
+    expect(await getAccount()).toBeNull();
+  });
+
+  it('keeps a chosen avatar and updates display name', async () => {
+    await saveAccount({
+      displayName: 'Alex',
+      email: 'alex@example.com',
+      avatarId: 'mare',
+    });
+    const updated = await updateAccountProfile({
+      displayName: 'Alessandra',
+      avatarId: 'limone',
+    });
+    expect(updated.displayName).toBe('Alessandra');
+    expect(updated.avatarId).toBe('limone');
+    expect(await getAccount()).toEqual(updated);
+  });
+
+  it('signOutAccount clears local state', async () => {
+    await saveAccount({ displayName: 'Alex', email: 'alex@example.com' });
+    await signOutAccount();
     expect(await getAccount()).toBeNull();
   });
 

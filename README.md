@@ -18,7 +18,7 @@ Use a **dedicated Storia** Supabase project (not the fragrance database).
 
 1. Copy `mobile/.env.example` → `mobile/.env`
 2. Paste **Project URL** + **anon/publishable key** from Supabase → Project Settings → API
-3. In the Storia project SQL editor, run `supabase/migrations/20260813_storia_profiles.sql`
+3. In the Storia project SQL editor, run `supabase/migrations/20260813_storia_profiles.sql`, then `supabase/migrations/20260813_storia_profile_avatar.sql`
 4. Auth → Providers → Email: enable Email. For local/Vercel testing, you can turn **off** “Confirm email”
 5. Auth → URL Configuration: add `storia://` and your Vercel URL (e.g. `https://your-app.vercel.app`)
 6. On Vercel, set the same `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_ANON_KEY` (needed at **build** time)
