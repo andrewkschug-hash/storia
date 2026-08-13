@@ -19,7 +19,7 @@ export default function ChapterRecapScreen() {
   if (!chapter) {
     return (
       <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Recap' }} />
+        <Stack.Screen options={{ title: 'Next' }} />
         <View style={styles.center}>
           <Text style={[Typography.body, { color: colors.textSecondary }]}>Chapter not found.</Text>
         </View>
@@ -43,7 +43,7 @@ export default function ChapterRecapScreen() {
           { paddingBottom: insets.bottom + Spacing.xl },
         ]}
         showsVerticalScrollIndicator={false}>
-        <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Chapter recap</Text>
+        <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Next</Text>
         <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
           {recap.titleIt}
         </Text>

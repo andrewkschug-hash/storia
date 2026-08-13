@@ -114,7 +114,7 @@ export function ReaderAudioBar({
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Chapter recap"
+          accessibilityLabel="Continue to next step"
           onPress={onOpenRecap}
           style={({ pressed }) => [
             styles.recapBtn,
@@ -124,7 +124,7 @@ export function ReaderAudioBar({
               opacity: pressed ? 0.88 : 1,
             },
           ]}>
-          <Text style={[Typography.label, { color: colors.text }]}>Recap</Text>
+          <Text style={[Typography.label, { color: colors.text }]}>Next</Text>
         </Pressable>
       </View>
 

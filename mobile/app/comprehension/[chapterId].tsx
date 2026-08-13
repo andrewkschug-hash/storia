@@ -11,7 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
-import { evaluateAnswer } from '@/src/comprehension/evaluate';
+import { evaluateAnswer, shuffleQuestionChoices } from '@/src/comprehension/evaluate';
 import { getProgressService } from '@/src/progress';
 import type { ComprehensionAnswerRecord } from '@/src/progress/types';
 import { comprehensionUsesItalianPrompt } from '@/src/content/scaffolding';
@@ -34,7 +34,10 @@ export default function ComprehensionScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
 
-  const questions = chapter?.questions ?? [];
+  const questions = useMemo(
+    () => (chapter?.questions ?? []).map((q) => shuffleQuestionChoices(q)),
+    [chapter],
+  );
   const [phase, setPhase] = useState<Phase>('intro');
   const [index, setIndex] = useState(0);
   const [states, setStates] = useState<QuestionState[]>(() =>

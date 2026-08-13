@@ -158,14 +158,14 @@ export default function OnboardingScreen() {
                 When you finish reading
               </Text>
               <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-                Tap Recap at the end of a chapter. A few short questions check the story — then the next
+                Tap Next at the end of a chapter. A few short questions check the story — then the next
                 chapter unlocks.
               </Text>
               <View
                 style={[styles.sample, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
                 <Text style={[Typography.caption, { color: colors.textMuted }]}>Finished reading?</Text>
                 <View style={[styles.fakeBtn, { backgroundColor: colors.tint }]}>
-                  <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Recap</Text>
+                  <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Next</Text>
                 </View>
               </View>
               <Pressable
@@ -193,7 +193,7 @@ export default function OnboardingScreen() {
                 That&apos;s it
               </Text>
               <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-                Just read the story. Tap when you need help. Use Recap when you reach the end.
+                Just read the story. Tap when you need help. Use Next when you reach the end.
               </Text>
               <Pressable
                 onPress={() => void finish()}
