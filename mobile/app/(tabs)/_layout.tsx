@@ -1,6 +1,6 @@
 import { SymbolView } from 'expo-symbols';
 import { Tabs } from 'expo-router';
-import { Platform } from 'react-native';
+import { Platform, useWindowDimensions } from 'react-native';
 
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
 import { useColorScheme } from '@/components/useColorScheme';
@@ -9,6 +9,8 @@ import { Colors } from '@/src/theme/tokens';
 export default function TabLayout() {
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
+  const { width } = useWindowDimensions();
+  const compactTabs = width < 360;
 
   return (
     <Tabs
@@ -18,7 +20,10 @@ export default function TabLayout() {
         tabBarStyle: {
           backgroundColor: colors.backgroundElevated,
           borderTopColor: colors.border,
+          minHeight: Platform.OS === 'web' ? 56 : undefined,
+          paddingBottom: Platform.OS === 'web' ? 6 : undefined,
         },
+        tabBarLabelStyle: compactTabs ? { fontSize: 11 } : undefined,
         headerStyle: {
           backgroundColor: colors.background,
         },
