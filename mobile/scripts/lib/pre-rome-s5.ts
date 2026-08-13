@@ -243,9 +243,11 @@ export const story05: StorySpec = {
           s('s22', 'Marta conta le bottiglie.', 'marta contare le bottiglia'),
           s('s23', 'Due bottiglie sono qui.', 'due bottiglia essere qui', 'paolo'),
           s('s24', 'Una torta e due bottiglie.', 'una torta e due bottiglia', 'marta'),
+          s('s25', 'Quanto pane?', 'quanto pane', 'luca'),
+          s('s26', 'Un po\' di pane.', 'un poco di pane', 'chiara'),
         ],
         [
-          s('s25', 'Paolo aiuta Marta.', 'paolo aiutare marta'),
+          s('s27', 'Paolo aiuta Marta.', 'paolo aiutare marta'),
           s('s26', 'Chiara mette il pane sul tavolo.', 'chiara mettere il pane sul tavolo'),
           s('s27', 'Luca guarda la cucina.', 'luca guardare la cucina'),
           s('s28', 'La famiglia è in cucina.', 'la famiglia essere in cucina'),
