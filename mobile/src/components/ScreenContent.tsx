@@ -16,12 +16,14 @@ type Props = {
  */
 export function ScreenContent({ children, style, maxWidth }: Props) {
   const layout = useLayout();
+  const resolvedMax =
+    maxWidth ?? (layout.isTablet ? 720 : layout.isDesktop ? 760 : layout.contentMaxWidth);
   return (
     <View
       style={[
         styles.shell,
         {
-          maxWidth: maxWidth ?? layout.contentMaxWidth,
+          maxWidth: resolvedMax,
           paddingHorizontal: layout.paddingHorizontal,
           width: '100%',
           alignSelf: 'center',

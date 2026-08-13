@@ -29,7 +29,10 @@ export default function OnboardingScreen() {
   }, []);
 
   const finish = async () => {
-    await markOnboardingComplete();
+    const account = await getAccount();
+    if (account?.email) {
+      await markOnboardingComplete(account.email);
+    }
     router.replace('/(tabs)');
   };
 

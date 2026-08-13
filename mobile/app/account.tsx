@@ -16,7 +16,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getAccount, signInWithPassword, signUpWithPassword } from '@/src/account/storage';
 import { isSupabaseConfigured } from '@/src/lib/supabase';
-import { hasCompletedOnboarding } from '@/src/onboarding/storage';
+import { hasCompletedOnboarding, markOnboardingComplete } from '@/src/onboarding/storage';
 import { useLayout } from '@/src/theme/useLayout';
 import { palette, Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
@@ -63,11 +63,19 @@ function looksLikeEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 }
 
-async function continueAfterAccount(): Promise<void> {
-  const onboarded = await hasCompletedOnboarding();
-  if (!onboarded) {
-    router.replace('/onboarding' as Href);
-    return;
+async function continueAfterAccount(options: {
+  isNewAccount: boolean;
+  email: string;
+}): Promise<void> {
+  if (options.isNewAccount) {
+    const onboarded = await hasCompletedOnboarding(options.email);
+    if (!onboarded) {
+      router.replace('/onboarding' as Href);
+      return;
+    }
+  } else {
+    // Returning sign-in: never force the first-run tour again.
+    await markOnboardingComplete(options.email);
   }
   router.replace('/(tabs)' as Href);
 }
@@ -77,7 +85,8 @@ export default function AccountScreen() {
   const tone = mediterranean[scheme];
   const insets = useSafeAreaInsets();
   const layout = useLayout();
-  const wide = layout.isDesktop;
+  // Side-by-side brand + form from tablet widths up; phones stay stacked.
+  const wide = !layout.isPhone;
   const [checking, setChecking] = useState(true);
   const [mode, setMode] = useState<'signup' | 'signin'>('signup');
   const [displayName, setDisplayName] = useState('');
@@ -95,7 +104,8 @@ export default function AccountScreen() {
     void (async () => {
       const existing = await getAccount();
       if (existing) {
-        await continueAfterAccount();
+        // Existing session — treat as returning, not a brand-new signup.
+        await continueAfterAccount({ isNewAccount: false, email: existing.email });
         return;
       }
       setChecking(false);
@@ -131,11 +141,12 @@ export default function AccountScreen() {
     setError(null);
     try {
       if (mode === 'signup') {
-        await signUpWithPassword({ displayName: name, email: mail, password });
+        const account = await signUpWithPassword({ displayName: name, email: mail, password });
+        await continueAfterAccount({ isNewAccount: true, email: account.email });
       } else {
-        await signInWithPassword({ email: mail, password });
+        const account = await signInWithPassword({ email: mail, password });
+        await continueAfterAccount({ isNewAccount: false, email: account.email });
       }
-      await continueAfterAccount();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not save your account. Please try again.');
       setSaving(false);
