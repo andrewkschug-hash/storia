@@ -159,6 +159,9 @@ export const ChapterSourceSchema = z.object({
   events: z.array(StoryEventSchema).default([]),
   paragraphs: z.array(ParagraphSourceSchema).min(1),
   questions: z.array(ComprehensionQuestionSchema).min(2).max(4),
+  /** A1 domain tag. Optional; do not invent values for existing Luca chapters. */
+  primaryDomain: z.string().min(1).optional(),
+  secondaryDomains: z.array(z.string().min(1)).optional(),
 });
 
 export const ChapterSummarySchema = z.object({
@@ -197,6 +200,43 @@ export const StoryManifestSchema = z.object({
   arcs: z.array(StoryArcSchema).optional(),
 });
 
+export const StoryAvailabilitySchema = z.enum(['available', 'draft', 'planned']);
+
+export const NarrativeArcCatalogSchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  titleIt: z.string().min(1),
+  description: z.string().min(1),
+  narrativeOrder: z.number().int().positive(),
+  status: StoryAvailabilitySchema,
+});
+
+export const CatalogStorySchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  titleIt: z.string().min(1),
+  description: z.string().min(1),
+  cefrLevel: CefrLevelSchema,
+  cefrLevels: z.array(CefrLevelSchema).optional(),
+  narrativeArc: z.string().min(1),
+  /** Order along the learner journey. Independent of chapter numbers. */
+  narrativeOrder: z.number().int().positive(),
+  status: StoryAvailabilitySchema,
+  chapterCount: z.number().int().nonnegative(),
+  /** Intended length while status is planned. Ignored for available stories. */
+  chapterCountTarget: z.number().int().positive().optional(),
+  protagonistId: z.string().min(1).optional(),
+  contentPath: z.string().min(1).nullable(),
+  /** shared = global characters/locations; story-local may add extra entities. */
+  entitySource: z.enum(['shared', 'story-local', 'shared+story-local']).optional(),
+});
+
+export const StoryCatalogSchema = z.object({
+  version: z.number().int().positive(),
+  narrativeArcs: z.array(NarrativeArcCatalogSchema).min(1),
+  stories: z.array(CatalogStorySchema).min(1),
+});
+
 export const CharactersFileSchema = z.object({
   characters: z.array(CharacterSchema).min(1),
 });
@@ -224,6 +264,70 @@ export const AdaptiveOverlaySchema = z.object({
   ),
 });
 
+/** Luca production / "Say it in Italian" overlay. Not loaded into chapter JSON. */
+export const ProductionCefrLevelSchema = z.enum(['A1', 'A1+', 'A2']);
+
+export const ProductionMatchSchema = z.enum(['exact', 'flexible', 'semantic']);
+
+export const ProductionPersonSchema = z.enum([
+  '1sg',
+  '2sg',
+  '3sg',
+  '1pl',
+  '2pl',
+  '3pl',
+  'impersonal',
+]);
+
+export const ProductionTenseSchema = z.enum([
+  'present',
+  'passato_prossimo',
+  'imperfetto',
+  'conditional',
+]);
+
+export const ProductionPolaritySchema = z.enum(['affirmative', 'negative', 'mixed']);
+
+/** Slot-based semantic constraints. Not embedding similarity. */
+export const ProductionSemanticSchema = z.object({
+  requiredConcepts: z.array(z.string().min(1)).min(1),
+  conceptAliases: z.record(z.string(), z.array(z.string().min(1)).min(1)).optional(),
+  requiredPerson: z.array(ProductionPersonSchema).min(1).optional(),
+  requiredTense: ProductionTenseSchema.optional(),
+  requiredPolarity: ProductionPolaritySchema.optional(),
+  requiredRelations: z.array(z.string().min(1)).optional(),
+});
+
+export const ProductionExerciseSchema = z
+  .object({
+    exerciseId: z.string().min(1),
+    storyId: z.string().min(1),
+    chapterId: z.string().min(1),
+    sourceSentenceId: z.string().min(1),
+    promptEn: z.string().min(1),
+    expectedIt: z.string().min(1),
+    acceptableAnswers: z.array(z.string().min(1)).optional(),
+    match: ProductionMatchSchema,
+    semantic: ProductionSemanticSchema.optional(),
+    level: ProductionCefrLevelSchema,
+    focus: z.array(z.string().min(1)).optional(),
+  })
+  .superRefine((exercise, ctx) => {
+    if (exercise.match === 'semantic' && !exercise.semantic) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'semantic match requires semantic constraints',
+        path: ['semantic'],
+      });
+    }
+  });
+
+export const ProductionExercisesFileSchema = z.object({
+  storyId: z.string().min(1),
+  version: z.number().int().positive().optional(),
+  exercises: z.array(ProductionExerciseSchema).min(1),
+});
+
 export type Character = z.infer<typeof CharacterSchema>;
 export type Location = z.infer<typeof LocationSchema>;
 export type CefrLevel = z.infer<typeof CefrLevelSchema>;
@@ -238,6 +342,18 @@ export type LexiconEntry = z.infer<typeof LexiconEntrySchema> & {
 export type SentenceSource = z.infer<typeof SentenceSourceSchema>;
 export type SentenceVariantSource = z.infer<typeof SentenceVariantSourceSchema>;
 export type AdaptiveOverlay = z.infer<typeof AdaptiveOverlaySchema>;
+export type ProductionCefrLevel = z.infer<typeof ProductionCefrLevelSchema>;
+export type ProductionMatch = z.infer<typeof ProductionMatchSchema>;
+export type ProductionPerson = z.infer<typeof ProductionPersonSchema>;
+export type ProductionTense = z.infer<typeof ProductionTenseSchema>;
+export type ProductionPolarity = z.infer<typeof ProductionPolaritySchema>;
+export type ProductionSemantic = z.infer<typeof ProductionSemanticSchema>;
+export type ProductionExercise = z.infer<typeof ProductionExerciseSchema>;
+export type ProductionExercisesFile = z.infer<typeof ProductionExercisesFileSchema>;
+export type StoryAvailability = z.infer<typeof StoryAvailabilitySchema>;
+export type NarrativeArcCatalog = z.infer<typeof NarrativeArcCatalogSchema>;
+export type CatalogStory = z.infer<typeof CatalogStorySchema>;
+export type StoryCatalog = z.infer<typeof StoryCatalogSchema>;
 export type ChapterSource = z.infer<typeof ChapterSourceSchema>;
 export type StoryManifest = z.infer<typeof StoryManifestSchema>;
 export type Token = z.infer<typeof TokenSchema>;
@@ -295,6 +411,8 @@ export type Chapter = {
   events: z.infer<typeof StoryEventSchema>[];
   paragraphs: Paragraph[];
   questions: ComprehensionQuestion[];
+  primaryDomain?: string;
+  secondaryDomains?: string[];
 };
 
 export type Story = StoryManifest & {
@@ -309,4 +427,12 @@ export type ContentBundle = {
   lexiconById: Map<string, LexiconEntry>;
   story: Story;
   chapters: Map<string, Chapter>;
+  /** Catalog narrative arc id. Independent of chapter numbers. */
+  narrativeArc?: string;
+  entitySource?: {
+    sharedCharacterIds: string[];
+    storyLocalCharacterIds: string[];
+    sharedLocationIds: string[];
+    storyLocalLocationIds: string[];
+  };
 };

@@ -1,0 +1,93 @@
+{
+  "id": "luca-prima-di-roma-02",
+  "title": "A day in Luca's life",
+  "titleIt": "Una giornata di Luca",
+  "slug": "luca-prima-di-roma-02",
+  "level": 1,
+  "cefrLevel": "A1",
+  "synopsis": "Una giornata a Pietralba: ore, giorni, date e orari di Chiara.",
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara"
+  ],
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba",
+    "camera-luca-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "chapters": [
+    {
+      "id": "luca-prima-di-roma-02-01",
+      "number": 1,
+      "title": "What time is it?",
+      "titleIt": "Che ore sono?",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "luca-prima-di-roma-02-02",
+      "number": 2,
+      "title": "The morning",
+      "titleIt": "La mattina",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "luca-prima-di-roma-02-03",
+      "number": 3,
+      "title": "Days of the week",
+      "titleIt": "I giorni della settimana",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "luca-prima-di-roma-02-04",
+      "number": 4,
+      "title": "The calendar",
+      "titleIt": "Il calendario",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "luca-prima-di-roma-02-05",
+      "number": 5,
+      "title": "Chiara’s timetable",
+      "titleIt": "L'orario di Chiara",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "luca-prima-di-roma-02-06",
+      "number": 6,
+      "title": "The afternoon",
+      "titleIt": "Il pomeriggio",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "luca-prima-di-roma-02-07",
+      "number": 7,
+      "title": "The evening",
+      "titleIt": "La sera",
+      "difficultyLevel": 1,
+      "file": "chapter-07.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "luca-prima-di-roma-02-a1",
+      "storyId": "luca-prima-di-roma-02",
+      "cefrLevel": "A1",
+      "title": "A day in Luca's life",
+      "titleIt": "Una giornata di Luca",
+      "description": "A1 present-tense pre-Rome story",
+      "narrativeStage": "Una giornata a Pietralba: ore, giorni, date e orari di Chiara.",
+      "chapterStart": 1,
+      "chapterEnd": 7,
+      "status": "planned"
+    }
+  ]
+}

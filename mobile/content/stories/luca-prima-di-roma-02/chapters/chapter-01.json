@@ -1,0 +1,277 @@
+{
+  "id": "luca-prima-di-roma-02-01",
+  "storyId": "luca-prima-di-roma-02",
+  "number": 1,
+  "title": "What time is it?",
+  "titleIt": "Che ore sono?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "chiara"
+  ],
+  "primaryDomain": "clock",
+  "secondaryDomains": [
+    "numbers"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-02-01",
+      "summary": "Luca and Chiara practice clock times from one to eight-thirty.",
+      "characterIds": [
+        "luca",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "It is eight o’clock",
+        "Luca learns half past",
+        "One o’clock is l’una"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Che ore sono?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "ora",
+            "essere"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sono le otto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Sono le otto e mezzo.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "otto",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "È l'una.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "uno"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Sono le due.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "due"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sono le tre.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "tre"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Sono le quattro.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "quattro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Sono le cinque.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Sono le sei.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "sei"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sono le sette.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "sette"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sono le nove.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "nove"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Sono le dieci.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "È mezzogiorno.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "mezzogiorno"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Le ore sono importanti.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "ora",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Oggi Luca guarda le ore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "guardare",
+            "le",
+            "ora"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr02-ch01-q01",
+      "type": "direct",
+      "question": "What time does Luca say first?",
+      "choices": [
+        "One o’clock",
+        "Eight o’clock",
+        "Noon"
+      ],
+      "correctChoice": 1,
+      "explanation": "Sono le otto.",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch01-q02",
+      "type": "direct",
+      "question": "What is “e mezzo”?",
+      "choices": [
+        "Half past",
+        "Tomorrow",
+        "A month"
+      ],
+      "correctChoice": 0,
+      "explanation": "Otto e mezzo is half past eight.",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch01-q03",
+      "type": "direct",
+      "question": "How do they say noon?",
+      "choices": [
+        "Mezzogiorno",
+        "Mattina",
+        "Sera"
+      ],
+      "correctChoice": 0,
+      "explanation": "È mezzogiorno.",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "difficulty": 1
+    }
+  ]
+}

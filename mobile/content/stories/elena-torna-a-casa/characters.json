@@ -1,0 +1,145 @@
+{
+  "characters": [
+    {
+      "id": "elena",
+      "name": "Elena",
+      "gender": "female",
+      "ageDescription": "young adult",
+      "description": "A young Italian woman who returns to her family home in a small town for a few weeks.",
+      "storyRole": "protagonist",
+      "relationships": [
+        "Daughter of Teresa and Stefano",
+        "Sister of Sara",
+        "Granddaughter of Enzo",
+        "Childhood friend of Nico"
+      ],
+      "knownLocationIds": [
+        "casa-elena",
+        "camera-elena",
+        "cucina-elena",
+        "via-paese",
+        "piazza-castelbianco"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian female, warm"
+      }
+    },
+    {
+      "id": "teresa",
+      "name": "Teresa",
+      "gender": "female",
+      "ageDescription": "middle-aged",
+      "description": "Elena's mother. Runs the household kitchen and shopping list.",
+      "storyRole": "mother",
+      "relationships": [
+        "Mother of Elena and Sara",
+        "Wife of Stefano",
+        "Daughter of Enzo"
+      ],
+      "knownLocationIds": [
+        "casa-elena",
+        "cucina-elena",
+        "supermercato-castelbianco"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, practical"
+      }
+    },
+    {
+      "id": "stefano",
+      "name": "Stefano",
+      "gender": "male",
+      "ageDescription": "middle-aged",
+      "description": "Elena's father. Quiet, kind; his birthday is a later chapter beat.",
+      "storyRole": "father",
+      "relationships": [
+        "Father of Elena and Sara",
+        "Husband of Teresa"
+      ],
+      "knownLocationIds": [
+        "casa-elena",
+        "trattoria-castelbianco"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, calm"
+      }
+    },
+    {
+      "id": "sara",
+      "name": "Sara",
+      "gender": "female",
+      "ageDescription": "young adult, younger than Elena",
+      "description": "Elena's sister. Still lives at home. Introduces names, ages, and sibling talk.",
+      "storyRole": "sister",
+      "relationships": [
+        "Sister of Elena",
+        "Daughter of Teresa and Stefano"
+      ],
+      "knownLocationIds": [
+        "casa-elena",
+        "camera-elena",
+        "piazza-castelbianco"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian female, bright"
+      }
+    },
+    {
+      "id": "enzo",
+      "name": "Enzo",
+      "gender": "male",
+      "ageDescription": "elderly",
+      "description": "Elena's grandfather. Close family elder — not Nonna Rosa.",
+      "storyRole": "grandfather",
+      "relationships": [
+        "Grandfather of Elena and Sara",
+        "Father of Teresa"
+      ],
+      "knownLocationIds": [
+        "casa-elena",
+        "parco-castelbianco"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "older Italian male, warm"
+      }
+    },
+    {
+      "id": "nico",
+      "name": "Nico",
+      "gender": "male",
+      "ageDescription": "young adult",
+      "description": "Elena's local childhood friend. Town errands, directions, and the trattoria outing.",
+      "storyRole": "local friend",
+      "relationships": [
+        "Childhood friend of Elena"
+      ],
+      "knownLocationIds": [
+        "via-paese",
+        "piazza-castelbianco",
+        "mercato-castelbianco",
+        "trattoria-castelbianco"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian male, easygoing"
+      }
+    }
+  ]
+}

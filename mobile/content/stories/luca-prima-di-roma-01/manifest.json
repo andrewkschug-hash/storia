@@ -1,0 +1,88 @@
+{
+  "id": "luca-prima-di-roma-01",
+  "title": "Luca introduces himself",
+  "titleIt": "Luca si presenta",
+  "slug": "luca-prima-di-roma-01",
+  "level": 1,
+  "cefrLevel": "A1",
+  "synopsis": "A Pietralba Luca si presenta: nome, età, famiglia, casa e l’amico Davide.",
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara",
+    "lidia",
+    "davide"
+  ],
+  "locationIds": [
+    "pietralba",
+    "casa-pietralba",
+    "camera-luca-pietralba",
+    "cucina-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "chapters": [
+    {
+      "id": "luca-prima-di-roma-01-01",
+      "number": 1,
+      "title": "Hi, I am Luca",
+      "titleIt": "Ciao, sono Luca",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "luca-prima-di-roma-01-02",
+      "number": 2,
+      "title": "How old are you?",
+      "titleIt": "Quanti anni hai?",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "luca-prima-di-roma-01-03",
+      "number": 3,
+      "title": "My family",
+      "titleIt": "La mia famiglia",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "luca-prima-di-roma-01-04",
+      "number": 4,
+      "title": "My house",
+      "titleIt": "Casa mia",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "luca-prima-di-roma-01-05",
+      "number": 5,
+      "title": "This is Davide",
+      "titleIt": "Questo è Davide",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "luca-prima-di-roma-01-06",
+      "number": 6,
+      "title": "Numbers at home",
+      "titleIt": "I numeri in casa",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "luca-prima-di-roma-01-a1",
+      "storyId": "luca-prima-di-roma-01",
+      "cefrLevel": "A1",
+      "title": "Luca introduces himself",
+      "titleIt": "Luca si presenta",
+      "description": "A1 present-tense pre-Rome story",
+      "narrativeStage": "A Pietralba Luca si presenta: nome, età, famiglia, casa e l’amico Davide.",
+      "chapterStart": 1,
+      "chapterEnd": 6,
+      "status": "planned"
+    }
+  ]
+}

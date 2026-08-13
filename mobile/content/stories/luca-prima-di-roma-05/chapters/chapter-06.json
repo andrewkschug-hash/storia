@@ -1,0 +1,287 @@
+{
+  "id": "luca-prima-di-roma-05-06",
+  "storyId": "luca-prima-di-roma-05",
+  "number": 6,
+  "title": "Tomorrow I leave",
+  "titleIt": "Domani parto",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "stazione-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "davide"
+  ],
+  "primaryDomain": "social",
+  "secondaryDomains": [
+    "transportation",
+    "family"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-05-06",
+      "summary": "Luca tells them he leaves tomorrow for Rome. Goodbye at Pietralba station; he is on the train.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "paolo",
+        "davide"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "stazione-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca leaves tomorrow for Rome",
+        "They say goodbye at Pietralba station",
+        "Luca is on the train",
+        "He does not arrive in Rome in this story"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Dopo la festa Luca parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "la",
+            "festa",
+            "luca",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Domani parto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "partire"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Domani Luca va a Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "luca",
+            "andare",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Roma non è Pietralba.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "roma",
+            "non",
+            "essere",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Sì mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Paolo è un po' triste.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "un",
+            "poco",
+            "triste"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Davide è alla stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "alla",
+            "stazione"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Questa è la stazione di Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "la",
+            "stazione",
+            "di",
+            "pietralba"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Arrivederci Luca.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivederci",
+            "luca"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Arrivederci.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivederci"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "A presto.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "presto"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca è sul treno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "sul",
+            "treno"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il treno parte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "treno",
+            "partire"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Luca guarda Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Pietralba è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietralba",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Domani è un giorno nuovo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "un",
+            "giorno",
+            "nuovo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr05-ch06-q01",
+      "type": "direct",
+      "question": "Where is Luca going?",
+      "choices": [
+        "To Rome tomorrow",
+        "He already arrived in Rome",
+        "To the supermarket"
+      ],
+      "correctChoice": 0,
+      "explanation": "Domani Luca va a Roma.",
+      "chapterId": "luca-prima-di-roma-05-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch06-q02",
+      "type": "direct",
+      "question": "Where do they say goodbye?",
+      "choices": [
+        "Pietralba station",
+        "Rome Termini",
+        "Bar Centrale"
+      ],
+      "correctChoice": 0,
+      "explanation": "La stazione di Pietralba.",
+      "chapterId": "luca-prima-di-roma-05-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch06-q03",
+      "type": "event",
+      "question": "Where is Luca at the end?",
+      "choices": [
+        "On the train leaving Pietralba",
+        "Arriving in Rome hungry",
+        "At a Rome café"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca è sul treno. The train leaves. No Rome arrival.",
+      "chapterId": "luca-prima-di-roma-05-06",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "id": "elena-torna-a-casa-02",
+  "storyId": "elena-torna-a-casa",
+  "number": 2,
+  "title": "Names and age",
+  "titleIt": "Come ti chiami?",
+  "difficultyLevel": 1,
+  "locationIds": ["casa-elena"],
+  "characterIds": ["elena", "sara", "teresa"],
+  "events": [
+    {
+      "id": "ev-02-names",
+      "summary": "Sara and Elena talk about names, family, and Elena's age.",
+      "characterIds": ["elena", "sara", "teresa"],
+      "locationIds": ["casa-elena"],
+      "rememberedFacts": [
+        "Sara is Elena's sister",
+        "Mamma is Teresa",
+        "Papà is Stefano",
+        "Elena is twenty"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Sara è in casa con Elena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "essere", "in", "casa", "con", "elena"]
+        },
+        {
+          "id": "s02",
+          "text": "Ciao, Elena. Come stai?",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["ciao", "elena", "come", "stare"]
+        },
+        {
+          "id": "s03",
+          "text": "Bene, grazie. E tu?",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["bene", "grazie", "e", "tu"]
+        },
+        {
+          "id": "s04",
+          "text": "Anche io sto bene.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["anche", "io", "stare", "bene"]
+        },
+        {
+          "id": "s05",
+          "text": "Sara sorride e guarda Elena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "sorridere", "e", "guardare", "elena"]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Come ti chiami oggi?",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["come", "ti", "chiamarsi", "oggi"]
+        },
+        {
+          "id": "s07",
+          "text": "Mi chiamo Elena. Sono tua sorella!",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["mi", "chiamarsi", "elena", "essere", "tuo", "sorella"]
+        },
+        {
+          "id": "s08",
+          "text": "Io so il tuo nome.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["io", "sapere", "il", "tuo", "nome"]
+        },
+        {
+          "id": "s09",
+          "text": "Sì, il mio nome è Elena.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["si_yes", "il", "mio", "nome", "essere", "elena"]
+        },
+        {
+          "id": "s10",
+          "text": "Sara è la sorella di Elena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "essere", "la", "sorella", "di", "elena"]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Come si chiama mamma?",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["come", "si", "chiamarsi", "mamma"]
+        },
+        {
+          "id": "s12",
+          "text": "Mamma si chiama Teresa.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["mamma", "si", "chiamarsi", "teresa"]
+        },
+        {
+          "id": "s13",
+          "text": "E papà? Come si chiama?",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["e", "papa", "come", "si", "chiamarsi"]
+        },
+        {
+          "id": "s14",
+          "text": "Papà si chiama Stefano.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["papa", "si", "chiamarsi", "stefano"]
+        },
+        {
+          "id": "s15",
+          "text": "Io mi chiamo Sara.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["io", "mi", "chiamarsi", "sara"]
+        },
+        {
+          "id": "s16",
+          "text": "La famiglia ha un nome: mamma, papà, Elena e Sara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "famiglia", "avere", "un", "nome", "mamma", "papa", "elena", "e", "sara"]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s17",
+          "text": "Quanti anni hai, Elena?",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["quanto", "anni", "avere", "elena"]
+        },
+        {
+          "id": "s18",
+          "text": "Ho venti anni.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["avere", "venti", "anni"]
+        },
+        {
+          "id": "s19",
+          "text": "E tu, Sara? Quanti anni hai?",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["e", "tu", "sara", "quanto", "anni", "avere"]
+        },
+        {
+          "id": "s20",
+          "text": "Io sono giovane. Ho meno anni.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["io", "essere", "giovane", "avere", "meno", "anni"]
+        },
+        {
+          "id": "s21",
+          "text": "Sara è giovane, e Elena ha venti anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "essere", "giovane", "e", "elena", "avere", "venti", "anni"]
+        },
+        {
+          "id": "s22",
+          "text": "Mamma Teresa è in cucina, e ascolta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["mamma", "teresa", "essere", "in", "cucina", "e", "ascoltare"]
+        },
+        {
+          "id": "s23",
+          "text": "La famiglia è qui, in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "famiglia", "essere", "qui", "in", "casa"]
+        },
+        {
+          "id": "s24",
+          "text": "Elena è a casa, con sua sorella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "essere", "a", "casa", "con", "suo", "sorella"]
+        },
+        {
+          "id": "s25",
+          "text": "Elena e Sara parlano insieme in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "e", "sara", "parlare", "insieme", "in", "casa"]
+        },
+        {
+          "id": "s26",
+          "text": "Il nome di mamma è Teresa, in famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["il", "nome", "di", "mamma", "essere", "teresa", "in", "famiglia"]
+        },
+        {
+          "id": "s27",
+          "text": "Elena ha venti anni, e Sara è giovane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "avere", "venti", "anni", "e", "sara", "essere", "giovane"]
+        },
+        {
+          "id": "s28",
+          "text": "Le due sorelle sono a casa, felici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["le", "due", "sorella", "essere", "a", "casa", "felice"]
+        }
+      ]
+    }
+  ],
+  "questions": []
+}

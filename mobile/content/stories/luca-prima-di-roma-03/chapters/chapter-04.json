@@ -1,0 +1,273 @@
+{
+  "id": "luca-prima-di-roma-03-04",
+  "storyId": "luca-prima-di-roma-03",
+  "number": 4,
+  "title": "How much do I take?",
+  "titleIt": "Quanto ne prendo?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "supermercato-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "pina"
+  ],
+  "primaryDomain": "quantities",
+  "secondaryDomains": [
+    "food",
+    "prices"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-03-04",
+      "summary": "Luca chooses amounts: a kilo of apples, a bottle, a pack of pasta.",
+      "characterIds": [
+        "luca",
+        "pina"
+      ],
+      "locationIds": [
+        "supermercato-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca takes one kilo of apples",
+        "He takes a bottle of oil",
+        "He takes a pack of pasta"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Quanto ne prendo?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "ne",
+            "prendere"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Un chilo di mele.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "chilo",
+            "di",
+            "mela"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca prende un chilo di mele.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "un",
+            "chilo",
+            "di",
+            "mela"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Un etto di formaggio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "etto",
+            "di",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Va bene.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Una bottiglia di olio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "bottiglia",
+            "di",
+            "olio"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Un pacco di pasta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "pacco",
+            "di",
+            "pasta"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Due bottiglie di latte.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "bottiglia",
+            "di",
+            "latte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "È troppo?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "No è poco.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "essere",
+            "poco"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca prende anche zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "anche",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "I numeri sono sulla lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "numero",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Un chilo due etti.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "chilo",
+            "due",
+            "etto"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Luca ascolta Pina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "ascoltare",
+            "pina"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Adesso la lista è piena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "la",
+            "lista",
+            "essere",
+            "pieno"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr03-ch04-q01",
+      "type": "direct",
+      "question": "How many apples does Luca take?",
+      "choices": [
+        "One kilo",
+        "One bottle",
+        "Ten packs"
+      ],
+      "correctChoice": 0,
+      "explanation": "Un chilo di mele.",
+      "chapterId": "luca-prima-di-roma-03-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch04-q02",
+      "type": "direct",
+      "question": "What comes in a bottle?",
+      "choices": [
+        "Oil",
+        "Pasta",
+        "Cheese"
+      ],
+      "correctChoice": 0,
+      "explanation": "Una bottiglia di olio.",
+      "chapterId": "luca-prima-di-roma-03-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch04-q03",
+      "type": "direct",
+      "question": "How much cheese does he ask for?",
+      "choices": [
+        "One hectogram",
+        "Five kilos",
+        "A crate"
+      ],
+      "correctChoice": 0,
+      "explanation": "Un etto di formaggio.",
+      "chapterId": "luca-prima-di-roma-03-04",
+      "difficulty": 1
+    }
+  ]
+}

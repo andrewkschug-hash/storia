@@ -1,0 +1,58 @@
+{
+  "locations": [
+    {
+      "id": "casa-elena",
+      "name": "Casa di Elena",
+      "city": "Castelbianco",
+      "description": "The family house where Elena grew up."
+    },
+    {
+      "id": "camera-elena",
+      "name": "La camera di Elena",
+      "city": "Castelbianco",
+      "description": "Elena's bedroom in the family house."
+    },
+    {
+      "id": "cucina-elena",
+      "name": "La cucina",
+      "city": "Castelbianco",
+      "description": "The family kitchen — breakfast, lists, and helping Mamma."
+    },
+    {
+      "id": "via-paese",
+      "name": "La via del paese",
+      "city": "Castelbianco",
+      "description": "The local street between the house and the square."
+    },
+    {
+      "id": "supermercato-castelbianco",
+      "name": "Il supermercato",
+      "city": "Castelbianco",
+      "description": "The supermarket for the shopping list, prices, and counting."
+    },
+    {
+      "id": "piazza-castelbianco",
+      "name": "La piazza",
+      "city": "Castelbianco",
+      "description": "The town square."
+    },
+    {
+      "id": "mercato-castelbianco",
+      "name": "Il mercato",
+      "city": "Castelbianco",
+      "description": "The outdoor market."
+    },
+    {
+      "id": "trattoria-castelbianco",
+      "name": "La trattoria",
+      "city": "Castelbianco",
+      "description": "A small trattoria. The family eats here as customers, not workers."
+    },
+    {
+      "id": "parco-castelbianco",
+      "name": "Il parco",
+      "city": "Castelbianco",
+      "description": "The park / picnic area. Rain cancels the outing."
+    }
+  ]
+}

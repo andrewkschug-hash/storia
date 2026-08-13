@@ -1,0 +1,303 @@
+{
+  "id": "luca-prima-di-roma-01-05",
+  "storyId": "luca-prima-di-roma-01",
+  "number": 5,
+  "title": "This is Davide",
+  "titleIt": "Questo è Davide",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "davide",
+    "marta"
+  ],
+  "primaryDomain": "social",
+  "secondaryDomains": [
+    "introductions",
+    "descriptions"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-01-05",
+      "summary": "Luca introduces tall, friendly Davide to Marta.",
+      "characterIds": [
+        "luca",
+        "davide",
+        "marta"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "Davide is Luca’s friend",
+        "Davide is tall",
+        "Davide is from Pietralba"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Davide è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Marta arriva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Mamma questo è Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "questo",
+            "essere",
+            "davide"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Davide è il mio amico.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "davide",
+            "essere",
+            "il",
+            "mio",
+            "amico"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Piacere.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Piacere signora.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere",
+            "signora"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Io mi chiamo Davide.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "mi",
+            "chiamarsi",
+            "davide"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Davide è di Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "di",
+            "pietralba"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Davide è alto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "alto"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca non è alto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "essere",
+            "alto"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Davide è simpatico.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "simpatico"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Lui è un amico.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lui",
+            "essere",
+            "un",
+            "amico"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Lei è la mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "la",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Siamo tutti a Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "tutto",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Davide abita vicino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "abitare",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "La casa di Davide è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "casa",
+            "di",
+            "davide",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Grazie.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Prego.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "prego"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr01-ch05-q01",
+      "type": "character",
+      "question": "Who is Davide?",
+      "choices": [
+        "Luca’s father",
+        "Luca’s friend",
+        "The shopkeeper"
+      ],
+      "correctChoice": 1,
+      "explanation": "Davide è il mio amico.",
+      "chapterId": "luca-prima-di-roma-01-05",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch05-q02",
+      "type": "direct",
+      "question": "How is Davide described?",
+      "choices": [
+        "Tall and friendly",
+        "Tired and hungry",
+        "Old and quiet"
+      ],
+      "correctChoice": 0,
+      "explanation": "Davide è alto e simpatico.",
+      "chapterId": "luca-prima-di-roma-01-05",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch05-q03",
+      "type": "direct",
+      "question": "Where is Davide from?",
+      "choices": [
+        "Rome",
+        "Pietralba",
+        "Milan"
+      ],
+      "correctChoice": 1,
+      "explanation": "Davide è di Pietralba.",
+      "chapterId": "luca-prima-di-roma-01-05",
+      "difficulty": 1
+    }
+  ]
+}

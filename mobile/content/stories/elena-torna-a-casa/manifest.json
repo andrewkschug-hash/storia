@@ -1,0 +1,190 @@
+{
+  "id": "elena-torna-a-casa",
+  "title": "Elena goes home",
+  "titleIt": "Elena torna a casa",
+  "slug": "elena-torna-a-casa",
+  "level": 1,
+  "cefrLevel": "A1",
+  "synopsis": "Elena torna a casa, in un piccolo paese. Trova la famiglia, aiuta in cucina, fa la spesa, guarda il tempo e dice arrivederci — senza Roma, senza affitto, senza crisi al lavoro.",
+  "characterIds": [
+    "elena",
+    "teresa",
+    "stefano",
+    "sara",
+    "enzo",
+    "nico"
+  ],
+  "locationIds": [
+    "casa-elena",
+    "camera-elena",
+    "cucina-elena",
+    "via-paese",
+    "supermercato-castelbianco",
+    "piazza-castelbianco",
+    "mercato-castelbianco",
+    "trattoria-castelbianco",
+    "parco-castelbianco"
+  ],
+  "chapters": [
+    {
+      "id": "elena-torna-a-casa-01",
+      "number": 1,
+      "title": "Arrival",
+      "titleIt": "A casa",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "elena-torna-a-casa-02",
+      "number": 2,
+      "title": "Names and age",
+      "titleIt": "Come ti chiami?",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "elena-torna-a-casa-03",
+      "number": 3,
+      "title": "Rooms",
+      "titleIt": "Le stanze",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "elena-torna-a-casa-04",
+      "number": 4,
+      "title": "The clock",
+      "titleIt": "Che ore sono?",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "elena-torna-a-casa-05",
+      "number": 5,
+      "title": "Breakfast",
+      "titleIt": "Colazione",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "elena-torna-a-casa-06",
+      "number": 6,
+      "title": "Kitchen recycling",
+      "titleIt": "Aiuto in cucina",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "elena-torna-a-casa-07",
+      "number": 7,
+      "title": "Ages",
+      "titleIt": "Quanti anni hai?",
+      "difficultyLevel": 1,
+      "file": "chapter-07.json"
+    },
+    {
+      "id": "elena-torna-a-casa-08",
+      "number": 8,
+      "title": "Supermarket",
+      "titleIt": "La lista",
+      "difficultyLevel": 1,
+      "file": "chapter-08.json"
+    },
+    {
+      "id": "elena-torna-a-casa-09",
+      "number": 9,
+      "title": "Counting",
+      "titleIt": "Due pane, tre mele",
+      "difficultyLevel": 1,
+      "file": "chapter-09.json"
+    },
+    {
+      "id": "elena-torna-a-casa-10",
+      "number": 10,
+      "title": "Recycle town",
+      "titleIt": "Di nuovo in paese",
+      "difficultyLevel": 1,
+      "file": "chapter-10.json"
+    },
+    {
+      "id": "elena-torna-a-casa-11",
+      "number": 11,
+      "title": "Weather",
+      "titleIt": "Che tempo fa?",
+      "difficultyLevel": 1,
+      "file": "chapter-11.json"
+    },
+    {
+      "id": "elena-torna-a-casa-12",
+      "number": 12,
+      "title": "Seasons",
+      "titleIt": "Estate o inverno?",
+      "difficultyLevel": 1,
+      "file": "chapter-12.json"
+    },
+    {
+      "id": "elena-torna-a-casa-13",
+      "number": 13,
+      "title": "Directions",
+      "titleIt": "A destra, poi dritto",
+      "difficultyLevel": 1,
+      "file": "chapter-13.json"
+    },
+    {
+      "id": "elena-torna-a-casa-14",
+      "number": 14,
+      "title": "Trattoria",
+      "titleIt": "In trattoria",
+      "difficultyLevel": 1,
+      "file": "chapter-14.json"
+    },
+    {
+      "id": "elena-torna-a-casa-15",
+      "number": 15,
+      "title": "Mi piace",
+      "titleIt": "Mi piace",
+      "difficultyLevel": 1,
+      "file": "chapter-15.json"
+    },
+    {
+      "id": "elena-torna-a-casa-16",
+      "number": 16,
+      "title": "Sunday",
+      "titleIt": "La domenica",
+      "difficultyLevel": 1,
+      "file": "chapter-16.json"
+    },
+    {
+      "id": "elena-torna-a-casa-17",
+      "number": 17,
+      "title": "Birthday",
+      "titleIt": "Il compleanno",
+      "difficultyLevel": 1,
+      "file": "chapter-17.json"
+    },
+    {
+      "id": "elena-torna-a-casa-18",
+      "number": 18,
+      "title": "Party",
+      "titleIt": "Tanti auguri",
+      "difficultyLevel": 1,
+      "file": "chapter-18.json"
+    },
+    {
+      "id": "elena-torna-a-casa-19",
+      "number": 19,
+      "title": "Rain cancels picnic",
+      "titleIt": "Oggi piove",
+      "difficultyLevel": 1,
+      "file": "chapter-19.json"
+    },
+    {
+      "id": "elena-torna-a-casa-20",
+      "number": 20,
+      "title": "Goodbye",
+      "titleIt": "A presto",
+      "difficultyLevel": 1,
+      "file": "chapter-20.json"
+    }
+  ]
+}

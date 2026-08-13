@@ -24,19 +24,24 @@ export class ProgressService {
     private readonly repo: ReadingProgressRepository,
     private readonly story: Story,
     private readonly chaptersById: Map<string, Chapter>,
+    private readonly narrativeArc?: string,
   ) {}
+
+  get storyId(): string {
+    return this.story.id;
+  }
 
   async getOrCreate(): Promise<ReadingProgressRecord> {
     const existing = await this.repo.get(this.story.id);
     if (existing) {
-      const normalized = normalizeProgress(existing);
-      if (!existing.comprehensionByChapter) {
+      const normalized = normalizeProgress(existing, this.narrativeArc);
+      if (!existing.comprehensionByChapter || (!existing.narrativeArc && this.narrativeArc)) {
         await this.repo.save(normalized);
       }
       return normalized;
     }
     const first = this.story.chapters[0];
-    const initial = createInitialProgress(this.story.id, first.id);
+    const initial = createInitialProgress(this.story.id, first.id, this.narrativeArc);
     await this.repo.save(initial);
     return initial;
   }

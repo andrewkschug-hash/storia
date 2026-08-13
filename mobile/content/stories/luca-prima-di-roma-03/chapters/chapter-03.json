@@ -1,0 +1,275 @@
+{
+  "id": "luca-prima-di-roma-03-03",
+  "storyId": "luca-prima-di-roma-03",
+  "number": 3,
+  "title": "How much is it?",
+  "titleIt": "Quanto costa?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "supermercato-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "pina"
+  ],
+  "primaryDomain": "prices",
+  "secondaryDomains": [
+    "numbers"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-03-03",
+      "summary": "Luca asks prices in euros. The cheese is expensive; the bread is OK.",
+      "characterIds": [
+        "luca",
+        "pina"
+      ],
+      "locationIds": [
+        "supermercato-pietralba"
+      ],
+      "rememberedFacts": [
+        "Bread costs two euros",
+        "Cheese costs five euros",
+        "Luca thinks cheese is expensive"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Quanto costa il pane?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "costare",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il pane costa due euro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "pane",
+            "costare",
+            "due",
+            "euro"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Quanto costa il formaggio?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "costare",
+            "il",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il formaggio costa cinque euro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "formaggio",
+            "costare",
+            "cinque",
+            "euro"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Cinque euro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "cinque",
+            "euro"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "È caro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "caro"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sì è un po' caro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "essere",
+            "un",
+            "poco",
+            "caro"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Il pane non è caro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "pane",
+            "non",
+            "essere",
+            "caro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Due euro è poco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "euro",
+            "essere",
+            "poco"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Cinque euro è molto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "cinque",
+            "euro",
+            "essere",
+            "molto"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca guarda i prezzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "prezzo"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "I prezzi sono in euro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "prezzo",
+            "essere",
+            "in",
+            "euro"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Va bene il pane.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Anche il formaggio va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "il",
+            "formaggio",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Grazie signora.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "signora"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr03-ch03-q01",
+      "type": "direct",
+      "question": "How much is the bread?",
+      "choices": [
+        "€2",
+        "€5",
+        "€12"
+      ],
+      "correctChoice": 0,
+      "explanation": "Il pane costa due euro.",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch03-q02",
+      "type": "direct",
+      "question": "How much is the cheese?",
+      "choices": [
+        "€2",
+        "€5",
+        "€20"
+      ],
+      "correctChoice": 1,
+      "explanation": "Il formaggio costa cinque euro.",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch03-q03",
+      "type": "inference",
+      "question": "What does Luca think is expensive?",
+      "choices": [
+        "The bread",
+        "The cheese",
+        "The list"
+      ],
+      "correctChoice": 1,
+      "explanation": "He says the cheese è caro.",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "difficulty": 1
+    }
+  ]
+}

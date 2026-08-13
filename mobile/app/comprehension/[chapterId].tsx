@@ -10,17 +10,21 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ProductionExerciseCard } from '@/src/components/ProductionExerciseCard';
 import { getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
+import { getProductionExercisesForChapter } from '@/src/content/productionExercises';
 import { evaluateAnswer } from '@/src/comprehension/evaluate';
+import { shuffleQuestionChoices } from '@/src/comprehension/shuffle';
 import { getProgressService } from '@/src/progress';
 import type { ComprehensionAnswerRecord } from '@/src/progress/types';
 import { comprehensionUsesItalianPrompt } from '@/src/content/scaffolding';
+import { advanceProduction, afterComprehensionResults } from '@/src/production/flow';
 import { getReviewService } from '@/src/review';
 import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
-type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'review';
+type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'review';
 
 type QuestionState = {
   attempts: number;
@@ -35,14 +39,24 @@ export default function ComprehensionScreen() {
   const insets = useSafeAreaInsets();
 
   const questions = chapter?.questions ?? [];
+  const productionExercises = useMemo(
+    () => (chapter ? getProductionExercisesForChapter(chapter.id) : []),
+    [chapter],
+  );
   const [phase, setPhase] = useState<Phase>('intro');
   const [index, setIndex] = useState(0);
+  const [productionIndex, setProductionIndex] = useState(0);
   const [states, setStates] = useState<QuestionState[]>(() =>
     questions.map(() => ({ attempts: 0, correct: null, selectedIndex: null })),
   );
   const [lastFeedback, setLastFeedback] = useState<{
     correct: boolean;
     explanation: string;
+    correctChoice: number;
+    correctLabel: string;
+  } | null>(null);
+  const [displayChoices, setDisplayChoices] = useState<{
+    choices: string[];
     correctChoice: number;
   } | null>(null);
   const [finishing, setFinishing] = useState(false);
@@ -76,7 +90,7 @@ export default function ComprehensionScreen() {
     if (next) {
       router.replace(`/reader/${next.id}` as import('expo-router').Href);
     } else {
-      router.replace('/(tabs)' as import('expo-router').Href);
+      router.replace('/(tabs)/home' as import('expo-router').Href);
     }
   };
 
@@ -93,9 +107,18 @@ export default function ComprehensionScreen() {
     );
   }
 
+  const shuffleCurrent = (questionIndex: number) => {
+    const question = questions[questionIndex];
+    if (!question) return;
+    setDisplayChoices(shuffleQuestionChoices(question.choices, question.correctChoice));
+  };
+
   const onSelect = (choiceIndex: number) => {
-    if (!current || phase !== 'question') return;
-    const evaluation = evaluateAnswer(current, choiceIndex);
+    if (!current || !displayChoices || phase !== 'question') return;
+    const evaluation = evaluateAnswer(
+      { ...current, choices: displayChoices.choices, correctChoice: displayChoices.correctChoice },
+      choiceIndex,
+    );
     setStates((prev) => {
       const next = [...prev];
       const row = { ...next[index] };
@@ -109,14 +132,17 @@ export default function ComprehensionScreen() {
       correct: evaluation.correct,
       explanation: evaluation.explanation,
       correctChoice: evaluation.correctChoice,
+      correctLabel: displayChoices.choices[evaluation.correctChoice] ?? current.choices[current.correctChoice],
     });
     setPhase('feedback');
   };
 
   const goNextFromFeedback = () => {
     if (index + 1 < questions.length) {
-      setIndex(index + 1);
+      const nextIndex = index + 1;
+      setIndex(nextIndex);
       setLastFeedback(null);
+      shuffleCurrent(nextIndex);
       setPhase('question');
       return;
     }
@@ -125,6 +151,7 @@ export default function ComprehensionScreen() {
 
   const retryCurrent = () => {
     setLastFeedback(null);
+    shuffleCurrent(index);
     setPhase('question');
   };
 
@@ -163,6 +190,25 @@ export default function ComprehensionScreen() {
     continueAfterComplete(chapter.number);
   };
 
+  const continueFromResults = () => {
+    const next = afterComprehensionResults(productionExercises);
+    if (next.action === 'show_production') {
+      setProductionIndex(0);
+      setPhase('production');
+      return;
+    }
+    void finish();
+  };
+
+  const continueFromProduction = () => {
+    const next = advanceProduction(productionIndex, productionExercises.length);
+    if (next.done) {
+      void finish();
+      return;
+    }
+    setProductionIndex(next.index);
+  };
+
   return (
     <AtmosphereBackground>
       <Stack.Screen
@@ -193,7 +239,10 @@ export default function ComprehensionScreen() {
               A few short questions about what happened — not grammar, not flashcards.
             </Text>
             <Pressable
-              onPress={() => setPhase('question')}
+              onPress={() => {
+                shuffleCurrent(0);
+                setPhase('question');
+              }}
               style={({ pressed }) => [
                 styles.primaryBtn,
                 { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, marginTop: Spacing.xl },
@@ -212,9 +261,9 @@ export default function ComprehensionScreen() {
               {questionPrompt(current)}
             </Text>
             <View style={{ marginTop: Spacing.lg, gap: Spacing.sm }}>
-              {current.choices.map((choice, choiceIndex) => (
+              {(displayChoices?.choices ?? current.choices).map((choice, choiceIndex) => (
                 <Pressable
-                  key={`${current.id}-${choiceIndex}`}
+                  key={`${current.id}-${choiceIndex}-${choice}`}
                   onPress={() => onSelect(choiceIndex)}
                   style={({ pressed }) => [
                     styles.choice,
@@ -246,7 +295,7 @@ export default function ComprehensionScreen() {
             {!lastFeedback.correct ? (
               <Text
                 style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-                Correct answer: {current.choices[lastFeedback.correctChoice]}
+                Correct answer: {lastFeedback.correctLabel}
               </Text>
             ) : null}
             <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.md }]}>
@@ -332,22 +381,39 @@ export default function ComprehensionScreen() {
             </Text>
             <Pressable
               disabled={finishing}
-              onPress={() => void finish()}
-              style={({ pressed }) => [
+              onPress={continueFromResults}
+              style={({ pressed, focused }) => [
                 styles.primaryBtn,
                 {
                   backgroundColor: colors.tint,
                   opacity: pressed || finishing ? 0.88 : 1,
                   marginTop: Spacing.xl,
+                  borderWidth: focused ? 2 : 0,
+                  borderColor: colors.accent,
                 },
               ]}>
               <Text style={[Typography.button, { color: '#F7FAF9' }]}>
-                {getChapterByNumber(chapter.number + 1)
-                  ? 'Continue story'
-                  : 'Back to home'}
+                {productionExercises.length > 0
+                  ? 'Continue'
+                  : getChapterByNumber(chapter.number + 1)
+                    ? 'Continue story'
+                    : 'Back to home'}
               </Text>
             </Pressable>
           </View>
+        ) : null}
+
+        {phase === 'production' && productionExercises[productionIndex] ? (
+          <ProductionExerciseCard
+            key={productionExercises[productionIndex].exerciseId}
+            exercise={productionExercises[productionIndex]}
+            index={productionIndex}
+            total={productionExercises.length}
+            sourceSentence={chapter.paragraphs
+              .flatMap((paragraph) => paragraph.sentences)
+              .find((sentence) => sentence.id === productionExercises[productionIndex].sourceSentenceId)}
+            onContinue={continueFromProduction}
+          />
         ) : null}
       </ScrollView>
     </AtmosphereBackground>

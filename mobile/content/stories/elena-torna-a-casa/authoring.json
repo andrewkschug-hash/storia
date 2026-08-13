@@ -1,0 +1,56 @@
+{
+  "targetCEFR": "A1",
+  "title": "Elena goes home",
+  "titleIt": "Elena torna a casa",
+  "storyObjective": "Expand A1 breadth (family, numbers, food, time, weather, shopping, greetings) by recycling Luca core lemmas in a domestic story. Do not raise grammatical difficulty.",
+  "narrativeStage": "Elena returns to her family home in a small town.",
+  "targetVocabularySize": 280,
+  "vocabularyReuseGoal": 0.78,
+  "sentenceComplexityTarget": {
+    "averageWordCount": 6,
+    "maxClauses": 2
+  },
+  "targetChapterWordRange": [140, 210],
+  "characters": ["elena", "teresa", "stefano", "sara", "enzo", "nico"],
+  "locations": [
+    "casa-elena",
+    "camera-elena",
+    "cucina-elena",
+    "via-paese",
+    "supermercato-castelbianco",
+    "piazza-castelbianco",
+    "mercato-castelbianco",
+    "trattoria-castelbianco",
+    "parco-castelbianco"
+  ],
+  "comprehensionTypes": ["direct", "character"],
+  "adaptiveOpportunities": [],
+  "audioStatus": "not_generated",
+  "grammar": {
+    "allow": [
+      "present tense",
+      "essere",
+      "avere",
+      "andare",
+      "volere",
+      "potere",
+      "dovere",
+      "common regular verbs",
+      "basic questions",
+      "negation",
+      "articles",
+      "basic prepositions",
+      "simple pronouns",
+      "simple imperatives",
+      "mi piace (present pattern only)"
+    ],
+    "forbid": [
+      "passato prossimo",
+      "imperfetto as narrative tense",
+      "futuro",
+      "conditional paradigm",
+      "vorrei (prefer voglio + per favore)"
+    ]
+  },
+  "chapters": []
+}

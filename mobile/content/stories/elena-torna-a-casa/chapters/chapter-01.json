@@ -1,0 +1,247 @@
+{
+  "id": "elena-torna-a-casa-01",
+  "storyId": "elena-torna-a-casa",
+  "number": 1,
+  "title": "Arrival",
+  "titleIt": "A casa",
+  "difficultyLevel": 1,
+  "locationIds": ["casa-elena"],
+  "characterIds": ["elena", "teresa", "stefano", "sara"],
+  "events": [
+    {
+      "id": "ev-01-arrive",
+      "summary": "Elena arrives home in a small town and is welcomed by Teresa, Stefano, and Sara.",
+      "characterIds": ["elena", "teresa", "stefano", "sara"],
+      "locationIds": ["casa-elena"],
+      "rememberedFacts": [
+        "Elena is home in a small town",
+        "Teresa is Elena's mother",
+        "Stefano is Elena's father",
+        "Sara is Elena's sister"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Elena torna a casa oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "tornare", "a", "casa", "oggi"]
+        },
+        {
+          "id": "s02",
+          "text": "Elena arriva in un piccolo paese, non lontano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "arrivare", "in", "un", "piccolo", "paese", "non", "lontano"]
+        },
+        {
+          "id": "s03",
+          "text": "Il paese è piccolo e tranquillo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["il", "paese", "essere", "piccolo", "e", "tranquillo"]
+        },
+        {
+          "id": "s04",
+          "text": "Elena va alla casa della famiglia, nel paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "andare", "alla", "casa", "della", "famiglia", "nel", "paese"]
+        },
+        {
+          "id": "s05",
+          "text": "Elena è stanca, ma è molto felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "essere", "stanco", "ma", "essere", "molto", "felice"]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Elena è davanti alla porta di casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "essere", "davanti", "alla", "porta", "di", "casa"]
+        },
+        {
+          "id": "s07",
+          "text": "La porta si apre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "porta", "si", "aprire"]
+        },
+        {
+          "id": "s08",
+          "text": "C'è mamma Teresa alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["ce", "mamma", "teresa", "alla", "porta"]
+        },
+        {
+          "id": "s09",
+          "text": "Buongiorno, Elena!",
+          "speakerId": "teresa",
+          "kind": "dialogue",
+          "lemmas": ["buongiorno", "elena"]
+        },
+        {
+          "id": "s10",
+          "text": "Ciao, mamma. Sono a casa.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["ciao", "mamma", "essere", "a", "casa"]
+        },
+        {
+          "id": "s11",
+          "text": "Teresa è felice e guarda Elena alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["teresa", "essere", "felice", "e", "guardare", "elena", "alla", "porta"]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s12",
+          "text": "Papà Stefano è in casa, anche lui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["papa", "stefano", "essere", "in", "casa", "anche", "lui"]
+        },
+        {
+          "id": "s13",
+          "text": "Ciao, papà.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["ciao", "papa"]
+        },
+        {
+          "id": "s14",
+          "text": "Ciao, Elena. La casa è tua.",
+          "speakerId": "stefano",
+          "kind": "dialogue",
+          "lemmas": ["ciao", "elena", "la", "casa", "essere", "tuo"]
+        },
+        {
+          "id": "s15",
+          "text": "Sara è in casa con papà.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "essere", "in", "casa", "con", "papa"]
+        },
+        {
+          "id": "s16",
+          "text": "Ciao, Elena!",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["ciao", "elena"]
+        },
+        {
+          "id": "s17",
+          "text": "Ciao, Sara. Io sono a casa adesso.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["ciao", "sara", "io", "essere", "a", "casa", "adesso"]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s18",
+          "text": "La famiglia è insieme in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "famiglia", "essere", "insieme", "in", "casa"]
+        },
+        {
+          "id": "s19",
+          "text": "La casa è piccola, ma è bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "casa", "essere", "piccolo", "ma", "essere", "bello"]
+        },
+        {
+          "id": "s20",
+          "text": "Elena entra in casa con mamma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "entrare", "in", "casa", "con", "mamma"]
+        },
+        {
+          "id": "s21",
+          "text": "Elena vuole vedere tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "volere", "vedere", "tutto"]
+        },
+        {
+          "id": "s22",
+          "text": "Adesso Elena è a casa, con la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["adesso", "elena", "essere", "a", "casa", "con", "la", "famiglia"]
+        },
+        {
+          "id": "s23",
+          "text": "Elena è a casa, e non è sola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "essere", "a", "casa", "e", "non", "essere", "solo"]
+        },
+        {
+          "id": "s24",
+          "text": "Mamma, papà e Sara sono qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["mamma", "papa", "e", "sara", "essere", "qui"]
+        },
+        {
+          "id": "s25",
+          "text": "Oggi è un bel giorno per Elena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["oggi", "essere", "un", "bello", "giorno", "per", "elena"]
+        },
+        {
+          "id": "s26",
+          "text": "Elena parla con mamma, papà e Sara in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "parlare", "con", "mamma", "papa", "e", "sara", "in", "casa"]
+        },
+        {
+          "id": "s27",
+          "text": "La casa del paese è piccola, ma Elena sta bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "casa", "del", "paese", "essere", "piccolo", "ma", "elena", "stare", "bene"]
+        },
+        {
+          "id": "s28",
+          "text": "Adesso Elena è a casa, e tutta la famiglia è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["adesso", "elena", "essere", "a", "casa", "e", "tutto", "la", "famiglia", "essere", "felice"]
+        }
+      ]
+    }
+  ],
+  "questions": []
+}

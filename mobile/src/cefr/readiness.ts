@@ -65,7 +65,7 @@ export function evaluateLevelReadiness(input: ReadinessInput): LevelReadiness {
 
   if (completedAtLevel < MIN_CHAPTERS_FOR_READY || isolatedGoodChapter) {
     status = 'NOT_READY';
-    reasons.push('Keep reading this part of Luca’s story.');
+    reasons.push('Keep reading this part of the story.');
   } else if (
     readingCompletionRate >= 0.75 &&
     input.comprehensionStrength >= 0.85 &&

@@ -5,14 +5,20 @@
       "name": "Luca",
       "gender": "male",
       "ageDescription": "young adult",
-      "description": "A young Italian man who has just moved to Rome to start a new life.",
+      "description": "A young Italian man from Pietralba. In Luca a Roma he has just moved to Rome to start a new life.",
       "storyRole": "protagonist",
       "relationships": [
+        "Son of Marta and Paolo",
+        "Brother of Chiara",
+        "Grandson of Lidia",
+        "Friend of Davide",
         "Friend of Sofia",
         "Becomes friend of Marco",
         "Meets Giulia and Nonna Rosa"
       ],
       "knownLocationIds": [
+        "pietralba",
+        "casa-pietralba",
         "roma",
         "bar-centrale",
         "appartamento-luca"
@@ -150,6 +156,182 @@
         "voiceId": null,
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian male, direct"
+      }
+    },
+    {
+      "id": "marta",
+      "name": "Marta",
+      "gender": "female",
+      "ageDescription": "about 50",
+      "description": "Luca's mother. She runs the household in Pietralba.",
+      "storyRole": "mother",
+      "relationships": [
+        "Wife of Paolo",
+        "Mother of Luca and Chiara",
+        "Daughter of Lidia"
+      ],
+      "knownLocationIds": [
+        "pietralba",
+        "casa-pietralba",
+        "cucina-pietralba",
+        "supermercato-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, warm"
+      }
+    },
+    {
+      "id": "paolo",
+      "name": "Paolo",
+      "gender": "male",
+      "ageDescription": "about 52",
+      "description": "Luca's father. He lives with the family in Pietralba.",
+      "storyRole": "father",
+      "relationships": [
+        "Husband of Marta",
+        "Father of Luca and Chiara"
+      ],
+      "knownLocationIds": [
+        "pietralba",
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, calm"
+      }
+    },
+    {
+      "id": "chiara",
+      "name": "Chiara",
+      "gender": "female",
+      "ageDescription": "16",
+      "description": "Luca's younger sister. She still goes to school in Pietralba.",
+      "storyRole": "sister",
+      "relationships": [
+        "Daughter of Marta and Paolo",
+        "Sister of Luca",
+        "Friend of Elisa"
+      ],
+      "knownLocationIds": [
+        "pietralba",
+        "casa-pietralba",
+        "camera-luca-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "teenage Italian female"
+      }
+    },
+    {
+      "id": "lidia",
+      "name": "Lidia",
+      "gender": "female",
+      "ageDescription": "grandmother",
+      "description": "Luca's grandmother. She lives nearby in Pietralba.",
+      "storyRole": "grandmother",
+      "relationships": [
+        "Mother of Marta",
+        "Grandmother of Luca and Chiara"
+      ],
+      "knownLocationIds": [
+        "pietralba",
+        "casa-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "elderly Italian female, gentle"
+      }
+    },
+    {
+      "id": "davide",
+      "name": "Davide",
+      "gender": "male",
+      "ageDescription": "young adult",
+      "description": "Luca's childhood friend in Pietralba.",
+      "storyRole": "friend",
+      "relationships": [
+        "Friend of Luca"
+      ],
+      "knownLocationIds": [
+        "pietralba",
+        "piazza-pietralba",
+        "bar-franco",
+        "casa-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian male, friendly"
+      }
+    },
+    {
+      "id": "pina",
+      "name": "Pina",
+      "gender": "female",
+      "ageDescription": "middle-aged",
+      "description": "Signora Pina works at the Pietralba supermarket.",
+      "storyRole": "shopkeeper",
+      "relationships": [],
+      "knownLocationIds": [
+        "supermercato-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, practical"
+      }
+    },
+    {
+      "id": "franco",
+      "name": "Franco",
+      "gender": "male",
+      "ageDescription": "middle-aged",
+      "description": "Franco runs Bar da Franco in Pietralba.",
+      "storyRole": "bar owner",
+      "relationships": [],
+      "knownLocationIds": [
+        "bar-franco",
+        "piazza-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, local"
+      }
+    },
+    {
+      "id": "elisa",
+      "name": "Elisa",
+      "gender": "female",
+      "ageDescription": "16",
+      "description": "Chiara's friend. She comes to Luca's birthday party.",
+      "storyRole": "guest",
+      "relationships": [
+        "Friend of Chiara"
+      ],
+      "knownLocationIds": [
+        "pietralba",
+        "casa-pietralba",
+        "piazza-pietralba"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "teenage Italian female"
       }
     }
   ]

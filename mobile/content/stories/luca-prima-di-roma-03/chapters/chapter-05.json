@@ -1,0 +1,265 @@
+{
+  "id": "luca-prima-di-roma-03-05",
+  "storyId": "luca-prima-di-roma-03",
+  "number": 5,
+  "title": "Can I pay?",
+  "titleIt": "Si può pagare?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "supermercato-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "pina"
+  ],
+  "primaryDomain": "shopping",
+  "secondaryDomains": [
+    "prices",
+    "social"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-03-05",
+      "summary": "Luca pays with cash and takes the receipt.",
+      "characterIds": [
+        "luca",
+        "pina"
+      ],
+      "locationIds": [
+        "supermercato-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca pays at the supermarket",
+        "He pays with money",
+        "He gets a receipt"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Quanto costa tutto?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "costare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Tutto costa dieci euro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "costare",
+            "dieci",
+            "euro"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Dieci euro va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dieci",
+            "euro",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Luca paga con i soldi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "pagare",
+            "con",
+            "il",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ecco dieci euro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ecco",
+            "dieci",
+            "euro"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Grazie.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "C'è lo scontrino?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "lo",
+            "scontrino"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Sì ecco lo scontrino.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "ecco",
+            "lo",
+            "scontrino"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca prende lo scontrino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "lo",
+            "scontrino"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Lo scontrino è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "scontrino",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca può pagare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "potere",
+            "pagare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "La lista è finita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "lista",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Arrivederci signora.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivederci",
+            "signora"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Arrivederci.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivederci"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr03-ch05-q01",
+      "type": "direct",
+      "question": "How much is everything?",
+      "choices": [
+        "€2",
+        "€10",
+        "€50"
+      ],
+      "correctChoice": 1,
+      "explanation": "Tutto costa dieci euro.",
+      "chapterId": "luca-prima-di-roma-03-05",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch05-q02",
+      "type": "direct",
+      "question": "How does Luca pay?",
+      "choices": [
+        "With a phone",
+        "With money",
+        "He does not pay"
+      ],
+      "correctChoice": 1,
+      "explanation": "Luca paga con i soldi.",
+      "chapterId": "luca-prima-di-roma-03-05",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch05-q03",
+      "type": "direct",
+      "question": "What does Luca ask for?",
+      "choices": [
+        "A ticket",
+        "The receipt",
+        "A job"
+      ],
+      "correctChoice": 1,
+      "explanation": "C'è lo scontrino?",
+      "chapterId": "luca-prima-di-roma-03-05",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "id": "luca-prima-di-roma-05-01",
+  "storyId": "luca-prima-di-roma-05",
+  "number": 1,
+  "title": "My birthday",
+  "titleIt": "Il mio compleanno",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "chiara"
+  ],
+  "primaryDomain": "birthdays",
+  "secondaryDomains": [
+    "dates",
+    "age"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-05-01",
+      "summary": "Today is Luca’s birthday. He is 24. Marta says auguri.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "Today is Luca’s birthday",
+        "Luca is 24",
+        "His birthday is 12 May"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Oggi è il compleanno di Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "il",
+            "compleanno",
+            "di",
+            "luca"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Oggi è il dodici maggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "il",
+            "dodici",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca ha ventiquattro anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ventiquattro",
+            "anno"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Quanti anni hai oggi?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "anno",
+            "avere",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ho ventiquattro anni.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ventiquattro",
+            "anno"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Auguri Luca.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "auguri",
+            "luca"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Grazie mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Il compleanno è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "compleanno",
+            "essere",
+            "importante"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Chiara è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Marta è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Oggi c'è una festa.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "ce",
+            "una",
+            "festa"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La festa è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "festa",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il dodici maggio è il mio giorno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "dodici",
+            "maggio",
+            "essere",
+            "il",
+            "mio",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Auguri.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "auguri"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr05-ch01-q01",
+      "type": "direct",
+      "question": "What day is Luca’s birthday?",
+      "choices": [
+        "11 May",
+        "12 May",
+        "1 January"
+      ],
+      "correctChoice": 1,
+      "explanation": "Oggi è il dodici maggio.",
+      "chapterId": "luca-prima-di-roma-05-01",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch01-q02",
+      "type": "direct",
+      "question": "How old is Luca today?",
+      "choices": [
+        "16",
+        "24",
+        "70"
+      ],
+      "correctChoice": 1,
+      "explanation": "Luca ha ventiquattro anni.",
+      "chapterId": "luca-prima-di-roma-05-01",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch01-q03",
+      "type": "direct",
+      "question": "Where is the party?",
+      "choices": [
+        "At home",
+        "In Rome",
+        "At the supermarket"
+      ],
+      "correctChoice": 0,
+      "explanation": "La festa è a casa.",
+      "chapterId": "luca-prima-di-roma-05-01",
+      "difficulty": 1
+    }
+  ]
+}

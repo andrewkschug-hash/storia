@@ -1,0 +1,96 @@
+{
+  "id": "luca-prima-di-roma-04",
+  "title": "Around town",
+  "titleIt": "In paese",
+  "slug": "luca-prima-di-roma-04",
+  "level": 1,
+  "cefrLevel": "A1",
+  "synopsis": "Luca si muove per Pietralba: piazza, direzioni, tempo e autobus.",
+  "characterIds": [
+    "luca",
+    "davide",
+    "franco"
+  ],
+  "locationIds": [
+    "pietralba",
+    "piazza-pietralba",
+    "via-nazionale-pietralba",
+    "farmacia-pietralba",
+    "bar-franco",
+    "parco-pietralba",
+    "fermata-bus-pietralba",
+    "stazione-pietralba"
+  ],
+  "chapters": [
+    {
+      "id": "luca-prima-di-roma-04-01",
+      "number": 1,
+      "title": "Where is the square?",
+      "titleIt": "Dov'è la piazza?",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "luca-prima-di-roma-04-02",
+      "number": 2,
+      "title": "Right and left",
+      "titleIt": "A destra, a sinistra",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "luca-prima-di-roma-04-03",
+      "number": 3,
+      "title": "What’s the weather like?",
+      "titleIt": "Che tempo fa?",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "luca-prima-di-roma-04-04",
+      "number": 4,
+      "title": "The seasons",
+      "titleIt": "Le stagioni",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "luca-prima-di-roma-04-05",
+      "number": 5,
+      "title": "The bus",
+      "titleIt": "L'autobus",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "luca-prima-di-roma-04-06",
+      "number": 6,
+      "title": "We are lost",
+      "titleIt": "Siamo persi",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "luca-prima-di-roma-04-07",
+      "number": 7,
+      "title": "At the station",
+      "titleIt": "In stazione",
+      "difficultyLevel": 1,
+      "file": "chapter-07.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "luca-prima-di-roma-04-a1",
+      "storyId": "luca-prima-di-roma-04",
+      "cefrLevel": "A1",
+      "title": "Around town",
+      "titleIt": "In paese",
+      "description": "A1 present-tense pre-Rome story",
+      "narrativeStage": "Luca si muove per Pietralba: piazza, direzioni, tempo e autobus.",
+      "chapterStart": 1,
+      "chapterEnd": 7,
+      "status": "planned"
+    }
+  ]
+}

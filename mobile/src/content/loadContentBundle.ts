@@ -17,6 +17,7 @@ import {
 } from '@/src/content/schemas';
 import { assignChapterArc, parseArcs } from '@/src/cefr/arcs';
 import { enrichLexiconEntry } from '@/src/cefr/lexicon';
+import { mergeStoryEntities } from '@/src/content/entities';
 import { ContentValidationError, expandSentenceTokens } from '@/src/content/tokenize';
 
 type RawInputs = {
@@ -29,17 +30,35 @@ type RawInputs = {
   translationsJson?: unknown;
   arcsJson?: unknown;
   storyPath?: string;
+  narrativeArc?: string;
+  storyLocalCharactersJson?: unknown;
+  storyLocalLocationsJson?: unknown;
 };
 
 export function loadContentBundle(inputs: RawInputs): ContentBundle {
   const storyPath = inputs.storyPath ?? 'stories/luca-a-roma';
 
+  const hasStoryLocal =
+    inputs.storyLocalCharactersJson !== undefined || inputs.storyLocalLocationsJson !== undefined;
+  const merged = hasStoryLocal
+    ? mergeStoryEntities({
+        sharedCharactersJson: inputs.charactersJson,
+        sharedLocationsJson: inputs.locationsJson,
+        storyLocalCharactersJson: inputs.storyLocalCharactersJson,
+        storyLocalLocationsJson: inputs.storyLocalLocationsJson,
+      })
+    : null;
+
   const charactersFile = parseFile(
     'characters.json',
     CharactersFileSchema,
-    inputs.charactersJson,
+    merged ? { characters: merged.characters } : inputs.charactersJson,
   );
-  const locationsFile = parseFile('locations.json', LocationsFileSchema, inputs.locationsJson);
+  const locationsFile = parseFile(
+    'locations.json',
+    LocationsFileSchema,
+    merged ? { locations: merged.locations } : inputs.locationsJson,
+  );
   const lexiconFile = parseFile(
     'lexicon/italian-core.json',
     LexiconFileSchema,
@@ -255,6 +274,8 @@ export function loadContentBundle(inputs: RawInputs): ContentBundle {
       events: source.events,
       paragraphs,
       questions: source.questions,
+      ...(source.primaryDomain ? { primaryDomain: source.primaryDomain } : {}),
+      ...(source.secondaryDomains?.length ? { secondaryDomains: source.secondaryDomains } : {}),
     };
 
     chapters.set(chapter.id, chapter);
@@ -286,6 +307,17 @@ export function loadContentBundle(inputs: RawInputs): ContentBundle {
     lexiconById,
     story: { ...manifest, chapters: storyChapters, arcs },
     chapters,
+    ...(inputs.narrativeArc ? { narrativeArc: inputs.narrativeArc } : {}),
+    ...(merged
+      ? {
+          entitySource: {
+            sharedCharacterIds: merged.sharedCharacterIds,
+            storyLocalCharacterIds: merged.storyLocalCharacterIds,
+            sharedLocationIds: merged.sharedLocationIds,
+            storyLocalLocationIds: merged.storyLocalLocationIds,
+          },
+        }
+      : {}),
   };
 }
 

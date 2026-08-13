@@ -1,0 +1,295 @@
+{
+  "id": "luca-prima-di-roma-02-07",
+  "storyId": "luca-prima-di-roma-02",
+  "number": 7,
+  "title": "The evening",
+  "titleIt": "La sera",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara",
+    "lidia"
+  ],
+  "primaryDomain": "daily_routine",
+  "secondaryDomains": [
+    "clock",
+    "family"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-02-07",
+      "summary": "Dinner is at eight. Tomorrow Chiara has school again.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "paolo",
+        "chiara",
+        "lidia"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba"
+      ],
+      "rememberedFacts": [
+        "Dinner is at 8 p.m.",
+        "The family eats together",
+        "Tomorrow is another school day"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "È sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "sera"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Sono le otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "A che ora è la cena?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "che",
+            "ora",
+            "essere",
+            "la",
+            "cena"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "La cena è alle otto.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "cena",
+            "essere",
+            "alle",
+            "otto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "La famiglia è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Marta prepara la cena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "preparare",
+            "la",
+            "cena"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Luca mangia con la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "mangiare",
+            "con",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Lidia è a cena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lidia",
+            "essere",
+            "a",
+            "cena"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "La cena è buona.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "cena",
+            "essere",
+            "buono"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Poi sono le nove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "essere",
+            "le",
+            "nove"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Chiara è stanca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Domani Chiara ha scuola.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "chiara",
+            "avere",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Domani Luca si alza alle sette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "luca",
+            "si",
+            "alzare",
+            "alle",
+            "sette"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Buona sera.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "sera"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "A domani.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "domani"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "La giornata è finita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "giornata",
+            "essere",
+            "finire"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr02-ch07-q01",
+      "type": "direct",
+      "question": "What time is dinner?",
+      "choices": [
+        "7:00",
+        "8:00 p.m.",
+        "Noon"
+      ],
+      "correctChoice": 1,
+      "explanation": "La cena è alle otto.",
+      "chapterId": "luca-prima-di-roma-02-07",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch07-q02",
+      "type": "direct",
+      "question": "Who prepares dinner?",
+      "choices": [
+        "Davide",
+        "Marta",
+        "Franco"
+      ],
+      "correctChoice": 1,
+      "explanation": "Marta prepara la cena.",
+      "chapterId": "luca-prima-di-roma-02-07",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch07-q03",
+      "type": "direct",
+      "question": "What happens tomorrow morning?",
+      "choices": [
+        "Chiara has school",
+        "They go to Rome",
+        "There is a party"
+      ],
+      "correctChoice": 0,
+      "explanation": "Domani Chiara ha scuola.",
+      "chapterId": "luca-prima-di-roma-02-07",
+      "difficulty": 1
+    }
+  ]
+}

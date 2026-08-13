@@ -1,0 +1,301 @@
+{
+  "id": "luca-prima-di-roma-04-01",
+  "storyId": "luca-prima-di-roma-04",
+  "number": 1,
+  "title": "Where is the square?",
+  "titleIt": "Dov'è la piazza?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "pietralba",
+    "piazza-pietralba",
+    "via-nazionale-pietralba",
+    "farmacia-pietralba",
+    "parco-pietralba",
+    "bar-franco"
+  ],
+  "characterIds": [
+    "luca",
+    "davide"
+  ],
+  "primaryDomain": "places",
+  "secondaryDomains": [
+    "descriptions"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-04-01",
+      "summary": "Davide names the town places: piazza, street, pharmacy, park, bar.",
+      "characterIds": [
+        "luca",
+        "davide"
+      ],
+      "locationIds": [
+        "pietralba",
+        "piazza-pietralba",
+        "via-nazionale-pietralba",
+        "farmacia-pietralba",
+        "parco-pietralba",
+        "bar-franco"
+      ],
+      "rememberedFacts": [
+        "The piazza is in the center",
+        "The pharmacy is on Via Nazionale",
+        "Bar da Franco is near the piazza"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è in paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "in",
+            "paese"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Dov'è la piazza?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "la",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "La piazza è qui.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "piazza",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "La piazza è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "piazza",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Dov'è la farmacia?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "la",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "La farmacia è in Via Nazionale.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "essere",
+            "in",
+            "via",
+            "nazionale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s07",
+          "text": "Via Nazionale è una strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "via",
+            "nazionale",
+            "essere",
+            "una",
+            "strada"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Dov'è il parco?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "il",
+            "parco"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Il parco è vicino.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il parco è piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Dov'è il bar?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "il",
+            "bar"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il bar è di Franco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
+            "essere",
+            "di",
+            "franco"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il bar è vicino alla piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "bar",
+            "essere",
+            "vicino",
+            "alla",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Pietralba ha una piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietralba",
+            "avere",
+            "una",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Pietralba ha un parco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietralba",
+            "avere",
+            "un",
+            "parco"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Il paese è piccolo ma bello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "piccolo",
+            "ma",
+            "bello"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr04-ch01-q01",
+      "type": "direct",
+      "question": "Where is the pharmacy?",
+      "choices": [
+        "On Via Nazionale",
+        "In Rome",
+        "In Luca’s bedroom"
+      ],
+      "correctChoice": 0,
+      "explanation": "La farmacia è in Via Nazionale.",
+      "chapterId": "luca-prima-di-roma-04-01",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch01-q02",
+      "type": "direct",
+      "question": "Where is the bar?",
+      "choices": [
+        "Far from town",
+        "Near the piazza",
+        "At the station"
+      ],
+      "correctChoice": 1,
+      "explanation": "Il bar è vicino alla piazza.",
+      "chapterId": "luca-prima-di-roma-04-01",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch01-q03",
+      "type": "direct",
+      "question": "What kind of town is Pietralba?",
+      "choices": [
+        "Small but nice",
+        "A big city",
+        "Empty"
+      ],
+      "correctChoice": 0,
+      "explanation": "Il paese è piccolo ma bello.",
+      "chapterId": "luca-prima-di-roma-04-01",
+      "difficulty": 1
+    }
+  ]
+}

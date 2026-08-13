@@ -1,0 +1,280 @@
+{
+  "id": "luca-prima-di-roma-05-03",
+  "storyId": "luca-prima-di-roma-05",
+  "number": 3,
+  "title": "What do you like?",
+  "titleIt": "Cosa ti piace?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "davide",
+    "elisa"
+  ],
+  "primaryDomain": "likes",
+  "secondaryDomains": [
+    "food"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-05-03",
+      "summary": "They choose party food and music. Luca likes cake and music; not oil.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "davide",
+        "elisa"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca likes cake",
+        "Luca likes music",
+        "Davide likes juice",
+        "Luca does not like oil"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Cosa ti piace?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "ti",
+            "piacere"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "A Luca piace la torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "luca",
+            "piacere",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "A Luca piace la musica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "luca",
+            "piacere",
+            "la",
+            "musica"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "A Luca non piace l'olio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "luca",
+            "non",
+            "piacere",
+            "olio"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "A Davide piace il succo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "davide",
+            "piacere",
+            "il",
+            "succo"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "A Elisa piace la frutta.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "elisa",
+            "piacere",
+            "la",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "A Marta piace il pane.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "marta",
+            "piacere",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Per la festa c'è torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "la",
+            "festa",
+            "ce",
+            "torta"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "C'è succo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "succo"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "C'è frutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "C'è musica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "musica"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "A Luca piacciono gli amici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "luca",
+            "piacere",
+            "gli",
+            "amico"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "La festa è bella.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "festa",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sì mi piace.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "mi",
+            "piacere"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr05-ch03-q01",
+      "type": "direct",
+      "question": "What does Luca like?",
+      "choices": [
+        "Cake and music",
+        "Oil and work",
+        "The Rome café"
+      ],
+      "correctChoice": 0,
+      "explanation": "Torta and musica.",
+      "chapterId": "luca-prima-di-roma-05-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch03-q02",
+      "type": "direct",
+      "question": "What does Luca not like?",
+      "choices": [
+        "Friends",
+        "Oil",
+        "Juice"
+      ],
+      "correctChoice": 1,
+      "explanation": "A Luca non piace l'olio.",
+      "chapterId": "luca-prima-di-roma-05-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch03-q03",
+      "type": "character",
+      "question": "What does Elisa like?",
+      "choices": [
+        "Fruit",
+        "Oil",
+        "Tickets"
+      ],
+      "correctChoice": 0,
+      "explanation": "A Elisa piace la frutta.",
+      "chapterId": "luca-prima-di-roma-05-03",
+      "difficulty": 1
+    }
+  ]
+}

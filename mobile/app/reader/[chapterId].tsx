@@ -1,4 +1,5 @@
 import { Stack, router, useFocusEffect, useLocalSearchParams, type Href } from 'expo-router';
+import { SymbolView } from 'expo-symbols';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -25,6 +26,14 @@ import { getVocabularyService } from '@/src/vocabulary';
 import type { DictionaryLookup } from '@/src/vocabulary/types';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
+
+function goToStories() {
+  if (router.canDismiss()) {
+    router.dismissTo('/(tabs)/stories' as Href);
+    return;
+  }
+  router.replace('/(tabs)/stories' as Href);
+}
 
 export default function ReaderScreen() {
   const { chapterId, listen } = useLocalSearchParams<{ chapterId: string; listen?: string }>();
@@ -199,10 +208,13 @@ export default function ReaderScreen() {
   if (!chapter) {
     return (
       <View style={[styles.missing, { backgroundColor: colors.background }]}>
-        <Stack.Screen options={{ title: 'Chapter' }} />
+        <Stack.Screen options={{ title: 'Chapter', headerBackVisible: false }} />
         <Text style={[Typography.body, { color: colors.textSecondary }]}>
           This chapter is not available.
         </Text>
+        <Pressable onPress={goToStories} style={{ marginTop: Spacing.md }}>
+          <Text style={[Typography.label, { color: colors.tint }]}>Back to stories</Text>
+        </Pressable>
       </View>
     );
   }
@@ -212,8 +224,8 @@ export default function ReaderScreen() {
       <View style={[styles.missing, { backgroundColor: colors.background }]}>
         <Stack.Screen options={{ title: 'Chapter' }} />
         <Text style={[Typography.body, { color: colors.danger }]}>{error}</Text>
-        <Pressable onPress={() => router.back()} style={{ marginTop: Spacing.md }}>
-          <Text style={[Typography.label, { color: colors.tint }]}>Go back</Text>
+        <Pressable onPress={goToStories} style={{ marginTop: Spacing.md }}>
+          <Text style={[Typography.label, { color: colors.tint }]}>Back to stories</Text>
         </Pressable>
       </View>
     );
@@ -232,6 +244,7 @@ export default function ReaderScreen() {
       <Stack.Screen
         options={{
           title: `Capitolo ${chapter.number}`,
+          headerBackVisible: false,
           headerStyle: { backgroundColor: colors.readerSurface },
           headerTintColor: colors.tint,
           headerTitleStyle: {
@@ -239,6 +252,28 @@ export default function ReaderScreen() {
             color: colors.text,
             fontSize: 16,
           },
+          headerLeft: () => (
+            <Pressable
+              onPress={goToStories}
+              accessibilityRole="button"
+              accessibilityLabel="Back to stories"
+              hitSlop={12}
+              style={({ pressed }) => [
+                styles.headerBack,
+                { opacity: pressed ? 0.7 : 1 },
+              ]}>
+              <SymbolView
+                name={{
+                  ios: 'chevron.left',
+                  android: 'arrow_back',
+                  web: 'arrow_back',
+                }}
+                tintColor={colors.tint}
+                size={22}
+              />
+              <Text style={[Typography.label, { color: colors.tint }]}>Stories</Text>
+            </Pressable>
+          ),
         }}
       />
 
@@ -364,6 +399,13 @@ export default function ReaderScreen() {
 }
 
 const styles = StyleSheet.create({
+  headerBack: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 2,
+    paddingRight: Spacing.sm,
+    minHeight: 44,
+  },
   missing: {
     flex: 1,
     alignItems: 'center',

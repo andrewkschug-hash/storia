@@ -1,0 +1,123 @@
+{
+  "storyId": "elena-torna-a-casa",
+  "policy": "Do not modify Luca lemma IDs or existing italian-core entries. Flag homographs for Phase 12C authors. Sentence lemmas[] are author-assigned, so collisions are authoring hazards, not automatic tokenizer bugs.",
+  "reuseExistingDoNotDuplicate": [
+    {
+      "lemmaId": "da",
+      "existing": "preposition: from / by (Luca ch17)",
+      "risk": "Also verb dare inflection. Keep lemma da only as preposition."
+    },
+    {
+      "lemmaId": "parte",
+      "existing": "noun: part (A2, Luca ch32)",
+      "risk": "Do not add a second parte for 'leave' / da parte. Avoid the phrase in A1 Elena if unclear."
+    },
+    {
+      "lemmaId": "tempo",
+      "existing": "noun: time / weather (Luca ch12 used as time pressure)",
+      "risk": "Elena ch11 must teach weather sense (che tempo fa + sole/pioggia). Same lemmaId."
+    },
+    {
+      "lemmaId": "ora",
+      "existing": "adverb: now (Luca ch17). Notes already say it can mean hour.",
+      "risk": "Clock questions should use new lemma ore, not overload ora."
+    },
+    {
+      "lemmaId": "piano",
+      "existing": "noun: floor / plan (Luca ch14)",
+      "risk": "Do not use piano for 'slowly' in Elena A1."
+    },
+    {
+      "lemmaId": "quanto",
+      "existing": "adverb: how much (unused in Luca A1; introducedChapter 26)",
+      "risk": "Map quanti/quante to quanto. Do not create lemma quanti."
+    },
+    {
+      "lemmaId": "uno",
+      "existing": "article: a / one",
+      "risk": "Number 'one' reuses uno. Do not add lemma uno_num."
+    },
+    {
+      "lemmaId": "papa",
+      "existing": "noun: papà",
+      "risk": "Do not add papà under a new id. Do not confuse with Papa (pope)."
+    },
+    {
+      "lemmaId": "strada",
+      "existing": "noun: street",
+      "risk": "Do not add via in 12B. via is street vs away/preposition — defer."
+    }
+  ],
+  "newLemmasWithHomographNotes": [
+    {
+      "lemmaId": "sei",
+      "sense": "number six",
+      "clash": "essere 2sg inflection 'sei' already listed under essere",
+      "authoring": "For 'Sei stanca?' use lemma essere. For 'Ho sei mele' use lemma sei."
+    },
+    {
+      "lemmaId": "sole",
+      "sense": "noun sun",
+      "clash": "adjective solo/sola 'alone' is different; sole can also be feminine 'alone' in some forms",
+      "authoring": "Use only as weather noun: c'è il sole."
+    },
+    {
+      "lemmaId": "male",
+      "sense": "badly / unwell (stare male)",
+      "clash": "noun male = pain/evil",
+      "authoring": "A1 only in stare male / va male. Do not teach il male."
+    },
+    {
+      "lemmaId": "caro",
+      "sense": "expensive",
+      "clash": "caro = dear (affection)",
+      "authoring": "Prices only: è caro. Not caro Stefano."
+    },
+    {
+      "lemmaId": "dolce",
+      "sense": "dessert / sweet",
+      "clash": "adjective sweet vs noun dessert",
+      "authoring": "After trattoria: un dolce. Keep as noun in 12C."
+    },
+    {
+      "lemmaId": "paese",
+      "sense": "town / village",
+      "clash": "also 'country'",
+      "authoring": "Castelbianco is un paese. Do not use for 'Italy the country' in A1."
+    },
+    {
+      "lemmaId": "camera",
+      "sense": "bedroom / room",
+      "clash": "English camera; Italian macchina fotografica is photo camera",
+      "authoring": "La camera di Elena = bedroom."
+    },
+    {
+      "lemmaId": "ordinare",
+      "sense": "to order food",
+      "clash": "also 'to arrange / put in order'",
+      "authoring": "Trattoria only. Prefer voglio / prendo if unclear."
+    },
+    {
+      "lemmaId": "aperto",
+      "sense": "open (shop)",
+      "clash": "past participle of aprire (Luca has aprire)",
+      "authoring": "May map to aprire in some sentences. Prefer lemma aperto when used as adjective: il negozio è aperto."
+    },
+    {
+      "lemmaId": "chiuso",
+      "sense": "closed",
+      "clash": "past participle of chiudere (Luca has chiudere)",
+      "authoring": "Same as aperto: adjective vs participle. Shop sign sense uses chiuso."
+    }
+  ],
+  "doNotAddIn12B": [
+    {
+      "surface": "via",
+      "reason": "Street vs preposition away. Use strada / via-paese location name only."
+    },
+    {
+      "surface": "vorrei",
+      "reason": "Conditional. Prefer voglio + per_favore. Do not add or teach a paradigm."
+    }
+  ]
+}

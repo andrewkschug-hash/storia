@@ -5687,6 +5687,1016 @@
       "topic": "everyday",
       "abstractness": "concrete",
       "inflections": []
+    },
+    {
+      "lemmaId": "marta",
+      "italian": "Marta",
+      "english": "Marta (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "paolo",
+      "italian": "Paolo",
+      "english": "Paolo (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "chiara",
+      "italian": "Chiara",
+      "english": "Chiara (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "lidia",
+      "italian": "Lidia",
+      "english": "Lidia (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "davide",
+      "italian": "Davide",
+      "english": "Davide (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "pina",
+      "italian": "Pina",
+      "english": "Pina (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "franco",
+      "italian": "Franco",
+      "english": "Franco (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "elisa",
+      "italian": "Elisa",
+      "english": "Elisa (name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "pietralba",
+      "italian": "Pietralba",
+      "english": "Pietralba (town)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "sorella",
+      "italian": "sorella",
+      "english": "sister",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "sorelle"
+      ]
+    },
+    {
+      "lemmaId": "signora",
+      "italian": "signora",
+      "english": "ma'am / Mrs",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "paese",
+      "italian": "paese",
+      "english": "town / village",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "paesi"
+      ]
+    },
+    {
+      "lemmaId": "camera",
+      "italian": "camera",
+      "english": "bedroom",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "camere"
+      ]
+    },
+    {
+      "lemmaId": "soggiorno",
+      "italian": "soggiorno",
+      "english": "living room",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "sei",
+      "italian": "sei",
+      "english": "six",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "sette",
+      "italian": "sette",
+      "english": "seven",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "otto",
+      "italian": "otto",
+      "english": "eight",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "nove",
+      "italian": "nove",
+      "english": "nine",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "undici",
+      "italian": "undici",
+      "english": "eleven",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "dodici",
+      "italian": "dodici",
+      "english": "twelve",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "tredici",
+      "italian": "tredici",
+      "english": "thirteen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "quattordici",
+      "italian": "quattordici",
+      "english": "fourteen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "quindici",
+      "italian": "quindici",
+      "english": "fifteen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "sedici",
+      "italian": "sedici",
+      "english": "sixteen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "diciassette",
+      "italian": "diciassette",
+      "english": "seventeen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "diciotto",
+      "italian": "diciotto",
+      "english": "eighteen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "diciannove",
+      "italian": "diciannove",
+      "english": "nineteen",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "venti",
+      "italian": "venti",
+      "english": "twenty",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "ventuno",
+      "italian": "ventuno",
+      "english": "twenty-one",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "ventidue",
+      "italian": "ventidue",
+      "english": "twenty-two",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "ventitre",
+      "italian": "ventitré",
+      "english": "twenty-three",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "ventiquattro",
+      "italian": "ventiquattro",
+      "english": "twenty-four",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "trenta",
+      "italian": "trenta",
+      "english": "thirty",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "mezzo",
+      "italian": "mezzo",
+      "english": "half",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "mezzogiorno",
+      "italian": "mezzogiorno",
+      "english": "noon",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "gennaio",
+      "italian": "gennaio",
+      "english": "January",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "febbraio",
+      "italian": "febbraio",
+      "english": "February",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "marzo",
+      "italian": "marzo",
+      "english": "March",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "aprile",
+      "italian": "aprile",
+      "english": "April",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "maggio",
+      "italian": "maggio",
+      "english": "May",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "giugno",
+      "italian": "giugno",
+      "english": "June",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "luglio",
+      "italian": "luglio",
+      "english": "July",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "agosto",
+      "italian": "agosto",
+      "english": "August",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "settembre",
+      "italian": "settembre",
+      "english": "September",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "ottobre",
+      "italian": "ottobre",
+      "english": "October",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "novembre",
+      "italian": "novembre",
+      "english": "November",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "dicembre",
+      "italian": "dicembre",
+      "english": "December",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "alzare",
+      "italian": "alzare",
+      "english": "to get up / to raise",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "alzo",
+        "alzi",
+        "alza",
+        "alziamo",
+        "alzate",
+        "alzano"
+      ]
+    },
+    {
+      "lemmaId": "colazione",
+      "italian": "colazione",
+      "english": "breakfast",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "scuola",
+      "italian": "scuola",
+      "english": "school",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "scuole"
+      ]
+    },
+    {
+      "lemmaId": "latte",
+      "italian": "latte",
+      "english": "milk",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "frutta",
+      "italian": "frutta",
+      "english": "fruit",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "mela",
+      "italian": "mela",
+      "english": "apple",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "mele"
+      ]
+    },
+    {
+      "lemmaId": "formaggio",
+      "italian": "formaggio",
+      "english": "cheese",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "pomodoro",
+      "italian": "pomodoro",
+      "english": "tomato",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "pomodori"
+      ]
+    },
+    {
+      "lemmaId": "uovo",
+      "italian": "uovo",
+      "english": "egg",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "uova"
+      ]
+    },
+    {
+      "lemmaId": "olio",
+      "italian": "olio",
+      "english": "oil",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "zucchero",
+      "italian": "zucchero",
+      "english": "sugar",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "torta",
+      "italian": "torta",
+      "english": "cake",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "torte"
+      ]
+    },
+    {
+      "lemmaId": "succo",
+      "italian": "succo",
+      "english": "juice",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "insalata",
+      "italian": "insalata",
+      "english": "salad",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "lista",
+      "italian": "lista",
+      "english": "list",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "banco",
+      "italian": "banco",
+      "english": "counter",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "etto",
+      "italian": "etto",
+      "english": "hectogram (100g)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "etti"
+      ]
+    },
+    {
+      "lemmaId": "chilo",
+      "italian": "chilo",
+      "english": "kilo",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "chili"
+      ]
+    },
+    {
+      "lemmaId": "bottiglia",
+      "italian": "bottiglia",
+      "english": "bottle",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "bottiglie"
+      ]
+    },
+    {
+      "lemmaId": "pacco",
+      "italian": "pacco",
+      "english": "pack / package",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "pacchi"
+      ]
+    },
+    {
+      "lemmaId": "scontrino",
+      "italian": "scontrino",
+      "english": "receipt",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "caro",
+      "italian": "caro",
+      "english": "expensive / dear",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "cara",
+        "cari",
+        "care"
+      ]
+    },
+    {
+      "lemmaId": "supermercato",
+      "italian": "supermercato",
+      "english": "supermarket",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "favore",
+      "italian": "favore",
+      "english": "favor",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "farmacia",
+      "italian": "farmacia",
+      "english": "pharmacy",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "parco",
+      "italian": "parco",
+      "english": "park",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "destra",
+      "italian": "destra",
+      "english": "right (direction)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "sinistra",
+      "italian": "sinistra",
+      "english": "left (direction)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "dritto",
+      "italian": "dritto",
+      "english": "straight",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "fermata",
+      "italian": "fermata",
+      "english": "stop (bus stop)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "fermate"
+      ]
+    },
+    {
+      "lemmaId": "binario",
+      "italian": "binario",
+      "english": "platform / track",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "binari"
+      ]
+    },
+    {
+      "lemmaId": "primavera",
+      "italian": "primavera",
+      "english": "spring",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "estate",
+      "italian": "estate",
+      "english": "summer",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "autunno",
+      "italian": "autunno",
+      "english": "autumn",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "inverno",
+      "italian": "inverno",
+      "english": "winter",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "piovere",
+      "italian": "piovere",
+      "english": "to rain",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "piove",
+        "piovono"
+      ]
+    },
+    {
+      "lemmaId": "sole",
+      "italian": "sole",
+      "english": "sun",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "nuvoloso",
+      "italian": "nuvoloso",
+      "english": "cloudy",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "compleanno",
+      "italian": "compleanno",
+      "english": "birthday",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "invito",
+      "italian": "invito",
+      "english": "invitation",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "inviti"
+      ]
+    },
+    {
+      "lemmaId": "invitare",
+      "italian": "invitare",
+      "english": "to invite",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "invito",
+        "inviti",
+        "invita",
+        "invitiamo",
+        "invitate",
+        "invitano"
+      ]
+    },
+    {
+      "lemmaId": "auguri",
+      "italian": "auguri",
+      "english": "best wishes / happy birthday",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "arrivederci",
+      "italian": "arrivederci",
+      "english": "goodbye",
+      "partOfSpeech": "interjection",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "mancare",
+      "italian": "mancare",
+      "english": "to be missing / to lack",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "manca",
+        "mancano",
+        "manco"
+      ]
+    },
+    {
+      "lemmaId": "alto",
+      "italian": "alto",
+      "english": "tall / high",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "alta",
+        "alti",
+        "alte"
+      ]
+    },
+    {
+      "lemmaId": "basso",
+      "italian": "basso",
+      "english": "short / low",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "bassa",
+        "bassi",
+        "basse"
+      ]
+    },
+    {
+      "lemmaId": "numero",
+      "italian": "numero",
+      "english": "number",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "numeri"
+      ]
+    },
+    {
+      "lemmaId": "quale",
+      "italian": "quale",
+      "english": "which",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": [
+        "quali"
+      ]
+    },
+    {
+      "lemmaId": "venticinque",
+      "italian": "venticinque",
+      "english": "twenty-five",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "zero",
+      "italian": "zero",
+      "english": "zero",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "settanta",
+      "italian": "settanta",
+      "english": "seventy",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "ottanta",
+      "italian": "ottanta",
+      "english": "eighty",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "via",
+      "italian": "via",
+      "english": "street / via",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["vie"]
+    },
+    {
+      "lemmaId": "nazionale",
+      "italian": "nazionale",
+      "english": "national (street name)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "stagione",
+      "italian": "stagione",
+      "english": "season",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["stagioni"]
+    },
+    {
+      "lemmaId": "triste",
+      "italian": "triste",
+      "english": "sad",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "dietro",
+      "italian": "dietro",
+      "english": "behind",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "accanto",
+      "italian": "accanto",
+      "english": "beside / next to",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "orologio",
+      "italian": "orologio",
+      "english": "clock / watch",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["orologi"]
+    },
+    {
+      "lemmaId": "cinquanta",
+      "italian": "cinquanta",
+      "english": "fifty",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "pranzo",
+      "italian": "pranzo",
+      "english": "lunch",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "letto",
+      "italian": "letto",
+      "english": "bed",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["letti"]
+    },
+    {
+      "lemmaId": "bagno",
+      "italian": "bagno",
+      "english": "bathroom",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["bagni"]
+    },
+    {
+      "lemmaId": "sedia",
+      "italian": "sedia",
+      "english": "chair",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["sedie"]
+    },
+    {
+      "lemmaId": "libro",
+      "italian": "libro",
+      "english": "book",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "inflections": ["libri"]
+    },
+    {
+      "lemmaId": "foto",
+      "italian": "foto",
+      "english": "photo",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "lemmaId": "verdura",
+      "italian": "verdura",
+      "english": "vegetables",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
     }
   ]
 }

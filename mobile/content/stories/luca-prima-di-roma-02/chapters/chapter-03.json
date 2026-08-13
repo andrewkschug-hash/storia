@@ -1,0 +1,283 @@
+{
+  "id": "luca-prima-di-roma-02-03",
+  "storyId": "luca-prima-di-roma-02",
+  "number": 3,
+  "title": "Days of the week",
+  "titleIt": "I giorni della settimana",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "paolo",
+    "chiara"
+  ],
+  "primaryDomain": "days",
+  "secondaryDomains": [
+    "schedules"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-02-03",
+      "summary": "Today is Monday. They name every weekday and plan tomorrow.",
+      "characterIds": [
+        "luca",
+        "paolo",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "Today is Monday",
+        "Tomorrow is Tuesday",
+        "Chiara has school on weekdays"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Oggi è lunedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ieri è domenica.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "essere",
+            "domenica"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Domani è martedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca dice i giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "dire",
+            "il",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Lunedì martedì mercoledì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lunedi",
+            "martedi",
+            "mercoledi"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Giovedì venerdì.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "giovedi",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sabato domenica.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "domenica"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "La settimana ha sette giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "settimana",
+            "avere",
+            "sette",
+            "giorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Oggi Chiara ha scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "chiara",
+            "avere",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Domani Chiara ha scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "chiara",
+            "avere",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sabato Chiara non ha scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sabato",
+            "chiara",
+            "non",
+            "avere",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Domenica siamo a casa.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "domenica",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ogni giorno ha un nome.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ogni",
+            "giorno",
+            "avere",
+            "un",
+            "nome"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Che giorno è oggi?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "giorno",
+            "essere",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Oggi è lunedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Va bene.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr02-ch03-q01",
+      "type": "direct",
+      "question": "What day is today?",
+      "choices": [
+        "Sunday",
+        "Monday",
+        "Saturday"
+      ],
+      "correctChoice": 1,
+      "explanation": "Oggi è lunedì.",
+      "chapterId": "luca-prima-di-roma-02-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch03-q02",
+      "type": "direct",
+      "question": "What day is tomorrow?",
+      "choices": [
+        "Tuesday",
+        "Friday",
+        "Sunday"
+      ],
+      "correctChoice": 0,
+      "explanation": "Domani è martedì.",
+      "chapterId": "luca-prima-di-roma-02-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch03-q03",
+      "type": "direct",
+      "question": "When does Chiara not have school?",
+      "choices": [
+        "Monday",
+        "Saturday",
+        "Tuesday"
+      ],
+      "correctChoice": 1,
+      "explanation": "Sabato Chiara non ha scuola.",
+      "chapterId": "luca-prima-di-roma-02-03",
+      "difficulty": 1
+    }
+  ]
+}

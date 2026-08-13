@@ -1,0 +1,270 @@
+{
+  "id": "luca-prima-di-roma-03-02",
+  "storyId": "luca-prima-di-roma-03",
+  "number": 2,
+  "title": "At the counter",
+  "titleIt": "Al banco",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "supermercato-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "pina"
+  ],
+  "primaryDomain": "ordering",
+  "secondaryDomains": [
+    "food",
+    "social"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-03-02",
+      "summary": "Luca orders from Signora Pina at the counter.",
+      "characterIds": [
+        "luca",
+        "pina"
+      ],
+      "locationIds": [
+        "supermercato-pietralba"
+      ],
+      "rememberedFacts": [
+        "Signora Pina works at the counter",
+        "Luca wants bread and cheese",
+        "He says vorrei and per favore"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è al supermercato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "al",
+            "supermercato"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca è al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Signora Pina è al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "signora",
+            "pina",
+            "essere",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Buongiorno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Buongiorno.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Vorrei del pane per favore.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "del",
+            "pane",
+            "per",
+            "favore"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Va bene.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Altro?",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "altro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Vorrei del formaggio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "del",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Questo formaggio?",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sì grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Pina dà il pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "dare",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Pina dà il formaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "dare",
+            "il",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Luca dice grazie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "dire",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Prego.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "prego"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Il banco è occupato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "banco",
+            "essere",
+            "occupato"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr03-ch02-q01",
+      "type": "character",
+      "question": "Who works at the counter?",
+      "choices": [
+        "Marta",
+        "Signora Pina",
+        "Chiara"
+      ],
+      "correctChoice": 1,
+      "explanation": "Signora Pina è al banco.",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch02-q02",
+      "type": "direct",
+      "question": "What does Luca want first?",
+      "choices": [
+        "Bread",
+        "Wine",
+        "A ticket"
+      ],
+      "correctChoice": 0,
+      "explanation": "Vorrei del pane.",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch02-q03",
+      "type": "direct",
+      "question": "What else does Luca order?",
+      "choices": [
+        "Cheese",
+        "Pizza",
+        "Coffee"
+      ],
+      "correctChoice": 0,
+      "explanation": "Vorrei del formaggio.",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "difficulty": 1
+    }
+  ]
+}

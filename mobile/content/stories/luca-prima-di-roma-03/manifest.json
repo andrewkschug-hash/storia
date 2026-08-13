@@ -1,0 +1,83 @@
+{
+  "id": "luca-prima-di-roma-03",
+  "title": "At the supermarket",
+  "titleIt": "Al supermercato",
+  "slug": "luca-prima-di-roma-03",
+  "level": 1,
+  "cefrLevel": "A1",
+  "synopsis": "Luca fa la spesa a Pietralba: lista, banco, prezzi e quantità.",
+  "characterIds": [
+    "luca",
+    "marta",
+    "pina"
+  ],
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba",
+    "supermercato-pietralba"
+  ],
+  "chapters": [
+    {
+      "id": "luca-prima-di-roma-03-01",
+      "number": 1,
+      "title": "The list",
+      "titleIt": "La lista",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "luca-prima-di-roma-03-02",
+      "number": 2,
+      "title": "At the counter",
+      "titleIt": "Al banco",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "luca-prima-di-roma-03-03",
+      "number": 3,
+      "title": "How much is it?",
+      "titleIt": "Quanto costa?",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "luca-prima-di-roma-03-04",
+      "number": 4,
+      "title": "How much do I take?",
+      "titleIt": "Quanto ne prendo?",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "luca-prima-di-roma-03-05",
+      "number": 5,
+      "title": "Can I pay?",
+      "titleIt": "Si può pagare?",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "luca-prima-di-roma-03-06",
+      "number": 6,
+      "title": "Something is missing",
+      "titleIt": "Manca qualcosa",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "luca-prima-di-roma-03-a1",
+      "storyId": "luca-prima-di-roma-03",
+      "cefrLevel": "A1",
+      "title": "At the supermarket",
+      "titleIt": "Al supermercato",
+      "description": "A1 present-tense pre-Rome story",
+      "narrativeStage": "Luca fa la spesa a Pietralba: lista, banco, prezzi e quantità.",
+      "chapterStart": 1,
+      "chapterEnd": 6,
+      "status": "planned"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "luca-prima-di-roma-04-07",
+  "storyId": "luca-prima-di-roma-04",
+  "number": 7,
+  "title": "At the station",
+  "titleIt": "In stazione",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "stazione-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "davide"
+  ],
+  "primaryDomain": "transportation",
+  "secondaryDomains": [
+    "places",
+    "schedules"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-04-07",
+      "summary": "They visit Pietralba station and check train times. Luca does not leave for Rome.",
+      "characterIds": [
+        "luca",
+        "davide"
+      ],
+      "locationIds": [
+        "stazione-pietralba"
+      ],
+      "rememberedFacts": [
+        "Pietralba has a station",
+        "There is a train at 11:00",
+        "Luca does not board a Rome train today"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca e Davide sono in stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "essere",
+            "in",
+            "stazione"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Questa è la stazione di Pietralba.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "essere",
+            "la",
+            "stazione",
+            "di",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Dov'è il binario?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "il",
+            "binario"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il binario è uno.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "binario",
+            "essere",
+            "uno"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "C'è un treno alle undici.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "un",
+            "treno",
+            "alle",
+            "undici"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il treno non va a Roma oggi.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "treno",
+            "non",
+            "andare",
+            "a",
+            "roma",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Oggi Luca resta a Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "restare",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "L'orario è alla stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "orario",
+            "essere",
+            "alla",
+            "stazione"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "La stazione è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "stazione",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Ma c'è un treno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "ce",
+            "un",
+            "treno"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca guarda il binario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "binario"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Davide guarda l'orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "guardare",
+            "orario"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Un giorno Luca prende il treno.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "giorno",
+            "luca",
+            "prendere",
+            "il",
+            "treno"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Non oggi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Oggi andiamo a casa.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "andare",
+            "a",
+            "casa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr04-ch07-q01",
+      "type": "direct",
+      "question": "Which station are they in?",
+      "choices": [
+        "Rome Termini",
+        "Pietralba station",
+        "A metro stop"
+      ],
+      "correctChoice": 1,
+      "explanation": "La stazione di Pietralba.",
+      "chapterId": "luca-prima-di-roma-04-07",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch07-q02",
+      "type": "direct",
+      "question": "Is Luca going to Rome today?",
+      "choices": [
+        "Yes",
+        "No",
+        "He already arrived"
+      ],
+      "correctChoice": 1,
+      "explanation": "Oggi Luca resta a Pietralba.",
+      "chapterId": "luca-prima-di-roma-04-07",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch07-q03",
+      "type": "direct",
+      "question": "What time is the local train mentioned?",
+      "choices": [
+        "11:00",
+        "8:00",
+        "20:00"
+      ],
+      "correctChoice": 0,
+      "explanation": "C'è un treno alle undici.",
+      "chapterId": "luca-prima-di-roma-04-07",
+      "difficulty": 1
+    }
+  ]
+}

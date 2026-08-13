@@ -1,0 +1,271 @@
+{
+  "id": "luca-prima-di-roma-04-05",
+  "storyId": "luca-prima-di-roma-04",
+  "number": 5,
+  "title": "The bus",
+  "titleIt": "L'autobus",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "fermata-bus-pietralba",
+    "via-nazionale-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "davide"
+  ],
+  "primaryDomain": "transportation",
+  "secondaryDomains": [
+    "schedules",
+    "clock"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-04-05",
+      "summary": "They wait at the bus stop. The bus comes at ten.",
+      "characterIds": [
+        "luca",
+        "davide"
+      ],
+      "locationIds": [
+        "fermata-bus-pietralba",
+        "via-nazionale-pietralba"
+      ],
+      "rememberedFacts": [
+        "The bus stop is on Via Nazionale",
+        "The bus is at 10:00",
+        "You need a ticket"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è alla fermata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "alla",
+            "fermata"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Dov'è l'autobus?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "autobus"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "L'autobus è alle dieci.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "autobus",
+            "essere",
+            "alle",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Sono le nove e mezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "nove",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Aspettiamo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "C'è un biglietto?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "un",
+            "biglietto"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sì il biglietto è importante.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "il",
+            "biglietto",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Luca ha un biglietto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "un",
+            "biglietto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Ecco l'autobus.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ecco",
+            "autobus"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Sono le dieci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca prende l'autobus.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "autobus"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "L'orario è alle dieci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "orario",
+            "essere",
+            "alle",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "La fermata è in Via Nazionale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "fermata",
+            "essere",
+            "in",
+            "via",
+            "nazionale"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "L'autobus è piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "autobus",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Davide resta alla fermata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "restare",
+            "alla",
+            "fermata"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr04-ch05-q01",
+      "type": "direct",
+      "question": "What time is the bus?",
+      "choices": [
+        "9:00",
+        "10:00",
+        "20:00"
+      ],
+      "correctChoice": 1,
+      "explanation": "L'autobus è alle dieci.",
+      "chapterId": "luca-prima-di-roma-04-05",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch05-q02",
+      "type": "direct",
+      "question": "What does Luca need?",
+      "choices": [
+        "A ticket",
+        "A suitcase",
+        "A job"
+      ],
+      "correctChoice": 0,
+      "explanation": "Il biglietto è importante.",
+      "chapterId": "luca-prima-di-roma-04-05",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch05-q03",
+      "type": "direct",
+      "question": "Where is the stop?",
+      "choices": [
+        "Via Nazionale",
+        "Rome station",
+        "The kitchen"
+      ],
+      "correctChoice": 0,
+      "explanation": "La fermata è in Via Nazionale.",
+      "chapterId": "luca-prima-di-roma-04-05",
+      "difficulty": 1
+    }
+  ]
+}

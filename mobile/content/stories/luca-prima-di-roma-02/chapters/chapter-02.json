@@ -1,0 +1,300 @@
+{
+  "id": "luca-prima-di-roma-02-02",
+  "storyId": "luca-prima-di-roma-02",
+  "number": 2,
+  "title": "The morning",
+  "titleIt": "La mattina",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "camera-luca-pietralba",
+    "cucina-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "chiara"
+  ],
+  "primaryDomain": "daily_routine",
+  "secondaryDomains": [
+    "clock",
+    "food"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-02-02",
+      "summary": "Luca gets up at seven, has breakfast, and Chiara leaves for school at eight.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "camera-luca-pietralba",
+        "cucina-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca gets up at 7",
+        "They eat breakfast",
+        "Chiara goes to school at 8"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "È mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Sono le sette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "sette"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca si alza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "si",
+            "alzare"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca è in camera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "in",
+            "camera"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Poi Luca va in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "luca",
+            "andare",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Marta è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Buongiorno Luca.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "luca"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Buongiorno mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "mamma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Luca fa colazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "fare",
+            "colazione"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "C'è pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "pane"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "C'è latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "latte"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca mangia pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "mangiare",
+            "pane"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca beve latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "bere",
+            "latte"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Chiara fa colazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "fare",
+            "colazione"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sono le otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Chiara va a scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "andare",
+            "a",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "A presto.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "presto"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Luca resta a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "restare",
+            "a",
+            "casa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr02-ch02-q01",
+      "type": "direct",
+      "question": "What time does Luca get up?",
+      "choices": [
+        "7:00",
+        "8:00",
+        "12:00"
+      ],
+      "correctChoice": 0,
+      "explanation": "Sono le sette when he gets up.",
+      "chapterId": "luca-prima-di-roma-02-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch02-q02",
+      "type": "direct",
+      "question": "What does Luca eat and drink?",
+      "choices": [
+        "Pizza and wine",
+        "Bread and milk",
+        "Pasta and coffee"
+      ],
+      "correctChoice": 1,
+      "explanation": "Pane and latte.",
+      "chapterId": "luca-prima-di-roma-02-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch02-q03",
+      "type": "sequence",
+      "question": "What happens at eight?",
+      "choices": [
+        "Chiara goes to school",
+        "Luca goes to Rome",
+        "They sleep"
+      ],
+      "correctChoice": 0,
+      "explanation": "Alle otto Chiara va a scuola.",
+      "chapterId": "luca-prima-di-roma-02-02",
+      "difficulty": 1
+    }
+  ]
+}

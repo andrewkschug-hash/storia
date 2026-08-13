@@ -1,0 +1,88 @@
+{
+  "id": "luca-prima-di-roma-05",
+  "title": "Luca's party",
+  "titleIt": "La festa di Luca",
+  "slug": "luca-prima-di-roma-05",
+  "level": 1,
+  "cefrLevel": "A1",
+  "synopsis": "Il compleanno di Luca a Pietralba: inviti, gusti, festa e partenza.",
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara",
+    "lidia",
+    "davide",
+    "elisa"
+  ],
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba",
+    "soggiorno-pietralba",
+    "stazione-pietralba"
+  ],
+  "chapters": [
+    {
+      "id": "luca-prima-di-roma-05-01",
+      "number": 1,
+      "title": "My birthday",
+      "titleIt": "Il mio compleanno",
+      "difficultyLevel": 1,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "luca-prima-di-roma-05-02",
+      "number": 2,
+      "title": "I invite you",
+      "titleIt": "Ti invito",
+      "difficultyLevel": 1,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "luca-prima-di-roma-05-03",
+      "number": 3,
+      "title": "What do you like?",
+      "titleIt": "Cosa ti piace?",
+      "difficultyLevel": 1,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "luca-prima-di-roma-05-04",
+      "number": 4,
+      "title": "We prepare the party",
+      "titleIt": "Prepariamo la festa",
+      "difficultyLevel": 1,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "luca-prima-di-roma-05-05",
+      "number": 5,
+      "title": "At the party",
+      "titleIt": "Alla festa",
+      "difficultyLevel": 1,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "luca-prima-di-roma-05-06",
+      "number": 6,
+      "title": "Tomorrow I leave",
+      "titleIt": "Domani parto",
+      "difficultyLevel": 1,
+      "file": "chapter-06.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "luca-prima-di-roma-05-a1",
+      "storyId": "luca-prima-di-roma-05",
+      "cefrLevel": "A1",
+      "title": "Luca's party",
+      "titleIt": "La festa di Luca",
+      "description": "A1 present-tense pre-Rome story",
+      "narrativeStage": "Il compleanno di Luca a Pietralba: inviti, gusti, festa e partenza.",
+      "chapterStart": 1,
+      "chapterEnd": 6,
+      "status": "planned"
+    }
+  ]
+}

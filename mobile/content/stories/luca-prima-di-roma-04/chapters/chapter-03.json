@@ -1,0 +1,275 @@
+{
+  "id": "luca-prima-di-roma-04-03",
+  "storyId": "luca-prima-di-roma-04",
+  "number": 3,
+  "title": "What’s the weather like?",
+  "titleIt": "Che tempo fa?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "piazza-pietralba",
+    "parco-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "davide"
+  ],
+  "primaryDomain": "weather",
+  "secondaryDomains": [
+    "descriptions"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-04-03",
+      "summary": "Today it is sunny and warm. Davide says sometimes it rains.",
+      "characterIds": [
+        "luca",
+        "davide"
+      ],
+      "locationIds": [
+        "piazza-pietralba",
+        "parco-pietralba"
+      ],
+      "rememberedFacts": [
+        "Today it is sunny",
+        "It is warm",
+        "Sometimes it rains in Pietralba"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca e Davide sono in piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "essere",
+            "in",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Che tempo fa?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "tempo",
+            "fare"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "C'è il sole.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "il",
+            "sole"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Fa caldo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "fare",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Oggi non piove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "non",
+            "piovere"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il tempo è bello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "tempo",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "A Pietralba a volte piove.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "pietralba",
+            "a",
+            "volta",
+            "piovere"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Quando piove fa freddo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quando",
+            "piovere",
+            "fare",
+            "freddo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Oggi non fa freddo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "non",
+            "fare",
+            "freddo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Oggi è un giorno bello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "un",
+            "giorno",
+            "bello"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Il tempo non è nuvoloso.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "tempo",
+            "non",
+            "essere",
+            "nuvoloso"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca guarda il sole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "sole"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Davide è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il parco è caldo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Che tempo bello.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "tempo",
+            "bello"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr04-ch03-q01",
+      "type": "direct",
+      "question": "What is the weather like today?",
+      "choices": [
+        "Sunny and warm",
+        "Snowy and icy",
+        "Night and cold"
+      ],
+      "correctChoice": 0,
+      "explanation": "C'è il sole. Fa caldo.",
+      "chapterId": "luca-prima-di-roma-04-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch03-q02",
+      "type": "direct",
+      "question": "Is it raining now?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only in Rome"
+      ],
+      "correctChoice": 1,
+      "explanation": "Oggi non piove.",
+      "chapterId": "luca-prima-di-roma-04-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch03-q03",
+      "type": "inference",
+      "question": "When does it feel cold?",
+      "choices": [
+        "When it rains",
+        "When it is sunny",
+        "At the supermarket"
+      ],
+      "correctChoice": 0,
+      "explanation": "Quando piove fa freddo.",
+      "chapterId": "luca-prima-di-roma-04-03",
+      "difficulty": 1
+    }
+  ]
+}

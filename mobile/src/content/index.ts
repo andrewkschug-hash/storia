@@ -1,5 +1,7 @@
-import type { ContentBundle } from '@/src/content/schemas';
+import { getCatalogStory, LUCA_STORY_ID } from '@/src/content/catalog';
 import { loadContentBundle } from '@/src/content/loadContentBundle';
+import type { ContentBundle } from '@/src/content/schemas';
+import { StoryLoadError } from '@/src/content/storyLoadError';
 
 import charactersJson from '../../content/characters.json';
 import locationsJson from '../../content/locations.json';
@@ -93,35 +95,76 @@ const chapterJsonByFile: Record<string, unknown> = {
   'chapter-40.json': chapter40,
 };
 
-let cached: ContentBundle | null = null;
+const bundleCache = new Map<string, ContentBundle>();
 
-export function getContentBundle(): ContentBundle {
-  if (!cached) {
-    cached = loadContentBundle({
-      charactersJson,
-      locationsJson,
-      lexiconJson,
-      manifestJson,
-      chapterJsonByFile,
-      adaptiveJson,
-      translationsJson,
-      arcsJson,
-      storyPath: 'stories/luca-a-roma',
-    });
+/**
+ * Story-scoped content loader. Defaults to Luca a Roma for existing callers.
+ * Planned / draft / unknown IDs fail cleanly — they are not silently loaded as Luca.
+ */
+export function getContentBundle(storyId: string = LUCA_STORY_ID): ContentBundle {
+  const cached = bundleCache.get(storyId);
+  if (cached) return cached;
+
+  const entry = getCatalogStory(storyId);
+  if (!entry) {
+    throw new StoryLoadError(storyId, 'unknown', `Unknown story "${storyId}"`);
   }
-  return cached;
+  if (entry.status === 'planned') {
+    throw new StoryLoadError(
+      storyId,
+      'planned',
+      `Story "${storyId}" is planned and has no chapter content yet`,
+    );
+  }
+  if (entry.status === 'draft') {
+    throw new StoryLoadError(
+      storyId,
+      'draft',
+      `Story "${storyId}" is draft; inspect with inspectDraftStory instead of getContentBundle`,
+    );
+  }
+  if (storyId !== LUCA_STORY_ID) {
+    throw new StoryLoadError(
+      storyId,
+      entry.status,
+      `No available content loader registered for "${storyId}"`,
+    );
+  }
+
+  const bundle = loadContentBundle({
+    charactersJson,
+    locationsJson,
+    lexiconJson,
+    manifestJson,
+    chapterJsonByFile,
+    adaptiveJson,
+    translationsJson,
+    arcsJson,
+    storyPath: 'stories/luca-a-roma',
+    narrativeArc: entry.narrativeArc,
+  });
+  bundleCache.set(storyId, bundle);
+  return bundle;
 }
 
-export function getStory() {
-  return getContentBundle().story;
+export function tryGetContentBundle(storyId: string): ContentBundle | null {
+  try {
+    return getContentBundle(storyId);
+  } catch {
+    return null;
+  }
 }
 
-export function getChapter(chapterId: string) {
-  return getContentBundle().chapters.get(chapterId);
+export function getStory(storyId: string = LUCA_STORY_ID) {
+  return getContentBundle(storyId).story;
 }
 
-export function getChapterByNumber(number: number) {
-  for (const chapter of getContentBundle().chapters.values()) {
+export function getChapter(chapterId: string, storyId: string = LUCA_STORY_ID) {
+  return getContentBundle(storyId).chapters.get(chapterId);
+}
+
+export function getChapterByNumber(number: number, storyId: string = LUCA_STORY_ID) {
+  for (const chapter of getContentBundle(storyId).chapters.values()) {
     if (chapter.number === number) return chapter;
   }
   return undefined;
@@ -129,5 +172,22 @@ export function getChapterByNumber(number: number) {
 
 /** Reset cache — tests only */
 export function __resetContentCache() {
-  cached = null;
+  bundleCache.clear();
 }
+
+export {
+  ELENA_STORY_ID,
+  LUCA_STORY_ID,
+  PRE_ROME_ARC_ID,
+  getCatalogStories,
+  getCatalogStory,
+  getNarrativeArc,
+  getNarrativeArcs,
+  getStoriesInArc,
+  getStoryCatalog,
+  journeyOrder,
+  storyStatus,
+} from '@/src/content/catalog';
+export { chapterKey, parseChapterKey, type ChapterRef } from '@/src/content/chapterRef';
+export { buildLearnerJourney, independentDraftStories } from '@/src/content/journey';
+export { StoryLoadError } from '@/src/content/storyLoadError';

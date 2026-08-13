@@ -1,0 +1,284 @@
+{
+  "id": "luca-prima-di-roma-04-06",
+  "storyId": "luca-prima-di-roma-04",
+  "number": 6,
+  "title": "We are lost",
+  "titleIt": "Siamo persi",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "piazza-pietralba",
+    "bar-franco",
+    "via-nazionale-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "franco",
+    "davide"
+  ],
+  "primaryDomain": "directions",
+  "secondaryDomains": [
+    "social",
+    "places"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-04-06",
+      "summary": "Luca gets lost and asks Franco for the way to Davide.",
+      "characterIds": [
+        "luca",
+        "franco",
+        "davide"
+      ],
+      "locationIds": [
+        "piazza-pietralba",
+        "bar-franco",
+        "via-nazionale-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca is lost",
+        "Franco helps with directions",
+        "Davide is at the bar"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca non è alla piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "essere",
+            "alla",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca non sa dove è Davide.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "sapere",
+            "dove",
+            "essere",
+            "davide"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Franco è al bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "franco",
+            "essere",
+            "al",
+            "bar"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Scusa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Dov'è Davide?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "davide"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Davide è al bar.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "davide",
+            "essere",
+            "al",
+            "bar"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Dov'è il bar?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "il",
+            "bar"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Vai dritto e poi a sinistra.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "dritto",
+            "e",
+            "poi",
+            "a",
+            "sinistra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Il bar è vicino.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Grazie Franco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "franco"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca va dritto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "dritto"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca va a sinistra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "a",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ecco il bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ecco",
+            "il",
+            "bar"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Ciao Luca.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sono qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Franco è gentile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "franco",
+            "essere",
+            "gentile"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr04-ch06-q01",
+      "type": "direct",
+      "question": "Who helps Luca?",
+      "choices": [
+        "Sofia",
+        "Franco",
+        "Pina"
+      ],
+      "correctChoice": 1,
+      "explanation": "Franco gives directions.",
+      "chapterId": "luca-prima-di-roma-04-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch06-q02",
+      "type": "direct",
+      "question": "Where is Davide?",
+      "choices": [
+        "At the bar",
+        "In Rome",
+        "At school"
+      ],
+      "correctChoice": 0,
+      "explanation": "Davide è al bar.",
+      "chapterId": "luca-prima-di-roma-04-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch06-q03",
+      "type": "direct",
+      "question": "What directions does Franco give?",
+      "choices": [
+        "Straight then left",
+        "Take a plane",
+        "Go to Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "Vai dritto e poi a sinistra.",
+      "chapterId": "luca-prima-di-roma-04-06",
+      "difficulty": 1
+    }
+  ]
+}

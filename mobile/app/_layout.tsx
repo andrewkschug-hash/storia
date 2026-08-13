@@ -20,7 +20,7 @@ import { Colors } from '@/src/theme/tokens';
 export { ErrorBoundary } from 'expo-router';
 
 export const unstable_settings = {
-  initialRouteName: '(tabs)',
+  initialRouteName: 'index',
 };
 
 SplashScreen.preventAutoHideAsync();
@@ -72,6 +72,14 @@ function RootLayoutNav() {
     <ThemeProvider value={navigationTheme}>
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
       <Stack>
+        <Stack.Screen
+          name="index"
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="walkthrough"
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="account"
           options={{ headerShown: false }}

@@ -1,0 +1,225 @@
+{
+  "id": "elena-torna-a-casa-03",
+  "storyId": "elena-torna-a-casa",
+  "number": 3,
+  "title": "Rooms",
+  "titleIt": "Le stanze",
+  "difficultyLevel": 1,
+  "locationIds": ["casa-elena", "camera-elena", "cucina-elena"],
+  "characterIds": ["elena", "sara"],
+  "events": [
+    {
+      "id": "ev-03-rooms",
+      "summary": "Sara shows Elena the rooms of the family house.",
+      "characterIds": ["elena", "sara"],
+      "locationIds": ["casa-elena", "camera-elena", "cucina-elena"],
+      "rememberedFacts": [
+        "Elena's room has a bed and a window",
+        "The kitchen has a table",
+        "The house has a bathroom and a living room"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Sara vuole vedere la casa con Elena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "volere", "vedere", "la", "casa", "con", "elena"]
+        },
+        {
+          "id": "s02",
+          "text": "Vieni. La casa è piccola, ma è bella.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["venire", "la", "casa", "essere", "piccolo", "ma", "essere", "bello"]
+        },
+        {
+          "id": "s03",
+          "text": "Elena e Sara sono dentro, in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "e", "sara", "essere", "dentro", "in", "casa"]
+        },
+        {
+          "id": "s04",
+          "text": "Qui c'è la porta.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["qui", "ce", "la", "porta"]
+        },
+        {
+          "id": "s05",
+          "text": "Elena apre la porta e guarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "aprire", "la", "porta", "e", "guardare"]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Questa è la cucina.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["questo", "essere", "la", "cucina"]
+        },
+        {
+          "id": "s07",
+          "text": "In cucina c'è un tavolo grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["in", "cucina", "ce", "un", "tavolo", "grande"]
+        },
+        {
+          "id": "s08",
+          "text": "Vicino al tavolo ci sono due sedie.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["vicino", "al", "tavolo", "ci", "essere", "due", "sedia"]
+        },
+        {
+          "id": "s09",
+          "text": "Elena guarda il tavolo e sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "guardare", "il", "tavolo", "e", "sorridere"]
+        },
+        {
+          "id": "s10",
+          "text": "Qui mangiamo insieme, ogni giorno.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["qui", "mangiare", "insieme", "ogni", "giorno"]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Lì c'è il bagno, dietro la porta.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["li", "ce", "il", "bagno", "dietro", "la", "porta"]
+        },
+        {
+          "id": "s12",
+          "text": "Il bagno è piccolo, ma è pronto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["il", "bagno", "essere", "piccolo", "ma", "essere", "pronto"]
+        },
+        {
+          "id": "s13",
+          "text": "Davanti al bagno c'è la sala.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["davanti", "al", "bagno", "ce", "la", "sala"]
+        },
+        {
+          "id": "s14",
+          "text": "La sala è grande, con una finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "sala", "essere", "grande", "con", "una", "finestra"]
+        },
+        {
+          "id": "s15",
+          "text": "Elena guarda fuori dalla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "guardare", "fuori", "dalla", "finestra"]
+        },
+        {
+          "id": "s16",
+          "text": "Fuori c'è il paese, piccolo e tranquillo.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["fuori", "ce", "il", "paese", "piccolo", "e", "tranquillo"]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s17",
+          "text": "Questa è la tua camera.",
+          "speakerId": "sara",
+          "kind": "dialogue",
+          "lemmas": ["questo", "essere", "la", "tuo", "camera"]
+        },
+        {
+          "id": "s18",
+          "text": "In camera c'è un letto, vicino alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["in", "camera", "ce", "un", "letto", "vicino", "alla", "finestra"]
+        },
+        {
+          "id": "s19",
+          "text": "Il letto è piccolo, ma è mio.",
+          "speakerId": "elena",
+          "kind": "dialogue",
+          "lemmas": ["il", "letto", "essere", "piccolo", "ma", "essere", "mio"]
+        },
+        {
+          "id": "s20",
+          "text": "Elena ha una stanza, e ha un letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "avere", "una", "stanza", "e", "avere", "un", "letto"]
+        },
+        {
+          "id": "s21",
+          "text": "La casa ha poche stanze, ma è bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "casa", "avere", "poco", "stanza", "ma", "essere", "bello"]
+        },
+        {
+          "id": "s22",
+          "text": "Elena è felice: è a casa, nella sua camera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "essere", "felice", "essere", "a", "casa", "nella", "suo", "camera"]
+        },
+        {
+          "id": "s23",
+          "text": "La cucina, la sala e la camera sono in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["la", "cucina", "la", "sala", "e", "la", "camera", "essere", "in", "casa"]
+        },
+        {
+          "id": "s24",
+          "text": "Elena ha una finestra vicino al letto, in camera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["elena", "avere", "una", "finestra", "vicino", "al", "letto", "in", "camera"]
+        },
+        {
+          "id": "s25",
+          "text": "Sara e Elena sono dentro, non fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": ["sara", "e", "elena", "essere", "dentro", "non", "fuori"]
+        }
+      ]
+    }
+  ],
+  "questions": []
+}

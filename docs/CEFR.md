@@ -4,10 +4,12 @@ CEFR is a **content-targeting framework**, not a vocabulary prison and not a gat
 
 The Luca story continues across levels. The Italian matures as his life matures.
 
+Luca a Roma A1 (chapters 1–20) is **not** the same as “A1 complete.” Pre-Rome A1 stories will broaden domain coverage. Cross-story A1 readiness is not implemented yet; see `docs/STORY-ARCHITECTURE.md`.
+
 ```
-A1  — Luca arrives in Rome     (chapters 1–20, written)
-A1+ — Luca finds his place     (planned, empty range)
-A2  — Luca's new life          (chapters 21–40, written; audio not generated)
+A1  — Luca prima di Roma (5 planned shorts, 32 ch target) + Luca a Roma chapters 1–20
+A1+ — Luca a Roma chapters 21–24
+A2  — Luca a Roma chapters 25–40 (written; audio not generated)
 A2+ — New problems             (planned)
 B1  — Bigger decisions         (planned)
 B1+ — Relationships & work     (planned)

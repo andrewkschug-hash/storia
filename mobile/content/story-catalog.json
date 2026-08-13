@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "narrativeArcs": [
+    {
+      "id": "luca-prima-di-roma",
+      "title": "Luca before Rome",
+      "titleIt": "Luca prima di Roma",
+      "description": "Five short A1 stories about Luca's life in Pietralba before he goes to Rome. Prose authored in Phase 12K; still planned until validation is approved.",
+      "narrativeOrder": 1,
+      "status": "planned"
+    },
+    {
+      "id": "luca-a-roma",
+      "title": "Luca in Rome",
+      "titleIt": "Luca a Roma",
+      "description": "Luca arrives in Rome and builds a new life. Existing chapters 1–40. Do not renumber.",
+      "narrativeOrder": 2,
+      "status": "available"
+    },
+    {
+      "id": "elena-torna-a-casa",
+      "title": "Elena goes home",
+      "titleIt": "Elena torna a casa",
+      "description": "Independent A1 draft. Not part of Luca's journey. Not one of the five pre-Rome stories.",
+      "narrativeOrder": 100,
+      "status": "draft"
+    }
+  ],
+  "stories": [
+    {
+      "id": "luca-prima-di-roma-01",
+      "title": "Luca introduces himself",
+      "titleIt": "Luca si presenta",
+      "description": "In Pietralba, Luca introduces himself, his age, his family, and his home. The learner meets who Luca is before any journey begins.",
+      "cefrLevel": "A1",
+      "narrativeArc": "luca-prima-di-roma",
+      "narrativeOrder": 1,
+      "status": "planned",
+      "chapterCount": 0,
+      "chapterCountTarget": 6,
+      "protagonistId": "luca",
+      "contentPath": "stories/luca-prima-di-roma-01",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "luca-prima-di-roma-02",
+      "title": "A day in Luca's life",
+      "titleIt": "Una giornata di Luca",
+      "description": "One ordinary day in Pietralba, driven by clock time, days, dates, and schedules. Luca's routine — not a Rome work plot.",
+      "cefrLevel": "A1",
+      "narrativeArc": "luca-prima-di-roma",
+      "narrativeOrder": 2,
+      "status": "planned",
+      "chapterCount": 0,
+      "chapterCountTarget": 7,
+      "protagonistId": "luca",
+      "contentPath": "stories/luca-prima-di-roma-02",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "luca-prima-di-roma-03",
+      "title": "At the supermarket",
+      "titleIt": "Al supermercato",
+      "description": "Luca shops with a list: food, quantities, prices in euros, and counter talk. Practical transactions, not a stroll through town.",
+      "cefrLevel": "A1",
+      "narrativeArc": "luca-prima-di-roma",
+      "narrativeOrder": 3,
+      "status": "planned",
+      "chapterCount": 0,
+      "chapterCountTarget": 6,
+      "protagonistId": "luca",
+      "contentPath": "stories/luca-prima-di-roma-03",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "luca-prima-di-roma-04",
+      "title": "Around town",
+      "titleIt": "In paese",
+      "description": "Luca moves through Pietralba: places, directions, weather, seasons, bus, and the local station. His world grows beyond the house without leaving for Rome.",
+      "cefrLevel": "A1",
+      "narrativeArc": "luca-prima-di-roma",
+      "narrativeOrder": 4,
+      "status": "planned",
+      "chapterCount": 0,
+      "chapterCountTarget": 7,
+      "protagonistId": "luca",
+      "contentPath": "stories/luca-prima-di-roma-04",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "luca-prima-di-roma-05",
+      "title": "Luca's party",
+      "titleIt": "La festa di Luca",
+      "description": "Luca's birthday: invitations, likes, family, and friends. The party ends with goodbye at Pietralba station — tomorrow he leaves for Rome. Do not arrive in Rome.",
+      "cefrLevel": "A1",
+      "narrativeArc": "luca-prima-di-roma",
+      "narrativeOrder": 5,
+      "status": "planned",
+      "chapterCount": 0,
+      "chapterCountTarget": 6,
+      "protagonistId": "luca",
+      "contentPath": "stories/luca-prima-di-roma-05",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "luca-a-roma",
+      "title": "Luca in Rome",
+      "titleIt": "Luca a Roma",
+      "description": "Luca arrives in Rome, finds a home and work, and builds a new life.",
+      "cefrLevel": "A1",
+      "cefrLevels": ["A1", "A1+", "A2"],
+      "narrativeArc": "luca-a-roma",
+      "narrativeOrder": 6,
+      "status": "available",
+      "chapterCount": 40,
+      "protagonistId": "luca",
+      "contentPath": "stories/luca-a-roma",
+      "entitySource": "shared"
+    },
+    {
+      "id": "elena-torna-a-casa",
+      "title": "Elena goes home",
+      "titleIt": "Elena torna a casa",
+      "description": "Independent A1 draft. Story-local cast and Castelbianco locations. Incomplete prose and questions.",
+      "cefrLevel": "A1",
+      "narrativeArc": "elena-torna-a-casa",
+      "narrativeOrder": 100,
+      "status": "draft",
+      "chapterCount": 20,
+      "protagonistId": "elena",
+      "contentPath": "stories/elena-torna-a-casa",
+      "entitySource": "shared+story-local"
+    }
+  ]
+}

@@ -2,14 +2,85 @@
  * Validate bundled story content + print vocabulary audit.
  * Run: npx tsx scripts/validate-content.ts
  */
-import { readFileSync, readdirSync } from 'fs';
+import { existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
 import { auditStoryCefr } from '../src/cefr/chapter';
+import { getCatalogStories } from '../src/content/catalog';
+import { inspectDraftStoryData } from '../src/content/inspectDraft';
 import { loadContentBundle } from '../src/content/loadContentBundle';
+import { validateStoryCatalog } from '../src/content/validateCatalog';
 import { auditStoryVocabulary, formatChapterAudit } from '../src/content/vocabAudit';
 
 const root = join(__dirname, '..', 'content');
+
+const catalogResult = validateStoryCatalog();
+if (!catalogResult.ok) {
+  console.error('CATALOG INVALID');
+  for (const error of catalogResult.errors) console.error(' ', error);
+  process.exit(1);
+}
+console.log('CATALOG OK');
+console.log('Available:', catalogResult.available.join(', ') || '(none)');
+console.log('Draft:', catalogResult.draft.join(', ') || '(none)');
+console.log('Planned:', catalogResult.planned.join(', ') || '(none)');
+console.log('');
+
+function loadStoryBundle(contentPath: string, narrativeArc?: string) {
+  const storyDir = join(root, contentPath);
+  const chaptersDir = join(storyDir, 'chapters');
+  const chapterJsonByFile: Record<string, unknown> = {};
+  for (const file of readdirSync(chaptersDir)) {
+    if (!file.endsWith('.json')) continue;
+    chapterJsonByFile[file] = JSON.parse(readFileSync(join(chaptersDir, file), 'utf8'));
+  }
+  return loadContentBundle({
+    charactersJson: JSON.parse(readFileSync(join(root, 'characters.json'), 'utf8')),
+    locationsJson: JSON.parse(readFileSync(join(root, 'locations.json'), 'utf8')),
+    lexiconJson: JSON.parse(readFileSync(join(root, 'lexicon', 'italian-core.json'), 'utf8')),
+    manifestJson: JSON.parse(readFileSync(join(storyDir, 'manifest.json'), 'utf8')),
+    chapterJsonByFile,
+    storyPath: contentPath,
+    narrativeArc,
+  });
+}
+
+for (const story of getCatalogStories()) {
+  if (story.status === 'planned') {
+    if (!story.contentPath) {
+      console.log(`PLANNED ${story.id}: no prose required`);
+      continue;
+    }
+    const bundle = loadStoryBundle(story.contentPath, story.narrativeArc);
+    console.log(`PLANNED ${story.id}: ${bundle.chapters.size} chapter(s) authored, still planned`);
+  }
+  if (story.status === 'draft') {
+    if (!story.contentPath) {
+      console.log(`DRAFT ${story.id}: missing contentPath`);
+      continue;
+    }
+    const storyDir = join(root, story.contentPath);
+    const chaptersDir = join(storyDir, 'chapters');
+    const readJson = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+    const optionalJson = (path: string) => (existsSync(path) ? readJson(path) : undefined);
+    const inspection = inspectDraftStoryData({
+      storyId: story.id,
+      sharedCharactersJson: readJson(join(root, 'characters.json')),
+      sharedLocationsJson: readJson(join(root, 'locations.json')),
+      storyLocalCharactersJson: optionalJson(join(storyDir, 'characters.json')),
+      storyLocalLocationsJson: optionalJson(join(storyDir, 'locations.json')),
+      manifestJson: optionalJson(join(storyDir, 'manifest.json')),
+      proseChapterFiles: existsSync(chaptersDir)
+        ? readdirSync(chaptersDir).filter((file) => file.endsWith('.json'))
+        : [],
+    });
+    console.log(
+      `DRAFT ${story.id}: ${inspection.proseChapterFiles.length} chapter file(s), incomplete (expected)`,
+    );
+  }
+}
+console.log('');
+
 const storyPath = join(root, 'stories', 'luca-a-roma');
 const chaptersDir = join(storyPath, 'chapters');
 

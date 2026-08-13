@@ -1,5 +1,5 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { router, type Href } from 'expo-router';
+import { router, useLocalSearchParams, type Href } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
   ActivityIndicator,
@@ -69,7 +69,7 @@ async function continueAfterAccount(): Promise<void> {
     router.replace('/onboarding' as Href);
     return;
   }
-  router.replace('/(tabs)' as Href);
+  router.replace('/(tabs)/home' as Href);
 }
 
 export default function AccountScreen() {
@@ -79,7 +79,11 @@ export default function AccountScreen() {
   const layout = useLayout();
   const wide = layout.isDesktop;
   const [checking, setChecking] = useState(true);
-  const [mode, setMode] = useState<'signup' | 'signin'>('signup');
+  const params = useLocalSearchParams<{ mode?: string | string[] }>();
+  const requestedMode = Array.isArray(params.mode) ? params.mode[0] : params.mode;
+  const [mode, setMode] = useState<'signup' | 'signin'>(
+    requestedMode === 'signin' ? 'signin' : 'signup',
+  );
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -90,6 +94,11 @@ export default function AccountScreen() {
     null,
   );
   const supabaseReady = isSupabaseConfigured();
+
+  useEffect(() => {
+    if (requestedMode === 'signin') setMode('signin');
+    if (requestedMode === 'signup') setMode('signup');
+  }, [requestedMode]);
 
   useEffect(() => {
     void (async () => {
@@ -177,6 +186,16 @@ export default function AccountScreen() {
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
             bounces={false}>
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel="Back to homepage"
+              onPress={() => router.replace('/' as Href)}
+              style={({ pressed }) => [
+                styles.backHome,
+                { opacity: pressed ? 0.7 : 1, maxWidth: wide ? 980 : layout.contentMaxWidth },
+              ]}>
+              <Text style={[Typography.label, { color: tone.inkSoft }]}>← Back to homepage</Text>
+            </Pressable>
             <View style={[styles.wrap, wide && styles.wrapWide, { maxWidth: wide ? 980 : layout.contentMaxWidth }]}>
               <View
                 style={[
@@ -445,6 +464,13 @@ const styles = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     gap: Spacing.lg,
+  },
+  backHome: {
+    alignSelf: 'center',
+    minHeight: 44,
+    justifyContent: 'center',
+    width: '100%',
+    marginBottom: Spacing.sm,
   },
   wrapWide: {
     flexDirection: 'row',

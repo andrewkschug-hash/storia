@@ -1,0 +1,16 @@
+{
+  "arcs": [
+    {
+      "id": "elena-torna-a-casa-a1",
+      "storyId": "elena-torna-a-casa",
+      "cefrLevel": "A1",
+      "title": "Elena goes home",
+      "titleIt": "Elena torna a casa",
+      "description": "Simple everyday stories",
+      "narrativeStage": "Elena returns to her family home in a small town.",
+      "chapterStart": 1,
+      "chapterEnd": 20,
+      "status": "planned"
+    }
+  ]
+}

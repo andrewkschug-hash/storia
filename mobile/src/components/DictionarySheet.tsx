@@ -12,13 +12,26 @@ type Props = {
   onSave: () => void;
   onPronounce?: () => void;
   canPronounce?: boolean;
+  /** Word/phrase primary button. Defaults to Save / Saved. */
+  saveLabel?: string;
+  /** Sentence close button. Defaults to Continue reading. */
+  closeLabel?: string;
 };
 
 /**
  * Compact bottom sheet for word/phrase comprehension.
  * No grammar tables, conjugations, or quizzes.
  */
-export function DictionarySheet({ lookup, saved, onClose, onSave, onPronounce, canPronounce }: Props) {
+export function DictionarySheet({
+  lookup,
+  saved,
+  onClose,
+  onSave,
+  onPronounce,
+  canPronounce,
+  saveLabel,
+  closeLabel,
+}: Props) {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
 
@@ -127,7 +140,7 @@ export function DictionarySheet({ lookup, saved, onClose, onSave, onPronounce, c
               <Pressable
                 onPress={onSave}
                 accessibilityRole="button"
-                accessibilityLabel={saved ? 'Saved' : 'Save word'}
+                accessibilityLabel={saveLabel ?? (saved ? 'Saved' : 'Save word')}
                 style={({ pressed }) => [
                   styles.saveBtn,
                   {
@@ -140,7 +153,7 @@ export function DictionarySheet({ lookup, saved, onClose, onSave, onPronounce, c
                     Typography.button,
                     { color: saved ? colors.textSecondary : '#F7FAF9' },
                   ]}>
-                  {saved ? 'Saved' : 'Save'}
+                  {saveLabel ?? (saved ? 'Saved' : 'Save')}
                 </Text>
               </Pressable>
             ) : null}
@@ -166,7 +179,7 @@ export function DictionarySheet({ lookup, saved, onClose, onSave, onPronounce, c
                     color: lookup.kind === 'sentence' ? '#F7FAF9' : colors.textSecondary,
                   },
                 ]}>
-                {lookup.kind === 'sentence' ? 'Continue reading' : '✕'}
+                {lookup.kind === 'sentence' ? (closeLabel ?? 'Continue reading') : '✕'}
               </Text>
             </Pressable>
           </View>

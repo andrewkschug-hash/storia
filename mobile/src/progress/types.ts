@@ -22,6 +22,8 @@ export type ChapterComprehensionRecord = {
 
 export type ReadingProgressRecord = {
   storyId: string;
+  /** Catalog narrative arc. Independent of chapter numbers. */
+  narrativeArc?: string;
   currentChapterId: string;
   lastSentenceId: string | null;
   /** chapter ids completed (requires comprehension section finished) */
@@ -44,9 +46,11 @@ export interface ReadingProgressRepository {
 export function createInitialProgress(
   storyId: string,
   firstChapterId: string,
+  narrativeArc?: string,
 ): ReadingProgressRecord {
   return {
     storyId,
+    ...(narrativeArc ? { narrativeArc } : {}),
     currentChapterId: firstChapterId,
     lastSentenceId: null,
     completedChapterIds: [],
@@ -59,10 +63,14 @@ export function createInitialProgress(
   };
 }
 
-export function normalizeProgress(record: ReadingProgressRecord): ReadingProgressRecord {
+export function normalizeProgress(
+  record: ReadingProgressRecord,
+  narrativeArc?: string,
+): ReadingProgressRecord {
   return {
     ...record,
     comprehensionByChapter: record.comprehensionByChapter ?? {},
     currentCEFRLevel: record.currentCEFRLevel ?? 'A1',
+    narrativeArc: record.narrativeArc ?? narrativeArc,
   };
 }

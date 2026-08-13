@@ -1,0 +1,272 @@
+{
+  "id": "luca-prima-di-roma-04-02",
+  "storyId": "luca-prima-di-roma-04",
+  "number": 2,
+  "title": "Right and left",
+  "titleIt": "A destra, a sinistra",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "piazza-pietralba",
+    "via-nazionale-pietralba",
+    "farmacia-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "davide"
+  ],
+  "primaryDomain": "directions",
+  "secondaryDomains": [
+    "places"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-04-02",
+      "summary": "Davide gives directions to the pharmacy: straight, then right.",
+      "characterIds": [
+        "luca",
+        "davide"
+      ],
+      "locationIds": [
+        "piazza-pietralba",
+        "via-nazionale-pietralba",
+        "farmacia-pietralba"
+      ],
+      "rememberedFacts": [
+        "Go straight on Via Nazionale",
+        "The pharmacy is on the right",
+        "The park is on the left"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca vuole la farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "la",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Come arrivo?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Vai dritto.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "dritto"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Poi vai a destra.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "andare",
+            "a",
+            "destra"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "La farmacia è a destra.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "essere",
+            "a",
+            "destra"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il parco è a sinistra.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "a",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non andare a sinistra.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "andare",
+            "a",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Luca va dritto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "dritto"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca va a destra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "a",
+            "destra"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Ecco la farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ecco",
+            "la",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La farmacia è qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "A destra è facile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "destra",
+            "essere",
+            "facile"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "A sinistra c'è il parco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "sinistra",
+            "ce",
+            "il",
+            "parco"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Grazie Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "davide"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr04-ch02-q01",
+      "type": "direct",
+      "question": "How does Davide tell Luca to start?",
+      "choices": [
+        "Go straight",
+        "Take the train",
+        "Go home"
+      ],
+      "correctChoice": 0,
+      "explanation": "Vai dritto.",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch02-q02",
+      "type": "direct",
+      "question": "Where is the pharmacy?",
+      "choices": [
+        "On the left",
+        "On the right",
+        "Underground"
+      ],
+      "correctChoice": 1,
+      "explanation": "La farmacia è a destra.",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr04-ch02-q03",
+      "type": "direct",
+      "question": "What is on the left?",
+      "choices": [
+        "The pharmacy",
+        "The park",
+        "Rome"
+      ],
+      "correctChoice": 1,
+      "explanation": "Il parco è a sinistra.",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "difficulty": 1
+    }
+  ]
+}

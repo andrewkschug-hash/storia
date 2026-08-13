@@ -1,0 +1,280 @@
+{
+  "id": "luca-prima-di-roma-02-06",
+  "storyId": "luca-prima-di-roma-02",
+  "number": 6,
+  "title": "The afternoon",
+  "titleIt": "Il pomeriggio",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "paolo",
+    "chiara"
+  ],
+  "primaryDomain": "daily_routine",
+  "secondaryDomains": [
+    "clock",
+    "family"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-02-06",
+      "summary": "In the afternoon Luca helps Paolo and walks Chiara home from school.",
+      "characterIds": [
+        "luca",
+        "paolo",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "Afternoon starts at 15:00",
+        "Luca helps Paolo",
+        "Chiara comes home at 16:00"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "È pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "pomeriggio"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Sono le tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "tre"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca aiuta Paolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aiutare",
+            "paolo"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Paolo è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Luca e Paolo parlano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "paolo",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Poi Luca va fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "luca",
+            "andare",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sono le quattro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "quattro"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Chiara torna a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "tornare",
+            "a",
+            "casa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Ciao Luca.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Ciao Chiara.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Come stai?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "stare"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sto bene.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "stare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "La scuola è finita.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Adesso siamo a casa.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Il pomeriggio è tranquillo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "pomeriggio",
+            "essere",
+            "tranquillo"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Luca resta con la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "restare",
+            "con",
+            "la",
+            "famiglia"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr02-ch06-q01",
+      "type": "direct",
+      "question": "What time is it when the afternoon starts here?",
+      "choices": [
+        "3:00",
+        "8:00",
+        "10:00"
+      ],
+      "correctChoice": 0,
+      "explanation": "Sono le tre.",
+      "chapterId": "luca-prima-di-roma-02-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch06-q02",
+      "type": "direct",
+      "question": "Who does Luca help?",
+      "choices": [
+        "Sofia",
+        "Paolo",
+        "Pina"
+      ],
+      "correctChoice": 1,
+      "explanation": "Luca aiuta Paolo.",
+      "chapterId": "luca-prima-di-roma-02-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch06-q03",
+      "type": "sequence",
+      "question": "What happens at four?",
+      "choices": [
+        "Chiara comes home",
+        "They eat dinner",
+        "Luca leaves town"
+      ],
+      "correctChoice": 0,
+      "explanation": "Alle quattro Chiara torna.",
+      "chapterId": "luca-prima-di-roma-02-06",
+      "difficulty": 1
+    }
+  ]
+}

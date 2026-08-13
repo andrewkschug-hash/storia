@@ -1,0 +1,276 @@
+{
+  "id": "luca-prima-di-roma-05-04",
+  "storyId": "luca-prima-di-roma-05",
+  "number": 4,
+  "title": "We prepare the party",
+  "titleIt": "Prepariamo la festa",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara"
+  ],
+  "primaryDomain": "birthdays",
+  "secondaryDomains": [
+    "family",
+    "quantities",
+    "food"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-05-04",
+      "summary": "Marta and Luca prepare: one cake, two bottles of juice, fruit.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "paolo",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba"
+      ],
+      "rememberedFacts": [
+        "There is one cake",
+        "There are two bottles of juice",
+        "The family prepares together"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Marta è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca aiuta Marta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aiutare",
+            "marta"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Prepariamo la festa.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "preparare",
+            "la",
+            "festa"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "C'è una torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "torta"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Due bottiglie di succo.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "bottiglia",
+            "di",
+            "succo"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Un po' di frutta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "poco",
+            "di",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Quanto succo?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "succo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Due bottiglie.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "bottiglia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Paolo è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "La famiglia prepara insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "preparare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "La torta è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "torta",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il succo è pronto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "succo",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "La festa è pronta.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "festa",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Oggi è un giorno importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "un",
+            "giorno",
+            "importante"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Luca è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr05-ch04-q01",
+      "type": "direct",
+      "question": "How much cake is there?",
+      "choices": [
+        "One cake",
+        "Ten cakes",
+        "No cake"
+      ],
+      "correctChoice": 0,
+      "explanation": "C'è una torta.",
+      "chapterId": "luca-prima-di-roma-05-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch04-q02",
+      "type": "direct",
+      "question": "How much juice do they prepare?",
+      "choices": [
+        "Two bottles",
+        "One kilo",
+        "Five euros"
+      ],
+      "correctChoice": 0,
+      "explanation": "Due bottiglie di succo.",
+      "chapterId": "luca-prima-di-roma-05-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch04-q03",
+      "type": "character",
+      "question": "Who helps Marta?",
+      "choices": [
+        "Sofia",
+        "Luca",
+        "Franco"
+      ],
+      "correctChoice": 1,
+      "explanation": "Luca aiuta Marta.",
+      "chapterId": "luca-prima-di-roma-05-04",
+      "difficulty": 1
+    }
+  ]
+}

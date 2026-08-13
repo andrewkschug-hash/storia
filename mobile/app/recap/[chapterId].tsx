@@ -51,33 +51,6 @@ export default function ChapterRecapScreen() {
           {recap.titleEn}
         </Text>
 
-        {recap.openingIt ? (
-          <View
-            style={[
-              styles.card,
-              { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
-            ]}>
-            <Text style={[Typography.caption, { color: colors.textMuted }]}>In Italian</Text>
-            {recap.openingIt !== recap.closingIt && recap.closingIt ? (
-              <>
-                <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
-                  {recap.openingIt}
-                </Text>
-                <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-                  …
-                </Text>
-                <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
-                  {recap.closingIt}
-                </Text>
-              </>
-            ) : (
-              <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
-                {recap.openingIt}
-              </Text>
-            )}
-          </View>
-        ) : null}
-
         <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.lg }]}>
           What happened
         </Text>
@@ -121,12 +94,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: Spacing.lg,
-  },
-  card: {
-    marginTop: Spacing.lg,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderRadius: Radii.md,
-    padding: Spacing.md,
   },
   primaryBtn: {
     alignItems: 'center',

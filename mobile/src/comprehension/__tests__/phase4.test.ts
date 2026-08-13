@@ -6,6 +6,7 @@ import { describe, expect, it } from 'vitest';
 import { loadContentBundle } from '@/src/content/loadContentBundle';
 import { ComprehensionQuestionSchema } from '@/src/content/schemas';
 import { evaluateAnswer, scoreAnswers } from '@/src/comprehension/evaluate';
+import { shuffleQuestionChoices } from '@/src/comprehension/shuffle';
 import { ProgressService } from '@/src/progress/ProgressService';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
 
@@ -105,6 +106,22 @@ describe('Phase 4 answer evaluation', () => {
     expect(scored.incorrect).toBe(1);
     expect(scored.attempted).toBe(4);
     expect(scored.score).toBeCloseTo(2 / 3);
+  });
+
+  it('shuffles choices without changing which answer is correct', () => {
+    const original = ['In Rome', 'In Milan', 'In Naples'];
+    const shuffled = shuffleQuestionChoices(original, 0, () => 0);
+    expect(shuffled.choices).not.toEqual(original);
+    expect(shuffled.choices).toHaveLength(3);
+    expect(new Set(shuffled.choices)).toEqual(new Set(original));
+    expect(shuffled.choices[shuffled.correctChoice]).toBe('In Rome');
+    expect(shuffled.correctChoice).not.toBe(0);
+
+    const evaluated = evaluateAnswer(
+      { ...question, choices: shuffled.choices, correctChoice: shuffled.correctChoice },
+      shuffled.correctChoice,
+    );
+    expect(evaluated.correct).toBe(true);
   });
 });
 

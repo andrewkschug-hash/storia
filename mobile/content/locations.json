@@ -58,6 +58,84 @@
       "id": "fuori-roma",
       "name": "Fuori Roma",
       "description": "Places outside Rome visited during the group's trip."
+    },
+    {
+      "id": "pietralba",
+      "name": "Pietralba",
+      "city": "Pietralba",
+      "description": "A small town in Lazio where Luca lives before Rome."
+    },
+    {
+      "id": "casa-pietralba",
+      "name": "Casa di Luca",
+      "city": "Pietralba",
+      "description": "The family house in Pietralba."
+    },
+    {
+      "id": "camera-luca-pietralba",
+      "name": "La camera di Luca",
+      "city": "Pietralba",
+      "description": "Luca's bedroom at home."
+    },
+    {
+      "id": "cucina-pietralba",
+      "name": "La cucina",
+      "city": "Pietralba",
+      "description": "The kitchen in the family house."
+    },
+    {
+      "id": "soggiorno-pietralba",
+      "name": "Il soggiorno",
+      "city": "Pietralba",
+      "description": "The living room in the family house."
+    },
+    {
+      "id": "supermercato-pietralba",
+      "name": "Il supermercato",
+      "city": "Pietralba",
+      "description": "The supermarket in Pietralba."
+    },
+    {
+      "id": "piazza-pietralba",
+      "name": "La piazza",
+      "city": "Pietralba",
+      "description": "The main square in Pietralba."
+    },
+    {
+      "id": "via-nazionale-pietralba",
+      "name": "Via Nazionale",
+      "city": "Pietralba",
+      "description": "The main street in Pietralba."
+    },
+    {
+      "id": "farmacia-pietralba",
+      "name": "La farmacia",
+      "city": "Pietralba",
+      "description": "The pharmacy in Pietralba."
+    },
+    {
+      "id": "bar-franco",
+      "name": "Bar da Franco",
+      "city": "Pietralba",
+      "description": "Franco's bar near the piazza."
+    },
+    {
+      "id": "parco-pietralba",
+      "name": "Il parco",
+      "city": "Pietralba",
+      "description": "The town park."
+    },
+    {
+      "id": "fermata-bus-pietralba",
+      "name": "La fermata dell'autobus",
+      "city": "Pietralba",
+      "description": "The bus stop in Pietralba."
+    },
+    {
+      "id": "stazione-pietralba",
+      "name": "La stazione di Pietralba",
+      "city": "Pietralba",
+      "description": "The local train station. Not Rome Termini."
     }
   ]
 }

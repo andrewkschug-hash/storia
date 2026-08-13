@@ -1,0 +1,276 @@
+{
+  "id": "luca-prima-di-roma-03-06",
+  "storyId": "luca-prima-di-roma-03",
+  "number": 6,
+  "title": "Something is missing",
+  "titleIt": "Manca qualcosa",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba",
+    "supermercato-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "pina"
+  ],
+  "primaryDomain": "shopping",
+  "secondaryDomains": [
+    "likes",
+    "food"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-03-06",
+      "summary": "At home they notice sugar is missing. Luca goes back. He likes apples, not oil.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "pina"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba",
+        "supermercato-pietralba"
+      ],
+      "rememberedFacts": [
+        "Sugar was missing",
+        "Luca goes back to the shop",
+        "Luca likes apples"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Marta guarda la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Manca lo zucchero.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "mancare",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "No.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "no"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Luca torna al supermercato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "tornare",
+            "al",
+            "supermercato"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Scusa signora.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa",
+            "signora"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Manca lo zucchero.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "mancare",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Ecco lo zucchero.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "ecco",
+            "lo",
+            "zucchero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Luca prende lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "A Luca piacciono le mele.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "luca",
+            "piacere",
+            "le",
+            "mela"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "A Luca non piace l'olio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "luca",
+            "non",
+            "piacere",
+            "olio"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Ma lo zucchero va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "lo",
+            "zucchero",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Grazie Pina.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "pina"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Adesso la lista è pronta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "la",
+            "lista",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Luca torna a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "tornare",
+            "a",
+            "casa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr03-ch06-q01",
+      "type": "direct",
+      "question": "What is missing?",
+      "choices": [
+        "Milk",
+        "Sugar",
+        "Bread"
+      ],
+      "correctChoice": 1,
+      "explanation": "Manca lo zucchero.",
+      "chapterId": "luca-prima-di-roma-03-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch06-q02",
+      "type": "direct",
+      "question": "What does Luca like?",
+      "choices": [
+        "Apples",
+        "Oil",
+        "Tickets"
+      ],
+      "correctChoice": 0,
+      "explanation": "A Luca piacciono le mele.",
+      "chapterId": "luca-prima-di-roma-03-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr03-ch06-q03",
+      "type": "event",
+      "question": "What does Luca do after Marta checks the list?",
+      "choices": [
+        "He sleeps",
+        "He goes back to the supermarket",
+        "He goes to Rome"
+      ],
+      "correctChoice": 1,
+      "explanation": "Luca torna al supermercato.",
+      "chapterId": "luca-prima-di-roma-03-06",
+      "difficulty": 1
+    }
+  ]
+}

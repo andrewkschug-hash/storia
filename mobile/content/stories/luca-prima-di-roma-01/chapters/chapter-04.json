@@ -1,0 +1,308 @@
+{
+  "id": "luca-prima-di-roma-01-04",
+  "storyId": "luca-prima-di-roma-01",
+  "number": 4,
+  "title": "My house",
+  "titleIt": "Casa mia",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba",
+    "camera-luca-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "chiara"
+  ],
+  "primaryDomain": "descriptions",
+  "secondaryDomains": [
+    "family",
+    "numbers"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-01-04",
+      "summary": "Luca shows the kitchen, bedroom, and living room. The house is small.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba",
+        "camera-luca-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "The house has a kitchen",
+        "Luca has a bedroom",
+        "There is a living room",
+        "The house is small"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Questa è casa mia.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "essere",
+            "casa",
+            "mio"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "La casa è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "casa",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "C'è una cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "La cucina è grande.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "cucina",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "C'è un soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il soggiorno è piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "soggiorno",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "C'è la mia camera.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "la",
+            "mio",
+            "camera"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "La camera è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "camera",
+            "essere",
+            "piccolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Quante stanze ci sono?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "stanza",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Ci sono tre stanze.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "essere",
+            "tre",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Cucina soggiorno camera.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "cucina",
+            "soggiorno",
+            "camera"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La casa non è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "casa",
+            "non",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ma la casa è bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "la",
+            "casa",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Io sono in camera.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "in",
+            "camera"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Marta è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Chiara è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Siamo a casa insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "a",
+            "casa",
+            "insieme"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr01-ch04-q01",
+      "type": "direct",
+      "question": "How many rooms does Luca name?",
+      "choices": [
+        "Two",
+        "Three",
+        "Six"
+      ],
+      "correctChoice": 1,
+      "explanation": "Cucina, soggiorno, camera — three rooms.",
+      "chapterId": "luca-prima-di-roma-01-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch04-q02",
+      "type": "direct",
+      "question": "Where is Luca’s bedroom?",
+      "choices": [
+        "In the house",
+        "At the supermarket",
+        "At the station"
+      ],
+      "correctChoice": 0,
+      "explanation": "La camera is in casa mia.",
+      "chapterId": "luca-prima-di-roma-01-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch04-q03",
+      "type": "inference",
+      "question": "Is the house big?",
+      "choices": [
+        "Yes, very big",
+        "No, it is small",
+        "There is no house"
+      ],
+      "correctChoice": 1,
+      "explanation": "La casa è piccola.",
+      "chapterId": "luca-prima-di-roma-01-04",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "id": "luca-prima-di-roma-01-02",
+  "storyId": "luca-prima-di-roma-01",
+  "number": 2,
+  "title": "How old are you?",
+  "titleIt": "Quanti anni hai?",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "chiara",
+    "davide"
+  ],
+  "primaryDomain": "age",
+  "secondaryDomains": [
+    "numbers"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-01-02",
+      "summary": "Luca is 24, Chiara is 16, and Davide is 25.",
+      "characterIds": [
+        "luca",
+        "chiara",
+        "davide"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "Luca is 24",
+        "Chiara is 16",
+        "Davide is 25"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Chiara è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Quanti anni hai?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "anno",
+            "avere"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ho ventiquattro anni.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "ventiquattro",
+            "anno"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Luca ha ventiquattro anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ventiquattro",
+            "anno"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "E tu?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "tu"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ho sedici anni.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "sedici",
+            "anno"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Chiara ha sedici anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "avere",
+            "sedici",
+            "anno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Uno due tre quattro cinque.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "uno",
+            "due",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Sei sette otto nove dieci.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sei",
+            "sette",
+            "otto",
+            "nove",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Undici dodici tredici quattordici quindici.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "undici",
+            "dodici",
+            "tredici",
+            "quattordici",
+            "quindici"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sedici è poco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sedici",
+            "essere",
+            "poco"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ventiquattro è molto.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ventiquattro",
+            "essere",
+            "molto"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Davide arriva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Quanti anni hai Davide?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "anno",
+            "avere",
+            "davide"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Ho venticinque anni.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "venticinque",
+            "anno"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Davide ha venticinque anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "avere",
+            "venticinque",
+            "anno"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Luca e Davide sono grandi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "essere",
+            "grande"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr01-ch02-q01",
+      "type": "direct",
+      "question": "How old is Luca?",
+      "choices": [
+        "16",
+        "24",
+        "30"
+      ],
+      "correctChoice": 1,
+      "explanation": "Luca is ventiquattro anni.",
+      "chapterId": "luca-prima-di-roma-01-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch02-q02",
+      "type": "character",
+      "question": "How old is Chiara?",
+      "choices": [
+        "14",
+        "16",
+        "24"
+      ],
+      "correctChoice": 1,
+      "explanation": "Chiara is sedici anni.",
+      "chapterId": "luca-prima-di-roma-01-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch02-q03",
+      "type": "direct",
+      "question": "Who is the oldest?",
+      "choices": [
+        "Chiara",
+        "Luca",
+        "Davide"
+      ],
+      "correctChoice": 2,
+      "explanation": "Davide is 25.",
+      "chapterId": "luca-prima-di-roma-01-02",
+      "difficulty": 1
+    }
+  ]
+}

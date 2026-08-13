@@ -1,0 +1,307 @@
+{
+  "id": "luca-prima-di-roma-01-03",
+  "storyId": "luca-prima-di-roma-01",
+  "number": 3,
+  "title": "My family",
+  "titleIt": "La mia famiglia",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara",
+    "lidia"
+  ],
+  "primaryDomain": "family",
+  "secondaryDomains": [
+    "introductions"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-01-03",
+      "summary": "Luca names his mother Marta, father Paolo, sister Chiara, and grandmother Lidia.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "paolo",
+        "chiara",
+        "lidia"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba"
+      ],
+      "rememberedFacts": [
+        "Marta is Luca’s mother",
+        "Paolo is Luca’s father",
+        "Chiara is Luca’s sister",
+        "Lidia is Luca’s grandmother"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "La mia famiglia è qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "mio",
+            "famiglia",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Questa è Marta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "essere",
+            "marta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Marta è la mia mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "marta",
+            "essere",
+            "la",
+            "mio",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ciao Luca.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Questo è Paolo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "essere",
+            "paolo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Paolo è il mio papà.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "il",
+            "mio",
+            "papa"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Buongiorno.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Chiara è la mia sorella.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "la",
+            "mio",
+            "sorella"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Lidia è la mia nonna.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lidia",
+            "essere",
+            "la",
+            "mio",
+            "nonna"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Nonna Lidia è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nonna",
+            "lidia",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Siamo cinque.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Io tu lui lei.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "tu",
+            "lui",
+            "lei"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Mamma papà sorella nonna.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "papa",
+            "sorella",
+            "nonna"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "La famiglia è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "La famiglia è di Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "di",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "La mia famiglia è importante.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "mio",
+            "famiglia",
+            "essere",
+            "importante"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr01-ch03-q01",
+      "type": "character",
+      "question": "Who is Marta?",
+      "choices": [
+        "Luca’s sister",
+        "Luca’s mother",
+        "Luca’s friend"
+      ],
+      "correctChoice": 1,
+      "explanation": "Marta is la mamma.",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch03-q02",
+      "type": "character",
+      "question": "Who is Chiara?",
+      "choices": [
+        "Luca’s mother",
+        "Luca’s sister",
+        "Luca’s grandmother"
+      ],
+      "correctChoice": 1,
+      "explanation": "Chiara is la sorella.",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch03-q03",
+      "type": "direct",
+      "question": "How many people are in the family here?",
+      "choices": [
+        "Three",
+        "Five",
+        "Eight"
+      ],
+      "correctChoice": 1,
+      "explanation": "Marta says siamo cinque.",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "difficulty": 1
+    }
+  ]
+}

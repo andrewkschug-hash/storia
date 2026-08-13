@@ -1,0 +1,266 @@
+{
+  "id": "luca-prima-di-roma-05-02",
+  "storyId": "luca-prima-di-roma-05",
+  "number": 2,
+  "title": "I invite you",
+  "titleIt": "Ti invito",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "davide",
+    "chiara",
+    "elisa"
+  ],
+  "primaryDomain": "invitations",
+  "secondaryDomains": [
+    "days",
+    "social"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-05-02",
+      "summary": "Luca invites Davide and Elisa for Saturday. Davide says yes; Elisa maybe.",
+      "characterIds": [
+        "luca",
+        "davide",
+        "chiara",
+        "elisa"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "The party is Saturday",
+        "Davide accepts",
+        "Elisa might come"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Luca invita gli amici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "invitare",
+            "gli",
+            "amico"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Davide è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Vieni sabato?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "venire",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Sì vengo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "venire"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Sabato c'è la festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "ce",
+            "la",
+            "festa"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Va bene.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Elisa è con Chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "con",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Elisa vieni sabato?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "elisa",
+            "venire",
+            "sabato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Forse.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Forse vengo.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "venire"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "L'invito è per sabato.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "invito",
+            "essere",
+            "per",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Davide dice sì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "dire",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Elisa dice forse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "dire",
+            "forse"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Chiara è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sabato siamo a casa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "essere",
+            "a",
+            "casa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr05-ch02-q01",
+      "type": "direct",
+      "question": "When is the party?",
+      "choices": [
+        "Monday",
+        "Saturday",
+        "Tomorrow morning"
+      ],
+      "correctChoice": 1,
+      "explanation": "Sabato c'è la festa.",
+      "chapterId": "luca-prima-di-roma-05-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch02-q02",
+      "type": "direct",
+      "question": "Does Davide come?",
+      "choices": [
+        "Yes",
+        "No",
+        "He is in Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "Sì vengo.",
+      "chapterId": "luca-prima-di-roma-05-02",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr05-ch02-q03",
+      "type": "character",
+      "question": "What does Elisa say?",
+      "choices": [
+        "Maybe",
+        "Never",
+        "I live in Rome"
+      ],
+      "correctChoice": 0,
+      "explanation": "Forse vengo.",
+      "chapterId": "luca-prima-di-roma-05-02",
+      "difficulty": 1
+    }
+  ]
+}

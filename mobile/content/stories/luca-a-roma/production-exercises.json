@@ -1,0 +1,2526 @@
+{
+  "storyId": "luca-a-roma",
+  "version": 3,
+  "exercises": [
+    {
+      "exerciseId": "luca-a-roma-ch01-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-01",
+      "sourceSentenceId": "s01",
+      "promptEn": "I arrive in Rome.",
+      "expectedIt": "Arrivo a Roma.",
+      "acceptableAnswers": [
+        "Io arrivo a Roma."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "present",
+        "arrival"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch01-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-01",
+      "sourceSentenceId": "s05",
+      "promptEn": "I'm hungry. Say it in Italian.",
+      "expectedIt": "Ho fame.",
+      "acceptableAnswers": [
+        "Io ho fame."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "fame"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch01-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-01",
+      "sourceSentenceId": "s06",
+      "promptEn": "I want to eat.",
+      "expectedIt": "Voglio mangiare.",
+      "acceptableAnswers": [
+        "Io voglio mangiare."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "volere",
+        "mangiare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch01-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-01",
+      "sourceSentenceId": "s11",
+      "promptEn": "Good morning.",
+      "expectedIt": "Buongiorno.",
+      "level": "A1",
+      "focus": [
+        "greeting"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch02-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-02",
+      "sourceSentenceId": "s01",
+      "promptEn": "I'm in Rome.",
+      "expectedIt": "Sono a Roma.",
+      "acceptableAnswers": [
+        "Io sono a Roma.",
+        "Sto a Roma."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "location"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch02-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-02",
+      "sourceSentenceId": "s03",
+      "promptEn": "I'm walking down the street.",
+      "expectedIt": "Cammino per la strada.",
+      "acceptableAnswers": [
+        "Io cammino per la strada."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "present",
+        "camminare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch02-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-02",
+      "sourceSentenceId": "s04",
+      "promptEn": "Rome is big.",
+      "expectedIt": "Roma è grande.",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "city"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch02-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-02",
+      "sourceSentenceId": "s12",
+      "promptEn": "Rome is beautiful.",
+      "expectedIt": "Roma è bella.",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "city"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch03-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-03",
+      "sourceSentenceId": "s02",
+      "promptEn": "I'm looking for a home.",
+      "expectedIt": "Cerco una casa.",
+      "acceptableAnswers": [
+        "Io cerco una casa.",
+        "Cerco casa."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "cercare",
+        "casa"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch03-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-03",
+      "sourceSentenceId": "s03",
+      "promptEn": "I want an apartment.",
+      "expectedIt": "Voglio un appartamento.",
+      "acceptableAnswers": [
+        "Io voglio un appartamento."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "volere",
+        "home"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch03-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-03",
+      "sourceSentenceId": "s09",
+      "promptEn": "I don't have much money.",
+      "expectedIt": "Non ho molti soldi.",
+      "acceptableAnswers": [
+        "Io non ho molti soldi.",
+        "Non ho tanti soldi."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "negation"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch03-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-03",
+      "sourceSentenceId": "s12",
+      "promptEn": "Tomorrow I look again.",
+      "expectedIt": "Domani cerco ancora.",
+      "acceptableAnswers": [
+        "Io cerco ancora domani.",
+        "Cerco ancora domani."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "domani",
+        "cercare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch04-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-04",
+      "sourceSentenceId": "s02",
+      "promptEn": "The apartment is small.",
+      "expectedIt": "L'appartamento è piccolo.",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "home"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch04-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-04",
+      "sourceSentenceId": "s04",
+      "promptEn": "I'm happy.",
+      "expectedIt": "Sono felice.",
+      "acceptableAnswers": [
+        "Io sono felice."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "essere"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch04-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-04",
+      "sourceSentenceId": "s05",
+      "promptEn": "There's a door.",
+      "expectedIt": "C'è una porta.",
+      "acceptableAnswers": [
+        "C'è una porta qui."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "c'è",
+        "home"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch04-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-04",
+      "sourceSentenceId": "s11",
+      "promptEn": "I have a home in Rome.",
+      "expectedIt": "Ho una casa a Roma.",
+      "acceptableAnswers": [
+        "Io ho una casa a Roma."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "casa"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch05-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-05",
+      "sourceSentenceId": "s05",
+      "promptEn": "Hi, I'm Luca.",
+      "expectedIt": "Ciao, sono Luca.",
+      "acceptableAnswers": [
+        "Ciao, io sono Luca."
+      ],
+      "level": "A1",
+      "focus": [
+        "greeting",
+        "chiamarsi"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch05-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-05",
+      "sourceSentenceId": "s06",
+      "promptEn": "How are you?",
+      "expectedIt": "Come stai?",
+      "acceptableAnswers": [
+        "Come va?"
+      ],
+      "level": "A1",
+      "focus": [
+        "question",
+        "stare"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch05-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-05",
+      "sourceSentenceId": "s08",
+      "promptEn": "Are you new to Rome?",
+      "expectedIt": "Sei nuovo a Roma?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "essere"
+      ],
+      "acceptableAnswers": [
+        "Sei nuova a Roma?"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch05-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-05",
+      "sourceSentenceId": "s13",
+      "promptEn": "See you.",
+      "expectedIt": "Ci vediamo.",
+      "acceptableAnswers": [
+        "Ci vediamo dopo."
+      ],
+      "level": "A1",
+      "focus": [
+        "greeting"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch06-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-06",
+      "sourceSentenceId": "s07",
+      "promptEn": "The square is beautiful.",
+      "expectedIt": "La piazza è bella.",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "city"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch06-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-06",
+      "sourceSentenceId": "s09",
+      "promptEn": "This is my neighborhood.",
+      "expectedIt": "Questo è il mio quartiere.",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "possessive"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch06-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-06",
+      "sourceSentenceId": "s11",
+      "promptEn": "How are you today?",
+      "expectedIt": "Come stai oggi?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "stare"
+      ],
+      "acceptableAnswers": [
+        "Come va oggi?"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch06-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-06",
+      "sourceSentenceId": "s13",
+      "promptEn": "See you tomorrow.",
+      "expectedIt": "Ci vediamo domani.",
+      "level": "A1",
+      "focus": [
+        "greeting",
+        "domani"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch07-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-07",
+      "sourceSentenceId": "s04",
+      "promptEn": "I'm looking for a job.",
+      "expectedIt": "Cerco un lavoro.",
+      "acceptableAnswers": [
+        "Io cerco un lavoro.",
+        "Cerco lavoro."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "cercare",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch07-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-07",
+      "sourceSentenceId": "s06",
+      "promptEn": "Are you looking for a job?",
+      "expectedIt": "Cerchi un lavoro?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch07-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-07",
+      "sourceSentenceId": "s07",
+      "promptEn": "Yes, I want a job.",
+      "expectedIt": "Sì, voglio un lavoro.",
+      "acceptableAnswers": [
+        "Voglio un lavoro."
+      ],
+      "level": "A1",
+      "focus": [
+        "volere",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch07-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-07",
+      "sourceSentenceId": "s13",
+      "promptEn": "I want to live in Rome.",
+      "expectedIt": "Voglio vivere a Roma.",
+      "acceptableAnswers": [
+        "Io voglio vivere a Roma."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "volere",
+        "vivere"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch08-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-08",
+      "sourceSentenceId": "s03",
+      "promptEn": "Help me.",
+      "expectedIt": "Aiutami.",
+      "acceptableAnswers": [
+        "Mi aiuti?"
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "request",
+        "aiutare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch08-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-08",
+      "sourceSentenceId": "s09",
+      "promptEn": "Excuse me, I'm looking for a job.",
+      "expectedIt": "Scusa, cerco un lavoro.",
+      "level": "A1",
+      "focus": [
+        "lavoro",
+        "polite"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch08-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-08",
+      "sourceSentenceId": "s12",
+      "promptEn": "Wait a moment.",
+      "expectedIt": "Aspetta un momento.",
+      "level": "A1",
+      "focus": [
+        "imperative"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch08-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-08",
+      "sourceSentenceId": "s13",
+      "promptEn": "Okay.",
+      "expectedIt": "Va bene.",
+      "level": "A1",
+      "focus": [
+        "everyday"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch09-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-09",
+      "sourceSentenceId": "s04",
+      "promptEn": "Do you want to work here?",
+      "expectedIt": "Vuoi lavorare qui?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch09-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-09",
+      "sourceSentenceId": "s09",
+      "promptEn": "I have a job.",
+      "expectedIt": "Ho un lavoro.",
+      "acceptableAnswers": [
+        "Io ho un lavoro."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch09-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-09",
+      "sourceSentenceId": "s10",
+      "promptEn": "Tomorrow I work.",
+      "expectedIt": "Domani lavoro.",
+      "acceptableAnswers": [
+        "Lavoro domani.",
+        "Domani io lavoro."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "domani",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch09-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-09",
+      "sourceSentenceId": "s12",
+      "promptEn": "The job isn't hard.",
+      "expectedIt": "Il lavoro non è difficile.",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch10-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-10",
+      "sourceSentenceId": "s01",
+      "promptEn": "Today I work.",
+      "expectedIt": "Oggi lavoro.",
+      "acceptableAnswers": [
+        "Lavoro oggi.",
+        "Oggi io lavoro."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "oggi",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch10-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-10",
+      "sourceSentenceId": "s06",
+      "promptEn": "I work here.",
+      "expectedIt": "Lavoro qui.",
+      "acceptableAnswers": [
+        "Io lavoro qui."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "lavoro",
+        "location"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch10-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-10",
+      "sourceSentenceId": "s07",
+      "promptEn": "Hi, I'm Giulia.",
+      "expectedIt": "Ciao, sono Giulia.",
+      "level": "A1",
+      "focus": [
+        "greeting"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch10-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-10",
+      "sourceSentenceId": "s11",
+      "promptEn": "We work together.",
+      "expectedIt": "Lavoriamo insieme.",
+      "level": "A1",
+      "focus": [
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch11-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-11",
+      "sourceSentenceId": "s01",
+      "promptEn": "I work in the café.",
+      "expectedIt": "Lavoro nel caffè.",
+      "acceptableAnswers": [
+        "Io lavoro nel caffè.",
+        "Lavoro al caffè."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "lavoro",
+        "location"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch11-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-11",
+      "sourceSentenceId": "s05",
+      "promptEn": "He's my friend.",
+      "expectedIt": "È un mio amico.",
+      "acceptableAnswers": [
+        "È un amico.",
+        "È il mio amico."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "amico"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch11-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-11",
+      "sourceSentenceId": "s06",
+      "promptEn": "Hi, I'm Marco.",
+      "expectedIt": "Ciao, sono Marco.",
+      "level": "A1",
+      "focus": [
+        "greeting"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch11-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-11",
+      "sourceSentenceId": "s10",
+      "promptEn": "Let's have a coffee together.",
+      "expectedIt": "Prendiamo un caffè insieme.",
+      "level": "A1",
+      "focus": [
+        "food",
+        "insieme"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch12-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-12",
+      "sourceSentenceId": "s03",
+      "promptEn": "I have a problem.",
+      "expectedIt": "Ho un problema.",
+      "acceptableAnswers": [
+        "Io ho un problema."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch12-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-12",
+      "sourceSentenceId": "s05",
+      "promptEn": "I don't have money.",
+      "expectedIt": "Non ho soldi.",
+      "acceptableAnswers": [
+        "Non ho i soldi."
+      ],
+      "level": "A1",
+      "focus": [
+        "avere",
+        "negation"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch12-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-12",
+      "sourceSentenceId": "s09",
+      "promptEn": "What are you doing?",
+      "expectedIt": "Che cosa fai?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "fare"
+      ],
+      "acceptableAnswers": [
+        "Cosa fai?",
+        "Che fai?"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch12-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-12",
+      "sourceSentenceId": "s11",
+      "promptEn": "I don't have time.",
+      "expectedIt": "Non ho tempo.",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "tempo"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch13-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-13",
+      "sourceSentenceId": "s04",
+      "promptEn": "We can help.",
+      "expectedIt": "Possiamo aiutare.",
+      "level": "A1",
+      "focus": [
+        "potere",
+        "aiutare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch13-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-13",
+      "sourceSentenceId": "s05",
+      "promptEn": "I have little money.",
+      "expectedIt": "Io ho pochi soldi.",
+      "level": "A1",
+      "focus": [
+        "avere"
+      ],
+      "acceptableAnswers": [
+        "Ho pochi soldi."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch13-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-13",
+      "sourceSentenceId": "s10",
+      "promptEn": "I want to buy a ticket.",
+      "expectedIt": "Voglio comprare un biglietto.",
+      "acceptableAnswers": [
+        "Voglio un biglietto.",
+        "Io voglio comprare il biglietto."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "volere",
+        "comprare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch13-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-13",
+      "sourceSentenceId": "s12",
+      "promptEn": "Together it's easy.",
+      "expectedIt": "Insieme è facile.",
+      "level": "A1",
+      "focus": [
+        "insieme"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch14-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-14",
+      "sourceSentenceId": "s02",
+      "promptEn": "You have to leave.",
+      "expectedIt": "Devi partire.",
+      "acceptableAnswers": [
+        "Tu devi partire."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "dovere"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch14-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-14",
+      "sourceSentenceId": "s05",
+      "promptEn": "I have to leave soon.",
+      "expectedIt": "Devo partire presto.",
+      "level": "A1",
+      "focus": [
+        "dovere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch14-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-14",
+      "sourceSentenceId": "s08",
+      "promptEn": "What do we do now?",
+      "expectedIt": "Cosa facciamo adesso?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "fare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch14-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-14",
+      "sourceSentenceId": "s13",
+      "promptEn": "Where are you tomorrow?",
+      "expectedIt": "Dove sei domani?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "domani"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch15-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-15",
+      "sourceSentenceId": "s04",
+      "promptEn": "It's quiet here.",
+      "expectedIt": "Qui è tranquillo.",
+      "acceptableAnswers": [
+        "È tranquillo.",
+        "È tranquillo qui."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "casa"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch15-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-15",
+      "sourceSentenceId": "s07",
+      "promptEn": "Do you have an idea?",
+      "expectedIt": "Avete un'idea?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "avere"
+      ],
+      "acceptableAnswers": [
+        "Hai un'idea?"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch15-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-15",
+      "sourceSentenceId": "s11",
+      "promptEn": "Why not?",
+      "expectedIt": "Perché no?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "perché"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch15-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-15",
+      "sourceSentenceId": "s14",
+      "promptEn": "Thank you, Nonna Rosa.",
+      "expectedIt": "Grazie, Nonna Rosa.",
+      "level": "A1",
+      "focus": [
+        "greeting"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch16-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-16",
+      "sourceSentenceId": "s02",
+      "promptEn": "We go to the station.",
+      "expectedIt": "Andiamo alla stazione.",
+      "acceptableAnswers": [
+        "Andiamo in stazione."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "andare",
+        "travel"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch16-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-16",
+      "sourceSentenceId": "s04",
+      "promptEn": "I have the ticket.",
+      "expectedIt": "Ho il biglietto.",
+      "acceptableAnswers": [
+        "Io ho il biglietto."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "travel"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch16-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-16",
+      "sourceSentenceId": "s07",
+      "promptEn": "Let's take the train.",
+      "expectedIt": "Prendiamo il treno.",
+      "level": "A1",
+      "focus": [
+        "travel"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch16-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-16",
+      "sourceSentenceId": "s12",
+      "promptEn": "The train leaves now.",
+      "expectedIt": "Il treno parte adesso.",
+      "level": "A1",
+      "focus": [
+        "travel",
+        "adesso"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch17-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-17",
+      "sourceSentenceId": "s03",
+      "promptEn": "I look outside.",
+      "expectedIt": "Guardo fuori.",
+      "acceptableAnswers": [
+        "Io guardo fuori."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "present"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch17-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-17",
+      "sourceSentenceId": "s05",
+      "promptEn": "We travel together.",
+      "expectedIt": "Viaggiamo insieme.",
+      "level": "A1",
+      "focus": [
+        "travel",
+        "insieme"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch17-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-17",
+      "sourceSentenceId": "s10",
+      "promptEn": "I'm thirsty and hungry.",
+      "expectedIt": "Ho sete e fame.",
+      "acceptableAnswers": [
+        "Ho fame e sete.",
+        "Io ho sete e fame."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch17-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-17",
+      "sourceSentenceId": "s12",
+      "promptEn": "The trip goes well.",
+      "expectedIt": "Il viaggio va bene.",
+      "level": "A1",
+      "focus": [
+        "travel"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch18-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-18",
+      "sourceSentenceId": "s02",
+      "promptEn": "The train isn't leaving.",
+      "expectedIt": "Il treno non parte.",
+      "acceptableAnswers": [
+        "Il treno non va."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "negation",
+        "travel"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch18-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-18",
+      "sourceSentenceId": "s05",
+      "promptEn": "I can't find the ticket.",
+      "expectedIt": "Non trovo il biglietto.",
+      "level": "A1",
+      "focus": [
+        "negation",
+        "travel"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch18-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-18",
+      "sourceSentenceId": "s07",
+      "promptEn": "Where's the suitcase?",
+      "expectedIt": "Dov'è la valigia?",
+      "level": "A1",
+      "focus": [
+        "question"
+      ],
+      "acceptableAnswers": [
+        "Dove è la valigia?"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch18-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-18",
+      "sourceSentenceId": "s12",
+      "promptEn": "What do we do now?",
+      "expectedIt": "Cosa facciamo adesso?",
+      "level": "A1",
+      "focus": [
+        "question",
+        "fare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch19-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-19",
+      "sourceSentenceId": "s06",
+      "promptEn": "Here's the ticket!",
+      "expectedIt": "Ecco il biglietto!",
+      "level": "A1",
+      "focus": [
+        "travel"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch19-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-19",
+      "sourceSentenceId": "s07",
+      "promptEn": "Together we can help.",
+      "expectedIt": "Insieme possiamo aiutare.",
+      "acceptableAnswers": [
+        "Possiamo aiutare insieme."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "insieme",
+        "potere"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch19-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-19",
+      "sourceSentenceId": "s12",
+      "promptEn": "Thank you, friends.",
+      "expectedIt": "Grazie, amici.",
+      "level": "A1",
+      "focus": [
+        "greeting",
+        "amico"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch19-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-19",
+      "sourceSentenceId": "s13",
+      "promptEn": "See you in Rome.",
+      "expectedIt": "Ci vediamo a Roma.",
+      "level": "A1",
+      "focus": [
+        "greeting",
+        "location"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch20-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-20",
+      "sourceSentenceId": "s04",
+      "promptEn": "I'm home.",
+      "expectedIt": "Sono a casa.",
+      "acceptableAnswers": [
+        "Io sono a casa.",
+        "Sto a casa."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "casa"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch20-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-20",
+      "sourceSentenceId": "s05",
+      "promptEn": "We're home.",
+      "expectedIt": "Siamo a casa.",
+      "acceptableAnswers": [
+        "Noi siamo a casa."
+      ],
+      "level": "A1",
+      "focus": [
+        "essere",
+        "casa"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch20-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-20",
+      "sourceSentenceId": "s11",
+      "promptEn": "I have a home, a job, and friends.",
+      "expectedIt": "Ho una casa, un lavoro e amici.",
+      "acceptableAnswers": [
+        "Ho casa, lavoro e amici."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "avere",
+        "summary"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch20-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-20",
+      "sourceSentenceId": "s16",
+      "promptEn": "I'm happy in Rome.",
+      "expectedIt": "Sono felice a Roma.",
+      "acceptableAnswers": [
+        "Io sono felice a Roma."
+      ],
+      "match": "flexible",
+      "level": "A1",
+      "focus": [
+        "essere",
+        "location"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch21-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-21",
+      "sourceSentenceId": "s02",
+      "promptEn": "Today is Monday and I wake up early.",
+      "expectedIt": "Oggi è lunedì e mi sveglio presto.",
+      "acceptableAnswers": [
+        "Oggi è lunedì. Mi sveglio presto."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "routine",
+        "time"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch21-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-21",
+      "sourceSentenceId": "s04",
+      "promptEn": "Every morning I go to work.",
+      "expectedIt": "Ogni mattina vado al lavoro.",
+      "acceptableAnswers": [
+        "Ogni mattina vado al lavoro nel quartiere.",
+        "Vado al lavoro ogni mattina."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "routine",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch21-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-21",
+      "sourceSentenceId": "s06",
+      "promptEn": "I make something to eat because I'm hungry.",
+      "expectedIt": "Preparo qualcosa da mangiare perché ho fame.",
+      "acceptableAnswers": [
+        "Preparo qualcosa perché ho fame.",
+        "Ho fame, preparo qualcosa da mangiare."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "perché",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch21-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-21",
+      "sourceSentenceId": "s31",
+      "promptEn": "In the evening I go home.",
+      "expectedIt": "La sera torno a casa.",
+      "acceptableAnswers": [
+        "La sera vado a casa.",
+        "Torno a casa la sera."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "sera",
+        "casa"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch22-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-22",
+      "sourceSentenceId": "s03",
+      "promptEn": "Hi, Luca. How are you?",
+      "expectedIt": "Ciao, Luca. Come stai?",
+      "level": "A1+",
+      "focus": [
+        "greeting",
+        "question"
+      ],
+      "match": "exact"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch22-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-22",
+      "sourceSentenceId": "s06",
+      "promptEn": "Yes, I like to walk in the evening.",
+      "expectedIt": "Sì, mi piace camminare la sera.",
+      "level": "A1+",
+      "focus": [
+        "piacere",
+        "sera"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch22-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-22",
+      "sourceSentenceId": "s21",
+      "promptEn": "I like this neighborhood.",
+      "expectedIt": "Mi piace questo quartiere.",
+      "acceptableAnswers": [
+        "Questo quartiere mi piace."
+      ],
+      "level": "A1+",
+      "focus": [
+        "piacere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch22-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-22",
+      "sourceSentenceId": "s24",
+      "promptEn": "I want to stay in Rome.",
+      "expectedIt": "Voglio restare a Roma.",
+      "acceptableAnswers": [
+        "Io voglio restare a Roma.",
+        "Voglio stare a Roma."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "volere",
+        "restare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch23-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-23",
+      "sourceSentenceId": "s11",
+      "promptEn": "I'd like bread and water.",
+      "expectedIt": "Vorrei pane e acqua.",
+      "acceptableAnswers": [
+        "Chiedo pane e acqua.",
+        "Pane e acqua, grazie.",
+        "Io vorrei pane e acqua."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "food",
+        "request",
+        "conditional"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch23-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-23",
+      "sourceSentenceId": "s12",
+      "promptEn": "Excuse me, where's the bread?",
+      "expectedIt": "Scusa, dov'è il pane?",
+      "acceptableAnswers": [
+        "Dov'è il pane?",
+        "Scusa, dove è il pane?"
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "question",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch23-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-23",
+      "sourceSentenceId": "s25",
+      "promptEn": "Today is difficult, but it goes well.",
+      "expectedIt": "Oggi è difficile, ma va bene.",
+      "level": "A1+",
+      "focus": [
+        "oggi",
+        "contrast"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch23-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-23",
+      "sourceSentenceId": "s40",
+      "promptEn": "I'm happy at the café.",
+      "expectedIt": "Sono felice al caffè.",
+      "acceptableAnswers": [
+        "Io sono felice al caffè."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "essere",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch24-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-24",
+      "sourceSentenceId": "s22",
+      "promptEn": "Yesterday I went to the shop.",
+      "expectedIt": "Ieri sono andato al negozio.",
+      "acceptableAnswers": [
+        "Ieri sono andata al negozio.",
+        "Ieri sono andato in negozio.",
+        "Sono andato al negozio ieri.",
+        "Sono andata al negozio ieri."
+      ],
+      "match": "flexible",
+      "level": "A1+",
+      "focus": [
+        "passato_prossimo",
+        "ieri"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch24-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-24",
+      "sourceSentenceId": "s10",
+      "promptEn": "Fine, thanks. I am fine in Rome.",
+      "expectedIt": "Bene, grazie. Sto bene a Roma.",
+      "level": "A1+",
+      "focus": [
+        "stare",
+        "location"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch24-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-24",
+      "sourceSentenceId": "s11",
+      "promptEn": "I have a home and a job at the café.",
+      "expectedIt": "Ho una casa e un lavoro al caffè.",
+      "level": "A1+",
+      "focus": [
+        "avere",
+        "summary"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch24-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-24",
+      "sourceSentenceId": "s18",
+      "promptEn": "I love you, Grandma.",
+      "expectedIt": "Ti voglio bene, Nonna.",
+      "level": "A1+",
+      "focus": [
+        "family"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch25-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-25",
+      "sourceSentenceId": "s03",
+      "promptEn": "I arrived early and opened the door.",
+      "expectedIt": "Sono arrivato presto e ho aperto la porta.",
+      "acceptableAnswers": [
+        "Sono arrivata presto e ho aperto la porta."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "passato_prossimo"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch25-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-25",
+      "sourceSentenceId": "s24",
+      "promptEn": "Me too. If the café goes badly, my job goes badly.",
+      "expectedIt": "Anch’io. Se il caffè va male, il mio lavoro va male.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch25-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-25",
+      "sourceSentenceId": "s27",
+      "promptEn": "Why are there so few customers now?",
+      "expectedIt": "Perché ci sono così pochi clienti adesso?",
+      "level": "A2",
+      "focus": [
+        "perché",
+        "question"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch25-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-25",
+      "sourceSentenceId": "s30",
+      "promptEn": "Let's talk tomorrow. It's important.",
+      "expectedIt": "Parliamo domani. È importante.",
+      "acceptableAnswers": [
+        "Domani parliamo. È importante."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "domani",
+        "parlare"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch26-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-26",
+      "sourceSentenceId": "s10",
+      "promptEn": "The café is not going well. There are few customers.",
+      "expectedIt": "Il caffè non va bene. Ci sono pochi clienti.",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "negation"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch26-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-26",
+      "sourceSentenceId": "s17",
+      "promptEn": "What about my job?",
+      "expectedIt": "E il mio lavoro?",
+      "acceptableAnswers": [
+        "E il lavoro?"
+      ],
+      "match": "exact",
+      "level": "A2",
+      "focus": [
+        "question",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch26-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-26",
+      "sourceSentenceId": "s18",
+      "promptEn": "It depends. If I sell the café, I don't know yet.",
+      "expectedIt": "Dipende. Se vendo il caffè, non lo so ancora.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch26-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-26",
+      "sourceSentenceId": "s34",
+      "promptEn": "Good. We must make a plan, not only wait.",
+      "expectedIt": "Bene. Dobbiamo fare un piano, non solo aspettare.",
+      "level": "A2",
+      "focus": [
+        "dovere",
+        "piano"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch27-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-27",
+      "sourceSentenceId": "s10",
+      "promptEn": "I think about rent and the job every day.",
+      "expectedIt": "Io penso all’affitto e al lavoro ogni giorno.",
+      "level": "A2",
+      "focus": [
+        "pensare",
+        "lavoro"
+      ],
+      "acceptableAnswers": [
+        "Penso all'affitto e al lavoro ogni giorno."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch27-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-27",
+      "sourceSentenceId": "s16",
+      "promptEn": "I'm afraid.",
+      "expectedIt": "Ho paura.",
+      "acceptableAnswers": [
+        "Io ho paura."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "paura"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch27-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-27",
+      "sourceSentenceId": "s19",
+      "promptEn": "The neighborhood needs that café.",
+      "expectedIt": "Al quartiere serve quel caffè.",
+      "level": "A2",
+      "focus": [
+        "servire"
+      ],
+      "acceptableAnswers": [
+        "Quel caffè serve al quartiere."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch27-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-27",
+      "sourceSentenceId": "s30",
+      "promptEn": "Let's go to Nonna Rosa. Maybe she has an idea.",
+      "expectedIt": "Andiamo da Nonna Rosa. Magari lei ha un’idea.",
+      "level": "A2",
+      "focus": [
+        "andare",
+        "idea"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch28-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-28",
+      "sourceSentenceId": "s06",
+      "promptEn": "I don't have much money. Water is fine.",
+      "expectedIt": "Non ho tanti soldi. L’acqua va bene.",
+      "level": "A2",
+      "focus": [
+        "avere",
+        "food"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch28-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-28",
+      "sourceSentenceId": "s14",
+      "promptEn": "I'm looking for work, but I can't find it.",
+      "expectedIt": "Cerco lavoro, ma non lo trovo.",
+      "acceptableAnswers": [
+        "Cerco lavoro e non trovo.",
+        "Cerco un lavoro, ma non lo trovo."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "cercare",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch28-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-28",
+      "sourceSentenceId": "s18",
+      "promptEn": "I am afraid too. Here the café might close.",
+      "expectedIt": "Anch’io ho paura. Qui il caffè forse chiude.",
+      "level": "A2",
+      "focus": [
+        "paura",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch28-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-28",
+      "sourceSentenceId": "s33",
+      "promptEn": "If I can, I'll come. I don't have work, but I have time.",
+      "expectedIt": "Se posso, vengo. Non ho lavoro, ma ho tempo.",
+      "acceptableAnswers": [
+        "Vengo se posso. Non ho lavoro, ma ho tempo."
+      ],
+      "level": "A2",
+      "focus": [
+        "se",
+        "potere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch29-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-29",
+      "sourceSentenceId": "s03",
+      "promptEn": "Come in. Are you hungry? There is bread and something to eat.",
+      "expectedIt": "Entrate. Avete fame? C’è pane e qualcosa da mangiare.",
+      "level": "A2",
+      "focus": [
+        "food",
+        "question"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch29-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-29",
+      "sourceSentenceId": "s08",
+      "promptEn": "I look for work and do not find it.",
+      "expectedIt": "Io cerco lavoro e non trovo.",
+      "level": "A2",
+      "focus": [
+        "cercare",
+        "lavoro"
+      ],
+      "acceptableAnswers": [
+        "Cerco lavoro e non trovo."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch29-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-29",
+      "sourceSentenceId": "s14",
+      "promptEn": "If people don't come, the café closes.",
+      "expectedIt": "Se la gente non viene, il caffè chiude.",
+      "acceptableAnswers": [
+        "Se la gente non viene, chiude.",
+        "Se le persone non vengono, il caffè chiude."
+      ],
+      "match": "semantic",
+      "level": "A2",
+      "focus": [
+        "se",
+        "connectors"
+      ],
+      "semantic": {
+        "requiredConcepts": [
+          "se",
+          "people",
+          "come",
+          "close"
+        ],
+        "conceptAliases": {
+          "se": [
+            "se"
+          ],
+          "people": [
+            "gente",
+            "persone"
+          ],
+          "come": [
+            "viene",
+            "vengono"
+          ],
+          "close": [
+            "chiude",
+            "chiudono"
+          ]
+        },
+        "requiredTense": "present",
+        "requiredPolarity": "mixed",
+        "requiredRelations": [
+          "if_then",
+          "condition_negative",
+          "result_affirmative"
+        ]
+      }
+    },
+    {
+      "exerciseId": "luca-a-roma-ch29-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-29",
+      "sourceSentenceId": "s25",
+      "promptEn": "I can help. I don't have money, but I have time.",
+      "expectedIt": "Io posso aiutare. Non ho soldi, ma ho tempo.",
+      "level": "A2",
+      "focus": [
+        "potere",
+        "aiutare"
+      ],
+      "acceptableAnswers": [
+        "Posso aiutare. Non ho soldi, ma ho tempo."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch30-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-30",
+      "sourceSentenceId": "s03",
+      "promptEn": "We have an idea. A small celebration, Saturday, for the neighborhood.",
+      "expectedIt": "Abbiamo un’idea. Una festa piccola, sabato, per il quartiere.",
+      "level": "A2",
+      "focus": [
+        "avere",
+        "idea"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch30-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-30",
+      "sourceSentenceId": "s06",
+      "promptEn": "I like the idea. But the owner must say yes.",
+      "expectedIt": "Mi piace. Ma il padrone deve dire sì.",
+      "level": "A2",
+      "focus": [
+        "piacere",
+        "dovere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch30-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-30",
+      "sourceSentenceId": "s21",
+      "promptEn": "All right. Let's try. Saturday. If it does not work, I decide after.",
+      "expectedIt": "Va bene. Proviamo. Sabato. Se non funziona, io decido dopo.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "provare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch30-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-30",
+      "sourceSentenceId": "s42",
+      "promptEn": "We have a plan. We don't know if it works.",
+      "expectedIt": "Abbiamo un piano. Non sappiamo se funziona.",
+      "level": "A2",
+      "focus": [
+        "piano",
+        "sapere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch31-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-31",
+      "sourceSentenceId": "s06",
+      "promptEn": "I stay at the door and say good morning.",
+      "expectedIt": "Resto alla porta e dico buongiorno.",
+      "acceptableAnswers": [
+        "Io resto alla porta e dico buongiorno.",
+        "Sto alla porta e dico buongiorno."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "greeting"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch31-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-31",
+      "sourceSentenceId": "s14",
+      "promptEn": "Saturday there is coffee, bread, and friends. It costs little.",
+      "expectedIt": "Sabato c’è caffè, pane e amici. Costa poco.",
+      "level": "A2",
+      "focus": [
+        "food",
+        "festa"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch31-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-31",
+      "sourceSentenceId": "s32",
+      "promptEn": "If people come, we must be ready.",
+      "expectedIt": "Se la gente viene, dobbiamo essere pronti.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "dovere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch31-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-31",
+      "sourceSentenceId": "s40",
+      "promptEn": "We need a plan.",
+      "expectedIt": "Ci serve un piano.",
+      "acceptableAnswers": [
+        "Dobbiamo fare un piano.",
+        "Abbiamo bisogno di un piano."
+      ],
+      "match": "semantic",
+      "level": "A2",
+      "focus": [
+        "piano"
+      ],
+      "semantic": {
+        "requiredConcepts": [
+          "piano",
+          "need"
+        ],
+        "conceptAliases": {
+          "piano": [
+            "piano"
+          ],
+          "need": [
+            "serve",
+            "servono",
+            "dobbiamo",
+            "bisogno"
+          ]
+        },
+        "requiredTense": "present",
+        "requiredPolarity": "affirmative",
+        "requiredRelations": [
+          "need_plan"
+        ]
+      }
+    },
+    {
+      "exerciseId": "luca-a-roma-ch32-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-32",
+      "sourceSentenceId": "s04",
+      "promptEn": "If few people come, the owner sees an empty room.",
+      "expectedIt": "Se viene poca gente, il padrone vede una sala vuota.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch32-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-32",
+      "sourceSentenceId": "s09",
+      "promptEn": "But the café must work every day.",
+      "expectedIt": "Ma il caffè deve funzionare ogni giorno.",
+      "level": "A2",
+      "focus": [
+        "dovere",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch32-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-32",
+      "sourceSentenceId": "s22",
+      "promptEn": "I work here. If the café closes, I am left without work.",
+      "expectedIt": "Io lavoro qui. Se il caffè chiude, resto senza lavoro.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "lavoro"
+      ],
+      "acceptableAnswers": [
+        "Lavoro qui. Se il caffè chiude, resto senza lavoro."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch32-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-32",
+      "sourceSentenceId": "s44",
+      "promptEn": "We have a plan. We are not sure.",
+      "expectedIt": "Abbiamo un piano. Non siamo sicuri.",
+      "level": "A2",
+      "focus": [
+        "piano"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch33-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-33",
+      "sourceSentenceId": "s02",
+      "promptEn": "He wasn't there.",
+      "expectedIt": "Non c’era.",
+      "acceptableAnswers": [
+        "Marco non c’era.",
+        "Lui non c’era."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "imperfetto"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch33-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-33",
+      "sourceSentenceId": "s19",
+      "promptEn": "Sorry. There was someone about a job. I had to talk.",
+      "expectedIt": "Scusa. C’era una persona per un lavoro. Dovevo parlare.",
+      "acceptableAnswers": [
+        "C'era una persona per un lavoro. Dovevo parlare."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "imperfetto",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch33-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-33",
+      "sourceSentenceId": "s21",
+      "promptEn": "You're right. I thought about work and money.",
+      "expectedIt": "Hai ragione. Ho pensato al lavoro e ai soldi.",
+      "level": "A2",
+      "focus": [
+        "pensare",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch33-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-33",
+      "sourceSentenceId": "s45",
+      "promptEn": "Tomorrow we'll see.",
+      "expectedIt": "Domani vediamo.",
+      "acceptableAnswers": [
+        "Vediamo domani.",
+        "Domani lo vediamo."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "domani"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch34-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-34",
+      "sourceSentenceId": "s04",
+      "promptEn": "Good morning. Today we work more. We must be ready.",
+      "expectedIt": "Buongiorno. Oggi lavoriamo di più. Dobbiamo essere pronti.",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "dovere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch34-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-34",
+      "sourceSentenceId": "s15",
+      "promptEn": "Then we prepare anyway. If they come, we are ready.",
+      "expectedIt": "Allora prepariamo lo stesso. Se vengono, siamo pronti.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "preparare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch34-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-34",
+      "sourceSentenceId": "s25",
+      "promptEn": "I stay at the door. When people arrive, I say good morning.",
+      "expectedIt": "Io resto alla porta. Quando arriva gente, dico buongiorno.",
+      "level": "A2",
+      "focus": [
+        "quando",
+        "greeting"
+      ],
+      "acceptableAnswers": [
+        "Resto alla porta. Quando arriva gente, dico buongiorno."
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch34-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-34",
+      "sourceSentenceId": "s38",
+      "promptEn": "We did our work. Now we wait for the people.",
+      "expectedIt": "Abbiamo fatto il nostro lavoro. Adesso aspettiamo le persone.",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "aspettare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch35-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-35",
+      "sourceSentenceId": "s03",
+      "promptEn": "Maybe nobody is coming.",
+      "expectedIt": "Forse non viene nessuno.",
+      "level": "A2",
+      "focus": [
+        "negation"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch35-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-35",
+      "sourceSentenceId": "s09",
+      "promptEn": "So, we are here. Where is the coffee? And the bread?",
+      "expectedIt": "Allora, siamo qui. Dov’è il caffè? E il pane?",
+      "level": "A2",
+      "focus": [
+        "question",
+        "food"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch35-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-35",
+      "sourceSentenceId": "s18",
+      "promptEn": "So many people. I had not seen this in a long time.",
+      "expectedIt": "Tanta gente. Non lo vedevo da tanto tempo.",
+      "level": "A2",
+      "focus": [
+        "gente",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch35-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-35",
+      "sourceSentenceId": "s39",
+      "promptEn": "All right. I stay.",
+      "expectedIt": "Va bene. Resto.",
+      "level": "A2",
+      "focus": [
+        "restare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch36-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-36",
+      "sourceSentenceId": "s03",
+      "promptEn": "Me? I don't know. I am afraid.",
+      "expectedIt": "Io? Non so. Ho paura.",
+      "level": "A2",
+      "focus": [
+        "paura"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch36-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-36",
+      "sourceSentenceId": "s09",
+      "promptEn": "If you like it, come back. Not only today. Also Monday, also Thursday.",
+      "expectedIt": "Se vi piace, tornate. Non solo oggi. Anche lunedì, anche giovedì.",
+      "level": "A2",
+      "focus": [
+        "se",
+        "piacere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch36-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-36",
+      "sourceSentenceId": "s24",
+      "promptEn": "Today the café worked. I saw the people.",
+      "expectedIt": "Oggi il caffè ha funzionato. Ho visto le persone.",
+      "acceptableAnswers": [
+        "Oggi il caffè ha funzionato e ho visto le persone."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "passato_prossimo",
+        "lavoro"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch36-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-36",
+      "sourceSentenceId": "s42",
+      "promptEn": "Today is enough. Tomorrow is Monday. We work.",
+      "expectedIt": "Oggi è abbastanza. Domani è lunedì. Lavoriamo.",
+      "level": "A2",
+      "focus": [
+        "oggi",
+        "domani"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch37-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-37",
+      "sourceSentenceId": "s05",
+      "promptEn": "Good morning. See? Someone came back.",
+      "expectedIt": "Buongiorno. Vedi? Qualcuno è tornato.",
+      "level": "A2",
+      "focus": [
+        "greeting",
+        "tornare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch37-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-37",
+      "sourceSentenceId": "s09",
+      "promptEn": "I'm not selling. Not now. The café stays. At least this month, and the next.",
+      "expectedIt": "Non vendo. Non adesso. Il caffè resta. Almeno questo mese, e il prossimo.",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "restare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch37-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-37",
+      "sourceSentenceId": "s13",
+      "promptEn": "Yes. I accept. I need the pay, and I like this place.",
+      "expectedIt": "Sì. Accetto. Ho bisogno dello stipendio, e mi piace questo posto.",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "piacere"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch37-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-37",
+      "sourceSentenceId": "s23",
+      "promptEn": "Clear. It is not forever. It is for now.",
+      "expectedIt": "Chiaro. Non è per sempre. È per adesso.",
+      "level": "A2",
+      "focus": [
+        "contrast"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch38-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-38",
+      "sourceSentenceId": "s05",
+      "promptEn": "Yes. I have more money. This month's rent is safer.",
+      "expectedIt": "Sì. Ho più soldi. L’affitto di questo mese è più sicuro.",
+      "level": "A2",
+      "focus": [
+        "avere",
+        "soldi"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch38-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-38",
+      "sourceSentenceId": "s09",
+      "promptEn": "I want to stay in Rome. I want to work. But I don't want only work.",
+      "expectedIt": "Voglio restare a Roma. Voglio lavorare. Ma non voglio solo il lavoro.",
+      "level": "A2",
+      "focus": [
+        "volere",
+        "restare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch38-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-38",
+      "sourceSentenceId": "s10",
+      "promptEn": "I want time for friends and for home.",
+      "expectedIt": "Voglio tempo per gli amici e per la casa.",
+      "level": "A2",
+      "focus": [
+        "volere",
+        "tempo"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch38-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-38",
+      "sourceSentenceId": "s34",
+      "promptEn": "Tomorrow I talk with the owner. I ask for more hours, but not all.",
+      "expectedIt": "Domani parlo con il padrone. Chiedo più ore, ma non tutte.",
+      "level": "A2",
+      "focus": [
+        "domani",
+        "parlare"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch39-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-39",
+      "sourceSentenceId": "s02",
+      "promptEn": "I want more hours, but not all. Monday and Wednesday evenings I want free time.",
+      "expectedIt": "Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero.",
+      "level": "A2",
+      "focus": [
+        "volere",
+        "orario"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch39-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-39",
+      "sourceSentenceId": "s10",
+      "promptEn": "I'm looking for work. I haven't found a big place. But I can help here.",
+      "expectedIt": "Cerco lavoro. Non ho trovato un posto grande. Ma posso aiutare qui.",
+      "level": "A2",
+      "focus": [
+        "cercare",
+        "lavoro"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch39-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-39",
+      "sourceSentenceId": "s15",
+      "promptEn": "Yes, I want this job. Thanks.",
+      "expectedIt": "Sì, voglio questo lavoro. Grazie.",
+      "acceptableAnswers": [
+        "Voglio questo lavoro. Grazie."
+      ],
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "volere"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch39-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-39",
+      "sourceSentenceId": "s39",
+      "promptEn": "The café is staying. I organize.",
+      "expectedIt": "Il caffè resta. Io organizzo.",
+      "match": "flexible",
+      "level": "A2",
+      "focus": [
+        "lavoro",
+        "summary"
+      ]
+    },
+    {
+      "exerciseId": "luca-a-roma-ch40-prod-01",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-40",
+      "sourceSentenceId": "s20",
+      "promptEn": "For now I stay in Rome. This work, this home, these people.",
+      "expectedIt": "Per adesso resto a Roma. Questo lavoro, questa casa, queste persone.",
+      "level": "A2",
+      "focus": [
+        "restare",
+        "roma"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch40-prod-02",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-40",
+      "sourceSentenceId": "s22",
+      "promptEn": "Thanks. The proposal is good. But for now I stay here. I'm not leaving.",
+      "expectedIt": "Grazie. La proposta è buona. Ma per adesso resto qui. Non parto.",
+      "level": "A2",
+      "focus": [
+        "restare",
+        "negation"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch40-prod-03",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-40",
+      "sourceSentenceId": "s28",
+      "promptEn": "I said no. For now I stay. The schedule here works for me.",
+      "expectedIt": "Ho detto no. Per adesso resto. L’orario qui mi va bene.",
+      "level": "A2",
+      "focus": [
+        "restare",
+        "orario"
+      ],
+      "match": "flexible"
+    },
+    {
+      "exerciseId": "luca-a-roma-ch40-prod-04",
+      "storyId": "luca-a-roma",
+      "chapterId": "luca-a-roma-40",
+      "sourceSentenceId": "s47",
+      "promptEn": "Today we work. Tomorrow too. This is the job, for now.",
+      "expectedIt": "Oggi lavoriamo. Domani anche. Questo è il lavoro, per adesso.",
+      "level": "A2",
+      "focus": [
+        "oggi",
+        "lavoro"
+      ],
+      "match": "flexible"
+    }
+  ]
+}

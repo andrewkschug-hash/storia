@@ -1,0 +1,278 @@
+{
+  "id": "luca-prima-di-roma-02-04",
+  "storyId": "luca-prima-di-roma-02",
+  "number": 4,
+  "title": "The calendar",
+  "titleIt": "Il calendario",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "soggiorno-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "chiara"
+  ],
+  "primaryDomain": "dates",
+  "secondaryDomains": [
+    "days",
+    "numbers"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-02-04",
+      "summary": "They read the calendar: today is Monday 12 May.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "chiara"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "soggiorno-pietralba"
+      ],
+      "rememberedFacts": [
+        "Today is 12 May",
+        "May is a month",
+        "The year has twelve months"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Che giorno è oggi?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "giorno",
+            "essere",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Oggi è lunedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Oggi è il dodici maggio.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "il",
+            "dodici",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Maggio è un mese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "maggio",
+            "essere",
+            "un",
+            "mese"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "L’anno ha dodici mesi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "anno",
+            "avere",
+            "dodici",
+            "mese"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Gennaio febbraio marzo.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "gennaio",
+            "febbraio",
+            "marzo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Aprile maggio giugno.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "aprile",
+            "maggio",
+            "giugno"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Luglio agosto settembre.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luglio",
+            "agosto",
+            "settembre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Ottobre novembre dicembre.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "ottobre",
+            "novembre",
+            "dicembre"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il dodici è un numero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "dodici",
+            "essere",
+            "un",
+            "numero"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Domani è il tredici maggio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "il",
+            "tredici",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Ieri è l'undici maggio.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "essere",
+            "undici",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il giorno è importante.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "giorno",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Oggi Luca guarda il mese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "guardare",
+            "il",
+            "mese"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Maggio è ora.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "maggio",
+            "essere",
+            "ora"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr02-ch04-q01",
+      "type": "direct",
+      "question": "What is today’s date?",
+      "choices": [
+        "11 May",
+        "12 May",
+        "13 June"
+      ],
+      "correctChoice": 1,
+      "explanation": "Oggi è il dodici maggio.",
+      "chapterId": "luca-prima-di-roma-02-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch04-q02",
+      "type": "direct",
+      "question": "How many months are in a year?",
+      "choices": [
+        "7",
+        "10",
+        "12"
+      ],
+      "correctChoice": 2,
+      "explanation": "L’anno ha dodici mesi.",
+      "chapterId": "luca-prima-di-roma-02-04",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr02-ch04-q03",
+      "type": "direct",
+      "question": "What is tomorrow’s date?",
+      "choices": [
+        "13 May",
+        "12 May",
+        "1 January"
+      ],
+      "correctChoice": 0,
+      "explanation": "Domani è il tredici maggio.",
+      "chapterId": "luca-prima-di-roma-02-04",
+      "difficulty": 1
+    }
+  ]
+}

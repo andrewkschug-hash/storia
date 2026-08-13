@@ -1,0 +1,320 @@
+{
+  "id": "luca-prima-di-roma-01-06",
+  "storyId": "luca-prima-di-roma-01",
+  "number": 6,
+  "title": "Numbers at home",
+  "titleIt": "I numeri in casa",
+  "difficultyLevel": 1,
+  "locationIds": [
+    "casa-pietralba",
+    "cucina-pietralba"
+  ],
+  "characterIds": [
+    "luca",
+    "marta",
+    "paolo",
+    "chiara",
+    "lidia"
+  ],
+  "primaryDomain": "numbers",
+  "secondaryDomains": [
+    "family"
+  ],
+  "events": [
+    {
+      "id": "ev-luca-prima-di-roma-01-06",
+      "summary": "The family uses numbers: house number 12, phone digits, and five people at dinner.",
+      "characterIds": [
+        "luca",
+        "marta",
+        "paolo",
+        "chiara",
+        "lidia"
+      ],
+      "locationIds": [
+        "casa-pietralba",
+        "cucina-pietralba"
+      ],
+      "rememberedFacts": [
+        "The house number is 12",
+        "Five people eat at home",
+        "Luca recites phone digits"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La famiglia è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il numero della casa è dodici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "numero",
+            "della",
+            "casa",
+            "essere",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Dodici è un numero.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "dodici",
+            "essere",
+            "un",
+            "numero"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Quante persone ci sono?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "persona",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ci sono cinque persone.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "essere",
+            "cinque",
+            "persona"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Uno due tre quattro cinque.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "uno",
+            "due",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Siamo cinque a cena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "cinque",
+            "a",
+            "cena"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s08",
+          "text": "Il mio numero è questo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "mio",
+            "numero",
+            "essere",
+            "questo"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Tre quattro uno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tre",
+            "quattro",
+            "uno"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Due due zero.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "due",
+            "zero"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Otto nove sette.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "otto",
+            "nove",
+            "sette"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il telefono è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Nonna Lidia ha ottanta anni?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "nonna",
+            "lidia",
+            "avere",
+            "ottanta",
+            "anno"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "No.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "no"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Ho settanta anni.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "settanta",
+            "anno"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Settanta è un numero grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "settanta",
+            "essere",
+            "un",
+            "numero",
+            "grande"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Dodici cinque settanta.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "dodici",
+            "cinque",
+            "settanta"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "I numeri sono in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "numero",
+            "essere",
+            "in",
+            "casa"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "lpr01-ch06-q01",
+      "type": "direct",
+      "question": "What is the house number?",
+      "choices": [
+        "5",
+        "12",
+        "70"
+      ],
+      "correctChoice": 1,
+      "explanation": "Il numero della casa è dodici.",
+      "chapterId": "luca-prima-di-roma-01-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch06-q02",
+      "type": "direct",
+      "question": "How many people are at dinner?",
+      "choices": [
+        "Two",
+        "Five",
+        "Twelve"
+      ],
+      "correctChoice": 1,
+      "explanation": "Siamo cinque a cena.",
+      "chapterId": "luca-prima-di-roma-01-06",
+      "difficulty": 1
+    },
+    {
+      "id": "lpr01-ch06-q03",
+      "type": "character",
+      "question": "How old is Nonna Lidia?",
+      "choices": [
+        "24",
+        "70",
+        "80"
+      ],
+      "correctChoice": 1,
+      "explanation": "She says settanta, not ottanta.",
+      "chapterId": "luca-prima-di-roma-01-06",
+      "difficulty": 1
+    }
+  ]
+}

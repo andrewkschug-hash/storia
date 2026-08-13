@@ -59,6 +59,12 @@ export {
   type StoryArc,
 } from '@/src/cefr/arcs';
 export {
+  collectA1ReadinessSignals,
+  evaluateCrossStoryA1Readiness,
+  type A1ReadinessSignal,
+  type CrossStoryA1Readiness,
+} from '@/src/cefr/crossStoryReadiness';
+export {
   createArcAuthoringTemplate,
   type ArcAuthoringTemplate,
 } from '@/src/cefr/authoring';

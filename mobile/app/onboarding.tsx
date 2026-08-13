@@ -30,7 +30,7 @@ export default function OnboardingScreen() {
 
   const finish = async () => {
     await markOnboardingComplete();
-    router.replace('/(tabs)');
+    router.replace('/(tabs)/home');
   };
 
   const wordLookup: DictionaryLookup = {
@@ -210,12 +210,18 @@ export default function OnboardingScreen() {
         <DictionarySheet
           lookup={lookup}
           saved={false}
+          saveLabel="Next"
+          closeLabel="Next"
           onClose={() => {
             setLookup(null);
             if (step === 'word') setStep('sentence');
             else if (step === 'sentence') setStep('recap');
           }}
-          onSave={() => {}}
+          onSave={() => {
+            setLookup(null);
+            if (step === 'word') setStep('sentence');
+            else if (step === 'sentence') setStep('recap');
+          }}
         />
       </View>
     </AtmosphereBackground>
