@@ -187,7 +187,7 @@ export function StoryReader({
               styles.recapBtn,
               { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
             ]}>
-            <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Recap</Text>
+            <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Next</Text>
           </Pressable>
         </View>
       ) : null}

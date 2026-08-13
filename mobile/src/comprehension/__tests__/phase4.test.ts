@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 
 import { loadContentBundle } from '@/src/content/loadContentBundle';
 import { ComprehensionQuestionSchema } from '@/src/content/schemas';
-import { evaluateAnswer, scoreAnswers } from '@/src/comprehension/evaluate';
+import { evaluateAnswer, scoreAnswers, shuffleQuestionChoices } from '@/src/comprehension/evaluate';
 import { ProgressService } from '@/src/progress/ProgressService';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
 
@@ -105,6 +105,36 @@ describe('Phase 4 answer evaluation', () => {
     expect(scored.incorrect).toBe(1);
     expect(scored.attempted).toBe(4);
     expect(scored.score).toBeCloseTo(2 / 3);
+  });
+});
+
+describe('Phase 4 choice shuffling', () => {
+  const bundle = loadBundle();
+
+  it('keeps the same correct answer text after shuffle', () => {
+    const original = [...bundle.chapters.values()][0].questions[0];
+    const shuffled = shuffleQuestionChoices(original);
+    expect(shuffled.choices[shuffled.correctChoice]).toBe(original.choices[original.correctChoice]);
+    expect(shuffled.choices.slice().sort()).toEqual(original.choices.slice().sort());
+  });
+
+  it('does not leave every correct answer in slot 0 across the catalog', () => {
+    const positions = new Set<number>();
+    for (const chapter of bundle.chapters.values()) {
+      for (const q of chapter.questions) {
+        positions.add(shuffleQuestionChoices(q).correctChoice);
+      }
+    }
+    expect(positions.size).toBeGreaterThan(1);
+    expect(positions.has(0)).toBe(true);
+  });
+
+  it('is deterministic for the same question id', () => {
+    const original = [...bundle.chapters.values()][0].questions[0];
+    const a = shuffleQuestionChoices(original);
+    const b = shuffleQuestionChoices(original);
+    expect(a.choices).toEqual(b.choices);
+    expect(a.correctChoice).toBe(b.correctChoice);
   });
 });
 

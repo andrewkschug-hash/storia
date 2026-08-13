@@ -101,7 +101,7 @@ function RootLayoutNav() {
         <Stack.Screen
           name="recap/[chapterId]"
           options={{
-            title: 'Recap',
+            title: 'Next',
             headerBackTitle: 'Back',
             headerShadowVisible: false,
           }}
