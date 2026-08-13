@@ -14,6 +14,7 @@ import { ReaderSentence } from '@/src/components/ReaderSentence';
 import { ChapterEndNotes } from '@/src/components/ChapterEndNotes';
 import type { ChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
+import { useLayout } from '@/src/theme/useLayout';
 import { Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
@@ -66,6 +67,7 @@ export function StoryReader({
   onScrollProgress,
 }: Props) {
   const { colors } = useTheme();
+  const layout = useLayout();
   const scrollRef = useRef<ScrollView>(null);
   const didRestore = useRef(false);
   const layoutH = useRef(0);
@@ -102,7 +104,17 @@ export function StoryReader({
     <ScrollView
       ref={scrollRef}
       style={{ flex: 1, backgroundColor: colors.readerSurface }}
-      contentContainerStyle={styles.content}
+      contentContainerStyle={[
+        styles.content,
+        {
+          paddingHorizontal: layout.isPhone
+            ? Math.max(Spacing.md, layout.paddingHorizontal)
+            : Spacing.xl,
+          maxWidth: layout.isDesktop ? 720 : layout.isTablet ? 680 : undefined,
+          width: '100%',
+          alignSelf: 'center',
+        },
+      ]}
       showsVerticalScrollIndicator={false}
       scrollEventThrottle={16}
       onScroll={onScroll}
@@ -117,7 +129,16 @@ export function StoryReader({
       <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
         Capitolo {chapter.number}
       </Text>
-      <Text style={[Typography.chapterTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+      <Text
+        style={[
+          Typography.chapterTitle,
+          {
+            color: colors.text,
+            marginTop: Spacing.sm,
+            fontSize: layout.isPhone ? 24 : 28,
+            lineHeight: layout.isPhone ? 30 : 34,
+          },
+        ]}>
         {chapter.titleIt}
       </Text>
 
@@ -176,7 +197,6 @@ export function StoryReader({
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: Spacing.readerHorizontal,
     paddingTop: Spacing.lg,
     paddingBottom: Spacing.xxl,
   },
@@ -213,5 +233,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
     borderRadius: 10,
+    minHeight: 44,
+    justifyContent: 'center',
   },
 });

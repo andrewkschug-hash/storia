@@ -28,6 +28,10 @@ vi.mock('@react-native-async-storage/async-storage', () => {
   };
 });
 
+vi.mock('react-native', () => ({
+  Platform: { OS: 'web' },
+}));
+
 describe('local account persistence', () => {
   beforeEach(async () => {
     await clearAccount();

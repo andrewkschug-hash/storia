@@ -8,16 +8,19 @@ import { getAccount } from '@/src/account/storage';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { getChapter } from '@/src/content';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
+import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function HomeScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
+  const layout = useLayout();
   const { story, progress, loading, error, service, refresh } = useReadingProgress();
   const { home, refresh: refreshVocab, summary } = useVocabulary(progress);
   const [gateReady, setGateReady] = useState(false);
@@ -72,83 +75,108 @@ export default function HomeScreen() {
   const percent = service.getReadingPercentComplete(progress);
   const chapterPercent = service.getChapterReadingPercent(continueChapter, progress.lastSentenceId);
 
+  const brandSize = layout.isPhone ? (layout.width < 360 ? 34 : 38) : 42;
+
   return (
     <AtmosphereBackground>
       <ScrollView
-        contentContainerStyle={[
-          styles.content,
-          { paddingTop: insets.top + Spacing.lg, paddingBottom: insets.bottom + Spacing.xl },
-        ]}
+        contentContainerStyle={{
+          paddingTop: insets.top + Spacing.lg,
+          paddingBottom: insets.bottom + Spacing.xl,
+          flexGrow: 1,
+        }}
         showsVerticalScrollIndicator={false}>
-        <Text style={[Typography.brand, { color: colors.text }]}>Storia</Text>
-        <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-          {story.titleIt}
-        </Text>
-        <Text
-          style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}
-          numberOfLines={1}>
-          {story.synopsis}
-        </Text>
-
-        <View style={styles.section}>
-          <ContinueReadingCard
-            chapterTitleIt={continueChapter.titleIt}
-            progress={{
-              storyId: story.id,
-              chapterId: continueChapter.id,
-              chapterNumber: continueChapter.number,
-              totalChapters: story.chapters.length,
-              percentComplete: percent,
-              chapterPercentComplete: chapterPercent,
-              chaptersCompleted: completed,
-              storiesCompleted: completed === story.chapters.length ? 1 : 0,
-              wordsEncountered: summary?.encountered ?? 0,
-              wordsFamiliar: summary?.familiar ?? 0,
-              readingStreakDays: progress.streakDays,
-            }}
-            onContinue={async () => {
-              await service.openChapter(continueChapter.id);
-              router.push(`/reader/${continueChapter.id}`);
-            }}
-          />
-          <Pressable
-            accessibilityRole="link"
-            accessibilityLabel="Browse all chapters"
-            onPress={() => router.push('/(tabs)/stories')}
-            style={({ pressed }) => [
-              styles.browseLink,
-              { opacity: pressed ? 0.7 : 1 },
+        <ScreenContent>
+          <Text
+            style={[
+              Typography.brand,
+              { color: colors.text, fontSize: brandSize, lineHeight: brandSize + 6 },
             ]}>
-            <Text style={[Typography.label, { color: colors.tint }]}>Browse all chapters</Text>
-          </Pressable>
-        </View>
+            Storia
+          </Text>
+          <Text
+            style={[
+              Typography.heroTitle,
+              {
+                color: colors.text,
+                marginTop: Spacing.sm,
+                fontSize: layout.isPhone ? 26 : 32,
+                lineHeight: layout.isPhone ? 32 : 40,
+              },
+            ]}>
+            {story.titleIt}
+          </Text>
+          <Text
+            style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}
+            numberOfLines={layout.isPhone ? 2 : 1}>
+            {story.synopsis}
+          </Text>
 
-        <View style={[styles.statsRow, styles.section]}>
-          <StatChip label="Words" value={String(summary?.encountered ?? 0)} colors={colors} />
-          <StatChip
-            label="Streak"
-            value={progress.streakDays > 0 ? `${progress.streakDays}d` : '—'}
-            colors={colors}
-            showFlame
-          />
-          <StatChip label="Chapters" value={`${completed}/${story.chapters.length}`} colors={colors} />
-        </View>
-
-        {home ? (
           <View style={styles.section}>
-            <ReviewNudge copy={home} />
+            <ContinueReadingCard
+              chapterTitleIt={continueChapter.titleIt}
+              progress={{
+                storyId: story.id,
+                chapterId: continueChapter.id,
+                chapterNumber: continueChapter.number,
+                totalChapters: story.chapters.length,
+                percentComplete: percent,
+                chapterPercentComplete: chapterPercent,
+                chaptersCompleted: completed,
+                storiesCompleted: completed === story.chapters.length ? 1 : 0,
+                wordsEncountered: summary?.encountered ?? 0,
+                wordsFamiliar: summary?.familiar ?? 0,
+                readingStreakDays: progress.streakDays,
+              }}
+              onContinue={async () => {
+                await service.openChapter(continueChapter.id);
+                router.push(`/reader/${continueChapter.id}`);
+              }}
+            />
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel="Browse all chapters"
+              onPress={() => router.push('/(tabs)/stories')}
+              style={({ pressed }) => [
+                styles.browseLink,
+                { opacity: pressed ? 0.7 : 1 },
+              ]}>
+              <Text style={[Typography.label, { color: colors.tint }]}>Browse all chapters</Text>
+            </Pressable>
           </View>
-        ) : null}
 
-        {typeof __DEV__ !== 'undefined' && __DEV__ ? (
-          <View style={[styles.devSection, { borderColor: colors.border }]}>
-            <Text style={[Typography.caption, { color: colors.textMuted }]}>Developer</Text>
-            <DevLink label="Voice Lab" href="/voice-lab" colors={colors} />
-            <DevLink label="Audio studio" href="/audio-studio" colors={colors} />
-            <DevLink label="CEFR audit" href="/cefr-audit" colors={colors} />
-            <DevLink label="Adaptive debug" href="/adaptive-debug" colors={colors} />
+          <View
+            style={[
+              styles.statsRow,
+              styles.section,
+              layout.width < 360 && styles.statsRowCompact,
+            ]}>
+            <StatChip label="Words" value={String(summary?.encountered ?? 0)} colors={colors} />
+            <StatChip
+              label="Streak"
+              value={progress.streakDays > 0 ? `${progress.streakDays}d` : '—'}
+              colors={colors}
+              showFlame
+            />
+            <StatChip label="Chapters" value={`${completed}/${story.chapters.length}`} colors={colors} />
           </View>
-        ) : null}
+
+          {home ? (
+            <View style={styles.section}>
+              <ReviewNudge copy={home} />
+            </View>
+          ) : null}
+
+          {typeof __DEV__ !== 'undefined' && __DEV__ ? (
+            <View style={[styles.devSection, { borderColor: colors.border }]}>
+              <Text style={[Typography.caption, { color: colors.textMuted }]}>Developer</Text>
+              <DevLink label="Voice Lab" href="/voice-lab" colors={colors} />
+              <DevLink label="Audio studio" href="/audio-studio" colors={colors} />
+              <DevLink label="CEFR audit" href="/cefr-audit" colors={colors} />
+              <DevLink label="Adaptive debug" href="/adaptive-debug" colors={colors} />
+            </View>
+          ) : null}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -213,22 +241,25 @@ function DevLink({
 }
 
 const styles = StyleSheet.create({
-  content: {
-    paddingHorizontal: Spacing.lg,
-  },
   section: {
     marginTop: Spacing.xl,
   },
   browseLink: {
     alignSelf: 'flex-start',
     marginTop: Spacing.md,
+    minHeight: 44,
+    justifyContent: 'center',
   },
   statsRow: {
     flexDirection: 'row',
     gap: Spacing.sm,
   },
+  statsRowCompact: {
+    flexWrap: 'wrap',
+  },
   statChip: {
     flex: 1,
+    minWidth: 96,
     borderRadius: Radii.md,
     borderWidth: StyleSheet.hairlineWidth,
     paddingVertical: Spacing.md,

@@ -6,10 +6,10 @@ import {
   KeyboardAvoidingView,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
-  useWindowDimensions,
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -17,10 +17,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { getAccount, signInWithPassword, signUpWithPassword } from '@/src/account/storage';
 import { isSupabaseConfigured } from '@/src/lib/supabase';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
+import { useLayout } from '@/src/theme/useLayout';
 import { palette, Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
-
-const WIDE_BREAKPOINT = 800;
 
 const mediterranean = {
   light: {
@@ -77,8 +76,8 @@ export default function AccountScreen() {
   const { scheme } = useTheme();
   const tone = mediterranean[scheme];
   const insets = useSafeAreaInsets();
-  const { width } = useWindowDimensions();
-  const wide = width >= WIDE_BREAKPOINT;
+  const layout = useLayout();
+  const wide = layout.isDesktop;
   const [checking, setChecking] = useState(true);
   const [mode, setMode] = useState<'signup' | 'signin'>('signup');
   const [displayName, setDisplayName] = useState('');
@@ -102,6 +101,11 @@ export default function AccountScreen() {
       setChecking(false);
     })();
   }, []);
+
+  const switchMode = (next: 'signup' | 'signin') => {
+    setMode(next);
+    setError(null);
+  };
 
   const onContinue = async () => {
     const name = displayName.trim();
@@ -138,7 +142,18 @@ export default function AccountScreen() {
     }
   };
 
-  const shell = (
+  const brandFontSize = layout.isPhone ? (layout.width < 360 ? 34 : 38) : 42;
+  const panelMinHeight = layout.isCompactHeight
+    ? layout.isPhone
+      ? 112
+      : 160
+    : layout.isPhone
+      ? 132
+      : wide
+        ? 420
+        : 180;
+
+  return (
     <LinearGradient colors={[tone.top, tone.mid, tone.bottom]} locations={[0, 0.45, 1]} style={styles.flex}>
       {checking ? (
         <View style={styles.center}>
@@ -147,234 +162,294 @@ export default function AccountScreen() {
       ) : (
         <KeyboardAvoidingView
           style={styles.flex}
-          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-          <View
-            style={[
-              styles.wrap,
-              wide && styles.wrapWide,
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+          keyboardVerticalOffset={Platform.OS === 'ios' ? 8 : 0}>
+          <ScrollView
+            contentContainerStyle={[
+              styles.scrollContent,
+              wide && styles.scrollContentWide,
               {
-                paddingTop: insets.top + Spacing.lg,
+                paddingTop: insets.top + (layout.isPhone ? Spacing.md : Spacing.lg),
                 paddingBottom: insets.bottom + Spacing.lg,
+                paddingHorizontal: layout.paddingHorizontal,
               },
-            ]}>
-            <View
-              style={[
-                styles.storyPanel,
-                wide ? styles.storyPanelWide : styles.storyPanelNarrow,
-                { backgroundColor: tone.panel },
-              ]}>
-              <LinearGradient
-                colors={[tone.panel, tone.panelDeep]}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 1 }}
-                style={StyleSheet.absoluteFill}
-              />
-              <Text style={[Typography.brand, { color: tone.ink }]}>Storia</Text>
-              <View style={[styles.brandRule, { backgroundColor: tone.terracotta }]} />
-              <Text
+            ]}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
+            bounces={false}>
+            <View style={[styles.wrap, wide && styles.wrapWide, { maxWidth: wide ? 980 : layout.contentMaxWidth }]}>
+              <View
                 style={[
-                  Typography.body,
+                  styles.storyPanel,
+                  wide ? styles.storyPanelWide : styles.storyPanelStacked,
                   {
-                    color: tone.inkSoft,
-                    fontFamily: 'Literata_400Regular_Italic',
-                    marginTop: Spacing.md,
+                    backgroundColor: tone.panel,
+                    minHeight: panelMinHeight,
                   },
                 ]}>
-                La tua storia comincia qui
-              </Text>
-              {wide ? (
-                <Text style={[Typography.caption, { color: tone.caption, marginTop: Spacing.lg, maxWidth: 280 }]}>
-                  Read Italian through stories — one page at a time.
+                <LinearGradient
+                  colors={[tone.panel, tone.panelDeep]}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 1 }}
+                  style={StyleSheet.absoluteFill}
+                />
+                <Text style={[Typography.brand, { color: tone.ink, fontSize: brandFontSize, lineHeight: brandFontSize + 6 }]}>
+                  Storia
                 </Text>
-              ) : null}
-            </View>
-
-            <View style={[styles.formColumn, wide && styles.formColumnWide]}>
-              <Text style={[Typography.heroTitle, { color: tone.ink }]}>
-                {mode === 'signup' ? 'Create your account' : 'Welcome back'}
-              </Text>
-              <Text
-                style={[
-                  Typography.caption,
-                  {
-                    color: tone.caption,
-                    marginTop: Spacing.sm,
-                    fontFamily: 'Literata_400Regular_Italic',
-                  },
-                ]}>
-                {supabaseReady
-                  ? 'Your email and password are saved securely with Supabase.'
-                  : 'Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY to enable cloud accounts.'}
-              </Text>
-
-              <View style={styles.form}>
-                {mode === 'signup' ? (
-                  <>
-                    <Text style={[Typography.label, { color: tone.ink }]}>Display name</Text>
-                    <TextInput
-                      value={displayName}
-                      onChangeText={setDisplayName}
-                      placeholder="Your name"
-                      placeholderTextColor={tone.caption}
-                      autoCapitalize="words"
-                      autoCorrect={false}
-                      onFocus={() => setFocusedField('name')}
-                      onBlur={() => setFocusedField((f) => (f === 'name' ? null : f))}
-                      style={[
-                        styles.input,
-                        Typography.body,
-                        {
-                          color: tone.ink,
-                          backgroundColor: tone.paper,
-                          borderColor: focusedField === 'name' ? tone.borderFocus : tone.border,
-                          borderWidth: focusedField === 'name' ? 1.5 : StyleSheet.hairlineWidth * 2,
-                        },
-                      ]}
-                    />
-                  </>
+                <View style={[styles.brandRule, { backgroundColor: tone.terracotta }]} />
+                <Text
+                  style={[
+                    Typography.body,
+                    {
+                      color: tone.inkSoft,
+                      fontFamily: 'Literata_400Regular_Italic',
+                      marginTop: Spacing.md,
+                      fontSize: layout.isPhone ? 15 : 16,
+                    },
+                  ]}>
+                  La tua storia comincia qui
+                </Text>
+                {!(layout.isPhone && layout.isCompactHeight) ? (
+                  <Text
+                    style={[
+                      Typography.caption,
+                      {
+                        color: tone.caption,
+                        marginTop: Spacing.md,
+                        maxWidth: wide ? 280 : undefined,
+                      },
+                    ]}>
+                    Read Italian through stories — one page at a time.
+                  </Text>
                 ) : null}
 
-                <Text style={[Typography.label, { color: tone.ink, marginTop: mode === 'signup' ? Spacing.lg : 0 }]}>
-                  Email
-                </Text>
-                <TextInput
-                  value={email}
-                  onChangeText={setEmail}
-                  placeholder="you@example.com"
-                  placeholderTextColor={tone.caption}
-                  keyboardType="email-address"
-                  autoCapitalize="none"
-                  autoCorrect={false}
-                  autoComplete="email"
-                  onFocus={() => setFocusedField('email')}
-                  onBlur={() => setFocusedField((f) => (f === 'email' ? null : f))}
-                  style={[
-                    styles.input,
-                    Typography.body,
-                    {
-                      color: tone.ink,
-                      backgroundColor: tone.paper,
-                      borderColor: focusedField === 'email' ? tone.borderFocus : tone.border,
-                      borderWidth: focusedField === 'email' ? 1.5 : StyleSheet.hairlineWidth * 2,
-                    },
-                  ]}
-                />
-
-                <Text style={[Typography.label, { color: tone.ink, marginTop: Spacing.lg }]}>Password</Text>
-                <TextInput
-                  value={password}
-                  onChangeText={setPassword}
-                  placeholder="At least 6 characters"
-                  placeholderTextColor={tone.caption}
-                  secureTextEntry
-                  autoCapitalize="none"
-                  autoCorrect={false}
-                  autoComplete={mode === 'signup' ? 'password-new' : 'password'}
-                  onFocus={() => setFocusedField('password')}
-                  onBlur={() => setFocusedField((f) => (f === 'password' ? null : f))}
-                  style={[
-                    styles.input,
-                    Typography.body,
-                    {
-                      color: tone.ink,
-                      backgroundColor: tone.paper,
-                      borderColor: focusedField === 'password' ? tone.borderFocus : tone.border,
-                      borderWidth: focusedField === 'password' ? 1.5 : StyleSheet.hairlineWidth * 2,
-                    },
-                  ]}
-                />
-
                 {mode === 'signup' ? (
-                  <>
-                    <Text style={[Typography.label, { color: tone.ink, marginTop: Spacing.lg }]}>
-                      Confirm password
+                  <Pressable
+                    onPress={() => switchMode('signin')}
+                    style={({ pressed }) => [
+                      styles.signInNowBtn,
+                      {
+                        borderColor: tone.ink,
+                        opacity: pressed ? 0.75 : 1,
+                        marginTop: layout.isPhone ? Spacing.lg : Spacing.xl,
+                      },
+                    ]}
+                    accessibilityRole="button"
+                    accessibilityLabel="Sign in now">
+                    <Text style={[Typography.button, { color: tone.ink, fontSize: 15 }]}>Sign in now</Text>
+                  </Pressable>
+                ) : null}
+              </View>
+
+              <View style={[styles.formColumn, wide && styles.formColumnWide]}>
+                <Text
+                  style={[
+                    Typography.heroTitle,
+                    {
+                      color: tone.ink,
+                      fontSize: layout.isPhone ? 26 : 32,
+                      lineHeight: layout.isPhone ? 32 : 40,
+                    },
+                  ]}>
+                  {mode === 'signup' ? 'Create your account' : 'Welcome back'}
+                </Text>
+                <Text
+                  style={[
+                    Typography.caption,
+                    {
+                      color: tone.caption,
+                      marginTop: Spacing.sm,
+                      fontFamily: 'Literata_400Regular_Italic',
+                    },
+                  ]}>
+                  {supabaseReady
+                    ? 'Your email and password are saved securely with Supabase.'
+                    : 'Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY to enable cloud accounts.'}
+                </Text>
+
+                <View style={styles.form}>
+                  {mode === 'signup' ? (
+                    <>
+                      <Text style={[Typography.label, { color: tone.ink }]}>Display name</Text>
+                      <TextInput
+                        value={displayName}
+                        onChangeText={setDisplayName}
+                        placeholder="Your name"
+                        placeholderTextColor={tone.caption}
+                        autoCapitalize="words"
+                        autoCorrect={false}
+                        onFocus={() => setFocusedField('name')}
+                        onBlur={() => setFocusedField((f) => (f === 'name' ? null : f))}
+                        style={[
+                          styles.input,
+                          Typography.body,
+                          {
+                            color: tone.ink,
+                            backgroundColor: tone.paper,
+                            borderColor: focusedField === 'name' ? tone.borderFocus : tone.border,
+                            borderWidth: focusedField === 'name' ? 1.5 : StyleSheet.hairlineWidth * 2,
+                          },
+                        ]}
+                      />
+                    </>
+                  ) : null}
+
+                  <Text
+                    style={[
+                      Typography.label,
+                      { color: tone.ink, marginTop: mode === 'signup' ? Spacing.lg : 0 },
+                    ]}>
+                    Email
+                  </Text>
+                  <TextInput
+                    value={email}
+                    onChangeText={setEmail}
+                    placeholder="you@example.com"
+                    placeholderTextColor={tone.caption}
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    autoComplete="email"
+                    onFocus={() => setFocusedField('email')}
+                    onBlur={() => setFocusedField((f) => (f === 'email' ? null : f))}
+                    style={[
+                      styles.input,
+                      Typography.body,
+                      {
+                        color: tone.ink,
+                        backgroundColor: tone.paper,
+                        borderColor: focusedField === 'email' ? tone.borderFocus : tone.border,
+                        borderWidth: focusedField === 'email' ? 1.5 : StyleSheet.hairlineWidth * 2,
+                      },
+                    ]}
+                  />
+
+                  <Text style={[Typography.label, { color: tone.ink, marginTop: Spacing.lg }]}>Password</Text>
+                  <TextInput
+                    value={password}
+                    onChangeText={setPassword}
+                    placeholder="At least 6 characters"
+                    placeholderTextColor={tone.caption}
+                    secureTextEntry
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    autoComplete={mode === 'signup' ? 'password-new' : 'password'}
+                    onFocus={() => setFocusedField('password')}
+                    onBlur={() => setFocusedField((f) => (f === 'password' ? null : f))}
+                    style={[
+                      styles.input,
+                      Typography.body,
+                      {
+                        color: tone.ink,
+                        backgroundColor: tone.paper,
+                        borderColor: focusedField === 'password' ? tone.borderFocus : tone.border,
+                        borderWidth: focusedField === 'password' ? 1.5 : StyleSheet.hairlineWidth * 2,
+                      },
+                    ]}
+                  />
+
+                  {mode === 'signup' ? (
+                    <>
+                      <Text style={[Typography.label, { color: tone.ink, marginTop: Spacing.lg }]}>
+                        Confirm password
+                      </Text>
+                      <TextInput
+                        value={confirmPassword}
+                        onChangeText={setConfirmPassword}
+                        placeholder="Repeat password"
+                        placeholderTextColor={tone.caption}
+                        secureTextEntry
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        autoComplete="password-new"
+                        onFocus={() => setFocusedField('confirm')}
+                        onBlur={() => setFocusedField((f) => (f === 'confirm' ? null : f))}
+                        style={[
+                          styles.input,
+                          Typography.body,
+                          {
+                            color: tone.ink,
+                            backgroundColor: tone.paper,
+                            borderColor: focusedField === 'confirm' ? tone.borderFocus : tone.border,
+                            borderWidth: focusedField === 'confirm' ? 1.5 : StyleSheet.hairlineWidth * 2,
+                          },
+                        ]}
+                      />
+                    </>
+                  ) : null}
+
+                  {error ? (
+                    <Text style={[Typography.caption, { color: tone.terracotta, marginTop: Spacing.sm }]}>
+                      {error}
                     </Text>
-                    <TextInput
-                      value={confirmPassword}
-                      onChangeText={setConfirmPassword}
-                      placeholder="Repeat password"
-                      placeholderTextColor={tone.caption}
-                      secureTextEntry
-                      autoCapitalize="none"
-                      autoCorrect={false}
-                      autoComplete="password-new"
-                      onFocus={() => setFocusedField('confirm')}
-                      onBlur={() => setFocusedField((f) => (f === 'confirm' ? null : f))}
-                      style={[
-                        styles.input,
-                        Typography.body,
-                        {
-                          color: tone.ink,
-                          backgroundColor: tone.paper,
-                          borderColor: focusedField === 'confirm' ? tone.borderFocus : tone.border,
-                          borderWidth: focusedField === 'confirm' ? 1.5 : StyleSheet.hairlineWidth * 2,
-                        },
-                      ]}
-                    />
-                  </>
-                ) : null}
+                  ) : null}
 
-                {error ? (
-                  <Text style={[Typography.caption, { color: tone.terracotta, marginTop: Spacing.sm }]}>
-                    {error}
-                  </Text>
-                ) : null}
+                  <View style={[styles.accentRule, { backgroundColor: tone.accent }]} />
 
-                <View style={[styles.accentRule, { backgroundColor: tone.accent }]} />
+                  <Pressable
+                    onPress={() => void onContinue()}
+                    disabled={saving}
+                    style={({ pressed }) => [
+                      styles.primaryBtn,
+                      {
+                        backgroundColor: tone.button,
+                        opacity: saving ? 0.6 : pressed ? 0.88 : 1,
+                      },
+                    ]}
+                    accessibilityRole="button">
+                    <Text style={[Typography.button, { color: tone.buttonLabel }]}>
+                      {saving ? 'Saving…' : mode === 'signup' ? 'Create account' : 'Sign in'}
+                    </Text>
+                  </Pressable>
 
-                <Pressable
-                  onPress={() => void onContinue()}
-                  disabled={saving}
-                  style={({ pressed }) => [
-                    styles.primaryBtn,
-                    {
-                      backgroundColor: tone.button,
-                      opacity: saving ? 0.6 : pressed ? 0.88 : 1,
-                    },
-                  ]}
-                  accessibilityRole="button">
-                  <Text style={[Typography.button, { color: tone.buttonLabel }]}>
-                    {saving ? 'Saving…' : mode === 'signup' ? 'Create account' : 'Sign in'}
-                  </Text>
-                </Pressable>
-
-                <Pressable
-                  onPress={() => {
-                    setMode((m) => (m === 'signup' ? 'signin' : 'signup'));
-                    setError(null);
-                  }}
-                  style={styles.switchMode}
-                  accessibilityRole="button">
-                  <Text style={[Typography.caption, { color: tone.inkSoft, textAlign: 'center' }]}>
-                    {mode === 'signup' ? 'Already have an account? Sign in' : 'New here? Create an account'}
-                  </Text>
-                </Pressable>
+                  {mode === 'signin' ? (
+                    <Pressable
+                      onPress={() => switchMode('signup')}
+                      style={styles.switchMode}
+                      accessibilityRole="button">
+                      <Text style={[Typography.caption, { color: tone.inkSoft, textAlign: 'center' }]}>
+                        New here? Create an account
+                      </Text>
+                    </Pressable>
+                  ) : (
+                    <Pressable
+                      onPress={() => switchMode('signin')}
+                      style={styles.switchMode}
+                      accessibilityRole="button"
+                      accessibilityLabel="Sign in now">
+                      <Text style={[Typography.caption, { color: tone.inkSoft, textAlign: 'center' }]}>
+                        Already have an account? Sign in now
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
               </View>
             </View>
-          </View>
+          </ScrollView>
         </KeyboardAvoidingView>
       )}
     </LinearGradient>
   );
-
-  return shell;
 }
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
-  wrap: {
-    flex: 1,
-    paddingHorizontal: Spacing.lg,
+  scrollContent: {
+    flexGrow: 1,
     justifyContent: 'center',
+  },
+  scrollContentWide: {
+    alignItems: 'center',
+  },
+  wrap: {
+    width: '100%',
+    alignSelf: 'center',
     gap: Spacing.lg,
   },
   wrapWide: {
     flexDirection: 'row',
     alignItems: 'stretch',
     justifyContent: 'center',
-    maxWidth: 980,
-    width: '100%',
-    alignSelf: 'center',
     gap: Spacing.xl,
   },
   storyPanel: {
@@ -383,21 +458,28 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.xl,
     paddingVertical: Spacing.xl,
   },
-  storyPanelNarrow: {
-    minHeight: 148,
+  storyPanelStacked: {
     justifyContent: 'flex-end',
   },
   storyPanelWide: {
     flex: 1,
     maxWidth: 420,
     justifyContent: 'center',
-    minHeight: 420,
   },
   brandRule: {
     width: 56,
     height: 2,
     marginTop: Spacing.md,
     borderRadius: 1,
+  },
+  signInNowBtn: {
+    alignSelf: 'flex-start',
+    paddingVertical: Spacing.sm + 2,
+    paddingHorizontal: Spacing.lg,
+    borderRadius: Radii.md,
+    borderWidth: 1.5,
+    minHeight: 44,
+    justifyContent: 'center',
   },
   formColumn: {
     width: '100%',
@@ -415,6 +497,7 @@ const styles = StyleSheet.create({
     borderRadius: Radii.sm,
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.md,
+    minHeight: 48,
   },
   accentRule: {
     height: StyleSheet.hairlineWidth * 2,
@@ -425,12 +508,16 @@ const styles = StyleSheet.create({
   },
   primaryBtn: {
     alignItems: 'center',
+    justifyContent: 'center',
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
+    minHeight: 48,
   },
   switchMode: {
     marginTop: Spacing.md,
     paddingVertical: Spacing.sm,
+    minHeight: 44,
+    justifyContent: 'center',
   },
   center: {
     flex: 1,
