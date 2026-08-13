@@ -10,6 +10,7 @@ import {
   isDeveloperEmail,
   roleForEmail,
   saveAccount,
+  signUpWithPassword,
 } from '@/src/account/storage';
 
 vi.mock('@react-native-async-storage/async-storage', () => {
@@ -75,6 +76,16 @@ describe('local account persistence', () => {
   it('rejects empty name or email', async () => {
     await expect(saveAccount({ displayName: '  ', email: 'a@b.com' })).rejects.toThrow();
     await expect(saveAccount({ displayName: 'Alex', email: '  ' })).rejects.toThrow();
+  });
+
+  it('signUpWithPassword falls back to local save when Supabase is not configured', async () => {
+    const saved = await signUpWithPassword({
+      displayName: 'Alex',
+      email: 'alex@example.com',
+      password: 'secret1',
+    });
+    expect(saved.email).toBe('alex@example.com');
+    expect(await hasLocalAccount()).toBe(true);
   });
 });
 

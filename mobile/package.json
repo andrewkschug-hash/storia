@@ -7,6 +7,7 @@
     "@expo-google-fonts/literata": "^0.4.3",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-navigation/native": "^7.3.16",
+    "@supabase/supabase-js": "^2.104.1",
     "expo": "~57.0.12",
     "expo-asset": "~57.0.10",
     "expo-audio": "~57.0.3",
@@ -50,7 +51,11 @@
     "audio:check-a1": "node scripts/check-a1-audio.js",
     "audio:generate-a1": "node scripts/generate-a1-audio.js",
     "audio:package-a1": "node scripts/package-a1-audio.js",
-    "audio:validate-a1": "node scripts/validate-a1-audio.js"
+    "audio:validate-a1": "node scripts/validate-a1-audio.js",
+    "audio:check-a2": "node scripts/check-a2-audio.js --skip-gateway",
+    "audio:generate-a2": "node scripts/generate-a2-audio.js",
+    "audio:package-a2": "node scripts/package-a2-audio.js --dry-run",
+    "audio:validate-a2": "node scripts/validate-a2-audio.js"
   },
   "private": true
 }
