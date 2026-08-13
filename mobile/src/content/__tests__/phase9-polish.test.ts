@@ -36,23 +36,34 @@ vi.mock('@react-native-async-storage/async-storage', () => {
 });
 
 describe('Phase 9 onboarding', () => {
+  const email = 'learner@example.com';
+
   beforeEach(async () => {
-    await resetOnboarding();
+    await resetOnboarding(email);
   });
 
   it('starts incomplete on first run', async () => {
-    expect(await hasCompletedOnboarding()).toBe(false);
+    expect(await hasCompletedOnboarding(email)).toBe(false);
   });
 
-  it('persists completion', async () => {
-    await markOnboardingComplete();
-    expect(await hasCompletedOnboarding()).toBe(true);
+  it('persists completion per account', async () => {
+    await markOnboardingComplete(email);
+    expect(await hasCompletedOnboarding(email)).toBe(true);
+    expect(await hasCompletedOnboarding('other@example.com')).toBe(false);
   });
 
   it('can reset for development', async () => {
-    await markOnboardingComplete();
-    await resetOnboarding();
-    expect(await hasCompletedOnboarding()).toBe(false);
+    await markOnboardingComplete(email);
+    await resetOnboarding(email);
+    expect(await hasCompletedOnboarding(email)).toBe(false);
+  });
+
+  it('migrates legacy device-wide flag onto the account', async () => {
+    const AsyncStorage = (await import('@react-native-async-storage/async-storage')).default;
+    await AsyncStorage.setItem('storia.hasCompletedOnboarding', '1');
+    expect(await hasCompletedOnboarding(email)).toBe(true);
+    expect(await AsyncStorage.getItem('storia.hasCompletedOnboarding')).toBeNull();
+    expect(await AsyncStorage.getItem('storia.hasCompletedOnboarding:learner@example.com')).toBe('1');
   });
 });
 

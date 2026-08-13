@@ -33,14 +33,14 @@ export default function HomeScreen() {
   );
 
   useEffect(() => {
-    // Gate order: local account → learner onboarding → tabs.
+    // Gate order: local account → learner onboarding (new accounts only) → tabs.
     void (async () => {
       const local = await getAccount();
       if (!local) {
         router.replace('/account' as Href);
         return;
       }
-      const onboarded = await hasCompletedOnboarding();
+      const onboarded = await hasCompletedOnboarding(local.email);
       if (!onboarded) {
         router.replace('/onboarding' as Href);
         return;
