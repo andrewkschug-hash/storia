@@ -22,7 +22,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-01-05",
-      "summary": "Luca introduces tall, friendly Davide to Marta.",
+      "summary": "Luca introduces tall, friendly Davide to Marta; they talk.",
       "characterIds": [
         "luca",
         "davide",
@@ -46,18 +46,62 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Davide è nel soggiorno.",
+          "text": "Davide è alla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "davide",
             "essere",
+            "alla",
+            "porta"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca apre la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aprire",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Ciao Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "davide"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ciao Luca.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Davide entra nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "entrare",
             "nel",
             "soggiorno"
           ]
         },
         {
-          "id": "s02",
+          "id": "s06",
           "text": "Marta arriva.",
           "speakerId": null,
           "kind": "narration",
@@ -67,7 +111,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s07",
           "text": "Mamma questo è Davide.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -79,7 +123,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s08",
           "text": "Davide è il mio amico.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -92,7 +136,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s09",
           "text": "Piacere.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -101,7 +145,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s10",
           "text": "Piacere signora.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -111,7 +155,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s11",
           "text": "Io mi chiamo Davide.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -123,7 +167,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s12",
           "text": "Davide è di Pietralba.",
           "speakerId": null,
           "kind": "narration",
@@ -141,7 +185,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s13",
           "text": "Davide è alto.",
           "speakerId": null,
           "kind": "narration",
@@ -152,7 +196,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s14",
           "text": "Luca non è alto.",
           "speakerId": null,
           "kind": "narration",
@@ -164,7 +208,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s15",
           "text": "Davide è simpatico.",
           "speakerId": null,
           "kind": "narration",
@@ -175,7 +219,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s16",
           "text": "Lui è un amico.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -187,7 +231,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s17",
           "text": "Lei è la mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -199,19 +243,7 @@
           ]
         },
         {
-          "id": "s14",
-          "text": "Siamo tutti a Pietralba.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "essere",
-            "tutto",
-            "a",
-            "pietralba"
-          ]
-        },
-        {
-          "id": "s15",
+          "id": "s18",
           "text": "Davide abita vicino.",
           "speakerId": null,
           "kind": "narration",
@@ -222,7 +254,31 @@
           ]
         },
         {
-          "id": "s16",
+          "id": "s19",
+          "text": "Dov'è la tua casa?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "la",
+            "tuo",
+            "casa"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La casa è vicina.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "casa",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s21",
           "text": "La casa di Davide è piccola.",
           "speakerId": null,
           "kind": "narration",
@@ -236,7 +292,127 @@
           ]
         },
         {
-          "id": "s17",
+          "id": "s22",
+          "text": "Anche questa casa è piccola.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "questo",
+            "casa",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Siamo tutti a Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "tutto",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Pietralba è un paese piccolo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "pietralba",
+            "essere",
+            "un",
+            "paese",
+            "piccolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Vuoi un caffè?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "un",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Sì grazie.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Marta è gentile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "gentile"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Davide è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca e Davide parlano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Siamo amici.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "amico"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Sì siamo amici.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "essere",
+            "amico"
+          ]
+        },
+        {
+          "id": "s32",
           "text": "Grazie.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -245,12 +421,73 @@
           ]
         },
         {
-          "id": "s18",
+          "id": "s33",
           "text": "Prego.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
             "prego"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Oggi è un giorno bello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "un",
+            "giorno",
+            "bello"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Davide resta un momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "restare",
+            "un",
+            "momento"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Marta ascolta gli amici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "ascoltare",
+            "gli",
+            "amico"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Davide è un amico importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "un",
+            "amico",
+            "importante"
           ]
         }
       ]
@@ -288,14 +525,14 @@
     {
       "id": "lpr01-ch05-q03",
       "type": "direct",
-      "question": "Where is Davide from?",
+      "question": "Where does Davide live?",
       "choices": [
-        "Rome",
-        "Pietralba",
-        "Milan"
+        "Far from town",
+        "Near Luca, in Pietralba",
+        "In Rome"
       ],
       "correctChoice": 1,
-      "explanation": "Davide è di Pietralba.",
+      "explanation": "Davide abita vicino. È di Pietralba.",
       "chapterId": "luca-prima-di-roma-01-05",
       "difficulty": 1
     }

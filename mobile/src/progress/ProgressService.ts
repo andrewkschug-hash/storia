@@ -1,8 +1,10 @@
 import type { Chapter, Story } from '@/src/content/schemas';
+import { unlockAllChapters } from '@/src/progress/unlockAll';
 import {
   createInitialProgress,
   normalizeProgress,
   type ChapterComprehensionRecord,
+  type ChapterProductionRecord,
   type ChapterStatus,
   type ComprehensionAnswerRecord,
   type ReadingProgressRecord,
@@ -53,6 +55,10 @@ export class ProgressService {
 
     if (progress.completedChapterIds.includes(chapterId)) {
       return 'completed';
+    }
+
+    if (unlockAllChapters()) {
+      return progress.currentChapterId === chapterId ? 'in_progress' : 'available';
     }
 
     if (chapter.number === 1) {
@@ -142,6 +148,33 @@ export class ProgressService {
       comprehensionByChapter: {
         ...progress.comprehensionByChapter,
         [chapterId]: record,
+      },
+      lastOpenedAt: new Date().toISOString(),
+    };
+    await this.repo.save(next);
+    return next;
+  }
+
+  /**
+   * Persist optional production self-assessment. Does not complete or lock the chapter.
+   */
+  async recordProduction(
+    chapterId: string,
+    record: Omit<ChapterProductionRecord, 'completedAt'> & { completedAt?: string | null },
+  ): Promise<ReadingProgressRecord> {
+    const progress = await this.getOrCreate();
+    const chapter = this.chaptersById.get(chapterId);
+    if (!chapter) throw new Error(`Unknown chapter ${chapterId}`);
+
+    const next: ReadingProgressRecord = {
+      ...progress,
+      productionByChapter: {
+        ...(progress.productionByChapter ?? {}),
+        [chapterId]: {
+          skipped: record.skipped,
+          attempts: [...record.attempts],
+          completedAt: record.completedAt ?? new Date().toISOString(),
+        },
       },
       lastOpenedAt: new Date().toISOString(),
     };

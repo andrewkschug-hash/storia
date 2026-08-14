@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-03-04",
-      "summary": "Luca chooses amounts: a kilo of apples, a bottle, a pack of pasta.",
+      "summary": "Luca chooses quantities: a kilo of apples, a hectogram of cheese, a bottle of oil and milk, a pack of pasta.",
       "characterIds": [
         "luca",
         "pina"
@@ -30,8 +30,9 @@
       ],
       "rememberedFacts": [
         "Luca takes one kilo of apples",
-        "He takes a bottle of oil",
-        "He takes a pack of pasta"
+        "Luca takes one hectogram of cheese",
+        "Luca takes a bottle of oil and a bottle of milk",
+        "Luca forgets the sugar"
       ]
     }
   ],
@@ -101,6 +102,20 @@
         },
         {
           "id": "s06",
+          "text": "Pina dà un etto di formaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "dare",
+            "un",
+            "etto",
+            "di",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s07",
           "text": "Una bottiglia di olio.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -112,7 +127,19 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s08",
+          "text": "Una bottiglia di latte.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "bottiglia",
+            "di",
+            "latte"
+          ]
+        },
+        {
+          "id": "s09",
           "text": "Un pacco di pasta.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -124,15 +151,17 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Due bottiglie di latte.",
-          "speakerId": "luca",
-          "kind": "dialogue",
+          "id": "s10",
+          "text": "Luca prende il pacco di pasta.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "due",
-            "bottiglia",
+            "luca",
+            "prendere",
+            "il",
+            "pacco",
             "di",
-            "latte"
+            "pasta"
           ]
         }
       ]
@@ -142,40 +171,35 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
-          "text": "È troppo?",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "troppo"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "No è poco.",
-          "speakerId": "pina",
-          "kind": "dialogue",
-          "lemmas": [
-            "no",
-            "essere",
-            "poco"
-          ]
-        },
-        {
           "id": "s11",
-          "text": "Luca prende anche zucchero.",
+          "text": "Luca prende la bottiglia di olio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "prendere",
-            "anche",
-            "zucchero"
+            "la",
+            "bottiglia",
+            "di",
+            "olio"
           ]
         },
         {
           "id": "s12",
+          "text": "Luca prende la bottiglia di latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "la",
+            "bottiglia",
+            "di",
+            "latte"
+          ]
+        },
+        {
+          "id": "s13",
           "text": "I numeri sono sulla lista.",
           "speakerId": null,
           "kind": "narration",
@@ -185,18 +209,6 @@
             "essere",
             "sulla",
             "lista"
-          ]
-        },
-        {
-          "id": "s13",
-          "text": "Un chilo due etti.",
-          "speakerId": "pina",
-          "kind": "dialogue",
-          "lemmas": [
-            "un",
-            "chilo",
-            "due",
-            "etto"
           ]
         },
         {
@@ -212,15 +224,247 @@
         },
         {
           "id": "s15",
-          "text": "Adesso la lista è piena.",
+          "text": "Un chilo un etto.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "chilo",
+            "un",
+            "etto"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Luca guarda le mele.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "adesso",
+            "luca",
+            "guardare",
+            "le",
+            "mela"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Luca guarda la pasta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "pasta"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Luca guarda l'olio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "olio"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Tutto è qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La lista è piena.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
             "la",
             "lista",
             "essere",
             "pieno"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Un chilo di mele.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "chilo",
+            "di",
+            "mela"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Un etto di formaggio.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "etto",
+            "di",
+            "formaggio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s23",
+          "text": "Altro?",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "altro"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "No grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Luca guarda la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Pane latte pasta frutta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "pane",
+            "latte",
+            "pasta",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Luca non prende lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "prendere",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Lo zucchero non è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "zucchero",
+            "non",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Lo zucchero è sulla lista.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "zucchero",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Adesso Luca va al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "luca",
+            "andare",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Tutto è pronto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Un chilo una bottiglia un pacco.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "chilo",
+            "una",
+            "bottiglia",
+            "un",
+            "pacco"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca ha mele pasta olio latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "mela",
+            "pasta",
+            "olio",
+            "latte"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Pina guarda Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "guardare",
+            "luca"
           ]
         }
       ]
@@ -234,7 +478,7 @@
       "choices": [
         "One kilo",
         "One bottle",
-        "Ten packs"
+        "One pack"
       ],
       "correctChoice": 0,
       "explanation": "Un chilo di mele.",
@@ -246,23 +490,23 @@
       "type": "direct",
       "question": "What comes in a bottle?",
       "choices": [
-        "Oil",
-        "Pasta",
-        "Cheese"
+        "Oil and milk",
+        "Pasta and cheese",
+        "Bread and sugar"
       ],
       "correctChoice": 0,
-      "explanation": "Una bottiglia di olio.",
+      "explanation": "Una bottiglia di olio e una bottiglia di latte.",
       "chapterId": "luca-prima-di-roma-03-04",
       "difficulty": 1
     },
     {
       "id": "lpr03-ch04-q03",
       "type": "direct",
-      "question": "How much cheese does he ask for?",
+      "question": "How much cheese does Luca take?",
       "choices": [
         "One hectogram",
         "Five kilos",
-        "A crate"
+        "Two packs"
       ],
       "correctChoice": 0,
       "explanation": "Un etto di formaggio.",

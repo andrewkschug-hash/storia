@@ -1,0 +1,318 @@
+{
+  "storyId": "luca-prima-di-roma-03",
+  "version": 1,
+  "exercises": [
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch01-prod-01",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-01",
+      "level": "A1",
+      "sourceSentenceId": "s15",
+      "promptEn": "A little bread.",
+      "expectedIt": "Un po' di pane.",
+      "match": "flexible",
+      "focus": [
+        "quantities",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch01-prod-02",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-01",
+      "level": "A1",
+      "sourceSentenceId": "s17",
+      "promptEn": "Sugar is on the list.",
+      "expectedIt": "Lo zucchero è sulla lista.",
+      "match": "flexible",
+      "focus": [
+        "food",
+        "shopping"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch01-prod-03",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-01",
+      "level": "A1",
+      "sourceSentenceId": "s13",
+      "promptEn": "There is also sugar.",
+      "expectedIt": "C'è anche zucchero.",
+      "acceptableAnswers": [
+        "C’è anche zucchero."
+      ],
+      "match": "flexible",
+      "focus": [
+        "ce",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch02-prod-01",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "level": "A1",
+      "sourceSentenceId": "s10",
+      "promptEn": "I would like some bread, please.",
+      "expectedIt": "Vorrei del pane per favore.",
+      "acceptableAnswers": [
+        "Vorrei del pane.",
+        "Vorrei pane per favore."
+      ],
+      "match": "semantic",
+      "focus": [
+        "vorrei",
+        "ordering"
+      ],
+      "semantic": {
+        "requiredConcepts": [
+          "vorrei",
+          "pane"
+        ],
+        "conceptAliases": {
+          "vorrei": [
+            "vorrei"
+          ],
+          "pane": [
+            "pane"
+          ]
+        },
+        "requiredPerson": [
+          "1sg"
+        ],
+        "requiredTense": "conditional",
+        "requiredPolarity": "affirmative"
+      }
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch02-prod-02",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "level": "A1",
+      "sourceSentenceId": "s20",
+      "promptEn": "I would like some milk, please.",
+      "expectedIt": "Vorrei del latte per favore.",
+      "acceptableAnswers": [
+        "Vorrei del latte."
+      ],
+      "match": "flexible",
+      "focus": [
+        "vorrei",
+        "ordering"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch02-prod-03",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "level": "A1",
+      "sourceSentenceId": "s23",
+      "promptEn": "Anything else?",
+      "expectedIt": "Altro?",
+      "match": "exact",
+      "focus": [
+        "ordering"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch02-prod-04",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-02",
+      "level": "A1",
+      "sourceSentenceId": "s24",
+      "promptEn": "No, thank you.",
+      "expectedIt": "No grazie.",
+      "match": "exact",
+      "focus": [
+        "ordering",
+        "social"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch03-prod-01",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "level": "A1",
+      "sourceSentenceId": "s01",
+      "promptEn": "How much does the bread cost?",
+      "expectedIt": "Quanto costa il pane?",
+      "match": "flexible",
+      "focus": [
+        "quanto_costa",
+        "prices"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch03-prod-02",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "level": "A1",
+      "sourceSentenceId": "s02",
+      "promptEn": "The bread costs two euros.",
+      "expectedIt": "Il pane costa due euro.",
+      "match": "flexible",
+      "focus": [
+        "prices",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch03-prod-03",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "How much does the milk cost?",
+      "expectedIt": "Quanto costa il latte?",
+      "match": "flexible",
+      "focus": [
+        "quanto_costa",
+        "prices"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch03-prod-04",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-03",
+      "level": "A1",
+      "sourceSentenceId": "s16",
+      "promptEn": "It's too expensive.",
+      "expectedIt": "È troppo caro.",
+      "match": "flexible",
+      "focus": [
+        "prices"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch04-prod-01",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-04",
+      "level": "A1",
+      "sourceSentenceId": "s02",
+      "promptEn": "One kilo of apples.",
+      "expectedIt": "Un chilo di mele.",
+      "match": "flexible",
+      "focus": [
+        "quantities"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch04-prod-02",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-04",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "One hundred grams of cheese.",
+      "expectedIt": "Un etto di formaggio.",
+      "match": "flexible",
+      "focus": [
+        "quantities"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch04-prod-03",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-04",
+      "level": "A1",
+      "sourceSentenceId": "s08",
+      "promptEn": "A bottle of milk.",
+      "expectedIt": "Una bottiglia di latte.",
+      "match": "flexible",
+      "focus": [
+        "quantities"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch05-prod-01",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-05",
+      "level": "A1",
+      "sourceSentenceId": "s02",
+      "promptEn": "Can I pay?",
+      "expectedIt": "Si può pagare?",
+      "match": "exact",
+      "focus": [
+        "shopping"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch05-prod-02",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-05",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "Everything costs ten euros.",
+      "expectedIt": "Tutto costa dieci euro.",
+      "match": "flexible",
+      "focus": [
+        "prices",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch05-prod-03",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-05",
+      "level": "A1",
+      "sourceSentenceId": "s16",
+      "promptEn": "Is there a receipt?",
+      "expectedIt": "C'è lo scontrino?",
+      "acceptableAnswers": [
+        "C’è lo scontrino?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "shopping",
+        "ce"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch06-prod-01",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-06",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "The sugar is missing.",
+      "expectedIt": "Manca lo zucchero.",
+      "match": "flexible",
+      "focus": [
+        "shopping",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch06-prod-02",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-06",
+      "level": "A1",
+      "sourceSentenceId": "s18",
+      "promptEn": "I would like the sugar, please.",
+      "expectedIt": "Vorrei lo zucchero per favore.",
+      "acceptableAnswers": [
+        "Vorrei lo zucchero."
+      ],
+      "match": "flexible",
+      "focus": [
+        "vorrei",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-03-ch06-prod-03",
+      "storyId": "luca-prima-di-roma-03",
+      "chapterId": "luca-prima-di-roma-03-06",
+      "level": "A1",
+      "sourceSentenceId": "s26",
+      "promptEn": "I like apples.",
+      "expectedIt": "Mi piacciono le mele.",
+      "acceptableAnswers": [
+        "A Luca piacciono le mele.",
+        "A me piacciono le mele."
+      ],
+      "match": "flexible",
+      "focus": [
+        "mi_piace"
+      ]
+    }
+  ]
+}

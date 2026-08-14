@@ -145,6 +145,78 @@
             "a",
             "cena"
           ]
+        },
+        {
+          "id": "s09",
+          "text": "Paolo è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Chiara è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Buona sera.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "sera"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Buona sera nonna.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "sera",
+            "nonna"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Marta mette il pane sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "mettere",
+            "il",
+            "pane",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Paolo mangia con la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "mangiare",
+            "con",
+            "la",
+            "famiglia"
+          ]
         }
       ]
     },
@@ -153,7 +225,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s13",
           "text": "La cena è buona.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -165,7 +237,42 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s14",
+          "text": "Marta cucina bene.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "marta",
+            "cucinare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Luca mangia pane e pasta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "mangiare",
+            "pane",
+            "e",
+            "pasta"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Chiara beve acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "bere",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s17",
           "text": "Poi sono le nove.",
           "speakerId": null,
           "kind": "narration",
@@ -177,7 +284,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s18",
           "text": "Chiara è stanca.",
           "speakerId": null,
           "kind": "narration",
@@ -188,7 +295,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s19",
           "text": "Domani Chiara ha scuola.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -200,7 +307,18 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s20",
+          "text": "Domani è martedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s21",
           "text": "Domani Luca si alza alle sette.",
           "speakerId": null,
           "kind": "narration",
@@ -214,17 +332,147 @@
           ]
         },
         {
-          "id": "s14",
-          "text": "Buona sera.",
+          "id": "s22",
+          "text": "Ogni giorno è diverso.",
           "speakerId": "lidia",
           "kind": "dialogue",
           "lemmas": [
-            "buono",
-            "sera"
+            "ogni",
+            "giorno",
+            "essere",
+            "diverso"
           ]
         },
         {
-          "id": "s15",
+          "id": "s23",
+          "text": "Ma domani c'è scuola.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "domani",
+            "ce",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Alle otto di mattina.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "otto",
+            "di",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Lidia parla con Luca e Chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lidia",
+            "parlare",
+            "con",
+            "luca",
+            "e",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Domani mattina tutti si alzano presto.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "mattina",
+            "tutto",
+            "si",
+            "alzare",
+            "presto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Luca guarda l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Sono le nove.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "nove"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "La giornata è finita.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "giornata",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Oggi è una bella giornata.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "una",
+            "bello",
+            "giornata"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La famiglia è insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "A domani.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -234,15 +482,85 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "La giornata è finita.",
+          "id": "s32",
+          "text": "A domani Chiara.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "domani",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Buona notte.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "notte"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Buona notte nonna.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "notte",
+            "nonna"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca va in camera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "luca",
+            "andare",
+            "in",
+            "camera"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Domani la scuola di Chiara continua.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
             "la",
-            "giornata",
-            "essere",
-            "finire"
+            "scuola",
+            "di",
+            "chiara",
+            "continuare"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Chiara dorme presto.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiara",
+            "dormire",
+            "presto"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Luca guarda l'orologio alle nove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "orologio",
+            "alle",
+            "nove"
           ]
         }
       ]
@@ -268,9 +586,9 @@
       "type": "direct",
       "question": "Who prepares dinner?",
       "choices": [
-        "Davide",
+        "Paolo",
         "Marta",
-        "Franco"
+        "Chiara"
       ],
       "correctChoice": 1,
       "explanation": "Marta prepara la cena.",
@@ -283,11 +601,11 @@
       "question": "What happens tomorrow morning?",
       "choices": [
         "Chiara has school",
-        "They go to Rome",
-        "There is a party"
+        "They go on a trip",
+        "There is no school"
       ],
       "correctChoice": 0,
-      "explanation": "Domani Chiara ha scuola.",
+      "explanation": "Domani Chiara ha scuola alle otto.",
       "chapterId": "luca-prima-di-roma-02-07",
       "difficulty": 1
     }

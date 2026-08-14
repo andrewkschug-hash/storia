@@ -10,8 +10,8 @@ import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { getChapter } from '@/src/content';
-import { useReadingProgress } from '@/src/progress/useReadingProgress';
+import { readerHref } from '@/src/content/storyHrefs';
+import { useContinueReading } from '@/src/progress/useContinueReading';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import { useLayout } from '@/src/theme/useLayout';
@@ -22,7 +22,19 @@ export default function HomeScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
-  const { story, progress, loading, error, service, refresh } = useReadingProgress();
+  const {
+    target,
+    chapter,
+    story,
+    progress,
+    completed,
+    percent,
+    chapterPercent,
+    loading,
+    error,
+    refresh,
+    service,
+  } = useContinueReading();
   const { home, refresh: refreshVocab, summary } = useVocabulary(progress);
   const [gateReady, setGateReady] = useState(false);
   const [account, setAccount] = useState<LocalAccount | null>(null);
@@ -55,7 +67,7 @@ export default function HomeScreen() {
     })();
   }, []);
 
-  if (!gateReady || loading || !progress) {
+  if (!gateReady || loading || !target || !chapter || !story) {
     return (
       <AtmosphereBackground>
         <View style={styles.center}>
@@ -74,12 +86,6 @@ export default function HomeScreen() {
       </AtmosphereBackground>
     );
   }
-
-  const continueChapter =
-    getChapter(progress.currentChapterId) ?? getChapter(story.chapters[0].id)!;
-  const completed = service.getCompletedCount(progress);
-  const percent = service.getReadingPercentComplete(progress);
-  const chapterPercent = service.getChapterReadingPercent(continueChapter, progress.lastSentenceId);
 
   const brandSize = layout.isPhone ? (layout.width < 360 ? 34 : 38) : 42;
 
@@ -131,11 +137,13 @@ export default function HomeScreen() {
 
           <View style={styles.section}>
             <ContinueReadingCard
-              chapterTitleIt={continueChapter.titleIt}
+              chapterTitleIt={chapter.titleIt}
+              storyTitleIt={target.storyTitleIt}
+              isStart={target.isStart}
               progress={{
                 storyId: story.id,
-                chapterId: continueChapter.id,
-                chapterNumber: continueChapter.number,
+                chapterId: chapter.id,
+                chapterNumber: chapter.number,
                 totalChapters: story.chapters.length,
                 percentComplete: percent,
                 chapterPercentComplete: chapterPercent,
@@ -143,22 +151,23 @@ export default function HomeScreen() {
                 storiesCompleted: completed === story.chapters.length ? 1 : 0,
                 wordsEncountered: summary?.encountered ?? 0,
                 wordsFamiliar: summary?.familiar ?? 0,
-                readingStreakDays: progress.streakDays,
+                readingStreakDays: progress?.streakDays ?? 0,
               }}
               onContinue={async () => {
-                await service.openChapter(continueChapter.id);
-                router.push(`/reader/${continueChapter.id}`);
+                if (!service) return;
+                await service.openChapter(chapter.id);
+                router.push(readerHref(story.id, chapter.id));
               }}
             />
             <Pressable
               accessibilityRole="link"
-              accessibilityLabel="Browse all chapters"
+              accessibilityLabel="Browse stories"
               onPress={() => router.push('/(tabs)/stories')}
               style={({ pressed }) => [
                 styles.browseLink,
                 { opacity: pressed ? 0.7 : 1 },
               ]}>
-              <Text style={[Typography.label, { color: colors.tint }]}>Browse all chapters</Text>
+              <Text style={[Typography.label, { color: colors.tint }]}>Browse stories</Text>
             </Pressable>
           </View>
 
@@ -171,11 +180,15 @@ export default function HomeScreen() {
             <StatChip label="Words" value={String(summary?.encountered ?? 0)} colors={colors} />
             <StatChip
               label="Streak"
-              value={progress.streakDays > 0 ? `${progress.streakDays}d` : '—'}
+              value={(progress?.streakDays ?? 0) > 0 ? `${progress?.streakDays}d` : '—'}
               colors={colors}
               showFlame
             />
-            <StatChip label="Chapters" value={`${completed}/${story.chapters.length}`} colors={colors} />
+            <StatChip
+              label="Chapters"
+              value={`${completed}/${story.chapters.length}`}
+              colors={colors}
+            />
           </View>
 
           {home ? (

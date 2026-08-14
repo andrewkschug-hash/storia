@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-06",
-      "summary": "Luca tells them he leaves tomorrow for Rome. Goodbye at Pietralba station; he is on the train.",
+      "summary": "After the party Luca says he leaves tomorrow for Rome. Goodbye at Pietralba station; he is on the train.",
       "characterIds": [
         "luca",
         "marta",
@@ -37,8 +37,7 @@
       "rememberedFacts": [
         "Luca leaves tomorrow for Rome",
         "They say goodbye at Pietralba station",
-        "Luca is on the train",
-        "He does not arrive in Rome in this story"
+        "Luca is on the train leaving Pietralba"
       ]
     }
   ],
@@ -62,6 +61,19 @@
         },
         {
           "id": "s02",
+          "text": "La famiglia è in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "in",
+            "casa"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Domani parto.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -71,7 +83,19 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s04",
+          "text": "Domani parto per Roma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "partire",
+            "per",
+            "roma"
+          ]
+        },
+        {
+          "id": "s05",
           "text": "Domani Luca va a Roma.",
           "speakerId": null,
           "kind": "narration",
@@ -84,7 +108,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s06",
           "text": "Roma non è Pietralba.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -96,7 +120,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s07",
           "text": "Sì mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -106,7 +130,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s08",
           "text": "Paolo è un po' triste.",
           "speakerId": null,
           "kind": "narration",
@@ -119,7 +143,109 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s09",
+          "text": "Marta è un po' triste.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "un",
+            "poco",
+            "triste"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca guarda la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Domani è un giorno nuovo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "un",
+            "giorno",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La famiglia ascolta Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "ascoltare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Paolo guarda Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "guardare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Marta è triste ma felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "triste",
+            "ma",
+            "felice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s15",
+          "text": "È mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s15b",
+          "text": "Luca va alla stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "alla",
+            "stazione"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Davide è alla stazione.",
           "speakerId": null,
           "kind": "narration",
@@ -131,7 +257,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s17",
           "text": "Questa è la stazione di Pietralba.",
           "speakerId": null,
           "kind": "narration",
@@ -143,15 +269,44 @@
             "di",
             "pietralba"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s09",
+          "id": "s18",
+          "text": "Pietralba ha una stazione piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietralba",
+            "avere",
+            "una",
+            "stazione",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Marta è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Paolo è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s21",
           "text": "Arrivederci Luca.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -161,7 +316,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s22",
           "text": "Arrivederci.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -170,7 +325,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s23",
           "text": "A presto.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -180,7 +335,44 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s24",
+          "text": "Buon viaggio.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "viaggio"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Grazie Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "davide"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Marta guarda Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "luca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
           "text": "Luca è sul treno.",
           "speakerId": null,
           "kind": "narration",
@@ -192,7 +384,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s28",
           "text": "Il treno parte.",
           "speakerId": null,
           "kind": "narration",
@@ -203,7 +395,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s29",
           "text": "Luca guarda Pietralba.",
           "speakerId": null,
           "kind": "narration",
@@ -214,7 +406,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s30",
           "text": "Pietralba è piccola.",
           "speakerId": null,
           "kind": "narration",
@@ -225,16 +417,128 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "Domani è un giorno nuovo.",
+          "id": "s31",
+          "text": "La famiglia resta alla stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "restare",
+            "alla",
+            "stazione"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Davide guarda il treno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "guardare",
+            "il",
+            "treno"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca è sul treno verso Roma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "sul",
+            "treno",
+            "verso",
+            "roma"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Roma è lontana.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "domani",
+            "roma",
             "essere",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca è un po' triste.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "un",
+            "poco",
+            "triste"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Ma Luca è anche felice.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "luca",
+            "essere",
+            "anche",
+            "felice"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Domani inizia un giorno nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "iniziare",
             "un",
             "giorno",
             "nuovo"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il treno va via da Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "treno",
+            "andare",
+            "via",
+            "da",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Luca dice arrivederci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "dire",
+            "arrivederci"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Pietralba è lontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietralba",
+            "essere",
+            "lontano"
           ]
         }
       ]
@@ -265,21 +569,21 @@
         "Bar Centrale"
       ],
       "correctChoice": 0,
-      "explanation": "La stazione di Pietralba.",
+      "explanation": "Questa è la stazione di Pietralba.",
       "chapterId": "luca-prima-di-roma-05-06",
       "difficulty": 1
     },
     {
       "id": "lpr05-ch06-q03",
       "type": "event",
-      "question": "Where is Luca at the end?",
+      "question": "Where is Luca at the end of the story?",
       "choices": [
         "On the train leaving Pietralba",
         "Arriving in Rome hungry",
         "At a Rome café"
       ],
       "correctChoice": 0,
-      "explanation": "Luca è sul treno. The train leaves. No Rome arrival.",
+      "explanation": "Luca è sul treno. Il treno parte. No Rome arrival.",
       "chapterId": "luca-prima-di-roma-05-06",
       "difficulty": 1
     }

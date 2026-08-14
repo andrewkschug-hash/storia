@@ -177,7 +177,7 @@ export class ReviewService {
     const entry = this.bundle.lexicon.find((l) => l.lemmaId === row.lemmaId);
     if (!entry) return null;
     const examples = findExamplesForLemma(this.bundle, row.lemmaId, 4);
-    const last = findSentenceById(this.bundle, row.lastSentenceId);
+    const last = findSentenceById(this.bundle, row.lastSentenceId, row.lastChapterId);
     const useCloze = row.encounterCount >= 3 && (last || examples[0]);
     const example = last
       ? { text: last.sentence.text, sentence: last.sentence }
@@ -230,7 +230,7 @@ export class ReviewService {
   private phrasePrompt(row: PhraseEncounter | undefined): ReviewPrompt | null {
     if (!row) return null;
     const examples = findExamplesForPhrase(this.bundle, row.phraseId, 3);
-    const last = findSentenceById(this.bundle, row.lastSentenceId);
+    const last = findSentenceById(this.bundle, row.lastSentenceId, row.lastChapterId);
     const english = naturalEnglishForPhrase(this.bundle, row.phraseId) ?? row.surface;
     const distractors = phraseEnglishDistractors(this.bundle, row.phraseId, english, 2);
     const { choices, correctIndex } = mixChoices(english, distractors, row.phraseId);

@@ -6697,6 +6697,14 @@
       "partOfSpeech": "noun",
       "difficulty": 1,
       "frequency": "high"
+    },
+    {
+      "lemmaId": "eta",
+      "italian": "età",
+      "english": "age",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high"
     }
   ]
 }

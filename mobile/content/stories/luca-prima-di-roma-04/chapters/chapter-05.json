@@ -21,7 +21,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-05",
-      "summary": "They wait at the bus stop. The bus comes at ten.",
+      "summary": "At the bus stop Luca and Davide choose to wait for the ten o'clock bus and buy a ticket.",
       "characterIds": [
         "luca",
         "davide"
@@ -32,8 +32,9 @@
       ],
       "rememberedFacts": [
         "The bus stop is on Via Nazionale",
-        "The bus is at 10:00",
-        "You need a ticket"
+        "An early bus is not the right one",
+        "They wait for the bus at 10:00",
+        "Luca needs a ticket"
       ]
     }
   ],
@@ -44,18 +45,34 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca è alla fermata.",
+          "text": "Luca e Davide vanno alla fermata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
-            "essere",
+            "e",
+            "davide",
+            "andare",
             "alla",
             "fermata"
           ]
         },
         {
           "id": "s02",
+          "text": "La fermata è in Via Nazionale.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "fermata",
+            "essere",
+            "in",
+            "via",
+            "nazionale"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Dov'è l'autobus?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -65,19 +82,56 @@
           ]
         },
         {
-          "id": "s03",
-          "text": "L'autobus è alle dieci.",
+          "id": "s04",
+          "text": "Guarda l'orario.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare",
+            "orario"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "C'è un autobus alle nove.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "un",
+            "autobus",
+            "alle",
+            "nove"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ma non va al parco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "non",
+            "andare",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "L'autobus giusto è alle dieci.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
             "autobus",
+            "giusto",
             "essere",
             "alle",
             "dieci"
           ]
         },
         {
-          "id": "s04",
+          "id": "s08",
           "text": "Sono le nove e mezzo.",
           "speakerId": null,
           "kind": "narration",
@@ -90,7 +144,34 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s09",
+          "text": "Aspettiamo ancora.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca legge l'orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "leggere",
+            "orario"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
           "text": "Aspettiamo.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -99,7 +180,31 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s12",
+          "text": "Luca vuole aspettare.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "volere",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Non prendiamo l'autobus delle nove.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "prendere",
+            "autobus",
+            "delle",
+            "nove"
+          ]
+        },
+        {
+          "id": "s14",
           "text": "C'è un biglietto?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -110,7 +215,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s15",
           "text": "Sì il biglietto è importante.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -123,35 +228,99 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Luca ha un biglietto.",
+          "id": "s16",
+          "text": "Luca compra un biglietto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
-            "avere",
+            "comprare",
             "un",
             "biglietto"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Il biglietto costa poco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "biglietto",
+            "costare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Aspettiamo alla fermata.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare",
+            "alla",
+            "fermata"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "La fermata è vicino al parco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "fermata",
+            "essere",
+            "vicino",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Oggi fa caldo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "fare",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Davide guarda l'orario con Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "guardare",
+            "orario",
+            "con",
+            "luca"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Alle nove passa un autobus.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "nove",
+            "passare",
+            "un",
+            "autobus"
           ]
         }
       ]
     },
     {
-      "id": "p2",
-      "order": 2,
+      "id": "p3",
+      "order": 3,
       "sentences": [
         {
-          "id": "s09",
-          "text": "Ecco l'autobus.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ecco",
-            "autobus"
-          ]
-        },
-        {
-          "id": "s10",
+          "id": "s23",
           "text": "Sono le dieci.",
           "speakerId": null,
           "kind": "narration",
@@ -162,7 +331,28 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s24",
+          "text": "Ecco l'autobus.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ecco",
+            "autobus"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "L'orario dice dieci.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "orario",
+            "dire",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s26",
           "text": "Luca prende l'autobus.",
           "speakerId": null,
           "kind": "narration",
@@ -173,52 +363,150 @@
           ]
         },
         {
-          "id": "s12",
-          "text": "L'orario è alle dieci.",
-          "speakerId": null,
-          "kind": "narration",
+          "id": "s27",
+          "text": "Ha il biglietto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
           "lemmas": [
-            "orario",
-            "essere",
-            "alle",
-            "dieci"
+            "avere",
+            "il",
+            "biglietto"
           ]
         },
         {
-          "id": "s13",
-          "text": "La fermata è in Via Nazionale.",
+          "id": "s28",
+          "text": "L'autobus va al parco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "autobus",
+            "andare",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca e Davide entrano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Bene aspettare.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Dieci è l'orario giusto.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "dieci",
+            "essere",
+            "orario",
+            "giusto"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "L'autobus parte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "autobus",
+            "partire"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca ha il biglietto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "il",
+            "biglietto"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Davide sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La fermata resta dietro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "la",
             "fermata",
-            "essere",
-            "in",
-            "via",
-            "nazionale"
-          ]
-        },
-        {
-          "id": "s14",
-          "text": "L'autobus è piccolo.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "autobus",
-            "essere",
-            "piccolo"
-          ]
-        },
-        {
-          "id": "s15",
-          "text": "Davide resta alla fermata.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "davide",
             "restare",
-            "alla",
-            "fermata"
+            "dietro"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Il parco è vicino.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Il biglietto è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "biglietto",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Sono le dieci.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "L'orario è giusto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "orario",
+            "essere",
+            "giusto"
           ]
         }
       ]
@@ -228,25 +516,25 @@
     {
       "id": "lpr04-ch05-q01",
       "type": "direct",
-      "question": "What time is the bus?",
+      "question": "Which bus do they take?",
       "choices": [
-        "9:00",
-        "10:00",
-        "20:00"
+        "The nine o'clock bus",
+        "The ten o'clock bus",
+        "No bus"
       ],
       "correctChoice": 1,
-      "explanation": "L'autobus è alle dieci.",
+      "explanation": "L'autobus giusto è alle dieci.",
       "chapterId": "luca-prima-di-roma-04-05",
       "difficulty": 1
     },
     {
       "id": "lpr04-ch05-q02",
       "type": "direct",
-      "question": "What does Luca need?",
+      "question": "What does Luca need for the bus?",
       "choices": [
         "A ticket",
         "A suitcase",
-        "A job"
+        "A map of Rome"
       ],
       "correctChoice": 0,
       "explanation": "Il biglietto è importante.",
@@ -256,14 +544,14 @@
     {
       "id": "lpr04-ch05-q03",
       "type": "direct",
-      "question": "Where is the stop?",
+      "question": "Why do they wait?",
       "choices": [
-        "Via Nazionale",
-        "Rome station",
-        "The kitchen"
+        "The nine bus does not go to the park",
+        "It is raining",
+        "The station is closed"
       ],
       "correctChoice": 0,
-      "explanation": "La fermata è in Via Nazionale.",
+      "explanation": "Ma non va al parco.",
       "chapterId": "luca-prima-di-roma-04-05",
       "difficulty": 1
     }

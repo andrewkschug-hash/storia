@@ -22,7 +22,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-03",
-      "summary": "They choose party food and music. Luca likes cake and music; not oil.",
+      "summary": "They talk about party food and music. Luca likes torta and musica; he does not like olio.",
       "characterIds": [
         "luca",
         "marta",
@@ -34,10 +34,9 @@
         "cucina-pietralba"
       ],
       "rememberedFacts": [
-        "Luca likes cake",
-        "Luca likes music",
-        "Davide likes juice",
-        "Luca does not like oil"
+        "Luca likes cake and music",
+        "Luca does not like oil",
+        "Davide likes juice; Elisa likes fruit"
       ]
     }
   ],
@@ -48,6 +47,32 @@
       "sentences": [
         {
           "id": "s01",
+          "text": "Marta è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca e gli amici sono qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "gli",
+            "amico",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Cosa ti piace?",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -58,42 +83,15 @@
           ]
         },
         {
-          "id": "s02",
-          "text": "A Luca piace la torta.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "a",
-            "luca",
-            "piacere",
-            "la",
-            "torta"
-          ]
-        },
-        {
-          "id": "s03",
-          "text": "A Luca piace la musica.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "a",
-            "luca",
-            "piacere",
-            "la",
-            "musica"
-          ]
-        },
-        {
           "id": "s04",
-          "text": "A Luca non piace l'olio.",
-          "speakerId": "luca",
+          "text": "Cosa ti piace Davide?",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
-            "non",
+            "cosa",
+            "ti",
             "piacere",
-            "olio"
+            "davide"
           ]
         },
         {
@@ -111,6 +109,18 @@
         },
         {
           "id": "s06",
+          "text": "Cosa ti piace Elisa?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "ti",
+            "piacere",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s07",
           "text": "A Elisa piace la frutta.",
           "speakerId": "elisa",
           "kind": "dialogue",
@@ -123,7 +133,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s08",
           "text": "A Marta piace il pane.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -136,13 +146,61 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Va bene.",
+          "id": "s09",
+          "text": "E tu Luca?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "tu",
+            "luca"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "A Luca piace la torta.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "andare",
-            "bene"
+            "a",
+            "luca",
+            "piacere",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "A Luca piace la musica.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "luca",
+            "piacere",
+            "la",
+            "musica"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Marta ascolta tutti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "ascoltare",
+            "tutto"
           ]
         }
       ]
@@ -152,7 +210,40 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s14",
+          "text": "A Luca non piace l'olio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "luca",
+            "non",
+            "piacere",
+            "olio"
+          ]
+        },
+        {
+          "id": "s14b",
+          "text": "L'olio no.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "olio",
+            "no"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Va bene.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Per la festa c'è torta.",
           "speakerId": null,
           "kind": "narration",
@@ -165,7 +256,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s17",
           "text": "C'è succo.",
           "speakerId": null,
           "kind": "narration",
@@ -175,7 +266,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s18",
           "text": "C'è frutta.",
           "speakerId": null,
           "kind": "narration",
@@ -185,7 +276,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s19",
           "text": "C'è musica.",
           "speakerId": null,
           "kind": "narration",
@@ -195,7 +286,82 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s20",
+          "text": "Non c'è olio.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "olio"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Davide sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Elisa è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "La musica è bella.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "musica",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "La torta è bella.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "torta",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il pane è sul tavolo.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "pane",
+            "essere",
+            "sul",
+            "tavolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s26",
           "text": "A Luca piacciono gli amici.",
           "speakerId": null,
           "kind": "narration",
@@ -208,7 +374,59 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s27",
+          "text": "A Luca piace la festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "luca",
+            "piacere",
+            "la",
+            "festa"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Sì mi piace la torta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "mi",
+            "piacere",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Sì mi piace la musica.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "mi",
+            "piacere",
+            "la",
+            "musica"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "No non mi piace l'olio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "non",
+            "mi",
+            "piacere",
+            "olio"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "La festa è bella.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -220,14 +438,77 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Sì mi piace.",
+          "id": "s32",
+          "text": "Marta è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Tutti prendono la torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "prendere",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La torta e la musica sono pronte.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "torta",
+            "e",
+            "la",
+            "musica",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Va bene così.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "si_yes",
-            "mi",
-            "piacere"
+            "andare",
+            "bene",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Per la festa tutto è pronto.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "la",
+            "festa",
+            "tutto",
+            "essere",
+            "pronto"
           ]
         }
       ]
@@ -237,14 +518,14 @@
     {
       "id": "lpr05-ch03-q01",
       "type": "direct",
-      "question": "What does Luca like?",
+      "question": "What does Luca like for the party?",
       "choices": [
         "Cake and music",
         "Oil and work",
         "The Rome café"
       ],
       "correctChoice": 0,
-      "explanation": "Torta and musica.",
+      "explanation": "A Luca piace la torta e la musica.",
       "chapterId": "luca-prima-di-roma-05-03",
       "difficulty": 1
     },

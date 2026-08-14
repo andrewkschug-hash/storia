@@ -7,7 +7,7 @@ import { getAccount } from '@/src/account/storage';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { DictionarySheet } from '@/src/components/DictionarySheet';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { markOnboardingComplete } from '@/src/onboarding/storage';
+import { completeOnboardingAndSync } from '@/src/sync/learnerSession';
 import type { DictionaryLookup } from '@/src/vocabulary/types';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
@@ -29,7 +29,7 @@ export default function OnboardingScreen() {
   }, []);
 
   const finish = async () => {
-    await markOnboardingComplete();
+    await completeOnboardingAndSync();
     router.replace('/(tabs)/home');
   };
 

@@ -61,8 +61,19 @@ export function validateStoryCatalog(): CatalogValidationResult {
 
   const preRome = stories.filter((story) => story.narrativeArc === PRE_ROME_ARC_ID);
   if (preRome.length !== 5) errors.push('Expected five luca-prima-di-roma stories');
-  if (preRome.some((story) => story.status !== 'planned')) {
-    errors.push('Pre-Rome stories must stay planned until authored');
+  for (const story of preRome) {
+    if (story.status !== 'available') {
+      errors.push(`Pre-Rome story "${story.id}" must be available`);
+    }
+    if (story.chapterCountTarget && story.chapterCount !== story.chapterCountTarget) {
+      errors.push(
+        `Pre-Rome story "${story.id}" chapterCount ${story.chapterCount} must match target ${story.chapterCountTarget}`,
+      );
+    }
+  }
+  const preRomeArc = arcs.find((arc) => arc.id === PRE_ROME_ARC_ID);
+  if (preRomeArc && preRomeArc.status !== 'available') {
+    errors.push('luca-prima-di-roma arc must be available');
   }
   if (luca && preRome.length > 0) {
     const preMax = Math.max(...preRome.map((story) => story.narrativeOrder));

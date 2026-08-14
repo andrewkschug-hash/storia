@@ -1,12 +1,13 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, afterEach } from 'vitest';
 
 import { loadContentBundle } from '@/src/content/loadContentBundle';
 import { ContentValidationError } from '@/src/content/tokenize';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
 import { ProgressService } from '@/src/progress/ProgressService';
+import { __resetUnlockAllChapters, setUnlockAllChapters } from '@/src/progress/unlockAll';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const root = join(here, '../../../content');
@@ -150,6 +151,10 @@ describe('content validation', () => {
 });
 
 describe('reading progress', () => {
+  afterEach(() => {
+    __resetUnlockAllChapters();
+  });
+
   it('persists across repository reloads', async () => {
     const repo = new MemoryReadingProgressRepository();
     const bundle = loadValidBundle();
@@ -178,6 +183,17 @@ describe('reading progress', () => {
     expect(await service.getChapterStatus(c1.id)).toBe('completed');
     expect(await service.getChapterStatus(c2.id)).toMatch(/available|in_progress/);
     expect(await service.getChapterStatus(c3.id)).toBe('locked');
+  });
+
+  it('developer unlock lets any chapter open without completing earlier ones', async () => {
+    setUnlockAllChapters(true);
+    const repo = new MemoryReadingProgressRepository();
+    const bundle = loadValidBundle();
+    const service = new ProgressService(repo, bundle.story, bundle.chapters);
+    const last = bundle.story.chapters[bundle.story.chapters.length - 1];
+    expect(await service.getChapterStatus(last.id)).toBe('available');
+    await service.openChapter(last.id);
+    expect(await service.getChapterStatus(last.id)).toBe('in_progress');
   });
 
   it('continue points at current chapter and restores sentence', async () => {

@@ -59,11 +59,19 @@ export {
   type StoryArc,
 } from '@/src/cefr/arcs';
 export {
+  A1_CROSS_STORY_THRESHOLDS,
+  A1_DOMAIN_GROUPS,
+  COMPREHENSION_PASS_SCORE,
+  a1ChaptersForStory,
   collectA1ReadinessSignals,
   evaluateCrossStoryA1Readiness,
+  vocabularySupportFromState,
+  type A1DomainGroupEvidence,
   type A1ReadinessSignal,
+  type CrossStoryA1Metrics,
   type CrossStoryA1Readiness,
 } from '@/src/cefr/crossStoryReadiness';
+export { evaluateLearnerCrossStoryA1 } from '@/src/cefr/a1LearnerReadiness';
 export {
   createArcAuthoringTemplate,
   type ArcAuthoringTemplate,

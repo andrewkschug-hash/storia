@@ -1,0 +1,326 @@
+{
+  "storyId": "luca-prima-di-roma-02",
+  "version": 1,
+  "exercises": [
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch01-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "level": "A1",
+      "sourceSentenceId": "s02",
+      "promptEn": "It's seven o'clock.",
+      "expectedIt": "Sono le sette.",
+      "match": "flexible",
+      "focus": [
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch01-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "level": "A1",
+      "sourceSentenceId": "s06",
+      "promptEn": "It's half past seven.",
+      "expectedIt": "Sono le sette e mezzo.",
+      "match": "flexible",
+      "focus": [
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch01-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "What time is it?",
+      "expectedIt": "Che ore sono?",
+      "match": "exact",
+      "focus": [
+        "clock",
+        "questions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch01-prod-04",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-01",
+      "level": "A1",
+      "sourceSentenceId": "s18",
+      "promptEn": "I have to be ready.",
+      "expectedIt": "Devo essere pronta.",
+      "match": "flexible",
+      "focus": [
+        "routine",
+        "gender"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch02-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-02",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "I wake up.",
+      "expectedIt": "Mi sveglio.",
+      "acceptableAnswers": [
+        "Io mi sveglio."
+      ],
+      "match": "flexible",
+      "focus": [
+        "routine",
+        "reflexives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch02-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-02",
+      "level": "A1",
+      "sourceSentenceId": "s13",
+      "promptEn": "I have breakfast.",
+      "expectedIt": "Faccio colazione.",
+      "acceptableAnswers": [
+        "Io faccio colazione."
+      ],
+      "match": "flexible",
+      "focus": [
+        "routine",
+        "food"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch02-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-02",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "I get up.",
+      "expectedIt": "Mi alzo.",
+      "acceptableAnswers": [
+        "Io mi alzo.",
+        "Luca si alza."
+      ],
+      "match": "flexible",
+      "focus": [
+        "routine",
+        "reflexives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch03-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-03",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "Today is Monday.",
+      "expectedIt": "Oggi è lunedì.",
+      "match": "flexible",
+      "focus": [
+        "days"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch03-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-03",
+      "level": "A1",
+      "sourceSentenceId": "s07",
+      "promptEn": "Tomorrow is Tuesday.",
+      "expectedIt": "Domani è martedì.",
+      "match": "flexible",
+      "focus": [
+        "days"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch03-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-03",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "What day is today?",
+      "expectedIt": "Che giorno è oggi?",
+      "match": "exact",
+      "focus": [
+        "days",
+        "questions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch04-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-04",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "Today is May 12.",
+      "expectedIt": "Oggi è il dodici maggio.",
+      "match": "flexible",
+      "focus": [
+        "dates"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch04-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-04",
+      "level": "A1",
+      "sourceSentenceId": "s22",
+      "promptEn": "It's May.",
+      "expectedIt": "È maggio.",
+      "match": "exact",
+      "focus": [
+        "dates"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch04-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-04",
+      "level": "A1",
+      "sourceSentenceId": "s15",
+      "promptEn": "Tomorrow is May 13.",
+      "expectedIt": "Domani è il tredici maggio.",
+      "match": "flexible",
+      "focus": [
+        "dates"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch05-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-05",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "Chiara is at school at eight.",
+      "expectedIt": "Lunedì alle otto Chiara è a scuola.",
+      "acceptableAnswers": [
+        "Alle otto Chiara è a scuola."
+      ],
+      "match": "flexible",
+      "focus": [
+        "schedules",
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch05-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-05",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "Chiara has Italian at nine.",
+      "expectedIt": "Alle nove Chiara ha italiano.",
+      "match": "flexible",
+      "focus": [
+        "schedules",
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch05-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-05",
+      "level": "A1",
+      "sourceSentenceId": "s25",
+      "promptEn": "What time do you have Italian?",
+      "expectedIt": "A che ora hai italiano?",
+      "match": "exact",
+      "focus": [
+        "schedules",
+        "questions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch06-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-06",
+      "level": "A1",
+      "sourceSentenceId": "s02",
+      "promptEn": "It's three o'clock.",
+      "expectedIt": "Sono le tre.",
+      "match": "flexible",
+      "focus": [
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch06-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-06",
+      "level": "A1",
+      "sourceSentenceId": "s12",
+      "promptEn": "Chiara comes home at four.",
+      "expectedIt": "Chiara torna a casa alle quattro.",
+      "match": "flexible",
+      "focus": [
+        "routine",
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch06-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-06",
+      "level": "A1",
+      "sourceSentenceId": "s18",
+      "promptEn": "I'm well.",
+      "expectedIt": "Sto bene.",
+      "acceptableAnswers": [
+        "Io sto bene."
+      ],
+      "match": "flexible",
+      "focus": [
+        "essere",
+        "social"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch07-prod-01",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-07",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "Dinner is at eight.",
+      "expectedIt": "La cena è alle otto.",
+      "match": "flexible",
+      "focus": [
+        "clock",
+        "routine"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch07-prod-02",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-07",
+      "level": "A1",
+      "sourceSentenceId": "s21",
+      "promptEn": "Tomorrow I get up at seven.",
+      "expectedIt": "Domani mi alzo alle sette.",
+      "acceptableAnswers": [
+        "Domani Luca si alza alle sette.",
+        "Mi alzo alle sette domani."
+      ],
+      "match": "flexible",
+      "focus": [
+        "routine",
+        "reflexives",
+        "domani"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-02-ch07-prod-03",
+      "storyId": "luca-prima-di-roma-02",
+      "chapterId": "luca-prima-di-roma-02-07",
+      "level": "A1",
+      "sourceSentenceId": "s33",
+      "promptEn": "Good night.",
+      "expectedIt": "Buona notte.",
+      "match": "exact",
+      "focus": [
+        "greeting"
+      ]
+    }
+  ]
+}

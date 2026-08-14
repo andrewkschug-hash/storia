@@ -22,7 +22,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-02-04",
-      "summary": "They read the calendar: today is Monday 12 May.",
+      "summary": "The family reads the date: today is Monday 12 May.",
       "characterIds": [
         "luca",
         "marta",
@@ -46,6 +46,31 @@
       "sentences": [
         {
           "id": "s01",
+          "text": "Marta è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca e Chiara sono qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "chiara",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Che giorno è oggi?",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -57,7 +82,7 @@
           ]
         },
         {
-          "id": "s02",
+          "id": "s04",
           "text": "Oggi è lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -68,7 +93,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s05",
           "text": "Oggi è il dodici maggio.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -81,7 +106,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s06",
           "text": "Maggio è un mese.",
           "speakerId": null,
           "kind": "narration",
@@ -93,8 +118,8 @@
           ]
         },
         {
-          "id": "s05",
-          "text": "L’anno ha dodici mesi.",
+          "id": "s07",
+          "text": "L'anno ha dodici mesi.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -105,7 +130,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s08",
           "text": "Gennaio febbraio marzo.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -116,7 +141,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s09",
           "text": "Aprile maggio giugno.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -127,7 +152,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s10",
           "text": "Luglio agosto settembre.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -136,15 +161,9 @@
             "agosto",
             "settembre"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s09",
+          "id": "s11",
           "text": "Ottobre novembre dicembre.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -155,7 +174,54 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s12",
+          "text": "Dodici mesi in un anno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dodici",
+            "mese",
+            "in",
+            "un",
+            "anno"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Marta guarda il mese di maggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "il",
+            "mese",
+            "di",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il numero dodici è importante oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "numero",
+            "dodici",
+            "essere",
+            "importante",
+            "oggi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
           "text": "Il dodici è un numero.",
           "speakerId": null,
           "kind": "narration",
@@ -168,7 +234,20 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s14",
+          "text": "Oggi il numero è dodici.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "il",
+            "numero",
+            "essere",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s15",
           "text": "Domani è il tredici maggio.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -181,7 +260,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s16",
           "text": "Ieri è l'undici maggio.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -193,7 +272,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s17",
           "text": "Il giorno è importante.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -205,7 +284,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s18",
           "text": "Oggi Luca guarda il mese.",
           "speakerId": null,
           "kind": "narration",
@@ -218,7 +297,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s19",
           "text": "Maggio è ora.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -226,6 +305,263 @@
             "maggio",
             "essere",
             "ora"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Siamo a maggio.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "a",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Che mese è?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "mese",
+            "essere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "È maggio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "maggio"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Il dodici maggio è oggi.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "dodici",
+            "maggio",
+            "essere",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Luca scrive il numero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "scrivere",
+            "il",
+            "numero"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Ieri è undici e oggi dodici.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "essere",
+            "undici",
+            "e",
+            "oggi",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Domani è tredici maggio martedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "tredici",
+            "maggio",
+            "martedi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Uno due tre.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "uno",
+            "due",
+            "tre"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Fino a dodici.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "fino",
+            "a",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Oggi è il dodici.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "il",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Domani è il tredici.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "il",
+            "tredici"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Ieri è l'undici.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "essere",
+            "undici"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "L'anno è importante.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "anno",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Oggi è una bella giornata.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "una",
+            "bello",
+            "giornata"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Il dodici maggio è lunedì.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "dodici",
+            "maggio",
+            "essere",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca capisce il numero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "capire",
+            "il",
+            "numero"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Chiara capisce anche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "capire",
+            "anche"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Marta è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Oggi tutti sanno il giorno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "tutto",
+            "sapere",
+            "il",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Luca impara i mesi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "imparare",
+            "il",
+            "mese"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Chiara impara i numeri del mese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "imparare",
+            "il",
+            "numero",
+            "del",
+            "mese"
           ]
         }
       ]
@@ -256,7 +592,7 @@
         "12"
       ],
       "correctChoice": 2,
-      "explanation": "L’anno ha dodici mesi.",
+      "explanation": "L'anno ha dodici mesi.",
       "chapterId": "luca-prima-di-roma-02-04",
       "difficulty": 1
     },

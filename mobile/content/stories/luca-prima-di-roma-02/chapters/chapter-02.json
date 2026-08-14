@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-02-02",
-      "summary": "Luca gets up at seven, has breakfast, and Chiara leaves for school at eight.",
+      "summary": "Luca gets up at seven, has breakfast with Marta, and Chiara leaves for school at eight.",
       "characterIds": [
         "luca",
         "marta",
@@ -36,7 +36,7 @@
       ],
       "rememberedFacts": [
         "Luca gets up at 7",
-        "They eat breakfast",
+        "They eat colazione in the cucina",
         "Chiara goes to school at 8"
       ]
     }
@@ -69,6 +69,17 @@
         },
         {
           "id": "s03",
+          "text": "Luca si sveglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "si",
+            "svegliare"
+          ]
+        },
+        {
+          "id": "s04",
           "text": "Luca si alza.",
           "speakerId": null,
           "kind": "narration",
@@ -79,7 +90,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
           "text": "Luca è in camera.",
           "speakerId": null,
           "kind": "narration",
@@ -91,7 +102,29 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s06",
+          "text": "Luca guarda l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sono le sette.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "sette"
+          ]
+        },
+        {
+          "id": "s08",
           "text": "Poi Luca va in cucina.",
           "speakerId": null,
           "kind": "narration",
@@ -104,7 +137,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s09",
           "text": "Marta è in cucina.",
           "speakerId": null,
           "kind": "narration",
@@ -116,7 +149,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s10",
           "text": "Buongiorno Luca.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -126,13 +159,52 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s11",
           "text": "Buongiorno mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "buongiorno",
             "mamma"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Chiara è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Luca si alza presto ogni mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "si",
+            "alzare",
+            "presto",
+            "ogni",
+            "mattina"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "In camera Luca guarda l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "camera",
+            "luca",
+            "guardare",
+            "orologio"
           ]
         }
       ]
@@ -142,7 +214,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s13",
           "text": "Luca fa colazione.",
           "speakerId": null,
           "kind": "narration",
@@ -153,7 +225,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s14",
           "text": "C'è pane.",
           "speakerId": null,
           "kind": "narration",
@@ -163,7 +235,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s15",
           "text": "C'è latte.",
           "speakerId": null,
           "kind": "narration",
@@ -173,7 +245,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s16",
           "text": "Luca mangia pane.",
           "speakerId": null,
           "kind": "narration",
@@ -184,7 +256,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s17",
           "text": "Luca beve latte.",
           "speakerId": null,
           "kind": "narration",
@@ -195,7 +267,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s18",
           "text": "Chiara fa colazione.",
           "speakerId": null,
           "kind": "narration",
@@ -206,7 +278,31 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s19",
+          "text": "Marta prepara la colazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "preparare",
+            "la",
+            "colazione"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La colazione è buona.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "colazione",
+            "essere",
+            "buono"
+          ]
+        },
+        {
+          "id": "s21",
           "text": "Sono le otto.",
           "speakerId": null,
           "kind": "narration",
@@ -217,19 +313,32 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "Chiara va a scuola.",
-          "speakerId": null,
-          "kind": "narration",
+          "id": "s22",
+          "text": "Chiara deve andare a scuola.",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
             "chiara",
+            "dovere",
             "andare",
             "a",
             "scuola"
           ]
         },
         {
-          "id": "s17",
+          "id": "s23",
+          "text": "Alle otto Chiara parte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alle",
+            "otto",
+            "chiara",
+            "partire"
+          ]
+        },
+        {
+          "id": "s24",
           "text": "A presto.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -239,7 +348,73 @@
           ]
         },
         {
-          "id": "s18",
+          "id": "s39",
+          "text": "Marta e Luca fanno colazione insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "e",
+            "luca",
+            "fare",
+            "colazione",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Chiara mangia pane e beve latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "mangiare",
+            "pane",
+            "e",
+            "bere",
+            "latte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Ciao Chiara.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Ciao Luca.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Chiara esce di casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "uscire",
+            "di",
+            "casa"
+          ]
+        },
+        {
+          "id": "s28",
           "text": "Luca resta a casa.",
           "speakerId": null,
           "kind": "narration",
@@ -248,6 +423,137 @@
             "restare",
             "a",
             "casa"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Marta resta in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "restare",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Luca aiuta Marta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aiutare",
+            "marta"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "La mattina è tranquilla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "essere",
+            "tranquillo"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Sono le otto e mezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "otto",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Chiara è a scuola adesso.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "a",
+            "scuola",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Luca è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Oggi la mattina è importante.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "la",
+            "mattina",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "La famiglia è insieme prima di scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "insieme",
+            "prima",
+            "di",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Alle otto e mezzo la casa è tranquilla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alle",
+            "otto",
+            "e",
+            "mezzo",
+            "la",
+            "casa",
+            "essere",
+            "tranquillo"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Luca pensa a Chiara a scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "pensare",
+            "a",
+            "chiara",
+            "a",
+            "scuola"
           ]
         }
       ]
@@ -264,35 +570,35 @@
         "12:00"
       ],
       "correctChoice": 0,
-      "explanation": "Sono le sette when he gets up.",
+      "explanation": "Sono le sette when he wakes up.",
       "chapterId": "luca-prima-di-roma-02-02",
       "difficulty": 1
     },
     {
       "id": "lpr02-ch02-q02",
       "type": "direct",
-      "question": "What does Luca eat and drink?",
+      "question": "What does Luca eat and drink at breakfast?",
       "choices": [
         "Pizza and wine",
         "Bread and milk",
         "Pasta and coffee"
       ],
       "correctChoice": 1,
-      "explanation": "Pane and latte.",
+      "explanation": "Luca mangia pane and beve latte.",
       "chapterId": "luca-prima-di-roma-02-02",
       "difficulty": 1
     },
     {
       "id": "lpr02-ch02-q03",
       "type": "sequence",
-      "question": "What happens at eight?",
+      "question": "What happens at eight o’clock?",
       "choices": [
-        "Chiara goes to school",
-        "Luca goes to Rome",
-        "They sleep"
+        "Chiara leaves for school",
+        "Luca goes to sleep",
+        "They eat dinner"
       ],
       "correctChoice": 0,
-      "explanation": "Alle otto Chiara va a scuola.",
+      "explanation": "Alle otto Chiara parte.",
       "chapterId": "luca-prima-di-roma-02-02",
       "difficulty": 1
     }

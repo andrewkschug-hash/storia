@@ -15,6 +15,7 @@ import {
   signUpWithPassword,
   updateAccountProfile,
 } from '@/src/account/storage';
+import { __resetUnlockAllChapters, unlockAllChapters } from '@/src/progress/unlockAll';
 
 vi.mock('@react-native-async-storage/async-storage', () => {
   const store = new Map<string, string>();
@@ -26,6 +27,10 @@ vi.mock('@react-native-async-storage/async-storage', () => {
       },
       removeItem: async (key: string) => {
         store.delete(key);
+      },
+      getAllKeys: async () => [...store.keys()],
+      multiRemove: async (keys: string[]) => {
+        for (const key of keys) store.delete(key);
       },
     },
   };
@@ -45,6 +50,7 @@ vi.mock('@/src/lib/supabase', () => ({
 describe('local account persistence', () => {
   beforeEach(async () => {
     await clearAccount();
+    __resetUnlockAllChapters();
   });
 
   it('starts with no account', async () => {
@@ -148,11 +154,10 @@ describe('developer email detection', () => {
       email: 'sam@example.com',
     });
     expect(isDeveloperAccount(learner)).toBe(false);
-    expect(canAccessDeveloperTools(learner)).toBe(
-      typeof __DEV__ !== 'undefined' ? Boolean(__DEV__) : false,
-    );
+    expect(unlockAllChapters()).toBe(false);
 
     await clearAccount();
+    expect(unlockAllChapters()).toBe(false);
     const developer = await saveAccount({
       displayName: 'Andrew',
       email: 'andrewkschug@gmail.com',
@@ -160,5 +165,6 @@ describe('developer email detection', () => {
     expect(developer.role).toBe('developer');
     expect(isDeveloperAccount(developer)).toBe(true);
     expect(canAccessDeveloperTools(developer)).toBe(true);
+    expect(unlockAllChapters()).toBe(true);
   });
 });

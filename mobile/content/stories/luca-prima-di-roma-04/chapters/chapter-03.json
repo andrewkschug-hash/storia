@@ -7,7 +7,8 @@
   "difficultyLevel": 1,
   "locationIds": [
     "piazza-pietralba",
-    "parco-pietralba"
+    "parco-pietralba",
+    "farmacia-pietralba"
   ],
   "characterIds": [
     "luca",
@@ -20,19 +21,20 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-03",
-      "summary": "Today it is sunny and warm. Davide says sometimes it rains.",
+      "summary": "After the pharmacy Luca meets Davide. Today it is sunny and warm; they talk about rain and cold.",
       "characterIds": [
         "luca",
         "davide"
       ],
       "locationIds": [
         "piazza-pietralba",
-        "parco-pietralba"
+        "parco-pietralba",
+        "farmacia-pietralba"
       ],
       "rememberedFacts": [
-        "Today it is sunny",
-        "It is warm",
-        "Sometimes it rains in Pietralba"
+        "Today it is sunny and warm",
+        "It is not raining now",
+        "Sometimes it rains in Pietralba and then it is cold"
       ]
     }
   ],
@@ -43,6 +45,18 @@
       "sentences": [
         {
           "id": "s01",
+          "text": "Luca esce dalla farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "uscire",
+            "dalla",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s02",
           "text": "Luca e Davide sono in piazza.",
           "speakerId": null,
           "kind": "narration",
@@ -56,18 +70,19 @@
           ]
         },
         {
-          "id": "s02",
-          "text": "Che tempo fa?",
+          "id": "s03",
+          "text": "Che tempo fa oggi?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "che",
             "tempo",
-            "fare"
+            "fare",
+            "oggi"
           ]
         },
         {
-          "id": "s03",
+          "id": "s04",
           "text": "C'è il sole.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -78,7 +93,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
           "text": "Fa caldo.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -88,7 +103,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s06",
           "text": "Oggi non piove.",
           "speakerId": null,
           "kind": "narration",
@@ -99,10 +114,10 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s07",
           "text": "Il tempo è bello.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
             "il",
             "tempo",
@@ -111,7 +126,48 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s08",
+          "text": "Luca guarda il sole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "sole"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Il sole è forte.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "sole",
+            "essere",
+            "forte"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca ha caldo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "avere",
+            "caldo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
           "text": "A Pietralba a volte piove.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -124,9 +180,9 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s12",
           "text": "Quando piove fa freddo.",
-          "speakerId": "luca",
+          "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
             "quando",
@@ -134,18 +190,12 @@
             "fare",
             "freddo"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s09",
+          "id": "s13",
           "text": "Oggi non fa freddo.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "luca",
+          "kind": "dialogue",
           "lemmas": [
             "oggi",
             "non",
@@ -154,20 +204,7 @@
           ]
         },
         {
-          "id": "s10",
-          "text": "Oggi è un giorno bello.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "oggi",
-            "essere",
-            "un",
-            "giorno",
-            "bello"
-          ]
-        },
-        {
-          "id": "s11",
+          "id": "s14",
           "text": "Il tempo non è nuvoloso.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -180,19 +217,21 @@
           ]
         },
         {
-          "id": "s12",
-          "text": "Luca guarda il sole.",
-          "speakerId": null,
-          "kind": "narration",
+          "id": "s15",
+          "text": "Il tempo è bello e chiaro.",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "guardare",
             "il",
-            "sole"
+            "tempo",
+            "essere",
+            "bello",
+            "e",
+            "chiaro"
           ]
         },
         {
-          "id": "s13",
+          "id": "s16",
           "text": "Davide è contento.",
           "speakerId": null,
           "kind": "narration",
@@ -203,19 +242,20 @@
           ]
         },
         {
-          "id": "s14",
-          "text": "Il parco è caldo.",
+          "id": "s17",
+          "text": "Con il sole fa caldo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "con",
             "il",
-            "parco",
-            "essere",
+            "sole",
+            "fare",
             "caldo"
           ]
         },
         {
-          "id": "s15",
+          "id": "s18",
           "text": "Che tempo bello.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -223,6 +263,225 @@
             "che",
             "tempo",
             "bello"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Oggi non fa freddo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "non",
+            "fare",
+            "freddo"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La piazza è al sole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "piazza",
+            "essere",
+            "al",
+            "sole"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Andiamo al parco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Il parco è vicino.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Al parco c'è il sole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "parco",
+            "ce",
+            "il",
+            "sole"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Fa caldo anche al parco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fare",
+            "caldo",
+            "anche",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Luca e Davide camminano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Quando piove restiamo a casa.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "quando",
+            "piovere",
+            "restare",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Oggi camminiamo al parco.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "camminare",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Oggi il tempo è diverso.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "il",
+            "tempo",
+            "essere",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Il parco è bello e caldo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "parco",
+            "essere",
+            "bello",
+            "e",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Luca è contento.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Il sole non va via.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "sole",
+            "non",
+            "andare",
+            "via"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Fa caldo in piazza e al parco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fare",
+            "caldo",
+            "in",
+            "piazza",
+            "e",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Oggi non piove.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "non",
+            "piovere"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Il tempo è bello.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "tempo",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca e Davide sono felici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "essere",
+            "felice"
           ]
         }
       ]
@@ -235,8 +494,8 @@
       "question": "What is the weather like today?",
       "choices": [
         "Sunny and warm",
-        "Snowy and icy",
-        "Night and cold"
+        "Rainy and cold",
+        "Snowy and icy"
       ],
       "correctChoice": 0,
       "explanation": "C'è il sole. Fa caldo.",
@@ -260,11 +519,11 @@
     {
       "id": "lpr04-ch03-q03",
       "type": "inference",
-      "question": "When does it feel cold?",
+      "question": "When does it feel cold in Pietralba?",
       "choices": [
         "When it rains",
         "When it is sunny",
-        "At the supermarket"
+        "At night only"
       ],
       "correctChoice": 0,
       "explanation": "Quando piove fa freddo.",

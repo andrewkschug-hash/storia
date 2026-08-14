@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-03-05",
-      "summary": "Luca pays with cash and takes the receipt.",
+      "summary": "Luca pays ten euros with cash and takes the receipt.",
       "characterIds": [
         "luca",
         "pina"
@@ -29,9 +29,10 @@
         "supermercato-pietralba"
       ],
       "rememberedFacts": [
-        "Luca pays at the supermarket",
-        "He pays with money",
-        "He gets a receipt"
+        "Everything costs ten euros",
+        "Luca pays with money",
+        "Luca gets the receipt",
+        "Luca says arrivederci to Pina"
       ]
     }
   ],
@@ -54,6 +55,28 @@
         },
         {
           "id": "s02",
+          "text": "Si può pagare?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si",
+            "potere",
+            "pagare"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sì va bene.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s04",
           "text": "Quanto costa tutto?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -64,7 +87,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s05",
           "text": "Tutto costa dieci euro.",
           "speakerId": "pina",
           "kind": "dialogue",
@@ -76,7 +99,17 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s06",
+          "text": "Dieci euro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dieci",
+            "euro"
+          ]
+        },
+        {
+          "id": "s07",
           "text": "Dieci euro va bene.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -88,7 +121,74 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s08",
+          "text": "Luca guarda i soldi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Luca ha i soldi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "il",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il prezzo è dieci euro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "prezzo",
+            "essere",
+            "dieci",
+            "euro"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca guarda tutto al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "tutto",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Pina ascolta Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "ascoltare",
+            "luca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
           "text": "Luca paga con i soldi.",
           "speakerId": null,
           "kind": "narration",
@@ -101,7 +201,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s14",
           "text": "Ecco dieci euro.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -112,7 +212,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s15",
           "text": "Grazie.",
           "speakerId": "pina",
           "kind": "dialogue",
@@ -121,7 +221,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s16",
           "text": "C'è lo scontrino?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -130,15 +230,9 @@
             "lo",
             "scontrino"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s09",
+          "id": "s17",
           "text": "Sì ecco lo scontrino.",
           "speakerId": "pina",
           "kind": "dialogue",
@@ -150,7 +244,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s18",
           "text": "Luca prende lo scontrino.",
           "speakerId": null,
           "kind": "narration",
@@ -162,7 +256,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s19",
           "text": "Lo scontrino è importante.",
           "speakerId": null,
           "kind": "narration",
@@ -174,7 +268,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s20",
           "text": "Luca può pagare.",
           "speakerId": null,
           "kind": "narration",
@@ -185,19 +279,138 @@
           ]
         },
         {
-          "id": "s13",
-          "text": "La lista è finita.",
+          "id": "s21",
+          "text": "Luca guarda lo scontrino.",
           "speakerId": null,
           "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "lo",
+            "scontrino"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Lo scontrino ha il prezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "scontrino",
+            "avere",
+            "il",
+            "prezzo"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Pina prende i soldi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "prendere",
+            "il",
+            "soldi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s24",
+          "text": "Il prezzo è dieci euro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "prezzo",
+            "essere",
+            "dieci",
+            "euro"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Tutto è pronto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "La lista è pronta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
           "lemmas": [
             "la",
             "lista",
             "essere",
-            "finire"
+            "pronto"
           ]
         },
         {
-          "id": "s14",
+          "id": "s27",
+          "text": "Luca ha pane e latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "pane",
+            "e",
+            "latte"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Luca ha pasta e frutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "pasta",
+            "e",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca ha formaggio e olio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "formaggio",
+            "e",
+            "olio"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Luca ha mele al supermercato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "mela",
+            "al",
+            "supermercato"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "Arrivederci signora.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -207,12 +420,71 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Arrivederci.",
+          "id": "s32",
+          "text": "Arrivederci Luca.",
           "speakerId": "pina",
           "kind": "dialogue",
           "lemmas": [
-            "arrivederci"
+            "arrivederci",
+            "luca"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca ha lo scontrino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "lo",
+            "scontrino"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Luca dice grazie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "dire",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Pina guarda Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "guardare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Luca torna a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "tornare",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Tutto è a casa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "a",
+            "casa"
           ]
         }
       ]
@@ -238,11 +510,11 @@
       "type": "direct",
       "question": "How does Luca pay?",
       "choices": [
-        "With a phone",
         "With money",
+        "With a phone",
         "He does not pay"
       ],
-      "correctChoice": 1,
+      "correctChoice": 0,
       "explanation": "Luca paga con i soldi.",
       "chapterId": "luca-prima-di-roma-03-05",
       "difficulty": 1
@@ -250,13 +522,13 @@
     {
       "id": "lpr03-ch05-q03",
       "type": "direct",
-      "question": "What does Luca ask for?",
+      "question": "What does Luca ask for after paying?",
       "choices": [
-        "A ticket",
         "The receipt",
-        "A job"
+        "More cheese",
+        "A new list"
       ],
-      "correctChoice": 1,
+      "correctChoice": 0,
       "explanation": "C'è lo scontrino?",
       "chapterId": "luca-prima-di-roma-03-05",
       "difficulty": 1

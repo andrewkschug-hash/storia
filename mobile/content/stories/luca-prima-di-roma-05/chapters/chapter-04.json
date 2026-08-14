@@ -24,7 +24,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-04",
-      "summary": "Marta and Luca prepare: one cake, two bottles of juice, fruit.",
+      "summary": "Marta and Luca prepare the party: one torta, two bottles of succo, and fruit.",
       "characterIds": [
         "luca",
         "marta",
@@ -83,79 +83,6 @@
         },
         {
           "id": "s04",
-          "text": "C'è una torta.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ce",
-            "una",
-            "torta"
-          ]
-        },
-        {
-          "id": "s05",
-          "text": "Due bottiglie di succo.",
-          "speakerId": "marta",
-          "kind": "dialogue",
-          "lemmas": [
-            "due",
-            "bottiglia",
-            "di",
-            "succo"
-          ]
-        },
-        {
-          "id": "s06",
-          "text": "Un po' di frutta.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "un",
-            "poco",
-            "di",
-            "frutta"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Quanto succo?",
-          "speakerId": "chiara",
-          "kind": "dialogue",
-          "lemmas": [
-            "quanto",
-            "succo"
-          ]
-        },
-        {
-          "id": "s08",
-          "text": "Due bottiglie.",
-          "speakerId": "marta",
-          "kind": "dialogue",
-          "lemmas": [
-            "due",
-            "bottiglia"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
-        {
-          "id": "s09",
-          "text": "Paolo è in cucina.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "paolo",
-            "essere",
-            "in",
-            "cucina"
-          ]
-        },
-        {
-          "id": "s10",
           "text": "La famiglia prepara insieme.",
           "speakerId": null,
           "kind": "narration",
@@ -167,19 +94,196 @@
           ]
         },
         {
-          "id": "s11",
-          "text": "La torta è grande.",
+          "id": "s05",
+          "text": "Paolo è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Chiara porta il pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "portare",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Oggi è sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "La festa è oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "la",
-            "torta",
+            "festa",
             "essere",
-            "grande"
+            "oggi"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Marta guarda il tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "il",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca è pronto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Prepariamo tutto.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "preparare",
+            "tutto"
           ]
         },
         {
           "id": "s12",
+          "text": "La cucina è piena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "cucina",
+            "essere",
+            "pieno"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Chiara aiuta anche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "aiutare",
+            "anche"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s14",
+          "text": "C'è una torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "torta"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Una torta per il compleanno.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "torta",
+            "per",
+            "il",
+            "compleanno"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Quanto succo?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "succo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Due bottiglie di succo.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "bottiglia",
+            "di",
+            "succo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Due bottiglie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "bottiglia"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Un po' di frutta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "poco",
+            "di",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Poca frutta ma bella.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "poco",
+            "frutta",
+            "ma",
+            "bello"
+          ]
+        },
+        {
+          "id": "s21",
           "text": "Il succo è pronto.",
           "speakerId": null,
           "kind": "narration",
@@ -191,7 +295,134 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s22",
+          "text": "La torta è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "torta",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Marta conta le bottiglie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "contare",
+            "le",
+            "bottiglia"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Due bottiglie sono qui.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "bottiglia",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Una torta e due bottiglie.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "torta",
+            "e",
+            "due",
+            "bottiglia"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Quanto pane?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "pane"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Un po' di pane.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "poco",
+            "di",
+            "pane"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s28",
+          "text": "Paolo aiuta Marta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "aiutare",
+            "marta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Chiara mette il pane sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "mettere",
+            "il",
+            "pane",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Luca guarda la cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "La famiglia è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s32",
           "text": "La festa è pronta.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -203,7 +434,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s33",
           "text": "Oggi è un giorno importante.",
           "speakerId": null,
           "kind": "narration",
@@ -216,7 +447,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s34",
           "text": "Luca è contento.",
           "speakerId": null,
           "kind": "narration",
@@ -224,6 +455,78 @@
             "luca",
             "essere",
             "contento"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Marta è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Tutto è pronto per la festa.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "pronto",
+            "per",
+            "la",
+            "festa"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Il compleanno è quasi qui.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "compleanno",
+            "essere",
+            "quasi",
+            "qui"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Prepariamo insieme.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "preparare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "La famiglia lavora insieme.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "lavorare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Ora andiamo al soggiorno.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ora",
+            "andare",
+            "al",
+            "soggiorno"
           ]
         }
       ]
@@ -261,14 +564,14 @@
     {
       "id": "lpr05-ch04-q03",
       "type": "character",
-      "question": "Who helps Marta?",
+      "question": "Who helps Marta prepare?",
       "choices": [
         "Sofia",
-        "Luca",
+        "Luca and Paolo",
         "Franco"
       ],
       "correctChoice": 1,
-      "explanation": "Luca aiuta Marta.",
+      "explanation": "Luca aiuta Marta. Paolo aiuta Marta.",
       "chapterId": "luca-prima-di-roma-05-04",
       "difficulty": 1
     }

@@ -24,7 +24,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-01-04",
-      "summary": "Luca shows the kitchen, bedroom, and living room. The house is small.",
+      "summary": "Luca walks Chiara through kitchen, living room, and bedroom.",
       "characterIds": [
         "luca",
         "marta",
@@ -75,6 +75,20 @@
         },
         {
           "id": "s03",
+          "text": "Luca e Chiara sono in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "chiara",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s04",
           "text": "C'è una cucina.",
           "speakerId": null,
           "kind": "narration",
@@ -85,7 +99,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
           "text": "La cucina è grande.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -97,60 +111,65 @@
           ]
         },
         {
-          "id": "s05",
-          "text": "C'è un soggiorno.",
+          "id": "s06",
+          "text": "C'è un tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "ce",
             "un",
-            "soggiorno"
-          ]
-        },
-        {
-          "id": "s06",
-          "text": "Il soggiorno è piccolo.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "soggiorno",
-            "essere",
-            "piccolo"
+            "tavolo"
           ]
         },
         {
           "id": "s07",
-          "text": "C'è la mia camera.",
-          "speakerId": "luca",
-          "kind": "dialogue",
+          "text": "Ci sono quattro sedie.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "ce",
-            "la",
-            "mio",
-            "camera"
+            "ci",
+            "essere",
+            "quattro",
+            "sedia"
           ]
         },
         {
           "id": "s08",
-          "text": "La camera è piccola.",
+          "text": "C'è una finestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "la",
-            "camera",
-            "essere",
-            "piccolo"
+            "ce",
+            "una",
+            "finestra"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
           "id": "s09",
+          "text": "La finestra è aperta.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "finestra",
+            "essere",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Marta è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s11",
           "text": "Quante stanze ci sono?",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -162,30 +181,252 @@
           ]
         },
         {
-          "id": "s10",
-          "text": "Ci sono tre stanze.",
+          "id": "s12",
+          "text": "Aspetta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Adesso il soggiorno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "il",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Luca e Chiara vanno nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "chiara",
+            "andare",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "C'è un soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Il soggiorno è piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "soggiorno",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "C'è una porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "porta"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "La porta è chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "porta",
+            "essere",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "C'è una foto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "una",
+            "foto"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La foto è della famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "foto",
+            "essere",
+            "della",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Poi la mia camera.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "la",
+            "mio",
+            "camera"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Luca apre la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aprire",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Luca è in camera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "in",
+            "camera"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Chiara entra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "entrare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "C'è un letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "letto"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "C'è una sedia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "sedia"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "C'è un libro sul letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "libro",
+            "sul",
+            "letto"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "La camera è piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "camera",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "C'è anche un bagno.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "anche",
+            "un",
+            "bagno"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Cucina soggiorno camera bagno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "cucina",
+            "soggiorno",
+            "camera",
+            "bagno"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Ci sono quattro stanze.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "ci",
             "essere",
-            "tre",
+            "quattro",
             "stanza"
           ]
         },
         {
-          "id": "s11",
-          "text": "Cucina soggiorno camera.",
-          "speakerId": "marta",
-          "kind": "dialogue",
-          "lemmas": [
-            "cucina",
-            "soggiorno",
-            "camera"
-          ]
-        },
-        {
-          "id": "s12",
+          "id": "s32",
           "text": "La casa non è grande.",
           "speakerId": null,
           "kind": "narration",
@@ -198,7 +439,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s33",
           "text": "Ma la casa è bella.",
           "speakerId": null,
           "kind": "narration",
@@ -211,7 +452,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s34",
           "text": "Io sono in camera.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -223,31 +464,7 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Marta è in cucina.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "marta",
-            "essere",
-            "in",
-            "cucina"
-          ]
-        },
-        {
-          "id": "s16",
-          "text": "Chiara è nel soggiorno.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "chiara",
-            "essere",
-            "nel",
-            "soggiorno"
-          ]
-        },
-        {
-          "id": "s17",
+          "id": "s35",
           "text": "Siamo a casa insieme.",
           "speakerId": null,
           "kind": "narration",
@@ -265,28 +482,28 @@
     {
       "id": "lpr01-ch04-q01",
       "type": "direct",
-      "question": "How many rooms does Luca name?",
+      "question": "How many rooms does Luca count?",
       "choices": [
         "Two",
-        "Three",
-        "Six"
+        "Four",
+        "Ten"
       ],
       "correctChoice": 1,
-      "explanation": "Cucina, soggiorno, camera — three rooms.",
+      "explanation": "Cucina, soggiorno, camera, bagno.",
       "chapterId": "luca-prima-di-roma-01-04",
       "difficulty": 1
     },
     {
       "id": "lpr01-ch04-q02",
       "type": "direct",
-      "question": "Where is Luca’s bedroom?",
+      "question": "What is in Luca’s bedroom?",
       "choices": [
-        "In the house",
-        "At the supermarket",
-        "At the station"
+        "A bed, a chair, and a book",
+        "A supermarket list",
+        "A train ticket"
       ],
       "correctChoice": 0,
-      "explanation": "La camera is in casa mia.",
+      "explanation": "Letto, sedia, libro sul letto.",
       "chapterId": "luca-prima-di-roma-01-04",
       "difficulty": 1
     },
@@ -296,11 +513,11 @@
       "question": "Is the house big?",
       "choices": [
         "Yes, very big",
-        "No, it is small",
+        "No, it is small but nice",
         "There is no house"
       ],
       "correctChoice": 1,
-      "explanation": "La casa è piccola.",
+      "explanation": "La casa è piccola. Ma è bella.",
       "chapterId": "luca-prima-di-roma-01-04",
       "difficulty": 1
     }

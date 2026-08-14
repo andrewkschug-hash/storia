@@ -5,12 +5,25 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { getAdaptiveService } from '@/src/adaptive';
-import { getLevelReadinessService } from '@/src/cefr';
-import type { CEFRLevel, LevelReadiness } from '@/src/cefr';
-import { getChapterByNumber } from '@/src/content';
+import {
+  evaluateLearnerCrossStoryA1,
+  getLevelReadinessService,
+  type CrossStoryA1Readiness,
+  type LevelReadiness,
+} from '@/src/cefr';
+import { LUCA_STORY_ID, getChapterByNumber } from '@/src/content';
+import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
+import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
+
+function a1StatusTitle(status: CrossStoryA1Readiness['status']): string {
+  if (status === 'CONFIDENT') return 'Very ready';
+  if (status === 'READY') return 'Ready';
+  if (status === 'APPROACHING') return 'Almost there';
+  return 'Keep going';
+}
 
 export default function LevelReadinessScreen() {
   const { fromChapter } = useLocalSearchParams<{ fromChapter?: string }>();
@@ -18,13 +31,21 @@ export default function LevelReadinessScreen() {
   const insets = useSafeAreaInsets();
   const [busy, setBusy] = useState(false);
   const [readiness, setReadiness] = useState<LevelReadiness | null>(null);
+  const [crossA1, setCrossA1] = useState<CrossStoryA1Readiness | null>(null);
   const chapterNumber = fromChapter ? Number(fromChapter) : 20;
+  const a1Mode = chapterNumber < 24;
 
   useEffect(() => {
     void (async () => {
       const progress = await getProgressService().getOrCreate();
       const profile = await getAdaptiveService().buildProfile(progress);
       setReadiness(getLevelReadinessService().evaluate(profile, progress));
+      if (chapterNumber < 24) {
+        const vocabulary = await getVocabularyService().getState();
+        setCrossA1(await evaluateLearnerCrossStoryA1({ vocabulary }));
+      } else {
+        setCrossA1(null);
+      }
     })();
   }, [chapterNumber]);
 
@@ -39,9 +60,9 @@ export default function LevelReadinessScreen() {
           nextChapter: 25,
         }
       : {
-          eyebrow: 'Un po\' di più',
-          title: 'Stai leggendo bene a questo livello.',
-          body: 'Le prossime storie saranno un po\' più lunghe.',
+          eyebrow: 'A1 comprehension',
+          title: crossA1 ? a1StatusTitle(crossA1.status) : 'A1 comprehension',
+          body: crossA1?.message ?? 'Keep reading A1 stories.',
           tryLabel: 'Try A1+',
           stayLabel: 'Stay with A1',
           nextChapter: 21,
@@ -49,6 +70,7 @@ export default function LevelReadinessScreen() {
 
   const onTry = async () => {
     if (busy) return;
+    if (a1Mode && crossA1 && !crossA1.canChooseNext) return;
     setBusy(true);
     try {
       const progress = await getProgressService().getOrCreate();
@@ -57,7 +79,7 @@ export default function LevelReadinessScreen() {
       const next = getChapterByNumber(copy.nextChapter);
       if (next) {
         await getProgressService().openChapter(next.id);
-        router.replace(`/reader/${next.id}` as Href);
+        router.replace(readerHref(LUCA_STORY_ID, next.id));
       } else {
         router.replace('/(tabs)/stories' as Href);
       }
@@ -70,6 +92,8 @@ export default function LevelReadinessScreen() {
     router.replace('/(tabs)/stories' as Href);
   };
 
+  const showA1Try = !a1Mode || Boolean(crossA1?.canChooseNext);
+
   return (
     <AtmosphereBackground>
       <Stack.Screen options={{ title: 'Next stories', headerBackVisible: false }} />
@@ -78,7 +102,7 @@ export default function LevelReadinessScreen() {
           styles.content,
           { paddingTop: Spacing.lg, paddingBottom: insets.bottom + Spacing.xl },
         ]}>
-        {!readiness ? (
+        {!readiness || (a1Mode && !crossA1) ? (
           <ActivityIndicator color={colors.tint} />
         ) : (
           <>
@@ -89,20 +113,39 @@ export default function LevelReadinessScreen() {
             <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               {copy.body}
             </Text>
-            <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.md }]}>
-              {readiness.message}
-            </Text>
+            {!a1Mode ? (
+              <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.md }]}>
+                {readiness.message}
+              </Text>
+            ) : null}
+
+            {a1Mode && crossA1 ? (
+              <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
+                {crossA1.groups.map((group) => (
+                  <Text key={group.id} style={[Typography.body, { color: colors.text }]}>
+                    {group.met ? '✓' : '○'}  {group.label}
+                  </Text>
+                ))}
+                {crossA1.reasons[0] ? (
+                  <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+                    {crossA1.reasons[0]}
+                  </Text>
+                ) : null}
+              </View>
+            ) : null}
 
             <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
-              <Pressable
-                disabled={busy}
-                onPress={() => void onTry()}
-                style={({ pressed }) => [
-                  styles.primaryBtn,
-                  { backgroundColor: colors.tint, opacity: pressed || busy ? 0.88 : 1 },
-                ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>{copy.tryLabel}</Text>
-              </Pressable>
+              {showA1Try ? (
+                <Pressable
+                  disabled={busy}
+                  onPress={() => void onTry()}
+                  style={({ pressed }) => [
+                    styles.primaryBtn,
+                    { backgroundColor: colors.tint, opacity: pressed || busy ? 0.88 : 1 },
+                  ]}>
+                  <Text style={[Typography.button, { color: '#F7FAF9' }]}>{copy.tryLabel}</Text>
+                </Pressable>
+              ) : null}
               <Pressable
                 onPress={onStay}
                 style={({ pressed }) => [

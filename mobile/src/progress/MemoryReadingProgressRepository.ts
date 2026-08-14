@@ -15,4 +15,15 @@ export class MemoryReadingProgressRepository implements ReadingProgressRepositor
   async clear(storyId: string): Promise<void> {
     this.store.delete(storyId);
   }
+
+  async listAll(): Promise<ReadingProgressRecord[]> {
+    return [...this.store.values()].map((row) => ({
+      ...row,
+      completedChapterIds: [...row.completedChapterIds],
+    }));
+  }
+
+  async clearAll(): Promise<void> {
+    this.store.clear();
+  }
 }

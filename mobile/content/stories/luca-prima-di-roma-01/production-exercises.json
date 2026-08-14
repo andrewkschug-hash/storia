@@ -1,0 +1,286 @@
+{
+  "storyId": "luca-prima-di-roma-01",
+  "version": 1,
+  "exercises": [
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch01-prod-01",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-01",
+      "level": "A1",
+      "sourceSentenceId": "s16",
+      "promptEn": "My name is Luca.",
+      "expectedIt": "Mi chiamo Luca.",
+      "acceptableAnswers": [
+        "Io mi chiamo Luca."
+      ],
+      "match": "flexible",
+      "focus": [
+        "chiamarsi",
+        "introductions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch01-prod-02",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-01",
+      "level": "A1",
+      "sourceSentenceId": "s17",
+      "promptEn": "I am Luca.",
+      "expectedIt": "Io sono Luca.",
+      "acceptableAnswers": [
+        "Sono Luca."
+      ],
+      "match": "flexible",
+      "focus": [
+        "essere",
+        "introductions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch01-prod-03",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-01",
+      "level": "A1",
+      "sourceSentenceId": "s11",
+      "promptEn": "Good morning.",
+      "expectedIt": "Buongiorno.",
+      "match": "exact",
+      "focus": [
+        "greeting"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch02-prod-01",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-02",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "I am 24 years old.",
+      "expectedIt": "Ho ventiquattro anni.",
+      "acceptableAnswers": [
+        "Io ho ventiquattro anni."
+      ],
+      "match": "flexible",
+      "focus": [
+        "avere",
+        "age",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch02-prod-02",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-02",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "How old are you?",
+      "expectedIt": "Quanti anni hai?",
+      "match": "exact",
+      "focus": [
+        "age",
+        "questions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch02-prod-03",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-02",
+      "level": "A1",
+      "sourceSentenceId": "s07",
+      "promptEn": "I am 16 years old.",
+      "expectedIt": "Ho sedici anni.",
+      "acceptableAnswers": [
+        "Io ho sedici anni."
+      ],
+      "match": "flexible",
+      "focus": [
+        "avere",
+        "age",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch03-prod-01",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "level": "A1",
+      "sourceSentenceId": "s09",
+      "promptEn": "Marta is my mom.",
+      "expectedIt": "Marta è la mia mamma.",
+      "match": "flexible",
+      "focus": [
+        "family",
+        "possessives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch03-prod-02",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "level": "A1",
+      "sourceSentenceId": "s12",
+      "promptEn": "Paolo is my dad.",
+      "expectedIt": "Paolo è il mio papà.",
+      "match": "flexible",
+      "focus": [
+        "family",
+        "possessives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch03-prod-03",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "level": "A1",
+      "sourceSentenceId": "s15",
+      "promptEn": "Chiara is my sister.",
+      "expectedIt": "Chiara è la mia sorella.",
+      "match": "flexible",
+      "focus": [
+        "family",
+        "possessives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch03-prod-04",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-03",
+      "level": "A1",
+      "sourceSentenceId": "s19",
+      "promptEn": "Lidia is my grandmother.",
+      "expectedIt": "Lidia è la mia nonna.",
+      "match": "flexible",
+      "focus": [
+        "family",
+        "possessives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch04-prod-01",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-04",
+      "level": "A1",
+      "sourceSentenceId": "s01",
+      "promptEn": "This is my house.",
+      "expectedIt": "Questa è casa mia.",
+      "match": "flexible",
+      "focus": [
+        "descriptions",
+        "possessives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch04-prod-02",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-04",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "There is a kitchen.",
+      "expectedIt": "C'è una cucina.",
+      "acceptableAnswers": [
+        "C’è una cucina."
+      ],
+      "match": "flexible",
+      "focus": [
+        "ce",
+        "descriptions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch04-prod-03",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-04",
+      "level": "A1",
+      "sourceSentenceId": "s31",
+      "promptEn": "There are four rooms.",
+      "expectedIt": "Ci sono quattro stanze.",
+      "match": "flexible",
+      "focus": [
+        "ci_sono",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch05-prod-01",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-05",
+      "level": "A1",
+      "sourceSentenceId": "s08",
+      "promptEn": "Davide is my friend.",
+      "expectedIt": "Davide è il mio amico.",
+      "match": "flexible",
+      "focus": [
+        "social",
+        "possessives"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch05-prod-02",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-05",
+      "level": "A1",
+      "sourceSentenceId": "s09",
+      "promptEn": "Nice to meet you.",
+      "expectedIt": "Piacere.",
+      "match": "exact",
+      "focus": [
+        "social"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch05-prod-03",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-05",
+      "level": "A1",
+      "sourceSentenceId": "s13",
+      "promptEn": "Davide is tall.",
+      "expectedIt": "Davide è alto.",
+      "match": "flexible",
+      "focus": [
+        "essere",
+        "descriptions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch06-prod-01",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-06",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "There are five people.",
+      "expectedIt": "Ci sono cinque persone.",
+      "match": "flexible",
+      "focus": [
+        "ci_sono",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch06-prod-02",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-06",
+      "level": "A1",
+      "sourceSentenceId": "s06",
+      "promptEn": "There are five of us at dinner.",
+      "expectedIt": "Siamo cinque a cena.",
+      "match": "flexible",
+      "focus": [
+        "essere",
+        "numbers"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-01-ch06-prod-03",
+      "storyId": "luca-prima-di-roma-01",
+      "chapterId": "luca-prima-di-roma-01-06",
+      "level": "A1",
+      "sourceSentenceId": "s08",
+      "promptEn": "The house number is twelve.",
+      "expectedIt": "Il numero della casa è dodici.",
+      "match": "flexible",
+      "focus": [
+        "numbers"
+      ]
+    }
+  ]
+}

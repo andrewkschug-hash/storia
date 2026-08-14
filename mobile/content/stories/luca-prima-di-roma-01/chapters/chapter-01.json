@@ -7,7 +7,8 @@
   "difficultyLevel": 1,
   "locationIds": [
     "pietralba",
-    "casa-pietralba"
+    "casa-pietralba",
+    "soggiorno-pietralba"
   ],
   "characterIds": [
     "luca",
@@ -20,14 +21,15 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-01-01",
-      "summary": "Luca introduces himself at home in Pietralba and greets Davide.",
+      "summary": "Davide visits. Luca introduces himself: name, home, Pietralba.",
       "characterIds": [
         "luca",
         "davide"
       ],
       "locationIds": [
         "pietralba",
-        "casa-pietralba"
+        "casa-pietralba",
+        "soggiorno-pietralba"
       ],
       "rememberedFacts": [
         "Luca lives in Pietralba",
@@ -55,18 +57,6 @@
         },
         {
           "id": "s02",
-          "text": "Luca è a casa.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "essere",
-            "a",
-            "casa"
-          ]
-        },
-        {
-          "id": "s03",
           "text": "Pietralba è un paese piccolo.",
           "speakerId": null,
           "kind": "narration",
@@ -79,18 +69,89 @@
           ]
         },
         {
-          "id": "s04",
-          "text": "Oggi Luca parla.",
+          "id": "s03",
+          "text": "Pietralba non è Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "oggi",
+            "pietralba",
+            "non",
+            "essere",
+            "roma"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "luca",
-            "parlare"
+            "essere",
+            "a",
+            "casa"
           ]
         },
         {
           "id": "s05",
+          "text": "Luca è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "C'è una persona alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "persona",
+            "alla",
+            "porta"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Luca apre la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aprire",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Davide è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Ciao Luca.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Ciao.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -99,7 +160,67 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s11",
+          "text": "Buongiorno.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Buongiorno Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "davide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Entra.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "entrare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Davide entra in casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "entrare",
+            "in",
+            "casa"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "I due amici sono nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "due",
+            "amico",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Mi chiamo Luca.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -119,7 +240,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s17",
           "text": "Io sono Luca.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -130,7 +251,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s18",
           "text": "Tu come ti chiami?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -140,37 +261,9 @@
             "ti",
             "chiamarsi"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
-        {
-          "id": "s09",
-          "text": "Davide è a casa.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "davide",
-            "essere",
-            "a",
-            "casa"
-          ]
         },
         {
-          "id": "s10",
-          "text": "Ciao Luca.",
-          "speakerId": "davide",
-          "kind": "dialogue",
-          "lemmas": [
-            "ciao",
-            "luca"
-          ]
-        },
-        {
-          "id": "s11",
+          "id": "s19",
           "text": "Io mi chiamo Davide.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -182,16 +275,7 @@
           ]
         },
         {
-          "id": "s12",
-          "text": "Buongiorno.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "buongiorno"
-          ]
-        },
-        {
-          "id": "s13",
+          "id": "s20",
           "text": "Siamo amici.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -201,7 +285,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s21",
           "text": "Io abito qui.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -212,51 +296,204 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Davide abita qui.",
+          "id": "s22",
+          "text": "Abito a Pietralba.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "abitare",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Anche Davide abita qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "anche",
             "davide",
             "abitare",
             "qui"
           ]
         },
         {
-          "id": "s16",
-          "text": "Luca e Davide sono a Pietralba.",
+          "id": "s24",
+          "text": "Davide è di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "luca",
-            "e",
             "davide",
             "essere",
-            "a",
+            "di",
             "pietralba"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
         {
-          "id": "s17",
-          "text": "Pietralba non è Roma.",
+          "id": "s25",
+          "text": "Luca è di Pietralba.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": [
-            "pietralba",
-            "non",
-            "essere",
-            "roma"
-          ]
-        },
-        {
-          "id": "s18",
-          "text": "Luca è di Pietralba.",
-          "speakerId": "luca",
-          "kind": "dialogue",
           "lemmas": [
             "luca",
             "essere",
             "di",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Roma è lontana.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "roma",
+            "essere",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Sì Roma è lontana.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "roma",
+            "essere",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Oggi io resto a casa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "io",
+            "restare",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Va bene.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Davide è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Luca è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Pietralba è piccola ma bella.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "pietralba",
+            "essere",
+            "piccolo",
+            "ma",
+            "bello"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Io sono Luca di Pietralba.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "luca",
+            "di",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Piacere.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Piacere Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere",
+            "davide"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Davide resta un momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "restare",
+            "un",
+            "momento"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Luca parla ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "parlare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Io abito qui a Pietralba.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "abitare",
+            "qui",
+            "a",
             "pietralba"
           ]
         }
@@ -269,11 +506,11 @@
       "type": "direct",
       "question": "What is the protagonist’s name?",
       "choices": [
-        "Luca",
         "Davide",
+        "Luca",
         "Paolo"
       ],
-      "correctChoice": 0,
+      "correctChoice": 1,
       "explanation": "He says “Mi chiamo Luca.”",
       "chapterId": "luca-prima-di-roma-01-01",
       "difficulty": 1
@@ -288,21 +525,21 @@
         "At the station"
       ],
       "correctChoice": 1,
-      "explanation": "Luca is in Pietralba and lives there.",
+      "explanation": "He lives in Pietralba, not Rome.",
       "chapterId": "luca-prima-di-roma-01-01",
       "difficulty": 1
     },
     {
       "id": "lpr01-ch01-q03",
-      "type": "character",
-      "question": "Who greets Luca at home?",
+      "type": "event",
+      "question": "Why does Davide come into the house?",
       "choices": [
-        "Sofia",
-        "Davide",
-        "Franco"
+        "Luca opens the door and invites him in",
+        "They go to Rome",
+        "Marta calls them"
       ],
-      "correctChoice": 1,
-      "explanation": "Davide comes and says ciao.",
+      "correctChoice": 0,
+      "explanation": "Davide is at the door; Luca says entra.",
       "chapterId": "luca-prima-di-roma-01-01",
       "difficulty": 1
     }

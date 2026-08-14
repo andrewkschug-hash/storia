@@ -21,7 +21,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-02-03",
-      "summary": "Today is Monday. They name every weekday and plan tomorrow.",
+      "summary": "Today is Monday. The family names the weekdays and talks about school days.",
       "characterIds": [
         "luca",
         "paolo",
@@ -45,6 +45,31 @@
       "sentences": [
         {
           "id": "s01",
+          "text": "Luca e Chiara sono nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "chiara",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Paolo è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Oggi è lunedì.",
           "speakerId": null,
           "kind": "narration",
@@ -55,7 +80,30 @@
           ]
         },
         {
-          "id": "s02",
+          "id": "s04",
+          "text": "Che giorno è oggi?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "giorno",
+            "essere",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Oggi è lunedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s06",
           "text": "Ieri è domenica.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -66,7 +114,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s07",
           "text": "Domani è martedì.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -77,7 +125,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s08",
           "text": "Luca dice i giorni.",
           "speakerId": null,
           "kind": "narration",
@@ -89,7 +137,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s09",
           "text": "Lunedì martedì mercoledì.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -100,7 +148,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s10",
           "text": "Giovedì venerdì.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -110,7 +158,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s11",
           "text": "Sabato domenica.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -120,7 +168,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s12",
           "text": "La settimana ha sette giorni.",
           "speakerId": null,
           "kind": "narration",
@@ -131,6 +179,33 @@
             "sette",
             "giorno"
           ]
+        },
+        {
+          "id": "s37",
+          "text": "Mercoledì e giovedì Chiara ha scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mercoledi",
+            "e",
+            "giovedi",
+            "chiara",
+            "avere",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Venerdì Chiara ha scuola anche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "chiara",
+            "avere",
+            "scuola",
+            "anche"
+          ]
         }
       ]
     },
@@ -139,7 +214,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s13",
           "text": "Oggi Chiara ha scuola.",
           "speakerId": null,
           "kind": "narration",
@@ -151,7 +226,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s14",
           "text": "Domani Chiara ha scuola.",
           "speakerId": null,
           "kind": "narration",
@@ -163,7 +238,19 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s15",
+          "text": "Martedì Chiara ha scuola.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "martedi",
+            "chiara",
+            "avere",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Sabato Chiara non ha scuola.",
           "speakerId": null,
           "kind": "narration",
@@ -176,7 +263,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s17",
           "text": "Domenica siamo a casa.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -188,7 +275,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s18",
           "text": "Ogni giorno ha un nome.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -201,19 +288,22 @@
           ]
         },
         {
-          "id": "s14",
-          "text": "Che giorno è oggi?",
+          "id": "s19",
+          "text": "Lunedì è il primo giorno di scuola.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
-            "che",
-            "giorno",
+            "lunedi",
             "essere",
-            "oggi"
+            "il",
+            "primo",
+            "giorno",
+            "di",
+            "scuola"
           ]
         },
         {
-          "id": "s15",
+          "id": "s20",
           "text": "Oggi è lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -224,13 +314,255 @@
           ]
         },
         {
-          "id": "s16",
+          "id": "s21",
+          "text": "Domani è martedì.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Chiara ascolta i giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "ascoltare",
+            "il",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Paolo parla con Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "parlare",
+            "con",
+            "luca"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "I giorni sono importanti.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "giorno",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Paolo lavora ogni giorno della settimana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "lavorare",
+            "ogni",
+            "giorno",
+            "della",
+            "settimana"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Luca resta a casa il lunedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "restare",
+            "a",
+            "casa",
+            "il",
+            "lunedi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Che giorno è domani?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "giorno",
+            "essere",
+            "domani"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Domani è martedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "E ieri?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Ieri è domenica.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "essere",
+            "domenica"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Oggi Chiara va a scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "chiara",
+            "andare",
+            "a",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Domani Chiara va a scuola.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "chiara",
+            "andare",
+            "a",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "Va bene.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
             "andare",
             "bene"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La settimana è lunga.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "settimana",
+            "essere",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Ma oggi è solo lunedì.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "oggi",
+            "essere",
+            "solo",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Luca guarda Chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Chiara è pronta per scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "pronto",
+            "per",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Oggi è un giorno di scuola.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "un",
+            "giorno",
+            "di",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Domenica la famiglia resta insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domenica",
+            "la",
+            "famiglia",
+            "restare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Oggi è il primo giorno della settimana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "il",
+            "primo",
+            "giorno",
+            "della",
+            "settimana"
           ]
         }
       ]

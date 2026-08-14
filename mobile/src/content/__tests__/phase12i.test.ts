@@ -186,7 +186,7 @@ describe('Phase 12I story catalog', () => {
     const pre = getCatalogStory('luca-prima-di-roma-01')!;
     expect(pre.narrativeArc).toBe(PRE_ROME_ARC_ID);
     expect(pre.narrativeOrder).toBe(1);
-    expect(pre.status).toBe('planned');
+    expect(pre.status).toBe('available');
     expect(pre.cefrLevel).toBe('A1');
     expect(pre.protagonistId).toBe('luca');
 
@@ -214,7 +214,7 @@ describe('Phase 12I story catalog', () => {
       expect(journey[i].narrativeOrder).toBeGreaterThan(journey[i - 1].narrativeOrder);
     }
     expect(getCatalogStory(LUCA_STORY_ID)!.narrativeOrder).toBe(6);
-    expect(getStoriesInArc(PRE_ROME_ARC_ID).every((story) => story.chapterCount === 0)).toBe(true);
+    expect(getStoriesInArc(PRE_ROME_ARC_ID).map((story) => story.chapterCount)).toEqual([6, 7, 6, 7, 6]);
   });
 
   it('exposes narrative arcs independently of CEFR bands', () => {
@@ -245,11 +245,11 @@ describe('Phase 12I content loading', () => {
     expect(bundle.chapters.has('luca-a-roma-01')).toBe(false);
   });
 
-  it('fails cleanly for nonexistent and planned story IDs', () => {
+  it('fails cleanly for nonexistent and draft story IDs', () => {
     expect(() => getContentBundle('does-not-exist')).toThrow(StoryLoadError);
-    expect(() => getContentBundle('luca-prima-di-roma-01')).toThrow(/planned/);
-    expect(tryGetContentBundle('luca-prima-di-roma-03')).toBeNull();
     expect(tryGetContentBundle('nope')).toBeNull();
+    expect(getContentBundle('luca-prima-di-roma-01').chapters.size).toBe(6);
+    expect(tryGetContentBundle('luca-prima-di-roma-03')?.chapters.size).toBe(6);
   });
 
   it('keeps Elena distinguishable as an incomplete draft', () => {
@@ -341,25 +341,26 @@ describe('Phase 12I domain metadata', () => {
 });
 
 describe('Phase 12I validation statuses', () => {
-  it('keeps Luca valid, draft incomplete, pre-Rome planned', () => {
+  it('keeps Luca valid, draft incomplete, pre-Rome available', () => {
     const result = validateStoryCatalog();
     expect(result.ok).toBe(true);
     expect(result.errors).toEqual([]);
-    expect(result.available).toContain(LUCA_STORY_ID);
-    expect(result.draft).toContain(ELENA_STORY_ID);
-    expect(result.planned).toEqual([
+    expect(result.available).toEqual(expect.arrayContaining([
+      LUCA_STORY_ID,
       'luca-prima-di-roma-01',
       'luca-prima-di-roma-02',
       'luca-prima-di-roma-03',
       'luca-prima-di-roma-04',
       'luca-prima-di-roma-05',
-    ]);
+    ]));
+    expect(result.draft).toContain(ELENA_STORY_ID);
+    expect(result.planned).toEqual([]);
     expect(getContentBundle().chapters.size).toBe(40);
   });
 });
 
 describe('Phase 12I CEFR readiness split', () => {
-  it('does not regress Luca A1 readiness and leaves cross-story unimplemented', () => {
+  it('does not regress Luca A1 readiness and exposes cross-story A1 evaluation', () => {
     const isolated = evaluateLevelReadiness({
       currentLevel: 'A1',
       completedChapterNumbers: [1],
@@ -404,11 +405,12 @@ describe('Phase 12I CEFR readiness split', () => {
       },
     });
     const cross = evaluateCrossStoryA1Readiness(signals);
-    expect(cross.implemented).toBe(false);
+    expect(cross.implemented).toBe(true);
+    expect(cross.status).toBeTruthy();
     expect(signals.some((row) => row.storyId === LUCA_STORY_ID)).toBe(true);
-    expect(signals.some((row) => row.storyId === 'luca-prima-di-roma-01' && row.status === 'planned')).toBe(
-      true,
-    );
+    expect(
+      signals.some((row) => row.storyId === 'luca-prima-di-roma-01' && row.status === 'available'),
+    ).toBe(true);
   });
 });
 

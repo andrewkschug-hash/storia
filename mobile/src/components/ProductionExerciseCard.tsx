@@ -17,6 +17,7 @@ type Props = {
   onContinue: () => void;
   /** Story sentence this exercise is based on. Used so prompts match 3rd-person narration. */
   sourceSentence?: StorySentenceCue | null;
+  onAssessed?: (assessment: SelfAssessment | null) => void;
 };
 
 const SELF_ASSESSMENT: { id: SelfAssessment; label: string }[] = [
@@ -31,6 +32,7 @@ export function ProductionExerciseCard({
   total,
   onContinue,
   sourceSentence,
+  onAssessed,
 }: Props) {
   const { colors } = useTheme();
   const [revealed, setRevealed] = useState(false);
@@ -131,7 +133,10 @@ export function ProductionExerciseCard({
                   accessibilityRole="button"
                   accessibilityLabel={option.label}
                   accessibilityState={{ selected }}
-                  onPress={() => setAssessment(option.id)}
+                  onPress={() => {
+                    setAssessment(option.id);
+                    onAssessed?.(option.id);
+                  }}
                   style={({ pressed, focused }) => [
                     styles.assessmentBtn,
                     {

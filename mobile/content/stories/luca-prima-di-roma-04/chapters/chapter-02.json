@@ -21,7 +21,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-02",
-      "summary": "Davide gives directions to the pharmacy: straight, then right.",
+      "summary": "Davide gives directions to the pharmacy: straight on Via Nazionale, then right.",
       "characterIds": [
         "luca",
         "davide"
@@ -34,7 +34,8 @@
       "rememberedFacts": [
         "Go straight on Via Nazionale",
         "The pharmacy is on the right",
-        "The park is on the left"
+        "The park is on the left",
+        "Luca reaches the pharmacy"
       ]
     }
   ],
@@ -57,12 +58,14 @@
         },
         {
           "id": "s02",
-          "text": "Come arrivo?",
+          "text": "Come arrivo alla farmacia?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "come",
-            "arrivare"
+            "arrivare",
+            "alla",
+            "farmacia"
           ]
         },
         {
@@ -77,6 +80,18 @@
         },
         {
           "id": "s04",
+          "text": "Vai in Via Nazionale.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "in",
+            "via",
+            "nazionale"
+          ]
+        },
+        {
+          "id": "s05",
           "text": "Poi vai a destra.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -88,7 +103,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s06",
           "text": "La farmacia è a destra.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -101,7 +116,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s07",
           "text": "Il parco è a sinistra.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -114,7 +129,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s08",
           "text": "Non andare a sinistra.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -126,13 +141,26 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Va bene.",
-          "speakerId": "luca",
+          "id": "s09",
+          "text": "La farmacia è vicina.",
+          "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
-            "andare",
-            "bene"
+            "la",
+            "farmacia",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Non è lontano.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "lontano"
           ]
         }
       ]
@@ -142,7 +170,27 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s11",
+          "text": "Va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Grazie Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "davide"
+          ]
+        },
+        {
+          "id": "s13",
           "text": "Luca va dritto.",
           "speakerId": null,
           "kind": "narration",
@@ -153,54 +201,34 @@
           ]
         },
         {
-          "id": "s10",
-          "text": "Luca va a destra.",
+          "id": "s14",
+          "text": "Luca cammina in Via Nazionale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
-            "andare",
-            "a",
-            "destra"
+            "camminare",
+            "in",
+            "via",
+            "nazionale"
           ]
         },
         {
-          "id": "s11",
-          "text": "Ecco la farmacia.",
+          "id": "s15",
+          "text": "La strada è lunga e dritta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ecco",
             "la",
-            "farmacia"
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "La farmacia è qui.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "la",
-            "farmacia",
+            "strada",
             "essere",
-            "qui"
+            "lungo",
+            "e",
+            "dritto"
           ]
         },
         {
-          "id": "s13",
-          "text": "A destra è facile.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "a",
-            "destra",
-            "essere",
-            "facile"
-          ]
-        },
-        {
-          "id": "s14",
+          "id": "s16",
           "text": "A sinistra c'è il parco.",
           "speakerId": null,
           "kind": "narration",
@@ -213,13 +241,253 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Grazie Davide.",
+          "id": "s17",
+          "text": "Luca non va a sinistra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "andare",
+            "a",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Luca va a destra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "a",
+            "destra"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Cammina piano.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "grazie",
+            "camminare",
+            "piano"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La strada ha negozi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "avere",
+            "negozio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Ecco la farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ecco",
+            "la",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "La farmacia è qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "La farmacia è davanti a Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "essere",
+            "davanti",
+            "a",
+            "luca"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Dietro c'è la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "ce",
+            "la",
+            "strada"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Luca entra in farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "entrare",
+            "in",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Compra una cosa in farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "comprare",
+            "una",
+            "cosa",
+            "in",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Ora Luca cerca Davide.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ora",
+            "luca",
+            "cercare",
             "davide"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "A destra è facile.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "destra",
+            "essere",
+            "facile"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca esce dalla farmacia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "uscire",
+            "dalla",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Torna verso la piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "verso",
+            "la",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Davide aspetta in piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "aspettare",
+            "in",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Luca vede la piazza davanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "vedere",
+            "la",
+            "piazza",
+            "davanti"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca cammina verso Davide.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "camminare",
+            "verso",
+            "davide"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "La farmacia è dietro ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "essere",
+            "dietro",
+            "ora"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca e Davide si vedono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "si",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Davide sorride in piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "sorridere",
+            "in",
+            "piazza"
           ]
         }
       ]
@@ -257,14 +525,14 @@
     {
       "id": "lpr04-ch02-q03",
       "type": "direct",
-      "question": "What is on the left?",
+      "question": "Does Luca reach the pharmacy?",
       "choices": [
-        "The pharmacy",
-        "The park",
-        "Rome"
+        "Yes",
+        "No",
+        "He goes to Rome"
       ],
-      "correctChoice": 1,
-      "explanation": "Il parco è a sinistra.",
+      "correctChoice": 0,
+      "explanation": "Ecco la farmacia. Luca entra in farmacia.",
       "chapterId": "luca-prima-di-roma-04-02",
       "difficulty": 1
     }

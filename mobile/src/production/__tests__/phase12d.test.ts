@@ -16,6 +16,7 @@ import {
   afterComprehensionResults,
   productionCardView,
   productionDisplayFromStory,
+  skipProduction,
 } from '@/src/production/flow';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
@@ -69,7 +70,7 @@ describe('Phase 12D production overlay loading', () => {
   });
 
   it('keeps authored order across all 40 chapters', () => {
-    const all = getProductionExercises();
+    const all = getProductionExercises('luca-a-roma');
     expect(all).toHaveLength(160);
     for (let n = 1; n <= 40; n += 1) {
       const id = `luca-a-roma-${String(n).padStart(2, '0')}`;
@@ -179,6 +180,11 @@ describe('Phase 12D reveal and continue flow', () => {
       if (!next.done) index = next.index;
     }
     expect(advanceProduction(index, start.exercises.length)).toEqual({ done: true });
+  });
+
+  it('skipping production still completes the chapter', () => {
+    expect(skipProduction()).toEqual({ action: 'complete_chapter', skipped: true });
+    expect(afterComprehensionResults([]).action).toBe('complete_chapter');
   });
 
   it('missing production exercises do not block chapter completion', async () => {

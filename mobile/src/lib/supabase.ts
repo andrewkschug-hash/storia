@@ -2,17 +2,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { Platform } from 'react-native';
 
-export function getSupabaseUrl(): string {
-  return (process.env.EXPO_PUBLIC_SUPABASE_URL ?? '').trim();
-}
+import { getSupabaseAnonKey, getSupabaseUrl, isSupabaseConfigured } from '@/src/lib/supabaseEnv';
 
-export function getSupabaseAnonKey(): string {
-  return (process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? '').trim();
-}
-
-export function isSupabaseConfigured(): boolean {
-  return Boolean(getSupabaseUrl() && getSupabaseAnonKey());
-}
+export { getSupabaseAnonKey, getSupabaseUrl, isSupabaseConfigured } from '@/src/lib/supabaseEnv';
 
 let client: SupabaseClient | null = null;
 

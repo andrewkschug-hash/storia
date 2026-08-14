@@ -22,7 +22,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-02-05",
-      "summary": "Chiara’s school timetable vs Luca’s simple morning plan.",
+      "summary": "Chiara shows her school timetable. Luca helps Paolo at nine.",
       "characterIds": [
         "luca",
         "chiara",
@@ -34,8 +34,8 @@
       ],
       "rememberedFacts": [
         "Chiara starts school at 8",
-        "Italian is on Monday morning",
-        "Luca helps at home at 9"
+        "Italian is at nine",
+        "Luca helps papà at 9"
       ]
     }
   ],
@@ -58,6 +58,18 @@
         },
         {
           "id": "s02",
+          "text": "L'orario è sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "orario",
+            "essere",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Lunedì alle otto Chiara è a scuola.",
           "speakerId": null,
           "kind": "narration",
@@ -72,7 +84,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s04",
           "text": "Alle nove Chiara ha italiano.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -85,7 +97,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
           "text": "Alle dieci Chiara è libera.",
           "speakerId": null,
           "kind": "narration",
@@ -98,7 +110,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s06",
           "text": "Alle undici Chiara è ancora a scuola.",
           "speakerId": null,
           "kind": "narration",
@@ -113,7 +125,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s07",
           "text": "Luca non ha scuola.",
           "speakerId": null,
           "kind": "narration",
@@ -125,7 +137,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s08",
           "text": "Alle nove Luca aiuta papà.",
           "speakerId": null,
           "kind": "narration",
@@ -138,7 +150,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s09",
           "text": "Alle dieci Luca è a casa.",
           "speakerId": null,
           "kind": "narration",
@@ -150,6 +162,66 @@
             "a",
             "casa"
           ]
+        },
+        {
+          "id": "s10",
+          "text": "Paolo è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca guarda l'orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "orario"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Chiara spiega l'orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "spiegare",
+            "orario"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Paolo legge l'orario con Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "leggere",
+            "orario",
+            "con",
+            "luca"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Alle otto inizia la scuola.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "otto",
+            "iniziare",
+            "la",
+            "scuola"
+          ]
         }
       ]
     },
@@ -158,8 +230,55 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
-          "text": "Martedì l’orario è diverso.",
+          "id": "s13",
+          "text": "Alle otto scuola.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "otto",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Alle nove italiano.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "nove",
+            "italiano"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Alle dieci sono libera.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "dieci",
+            "essere",
+            "libero"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Alle undici sono a scuola.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "undici",
+            "essere",
+            "a",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Martedì l'orario è diverso.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -170,7 +289,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s18",
           "text": "Ma lunedì è così.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -182,8 +301,8 @@
           ]
         },
         {
-          "id": "s11",
-          "text": "L’orario è ogni giorno.",
+          "id": "s19",
+          "text": "L'orario è ogni giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -194,8 +313,8 @@
           ]
         },
         {
-          "id": "s12",
-          "text": "Chiara guarda l’orario.",
+          "id": "s20",
+          "text": "Chiara guarda l'orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -205,7 +324,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s21",
           "text": "Luca ascolta Chiara.",
           "speakerId": null,
           "kind": "narration",
@@ -216,7 +335,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s22",
           "text": "Oggi è lunedì.",
           "speakerId": null,
           "kind": "narration",
@@ -227,7 +346,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s23",
           "text": "Alle otto Chiara parte.",
           "speakerId": null,
           "kind": "narration",
@@ -239,8 +358,8 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "Luca dice: a presto.",
+          "id": "s24",
+          "text": "Luca dice a presto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -248,6 +367,206 @@
             "dire",
             "a",
             "presto"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Alle undici la scuola continua.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "undici",
+            "la",
+            "scuola",
+            "continuare"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Luca non va a scuola oggi.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "non",
+            "andare",
+            "a",
+            "scuola",
+            "oggi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "A che ora hai italiano?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "che",
+            "ora",
+            "avere",
+            "italiano"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Alle nove.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "nove"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "E a che ora sei libera?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "a",
+            "che",
+            "ora",
+            "essere",
+            "libero"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Alle dieci.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Paolo ascolta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "ascoltare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Alle nove io aiuto papà.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "nove",
+            "io",
+            "aiutare",
+            "papa"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Va bene.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "L'orario è chiaro.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "orario",
+            "essere",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Oggi l'orario è importante.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "orario",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Chiara mette l'orario sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "mettere",
+            "orario",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca ricorda le ore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "ricordare",
+            "le",
+            "ora"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Otto nove dieci undici.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "otto",
+            "nove",
+            "dieci",
+            "undici"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Ma Luca aiuta papà alle nove.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "luca",
+            "aiutare",
+            "papa",
+            "alle",
+            "nove"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "L'orario di lunedì è importante.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "orario",
+            "di",
+            "lunedi",
+            "essere",
+            "importante"
           ]
         }
       ]
@@ -257,14 +576,14 @@
     {
       "id": "lpr02-ch05-q01",
       "type": "direct",
-      "question": "When does Chiara start school?",
+      "question": "When does Chiara start school on Monday?",
       "choices": [
         "7:00",
         "8:00",
         "12:00"
       ],
       "correctChoice": 1,
-      "explanation": "Lunedì alle otto.",
+      "explanation": "Lunedì alle otto Chiara è a scuola.",
       "chapterId": "luca-prima-di-roma-02-05",
       "difficulty": 1
     },
@@ -275,7 +594,7 @@
       "choices": [
         "Breakfast",
         "Italian",
-        "A train"
+        "Dinner"
       ],
       "correctChoice": 1,
       "explanation": "Alle nove Chiara ha italiano.",

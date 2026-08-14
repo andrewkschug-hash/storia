@@ -3,6 +3,8 @@ import { join } from 'path';
 
 import { describe, expect, it } from 'vitest';
 
+import { tokenizeItalian } from '@/src/content/tokenize';
+
 import {
   ELENA_STORY_ID,
   LUCA_STORY_ID,
@@ -72,17 +74,17 @@ function loadPlanned(storyId: string) {
 }
 
 describe('Phase 12K pre-Rome authoring', () => {
-  it('keeps all five stories planned with authored files', () => {
+  it('keeps all five stories available with authored files', () => {
     const catalog = validateStoryCatalog();
     expect(catalog.ok).toBe(true);
-    expect(catalog.planned).toEqual(PRE_ROME.map((row) => row.id));
+    expect(catalog.available).toEqual(expect.arrayContaining(PRE_ROME.map((row) => row.id)));
     for (const row of PRE_ROME) {
       const story = getCatalogStory(row.id)!;
-      expect(story.status).toBe('planned');
-      expect(story.chapterCount).toBe(0);
+      expect(story.status).toBe('available');
+      expect(story.chapterCount).toBe(row.chapters);
       expect(story.chapterCountTarget).toBe(row.chapters);
       expect(story.contentPath).toBe(`stories/${row.id}`);
-      expect(() => getContentBundle(row.id)).toThrow(/planned/);
+      expect(getContentBundle(row.id).chapters.size).toBe(row.chapters);
     }
     expect(getStoriesInArc(PRE_ROME_ARC_ID)).toHaveLength(5);
   });
@@ -111,6 +113,11 @@ describe('Phase 12K pre-Rome authoring', () => {
           expect(q.id.startsWith('lpr')).toBe(true);
           expect(q.chapterId).toBe(chapter.id);
         }
+        const words = chapter.paragraphs
+          .flatMap((p) => p.sentences.flatMap((s) => tokenizeItalian(s.text)))
+          .length;
+        expect(words).toBeGreaterThanOrEqual(120);
+        expect(words).toBeLessThanOrEqual(300);
       }
     }
     expect(totalChapters).toBe(32);

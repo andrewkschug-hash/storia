@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-03-02",
-      "summary": "Luca orders from Signora Pina at the counter.",
+      "summary": "Luca orders bread, cheese, and milk from Signora Pina at the counter.",
       "characterIds": [
         "luca",
         "pina"
@@ -29,9 +29,10 @@
         "supermercato-pietralba"
       ],
       "rememberedFacts": [
+        "Luca is at the supermarket counter",
         "Signora Pina works at the counter",
-        "Luca wants bread and cheese",
-        "He says vorrei and per favore"
+        "Luca says vorrei and per favore",
+        "Luca orders bread, cheese, and milk"
       ]
     }
   ],
@@ -79,24 +80,74 @@
         },
         {
           "id": "s04",
-          "text": "Buongiorno.",
+          "text": "Buongiorno signora.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "buongiorno"
+            "buongiorno",
+            "signora"
           ]
         },
         {
           "id": "s05",
-          "text": "Buongiorno.",
+          "text": "Buongiorno Luca.",
           "speakerId": "pina",
           "kind": "dialogue",
           "lemmas": [
-            "buongiorno"
+            "buongiorno",
+            "luca"
           ]
         },
         {
           "id": "s06",
+          "text": "Luca ha la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Luca guarda la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Sulla lista c'è pane.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sulla",
+            "lista",
+            "ce",
+            "pane"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sulla lista c'è latte.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sulla",
+            "lista",
+            "ce",
+            "latte"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Vorrei del pane per favore.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -109,7 +160,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s11",
           "text": "Va bene.",
           "speakerId": "pina",
           "kind": "dialogue",
@@ -119,12 +170,25 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Altro?",
-          "speakerId": "pina",
-          "kind": "dialogue",
+          "id": "s12",
+          "text": "Pina guarda Luca.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "altro"
+            "pina",
+            "guardare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca ascolta Pina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "ascoltare",
+            "pina"
           ]
         }
       ]
@@ -134,38 +198,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
-          "text": "Vorrei del formaggio.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "volere",
-            "del",
-            "formaggio"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Questo formaggio?",
-          "speakerId": "pina",
-          "kind": "dialogue",
-          "lemmas": [
-            "questo",
-            "formaggio"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Sì grazie.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "si_yes",
-            "grazie"
-          ]
-        },
-        {
-          "id": "s12",
+          "id": "s14",
           "text": "Pina dà il pane.",
           "speakerId": null,
           "kind": "narration",
@@ -177,7 +210,50 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s15",
+          "text": "Luca prende il pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Vorrei del formaggio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "del",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Questo formaggio?",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Sì grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s19",
           "text": "Pina dà il formaggio.",
           "speakerId": null,
           "kind": "narration",
@@ -189,7 +265,68 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s20",
+          "text": "Vorrei del latte per favore.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "del",
+            "latte",
+            "per",
+            "favore"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Ecco il latte.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "ecco",
+            "il",
+            "latte"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Luca prende il latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "il",
+            "latte"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Altro?",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "altro"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "No grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "grazie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
           "text": "Luca dice grazie.",
           "speakerId": null,
           "kind": "narration",
@@ -200,7 +337,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s26",
           "text": "Prego.",
           "speakerId": "pina",
           "kind": "dialogue",
@@ -209,15 +346,160 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "Il banco è occupato.",
+          "id": "s27",
+          "text": "Luca guarda il pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Luca guarda il formaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca guarda il latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "il",
+            "latte"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La lista è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "lista",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Adesso Luca guarda i prezzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "luca",
+            "guardare",
+            "il",
+            "prezzo"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Il pane è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "il",
-            "banco",
+            "pane",
             "essere",
-            "occupato"
+            "qui"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Il formaggio è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "formaggio",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Il latte è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "latte",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Tutto è al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Luca è pronto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Pina ascolta Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "ascoltare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Luca ha la lista al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "la",
+            "lista",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Oggi Luca compra tutto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "comprare",
+            "tutto"
           ]
         }
       ]
@@ -227,11 +509,11 @@
     {
       "id": "lpr03-ch02-q01",
       "type": "character",
-      "question": "Who works at the counter?",
+      "question": "Who is at the counter?",
       "choices": [
         "Marta",
         "Signora Pina",
-        "Chiara"
+        "Paolo"
       ],
       "correctChoice": 1,
       "explanation": "Signora Pina è al banco.",
@@ -241,14 +523,14 @@
     {
       "id": "lpr03-ch02-q02",
       "type": "direct",
-      "question": "What does Luca want first?",
+      "question": "What does Luca order first?",
       "choices": [
         "Bread",
         "Wine",
-        "A ticket"
+        "Pasta"
       ],
       "correctChoice": 0,
-      "explanation": "Vorrei del pane.",
+      "explanation": "Vorrei del pane per favore.",
       "chapterId": "luca-prima-di-roma-03-02",
       "difficulty": 1
     },
@@ -257,12 +539,12 @@
       "type": "direct",
       "question": "What else does Luca order?",
       "choices": [
-        "Cheese",
-        "Pizza",
-        "Coffee"
+        "Cheese and milk",
+        "Coffee and pizza",
+        "Apples only"
       ],
       "correctChoice": 0,
-      "explanation": "Vorrei del formaggio.",
+      "explanation": "Vorrei del formaggio e del latte.",
       "chapterId": "luca-prima-di-roma-03-02",
       "difficulty": 1
     }

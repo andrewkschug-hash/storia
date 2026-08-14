@@ -109,6 +109,7 @@
     {"lemmaId": "sedia", "italian": "sedia", "english": "chair", "partOfSpeech": "noun", "difficulty": 1, "frequency": "high", "inflections": ["sedie"]},
     {"lemmaId": "libro", "italian": "libro", "english": "book", "partOfSpeech": "noun", "difficulty": 1, "frequency": "high", "inflections": ["libri"]},
     {"lemmaId": "foto", "italian": "foto", "english": "photo", "partOfSpeech": "noun", "difficulty": 1, "frequency": "high"},
-    {"lemmaId": "verdura", "italian": "verdura", "english": "vegetables", "partOfSpeech": "noun", "difficulty": 1, "frequency": "high"}
+    {"lemmaId": "verdura", "italian": "verdura", "english": "vegetables", "partOfSpeech": "noun", "difficulty": 1, "frequency": "high"},
+    {"lemmaId": "eta", "italian": "età", "english": "age", "partOfSpeech": "noun", "difficulty": 1, "frequency": "high"}
   ]
 }

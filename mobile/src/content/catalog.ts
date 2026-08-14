@@ -1,6 +1,6 @@
 /**
  * Story catalog — narrative arcs and story availability.
- * Pre-Rome stories are planned (prose may exist; not player-available). Luca a Roma is available.
+ * Pre-Rome A1 stories and Luca a Roma are available. Elena remains draft.
  */
 
 import catalogJson from '../../content/story-catalog.json';
@@ -53,9 +53,7 @@ export function getAvailableStories(): CatalogStory[] {
 }
 
 export function journeyOrder(): CatalogStory[] {
-  return getCatalogStories().filter(
-    (story) => story.narrativeArc === PRE_ROME_ARC_ID || story.narrativeArc === LUCA_STORY_ID,
-  );
+  return getAvailableStories();
 }
 
 export function storyStatus(storyId: string): StoryAvailability | 'unknown' {

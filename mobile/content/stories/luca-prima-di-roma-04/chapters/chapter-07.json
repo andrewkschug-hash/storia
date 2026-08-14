@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-07",
-      "summary": "They visit Pietralba station and check train times. Luca does not leave for Rome.",
+      "summary": "Luca and Davide visit Pietralba station, check the timetable and platform. Luca does not leave for Rome today.",
       "characterIds": [
         "luca",
         "davide"
@@ -29,9 +29,10 @@
         "stazione-pietralba"
       ],
       "rememberedFacts": [
-        "Pietralba has a station",
-        "There is a train at 11:00",
-        "Luca does not board a Rome train today"
+        "Pietralba has a local station",
+        "There is a train at 11:00 on platform one",
+        "Luca does not board a Rome train today",
+        "One day Luca will take the train but not today"
       ]
     }
   ],
@@ -42,14 +43,14 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca e Davide sono in stazione.",
+          "text": "Luca e Davide vanno in stazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "e",
             "davide",
-            "essere",
+            "andare",
             "in",
             "stazione"
           ]
@@ -70,6 +71,18 @@
         },
         {
           "id": "s03",
+          "text": "La stazione è piccola.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stazione",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s04",
           "text": "Dov'è il binario?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -80,7 +93,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
           "text": "Il binario è uno.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -92,7 +105,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s06",
           "text": "C'è un treno alle undici.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -105,7 +118,86 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s07",
+          "text": "Guarda l'orario.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare",
+            "orario"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "L'orario è alla stazione.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "orario",
+            "essere",
+            "alla",
+            "stazione"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "La stazione ha un binario.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stazione",
+            "avere",
+            "un",
+            "binario"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca guarda la stazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "stazione"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Il treno parte alle undici.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "treno",
+            "partire",
+            "alle",
+            "undici"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sono le dieci e mezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "dieci",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s13",
           "text": "Il treno non va a Roma oggi.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -120,10 +212,10 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s14",
           "text": "Oggi Luca resta a Pietralba.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
             "oggi",
             "luca",
@@ -133,49 +225,7 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "L'orario è alla stazione.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "orario",
-            "essere",
-            "alla",
-            "stazione"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
-        {
-          "id": "s09",
-          "text": "La stazione è piccola.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "la",
-            "stazione",
-            "essere",
-            "piccolo"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Ma c'è un treno.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ma",
-            "ce",
-            "un",
-            "treno"
-          ]
-        },
-        {
-          "id": "s11",
+          "id": "s15",
           "text": "Luca guarda il binario.",
           "speakerId": null,
           "kind": "narration",
@@ -187,7 +237,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s16",
           "text": "Davide guarda l'orario.",
           "speakerId": null,
           "kind": "narration",
@@ -198,7 +248,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s17",
           "text": "Un giorno Luca prende il treno.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -212,7 +262,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s18",
           "text": "Non oggi.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -222,7 +272,102 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s19",
+          "text": "Il treno è piccolo.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "treno",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Undici è l'orario del treno.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "undici",
+            "essere",
+            "orario",
+            "del",
+            "treno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "C'è un treno per Roma.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "un",
+            "treno",
+            "per",
+            "roma"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Ma oggi Luca non parte.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "oggi",
+            "luca",
+            "non",
+            "partire"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Luca resta qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "restare",
+            "qui"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "La stazione di Pietralba è vicina.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stazione",
+            "di",
+            "pietralba",
+            "essere",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il binario è vuoto adesso.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "binario",
+            "essere",
+            "vuoto",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s26",
           "text": "Oggi andiamo a casa.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -232,6 +377,98 @@
             "a",
             "casa"
           ]
+        },
+        {
+          "id": "s27",
+          "text": "Luca è contento a Pietralba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Domani è un altro giorno.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "essere",
+            "un",
+            "altro",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca non prende il treno oggi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "non",
+            "prendere",
+            "il",
+            "treno",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Un giorno va a Roma.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "giorno",
+            "andare",
+            "a",
+            "roma"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Ma oggi resta qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "oggi",
+            "restare",
+            "qui"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La stazione è qui a Pietralba.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stazione",
+            "essere",
+            "qui",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Il binario uno è libero.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "binario",
+            "uno",
+            "essere",
+            "libero"
+          ]
         }
       ]
     }
@@ -240,14 +477,14 @@
     {
       "id": "lpr04-ch07-q01",
       "type": "direct",
-      "question": "Which station are they in?",
+      "question": "Which station are they at?",
       "choices": [
         "Rome Termini",
         "Pietralba station",
-        "A metro stop"
+        "A metro stop in Rome"
       ],
       "correctChoice": 1,
-      "explanation": "La stazione di Pietralba.",
+      "explanation": "Questa è la stazione di Pietralba.",
       "chapterId": "luca-prima-di-roma-04-07",
       "difficulty": 1
     },
@@ -258,7 +495,7 @@
       "choices": [
         "Yes",
         "No",
-        "He already arrived"
+        "He is already in Rome"
       ],
       "correctChoice": 1,
       "explanation": "Oggi Luca resta a Pietralba.",

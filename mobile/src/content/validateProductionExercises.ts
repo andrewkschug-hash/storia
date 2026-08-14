@@ -21,6 +21,8 @@ export type ProductionValidationContext = {
   sentencesByChapter: ProductionSentenceIndex;
   minChapter?: number;
   maxChapter?: number;
+  /** When set, every exercise must use this CEFR production band. */
+  expectedLevel?: ProductionCefrLevel;
 };
 
 export type ProductionValidationResult = {
@@ -35,7 +37,8 @@ export type ProductionValidationResult = {
   alternativeCount: number;
 };
 
-const CHAPTER_ID_RE = /^luca-a-roma-(\d{2})$/;
+const LUCA_CHAPTER_ID_RE = /^luca-a-roma-(\d{2})$/;
+export const LUCA_STORY_ID_FOR_PRODUCTION = 'luca-a-roma';
 
 export function productionLevelForChapter(chapterNumber: number): ProductionCefrLevel {
   if (chapterNumber >= 1 && chapterNumber <= 20) return 'A1';
@@ -45,9 +48,13 @@ export function productionLevelForChapter(chapterNumber: number): ProductionCefr
 }
 
 export function parseChapterNumber(chapterId: string): number | null {
-  const match = CHAPTER_ID_RE.exec(chapterId);
+  const match = LUCA_CHAPTER_ID_RE.exec(chapterId);
   if (!match) return null;
   return Number(match[1]);
+}
+
+export function isLucaProductionStory(storyId: string): boolean {
+  return storyId === LUCA_STORY_ID_FOR_PRODUCTION;
 }
 
 export function validateProductionExercises(
@@ -170,28 +177,35 @@ function validateOneExercise(
     return;
   }
 
-  const chapterNumber = parseChapterNumber(exercise.chapterId);
-  if (chapterNumber === null) {
-    issues.push({
-      path: `${path}.chapterId`,
-      message: `chapterId "${exercise.chapterId}" is not a Luca chapter id`,
-    });
-    return;
-  }
-  if (chapterNumber < minChapter || chapterNumber > maxChapter) {
-    issues.push({
-      path: `${path}.chapterId`,
-      message: `chapter ${chapterNumber} is outside Luca ${minChapter}–${maxChapter}`,
-    });
-  }
+  if (isLucaProductionStory(context.storyId)) {
+    const chapterNumber = parseChapterNumber(exercise.chapterId);
+    if (chapterNumber === null) {
+      issues.push({
+        path: `${path}.chapterId`,
+        message: `chapterId "${exercise.chapterId}" is not a Luca chapter id`,
+      });
+      return;
+    }
+    if (chapterNumber < minChapter || chapterNumber > maxChapter) {
+      issues.push({
+        path: `${path}.chapterId`,
+        message: `chapter ${chapterNumber} is outside Luca ${minChapter}–${maxChapter}`,
+      });
+    }
 
-  const expectedLevel = productionLevelForChapter(
-    Math.min(Math.max(chapterNumber, 1), 40),
-  );
-  if (chapterNumber >= 1 && chapterNumber <= 40 && exercise.level !== expectedLevel) {
+    const expectedLevel = productionLevelForChapter(
+      Math.min(Math.max(chapterNumber, 1), 40),
+    );
+    if (chapterNumber >= 1 && chapterNumber <= 40 && exercise.level !== expectedLevel) {
+      issues.push({
+        path: `${path}.level`,
+        message: `level "${exercise.level}" does not match chapter ${chapterNumber} band "${expectedLevel}"`,
+      });
+    }
+  } else if (context.expectedLevel && exercise.level !== context.expectedLevel) {
     issues.push({
       path: `${path}.level`,
-      message: `level "${exercise.level}" does not match chapter ${chapterNumber} band "${expectedLevel}"`,
+      message: `level "${exercise.level}" does not match story band "${context.expectedLevel}"`,
     });
   }
 

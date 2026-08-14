@@ -24,7 +24,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-01",
-      "summary": "Davide names the town places: piazza, street, pharmacy, park, bar.",
+      "summary": "Luca arrives in Pietralba and Davide names the town places: piazza, street, pharmacy, park, bar.",
       "characterIds": [
         "luca",
         "davide"
@@ -38,6 +38,7 @@
         "bar-franco"
       ],
       "rememberedFacts": [
+        "Luca is in Pietralba",
         "The piazza is in the center",
         "The pharmacy is on Via Nazionale",
         "Bar da Franco is near the piazza"
@@ -51,44 +52,79 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca è in paese.",
+          "text": "Luca è a Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "essere",
+            "a",
+            "pietralba"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Oggi Luca esce in paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "uscire",
             "in",
             "paese"
           ]
         },
         {
-          "id": "s02",
-          "text": "Dov'è la piazza?",
-          "speakerId": "luca",
-          "kind": "dialogue",
+          "id": "s03",
+          "text": "Luca cammina verso la piazza.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "dove",
+            "luca",
+            "camminare",
+            "verso",
             "la",
             "piazza"
           ]
         },
         {
-          "id": "s03",
-          "text": "La piazza è qui.",
-          "speakerId": "davide",
-          "kind": "dialogue",
+          "id": "s04",
+          "text": "Davide è in piazza.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "la",
-            "piazza",
+            "davide",
             "essere",
-            "qui"
+            "in",
+            "piazza"
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
+          "text": "Ciao Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "davide"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ciao Luca.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s07",
           "text": "La piazza è grande.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
             "la",
             "piazza",
@@ -97,7 +133,53 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s08",
+          "text": "La piazza è al centro.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "piazza",
+            "essere",
+            "al",
+            "centro"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Pietralba è un paese piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietralba",
+            "essere",
+            "un",
+            "paese",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il paese è tranquillo e bello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "tranquillo",
+            "e",
+            "bello"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
           "text": "Dov'è la farmacia?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -108,7 +190,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s12",
           "text": "La farmacia è in Via Nazionale.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -120,18 +202,12 @@
             "via",
             "nazionale"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s07",
+          "id": "s13",
           "text": "Via Nazionale è una strada.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
             "via",
             "nazionale",
@@ -141,7 +217,33 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s14",
+          "text": "La strada va al centro.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "strada",
+            "andare",
+            "al",
+            "centro"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "La farmacia non è lontana.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "non",
+            "essere",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Dov'è il parco?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -152,31 +254,35 @@
           ]
         },
         {
-          "id": "s09",
-          "text": "Il parco è vicino.",
+          "id": "s17",
+          "text": "Il parco è vicino alla piazza.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
             "il",
             "parco",
             "essere",
-            "vicino"
+            "vicino",
+            "alla",
+            "piazza"
           ]
         },
         {
-          "id": "s10",
-          "text": "Il parco è piccolo.",
-          "speakerId": null,
-          "kind": "narration",
+          "id": "s18",
+          "text": "Il parco è piccolo ma bello.",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
             "il",
             "parco",
             "essere",
-            "piccolo"
+            "piccolo",
+            "ma",
+            "bello"
           ]
         },
         {
-          "id": "s11",
+          "id": "s19",
           "text": "Dov'è il bar?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -187,7 +293,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s20",
           "text": "Il bar è di Franco.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -198,57 +304,181 @@
             "di",
             "franco"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
         {
-          "id": "s13",
-          "text": "Il bar è vicino alla piazza.",
-          "speakerId": null,
-          "kind": "narration",
+          "id": "s21",
+          "text": "Il bar è accanto alla piazza.",
+          "speakerId": "davide",
+          "kind": "dialogue",
           "lemmas": [
             "il",
             "bar",
             "essere",
-            "vicino",
+            "accanto",
             "alla",
             "piazza"
           ]
         },
         {
-          "id": "s14",
-          "text": "Pietralba ha una piazza.",
+          "id": "s22",
+          "text": "Franco lavora al bar ogni giorno.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "franco",
+            "lavorare",
+            "al",
+            "bar",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Luca deve andare alla farmacia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "pietralba",
-            "avere",
-            "una",
+            "luca",
+            "dovere",
+            "andare",
+            "alla",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Poi Luca incontra Davide di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "luca",
+            "incontrare",
+            "davide",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Prima la farmacia.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "la",
+            "farmacia"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Va bene.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Davide aspetta qui in piazza.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "davide",
+            "aspettare",
+            "qui",
+            "in",
             "piazza"
           ]
         },
         {
-          "id": "s15",
-          "text": "Pietralba ha un parco.",
+          "id": "s28",
+          "text": "Luca conosce bene Davide.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "pietralba",
-            "avere",
-            "un",
-            "parco"
+            "luca",
+            "conoscere",
+            "bene",
+            "davide"
           ]
         },
         {
-          "id": "s16",
-          "text": "Il paese è piccolo ma bello.",
+          "id": "s29",
+          "text": "Il paese ha una piazza e un parco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "il",
             "paese",
+            "avere",
+            "una",
+            "piazza",
+            "e",
+            "un",
+            "parco"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "A Pietralba ci sono pochi negozi.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "pietralba",
+            "ci",
             "essere",
-            "piccolo",
-            "ma",
-            "bello"
+            "poco",
+            "negozio"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "La farmacia apre presto.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "farmacia",
+            "aprire",
+            "presto"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Luca va verso Via Nazionale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "andare",
+            "verso",
+            "via",
+            "nazionale"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Il bar apre tutti i giorni.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
+            "aprire",
+            "tutto",
+            "il",
+            "giorno"
           ]
         }
       ]
@@ -262,7 +492,7 @@
       "choices": [
         "On Via Nazionale",
         "In Rome",
-        "In Luca’s bedroom"
+        "At the train station"
       ],
       "correctChoice": 0,
       "explanation": "La farmacia è in Via Nazionale.",
@@ -274,26 +504,26 @@
       "type": "direct",
       "question": "Where is the bar?",
       "choices": [
-        "Far from town",
-        "Near the piazza",
-        "At the station"
+        "Far from the piazza",
+        "Next to the piazza",
+        "Underground"
       ],
       "correctChoice": 1,
-      "explanation": "Il bar è vicino alla piazza.",
+      "explanation": "Il bar è accanto alla piazza.",
       "chapterId": "luca-prima-di-roma-04-01",
       "difficulty": 1
     },
     {
       "id": "lpr04-ch01-q03",
       "type": "direct",
-      "question": "What kind of town is Pietralba?",
+      "question": "What must Luca do first?",
       "choices": [
-        "Small but nice",
-        "A big city",
-        "Empty"
+        "Go to the pharmacy",
+        "Take a train to Rome",
+        "Go home"
       ],
       "correctChoice": 0,
-      "explanation": "Il paese è piccolo ma bello.",
+      "explanation": "Prima la farmacia.",
       "chapterId": "luca-prima-di-roma-04-01",
       "difficulty": 1
     }

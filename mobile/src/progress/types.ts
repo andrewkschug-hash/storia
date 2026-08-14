@@ -20,6 +20,20 @@ export type ChapterComprehensionRecord = {
   answers: ComprehensionAnswerRecord[];
 };
 
+/** Self-assessment from optional production. Never gates chapter completion. */
+export type ProductionSelfAssessment = 'got_it' | 'almost' | 'not_yet' | 'skipped';
+
+export type ChapterProductionAttempt = {
+  exerciseId: string;
+  assessment: ProductionSelfAssessment;
+};
+
+export type ChapterProductionRecord = {
+  skipped: boolean;
+  completedAt: string | null;
+  attempts: ChapterProductionAttempt[];
+};
+
 export type ReadingProgressRecord = {
   storyId: string;
   /** Catalog narrative arc. Independent of chapter numbers. */
@@ -33,6 +47,8 @@ export type ReadingProgressRecord = {
   streakDays: number;
   lastStreakDate: string | null; // YYYY-MM-DD
   comprehensionByChapter: Record<string, ChapterComprehensionRecord>;
+  /** Optional production reinforcement. Missing/empty does not block completion. */
+  productionByChapter?: Record<string, ChapterProductionRecord>;
   /** Learner-chosen CEFR band. Never auto-promoted from one good chapter. */
   currentCEFRLevel: string;
 };
@@ -41,6 +57,8 @@ export interface ReadingProgressRepository {
   get(storyId: string): Promise<ReadingProgressRecord | null>;
   save(progress: ReadingProgressRecord): Promise<void>;
   clear(storyId: string): Promise<void>;
+  listAll?(): Promise<ReadingProgressRecord[]>;
+  clearAll?(): Promise<void>;
 }
 
 export function createInitialProgress(
@@ -59,6 +77,7 @@ export function createInitialProgress(
     streakDays: 0,
     lastStreakDate: null,
     comprehensionByChapter: {},
+    productionByChapter: {},
     currentCEFRLevel: 'A1',
   };
 }
@@ -70,6 +89,7 @@ export function normalizeProgress(
   return {
     ...record,
     comprehensionByChapter: record.comprehensionByChapter ?? {},
+    productionByChapter: record.productionByChapter ?? {},
     currentCEFRLevel: record.currentCEFRLevel ?? 'A1',
     narrativeArc: record.narrativeArc ?? narrativeArc,
   };

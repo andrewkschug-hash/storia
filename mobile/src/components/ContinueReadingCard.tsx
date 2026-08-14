@@ -7,11 +7,19 @@ import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
   chapterTitleIt: string;
+  storyTitleIt?: string;
+  isStart?: boolean;
   progress: ReadingProgress;
   onContinue: () => void;
 };
 
-export function ContinueReadingCard({ chapterTitleIt, progress, onContinue }: Props) {
+export function ContinueReadingCard({
+  chapterTitleIt,
+  storyTitleIt,
+  isStart = false,
+  progress,
+  onContinue,
+}: Props) {
   const { colors } = useTheme();
   const chapterPercent = progress.chapterPercentComplete ?? 0;
 
@@ -24,7 +32,14 @@ export function ContinueReadingCard({ chapterTitleIt, progress, onContinue }: Pr
           borderColor: colors.border,
         },
       ]}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Continue reading</Text>
+      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+        {isStart ? 'Start reading' : 'Continue reading'}
+      </Text>
+      {storyTitleIt ? (
+        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+          {storyTitleIt}
+        </Text>
+      ) : null}
       <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm, fontSize: 28 }]}>
         {chapterTitleIt}
       </Text>
@@ -58,7 +73,9 @@ export function ContinueReadingCard({ chapterTitleIt, progress, onContinue }: Pr
             opacity: pressed ? 0.88 : 1,
           },
         ]}>
-        <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue reading</Text>
+        <Text style={[Typography.button, { color: '#F7FAF9' }]}>
+          {isStart ? 'Start reading' : 'Continue reading'}
+        </Text>
       </Pressable>
     </View>
   );

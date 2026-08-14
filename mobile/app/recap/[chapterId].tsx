@@ -1,18 +1,21 @@
-import { Stack, router, useLocalSearchParams, type Href } from 'expo-router';
+import { Stack, router, useLocalSearchParams } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ChapterEndNotes } from '@/src/components/ChapterEndNotes';
 import { buildChapterRecap } from '@/src/content/chapterRecap';
-import { getChapter, getContentBundle } from '@/src/content';
+import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
+import { comprehensionHref } from '@/src/content/storyHrefs';
 import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function ChapterRecapScreen() {
-  const { chapterId } = useLocalSearchParams<{ chapterId: string }>();
-  const chapter = getChapter(chapterId);
+  const { chapterId, story } = useLocalSearchParams<{ chapterId: string; story?: string }>();
+  const storyId =
+    (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
+  const chapter = storyId ? getChapter(chapterId, storyId) : undefined;
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
 
@@ -27,7 +30,7 @@ export default function ChapterRecapScreen() {
     );
   }
 
-  const recap = buildChapterRecap(chapter, getContentBundle().lexiconById);
+  const recap = buildChapterRecap(chapter, getContentBundle(storyId ?? chapter.storyId).lexiconById);
 
   return (
     <AtmosphereBackground>
@@ -67,7 +70,7 @@ export default function ChapterRecapScreen() {
         <Pressable
           onPress={async () => {
             await getVocabularyService().recordChapterExposure(chapter);
-            router.push(`/comprehension/${chapter.id}` as Href);
+            router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
           }}
           style={({ pressed }) => [
             styles.primaryBtn,

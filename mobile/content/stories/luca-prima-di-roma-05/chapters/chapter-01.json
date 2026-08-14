@@ -12,7 +12,9 @@
   "characterIds": [
     "luca",
     "marta",
-    "chiara"
+    "paolo",
+    "chiara",
+    "lidia"
   ],
   "primaryDomain": "birthdays",
   "secondaryDomains": [
@@ -22,20 +24,22 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-01",
-      "summary": "Today is Luca’s birthday. He is 24. Marta says auguri.",
+      "summary": "Today is Luca’s birthday on 12 May. He is 24. The family says auguri.",
       "characterIds": [
         "luca",
         "marta",
-        "chiara"
+        "paolo",
+        "chiara",
+        "lidia"
       ],
       "locationIds": [
         "casa-pietralba",
         "soggiorno-pietralba"
       ],
       "rememberedFacts": [
-        "Today is Luca’s birthday",
+        "Today is 12 May",
         "Luca is 24",
-        "His birthday is 12 May"
+        "There is a party at home today"
       ]
     }
   ],
@@ -73,6 +77,22 @@
         },
         {
           "id": "s03",
+          "text": "Il dodici maggio è il compleanno di Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "dodici",
+            "maggio",
+            "essere",
+            "il",
+            "compleanno",
+            "di",
+            "luca"
+          ]
+        },
+        {
+          "id": "s04",
           "text": "Luca ha ventiquattro anni.",
           "speakerId": null,
           "kind": "narration",
@@ -84,7 +104,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s05",
           "text": "Quanti anni hai oggi?",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -96,7 +116,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s06",
           "text": "Ho ventiquattro anni.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -107,7 +127,44 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s07",
+          "text": "Luca è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "La famiglia è a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Marta entra nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "entrare",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Auguri Luca.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -117,7 +174,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s11",
           "text": "Grazie mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -127,15 +184,28 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Il compleanno è importante.",
+          "id": "s12",
+          "text": "Il compleanno è oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "il",
             "compleanno",
             "essere",
-            "importante"
+            "oggi"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Luca è a casa oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "a",
+            "casa",
+            "oggi"
           ]
         }
       ]
@@ -145,41 +215,101 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
-          "text": "Chiara è contenta.",
+          "id": "s14",
+          "text": "Paolo è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paolo",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Auguri Luca.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "auguri",
+            "luca"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Grazie papà.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "papa"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Chiara sorride.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "chiara",
-            "essere",
-            "contento"
+            "sorridere"
           ]
         },
         {
-          "id": "s10",
-          "text": "Marta è contenta.",
+          "id": "s18",
+          "text": "Auguri.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "auguri"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Lidia è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "marta",
+            "lidia",
             "essere",
-            "contento"
+            "a",
+            "casa"
           ]
         },
         {
-          "id": "s11",
-          "text": "Oggi c'è una festa.",
+          "id": "s20",
+          "text": "Auguri Luca.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "auguri",
+            "luca"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Grazie nonna.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "nonna"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Sabato c'è una festa.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "oggi",
+            "sabato",
             "ce",
             "una",
             "festa"
           ]
         },
         {
-          "id": "s12",
+          "id": "s23",
           "text": "La festa è a casa.",
           "speakerId": null,
           "kind": "narration",
@@ -192,7 +322,50 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s24",
+          "text": "La festa è nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "festa",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Tutti sono nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "essere",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Marta prepara la festa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "preparare",
+            "la",
+            "festa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
           "text": "Luca è felice.",
           "speakerId": null,
           "kind": "narration",
@@ -203,7 +376,41 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s28",
+          "text": "Marta è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Chiara è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Il compleanno è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "compleanno",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "Il dodici maggio è il mio giorno.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -218,12 +425,104 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Auguri.",
+          "id": "s32",
+          "text": "Luca guarda la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Tutti dicono auguri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "dire",
+            "auguri"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Oggi è un giorno importante.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "un",
+            "giorno",
+            "importante"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Pietralba è piccola ma la famiglia è grande.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "pietralba",
+            "essere",
+            "piccolo",
+            "ma",
+            "la",
+            "famiglia",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "La famiglia è qui per Luca.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "qui",
+            "per",
+            "luca"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il compleanno di Luca è oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "compleanno",
+            "di",
+            "luca",
+            "essere",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Ventiquattro anni oggi.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
-            "auguri"
+            "ventiquattro",
+            "anno",
+            "oggi"
           ]
         }
       ]
@@ -233,7 +532,7 @@
     {
       "id": "lpr05-ch01-q01",
       "type": "direct",
-      "question": "What day is Luca’s birthday?",
+      "question": "What date is Luca’s birthday?",
       "choices": [
         "11 May",
         "12 May",
@@ -263,7 +562,7 @@
       "type": "direct",
       "question": "Where is the party?",
       "choices": [
-        "At home",
+        "At home in Pietralba",
         "In Rome",
         "At the supermarket"
       ],

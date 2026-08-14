@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-01-06",
-      "summary": "The family uses numbers: house number 12, phone digits, and five people at dinner.",
+      "summary": "House number 12, phone digits, five at dinner; Lidia is 70.",
       "characterIds": [
         "luca",
         "marta",
@@ -38,7 +38,8 @@
       "rememberedFacts": [
         "The house number is 12",
         "Five people eat at home",
-        "Luca recites phone digits"
+        "Luca recites phone digits",
+        "Lidia is 70"
       ]
     }
   ],
@@ -62,6 +63,79 @@
         },
         {
           "id": "s02",
+          "text": "È ora di cena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "ora",
+            "di",
+            "cena"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Quante persone ci sono?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "persona",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ci sono cinque persone.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "essere",
+            "cinque",
+            "persona"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Uno due tre quattro cinque.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "uno",
+            "due",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Siamo cinque a cena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "cinque",
+            "a",
+            "cena"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Cinque sedie cinque persone.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "cinque",
+            "sedia",
+            "cinque",
+            "persona"
+          ]
+        },
+        {
+          "id": "s08",
           "text": "Il numero della casa è dodici.",
           "speakerId": null,
           "kind": "narration",
@@ -75,7 +149,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s09",
           "text": "Dodici è un numero.",
           "speakerId": "paolo",
           "kind": "dialogue",
@@ -87,52 +161,40 @@
           ]
         },
         {
-          "id": "s04",
-          "text": "Quante persone ci sono?",
-          "speakerId": "marta",
-          "kind": "dialogue",
-          "lemmas": [
-            "quanto",
-            "persona",
-            "ci",
-            "essere"
-          ]
-        },
-        {
-          "id": "s05",
-          "text": "Ci sono cinque persone.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "ci",
-            "essere",
-            "cinque",
-            "persona"
-          ]
-        },
-        {
-          "id": "s06",
-          "text": "Uno due tre quattro cinque.",
-          "speakerId": "chiara",
-          "kind": "dialogue",
-          "lemmas": [
-            "uno",
-            "due",
-            "tre",
-            "quattro",
-            "cinque"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Siamo cinque a cena.",
+          "id": "s10",
+          "text": "La porta ha il numero dodici.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "la",
+            "porta",
+            "avere",
+            "il",
+            "numero",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Luca guarda la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sì è dodici.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
             "essere",
-            "cinque",
-            "a",
-            "cena"
+            "dodici"
           ]
         }
       ]
@@ -142,7 +204,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s08",
+          "id": "s13",
           "text": "Il mio numero è questo.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -155,40 +217,7 @@
           ]
         },
         {
-          "id": "s09",
-          "text": "Tre quattro uno.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "tre",
-            "quattro",
-            "uno"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Due due zero.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "due",
-            "due",
-            "zero"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Otto nove sette.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "otto",
-            "nove",
-            "sette"
-          ]
-        },
-        {
-          "id": "s12",
+          "id": "s14",
           "text": "Il telefono è a casa.",
           "speakerId": null,
           "kind": "narration",
@@ -201,7 +230,98 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s15",
+          "text": "Tre quattro uno.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tre",
+            "quattro",
+            "uno"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Due due zero.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "due",
+            "zero"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Otto nove sette.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "otto",
+            "nove",
+            "sette"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Chiara ascolta i numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "ascoltare",
+            "il",
+            "numero"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Ancora per favore.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ancora",
+            "per",
+            "favore"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Tre quattro uno due due zero.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "tre",
+            "quattro",
+            "uno",
+            "due",
+            "due",
+            "zero"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Otto nove sette.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "otto",
+            "nove",
+            "sette"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Va bene.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s23",
           "text": "Nonna Lidia ha ottanta anni?",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -214,16 +334,22 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s24",
           "text": "No.",
           "speakerId": "lidia",
           "kind": "dialogue",
           "lemmas": [
             "no"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
         {
-          "id": "s15",
+          "id": "s25",
           "text": "Ho settanta anni.",
           "speakerId": "lidia",
           "kind": "dialogue",
@@ -234,7 +360,19 @@
           ]
         },
         {
-          "id": "s16",
+          "id": "s26",
+          "text": "Settanta non è ottanta.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "settanta",
+            "non",
+            "essere",
+            "ottanta"
+          ]
+        },
+        {
+          "id": "s27",
           "text": "Settanta è un numero grande.",
           "speakerId": null,
           "kind": "narration",
@@ -247,9 +385,9 @@
           ]
         },
         {
-          "id": "s17",
+          "id": "s28",
           "text": "Dodici cinque settanta.",
-          "speakerId": "paolo",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "dodici",
@@ -258,7 +396,47 @@
           ]
         },
         {
-          "id": "s18",
+          "id": "s29",
+          "text": "Il numero della casa è dodici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "numero",
+            "della",
+            "casa",
+            "essere",
+            "dodici"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Le persone a cena sono cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "persona",
+            "a",
+            "cena",
+            "essere",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Lidia ha settanta anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lidia",
+            "avere",
+            "settanta",
+            "anno"
+          ]
+        },
+        {
+          "id": "s32",
           "text": "I numeri sono in casa.",
           "speakerId": null,
           "kind": "narration",
@@ -268,6 +446,39 @@
             "essere",
             "in",
             "casa"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "La cena è pronta.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "cena",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Adesso mangiamo.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "mangiare"
           ]
         }
       ]

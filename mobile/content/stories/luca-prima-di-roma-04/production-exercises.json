@@ -1,0 +1,350 @@
+{
+  "storyId": "luca-prima-di-roma-04",
+  "version": 1,
+  "exercises": [
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch01-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-01",
+      "level": "A1",
+      "sourceSentenceId": "s11",
+      "promptEn": "Where is the pharmacy?",
+      "expectedIt": "Dov'è la farmacia?",
+      "acceptableAnswers": [
+        "Dove è la farmacia?",
+        "Dov’è la farmacia?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "dove",
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch01-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-01",
+      "level": "A1",
+      "sourceSentenceId": "s16",
+      "promptEn": "Where is the park?",
+      "expectedIt": "Dov'è il parco?",
+      "acceptableAnswers": [
+        "Dove è il parco?",
+        "Dov’è il parco?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "dove",
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch01-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-01",
+      "level": "A1",
+      "sourceSentenceId": "s12",
+      "promptEn": "The pharmacy is on Via Nazionale.",
+      "expectedIt": "La farmacia è in Via Nazionale.",
+      "match": "flexible",
+      "focus": [
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch02-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "Go straight.",
+      "expectedIt": "Vai dritto.",
+      "match": "exact",
+      "focus": [
+        "directions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch02-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "Then go right.",
+      "expectedIt": "Poi vai a destra.",
+      "acceptableAnswers": [
+        "Vai a destra."
+      ],
+      "match": "flexible",
+      "focus": [
+        "directions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch02-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "level": "A1",
+      "sourceSentenceId": "s07",
+      "promptEn": "The park is on the left.",
+      "expectedIt": "Il parco è a sinistra.",
+      "match": "flexible",
+      "focus": [
+        "directions",
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch02-prod-04",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-02",
+      "level": "A1",
+      "sourceSentenceId": "s06",
+      "promptEn": "The pharmacy is on the right.",
+      "expectedIt": "La farmacia è a destra.",
+      "match": "flexible",
+      "focus": [
+        "directions",
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch03-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-03",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "What's the weather like today?",
+      "expectedIt": "Che tempo fa oggi?",
+      "acceptableAnswers": [
+        "Che tempo fa?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "weather"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch03-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-03",
+      "level": "A1",
+      "sourceSentenceId": "s05",
+      "promptEn": "It's hot.",
+      "expectedIt": "Fa caldo.",
+      "match": "exact",
+      "focus": [
+        "weather"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch03-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-03",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "It's sunny.",
+      "expectedIt": "C'è il sole.",
+      "acceptableAnswers": [
+        "C’è il sole."
+      ],
+      "match": "flexible",
+      "focus": [
+        "weather",
+        "ce"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch04-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-04",
+      "level": "A1",
+      "sourceSentenceId": "s01",
+      "promptEn": "It's spring today.",
+      "expectedIt": "Oggi è primavera.",
+      "match": "flexible",
+      "focus": [
+        "seasons"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch04-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-04",
+      "level": "A1",
+      "sourceSentenceId": "s11",
+      "promptEn": "In summer it's very hot.",
+      "expectedIt": "In estate fa molto caldo.",
+      "match": "flexible",
+      "focus": [
+        "seasons",
+        "weather"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch04-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-04",
+      "level": "A1",
+      "sourceSentenceId": "s16",
+      "promptEn": "In winter it's cold.",
+      "expectedIt": "In inverno fa freddo.",
+      "match": "flexible",
+      "focus": [
+        "seasons",
+        "weather"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch05-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-05",
+      "level": "A1",
+      "sourceSentenceId": "s26",
+      "promptEn": "I take the bus.",
+      "expectedIt": "Prendo l'autobus.",
+      "acceptableAnswers": [
+        "Io prendo l'autobus.",
+        "Luca prende l’autobus.",
+        "Luca prende l'autobus."
+      ],
+      "match": "flexible",
+      "focus": [
+        "transport"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch05-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-05",
+      "level": "A1",
+      "sourceSentenceId": "s03",
+      "promptEn": "Where is the bus?",
+      "expectedIt": "Dov'è l'autobus?",
+      "acceptableAnswers": [
+        "Dove è l'autobus?",
+        "Dov’è l'autobus?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "dove",
+        "transport"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch05-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-05",
+      "level": "A1",
+      "sourceSentenceId": "s16",
+      "promptEn": "I buy a ticket.",
+      "expectedIt": "Compro un biglietto.",
+      "acceptableAnswers": [
+        "Io compro un biglietto.",
+        "Luca compra un biglietto."
+      ],
+      "match": "flexible",
+      "focus": [
+        "transport"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch06-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-06",
+      "level": "A1",
+      "sourceSentenceId": "s10",
+      "promptEn": "Where is the bar?",
+      "expectedIt": "Dov'è il bar?",
+      "acceptableAnswers": [
+        "Dove è il bar?",
+        "Dov’è il bar?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "dove",
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch06-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-06",
+      "level": "A1",
+      "sourceSentenceId": "s12",
+      "promptEn": "Go straight and then left.",
+      "expectedIt": "Vai dritto e poi a sinistra.",
+      "match": "flexible",
+      "focus": [
+        "directions"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch06-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-06",
+      "level": "A1",
+      "sourceSentenceId": "s20",
+      "promptEn": "It's next to the park.",
+      "expectedIt": "Il bar è accanto al parco.",
+      "acceptableAnswers": [
+        "È accanto al parco.",
+        "Il bar è vicino al parco."
+      ],
+      "match": "flexible",
+      "focus": [
+        "directions",
+        "places"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch07-prod-01",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-07",
+      "level": "A1",
+      "sourceSentenceId": "s04",
+      "promptEn": "Where is the platform?",
+      "expectedIt": "Dov'è il binario?",
+      "acceptableAnswers": [
+        "Dove è il binario?",
+        "Dov’è il binario?"
+      ],
+      "match": "flexible",
+      "focus": [
+        "dove",
+        "transport"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch07-prod-02",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-07",
+      "level": "A1",
+      "sourceSentenceId": "s11",
+      "promptEn": "The train leaves at eleven.",
+      "expectedIt": "Il treno parte alle undici.",
+      "match": "flexible",
+      "focus": [
+        "transport",
+        "clock"
+      ]
+    },
+    {
+      "exerciseId": "luca-prima-di-roma-04-ch07-prod-03",
+      "storyId": "luca-prima-di-roma-04",
+      "chapterId": "luca-prima-di-roma-04-07",
+      "level": "A1",
+      "sourceSentenceId": "s14",
+      "promptEn": "Today I stay in Pietralba.",
+      "expectedIt": "Oggi resto a Pietralba.",
+      "acceptableAnswers": [
+        "Io resto a Pietralba oggi.",
+        "Oggi Luca resta a Pietralba."
+      ],
+      "match": "flexible",
+      "focus": [
+        "transport"
+      ]
+    }
+  ]
+}

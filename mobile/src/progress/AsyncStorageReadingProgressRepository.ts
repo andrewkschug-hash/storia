@@ -18,4 +18,25 @@ export class AsyncStorageReadingProgressRepository implements ReadingProgressRep
   async clear(storyId: string): Promise<void> {
     await AsyncStorage.removeItem(keyFor(storyId));
   }
+
+  async listAll(): Promise<ReadingProgressRecord[]> {
+    const keys = (await AsyncStorage.getAllKeys()).filter((key) => key.startsWith('storia:progress:'));
+    const rows: ReadingProgressRecord[] = [];
+    for (const key of keys) {
+      const raw = await AsyncStorage.getItem(key);
+      if (!raw) continue;
+      try {
+        rows.push(JSON.parse(raw) as ReadingProgressRecord);
+      } catch {
+        /* skip corrupt */
+      }
+    }
+    return rows;
+  }
+
+  async clearAll(): Promise<void> {
+    const keys = (await AsyncStorage.getAllKeys()).filter((key) => key.startsWith('storia:progress:'));
+    if (keys.length === 0) return;
+    await AsyncStorage.multiRemove(keys);
+  }
 }

@@ -36,6 +36,11 @@ export function advanceProduction(
   return { done: true };
 }
 
+/** Skipping production always completes the chapter. Overlay presence does not gate reading. */
+export function skipProduction(): { action: 'complete_chapter'; skipped: true } {
+  return { action: 'complete_chapter', skipped: true };
+}
+
 /** Overlay prompts sometimes repeat the screen instruction. Never show that in the English card. */
 export function cleanProductionPromptEn(promptEn: string): string {
   return promptEn.replace(/\s*say it in italian\.?\s*$/i, '').trim();

@@ -21,7 +21,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-01-02",
-      "summary": "Luca is 24, Chiara is 16, and Davide is 25.",
+      "summary": "Chiara and Luca compare ages; Davide is 25.",
       "characterIds": [
         "luca",
         "chiara",
@@ -45,11 +45,13 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca è nel soggiorno.",
+          "text": "Luca e Chiara sono nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
+            "e",
+            "chiara",
             "essere",
             "nel",
             "soggiorno"
@@ -57,13 +59,13 @@
         },
         {
           "id": "s02",
-          "text": "Chiara è qui.",
+          "text": "Chiara guarda Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "chiara",
-            "essere",
-            "qui"
+            "guardare",
+            "luca"
           ]
         },
         {
@@ -132,6 +134,51 @@
             "sedici",
             "anno"
           ]
+        },
+        {
+          "id": "s09",
+          "text": "Sedici è poco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sedici",
+            "essere",
+            "poco"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Ventiquattro è molto.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "ventiquattro",
+            "essere",
+            "molto"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Io sono grande.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Io non sono grande.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "essere",
+            "grande"
+          ]
         }
       ]
     },
@@ -140,7 +187,7 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s13",
           "text": "Uno due tre quattro cinque.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -153,7 +200,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s14",
           "text": "Sei sette otto nove dieci.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -166,42 +213,90 @@
           ]
         },
         {
-          "id": "s11",
-          "text": "Undici dodici tredici quattordici quindici.",
+          "id": "s15",
+          "text": "Undici dodici tredici.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
             "undici",
             "dodici",
-            "tredici",
-            "quattordici",
-            "quindici"
+            "tredici"
           ]
         },
         {
-          "id": "s12",
-          "text": "Sedici è poco.",
+          "id": "s16",
+          "text": "Quattordici quindici sedici.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "sedici",
-            "essere",
-            "poco"
+            "quattordici",
+            "quindici",
+            "sedici"
           ]
         },
         {
-          "id": "s13",
-          "text": "Ventiquattro è molto.",
-          "speakerId": "chiara",
-          "kind": "dialogue",
+          "id": "s17",
+          "text": "Sedici è l'età di Chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sedici",
+            "essere",
+            "eta",
+            "di",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Ventiquattro è l'età di Luca.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
             "ventiquattro",
             "essere",
-            "molto"
+            "eta",
+            "di",
+            "luca"
           ]
         },
         {
-          "id": "s14",
+          "id": "s19",
+          "text": "Chiara conta ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "contare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Diciassette diciotto diciannove venti.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "diciassette",
+            "diciotto",
+            "diciannove",
+            "venti"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Ventuno ventidue ventitre ventiquattro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ventuno",
+            "ventidue",
+            "ventitre",
+            "ventiquattro"
+          ]
+        },
+        {
+          "id": "s22",
           "text": "Davide arriva.",
           "speakerId": null,
           "kind": "narration",
@@ -211,7 +306,16 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s23",
+          "text": "Ciao.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao"
+          ]
+        },
+        {
+          "id": "s24",
           "text": "Quanti anni hai Davide?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -221,9 +325,15 @@
             "avere",
             "davide"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
         {
-          "id": "s16",
+          "id": "s25",
           "text": "Ho venticinque anni.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -234,7 +344,7 @@
           ]
         },
         {
-          "id": "s17",
+          "id": "s26",
           "text": "Davide ha venticinque anni.",
           "speakerId": null,
           "kind": "narration",
@@ -246,15 +356,104 @@
           ]
         },
         {
-          "id": "s18",
-          "text": "Luca e Davide sono grandi.",
+          "id": "s27",
+          "text": "Venticinque è più di ventiquattro.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "venticinque",
+            "essere",
+            "piu",
+            "di",
+            "ventiquattro"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Davide è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca è grande anche.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
-            "e",
-            "davide",
             "essere",
+            "grande",
+            "anche"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Chiara ha sedici anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "avere",
+            "sedici",
+            "anno"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Chi è più grande?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "chi",
+            "essere",
+            "piu",
+            "grande"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "davide"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Poi Luca.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "luca"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Poi io.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "io"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Trenta è un numero grande.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "trenta",
+            "essere",
+            "un",
+            "numero",
             "grande"
           ]
         }
@@ -272,7 +471,7 @@
         "30"
       ],
       "correctChoice": 1,
-      "explanation": "Luca is ventiquattro anni.",
+      "explanation": "Luca ha ventiquattro anni.",
       "chapterId": "luca-prima-di-roma-01-02",
       "difficulty": 1
     },
@@ -283,24 +482,24 @@
       "choices": [
         "14",
         "16",
-        "24"
+        "25"
       ],
       "correctChoice": 1,
-      "explanation": "Chiara is sedici anni.",
+      "explanation": "Chiara ha sedici anni.",
       "chapterId": "luca-prima-di-roma-01-02",
       "difficulty": 1
     },
     {
       "id": "lpr01-ch02-q03",
-      "type": "direct",
-      "question": "Who is the oldest?",
+      "type": "inference",
+      "question": "Who is the oldest of the three?",
       "choices": [
         "Chiara",
         "Luca",
         "Davide"
       ],
       "correctChoice": 2,
-      "explanation": "Davide is 25.",
+      "explanation": "Davide is 25; Luca 24; Chiara 16.",
       "chapterId": "luca-prima-di-roma-01-02",
       "difficulty": 1
     }

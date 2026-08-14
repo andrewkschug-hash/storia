@@ -6,6 +6,7 @@ import { existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
 import { auditStoryCefr } from '../src/cefr/chapter';
+import { getContentBundle } from '../src/content';
 import { getCatalogStories } from '../src/content/catalog';
 import { inspectDraftStoryData } from '../src/content/inspectDraft';
 import { loadContentBundle } from '../src/content/loadContentBundle';
@@ -34,18 +35,32 @@ function loadStoryBundle(contentPath: string, narrativeArc?: string) {
     if (!file.endsWith('.json')) continue;
     chapterJsonByFile[file] = JSON.parse(readFileSync(join(chaptersDir, file), 'utf8'));
   }
+  const translationsPath = join(storyDir, 'sentence-english.json');
   return loadContentBundle({
     charactersJson: JSON.parse(readFileSync(join(root, 'characters.json'), 'utf8')),
     locationsJson: JSON.parse(readFileSync(join(root, 'locations.json'), 'utf8')),
     lexiconJson: JSON.parse(readFileSync(join(root, 'lexicon', 'italian-core.json'), 'utf8')),
     manifestJson: JSON.parse(readFileSync(join(storyDir, 'manifest.json'), 'utf8')),
     chapterJsonByFile,
+    translationsJson: existsSync(translationsPath)
+      ? JSON.parse(readFileSync(translationsPath, 'utf8'))
+      : undefined,
     storyPath: contentPath,
     narrativeArc,
   });
 }
 
 for (const story of getCatalogStories()) {
+  if (story.status === 'available') {
+    const bundle = getContentBundle(story.id);
+    if (bundle.chapters.size !== story.chapterCount) {
+      console.error(
+        `AVAILABLE ${story.id}: expected ${story.chapterCount} chapters, got ${bundle.chapters.size}`,
+      );
+      process.exit(1);
+    }
+    console.log(`AVAILABLE ${story.id}: ${bundle.chapters.size} chapter(s) via getContentBundle`);
+  }
   if (story.status === 'planned') {
     if (!story.contentPath) {
       console.log(`PLANNED ${story.id}: no prose required`);

@@ -68,6 +68,9 @@ export const story01: StorySpec = {
           s('s33', 'Io sono Luca di Pietralba.', 'io essere luca di pietralba', 'luca'),
           s('s34', 'Piacere.', 'piacere', 'davide'),
           s('s35', 'Piacere Davide.', 'piacere davide', 'luca'),
+          s('s36', 'Davide resta un momento.', 'davide restare un momento'),
+          s('s37', 'Luca parla ancora.', 'luca parlare ancora'),
+          s('s38', 'Io abito qui a Pietralba.', 'io abitare qui a pietralba', 'luca'),
         ],
       ],
       questions: [
@@ -308,6 +311,9 @@ export const story01: StorySpec = {
           s('s33', 'Prego.', 'prego', 'davide'),
           s('s34', 'Oggi è un giorno bello.', 'oggi essere un giorno bello'),
           s('s35', 'Davide resta un momento.', 'davide restare un momento'),
+          s('s36', 'Marta ascolta gli amici.', 'marta ascoltare gli amico'),
+          s('s37', 'Luca è felice.', 'luca essere felice'),
+          s('s38', 'Davide è un amico importante.', 'davide essere un amico importante'),
         ],
       ],
       questions: [

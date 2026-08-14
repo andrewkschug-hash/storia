@@ -19,7 +19,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-03-03",
-      "summary": "Luca asks prices in euros. The cheese is expensive; the bread is OK.",
+      "summary": "Luca asks prices. Bread is cheap, milk costs one euro fifty, and he chooses economical cheese.",
       "characterIds": [
         "luca",
         "pina"
@@ -29,8 +29,9 @@
       ],
       "rememberedFacts": [
         "Bread costs two euros",
-        "Cheese costs five euros",
-        "Luca thinks cheese is expensive"
+        "Milk costs one euro and fifty cents",
+        "This cheese costs five euros and is too expensive",
+        "Luca chooses the economical cheese"
       ]
     }
   ],
@@ -66,67 +67,19 @@
         },
         {
           "id": "s03",
-          "text": "Quanto costa il formaggio?",
+          "text": "Due euro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "quanto",
-            "costare",
-            "il",
-            "formaggio"
+            "due",
+            "euro"
           ]
         },
         {
           "id": "s04",
-          "text": "Il formaggio costa cinque euro.",
-          "speakerId": "pina",
-          "kind": "dialogue",
-          "lemmas": [
-            "il",
-            "formaggio",
-            "costare",
-            "cinque",
-            "euro"
-          ]
-        },
-        {
-          "id": "s05",
-          "text": "Cinque euro.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "cinque",
-            "euro"
-          ]
-        },
-        {
-          "id": "s06",
-          "text": "È caro.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "caro"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Sì è un po' caro.",
-          "speakerId": "pina",
-          "kind": "dialogue",
-          "lemmas": [
-            "si_yes",
-            "essere",
-            "un",
-            "poco",
-            "caro"
-          ]
-        },
-        {
-          "id": "s08",
           "text": "Il pane non è caro.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "luca",
+          "kind": "dialogue",
           "lemmas": [
             "il",
             "pane",
@@ -134,39 +87,61 @@
             "essere",
             "caro"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
+        {
+          "id": "s05",
+          "text": "Quanto costa il latte?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "costare",
+            "il",
+            "latte"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Il latte costa un euro e cinquanta.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "latte",
+            "costare",
+            "un",
+            "euro",
+            "e",
+            "cinquanta"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Un euro e cinquanta.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "euro",
+            "e",
+            "cinquanta"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Il latte non è caro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "latte",
+            "non",
+            "essere",
+            "caro"
+          ]
+        },
         {
           "id": "s09",
-          "text": "Due euro è poco.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "due",
-            "euro",
-            "essere",
-            "poco"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Cinque euro è molto.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "cinque",
-            "euro",
-            "essere",
-            "molto"
-          ]
-        },
-        {
-          "id": "s11",
           "text": "Luca guarda i prezzi.",
           "speakerId": null,
           "kind": "narration",
@@ -178,7 +153,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s10",
           "text": "I prezzi sono in euro.",
           "speakerId": null,
           "kind": "narration",
@@ -191,38 +166,321 @@
           ]
         },
         {
-          "id": "s13",
-          "text": "Va bene il pane.",
+          "id": "s11",
+          "text": "Quanto costano le mele?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "andare",
-            "bene",
+            "quanto",
+            "costare",
+            "le",
+            "mela"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Le mele costano poco.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "mela",
+            "costare",
+            "poco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Quanto costa il formaggio?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "costare",
             "il",
-            "pane"
+            "formaggio"
           ]
         },
         {
           "id": "s14",
-          "text": "Anche il formaggio va bene.",
+          "text": "Questo formaggio costa cinque euro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "formaggio",
+            "costare",
+            "cinque",
+            "euro"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Cinque euro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "anche",
-            "il",
+            "cinque",
+            "euro"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "È troppo caro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "troppo",
+            "caro"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Quel formaggio è economico.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
             "formaggio",
+            "essere",
+            "economico"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Quello è economico.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "essere",
+            "economico"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Prendo quello per favore.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "prendere",
+            "quello",
+            "per",
+            "favore"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Va bene.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
             "andare",
             "bene"
           ]
         },
         {
-          "id": "s15",
+          "id": "s21",
+          "text": "Pina dà il formaggio economico.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "dare",
+            "il",
+            "formaggio",
+            "economico"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Luca prende il formaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "il",
+            "formaggio"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Luca ascolta Pina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "ascoltare",
+            "pina"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s24",
+          "text": "Il pane costa poco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "pane",
+            "costare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il formaggio costa poco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "formaggio",
+            "costare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Questo è troppo caro.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "essere",
+            "troppo",
+            "caro"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Quello va bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Due euro per il pane.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "euro",
+            "per",
+            "il",
+            "pane"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Un euro e cinquanta per il latte.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "euro",
+            "e",
+            "cinquanta",
+            "per",
+            "il",
+            "latte"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Luca guarda tutto al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "tutto",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "Grazie signora.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "grazie",
             "signora"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Prego.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "prego"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "I prezzi vanno bene.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "prezzo",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Pina guarda i prezzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "guardare",
+            "il",
+            "prezzo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Cinque euro è troppo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "cinque",
+            "euro",
+            "essere",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Il latte costa poco.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "latte",
+            "costare",
+            "poco"
           ]
         }
       ]
@@ -236,7 +494,7 @@
       "choices": [
         "€2",
         "€5",
-        "€12"
+        "€10"
       ],
       "correctChoice": 0,
       "explanation": "Il pane costa due euro.",
@@ -246,28 +504,28 @@
     {
       "id": "lpr03-ch03-q02",
       "type": "direct",
-      "question": "How much is the cheese?",
+      "question": "How much is the milk?",
       "choices": [
-        "€2",
-        "€5",
-        "€20"
+        "One euro and fifty cents",
+        "Five euros",
+        "Ten euros"
       ],
-      "correctChoice": 1,
-      "explanation": "Il formaggio costa cinque euro.",
+      "correctChoice": 0,
+      "explanation": "Il latte costa un euro e cinquanta.",
       "chapterId": "luca-prima-di-roma-03-03",
       "difficulty": 1
     },
     {
       "id": "lpr03-ch03-q03",
       "type": "inference",
-      "question": "What does Luca think is expensive?",
+      "question": "Which cheese does Luca choose?",
       "choices": [
-        "The bread",
-        "The cheese",
-        "The list"
+        "The expensive one for five euros",
+        "The economical one",
+        "No cheese"
       ],
       "correctChoice": 1,
-      "explanation": "He says the cheese è caro.",
+      "explanation": "Quello è economico. Prendo quello.",
       "chapterId": "luca-prima-di-roma-03-03",
       "difficulty": 1
     }

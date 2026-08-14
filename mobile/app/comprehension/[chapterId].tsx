@@ -11,14 +11,24 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProductionExerciseCard } from '@/src/components/ProductionExerciseCard';
-import { getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
+import { LUCA_STORY_ID, findStoryIdForChapter, getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
 import { getProductionExercisesForChapter } from '@/src/content/productionExercises';
+import { readerHref } from '@/src/content/storyHrefs';
 import { evaluateAnswer } from '@/src/comprehension/evaluate';
 import { shuffleQuestionChoices } from '@/src/comprehension/shuffle';
 import { getProgressService } from '@/src/progress';
-import type { ComprehensionAnswerRecord } from '@/src/progress/types';
+import type {
+  ChapterProductionAttempt,
+  ComprehensionAnswerRecord,
+  ProductionSelfAssessment,
+} from '@/src/progress/types';
 import { comprehensionUsesItalianPrompt } from '@/src/content/scaffolding';
-import { advanceProduction, afterComprehensionResults } from '@/src/production/flow';
+import {
+  advanceProduction,
+  afterComprehensionResults,
+  skipProduction,
+  type SelfAssessment,
+} from '@/src/production/flow';
 import { getReviewService } from '@/src/review';
 import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
@@ -33,19 +43,27 @@ type QuestionState = {
 };
 
 export default function ComprehensionScreen() {
-  const { chapterId } = useLocalSearchParams<{ chapterId: string }>();
-  const chapter = getChapter(chapterId);
+  const { chapterId, story } = useLocalSearchParams<{ chapterId: string; story?: string }>();
+  const storyId =
+    (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
+  const chapter = storyId ? getChapter(chapterId, storyId) : undefined;
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
 
   const questions = chapter?.questions ?? [];
   const productionExercises = useMemo(
-    () => (chapter ? getProductionExercisesForChapter(chapter.id) : []),
-    [chapter],
+    () =>
+      chapter
+        ? getProductionExercisesForChapter(chapter.id, storyId ?? chapter.storyId)
+        : [],
+    [chapter, storyId],
   );
   const [phase, setPhase] = useState<Phase>('intro');
   const [index, setIndex] = useState(0);
   const [productionIndex, setProductionIndex] = useState(0);
+  const [productionAssessments, setProductionAssessments] = useState<
+    Record<string, SelfAssessment | null>
+  >({});
   const [states, setStates] = useState<QuestionState[]>(() =>
     questions.map(() => ({ attempts: 0, correct: null, selectedIndex: null })),
   );
@@ -82,13 +100,21 @@ export default function ComprehensionScreen() {
   }
 
   const continueAfterComplete = (chapterNumber: number) => {
-    if (chapterNumber === 20 || chapterNumber === 24) {
+    const resolvedStoryId = storyId ?? chapter?.storyId;
+    if (!resolvedStoryId) {
+      router.replace('/(tabs)/home' as import('expo-router').Href);
+      return;
+    }
+    if (
+      resolvedStoryId === LUCA_STORY_ID &&
+      (chapterNumber === 20 || chapterNumber === 24)
+    ) {
       router.replace(`/level-readiness?fromChapter=${chapterNumber}` as import('expo-router').Href);
       return;
     }
-    const next = getChapterByNumber(chapterNumber + 1);
+    const next = getChapterByNumber(chapterNumber + 1, resolvedStoryId);
     if (next) {
-      router.replace(`/reader/${next.id}` as import('expo-router').Href);
+      router.replace(readerHref(resolvedStoryId, next.id));
     } else {
       router.replace('/(tabs)/home' as import('expo-router').Href);
     }
@@ -155,7 +181,42 @@ export default function ComprehensionScreen() {
     setPhase('question');
   };
 
-  const finish = async () => {
+  const persistProduction = async (
+    skipped: boolean,
+    assessments: Record<string, SelfAssessment | null> = productionAssessments,
+  ) => {
+    const resolvedStoryId = storyId ?? chapter.storyId;
+    const attempts: ChapterProductionAttempt[] = skipped
+      ? productionExercises.map((exercise) => ({
+          exerciseId: exercise.exerciseId,
+          assessment: 'skipped' satisfies ProductionSelfAssessment,
+        }))
+      : productionExercises.map((exercise) => ({
+          exerciseId: exercise.exerciseId,
+          assessment: (assessments[exercise.exerciseId] ?? 'skipped') satisfies ProductionSelfAssessment,
+        }));
+    const progressService = getProgressService(resolvedStoryId);
+    await progressService.recordProduction(chapter.id, { skipped, attempts });
+    if (skipped) return;
+    const vocab = getVocabularyService();
+    for (const exercise of productionExercises) {
+      if (assessments[exercise.exerciseId] !== 'got_it') continue;
+      const source = chapter.paragraphs
+        .flatMap((paragraph) => paragraph.sentences)
+        .find((sentence) => sentence.id === exercise.sourceSentenceId);
+      if (!source) continue;
+      await vocab.recordProductionSuccess({
+        lemmaIds: [...new Set(source.tokens.map((token) => token.lemmaId))],
+        chapterId: chapter.id,
+        sentenceId: source.id,
+      });
+    }
+  };
+
+  const finish = async (production?: {
+    skipped: boolean;
+    assessments?: Record<string, SelfAssessment | null>;
+  }) => {
     if (finishing) return;
     setFinishing(true);
     try {
@@ -164,11 +225,17 @@ export default function ComprehensionScreen() {
         correct: Boolean(states[i]?.correct),
         attempts: Math.max(1, states[i]?.attempts ?? 1),
       }));
-      await getProgressService().finishComprehensionAndComplete(chapter.id, answers);
+      if (productionExercises.length > 0 && production) {
+        await persistProduction(production.skipped, production.assessments);
+      }
+      await getProgressService(storyId ?? chapter.storyId).finishComprehensionAndComplete(
+        chapter.id,
+        answers,
+      );
       const vocab = await getVocabularyService().getState();
       const copy = getReviewService().chapterNudgeCopy(
         chapter.number,
-        getContentBundle(),
+        getContentBundle(storyId ?? chapter.storyId),
         vocab,
       );
       if (copy.readyCount > 0) {
@@ -200,10 +267,15 @@ export default function ComprehensionScreen() {
     void finish();
   };
 
+  const skipProductionAndFinish = () => {
+    skipProduction();
+    void finish({ skipped: true });
+  };
+
   const continueFromProduction = () => {
     const next = advanceProduction(productionIndex, productionExercises.length);
     if (next.done) {
-      void finish();
+      void finish({ skipped: false, assessments: productionAssessments });
       return;
     }
     setProductionIndex(next.index);
@@ -395,7 +467,7 @@ export default function ComprehensionScreen() {
               <Text style={[Typography.button, { color: '#F7FAF9' }]}>
                 {productionExercises.length > 0
                   ? 'Continue'
-                  : getChapterByNumber(chapter.number + 1)
+                  : getChapterByNumber(chapter.number + 1, storyId ?? chapter.storyId)
                     ? 'Continue story'
                     : 'Back to home'}
               </Text>
@@ -404,16 +476,36 @@ export default function ComprehensionScreen() {
         ) : null}
 
         {phase === 'production' && productionExercises[productionIndex] ? (
-          <ProductionExerciseCard
-            key={productionExercises[productionIndex].exerciseId}
-            exercise={productionExercises[productionIndex]}
-            index={productionIndex}
-            total={productionExercises.length}
-            sourceSentence={chapter.paragraphs
-              .flatMap((paragraph) => paragraph.sentences)
-              .find((sentence) => sentence.id === productionExercises[productionIndex].sourceSentenceId)}
-            onContinue={continueFromProduction}
-          />
+          <View>
+            <ProductionExerciseCard
+              key={productionExercises[productionIndex].exerciseId}
+              exercise={productionExercises[productionIndex]}
+              index={productionIndex}
+              total={productionExercises.length}
+              sourceSentence={chapter.paragraphs
+                .flatMap((paragraph) => paragraph.sentences)
+                .find((sentence) => sentence.id === productionExercises[productionIndex].sourceSentenceId)}
+              onAssessed={(assessment) => {
+                const exerciseId = productionExercises[productionIndex]?.exerciseId;
+                if (!exerciseId) return;
+                setProductionAssessments((prev) => ({ ...prev, [exerciseId]: assessment }));
+              }}
+              onContinue={continueFromProduction}
+            />
+            <Pressable
+              disabled={finishing}
+              onPress={skipProductionAndFinish}
+              style={({ pressed }) => [
+                styles.secondaryBtn,
+                {
+                  borderColor: colors.border,
+                  opacity: pressed || finishing ? 0.88 : 1,
+                  marginTop: Spacing.md,
+                },
+              ]}>
+              <Text style={[Typography.button, { color: colors.text }]}>Skip for now</Text>
+            </Pressable>
+          </View>
         ) : null}
       </ScrollView>
     </AtmosphereBackground>

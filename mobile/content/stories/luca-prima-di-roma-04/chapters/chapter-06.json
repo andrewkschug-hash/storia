@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-06",
-      "summary": "Luca gets lost and asks Franco for the way to Davide.",
+      "summary": "Luca gets lost after the bus and asks Franco at the bar for directions to Davide.",
       "characterIds": [
         "luca",
         "franco",
@@ -36,8 +36,9 @@
       ],
       "rememberedFacts": [
         "Luca is lost",
-        "Franco helps with directions",
-        "Davide is at the bar"
+        "Franco is at the bar",
+        "Davide is at the bar",
+        "Franco gives directions with near and far"
       ]
     }
   ],
@@ -48,19 +49,30 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca non è alla piazza.",
+          "text": "Luca esce dall'autobus.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
-            "non",
-            "essere",
-            "alla",
-            "piazza"
+            "uscire",
+            "autobus"
           ]
         },
         {
           "id": "s02",
+          "text": "Ma Davide non è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "davide",
+            "non",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Luca non sa dove è Davide.",
           "speakerId": null,
           "kind": "narration",
@@ -74,19 +86,29 @@
           ]
         },
         {
-          "id": "s03",
-          "text": "Franco è al bar.",
+          "id": "s04",
+          "text": "Luca non sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Franco è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "franco",
             "essere",
-            "al",
-            "bar"
+            "qui"
           ]
         },
         {
-          "id": "s04",
+          "id": "s06",
           "text": "Scusa.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -95,7 +117,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s07",
           "text": "Dov'è Davide?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -105,7 +127,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s08",
           "text": "Davide è al bar.",
           "speakerId": "franco",
           "kind": "dialogue",
@@ -117,7 +139,19 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s09",
+          "text": "Franco lavora al bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "franco",
+            "lavorare",
+            "al",
+            "bar"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Dov'è il bar?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -126,9 +160,28 @@
             "il",
             "bar"
           ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Il bar non è lontano.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
+            "non",
+            "essere",
+            "lontano"
+          ]
         },
         {
-          "id": "s08",
+          "id": "s12",
           "text": "Vai dritto e poi a sinistra.",
           "speakerId": "franco",
           "kind": "dialogue",
@@ -140,15 +193,9 @@
             "a",
             "sinistra"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s09",
+          "id": "s13",
           "text": "Il bar è vicino.",
           "speakerId": "franco",
           "kind": "dialogue",
@@ -160,7 +207,103 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s14",
+          "text": "Non è lontano.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "La piazza è lontana da qui.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "piazza",
+            "essere",
+            "lontano",
+            "da",
+            "qui"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Il bar è davanti al parco.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
+            "essere",
+            "davanti",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Dietro il bar c'è Via Nazionale.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "dietro",
+            "il",
+            "bar",
+            "ce",
+            "via",
+            "nazionale"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Franco è gentile.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "franco",
+            "essere",
+            "gentile"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Parla piano a Luca.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "parlare",
+            "piano",
+            "a",
+            "luca"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Il bar è accanto al parco.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
+            "essere",
+            "accanto",
+            "al",
+            "parco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s21",
           "text": "Grazie Franco.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -170,7 +313,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s22",
           "text": "Luca va dritto.",
           "speakerId": null,
           "kind": "narration",
@@ -181,7 +324,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s23",
           "text": "Luca va a sinistra.",
           "speakerId": null,
           "kind": "narration",
@@ -193,7 +336,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s24",
           "text": "Ecco il bar.",
           "speakerId": null,
           "kind": "narration",
@@ -204,7 +347,20 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s25",
+          "text": "Davide è accanto al bar.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "davide",
+            "essere",
+            "accanto",
+            "al",
+            "bar"
+          ]
+        },
+        {
+          "id": "s26",
           "text": "Ciao Luca.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -214,7 +370,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s27",
           "text": "Sono qui.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -224,14 +380,114 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "Franco è gentile.",
+          "id": "s28",
+          "text": "Ecco Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ecco",
+            "davide"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luca e Davide sono contenti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "davide",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Franco sorride dal bar.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "franco",
+            "sorridere",
+            "dal",
+            "bar"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Il bar è vicino al parco.",
+          "speakerId": "franco",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bar",
             "essere",
-            "gentile"
+            "vicino",
+            "al",
+            "parco"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Luca dice grazie di nuovo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "dire",
+            "grazie",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca cammina verso il bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "camminare",
+            "verso",
+            "il",
+            "bar"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Vede il bar davanti.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "vedere",
+            "il",
+            "bar",
+            "davanti"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Ora Luca sa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ora",
+            "luca",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Davide aspetta fuori dal bar.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "aspettare",
+            "fuori",
+            "dal",
+            "bar"
           ]
         }
       ]
@@ -241,14 +497,14 @@
     {
       "id": "lpr04-ch06-q01",
       "type": "direct",
-      "question": "Who helps Luca?",
+      "question": "Who helps Luca find Davide?",
       "choices": [
-        "Sofia",
         "Franco",
-        "Pina"
+        "A stranger from Rome",
+        "Marta"
       ],
-      "correctChoice": 1,
-      "explanation": "Franco gives directions.",
+      "correctChoice": 0,
+      "explanation": "Franco gives directions at the bar.",
       "chapterId": "luca-prima-di-roma-04-06",
       "difficulty": 1
     },
@@ -258,8 +514,8 @@
       "question": "Where is Davide?",
       "choices": [
         "At the bar",
-        "In Rome",
-        "At school"
+        "At the pharmacy",
+        "On a Rome train"
       ],
       "correctChoice": 0,
       "explanation": "Davide è al bar.",
@@ -273,7 +529,7 @@
       "choices": [
         "Straight then left",
         "Take a plane",
-        "Go to Rome"
+        "Go to Rome Termini"
       ],
       "correctChoice": 0,
       "explanation": "Vai dritto e poi a sinistra.",

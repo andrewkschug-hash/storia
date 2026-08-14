@@ -10,11 +10,12 @@ import {
 import { useFonts } from 'expo-font';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/components/useColorScheme';
+import { getAccount } from '@/src/account/storage';
 import { Colors } from '@/src/theme/tokens';
 
 export { ErrorBoundary } from 'expo-router';
@@ -33,18 +34,21 @@ export default function RootLayout() {
     Literata_500Medium,
     Literata_600SemiBold,
   });
+  const [accountReady, setAccountReady] = useState(false);
 
   useEffect(() => {
     if (error) throw error;
   }, [error]);
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
+    if (!loaded) return;
+    void getAccount().finally(() => {
+      setAccountReady(true);
+      void SplashScreen.hideAsync();
+    });
   }, [loaded]);
 
-  if (!loaded) {
+  if (!loaded || !accountReady) {
     return null;
   }
 

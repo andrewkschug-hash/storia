@@ -26,7 +26,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-05",
-      "summary": "Guests arrive. Elisa comes. They say piacere and auguri.",
+      "summary": "Guests arrive. Davide and Elisa come. They say piacere and auguri.",
       "characterIds": [
         "luca",
         "marta",
@@ -41,9 +41,9 @@
         "soggiorno-pietralba"
       ],
       "rememberedFacts": [
-        "Davide and Elisa come",
+        "Davide and Elisa come to the party",
         "Elisa meets the family",
-        "Everyone says auguri"
+        "Everyone says auguri to Luca"
       ]
     }
   ],
@@ -67,6 +67,36 @@
         },
         {
           "id": "s02",
+          "text": "C'è musica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "musica"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "C'è torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "torta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "C'è succo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "succo"
+          ]
+        },
+        {
+          "id": "s05",
           "text": "Davide arriva.",
           "speakerId": null,
           "kind": "narration",
@@ -76,7 +106,7 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s06",
           "text": "Elisa arriva.",
           "speakerId": null,
           "kind": "narration",
@@ -86,7 +116,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s07",
           "text": "Ciao Luca.",
           "speakerId": "elisa",
           "kind": "dialogue",
@@ -96,7 +126,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s08",
           "text": "Ciao Elisa.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -106,7 +136,92 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s09",
+          "text": "Ciao Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "davide"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Davide è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Elisa sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La famiglia è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Davide conosce la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "conoscere",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Elisa è nuova a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "nuovo",
+            "a",
+            "casa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s15",
+          "text": "Marta guarda Elisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Piacere.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -115,7 +230,17 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s17",
+          "text": "Piacere signora.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere",
+            "signora"
+          ]
+        },
+        {
+          "id": "s18",
           "text": "Io mi chiamo Elisa.",
           "speakerId": "elisa",
           "kind": "dialogue",
@@ -127,7 +252,7 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s19",
           "text": "Elisa è amica di Chiara.",
           "speakerId": null,
           "kind": "narration",
@@ -138,15 +263,103 @@
             "di",
             "chiara"
           ]
+        },
+        {
+          "id": "s20",
+          "text": "Piacere Elisa.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Piacere.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "piacere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Chiara presenta Elisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "presentare",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Elisa è nuova qui.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "nuovo",
+            "qui"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Luca è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Tutti dicono piacere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "dire",
+            "piacere"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Elisa guarda la famiglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "guardare",
+            "la",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Marta sorride a Elisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "sorridere",
+            "a",
+            "elisa"
+          ]
         }
       ]
     },
     {
-      "id": "p2",
-      "order": 2,
+      "id": "p3",
+      "order": 3,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s28",
           "text": "Auguri Luca.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -156,7 +369,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s29",
           "text": "Auguri.",
           "speakerId": "elisa",
           "kind": "dialogue",
@@ -165,16 +378,38 @@
           ]
         },
         {
-          "id": "s11",
-          "text": "Grazie.",
-          "speakerId": "luca",
+          "id": "s30",
+          "text": "Auguri Luca.",
+          "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
-            "grazie"
+            "auguri",
+            "luca"
           ]
         },
         {
-          "id": "s12",
+          "id": "s31",
+          "text": "Auguri Luca.",
+          "speakerId": "lidia",
+          "kind": "dialogue",
+          "lemmas": [
+            "auguri",
+            "luca"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Grazie a tutti.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "a",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s33",
           "text": "C'è torta e musica.",
           "speakerId": null,
           "kind": "narration",
@@ -186,7 +421,7 @@
           ]
         },
         {
-          "id": "s13",
+          "id": "s34",
           "text": "Lidia è alla festa.",
           "speakerId": null,
           "kind": "narration",
@@ -198,7 +433,7 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s35",
           "text": "Paolo è contento.",
           "speakerId": null,
           "kind": "narration",
@@ -209,7 +444,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s36",
           "text": "Siamo tutti qui.",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -220,7 +455,7 @@
           ]
         },
         {
-          "id": "s16",
+          "id": "s37",
           "text": "La festa è bella.",
           "speakerId": null,
           "kind": "narration",
@@ -230,6 +465,157 @@
             "essere",
             "bello"
           ]
+        },
+        {
+          "id": "s38",
+          "text": "Luca è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Il compleanno è importante.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "compleanno",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Davide mangia la torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "mangiare",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Elisa beve il succo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "bere",
+            "il",
+            "succo"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Tutti parlano insieme.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "parlare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "La musica è alta.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "musica",
+            "essere",
+            "alto"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Elisa è contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Marta serve la torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "servire",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Luca prende la torta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "prendere",
+            "la",
+            "torta"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Tutti mangiano insieme.",
+          "speakerId": "paolo",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "mangiare",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "La festa continua.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "festa",
+            "continuare"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Luca dice grazie a tutti.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "dire",
+            "grazie",
+            "a",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Chiara è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "felice"
+          ]
         }
       ]
     }
@@ -238,7 +624,7 @@
     {
       "id": "lpr05-ch05-q01",
       "type": "character",
-      "question": "Who arrives with the guests?",
+      "question": "Who arrives as guests?",
       "choices": [
         "Sofia and Marco",
         "Davide and Elisa",
@@ -259,7 +645,7 @@
         "A Rome neighbor"
       ],
       "correctChoice": 0,
-      "explanation": "Elisa è un’amica di Chiara.",
+      "explanation": "Elisa è amica di Chiara.",
       "chapterId": "luca-prima-di-roma-05-05",
       "difficulty": 1
     },

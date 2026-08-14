@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-03-01",
-      "summary": "Marta gives Luca a shopping list: bread, milk, pasta, fruit.",
+      "summary": "Marta gives Luca a shopping list with bread, milk, pasta, fruit, sugar, and two apples.",
       "characterIds": [
         "luca",
         "marta"
@@ -30,9 +30,10 @@
         "cucina-pietralba"
       ],
       "rememberedFacts": [
-        "There is a shopping list",
-        "They need bread, milk, pasta, and fruit",
-        "Luca will go to the supermarket"
+        "Marta gives Luca the shopping list",
+        "The list has bread, milk, pasta, fruit, and sugar",
+        "Marta wants two apples",
+        "Luca goes to the supermarket"
       ]
     }
   ],
@@ -55,22 +56,61 @@
         },
         {
           "id": "s02",
-          "text": "Luca è qui.",
+          "text": "Luca è in cucina con Marta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "essere",
-            "qui"
+            "in",
+            "cucina",
+            "con",
+            "marta"
           ]
         },
         {
           "id": "s03",
-          "text": "Luca questa è la lista.",
+          "text": "Oggi Luca va al supermercato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "luca",
+            "andare",
+            "al",
+            "supermercato"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Marta ha la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "avere",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Luca guarda la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Questa è la lista.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "questo",
             "essere",
             "la",
@@ -78,7 +118,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s07",
           "text": "Sulla lista c'è pane.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -90,7 +130,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s08",
           "text": "C'è latte.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -100,7 +140,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s09",
           "text": "C'è pasta.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -110,7 +150,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s10",
           "text": "C'è frutta.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -120,15 +160,27 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Un po' di pane.",
-          "speakerId": "marta",
-          "kind": "dialogue",
+          "id": "s11",
+          "text": "Marta guarda Luca.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "un",
-            "poco",
-            "di",
-            "pane"
+            "marta",
+            "guardare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Luca guarda pane e latte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "pane",
+            "e",
+            "latte"
           ]
         }
       ]
@@ -138,7 +190,18 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
+          "id": "s13",
+          "text": "C'è anche zucchero.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "anche",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s14",
           "text": "Due mele.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -148,7 +211,69 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s15",
+          "text": "Un po' di pane.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "poco",
+            "di",
+            "pane"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "La pasta è sulla lista.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "pasta",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Lo zucchero è sulla lista.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "zucchero",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Luca guarda pasta e frutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "pasta",
+            "e",
+            "frutta"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Luca ascolta Marta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "ascoltare",
+            "marta"
+          ]
+        },
+        {
+          "id": "s20",
           "text": "Luca prende la lista.",
           "speakerId": null,
           "kind": "narration",
@@ -160,7 +285,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s21",
           "text": "Va bene mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -171,7 +296,37 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s22",
+          "text": "Grazie mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Marta dà la lista a Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "dare",
+            "la",
+            "lista",
+            "a",
+            "luca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s24",
           "text": "Luca va al supermercato.",
           "speakerId": null,
           "kind": "narration",
@@ -183,19 +338,7 @@
           ]
         },
         {
-          "id": "s13",
-          "text": "La lista è importante.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "la",
-            "lista",
-            "essere",
-            "importante"
-          ]
-        },
-        {
-          "id": "s14",
+          "id": "s25",
           "text": "Oggi Luca compra pane.",
           "speakerId": null,
           "kind": "narration",
@@ -207,15 +350,164 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Pane latte pasta frutta.",
-          "speakerId": "luca",
+          "id": "s26",
+          "text": "Compra latte e pasta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "comprare",
+            "latte",
+            "e",
+            "pasta"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Compra frutta e zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "comprare",
+            "frutta",
+            "e",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Il pane è sulla lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "pane",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Il latte è sulla lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "latte",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Due mele sono sulla lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "mela",
+            "essere",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "La lista è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "lista",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Luca guarda tutto sulla lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "tutto",
+            "sulla",
+            "lista"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca può comprare tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "potere",
+            "comprare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Adesso Luca è pronto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "luca",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Buongiorno Luca.",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "pane",
-            "latte",
-            "pasta",
-            "frutta"
+            "buongiorno",
+            "luca"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "La lista è per il supermercato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "lista",
+            "essere",
+            "per",
+            "il",
+            "supermercato"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Oggi la lista è importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "la",
+            "lista",
+            "essere",
+            "importante"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Marta guarda la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "la",
+            "lista"
           ]
         }
       ]
@@ -227,19 +519,19 @@
       "type": "direct",
       "question": "What is on the list?",
       "choices": [
-        "Tickets and keys",
-        "Bread, milk, pasta, fruit",
-        "Shoes and books"
+        "Bread, milk, pasta, fruit, and sugar",
+        "Shoes and books",
+        "Tickets and keys"
       ],
-      "correctChoice": 1,
-      "explanation": "Pane, latte, pasta, frutta.",
+      "correctChoice": 0,
+      "explanation": "Pane, latte, pasta, frutta e zucchero.",
       "chapterId": "luca-prima-di-roma-03-01",
       "difficulty": 1
     },
     {
       "id": "lpr03-ch01-q02",
       "type": "direct",
-      "question": "How many apples does Marta mention?",
+      "question": "How many apples does Marta want?",
       "choices": [
         "One",
         "Two",
@@ -255,11 +547,11 @@
       "type": "event",
       "question": "Where is Luca going?",
       "choices": [
-        "To Rome",
         "To the supermarket",
+        "To Rome",
         "To school"
       ],
-      "correctChoice": 1,
+      "correctChoice": 0,
       "explanation": "Luca va al supermercato.",
       "chapterId": "luca-prima-di-roma-03-01",
       "difficulty": 1

@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-02-01",
-      "summary": "Luca and Chiara practice clock times from one to eight-thirty.",
+      "summary": "Luca checks the clock in the soggiorno. Chiara must leave for school at eight.",
       "characterIds": [
         "luca",
         "chiara"
@@ -30,9 +30,9 @@
         "soggiorno-pietralba"
       ],
       "rememberedFacts": [
-        "It is eight o’clock",
-        "Luca learns half past",
-        "One o’clock is l’una"
+        "It is seven-thirty",
+        "Chiara must leave at eight",
+        "Luca reads the orologio"
       ]
     }
   ],
@@ -55,6 +55,40 @@
         },
         {
           "id": "s02",
+          "text": "Sono le sette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "sette"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Luca guarda l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "L'orologio è sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "orologio",
+            "essere",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s05",
           "text": "Che ore sono?",
           "speakerId": "chiara",
           "kind": "dialogue",
@@ -65,70 +99,110 @@
           ]
         },
         {
-          "id": "s03",
-          "text": "Sono le otto.",
+          "id": "s06",
+          "text": "Sono le sette e mezzo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "essere",
             "le",
+            "sette",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Devo aiutare Chiara.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "aiutare",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Chiara deve andare a scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "dovere",
+            "andare",
+            "a",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "A che ora?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "che",
+            "ora"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Alle otto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
             "otto"
           ]
         },
         {
-          "id": "s04",
-          "text": "Sono le otto e mezzo.",
+          "id": "s11",
+          "text": "Alle otto e mezzo.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
-            "le",
+            "alle",
             "otto",
             "e",
             "mezzo"
           ]
         },
         {
-          "id": "s05",
-          "text": "È l'una.",
+          "id": "s12",
+          "text": "No alle otto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
-            "uno"
+            "no",
+            "alle",
+            "otto"
           ]
         },
         {
-          "id": "s06",
-          "text": "Sono le due.",
-          "speakerId": "chiara",
-          "kind": "dialogue",
+          "id": "s37",
+          "text": "Alle otto Chiara deve uscire.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "essere",
-            "le",
-            "due"
+            "alle",
+            "otto",
+            "chiara",
+            "dovere",
+            "uscire"
           ]
         },
         {
-          "id": "s07",
-          "text": "Sono le tre.",
-          "speakerId": "luca",
-          "kind": "dialogue",
+          "id": "s38",
+          "text": "Luca guarda l'orologio ogni momento.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "essere",
-            "le",
-            "tre"
-          ]
-        },
-        {
-          "id": "s08",
-          "text": "Sono le quattro.",
-          "speakerId": "chiara",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "le",
-            "quattro"
+            "luca",
+            "guardare",
+            "orologio",
+            "ogni",
+            "momento"
           ]
         }
       ]
@@ -138,74 +212,113 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s09",
-          "text": "Sono le cinque.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "le",
-            "cinque"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Sono le sei.",
-          "speakerId": "chiara",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "le",
-            "sei"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Sono le sette.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "le",
-            "sette"
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "Sono le nove.",
-          "speakerId": "chiara",
-          "kind": "dialogue",
-          "lemmas": [
-            "essere",
-            "le",
-            "nove"
-          ]
-        },
-        {
           "id": "s13",
-          "text": "Sono le dieci.",
+          "text": "Adesso sono le sette e mezzo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
+            "adesso",
             "essere",
             "le",
-            "dieci"
+            "sette",
+            "e",
+            "mezzo"
           ]
         },
         {
           "id": "s14",
-          "text": "È mezzogiorno.",
-          "speakerId": "chiara",
+          "text": "C'è tempo.",
+          "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
-            "mezzogiorno"
+            "ce",
+            "tempo"
           ]
         },
         {
           "id": "s15",
-          "text": "Le ore sono importanti.",
+          "text": "Quanto tempo?",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "quanto",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Mezza ora.",
           "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "mezzo",
+            "ora"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Poi sono le otto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "essere",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Devo essere pronta.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Sì presto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "presto"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Luca guarda di nuovo l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "di",
+            "nuovo",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Sono ancora le sette e mezzo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "ancora",
+            "le",
+            "sette",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Le ore sono importanti.",
+          "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
             "le",
@@ -215,16 +328,224 @@
           ]
         },
         {
-          "id": "s16",
-          "text": "Oggi Luca guarda le ore.",
+          "id": "s23",
+          "text": "Oggi le ore contano.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "le",
+            "ora",
+            "contare"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Chiara ascolta Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "oggi",
+            "chiara",
+            "ascoltare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Manca mezza ora alle otto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "mancare",
+            "mezzo",
+            "ora",
+            "alle",
+            "otto"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Chiara deve essere pronta presto.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiara",
+            "dovere",
+            "essere",
+            "pronto",
+            "presto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Alle otto Chiara parte.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "alle",
+            "otto",
+            "chiara",
+            "partire"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Prima sono le otto.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "essere",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Luca dice le ore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "luca",
-            "guardare",
+            "dire",
             "le",
             "ora"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Sette sette e mezzo otto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sette",
+            "sette",
+            "e",
+            "mezzo",
+            "otto"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Capisco.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "capire"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "L'orologio è qui.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "orologio",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Guarda l'orologio insieme.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare",
+            "orologio",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Sono le sette e mezzo adesso.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "le",
+            "sette",
+            "e",
+            "mezzo",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sì e alle otto esci.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "e",
+            "alle",
+            "otto",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Va bene.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Luca resta nel soggiorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "restare",
+            "nel",
+            "soggiorno"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Il tempo passa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "tempo",
+            "passare"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Luca e Chiara guardano l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "chiara",
+            "guardare",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Poi Chiara esce di casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "chiara",
+            "uscire",
+            "di",
+            "casa"
           ]
         }
       ]
@@ -234,42 +555,42 @@
     {
       "id": "lpr02-ch01-q01",
       "type": "direct",
-      "question": "What time does Luca say first?",
+      "question": "What time does Luca tell Chiara it is?",
       "choices": [
-        "One o’clock",
-        "Eight o’clock",
+        "Seven-thirty",
+        "Eight-thirty",
         "Noon"
       ],
-      "correctChoice": 1,
-      "explanation": "Sono le otto.",
+      "correctChoice": 0,
+      "explanation": "Sono le sette e mezzo.",
       "chapterId": "luca-prima-di-roma-02-01",
       "difficulty": 1
     },
     {
       "id": "lpr02-ch01-q02",
-      "type": "direct",
-      "question": "What is “e mezzo”?",
+      "type": "sequence",
+      "question": "When must Chiara leave for school?",
       "choices": [
-        "Half past",
-        "Tomorrow",
-        "A month"
+        "At seven-thirty",
+        "At eight",
+        "At four"
       ],
-      "correctChoice": 0,
-      "explanation": "Otto e mezzo is half past eight.",
+      "correctChoice": 1,
+      "explanation": "Alle otto Chiara parte.",
       "chapterId": "luca-prima-di-roma-02-01",
       "difficulty": 1
     },
     {
       "id": "lpr02-ch01-q03",
-      "type": "direct",
-      "question": "How do they say noon?",
+      "type": "character",
+      "question": "Who reads the clock to help Chiara?",
       "choices": [
-        "Mezzogiorno",
-        "Mattina",
-        "Sera"
+        "Marta",
+        "Luca",
+        "Paolo"
       ],
-      "correctChoice": 0,
-      "explanation": "È mezzogiorno.",
+      "correctChoice": 1,
+      "explanation": "Luca guarda l'orologio and tells the time.",
       "chapterId": "luca-prima-di-roma-02-01",
       "difficulty": 1
     }

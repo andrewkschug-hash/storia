@@ -59,8 +59,15 @@ export function clozeText(sentence: Sentence, lemmaId: string): string | null {
 export function findSentenceById(
   bundle: ContentBundle,
   sentenceId: string | null,
+  chapterId?: string | null,
 ): { chapter: Chapter; sentence: Sentence } | null {
   if (!sentenceId) return null;
+  if (chapterId) {
+    const chapter = bundle.chapters.get(chapterId);
+    if (!chapter) return null;
+    const sentence = sentencesOf(chapter).find((row) => row.id === sentenceId);
+    return sentence ? { chapter, sentence } : null;
+  }
   for (const chapter of bundle.chapters.values()) {
     for (const sentence of sentencesOf(chapter)) {
       if (sentence.id === sentenceId) return { chapter, sentence };

@@ -17,7 +17,8 @@ import { StoryReader } from '@/src/components/StoryReader';
 import { getAdaptiveService } from '@/src/adaptive';
 import { getAudioCatalog, getAudioService } from '@/src/audio';
 import { refreshCatalogFromGateway } from '@/src/audio/AudioService';
-import { getChapter, getContentBundle } from '@/src/content';
+import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
+import { recapHref } from '@/src/content/storyHrefs';
 import { buildChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
@@ -36,9 +37,15 @@ function goToStories() {
 }
 
 export default function ReaderScreen() {
-  const { chapterId, listen } = useLocalSearchParams<{ chapterId: string; listen?: string }>();
+  const { chapterId, listen, story } = useLocalSearchParams<{
+    chapterId: string;
+    listen?: string;
+    story?: string;
+  }>();
+  const storyId =
+    (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
   const { colors } = useTheme();
-  const authored = getChapter(chapterId);
+  const authored = storyId ? getChapter(chapterId, storyId) : undefined;
   const [chapter, setChapter] = useState<Chapter | undefined>(authored);
   const [highlightId, setHighlightId] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
@@ -81,7 +88,7 @@ export default function ReaderScreen() {
     async function boot() {
       if (!authored) return;
       try {
-        const service = getProgressService();
+        const service = getProgressService(storyId ?? authored.storyId);
         const progress = await service.openChapter(authored.id);
         const adapted = await getAdaptiveService().resolveChapter(authored, progress);
         audio.setChapterContext(authored.id);
@@ -111,7 +118,7 @@ export default function ReaderScreen() {
     return () => {
       cancelled = true;
       const elapsed = Date.now() - openedAt.current;
-      void getProgressService().addReadingTime(elapsed);
+      if (storyId) void getProgressService(storyId).addReadingTime(elapsed);
       audio.stop();
       audio.setOnChange(null);
     };
@@ -144,7 +151,10 @@ export default function ReaderScreen() {
 
   const chapterRecap = useMemo(() => {
     if (!chapter) return null;
-    return buildChapterRecap(chapter, getContentBundle().lexiconById);
+    return buildChapterRecap(
+      chapter,
+      getContentBundle(storyId ?? chapter.storyId).lexiconById,
+    );
   }, [chapter]);
 
   const phraseRange =
@@ -179,7 +189,7 @@ export default function ReaderScreen() {
     setHighlightId(sentence.id);
     setActiveSentenceId(sentence.id);
     setActiveTokenIndex(tokenIndex);
-    await getProgressService().savePosition(chapter.id, sentence.id);
+    await getProgressService(storyId ?? chapter.storyId).savePosition(chapter.id, sentence.id);
 
     const result = await getVocabularyService().openTap({
       sentence,
@@ -200,9 +210,9 @@ export default function ReaderScreen() {
     syncAudioUi();
     const last = sentences[sentences.length - 1];
     if (last) {
-      await getProgressService().savePosition(chapter.id, last.id);
+      await getProgressService(storyId ?? chapter.storyId).savePosition(chapter.id, last.id);
     }
-    router.push(`/recap/${chapter.id}` as Href);
+    router.push(recapHref(storyId ?? chapter.storyId, chapter.id));
   };
 
   if (!chapter) {
@@ -305,7 +315,7 @@ export default function ReaderScreen() {
           setHighlightId(sentence.id);
           setActiveSentenceId(sentence.id);
           setActiveTokenIndex(null);
-          await getProgressService().savePosition(chapter.id, sentence.id);
+          await getProgressService(storyId ?? chapter.storyId).savePosition(chapter.id, sentence.id);
           const result = getVocabularyService().lookupSentence(
             sentence,
             chapter.id,

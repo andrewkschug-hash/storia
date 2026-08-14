@@ -7,6 +7,9 @@ import {
   type AvatarId,
 } from '@/src/account/avatars';
 import { getSupabase, isSupabaseConfigured } from '@/src/lib/supabase';
+import { resetOnboarding } from '@/src/onboarding/storage';
+import { setUnlockAllChapters } from '@/src/progress/unlockAll';
+import { clearLocalLearnerState, hydrateLearnerIfNeeded } from '@/src/sync/learnerSession';
 
 const KEY = 'storia.localAccount';
 
@@ -135,6 +138,10 @@ async function writeLocalAccount(account: LocalAccount): Promise<void> {
   await AsyncStorage.setItem(KEY, JSON.stringify(account));
 }
 
+function applyDeveloperUnlock(account: LocalAccount | null): void {
+  setUnlockAllChapters(isDeveloperAccount(account));
+}
+
 export async function getAccount(): Promise<LocalAccount | null> {
   if (isSupabaseConfigured()) {
     try {
@@ -143,6 +150,7 @@ export async function getAccount(): Promise<LocalAccount | null> {
       const user = data.session?.user;
       if (!user?.email) {
         await AsyncStorage.removeItem(KEY);
+        applyDeveloperUnlock(null);
         return null;
       }
       const local = await readLocalAccount();
@@ -151,12 +159,18 @@ export async function getAccount(): Promise<LocalAccount | null> {
         avatarId: local?.avatarId,
       });
       await writeLocalAccount(account);
+      await hydrateLearnerIfNeeded(user.id);
+      applyDeveloperUnlock(account);
       return account;
     } catch {
-      return readLocalAccount();
+      const fallback = await readLocalAccount();
+      applyDeveloperUnlock(fallback);
+      return fallback;
     }
   }
-  return readLocalAccount();
+  const local = await readLocalAccount();
+  applyDeveloperUnlock(local);
+  return local;
 }
 
 /** Local-only cache (tests + offline fallback). Prefer signUpWithPassword / signInWithPassword. */
@@ -179,6 +193,7 @@ export async function saveAccount(input: SaveAccountInput): Promise<LocalAccount
         : existing?.avatarId ?? defaultAvatarIdForEmail(email),
   };
   await writeLocalAccount(account);
+  applyDeveloperUnlock(account);
   return account;
 }
 
@@ -233,6 +248,8 @@ export async function signUpWithPassword(input: PasswordAuthInput): Promise<Loca
   const account = accountFromUser(data.session.user, { displayName, avatarId });
   await writeLocalAccount(account);
   await persistRemoteProfile(data.session.user.id, displayName, avatarId);
+  await hydrateLearnerIfNeeded(data.session.user.id);
+  applyDeveloperUnlock(account);
   return account;
 }
 
@@ -258,6 +275,8 @@ export async function signInWithPassword(input: PasswordAuthInput): Promise<Loca
     avatarId: local?.avatarId,
   });
   await writeLocalAccount(account);
+  await hydrateLearnerIfNeeded(user.id);
+  applyDeveloperUnlock(account);
   return account;
 }
 
@@ -274,6 +293,9 @@ export async function clearAccount(): Promise<void> {
     }
   }
   await AsyncStorage.removeItem(KEY);
+  await resetOnboarding();
+  await clearLocalLearnerState();
+  applyDeveloperUnlock(null);
 }
 
 /** Async convenience for screens that only need the boolean. */

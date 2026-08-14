@@ -104,6 +104,28 @@ export class VocabularyService {
   }
 
   /**
+   * Successful production can strengthen familiarity. It is not a review and
+   * cannot mark a lemma mastered.
+   */
+  async recordProductionSuccess(input: {
+    lemmaIds: string[];
+    chapterId: string;
+    sentenceId: string;
+  }): Promise<UserVocabularyState> {
+    const state = await this.getState();
+    const now = new Date().toISOString();
+    for (const lemmaId of input.lemmaIds) {
+      if (!lemmaId) continue;
+      this.touchLemma(state, lemmaId, lemmaId, input.chapterId, input.sentenceId, now, {
+        encounter: true,
+        tap: false,
+      });
+    }
+    await this.persist(state);
+    return state;
+  }
+
+  /**
    * Story exposure without a tap — once per unique lemma/phrase per chapter.
    */
   async recordChapterExposure(chapter: Chapter): Promise<UserVocabularyState> {

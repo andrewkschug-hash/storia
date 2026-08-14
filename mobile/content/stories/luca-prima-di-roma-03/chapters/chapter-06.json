@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-03-06",
-      "summary": "At home they notice sugar is missing. Luca goes back. He likes apples, not oil.",
+      "summary": "At home Marta sees sugar is missing. Luca goes back to the shop. He likes apples but not oil.",
       "characterIds": [
         "luca",
         "marta",
@@ -35,9 +35,10 @@
         "supermercato-pietralba"
       ],
       "rememberedFacts": [
-        "Sugar was missing",
-        "Luca goes back to the shop",
-        "Luca likes apples"
+        "Sugar is missing at home",
+        "Luca goes back to the supermarket",
+        "Pina gives Luca the sugar",
+        "Luca likes apples but not oil"
       ]
     }
   ],
@@ -60,6 +61,18 @@
         },
         {
           "id": "s02",
+          "text": "Luca è in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s03",
           "text": "Marta guarda la lista.",
           "speakerId": null,
           "kind": "narration",
@@ -71,7 +84,18 @@
           ]
         },
         {
-          "id": "s03",
+          "id": "s04",
+          "text": "Marta guarda tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s05",
           "text": "Manca lo zucchero.",
           "speakerId": "marta",
           "kind": "dialogue",
@@ -82,16 +106,53 @@
           ]
         },
         {
-          "id": "s04",
-          "text": "No.",
-          "speakerId": "luca",
+          "id": "s06",
+          "text": "Lo zucchero non c'è.",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "no"
+            "lo",
+            "zucchero",
+            "non",
+            "ce"
           ]
         },
         {
-          "id": "s05",
+          "id": "s07",
+          "text": "Il pane è qui.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "pane",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Il latte è qui.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "latte",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Scusa mamma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Luca torna al supermercato.",
           "speakerId": null,
           "kind": "narration",
@@ -103,7 +164,73 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s11",
+          "text": "La pasta è qui.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "pasta",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La frutta è qui.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "frutta",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il formaggio è qui.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "formaggio",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Lo zucchero è importante.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "zucchero",
+            "essere",
+            "importante"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s15",
+          "text": "Luca è al banco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s16",
           "text": "Scusa signora.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -113,7 +240,7 @@
           ]
         },
         {
-          "id": "s07",
+          "id": "s17",
           "text": "Manca lo zucchero.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -124,7 +251,20 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s18",
+          "text": "Vorrei lo zucchero per favore.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "lo",
+            "zucchero",
+            "per",
+            "favore"
+          ]
+        },
+        {
+          "id": "s19",
           "text": "Ecco lo zucchero.",
           "speakerId": "pina",
           "kind": "dialogue",
@@ -133,15 +273,9 @@
             "lo",
             "zucchero"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
-          "id": "s09",
+          "id": "s20",
           "text": "Luca prende lo zucchero.",
           "speakerId": null,
           "kind": "narration",
@@ -153,7 +287,68 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s21",
+          "text": "Grazie signora.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "signora"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Prego.",
+          "speakerId": "pina",
+          "kind": "dialogue",
+          "lemmas": [
+            "prego"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Luca paga lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "pagare",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Luca ha lo scontrino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "lo",
+            "scontrino"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Pina dà lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pina",
+            "dare",
+            "lo",
+            "zucchero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s26",
           "text": "A Luca piacciono le mele.",
           "speakerId": null,
           "kind": "narration",
@@ -166,7 +361,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s27",
           "text": "A Luca non piace l'olio.",
           "speakerId": null,
           "kind": "narration",
@@ -179,7 +374,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s28",
           "text": "Ma lo zucchero va bene.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -192,17 +387,31 @@
           ]
         },
         {
-          "id": "s13",
-          "text": "Grazie Pina.",
-          "speakerId": "luca",
-          "kind": "dialogue",
+          "id": "s29",
+          "text": "Luca torna a casa.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "grazie",
-            "pina"
+            "luca",
+            "tornare",
+            "a",
+            "casa"
           ]
         },
         {
-          "id": "s14",
+          "id": "s30",
+          "text": "Marta guarda lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "Adesso la lista è pronta.",
           "speakerId": null,
           "kind": "narration",
@@ -215,15 +424,94 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Luca torna a casa.",
+          "id": "s32",
+          "text": "Tutto è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "tutto",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Manca altro?",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "mancare",
+            "altro"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "No tutto è pronto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "tutto",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La lista è piena.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "lista",
+            "essere",
+            "pieno"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Marta guarda tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Luca dice grazie.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
             "luca",
-            "tornare",
-            "a",
-            "casa"
+            "dire",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Marta guarda la lista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marta",
+            "guardare",
+            "la",
+            "lista"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Adesso tutto è pronto.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "tutto",
+            "essere",
+            "pronto"
           ]
         }
       ]
@@ -233,13 +521,13 @@
     {
       "id": "lpr03-ch06-q01",
       "type": "direct",
-      "question": "What is missing?",
+      "question": "What is missing at home?",
       "choices": [
-        "Milk",
         "Sugar",
+        "Milk",
         "Bread"
       ],
-      "correctChoice": 1,
+      "correctChoice": 0,
       "explanation": "Manca lo zucchero.",
       "chapterId": "luca-prima-di-roma-03-06",
       "difficulty": 1
@@ -251,7 +539,7 @@
       "choices": [
         "Apples",
         "Oil",
-        "Tickets"
+        "The receipt"
       ],
       "correctChoice": 0,
       "explanation": "A Luca piacciono le mele.",
@@ -261,13 +549,13 @@
     {
       "id": "lpr03-ch06-q03",
       "type": "event",
-      "question": "What does Luca do after Marta checks the list?",
+      "question": "What does Luca do when sugar is missing?",
       "choices": [
-        "He sleeps",
         "He goes back to the supermarket",
+        "He throws away the list",
         "He goes to Rome"
       ],
-      "correctChoice": 1,
+      "correctChoice": 0,
       "explanation": "Luca torna al supermercato.",
       "chapterId": "luca-prima-di-roma-03-06",
       "difficulty": 1

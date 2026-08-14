@@ -52,8 +52,8 @@ describe('Phase 12J pre-Rome story design', () => {
       const story = getCatalogStory(row.id)!;
       expect(story.titleIt).toBe(row.titleIt);
       expect(story.title).toBe(row.title);
-      expect(story.status).toBe('planned');
-      expect(story.chapterCount).toBe(0);
+      expect(story.status).toBe('available');
+      expect(story.chapterCount).toBe(row.chapterCountTarget);
       expect(story.chapterCountTarget).toBe(row.chapterCountTarget);
       expect(story.cefrLevel).toBe('A1');
       expect(story.protagonistId).toBe('luca');
@@ -62,14 +62,14 @@ describe('Phase 12J pre-Rome story design', () => {
     }
   });
 
-  it('does not mark pre-Rome stories available or loadable', () => {
+  it('keeps designed titles loadable as available A1 stories', () => {
     for (const row of DESIGN) {
-      expect(() => getContentBundle(row.id)).toThrow(/planned/);
-      expect(tryGetContentBundle(row.id)).toBeNull();
+      expect(getContentBundle(row.id).story.id).toBe(row.id);
+      expect(tryGetContentBundle(row.id)?.chapters.size).toBe(row.chapterCountTarget);
     }
     const catalog = validateStoryCatalog();
     expect(catalog.ok).toBe(true);
-    expect(catalog.available).toEqual(['luca-a-roma']);
-    expect(catalog.planned).toEqual(DESIGN.map((row) => row.id));
+    expect(catalog.available).toEqual(expect.arrayContaining(['luca-a-roma', ...DESIGN.map((row) => row.id)]));
+    expect(catalog.planned).toEqual([]);
   });
 });

@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-02",
-      "summary": "Luca invites Davide and Elisa for Saturday. Davide says yes; Elisa maybe.",
+      "summary": "Luca invites Davide and Elisa for Saturday. Davide says yes; Elisa says forse.",
       "characterIds": [
         "luca",
         "davide",
@@ -35,8 +35,8 @@
         "soggiorno-pietralba"
       ],
       "rememberedFacts": [
-        "The party is Saturday",
-        "Davide accepts",
+        "The party is on Saturday",
+        "Davide accepts the invitation",
         "Elisa might come"
       ]
     }
@@ -60,17 +60,38 @@
         },
         {
           "id": "s02",
-          "text": "Davide è qui.",
+          "text": "Davide è nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "davide",
             "essere",
-            "qui"
+            "nel",
+            "soggiorno"
           ]
         },
         {
           "id": "s03",
+          "text": "Ciao Luca.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ciao Davide.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "davide"
+          ]
+        },
+        {
+          "id": "s05",
           "text": "Vieni sabato?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -80,7 +101,7 @@
           ]
         },
         {
-          "id": "s04",
+          "id": "s06",
           "text": "Sì vengo.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -90,7 +111,7 @@
           ]
         },
         {
-          "id": "s05",
+          "id": "s07",
           "text": "Sabato c'è la festa.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -102,7 +123,7 @@
           ]
         },
         {
-          "id": "s06",
+          "id": "s08",
           "text": "Va bene.",
           "speakerId": "davide",
           "kind": "dialogue",
@@ -112,55 +133,7 @@
           ]
         },
         {
-          "id": "s07",
-          "text": "Elisa è con Chiara.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "elisa",
-            "essere",
-            "con",
-            "chiara"
-          ]
-        },
-        {
-          "id": "s08",
-          "text": "Elisa vieni sabato?",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "elisa",
-            "venire",
-            "sabato"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
-        {
           "id": "s09",
-          "text": "Forse.",
-          "speakerId": "elisa",
-          "kind": "dialogue",
-          "lemmas": [
-            "forse"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Forse vengo.",
-          "speakerId": "elisa",
-          "kind": "dialogue",
-          "lemmas": [
-            "forse",
-            "venire"
-          ]
-        },
-        {
-          "id": "s11",
           "text": "L'invito è per sabato.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -172,7 +145,7 @@
           ]
         },
         {
-          "id": "s12",
+          "id": "s10",
           "text": "Davide dice sì.",
           "speakerId": null,
           "kind": "narration",
@@ -183,7 +156,136 @@
           ]
         },
         {
+          "id": "s11",
+          "text": "Luca è contento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "essere",
+            "contento"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Davide viene sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "venire",
+            "sabato"
+          ]
+        },
+        {
           "id": "s13",
+          "text": "Sabato è il giorno della festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "essere",
+            "il",
+            "giorno",
+            "della",
+            "festa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s14",
+          "text": "Chiara è con Elisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "con",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Elisa è amica di Chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "amico",
+            "di",
+            "chiara"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Elisa è qui oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "essere",
+            "qui",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Ciao Elisa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Ciao Luca.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "luca"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Elisa vieni sabato?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "elisa",
+            "venire",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Forse.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Forse vengo.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "venire"
+          ]
+        },
+        {
+          "id": "s22",
           "text": "Elisa dice forse.",
           "speakerId": null,
           "kind": "narration",
@@ -194,7 +296,108 @@
           ]
         },
         {
-          "id": "s14",
+          "id": "s23",
+          "text": "Chiara guarda Elisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "guardare",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Luca invita anche Elisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "invitare",
+            "anche",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Elisa forse viene sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "forse",
+            "venire",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Chiara vuole Elisa sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "volere",
+            "elisa",
+            "sabato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
+          "text": "Sabato siamo a casa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "sabato",
+            "essere",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "L'invito è per la festa.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "invito",
+            "essere",
+            "per",
+            "la",
+            "festa"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "La festa è sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "festa",
+            "essere",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Davide è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "felice"
+          ]
+        },
+        {
+          "id": "s31",
           "text": "Chiara è contenta.",
           "speakerId": null,
           "kind": "narration",
@@ -205,15 +408,157 @@
           ]
         },
         {
-          "id": "s15",
-          "text": "Sabato siamo a casa.",
-          "speakerId": "luca",
+          "id": "s32",
+          "text": "Elisa sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Luca prepara l'invito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "preparare",
+            "invito"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Sabato è un giorno importante.",
+          "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
             "sabato",
             "essere",
+            "un",
+            "giorno",
+            "importante"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Gli amici vengono a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "gli",
+            "amico",
+            "venire",
             "a",
             "casa"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Davide dice sì a sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "dire",
+            "si_yes",
+            "a",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Elisa dice forse a sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "dire",
+            "forse",
+            "a",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Luca invita per sabato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "invitare",
+            "per",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Vieni sabato Elisa.",
+          "speakerId": "chiara",
+          "kind": "dialogue",
+          "lemmas": [
+            "venire",
+            "sabato",
+            "elisa"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Forse vengo sabato.",
+          "speakerId": "elisa",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "venire",
+            "sabato"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "L'invito è pronto.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "invito",
+            "essere",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Davide è un amico di Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "essere",
+            "un",
+            "amico",
+            "di",
+            "luca"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Davide ascolta Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davide",
+            "ascoltare",
+            "luca"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Elisa guarda Chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elisa",
+            "guardare",
+            "chiara"
           ]
         }
       ]

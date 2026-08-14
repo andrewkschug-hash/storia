@@ -1,4 +1,4 @@
-import { router, useFocusEffect, type Href } from 'expo-router';
+import { router, useFocusEffect } from 'expo-router';
 import { useCallback } from 'react';
 import {
   ActivityIndicator,
@@ -10,11 +10,14 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { A1StoryList } from '@/src/components/A1StoryList';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProgressBar } from '@/src/components/ProgressBar';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { StoriesLevelList } from '@/src/components/StoriesLevelList';
-import { getChapter, getContentBundle } from '@/src/content';
+import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
+import { readerHref } from '@/src/content/storyHrefs';
+import { getProgressService } from '@/src/progress';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
@@ -24,7 +27,11 @@ export default function StoriesScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
-  const { story, progress, chapterStatuses, loading, error, refresh, service } = useReadingProgress();
+  const journey = buildLearnerJourney();
+  const a1 = journey.find((band) => band.cefrLevel === 'A1');
+  const preRomeGroups = a1?.groups.filter((group) => !group.chapterRange) ?? [];
+  const { story, progress, chapterStatuses, loading, error, refresh, service } =
+    useReadingProgress(LUCA_STORY_ID);
 
   useFocusEffect(
     useCallback(() => {
@@ -32,7 +39,7 @@ export default function StoriesScreen() {
     }, [refresh]),
   );
 
-  if (loading || !progress) {
+  if (loading) {
     return (
       <AtmosphereBackground>
         <View style={styles.center}>
@@ -53,14 +60,22 @@ export default function StoriesScreen() {
   }
 
   const continueChapter =
-    getChapter(progress.currentChapterId) ?? getChapter(story.chapters[0].id)!;
-  const percent = service.getReadingPercentComplete(progress);
-  const chapterPercent = service.getChapterReadingPercent(continueChapter, progress.lastSentenceId);
-  const completed = service.getCompletedCount(progress);
+    getChapter(progress?.currentChapterId ?? story.chapters[0].id, LUCA_STORY_ID) ??
+    getChapter(story.chapters[0].id, LUCA_STORY_ID)!;
+  const percent = progress ? service.getReadingPercentComplete(progress) : 0;
+  const chapterPercent = progress
+    ? service.getChapterReadingPercent(continueChapter, progress.lastSentenceId)
+    : 0;
+  const completed = progress ? service.getCompletedCount(progress) : 0;
 
-  const openChapter = async (chapterId: string, listen = false) => {
+  const openLucaChapter = async (chapterId: string, listen = false) => {
     await service.openChapter(chapterId);
-    router.push((listen ? `/reader/${chapterId}?listen=1` : `/reader/${chapterId}`) as Href);
+    router.push(readerHref(LUCA_STORY_ID, chapterId, listen));
+  };
+
+  const openStoryChapter = async (storyId: string, chapterId: string) => {
+    await getProgressService(storyId).openChapter(chapterId);
+    router.push(readerHref(storyId, chapterId));
   };
 
   return (
@@ -82,9 +97,31 @@ export default function StoriesScreen() {
                 lineHeight: layout.isPhone ? 32 : 40,
               },
             ]}>
-            {story.titleIt}
+            Stories
           </Text>
           <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+            A1 breadth first, then Luca a Roma. Completing one story is not A1 mastery.
+          </Text>
+
+          {preRomeGroups.map((group) => (
+            <A1StoryList
+              key={group.narrativeArc.id}
+              eyebrow="A1 · Before Rome"
+              title={group.narrativeArc.titleIt}
+              caption="Suggested order. Start any story — they are not five levels."
+              stories={group.stories.filter((item) => item.status === 'available')}
+              colors={colors}
+              onOpenChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
+            />
+          ))}
+
+          <Text style={[Typography.chapterEyebrow, { color: colors.tint, marginTop: Spacing.xl }]}>
+            Next in Luca&apos;s journey
+          </Text>
+          <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.xs }]}>
+            {story.titleIt}
+          </Text>
+          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
             {completed} of {story.chapters.length} chapters finished · {percent}% through the story
           </Text>
           <View style={{ marginTop: Spacing.md }}>
@@ -99,7 +136,7 @@ export default function StoriesScreen() {
                 borderColor: colors.border,
               },
             ]}>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Continue</Text>
+            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Continue Luca a Roma</Text>
             <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.sm }]}>
               Capitolo {continueChapter.number} · {continueChapter.titleIt}
             </Text>
@@ -110,7 +147,7 @@ export default function StoriesScreen() {
             ) : null}
             <View style={[styles.actionRow, layout.width < 360 && styles.actionRowCompact]}>
               <Pressable
-                onPress={() => void openChapter(continueChapter.id)}
+                onPress={() => void openLucaChapter(continueChapter.id)}
                 style={({ pressed }) => [
                   styles.primaryBtn,
                   { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
@@ -118,7 +155,7 @@ export default function StoriesScreen() {
                 <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Read</Text>
               </Pressable>
               <Pressable
-                onPress={() => void openChapter(continueChapter.id, true)}
+                onPress={() => void openLucaChapter(continueChapter.id, true)}
                 style={({ pressed }) => [
                   styles.secondaryBtn,
                   {
@@ -133,11 +170,11 @@ export default function StoriesScreen() {
           </View>
 
           <StoriesLevelList
-            arcs={getContentBundle().story.arcs}
+            arcs={story.arcs}
             chapters={chapterStatuses}
-            currentChapterId={progress.currentChapterId}
+            currentChapterId={progress?.currentChapterId ?? continueChapter.id}
             colors={colors}
-            onOpenChapter={(chapterId, listen) => void openChapter(chapterId, listen)}
+            onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
           />
         </ScreenContent>
       </ScrollView>
@@ -147,7 +184,7 @@ export default function StoriesScreen() {
 
 const styles = StyleSheet.create({
   continueCard: {
-    marginTop: Spacing.xl,
+    marginTop: Spacing.lg,
     borderRadius: Radii.lg,
     borderWidth: StyleSheet.hairlineWidth,
     padding: Spacing.lg,

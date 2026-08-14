@@ -1,6 +1,7 @@
-import { getCatalogStory, LUCA_STORY_ID } from '@/src/content/catalog';
+import { getAvailableStories, getCatalogStory, LUCA_STORY_ID } from '@/src/content/catalog';
 import { loadContentBundle } from '@/src/content/loadContentBundle';
-import type { ContentBundle } from '@/src/content/schemas';
+import { loadRegisteredStoryBundle } from '@/src/content/preRomeSources';
+import type { Chapter, ContentBundle } from '@/src/content/schemas';
 import { StoryLoadError } from '@/src/content/storyLoadError';
 
 import charactersJson from '../../content/characters.json';
@@ -96,6 +97,13 @@ const chapterJsonByFile: Record<string, unknown> = {
 };
 
 const bundleCache = new Map<string, ContentBundle>();
+const chapterOwnerCache = new Map<string, string>();
+
+function rememberChapterOwners(storyId: string, bundle: ContentBundle) {
+  for (const chapterId of bundle.chapters.keys()) {
+    chapterOwnerCache.set(chapterId, storyId);
+  }
+}
 
 /**
  * Story-scoped content loader. Defaults to Luca a Roma for existing callers.
@@ -123,26 +131,34 @@ export function getContentBundle(storyId: string = LUCA_STORY_ID): ContentBundle
       `Story "${storyId}" is draft; inspect with inspectDraftStory instead of getContentBundle`,
     );
   }
-  if (storyId !== LUCA_STORY_ID) {
-    throw new StoryLoadError(
-      storyId,
-      entry.status,
-      `No available content loader registered for "${storyId}"`,
-    );
+
+  let bundle: ContentBundle;
+  if (storyId === LUCA_STORY_ID) {
+    bundle = loadContentBundle({
+      charactersJson,
+      locationsJson,
+      lexiconJson,
+      manifestJson,
+      chapterJsonByFile,
+      adaptiveJson,
+      translationsJson,
+      arcsJson,
+      storyPath: 'stories/luca-a-roma',
+      narrativeArc: entry.narrativeArc,
+    });
+  } else {
+    const registered = loadRegisteredStoryBundle(storyId, entry.narrativeArc);
+    if (!registered) {
+      throw new StoryLoadError(
+        storyId,
+        entry.status,
+        `No available content loader registered for "${storyId}"`,
+      );
+    }
+    bundle = registered;
   }
 
-  const bundle = loadContentBundle({
-    charactersJson,
-    locationsJson,
-    lexiconJson,
-    manifestJson,
-    chapterJsonByFile,
-    adaptiveJson,
-    translationsJson,
-    arcsJson,
-    storyPath: 'stories/luca-a-roma',
-    narrativeArc: entry.narrativeArc,
-  });
+  rememberChapterOwners(storyId, bundle);
   bundleCache.set(storyId, bundle);
   return bundle;
 }
@@ -159,8 +175,27 @@ export function getStory(storyId: string = LUCA_STORY_ID) {
   return getContentBundle(storyId).story;
 }
 
-export function getChapter(chapterId: string, storyId: string = LUCA_STORY_ID) {
-  return getContentBundle(storyId).chapters.get(chapterId);
+/** Resolve owning storyId from a globally unique chapterId. */
+export function findStoryIdForChapter(chapterId: string): string | undefined {
+  const cached = chapterOwnerCache.get(chapterId);
+  if (cached) return cached;
+  for (const story of getAvailableStories()) {
+    const bundle = tryGetContentBundle(story.id);
+    if (!bundle) continue;
+    rememberChapterOwners(story.id, bundle);
+    if (bundle.chapters.has(chapterId)) return story.id;
+  }
+  return undefined;
+}
+
+/**
+ * Chapter identity is (storyId, chapterId). If storyId is omitted, look up the
+ * available story that owns this chapterId — never use chapter number alone.
+ */
+export function getChapter(chapterId: string, storyId?: string): Chapter | undefined {
+  const resolvedStoryId = storyId ?? findStoryIdForChapter(chapterId);
+  if (!resolvedStoryId) return undefined;
+  return tryGetContentBundle(resolvedStoryId)?.chapters.get(chapterId);
 }
 
 export function getChapterByNumber(number: number, storyId: string = LUCA_STORY_ID) {
@@ -173,12 +208,14 @@ export function getChapterByNumber(number: number, storyId: string = LUCA_STORY_
 /** Reset cache — tests only */
 export function __resetContentCache() {
   bundleCache.clear();
+  chapterOwnerCache.clear();
 }
 
 export {
   ELENA_STORY_ID,
   LUCA_STORY_ID,
   PRE_ROME_ARC_ID,
+  getAvailableStories,
   getCatalogStories,
   getCatalogStory,
   getNarrativeArc,
