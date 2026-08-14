@@ -90,7 +90,7 @@ export default function ReviewScreen() {
                 styles.cta,
                 { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9' }]}>Back to reading</Text>
+              <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
             </Pressable>
           </View>
         ) : current ? (

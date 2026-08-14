@@ -97,11 +97,11 @@ describe('Phase 12L pre-Rome wiring', () => {
     ]);
 
     const journey = buildLearnerJourney();
-    expect(journey[0].groups[0].narrativeArc.id).toBe(PRE_ROME_ARC_ID);
-    expect(journey[0].groups[0].stories.map((story) => story.titleIt)).toEqual(
+    expect(journey[0].groups[0].chapterRange?.storyId).toBe(LUCA_STORY_ID);
+    expect(journey[0].groups[1].narrativeArc.id).toBe(PRE_ROME_ARC_ID);
+    expect(journey[0].groups[1].stories.map((story) => story.titleIt)).toEqual(
       PRE_ROME.map((row) => row.titleIt),
     );
-    expect(journey[0].groups[1].chapterRange?.storyId).toBe(LUCA_STORY_ID);
   });
 
   it('continues from the most recently opened available story', async () => {

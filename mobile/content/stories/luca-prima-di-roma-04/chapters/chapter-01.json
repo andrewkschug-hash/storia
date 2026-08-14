@@ -24,7 +24,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-04-01",
-      "summary": "Luca arrives in Pietralba and Davide names the town places: piazza, street, pharmacy, park, bar.",
+      "summary": "Luca is from Pietralba. He goes into town with Davide, who names the piazza, street, pharmacy, park, and bar.",
       "characterIds": [
         "luca",
         "davide"
@@ -38,7 +38,8 @@
         "bar-franco"
       ],
       "rememberedFacts": [
-        "Luca is in Pietralba",
+        "Luca is from Pietralba",
+        "Davide is Luca’s friend",
         "The piazza is in the center",
         "The pharmacy is on Via Nazionale",
         "Bar da Franco is near the piazza"

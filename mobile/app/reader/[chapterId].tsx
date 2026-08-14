@@ -18,7 +18,7 @@ import { getAdaptiveService } from '@/src/adaptive';
 import { getAudioCatalog, getAudioService } from '@/src/audio';
 import { refreshCatalogFromGateway } from '@/src/audio/AudioService';
 import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
-import { recapHref } from '@/src/content/storyHrefs';
+import { comprehensionHref } from '@/src/content/storyHrefs';
 import { buildChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
@@ -201,10 +201,7 @@ export default function ReaderScreen() {
     setSaved(await getVocabularyService().isSaved(result));
   };
 
-  const lastSentenceId = sentences[sentences.length - 1]?.id ?? null;
-  const atChapterEnd = Boolean(highlightId && lastSentenceId && highlightId === lastSentenceId);
-
-  const openRecap = async () => {
+  const continueFromChapter = async () => {
     if (!chapter) return;
     audio.stop();
     syncAudioUi();
@@ -212,7 +209,8 @@ export default function ReaderScreen() {
     if (last) {
       await getProgressService(storyId ?? chapter.storyId).savePosition(chapter.id, last.id);
     }
-    router.push(recapHref(storyId ?? chapter.storyId, chapter.id));
+    await getVocabularyService().recordChapterExposure(chapter);
+    router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
   };
 
   if (!chapter) {
@@ -325,8 +323,8 @@ export default function ReaderScreen() {
           setSaved(false);
         }}
         chapterRecap={chapterRecap}
-        showCompletionCta={atChapterEnd}
-        onOpenRecap={() => void openRecap()}
+        showCompletionCta
+        onContinueFromChapter={() => void continueFromChapter()}
         onScrollProgress={setScrollProgress}
       />
 
@@ -369,7 +367,7 @@ export default function ReaderScreen() {
         onSetSpeed={(next) => {
           void audio.setSpeed(next).then(() => syncAudioUi());
         }}
-        onOpenRecap={() => void openRecap()}
+        onContinueFromChapter={() => void continueFromChapter()}
       />
 
       <DictionarySheet

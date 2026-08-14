@@ -1,4 +1,5 @@
 import {
+  LUCA_STORY_ID,
   getAvailableStories,
   getCatalogStory,
   getContentBundle,
@@ -36,9 +37,15 @@ function availableReadingOrder() {
   return [...getAvailableStories()].sort((a, b) => a.narrativeOrder - b.narrativeOrder);
 }
 
+/** Complete beginners start on Luca a Roma — shorter A1 than the hometown stories. */
+function recommendedStartStory() {
+  const available = getAvailableStories();
+  return available.find((story) => story.id === LUCA_STORY_ID) ?? availableReadingOrder()[0];
+}
+
 /**
- * Most recently opened available story, else the first recommended available
- * story. If that story is fully complete, continue into the next incomplete
+ * Most recently opened available story, else Luca a Roma.
+ * If that story is fully complete, continue into the next incomplete
  * available story (narrative order). Does not create progress records.
  */
 export async function getContinueReadingTarget(): Promise<ContinueReadingTarget | null> {
@@ -98,7 +105,7 @@ export async function getContinueReadingTarget(): Promise<ContinueReadingTarget 
     };
   }
 
-  const recommended = availableReadingOrder()[0];
+  const recommended = recommendedStartStory();
   if (!recommended) return null;
   const bundle = getContentBundle(recommended.id);
   const first = bundle.story.chapters[0];

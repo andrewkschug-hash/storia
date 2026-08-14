@@ -12,7 +12,7 @@ type Props = {
   onPlayPause: () => void;
   onStop: () => void;
   onSetSpeed: (speed: 'normal' | 'slow') => void;
-  onOpenRecap: () => void;
+  onContinueFromChapter: () => void;
 };
 
 export function ReaderAudioBar({
@@ -24,7 +24,7 @@ export function ReaderAudioBar({
   onPlayPause,
   onStop,
   onSetSpeed,
-  onOpenRecap,
+  onContinueFromChapter,
 }: Props) {
   const { colors } = useTheme();
 
@@ -114,17 +114,17 @@ export function ReaderAudioBar({
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Chapter recap"
-          onPress={onOpenRecap}
+          accessibilityLabel="Continue"
+          onPress={onContinueFromChapter}
           style={({ pressed }) => [
-            styles.recapBtn,
+            styles.continueBtn,
             {
-              borderColor: colors.border,
-              backgroundColor: colors.backgroundElevated,
+              borderColor: colors.tint,
+              backgroundColor: colors.tint,
               opacity: pressed ? 0.88 : 1,
             },
           ]}>
-          <Text style={[Typography.label, { color: colors.text }]}>Recap</Text>
+          <Text style={[Typography.label, { color: '#F7FAF9' }]}>Continue</Text>
         </Pressable>
       </View>
 
@@ -177,10 +177,13 @@ const styles = StyleSheet.create({
     minWidth: 64,
     alignItems: 'center',
   },
-  recapBtn: {
-    paddingHorizontal: Spacing.md,
+  continueBtn: {
+    paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
     borderRadius: 10,
-    borderWidth: StyleSheet.hairlineWidth,
+    minHeight: 44,
+    minWidth: 108,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

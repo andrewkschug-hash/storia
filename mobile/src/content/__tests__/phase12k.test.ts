@@ -156,14 +156,20 @@ describe('Phase 12K pre-Rome authoring', () => {
     expect(last.characterIds).not.toContain('elisa');
   });
 
-  it('does not change Luca Ch1–40 or Elena', () => {
-    const luca = getContentBundle(LUCA_STORY_ID);
-    expect(luca.chapters.size).toBe(40);
-    expect(luca.chapters.get('luca-a-roma-01')?.titleIt).toBe('Arrivo');
-    expect(getCatalogStory(LUCA_STORY_ID)?.chapterCount).toBe(40);
-    const elena = getCatalogStory(ELENA_STORY_ID)!;
-    expect(elena.status).toBe('draft');
-    expect(elena.chapterCount).toBe(20);
-    expect(elena.contentPath).toBe('stories/elena-torna-a-casa');
+  it('gives Luca hometown background without treating Pietralba as a first arrival', () => {
+    const s1 = loadPlanned('luca-prima-di-roma-01');
+    const s4 = loadPlanned('luca-prima-di-roma-04');
+    const s5 = loadPlanned('luca-prima-di-roma-05');
+    const intro = [...s1.chapters.values()]
+      .flatMap((chapter) => chapter.paragraphs.flatMap((p) => p.sentences.map((s) => s.text)))
+      .join(' ');
+    expect(intro).toMatch(/mi chiamo Luca|sono Luca/i);
+    expect(intro).toMatch(/Pietralba/);
+    expect(intro).toMatch(/Marta|Paolo|Chiara|Lidia/);
+    expect(intro).toMatch(/ventiquattro/);
+    expect(s4.chapters.get('luca-prima-di-roma-04-01')?.events[0]?.summary).not.toMatch(/arrives in Pietralba/i);
+    expect(s4.chapters.get('luca-prima-di-roma-04-01')?.events[0]?.summary).toMatch(/from Pietralba/i);
+    const leaving = s5.chapters.get('luca-prima-di-roma-05-06')!;
+    expect(leaving.events[0]?.summary).toMatch(/Rome/);
   });
 });

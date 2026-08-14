@@ -33,7 +33,7 @@ type Props = {
   onPlayAudio?: (sentence: Sentence) => void;
   chapterRecap?: ChapterRecap | null;
   showCompletionCta?: boolean;
-  onOpenRecap?: () => void;
+  onContinueFromChapter?: () => void;
   onScrollProgress?: (progress: number) => void;
 };
 
@@ -63,7 +63,7 @@ export function StoryReader({
   onPlayAudio,
   chapterRecap,
   showCompletionCta,
-  onOpenRecap,
+  onContinueFromChapter,
   onScrollProgress,
 }: Props) {
   const { colors } = useTheme();
@@ -182,12 +182,13 @@ export function StoryReader({
           <Text style={[Typography.caption, { color: colors.textMuted }]}>Finished reading?</Text>
           <Pressable
             accessibilityRole="button"
-            onPress={onOpenRecap}
+            accessibilityLabel="Continue"
+            onPress={onContinueFromChapter}
             style={({ pressed }) => [
-              styles.recapBtn,
+              styles.continueBtn,
               { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
             ]}>
-            <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Recap</Text>
+            <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 16 }]}>Continue</Text>
           </Pressable>
         </View>
       ) : null}
@@ -225,15 +226,17 @@ const styles = StyleSheet.create({
     borderRadius: Spacing.xs / 2,
   },
   completionCta: {
-    marginTop: Spacing.lg,
+    marginTop: Spacing.xl,
     gap: Spacing.sm,
-    alignItems: 'flex-start',
+    alignSelf: 'stretch',
   },
-  recapBtn: {
+  continueBtn: {
+    alignSelf: 'stretch',
+    alignItems: 'center',
     paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.sm,
-    borderRadius: 10,
-    minHeight: 44,
+    paddingVertical: Spacing.md,
+    borderRadius: 12,
+    minHeight: 52,
     justifyContent: 'center',
   },
 });

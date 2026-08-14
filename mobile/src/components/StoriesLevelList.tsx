@@ -4,32 +4,25 @@ import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { ChapterStatus } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
+import {
+  insertExtraStoryGroups,
+  type ExtraStoryRow,
+  type ExtraStorySection,
+  type LevelGroup,
+  type StoryArcSummary,
+} from '@/src/components/storiesLevelInsert';
 import { Radii, Spacing, Typography, type ThemeColors } from '@/src/theme/tokens';
 
-export type StoryArcSummary = {
-  id: string;
-  cefrLevel: string;
-  title: string;
-  chapterStart: number;
-  chapterEnd: number;
-  status: 'available' | 'planned';
-};
+export type { ExtraStoryRow, ExtraStorySection, StoryArcSummary };
 
 type Props = {
   arcs: StoryArcSummary[];
   chapters: ChapterListItem[];
   currentChapterId: string;
   colors: ThemeColors;
+  extraSections?: ExtraStorySection[];
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
-};
-
-type LevelGroup = {
-  arc: StoryArcSummary;
-  chapters: ChapterListItem[];
-  completed: number;
-  total: number;
-  locked: boolean;
-  containsCurrent: boolean;
+  onOpenStoryChapter?: (storyId: string, chapterId: string) => void;
 };
 
 export function StoriesLevelList({
@@ -37,12 +30,14 @@ export function StoriesLevelList({
   chapters,
   currentChapterId,
   colors,
+  extraSections,
   onOpenChapter,
+  onOpenStoryChapter,
 }: Props) {
-  const groups = useMemo(
-    () => buildLevelGroups(arcs, chapters, currentChapterId),
-    [arcs, chapters, currentChapterId],
-  );
+  const groups = useMemo(() => {
+    const base = buildLevelGroups(arcs, chapters, currentChapterId);
+    return insertExtraStoryGroups(base, extraSections);
+  }, [arcs, chapters, currentChapterId, extraSections]);
 
   const currentArcId = groups.find((g) => g.containsCurrent)?.arc.id ?? null;
   const [expandedId, setExpandedId] = useState<string | null>(currentArcId);
@@ -96,6 +91,13 @@ export function StoriesLevelList({
             onChapterPress={(chapter) => {
               if (chapter.status === 'locked') {
                 showHint(unlockHintForChapter(chapter, chapters));
+                return;
+              }
+              const extraStory = group.stories?.find((story) =>
+                story.chapters.some((item) => item.id === chapter.id),
+              );
+              if (extraStory && onOpenStoryChapter) {
+                onOpenStoryChapter(extraStory.storyId, chapter.id);
                 return;
               }
               onOpenChapter(chapter.id);
@@ -188,7 +190,16 @@ function LevelSection({
       </Animated.View>
 
       {expanded
-        ? group.chapters.map((chapter) => (
+        ? group.stories
+          ? group.stories.map((story) => (
+              <ExtraStoryBlock
+                key={story.storyId}
+                story={story}
+                colors={colors}
+                onOpenChapter={(chapter) => onChapterPress(chapter)}
+              />
+            ))
+          : group.chapters.map((chapter) => (
             <ChapterRow
               key={chapter.id}
               chapter={chapter}
@@ -204,10 +215,62 @@ function LevelSection({
   );
 }
 
+function ExtraStoryBlock({
+  story,
+  colors,
+  onOpenChapter,
+}: {
+  story: ExtraStoryRow;
+  colors: ThemeColors;
+  onOpenChapter: (chapter: ChapterListItem) => void;
+}) {
+  const [open, setOpen] = useState(
+    story.chapters.some((chapter) => chapter.status === 'in_progress'),
+  );
+
+  return (
+    <View>
+      <Pressable
+        onPress={() => setOpen((prev) => !prev)}
+        style={({ pressed }) => [
+          styles.chapterRow,
+          {
+            backgroundColor: colors.backgroundElevated,
+            borderColor: open ? colors.tint : colors.border,
+            opacity: pressed ? 0.88 : 1,
+          },
+        ]}>
+        <View style={styles.chapterMeta}>
+          <Text style={[Typography.caption, { color: colors.tint }]}>Hometown</Text>
+          <Text style={[Typography.label, { color: colors.text, marginTop: 2 }]}>{story.titleIt}</Text>
+          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2 }]}>
+            {story.completed}/{story.total} chapters
+          </Text>
+        </View>
+      </Pressable>
+      {open
+        ? story.chapters.map((chapter) => (
+            <ChapterRow
+              key={chapter.id}
+              chapter={chapter}
+              isCurrent={chapter.status === 'in_progress'}
+              colors={colors}
+              hideListen
+              onPress={() => onOpenChapter(chapter as ChapterListItem)}
+              onListen={() => onOpenChapter(chapter as ChapterListItem)}
+              onLockedPress={() => onOpenChapter(chapter as ChapterListItem)}
+            />
+          ))
+        : null}
+    </View>
+  );
+}
+
 function ChapterRow({
   chapter,
   isCurrent,
   colors,
+  hideListen = false,
   onPress,
   onListen,
   onLockedPress,
@@ -215,6 +278,7 @@ function ChapterRow({
   chapter: ChapterListItem;
   isCurrent: boolean;
   colors: ThemeColors;
+  hideListen?: boolean;
   onPress: () => void;
   onListen: () => void;
   onLockedPress: () => void;
@@ -260,7 +324,7 @@ function ChapterRow({
           </Text>
         </View>
         <View style={styles.chapterActions}>
-          {!locked ? (
+          {!locked && !hideListen ? (
             <Pressable
               onPress={(event) => {
                 event.stopPropagation();

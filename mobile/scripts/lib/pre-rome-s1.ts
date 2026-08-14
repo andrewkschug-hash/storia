@@ -24,7 +24,7 @@ export const story01: StorySpec = {
       primaryDomain: 'introductions',
       secondaryDomains: ['social'],
       summary: 'Davide visits. Luca introduces himself: name, home, Pietralba.',
-      facts: ['Luca lives in Pietralba', 'His name is Luca', 'Davide is his friend'],
+      facts: ['Luca lives in Pietralba', 'Luca is from Pietralba', 'His name is Luca', 'Davide is his friend'],
       paragraphs: [
         [
           s('s01', 'Luca è a Pietralba.', 'luca essere a pietralba'),

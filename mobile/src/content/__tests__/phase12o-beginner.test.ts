@@ -74,11 +74,11 @@ function lemmaItem(id: string, state: AdaptiveItem['state'], priority = 0.6): Ad
 }
 
 describe('Phase 12O true beginner onboarding', () => {
-  it('sends a brand-new learner to pre-Rome story 1 chapter 1', async () => {
+  it('sends a brand-new learner to Luca a Roma chapter 1', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
     const target = await getContinueReadingTarget();
-    expect(target?.storyId).toBe('luca-prima-di-roma-01');
-    expect(target?.chapterId).toBe('luca-prima-di-roma-01-01');
+    expect(target?.storyId).toBe(LUCA_STORY_ID);
+    expect(target?.chapterId).toBe('luca-a-roma-01');
     expect(target?.isStart).toBe(true);
   });
 

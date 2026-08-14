@@ -2,11 +2,11 @@
  * Learner-journey data model for the Stories UI (not a visual redesign).
  *
  * Conceptual layout:
- *   A1  → available pre-Rome shorts (recommended order) → Luca a Roma Ch1–20
+ *   A1  → Luca a Roma Ch1–20 (recommended start) → Luca Before Rome (extra A1)
  *   A1+ → Luca a Roma Ch21–24
  *   A2  → Luca a Roma Ch25–40
  *
- * Completing one pre-Rome story is not A1 mastery. Future A1 stories with other
+ * Completing one hometown story is not A1 mastery. Future A1 stories with other
  * casts/settings can appear as additional A1 groups without replacing this arc.
  */
 
@@ -84,7 +84,6 @@ export function buildLearnerJourney(): JourneyCefrBand[] {
     {
       cefrLevel: 'A1',
       groups: [
-        ...a1StoryGroups,
         {
           narrativeArc: lucaArc,
           stories: [luca],
@@ -95,6 +94,7 @@ export function buildLearnerJourney(): JourneyCefrBand[] {
             cefrLevel: 'A1',
           },
         },
+        ...a1StoryGroups,
       ],
     },
     {

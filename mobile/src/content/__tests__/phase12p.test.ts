@@ -87,11 +87,11 @@ async function completeStory(
 }
 
 describe('Phase 12P empty-progress first journey', () => {
-  it('starts a new learner on S1.1 after onboarding-equivalent empty progress', async () => {
+  it('starts a new learner on Luca a Roma chapter 1 after onboarding-equivalent empty progress', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
     const target = await getContinueReadingTarget();
-    expect(target?.storyId).toBe('luca-prima-di-roma-01');
-    expect(target?.chapterId).toBe('luca-prima-di-roma-01-01');
+    expect(target?.storyId).toBe(LUCA_STORY_ID);
+    expect(target?.chapterId).toBe('luca-a-roma-01');
     expect(target?.isStart).toBe(true);
     expect(target?.progress).toBeNull();
     expect(await peekProgress(LUCA_STORY_ID)).toBeNull();

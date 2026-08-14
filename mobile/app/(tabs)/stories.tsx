@@ -1,5 +1,5 @@
 import { router, useFocusEffect } from 'expo-router';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import {
   ActivityIndicator,
   Pressable,
@@ -10,15 +10,14 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { A1StoryList } from '@/src/components/A1StoryList';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProgressBar } from '@/src/components/ProgressBar';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { StoriesLevelList } from '@/src/components/StoriesLevelList';
+import { StoriesLevelList, type ExtraStoryRow } from '@/src/components/StoriesLevelList';
 import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
 import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
-import { useReadingProgress } from '@/src/progress/useReadingProgress';
+import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
@@ -29,14 +28,31 @@ export default function StoriesScreen() {
   const layout = useLayout();
   const journey = buildLearnerJourney();
   const a1 = journey.find((band) => band.cefrLevel === 'A1');
-  const preRomeGroups = a1?.groups.filter((group) => !group.chapterRange) ?? [];
+  const preRomeStories = a1?.groups.find((group) => !group.chapterRange)?.stories ?? [];
   const { story, progress, chapterStatuses, loading, error, refresh, service } =
     useReadingProgress(LUCA_STORY_ID);
+  const [beforeRomeRows, setBeforeRomeRows] = useState<ExtraStoryRow[]>([]);
+
+  const loadBeforeRome = useCallback(async () => {
+    const next: ExtraStoryRow[] = [];
+    for (const item of preRomeStories) {
+      const view = await loadStoryProgressView(item.id);
+      next.push({
+        storyId: item.id,
+        titleIt: item.titleIt,
+        completed: view.chapters.filter((chapter) => chapter.status === 'completed').length,
+        total: item.chapterCount,
+        chapters: view.chapters,
+      });
+    }
+    setBeforeRomeRows(next);
+  }, [preRomeStories.map((item) => item.id).join('|')]);
 
   useFocusEffect(
     useCallback(() => {
       void refresh();
-    }, [refresh]),
+      void loadBeforeRome();
+    }, [refresh, loadBeforeRome]),
   );
 
   if (loading) {
@@ -100,23 +116,11 @@ export default function StoriesScreen() {
             Stories
           </Text>
           <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-            A1 breadth first, then Luca a Roma. Completing one story is not A1 mastery.
+            Start with Luca a Roma. Luca Before Rome is hometown background.
           </Text>
 
-          {preRomeGroups.map((group) => (
-            <A1StoryList
-              key={group.narrativeArc.id}
-              eyebrow="A1 · Before Rome"
-              title={group.narrativeArc.titleIt}
-              caption="Suggested order. Start any story — they are not five levels."
-              stories={group.stories.filter((item) => item.status === 'available')}
-              colors={colors}
-              onOpenChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
-            />
-          ))}
-
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, marginTop: Spacing.xl }]}>
-            Next in Luca&apos;s journey
+            Start here
           </Text>
           <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.xs }]}>
             {story.titleIt}
@@ -136,7 +140,9 @@ export default function StoriesScreen() {
                 borderColor: colors.border,
               },
             ]}>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Continue Luca a Roma</Text>
+            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+              {progress ? 'Continue Luca a Roma' : 'Start Luca a Roma'}
+            </Text>
             <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.sm }]}>
               Capitolo {continueChapter.number} · {continueChapter.titleIt}
             </Text>
@@ -174,7 +180,21 @@ export default function StoriesScreen() {
             chapters={chapterStatuses}
             currentChapterId={progress?.currentChapterId ?? continueChapter.id}
             colors={colors}
+            extraSections={
+              beforeRomeRows.length
+                ? [
+                    {
+                      afterArcId: 'luca-a-roma-a1',
+                      id: 'luca-prima-di-roma',
+                      cefrLevel: 'A1',
+                      title: 'Luca Before Rome',
+                      stories: beforeRomeRows,
+                    },
+                  ]
+                : []
+            }
             onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
+            onOpenStoryChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
           />
         </ScreenContent>
       </ScrollView>

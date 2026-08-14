@@ -26,8 +26,8 @@ export const story04: StorySpec = {
       characterIds: ['luca', 'davide'],
       primaryDomain: 'places',
       secondaryDomains: ['descriptions'],
-      summary: 'Luca arrives in Pietralba and Davide names the town places: piazza, street, pharmacy, park, bar.',
-      facts: ['Luca is in Pietralba', 'The piazza is in the center', 'The pharmacy is on Via Nazionale', 'Bar da Franco is near the piazza'],
+      summary: 'Luca is from Pietralba. He goes into town with Davide, who names the piazza, street, pharmacy, park, and bar.',
+      facts: ['Luca is from Pietralba', 'Davide is Luca’s friend', 'The piazza is in the center', 'The pharmacy is on Via Nazionale', 'Bar da Franco is near the piazza'],
       paragraphs: [
         [
           s('s01', 'Luca è a Pietralba.', 'luca essere a pietralba'),

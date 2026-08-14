@@ -17,6 +17,7 @@ import { readerHref } from '@/src/content/storyHrefs';
 import { evaluateAnswer } from '@/src/comprehension/evaluate';
 import { shuffleQuestionChoices } from '@/src/comprehension/shuffle';
 import { getProgressService } from '@/src/progress';
+import { chapterCompleteView } from '@/src/progress/chapterComplete';
 import type {
   ChapterProductionAttempt,
   ComprehensionAnswerRecord,
@@ -34,7 +35,7 @@ import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
-type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'review';
+type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'review' | 'complete';
 
 type QuestionState = {
   attempts: number;
@@ -132,6 +133,11 @@ export default function ComprehensionScreen() {
       </AtmosphereBackground>
     );
   }
+
+  const completeCopy = chapterCompleteView(
+    chapter.number,
+    getChapterByNumber(chapter.number + 1, storyId ?? chapter.storyId)?.number ?? null,
+  );
 
   const shuffleCurrent = (questionIndex: number) => {
     const question = questions[questionIndex];
@@ -244,17 +250,16 @@ export default function ComprehensionScreen() {
         setFinishing(false);
         return;
       }
-      continueAfterComplete(chapter.number);
+      setPhase('complete');
+      setFinishing(false);
     } catch (e) {
       setFinishing(false);
       console.error(e);
     }
   };
 
-  const skipReviewAndContinue = async () => {
-    if (finishing) return;
-    setFinishing(true);
-    continueAfterComplete(chapter.number);
+  const skipReviewAndContinue = () => {
+    setPhase('complete');
   };
 
   const continueFromResults = () => {
@@ -416,7 +421,10 @@ export default function ComprehensionScreen() {
             </Text>
             <View style={styles.row}>
               <Pressable
-                onPress={() => router.push('/review' as import('expo-router').Href)}
+                onPress={() => {
+                  setPhase('complete');
+                  router.push('/review' as import('expo-router').Href);
+                }}
                 style={({ pressed }) => [
                   styles.secondaryBtn,
                   { borderColor: colors.border, opacity: pressed ? 0.88 : 1, flex: 1 },
@@ -424,8 +432,7 @@ export default function ComprehensionScreen() {
                 <Text style={[Typography.button, { color: colors.text }]}>Review</Text>
               </Pressable>
               <Pressable
-                disabled={finishing}
-                onPress={() => void skipReviewAndContinue()}
+                onPress={skipReviewAndContinue}
                 style={({ pressed }) => [
                   styles.primaryBtn,
                   {
@@ -437,6 +444,37 @@ export default function ComprehensionScreen() {
                 <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
               </Pressable>
             </View>
+          </View>
+        ) : null}
+
+        {phase === 'complete' ? (
+          <View
+            style={[
+              styles.completeCard,
+              {
+                backgroundColor: colors.backgroundElevated,
+                borderColor: colors.border,
+              },
+            ]}>
+            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Nice work</Text>
+            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+              {completeCopy.headline}
+            </Text>
+            <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+              {completeCopy.detail}
+            </Text>
+            <Pressable
+              onPress={() => continueAfterComplete(chapter.number)}
+              style={({ pressed }) => [
+                styles.primaryBtn,
+                {
+                  backgroundColor: colors.tint,
+                  opacity: pressed ? 0.88 : 1,
+                  marginTop: Spacing.xl,
+                },
+              ]}>
+              <Text style={[Typography.button, { color: '#F7FAF9' }]}>{completeCopy.button}</Text>
+            </Pressable>
           </View>
         ) : null}
 
@@ -546,5 +584,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: Spacing.sm,
     marginTop: Spacing.xl,
+  },
+  completeCard: {
+    borderWidth: StyleSheet.hairlineWidth,
+    borderRadius: Radii.lg,
+    padding: Spacing.lg,
+    marginTop: Spacing.md,
   },
 });
