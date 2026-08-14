@@ -1,0 +1,1229 @@
+{
+  "id": "la-casa-delle-finestre-06",
+  "storyId": "la-casa-delle-finestre",
+  "number": 6,
+  "title": "Quinto",
+  "titleIt": "Quinto",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "scuola-media",
+    "cortile-scuola",
+    "via-della-scuola"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "quinto-belli"
+  ],
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-06",
+      "summary": "Irene greets Quinto. He has keys and is not clear which key opens what. He says he never goes upstairs. He does not water today. He says the school is empty without looking at her.",
+      "characterIds": [
+        "irene-colombo",
+        "quinto-belli"
+      ],
+      "locationIds": [
+        "scuola-media",
+        "cortile-scuola"
+      ],
+      "rememberedFacts": [
+        "Quinto is the caretaker",
+        "He has a ring of keys",
+        "He is not clear which key opens the door",
+        "He says he does not go to the upper floors",
+        "He says the school is empty and does not look at Irene"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo, nel pomeriggio, Irene passa davanti alla scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "nel",
+            "pomeriggio",
+            "irene",
+            "passare",
+            "davanti",
+            "alla",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il cancello del cortile è chiuso, come sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cancello",
+            "del",
+            "cortile",
+            "essere",
+            "chiudere",
+            "come",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Quinto è lì, dentro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "essere",
+            "li",
+            "dentro"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Irene è fuori, in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "essere",
+            "fuori",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Tra loro c'è il cancello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tra",
+            "loro",
+            "ce",
+            "il",
+            "cancello"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Oggi non ha la tanica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "non",
+            "avere",
+            "la",
+            "tanica"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non annaffia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "annaffiare"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Sta vicino al muro, con le mani in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stare",
+            "vicino",
+            "al",
+            "muro",
+            "con",
+            "le",
+            "mano",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Le piante morte sono ancora lì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "pianta",
+            "morire",
+            "essere",
+            "ancora",
+            "li"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Irene si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Buongiorno.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Lei è Quinto, vero?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "quinto",
+            "vero"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Quinto alza gli occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "alzare",
+            "gli",
+            "occhio"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Sì.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Il custode.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "custode"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Lo sono ancora, un poco.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "essere",
+            "ancora",
+            "un",
+            "poco"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Da molti anni.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "da",
+            "molto",
+            "anno"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Irene resta dal lato della strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "dal",
+            "lato",
+            "della",
+            "strada"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Non prova il cancello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "provare",
+            "il",
+            "cancello"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s20",
+          "text": "Irene non fa molte domande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "fare",
+            "molto",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "È una bella giornata.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "una",
+            "bello",
+            "giornata"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non fa freddo.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "fare",
+            "freddo"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Sì. C'è sole.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "ce",
+            "sole"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "C'è poco vento, oggi.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "poco",
+            "vento",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Io sto di fronte, in mansarda.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "stare",
+            "di",
+            "fronte",
+            "in",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Loredana me l'ha detto.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "loredana",
+            "me",
+            "avere",
+            "dire"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Lavora al comune, no?",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "lavorare",
+            "al",
+            "comune",
+            "no"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Sì. Un contratto breve.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "un",
+            "contratto",
+            "breve"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Quinto annuisce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "annuire"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Il paese è piccolo.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Si sa tutto.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "si",
+            "sapere",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Poi tace.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "tacere"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Oggi non c'è acqua per le piante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "non",
+            "ce",
+            "acqua",
+            "per",
+            "le",
+            "pianta"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "O non vuole annaffiare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "o",
+            "non",
+            "volere",
+            "annaffiare"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Oggi non annaffia, signor Quinto?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "non",
+            "annaffiare",
+            "signor",
+            "quinto"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Oggi no.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "no"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Basta così.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "basta",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Irene non chiede perché.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "chiedere",
+            "perche"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s39",
+          "text": "Quinto tira fuori le mani dalle tasche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "tirare",
+            "fuori",
+            "le",
+            "mano",
+            "dalle",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "C'è un mazzo di chiavi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "mazzo",
+            "di",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Molte chiavi, su un anello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "molto",
+            "chiave",
+            "su",
+            "un",
+            "anello"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Quinto le conta in fretta, a voce bassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "le",
+            "contare",
+            "in",
+            "fretta",
+            "a",
+            "voce",
+            "basso"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Uno, due, tre, quattro... poi smette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uno",
+            "due",
+            "tre",
+            "quattro",
+            "poi",
+            "smettere"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Alcune sono piccole. Una è grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alcuno",
+            "essere",
+            "piccolo",
+            "una",
+            "essere",
+            "grande"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Irene guarda le chiavi, non il viso di Quinto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "le",
+            "chiave",
+            "non",
+            "il",
+            "viso",
+            "di",
+            "quinto"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Quelle chiavi aprono la scuola?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "chiave",
+            "aprire",
+            "la",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Quinto tiene il mazzo in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "tenere",
+            "il",
+            "mazzo",
+            "in",
+            "mano"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Indica la chiave grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "indicare",
+            "la",
+            "chiave",
+            "grande"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Questa è la porta.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "essere",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Aspetti.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Poi muove il dito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "muovere",
+            "il",
+            "dito"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Indica un'altra chiave, più piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "indicare",
+            "altro",
+            "chiave",
+            "piu",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "No. Questa.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "questo"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Poi cambia di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "cambiare",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "La porta grande è quest'altra.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "porta",
+            "grande",
+            "essere",
+            "altro"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "Il cancello... questa, forse.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "cancello",
+            "questo",
+            "forse"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Irene ascolta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Tre chiavi, tre risposte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "chiave",
+            "tre",
+            "risposta"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Non capisce quale chiave è vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "capire",
+            "quale",
+            "chiave",
+            "essere",
+            "vero"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Quinto rimette il mazzo in tasca in fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "rimettere",
+            "il",
+            "mazzo",
+            "in",
+            "tasca",
+            "in",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s61",
+          "text": "Le chiavi fanno rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "chiave",
+            "fare",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Irene sente quel rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "sentire",
+            "quel",
+            "rumore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s63",
+          "text": "E il piano di sopra?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "il",
+            "piano",
+            "di",
+            "sopra"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Quinto scuote la testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "scuotere",
+            "la",
+            "testa"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non vado al piano di sopra.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "andare",
+            "al",
+            "piano",
+            "di",
+            "sopra"
+          ]
+        },
+        {
+          "id": "s66",
+          "text": "Le aule, i corridoi: no.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "aula",
+            "i",
+            "corridoio",
+            "no"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Mai.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "mai"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Non vado. Non è il mio piano.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "andare",
+            "non",
+            "essere",
+            "il",
+            "mio",
+            "piano"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Non c'è luce, non c'è bisogno.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "luce",
+            "non",
+            "ce",
+            "bisogno"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "La scuola è chiusa da due anni.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "chiudere",
+            "da",
+            "due",
+            "anno"
+          ]
+        },
+        {
+          "id": "s71",
+          "text": "Irene guarda in alto, verso le finestre tre, quattro, cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "in",
+            "alto",
+            "verso",
+            "le",
+            "finestra",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "E otto, al piano tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "otto",
+            "al",
+            "piano",
+            "tre"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Oggi, di giorno, sono scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "di",
+            "giorno",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Quinto non segue il suo sguardo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "non",
+            "seguire",
+            "il",
+            "suo",
+            "sguardo"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Guarda il cortile, o il muro, o niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "il",
+            "cortile",
+            "o",
+            "il",
+            "muro",
+            "o",
+            "niente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Irene dice poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "dire",
+            "poco"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Va bene.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Grazie.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Arrivederci.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivederci"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Quinto sta già voltando le spalle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "stare",
+            "gia",
+            "voltare",
+            "le",
+            "spalla"
+          ]
+        },
+        {
+          "id": "s81",
+          "text": "Poi parla, verso il cancello, non verso Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "parlare",
+            "verso",
+            "il",
+            "cancello",
+            "non",
+            "verso",
+            "irene"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "La scuola è vuota.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Non la guarda quando lo dice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "la",
+            "guardare",
+            "quando",
+            "lo",
+            "dire"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Irene cammina verso casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "camminare",
+            "verso",
+            "casa"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "A casa apre il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "casa",
+            "aprire",
+            "il",
+            "quaderno"
+          ]
+        },
+        {
+          "id": "s86",
+          "text": "Scrive: chiavi. Non piano di sopra. La scuola è vuota?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "chiave",
+            "non",
+            "piano",
+            "di",
+            "sopra",
+            "la",
+            "scuola",
+            "essere",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Chiude il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "quaderno"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch06_q01",
+      "chapterId": "la-casa-delle-finestre-06",
+      "type": "character",
+      "question": "Who is Quinto?",
+      "choices": [
+        "The caretaker of the school",
+        "A teacher who still works there",
+        "Mimmo’s father"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says he is the custode.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q02",
+      "chapterId": "la-casa-delle-finestre-06",
+      "type": "event",
+      "question": "What does Quinto have in his hands?",
+      "choices": [
+        "A bunch of keys",
+        "The watering can",
+        "Irene’s notebook"
+      ],
+      "correctChoice": 0,
+      "explanation": "He takes a ring of keys from his pocket. He points to one key, then another.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q03",
+      "chapterId": "la-casa-delle-finestre-06",
+      "type": "direct",
+      "question": "What does Quinto say about the upper floors?",
+      "choices": [
+        "He does not go upstairs. Never.",
+        "He sleeps there at night",
+        "Alme has the only key"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says: Non vado al piano di sopra. Mai.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q04",
+      "chapterId": "la-casa-delle-finestre-06",
+      "type": "inference",
+      "question": "How does Quinto say “La scuola è vuota”?",
+      "choices": [
+        "Toward the gate, without looking at Irene",
+        "With a smile, looking her in the eye",
+        "In a letter to Alme"
+      ],
+      "correctChoice": 0,
+      "explanation": "He speaks toward the gate, not toward Irene. He does not look at her when he says it.",
+      "difficulty": 2
+    }
+  ]
+}

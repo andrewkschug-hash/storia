@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
-    "test:google": "tsx scripts/test-google-tts.ts"
+    "test:google": "tsx scripts/test-google-tts.ts",
+    "preflight:google-a1": "tsx scripts/google-tts-preflight.ts --target=a1 --from=1 --to=20 --dry-run"
   },
   "devDependencies": {
     "tsx": "^4.23.12",

@@ -1,61 +1,130 @@
 {
-  "activeProvider": "elevenlabs",
+  "activeProvider": "google",
   "generationVersion": 1,
-  "characters": {
-    "luca": {
-      "provider": "elevenlabs",
-      "voiceId": "N2lVS1w4EtoT3dr4eOWO",
-      "voiceName": "Callum - Husky Trickster",
+  "logicalVoices": {
+    "narrator": {
+      "speakingStyle": "clear Italian narrative",
       "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "onwK4e9ZLuTAKqWW03F9",
+          "voiceName": "Daniel - Steady Broadcaster"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Enceladus",
+          "voiceName": "Chirp3 HD Enceladus"
+        }
+      }
+    },
+    "luca": {
       "speakingStyle": "young Italian male",
-      "gender": "male"
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "N2lVS1w4EtoT3dr4eOWO",
+          "voiceName": "Callum - Husky Trickster"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Achird",
+          "voiceName": "Chirp3 HD Achird"
+        }
+      }
     },
     "sofia": {
-      "provider": "elevenlabs",
-      "voiceId": "FGY2WhTYpPnrIDTdsKH5",
-      "voiceName": "Laura - Enthusiast, Quirky Attitude",
-      "language": "it-IT",
       "speakingStyle": "young Italian female",
-      "gender": "female"
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "FGY2WhTYpPnrIDTdsKH5",
+          "voiceName": "Laura - Enthusiast, Quirky Attitude"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Leda",
+          "voiceName": "Chirp3 HD Leda"
+        }
+      }
     },
     "marco": {
-      "provider": "elevenlabs",
-      "voiceId": "SOYHLrjzK2X1ezoPC6cr",
-      "voiceName": "Harry - Fierce Warrior",
-      "language": "it-IT",
       "speakingStyle": "young Italian male, slightly more reserved",
-      "gender": "male"
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "SOYHLrjzK2X1ezoPC6cr",
+          "voiceName": "Harry - Fierce Warrior"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Charon",
+          "voiceName": "Chirp3 HD Charon"
+        }
+      }
     },
     "giulia": {
-      "provider": "elevenlabs",
-      "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "voiceName": "Jessica - Playful, Bright, Warm",
-      "language": "it-IT",
       "speakingStyle": "young Italian female, clear and bright",
-      "gender": "female"
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "cgSgspJ2msm6clMCkdW9",
+          "voiceName": "Jessica - Playful, Bright, Warm"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Laomedeia",
+          "voiceName": "Chirp3 HD Laomedeia"
+        }
+      }
     },
     "nonna-rosa": {
-      "provider": "elevenlabs",
-      "voiceId": "SAz9YHcvj6GT2YYXdXww",
-      "voiceName": "River - Relaxed, Neutral, Informative",
+      "speakingStyle": "older Italian female, warm",
       "language": "it-IT",
-      "speakingStyle": "older Italian female, warm"
-    },
-    "narrator": {
-      "provider": "elevenlabs",
-      "voiceId": "onwK4e9ZLuTAKqWW03F9",
-      "voiceName": "Daniel - Steady Broadcaster",
-      "language": "it-IT",
-      "speakingStyle": "clear Italian narrative",
-      "gender": "male"
+      "gender": "female",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "SAz9YHcvj6GT2YYXdXww",
+          "voiceName": "River - Relaxed, Neutral, Informative"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Vindemiatrix",
+          "voiceName": "Chirp3 HD Vindemiatrix"
+        }
+      }
     },
     "padrone": {
-      "provider": "elevenlabs",
-      "voiceId": "cjVigY5qzO86Huf0OWal",
-      "voiceName": "Eric - Smooth, Trustworthy",
-      "language": "it-IT",
       "speakingStyle": "middle-aged Italian male, direct",
-      "gender": "male"
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "cjVigY5qzO86Huf0OWal",
+          "voiceName": "Eric - Smooth, Trustworthy"
+        }
+      }
+    }
+  },
+  "characters": {
+    "narrator": {
+      "logicalVoiceId": "narrator"
+    },
+    "luca": {
+      "logicalVoiceId": "luca"
+    },
+    "sofia": {
+      "logicalVoiceId": "sofia"
+    },
+    "marco": {
+      "logicalVoiceId": "marco"
+    },
+    "giulia": {
+      "logicalVoiceId": "giulia"
+    },
+    "nonna-rosa": {
+      "logicalVoiceId": "nonna-rosa"
+    },
+    "padrone": {
+      "logicalVoiceId": "padrone"
     }
   }
 }

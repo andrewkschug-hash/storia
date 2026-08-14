@@ -1,0 +1,70 @@
+{
+  "locations": [
+    {
+      "id": "san-quirico-sul-nera",
+      "name": "San Quirico sul Nera",
+      "city": "San Quirico sul Nera",
+      "description": "A small Umbrian town. Invented."
+    },
+    {
+      "id": "via-della-scuola",
+      "name": "Via della Scuola",
+      "city": "San Quirico sul Nera",
+      "description": "The street between Irene's attic and the closed middle school."
+    },
+    {
+      "id": "mansarda-irene",
+      "name": "La mansarda di Irene",
+      "city": "San Quirico sul Nera",
+      "description": "Irene's rented attic, facing the school grid."
+    },
+    {
+      "id": "cucina-loredana",
+      "name": "La cucina di Loredana",
+      "city": "San Quirico sul Nera",
+      "description": "The landlady's kitchen downstairs."
+    },
+    {
+      "id": "scuola-media",
+      "name": "La scuola media",
+      "city": "San Quirico sul Nera",
+      "description": "The closed middle school opposite Irene's window."
+    },
+    {
+      "id": "cortile-scuola",
+      "name": "Il cortile della scuola",
+      "city": "San Quirico sul Nera",
+      "description": "The school courtyard. Quinto waters dead plants here."
+    },
+    {
+      "id": "comune",
+      "name": "Il comune",
+      "city": "San Quirico sul Nera",
+      "description": "The town hall where Irene scans leftover school papers."
+    },
+    {
+      "id": "ufficio-alme",
+      "name": "L'ufficio di Alme",
+      "city": "San Quirico sul Nera",
+      "description": "Dottoressa Alme's office."
+    },
+    {
+      "id": "scatole-comune",
+      "name": "Le scatole del comune",
+      "city": "San Quirico sul Nera",
+      "description": "Boxes of school papers in the town-hall archive."
+    },
+    {
+      "id": "seminterrato-comune",
+      "name": "Il seminterrato",
+      "city": "San Quirico sul Nera",
+      "description": "The town-hall basement where Irene hides a box."
+    },
+    {
+      "id": "caserma-piva",
+      "name": "La caserma",
+      "city": "San Quirico sul Nera",
+      "description": "The Carabinieri station."
+    }
+  ]
+}

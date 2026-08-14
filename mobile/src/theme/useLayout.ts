@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { useWindowDimensions } from 'react-native';
 
+import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import {
   contentMaxWidth,
   contentPaddingHorizontal,
@@ -9,8 +10,10 @@ import {
 
 export function useLayout() {
   const { width, height } = useWindowDimensions();
+  const { settings } = useAccessibility();
   return useMemo(() => {
     const size = layoutSizeForWidth(width);
+    const baseMax = contentMaxWidth(size);
     return {
       width,
       height,
@@ -19,8 +22,8 @@ export function useLayout() {
       isTablet: size === 'tablet',
       isDesktop: size === 'desktop',
       isCompactHeight: height < 700,
-      contentMaxWidth: contentMaxWidth(size),
+      contentMaxWidth: settings.comfortableWidth ? Math.min(baseMax, 560) : baseMax,
       paddingHorizontal: contentPaddingHorizontal(width, size),
     };
-  }, [width, height]);
+  }, [width, height, settings.comfortableWidth]);
 }

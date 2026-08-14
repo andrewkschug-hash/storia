@@ -11,7 +11,8 @@ import {
   type LevelGroup,
   type StoryArcSummary,
 } from '@/src/components/storiesLevelInsert';
-import { Radii, Spacing, Typography, type ThemeColors } from '@/src/theme/tokens';
+import { Radii, Spacing, type ThemeColors } from '@/src/theme/tokens';
+import { useTheme } from '@/src/theme/useTheme';
 
 export type { ExtraStoryRow, ExtraStorySection, StoryArcSummary };
 
@@ -34,6 +35,7 @@ export function StoriesLevelList({
   onOpenChapter,
   onOpenStoryChapter,
 }: Props) {
+  const { type } = useTheme();
   const groups = useMemo(() => {
     const base = buildLevelGroups(arcs, chapters, currentChapterId);
     return insertExtraStoryGroups(base, extraSections);
@@ -65,7 +67,7 @@ export function StoriesLevelList({
       {hint ? (
         <Text
           style={[
-            Typography.caption,
+            type.caption,
             { color: colors.textSecondary, marginBottom: Spacing.sm, textAlign: 'center' },
           ]}>
           {hint}
@@ -127,6 +129,7 @@ function LevelSection({
   onChapterPress: (chapter: ChapterListItem) => void;
   onListen: (chapterId: string) => void;
 }) {
+  const { type, minTouchTarget } = useTheme();
   const shake = useRef(new Animated.Value(0)).current;
 
   const triggerShake = () => {
@@ -158,16 +161,17 @@ function LevelSection({
               backgroundColor: colors.backgroundElevated,
               borderColor: group.containsCurrent ? colors.tint : colors.border,
               opacity: pressed ? 0.88 : 1,
+              minHeight: minTouchTarget,
             },
           ]}>
           <View style={styles.levelMeta}>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
               {group.arc.cefrLevel}
             </Text>
-            <Text style={[Typography.label, { color: colors.text, marginTop: 2 }]}>
+            <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>
               {group.arc.title}
             </Text>
-            <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2 }]}>
+            <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>
               {summary}
             </Text>
           </View>
@@ -224,6 +228,7 @@ function ExtraStoryBlock({
   colors: ThemeColors;
   onOpenChapter: (chapter: ChapterListItem) => void;
 }) {
+  const { type, minTouchTarget } = useTheme();
   const [open, setOpen] = useState(
     story.chapters.some((chapter) => chapter.status === 'in_progress'),
   );
@@ -238,12 +243,13 @@ function ExtraStoryBlock({
             backgroundColor: colors.backgroundElevated,
             borderColor: open ? colors.tint : colors.border,
             opacity: pressed ? 0.88 : 1,
+            minHeight: minTouchTarget,
           },
         ]}>
         <View style={styles.chapterMeta}>
-          <Text style={[Typography.caption, { color: colors.tint }]}>Hometown</Text>
-          <Text style={[Typography.label, { color: colors.text, marginTop: 2 }]}>{story.titleIt}</Text>
-          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2 }]}>
+          <Text style={[type.caption, { color: colors.tint }]}>Hometown</Text>
+          <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>{story.titleIt}</Text>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>
             {story.completed}/{story.total} chapters
           </Text>
         </View>
@@ -283,6 +289,7 @@ function ChapterRow({
   onListen: () => void;
   onLockedPress: () => void;
 }) {
+  const { type, minTouchTarget } = useTheme();
   const locked = chapter.status === 'locked';
   const shake = useRef(new Animated.Value(0)).current;
 
@@ -313,13 +320,14 @@ function ChapterRow({
             backgroundColor: colors.backgroundElevated,
             borderColor: isCurrent ? colors.tint : colors.border,
             opacity: locked ? 0.55 : pressed ? 0.88 : 1,
+            minHeight: minTouchTarget,
           },
         ]}>
         <View style={styles.chapterMeta}>
-          <Text style={[Typography.caption, { color: colors.tint }]}>
+          <Text style={[type.caption, { color: colors.tint }]}>
             Capitolo {chapter.number}
           </Text>
-          <Text style={[Typography.label, { color: colors.text, marginTop: 2 }]}>
+          <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>
             {chapter.titleIt}
           </Text>
         </View>
@@ -332,7 +340,7 @@ function ChapterRow({
               }}
               hitSlop={8}
               style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1, marginRight: Spacing.sm }]}>
-              <Text style={[Typography.caption, { color: colors.tint }]}>Listen</Text>
+              <Text style={[type.caption, { color: colors.tint }]}>Listen</Text>
             </Pressable>
           ) : null}
           <StatusIcon status={chapter.status} color={statusIconColor(chapter.status, colors)} />

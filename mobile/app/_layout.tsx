@@ -14,9 +14,8 @@ import { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
-import { useColorScheme } from '@/components/useColorScheme';
 import { getAccount } from '@/src/account/storage';
-import { Colors } from '@/src/theme/tokens';
+import { AccessibilityProvider, useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -52,17 +51,21 @@ export default function RootLayout() {
     return null;
   }
 
-  return <RootLayoutNav />;
+  return (
+    <AccessibilityProvider>
+      <RootLayoutNav />
+    </AccessibilityProvider>
+  );
 }
 
 function RootLayoutNav() {
-  const colorScheme = useColorScheme() ?? 'light';
-  const palette = Colors[colorScheme];
+  const { scheme, colors } = useAccessibility();
+  const palette = colors;
 
   const navigationTheme = {
-    ...(colorScheme === 'dark' ? DarkTheme : DefaultTheme),
+    ...(scheme === 'dark' ? DarkTheme : DefaultTheme),
     colors: {
-      ...(colorScheme === 'dark' ? DarkTheme.colors : DefaultTheme.colors),
+      ...(scheme === 'dark' ? DarkTheme.colors : DefaultTheme.colors),
       primary: palette.tint,
       background: palette.background,
       card: palette.backgroundElevated,
@@ -74,7 +77,7 @@ function RootLayoutNav() {
 
   return (
     <ThemeProvider value={navigationTheme}>
-      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
+      <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
       <Stack>
         <Stack.Screen
           name="index"

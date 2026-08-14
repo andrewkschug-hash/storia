@@ -9,6 +9,7 @@ import { MemoryAdaptiveStateRepository } from '@/src/adaptive/MemoryAdaptiveStat
 import { AdaptiveVocabularyService } from '@/src/adaptive/AdaptiveVocabularyService';
 import { audioCacheKey } from '@/src/audio/cacheKey';
 import { createCatalog } from '@/src/audio/AudioService';
+import { normalizeRoster } from '@/src/audio/logicalVoices';
 import {
   canTransition,
   cefrRank,
@@ -296,7 +297,7 @@ describe('Phase 8 adaptive and audio across levels', () => {
       generationVersion: 1,
     });
     expect(keyA).not.toBe(keyB);
-    const catalog = createCatalog([], { activeProvider: 'elevenlabs', generationVersion: 1, characters: {} }, bundle.characters);
+    const catalog = createCatalog([], normalizeRoster({ activeProvider: 'elevenlabs', generationVersion: 1 }), bundle.characters);
     expect(catalog.lookupSentence(sentence, 'normal')).toBeNull();
   });
 });

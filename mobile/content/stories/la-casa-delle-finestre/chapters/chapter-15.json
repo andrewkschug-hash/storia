@@ -1,0 +1,1146 @@
+{
+  "id": "la-casa-delle-finestre-15",
+  "storyId": "la-casa-delle-finestre",
+  "number": 15,
+  "title": "Do not call",
+  "titleIt": "Non chiamare",
+  "locationIds": [
+    "scuola-media",
+    "comune",
+    "ufficio-alme"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "alme"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-15",
+      "summary": "Irene finds a note in the grate: no Carabinieri, registers. At work Alme books destroying papers for Friday, in three days.",
+      "characterIds": [
+        "irene-colombo",
+        "alme"
+      ],
+      "locationIds": [
+        "scuola-media",
+        "ufficio-alme"
+      ],
+      "rememberedFacts": [
+        "A note in the grate says not to call the Carabinieri, and mentions registers",
+        "Alme schedules destroying papers for Friday",
+        "Friday is in three days",
+        "Irene has little time"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La mattina Irene passa davanti alla scuola, presto, come ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "irene",
+            "passare",
+            "davanti",
+            "alla",
+            "scuola",
+            "presto",
+            "come",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Non entra. Guarda il cancello, poi la grata bassa, vicino al muro di fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "entrare",
+            "guardare",
+            "il",
+            "cancello",
+            "poi",
+            "la",
+            "grata",
+            "basso",
+            "vicino",
+            "al",
+            "muro",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "C'è un foglio, piegato, fermo tra le sbarre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "foglio",
+            "piegare",
+            "fermo",
+            "tra",
+            "le",
+            "sbarra"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Non c'era ieri. O lei non l'ha visto. Oggi c'è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "ieri",
+            "o",
+            "lei",
+            "non",
+            "avere",
+            "vedere",
+            "oggi",
+            "ce"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Irene lo prende con due dita. Non è vecchio. Non c'è pioggia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "lo",
+            "prendere",
+            "con",
+            "due",
+            "dito",
+            "non",
+            "essere",
+            "vecchio",
+            "non",
+            "ce",
+            "pioggia"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Apre il foglio in strada, di qua, non di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "il",
+            "foglio",
+            "in",
+            "strada",
+            "di",
+            "qua",
+            "non",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Due righe, grandi, chiare: NON CARABINIERI. REGISTRI.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "riga",
+            "grande",
+            "chiaro",
+            "non",
+            "carabinieri",
+            "registro"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "La prima riga è un ordine. La seconda è una cosa, non una spiegazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "primo",
+            "riga",
+            "essere",
+            "un",
+            "ordine",
+            "la",
+            "secondo",
+            "essere",
+            "una",
+            "cosa",
+            "non",
+            "una",
+            "spiegazione"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Irene non sa quali registri. Sa che Alme ha scatole, e carte della scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "quale",
+            "registro",
+            "sapere",
+            "che",
+            "alme",
+            "avere",
+            "scatola",
+            "e",
+            "carta",
+            "della",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Niente altro. Nessun nome. Nessuna data.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "niente",
+            "altro",
+            "nessuno",
+            "nome",
+            "nessuno",
+            "data"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Irene legge due volte. Lo mette in tasca, accanto alla confezione delle pile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "leggere",
+            "due",
+            "volta",
+            "lo",
+            "mettere",
+            "in",
+            "tasca",
+            "accanto",
+            "alla",
+            "confezione",
+            "delle",
+            "pila"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Dovrei chiamare comunque, pensa. Però il foglio dice di no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "chiamare",
+            "comunque",
+            "pensare",
+            "pero",
+            "il",
+            "foglio",
+            "dire",
+            "di",
+            "no"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Non sa chi l'ha scritto. Sa solo: dopo le due luci, c'è carta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "chi",
+            "avere",
+            "scrivere",
+            "sapere",
+            "solo",
+            "dopo",
+            "le",
+            "due",
+            "luce",
+            "ce",
+            "carta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s14",
+          "text": "Al comune il lavoro è come sempre, e non lo è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "comune",
+            "il",
+            "lavoro",
+            "essere",
+            "come",
+            "sempre",
+            "e",
+            "non",
+            "lo",
+            "essere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Irene scansiona. Conta. Però lo stomaco è stretto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scansionare",
+            "contare",
+            "pero",
+            "lo",
+            "stomaco",
+            "essere",
+            "stretto"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Alme la chiama su, in ufficio, per le date.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "la",
+            "chiamare",
+            "su",
+            "in",
+            "ufficio",
+            "per",
+            "le",
+            "data"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "C'è un calendario sul muro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "calendario",
+            "sul",
+            "muro"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Alme indica venerdì con una penna. Irene conta i giorni sulle dita, sotto il tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "indicare",
+            "venerdi",
+            "con",
+            "una",
+            "penna",
+            "irene",
+            "contare",
+            "i",
+            "giorno",
+            "sulle",
+            "dito",
+            "sotto",
+            "il",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Venerdì distruggiamo le carte vecchie della scuola.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "venerdi",
+            "distruggere",
+            "le",
+            "carta",
+            "vecchio",
+            "della",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Non tutto. Quello che non serve. Registri, copie, liste.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "tutto",
+            "quello",
+            "che",
+            "non",
+            "servire",
+            "registro",
+            "copia",
+            "lista"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Non c'è tempo dopo. Il contratto è corto. Lei lo sa.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "tempo",
+            "dopo",
+            "il",
+            "contratto",
+            "essere",
+            "corto",
+            "lei",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Irene guarda venerdì. Oggi è martedì. Venerdì è tra tre giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "venerdi",
+            "oggi",
+            "essere",
+            "martedi",
+            "venerdi",
+            "essere",
+            "tra",
+            "tre",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Dobbiamo farlo, dice Alme, con il sorriso di sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "fare",
+            "dire",
+            "alme",
+            "con",
+            "il",
+            "sorriso",
+            "di",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Irene dice: va bene. Non dice: registri. Non dice: un foglio nella grata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "dire",
+            "andare",
+            "bene",
+            "non",
+            "dire",
+            "registro",
+            "non",
+            "dire",
+            "un",
+            "foglio",
+            "nella",
+            "grata"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Lo stomaco fa male. Poco. Basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "stomaco",
+            "fare",
+            "male",
+            "poco",
+            "basta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Giù, Irene apre il quaderno. Copia: NON CARABINIERI. REGISTRI.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giu",
+            "irene",
+            "aprire",
+            "il",
+            "quaderno",
+            "copiare",
+            "non",
+            "carabinieri",
+            "registro"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Copia anche: venerdì, tra tre giorni, distruggere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "copiare",
+            "anche",
+            "venerdi",
+            "tra",
+            "tre",
+            "giorno",
+            "distruggere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Non c'è tempo, pensa. Però non sa che cosa deve fare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "tempo",
+            "pensare",
+            "pero",
+            "non",
+            "sapere",
+            "che",
+            "cosa",
+            "dovere",
+            "fare"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Dovrei chiamare i carabinieri. Il foglio dice di no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "chiamare",
+            "i",
+            "carabinieri",
+            "il",
+            "foglio",
+            "dire",
+            "di",
+            "no"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Dovrei dirlo ad Alme. Alme distrugge venerdì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "dire",
+            "ad",
+            "alme",
+            "alme",
+            "distruggere",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Non incontra nessuno dietro la scuola. Non corre. Non è un film.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "incontrare",
+            "nessuno",
+            "dietro",
+            "la",
+            "scuola",
+            "non",
+            "correre",
+            "non",
+            "essere",
+            "un",
+            "film"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Mette il foglio nel quaderno. Chiude. Lavora ancora un'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mettere",
+            "il",
+            "foglio",
+            "nel",
+            "quaderno",
+            "chiudere",
+            "lavorare",
+            "ancora",
+            "ora"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Tre giorni. Registri. Non chiamare. Questo è tutto, per ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "giorno",
+            "registro",
+            "non",
+            "chiamare",
+            "questo",
+            "essere",
+            "tutto",
+            "per",
+            "ora"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Non ha visto Sara. Non ha aperto la scuola. Ha un foglio, e un venerdì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "vedere",
+            "sara",
+            "non",
+            "avere",
+            "aprire",
+            "la",
+            "scuola",
+            "avere",
+            "un",
+            "foglio",
+            "e",
+            "un",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Passa vicino alle scatole dei registri. Le conta con gli occhi. Non le sposta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "passare",
+            "vicino",
+            "alle",
+            "scatola",
+            "dei",
+            "registro",
+            "le",
+            "contare",
+            "con",
+            "gli",
+            "occhio",
+            "non",
+            "le",
+            "spostare"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Venerdì qualcuno le prende. Distrugge. Tre giorni non sono tanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "qualcuno",
+            "le",
+            "prendere",
+            "distruggere",
+            "tre",
+            "giorno",
+            "non",
+            "essere",
+            "tanto"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Dovrei chiamare comunque. Non chiama. Mette una mano sulla tasca, dove c'è il foglio, e lavora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "chiamare",
+            "comunque",
+            "non",
+            "chiamare",
+            "mettere",
+            "una",
+            "mano",
+            "sulla",
+            "tasca",
+            "dove",
+            "ce",
+            "il",
+            "foglio",
+            "e",
+            "lavorare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s38",
+          "text": "Alme è su. Non chiede del foglio. Non sa del foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "essere",
+            "su",
+            "non",
+            "chiedere",
+            "del",
+            "foglio",
+            "non",
+            "sapere",
+            "del",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Irene guarda il calendario di nuovo, da sola, quando Alme parla al telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "calendario",
+            "di",
+            "nuovo",
+            "da",
+            "sola",
+            "quando",
+            "alme",
+            "parlare",
+            "al",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Martedì, mercoledì, giovedì, venerdì. Quattro nomi. Tre notti in mezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "martedi",
+            "mercoledi",
+            "giovedi",
+            "venerdi",
+            "quattro",
+            "nome",
+            "tre",
+            "notte",
+            "in",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Dobbiamo, ha detto Alme. Non c'è tempo dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "avere",
+            "dire",
+            "alme",
+            "non",
+            "ce",
+            "tempo",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene non sa ancora se cerca Sara, o se chiama, o se tace.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "ancora",
+            "se",
+            "cercare",
+            "sara",
+            "o",
+            "se",
+            "chiamare",
+            "o",
+            "se",
+            "tacere"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Sa solo che venerdì è una data vera, sul muro, con una penna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "solo",
+            "che",
+            "venerdi",
+            "essere",
+            "una",
+            "data",
+            "vero",
+            "sul",
+            "muro",
+            "con",
+            "una",
+            "penna"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "I registri sono scatole. Il foglio è due parole. Le due cose si toccano, e lei non sa come.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "registro",
+            "essere",
+            "scatola",
+            "il",
+            "foglio",
+            "essere",
+            "due",
+            "parola",
+            "le",
+            "due",
+            "cosa",
+            "si",
+            "toccare",
+            "e",
+            "lei",
+            "non",
+            "sapere",
+            "come"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Non deve incontrare nessuno oggi. Deve solo non perdere tre giorni. Non sono tanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dovere",
+            "incontrare",
+            "nessuno",
+            "oggi",
+            "dovere",
+            "solo",
+            "non",
+            "perdere",
+            "tre",
+            "giorno",
+            "non",
+            "essere",
+            "tanto"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Quando esce, la grata è vuota. Il foglio è nel quaderno. Venerdì è tra tre giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "uscire",
+            "la",
+            "grata",
+            "essere",
+            "vuoto",
+            "il",
+            "foglio",
+            "essere",
+            "nel",
+            "quaderno",
+            "venerdi",
+            "essere",
+            "tra",
+            "tre",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "In strada non corre. Guarda la scuola chiusa. Nessuno alla grata. Nessuna luce, di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "strada",
+            "non",
+            "correre",
+            "guardare",
+            "la",
+            "scuola",
+            "chiudere",
+            "nessuno",
+            "alla",
+            "grata",
+            "nessuno",
+            "luce",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Dovrei chiamare comunque: la frase torna. Il foglio torna. Lei cammina in mezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "chiamare",
+            "comunque",
+            "la",
+            "frase",
+            "tornare",
+            "il",
+            "foglio",
+            "tornare",
+            "lei",
+            "camminare",
+            "in",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "A casa mette il foglio sotto la pagina di ieri sera. Luci prima. Carta dopo. Venerdì dopo ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "casa",
+            "mettere",
+            "il",
+            "foglio",
+            "sotto",
+            "la",
+            "pagina",
+            "di",
+            "ieri",
+            "sera",
+            "luce",
+            "prima",
+            "carta",
+            "dopo",
+            "venerdi",
+            "dopo",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Non c'è tempo per capire tutto. C'è tempo per non buttare tre giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "tempo",
+            "per",
+            "capire",
+            "tutto",
+            "ce",
+            "tempo",
+            "per",
+            "non",
+            "buttare",
+            "tre",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Martedì sera. Mercoledì, giovedì, venerdì. Irene conta ancora, senza voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "martedi",
+            "sera",
+            "mercoledi",
+            "giovedi",
+            "venerdi",
+            "irene",
+            "contare",
+            "ancora",
+            "senza",
+            "voce"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Non chiama. Non distrugge. Non incontra. Tiene il foglio. Tre giorni, per ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "chiamare",
+            "non",
+            "distruggere",
+            "non",
+            "incontrare",
+            "tenere",
+            "il",
+            "foglio",
+            "tre",
+            "giorno",
+            "per",
+            "ora"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Tre giorni. Registri. Non chiamare. Non è un piano. È una data, e lei è già in ritardo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "giorno",
+            "registro",
+            "non",
+            "chiamare",
+            "non",
+            "essere",
+            "un",
+            "piano",
+            "essere",
+            "una",
+            "data",
+            "e",
+            "lei",
+            "essere",
+            "gia",
+            "in",
+            "ritardo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch15_q01",
+      "chapterId": "la-casa-delle-finestre-15",
+      "type": "direct",
+      "question": "What is on the paper in the grate?",
+      "choices": [
+        "Do not call Carabinieri. Registers",
+        "Come tonight with a key",
+        "Sara’s address"
+      ],
+      "correctChoice": 0,
+      "explanation": "Two lines: NON CARABINIERI. REGISTRI.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q02",
+      "chapterId": "la-casa-delle-finestre-15",
+      "type": "event",
+      "question": "What does Alme schedule?",
+      "choices": [
+        "Destroying old school papers on Friday",
+        "A meeting with Piva",
+        "Opening the school"
+      ],
+      "correctChoice": 0,
+      "explanation": "On Friday we destroy the old school papers. Registers, copies, lists.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q03",
+      "chapterId": "la-casa-delle-finestre-15",
+      "type": "direct",
+      "question": "How soon is Friday?",
+      "choices": [
+        "In three days",
+        "Tonight",
+        "Next month"
+      ],
+      "correctChoice": 0,
+      "explanation": "Today is Tuesday. Friday is in three days.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q04",
+      "chapterId": "la-casa-delle-finestre-15",
+      "type": "inference",
+      "question": "Does Irene call the Carabinieri in this chapter?",
+      "choices": [
+        "No. She thinks she should, but she does not",
+        "Yes, from Alme’s office",
+        "Yes, from the grate"
+      ],
+      "correctChoice": 0,
+      "explanation": "I should call anyway. The sheet says no. She does not call.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -29,9 +29,7 @@ function resolveSpeakerId(speakerId) {
   return speakerId;
 }
 
-function isPlaceholder(voiceId) {
-  return !voiceId || String(voiceId).startsWith('lab-');
-}
+const { isPlaceholder, resolveSpeakerVoice } = require('./voice-roster-common');
 
 async function gatewayGet(pathname) {
   const res = await fetch(`${GATEWAY.replace(/\/$/, '')}${pathname}`);
@@ -119,11 +117,9 @@ async function main() {
     ) && ready;
 
   const voices = loadJson(voicesPath);
-  const assignments = voices.characters ?? {};
   const unassigned = [];
   for (const speaker of [...speakersUsed]) {
-    const row = assignments[speaker];
-    if (!row || isPlaceholder(row.voiceId)) unassigned.push(speaker);
+    if (!resolveSpeakerVoice(voices, speaker)) unassigned.push(speaker);
   }
   ready =
     check(
@@ -150,11 +146,7 @@ async function main() {
     if (!gatewayOk) failures.push('TTS gateway not ready');
 
     const assign = await gatewayGet('/v1/tts/assignments');
-    const rosterChars = assign.roster?.characters ?? {};
-    const gatewayMissing = [...speakersUsed].filter((id) => {
-      const row = rosterChars[id];
-      return !row?.voiceId || isPlaceholder(row.voiceId);
-    });
+    const gatewayMissing = [...speakersUsed].filter((id) => !resolveSpeakerVoice(assign.roster ?? voices, id));
     ready =
       check(
         'Gateway voice roster',

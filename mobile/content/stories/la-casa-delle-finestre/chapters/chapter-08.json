@@ -1,0 +1,908 @@
+{
+  "id": "la-casa-delle-finestre-08",
+  "storyId": "la-casa-delle-finestre",
+  "number": 8,
+  "title": "She is thinking of me",
+  "titleIt": "Lei pensa a me",
+  "locationIds": [
+    "mansarda-irene",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-08",
+      "summary": "After the two pages coincide, Irene watches on purpose. The light reaches the facing window and stops, then goes out. She feels seen. She may be wrong. She does not signal.",
+      "characterIds": [
+        "irene-colombo"
+      ],
+      "locationIds": [
+        "mansarda-irene",
+        "scuola-media"
+      ],
+      "rememberedFacts": [
+        "Irene stands at her window on purpose",
+        "The light reaches the facing window and stops",
+        "She feels seen, but she may be wrong",
+        "She does not signal back"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Le due pagine coincidono. Irene lo sa ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "due",
+            "pagina",
+            "coincidere",
+            "irene",
+            "lo",
+            "sapere",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Però le pagine non dicono se qualcuno la vede.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "le",
+            "pagina",
+            "non",
+            "dire",
+            "se",
+            "qualcuno",
+            "la",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Di sera si mette alla finestra, di proposito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "sera",
+            "si",
+            "mettere",
+            "alla",
+            "finestra",
+            "di",
+            "proposito"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Finestra tre è di fronte. È la stanza due, sul foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "finestra",
+            "tre",
+            "essere",
+            "di",
+            "fronte",
+            "essere",
+            "la",
+            "stanza",
+            "due",
+            "sul",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Il quaderno resta chiuso sul tavolo, per ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "quaderno",
+            "restare",
+            "chiudere",
+            "sul",
+            "tavolo",
+            "per",
+            "ora"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Stasera non conta prima. Guarda solo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stasera",
+            "non",
+            "contare",
+            "prima",
+            "guardare",
+            "solo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ha spento la luce della stanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "spegnere",
+            "la",
+            "luce",
+            "della",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Fuori è buio. Nessuno cammina in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "essere",
+            "buio",
+            "nessuno",
+            "camminare",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sembra vuota, la scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "vuoto",
+            "la",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Irene aspetta le nove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "le",
+            "nove"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sono le nove meno cinque. Poi le nove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "nove",
+            "meno",
+            "cinque",
+            "poi",
+            "le",
+            "nove"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sulle pagine, a quest'ora, c'era già la prima luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulle",
+            "pagina",
+            "a",
+            "ora",
+            "ce",
+            "gia",
+            "la",
+            "primo",
+            "luce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Mentre guarda, vede una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mentre",
+            "guardare",
+            "vedere",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Finestra quattro, poi finestra cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "finestra",
+            "quattro",
+            "poi",
+            "finestra",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sulle pagine, lunedì era tre, quattro, cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulle",
+            "pagina",
+            "lunedi",
+            "essere",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Stasera la luce non inizia da tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stasera",
+            "la",
+            "luce",
+            "non",
+            "iniziare",
+            "da",
+            "tre"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Irene non si muove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "si",
+            "muovere"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Poi la luce è alla finestra tre. Di fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "la",
+            "luce",
+            "essere",
+            "alla",
+            "finestra",
+            "tre",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Irene aspetta che vada oltre, come sulle pagine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "che",
+            "andare",
+            "oltre",
+            "come",
+            "sulle",
+            "pagina"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La luce non va oltre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "non",
+            "andare",
+            "oltre"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Irene ricorda i numeri di lunedì: tre, quattro, cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ricordare",
+            "i",
+            "numero",
+            "di",
+            "lunedi",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Ricorda martedì: tre, quattro, otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ricordare",
+            "martedi",
+            "tre",
+            "quattro",
+            "otto"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Stasera: quattro, cinque, poi tre. Poi niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stasera",
+            "quattro",
+            "cinque",
+            "poi",
+            "tre",
+            "poi",
+            "niente"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Questa pausa non è sul foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "pausa",
+            "non",
+            "essere",
+            "sul",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Le pagine coincidono sulle stanze. Non su questa attesa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "pagina",
+            "coincidere",
+            "sulle",
+            "stanza",
+            "non",
+            "su",
+            "questo",
+            "attesa"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Irene tiene la tenda con una mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tenere",
+            "la",
+            "tenda",
+            "con",
+            "una",
+            "mano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s28",
+          "text": "Un minuto. Due. Tre, forse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "minuto",
+            "due",
+            "tre",
+            "forse"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Irene conta piano, senza voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "contare",
+            "piano",
+            "senza",
+            "voce"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La luce resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "restare"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Sembra che qualcuno è lì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "che",
+            "qualcuno",
+            "essere",
+            "li"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Sembra che guarda verso la mansarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "che",
+            "guardare",
+            "verso",
+            "la",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Forse. Forse no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "forse",
+            "forse",
+            "no"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Forse la luce è solo ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "forse",
+            "la",
+            "luce",
+            "essere",
+            "solo",
+            "fermo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Se qualcuno è lì, mi vede, pensa Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "qualcuno",
+            "essere",
+            "li",
+            "mi",
+            "vedere",
+            "pensare",
+            "irene"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Se nessuno è lì, è solo una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "nessuno",
+            "essere",
+            "li",
+            "essere",
+            "solo",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Le due pagine non rispondono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "due",
+            "pagina",
+            "non",
+            "rispondere"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Irene fa un passo indietro. Poi un altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "fare",
+            "un",
+            "passo",
+            "indietro",
+            "poi",
+            "un",
+            "altro"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Non accende la sua luce. Non bussa sul vetro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "accendere",
+            "la",
+            "suo",
+            "luce",
+            "non",
+            "bussare",
+            "sul",
+            "vetro"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Però resta vicino alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "restare",
+            "vicino",
+            "alla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Il cuore va in fretta. Le mani no, quasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cuore",
+            "andare",
+            "in",
+            "fretta",
+            "le",
+            "mano",
+            "no",
+            "quasi"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Nessuno chiama. Nessuno parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "chiamare",
+            "nessuno",
+            "parlare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s43",
+          "text": "Poi, dopo tanto, la luce si spegne.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "dopo",
+            "tanto",
+            "la",
+            "luce",
+            "si",
+            "spegnere"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non va avanti. Non torna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "andare",
+            "avanti",
+            "non",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "La finestra tre è scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "finestra",
+            "tre",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Irene aspetta ancora cinque minuti. La luce non torna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "ancora",
+            "cinque",
+            "minuto",
+            "la",
+            "luce",
+            "non",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Di fronte, niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "fronte",
+            "niente"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Qualcuno l'ha vista? Non lo sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno",
+            "avere",
+            "vedere",
+            "non",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Irene non sa se la pausa era per lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "se",
+            "la",
+            "pausa",
+            "essere",
+            "per",
+            "lei"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Apre il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "il",
+            "quaderno"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Scrive: finestra tre, si ferma, poi buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "finestra",
+            "tre",
+            "si",
+            "fermare",
+            "poi",
+            "buio"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Scrive anche: non è sulle pagine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "anche",
+            "non",
+            "essere",
+            "sulle",
+            "pagina"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Poi scrive: forse per me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "scrivere",
+            "forse",
+            "per",
+            "me"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Poi cancella le ultime tre parole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "cancellare",
+            "le",
+            "ultimo",
+            "tre",
+            "parola"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Lascia la pausa. Non scrive il perché.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lasciare",
+            "la",
+            "pausa",
+            "non",
+            "scrivere",
+            "il",
+            "perche"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch08_q01",
+      "chapterId": "la-casa-delle-finestre-08",
+      "type": "event",
+      "question": "Why does Irene stand at the window tonight?",
+      "choices": [
+        "On purpose, after the two pages coincide",
+        "Because Mimmo asked her to film",
+        "Because Alme sent her"
+      ],
+      "correctChoice": 0,
+      "explanation": "The pages coincide, but they do not say whether someone sees her. She watches on purpose.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q02",
+      "chapterId": "la-casa-delle-finestre-08",
+      "type": "direct",
+      "question": "What does the light do at window three?",
+      "choices": [
+        "It stops. That pause is not on the sheet",
+        "It follows Monday exactly, then goes to eight",
+        "Irene’s lamp answers it"
+      ],
+      "correctChoice": 0,
+      "explanation": "She waits for it to go on, as on the pages. It stops. This pause is not on the sheet.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q03",
+      "chapterId": "la-casa-delle-finestre-08",
+      "type": "inference",
+      "question": "Does Irene signal back?",
+      "choices": [
+        "No. She steps back and does not knock",
+        "Yes. She knocks on the glass",
+        "Yes. She calls Piva"
+      ],
+      "correctChoice": 0,
+      "explanation": "She does not turn on her light. She does not knock.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q04",
+      "chapterId": "la-casa-delle-finestre-08",
+      "type": "inference",
+      "question": "What does Irene keep in the notebook?",
+      "choices": [
+        "The pause, not the why",
+        "Sara’s name",
+        "A message in Morse"
+      ],
+      "correctChoice": 0,
+      "explanation": "She writes “maybe for me,” then erases it. She leaves the pause. She does not write the why.",
+      "difficulty": 2
+    }
+  ]
+}

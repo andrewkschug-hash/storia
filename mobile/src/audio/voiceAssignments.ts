@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import { normalizeRoster } from '@/src/audio/logicalVoices';
 import type { VoiceRoster } from '@/src/audio/types';
 
 const KEY = 'storia.voiceRoster';
@@ -11,13 +12,13 @@ export function currentRoster(fallback: VoiceRoster): VoiceRoster {
 }
 
 export function applyVoiceRoster(next: VoiceRoster): VoiceRoster {
-  runtime = next;
-  return next;
+  runtime = normalizeRoster(next);
+  return runtime;
 }
 
 export async function persistVoiceRoster(next: VoiceRoster): Promise<void> {
-  runtime = next;
-  await AsyncStorage.setItem(KEY, JSON.stringify(next));
+  runtime = normalizeRoster(next);
+  await AsyncStorage.setItem(KEY, JSON.stringify(runtime));
 }
 
 export async function hydrateVoiceRoster(fallback: VoiceRoster): Promise<VoiceRoster> {
@@ -26,8 +27,8 @@ export async function hydrateVoiceRoster(fallback: VoiceRoster): Promise<VoiceRo
     if (raw) {
       const parsed = JSON.parse(raw) as VoiceRoster;
       if (parsed?.characters) {
-        runtime = parsed;
-        return parsed;
+        runtime = normalizeRoster(parsed);
+        return runtime;
       }
     }
   } catch {

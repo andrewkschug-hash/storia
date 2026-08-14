@@ -2,7 +2,7 @@ import { router, type Href } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { HomeReviewCopy } from '@/src/review/ReviewService';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export function ReviewNudge({ copy }: Props) {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
 
   return (
     <View
@@ -21,13 +21,13 @@ export function ReviewNudge({ copy }: Props) {
           borderColor: colors.border,
         },
       ]}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.textMuted }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
         Vocabulary
       </Text>
-      <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.sm }]}>
+      <Text style={[type.label, { color: colors.text, marginTop: Spacing.sm }]}>
         {copy.headline}
       </Text>
-      <Text style={[Typography.caption, { color: colors.textSecondary, marginTop: 4 }]}>
+      <Text style={[type.caption, { color: colors.textSecondary, marginTop: 4 }]}>
         {copy.detail}
       </Text>
       {copy.cta ? (
@@ -41,9 +41,10 @@ export function ReviewNudge({ copy }: Props) {
               borderColor: colors.border,
               backgroundColor: colors.backgroundElevated,
               opacity: pressed ? 0.88 : 1,
+              minHeight: minTouchTarget,
             },
           ]}>
-          <Text style={[Typography.label, { color: colors.tint }]}>{copy.cta}</Text>
+          <Text style={[type.label, { color: colors.tint }]}>{copy.cta}</Text>
         </Pressable>
       ) : null}
     </View>

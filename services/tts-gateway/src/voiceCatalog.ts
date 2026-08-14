@@ -21,6 +21,12 @@ export function genderLabel(gender?: VoiceInfo['gender']): string {
   return '';
 }
 
+export function googleVoiceLabel(name: string): string {
+  const trimmed = name.trim();
+  const stripped = trimmed.replace(/^it[-_]IT[-_]/i, '').replaceAll('-', ' ');
+  return stripped || trimmed;
+}
+
 export function friendlyVoiceName(
   voice: Pick<VoiceInfo, 'id' | 'name' | 'gender'>,
   fallbackIndex: number,
@@ -67,7 +73,7 @@ export function toPublicVoices(provider: TTSProviderId, voices: VoiceInfo[]): Pu
     return {
       ...voice,
       provider,
-      displayName: friendlyVoiceName(voice, counts[key]),
+      displayName: provider === 'google' ? googleVoiceLabel(voice.name || voice.id) : friendlyVoiceName(voice, counts[key]),
     };
   });
 }

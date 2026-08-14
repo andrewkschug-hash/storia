@@ -1,0 +1,1042 @@
+{
+  "id": "la-casa-delle-finestre-02",
+  "storyId": "la-casa-delle-finestre",
+  "number": 2,
+  "title": "The closed school",
+  "titleIt": "La scuola chiusa",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "via-della-scuola",
+    "mansarda-irene",
+    "scuola-media",
+    "cortile-scuola"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "loredana",
+    "quinto-belli"
+  ],
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-02",
+      "summary": "By day the school looks empty. Loredana says it is unsafe after an earthquake. A man waters dead plants; he looks up at last night’s windows and leaves.",
+      "characterIds": [
+        "irene-colombo",
+        "loredana",
+        "quinto-belli"
+      ],
+      "locationIds": [
+        "via-della-scuola",
+        "mansarda-irene",
+        "scuola-media",
+        "cortile-scuola"
+      ],
+      "rememberedFacts": [
+        "By day the school looks empty and shut",
+        "Loredana says it is unsafe after an earthquake and nobody goes in",
+        "A man named Quinto, once the caretaker, waters plants that are dead",
+        "Quinto looks up at the same line of windows, then walks away"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Stamattina Irene ha aperto la finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stamattina",
+            "irene",
+            "avere",
+            "aprire",
+            "la",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ha guardato la scuola di fronte per un minuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "guardare",
+            "la",
+            "scuola",
+            "di",
+            "fronte",
+            "per",
+            "un",
+            "minuto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Di giorno la scuola sembra vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "giorno",
+            "la",
+            "scuola",
+            "sembrare",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Le porte sono chiuse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "porta",
+            "essere",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Le finestre della riga sono scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "finestra",
+            "della",
+            "riga",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Irene ha preso il quaderno dal tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "avere",
+            "prendere",
+            "il",
+            "quaderno",
+            "dal",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ieri sera c'era una luce, poi un'altra, poi una terza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "sera",
+            "ce",
+            "una",
+            "luce",
+            "poi",
+            "altro",
+            "poi",
+            "una",
+            "terzo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Stamattina non c'è nessuna luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stamattina",
+            "non",
+            "ce",
+            "nessuno",
+            "luce"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Però ha scritto l'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "avere",
+            "scrivere",
+            "ora"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Quindi non è un sogno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "non",
+            "essere",
+            "un",
+            "sogno"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "La scuola era una scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "una",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Adesso sembra solo un edificio chiuso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "sembrare",
+            "solo",
+            "un",
+            "edificio",
+            "chiudere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Irene scende le scale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scendere",
+            "le",
+            "scala"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Loredana è in cucina con il caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "essere",
+            "in",
+            "cucina",
+            "con",
+            "il",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Buongiorno.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Ha dormito?",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Sì, grazie.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "grazie"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Però ho una domanda.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "pero",
+            "avere",
+            "una",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "La scuola è davvero vuota?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "davvero",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Loredana non guarda Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "non",
+            "guardare",
+            "irene"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Parla in fretta, come una lezione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "parlare",
+            "in",
+            "fretta",
+            "come",
+            "una",
+            "lezione"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "C'è stato un terremoto.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "essere",
+            "un",
+            "terremoto"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Due anni fa.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "due",
+            "anno",
+            "fa"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "La scuola non è sicura.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola",
+            "non",
+            "essere",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Non si entra.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "si",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Nessuno entra.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "nessuno",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Tutti dicono così.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "dire",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Irene ascolta e quasi crede.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "e",
+            "quasi",
+            "credere"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Di giorno questa storia sembra vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "giorno",
+            "questo",
+            "storia",
+            "sembrare",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s30",
+          "text": "Irene esce in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "uscire",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Il sole è già alto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sole",
+            "essere",
+            "gia",
+            "alto"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Cammina fino alla scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "fino",
+            "alla",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Una donna passa con una borsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "donna",
+            "passare",
+            "con",
+            "una",
+            "borsa"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Scusi, la scuola è chiusa, vero?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusare",
+            "la",
+            "scuola",
+            "essere",
+            "chiudere",
+            "vero"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "La donna risponde in fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "donna",
+            "rispondere",
+            "in",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "È vuota. Non si entra. Nessuno entra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "vuoto",
+            "non",
+            "si",
+            "entrare",
+            "nessuno",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Poi la donna cammina via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "la",
+            "donna",
+            "camminare",
+            "via"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Le parole sono le stesse di Loredana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "parola",
+            "essere",
+            "le",
+            "stesso",
+            "di",
+            "loredana"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Irene resta un momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "un",
+            "momento"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Poi va alla porta grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "andare",
+            "alla",
+            "porta",
+            "grande"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "La porta è chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "porta",
+            "essere",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene non prova ad aprire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "provare",
+            "ad",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Il cancello del cortile è chiuso anche lui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cancello",
+            "del",
+            "cortile",
+            "essere",
+            "chiudere",
+            "anche",
+            "lui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s44",
+          "text": "C'è un cortile dietro un cancello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "cortile",
+            "dietro",
+            "un",
+            "cancello"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Irene guarda il cortile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "cortile"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "C'è un uomo con i capelli grigi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "uomo",
+            "con",
+            "i",
+            "capello",
+            "grigio"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Ha dell'acqua in una tanica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "acqua",
+            "in",
+            "una",
+            "tanica"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Annaffia le piante vicino al muro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "annaffiare",
+            "le",
+            "pianta",
+            "vicino",
+            "al",
+            "muro"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Però le piante sono morte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "le",
+            "pianta",
+            "essere",
+            "morire"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Sono gialle e secche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "giallo",
+            "e",
+            "secco"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "L'acqua cade sulla terra secca e non serve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "cadere",
+            "sulla",
+            "terra",
+            "secco",
+            "e",
+            "non",
+            "servire"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "L'uomo annaffia ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uomo",
+            "annaffiare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Se la scuola è vuota, perché l'acqua?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "la",
+            "scuola",
+            "essere",
+            "vuoto",
+            "perche",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Irene quasi crede ancora a Loredana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "quasi",
+            "credere",
+            "ancora",
+            "a",
+            "loredana"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Però l'uomo è lì, di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "uomo",
+            "essere",
+            "li",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "L'acqua è vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "essere",
+            "vero"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Le piante morte sono vere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "pianta",
+            "morire",
+            "essere",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s58",
+          "text": "Loredana è alla finestra di sotto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "essere",
+            "alla",
+            "finestra",
+            "di",
+            "sotto"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "È Quinto.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "quinto"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Era il custode.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "il",
+            "custode"
+          ]
+        },
+        {
+          "id": "s61",
+          "text": "Irene non gli parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "gli",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Guarda in alto, verso la riga di ieri sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "in",
+            "alto",
+            "verso",
+            "la",
+            "riga",
+            "di",
+            "ieri",
+            "sera"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Irene conta tre finestre scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "contare",
+            "tre",
+            "finestra",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Le tre finestre sono buie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "tre",
+            "finestra",
+            "essere",
+            "buio"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non c'è una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s66",
+          "text": "Quinto alza la testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "alzare",
+            "la",
+            "testa"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Guarda le stesse finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "le",
+            "stesso",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Non guarda Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "guardare",
+            "irene"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Poi prende la tanica e cammina via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "prendere",
+            "la",
+            "tanica",
+            "e",
+            "camminare",
+            "via"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Non dice niente a Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dire",
+            "niente",
+            "a",
+            "irene"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch02_q01",
+      "chapterId": "la-casa-delle-finestre-02",
+      "type": "direct",
+      "question": "What does Loredana say about the school?",
+      "choices": [
+        "It is unsafe after an earthquake. Nobody goes in.",
+        "It will open again next week.",
+        "A teacher still lives there."
+      ],
+      "correctChoice": 0,
+      "explanation": "She says there was an earthquake two years ago. The school is not safe. You do not go in.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q02",
+      "chapterId": "la-casa-delle-finestre-02",
+      "type": "event",
+      "question": "What does the man in the courtyard do?",
+      "choices": [
+        "He waters plants that are already dead",
+        "He opens the school door",
+        "He paints the windows"
+      ],
+      "correctChoice": 0,
+      "explanation": "He waters yellow, dry plants. The water falls on dry earth.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q03",
+      "chapterId": "la-casa-delle-finestre-02",
+      "type": "character",
+      "question": "Who is the man, according to Loredana?",
+      "choices": [
+        "Quinto, who was the caretaker",
+        "Mimmo, who makes videos",
+        "Piva, the maresciallo"
+      ],
+      "correctChoice": 0,
+      "explanation": "Loredana says: that’s Quinto. He was the custode.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q04",
+      "chapterId": "la-casa-delle-finestre-02",
+      "type": "inference",
+      "question": "What does Quinto do before he walks away?",
+      "choices": [
+        "He looks up at the same line of windows",
+        "He calls Irene over",
+        "He turns on a light"
+      ],
+      "correctChoice": 0,
+      "explanation": "Irene looks at last night’s dark row. Quinto raises his head and looks at the same windows.",
+      "difficulty": 2
+    }
+  ]
+}

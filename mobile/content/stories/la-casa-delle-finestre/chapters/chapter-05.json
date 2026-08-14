@@ -1,0 +1,1186 @@
+{
+  "id": "la-casa-delle-finestre-05",
+  "storyId": "la-casa-delle-finestre",
+  "number": 5,
+  "title": "Mimmo",
+  "titleIt": "Mimmo",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "via-della-scuola",
+    "scuola-media",
+    "mansarda-irene"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "mimmo"
+  ],
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-05",
+      "summary": "Mimmo shows a ghost video of a light in the school. The phone time is afternoon. At dusk Mimmo is gone; the real lamp starts anyway.",
+      "characterIds": [
+        "irene-colombo",
+        "mimmo"
+      ],
+      "locationIds": [
+        "via-della-scuola",
+        "scuola-media",
+        "mansarda-irene"
+      ],
+      "rememberedFacts": [
+        "A boy named Mimmo films the school for fun",
+        "He says there is a ghost",
+        "Irene almost believes the kids’ story",
+        "The video time is afternoon, not night",
+        "At dusk Mimmo is gone and the real lamp starts anyway"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il pomeriggio Irene torna dalla piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "pomeriggio",
+            "irene",
+            "tornare",
+            "dalla",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Vicino alla scuola ci sono tre ragazzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "alla",
+            "scuola",
+            "ci",
+            "essere",
+            "tre",
+            "ragazzo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Hanno un telefono e ridono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "un",
+            "telefono",
+            "e",
+            "ridere"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Uno è più grande degli altri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uno",
+            "essere",
+            "piu",
+            "grande",
+            "degli",
+            "altro"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ha diciannove anni, o così dice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "diciannove",
+            "anno",
+            "o",
+            "cosi",
+            "dire"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ha una giacca rossa e parla forte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "una",
+            "giacca",
+            "rosso",
+            "e",
+            "parlare",
+            "forte"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Irene cammina lento, perché sente le parole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "camminare",
+            "lento",
+            "perche",
+            "sentire",
+            "le",
+            "parola"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Il ragazzo della giacca parla ai suoi amici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "ragazzo",
+            "della",
+            "giacca",
+            "parlare",
+            "ai",
+            "suo",
+            "amico"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Dice che c'è un fantasma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "che",
+            "ce",
+            "un",
+            "fantasma"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Nella scuola. Alle finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "scuola",
+            "alle",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Irene ascolta perché anche lei ha visto una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "perche",
+            "anche",
+            "lei",
+            "avere",
+            "vedere",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Per un momento la storia dei ragazzi sembra possibile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "un",
+            "momento",
+            "la",
+            "storia",
+            "dei",
+            "ragazzo",
+            "sembrare",
+            "possibile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Irene si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Quasi crede, per un momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quasi",
+            "credere",
+            "per",
+            "un",
+            "momento"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Ha visto le luci anche lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "vedere",
+            "le",
+            "luce",
+            "anche",
+            "lei"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Scusi.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Che cosa avete visto?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "cosa",
+            "avere",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Il ragazzo della giacca sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "ragazzo",
+            "della",
+            "giacca",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Un fantasma.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "fantasma"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Nella scuola vuota. Una luce.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "nella",
+            "scuola",
+            "vuoto",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Io l'ho filmato.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "avere",
+            "filmare"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Mi chiamo Mimmo.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "chiamare",
+            "mimmo"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Filmo la scuola per divertimento.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "filmare",
+            "la",
+            "scuola",
+            "per",
+            "divertimento"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Guarda.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "I due amici ridono ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "due",
+            "amico",
+            "ridere",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Irene non ride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "ridere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
+          "text": "Mimmo le dà il telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mimmo",
+            "le",
+            "dare",
+            "il",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Irene guarda il video.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "video"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Lo guarda due volte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "guardare",
+            "due",
+            "volta"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "C'è la scuola, di giorno, un po' scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "la",
+            "scuola",
+            "di",
+            "giorno",
+            "un",
+            "po",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Poi una luce in una finestra, al piano due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "una",
+            "luce",
+            "in",
+            "una",
+            "finestra",
+            "al",
+            "piano",
+            "due"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La luce si muove e poi basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "si",
+            "muovere",
+            "e",
+            "poi",
+            "basta"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Il video è corto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "video",
+            "essere",
+            "corto"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Irene quasi crede di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "quasi",
+            "credere",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Sembra la stessa finestra di lunedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "la",
+            "stesso",
+            "finestra",
+            "di",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Quando l'hai fatto?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "quando",
+            "avere",
+            "fare"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Di notte, ovviamente.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "notte",
+            "ovviamente"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "C'è il fantasma di notte.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "il",
+            "fantasma",
+            "di",
+            "notte"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "I ragazzi dicono di sì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "ragazzo",
+            "dire",
+            "di",
+            "si_yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s40",
+          "text": "Irene non discute.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "discutere"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Guarda in basso, sul telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "in",
+            "basso",
+            "sul",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "C'è l'ora del video.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "ora",
+            "del",
+            "video"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "C'è anche il giorno, piccolo, sotto l'immagine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "anche",
+            "il",
+            "giorno",
+            "piccolo",
+            "sotto",
+            "immagine"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Irene legge con calma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "leggere",
+            "con",
+            "calma"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Non è notte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "notte"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "È pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "pomeriggio"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Le quattro e dieci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "quattro",
+            "e",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Irene mostra l'ora a Mimmo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "mostrare",
+            "ora",
+            "a",
+            "mimmo"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Mimmo guarda e alza le spalle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mimmo",
+            "guardare",
+            "e",
+            "alzare",
+            "le",
+            "spalla"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Il telefono sbaglia.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "telefono",
+            "sbagliare"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Oppure è il fantasma di giorno. Meglio.",
+          "speakerId": "mimmo",
+          "kind": "dialogue",
+          "lemmas": [
+            "oppure",
+            "essere",
+            "il",
+            "fantasma",
+            "di",
+            "giorno",
+            "meglio"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Gli amici ridono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "gli",
+            "amico",
+            "ridere"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Irene restituisce il telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restituire",
+            "il",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Grazie.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Non dice altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dire",
+            "altro"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "Però adesso sa una cosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "adesso",
+            "sapere",
+            "una",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Quel video non è la luce di sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quel",
+            "video",
+            "non",
+            "essere",
+            "la",
+            "luce",
+            "di",
+            "sera"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "È un gioco del pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "gioco",
+            "del",
+            "pomeriggio"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Irene guarda la scuola adesso, alle quattro e venti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "la",
+            "scuola",
+            "adesso",
+            "alle",
+            "quattro",
+            "e",
+            "venti"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Le finestre sono scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "finestra",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s61",
+          "text": "Nessuna luce, nessun video.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "luce",
+            "nessuno",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s62",
+          "text": "Irene va a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "andare",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Sale in mansarda e aspetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "salire",
+            "in",
+            "mansarda",
+            "e",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Quando è quasi sera, guarda di nuovo la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "essere",
+            "quasi",
+            "sera",
+            "guardare",
+            "di",
+            "nuovo",
+            "la",
+            "strada"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Mimmo non c'è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mimmo",
+            "non",
+            "ce"
+          ]
+        },
+        {
+          "id": "s66",
+          "text": "I ragazzi non ci sono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "ragazzo",
+            "non",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Il telefono, le risate, il fantasma: niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "le",
+            "risata",
+            "il",
+            "fantasma",
+            "niente"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Irene apre il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aprire",
+            "il",
+            "quaderno"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Scrive: video Mimmo, pomeriggio, quattro e dieci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "video",
+            "mimmo",
+            "pomeriggio",
+            "quattro",
+            "e",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Aspetta alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "alla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s71",
+          "text": "Fuori diventa buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "diventare",
+            "buio"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Sono le otto, poi le otto e mezza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "otto",
+            "poi",
+            "le",
+            "otto",
+            "e",
+            "mezzo"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "La strada è vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "essere",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Poi, alle nove, c'è una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "alle",
+            "nove",
+            "ce",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Finestra tre, piano due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "finestra",
+            "tre",
+            "piano",
+            "due"
+          ]
+        },
+        {
+          "id": "s76",
+          "text": "Non è un video.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "video"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Non è pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "pomeriggio"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Mimmo è andato via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mimmo",
+            "essere",
+            "andare",
+            "via"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "La luce, però, c'è lo stesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "pero",
+            "ce",
+            "lo",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Irene scrive l'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "ora"
+          ]
+        },
+        {
+          "id": "s81",
+          "text": "Non scrive la parola fantasma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "la",
+            "parola",
+            "fantasma"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Scrive solo: nove, finestra tre, come lunedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "solo",
+            "nove",
+            "finestra",
+            "tre",
+            "come",
+            "lunedi"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch05_q01",
+      "chapterId": "la-casa-delle-finestre-05",
+      "type": "character",
+      "question": "Who films the school?",
+      "choices": [
+        "Mimmo",
+        "Quinto",
+        "Dottoressa Alme"
+      ],
+      "correctChoice": 0,
+      "explanation": "Mimmo has a phone. He says he filmed a ghost.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q02",
+      "chapterId": "la-casa-delle-finestre-05",
+      "type": "direct",
+      "question": "What does Mimmo say is in the school?",
+      "choices": [
+        "A ghost",
+        "A teacher who still works there",
+        "Irene’s landlady"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says there is a fantasma. A light in the windows.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q03",
+      "chapterId": "la-casa-delle-finestre-05",
+      "type": "event",
+      "question": "When was the video made, according to the phone?",
+      "choices": [
+        "In the afternoon, at ten past four",
+        "At nine at night",
+        "On Monday at dawn"
+      ],
+      "correctChoice": 0,
+      "explanation": "Irene looks at the time on the phone. It is pomeriggio. Le quattro e dieci.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q04",
+      "chapterId": "la-casa-delle-finestre-05",
+      "type": "inference",
+      "question": "What happens after Mimmo is gone?",
+      "choices": [
+        "At nine a light appears anyway",
+        "The school stays dark all night",
+        "Mimmo comes back with a better camera"
+      ],
+      "correctChoice": 0,
+      "explanation": "At dusk the kids are gone. Then at nine there is a light. It is not a video.",
+      "difficulty": 2
+    }
+  ]
+}

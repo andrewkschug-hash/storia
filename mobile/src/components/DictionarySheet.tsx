@@ -1,9 +1,9 @@
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import type { DictionaryLookup } from '@/src/vocabulary/types';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
-import { useTheme } from '@/src/theme/useTheme';
+import { Radii, Spacing } from '@/src/theme/tokens';
 
 type Props = {
   lookup: DictionaryLookup | null;
@@ -32,7 +32,7 @@ export function DictionarySheet({
   saveLabel,
   closeLabel,
 }: Props) {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget, settings } = useAccessibility();
   const insets = useSafeAreaInsets();
 
   if (!lookup) return null;
@@ -42,7 +42,7 @@ export function DictionarySheet({
   const title = isSentence ? lookup.surface : lookup.surface.toUpperCase();
 
   return (
-    <Modal transparent animationType="fade" visible={!!lookup} onRequestClose={onClose}>
+    <Modal transparent animationType={settings.reducedMotion ? 'none' : 'fade'} visible={!!lookup} onRequestClose={onClose}>
       <Pressable style={styles.backdrop} onPress={onClose} accessibilityLabel="Close dictionary">
         <Pressable
           onPress={(e) => e.stopPropagation()}
@@ -56,15 +56,15 @@ export function DictionarySheet({
           ]}>
           <View style={[styles.handle, { backgroundColor: colors.border }]} />
 
-          <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+          <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
             {lookup.kind === 'phrase' ? 'Phrase' : lookup.kind === 'sentence' ? 'Sentence' : 'Word'}
           </Text>
 
           <View style={styles.titleRow}>
             <Text
               style={[
-                isSentence ? Typography.chapterTitle : Typography.heroTitle,
-                { color: colors.text, flex: 1 },
+                isSentence ? type.chapterTitle : type.heroTitle,
+                { color: colors.text, flex: 1, flexShrink: 1 },
               ]}>
               {title}
             </Text>
@@ -74,7 +74,7 @@ export function DictionarySheet({
                 accessibilityLabel="Play pronunciation"
                 onPress={onPronounce}
                 hitSlop={8}>
-                <Text style={[Typography.label, { color: colors.tint }]}>🔊</Text>
+                <Text style={[type.label, { color: colors.tint }]}>🔊</Text>
               </Pressable>
             ) : null}
           </View>
@@ -84,7 +84,7 @@ export function DictionarySheet({
               {!familiar ? (
                 <Text
                   style={[
-                    Typography.label,
+                    type.label,
                     { color: colors.textSecondary, marginTop: Spacing.xs },
                   ]}>
                   {lookup.lemmaItalian}
@@ -92,7 +92,7 @@ export function DictionarySheet({
               ) : null}
               <Text
                 style={[
-                  familiar ? Typography.body : Typography.label,
+                  familiar ? type.body : type.label,
                   {
                     color: colors.text,
                     marginTop: familiar ? Spacing.sm : Spacing.xs,
@@ -104,19 +104,19 @@ export function DictionarySheet({
           ) : lookup.kind === 'phrase' ? (
             <>
               <Text
-                style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
+                style={[type.body, { color: colors.text, marginTop: Spacing.sm }]}>
                 {lookup.naturalEnglish}
               </Text>
               <Text
                 style={[
-                  Typography.caption,
+                  type.caption,
                   { color: colors.textMuted, marginTop: Spacing.sm },
                 ]}>
                 Literally: “{lookup.literalEnglish}”
               </Text>
             </>
           ) : (
-            <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.body, { color: colors.text, marginTop: Spacing.sm }]}>
               {lookup.english}
             </Text>
           )}
@@ -124,7 +124,7 @@ export function DictionarySheet({
           {lookup.kind !== 'sentence' ? (
             <Text
               style={[
-                Typography.caption,
+                type.caption,
                 {
                   color: colors.textMuted,
                   marginTop: Spacing.lg,
@@ -150,8 +150,8 @@ export function DictionarySheet({
                 ]}>
                 <Text
                   style={[
-                    Typography.button,
-                    { color: saved ? colors.textSecondary : '#F7FAF9' },
+                    type.button,
+                    { color: saved ? colors.textSecondary : colors.onTint },
                   ]}>
                   {saveLabel ?? (saved ? 'Saved' : 'Save')}
                 </Text>
@@ -174,9 +174,9 @@ export function DictionarySheet({
               ]}>
               <Text
                 style={[
-                  Typography.button,
+                  type.button,
                   {
-                    color: lookup.kind === 'sentence' ? '#F7FAF9' : colors.textSecondary,
+                    color: lookup.kind === 'sentence' ? colors.onTint : colors.textSecondary,
                   },
                 ]}>
                 {lookup.kind === 'sentence' ? (closeLabel ?? 'Continue reading') : '✕'}
@@ -226,6 +226,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
+    minHeight: 48,
+    justifyContent: 'center',
   },
   closeBtn: {
     width: 48,

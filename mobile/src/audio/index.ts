@@ -4,13 +4,9 @@ import { getContentBundle } from '@/src/content';
 import { AudioService, createCatalog } from '@/src/audio/AudioService';
 import type { AudioAsset, VoiceRoster } from '@/src/audio/types';
 import { applyVoiceRoster, currentRoster } from '@/src/audio/voiceAssignments';
-import { selectProvider } from '@/src/audio/voices';
+import { normalizeRoster } from '@/src/audio/logicalVoices';
 
-const bundledRoster: VoiceRoster = {
-  activeProvider: selectProvider(voicesJson.activeProvider),
-  generationVersion: voicesJson.generationVersion,
-  characters: voicesJson.characters as VoiceRoster['characters'],
-};
+const bundledRoster = normalizeRoster(voicesJson);
 
 applyVoiceRoster(bundledRoster);
 
@@ -56,15 +52,24 @@ export {
 export {
   ASSIGNABLE_CHARACTERS,
   DEFAULT_SAMPLE,
+  LOCK_SAMPLE_CHAPTERS,
+  LOGICAL_VOICE_IDS,
   PROVIDER_LABEL,
   assignmentCaption,
   coreVoicesLocked,
+  sevenVoicesLocked,
   displayVoiceName,
   gatewayDownMessage,
   isAssigned,
   isPlaceholderVoiceId,
   voiceSubtitle,
 } from '@/src/audio/voiceDisplay';
+export {
+  allLogicalVoicesLocked,
+  assignProviderVoice,
+  normalizeRoster,
+  providerBinding,
+} from '@/src/audio/logicalVoices';
 export { SilentAudioPlayer } from '@/src/audio/playback';
 export { FakeTTSProvider, selectTTSProvider } from '@/src/audio/FakeTTSProvider';
 export { hasCachedAudioUrl, rememberAudioUrl } from '@/src/audio/localCache';

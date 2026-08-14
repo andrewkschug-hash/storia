@@ -1,0 +1,1090 @@
+{
+  "id": "la-casa-delle-finestre-13",
+  "storyId": "la-casa-delle-finestre",
+  "number": 13,
+  "title": "Loredana",
+  "titleIt": "Loredana",
+  "locationIds": [
+    "cucina-loredana",
+    "mansarda-irene"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "loredana"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-13",
+      "summary": "Loredana’s daughter was in the last class. She wants the school forgotten. Irene’s numbered windows hurt her. Loredana is not the night lamp.",
+      "characterIds": [
+        "irene-colombo",
+        "loredana"
+      ],
+      "locationIds": [
+        "cucina-loredana"
+      ],
+      "rememberedFacts": [
+        "Loredana’s daughter was in the last class",
+        "Loredana wants no more talk of the school",
+        "Irene’s numbered sketch hurts her",
+        "Loredana is not the night lamp"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La mattina Irene scende piano, con il quaderno sotto il braccio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "irene",
+            "scendere",
+            "piano",
+            "con",
+            "il",
+            "quaderno",
+            "sotto",
+            "il",
+            "braccio"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Non vuole parlare della luce. Non vuole parlare di Loredana sulle scale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "volere",
+            "parlare",
+            "della",
+            "luce",
+            "non",
+            "volere",
+            "parlare",
+            "di",
+            "loredana",
+            "sulle",
+            "scala"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Loredana è in cucina. C'è il caffè, e una tazza per Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "essere",
+            "in",
+            "cucina",
+            "ce",
+            "il",
+            "caffe",
+            "e",
+            "una",
+            "tazza",
+            "per",
+            "irene"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Si sieda. Due minuti.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "si",
+            "sedere",
+            "due",
+            "minuto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Irene si siede. Il quaderno resta sul tavolo, chiuso, ma visibile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "sedere",
+            "il",
+            "quaderno",
+            "restare",
+            "sul",
+            "tavolo",
+            "chiudere",
+            "ma",
+            "visibile"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Loredana non guarda il quaderno. Guarda la finestra della cucina, di qua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "non",
+            "guardare",
+            "il",
+            "quaderno",
+            "guardare",
+            "la",
+            "finestra",
+            "della",
+            "cucina",
+            "di",
+            "qua"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ieri sera non dormivo. Lei lo sa.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "sera",
+            "non",
+            "dormire",
+            "lei",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Irene non corregge. Beve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "correggere",
+            "bere"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Mi dispiace.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "dispiacere"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Loredana versa il caffè. Le mani tremano poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "versare",
+            "il",
+            "caffe",
+            "le",
+            "mano",
+            "tremare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Non è la vestaglia di ieri sera. È giorno. Però gli occhi sono gli stessi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "vestaglia",
+            "di",
+            "ieri",
+            "sera",
+            "essere",
+            "giorno",
+            "pero",
+            "gli",
+            "occhio",
+            "essere",
+            "gli",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Irene tiene le mani intorno alla tazza. Il quaderno pesa sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tenere",
+            "le",
+            "mano",
+            "intorno",
+            "alla",
+            "tazza",
+            "il",
+            "quaderno",
+            "pesare",
+            "sul",
+            "tavolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Mia figlia era nell'ultima classe.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "mio",
+            "figlia",
+            "essere",
+            "ultimo",
+            "classe"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Lo dice piano, come una data, non come un segreto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "dire",
+            "piano",
+            "come",
+            "una",
+            "data",
+            "non",
+            "come",
+            "un",
+            "segreto"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Andava a scuola di fronte. Tornava e parlava, parlava.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "a",
+            "scuola",
+            "di",
+            "fronte",
+            "tornare",
+            "e",
+            "parlare",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Parlava delle stanze, delle prof, delle finestre. Adesso no.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "parlare",
+            "delle",
+            "stanza",
+            "delle",
+            "prof",
+            "delle",
+            "finestra",
+            "adesso",
+            "no"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Non è morta. Vive altrove. Però quella scuola è finita.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "morto",
+            "vivere",
+            "altrove",
+            "pero",
+            "quello",
+            "scuola",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Adesso la scuola è chiusa. Lei non parla più di quelle stanze.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "la",
+            "scuola",
+            "essere",
+            "chiudere",
+            "lei",
+            "non",
+            "parlare",
+            "piu",
+            "di",
+            "quello",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Irene ascolta. Non chiede il nome. Non chiede dove abita adesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "non",
+            "chiedere",
+            "il",
+            "nome",
+            "non",
+            "chiedere",
+            "dove",
+            "abitare",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Voglio dimenticare quella scuola. Voglio che il paese dimentichi.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "dimenticare",
+            "quello",
+            "scuola",
+            "volere",
+            "che",
+            "il",
+            "paese",
+            "dimenticare"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Tutti dicono: è vuota. Io lo dico perché ho paura, e perché non voglio.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "dire",
+            "essere",
+            "vuoto",
+            "io",
+            "lo",
+            "dire",
+            "perche",
+            "avere",
+            "paura",
+            "e",
+            "perche",
+            "non",
+            "volere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Irene capisce una cosa nuova: vuota è anche una parola per non sentire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "capire",
+            "una",
+            "cosa",
+            "nuovo",
+            "vuoto",
+            "essere",
+            "anche",
+            "una",
+            "parola",
+            "per",
+            "non",
+            "sentire"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Non è la luce di là. Loredana era di qua, con il telefono. Due luci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "luce",
+            "di",
+            "la",
+            "loredana",
+            "essere",
+            "di",
+            "qua",
+            "con",
+            "il",
+            "telefono",
+            "due",
+            "luce"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Irene lo sa ancora. Non lo dice. Non serve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "lo",
+            "sapere",
+            "ancora",
+            "non",
+            "lo",
+            "dire",
+            "non",
+            "servire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s25",
+          "text": "Loredana prende il quaderno senza chiedere. Lo apre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "prendere",
+            "il",
+            "quaderno",
+            "senza",
+            "chiedere",
+            "lo",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Irene non ha fatto in tempo. Non voleva mostrare i numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "avere",
+            "fare",
+            "in",
+            "tempo",
+            "non",
+            "volere",
+            "mostrare",
+            "i",
+            "numero"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Sulla pagina c'è la griglia. Finestre con i numeri. Tre, quattro, cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "pagina",
+            "ce",
+            "la",
+            "griglia",
+            "finestra",
+            "con",
+            "i",
+            "numero",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "C'è anche: stanza due, di fronte. C'è ieri. C'è stasera niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "anche",
+            "stanza",
+            "due",
+            "di",
+            "fronte",
+            "ce",
+            "ieri",
+            "ce",
+            "stasera",
+            "niente"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Loredana legge i numeri ad alta voce, poi si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "leggere",
+            "i",
+            "numero",
+            "ad",
+            "alto",
+            "voce",
+            "poi",
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Ha messo i numeri sulle sue finestre.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "mettere",
+            "i",
+            "numero",
+            "sulle",
+            "suo",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Non è cattiveria. È un disegno. Però Loredana piange, senza rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "cattiveria",
+            "essere",
+            "un",
+            "disegno",
+            "pero",
+            "loredana",
+            "piangere",
+            "senza",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Irene chiude il quaderno. Lo mette via, sotto il braccio, di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "chiudere",
+            "il",
+            "quaderno",
+            "lo",
+            "mettere",
+            "via",
+            "sotto",
+            "il",
+            "braccio",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Mi dispiace. Non volevo.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "dispiacere",
+            "non",
+            "volere"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Loredana si asciuga gli occhi. Non alza la voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "si",
+            "asciugare",
+            "gli",
+            "occhio",
+            "non",
+            "alzare",
+            "la",
+            "voce"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Se ama questo paese, lasci stare le finestre.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "amare",
+            "questo",
+            "paese",
+            "lasciare",
+            "stare",
+            "le",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Irene non risponde. Non promette. Beve il caffè freddo, e sale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "rispondere",
+            "non",
+            "promettere",
+            "bere",
+            "il",
+            "caffe",
+            "freddo",
+            "e",
+            "salire"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "In mansarda apre il quaderno. Non scrive: Loredana aiuta. Non scrive: Loredana è la luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "mansarda",
+            "aprire",
+            "il",
+            "quaderno",
+            "non",
+            "scrivere",
+            "loredana",
+            "aiutare",
+            "non",
+            "scrivere",
+            "loredana",
+            "essere",
+            "la",
+            "luce"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Scrive: figlia, ultima classe. Vuole dimenticare. I numeri fanno male.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "figlia",
+            "ultimo",
+            "classe",
+            "volere",
+            "dimenticare",
+            "i",
+            "numero",
+            "fare",
+            "male"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Scrive anche: Loredana di qua. La luce di là. Ancora due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "anche",
+            "loredana",
+            "di",
+            "qua",
+            "la",
+            "luce",
+            "di",
+            "la",
+            "ancora",
+            "due"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Poi chiude. Dovrei lasciare le finestre. Però non promette a nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "chiudere",
+            "dovere",
+            "lasciare",
+            "le",
+            "finestra",
+            "pero",
+            "non",
+            "promettere",
+            "a",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Loredana resta giù. Non sale. Non guarda di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "restare",
+            "giu",
+            "non",
+            "salire",
+            "non",
+            "guardare",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene ha paura di farle male di nuovo. Ha anche paura di fermarsi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "avere",
+            "paura",
+            "di",
+            "fare",
+            "male",
+            "di",
+            "nuovo",
+            "avere",
+            "anche",
+            "paura",
+            "di",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Mi dispiace, ha detto. Non voglio, ha detto Loredana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mi",
+            "dispiacere",
+            "avere",
+            "dire",
+            "non",
+            "volere",
+            "avere",
+            "dire",
+            "loredana"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Due paure. Una casa. Una scuola chiusa. Irene va al lavoro con il quaderno chiuso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "paura",
+            "una",
+            "casa",
+            "una",
+            "scuola",
+            "chiudere",
+            "irene",
+            "andare",
+            "al",
+            "lavoro",
+            "con",
+            "il",
+            "quaderno",
+            "chiudere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s45",
+          "text": "Al comune non parla di Loredana. Non parla della figlia. Non parla delle finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "comune",
+            "non",
+            "parlare",
+            "di",
+            "loredana",
+            "non",
+            "parlare",
+            "della",
+            "figlia",
+            "non",
+            "parlare",
+            "delle",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Scansiona liste. Le mani fanno il lavoro. La testa no, del tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scansionare",
+            "lista",
+            "le",
+            "mano",
+            "fare",
+            "il",
+            "lavoro",
+            "la",
+            "testa",
+            "no",
+            "del",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Se ama questo paese, lasci stare le finestre: la frase resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "amare",
+            "questo",
+            "paese",
+            "lasciare",
+            "stare",
+            "le",
+            "finestra",
+            "la",
+            "frase",
+            "restare"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Irene non sa se ama questo paese. Sa che i numeri sono veri, e che Loredana ha pianto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "se",
+            "amare",
+            "questo",
+            "paese",
+            "sapere",
+            "che",
+            "i",
+            "numero",
+            "essere",
+            "vero",
+            "e",
+            "che",
+            "loredana",
+            "avere",
+            "piangere"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Sa anche che Loredana non è la lampada. Questo non cambia il pianto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "anche",
+            "che",
+            "loredana",
+            "non",
+            "essere",
+            "la",
+            "lampada",
+            "questo",
+            "non",
+            "cambiare",
+            "il",
+            "pianto"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "La sera sale senza mostrare il quaderno. La cucina è buia. Loredana non chiama.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "salire",
+            "senza",
+            "mostrare",
+            "il",
+            "quaderno",
+            "la",
+            "cucina",
+            "essere",
+            "buio",
+            "loredana",
+            "non",
+            "chiamare"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Irene non accende la lampada verso la scuola, non ancora. Ascolta le scale. Niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "accendere",
+            "la",
+            "lampada",
+            "verso",
+            "la",
+            "scuola",
+            "non",
+            "ancora",
+            "ascoltare",
+            "le",
+            "scala",
+            "niente"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Ho paura, ha detto Loredana. Non voglio. Irene tiene quelle frasi accanto ai numeri, non sopra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "paura",
+            "avere",
+            "dire",
+            "loredana",
+            "non",
+            "volere",
+            "irene",
+            "tenere",
+            "quello",
+            "frase",
+            "accanto",
+            "ai",
+            "numero",
+            "non",
+            "sopra"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch13_q01",
+      "chapterId": "la-casa-delle-finestre-13",
+      "type": "character",
+      "question": "Who was in the last class?",
+      "choices": [
+        "Loredana’s daughter",
+        "Alme",
+        "Quinto"
+      ],
+      "correctChoice": 0,
+      "explanation": "Loredana says her daughter was in the last class.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q02",
+      "chapterId": "la-casa-delle-finestre-13",
+      "type": "direct",
+      "question": "What does Loredana want?",
+      "choices": [
+        "No more talk of the school; she wants to forget",
+        "Irene to open the school",
+        "A meeting with Sara"
+      ],
+      "correctChoice": 0,
+      "explanation": "She wants to forget that school. She wants the town to forget.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q03",
+      "chapterId": "la-casa-delle-finestre-13",
+      "type": "event",
+      "question": "What hurts Loredana?",
+      "choices": [
+        "Irene’s numbered sketch of the windows",
+        "Mimmo’s video",
+        "Alme’s coffee"
+      ],
+      "correctChoice": 0,
+      "explanation": "She opens the notebook. You put numbers on her windows.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q04",
+      "chapterId": "la-casa-delle-finestre-13",
+      "type": "inference",
+      "question": "Is Loredana the night lamp in the school?",
+      "choices": [
+        "No. She was on this side, with a phone",
+        "Yes. She admitted it",
+        "The chapter does not say"
+      ],
+      "correctChoice": 0,
+      "explanation": "Two lights. Loredana was on this side. Empty is also a word for not feeling.",
+      "difficulty": 2
+    }
+  ]
+}

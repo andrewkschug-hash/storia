@@ -10,12 +10,14 @@
  *   node mobile/scripts/generate-a1-audio.js
  *   node mobile/scripts/generate-a1-audio.js --chapter=1
  *   node mobile/scripts/generate-a1-audio.js --from=1 --to=5
+ *   node mobile/scripts/generate-a1-audio.js --generate
  *
- * Skips clips whose content hash already exists and is approved.
- * Does not print provider Voice IDs.
+ * Default is a Google TTS dry-run / cost-guard preflight. No audio is generated
+ * unless --generate is passed AND the guard allows it.
  */
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 
 const root = path.join(__dirname, '..', '..');
 const mobileRoot = path.join(__dirname, '..');
@@ -34,15 +36,15 @@ function resolveSpeakerId(speakerId) {
   return speakerId;
 }
 
-function isPlaceholder(voiceId) {
-  return !voiceId || String(voiceId).startsWith('lab-');
-}
+const { isPlaceholder, resolveSpeakerVoice } = require('./voice-roster-common');
 
 function parseArgs(argv) {
   let from = 1;
   let to = 20;
+  let generate = false;
   for (const arg of argv) {
-    if (arg.startsWith('--chapter=')) {
+    if (arg === '--generate') generate = true;
+    else if (arg.startsWith('--chapter=')) {
       const n = Number(arg.slice('--chapter='.length));
       from = n;
       to = n;
@@ -52,7 +54,17 @@ function parseArgs(argv) {
       to = Number(arg.slice('--to='.length));
     }
   }
-  return { from: Math.max(1, from), to: Math.min(20, to) };
+  return { from: Math.max(1, from), to: Math.min(20, to), generate };
+}
+
+function runGoogleCostGuard(from, to) {
+  const gatewayRoot = path.join(root, 'services', 'tts-gateway');
+  const result = spawnSync(
+    'npx',
+    ['tsx', 'scripts/google-tts-preflight.ts', '--target=a1', `--from=${from}`, `--to=${to}`, '--dry-run'],
+    { stdio: 'inherit', cwd: gatewayRoot, shell: true },
+  );
+  if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
 async function gatewayJson(pathname, init) {
@@ -69,8 +81,14 @@ async function gatewayJson(pathname, init) {
 }
 
 async function main() {
-  const { from, to } = parseArgs(process.argv.slice(2));
+  const { from, to, generate } = parseArgs(process.argv.slice(2));
   console.log(`A1 AUDIO GENERATION — chapters ${from}–${to}\n`);
+  runGoogleCostGuard(from, to);
+  if (!generate) {
+    console.log('\nDefault is dry-run. No Google TTS requests were made. No audio files generated.');
+    console.log('To generate later (guarded): node mobile/scripts/generate-a1-audio.js --from=' + from + ' --to=' + to + ' --generate');
+    process.exit(0);
+  }
 
   const status = await gatewayJson('/v1/tts/status');
   if (!status.ok || !status.providers?.[status.provider]?.configured) {
@@ -79,10 +97,11 @@ async function main() {
   console.log(`Provider: ${status.provider}`);
 
   const assign = await gatewayJson('/v1/tts/assignments');
-  const roster = assign.roster?.characters ?? loadJson(voicesPath).characters;
+  const roster = assign.roster ?? loadJson(voicesPath);
   const voiceNames = {};
-  for (const [id, row] of Object.entries(roster)) {
-    if (row?.voiceName) voiceNames[id] = row.voiceName;
+  for (const id of Object.keys(roster.logicalVoices ?? roster.characters ?? {})) {
+    const voice = resolveSpeakerVoice(roster, id);
+    if (voice?.voiceName) voiceNames[id] = voice.voiceName;
   }
   console.log(
     'Voice assignments:',
@@ -107,8 +126,8 @@ async function main() {
 
     for (const sentence of sentences) {
       const speakerId = resolveSpeakerId(sentence.speakerId);
-      const voice = roster[speakerId];
-      if (!voice?.voiceId || isPlaceholder(voice.voiceId)) {
+      const voice = resolveSpeakerVoice(roster, speakerId);
+      if (!voice) {
         throw new Error(`No production voice assigned for ${speakerId}`);
       }
       payloads.push({

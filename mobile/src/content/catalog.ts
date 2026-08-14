@@ -15,6 +15,8 @@ import {
 export const LUCA_STORY_ID = 'luca-a-roma';
 export const PRE_ROME_ARC_ID = 'luca-prima-di-roma';
 export const ELENA_STORY_ID = 'elena-torna-a-casa';
+export const CASA_STORY_ID = 'la-casa-delle-finestre';
+export const A2_PLUS_GENRE_ARC_ID = 'a2-plus-genre-paths';
 
 let cached: StoryCatalog | null = null;
 

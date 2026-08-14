@@ -1,0 +1,1144 @@
+{
+  "id": "la-casa-delle-finestre-14",
+  "storyId": "la-casa-delle-finestre",
+  "number": 14,
+  "title": "The real code",
+  "titleIt": "Il codice vero",
+  "locationIds": [
+    "mansarda-irene",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-14",
+      "summary": "The facing window flashes three slow times. Irene answers with her lamp. Two slow flashes answer. Then dark. She writes: it is not only a timetable.",
+      "characterIds": [
+        "irene-colombo"
+      ],
+      "locationIds": [
+        "mansarda-irene",
+        "scuola-media"
+      ],
+      "rememberedFacts": [
+        "The facing window flashes three slow times",
+        "Irene answers with her lamp",
+        "Two slow flashes answer, then dark",
+        "She writes that it is not only a timetable"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Di sera Irene pensa alle parole di Loredana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "sera",
+            "irene",
+            "pensare",
+            "alle",
+            "parola",
+            "di",
+            "loredana"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Se ama questo paese, lasci stare le finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "amare",
+            "questo",
+            "paese",
+            "lasciare",
+            "stare",
+            "le",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Dovrei lasciare. Non dovrei guardare. Però ieri c'era una pausa, e una sera senza luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "lasciare",
+            "non",
+            "dovere",
+            "guardare",
+            "pero",
+            "ieri",
+            "ce",
+            "una",
+            "pausa",
+            "e",
+            "una",
+            "sera",
+            "senza",
+            "luce"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il quaderno è chiuso. Lei lo apre lo stesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "quaderno",
+            "essere",
+            "chiudere",
+            "lei",
+            "lo",
+            "aprire",
+            "lo",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Si mette alla finestra, di proposito, di fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "mettere",
+            "alla",
+            "finestra",
+            "di",
+            "proposito",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ha spento la luce della stanza. Resta una lampada piccola sul tavolo, spenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "spegnere",
+            "la",
+            "luce",
+            "della",
+            "stanza",
+            "restare",
+            "una",
+            "lampada",
+            "piccolo",
+            "sul",
+            "tavolo",
+            "spegnere"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Aspetta le nove. Fuori è buio. La scuola sembra vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "le",
+            "nove",
+            "fuori",
+            "essere",
+            "buio",
+            "la",
+            "scuola",
+            "sembrare",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Non esce. Non scende. Guarda solo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "uscire",
+            "non",
+            "scendere",
+            "guardare",
+            "solo"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Conta i minuti. Pensa alla figlia di Loredana, all'ultima classe, ai numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "i",
+            "minuto",
+            "pensare",
+            "alla",
+            "figlia",
+            "di",
+            "loredana",
+            "ultimo",
+            "classe",
+            "ai",
+            "numero"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Se qualcuno è di là, non è Loredana. Questo lo ha già. Non è abbastanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "qualcuno",
+            "essere",
+            "di",
+            "la",
+            "non",
+            "essere",
+            "loredana",
+            "questo",
+            "lo",
+            "avere",
+            "gia",
+            "non",
+            "essere",
+            "abbastanza"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Poi c'è una luce, alla finestra tre. Di fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "ce",
+            "una",
+            "luce",
+            "alla",
+            "finestra",
+            "tre",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Non va a destra. Non va al secondo piano. Resta lì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "andare",
+            "a",
+            "destra",
+            "non",
+            "andare",
+            "al",
+            "secondo",
+            "piano",
+            "restare",
+            "li"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Si spegne. Poi si accende. Poi si spegne. Poi di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "spegnere",
+            "poi",
+            "si",
+            "accendere",
+            "poi",
+            "si",
+            "spegnere",
+            "poi",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Tre volte. Lente. Lunghe. Non è l'orario. Non è quattro, cinque, tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "volta",
+            "lento",
+            "lungo",
+            "non",
+            "essere",
+            "orario",
+            "non",
+            "essere",
+            "quattro",
+            "cinque",
+            "tre"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non è Morse. Non è un alfabeto. È solo lento, e poi buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "morse",
+            "non",
+            "essere",
+            "un",
+            "alfabeto",
+            "essere",
+            "solo",
+            "lento",
+            "e",
+            "poi",
+            "buio"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Irene conta: una, due, tre. Poi buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "contare",
+            "una",
+            "due",
+            "tre",
+            "poi",
+            "buio"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Qualcuno è lì. O è solo una luce che si muove male.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno",
+            "essere",
+            "li",
+            "o",
+            "essere",
+            "solo",
+            "una",
+            "luce",
+            "che",
+            "si",
+            "muovere",
+            "male"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Dovrei non rispondere. Loredana ha pianto. Però la pausa non era sul foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "non",
+            "rispondere",
+            "loredana",
+            "avere",
+            "piangere",
+            "pero",
+            "la",
+            "pausa",
+            "non",
+            "essere",
+            "sul",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Irene prende la lampada del tavolo. Le mani tremano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "prendere",
+            "la",
+            "lampada",
+            "del",
+            "tavolo",
+            "le",
+            "mano",
+            "tremare"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Non dovrei. Però accende. Una volta, lenta. Spegnere. Di nuovo, lenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dovere",
+            "pero",
+            "accendere",
+            "una",
+            "volta",
+            "lento",
+            "spegnere",
+            "di",
+            "nuovo",
+            "lento"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Due volte. Poi la lascia spenta. Non tre. Non un gioco lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "volta",
+            "poi",
+            "la",
+            "lasciare",
+            "spegnere",
+            "non",
+            "tre",
+            "non",
+            "un",
+            "gioco",
+            "lungo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s22",
+          "text": "Aspetta. Il cuore va in fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "il",
+            "cuore",
+            "andare",
+            "in",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Di fronte, la luce risponde. Una volta, lenta. Poi un'altra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "fronte",
+            "la",
+            "luce",
+            "rispondere",
+            "una",
+            "volta",
+            "lento",
+            "poi",
+            "altro"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Due. Poi buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "poi",
+            "buio"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Non tre. Non quattro. Due, come lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "tre",
+            "non",
+            "quattro",
+            "due",
+            "come",
+            "lei"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Irene resta ferma. Non accende di nuovo. Non bussa sul vetro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "fermo",
+            "non",
+            "accendere",
+            "di",
+            "nuovo",
+            "non",
+            "bussare",
+            "sul",
+            "vetro"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Nessuno chiama. Nessuno parla. La finestra tre è scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "chiamare",
+            "nessuno",
+            "parlare",
+            "la",
+            "finestra",
+            "tre",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Irene aspetta cinque minuti. La luce non torna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "cinque",
+            "minuto",
+            "la",
+            "luce",
+            "non",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Non esce. Non va al cancello. Non chiama i carabinieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "uscire",
+            "non",
+            "andare",
+            "al",
+            "cancello",
+            "non",
+            "chiamare",
+            "i",
+            "carabinieri"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Apre il quaderno. Scrive: tre lente, di fronte. Io due. Poi due. Poi buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "il",
+            "quaderno",
+            "scrivere",
+            "tre",
+            "lento",
+            "di",
+            "fronte",
+            "io",
+            "due",
+            "poi",
+            "due",
+            "poi",
+            "buio"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Poi scrive: non è solo un orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "scrivere",
+            "non",
+            "essere",
+            "solo",
+            "un",
+            "orario"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Non scrive un nome. Non scrive Sara. Non scrive qualcuno mi parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "un",
+            "nome",
+            "non",
+            "scrivere",
+            "sara",
+            "non",
+            "scrivere",
+            "qualcuno",
+            "mi",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sa solo questo: ha risposto, e qualcuno ha risposto a lei. O sembra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "solo",
+            "questo",
+            "avere",
+            "rispondere",
+            "e",
+            "qualcuno",
+            "avere",
+            "rispondere",
+            "a",
+            "lei",
+            "o",
+            "sembrare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Non sa chi. Non sale in strada. Non bussa alla porta di Loredana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "chi",
+            "non",
+            "salire",
+            "in",
+            "strada",
+            "non",
+            "bussare",
+            "alla",
+            "porta",
+            "di",
+            "loredana"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Dovrei dirle della luce. Non dovrei, dopo i numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "dire",
+            "della",
+            "luce",
+            "non",
+            "dovere",
+            "dopo",
+            "i",
+            "numero"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Sceglie il silenzio, per stasera. Il quaderno tiene i fatti. Lei no, a voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scegliere",
+            "il",
+            "silenzio",
+            "per",
+            "stasera",
+            "il",
+            "quaderno",
+            "tenere",
+            "i",
+            "fatto",
+            "lei",
+            "no",
+            "a",
+            "voce"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Tre lente da là. Due da qua. Due da là. Poi niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "lento",
+            "da",
+            "la",
+            "due",
+            "da",
+            "qua",
+            "due",
+            "da",
+            "la",
+            "poi",
+            "niente"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "È semplice. È umano. Non è un orario, e non è ancora un nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "semplice",
+            "essere",
+            "umano",
+            "non",
+            "essere",
+            "un",
+            "orario",
+            "e",
+            "non",
+            "essere",
+            "ancora",
+            "un",
+            "nome"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Irene spegne la lampada del tavolo. Si sdraia. Non dorme subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "spegnere",
+            "la",
+            "lampada",
+            "del",
+            "tavolo",
+            "si",
+            "sdraiare",
+            "non",
+            "dormire",
+            "subito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s40",
+          "text": "Prima di accendere ha contato fino a dieci. Poi fino a venti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "accendere",
+            "avere",
+            "contare",
+            "fino",
+            "a",
+            "dieci",
+            "poi",
+            "fino",
+            "a",
+            "venti"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Dovrei spegnere e andare a letto. Non dovrei fare la luce verso la scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "spegnere",
+            "e",
+            "andare",
+            "a",
+            "letto",
+            "non",
+            "dovere",
+            "fare",
+            "la",
+            "luce",
+            "verso",
+            "la",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Però ha fatto due volte, lente, e ha ricevuto due volte, lente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "avere",
+            "fare",
+            "due",
+            "volta",
+            "lento",
+            "e",
+            "avere",
+            "ricevere",
+            "due",
+            "volta",
+            "lento"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Non è un alfabeto. È un sì piccolo, e poi basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "alfabeto",
+            "essere",
+            "un",
+            "si_yes",
+            "piccolo",
+            "e",
+            "poi",
+            "basta"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Qualcuno di là ha visto la sua lampada. Questo è un fatto nuovo. Non è un nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno",
+            "di",
+            "la",
+            "avere",
+            "vedere",
+            "la",
+            "suo",
+            "lampada",
+            "questo",
+            "essere",
+            "un",
+            "fatto",
+            "nuovo",
+            "non",
+            "essere",
+            "un",
+            "nome"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Domani c'è il comune. Domani c'è Loredana giù. Stasera c'è solo questo, e le mani che tremano ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "ce",
+            "il",
+            "comune",
+            "domani",
+            "ce",
+            "loredana",
+            "giu",
+            "stasera",
+            "ce",
+            "solo",
+            "questo",
+            "e",
+            "le",
+            "mano",
+            "che",
+            "tremare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Non è Sara sul foglio. Non è un piano. È una luce che ha risposto a una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "sara",
+            "sul",
+            "foglio",
+            "non",
+            "essere",
+            "un",
+            "piano",
+            "essere",
+            "una",
+            "luce",
+            "che",
+            "avere",
+            "rispondere",
+            "a",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Irene scrive di nuovo, più piano: non è solo un orario. Poi chiude. Non esce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "di",
+            "nuovo",
+            "piu",
+            "piano",
+            "non",
+            "essere",
+            "solo",
+            "un",
+            "orario",
+            "poi",
+            "chiudere",
+            "non",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "La finestra tre resta scura. La lampada del tavolo resta spenta. Due buie, di qua e di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "finestra",
+            "tre",
+            "restare",
+            "scuro",
+            "la",
+            "lampada",
+            "del",
+            "tavolo",
+            "restare",
+            "spegnere",
+            "due",
+            "buio",
+            "di",
+            "qua",
+            "e",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Ha risposto contro il senso, e contro Loredana. Lo sa. Non cancella la riga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "rispondere",
+            "contro",
+            "il",
+            "senso",
+            "e",
+            "contro",
+            "loredana",
+            "lo",
+            "sapere",
+            "non",
+            "cancellare",
+            "la",
+            "riga"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Non va al cancello. Non è un codice vero con lettere. È tre, poi due, poi buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "andare",
+            "al",
+            "cancello",
+            "non",
+            "essere",
+            "un",
+            "codice",
+            "vero",
+            "con",
+            "lettera",
+            "essere",
+            "tre",
+            "poi",
+            "due",
+            "poi",
+            "buio"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Dovrei. Non dovrei. Però l'ha fatto. Questo resta, senza nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "non",
+            "dovere",
+            "pero",
+            "avere",
+            "fare",
+            "questo",
+            "restare",
+            "senza",
+            "nome"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Non chiama nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "chiamare",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Se Loredana sente, fa male. Se nessuno sente, resta questo fatto, goffo, umano, chiuso nella stanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "loredana",
+            "sentire",
+            "fare",
+            "male",
+            "se",
+            "nessuno",
+            "sentire",
+            "restare",
+            "questo",
+            "fatto",
+            "semplice",
+            "umano",
+            "chiudere",
+            "nella",
+            "stanza"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch14_q01",
+      "chapterId": "la-casa-delle-finestre-14",
+      "type": "event",
+      "question": "What does the facing window do?",
+      "choices": [
+        "It flashes three slow times",
+        "It follows Monday’s timetable",
+        "It stays dark all night"
+      ],
+      "correctChoice": 0,
+      "explanation": "Three times. Slow. Long. At window three, opposite.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q02",
+      "chapterId": "la-casa-delle-finestre-14",
+      "type": "direct",
+      "question": "What does Irene do?",
+      "choices": [
+        "She answers with her lamp, two slow times",
+        "She runs to the gate",
+        "She calls the Carabinieri"
+      ],
+      "correctChoice": 0,
+      "explanation": "She should not. But she turns the table lamp on twice, slow.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q03",
+      "chapterId": "la-casa-delle-finestre-14",
+      "type": "event",
+      "question": "What answers her?",
+      "choices": [
+        "Two slow flashes, then dark",
+        "A knock on the door",
+        "A note on the glass"
+      ],
+      "correctChoice": 0,
+      "explanation": "Opposite, the light answers twice, like her. Then dark.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q04",
+      "chapterId": "la-casa-delle-finestre-14",
+      "type": "inference",
+      "question": "What does Irene write?",
+      "choices": [
+        "That it is not only a timetable",
+        "Sara’s name",
+        "A Morse alphabet"
+      ],
+      "correctChoice": 0,
+      "explanation": "She writes: it is not only a timetable. She does not write a name.",
+      "difficulty": 2
+    }
+  ]
+}

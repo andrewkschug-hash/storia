@@ -57,11 +57,17 @@ import s05c04 from '../../content/stories/luca-prima-di-roma-05/chapters/chapter
 import s05c05 from '../../content/stories/luca-prima-di-roma-05/chapters/chapter-05.json';
 import s05c06 from '../../content/stories/luca-prima-di-roma-05/chapters/chapter-06.json';
 
+import { CASA_DELLE_FINESTRE_SOURCE } from '@/src/content/casaFinestreSources';
+
 export type RegisteredStorySource = {
   storyPath: string;
   manifestJson: unknown;
   chapterJsonByFile: Record<string, unknown>;
   translationsJson?: unknown;
+  arcsJson?: unknown;
+  storyLocalCharactersJson?: unknown;
+  storyLocalLocationsJson?: unknown;
+  lexiconAdditionsJson?: unknown;
 };
 
 const PRE_ROME_SOURCES: Record<string, RegisteredStorySource> = {
@@ -137,6 +143,7 @@ const PRE_ROME_SOURCES: Record<string, RegisteredStorySource> = {
 /** Available non-Luca story sources. Grow this map; do not assume a fixed A1 count. */
 export const REGISTERED_AVAILABLE_STORY_SOURCES: Record<string, RegisteredStorySource> = {
   ...PRE_ROME_SOURCES,
+  'la-casa-delle-finestre': CASA_DELLE_FINESTRE_SOURCE,
 };
 
 export function loadRegisteredStoryBundle(
@@ -152,7 +159,11 @@ export function loadRegisteredStoryBundle(
     manifestJson: source.manifestJson,
     chapterJsonByFile: source.chapterJsonByFile,
     translationsJson: source.translationsJson,
+    arcsJson: source.arcsJson,
     storyPath: source.storyPath,
     narrativeArc,
+    storyLocalCharactersJson: source.storyLocalCharactersJson,
+    storyLocalLocationsJson: source.storyLocalLocationsJson,
+    lexiconAdditionsJson: source.lexiconAdditionsJson,
   });
 }

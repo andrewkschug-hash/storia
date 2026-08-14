@@ -1,0 +1,1092 @@
+{
+  "id": "la-casa-delle-finestre-12",
+  "storyId": "la-casa-delle-finestre",
+  "number": 12,
+  "title": "The second floor",
+  "titleIt": "Il secondo piano",
+  "locationIds": [
+    "via-della-scuola",
+    "scuola-media",
+    "mansarda-irene"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "loredana"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-12",
+      "summary": "From the street Irene sees the lamp on the second floor, not at the facing window. A second light on her stairs is Loredana. Two buildings, two lights. She does not go in.",
+      "characterIds": [
+        "irene-colombo",
+        "loredana"
+      ],
+      "locationIds": [
+        "via-della-scuola",
+        "mansarda-irene"
+      ],
+      "rememberedFacts": [
+        "From the street she sees more than from the attic",
+        "The lamp is on the second floor, perhaps the teachers’ room, not window three",
+        "A light on Irene’s stairs is Loredana, who cannot sleep",
+        "Not every light is the lamp in the school"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Di sera Irene non sale subito in mansarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "sera",
+            "irene",
+            "non",
+            "salire",
+            "subito",
+            "in",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Dalla mansarda vede solo la griglia di fronte: finestra tre, stanza due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dalla",
+            "mansarda",
+            "vedere",
+            "solo",
+            "la",
+            "griglia",
+            "di",
+            "fronte",
+            "finestra",
+            "tre",
+            "stanza",
+            "due"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Stasera vuole vedere altro. Resta in strada, di qua, davanti alla scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stasera",
+            "volere",
+            "vedere",
+            "altro",
+            "restare",
+            "in",
+            "strada",
+            "di",
+            "qua",
+            "davanti",
+            "alla",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ha il quaderno. Ha il disegno della griglia. Lo tiene basso, sotto la luce della strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "il",
+            "quaderno",
+            "avere",
+            "il",
+            "disegno",
+            "della",
+            "griglia",
+            "lo",
+            "tenere",
+            "basso",
+            "sotto",
+            "la",
+            "luce",
+            "della",
+            "strada"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Mette il disegno accanto al palazzo. I numeri e le finestre devono coincidere anche di qua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mettere",
+            "il",
+            "disegno",
+            "accanto",
+            "al",
+            "palazzo",
+            "i",
+            "numero",
+            "e",
+            "le",
+            "finestra",
+            "dovere",
+            "coincidere",
+            "anche",
+            "di",
+            "qua"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Da qua la griglia è più larga. Dalla mansarda si vede solo un pezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "da",
+            "qua",
+            "la",
+            "griglia",
+            "essere",
+            "piu",
+            "largo",
+            "dalla",
+            "mansarda",
+            "si",
+            "vedere",
+            "solo",
+            "un",
+            "pezzo"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Irene sposta il foglio. Cerca la tre. La trova, di fronte a casa sua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "spostare",
+            "il",
+            "foglio",
+            "cercare",
+            "la",
+            "tre",
+            "la",
+            "trovare",
+            "di",
+            "fronte",
+            "a",
+            "casa",
+            "suo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Non prova il cancello. Non entra. Sta di qua. La scuola è di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "provare",
+            "il",
+            "cancello",
+            "non",
+            "entrare",
+            "stare",
+            "di",
+            "qua",
+            "la",
+            "scuola",
+            "essere",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Conta i piani: piano terra, primo, secondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "i",
+            "piano",
+            "piano",
+            "terra",
+            "primo",
+            "secondo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Conta anche le finestre del secondo piano, da sinistra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "anche",
+            "le",
+            "finestra",
+            "del",
+            "secondo",
+            "piano",
+            "da",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Tre è di fronte a lei, a casa. Quattro e cinque sono più in là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "essere",
+            "di",
+            "fronte",
+            "a",
+            "lei",
+            "a",
+            "casa",
+            "quattro",
+            "e",
+            "cinque",
+            "essere",
+            "piu",
+            "in",
+            "la"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La luce di stasera non è sulla tre. È oltre, verso destra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "di",
+            "stasera",
+            "non",
+            "essere",
+            "sulla",
+            "tre",
+            "essere",
+            "oltre",
+            "verso",
+            "destra"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Sul disegno, al secondo piano a destra, c'è la stanza delle prof, o così sembra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "disegno",
+            "al",
+            "secondo",
+            "piano",
+            "a",
+            "destra",
+            "ce",
+            "la",
+            "stanza",
+            "delle",
+            "prof",
+            "o",
+            "cosi",
+            "sembrare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Finestra tre è più a sinistra. Di fronte alla mansarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "finestra",
+            "tre",
+            "essere",
+            "piu",
+            "a",
+            "sinistra",
+            "di",
+            "fronte",
+            "alla",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Alle nove c'è una luce, al secondo piano, a destra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alle",
+            "nove",
+            "ce",
+            "una",
+            "luce",
+            "al",
+            "secondo",
+            "piano",
+            "a",
+            "destra"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Non è finestra tre. Non è la pausa di ieri. È un'altra stanza, di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "finestra",
+            "tre",
+            "non",
+            "essere",
+            "la",
+            "pausa",
+            "di",
+            "ieri",
+            "essere",
+            "altro",
+            "stanza",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Quindi la luce non resta solo dove Irene può vederla da casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "la",
+            "luce",
+            "non",
+            "restare",
+            "solo",
+            "dove",
+            "irene",
+            "potere",
+            "vedere",
+            "da",
+            "casa"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Irene scrive: secondo piano, stanza delle prof, forse. Non finestra tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "secondo",
+            "piano",
+            "stanza",
+            "delle",
+            "prof",
+            "forse",
+            "non",
+            "finestra",
+            "tre"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Non sale. Non chiama. Guarda solo, di qua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "salire",
+            "non",
+            "chiamare",
+            "guardare",
+            "solo",
+            "di",
+            "qua"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Dalla mansarda, ieri, la luce era alla tre, di fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dalla",
+            "mansarda",
+            "ieri",
+            "la",
+            "luce",
+            "essere",
+            "alla",
+            "tre",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Dalla strada, stasera, la luce è al secondo piano, altrove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dalla",
+            "strada",
+            "stasera",
+            "la",
+            "luce",
+            "essere",
+            "al",
+            "secondo",
+            "piano",
+            "altrove"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Due punti di vista. Due stanze. La persona, se c'è, si muove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "punto",
+            "di",
+            "vista",
+            "due",
+            "stanza",
+            "la",
+            "persona",
+            "se",
+            "ce",
+            "si",
+            "muovere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s23",
+          "text": "Poi una seconda luce si muove, dietro di lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "una",
+            "secondo",
+            "luce",
+            "si",
+            "muovere",
+            "dietro",
+            "di",
+            "lei"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Per un momento pensa: risponde. Qualcuno viene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "un",
+            "momento",
+            "pensare",
+            "rispondere",
+            "qualcuno",
+            "venire"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Poi capisce. Non è la scuola. È la sua casa, sulle scale, di qua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "capire",
+            "non",
+            "essere",
+            "la",
+            "scuola",
+            "essere",
+            "la",
+            "suo",
+            "casa",
+            "sulle",
+            "scala",
+            "di",
+            "qua"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Irene si gira. Il cuore va in fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "girare",
+            "il",
+            "cuore",
+            "andare",
+            "in",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Qualcuno scende, di qua, con una luce piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno",
+            "scendere",
+            "di",
+            "qua",
+            "con",
+            "una",
+            "luce",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Non è una torcia da campeggio. È un telefono acceso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "torcia",
+            "da",
+            "campeggio",
+            "essere",
+            "un",
+            "telefono",
+            "accendere"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Loredana è in vestaglia. Ha i capelli in disordine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "essere",
+            "in",
+            "vestaglia",
+            "avere",
+            "i",
+            "capello",
+            "in",
+            "disordine"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Irene.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "irene"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Torna tardi.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "tornare",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Lavoro, dice Irene. Non dice: la scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lavoro",
+            "dire",
+            "irene",
+            "non",
+            "dire",
+            "la",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Scusi. Non ho sentito. Guardavo di là.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusare",
+            "non",
+            "avere",
+            "sentire",
+            "guardare",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Loredana abbassa il telefono. Non guarda la scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "abbassare",
+            "il",
+            "telefono",
+            "non",
+            "guardare",
+            "la",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Controllo la strada. Non dormo.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "controllare",
+            "la",
+            "strada",
+            "non",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "La scuola…",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Irene aspetta. Dovrei dire della luce, pensa. Non dice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "dovere",
+            "dire",
+            "della",
+            "luce",
+            "pensare",
+            "non",
+            "dire"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Non finisce la frase. Non dice vuota. Non dice piena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "finire",
+            "la",
+            "frase",
+            "non",
+            "dire",
+            "vuoto",
+            "non",
+            "dire",
+            "pieno"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Irene guarda di là. La luce della scuola, al secondo piano, c'è ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "di",
+            "la",
+            "la",
+            "luce",
+            "della",
+            "scuola",
+            "al",
+            "secondo",
+            "piano",
+            "ce",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Loredana è di qua, sulle scale. La luce di là resta accesa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "essere",
+            "di",
+            "qua",
+            "sulle",
+            "scala",
+            "la",
+            "luce",
+            "di",
+            "la",
+            "restare",
+            "accendere"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Quindi Loredana non è quella luce. Sono due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "loredana",
+            "non",
+            "essere",
+            "quello",
+            "luce",
+            "essere",
+            "due"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Loredana non la vede, o non vuole. Guarda Irene, poi le scale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "non",
+            "la",
+            "vedere",
+            "o",
+            "non",
+            "volere",
+            "guardare",
+            "irene",
+            "poi",
+            "le",
+            "scala"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Buonanotte, dice piano, e sale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "buonanotte",
+            "dire",
+            "piano",
+            "e",
+            "salire"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Irene resta di qua. Due luci. Due case. Non è la stessa cosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "di",
+            "qua",
+            "due",
+            "luce",
+            "due",
+            "casa",
+            "non",
+            "essere",
+            "la",
+            "stesso",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Scrive: luce scuola di là. Loredana di qua, sulle scale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "luce",
+            "scuola",
+            "di",
+            "la",
+            "loredana",
+            "di",
+            "qua",
+            "sulle",
+            "scala"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Poi sale anche lei. Non entra a scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "salire",
+            "anche",
+            "lei",
+            "non",
+            "entrare",
+            "a",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "In mansarda apre il quaderno. Non scrive: Loredana aiuta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "mansarda",
+            "aprire",
+            "il",
+            "quaderno",
+            "non",
+            "scrivere",
+            "loredana",
+            "aiutare"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Scrive solo dove sono le luci. Di qua. Di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "solo",
+            "dove",
+            "essere",
+            "le",
+            "luce",
+            "di",
+            "qua",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Dalla mansarda, dopo, guarda di nuovo. Finestra tre è scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dalla",
+            "mansarda",
+            "dopo",
+            "guardare",
+            "di",
+            "nuovo",
+            "finestra",
+            "tre",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "La luce del secondo piano, a destra, da qui si vede poco, o niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "del",
+            "secondo",
+            "piano",
+            "a",
+            "destra",
+            "da",
+            "qui",
+            "si",
+            "vedere",
+            "poco",
+            "o",
+            "niente"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Quindi la strada serviva. La mansarda non basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "la",
+            "strada",
+            "servire",
+            "la",
+            "mansarda",
+            "non",
+            "bastare"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Domani, se c'è di nuovo una luce, sa dove stare: di qua, in strada, o di fronte, su.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "se",
+            "ce",
+            "di",
+            "nuovo",
+            "una",
+            "luce",
+            "sapere",
+            "dove",
+            "stare",
+            "di",
+            "qua",
+            "in",
+            "strada",
+            "o",
+            "di",
+            "fronte",
+            "su"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Non entra. Non stasera. Ha visto abbastanza da qua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "entrare",
+            "non",
+            "stasera",
+            "avere",
+            "vedere",
+            "abbastanza",
+            "da",
+            "qua"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Smette di guardare, per ora. La scuola resta di là, con la sua luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "smettere",
+            "di",
+            "guardare",
+            "per",
+            "ora",
+            "la",
+            "scuola",
+            "restare",
+            "di",
+            "la",
+            "con",
+            "la",
+            "suo",
+            "luce"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch12_q01",
+      "chapterId": "la-casa-delle-finestre-12",
+      "type": "direct",
+      "question": "Why does Irene watch from the street?",
+      "choices": [
+        "From the attic she only sees the facing windows",
+        "She has Quinto’s key",
+        "Loredana told her to go in"
+      ],
+      "correctChoice": 0,
+      "explanation": "From the attic she only sees the facing grid. Tonight she wants to see more.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch12_q02",
+      "chapterId": "la-casa-delle-finestre-12",
+      "type": "event",
+      "question": "Where is the lamp in the school tonight?",
+      "choices": [
+        "On the second floor to the right, not at window three",
+        "In Irene’s attic",
+        "In the courtyard"
+      ],
+      "correctChoice": 0,
+      "explanation": "At nine there is a light on the second floor, to the right. Not yesterday’s pause.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch12_q03",
+      "chapterId": "la-casa-delle-finestre-12",
+      "type": "character",
+      "question": "Who is the light on Irene’s stairs?",
+      "choices": [
+        "Loredana, who cannot sleep",
+        "Sara Neri with a camping lamp",
+        "Mimmo with a video"
+      ],
+      "correctChoice": 0,
+      "explanation": "It is a phone, not a camping torch. Loredana is in a dressing gown.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch12_q04",
+      "chapterId": "la-casa-delle-finestre-12",
+      "type": "inference",
+      "question": "What does Irene understand about the two lights?",
+      "choices": [
+        "They belong to two buildings; not every light is the school lamp",
+        "Loredana works with the person in the school",
+        "She should enter tonight"
+      ],
+      "correctChoice": 0,
+      "explanation": "Two lights. Two houses. School over there, Loredana on this side.",
+      "difficulty": 2
+    }
+  ]
+}

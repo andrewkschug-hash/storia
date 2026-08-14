@@ -1,0 +1,63 @@
+{
+  "provider": "google",
+  "currency": "USD",
+  "source": "https://cloud.google.com/text-to-speech/pricing",
+  "sourceRetrieved": "2026-08-14",
+  "effectiveDate": "2026-08-14",
+  "staleAfter": "2026-11-14",
+  "characterCounting": {
+    "mode": "unicode_code_points",
+    "billedField": "SynthesizeSpeechRequest.input.text (plain text). Storia does not send SSML for Google TTS.",
+    "includesWhitespaceAndPunctuation": true,
+    "ssmlTagsCounted": false,
+    "notes": "Google bills Unicode characters sent to Text-to-Speech, including spaces and punctuation. Storia counts Array.from(text).length on the exact string placed in input.text. SSML tags are not counted because this pipeline does not send SSML. If Google’s published billing definition changes, set this file’s staleAfter in the past so the guard fails closed until the config is verified again."
+  },
+  "failedRequests": {
+    "localLedger": "not_counted",
+    "notes": "The local ledger increments only after generateSpeech returns audio. Failed or aborted requests are not added locally. Google’s invoice may still include some failed calls; the local ledger is a safety budget, not Google billing."
+  },
+  "readerPlayback": {
+    "generationRate": 1,
+    "naturalPlaybackRate": 0.9,
+    "slowPlaybackRate": 0.75,
+    "sentenceGapMs": 650
+  },
+  "paidUsageConfirmation": "I UNDERSTAND AND AUTHORIZE PAID TTS",
+  "families": {
+    "chirp3-hd": {
+      "id": "chirp3-hd",
+      "label": "Chirp 3: HD voices",
+      "voiceIdIncludes": ["Chirp3-HD", "Chirp3"],
+      "freeAllowanceChars": 1000000,
+      "pricePerMillionChars": 30
+    },
+    "neural2": {
+      "id": "neural2",
+      "label": "Neural2 voices",
+      "voiceIdIncludes": ["Neural2"],
+      "freeAllowanceChars": 1000000,
+      "pricePerMillionChars": 16
+    },
+    "wavenet": {
+      "id": "wavenet",
+      "label": "WaveNet voices",
+      "voiceIdIncludes": ["Wavenet"],
+      "freeAllowanceChars": 1000000,
+      "pricePerMillionChars": 4
+    },
+    "studio": {
+      "id": "studio",
+      "label": "Studio voices",
+      "voiceIdIncludes": ["Studio"],
+      "freeAllowanceChars": 100000,
+      "pricePerMillionChars": 160
+    },
+    "standard": {
+      "id": "standard",
+      "label": "Standard voices",
+      "voiceIdIncludes": ["Standard"],
+      "freeAllowanceChars": 4000000,
+      "pricePerMillionChars": 4
+    }
+  }
+}

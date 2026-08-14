@@ -47,6 +47,15 @@ function a1StoriesOutsideLuca(): CatalogStory[] {
   );
 }
 
+function a2PlusStoriesOutsideLuca(): CatalogStory[] {
+  return getCatalogStories().filter(
+    (story) =>
+      story.id !== LUCA_STORY_ID &&
+      story.status === 'available' &&
+      (story.cefrLevel === 'A2+' || story.cefrLevels?.includes('A2+')),
+  );
+}
+
 function groupStoriesByArc(
   stories: CatalogStory[],
   arcs: Record<string, NarrativeArcCatalog>,
@@ -79,6 +88,7 @@ export function buildLearnerJourney(): JourneyCefrBand[] {
   }
 
   const a1StoryGroups = groupStoriesByArc(a1StoriesOutsideLuca(), arcs);
+  const a2PlusStoryGroups = groupStoriesByArc(a2PlusStoriesOutsideLuca(), arcs);
 
   return [
     {
@@ -126,6 +136,10 @@ export function buildLearnerJourney(): JourneyCefrBand[] {
           },
         },
       ],
+    },
+    {
+      cefrLevel: 'A2+',
+      groups: a2PlusStoryGroups,
     },
   ];
 }

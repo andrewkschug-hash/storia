@@ -7,6 +7,7 @@ import type {
 } from './types';
 import { audioCacheKey } from './cacheKey';
 import { googleAdcAccessToken, googleQuotaProject, googleTtsConfigured } from './env';
+import { assertGoogleGeneratePermitted, logSuccessfulGeneration, recordSuccessfulGeneration, resolveVoiceFamily, loadPricingFile } from './googleTtsGuard';
 import { toPublicVoices, voicesForItalianTTS } from './voiceCatalog';
 
 export type {
@@ -213,6 +214,12 @@ export class GoogleTTSProvider implements TTSProvider {
   }
 
   async generateSpeech(req: GenerateSpeechRequest): Promise<GenerateSpeechResult> {
+    if (!googleTtsConfigured(this.env)) {
+      throw new Error(
+        'Google TTS is not configured. Run gcloud auth application-default login, or set GOOGLE_TTS_API_KEY.',
+      );
+    }
+    const chars = assertGoogleGeneratePermitted(req.text);
     const data = await this.googleJson<{ audioContent?: string }>(
       'https://texttospeech.googleapis.com/v1/text:synthesize',
       {
@@ -223,6 +230,7 @@ export class GoogleTTSProvider implements TTSProvider {
           voice: { languageCode: req.language, name: req.voiceId },
           audioConfig: {
             audioEncoding: 'MP3',
+            // Packaged/lab clips are generated at 1.0. Reader applies 0.9 / 0.75.
             speakingRate: req.speed === 'slow' ? 0.75 : 1,
           },
         }),
@@ -230,18 +238,33 @@ export class GoogleTTSProvider implements TTSProvider {
     );
     if (!data.audioContent) throw new Error('Google TTS returned no audio');
     const audio = Buffer.from(data.audioContent, 'base64').buffer;
+    const cacheKey = audioCacheKey({
+      provider: this.id,
+      voiceId: req.voiceId,
+      language: req.language,
+      speed: req.speed,
+      text: req.text,
+      generationVersion: Number(this.env.TTS_GENERATION_VERSION ?? 1),
+    });
+    const pricing = loadPricingFile();
+    const family = pricing ? resolveVoiceFamily(req.voiceId, pricing) : { ok: false as const, error: '' };
+    if (family.ok) {
+      recordSuccessfulGeneration({ characters: chars, familyId: family.family.id });
+    }
+    logSuccessfulGeneration({
+      timestamp: new Date().toISOString(),
+      provider: 'google',
+      voiceId: req.voiceId,
+      characterCount: chars,
+      generationResult: 'success',
+      outputAsset: cacheKey,
+      generationVersion: Number(this.env.TTS_GENERATION_VERSION ?? 1),
+    });
     return {
       audio,
       format: 'mp3',
       provider: this.id,
-      cacheKey: audioCacheKey({
-        provider: this.id,
-        voiceId: req.voiceId,
-        language: req.language,
-        speed: req.speed,
-        text: req.text,
-        generationVersion: Number(this.env.TTS_GENERATION_VERSION ?? 1),
-      }),
+      cacheKey,
     };
   }
 

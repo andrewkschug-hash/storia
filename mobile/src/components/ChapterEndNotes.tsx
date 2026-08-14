@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 import type { ChapterRecap } from '@/src/content/chapterRecap';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export function ChapterEndNotes({ recap, variant = 'full' }: Props) {
-  const { colors } = useTheme();
+  const { colors, type } = useTheme();
   const lookFors = variant === 'compact' ? recap.lookFors.slice(0, 4) : recap.lookFors;
 
   if (lookFors.length === 0) return null;
@@ -25,27 +25,27 @@ export function ChapterEndNotes({ recap, variant = 'full' }: Props) {
           borderColor: colors.border,
         },
       ]}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
         {variant === 'compact' ? 'Before you continue' : 'Takeaways'}
       </Text>
 
       <View style={styles.section}>
-        <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.md }]}>
+        <Text style={[type.label, { color: colors.text, marginTop: Spacing.md }]}>
           Look for
         </Text>
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2 }]}>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>
           Words and phrases that matter in this chapter
         </Text>
         <View style={{ marginTop: Spacing.sm, gap: Spacing.sm }}>
           {lookFors.map((item) => (
             <View key={`${item.kind}:${item.italian}`} style={styles.row}>
-              <Text style={[Typography.body, { color: colors.text, flex: 1 }]}>
+              <Text style={[type.body, { color: colors.text, flex: 1 }]}>
                 {item.italian}
                 {item.kind === 'phrase' ? (
                   <Text style={{ color: colors.textMuted }}> · phrase</Text>
                 ) : null}
               </Text>
-              <Text style={[Typography.caption, { color: colors.textSecondary, flex: 1 }]}>
+              <Text style={[type.caption, { color: colors.textSecondary, flex: 1 }]}>
                 {item.english}
               </Text>
             </View>

@@ -21,9 +21,7 @@ const {
 const voicesPath = path.join(contentRoot, 'audio', 'voices.json');
 const GATEWAY = process.env.EXPO_PUBLIC_TTS_GATEWAY_URL || 'http://127.0.0.1:8787';
 
-function isPlaceholder(voiceId) {
-  return !voiceId || String(voiceId).startsWith('lab-');
-}
+const { resolveSpeakerVoice } = require('./voice-roster-common');
 
 async function gatewayGet(pathname) {
   const res = await fetch(`${GATEWAY.replace(/\/$/, '')}${pathname}`);
@@ -50,11 +48,7 @@ async function main() {
   for (const clip of plan.clips) speakersUsed.add(clip.speakerId);
 
   const voices = loadJson(voicesPath);
-  const assignments = voices.characters ?? {};
-  const unassigned = [...speakersUsed].filter((id) => {
-    const row = assignments[id];
-    return !row || isPlaceholder(row.voiceId);
-  });
+  const unassigned = [...speakersUsed].filter((id) => !resolveSpeakerVoice(voices, id));
   ready =
     check(
       'Voice assignments',

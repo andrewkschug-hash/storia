@@ -1,0 +1,1190 @@
+{
+  "id": "la-casa-delle-finestre-21",
+  "storyId": "la-casa-delle-finestre",
+  "number": 21,
+  "title": "The director",
+  "titleIt": "La dirigente",
+  "locationIds": [
+    "ufficio-alme"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "alme"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-21",
+      "summary": "Still Friday, in Alme’s office. Alme says the closure protected children and also her job. She lets one box exist as already destroyed. She tells Irene to go to Piva or not; she will not help twice.",
+      "characterIds": [
+        "irene-colombo",
+        "alme"
+      ],
+      "locationIds": [
+        "ufficio-alme"
+      ],
+      "rememberedFacts": [
+        "It is still Friday, in Alme’s office",
+        "Alme says the closure protected children",
+        "Alme also protected her job and the town’s story",
+        "She allows one box to survive as already shredded",
+        "This is not a full confession",
+        "She says Irene may go to Piva or not; she will not help twice"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La porta è chiusa. Oggi è ancora venerdì. Fuori la macchina fa rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "porta",
+            "essere",
+            "chiudere",
+            "oggi",
+            "essere",
+            "ancora",
+            "venerdi",
+            "fuori",
+            "la",
+            "macchina",
+            "fare",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Alme resta in piedi. Irene resta seduta. Tra loro il tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "restare",
+            "in",
+            "piedi",
+            "irene",
+            "restare",
+            "sedere",
+            "tra",
+            "loro",
+            "il",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Alme non urla. Non fa un discorso lungo. Parla a pezzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "non",
+            "urlare",
+            "non",
+            "fare",
+            "un",
+            "discorso",
+            "lungo",
+            "parlare",
+            "a",
+            "pezzo"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Abbiamo chiuso la scuola perché i bambini non potevano restare.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "chiudere",
+            "la",
+            "scuola",
+            "perche",
+            "i",
+            "bambino",
+            "non",
+            "potere",
+            "restare"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Il muro non era sicuro. Questo è vero.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "muro",
+            "non",
+            "essere",
+            "sicuro",
+            "questo",
+            "essere",
+            "vero"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Irene ascolta. Non dice: e le crepe di Sara. Non fa l'avvocato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "non",
+            "dire",
+            "e",
+            "le",
+            "crepa",
+            "di",
+            "sara",
+            "non",
+            "fare",
+            "avvocato"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Quindi abbiamo chiuso. Quindi il paese dice: è vuota.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "quindi",
+            "avere",
+            "chiudere",
+            "quindi",
+            "il",
+            "paese",
+            "dire",
+            "essere",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Però ho protetto anche il mio posto di lavoro. E la storia del paese.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "pero",
+            "avere",
+            "proteggere",
+            "anche",
+            "il",
+            "mio",
+            "posto",
+            "di",
+            "lavoro",
+            "e",
+            "la",
+            "storia",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non è tutta la verità. È abbastanza per chiudere una porta, due anni fa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "tutto",
+            "la",
+            "verita",
+            "essere",
+            "abbastanza",
+            "per",
+            "chiudere",
+            "una",
+            "porta",
+            "due",
+            "anno",
+            "fa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s10",
+          "text": "Irene tiene la mano in tasca, sulla chiavetta. Alme guarda la tasca, poi no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tenere",
+            "la",
+            "mano",
+            "in",
+            "tasca",
+            "sulla",
+            "chiavetta",
+            "alme",
+            "guardare",
+            "la",
+            "tasca",
+            "poi",
+            "no"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Non chiede della copia. Non chiede di Sara. Chiede della scatola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "chiedere",
+            "della",
+            "copia",
+            "non",
+            "chiedere",
+            "di",
+            "sara",
+            "chiedere",
+            "della",
+            "scatola"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Quella del seminterrato. Io so.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "del",
+            "seminterrato",
+            "io",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Irene non mente di nuovo. Non parla. Annuisce, quasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "mentire",
+            "di",
+            "nuovo",
+            "non",
+            "parlare",
+            "annuire",
+            "quasi"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Per i fogli, quella scatola è già distrutta. Oggi. Venerdì.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "i",
+            "foglio",
+            "quello",
+            "scatola",
+            "essere",
+            "gia",
+            "distruggere",
+            "oggi",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non è coraggio. Non è pietà pulita. È una cosa piccola, e vile, e utile.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "coraggio",
+            "non",
+            "essere",
+            "pieta",
+            "pulito",
+            "essere",
+            "una",
+            "cosa",
+            "piccolo",
+            "e",
+            "vile",
+            "e",
+            "utile"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Irene capisce: una scatola resta. Non un processo. Non la televisione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "capire",
+            "una",
+            "scatola",
+            "restare",
+            "non",
+            "un",
+            "processo",
+            "non",
+            "la",
+            "televisione"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Alme si siede, alla fine. Le mani sul tavolo, ferme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "si",
+            "sedere",
+            "alla",
+            "fine",
+            "le",
+            "mano",
+            "sul",
+            "tavolo",
+            "fermo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Non confesso in piazza. Non lo farò.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "confessare",
+            "in",
+            "piazza",
+            "non",
+            "lo",
+            "fare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s19",
+          "text": "Il rumore della macchina continua. Venerdì non si ferma per due donne.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "rumore",
+            "della",
+            "macchina",
+            "continuare",
+            "venerdi",
+            "non",
+            "si",
+            "fermare",
+            "per",
+            "due",
+            "donna"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Irene dovrebbe dire grazie, o no, o tutto. Dice poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "dovere",
+            "dire",
+            "grazie",
+            "o",
+            "no",
+            "o",
+            "tutto",
+            "dire",
+            "poco"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "La scatola resta giù. Io non aiuto due volte.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scatola",
+            "restare",
+            "giu",
+            "io",
+            "non",
+            "aiutare",
+            "due",
+            "volta"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Adesso va dal maresciallo Piva, o non va. Questa è la sua scelta.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "andare",
+            "dal",
+            "maresciallo",
+            "piva",
+            "o",
+            "non",
+            "andare",
+            "questo",
+            "essere",
+            "la",
+            "suo",
+            "scelta"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Non è un ordine. È una porta, aperta, dopo una porta chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "ordine",
+            "essere",
+            "una",
+            "porta",
+            "aprire",
+            "dopo",
+            "una",
+            "porta",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Irene si alza. La chiavetta resta in tasca. Alme non la prende.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "alzare",
+            "la",
+            "chiavetta",
+            "restare",
+            "in",
+            "tasca",
+            "alme",
+            "non",
+            "la",
+            "prendere"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Non è finito il mistero in una stanza. È una scatola, e una scelta, e venerdì che continua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "finire",
+            "il",
+            "mistero",
+            "in",
+            "una",
+            "stanza",
+            "essere",
+            "una",
+            "scatola",
+            "e",
+            "una",
+            "scelta",
+            "e",
+            "venerdi",
+            "che",
+            "continuare"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Irene esce. Alme non dice arrivederci. Dice solo, piano: o Piva, o no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "uscire",
+            "alme",
+            "non",
+            "dire",
+            "arrivederci",
+            "dire",
+            "solo",
+            "piano",
+            "o",
+            "piva",
+            "o",
+            "no"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Nel corridoio il rumore è lo stesso. Venerdì non è diventato un altro giorno dentro l'ufficio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "corridoio",
+            "il",
+            "rumore",
+            "essere",
+            "lo",
+            "stesso",
+            "venerdi",
+            "non",
+            "essere",
+            "diventare",
+            "un",
+            "altro",
+            "giorno",
+            "dentro",
+            "ufficio"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Irene non ha una confessione completa. Ha pezzi: bambini, posto di lavoro, una scatola già distrutta sulla carta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "avere",
+            "una",
+            "confessione",
+            "completo",
+            "avere",
+            "pezzo",
+            "bambino",
+            "posto",
+            "di",
+            "lavoro",
+            "una",
+            "scatola",
+            "gia",
+            "distruggere",
+            "sulla",
+            "carta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Non è coraggio, ha detto Alme. Irene ci crede. Non la ama per questo. Non la odia come un film.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "coraggio",
+            "avere",
+            "dire",
+            "alme",
+            "irene",
+            "ci",
+            "credere",
+            "non",
+            "la",
+            "amare",
+            "per",
+            "questo",
+            "non",
+            "la",
+            "odiare",
+            "come",
+            "un",
+            "film"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La chiavetta pesa. La scatola resta. Piva è una scelta, non un premio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "chiavetta",
+            "pesare",
+            "la",
+            "scatola",
+            "restare",
+            "piva",
+            "essere",
+            "una",
+            "scelta",
+            "non",
+            "un",
+            "premio"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Scende le scale. Non torna nel seminterrato. Non deve, oggi. Alme ha detto: resta giù.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scendere",
+            "le",
+            "scala",
+            "non",
+            "tornare",
+            "nel",
+            "seminterrato",
+            "non",
+            "dovere",
+            "oggi",
+            "alme",
+            "avere",
+            "dire",
+            "restare",
+            "giu"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Fuori è ancora pomeriggio. La macchina lavora. Irene cammina verso i carabinieri, o ci pensa. Poi cammina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "essere",
+            "ancora",
+            "pomeriggio",
+            "la",
+            "macchina",
+            "lavorare",
+            "irene",
+            "camminare",
+            "verso",
+            "i",
+            "carabinieri",
+            "o",
+            "ci",
+            "pensare",
+            "poi",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Non è tutto spiegato. Manca Sara, manca il paese, manca che cosa farà Piva. Questo capitolo è Alme, e un no al coraggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "tutto",
+            "spiegare",
+            "mancare",
+            "sara",
+            "mancare",
+            "il",
+            "paese",
+            "mancare",
+            "che",
+            "cosa",
+            "fare",
+            "piva",
+            "questo",
+            "capitolo",
+            "essere",
+            "alme",
+            "e",
+            "un",
+            "no",
+            "al",
+            "coraggio"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Alme ha detto dei bambini, e del posto, e della storia del paese. Tre motivi, non uno solo. Irene li tiene separati.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "avere",
+            "dire",
+            "dei",
+            "bambino",
+            "e",
+            "del",
+            "posto",
+            "e",
+            "della",
+            "storia",
+            "del",
+            "paese",
+            "tre",
+            "motivo",
+            "non",
+            "uno",
+            "solo",
+            "irene",
+            "li",
+            "tenere",
+            "separare"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Se dice tutto a Piva, Alme non aiuta due volte. Se non dice, la scatola resta comunque, sulla carta, distrutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "dire",
+            "tutto",
+            "a",
+            "piva",
+            "alme",
+            "non",
+            "aiutare",
+            "due",
+            "volta",
+            "se",
+            "non",
+            "dire",
+            "la",
+            "scatola",
+            "restare",
+            "comunque",
+            "sulla",
+            "carta",
+            "distruggere"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Quindi la scelta è sua, e sporca, come la scatola. Non è un esame con una risposta sola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "la",
+            "scelta",
+            "essere",
+            "suo",
+            "e",
+            "sporco",
+            "come",
+            "la",
+            "scatola",
+            "non",
+            "essere",
+            "un",
+            "esame",
+            "con",
+            "una",
+            "risposta",
+            "solo"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Irene non chiede perché Alme ha aspettato venerdì. Non chiede dei registri di dieci anni fa. Non è questo il capitolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "chiedere",
+            "perche",
+            "alme",
+            "avere",
+            "aspettare",
+            "venerdi",
+            "non",
+            "chiedere",
+            "dei",
+            "registro",
+            "di",
+            "dieci",
+            "anno",
+            "fa",
+            "non",
+            "essere",
+            "questo",
+            "il",
+            "capitolo"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Cammina. Il comune resta alle spalle, con la macchina accesa. Davanti c'è Piva, o la mansarda. Lei sceglie la strada dei carabinieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "il",
+            "comune",
+            "restare",
+            "alle",
+            "spalle",
+            "con",
+            "la",
+            "macchina",
+            "accendere",
+            "davanti",
+            "ce",
+            "piva",
+            "o",
+            "la",
+            "mansarda",
+            "lei",
+            "scegliere",
+            "la",
+            "strada",
+            "dei",
+            "carabinieri"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Non torna da Alme per un'altra frase. Una volta è abbastanza. Non è coraggio, e non lo chiede di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "tornare",
+            "da",
+            "alme",
+            "per",
+            "altro",
+            "frase",
+            "una",
+            "volta",
+            "essere",
+            "abbastanza",
+            "non",
+            "essere",
+            "coraggio",
+            "e",
+            "non",
+            "lo",
+            "chiedere",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "La dirigente resta in ufficio. Irene è già nel pomeriggio, verso una stanza piccola, con lei formale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "dirigente",
+            "restare",
+            "in",
+            "ufficio",
+            "irene",
+            "essere",
+            "gia",
+            "nel",
+            "pomeriggio",
+            "verso",
+            "una",
+            "stanza",
+            "piccolo",
+            "con",
+            "lei",
+            "formale"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Venerdì continua. La scatola, sulla carta, è distrutta. Sulla terra, giù, c'è. Questo Irene lo porta a Piva, o no: lo porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "continuare",
+            "la",
+            "scatola",
+            "sulla",
+            "carta",
+            "essere",
+            "distruggere",
+            "sulla",
+            "terra",
+            "giu",
+            "ce",
+            "questo",
+            "irene",
+            "lo",
+            "portare",
+            "a",
+            "piva",
+            "o",
+            "no",
+            "lo",
+            "portare"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Non ha capito Alme in cinque minuti. Ha capito abbastanza: bambini sì, posto sì, confessione in piazza no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "capire",
+            "alme",
+            "in",
+            "cinque",
+            "minuto",
+            "avere",
+            "capire",
+            "abbastanza",
+            "bambino",
+            "si_yes",
+            "posto",
+            "si_yes",
+            "confessione",
+            "in",
+            "piazza",
+            "no"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Due donne, un tavolo, una macchina fuori. Poi Irene sola, in strada, con una scelta che Alme non farà al posto suo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "donna",
+            "un",
+            "tavolo",
+            "una",
+            "macchina",
+            "fuori",
+            "poi",
+            "irene",
+            "solo",
+            "in",
+            "strada",
+            "con",
+            "una",
+            "scelta",
+            "che",
+            "alme",
+            "non",
+            "fare",
+            "al",
+            "posto",
+            "suo"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non è un monologo da cattiva. Alme ha detto poco, e ha lasciato una scatola, e ha detto di Piva. Fine della stanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "monologo",
+            "da",
+            "cattivo",
+            "alme",
+            "avere",
+            "dire",
+            "poco",
+            "e",
+            "avere",
+            "lasciare",
+            "una",
+            "scatola",
+            "e",
+            "avere",
+            "dire",
+            "di",
+            "piva",
+            "fine",
+            "della",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Irene non sa se questo è pietà. Sa che non è coraggio. Sa che venerdì non aspetta. Cammina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "se",
+            "questo",
+            "essere",
+            "pieta",
+            "sapere",
+            "che",
+            "non",
+            "essere",
+            "coraggio",
+            "sapere",
+            "che",
+            "venerdi",
+            "non",
+            "aspettare",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Non arrestano Alme in questa stanza. Non c'è uno scandalo nazionale. C'è una dirigente, e una scatola, e un no detto due volte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "arrestare",
+            "alme",
+            "in",
+            "questo",
+            "stanza",
+            "non",
+            "ce",
+            "uno",
+            "scandalo",
+            "nazionale",
+            "ce",
+            "una",
+            "dirigente",
+            "e",
+            "una",
+            "scatola",
+            "e",
+            "un",
+            "no",
+            "dire",
+            "due",
+            "volta"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Irene esce dal comune. Venerdì pomeriggio. La scelta è Piva. Questo è il capitolo. Il resto non è qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "uscire",
+            "dal",
+            "comune",
+            "venerdi",
+            "pomeriggio",
+            "la",
+            "scelta",
+            "essere",
+            "piva",
+            "questo",
+            "essere",
+            "il",
+            "capitolo",
+            "il",
+            "resto",
+            "non",
+            "essere",
+            "qui"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch21_q01",
+      "chapterId": "la-casa-delle-finestre-21",
+      "type": "direct",
+      "question": "When and where is this?",
+      "choices": [
+        "Still Friday, in Alme’s office",
+        "Tuesday at the school",
+        "Saturday on the bus"
+      ],
+      "correctChoice": 0,
+      "explanation": "The door is shut. Today is still Friday.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q02",
+      "chapterId": "la-casa-delle-finestre-21",
+      "type": "character",
+      "question": "What does Alme say about the closure?",
+      "choices": [
+        "It protected children, and also her job and the town’s story",
+        "Sara was right and Alme will confess on TV",
+        "Quinto is the lamp"
+      ],
+      "correctChoice": 0,
+      "explanation": "The wall was not safe. She also protected her job.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q03",
+      "chapterId": "la-casa-delle-finestre-21",
+      "type": "event",
+      "question": "What happens to the basement box?",
+      "choices": [
+        "On paper it is already destroyed; it survives unofficially",
+        "Alme burns it in front of Irene",
+        "Piva takes it at once"
+      ],
+      "correctChoice": 0,
+      "explanation": "On paper, that box is already destroyed. One box remains.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q04",
+      "chapterId": "la-casa-delle-finestre-21",
+      "type": "inference",
+      "question": "What choice does Alme leave Irene?",
+      "choices": [
+        "Go to Piva or not; Alme will not help twice",
+        "Arrest Alme",
+        "Sell the USB"
+      ],
+      "correctChoice": 0,
+      "explanation": "Now you go to Marshal Piva, or you don’t. I do not help twice.",
+      "difficulty": 2
+    }
+  ]
+}

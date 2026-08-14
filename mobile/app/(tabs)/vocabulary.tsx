@@ -4,16 +4,17 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ReadingIndependenceCard } from '@/src/components/ReadingIndependenceCard';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import type { VocabBrowseItem } from '@/src/vocabulary/catalog';
 import { useLayout } from '@/src/theme/useLayout';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function VocabularyScreen() {
-  const { colors } = useTheme();
+  const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
   const { progress } = useReadingProgress();
@@ -37,7 +38,7 @@ export default function VocabularyScreen() {
         <ScreenContent>
           <Text
             style={[
-              Typography.heroTitle,
+              type.heroTitle,
               {
                 color: colors.text,
                 fontSize: layout.isPhone ? 26 : 32,
@@ -46,9 +47,11 @@ export default function VocabularyScreen() {
             ]}>
             Your Italian
           </Text>
-          <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+          <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
             Familiarity grows from reading — not from drills.
           </Text>
+
+          <ReadingIndependenceCard />
 
           <View style={[styles.statsRow, layout.width < 420 && styles.statsRowCompact]}>
             <Stat label="Words encountered" value={summary?.encountered ?? 0} />
@@ -60,7 +63,7 @@ export default function VocabularyScreen() {
           </View>
 
           {loading ? (
-            <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
+            <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
               Loading your words…
             </Text>
           ) : null}
@@ -71,7 +74,7 @@ export default function VocabularyScreen() {
           <Section title="Mastered" items={lists?.mastered ?? []} empty={null} />
 
           {!loading && (summary?.encountered ?? 0) === 0 ? (
-            <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
+            <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
               Tap any word while reading to see its meaning. Saved words will return here, gently.
             </Text>
           ) : null}
@@ -82,15 +85,15 @@ export default function VocabularyScreen() {
 }
 
 function Stat({ label, value }: { label: string; value: number }) {
-  const { colors } = useTheme();
+  const { colors, type } = useTheme();
   return (
     <View
       style={[
         styles.stat,
         { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
       ]}>
-      <Text style={[Typography.stat, { color: colors.text }]}>{value}</Text>
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 4 }]}>{label}</Text>
+      <Text style={[type.stat, { color: colors.text }]}>{value}</Text>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>{label}</Text>
     </View>
   );
 }
@@ -104,10 +107,10 @@ function Section({
   items: VocabBrowseItem[];
   empty: string | null;
 }) {
-  const { colors } = useTheme();
+  const { colors, type } = useTheme();
   if (items.length === 0) {
     return empty ? (
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
         {empty}
       </Text>
     ) : null;
@@ -115,7 +118,7 @@ function Section({
 
   return (
     <View style={{ marginTop: Spacing.xl }}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.textMuted }]}>{title}</Text>
+      <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>{title}</Text>
       <View style={{ marginTop: Spacing.md, gap: Spacing.sm }}>
         {items.map((item) => (
           <Pressable
@@ -131,8 +134,8 @@ function Section({
                 opacity: pressed ? 0.9 : 1,
               },
             ]}>
-            <Text style={[Typography.label, { color: colors.text }]}>{item.italian}</Text>
-            <Text style={[Typography.caption, { color: colors.textSecondary }]}>{item.english}</Text>
+            <Text style={[type.label, { color: colors.text }]}>{item.italian}</Text>
+            <Text style={[type.caption, { color: colors.textSecondary }]}>{item.english}</Text>
           </Pressable>
         ))}
       </View>

@@ -8,7 +8,8 @@ import { buildChapterRecap } from '@/src/content/chapterRecap';
 import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
 import { comprehensionHref } from '@/src/content/storyHrefs';
 import { getVocabularyService } from '@/src/vocabulary';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { trackChapterWordsRead } from '@/src/telemetry/chapterExposure';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function ChapterRecapScreen() {
@@ -16,7 +17,7 @@ export default function ChapterRecapScreen() {
   const storyId =
     (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
   const chapter = storyId ? getChapter(chapterId, storyId) : undefined;
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
 
   if (!chapter) {
@@ -24,7 +25,7 @@ export default function ChapterRecapScreen() {
       <AtmosphereBackground>
         <Stack.Screen options={{ title: 'Recap' }} />
         <View style={styles.center}>
-          <Text style={[Typography.body, { color: colors.textSecondary }]}>Chapter not found.</Text>
+          <Text style={[type.body, { color: colors.textSecondary }]}>Chapter not found.</Text>
         </View>
       </AtmosphereBackground>
     );
@@ -46,18 +47,18 @@ export default function ChapterRecapScreen() {
           { paddingBottom: insets.bottom + Spacing.xl },
         ]}
         showsVerticalScrollIndicator={false}>
-        <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Chapter recap</Text>
-        <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+        <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Chapter recap</Text>
+        <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
           {recap.titleIt}
         </Text>
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 4 }]}>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>
           {recap.titleEn}
         </Text>
 
-        <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.lg }]}>
+        <Text style={[type.label, { color: colors.text, marginTop: Spacing.lg }]}>
           What happened
         </Text>
-        <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+        <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
           {recap.summary}
         </Text>
 
@@ -70,6 +71,7 @@ export default function ChapterRecapScreen() {
         <Pressable
           onPress={async () => {
             await getVocabularyService().recordChapterExposure(chapter);
+            trackChapterWordsRead(chapter, storyId);
             router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
           }}
           style={({ pressed }) => [
@@ -78,9 +80,10 @@ export default function ChapterRecapScreen() {
               backgroundColor: colors.tint,
               opacity: pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
+              minHeight: minTouchTarget,
             },
           ]}>
-          <Text style={[Typography.button, { color: '#F7FAF9' }]}>Check your understanding</Text>
+          <Text style={[type.button, { color: colors.onTint }]}>Check your understanding</Text>
         </Pressable>
       </ScrollView>
     </AtmosphereBackground>

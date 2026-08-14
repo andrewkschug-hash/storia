@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { ProgressBar } from '@/src/components/ProgressBar';
 import type { ReadingProgress } from '@/src/domain/models/types';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -20,7 +20,7 @@ export function ContinueReadingCard({
   progress,
   onContinue,
 }: Props) {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const chapterPercent = progress.chapterPercentComplete ?? 0;
 
   return (
@@ -32,18 +32,18 @@ export function ContinueReadingCard({
           borderColor: colors.border,
         },
       ]}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
         {isStart ? 'Start reading' : 'Continue reading'}
       </Text>
       {storyTitleIt ? (
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
           {storyTitleIt}
         </Text>
       ) : null}
-      <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm, fontSize: 28 }]}>
+      <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm, fontSize: 28 }]}>
         {chapterTitleIt}
       </Text>
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
         Chapter {progress.chapterNumber} of {progress.totalChapters}
         {progress.chaptersCompleted > 0
           ? ` · ${progress.chaptersCompleted} finished`
@@ -52,11 +52,11 @@ export function ContinueReadingCard({
 
       <View style={styles.progressBlock}>
         <ProgressBar progress={progress.percentComplete / 100} />
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
           {progress.percentComplete}% through the story
         </Text>
         {chapterPercent > 0 && chapterPercent < 100 ? (
-          <Text style={[Typography.caption, { color: colors.textSecondary, marginTop: 4 }]}>
+          <Text style={[type.caption, { color: colors.textSecondary, marginTop: 4 }]}>
             {chapterPercent}% through this chapter
           </Text>
         ) : null}
@@ -71,9 +71,10 @@ export function ContinueReadingCard({
           {
             backgroundColor: colors.tint,
             opacity: pressed ? 0.88 : 1,
+            minHeight: minTouchTarget,
           },
         ]}>
-        <Text style={[Typography.button, { color: '#F7FAF9' }]}>
+        <Text style={[type.button, { color: colors.onTint }]}>
           {isStart ? 'Start reading' : 'Continue reading'}
         </Text>
       </Pressable>

@@ -1,0 +1,1208 @@
+{
+  "id": "la-casa-delle-finestre-20",
+  "storyId": "la-casa-delle-finestre",
+  "number": 20,
+  "title": "Friday",
+  "titleIt": "Venerdì",
+  "locationIds": [
+    "comune",
+    "ufficio-alme",
+    "scatole-comune"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "alme"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-20",
+      "summary": "Friday: papers are destroyed. Irene copies files onto a USB stick. Alme finds her in the corridor and says come with me.",
+      "characterIds": [
+        "irene-colombo",
+        "alme"
+      ],
+      "locationIds": [
+        "comune"
+      ],
+      "rememberedFacts": [
+        "Today is Friday; papers are to be destroyed",
+        "Irene copies files onto a USB stick",
+        "Alme intercepts Irene in the corridor and tells her to come with her"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Oggi è venerdì. Non è martedì. Non è mercoledì. Non è giovedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "venerdi",
+            "non",
+            "essere",
+            "martedi",
+            "non",
+            "essere",
+            "mercoledi",
+            "non",
+            "essere",
+            "giovedi"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Al comune la macchina per distruggere è accesa. Fa rumore. Puzza di carta calda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "comune",
+            "la",
+            "macchina",
+            "per",
+            "distruggere",
+            "essere",
+            "accendere",
+            "fare",
+            "rumore",
+            "puzzare",
+            "di",
+            "carta",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Alme è in ufficio presto. Dice: oggi. Non c'è tempo. Manca poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "essere",
+            "in",
+            "ufficio",
+            "presto",
+            "dire",
+            "oggi",
+            "non",
+            "ce",
+            "tempo",
+            "mancare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Manca un'ora, dice dopo, o due. Irene non guarda l'orologio. Guarda le scatole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mancare",
+            "ora",
+            "dire",
+            "dopo",
+            "o",
+            "due",
+            "irene",
+            "non",
+            "guardare",
+            "orologio",
+            "guardare",
+            "le",
+            "scatola"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Adesso, troppa carta. Adesso, la macchina. Adesso, o mai.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "troppa",
+            "carta",
+            "adesso",
+            "la",
+            "macchina",
+            "adesso",
+            "o",
+            "mai"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Irene porta su le scatole che restano. Una dopo l'altra. Non quella del seminterrato, non ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "portare",
+            "su",
+            "le",
+            "scatola",
+            "che",
+            "restare",
+            "una",
+            "dopo",
+            "altro",
+            "non",
+            "quello",
+            "del",
+            "seminterrato",
+            "non",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Adesso è tardi per chiamare Piva, pensa. Adesso è tardi per dire non so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "essere",
+            "tardi",
+            "per",
+            "chiamare",
+            "piva",
+            "pensare",
+            "adesso",
+            "essere",
+            "tardi",
+            "per",
+            "dire",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Ha una chiavetta, piccola, in tasca. L'ha comprata ieri sera, dopo Quinto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "una",
+            "chiavetta",
+            "piccolo",
+            "in",
+            "tasca",
+            "avere",
+            "comprare",
+            "ieri",
+            "sera",
+            "dopo",
+            "quinto"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non è internet. Non è un film. È una copia, se riesce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "internet",
+            "non",
+            "essere",
+            "un",
+            "film",
+            "essere",
+            "una",
+            "copia",
+            "se",
+            "riuscire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s10",
+          "text": "Quando Alme parla al telefono, Irene è sola un minuto, giù.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "alme",
+            "parlare",
+            "al",
+            "telefono",
+            "irene",
+            "essere",
+            "solo",
+            "un",
+            "minuto",
+            "giu"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Apre il computer del comune, quello dello scanner. Mette la chiavetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "il",
+            "computer",
+            "del",
+            "comune",
+            "quello",
+            "dello",
+            "scanner",
+            "mettere",
+            "la",
+            "chiavetta"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Copia le cartelle già scansionate. Copia in fretta, non tutto, abbastanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "copiare",
+            "le",
+            "cartella",
+            "gia",
+            "scansionare",
+            "copiare",
+            "in",
+            "fretta",
+            "non",
+            "tutto",
+            "abbastanza"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il cuore va. Manca un'ora, o meno, prima che la macchina prenda il resto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cuore",
+            "andare",
+            "mancare",
+            "ora",
+            "o",
+            "meno",
+            "prima",
+            "che",
+            "la",
+            "macchina",
+            "prendere",
+            "il",
+            "resto"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Toglie la chiavetta. La mette in tasca. Chiude lo schermo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "togliere",
+            "la",
+            "chiavetta",
+            "la",
+            "mettere",
+            "in",
+            "tasca",
+            "chiudere",
+            "lo",
+            "schermo"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Poi sale con una scatola normale, per la macchina. Fa il lavoro visibile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "salire",
+            "con",
+            "una",
+            "scatola",
+            "normale",
+            "per",
+            "la",
+            "macchina",
+            "fare",
+            "il",
+            "lavoro",
+            "visibile"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Alme indica. Irene mette le carte nella macchina. Troppo tardi per fermarsi. Il rumore continua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "indicare",
+            "irene",
+            "mettere",
+            "le",
+            "carta",
+            "nella",
+            "macchina",
+            "troppo",
+            "tardi",
+            "per",
+            "fermare",
+            "il",
+            "rumore",
+            "continuare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "La scatola del seminterrato resta giù. Per ora. Irene non la porta su.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scatola",
+            "del",
+            "seminterrato",
+            "restare",
+            "giu",
+            "per",
+            "ora",
+            "irene",
+            "non",
+            "la",
+            "portare",
+            "su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s18",
+          "text": "Nel corridoio, dopo, Irene va verso le scale, con la mano in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "corridoio",
+            "dopo",
+            "irene",
+            "andare",
+            "verso",
+            "le",
+            "scala",
+            "con",
+            "la",
+            "mano",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Alme è lì. Non urla. Non corre. È solo nel corridoio, di fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "essere",
+            "li",
+            "non",
+            "urlare",
+            "non",
+            "correre",
+            "essere",
+            "solo",
+            "nel",
+            "corridoio",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Guarda la tasca di Irene, o sembra. Poi guarda gli occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "la",
+            "tasca",
+            "di",
+            "irene",
+            "o",
+            "sembrare",
+            "poi",
+            "guardare",
+            "gli",
+            "occhio"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Venga con me.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "venire",
+            "con",
+            "me"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non è un grido. È una frase, piano, come il caffè di altri giorni, e non lo è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "grido",
+            "essere",
+            "una",
+            "frase",
+            "piano",
+            "come",
+            "il",
+            "caffe",
+            "di",
+            "altro",
+            "giorno",
+            "e",
+            "non",
+            "lo",
+            "essere"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Irene non scappa. Non butta la chiavetta. Cammina dietro Alme, verso l'ufficio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "scappare",
+            "non",
+            "buttare",
+            "la",
+            "chiavetta",
+            "camminare",
+            "dietro",
+            "alme",
+            "verso",
+            "ufficio"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Oggi è venerdì. La macchina lavora. La copia è in tasca. Alme ha detto: venga con me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "venerdi",
+            "la",
+            "macchina",
+            "lavorare",
+            "la",
+            "copia",
+            "essere",
+            "in",
+            "tasca",
+            "alme",
+            "avere",
+            "dire",
+            "venire",
+            "con",
+            "me"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Irene non sa ancora che cosa farà Alme. Sa solo che il corridoio è finito, e la porta è aperta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "ancora",
+            "che",
+            "cosa",
+            "fare",
+            "alme",
+            "sapere",
+            "solo",
+            "che",
+            "il",
+            "corridoio",
+            "essere",
+            "finire",
+            "e",
+            "la",
+            "porta",
+            "essere",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "La chiavetta pesa poco. Le carte nella macchina non tornano. Manca poco, e troppo, insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "chiavetta",
+            "pesare",
+            "poco",
+            "le",
+            "carta",
+            "nella",
+            "macchina",
+            "non",
+            "tornare",
+            "mancare",
+            "poco",
+            "e",
+            "troppo",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Non carica niente su internet. Non corre. Segue Alme. Venerdì è adesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "caricare",
+            "niente",
+            "su",
+            "internet",
+            "non",
+            "correre",
+            "seguire",
+            "alme",
+            "venerdi",
+            "essere",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Nel corridoio il rumore della macchina arriva ancora. Troppo tardi per le carte già dentro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "corridoio",
+            "il",
+            "rumore",
+            "della",
+            "macchina",
+            "arrivare",
+            "ancora",
+            "troppo",
+            "tardi",
+            "per",
+            "le",
+            "carta",
+            "gia",
+            "dentro"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Irene tiene la chiavetta. Alme tiene la porta. Due donne. Nessuna corsa. Una frase: venga con me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tenere",
+            "la",
+            "chiavetta",
+            "alme",
+            "tenere",
+            "la",
+            "porta",
+            "due",
+            "donna",
+            "nessuno",
+            "corsa",
+            "una",
+            "frase",
+            "venire",
+            "con",
+            "me"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La mattina ha portato scatole su. A mezzogiorno la macchina mangiava già. Nel pomeriggio manca poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "avere",
+            "portare",
+            "scatola",
+            "su",
+            "a",
+            "mezzogiorno",
+            "la",
+            "macchina",
+            "mangiare",
+            "gia",
+            "nel",
+            "pomeriggio",
+            "mancare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Ha copiato quando Alme era al telefono. Un minuto. Cartelle già nello scanner, non il seminterrato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "copiare",
+            "quando",
+            "alme",
+            "essere",
+            "al",
+            "telefono",
+            "un",
+            "minuto",
+            "cartella",
+            "gia",
+            "nello",
+            "scanner",
+            "non",
+            "il",
+            "seminterrato"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La chiavetta è una copia. Le carte vive vanno nella macchina. Due destini, venerdì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "chiavetta",
+            "essere",
+            "una",
+            "copia",
+            "le",
+            "carta",
+            "vivo",
+            "andare",
+            "nella",
+            "macchina",
+            "due",
+            "destino",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Nel corridoio Alme non grida. Dice venga con me, e Irene va, perché scappare è un altro film.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "corridoio",
+            "alme",
+            "non",
+            "gridare",
+            "dire",
+            "venire",
+            "con",
+            "me",
+            "e",
+            "irene",
+            "andare",
+            "perche",
+            "scappare",
+            "essere",
+            "un",
+            "altro",
+            "film"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "La scelta di Alme non c'è ancora. C'è venerdì, la macchina, la tasca, e una porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scelta",
+            "di",
+            "alme",
+            "non",
+            "ce",
+            "ancora",
+            "ce",
+            "venerdi",
+            "la",
+            "macchina",
+            "la",
+            "tasca",
+            "e",
+            "una",
+            "porta"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Alle nove: scatole. Alle undici: rumore. All'una: chiavetta. Alle tre: corridoio. Adesso: l'ufficio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alle",
+            "nove",
+            "scatola",
+            "alle",
+            "undici",
+            "rumore",
+            "una",
+            "chiavetta",
+            "alle",
+            "tre",
+            "corridoio",
+            "adesso",
+            "ufficio"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Troppo tardi per martedì. Troppo tardi per non so. Venerdì chiede una copia, e una porta chiusa dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "troppo",
+            "tardi",
+            "per",
+            "martedi",
+            "troppo",
+            "tardi",
+            "per",
+            "non",
+            "sapere",
+            "venerdi",
+            "chiedere",
+            "una",
+            "copia",
+            "e",
+            "una",
+            "porta",
+            "chiudere",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Irene non sa se Alme ha visto la chiavetta. Sa che Alme ha visto lei, nel corridoio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "se",
+            "alme",
+            "avere",
+            "vedere",
+            "la",
+            "chiavetta",
+            "sapere",
+            "che",
+            "alme",
+            "avere",
+            "vedere",
+            "lei",
+            "nel",
+            "corridoio"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Venga con me. Irene va. La macchina continua. La storia non è finita in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venire",
+            "con",
+            "me",
+            "irene",
+            "andare",
+            "la",
+            "macchina",
+            "continuare",
+            "la",
+            "storia",
+            "non",
+            "essere",
+            "finire",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Nove, undici, una, tre: venerdì ha ore, non settimane. Manca poco. Adesso è l'ufficio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nove",
+            "undici",
+            "una",
+            "tre",
+            "venerdi",
+            "avere",
+            "ora",
+            "non",
+            "settimana",
+            "mancare",
+            "poco",
+            "adesso",
+            "essere",
+            "ufficio"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Irene non butta la chiavetta nel corridoio. La tiene. Entra. Alme chiude la porta, piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "buttare",
+            "la",
+            "chiavetta",
+            "nel",
+            "corridoio",
+            "la",
+            "tenere",
+            "entrare",
+            "alme",
+            "chiudere",
+            "la",
+            "porta",
+            "piano"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Fuori, la macchina lavora ancora. Dentro, due sedie, un ufficio, venerdì pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "la",
+            "macchina",
+            "lavorare",
+            "ancora",
+            "dentro",
+            "due",
+            "sedia",
+            "un",
+            "ufficio",
+            "venerdi",
+            "pomeriggio"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene aspetta che Alme parli. Non parla ancora. Questo è l'ultimo fatto del capitolo: la porta è chiusa, la scelta no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "che",
+            "alme",
+            "parlare",
+            "non",
+            "parlare",
+            "ancora",
+            "questo",
+            "essere",
+            "ultimo",
+            "fatto",
+            "del",
+            "capitolo",
+            "la",
+            "porta",
+            "essere",
+            "chiudere",
+            "la",
+            "scelta",
+            "no"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Venerdì mattina, venerdì mezzogiorno, venerdì pomeriggio: tre pezzi dello stesso giorno, non tre giorni nuovi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "mattina",
+            "venerdi",
+            "mezzogiorno",
+            "venerdi",
+            "pomeriggio",
+            "tre",
+            "pezzo",
+            "dello",
+            "stesso",
+            "giorno",
+            "non",
+            "tre",
+            "giorno",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "La copia è in tasca. Le carte sono nella macchina. Alme è di fronte. Manca un'ora, o è già tardi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "copia",
+            "essere",
+            "in",
+            "tasca",
+            "le",
+            "carta",
+            "essere",
+            "nella",
+            "macchina",
+            "alme",
+            "essere",
+            "di",
+            "fronte",
+            "mancare",
+            "ora",
+            "o",
+            "essere",
+            "gia",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Irene siede. Non spiega ancora. Aspetta. Questo è venerdì, fino in fondo. Non è sabato. Non è un altro martedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "sedere",
+            "non",
+            "spiegare",
+            "ancora",
+            "aspettare",
+            "questo",
+            "essere",
+            "venerdi",
+            "fino",
+            "in",
+            "fondo",
+            "non",
+            "essere",
+            "sabato",
+            "non",
+            "essere",
+            "un",
+            "altro",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Alme resta in piedi. Irene resta seduta. Tra loro il tavolo. Nella tasca la chiavetta. Fuori il rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "restare",
+            "in",
+            "piedi",
+            "irene",
+            "restare",
+            "sedere",
+            "tra",
+            "loro",
+            "il",
+            "tavolo",
+            "nella",
+            "tasca",
+            "la",
+            "chiavetta",
+            "fuori",
+            "il",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Nessuno corre. Nessuno urla. Venerdì chiede solo questo, per ora: due donne, una porta, e niente ancora detto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "correre",
+            "nessuno",
+            "urlare",
+            "venerdi",
+            "chiedere",
+            "solo",
+            "questo",
+            "per",
+            "ora",
+            "due",
+            "donna",
+            "una",
+            "porta",
+            "e",
+            "niente",
+            "ancora",
+            "dire"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Adesso. Troppo tardi. Manca poco. Tre modi di dire lo stesso venerdì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "troppo",
+            "tardi",
+            "mancare",
+            "poco",
+            "tre",
+            "modo",
+            "di",
+            "dire",
+            "lo",
+            "stesso",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Dietro la porta c'è l'ufficio. Non c'è ancora una scelta di Alme. C'è solo: venga con me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "la",
+            "porta",
+            "ce",
+            "ufficio",
+            "non",
+            "ce",
+            "ancora",
+            "una",
+            "scelta",
+            "di",
+            "alme",
+            "ce",
+            "solo",
+            "venire",
+            "con",
+            "me"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch20_q01",
+      "chapterId": "la-casa-delle-finestre-20",
+      "type": "direct",
+      "question": "What day is it?",
+      "choices": [
+        "Friday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "correctChoice": 0,
+      "explanation": "Today is Friday. Papers are to be destroyed.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch20_q02",
+      "chapterId": "la-casa-delle-finestre-20",
+      "type": "event",
+      "question": "What does Irene put in her pocket?",
+      "choices": [
+        "A USB stick with copies",
+        "Quinto’s key",
+        "The whole basement box"
+      ],
+      "correctChoice": 0,
+      "explanation": "She copies scanned folders onto a chiavetta. Not the internet.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch20_q03",
+      "chapterId": "la-casa-delle-finestre-20",
+      "type": "character",
+      "question": "What does Alme say in the corridor?",
+      "choices": [
+        "Come with me",
+        "Run",
+        "I will help you twice"
+      ],
+      "correctChoice": 0,
+      "explanation": "She does not shout. She says: Come with me.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch20_q04",
+      "chapterId": "la-casa-delle-finestre-20",
+      "type": "inference",
+      "question": "Do we know Alme’s final choice yet?",
+      "choices": [
+        "No. Irene only knows the door is open",
+        "Yes. Alme lets the box go",
+        "Yes. Alme calls Piva"
+      ],
+      "correctChoice": 0,
+      "explanation": "Irene does not yet know what Alme will do. That is the next chapter.",
+      "difficulty": 2
+    }
+  ]
+}

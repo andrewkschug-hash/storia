@@ -33,6 +33,7 @@ type RawInputs = {
   narrativeArc?: string;
   storyLocalCharactersJson?: unknown;
   storyLocalLocationsJson?: unknown;
+  lexiconAdditionsJson?: unknown;
 };
 
 export function loadContentBundle(inputs: RawInputs): ContentBundle {
@@ -62,7 +63,7 @@ export function loadContentBundle(inputs: RawInputs): ContentBundle {
   const lexiconFile = parseFile(
     'lexicon/italian-core.json',
     LexiconFileSchema,
-    inputs.lexiconJson,
+    mergeLexicon(inputs.lexiconJson, inputs.lexiconAdditionsJson, storyPath),
   );
   const manifest = parseFile(
     `${storyPath}/manifest.json`,
@@ -509,6 +510,25 @@ function validateTranslationCoverage(
       throw new ContentValidationError(file, key, 'english', `Unused English key "${key}"`);
     }
   }
+}
+
+function mergeLexicon(coreJson: unknown, additionsJson: unknown, storyPath: string): unknown {
+  if (additionsJson === undefined) return coreJson;
+  const core = LexiconFileSchema.parse(coreJson);
+  const extraRaw =
+    additionsJson && typeof additionsJson === 'object' && 'lexicon' in additionsJson
+      ? additionsJson
+      : { lexicon: additionsJson };
+  const extra = LexiconFileSchema.parse(extraRaw);
+  const seen = new Set(core.lexicon.map((entry) => entry.lemmaId));
+  const appended = extra.lexicon.filter((entry) => {
+    if (seen.has(entry.lemmaId)) return false;
+    seen.add(entry.lemmaId);
+    return true;
+  });
+  if (appended.length === 0) return coreJson;
+  void storyPath;
+  return { lexicon: [...core.lexicon, ...appended] };
 }
 
 function parseFile<T>(file: string, schema: { parse: (data: unknown) => T }, data: unknown): T {

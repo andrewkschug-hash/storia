@@ -1,0 +1,1182 @@
+{
+  "id": "la-casa-delle-finestre-17",
+  "storyId": "la-casa-delle-finestre",
+  "number": 17,
+  "title": "Meeting",
+  "titleIt": "Incontro",
+  "locationIds": [
+    "via-della-scuola",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "sara-neri"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-17",
+      "summary": "On Wednesday, behind the gym, Irene meets Sara Neri. Sara was the lamp. She asks Irene to delay a box at work before Friday, not to enter the school. Irene says she does not know.",
+      "characterIds": [
+        "irene-colombo",
+        "sara-neri"
+      ],
+      "locationIds": [
+        "scuola-media"
+      ],
+      "rememberedFacts": [
+        "Today is Wednesday",
+        "Sara Neri was the person with the lamp",
+        "She used rooms because there is no corridor light, and she followed old hours",
+        "She paused and answered because she saw Irene",
+        "She wants the registers saved from Friday",
+        "She asks Irene to delay or lose a box at work, not to break in",
+        "Irene says she does not know"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Oggi è mercoledì. Ieri era martedì. Venerdì è tra due giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "mercoledi",
+            "ieri",
+            "essere",
+            "martedi",
+            "venerdi",
+            "essere",
+            "tra",
+            "due",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Irene non prende la chiave di Quinto. Cerca Sara di giorno, come ha scritto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "prendere",
+            "la",
+            "chiave",
+            "di",
+            "quinto",
+            "cercare",
+            "sara",
+            "di",
+            "giorno",
+            "come",
+            "avere",
+            "scrivere"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Non va alla fermata. Gira dietro la scuola, di là, verso la palestra chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "andare",
+            "alla",
+            "fermata",
+            "girare",
+            "dietro",
+            "la",
+            "scuola",
+            "di",
+            "la",
+            "verso",
+            "la",
+            "palestra",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Non entra. Resta fuori, sul cemento, con il quaderno in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "entrare",
+            "restare",
+            "fuori",
+            "sul",
+            "cemento",
+            "con",
+            "il",
+            "quaderno",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "C'è una donna. Ha una borsa grande, rigida, come carta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "donna",
+            "avere",
+            "una",
+            "borsa",
+            "grande",
+            "rigido",
+            "come",
+            "carta"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Irene guarda il viso. È la foto. È la fermata. Forse non è più forse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "viso",
+            "essere",
+            "la",
+            "foto",
+            "essere",
+            "la",
+            "fermata",
+            "forse",
+            "non",
+            "essere",
+            "piu",
+            "forse"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "La donna parla per prima. Voce bassa, di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "donna",
+            "parlare",
+            "per",
+            "prima",
+            "voce",
+            "basso",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Lei è Irene. Io sono Sara Neri.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "irene",
+            "io",
+            "essere",
+            "sara",
+            "neri"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Irene non sorride. Il cuore va in fretta. Ha rabbia, e paura, insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sorridere",
+            "il",
+            "cuore",
+            "andare",
+            "in",
+            "fretta",
+            "avere",
+            "rabbia",
+            "e",
+            "paura",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Lei era la luce.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "la",
+            "luce"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sì.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Irene respira. Voleva un nome. Adesso ce l'ha, e non è più facile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "respirare",
+            "volere",
+            "un",
+            "nome",
+            "adesso",
+            "ce",
+            "avere",
+            "e",
+            "non",
+            "essere",
+            "piu",
+            "facile"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Lei mi ha spaventata. Le luci, la pausa, il foglio nella grata.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "mi",
+            "avere",
+            "spaventare",
+            "le",
+            "luce",
+            "la",
+            "pausa",
+            "il",
+            "foglio",
+            "nella",
+            "grata"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il foglio era mio. Non chiamare. Registri. Era vero.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "foglio",
+            "essere",
+            "mio",
+            "non",
+            "chiamare",
+            "registro",
+            "essere",
+            "vero"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Irene non dice grazie. Non dice ti denuncio. Sta lì, sul cemento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "dire",
+            "grazie",
+            "non",
+            "dire",
+            "ti",
+            "denunciare",
+            "stare",
+            "li",
+            "sul",
+            "cemento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Irene tiene le mani chiuse. Non è un film. È una persona, di giorno, dietro la palestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tenere",
+            "le",
+            "mano",
+            "chiudere",
+            "non",
+            "essere",
+            "un",
+            "film",
+            "essere",
+            "una",
+            "persona",
+            "di",
+            "giorno",
+            "dietro",
+            "la",
+            "palestra"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Perché le stanze? Perché la pausa? Perché tre luci lente?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "le",
+            "stanza",
+            "perche",
+            "la",
+            "pausa",
+            "perche",
+            "tre",
+            "luce",
+            "lento"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Sara non fa un discorso. Risponde a pezzi, concreti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sara",
+            "non",
+            "fare",
+            "un",
+            "discorso",
+            "rispondere",
+            "a",
+            "pezzo",
+            "concreto"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Nel corridoio non c'è luce. Uso le stanze. Avevo l'orario vecchio, in testa.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "nel",
+            "corridoio",
+            "non",
+            "ce",
+            "luce",
+            "usare",
+            "le",
+            "stanza",
+            "avere",
+            "orario",
+            "vecchio",
+            "in",
+            "testa"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Poi ho visto lei, alla finestra. Mi sono fermata. Poi ho risposto.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "avere",
+            "vedere",
+            "lei",
+            "alla",
+            "finestra",
+            "mi",
+            "essere",
+            "fermare",
+            "poi",
+            "avere",
+            "rispondere"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Avevo bisogno di qualcuno al comune. Non dei carabinieri. Dei registri.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "bisogno",
+            "di",
+            "qualcuno",
+            "al",
+            "comune",
+            "non",
+            "dei",
+            "carabinieri",
+            "dei",
+            "registro"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Irene ascolta. Non perdona, non ancora. Capisce i fatti, uno sotto l'altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "non",
+            "perdonare",
+            "non",
+            "ancora",
+            "capire",
+            "i",
+            "fatto",
+            "uno",
+            "sotto",
+            "altro"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Venerdì Alme distrugge. I registri delle classi, le copie, le liste.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "venerdi",
+            "alme",
+            "distruggere",
+            "i",
+            "registro",
+            "delle",
+            "classe",
+            "le",
+            "copia",
+            "le",
+            "lista"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Se mi aiuti, non entri. Non prendi la chiave. Perdi tempo, al lavoro.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "mi",
+            "aiutare",
+            "non",
+            "entrare",
+            "non",
+            "prendere",
+            "la",
+            "chiave",
+            "perdere",
+            "tempo",
+            "al",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Una scatola. La metti dove non è. Un giorno, due. Basta.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "scatola",
+            "la",
+            "mettere",
+            "dove",
+            "non",
+            "essere",
+            "un",
+            "giorno",
+            "due",
+            "basta"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Non è un furto da film. È tempo. Venerdì è tra due giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "furto",
+            "da",
+            "film",
+            "essere",
+            "tempo",
+            "venerdi",
+            "essere",
+            "tra",
+            "due",
+            "giorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
+          "text": "Irene guarda la borsa. Guarda Sara. Guarda la palestra chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "la",
+            "borsa",
+            "guardare",
+            "sara",
+            "guardare",
+            "la",
+            "palestra",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Loredana ha pianto. Quinto ha offerto una chiave. Alme sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "avere",
+            "piangere",
+            "quinto",
+            "avere",
+            "offrire",
+            "una",
+            "chiave",
+            "alme",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Adesso una donna dice: perdi una scatola. Irene non è più solo una che conta finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "una",
+            "donna",
+            "dire",
+            "perdere",
+            "una",
+            "scatola",
+            "irene",
+            "non",
+            "essere",
+            "piu",
+            "solo",
+            "una",
+            "che",
+            "contare",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Dovrei dire di no. Dovrei chiamare Piva. Dovrei andare al lavoro e scansionare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "dire",
+            "di",
+            "no",
+            "dovere",
+            "chiamare",
+            "piva",
+            "dovere",
+            "andare",
+            "al",
+            "lavoro",
+            "e",
+            "scansionare"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Non so.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Sara non insiste. Non tocca Irene. Annuisce, o quasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sara",
+            "non",
+            "insistere",
+            "non",
+            "toccare",
+            "irene",
+            "annuire",
+            "o",
+            "quasi"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Oggi è mercoledì. Domani è giovedì. Poi venerdì.",
+          "speakerId": "sara-neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "mercoledi",
+            "domani",
+            "essere",
+            "giovedi",
+            "poi",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Irene se ne va di qua, verso la strada. Non entra. Non dice di sì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "se",
+            "ne",
+            "andare",
+            "di",
+            "qua",
+            "verso",
+            "la",
+            "strada",
+            "non",
+            "entrare",
+            "non",
+            "dire",
+            "di",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Scrive dopo, in mansarda: Sara è la luce. Chiede tempo, non la scuola. Io: non so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "dopo",
+            "in",
+            "mansarda",
+            "sara",
+            "essere",
+            "la",
+            "luce",
+            "chiedere",
+            "tempo",
+            "non",
+            "la",
+            "scuola",
+            "io",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Non scrive: ho capito tutto. Non ha capito tutto. Ha un viso, e una richiesta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "avere",
+            "capire",
+            "tutto",
+            "non",
+            "avere",
+            "capire",
+            "tutto",
+            "avere",
+            "un",
+            "viso",
+            "e",
+            "una",
+            "richiesta"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Dietro la palestra c'era cemento, e una borsa, e due giorni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "la",
+            "palestra",
+            "ce",
+            "cemento",
+            "e",
+            "una",
+            "borsa",
+            "e",
+            "due",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Irene va al comune lo stesso mercoledì, dopo. Scansiona. Non perde una scatola. Non oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "andare",
+            "al",
+            "comune",
+            "lo",
+            "stesso",
+            "mercoledi",
+            "dopo",
+            "scansionare",
+            "non",
+            "perdere",
+            "una",
+            "scatola",
+            "non",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Alme dice poco. Venerdì, ripete. Irene dice: va bene. Non dice di Sara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "dire",
+            "poco",
+            "venerdi",
+            "ripetere",
+            "irene",
+            "dire",
+            "andare",
+            "bene",
+            "non",
+            "dire",
+            "di",
+            "sara"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "La sera non accende la lampada verso la scuola. Sa chi è. Non ha bisogno della griglia, stasera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "non",
+            "accendere",
+            "la",
+            "lampada",
+            "verso",
+            "la",
+            "scuola",
+            "sapere",
+            "chi",
+            "essere",
+            "non",
+            "avere",
+            "bisogno",
+            "della",
+            "griglia",
+            "stasera"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Ha bisogno di una scelta, giovedì. Oggi ha detto non so. Questo resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "bisogno",
+            "di",
+            "una",
+            "scelta",
+            "giovedi",
+            "oggi",
+            "avere",
+            "dire",
+            "non",
+            "sapere",
+            "questo",
+            "restare"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Sara è restata dietro la palestra. Non l'ha seguita. Non è un inseguimento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sara",
+            "essere",
+            "restare",
+            "dietro",
+            "la",
+            "palestra",
+            "non",
+            "avere",
+            "seguire",
+            "non",
+            "essere",
+            "un",
+            "inseguimento"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Irene, al comune, tocca una scatola di registri e la lascia. Non oggi. Mercoledì non è il giorno del seminterrato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "al",
+            "comune",
+            "toccare",
+            "una",
+            "scatola",
+            "di",
+            "registro",
+            "e",
+            "la",
+            "lasciare",
+            "non",
+            "oggi",
+            "mercoledi",
+            "non",
+            "essere",
+            "il",
+            "giorno",
+            "del",
+            "seminterrato"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Se mi aiuti, ha detto Sara. Se. Irene tiene il se fino a giovedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "mi",
+            "aiutare",
+            "avere",
+            "dire",
+            "sara",
+            "se",
+            "irene",
+            "tenere",
+            "il",
+            "se",
+            "fino",
+            "a",
+            "giovedi"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Non è tutto risolto. È un incontro. Un viso. Una richiesta di tempo. Un non so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "tutto",
+            "risolvere",
+            "essere",
+            "un",
+            "incontro",
+            "un",
+            "viso",
+            "una",
+            "richiesta",
+            "di",
+            "tempo",
+            "un",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Dietro la palestra il vento è poco. Sara tiene la borsa come tiene i registri: vicina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "la",
+            "palestra",
+            "il",
+            "vento",
+            "essere",
+            "poco",
+            "sara",
+            "tenere",
+            "la",
+            "borsa",
+            "come",
+            "tenere",
+            "i",
+            "registro",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Irene chiede ancora: le ore vecchie. Sara dice: stanza due, poi tre, poi otto, come prima.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "chiedere",
+            "ancora",
+            "le",
+            "ora",
+            "vecchio",
+            "sara",
+            "dire",
+            "stanza",
+            "due",
+            "poi",
+            "tre",
+            "poi",
+            "otto",
+            "come",
+            "prima"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Poi lei. Poi la pausa. Poi le tre lente. Poi le due. Poi il foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "lei",
+            "poi",
+            "la",
+            "pausa",
+            "poi",
+            "le",
+            "tre",
+            "lento",
+            "poi",
+            "le",
+            "due",
+            "poi",
+            "il",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Non è magia. È una donna senza corridoio, con una lampada da campeggio, e una data: venerdì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "magia",
+            "essere",
+            "una",
+            "donna",
+            "senza",
+            "corridoio",
+            "con",
+            "una",
+            "lampada",
+            "da",
+            "campeggio",
+            "e",
+            "una",
+            "data",
+            "venerdi"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Irene torna in mansarda mercoledì sera. Non bussa da Loredana. Non chiama Piva. Non dice sì a Sara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tornare",
+            "in",
+            "mansarda",
+            "mercoledi",
+            "sera",
+            "non",
+            "bussare",
+            "da",
+            "loredana",
+            "non",
+            "chiamare",
+            "piva",
+            "non",
+            "dire",
+            "si_yes",
+            "a",
+            "sara"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Domani è giovedì. Domani può perdere una scatola, o no. Stasera tiene solo: non so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "essere",
+            "giovedi",
+            "domani",
+            "potere",
+            "perdere",
+            "una",
+            "scatola",
+            "o",
+            "no",
+            "stasera",
+            "tenere",
+            "solo",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Mercoledì è finito. Non ha detto sì. Non ha detto no. Ha un nome, e due giorni. Basta così.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mercoledi",
+            "essere",
+            "finire",
+            "non",
+            "avere",
+            "dire",
+            "si_yes",
+            "non",
+            "avere",
+            "dire",
+            "no",
+            "avere",
+            "un",
+            "nome",
+            "e",
+            "due",
+            "giorno",
+            "basta",
+            "cosi"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch17_q01",
+      "chapterId": "la-casa-delle-finestre-17",
+      "type": "direct",
+      "question": "What day is it?",
+      "choices": [
+        "Wednesday",
+        "Friday",
+        "Tuesday"
+      ],
+      "correctChoice": 0,
+      "explanation": "Today is Wednesday. Yesterday was Tuesday. Friday is in two days.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch17_q02",
+      "chapterId": "la-casa-delle-finestre-17",
+      "type": "character",
+      "question": "Who was the lamp?",
+      "choices": [
+        "Sara Neri",
+        "Loredana",
+        "Quinto"
+      ],
+      "correctChoice": 0,
+      "explanation": "Irene says: you were the light. Sara says yes.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch17_q03",
+      "chapterId": "la-casa-delle-finestre-17",
+      "type": "event",
+      "question": "What does Sara ask Irene to do?",
+      "choices": [
+        "Lose or delay a box at work, not enter the school",
+        "Take Quinto’s key tonight",
+        "Call the Carabinieri at once"
+      ],
+      "correctChoice": 0,
+      "explanation": "Lose time at work. A box. Not the key. Not a break-in.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch17_q04",
+      "chapterId": "la-casa-delle-finestre-17",
+      "type": "inference",
+      "question": "What does Irene answer?",
+      "choices": [
+        "I don’t know",
+        "Yes, I will steal the files",
+        "No, never"
+      ],
+      "correctChoice": 0,
+      "explanation": "She does not say yes. She says: I don’t know.",
+      "difficulty": 2
+    }
+  ]
+}

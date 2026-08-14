@@ -5,7 +5,8 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { CatalogStory } from '@/src/content/schemas';
 import { getCatalogStory } from '@/src/content';
 import { loadStoryProgressView, type ChapterListItem } from '@/src/progress/useReadingProgress';
-import { Radii, Spacing, Typography, type ThemeColors } from '@/src/theme/tokens';
+import { Radii, Spacing, type ThemeColors } from '@/src/theme/tokens';
+import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
   eyebrow: string;
@@ -23,6 +24,7 @@ type StoryRow = {
 };
 
 export function A1StoryList({ eyebrow, title, caption, stories, colors, onOpenChapter }: Props) {
+  const { type, minTouchTarget } = useTheme();
   const [rows, setRows] = useState<StoryRow[]>([]);
   const [expandedId, setExpandedId] = useState<string | null>(stories[0]?.id ?? null);
   const [focusTick, setFocusTick] = useState(0);
@@ -64,9 +66,9 @@ export function A1StoryList({ eyebrow, title, caption, stories, colors, onOpenCh
 
   return (
     <View style={{ marginTop: Spacing.xl }}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>{eyebrow}</Text>
-      <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.xs }]}>{title}</Text>
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>{eyebrow}</Text>
+      <Text style={[type.label, { color: colors.text, marginTop: Spacing.xs }]}>{title}</Text>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
         {caption}
       </Text>
 
@@ -82,16 +84,17 @@ export function A1StoryList({ eyebrow, title, caption, stories, colors, onOpenCh
                   backgroundColor: colors.backgroundElevated,
                   borderColor: expanded ? colors.tint : colors.border,
                   opacity: pressed ? 0.88 : 1,
+                  minHeight: minTouchTarget,
                 },
               ]}>
               <View style={styles.storyMeta}>
-                <Text style={[Typography.caption, { color: colors.tint }]}>
+                <Text style={[type.caption, { color: colors.tint }]}>
                   {index + 1} of {rows.length} · suggested
                 </Text>
-                <Text style={[Typography.label, { color: colors.text, marginTop: 2 }]}>
+                <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>
                   {row.story.titleIt}
                 </Text>
-                <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2 }]}>
+                <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>
                   {row.completed}/{row.story.chapterCount} chapters
                 </Text>
               </View>
@@ -111,13 +114,14 @@ export function A1StoryList({ eyebrow, title, caption, stories, colors, onOpenCh
                           backgroundColor: colors.backgroundElevated,
                           borderColor: colors.border,
                           opacity: locked ? 0.55 : pressed ? 0.88 : 1,
+                          minHeight: minTouchTarget,
                         },
                       ]}>
                       <View style={{ flex: 1 }}>
-                        <Text style={[Typography.caption, { color: colors.tint }]}>
+                        <Text style={[type.caption, { color: colors.tint }]}>
                           Capitolo {chapter.number}
                         </Text>
-                        <Text style={[Typography.label, { color: colors.text, marginTop: 2 }]}>
+                        <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>
                           {chapter.titleIt}
                         </Text>
                       </View>

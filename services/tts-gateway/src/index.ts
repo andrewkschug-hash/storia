@@ -4,6 +4,15 @@ import { join } from 'node:path';
 
 import { publicRoster, readRoster, writeAssignment } from './assignments';
 import { apiKeyHint, loadGatewayEnv, providerConfigured, upsertEnvValues } from './env';
+import {
+  classifyExistingAssets,
+  closeGoogleApiPermit,
+  countBillableCharacters,
+  evaluateGoogleTtsGuard,
+  openGoogleApiPermit,
+  runtimeGuardInputs,
+  type PlannedGeneration,
+} from './googleTtsGuard';
 import { createTTSProvider } from './providers';
 import { AssetRegistry } from './registry';
 import { audioCacheKey, textHash } from './cacheKey';
@@ -223,21 +232,42 @@ const server = createServer(async (req, res) => {
           provider?: TTSProviderId;
           regenerate?: boolean;
         }[];
+        allowPaidUsage?: boolean;
+        paidUsageConfirmation?: string;
       };
+      const sentences = body.sentences ?? [];
+      const googlePlan = sentences
+        .filter((s) => ((s.provider as TTSProviderId) || ACTIVE) === 'google')
+        .map((s) => plannedFromInput(s, body.chapterId));
+      if (googlePlan.length > 0) {
+        const evaluation = evaluateIncomingGoogle(googlePlan, {
+          allowPaidUsage: body.allowPaidUsage,
+          paidUsageConfirmation: body.paidUsageConfirmation,
+        });
+        if (!evaluation.allowed) {
+          json(res, 403, { error: evaluation.error, evaluation });
+          return;
+        }
+        openGoogleApiPermit(evaluation);
+      }
       const assets: AudioAsset[] = [];
       const errors: { index: number; speakerId?: string; contentId?: string; error: string }[] = [];
-      for (let index = 0; index < (body.sentences ?? []).length; index++) {
-        const sentence = body.sentences![index];
-        try {
-          assets.push(await generateOne(sentence));
-        } catch (error) {
-          errors.push({
-            index,
-            speakerId: sentence.speakerId,
-            contentId: sentence.contentId,
-            error: error instanceof Error ? error.message : String(error),
-          });
+      try {
+        for (let index = 0; index < sentences.length; index++) {
+          const sentence = sentences[index];
+          try {
+            assets.push(await generateOne({ ...sentence, permitAlreadyOpen: true }));
+          } catch (error) {
+            errors.push({
+              index,
+              speakerId: sentence.speakerId,
+              contentId: sentence.contentId,
+              error: error instanceof Error ? error.message : String(error),
+            });
+          }
         }
+      } finally {
+        closeGoogleApiPermit();
       }
       json(res, 200, { chapterId: body.chapterId, assets, errors });
       return;
@@ -263,7 +293,11 @@ const server = createServer(async (req, res) => {
     json(res, 404, { error: 'Not found' });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    const status = message.includes('is not configured') ? 503 : 500;
+    const status = message.includes('is not configured')
+      ? 503
+      : message.includes('GENERATION BLOCKED') || message.includes('No Google TTS preflight permit')
+        ? 403
+        : 500;
     json(res, status, { error: message });
   }
 });
@@ -338,6 +372,7 @@ async function generateOne(input: {
   provider?: TTSProviderId;
   speed?: TTSSpeed;
   regenerate?: boolean;
+  permitAlreadyOpen?: boolean;
 }): Promise<AudioAsset> {
   const speed = input.speed ?? 'normal';
   const providerId = (input.provider as TTSProviderId) || ACTIVE;
@@ -357,43 +392,128 @@ async function generateOne(input: {
     return approveAsset(existing!);
   }
 
-  const tts = provider(input.provider);
-  const result = await tts.generateSpeech({
-    text: input.text,
-    voiceId: input.voiceId,
-    language: 'it-IT',
-    speed,
-  });
-  registry.writeAudio(result.cacheKey, Buffer.from(result.audio));
-  if (existing) {
-    existing.status = 'approved';
-    existing.approvedAt = new Date().toISOString();
-    existing.createdAt = new Date().toISOString();
-    existing.audioUrl = registry.publicUrl(result.cacheKey);
-    registry.save(assets);
-    return approveAsset(existing);
+  if (providerId === 'google' && !input.permitAlreadyOpen) {
+    const evaluation = evaluateIncomingGoogle([plannedFromInput(input)], {
+      allowPaidUsage: false,
+    });
+    if (!evaluation.allowed) {
+      throw new Error(evaluation.error);
+    }
+    openGoogleApiPermit(evaluation);
   }
-  const asset: AudioAsset = approveAsset({
-    id: result.cacheKey,
-    contentId: input.contentId ?? `adhoc:${textHash(input.text)}`,
-    speakerId: input.speakerId ?? 'narrator',
-    provider: result.provider,
+
+  try {
+    const tts = provider(input.provider);
+    const result = await tts.generateSpeech({
+      text: input.text,
+      voiceId: input.voiceId,
+      language: 'it-IT',
+      speed,
+    });
+    registry.writeAudio(result.cacheKey, Buffer.from(result.audio));
+    if (existing) {
+      existing.status = 'approved';
+      existing.approvedAt = new Date().toISOString();
+      existing.createdAt = new Date().toISOString();
+      existing.audioUrl = registry.publicUrl(result.cacheKey);
+      registry.save(assets);
+      return approveAsset(existing);
+    }
+    const asset: AudioAsset = approveAsset({
+      id: result.cacheKey,
+      contentId: input.contentId ?? `adhoc:${textHash(input.text)}`,
+      speakerId: input.speakerId ?? 'narrator',
+      provider: result.provider,
+      voiceId: input.voiceId,
+      language: 'it-IT',
+      speed,
+      text: input.text,
+      textHash: textHash(input.text),
+      audioUrl: registry.publicUrl(result.cacheKey),
+      duration: null,
+      generationVersion: Number(process.env.TTS_GENERATION_VERSION ?? 1),
+      status: 'approved',
+      createdAt: new Date().toISOString(),
+      approvedAt: new Date().toISOString(),
+      cacheKey: result.cacheKey,
+    });
+    assets.push(asset);
+    registry.save(assets);
+    return asset;
+  } finally {
+    if (providerId === 'google' && !input.permitAlreadyOpen) {
+      closeGoogleApiPermit();
+    }
+  }
+}
+
+function plannedFromInput(
+  input: {
+    text: string;
+    voiceId: string;
+    speakerId?: string;
+    contentId?: string;
+    speed?: TTSSpeed;
+    regenerate?: boolean;
+  },
+  chapterId?: string,
+): PlannedGeneration {
+  const counted = countBillableCharacters(input.text);
+  if (!counted.ok) {
+    throw new Error(counted.error);
+  }
+  const speed = input.speed ?? 'normal';
+  const generationVersion = Number(process.env.TTS_GENERATION_VERSION ?? 1);
+  const classified = classifyExistingAssets(loadAssets(), {
     voiceId: input.voiceId,
     language: 'it-IT',
     speed,
     text: input.text,
-    textHash: textHash(input.text),
-    audioUrl: registry.publicUrl(result.cacheKey),
-    duration: null,
-    generationVersion: Number(process.env.TTS_GENERATION_VERSION ?? 1),
-    status: 'approved',
-    createdAt: new Date().toISOString(),
-    approvedAt: new Date().toISOString(),
-    cacheKey: result.cacheKey,
+    generationVersion,
   });
-  assets.push(asset);
-  registry.save(assets);
-  return asset;
+  const action = input.regenerate ? 'generate' : classified.action;
+  const outputFilename = audioCacheKey({
+    provider: 'google',
+    voiceId: input.voiceId,
+    language: 'it-IT',
+    speed,
+    text: input.text,
+    generationVersion,
+  });
+  const content = input.contentId ?? '';
+  const sentenceId = content.split(':')[2] ?? input.speakerId ?? 'unknown';
+  return {
+    storyId: content.split(':')[1] ?? 'adhoc',
+    chapterId: chapterId ?? content.split(':')[1] ?? 'adhoc',
+    sentenceId,
+    logicalVoice: input.speakerId ?? 'narrator',
+    googleVoiceId: input.voiceId,
+    language: 'it-IT',
+    text: input.text,
+    generationSpeed: speed,
+    generationVersion,
+    outputFilename,
+    estimatedBillableCharacters: counted.chars,
+    action,
+  };
+}
+
+function evaluateIncomingGoogle(
+  planned: PlannedGeneration[],
+  extra: { allowPaidUsage?: boolean; paidUsageConfirmation?: string | null; dryRun?: boolean } = {},
+) {
+  const runtime = runtimeGuardInputs();
+  return evaluateGoogleTtsGuard({
+    planned,
+    pricing: runtime.pricing,
+    hardLimitChars: runtime.hardLimitChars,
+    trackedUsage: runtime.trackedUsage,
+    providerConfigured: runtime.providerConfigured,
+    now: runtime.now,
+    dryRun: extra.dryRun,
+    allowPaidUsage: extra.allowPaidUsage,
+    paidUsageConfirmation: extra.paidUsageConfirmation,
+  });
 }
 
 server.listen(PORT, HOST, () => {

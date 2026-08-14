@@ -45,9 +45,25 @@ export type CharacterVoiceAssignment = {
   voiceId: string;
   language: TTSLanguage;
   speakingStyle: string;
-  /** Human-readable name only. Never show voiceId in the UI. */
   voiceName?: string;
   gender?: 'male' | 'female' | 'neutral';
+  logicalVoiceId?: string;
+};
+
+export type ProviderVoiceBinding = {
+  voiceId: string;
+  voiceName?: string;
+};
+
+export type LogicalVoice = {
+  speakingStyle: string;
+  language: TTSLanguage;
+  gender?: 'male' | 'female' | 'neutral';
+  providers: Partial<Record<TTSProviderId, ProviderVoiceBinding | null>>;
+};
+
+export type CharacterLogicalAssignment = {
+  logicalVoiceId: string;
 };
 
 export type AudioAsset = {
@@ -72,5 +88,6 @@ export type AudioAsset = {
 export type VoiceRoster = {
   activeProvider: TTSProviderId;
   generationVersion: number;
-  characters: Record<string, CharacterVoiceAssignment>;
+  logicalVoices: Record<string, LogicalVoice>;
+  characters: Record<string, CharacterLogicalAssignment>;
 };

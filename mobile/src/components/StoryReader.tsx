@@ -10,13 +10,13 @@ import {
   type NativeSyntheticEvent,
 } from 'react-native';
 
+import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import { ReaderSentence } from '@/src/components/ReaderSentence';
 import { ChapterEndNotes } from '@/src/components/ChapterEndNotes';
 import type { ChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { useLayout } from '@/src/theme/useLayout';
-import { Spacing, Typography } from '@/src/theme/tokens';
-import { useTheme } from '@/src/theme/useTheme';
+import { Spacing } from '@/src/theme/tokens';
 
 type Props = {
   chapter: Chapter;
@@ -38,7 +38,7 @@ type Props = {
 };
 
 function SceneBreak() {
-  const { colors } = useTheme();
+  const { colors } = useAccessibility();
   return (
     <View style={styles.sceneBreak} accessibilityRole="none">
       <View style={[styles.sceneHairline, { backgroundColor: colors.border }]} />
@@ -66,7 +66,7 @@ export function StoryReader({
   onContinueFromChapter,
   onScrollProgress,
 }: Props) {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useAccessibility();
   const layout = useLayout();
   const scrollRef = useRef<ScrollView>(null);
   const didRestore = useRef(false);
@@ -110,7 +110,7 @@ export function StoryReader({
           paddingHorizontal: layout.isPhone
             ? Math.max(Spacing.md, layout.paddingHorizontal)
             : Spacing.xl,
-          maxWidth: layout.isDesktop ? 720 : layout.isTablet ? 680 : undefined,
+          maxWidth: layout.contentMaxWidth,
           width: '100%',
           alignSelf: 'center',
         },
@@ -126,17 +126,15 @@ export function StoryReader({
         layoutH.current = event.nativeEvent.layout.height;
         emitProgress();
       }}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
         Capitolo {chapter.number}
       </Text>
       <Text
         style={[
-          Typography.chapterTitle,
+          type.chapterTitle,
           {
             color: colors.text,
             marginTop: Spacing.sm,
-            fontSize: layout.isPhone ? 24 : 28,
-            lineHeight: layout.isPhone ? 30 : 34,
           },
         ]}>
         {chapter.titleIt}
@@ -179,16 +177,16 @@ export function StoryReader({
 
       {showCompletionCta ? (
         <View style={styles.completionCta}>
-          <Text style={[Typography.caption, { color: colors.textMuted }]}>Finished reading?</Text>
+          <Text style={[type.caption, { color: colors.textMuted }]}>Finished reading?</Text>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Continue"
             onPress={onContinueFromChapter}
             style={({ pressed }) => [
               styles.continueBtn,
-              { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+              { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
             ]}>
-            <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 16 }]}>Continue</Text>
+            <Text style={[type.button, { color: colors.onTint, fontSize: type.button.fontSize }]}>Continue</Text>
           </Pressable>
         </View>
       ) : null}

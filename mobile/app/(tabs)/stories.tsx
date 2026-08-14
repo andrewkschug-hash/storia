@@ -19,19 +19,22 @@ import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
 import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function StoriesScreen() {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
   const journey = buildLearnerJourney();
   const a1 = journey.find((band) => band.cefrLevel === 'A1');
+  const a2plus = journey.find((band) => band.cefrLevel === 'A2+');
   const preRomeStories = a1?.groups.find((group) => !group.chapterRange)?.stories ?? [];
+  const a2PlusStories = a2plus?.groups.flatMap((group) => group.stories) ?? [];
   const { story, progress, chapterStatuses, loading, error, refresh, service } =
     useReadingProgress(LUCA_STORY_ID);
   const [beforeRomeRows, setBeforeRomeRows] = useState<ExtraStoryRow[]>([]);
+  const [a2PlusRows, setA2PlusRows] = useState<ExtraStoryRow[]>([]);
 
   const loadBeforeRome = useCallback(async () => {
     const next: ExtraStoryRow[] = [];
@@ -48,11 +51,27 @@ export default function StoriesScreen() {
     setBeforeRomeRows(next);
   }, [preRomeStories.map((item) => item.id).join('|')]);
 
+  const loadA2Plus = useCallback(async () => {
+    const next: ExtraStoryRow[] = [];
+    for (const item of a2PlusStories) {
+      const view = await loadStoryProgressView(item.id);
+      next.push({
+        storyId: item.id,
+        titleIt: item.titleIt,
+        completed: view.chapters.filter((chapter) => chapter.status === 'completed').length,
+        total: item.chapterCount,
+        chapters: view.chapters,
+      });
+    }
+    setA2PlusRows(next);
+  }, [a2PlusStories.map((item) => item.id).join('|')]);
+
   useFocusEffect(
     useCallback(() => {
       void refresh();
       void loadBeforeRome();
-    }, [refresh, loadBeforeRome]),
+      void loadA2Plus();
+    }, [refresh, loadBeforeRome, loadA2Plus]),
   );
 
   if (loading) {
@@ -69,7 +88,7 @@ export default function StoriesScreen() {
     return (
       <AtmosphereBackground>
         <View style={[styles.center, { padding: Spacing.lg }]}>
-          <Text style={[Typography.label, { color: colors.danger }]}>{error}</Text>
+          <Text style={[type.label, { color: colors.danger }]}>{error}</Text>
         </View>
       </AtmosphereBackground>
     );
@@ -106,7 +125,7 @@ export default function StoriesScreen() {
         <ScreenContent>
           <Text
             style={[
-              Typography.heroTitle,
+              type.heroTitle,
               {
                 color: colors.text,
                 fontSize: layout.isPhone ? 26 : 32,
@@ -115,17 +134,17 @@ export default function StoriesScreen() {
             ]}>
             Stories
           </Text>
-          <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+          <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
             Start with Luca a Roma. Luca Before Rome is hometown background.
           </Text>
 
-          <Text style={[Typography.chapterEyebrow, { color: colors.tint, marginTop: Spacing.xl }]}>
+          <Text style={[type.chapterEyebrow, { color: colors.tint, marginTop: Spacing.xl }]}>
             Start here
           </Text>
-          <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.xs }]}>
+          <Text style={[type.label, { color: colors.text, marginTop: Spacing.xs }]}>
             {story.titleIt}
           </Text>
-          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
             {completed} of {story.chapters.length} chapters finished · {percent}% through the story
           </Text>
           <View style={{ marginTop: Spacing.md }}>
@@ -140,14 +159,14 @@ export default function StoriesScreen() {
                 borderColor: colors.border,
               },
             ]}>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
               {progress ? 'Continue Luca a Roma' : 'Start Luca a Roma'}
             </Text>
-            <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.label, { color: colors.text, marginTop: Spacing.sm }]}>
               Capitolo {continueChapter.number} · {continueChapter.titleIt}
             </Text>
             {chapterPercent > 0 && chapterPercent < 100 ? (
-              <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 4 }]}>
+              <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>
                 {chapterPercent}% through this chapter
               </Text>
             ) : null}
@@ -156,9 +175,9 @@ export default function StoriesScreen() {
                 onPress={() => void openLucaChapter(continueChapter.id)}
                 style={({ pressed }) => [
                   styles.primaryBtn,
-                  { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Read</Text>
+                <Text style={[type.button, { color: colors.onTint, fontSize: 14 }]}>Read</Text>
               </Pressable>
               <Pressable
                 onPress={() => void openLucaChapter(continueChapter.id, true)}
@@ -170,7 +189,7 @@ export default function StoriesScreen() {
                     opacity: pressed ? 0.88 : 1,
                   },
                 ]}>
-                <Text style={[Typography.label, { color: colors.text }]}>Listen</Text>
+                <Text style={[type.label, { color: colors.text }]}>Listen</Text>
               </Pressable>
             </View>
           </View>
@@ -180,8 +199,8 @@ export default function StoriesScreen() {
             chapters={chapterStatuses}
             currentChapterId={progress?.currentChapterId ?? continueChapter.id}
             colors={colors}
-            extraSections={
-              beforeRomeRows.length
+            extraSections={[
+              ...(beforeRomeRows.length
                 ? [
                     {
                       afterArcId: 'luca-a-roma-a1',
@@ -191,8 +210,19 @@ export default function StoriesScreen() {
                       stories: beforeRomeRows,
                     },
                   ]
-                : []
-            }
+                : []),
+              ...(a2PlusRows.length
+                ? [
+                    {
+                      afterArcId: 'luca-a-roma-a2',
+                      id: 'a2-plus-genre-paths',
+                      cefrLevel: 'A2+',
+                      title: 'La casa delle finestre',
+                      stories: a2PlusRows,
+                    },
+                  ]
+                : []),
+            ]}
             onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
             onOpenStoryChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
           />

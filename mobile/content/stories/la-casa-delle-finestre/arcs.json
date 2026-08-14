@@ -1,0 +1,16 @@
+{
+  "arcs": [
+    {
+      "id": "la-casa-delle-finestre-a2-plus",
+      "storyId": "la-casa-delle-finestre",
+      "cefrLevel": "A2+",
+      "title": "The house of windows",
+      "titleIt": "La casa delle finestre",
+      "description": "An A2+ mystery about a closed school, paper records, and a lamp that is not a ghost.",
+      "narrativeStage": "Irene watches the closed school and follows the paper.",
+      "chapterStart": 1,
+      "chapterEnd": 24,
+      "status": "available"
+    }
+  ]
+}

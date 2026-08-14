@@ -1,0 +1,1128 @@
+{
+  "id": "la-casa-delle-finestre-16",
+  "storyId": "la-casa-delle-finestre",
+  "number": 16,
+  "title": "Irene’s choice",
+  "titleIt": "La scelta di Irene",
+  "locationIds": [
+    "via-della-scuola",
+    "scuola-media",
+    "cortile-scuola"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "quinto-belli"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-16",
+      "summary": "Irene lists three options and waits one day. Quinto offers a key if she leaves the forbidden folder alone. She refuses the key and does not call Piva. She will look for Sara in daylight.",
+      "characterIds": [
+        "irene-colombo",
+        "quinto-belli"
+      ],
+      "locationIds": [
+        "via-della-scuola"
+      ],
+      "rememberedFacts": [
+        "Irene could tell Piva, tell Alme, or look for Sara",
+        "She waits one day",
+        "Quinto offers a key if she leaves the non scansionare folder alone",
+        "She refuses the key and does not call Piva"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Irene cammina. Non va al comune subito. Gira il paese, piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "camminare",
+            "non",
+            "andare",
+            "al",
+            "comune",
+            "subito",
+            "girare",
+            "il",
+            "paese",
+            "piano"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Nel quaderno scrive tre righe, come tre porte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "quaderno",
+            "scrivere",
+            "tre",
+            "riga",
+            "come",
+            "tre",
+            "porta"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Se dico al maresciallo Piva, qualcuno viene. Il foglio dice di no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "dire",
+            "al",
+            "maresciallo",
+            "piva",
+            "qualcuno",
+            "venire",
+            "il",
+            "foglio",
+            "dire",
+            "di",
+            "no"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Se dico ad Alme, Alme sorride. Venerdì distrugge lo stesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "dire",
+            "ad",
+            "alme",
+            "alme",
+            "sorridere",
+            "venerdi",
+            "distruggere",
+            "lo",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Se cerco Sara, cerco una donna dell'autobus, di una foto, di una relazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "cercare",
+            "sara",
+            "cercare",
+            "una",
+            "donna",
+            "autobus",
+            "di",
+            "una",
+            "foto",
+            "di",
+            "una",
+            "relazione"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Non so se è lei. Non so se la luce è lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "se",
+            "essere",
+            "lei",
+            "non",
+            "sapere",
+            "se",
+            "la",
+            "luce",
+            "essere",
+            "lei"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Tre scelte. Tutte cattive, o tutte incomplete.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "scelta",
+            "tutto",
+            "cattivo",
+            "o",
+            "tutto",
+            "incompleto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Irene potrebbe chiamare oggi. Potrebbe dire tutto giù, alle scatole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "potere",
+            "chiamare",
+            "oggi",
+            "potere",
+            "dire",
+            "tutto",
+            "giu",
+            "alle",
+            "scatola"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Dovrei scegliere adesso. Però sceglie di aspettare un giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "scegliere",
+            "adesso",
+            "pero",
+            "scegliere",
+            "di",
+            "aspettare",
+            "un",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Scrive: un giorno. Non è una soluzione. È tempo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "un",
+            "giorno",
+            "non",
+            "essere",
+            "una",
+            "soluzione",
+            "essere",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Un giorno non ferma venerdì. Un giorno ferma solo la voce, oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "giorno",
+            "non",
+            "fermare",
+            "venerdi",
+            "un",
+            "giorno",
+            "fermare",
+            "solo",
+            "la",
+            "voce",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Cammina ancora. Passa la piazza, la fermata, la scuola chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "ancora",
+            "passare",
+            "la",
+            "piazza",
+            "la",
+            "fermata",
+            "la",
+            "scuola",
+            "chiudere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s13",
+          "text": "Vicino alla scuola c'è Quinto, con la tanica. Oggi non annaffia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "alla",
+            "scuola",
+            "ce",
+            "quinto",
+            "con",
+            "la",
+            "tanica",
+            "oggi",
+            "non",
+            "annaffiare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Tiene le chiavi in mano, visibili, come sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tenere",
+            "le",
+            "chiave",
+            "in",
+            "mano",
+            "visibile",
+            "come",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Signorina. Lei guarda troppo.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "signorina",
+            "lei",
+            "guardare",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Irene si ferma di qua. Il cancello è di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "fermare",
+            "di",
+            "qua",
+            "il",
+            "cancello",
+            "essere",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Lavoro al comune. Carte della scuola.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "lavorare",
+            "al",
+            "comune",
+            "carta",
+            "della",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Quinto annuisce. Non sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "annuire",
+            "non",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "C'è una cartella. Non scansionare. Lei la lascia stare, e io le do una chiave.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "una",
+            "cartella",
+            "non",
+            "scansionare",
+            "lei",
+            "la",
+            "lasciare",
+            "stare",
+            "e",
+            "io",
+            "le",
+            "dare",
+            "una",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Una chiave sicura, dice. Per entrare senza rumore. Poi basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "chiave",
+            "sicuro",
+            "dire",
+            "per",
+            "entrare",
+            "senza",
+            "rumore",
+            "poi",
+            "basta"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Irene guarda le chiavi. Non le prende.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "le",
+            "chiave",
+            "non",
+            "le",
+            "prendere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Se prendo la chiave, entro. La scuola non è sicura. Loredana ha paura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "prendere",
+            "la",
+            "chiave",
+            "entrare",
+            "la",
+            "scuola",
+            "non",
+            "essere",
+            "sicuro",
+            "loredana",
+            "avere",
+            "paura"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Se lascio la cartella, lascio anche Sara Neri, e le crepe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "lasciare",
+            "la",
+            "cartella",
+            "lasciare",
+            "anche",
+            "sara",
+            "neri",
+            "e",
+            "le",
+            "crepa"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "No. Grazie. Non voglio la chiave.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "grazie",
+            "non",
+            "volere",
+            "la",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Quinto chiude la mano. Non insiste. Non spiega perché offre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "chiudere",
+            "la",
+            "mano",
+            "non",
+            "insistere",
+            "non",
+            "spiegare",
+            "perche",
+            "offrire"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "La scuola è vuota, dice, senza guardare le finestre.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "vuoto",
+            "dire",
+            "senza",
+            "guardare",
+            "le",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Poi cammina via con la tanica, e con tutte le chiavi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "camminare",
+            "via",
+            "con",
+            "la",
+            "tanica",
+            "e",
+            "con",
+            "tutto",
+            "le",
+            "chiave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s28",
+          "text": "Irene non chiama il maresciallo Piva. Non oggi. Non con la sua chiave.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "chiamare",
+            "il",
+            "maresciallo",
+            "piva",
+            "non",
+            "oggi",
+            "non",
+            "con",
+            "la",
+            "suo",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Non dice di sì ad Alme. Non entra di notte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dire",
+            "di",
+            "si_yes",
+            "ad",
+            "alme",
+            "non",
+            "entrare",
+            "di",
+            "notte"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Aspetta un giorno. Però non resta ferma nella testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "un",
+            "giorno",
+            "pero",
+            "non",
+            "restare",
+            "fermo",
+            "nella",
+            "testa"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Scrive: di giorno, non con la chiave. Cerco Sara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "di",
+            "giorno",
+            "non",
+            "con",
+            "la",
+            "chiave",
+            "cercare",
+            "sara"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Non è una prova. È una scelta piccola: vedere la donna, se c'è, alla luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "prova",
+            "essere",
+            "una",
+            "scelta",
+            "piccolo",
+            "vedere",
+            "la",
+            "donna",
+            "se",
+            "ce",
+            "alla",
+            "luce"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Chiude il quaderno. Va al lavoro. Venerdì è tra tre giorni, meno uno, presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "quaderno",
+            "andare",
+            "al",
+            "lavoro",
+            "venerdi",
+            "essere",
+            "tra",
+            "tre",
+            "giorno",
+            "meno",
+            "uno",
+            "presto"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Prima passa la fermata, di giorno. Non c'è la donna. Non c'è la borsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "passare",
+            "la",
+            "fermata",
+            "di",
+            "giorno",
+            "non",
+            "ce",
+            "la",
+            "donna",
+            "non",
+            "ce",
+            "la",
+            "borsa"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Irene non aspetta l'autobus. Guarda, poi va. Cerco Sara, ha scritto. Oggi non c'è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "aspettare",
+            "autobus",
+            "guardare",
+            "poi",
+            "andare",
+            "cercare",
+            "sara",
+            "avere",
+            "scrivere",
+            "oggi",
+            "non",
+            "ce"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Non è la fine. È un giorno. La chiave resta con Quinto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "fine",
+            "essere",
+            "un",
+            "giorno",
+            "la",
+            "chiave",
+            "restare",
+            "con",
+            "quinto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s37",
+          "text": "Se prendeva la chiave, entrava. Se entrava, la scuola non era più solo finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "prendere",
+            "la",
+            "chiave",
+            "entrare",
+            "se",
+            "entrare",
+            "la",
+            "scuola",
+            "non",
+            "essere",
+            "piu",
+            "solo",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Ha detto no. Questo è un fatto. Non è ancora Sara, e non è Piva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "dire",
+            "no",
+            "questo",
+            "essere",
+            "un",
+            "fatto",
+            "non",
+            "essere",
+            "ancora",
+            "sara",
+            "e",
+            "non",
+            "essere",
+            "piva"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Quinto sa della cartella. Non spiega come. Irene non chiede, perché chiedere è già un sì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "sapere",
+            "della",
+            "cartella",
+            "non",
+            "spiegare",
+            "come",
+            "irene",
+            "non",
+            "chiedere",
+            "perche",
+            "chiedere",
+            "essere",
+            "gia",
+            "un",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Di giorno, se c'è la donna, la vede. Se non c'è, aspetta il giorno dopo, non la notte con le chiavi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "giorno",
+            "se",
+            "ce",
+            "la",
+            "donna",
+            "la",
+            "vedere",
+            "se",
+            "non",
+            "ce",
+            "aspettare",
+            "il",
+            "giorno",
+            "dopo",
+            "non",
+            "la",
+            "notte",
+            "con",
+            "le",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Venerdì resta sul calendario. Un giorno di attesa non lo cancella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "restare",
+            "sul",
+            "calendario",
+            "un",
+            "giorno",
+            "di",
+            "attesa",
+            "non",
+            "lo",
+            "cancellare"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene va al comune con tre no: no a Piva, no alla chiave, no alla fretta di stasera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "andare",
+            "al",
+            "comune",
+            "con",
+            "tre",
+            "no",
+            "no",
+            "a",
+            "piva",
+            "no",
+            "alla",
+            "chiave",
+            "no",
+            "alla",
+            "fretta",
+            "di",
+            "stasera"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Un sì c'è: di giorno, se la donna c'è. Oggi non c'era. Domani può esserci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "si_yes",
+            "ce",
+            "di",
+            "giorno",
+            "se",
+            "la",
+            "donna",
+            "ce",
+            "oggi",
+            "non",
+            "ce",
+            "domani",
+            "potere",
+            "esserci"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non ha capito tutto. Ha scelto di non entrare, e di non chiamare, per un giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "capire",
+            "tutto",
+            "avere",
+            "scegliere",
+            "di",
+            "non",
+            "entrare",
+            "e",
+            "di",
+            "non",
+            "chiamare",
+            "per",
+            "un",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Se dico a Piva, non ascolto il foglio. Se dico ad Alme, venerdì resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "dire",
+            "a",
+            "piva",
+            "non",
+            "ascoltare",
+            "il",
+            "foglio",
+            "se",
+            "dire",
+            "ad",
+            "alme",
+            "venerdi",
+            "restare"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Se cerco Sara di giorno, forse capisco una persona, non un palazzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "cercare",
+            "sara",
+            "di",
+            "giorno",
+            "forse",
+            "capire",
+            "una",
+            "persona",
+            "non",
+            "un",
+            "palazzo"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Per questo aspetta. Non perché ha capito. Perché non ha ancora visto il viso, alla luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "questo",
+            "aspettare",
+            "non",
+            "perche",
+            "avere",
+            "capire",
+            "perche",
+            "non",
+            "avere",
+            "ancora",
+            "vedere",
+            "il",
+            "viso",
+            "alla",
+            "luce"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Quinto è già lontano, con le chiavi. Irene tiene il quaderno, e tre no, e un giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "essere",
+            "gia",
+            "lontano",
+            "con",
+            "le",
+            "chiave",
+            "irene",
+            "tenere",
+            "il",
+            "quaderno",
+            "e",
+            "tre",
+            "no",
+            "e",
+            "un",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Domani è mercoledì. Poi giovedì. Poi venerdì. Lei ha scelto solo il primo passo: aspettare, e cercare di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "essere",
+            "mercoledi",
+            "poi",
+            "giovedi",
+            "poi",
+            "venerdi",
+            "lei",
+            "avere",
+            "scegliere",
+            "solo",
+            "il",
+            "primo",
+            "passo",
+            "aspettare",
+            "e",
+            "cercare",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Non ha la chiave. Non ha Piva. Ha un giorno, e una foto, e un forse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "la",
+            "chiave",
+            "non",
+            "avere",
+            "piva",
+            "avere",
+            "un",
+            "giorno",
+            "e",
+            "una",
+            "foto",
+            "e",
+            "un",
+            "forse"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Questo è abbastanza per stasera. Non è tutto. Non deve essere tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "abbastanza",
+            "per",
+            "stasera",
+            "non",
+            "essere",
+            "tutto",
+            "non",
+            "dovere",
+            "essere",
+            "tutto"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch16_q01",
+      "chapterId": "la-casa-delle-finestre-16",
+      "type": "direct",
+      "question": "What three options does Irene write?",
+      "choices": [
+        "Tell Piva, tell Alme, or look for Sara",
+        "Take the key, call Mimmo, or leave town",
+        "Scan everything, or nothing"
+      ],
+      "correctChoice": 0,
+      "explanation": "Three lines, like three doors: Piva, Alme, Sara.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch16_q02",
+      "chapterId": "la-casa-delle-finestre-16",
+      "type": "event",
+      "question": "What does she choose to do first?",
+      "choices": [
+        "Wait one day",
+        "Call Piva at once",
+        "Enter the school at night"
+      ],
+      "correctChoice": 0,
+      "explanation": "She chooses to wait one day. It is not a solution. It is time.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch16_q03",
+      "chapterId": "la-casa-delle-finestre-16",
+      "type": "character",
+      "question": "What does Quinto offer?",
+      "choices": [
+        "A key if she leaves the forbidden folder alone",
+        "To testify about the cracks",
+        "A meeting with Sara"
+      ],
+      "correctChoice": 0,
+      "explanation": "Leave non scansionare alone, and he gives her a key. She says no.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch16_q04",
+      "chapterId": "la-casa-delle-finestre-16",
+      "type": "inference",
+      "question": "How will Irene look for Sara?",
+      "choices": [
+        "In daylight, without Quinto’s key",
+        "With the key, at night",
+        "By calling Piva"
+      ],
+      "correctChoice": 0,
+      "explanation": "She writes: in daylight, not with the key. I look for Sara.",
+      "difficulty": 2
+    }
+  ]
+}

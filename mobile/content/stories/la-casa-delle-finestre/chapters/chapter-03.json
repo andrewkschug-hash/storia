@@ -1,0 +1,1185 @@
+{
+  "id": "la-casa-delle-finestre-03",
+  "storyId": "la-casa-delle-finestre",
+  "number": 3,
+  "title": "The contract",
+  "titleIt": "Il contratto",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "comune",
+    "ufficio-alme",
+    "scatole-comune"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "alme"
+  ],
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-03",
+      "summary": "Irene starts a short contract at the comune. She must scan leftover school papers. One folder says do not scan. She does not open it. Alme tells her to bring anything odd to her, not to the others.",
+      "characterIds": [
+        "irene-colombo",
+        "alme"
+      ],
+      "locationIds": [
+        "comune",
+        "ufficio-alme",
+        "scatole-comune"
+      ],
+      "rememberedFacts": [
+        "Irene works a short contract at the comune",
+        "She must scan old school papers",
+        "Dottoressa Alme is polite and in charge of this work",
+        "One folder is marked non scansionare",
+        "Alme says: if you find anything odd, come to me, not to the others"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo Irene va al comune.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "irene",
+            "andare",
+            "al",
+            "comune"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il comune è in piazza, non lontano dalla scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "comune",
+            "essere",
+            "in",
+            "piazza",
+            "non",
+            "lontano",
+            "dalla",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Stamattina le finestre della scuola sono di nuovo scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stamattina",
+            "le",
+            "finestra",
+            "della",
+            "scuola",
+            "essere",
+            "di",
+            "nuovo",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Irene non si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Cammina fino alla porta del comune e entra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "fino",
+            "alla",
+            "porta",
+            "del",
+            "comune",
+            "e",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ha un contratto breve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "un",
+            "contratto",
+            "breve"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Oggi è il primo giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "essere",
+            "il",
+            "primo",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Dalle nove deve essere qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dalle",
+            "nove",
+            "dovere",
+            "essere",
+            "qui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "L'ufficio è piccolo e tranquillo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ufficio",
+            "essere",
+            "piccolo",
+            "e",
+            "tranquillo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "C'è una donna dietro una scrivania.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "donna",
+            "dietro",
+            "una",
+            "scrivania"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Buongiorno, Dottoressa Alme.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "dottoressa",
+            "alme"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Buongiorno, Irene.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "irene"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Si sieda.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "si",
+            "sedere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Irene si siede.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "sedere"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Firma il contratto sulla scrivania.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "firmare",
+            "il",
+            "contratto",
+            "sulla",
+            "scrivania"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Alme tiene una copia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "tenere",
+            "una",
+            "copia"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Irene tiene l'altra copia del contratto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "tenere",
+            "altro",
+            "copia",
+            "del",
+            "contratto"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Io sono la dirigente, per queste carte.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "la",
+            "dirigente",
+            "per",
+            "questo",
+            "carta"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Il contratto è per due mesi.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "contratto",
+            "essere",
+            "per",
+            "due",
+            "mese"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Poi vediamo.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Lei scansiona le carte vecchie del comune.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "scansionare",
+            "le",
+            "carta",
+            "vecchio",
+            "del",
+            "comune"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Anche quello che resta della scuola.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "quello",
+            "che",
+            "restare",
+            "della",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Niente di importante.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "niente",
+            "di",
+            "importante"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Quello che è rimasto, insomma.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "che",
+            "essere",
+            "rimanere",
+            "insomma"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Alme sorride ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "sorridere",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Irene ascolta e dice poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "e",
+            "dire",
+            "poco"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Va bene.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Io lavoro con le carte.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "lavorare",
+            "con",
+            "le",
+            "carta"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Perfetto.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "perfetto"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Questo è il suo lavoro, allora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "il",
+            "suo",
+            "lavoro",
+            "allora"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s32",
+          "text": "Le scatole sono giù.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "scatola",
+            "essere",
+            "giu"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "C'è anche uno scanner, su un tavolo.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "anche",
+            "uno",
+            "scanner",
+            "su",
+            "un",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Irene scende con Alme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scendere",
+            "con",
+            "alme"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "C'è polvere e c'è poca luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "polvere",
+            "e",
+            "ce",
+            "poco",
+            "luce"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Ci sono molte cartelle e molte scatole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "molto",
+            "cartella",
+            "e",
+            "molto",
+            "scatola"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Alme indica una scatola vicino allo scanner.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "indicare",
+            "una",
+            "scatola",
+            "vicino",
+            "allo",
+            "scanner"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Inizia da qui.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "iniziare",
+            "da",
+            "qui"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Carte della scuola, anni vecchi.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "carta",
+            "della",
+            "scuola",
+            "anno",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Le scansiona e basta.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "scansionare",
+            "e",
+            "basta"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Non deve leggere tutto.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dovere",
+            "leggere",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Alme torna su, ancora con il sorriso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "tornare",
+            "su",
+            "ancora",
+            "con",
+            "il",
+            "sorriso"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Irene resta sola con le scatole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "solo",
+            "con",
+            "le",
+            "scatola"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s44",
+          "text": "Irene apre la prima cartella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aprire",
+            "la",
+            "primo",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Ci sono liste e fogli semplici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "lista",
+            "e",
+            "foglio",
+            "semplice"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Date, classi, niente di strano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "data",
+            "classe",
+            "niente",
+            "di",
+            "strano"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Mette il foglio sullo scanner.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mettere",
+            "il",
+            "foglio",
+            "sullo",
+            "scanner"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Ha scansionato tre cartelle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "scansionare",
+            "tre",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Il lavoro è lento, però è chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "lavoro",
+            "essere",
+            "lento",
+            "pero",
+            "essere",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Passa quasi un'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "passare",
+            "quasi",
+            "ora"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Poi vede un'altra scatola, più in fondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "vedere",
+            "altro",
+            "scatola",
+            "piu",
+            "in",
+            "fondo"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Non è la scatola di Alme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "scatola",
+            "di",
+            "alme"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "C'è una cartella sopra le altre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "cartella",
+            "sopra",
+            "le",
+            "altro"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Sulla copertina c'è una riga a penna nera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "copertina",
+            "ce",
+            "una",
+            "riga",
+            "a",
+            "penna",
+            "nero"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Non scansionare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scansionare"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "Irene legge due volte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "leggere",
+            "due",
+            "volta"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "La mano è sulla cartella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mano",
+            "essere",
+            "sulla",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Dovrei aprire questa cartella?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "aprire",
+            "questo",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Dovrei chiedere ad Alme adesso?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dovere",
+            "chiedere",
+            "ad",
+            "alme",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Però Alme ha detto: le scansiona e basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "alme",
+            "avere",
+            "dire",
+            "le",
+            "scansionare",
+            "e",
+            "basta"
+          ]
+        },
+        {
+          "id": "s61",
+          "text": "Irene non apre la cartella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "aprire",
+            "la",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "La mette da parte, chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mettere",
+            "da",
+            "parte",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Prende un'altra cartella, normale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "altro",
+            "cartella",
+            "normale"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Scansiona ancora per venti minuti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scansionare",
+            "ancora",
+            "per",
+            "venti",
+            "minuto"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Le carte normali sono facili.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "carta",
+            "normale",
+            "essere",
+            "facile"
+          ]
+        },
+        {
+          "id": "s66",
+          "text": "La cartella chiusa resta accanto al muro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "cartella",
+            "chiudere",
+            "restare",
+            "accanto",
+            "al",
+            "muro"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Irene ha finito tre scatole piccole, non tutte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "avere",
+            "finire",
+            "tre",
+            "scatola",
+            "piccolo",
+            "non",
+            "tutto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s68",
+          "text": "Quando Irene torna su, Alme è alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "irene",
+            "tornare",
+            "su",
+            "alme",
+            "essere",
+            "alla",
+            "porta"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Tutto bene giù?",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "bene",
+            "giu"
+          ]
+        },
+        {
+          "id": "s71",
+          "text": "Sì.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Ho visto una cartella.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "vedere",
+            "una",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "C'è scritto: non scansionare.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "scrivere",
+            "non",
+            "scansionare"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Alme non perde il sorriso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "non",
+            "perdere",
+            "il",
+            "sorriso"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Quella resta lì.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "restare",
+            "li"
+          ]
+        },
+        {
+          "id": "s76",
+          "text": "Non è per oggi.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "per",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Se trova qualcosa di strano, viene da me.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "trovare",
+            "qualcosa",
+            "di",
+            "strano",
+            "venire",
+            "da",
+            "me"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Non dagli altri.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dagli",
+            "altro"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "A mezzogiorno può uscire.",
+          "speakerId": "alme",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "mezzogiorno",
+            "potere",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Irene dice di sì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "dire",
+            "di",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s81",
+          "text": "Però pensa alla cartella chiusa, giù.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "pensare",
+            "alla",
+            "cartella",
+            "chiudere",
+            "giu"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Non l'ha aperta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "l'ha",
+            "aprire"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch03_q01",
+      "chapterId": "la-casa-delle-finestre-03",
+      "type": "direct",
+      "question": "Where does Irene start work?",
+      "choices": [
+        "At the comune",
+        "At the closed school",
+        "At Loredana’s kitchen"
+      ],
+      "correctChoice": 0,
+      "explanation": "She has a short contract. She goes to the town hall.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03_q02",
+      "chapterId": "la-casa-delle-finestre-03",
+      "type": "event",
+      "question": "What must Irene do with the old school papers?",
+      "choices": [
+        "Scan them",
+        "Throw them away today",
+        "Take them home"
+      ],
+      "correctChoice": 0,
+      "explanation": "Alme says she scans the old papers, including what is left from the school.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03_q03",
+      "chapterId": "la-casa-delle-finestre-03",
+      "type": "direct",
+      "question": "What is written on one folder?",
+      "choices": [
+        "Non scansionare",
+        "Urgente",
+        "Per Quinto"
+      ],
+      "correctChoice": 0,
+      "explanation": "On the cover there is a line in pen: do not scan. Irene does not open it.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03_q04",
+      "chapterId": "la-casa-delle-finestre-03",
+      "type": "inference",
+      "question": "What does Alme tell Irene to do if she finds something odd?",
+      "choices": [
+        "Come to Alme, not to the others",
+        "Call the Carabinieri at once",
+        "Ask Quinto in the courtyard"
+      ],
+      "correctChoice": 0,
+      "explanation": "Alme smiles and says: if you find anything odd, you come to me. Not to the others.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,7 +1,13 @@
-import { Colors, type ColorSchemeName, type ThemeColors } from './tokens';
-import { useColorScheme } from '@/components/useColorScheme';
+import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
+import type { ScaledTypography } from '@/src/accessibility/scaleTypography';
+import type { ColorSchemeName, ThemeColors } from '@/src/theme/tokens';
 
-export function useTheme(): { scheme: ColorSchemeName; colors: ThemeColors } {
-  const scheme = (useColorScheme() ?? 'light') as ColorSchemeName;
-  return { scheme, colors: Colors[scheme] };
+export function useTheme(): {
+  scheme: ColorSchemeName;
+  colors: ThemeColors;
+  type: ScaledTypography;
+  minTouchTarget: number;
+} {
+  const { scheme, colors, type, minTouchTarget } = useAccessibility();
+  return { scheme, colors, type, minTouchTarget };
 }

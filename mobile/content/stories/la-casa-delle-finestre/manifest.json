@@ -1,0 +1,239 @@
+{
+  "id": "la-casa-delle-finestre",
+  "title": "The house of windows",
+  "titleIt": "La casa delle finestre",
+  "slug": "la-casa-delle-finestre",
+  "level": 2,
+  "cefrLevel": "A2+",
+  "synopsis": "Irene, archivista a San Quirico sul Nera, vede luci nella scuola chiusa. Conta, legge carte, e impara che il mistero è di carta, non di finestre.",
+  "characterIds": [
+    "irene-colombo",
+    "loredana",
+    "alme",
+    "quinto-belli",
+    "mimmo",
+    "sara-neri",
+    "piva"
+  ],
+  "locationIds": [
+    "san-quirico-sul-nera",
+    "via-della-scuola",
+    "mansarda-irene",
+    "cucina-loredana",
+    "scuola-media",
+    "cortile-scuola",
+    "comune",
+    "ufficio-alme",
+    "scatole-comune",
+    "seminterrato-comune",
+    "caserma-piva"
+  ],
+  "chapters": [
+    {
+      "id": "la-casa-delle-finestre-01",
+      "number": 1,
+      "title": "The grid",
+      "titleIt": "La griglia",
+      "difficultyLevel": 2,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-02",
+      "number": 2,
+      "title": "The closed school",
+      "titleIt": "La scuola chiusa",
+      "difficultyLevel": 2,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-03",
+      "number": 3,
+      "title": "The contract",
+      "titleIt": "Il contratto",
+      "difficultyLevel": 2,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-04",
+      "number": 4,
+      "title": "The notebook",
+      "titleIt": "Il quaderno",
+      "difficultyLevel": 2,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-05",
+      "number": 5,
+      "title": "Mimmo",
+      "titleIt": "Mimmo",
+      "difficultyLevel": 2,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-06",
+      "number": 6,
+      "title": "Quinto",
+      "titleIt": "Quinto",
+      "difficultyLevel": 2,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-07",
+      "number": 7,
+      "title": "The timetable",
+      "titleIt": "L'orario",
+      "difficultyLevel": 2,
+      "file": "chapter-07.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-08",
+      "number": 8,
+      "title": "She is thinking of me",
+      "titleIt": "Lei pensa a me",
+      "difficultyLevel": 2,
+      "file": "chapter-08.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-09",
+      "number": 9,
+      "title": "Yesterday",
+      "titleIt": "Ieri",
+      "difficultyLevel": 2,
+      "file": "chapter-09.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-10",
+      "number": 10,
+      "title": "Do not scan",
+      "titleIt": "Non scansionare",
+      "difficultyLevel": 2,
+      "file": "chapter-10.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-11",
+      "number": 11,
+      "title": "Sara",
+      "titleIt": "Sara",
+      "difficultyLevel": 2,
+      "file": "chapter-11.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-12",
+      "number": 12,
+      "title": "The second floor",
+      "titleIt": "Il secondo piano",
+      "difficultyLevel": 2,
+      "file": "chapter-12.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-13",
+      "number": 13,
+      "title": "Loredana",
+      "titleIt": "Loredana",
+      "difficultyLevel": 2,
+      "file": "chapter-13.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-14",
+      "number": 14,
+      "title": "The real code",
+      "titleIt": "Il codice vero",
+      "difficultyLevel": 2,
+      "file": "chapter-14.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-15",
+      "number": 15,
+      "title": "Do not call",
+      "titleIt": "Non chiamare",
+      "difficultyLevel": 2,
+      "file": "chapter-15.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-16",
+      "number": 16,
+      "title": "Irene’s choice",
+      "titleIt": "La scelta di Irene",
+      "difficultyLevel": 2,
+      "file": "chapter-16.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-17",
+      "number": 17,
+      "title": "Meeting",
+      "titleIt": "Incontro",
+      "difficultyLevel": 2,
+      "file": "chapter-17.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-18",
+      "number": 18,
+      "title": "The basement",
+      "titleIt": "Il seminterrato",
+      "difficultyLevel": 2,
+      "file": "chapter-18.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-19",
+      "number": 19,
+      "title": "Quinto changes",
+      "titleIt": "Quinto cambia",
+      "difficultyLevel": 2,
+      "file": "chapter-19.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-20",
+      "number": 20,
+      "title": "Friday",
+      "titleIt": "Venerdì",
+      "difficultyLevel": 2,
+      "file": "chapter-20.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-21",
+      "number": 21,
+      "title": "The director",
+      "titleIt": "La dirigente",
+      "difficultyLevel": 2,
+      "file": "chapter-21.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-22",
+      "number": 22,
+      "title": "Piva",
+      "titleIt": "Piva",
+      "difficultyLevel": 2,
+      "file": "chapter-22.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-23",
+      "number": 23,
+      "title": "Without light",
+      "titleIt": "Senza luce",
+      "difficultyLevel": 2,
+      "file": "chapter-23.json"
+    },
+    {
+      "id": "la-casa-delle-finestre-24",
+      "number": 24,
+      "title": "The archive",
+      "titleIt": "L'archivio",
+      "difficultyLevel": 2,
+      "file": "chapter-24.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "la-casa-delle-finestre-a2-plus",
+      "storyId": "la-casa-delle-finestre",
+      "cefrLevel": "A2+",
+      "title": "The house of windows",
+      "titleIt": "La casa delle finestre",
+      "description": "An A2+ mystery about a closed school, paper records, and a lamp that is not a ghost.",
+      "narrativeStage": "Irene watches the closed school and follows the paper.",
+      "chapterStart": 1,
+      "chapterEnd": 24,
+      "status": "available"
+    }
+  ]
+}

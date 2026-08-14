@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -26,7 +26,7 @@ export function ReaderAudioBar({
   onSetSpeed,
   onContinueFromChapter,
 }: Props) {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
 
   const progressLabel =
     hasAudio && isChapterMode && chapterProgress && chapterProgress.total > 0
@@ -48,9 +48,9 @@ export function ReaderAudioBar({
               onPress={onPlayPause}
               style={({ pressed }) => [
                 styles.primaryBtn,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>
+              <Text style={[type.button, { color: colors.onTint, fontSize: 14 }]}>
                 {isPlaying ? 'Pause' : 'Play'}
               </Text>
             </Pressable>
@@ -62,7 +62,7 @@ export function ReaderAudioBar({
               accessibilityLabel="Stop audio"
               onPress={onStop}
               style={({ pressed }) => [styles.secondaryBtn, { opacity: pressed ? 0.7 : 1 }]}>
-              <Text style={[Typography.label, { color: colors.textSecondary }]}>Stop</Text>
+              <Text style={[type.label, { color: colors.textSecondary }]}>Stop</Text>
             </Pressable>
           ) : null}
 
@@ -85,8 +85,8 @@ export function ReaderAudioBar({
                 ]}>
                 <Text
                   style={[
-                    Typography.caption,
-                    { color: speed === 'normal' ? '#F7FAF9' : colors.textSecondary },
+                    type.caption,
+                    { color: speed === 'normal' ? colors.onTint : colors.textSecondary },
                   ]}>
                   Natural
                 </Text>
@@ -102,8 +102,8 @@ export function ReaderAudioBar({
                 ]}>
                 <Text
                   style={[
-                    Typography.caption,
-                    { color: speed === 'slow' ? '#F7FAF9' : colors.textSecondary },
+                    type.caption,
+                    { color: speed === 'slow' ? colors.onTint : colors.textSecondary },
                   ]}>
                   Slow
                 </Text>
@@ -124,11 +124,11 @@ export function ReaderAudioBar({
               opacity: pressed ? 0.88 : 1,
             },
           ]}>
-          <Text style={[Typography.label, { color: '#F7FAF9' }]}>Continue</Text>
+          <Text style={[type.label, { color: colors.onTint }]}>Continue</Text>
         </Pressable>
       </View>
 
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
         {progressLabel}
       </Text>
     </View>

@@ -41,6 +41,7 @@ export const Colors = {
     readerSurface: '#FAFCFC',
     sentenceHighlight: palette.highlight,
     danger: palette.coralMute,
+    onTint: '#F7FAF9',
   },
   dark: {
     text: '#E8EEEC',
@@ -61,6 +62,53 @@ export const Colors = {
     readerSurface: '#121A18',
     sentenceHighlight: 'rgba(90, 143, 123, 0.28)',
     danger: palette.coralMute,
+    onTint: '#F7FAF9',
+  },
+} as const;
+
+/** WCAG-oriented palettes; used only when high-contrast is on. */
+export const HighContrastColors = {
+  light: {
+    text: '#000000',
+    textSecondary: '#1A1A1A',
+    textMuted: '#2E2E2E',
+    background: '#FFFFFF',
+    backgroundElevated: '#FFFFFF',
+    backgroundAtmosphereTop: '#FFFFFF',
+    backgroundAtmosphereBottom: '#FFFFFF',
+    tint: '#0A5C3C',
+    tintSoft: '#0A5C3C',
+    accent: '#7A4E00',
+    tabIconDefault: '#333333',
+    tabIconSelected: '#0A5C3C',
+    border: '#000000',
+    progressTrack: '#D0D0D0',
+    progressFill: '#0A5C3C',
+    readerSurface: '#FFFFFF',
+    sentenceHighlight: '#C8F0DC',
+    danger: '#9B1C1C',
+    onTint: '#FFFFFF',
+  },
+  dark: {
+    text: '#FFFFFF',
+    textSecondary: '#F2F2F2',
+    textMuted: '#E0E0E0',
+    background: '#000000',
+    backgroundElevated: '#000000',
+    backgroundAtmosphereTop: '#000000',
+    backgroundAtmosphereBottom: '#000000',
+    tint: '#5EE0A8',
+    tintSoft: '#5EE0A8',
+    accent: '#F5C16C',
+    tabIconDefault: '#CCCCCC',
+    tabIconSelected: '#5EE0A8',
+    border: '#FFFFFF',
+    progressTrack: '#333333',
+    progressFill: '#5EE0A8',
+    readerSurface: '#000000',
+    sentenceHighlight: '#0A4A32',
+    danger: '#FF8A8A',
+    onTint: '#000000',
   },
 } as const;
 
@@ -146,3 +194,5 @@ export const Typography = {
     lineHeight: 32,
   },
 } as const;
+
+export const MinTouchTarget = 44;

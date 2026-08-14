@@ -94,6 +94,7 @@ describe('Phase 12L pre-Rome wiring', () => {
       'luca-prima-di-roma-04',
       'luca-prima-di-roma-05',
       LUCA_STORY_ID,
+      'la-casa-delle-finestre',
     ]);
 
     const journey = buildLearnerJourney();

@@ -2,9 +2,9 @@ import { useRef } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { ReactNode } from 'react';
 
+import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import type { Sentence, Token } from '@/src/content/schemas';
-import { Spacing, Typography } from '@/src/theme/tokens';
-import { useTheme } from '@/src/theme/useTheme';
+import { Spacing } from '@/src/theme/tokens';
 
 type Props = {
   sentence: Sentence;
@@ -34,10 +34,10 @@ export function ReaderSentence({
   isPlaying,
   onPlayAudio,
 }: Props) {
-  const { colors } = useTheme();
+  const { colors, type } = useAccessibility();
   const skipSentencePress = useRef(false);
   const isDialogue = sentence.kind === 'dialogue';
-  const baseStyle = isDialogue ? Typography.readerDialogue : Typography.reader;
+  const baseStyle = isDialogue ? type.readerDialogue : type.reader;
 
   const openSentence = () => onPressSentenceBackground?.(sentence);
   const markNestedPress = () => {
@@ -103,7 +103,7 @@ export function ReaderSentence({
       accessibilityRole="button"
       accessibilityLabel={isPlaying ? 'Pause sentence audio' : 'Play sentence audio'}
       style={[
-        Typography.caption,
+        type.caption,
         {
           color: isPlaying ? colors.tint : colors.textMuted,
           opacity: isPlaying ? 1 : 0.7,
@@ -133,7 +133,7 @@ export function ReaderSentence({
       {isDialogue ? (
         <View>
           {sentence.speakerId ? (
-            <Text style={[Typography.caption, { color: colors.tint, marginBottom: 2 }]}>
+            <Text style={[type.caption, { color: colors.tint, marginBottom: 2 }]}>
               {capitalize(sentence.speakerId)}
             </Text>
           ) : null}
@@ -161,5 +161,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.xs,
     borderRadius: 8,
     marginBottom: Spacing.sm,
+    flexShrink: 1,
   },
 });

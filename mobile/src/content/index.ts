@@ -215,6 +215,8 @@ export {
   ELENA_STORY_ID,
   LUCA_STORY_ID,
   PRE_ROME_ARC_ID,
+  CASA_STORY_ID,
+  A2_PLUS_GENRE_ARC_ID,
   getAvailableStories,
   getCatalogStories,
   getCatalogStory,

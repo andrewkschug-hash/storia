@@ -15,11 +15,11 @@ import { useContinueReading } from '@/src/progress/useContinueReading';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import { useLayout } from '@/src/theme/useLayout';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function HomeScreen() {
-  const { colors } = useTheme();
+  const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
   const {
@@ -81,7 +81,7 @@ export default function HomeScreen() {
     return (
       <AtmosphereBackground>
         <View style={[styles.center, { padding: Spacing.lg }]}>
-          <Text style={[Typography.label, { color: colors.danger }]}>{error}</Text>
+          <Text style={[type.label, { color: colors.danger }]}>{error}</Text>
         </View>
       </AtmosphereBackground>
     );
@@ -102,7 +102,7 @@ export default function HomeScreen() {
           <View style={styles.topRow}>
             <Text
               style={[
-                Typography.brand,
+                type.brand,
                 { color: colors.text, fontSize: brandSize, lineHeight: brandSize + 6 },
               ]}>
               Storia
@@ -119,7 +119,7 @@ export default function HomeScreen() {
           </View>
           <Text
             style={[
-              Typography.heroTitle,
+              type.heroTitle,
               {
                 color: colors.text,
                 marginTop: Spacing.sm,
@@ -130,7 +130,7 @@ export default function HomeScreen() {
             {story.titleIt}
           </Text>
           <Text
-            style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}
+            style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}
             numberOfLines={layout.isPhone ? 2 : 1}>
             {story.synopsis}
           </Text>
@@ -167,7 +167,7 @@ export default function HomeScreen() {
                 styles.browseLink,
                 { opacity: pressed ? 0.7 : 1 },
               ]}>
-              <Text style={[Typography.label, { color: colors.tint }]}>Browse stories</Text>
+              <Text style={[type.label, { color: colors.tint }]}>Browse stories</Text>
             </Pressable>
           </View>
 
@@ -199,7 +199,7 @@ export default function HomeScreen() {
 
           {typeof __DEV__ !== 'undefined' && __DEV__ ? (
             <View style={[styles.devSection, { borderColor: colors.border }]}>
-              <Text style={[Typography.caption, { color: colors.textMuted }]}>Developer</Text>
+              <Text style={[type.caption, { color: colors.textMuted }]}>Developer</Text>
               <DevLink label="Voice Lab" href="/voice-lab" colors={colors} />
               <DevLink label="Audio studio" href="/audio-studio" colors={colors} />
               <DevLink label="CEFR audit" href="/cefr-audit" colors={colors} />
@@ -247,9 +247,9 @@ function StatChip({
             size={18}
           />
         ) : null}
-        <Text style={[Typography.heroTitle, { color: colors.text, fontSize: 22 }]}>{value}</Text>
+        <Text style={[type.heroTitle, { color: colors.text, fontSize: 22 }]}>{value}</Text>
       </View>
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2 }]}>{label}</Text>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>{label}</Text>
     </View>
   );
 }
@@ -265,7 +265,7 @@ function DevLink({
 }) {
   return (
     <Pressable onPress={() => router.push(href)} style={{ marginTop: Spacing.xs }}>
-      <Text style={[Typography.caption, { color: colors.textMuted }]}>{label}</Text>
+      <Text style={[type.caption, { color: colors.textMuted }]}>{label}</Text>
     </Pressable>
   );
 }

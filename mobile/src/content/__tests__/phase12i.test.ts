@@ -209,6 +209,7 @@ describe('Phase 12I story catalog', () => {
       'luca-prima-di-roma-04',
       'luca-prima-di-roma-05',
       LUCA_STORY_ID,
+      'la-casa-delle-finestre',
     ]);
     for (let i = 1; i < journey.length; i += 1) {
       expect(journey[i].narrativeOrder).toBeGreaterThan(journey[i - 1].narrativeOrder);
@@ -222,6 +223,7 @@ describe('Phase 12I story catalog', () => {
     expect(arcs.map((arc) => arc.id)).toEqual([
       PRE_ROME_ARC_ID,
       LUCA_STORY_ID,
+      'a2-plus-genre-paths',
       ELENA_STORY_ID,
     ]);
     expect(arcs[0].narrativeOrder).toBeLessThan(arcs[1].narrativeOrder);
@@ -417,7 +419,7 @@ describe('Phase 12I CEFR readiness split', () => {
 describe('Phase 12I Stories UI data model', () => {
   it('groups A1 / A1+ / A2 without requiring a UI redesign', () => {
     const journey = buildLearnerJourney();
-    expect(journey.map((band) => band.cefrLevel)).toEqual(['A1', 'A1+', 'A2']);
+    expect(journey.map((band) => band.cefrLevel)).toEqual(['A1', 'A1+', 'A2', 'A2+']);
     expect(journey[0].groups[0].chapterRange).toEqual({
       storyId: LUCA_STORY_ID,
       chapterStart: 1,

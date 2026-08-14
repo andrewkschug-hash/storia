@@ -106,7 +106,20 @@ Credentials stay in `services/tts-gateway` environment variables:
 - `GOOGLE_TTS_API_KEY` (optional fallback only)
 - `TTS_PROVIDER` (default `elevenlabs`)
 
+- `GOOGLE_TTS_HARD_LIMIT_CHARS` (required local safety ceiling; do not set this to Google’s full free allowance)
+
 Never put keys in the Expo bundle. The client only receives approved audio URLs or cache keys. See `services/tts-gateway/.env.example`.
+
+## 2b. Google TTS cost guard
+
+Every Google `generateSpeech` call requires a preflight permit. Scripts default to `--dry-run`.
+
+Billable characters: Unicode code points (`Array.from(text).length`) of the exact `input.text` sent to Cloud TTS. Whitespace and punctuation count. Storia does not send SSML. Pricing and free-allowance figures live only in `services/tts-gateway/config/google-tts-pricing.json`. Local usage is `services/tts-gateway/data/google-tts-usage.json` (updated only after a successful generate). The hard limit is independent of Google’s quota.
+
+```
+npx tsx services/tts-gateway/scripts/google-tts-preflight.ts --target=a1 --from=1 --to=20 --dry-run
+```
+
 
 ## 3. Pipeline
 

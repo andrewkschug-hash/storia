@@ -1,0 +1,1046 @@
+{
+  "id": "la-casa-delle-finestre-01",
+  "storyId": "la-casa-delle-finestre",
+  "number": 1,
+  "title": "The grid",
+  "titleIt": "La griglia",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "san-quirico-sul-nera",
+    "via-della-scuola",
+    "mansarda-irene",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "loredana"
+  ],
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-01",
+      "summary": "Irene arrives, moves into the attic opposite the closed school, and sees three lights on one line of windows.",
+      "characterIds": [
+        "irene-colombo",
+        "loredana"
+      ],
+      "locationIds": [
+        "san-quirico-sul-nera",
+        "via-della-scuola",
+        "mansarda-irene",
+        "scuola-media"
+      ],
+      "rememberedFacts": [
+        "Irene has just arrived in San Quirico sul Nera",
+        "Irene lives opposite the abandoned school",
+        "The school has been closed for two years",
+        "At night a light appears in one window, then another, then a third",
+        "The three windows are on the same horizontal line"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Irene arriva a San Quirico sul Nera nel pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "arrivare",
+            "a",
+            "san",
+            "quirico",
+            "sul",
+            "nera",
+            "nel",
+            "pomeriggio"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il paese è piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Irene cerca Via della Scuola a piedi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "cercare",
+            "via",
+            "della",
+            "scuola",
+            "a",
+            "piedi"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "La valigia è pesante, però cammina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "valigia",
+            "essere",
+            "pesante",
+            "pero",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "La strada è stretta e c'è poco rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "essere",
+            "stretto",
+            "e",
+            "ce",
+            "poco",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Loredana sta davanti alla porta della casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "loredana",
+            "stare",
+            "davanti",
+            "alla",
+            "porta",
+            "della",
+            "casa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s07",
+          "text": "Buonasera.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "buonasera"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Lei è Irene Colombo?",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "irene",
+            "colombo"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sì.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Arrivo adesso.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivare",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Bene.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La casa è questa.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "casa",
+            "essere",
+            "questo"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Lei sta di sopra, in mansarda.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "stare",
+            "di",
+            "sopra",
+            "in",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Le scale sono a sinistra.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "scala",
+            "essere",
+            "a",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Io sto al piano di sotto.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "stare",
+            "al",
+            "piano",
+            "di",
+            "sotto"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Se serve, bussa.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "servire",
+            "bussare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "La strada è tranquilla, di giorno e di sera.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "strada",
+            "essere",
+            "tranquillo",
+            "di",
+            "giorno",
+            "e",
+            "di",
+            "sera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s18",
+          "text": "Irene sale le scale con la valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "salire",
+            "le",
+            "scala",
+            "con",
+            "la",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Apre la porta della mansarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "la",
+            "porta",
+            "della",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La stanza è piccola, però c'è una finestra grande sulla strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "stanza",
+            "essere",
+            "piccolo",
+            "pero",
+            "ce",
+            "una",
+            "finestra",
+            "grande",
+            "sulla",
+            "strada"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "C'è un letto, un tavolo e una sedia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "letto",
+            "un",
+            "tavolo",
+            "e",
+            "una",
+            "sedia"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Irene lascia la valigia vicino al letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "lasciare",
+            "la",
+            "valigia",
+            "vicino",
+            "al",
+            "letto"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Poi apre la finestra e guarda fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "aprire",
+            "la",
+            "finestra",
+            "e",
+            "guardare",
+            "fuori"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s24",
+          "text": "Di fronte c'è un edificio grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "fronte",
+            "ce",
+            "un",
+            "edificio",
+            "grande"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Ha molte finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "molto",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Una sopra l'altra, una accanto all'altra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "sopra",
+            "altro",
+            "una",
+            "accanto",
+            "altro"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Sembra una griglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "una",
+            "griglia"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Che cosa è quella casa di fronte?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "cosa",
+            "essere",
+            "quello",
+            "casa",
+            "di",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "È la scuola media.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "la",
+            "scuola",
+            "medio"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "È chiusa da due anni.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "chiudere",
+            "da",
+            "due",
+            "anno"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Nessuno entra.",
+          "speakerId": "loredana",
+          "kind": "dialogue",
+          "lemmas": [
+            "nessuno",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Di giorno le finestre sono scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "giorno",
+            "le",
+            "finestra",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Irene guarda la scuola per un minuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "la",
+            "scuola",
+            "per",
+            "un",
+            "minuto"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Non vede nessuno alle finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "vedere",
+            "nessuno",
+            "alle",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Poi chiude la finestra perché fa fresco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "chiudere",
+            "la",
+            "finestra",
+            "perche",
+            "fare",
+            "fresco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Quando è sera, Irene è sola nella mansarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "essere",
+            "sera",
+            "irene",
+            "essere",
+            "solo",
+            "nella",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Accende una luce in casa e mangia qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "accendere",
+            "una",
+            "luce",
+            "in",
+            "casa",
+            "e",
+            "mangiare",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Poi torna alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "tornare",
+            "alla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Fuori era buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "essere",
+            "buio"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "La scuola sembrava vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scuola",
+            "sembrare",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Nessuno camminava in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "camminare",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene resta lì e guarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "li",
+            "e",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Non c'è una macchina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "una",
+            "macchina"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non c'è una voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "una",
+            "voce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s45",
+          "text": "Mentre guarda, vede una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mentre",
+            "guardare",
+            "vedere",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "C'è una luce in una finestra, al secondo piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "luce",
+            "in",
+            "una",
+            "finestra",
+            "al",
+            "secondo",
+            "piano"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Non è forte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "forte"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Però c'è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "ce"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Irene ha visto la luce e non si muove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "avere",
+            "vedere",
+            "la",
+            "luce",
+            "e",
+            "non",
+            "si",
+            "muovere"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Aspetta un minuto, poi due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "un",
+            "minuto",
+            "poi",
+            "due"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "La luce si spegne.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "si",
+            "spegnere"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Poi si accende in un'altra finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "si",
+            "accendere",
+            "in",
+            "altro",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Non è la stessa finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "stesso",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "È sulla stessa riga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "sulla",
+            "stesso",
+            "riga"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s55",
+          "text": "Qualcuno?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "Irene non vede nessuno in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "vedere",
+            "nessuno",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Quindi prende un quaderno e una penna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "prendere",
+            "un",
+            "quaderno",
+            "e",
+            "una",
+            "penna"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Scrive: prima una finestra, poi un'altra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "prima",
+            "una",
+            "finestra",
+            "poi",
+            "altro"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Scrive anche l'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "anche",
+            "ora"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "È tardi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s61",
+          "text": "Aspetta ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Poi vede una terza luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "vedere",
+            "una",
+            "terzo",
+            "luce"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Tre finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Irene guarda ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Le tre finestre sono sulla stessa linea orizzontale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "tre",
+            "finestra",
+            "essere",
+            "sulla",
+            "stesso",
+            "linea",
+            "orizzontale"
+          ]
+        },
+        {
+          "id": "s66",
+          "text": "Non è una linea su e giù.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "linea",
+            "su",
+            "e",
+            "giu"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "È una linea a destra e a sinistra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "linea",
+            "a",
+            "destra",
+            "e",
+            "a",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Non capisce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "capire"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Però scrive anche questo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "scrivere",
+            "anche",
+            "questo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch01_q01",
+      "chapterId": "la-casa-delle-finestre-01",
+      "type": "direct",
+      "question": "Where has Irene just arrived?",
+      "choices": [
+        "San Quirico sul Nera",
+        "Rome",
+        "Pietralba"
+      ],
+      "correctChoice": 0,
+      "explanation": "She arrives in San Quirico sul Nera in the afternoon.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch01_q02",
+      "chapterId": "la-casa-delle-finestre-01",
+      "type": "event",
+      "question": "What building is opposite Irene’s attic?",
+      "choices": [
+        "The closed middle school",
+        "The town hall",
+        "A hotel"
+      ],
+      "correctChoice": 0,
+      "explanation": "Loredana says it is the scuola media, closed for two years.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch01_q03",
+      "chapterId": "la-casa-delle-finestre-01",
+      "type": "direct",
+      "question": "How long has the school been closed?",
+      "choices": [
+        "Two years",
+        "Two weeks",
+        "It is still open"
+      ],
+      "correctChoice": 0,
+      "explanation": "Loredana says it has been closed for two years. Nobody goes in.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch01_q04",
+      "chapterId": "la-casa-delle-finestre-01",
+      "type": "inference",
+      "question": "What does Irene notice at night?",
+      "choices": [
+        "Lights in three windows on the same line",
+        "A fire in the street",
+        "Someone knocking at her door"
+      ],
+      "correctChoice": 0,
+      "explanation": "A light appears, moves, then a third light. The three windows are on one horizontal line.",
+      "difficulty": 2
+    }
+  ]
+}

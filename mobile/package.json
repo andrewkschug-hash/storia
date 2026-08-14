@@ -52,6 +52,7 @@
     "content:build": "node scripts/build-chapters.js",
     "audio:check-a1": "node scripts/check-a1-audio.js",
     "audio:generate-a1": "node scripts/generate-a1-audio.js",
+    "audio:google-preflight-a1": "npx tsx ../services/tts-gateway/scripts/google-tts-preflight.ts --target=a1 --from=1 --to=20 --dry-run",
     "audio:package-a1": "node scripts/package-a1-audio.js",
     "audio:validate-a1": "node scripts/validate-a1-audio.js",
     "audio:check-a2": "node scripts/check-a2-audio.js --skip-gateway",

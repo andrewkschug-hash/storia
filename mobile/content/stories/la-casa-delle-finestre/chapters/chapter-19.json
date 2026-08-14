@@ -1,0 +1,1144 @@
+{
+  "id": "la-casa-delle-finestre-19",
+  "storyId": "la-casa-delle-finestre",
+  "number": 19,
+  "title": "Quinto changes",
+  "titleIt": "Quinto cambia",
+  "locationIds": [
+    "via-della-scuola",
+    "cortile-scuola",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "quinto-belli"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-19",
+      "summary": "Thursday after work, Quinto finds Irene. He knew about the cracks. He will not talk to the Carabinieri. He will not stop Sara. Later Irene sees the gate unchained once.",
+      "characterIds": [
+        "irene-colombo",
+        "quinto-belli"
+      ],
+      "locationIds": [
+        "via-della-scuola",
+        "cortile-scuola"
+      ],
+      "rememberedFacts": [
+        "It is still Thursday, after work",
+        "Quinto knew the building had cracks",
+        "He will not speak to Piva",
+        "He will not block Sara",
+        "He leaves the gate unchained once, for her, not for Irene"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "È ancora giovedì, dopo il lavoro. Irene non va subito a casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "ancora",
+            "giovedi",
+            "dopo",
+            "il",
+            "lavoro",
+            "irene",
+            "non",
+            "andare",
+            "subito",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Cammina verso la scuola. Ha bisogno di aria, non di una chiave.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "verso",
+            "la",
+            "scuola",
+            "avere",
+            "bisogno",
+            "di",
+            "aria",
+            "non",
+            "di",
+            "una",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Quinto è lì, vicino al cancello, senza tanica. Le chiavi ci sono, in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "essere",
+            "li",
+            "vicino",
+            "al",
+            "cancello",
+            "senza",
+            "tanica",
+            "le",
+            "chiave",
+            "ci",
+            "essere",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Signorina. Oggi ha fatto qualcosa, al comune.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "signorina",
+            "oggi",
+            "avere",
+            "fare",
+            "qualcosa",
+            "al",
+            "comune"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Irene si ferma di qua. Non mente bene. Non spiega la scatola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "fermare",
+            "di",
+            "qua",
+            "non",
+            "mentire",
+            "bene",
+            "non",
+            "spiegare",
+            "la",
+            "scatola"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ho lavorato.",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Quinto annuisce. Non offre la chiave, questa volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "annuire",
+            "non",
+            "offrire",
+            "la",
+            "chiave",
+            "questo",
+            "volta"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Sapevo delle crepe. Prima della chiusura. Le ho viste, su.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "sapere",
+            "delle",
+            "crepa",
+            "prima",
+            "della",
+            "chiusura",
+            "le",
+            "avere",
+            "vedere",
+            "su"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Irene ascolta. Non è un discorso lungo. È un fatto, tardi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ascoltare",
+            "non",
+            "essere",
+            "un",
+            "discorso",
+            "lungo",
+            "essere",
+            "un",
+            "fatto",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Non posso parlare con i carabinieri. Non dico niente al maresciallo.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "potere",
+            "parlare",
+            "con",
+            "i",
+            "carabinieri",
+            "non",
+            "dire",
+            "niente",
+            "al",
+            "maresciallo"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Non fermo Sara. Lei entra, a modo suo. Io non la fermo.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "fermare",
+            "sara",
+            "lei",
+            "entrare",
+            "a",
+            "modo",
+            "suo",
+            "io",
+            "non",
+            "la",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Irene guarda il cancello. La catena c'è ancora, per ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "cancello",
+            "la",
+            "catena",
+            "ce",
+            "ancora",
+            "per",
+            "ora"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Perché me lo dice?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "me",
+            "lo",
+            "dire"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Perché lei guarda. Perché io annaffio piante morte, e lei conta finestre.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "lei",
+            "guardare",
+            "perche",
+            "io",
+            "annaffiare",
+            "pianta",
+            "morto",
+            "e",
+            "lei",
+            "contare",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Irene non ride. Le piante morte le ha viste il secondo giorno. Adesso capisce la frase.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "ridere",
+            "le",
+            "pianta",
+            "morto",
+            "le",
+            "avere",
+            "vedere",
+            "il",
+            "secondo",
+            "giorno",
+            "adesso",
+            "capire",
+            "la",
+            "frase"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Non va su, dice. Non parla. Non ferma Sara. Tre no, come i suoi, e diversi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "andare",
+            "su",
+            "dire",
+            "non",
+            "parlare",
+            "non",
+            "fermare",
+            "sara",
+            "tre",
+            "no",
+            "come",
+            "i",
+            "suo",
+            "e",
+            "diverso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s17",
+          "text": "Quinto non chiede perdono. Non dice: ero buono. Dice poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "non",
+            "chiedere",
+            "perdono",
+            "non",
+            "dire",
+            "essere",
+            "buono",
+            "dire",
+            "poco"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Annaffio piante morte così non vado su.",
+          "speakerId": "quinto-belli",
+          "kind": "dialogue",
+          "lemmas": [
+            "annaffiare",
+            "pianta",
+            "morto",
+            "cosi",
+            "non",
+            "andare",
+            "su"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Poi cammina via, verso il cortile, con le chiavi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "camminare",
+            "via",
+            "verso",
+            "il",
+            "cortile",
+            "con",
+            "le",
+            "chiave"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Irene resta di qua. Non entra. Non è la sua porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "restare",
+            "di",
+            "qua",
+            "non",
+            "entrare",
+            "non",
+            "essere",
+            "la",
+            "suo",
+            "porta"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Più tardi, tornando a casa, passa di nuovo. Guarda il cancello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "piu",
+            "tardi",
+            "tornare",
+            "a",
+            "casa",
+            "passare",
+            "di",
+            "nuovo",
+            "guardare",
+            "il",
+            "cancello"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "La catena non c'è. Il cancello è chiuso, ma senza catena. Una volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "catena",
+            "non",
+            "ce",
+            "il",
+            "cancello",
+            "essere",
+            "chiudere",
+            "ma",
+            "senza",
+            "catena",
+            "una",
+            "volta"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Non è per lei. Lo sa. È per Sara, se Sara entra, a modo suo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "per",
+            "lei",
+            "lo",
+            "sapere",
+            "essere",
+            "per",
+            "sara",
+            "se",
+            "sara",
+            "entrare",
+            "a",
+            "modo",
+            "suo"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Irene non prova il cancello. Non prende l'apertura come un invito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "provare",
+            "il",
+            "cancello",
+            "non",
+            "prendere",
+            "apertura",
+            "come",
+            "un",
+            "invito"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Scrive: Quinto sapeva. Non parla. Non ferma Sara. Cancello senza catena, una volta, non per me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "quinto",
+            "sapere",
+            "non",
+            "parlare",
+            "non",
+            "fermare",
+            "sara",
+            "cancello",
+            "senza",
+            "catena",
+            "una",
+            "volta",
+            "non",
+            "per",
+            "me"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Domani è venerdì. Oggi resta giovedì, ancora, fino alla notte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "essere",
+            "venerdi",
+            "oggi",
+            "restare",
+            "giovedi",
+            "ancora",
+            "fino",
+            "alla",
+            "notte"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Quinto non è la luce. Irene lo sapeva. Adesso sa anche: lui ha visto le crepe, e ha taciuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "non",
+            "essere",
+            "la",
+            "luce",
+            "irene",
+            "lo",
+            "sapere",
+            "adesso",
+            "sapere",
+            "anche",
+            "lui",
+            "avere",
+            "vedere",
+            "le",
+            "crepa",
+            "e",
+            "avere",
+            "tacere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Non è coraggio. Non è un nemico. È un uomo con una tanica, e una catena tolta una volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "coraggio",
+            "non",
+            "essere",
+            "un",
+            "nemico",
+            "essere",
+            "un",
+            "uomo",
+            "con",
+            "una",
+            "tanica",
+            "e",
+            "una",
+            "catena",
+            "togliere",
+            "una",
+            "volta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Irene non usa il cancello. Torna in mansarda. Non guarda la griglia per contare. Sa chi si muove di là.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "usare",
+            "il",
+            "cancello",
+            "tornare",
+            "in",
+            "mansarda",
+            "non",
+            "guardare",
+            "la",
+            "griglia",
+            "per",
+            "contare",
+            "sapere",
+            "chi",
+            "si",
+            "muovere",
+            "di",
+            "la"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Domani la macchina. Domani Alme. Stasera solo questo: Quinto cambia, poco, e non parla con Piva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "la",
+            "macchina",
+            "domani",
+            "alme",
+            "stasera",
+            "solo",
+            "questo",
+            "quinto",
+            "cambiare",
+            "poco",
+            "e",
+            "non",
+            "parlare",
+            "con",
+            "piva"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Non è una redenzione. Non muore. Non diventa buono in tre frasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "redenzione",
+            "non",
+            "morire",
+            "non",
+            "diventare",
+            "buono",
+            "in",
+            "tre",
+            "frase"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Toglie una catena una volta, per Sara. Irene vede, e non entra. Questo è il capitolo, non di più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "togliere",
+            "una",
+            "catena",
+            "una",
+            "volta",
+            "per",
+            "sara",
+            "irene",
+            "vedere",
+            "e",
+            "non",
+            "entrare",
+            "questo",
+            "essere",
+            "il",
+            "capitolo",
+            "non",
+            "di",
+            "piu"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Quinto parla poco, come sempre. Non fa un discorso di salvezza. Dice: sapevo. Non posso. Non fermo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "parlare",
+            "poco",
+            "come",
+            "sempre",
+            "non",
+            "fare",
+            "un",
+            "discorso",
+            "di",
+            "salvezza",
+            "dire",
+            "sapere",
+            "non",
+            "potere",
+            "non",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Irene chiede delle crepe, una volta. Lui dice: su, il muro. I bambini no. Poi tace.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "chiedere",
+            "delle",
+            "crepa",
+            "una",
+            "volta",
+            "lui",
+            "dire",
+            "su",
+            "il",
+            "muro",
+            "i",
+            "bambino",
+            "no",
+            "poi",
+            "tacere"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Non testimonia. Non usa quella parola. Dice: non parlo con i carabinieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "testimoniare",
+            "non",
+            "usare",
+            "quello",
+            "parola",
+            "dire",
+            "non",
+            "parlare",
+            "con",
+            "i",
+            "carabinieri"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "La catena a terra, o via: Irene non la cerca. Vede solo il cancello senza ferro intorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "catena",
+            "a",
+            "terra",
+            "o",
+            "via",
+            "irene",
+            "non",
+            "la",
+            "cercare",
+            "vedere",
+            "solo",
+            "il",
+            "cancello",
+            "senza",
+            "ferro",
+            "intorno"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Giovedì notte. Domani venerdì. Quinto resta il custode. Non è la lampada. Non è un eroe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giovedi",
+            "notte",
+            "domani",
+            "venerdi",
+            "quinto",
+            "restare",
+            "il",
+            "custode",
+            "non",
+            "essere",
+            "la",
+            "lampada",
+            "non",
+            "essere",
+            "un",
+            "eroe"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Irene ripete le sue parole, in testa: sapevo, non posso, non dico, non fermo Sara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "ripetere",
+            "le",
+            "suo",
+            "parola",
+            "in",
+            "testa",
+            "sapere",
+            "non",
+            "potere",
+            "non",
+            "dire",
+            "non",
+            "fermare",
+            "sara"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Annaffio piante morte così non vado su: questa resta. È la frase più vera della sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "annaffiare",
+            "pianta",
+            "morto",
+            "cosi",
+            "non",
+            "andare",
+            "su",
+            "questo",
+            "restare",
+            "essere",
+            "la",
+            "frase",
+            "piu",
+            "vero",
+            "della",
+            "sera"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Il cancello senza catena non è per l'archivista. È una volta, per l'insegnante, se entra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cancello",
+            "senza",
+            "catena",
+            "non",
+            "essere",
+            "per",
+            "archivista",
+            "essere",
+            "una",
+            "volta",
+            "per",
+            "insegnante",
+            "se",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Irene sale in mansarda. Non prova le chiavi che non ha. Domani è venerdì, non un'esplorazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "salire",
+            "in",
+            "mansarda",
+            "non",
+            "provare",
+            "le",
+            "chiave",
+            "che",
+            "non",
+            "avere",
+            "domani",
+            "essere",
+            "venerdi",
+            "non",
+            "esplorazione"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Non entra. Non è il suo cancello. Quinto l'ha detto senza dirlo: per Sara, non per me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "entrare",
+            "non",
+            "essere",
+            "il",
+            "suo",
+            "cancello",
+            "quinto",
+            "avere",
+            "dire",
+            "senza",
+            "dire",
+            "per",
+            "sara",
+            "non",
+            "per",
+            "me"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Irene accetta il no all'ingresso. Ha già un sì sporco, al comune, nella scatola nascosta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "accettare",
+            "il",
+            "no",
+            "ingresso",
+            "avere",
+            "gia",
+            "un",
+            "si_yes",
+            "sporco",
+            "al",
+            "comune",
+            "nella",
+            "scatola",
+            "nascondere"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Due sì diversi: uno è una scatola persa. Uno sarebbe entrare. Lei ha fatto il primo, non il secondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "si_yes",
+            "diverso",
+            "uno",
+            "essere",
+            "una",
+            "scatola",
+            "perdere",
+            "uno",
+            "essere",
+            "entrare",
+            "lei",
+            "avere",
+            "fare",
+            "il",
+            "primo",
+            "non",
+            "il",
+            "secondo"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Quinto va via. Irene va via. La scuola resta, con il cancello un po' più aperto, non per lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quinto",
+            "andare",
+            "via",
+            "irene",
+            "andare",
+            "via",
+            "la",
+            "scuola",
+            "restare",
+            "con",
+            "il",
+            "cancello",
+            "un",
+            "po",
+            "piu",
+            "aprire",
+            "non",
+            "per",
+            "lei"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Lei non è Quinto. Non annaffia. Non ha chiavi. Ha una scatola persa, e un venerdì davanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "non",
+            "essere",
+            "quinto",
+            "non",
+            "annaffiare",
+            "non",
+            "avere",
+            "chiave",
+            "avere",
+            "una",
+            "scatola",
+            "perdere",
+            "e",
+            "un",
+            "venerdi",
+            "davanti"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Scrive la catena. Scrive: non per me. Chiude. Domani è venerdì, non giovedì. La notte è ancora giovedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "la",
+            "catena",
+            "scrivere",
+            "non",
+            "per",
+            "me",
+            "chiudere",
+            "domani",
+            "essere",
+            "venerdi",
+            "non",
+            "giovedi",
+            "la",
+            "notte",
+            "essere",
+            "ancora",
+            "giovedi"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Non è un altro giorno. È lo stesso giovedì, tardi. Poi, solo dopo, venerdì. Questo è tutto, stasera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "altro",
+            "giorno",
+            "essere",
+            "lo",
+            "stesso",
+            "giovedi",
+            "tardi",
+            "poi",
+            "solo",
+            "dopo",
+            "venerdi",
+            "questo",
+            "essere",
+            "tutto",
+            "stasera"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch19_q01",
+      "chapterId": "la-casa-delle-finestre-19",
+      "type": "direct",
+      "question": "When does this happen?",
+      "choices": [
+        "Thursday after work",
+        "Friday morning",
+        "Tuesday at the comune"
+      ],
+      "correctChoice": 0,
+      "explanation": "It is still Thursday, after work. Tomorrow is Friday.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch19_q02",
+      "chapterId": "la-casa-delle-finestre-19",
+      "type": "character",
+      "question": "What did Quinto know?",
+      "choices": [
+        "The cracks, before the closure",
+        "That Irene is the lamp",
+        "Alme’s USB"
+      ],
+      "correctChoice": 0,
+      "explanation": "I knew about the cracks. I saw them upstairs.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch19_q03",
+      "chapterId": "la-casa-delle-finestre-19",
+      "type": "event",
+      "question": "What will Quinto not do?",
+      "choices": [
+        "Talk to the Carabinieri, or stop Sara",
+        "Water the plants",
+        "Keep the keys"
+      ],
+      "correctChoice": 0,
+      "explanation": "He will not speak to the marshal. He will not stop Sara.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch19_q04",
+      "chapterId": "la-casa-delle-finestre-19",
+      "type": "inference",
+      "question": "Why is the gate unchained once?",
+      "choices": [
+        "For Sara, not as an invitation for Irene",
+        "So Irene can explore the school",
+        "Because Quinto lost the chain"
+      ],
+      "correctChoice": 0,
+      "explanation": "It is not for her. It is for Sara, in her way. Irene does not try the gate.",
+      "difficulty": 2
+    }
+  ]
+}

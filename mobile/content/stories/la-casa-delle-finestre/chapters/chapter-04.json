@@ -1,0 +1,1076 @@
+{
+  "id": "la-casa-delle-finestre-04",
+  "storyId": "la-casa-delle-finestre",
+  "number": 4,
+  "title": "The notebook",
+  "titleIt": "Il quaderno",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "mansarda-irene",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo"
+  ],
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-04",
+      "summary": "Irene draws the school grid and numbers the windows. Tuesday night the lights follow a different order. The last light is a window that was dark on Monday.",
+      "characterIds": [
+        "irene-colombo"
+      ],
+      "locationIds": [
+        "mansarda-irene",
+        "scuola-media"
+      ],
+      "rememberedFacts": [
+        "Irene draws the façade and numbers the windows",
+        "She watches a second night and writes the times",
+        "The order of lights on Tuesday is not the same as Monday",
+        "Tuesday’s last light is a window that was dark on Monday"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Dopo il lavoro Irene è in mansarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "il",
+            "lavoro",
+            "irene",
+            "essere",
+            "in",
+            "mansarda"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "La scuola di fronte è chiusa, come di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scuola",
+            "di",
+            "fronte",
+            "essere",
+            "chiudere",
+            "come",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Irene apre il quaderno sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aprire",
+            "il",
+            "quaderno",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Non vuole una storia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "volere",
+            "una",
+            "storia"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Vuole i numeri, come sulle cartelle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "i",
+            "numero",
+            "come",
+            "sulle",
+            "cartella"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Prende una penna e guarda le finestre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "una",
+            "penna",
+            "e",
+            "guardare",
+            "le",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Conta. Cinque finestre per piano, di fronte a lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "cinque",
+            "finestra",
+            "per",
+            "piano",
+            "di",
+            "fronte",
+            "a",
+            "lei"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Disegna la scuola: tanti quadrati, una griglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "disegnare",
+            "la",
+            "scuola",
+            "tanto",
+            "quadrato",
+            "una",
+            "griglia"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non è bello. È chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "bello",
+            "essere",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Poi mette i numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "mettere",
+            "i",
+            "numero"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Piano due, da sinistra: uno, due, tre, quattro, cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "piano",
+            "due",
+            "da",
+            "sinistra",
+            "uno",
+            "due",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Piano tre: sei, sette, otto, nove, dieci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "piano",
+            "tre",
+            "sei",
+            "sette",
+            "otto",
+            "nove",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "La riga di lunedì sera è tre, quattro, cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "riga",
+            "di",
+            "lunedi",
+            "sera",
+            "essere",
+            "tre",
+            "quattro",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Irene lo sa perché lunedì ha visto quella linea.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "lo",
+            "sapere",
+            "perche",
+            "lunedi",
+            "avere",
+            "vedere",
+            "quello",
+            "linea"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Scrive lunedì in alto sulla pagina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "lunedi",
+            "in",
+            "alto",
+            "sulla",
+            "pagina"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Irene scrive anche i tre numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "anche",
+            "i",
+            "tre",
+            "numero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s17",
+          "text": "Quando è sera, Irene spegne la luce della stanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "essere",
+            "sera",
+            "irene",
+            "spegnere",
+            "la",
+            "luce",
+            "della",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Lascia solo una piccola luce sul tavolo, per il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lasciare",
+            "solo",
+            "una",
+            "piccolo",
+            "luce",
+            "sul",
+            "tavolo",
+            "per",
+            "il",
+            "quaderno"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Si siede vicino alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "sedere",
+            "vicino",
+            "alla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Aspetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Fuori la scuola sembra di nuovo vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "la",
+            "scuola",
+            "sembrare",
+            "di",
+            "nuovo",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Nessuno cammina in strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "camminare",
+            "in",
+            "strada"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Irene guarda l'orologio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Sono le nove meno cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "le",
+            "nove",
+            "meno",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Aspetta ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Poi sono le nove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "essere",
+            "le",
+            "nove"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s27",
+          "text": "Mentre guarda, vede una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mentre",
+            "guardare",
+            "vedere",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "È la finestra tre, al piano due.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "la",
+            "finestra",
+            "tre",
+            "al",
+            "piano",
+            "due"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Come lunedì, pensa Irene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "come",
+            "lunedi",
+            "pensare",
+            "irene"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Irene scrive: martedì, nove, finestra tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "martedi",
+            "nove",
+            "finestra",
+            "tre"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Aspetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Poi la luce si spegne.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "la",
+            "luce",
+            "si",
+            "spegnere"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Dopo due minuti si accende un'altra finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "due",
+            "minuto",
+            "si",
+            "accendere",
+            "altro",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "È la finestra quattro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "la",
+            "finestra",
+            "quattro"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Ancora la stessa riga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ancora",
+            "la",
+            "stesso",
+            "riga"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Irene scrive: nove e due, finestra quattro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "nove",
+            "e",
+            "due",
+            "finestra",
+            "quattro"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Poi, di nuovo, buio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "di",
+            "nuovo",
+            "buio"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Irene aspetta la finestra cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "la",
+            "finestra",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Guarda la riga. La cinque resta scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "la",
+            "riga",
+            "la",
+            "cinque",
+            "restare",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Aspetta un minuto, poi un altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "un",
+            "minuto",
+            "poi",
+            "un",
+            "altro"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Alle nove e dieci c'è una terza luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alle",
+            "nove",
+            "e",
+            "dieci",
+            "ce",
+            "una",
+            "terzo",
+            "luce"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene guarda il disegno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "disegno"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Non è la finestra cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "finestra",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "È la finestra otto, al piano tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "la",
+            "finestra",
+            "otto",
+            "al",
+            "piano",
+            "tre"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Scrive: nove e dieci, finestra otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "nove",
+            "e",
+            "dieci",
+            "finestra",
+            "otto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "La luce resta un poco, poi si spegne.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "luce",
+            "restare",
+            "un",
+            "poco",
+            "poi",
+            "si",
+            "spegnere"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Irene apre la pagina di lunedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aprire",
+            "la",
+            "pagina",
+            "di",
+            "lunedi"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Lunedì: prima tre, poi quattro, poi cinque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lunedi",
+            "prima",
+            "tre",
+            "poi",
+            "quattro",
+            "poi",
+            "cinque"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Tutta la riga, lo stesso piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "la",
+            "riga",
+            "lo",
+            "stesso",
+            "piano"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Martedì: prima tre, poi quattro, poi otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "martedi",
+            "prima",
+            "tre",
+            "poi",
+            "quattro",
+            "poi",
+            "otto"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "L'ordine non è lo stesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ordine",
+            "non",
+            "essere",
+            "lo",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "La linea non è la stessa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "linea",
+            "non",
+            "essere",
+            "la",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Irene confronta i due disegni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "confrontare",
+            "i",
+            "due",
+            "disegno"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Prima, poi, dopo: i numeri non tornano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "poi",
+            "dopo",
+            "i",
+            "numero",
+            "non",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Lunedì la finestra otto era scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lunedi",
+            "la",
+            "finestra",
+            "otto",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "Nessuna luce, tutta la sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "luce",
+            "tutto",
+            "la",
+            "sera"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Martedì l'ultima luce è proprio lì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "martedi",
+            "ultimo",
+            "luce",
+            "essere",
+            "proprio",
+            "li"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Irene non esce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Irene non capisce il perché.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "capire",
+            "il",
+            "perche"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Però scrive l'ora, il numero, il piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "scrivere",
+            "ora",
+            "il",
+            "numero",
+            "il",
+            "piano"
+          ]
+        },
+        {
+          "id": "s61",
+          "text": "Rilegge i tempi: nove, nove e due, nove e dieci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "rileggere",
+            "i",
+            "tempo",
+            "nove",
+            "nove",
+            "e",
+            "due",
+            "nove",
+            "e",
+            "dieci"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Il piano tre, lunedì, era tutto scuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "piano",
+            "tre",
+            "lunedi",
+            "essere",
+            "tutto",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Martedì no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "martedi",
+            "no"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Chiude il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "quaderno"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non ha una risposta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "una",
+            "risposta"
+          ]
+        },
+        {
+          "id": "s66",
+          "text": "Ha solo due pagine, con i numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "solo",
+            "due",
+            "pagina",
+            "con",
+            "i",
+            "numero"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Irene lascia la penna accanto al quaderno chiuso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "lasciare",
+            "la",
+            "penna",
+            "accanto",
+            "al",
+            "quaderno",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "La finestra otto resta sulla pagina di martedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "finestra",
+            "otto",
+            "restare",
+            "sulla",
+            "pagina",
+            "di",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "La scuola è di nuovo buia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scuola",
+            "essere",
+            "di",
+            "nuovo",
+            "buio"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch04_q01",
+      "chapterId": "la-casa-delle-finestre-04",
+      "type": "event",
+      "question": "What does Irene do with the notebook in the daytime?",
+      "choices": [
+        "She draws the school and numbers the windows",
+        "She writes a letter to Alme",
+        "She copies the non scansionare folder"
+      ],
+      "correctChoice": 0,
+      "explanation": "She draws a grid and puts numbers on the floors and windows.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch04_q02",
+      "chapterId": "la-casa-delle-finestre-04",
+      "type": "direct",
+      "question": "What does she write when a light appears?",
+      "choices": [
+        "The time and the window number",
+        "Sara’s name",
+        "A message to the Carabinieri"
+      ],
+      "correctChoice": 0,
+      "explanation": "She writes Tuesday, nine, window three — then the later times and numbers.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch04_q03",
+      "chapterId": "la-casa-delle-finestre-04",
+      "type": "direct",
+      "question": "Is Tuesday’s path the same as Monday’s?",
+      "choices": [
+        "No. The order is different",
+        "Yes. It is the same three windows",
+        "There is no light on Tuesday"
+      ],
+      "correctChoice": 0,
+      "explanation": "Monday is three, four, five. Tuesday is three, four, then eight.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch04_q04",
+      "chapterId": "la-casa-delle-finestre-04",
+      "type": "inference",
+      "question": "What is special about Tuesday’s last light?",
+      "choices": [
+        "It is a window that was dark on Monday",
+        "It is in Irene’s attic",
+        "Quinto turns it on from the courtyard"
+      ],
+      "correctChoice": 0,
+      "explanation": "The last light is window eight. On Monday that window stayed dark all evening.",
+      "difficulty": 2
+    }
+  ]
+}

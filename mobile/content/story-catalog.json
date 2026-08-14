@@ -24,6 +24,14 @@
       "description": "Independent A1 draft. Not part of Luca's journey. Not one of the five pre-Rome stories.",
       "narrativeOrder": 100,
       "status": "draft"
+    },
+    {
+      "id": "a2-plus-genre-paths",
+      "title": "A2+ genre paths",
+      "titleIt": "Percorsi A2+",
+      "description": "Independent A2+ stories after Luca a Roma. Not Luca chapters 41+. Start with La casa delle finestre.",
+      "narrativeOrder": 10,
+      "status": "available"
     }
   ],
   "stories": [
@@ -116,6 +124,21 @@
       "protagonistId": "luca",
       "contentPath": "stories/luca-a-roma",
       "entitySource": "shared"
+    },
+    {
+      "id": "la-casa-delle-finestre",
+      "title": "The house of windows",
+      "titleIt": "La casa delle finestre",
+      "description": "Irene, an archivist in San Quirico sul Nera, watches lights in a closed school. The mystery is paper, not ghosts.",
+      "cefrLevel": "A2+",
+      "narrativeArc": "a2-plus-genre-paths",
+      "narrativeOrder": 10,
+      "status": "available",
+      "chapterCount": 24,
+      "chapterCountTarget": 24,
+      "protagonistId": "irene-colombo",
+      "contentPath": "stories/la-casa-delle-finestre",
+      "entitySource": "shared+story-local"
     },
     {
       "id": "elena-torna-a-casa",

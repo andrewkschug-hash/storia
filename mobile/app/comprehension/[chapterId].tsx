@@ -32,7 +32,8 @@ import {
 } from '@/src/production/flow';
 import { getReviewService } from '@/src/review';
 import { getVocabularyService } from '@/src/vocabulary';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'review' | 'complete';
@@ -48,7 +49,7 @@ export default function ComprehensionScreen() {
   const storyId =
     (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
   const chapter = storyId ? getChapter(chapterId, storyId) : undefined;
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
 
   const questions = chapter?.questions ?? [];
@@ -126,7 +127,7 @@ export default function ComprehensionScreen() {
       <AtmosphereBackground>
         <Stack.Screen options={{ title: 'Understanding' }} />
         <View style={styles.center}>
-          <Text style={[Typography.body, { color: colors.textSecondary }]}>
+          <Text style={[type.body, { color: colors.textSecondary }]}>
             No comprehension questions for this chapter.
           </Text>
         </View>
@@ -146,7 +147,7 @@ export default function ComprehensionScreen() {
   };
 
   const onSelect = (choiceIndex: number) => {
-    if (!current || !displayChoices || phase !== 'question') return;
+    if (!current || !displayChoices || !chapter || phase !== 'question') return;
     const evaluation = evaluateAnswer(
       { ...current, choices: displayChoices.choices, correctChoice: displayChoices.correctChoice },
       choiceIndex,
@@ -167,6 +168,12 @@ export default function ComprehensionScreen() {
       correctLabel: displayChoices.choices[evaluation.correctChoice] ?? current.choices[current.correctChoice],
     });
     setPhase('feedback');
+    trackReadingEvent({
+      type: 'comprehension_attempt',
+      storyId: storyId ?? chapter.storyId,
+      chapterId: chapter.id,
+      meta: { correct: evaluation.correct, questionId: current.id },
+    });
   };
 
   const goNextFromFeedback = () => {
@@ -305,14 +312,14 @@ export default function ComprehensionScreen() {
         showsVerticalScrollIndicator={false}>
         {phase === 'intro' ? (
           <View>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
               Check your understanding
             </Text>
-            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
               {chapter.titleIt}
             </Text>
             <Text
-              style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+              style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               A few short questions about what happened — not grammar, not flashcards.
             </Text>
             <Pressable
@@ -322,19 +329,19 @@ export default function ComprehensionScreen() {
               }}
               style={({ pressed }) => [
                 styles.primaryBtn,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, marginTop: Spacing.xl },
+                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget, marginTop: Spacing.xl },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9' }]}>Begin</Text>
+              <Text style={[type.button, { color: colors.onTint }]}>Begin</Text>
             </Pressable>
           </View>
         ) : null}
 
         {phase === 'question' && current ? (
           <View>
-            <Text style={[Typography.caption, { color: colors.textMuted }]}>
+            <Text style={[type.caption, { color: colors.textMuted }]}>
               Question {index + 1} of {questions.length}
             </Text>
-            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.md }]}>
+            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.md }]}>
               {questionPrompt(current)}
             </Text>
             <View style={{ marginTop: Spacing.lg, gap: Spacing.sm }}>
@@ -350,7 +357,7 @@ export default function ComprehensionScreen() {
                       opacity: pressed ? 0.88 : 1,
                     },
                   ]}>
-                  <Text style={[Typography.body, { color: colors.text }]}>{choice}</Text>
+                  <Text style={[type.body, { color: colors.text }]}>{choice}</Text>
                 </Pressable>
               ))}
             </View>
@@ -361,7 +368,7 @@ export default function ComprehensionScreen() {
           <View>
             <Text
               style={[
-                Typography.heroTitle,
+                type.heroTitle,
                 {
                   color: lastFeedback.correct ? colors.tint : colors.danger,
                   marginTop: Spacing.sm,
@@ -371,11 +378,11 @@ export default function ComprehensionScreen() {
             </Text>
             {!lastFeedback.correct ? (
               <Text
-                style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+                style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
                 Correct answer: {lastFeedback.correctLabel}
               </Text>
             ) : null}
-            <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.md }]}>
+            <Text style={[type.body, { color: colors.text, marginTop: Spacing.md }]}>
               {lastFeedback.explanation}
             </Text>
             <View style={styles.row}>
@@ -389,7 +396,7 @@ export default function ComprehensionScreen() {
                       opacity: pressed ? 0.88 : 1,
                     },
                   ]}>
-                  <Text style={[Typography.button, { color: colors.text }]}>Try again</Text>
+                  <Text style={[type.button, { color: colors.text }]}>Try again</Text>
                 </Pressable>
               ) : null}
               <Pressable
@@ -402,7 +409,7 @@ export default function ComprehensionScreen() {
                     opacity: pressed ? 0.88 : 1,
                   },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>
+                <Text style={[type.button, { color: colors.onTint }]}>
                   {index + 1 < questions.length ? 'Continue' : 'See results'}
                 </Text>
               </Pressable>
@@ -412,11 +419,11 @@ export default function ComprehensionScreen() {
 
         {phase === 'review' && reviewCopy ? (
           <View>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Quick review?</Text>
-            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Quick review?</Text>
+            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
               {reviewCopy.headline}
             </Text>
-            <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+            <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               {reviewCopy.detail}
             </Text>
             <View style={styles.row}>
@@ -429,7 +436,7 @@ export default function ComprehensionScreen() {
                   styles.secondaryBtn,
                   { borderColor: colors.border, opacity: pressed ? 0.88 : 1, flex: 1 },
                 ]}>
-                <Text style={[Typography.button, { color: colors.text }]}>Review</Text>
+                <Text style={[type.button, { color: colors.text }]}>Review</Text>
               </Pressable>
               <Pressable
                 onPress={skipReviewAndContinue}
@@ -441,7 +448,7 @@ export default function ComprehensionScreen() {
                     opacity: pressed || finishing ? 0.88 : 1,
                   },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
+                <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
               </Pressable>
             </View>
           </View>
@@ -456,11 +463,11 @@ export default function ComprehensionScreen() {
                 borderColor: colors.border,
               },
             ]}>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Nice work</Text>
-            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Nice work</Text>
+            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
               {completeCopy.headline}
             </Text>
-            <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+            <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               {completeCopy.detail}
             </Text>
             <Pressable
@@ -473,19 +480,19 @@ export default function ComprehensionScreen() {
                   marginTop: Spacing.xl,
                 },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9' }]}>{completeCopy.button}</Text>
+              <Text style={[type.button, { color: colors.onTint }]}>{completeCopy.button}</Text>
             </Pressable>
           </View>
         ) : null}
 
         {phase === 'results' ? (
           <View>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Results</Text>
-            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Results</Text>
+            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
               {summary.correct} of {summary.total} understood
             </Text>
             <Text
-              style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+              style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               You can keep reading either way — this just checks the story, not your worth as a
               learner.
             </Text>
@@ -502,7 +509,7 @@ export default function ComprehensionScreen() {
                   borderColor: colors.accent,
                 },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9' }]}>
+              <Text style={[type.button, { color: colors.onTint }]}>
                 {productionExercises.length > 0
                   ? 'Continue'
                   : getChapterByNumber(chapter.number + 1, storyId ?? chapter.storyId)
@@ -541,7 +548,7 @@ export default function ComprehensionScreen() {
                   marginTop: Spacing.md,
                 },
               ]}>
-              <Text style={[Typography.button, { color: colors.text }]}>Skip for now</Text>
+              <Text style={[type.button, { color: colors.text }]}>Skip for now</Text>
             </Pressable>
           </View>
         ) : null}
@@ -565,12 +572,14 @@ const styles = StyleSheet.create({
     borderRadius: Radii.md,
     paddingVertical: Spacing.md,
     paddingHorizontal: Spacing.md,
+    minHeight: 52,
   },
   primaryBtn: {
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
+    minHeight: 52,
   },
   secondaryBtn: {
     alignItems: 'center',

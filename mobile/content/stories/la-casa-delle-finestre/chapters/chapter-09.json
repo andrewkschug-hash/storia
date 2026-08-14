@@ -1,0 +1,1070 @@
+{
+  "id": "la-casa-delle-finestre-09",
+  "storyId": "la-casa-delle-finestre",
+  "number": 9,
+  "title": "Yesterday",
+  "titleIt": "Ieri",
+  "locationIds": [
+    "mansarda-irene",
+    "comune",
+    "scuola-media"
+  ],
+  "characterIds": [
+    "irene-colombo"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-09",
+      "summary": "The pause is not on the timetable. Tonight there is no light. In the morning Irene finds a new pack of camping batteries by the gate: the lamp uses batteries, not the school’s lights.",
+      "characterIds": [
+        "irene-colombo"
+      ],
+      "locationIds": [
+        "mansarda-irene",
+        "scuola-media"
+      ],
+      "rememberedFacts": [
+        "Last night the light paused, not on the timetable",
+        "Tonight there is no light",
+        "She finds a new pack of camping batteries by the school gate",
+        "The school lights are not on; someone is using batteries"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Stamattina Irene ha aperto il quaderno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stamattina",
+            "irene",
+            "avere",
+            "aprire",
+            "il",
+            "quaderno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Le due pagine coincidono ancora: le stanze, i numeri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "due",
+            "pagina",
+            "coincidere",
+            "ancora",
+            "le",
+            "stanza",
+            "i",
+            "numero"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Ieri la luce non ha seguito quelle pagine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "la",
+            "luce",
+            "non",
+            "avere",
+            "seguire",
+            "quello",
+            "pagina"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ha fatto quattro, cinque, poi tre. Poi si è fermata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "fare",
+            "quattro",
+            "cinque",
+            "poi",
+            "tre",
+            "poi",
+            "si",
+            "essere",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Lo ha scritto: si ferma, poi buio. Non è sul foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "avere",
+            "scrivere",
+            "si",
+            "fermare",
+            "poi",
+            "buio",
+            "non",
+            "essere",
+            "sul",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Ha cancellato forse per me. Quella riga non c'è più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "cancellare",
+            "forse",
+            "per",
+            "me",
+            "quello",
+            "riga",
+            "non",
+            "ce",
+            "piu"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Resta la pausa. Resta un problema, non una risposta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "restare",
+            "la",
+            "pausa",
+            "restare",
+            "un",
+            "problema",
+            "non",
+            "una",
+            "risposta"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Di solito, alle nove, c'è una luce. Ieri c'era, e si è fermata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "solito",
+            "alle",
+            "nove",
+            "ce",
+            "una",
+            "luce",
+            "ieri",
+            "ce",
+            "e",
+            "si",
+            "essere",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Irene scrive una riga nuova: stasera controllo di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "scrivere",
+            "una",
+            "riga",
+            "nuovo",
+            "stasera",
+            "controllo",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Mette le due pagine dell'orario sotto questa pagina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mettere",
+            "le",
+            "due",
+            "pagina",
+            "orario",
+            "sotto",
+            "questo",
+            "pagina"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Prima coincidono. Poi c'è ieri. Due fatti, uno sotto l'altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "coincidere",
+            "poi",
+            "ce",
+            "ieri",
+            "due",
+            "fatto",
+            "uno",
+            "sotto",
+            "altro"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Non scrive qualcuno. Non scrive perché.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "qualcuno",
+            "non",
+            "scrivere",
+            "perche"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Poi è andata al comune, come ogni giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "essere",
+            "andare",
+            "al",
+            "comune",
+            "come",
+            "ogni",
+            "giorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s14",
+          "text": "Il lavoro è stato breve, ma lei ha fatto il lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "lavoro",
+            "essere",
+            "stato",
+            "breve",
+            "ma",
+            "lei",
+            "avere",
+            "fare",
+            "il",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Ha scansionato liste. Date, nomi, niente di strano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "scansionare",
+            "lista",
+            "data",
+            "nome",
+            "niente",
+            "di",
+            "strano"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "La cartella chiusa era ancora lì, accanto al muro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "cartella",
+            "chiudere",
+            "essere",
+            "ancora",
+            "li",
+            "accanto",
+            "al",
+            "muro"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Irene l'ha guardata. Non l'ha aperta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "avere",
+            "guardare",
+            "non",
+            "avere",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Ieri c'era una pausa. Oggi c'è una cartella. Non è la stessa cosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "ce",
+            "una",
+            "pausa",
+            "oggi",
+            "ce",
+            "una",
+            "cartella",
+            "non",
+            "essere",
+            "la",
+            "stesso",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Alme ha sorriso e ha detto poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alme",
+            "avere",
+            "sorridere",
+            "e",
+            "avere",
+            "dire",
+            "poco"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Irene non ha detto la pausa. Non ha detto ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "avere",
+            "dire",
+            "la",
+            "pausa",
+            "non",
+            "avere",
+            "dire",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Tornando a casa, passa davanti alla scuola di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "a",
+            "casa",
+            "passare",
+            "davanti",
+            "alla",
+            "scuola",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Le finestre sono vuote. Non c'è una luce. Non serve, di giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "finestra",
+            "essere",
+            "vuoto",
+            "non",
+            "ce",
+            "una",
+            "luce",
+            "non",
+            "servire",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Sembra vuota, come dicono tutti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "vuoto",
+            "come",
+            "dire",
+            "tutto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s24",
+          "text": "Quando è sera, Irene è di nuovo alla finestra, di proposito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "essere",
+            "sera",
+            "irene",
+            "essere",
+            "di",
+            "nuovo",
+            "alla",
+            "finestra",
+            "di",
+            "proposito"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Ha spento la luce della stanza, come ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "spegnere",
+            "la",
+            "luce",
+            "della",
+            "stanza",
+            "come",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Aspetta le nove. Poi le nove e dieci. Poi le nove e venti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "le",
+            "nove",
+            "poi",
+            "le",
+            "nove",
+            "e",
+            "dieci",
+            "poi",
+            "le",
+            "nove",
+            "e",
+            "venti"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Se la pausa era per lei, stasera qualcuno torna. O no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "la",
+            "pausa",
+            "essere",
+            "per",
+            "lei",
+            "stasera",
+            "qualcuno",
+            "tornare",
+            "o",
+            "no"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Irene non sceglie. Guarda solo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "scegliere",
+            "guardare",
+            "solo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Stasera non c'è una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stasera",
+            "non",
+            "ce",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La scuola resta buia. Tutte le finestre sono scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scuola",
+            "restare",
+            "buio",
+            "tutto",
+            "le",
+            "finestra",
+            "essere",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Di solito c'è una luce. Ieri si è fermata. Stasera niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "solito",
+            "ce",
+            "una",
+            "luce",
+            "ieri",
+            "si",
+            "essere",
+            "fermare",
+            "stasera",
+            "niente"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Quindi ieri non era un orario. Stasera non è un orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "ieri",
+            "non",
+            "essere",
+            "un",
+            "orario",
+            "stasera",
+            "non",
+            "essere",
+            "un",
+            "orario"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Irene aspetta ancora dieci minuti. Conta, piano, senza voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "aspettare",
+            "ancora",
+            "dieci",
+            "minuto",
+            "contare",
+            "piano",
+            "senza",
+            "voce"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Nessuno cammina. Nessuna luce. Nessuna pausa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "camminare",
+            "nessuno",
+            "luce",
+            "nessuno",
+            "pausa"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Apre il quaderno. Scrive: stasera niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "il",
+            "quaderno",
+            "scrivere",
+            "stasera",
+            "niente"
+          ]
+        },
+        {
+          "id": "s36",
+          "text": "Non scrive forse. Non cancella ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "forse",
+            "non",
+            "cancellare",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Quindi va a letto tardi, con due sere diverse nella testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "andare",
+            "a",
+            "letto",
+            "tardi",
+            "con",
+            "due",
+            "sera",
+            "diverso",
+            "nella",
+            "testa"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Se ha sbagliato ieri, stasera lo dimostra. Se non ha sbagliato, stasera è un altro fatto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "avere",
+            "sbagliare",
+            "ieri",
+            "stasera",
+            "lo",
+            "dimostrare",
+            "se",
+            "non",
+            "avere",
+            "sbagliare",
+            "stasera",
+            "essere",
+            "un",
+            "altro",
+            "fatto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s39",
+          "text": "La mattina dopo Irene passa davanti alla scuola, presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "dopo",
+            "irene",
+            "passare",
+            "davanti",
+            "alla",
+            "scuola",
+            "presto"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Vicino al cancello c'è una cosa per terra, nel fosso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "al",
+            "cancello",
+            "ce",
+            "una",
+            "cosa",
+            "per",
+            "terra",
+            "nel",
+            "fosso"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "È una confezione. Dentro c'erano pile da campeggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "confezione",
+            "dentro",
+            "ce",
+            "pila",
+            "da",
+            "campeggio"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Ora la confezione è vuota, o quasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ora",
+            "la",
+            "confezione",
+            "essere",
+            "vuoto",
+            "o",
+            "quasi"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Irene la prende con due dita. Non è vecchia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "la",
+            "prendere",
+            "con",
+            "due",
+            "dito",
+            "non",
+            "essere",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non c'è polvere. Non c'è pioggia secca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "polvere",
+            "non",
+            "ce",
+            "pioggia",
+            "secco"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "C'è un prezzo, piccolo, e una data recente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "prezzo",
+            "piccolo",
+            "e",
+            "una",
+            "data",
+            "recente"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Qualcuno ha comprato pile questa settimana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno",
+            "avere",
+            "comprare",
+            "pila",
+            "questo",
+            "settimana"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Irene guarda le finestre. Di giorno sono vuote. Di notte, ieri, c'era una luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "le",
+            "finestra",
+            "di",
+            "giorno",
+            "essere",
+            "vuoto",
+            "di",
+            "notte",
+            "ieri",
+            "ce",
+            "una",
+            "luce"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Nella scuola chiusa le luci normali non si accendono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "scuola",
+            "chiudere",
+            "le",
+            "luce",
+            "normale",
+            "non",
+            "si",
+            "accendere"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Quindi quella luce non era la scuola. Era una luce da campeggio, con pile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quindi",
+            "quello",
+            "luce",
+            "non",
+            "essere",
+            "la",
+            "scuola",
+            "essere",
+            "una",
+            "luce",
+            "da",
+            "campeggio",
+            "con",
+            "pila"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Non è un video. Non è un fantasma. È una cosa che si compra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "video",
+            "non",
+            "essere",
+            "un",
+            "fantasma",
+            "essere",
+            "una",
+            "cosa",
+            "che",
+            "si",
+            "comprare"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Ieri sera non c'era luce. Però le pile ci sono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "sera",
+            "non",
+            "ce",
+            "luce",
+            "pero",
+            "le",
+            "pila",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Irene mette la confezione in tasca. Non entra. Non chiama nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "mettere",
+            "la",
+            "confezione",
+            "in",
+            "tasca",
+            "non",
+            "entrare",
+            "non",
+            "chiamare",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Guarda il cancello chiuso, poi va al lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "il",
+            "cancello",
+            "chiudere",
+            "poi",
+            "andare",
+            "al",
+            "lavoro"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Mimmo ha un video di giorno. Questa confezione è per la notte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mimmo",
+            "avere",
+            "un",
+            "video",
+            "di",
+            "giorno",
+            "questo",
+            "confezione",
+            "essere",
+            "per",
+            "la",
+            "notte"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Due storie diverse. Irene tiene quella di adesso, in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "storia",
+            "diverso",
+            "irene",
+            "tenere",
+            "quello",
+            "di",
+            "adesso",
+            "in",
+            "tasca"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch09_q01",
+      "chapterId": "la-casa-delle-finestre-09",
+      "type": "direct",
+      "question": "What did the light do the night before last, according to Irene’s notes?",
+      "choices": [
+        "It paused at window three, not on the timetable",
+        "It followed Mimmo’s video",
+        "There was no light that night"
+      ],
+      "correctChoice": 0,
+      "explanation": "Four, five, then three. Then it stopped. Not on the sheet.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch09_q02",
+      "chapterId": "la-casa-delle-finestre-09",
+      "type": "event",
+      "question": "What happens when Irene watches again at night?",
+      "choices": [
+        "There is no light",
+        "The light pauses again",
+        "Quinto opens the gate"
+      ],
+      "correctChoice": 0,
+      "explanation": "Usually there is a light. Tonight nothing.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch09_q03",
+      "chapterId": "la-casa-delle-finestre-09",
+      "type": "direct",
+      "question": "What does Irene find by the gate?",
+      "choices": [
+        "A pack for camping batteries",
+        "Sara’s keys",
+        "A letter from Alme"
+      ],
+      "correctChoice": 0,
+      "explanation": "A confezione for pile da campeggio, new, by the gate.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch09_q04",
+      "chapterId": "la-casa-delle-finestre-09",
+      "type": "inference",
+      "question": "What do the batteries suggest?",
+      "choices": [
+        "Someone bought a camping light this week; the school lights are not on",
+        "The school has electricity again",
+        "Mimmo left a camera"
+      ],
+      "correctChoice": 0,
+      "explanation": "Ordinary lights do not come on. The lamp uses batteries.",
+      "difficulty": 2
+    }
+  ]
+}

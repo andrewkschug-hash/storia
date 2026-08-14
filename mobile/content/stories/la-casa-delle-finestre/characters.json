@@ -1,0 +1,116 @@
+{
+  "characters": [
+    {
+      "id": "irene-colombo",
+      "name": "Irene Colombo",
+      "gender": "female",
+      "ageDescription": "adult",
+      "description": "An archivist on a short contract in San Quirico sul Nera. She lives in an attic opposite the closed school.",
+      "storyRole": "protagonist",
+      "relationships": ["Tenant of Loredana", "Works under Dottoressa Alme"],
+      "knownLocationIds": ["mansarda-irene", "via-della-scuola", "comune", "ufficio-alme"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "adult Italian female, measured"
+      }
+    },
+    {
+      "id": "loredana",
+      "name": "Loredana",
+      "gender": "female",
+      "ageDescription": "middle-aged",
+      "description": "Irene's landlady. She lives downstairs and repeats that the school is empty.",
+      "storyRole": "landlady",
+      "relationships": ["Landlady of Irene", "Mother of a daughter from the last class"],
+      "knownLocationIds": ["cucina-loredana", "via-della-scuola"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, careful"
+      }
+    },
+    {
+      "id": "alme",
+      "name": "Dottoressa Alme",
+      "gender": "female",
+      "ageDescription": "middle-aged",
+      "description": "Director at the town hall. Polite, in charge of leftover school papers.",
+      "storyRole": "director",
+      "relationships": ["Irene's supervisor at the comune"],
+      "knownLocationIds": ["comune", "ufficio-alme", "scatole-comune"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, formal"
+      }
+    },
+    {
+      "id": "quinto-belli",
+      "name": "Quinto Belli",
+      "gender": "male",
+      "ageDescription": "older adult",
+      "description": "Custodian of the closed school. He waters dead plants and keeps the keys.",
+      "storyRole": "custodian",
+      "relationships": ["Knows the school building", "Allows Sara access once"],
+      "knownLocationIds": ["cortile-scuola", "scuola-media", "via-della-scuola"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "older Italian male, quiet"
+      }
+    },
+    {
+      "id": "mimmo",
+      "name": "Mimmo",
+      "gender": "male",
+      "ageDescription": "child",
+      "description": "A local boy who films the school and talks about a ghost.",
+      "storyRole": "child",
+      "relationships": [],
+      "knownLocationIds": ["via-della-scuola", "scuola-media"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "Italian boy, playful"
+      }
+    },
+    {
+      "id": "sara-neri",
+      "name": "Sara Neri",
+      "gender": "female",
+      "ageDescription": "adult",
+      "description": "A former teacher. She reported cracks before the school closed and later used a lamp in the building.",
+      "storyRole": "former teacher",
+      "relationships": ["Wrote about the cracks", "The person with the lamp"],
+      "knownLocationIds": ["scuola-media", "via-della-scuola"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "adult Italian female, urgent but quiet"
+      }
+    },
+    {
+      "id": "piva",
+      "name": "Maresciallo Piva",
+      "gender": "male",
+      "ageDescription": "middle-aged",
+      "description": "Local Carabinieri marshal. Formal, local, not theatrical.",
+      "storyRole": "marshal",
+      "relationships": [],
+      "knownLocationIds": ["caserma-piva"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, formal"
+      }
+    }
+  ]
+}

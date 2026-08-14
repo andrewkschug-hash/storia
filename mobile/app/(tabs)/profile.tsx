@@ -22,11 +22,12 @@ import {
 } from '@/src/account/storage';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { AvatarBadge } from '@/src/components/AvatarBadge';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
-import { useTheme } from '@/src/theme/useTheme';
+import { AccessibilitySettings } from '@/src/accessibility/AccessibilitySettings';
+import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
+import { Radii, Spacing } from '@/src/theme/tokens';
 
 export default function ProfileScreen() {
-  const { colors } = useTheme();
+  const { colors, type } = useAccessibility();
   const insets = useSafeAreaInsets();
   const [account, setAccount] = useState<LocalAccount | null>(null);
   const [displayName, setDisplayName] = useState('');
@@ -126,21 +127,21 @@ export default function ProfileScreen() {
         ]}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}>
-        <Text style={[Typography.chapterEyebrow, { color: colors.textMuted }]}>Profile</Text>
+        <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>Profile</Text>
         <View style={styles.hero}>
           <AvatarBadge avatarId={account.avatarId} size="lg" />
-          <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.md, textAlign: 'center' }]}>
+          <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.md, textAlign: 'center' }]}>
             {account.displayName}
           </Text>
-          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
             {account.email}
           </Text>
           {account.role === 'developer' ? (
-            <Text style={[Typography.caption, { color: colors.accent, marginTop: Spacing.xs }]}>Developer</Text>
+            <Text style={[type.caption, { color: colors.accent, marginTop: Spacing.xs }]}>Developer</Text>
           ) : null}
         </View>
 
-        <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.xl }]}>Display name</Text>
+        <Text style={[type.label, { color: colors.text, marginTop: Spacing.xl }]}>Display name</Text>
         <TextInput
           value={displayName}
           onChangeText={setDisplayName}
@@ -152,7 +153,7 @@ export default function ProfileScreen() {
           editable={!saving && !signingOut}
           style={[
             styles.input,
-            Typography.body,
+            type.body,
             {
               color: colors.text,
               backgroundColor: colors.backgroundElevated,
@@ -161,8 +162,8 @@ export default function ProfileScreen() {
           ]}
         />
 
-        <Text style={[Typography.label, { color: colors.text, marginTop: Spacing.xl }]}>Picture</Text>
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+        <Text style={[type.label, { color: colors.text, marginTop: Spacing.xl }]}>Picture</Text>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
           Pick a Storia portrait — no photo upload yet.
         </Text>
         <View style={styles.grid}>
@@ -185,7 +186,7 @@ export default function ProfileScreen() {
                   },
                 ]}>
                 <AvatarBadge avatarId={preset.id} size="md" />
-                <Text style={[Typography.caption, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
+                <Text style={[type.caption, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
                   {preset.label}
                 </Text>
               </Pressable>
@@ -194,8 +195,10 @@ export default function ProfileScreen() {
         </View>
 
         {error ? (
-          <Text style={[Typography.caption, { color: colors.danger, marginTop: Spacing.md }]}>{error}</Text>
+          <Text style={[type.caption, { color: colors.danger, marginTop: Spacing.md }]}>{error}</Text>
         ) : null}
+
+        <AccessibilitySettings />
 
         <Pressable
           onPress={onSignOut}
@@ -208,7 +211,7 @@ export default function ProfileScreen() {
               opacity: signingOut ? 0.6 : pressed ? 0.85 : 1,
             },
           ]}>
-          <Text style={[Typography.button, { color: colors.danger }]}>
+          <Text style={[type.button, { color: colors.danger }]}>
             {signingOut ? 'Signing out…' : 'Sign out'}
           </Text>
         </Pressable>

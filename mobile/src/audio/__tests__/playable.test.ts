@@ -2,10 +2,11 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { createCatalog, refreshCatalogFromGateway } from '@/src/audio/AudioService';
 import { isPlayableAssetStatus } from '@/src/audio/playable';
-import type { AudioAsset, VoiceRoster } from '@/src/audio/types';
+import { normalizeRoster } from '@/src/audio/logicalVoices';
+import type { AudioAsset } from '@/src/audio/types';
 import { getChapter, getContentBundle } from '@/src/content';
 
-const roster: VoiceRoster = {
+const roster = normalizeRoster({
   activeProvider: 'elevenlabs',
   generationVersion: 1,
   characters: {
@@ -22,7 +23,7 @@ const roster: VoiceRoster = {
       speakingStyle: '',
     },
   },
-};
+});
 
 function asset(partial: Partial<AudioAsset> & Pick<AudioAsset, 'text' | 'cacheKey'>): AudioAsset {
   return {

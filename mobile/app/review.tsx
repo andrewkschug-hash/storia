@@ -8,13 +8,14 @@ import { getReviewService } from '@/src/review';
 import type { ReviewPrompt } from '@/src/review/ReviewService';
 import { getProgressService } from '@/src/progress';
 import { getVocabularyService } from '@/src/vocabulary';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Phase = 'prompt' | 'feedback' | 'done';
 
 export default function ReviewScreen() {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
   const [items, setItems] = useState<ReviewPrompt[]>([]);
   const [index, setIndex] = useState(0);
@@ -36,6 +37,9 @@ export default function ReviewScreen() {
       if (!cancelled) {
         setItems(session.items);
         setLoading(false);
+        if (session.items.length > 0) {
+          trackReadingEvent({ type: 'review_initiated', meta: { count: session.items.length } });
+        }
       }
     }
     void boot();
@@ -75,35 +79,35 @@ export default function ReviewScreen() {
         ]}
         showsVerticalScrollIndicator={false}>
         {loading ? (
-          <Text style={[Typography.body, { color: colors.textSecondary }]}>Preparing…</Text>
+          <Text style={[type.body, { color: colors.textSecondary }]}>Preparing…</Text>
         ) : !loading && (items.length === 0 || phase === 'done') ? (
           <View>
-            <Text style={[Typography.heroTitle, { color: colors.text }]}>
+            <Text style={[type.heroTitle, { color: colors.text }]}>
               {items.length === 0 ? "You're all caught up." : 'Nice work.'}
             </Text>
-            <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+            <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               The story is waiting whenever you are.
             </Text>
             <Pressable
               onPress={() => router.back()}
               style={({ pressed }) => [
                 styles.cta,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
+              <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
             </Pressable>
           </View>
         ) : current ? (
           <View>
-            <Text style={[Typography.caption, { color: colors.textMuted }]}>
+            <Text style={[type.caption, { color: colors.textMuted }]}>
               {index + 1} of {items.length}
             </Text>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint, marginTop: Spacing.lg }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint, marginTop: Spacing.lg }]}>
               {current.question}
             </Text>
             <Text
               style={[
-                current.promptType === 'cloze' ? Typography.body : Typography.heroTitle,
+                current.promptType === 'cloze' ? type.body : type.heroTitle,
                 { color: colors.text, marginTop: Spacing.md },
               ]}>
               {current.stem}
@@ -135,8 +139,8 @@ export default function ReviewScreen() {
                         opacity: pressed && phase === 'prompt' ? 0.9 : 1,
                       },
                     ]}>
-                    <Text style={[Typography.label, { color: colors.textMuted }]}>{letter}.</Text>
-                    <Text style={[Typography.body, { color: colors.text, flex: 1 }]}>{choice}</Text>
+                    <Text style={[type.label, { color: colors.textMuted }]}>{letter}.</Text>
+                    <Text style={[type.body, { color: colors.text, flex: 1 }]}>{choice}</Text>
                   </Pressable>
                 );
               })}
@@ -144,13 +148,13 @@ export default function ReviewScreen() {
 
             {phase === 'feedback' ? (
               <View style={{ marginTop: Spacing.xl }}>
-                <Text style={[Typography.label, { color: correct ? colors.tint : colors.danger }]}>
+                <Text style={[type.label, { color: correct ? colors.tint : colors.danger }]}>
                   {correct ? '✓ Esatto!' : 'Not quite — you’ll see it again.'}
                 </Text>
                 {current.exampleAfter ? (
                   <Text
                     style={[
-                      Typography.body,
+                      type.body,
                       { color: colors.textSecondary, marginTop: Spacing.md, fontStyle: 'italic' },
                     ]}>
                     “{current.exampleAfter}”
@@ -160,9 +164,9 @@ export default function ReviewScreen() {
                   onPress={onContinue}
                   style={({ pressed }) => [
                     styles.cta,
-                    { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                    { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
                   ]}>
-                  <Text style={[Typography.button, { color: '#F7FAF9' }]}>
+                  <Text style={[type.button, { color: colors.onTint }]}>
                     {index + 1 < items.length ? 'Continue' : 'Done'}
                   </Text>
                 </Pressable>

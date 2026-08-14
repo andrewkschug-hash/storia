@@ -24,6 +24,8 @@ function loadJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
+const { resolveSpeakerVoice } = require('./voice-roster-common');
+
 function resolveSpeakerId(speakerId) {
   if (!speakerId || speakerId === 'narrator') return 'narrator';
   return speakerId;
@@ -64,7 +66,6 @@ function main() {
   ok = check('Catalog', assets.length > 0, `${assets.length} assets`) && ok;
 
   const voices = loadJson(voicesPath);
-  const roster = voices.characters ?? {};
   const manifest = loadJson(path.join(storyPath, 'manifest.json'));
   const a1 = (manifest.chapters ?? []).filter((c) => c.number >= 1 && c.number <= 20);
 
@@ -145,7 +146,7 @@ function main() {
             speakerMismatch += 1;
             failures.push(`Speaker mismatch ${contentId}: ${asset.speakerId} vs ${speakerId}`);
           }
-          const expectedVoice = roster[speakerId]?.voiceId;
+          const expectedVoice = resolveSpeakerVoice(voices, speakerId)?.voiceId;
           if (expectedVoice && asset.voiceId && asset.voiceId !== expectedVoice) {
             // soft warning — still counts as covered if text matches
           }

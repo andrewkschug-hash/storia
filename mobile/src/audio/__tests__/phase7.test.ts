@@ -10,6 +10,7 @@ import { FakeTTSProvider, selectTTSProvider } from '@/src/audio/FakeTTSProvider'
 import { hasCachedAudioUrl, __resetLocalAudioCache } from '@/src/audio/localCache';
 import { SilentAudioPlayer } from '@/src/audio/playback';
 import type { AudioAsset, TTSProvider, VoiceRoster } from '@/src/audio/types';
+import { assignmentForLogicalVoice } from '@/src/audio/logicalVoices';
 import { NARRATOR_ID, resolveCharacterVoice, resolveSpeakerId, selectProvider } from '@/src/audio/voices';
 import { loadContentBundle } from '@/src/content/loadContentBundle';
 import type { Character, ContentBundle, Sentence } from '@/src/content/schemas';
@@ -54,25 +55,27 @@ function loadBundle(): ContentBundle {
 const roster: VoiceRoster = {
   activeProvider: 'elevenlabs',
   generationVersion: 1,
-  characters: {
+  logicalVoices: {
     luca: {
-      provider: 'elevenlabs',
-      voiceId: 'voice-luca',
-      language: 'it-IT',
       speakingStyle: 'young Italian male, natural conversational',
+      language: 'it-IT',
+      providers: { elevenlabs: { voiceId: 'voice-luca' } },
     },
     sofia: {
-      provider: 'elevenlabs',
-      voiceId: 'voice-sofia',
-      language: 'it-IT',
       speakingStyle: 'young Italian female, warm and clear',
+      language: 'it-IT',
+      providers: { elevenlabs: { voiceId: 'voice-sofia' } },
     },
     narrator: {
-      provider: 'elevenlabs',
-      voiceId: 'voice-narrator',
-      language: 'it-IT',
       speakingStyle: 'clear Italian narrative, emotionally neutral',
+      language: 'it-IT',
+      providers: { elevenlabs: { voiceId: 'voice-narrator' } },
     },
+  },
+  characters: {
+    luca: { logicalVoiceId: 'luca' },
+    sofia: { logicalVoiceId: 'sofia' },
+    narrator: { logicalVoiceId: 'narrator' },
   },
 };
 
@@ -102,13 +105,15 @@ function approvedAsset(input: {
   generationVersion?: number;
   audioUrl?: string;
 }): AudioAsset {
-  const voice = roster.characters[input.speakerId] ?? roster.characters.narrator;
+  const assigned =
+    assignmentForLogicalVoice(roster, input.speakerId) ??
+    assignmentForLogicalVoice(roster, 'narrator');
   const speed = input.speed ?? 'normal';
   const generationVersion = input.generationVersion ?? 1;
   const cacheKey = audioCacheKey({
-    provider: voice.provider,
-    voiceId: voice.voiceId,
-    language: voice.language,
+    provider: assigned!.provider,
+    voiceId: assigned!.voiceId,
+    language: assigned!.language,
     speed,
     text: input.text,
     generationVersion,
@@ -117,8 +122,8 @@ function approvedAsset(input: {
     id: cacheKey,
     contentId: input.contentId ?? `sentence:${textHash(input.text)}`,
     speakerId: input.speakerId,
-    provider: voice.provider,
-    voiceId: voice.voiceId,
+    provider: assigned!.provider,
+    voiceId: assigned!.voiceId,
     language: 'it-IT',
     speed,
     text: input.text,
@@ -224,14 +229,14 @@ describe('Phase 7 character and narrator voice resolution', () => {
     const placeholderRoster: VoiceRoster = {
       activeProvider: 'elevenlabs',
       generationVersion: 1,
-      characters: {
+      logicalVoices: {
         giulia: {
-          provider: 'elevenlabs',
-          voiceId: 'lab-giulia',
-          language: 'it-IT',
           speakingStyle: '',
+          language: 'it-IT',
+          providers: { elevenlabs: { voiceId: 'lab-giulia' } },
         },
       },
+      characters: { giulia: { logicalVoiceId: 'giulia' } },
     };
     expect(resolveCharacterVoice(placeholderRoster, characters, 'giulia')).toBeNull();
   });

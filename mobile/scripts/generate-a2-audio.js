@@ -13,6 +13,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 const {
   MIN_CHAPTER,
   MAX_CHAPTER,
@@ -30,9 +31,7 @@ const catalogPath = path.join(contentRoot, 'audio', 'catalog.json');
 const registryPath = path.join(repoRoot, 'services', 'tts-gateway', 'data', 'registry.json');
 const GATEWAY = process.env.EXPO_PUBLIC_TTS_GATEWAY_URL || 'http://127.0.0.1:8787';
 
-function isPlaceholder(voiceId) {
-  return !voiceId || String(voiceId).startsWith('lab-');
-}
+const { resolveSpeakerVoice } = require('./voice-roster-common');
 
 function existingA1CacheKeys() {
   const keys = new Set();
@@ -77,6 +76,13 @@ async function main() {
   const plan = collectClipPlan(from, to);
   printPreflight(plan, from, to);
 
+  const guard = spawnSync(
+    'npx',
+    ['tsx', 'scripts/google-tts-preflight.ts', '--target=a2', `--from=${from}`, `--to=${to}`, '--dry-run'],
+    { stdio: 'inherit', cwd: path.join(repoRoot, 'services', 'tts-gateway'), shell: true },
+  );
+  if (guard.status !== 0) process.exit(guard.status ?? 1);
+
   if (!generate) {
     console.log('\nPreflight only. No TTS calls were made.');
     console.log('To generate audio later:');
@@ -92,7 +98,7 @@ async function main() {
   console.log(`\nProvider: ${status.provider}`);
 
   const assign = await gatewayJson('/v1/tts/assignments');
-  const roster = assign.roster?.characters ?? loadJson(voicesPath).characters;
+  const roster = assign.roster ?? loadJson(voicesPath);
 
   let generated = 0;
   let failed = 0;
@@ -111,8 +117,8 @@ async function main() {
       if (clip.text !== expectedText) {
         throw new Error(`Source text differs from authored JSON for ${clip.contentId}`);
       }
-      const voice = roster[clip.speakerId];
-      if (!voice?.voiceId || isPlaceholder(voice.voiceId)) {
+      const voice = resolveSpeakerVoice(roster, clip.speakerId);
+      if (!voice) {
         throw new Error(`No production voice assigned for ${clip.speakerId}`);
       }
       payloads.push({

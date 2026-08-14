@@ -7,7 +7,7 @@ import {
   type SelfAssessment,
   type StorySentenceCue,
 } from '@/src/production/flow';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -34,7 +34,7 @@ export function ProductionExerciseCard({
   sourceSentence,
   onAssessed,
 }: Props) {
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const [revealed, setRevealed] = useState(false);
   const [assessment, setAssessment] = useState<SelfAssessment | null>(null);
   const view = productionCardView(exercise, index, total, revealed, sourceSentence);
@@ -46,16 +46,16 @@ export function ProductionExerciseCard({
 
   return (
     <View>
-      <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
         Say it in Italian
       </Text>
-      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
         {view.progressLabel}
       </Text>
-      <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+      <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
         Can you say this in Italian?
       </Text>
-      <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+      <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
         Say it out loud the way the story said it, then check your answer.
       </Text>
 
@@ -64,9 +64,9 @@ export function ProductionExerciseCard({
           styles.promptCard,
           { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
         ]}>
-        <Text style={[Typography.caption, { color: colors.textMuted }]}>English</Text>
+        <Text style={[type.caption, { color: colors.textMuted }]}>English</Text>
         <Text
-          style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}
+          style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}
           accessibilityRole="text">
           {view.promptEn}
         </Text>
@@ -87,7 +87,7 @@ export function ProductionExerciseCard({
               borderColor: colors.accent,
             },
           ]}>
-          <Text style={[Typography.button, { color: '#F7FAF9' }]}>Show answer</Text>
+          <Text style={[type.button, { color: colors.onTint }]}>Show answer</Text>
         </Pressable>
       ) : null}
 
@@ -100,19 +100,19 @@ export function ProductionExerciseCard({
               borderColor: colors.tint,
             },
           ]}>
-          <Text style={[Typography.caption, { color: colors.textMuted }]}>Expected answer</Text>
+          <Text style={[type.caption, { color: colors.textMuted }]}>Expected answer</Text>
           <Text
-            style={[Typography.reader, { color: colors.text, marginTop: Spacing.sm }]}
+            style={[type.reader, { color: colors.text, marginTop: Spacing.sm }]}
             accessibilityRole="text">
             {view.expectedIt}
           </Text>
           {view.acceptableAnswers.length > 0 ? (
             <View style={{ marginTop: Spacing.lg }}>
-              <Text style={[Typography.label, { color: colors.text }]}>Also acceptable:</Text>
+              <Text style={[type.label, { color: colors.text }]}>Also acceptable:</Text>
               {view.acceptableAnswers.map((alt) => (
                 <Text
                   key={alt}
-                  style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+                  style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
                   {alt}
                 </Text>
               ))}
@@ -123,7 +123,7 @@ export function ProductionExerciseCard({
 
       {view.howDidYouDoVisible ? (
         <View style={{ marginTop: Spacing.xl }}>
-          <Text style={[Typography.label, { color: colors.text }]}>How did you do?</Text>
+          <Text style={[type.label, { color: colors.text }]}>How did you do?</Text>
           <View style={styles.assessmentRow}>
             {SELF_ASSESSMENT.map((option) => {
               const selected = assessment === option.id;
@@ -147,8 +147,8 @@ export function ProductionExerciseCard({
                   ]}>
                   <Text
                     style={[
-                      Typography.caption,
-                      { color: selected ? '#F7FAF9' : colors.text, textAlign: 'center' },
+                      type.caption,
+                      { color: selected ? colors.onTint : colors.text, textAlign: 'center' },
                     ]}>
                     {option.label}
                   </Text>
@@ -170,11 +170,12 @@ export function ProductionExerciseCard({
               backgroundColor: colors.tint,
               opacity: pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
+              minHeight: minTouchTarget,
               borderWidth: focused ? 2 : 0,
               borderColor: colors.accent,
             },
           ]}>
-          <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
+          <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
         </Pressable>
       ) : null}
     </View>

@@ -23,9 +23,11 @@ import { buildChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
 import { hasSeenReaderTip, markReaderTipSeen } from '@/src/reader/storage';
+import { trackChapterWordsRead } from '@/src/telemetry/chapterExposure';
+import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { getVocabularyService } from '@/src/vocabulary';
 import type { DictionaryLookup } from '@/src/vocabulary/types';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 function goToStories() {
@@ -44,7 +46,7 @@ export default function ReaderScreen() {
   }>();
   const storyId =
     (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
-  const { colors } = useTheme();
+  const { colors, type, minTouchTarget } = useTheme();
   const authored = storyId ? getChapter(chapterId, storyId) : undefined;
   const [chapter, setChapter] = useState<Chapter | undefined>(authored);
   const [highlightId, setHighlightId] = useState<string | null>(null);
@@ -199,6 +201,26 @@ export default function ReaderScreen() {
     });
     setLookup(result);
     setSaved(await getVocabularyService().isSaved(result));
+    const story = storyId ?? chapter.storyId;
+    trackReadingEvent({ type: 'word_tapped', storyId: story, chapterId: chapter.id, sentenceId: sentence.id });
+    trackReadingEvent({ type: 'dictionary_opened', storyId: story, chapterId: chapter.id, sentenceId: sentence.id });
+    if (result.kind === 'phrase') {
+      trackReadingEvent({
+        type: 'phrase_lookup',
+        storyId: story,
+        chapterId: chapter.id,
+        sentenceId: sentence.id,
+        phraseId: result.phraseId,
+      });
+    } else if (result.kind === 'word') {
+      trackReadingEvent({
+        type: 'word_lookup',
+        storyId: story,
+        chapterId: chapter.id,
+        sentenceId: sentence.id,
+        lemmaId: result.lemmaId,
+      });
+    }
   };
 
   const continueFromChapter = async () => {
@@ -210,6 +232,7 @@ export default function ReaderScreen() {
       await getProgressService(storyId ?? chapter.storyId).savePosition(chapter.id, last.id);
     }
     await getVocabularyService().recordChapterExposure(chapter);
+    trackChapterWordsRead(chapter, storyId);
     router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
   };
 
@@ -217,11 +240,11 @@ export default function ReaderScreen() {
     return (
       <View style={[styles.missing, { backgroundColor: colors.background }]}>
         <Stack.Screen options={{ title: 'Chapter', headerBackVisible: false }} />
-        <Text style={[Typography.body, { color: colors.textSecondary }]}>
+        <Text style={[type.body, { color: colors.textSecondary }]}>
           This chapter is not available.
         </Text>
         <Pressable onPress={goToStories} style={{ marginTop: Spacing.md }}>
-          <Text style={[Typography.label, { color: colors.tint }]}>Back to stories</Text>
+          <Text style={[type.label, { color: colors.tint }]}>Back to stories</Text>
         </Pressable>
       </View>
     );
@@ -231,9 +254,9 @@ export default function ReaderScreen() {
     return (
       <View style={[styles.missing, { backgroundColor: colors.background }]}>
         <Stack.Screen options={{ title: 'Chapter' }} />
-        <Text style={[Typography.body, { color: colors.danger }]}>{error}</Text>
+        <Text style={[type.body, { color: colors.danger }]}>{error}</Text>
         <Pressable onPress={goToStories} style={{ marginTop: Spacing.md }}>
-          <Text style={[Typography.label, { color: colors.tint }]}>Back to stories</Text>
+          <Text style={[type.label, { color: colors.tint }]}>Back to stories</Text>
         </Pressable>
       </View>
     );
@@ -258,7 +281,7 @@ export default function ReaderScreen() {
           headerTitleStyle: {
             fontFamily: 'Literata_500Medium',
             color: colors.text,
-            fontSize: 16,
+            fontSize: type.label.fontSize,
           },
           headerLeft: () => (
             <Pressable
@@ -268,7 +291,7 @@ export default function ReaderScreen() {
               hitSlop={12}
               style={({ pressed }) => [
                 styles.headerBack,
-                { opacity: pressed ? 0.7 : 1 },
+                { opacity: pressed ? 0.7 : 1, minHeight: minTouchTarget },
               ]}>
               <SymbolView
                 name={{
@@ -279,7 +302,7 @@ export default function ReaderScreen() {
                 tintColor={colors.tint}
                 size={22}
               />
-              <Text style={[Typography.label, { color: colors.tint }]}>Stories</Text>
+              <Text style={[type.label, { color: colors.tint }]}>Stories</Text>
             </Pressable>
           ),
         }}
@@ -302,6 +325,22 @@ export default function ReaderScreen() {
             syncAudioUi();
             return;
           }
+          const replay = playingId === sentence.id;
+          trackReadingEvent({
+            type: 'audio_played',
+            storyId: storyId ?? chapter.storyId,
+            chapterId: chapter.id,
+            sentenceId: sentence.id,
+            meta: { source: 'sentence' },
+          });
+          if (replay) {
+            trackReadingEvent({
+              type: 'sentence_replayed',
+              storyId: storyId ?? chapter.storyId,
+              chapterId: chapter.id,
+              sentenceId: sentence.id,
+            });
+          }
           setHighlightId(sentence.id);
           const result = await audio.playSentence(sentence);
           if (result.played) setHighlightId(sentence.id);
@@ -321,6 +360,12 @@ export default function ReaderScreen() {
           );
           setLookup(result);
           setSaved(false);
+          trackReadingEvent({
+            type: 'dictionary_opened',
+            storyId: storyId ?? chapter.storyId,
+            chapterId: chapter.id,
+            sentenceId: sentence.id,
+          });
         }}
         chapterRecap={chapterRecap}
         showCompletionCta
@@ -337,7 +382,7 @@ export default function ReaderScreen() {
               borderColor: colors.border,
             },
           ]}>
-          <Text style={[Typography.caption, { color: colors.textSecondary, flex: 1 }]}>
+          <Text style={[type.caption, { color: colors.textSecondary, flex: 1 }]}>
             Tap a word for help · Tap a sentence for English
           </Text>
           <Pressable
@@ -346,7 +391,7 @@ export default function ReaderScreen() {
             onPress={dismissReaderTip}
             hitSlop={8}
             style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1 }]}>
-            <Text style={[Typography.label, { color: colors.tint }]}>Got it</Text>
+            <Text style={[type.label, { color: colors.tint }]}>Got it</Text>
           </Pressable>
         </View>
       ) : null}
@@ -358,6 +403,14 @@ export default function ReaderScreen() {
         chapterProgress={chapterPlayback}
         speed={audioSpeed}
         onPlayPause={() => {
+          if (!isPlaying) {
+            trackReadingEvent({
+              type: 'audio_played',
+              storyId: storyId ?? chapter.storyId,
+              chapterId: chapter.id,
+              meta: { source: 'chapter' },
+            });
+          }
           void audio.playChapter(sentences, chapter.id).then(() => syncAudioUi());
         }}
         onStop={() => {
@@ -387,6 +440,13 @@ export default function ReaderScreen() {
         }
         onPronounce={() => {
           if (!lookup) return;
+          trackReadingEvent({
+            type: lookup.kind === 'sentence' ? 'sentence_replayed' : 'audio_played',
+            storyId: storyId ?? chapter.storyId,
+            chapterId: chapter.id,
+            sentenceId: lookup.kind === 'sentence' ? lookup.sentenceId : undefined,
+            meta: { source: 'dictionary', kind: lookup.kind },
+          });
           if (lookup.kind === 'sentence') {
             const spoken = sentences.find((s) => s.id === lookup.sentenceId);
             if (spoken) void audio.playSentence(spoken);
@@ -400,6 +460,21 @@ export default function ReaderScreen() {
           if (!lookup) return;
           await getVocabularyService().saveLookup(lookup);
           setSaved(true);
+          if (lookup.kind === 'phrase') {
+            trackReadingEvent({
+              type: 'phrase_saved',
+              storyId: storyId ?? chapter.storyId,
+              chapterId: chapter.id,
+              phraseId: lookup.phraseId,
+            });
+          } else if (lookup.kind === 'word') {
+            trackReadingEvent({
+              type: 'word_saved',
+              storyId: storyId ?? chapter.storyId,
+              chapterId: chapter.id,
+              lemmaId: lookup.lemmaId,
+            });
+          }
         }}
       />
     </View>

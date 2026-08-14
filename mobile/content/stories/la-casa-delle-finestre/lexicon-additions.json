@@ -1,0 +1,4294 @@
+{
+  "lexicon": [
+    {
+      "lemmaId": "1A",
+      "italian": "1A",
+      "english": "1A",
+      "partOfSpeech": "other",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "1B",
+      "italian": "1B",
+      "english": "1B",
+      "partOfSpeech": "other",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "2A",
+      "italian": "2A",
+      "english": "2A",
+      "partOfSpeech": "other",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "3C",
+      "italian": "3C",
+      "english": "3C",
+      "partOfSpeech": "other",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "abbassare",
+      "italian": "abbassare",
+      "english": "abbassare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "abitudine",
+      "italian": "abitudine",
+      "english": "abitudine",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "accendere",
+      "italian": "accendere",
+      "english": "accendere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ad",
+      "italian": "ad",
+      "english": "ad",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "aggiungere",
+      "italian": "aggiungere",
+      "english": "aggiungere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ah",
+      "italian": "ah",
+      "english": "ah",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "alfabeto",
+      "italian": "alfabeto",
+      "english": "alfabeto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "allo",
+      "italian": "allo",
+      "english": "allo",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "alme",
+      "italian": "alme",
+      "english": "alme",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "altrove",
+      "italian": "altrove",
+      "english": "altrove",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "amare",
+      "italian": "amare",
+      "english": "amare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "amministrativo",
+      "italian": "amministrativo",
+      "english": "amministrativo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "anello",
+      "italian": "anello",
+      "english": "anello",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "annaffiare",
+      "italian": "annaffiare",
+      "english": "annaffiare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "annuire",
+      "italian": "annuire",
+      "english": "annuire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "apertura",
+      "italian": "apertura",
+      "english": "apertura",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "archivio",
+      "italian": "archivio",
+      "english": "archivio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "archivista",
+      "italian": "archivista",
+      "english": "archivista",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "aria",
+      "italian": "aria",
+      "english": "aria",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "arrestare",
+      "italian": "arrestare",
+      "english": "arrestare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "arresto",
+      "italian": "arresto",
+      "english": "arresto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "asciugare",
+      "italian": "asciugare",
+      "english": "asciugare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "attesa",
+      "italian": "attesa",
+      "english": "attesa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "attimo",
+      "italian": "attimo",
+      "english": "attimo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "aula",
+      "italian": "aula",
+      "english": "aula",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "avanti",
+      "italian": "avanti",
+      "english": "avanti",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "avvocato",
+      "italian": "avvocato",
+      "english": "avvocato",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "bambino",
+      "italian": "bambino",
+      "english": "bambino",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "basta",
+      "italian": "basta",
+      "english": "basta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "bastare",
+      "italian": "bastare",
+      "english": "bastare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "bocca",
+      "italian": "bocca",
+      "english": "bocca",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "borsa",
+      "italian": "borsa",
+      "english": "borsa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "braccio",
+      "italian": "braccio",
+      "english": "braccio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "brava",
+      "italian": "brava",
+      "english": "brava",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "breve",
+      "italian": "breve",
+      "english": "breve",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "buco",
+      "italian": "buco",
+      "english": "buco",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "bugia",
+      "italian": "bugia",
+      "english": "bugia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "buio",
+      "italian": "buio",
+      "english": "buio",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "buon",
+      "italian": "buon",
+      "english": "buon",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "buonanotte",
+      "italian": "buonanotte",
+      "english": "buonanotte",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "buonasera",
+      "italian": "buonasera",
+      "english": "buonasera",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "bussare",
+      "italian": "bussare",
+      "english": "bussare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "buttare",
+      "italian": "buttare",
+      "english": "buttare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cadere",
+      "italian": "cadere",
+      "english": "cadere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "calendario",
+      "italian": "calendario",
+      "english": "calendario",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "campeggio",
+      "italian": "campeggio",
+      "english": "campeggio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cancellare",
+      "italian": "cancellare",
+      "english": "cancellare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cancello",
+      "italian": "cancello",
+      "english": "cancello",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "capello",
+      "italian": "capello",
+      "english": "capello",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "capitolo",
+      "italian": "capitolo",
+      "english": "capitolo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "carabinieri",
+      "italian": "carabinieri",
+      "english": "carabinieri",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "caricare",
+      "italian": "caricare",
+      "english": "caricare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cartella",
+      "italian": "cartella",
+      "english": "cartella",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "casella",
+      "italian": "casella",
+      "english": "casella",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "caserma",
+      "italian": "caserma",
+      "english": "caserma",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "catena",
+      "italian": "catena",
+      "english": "catena",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cattiveria",
+      "italian": "cattiveria",
+      "english": "cattiveria",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cattivo",
+      "italian": "cattivo",
+      "english": "cattivo",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cemento",
+      "italian": "cemento",
+      "english": "cemento",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cerchiare",
+      "italian": "cerchiare",
+      "english": "cerchiare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cerchio",
+      "italian": "cerchio",
+      "english": "cerchio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "chiavetta",
+      "italian": "chiavetta",
+      "english": "chiavetta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "chiusura",
+      "italian": "chiusura",
+      "english": "chiusura",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "classe",
+      "italian": "classe",
+      "english": "classe",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "codice",
+      "italian": "codice",
+      "english": "codice",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "coincidere",
+      "italian": "coincidere",
+      "english": "coincidere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "colombo",
+      "italian": "colombo",
+      "english": "colombo",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "colpo",
+      "italian": "colpo",
+      "english": "colpo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "completo",
+      "italian": "completo",
+      "english": "completo",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "computer",
+      "italian": "computer",
+      "english": "computer",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "comune",
+      "italian": "comune",
+      "english": "comune",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "comunque",
+      "italian": "comunque",
+      "english": "comunque",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "concreto",
+      "italian": "concreto",
+      "english": "concreto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "confessare",
+      "italian": "confessare",
+      "english": "confessare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "confessione",
+      "italian": "confessione",
+      "english": "confessione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "confezione",
+      "italian": "confezione",
+      "english": "confezione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "confrontare",
+      "italian": "confrontare",
+      "english": "confrontare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "contratto",
+      "italian": "contratto",
+      "english": "contratto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "contro",
+      "italian": "contro",
+      "english": "contro",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "controllare",
+      "italian": "controllare",
+      "english": "controllare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "controllo",
+      "italian": "controllo",
+      "english": "controllo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "copertina",
+      "italian": "copertina",
+      "english": "copertina",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "copia",
+      "italian": "copia",
+      "english": "copia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "copiare",
+      "italian": "copiare",
+      "english": "copiare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "coprire",
+      "italian": "coprire",
+      "english": "coprire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "coraggio",
+      "italian": "coraggio",
+      "english": "coraggio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "corpo",
+      "italian": "corpo",
+      "english": "corpo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "correggere",
+      "italian": "correggere",
+      "english": "correggere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "correre",
+      "italian": "correre",
+      "english": "correre",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "corridoio",
+      "italian": "corridoio",
+      "english": "corridoio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "corsa",
+      "italian": "corsa",
+      "english": "corsa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cortile",
+      "italian": "cortile",
+      "english": "cortile",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "corto",
+      "italian": "corto",
+      "english": "corto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "costo",
+      "italian": "costo",
+      "english": "costo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "credere",
+      "italian": "credere",
+      "english": "credere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "crepa",
+      "italian": "crepa",
+      "english": "crepa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "cura",
+      "italian": "cura",
+      "english": "cura",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "custode",
+      "italian": "custode",
+      "english": "custode",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dagli",
+      "italian": "dagli",
+      "english": "dagli",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dai",
+      "italian": "dai",
+      "english": "dai",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dalle",
+      "italian": "dalle",
+      "english": "dalle",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "data",
+      "italian": "data",
+      "english": "data",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "decisione",
+      "italian": "decisione",
+      "english": "decisione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "degli",
+      "italian": "degli",
+      "english": "degli",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dello",
+      "italian": "dello",
+      "english": "dello",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "denuncia",
+      "italian": "denuncia",
+      "english": "denuncia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "denunciare",
+      "italian": "denunciare",
+      "english": "denunciare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "destino",
+      "italian": "destino",
+      "english": "destino",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "detective",
+      "italian": "detective",
+      "english": "detective",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dimostrare",
+      "italian": "dimostrare",
+      "english": "dimostrare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dirigente",
+      "italian": "dirigente",
+      "english": "dirigente",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "discorso",
+      "italian": "discorso",
+      "english": "discorso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "discutere",
+      "italian": "discutere",
+      "english": "discutere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "disegnare",
+      "italian": "disegnare",
+      "english": "disegnare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "disegno",
+      "italian": "disegno",
+      "english": "disegno",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "disordine",
+      "italian": "disordine",
+      "english": "disordine",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dispiacere",
+      "italian": "dispiacere",
+      "english": "dispiacere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "distruggere",
+      "italian": "distruggere",
+      "english": "distruggere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dito",
+      "italian": "dito",
+      "english": "dito",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "diventare",
+      "italian": "diventare",
+      "english": "diventare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "divertimento",
+      "italian": "divertimento",
+      "english": "divertimento",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "donna",
+      "italian": "donna",
+      "english": "donna",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "dottoressa",
+      "italian": "dottoressa",
+      "english": "dottoressa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "edificio",
+      "italian": "edificio",
+      "english": "edificio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "enfasi",
+      "italian": "enfasi",
+      "english": "enfasi",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "eroe",
+      "italian": "eroe",
+      "english": "eroe",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "eroina",
+      "italian": "eroina",
+      "english": "eroina",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "errore",
+      "italian": "errore",
+      "english": "errore",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "esagerare",
+      "italian": "esagerare",
+      "english": "esagerare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "esame",
+      "italian": "esame",
+      "english": "esame",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "esplorazione",
+      "italian": "esplorazione",
+      "english": "esplorazione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "esserci",
+      "italian": "esserci",
+      "english": "esserci",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fa",
+      "italian": "fa",
+      "english": "fa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fantasma",
+      "italian": "fantasma",
+      "english": "fantasma",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fatto",
+      "italian": "fatto",
+      "english": "fatto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fermo",
+      "italian": "fermo",
+      "english": "fermo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ferro",
+      "italian": "ferro",
+      "english": "ferro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "festeggiare",
+      "italian": "festeggiare",
+      "english": "festeggiare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "figlia",
+      "italian": "figlia",
+      "english": "figlia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "film",
+      "italian": "film",
+      "english": "film",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "filmare",
+      "italian": "filmare",
+      "english": "filmare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fine",
+      "italian": "fine",
+      "english": "fine",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "firma",
+      "italian": "firma",
+      "english": "firma",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "firmare",
+      "italian": "firmare",
+      "english": "firmare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "foglio",
+      "italian": "foglio",
+      "english": "foglio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fondo",
+      "italian": "fondo",
+      "english": "fondo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "formale",
+      "italian": "formale",
+      "english": "formale",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fosso",
+      "italian": "fosso",
+      "english": "fosso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fotocopia",
+      "italian": "fotocopia",
+      "english": "fotocopia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "frase",
+      "italian": "frase",
+      "english": "frase",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fresco",
+      "italian": "fresco",
+      "english": "fresco",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "fronte",
+      "italian": "fronte",
+      "english": "fronte",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "furto",
+      "italian": "furto",
+      "english": "furto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "gesto",
+      "italian": "gesto",
+      "english": "gesto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "giacca",
+      "italian": "giacca",
+      "english": "giacca",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "giallo",
+      "italian": "giallo",
+      "english": "giallo",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "gioco",
+      "italian": "gioco",
+      "english": "gioco",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "giornale",
+      "italian": "giornale",
+      "english": "giornale",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "girare",
+      "italian": "girare",
+      "english": "girare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "giu",
+      "italian": "giu",
+      "english": "giu",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "grata",
+      "italian": "grata",
+      "english": "grata",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "gridare",
+      "italian": "gridare",
+      "english": "gridare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "grido",
+      "italian": "grido",
+      "english": "grido",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "grigio",
+      "italian": "grigio",
+      "english": "grigio",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "griglia",
+      "italian": "griglia",
+      "english": "griglia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "immagine",
+      "italian": "immagine",
+      "english": "immagine",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "incompleto",
+      "italian": "incompleto",
+      "english": "incompleto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "incontro",
+      "italian": "incontro",
+      "english": "incontro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "indicare",
+      "italian": "indicare",
+      "english": "indicare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "indietro",
+      "italian": "indietro",
+      "english": "indietro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ingresso",
+      "italian": "ingresso",
+      "english": "ingresso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "inizio",
+      "italian": "inizio",
+      "english": "inizio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "insegnante",
+      "italian": "insegnante",
+      "english": "insegnante",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "inseguimento",
+      "italian": "inseguimento",
+      "english": "inseguimento",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "insistere",
+      "italian": "insistere",
+      "english": "insistere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "insomma",
+      "italian": "insomma",
+      "english": "insomma",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "intelligente",
+      "italian": "intelligente",
+      "english": "intelligente",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "internet",
+      "italian": "internet",
+      "english": "internet",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "intorno",
+      "italian": "intorno",
+      "english": "intorno",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "irene",
+      "italian": "irene",
+      "english": "irene",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "l'ha",
+      "italian": "l'ha",
+      "english": "l'ha",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "lampada",
+      "italian": "lampada",
+      "english": "lampada",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "largo",
+      "italian": "largo",
+      "english": "largo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "lato",
+      "italian": "lato",
+      "english": "lato",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "legge",
+      "italian": "legge",
+      "english": "legge",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "lento",
+      "italian": "lento",
+      "english": "lento",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "lezione",
+      "italian": "lezione",
+      "english": "lezione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "lieto",
+      "italian": "lieto",
+      "english": "lieto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "linea",
+      "italian": "linea",
+      "english": "linea",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "locale",
+      "italian": "locale",
+      "english": "locale",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "loredana",
+      "italian": "loredana",
+      "english": "loredana",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "macchina",
+      "italian": "macchina",
+      "english": "macchina",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "magia",
+      "italian": "magia",
+      "english": "magia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "male",
+      "italian": "male",
+      "english": "male",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mandare",
+      "italian": "mandare",
+      "english": "mandare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "manette",
+      "italian": "manette",
+      "english": "manette",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mano",
+      "italian": "mano",
+      "english": "mano",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mansarda",
+      "italian": "mansarda",
+      "english": "mansarda",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mappa",
+      "italian": "mappa",
+      "english": "mappa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "maresciallo",
+      "italian": "maresciallo",
+      "english": "maresciallo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mazzo",
+      "italian": "mazzo",
+      "english": "mazzo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "me",
+      "italian": "me",
+      "english": "me",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "medio",
+      "italian": "medio",
+      "english": "medio",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "memoria",
+      "italian": "memoria",
+      "english": "memoria",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mentire",
+      "italian": "mentire",
+      "english": "mentire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mimmo",
+      "italian": "mimmo",
+      "english": "mimmo",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "minuto",
+      "italian": "minuto",
+      "english": "minuto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mistero",
+      "italian": "mistero",
+      "english": "mistero",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "monologo",
+      "italian": "monologo",
+      "english": "monologo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "morire",
+      "italian": "morire",
+      "english": "morire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "morse",
+      "italian": "morse",
+      "english": "morse",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "morto",
+      "italian": "morto",
+      "english": "morto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mostrare",
+      "italian": "mostrare",
+      "english": "mostrare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mostro",
+      "italian": "mostro",
+      "english": "mostro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "motivo",
+      "italian": "motivo",
+      "english": "motivo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "motore",
+      "italian": "motore",
+      "english": "motore",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "muovere",
+      "italian": "muovere",
+      "english": "muovere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "muro",
+      "italian": "muro",
+      "english": "muro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "mutare",
+      "italian": "mutare",
+      "english": "mutare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nascondere",
+      "italian": "nascondere",
+      "english": "nascondere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nascosto",
+      "italian": "nascosto",
+      "english": "nascosto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nastro",
+      "italian": "nastro",
+      "english": "nastro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nello",
+      "italian": "nello",
+      "english": "nello",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nemico",
+      "italian": "nemico",
+      "english": "nemico",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nera",
+      "italian": "nera",
+      "english": "nera",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "neri",
+      "italian": "neri",
+      "english": "neri",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "nero",
+      "italian": "nero",
+      "english": "nero",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "normale",
+      "italian": "normale",
+      "english": "normale",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "numerare",
+      "italian": "numerare",
+      "english": "numerare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "occhio",
+      "italian": "occhio",
+      "english": "occhio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "odiare",
+      "italian": "odiare",
+      "english": "odiare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "oltre",
+      "italian": "oltre",
+      "english": "oltre",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "onesto",
+      "italian": "onesto",
+      "english": "onesto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "oppure",
+      "italian": "oppure",
+      "english": "oppure",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ordinario",
+      "italian": "ordinario",
+      "english": "ordinario",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "orizzontale",
+      "italian": "orizzontale",
+      "english": "orizzontale",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ormai",
+      "italian": "ormai",
+      "english": "ormai",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ovviamente",
+      "italian": "ovviamente",
+      "english": "ovviamente",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pagina",
+      "italian": "pagina",
+      "english": "pagina",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "palazzo",
+      "italian": "palazzo",
+      "english": "palazzo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "palestra",
+      "italian": "palestra",
+      "english": "palestra",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "passo",
+      "italian": "passo",
+      "english": "passo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pausa",
+      "italian": "pausa",
+      "english": "pausa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "penna",
+      "italian": "penna",
+      "english": "penna",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pensiero",
+      "italian": "pensiero",
+      "english": "pensiero",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "perdere",
+      "italian": "perdere",
+      "english": "perdere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "perdonare",
+      "italian": "perdonare",
+      "english": "perdonare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "perdono",
+      "italian": "perdono",
+      "english": "perdono",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "perfetto",
+      "italian": "perfetto",
+      "english": "perfetto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "permesso",
+      "italian": "permesso",
+      "english": "permesso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pesante",
+      "italian": "pesante",
+      "english": "pesante",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pesare",
+      "italian": "pesare",
+      "english": "pesare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pezzo",
+      "italian": "pezzo",
+      "english": "pezzo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "piangere",
+      "italian": "piangere",
+      "english": "piangere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pianta",
+      "italian": "pianta",
+      "english": "pianta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pianto",
+      "italian": "pianto",
+      "english": "pianto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "piedi",
+      "italian": "piedi",
+      "english": "piedi",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "piegare",
+      "italian": "piegare",
+      "english": "piegare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pieta",
+      "italian": "pieta",
+      "english": "pieta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pila",
+      "italian": "pila",
+      "english": "pila",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "pioggia",
+      "italian": "pioggia",
+      "english": "pioggia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "piva",
+      "italian": "piva",
+      "english": "piva",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "po",
+      "italian": "po",
+      "english": "po",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "polvere",
+      "italian": "polvere",
+      "english": "polvere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "possibile",
+      "italian": "possibile",
+      "english": "possibile",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "preferire",
+      "italian": "preferire",
+      "english": "preferire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "premio",
+      "italian": "premio",
+      "english": "premio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "processo",
+      "italian": "processo",
+      "english": "processo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "prof",
+      "italian": "prof",
+      "english": "prof",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "promettere",
+      "italian": "promettere",
+      "english": "promettere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "proposito",
+      "italian": "proposito",
+      "english": "proposito",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "proteggere",
+      "italian": "proteggere",
+      "english": "proteggere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "prova",
+      "italian": "prova",
+      "english": "prova",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "punizione",
+      "italian": "punizione",
+      "english": "punizione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "punto",
+      "italian": "punto",
+      "english": "punto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "puzzare",
+      "italian": "puzzare",
+      "english": "puzzare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "qua",
+      "italian": "qua",
+      "english": "qua",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "quaderno",
+      "italian": "quaderno",
+      "english": "quaderno",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "quadrato",
+      "italian": "quadrato",
+      "english": "quadrato",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "quarto",
+      "italian": "quarto",
+      "english": "quarto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "quel",
+      "italian": "quel",
+      "english": "quel",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "quinto",
+      "italian": "quinto",
+      "english": "quinto",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "quirico",
+      "italian": "quirico",
+      "english": "quirico",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "rabbia",
+      "italian": "rabbia",
+      "english": "rabbia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "reato",
+      "italian": "reato",
+      "english": "reato",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "recente",
+      "italian": "recente",
+      "english": "recente",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "redenzione",
+      "italian": "redenzione",
+      "english": "redenzione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "registro",
+      "italian": "registro",
+      "english": "registro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "relazione",
+      "italian": "relazione",
+      "english": "relazione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "respirare",
+      "italian": "respirare",
+      "english": "respirare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "restituire",
+      "italian": "restituire",
+      "english": "restituire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "resto",
+      "italian": "resto",
+      "english": "resto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "riaprire",
+      "italian": "riaprire",
+      "english": "riaprire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ricevere",
+      "italian": "ricevere",
+      "english": "ricevere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "richiesta",
+      "italian": "richiesta",
+      "english": "richiesta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ridere",
+      "italian": "ridere",
+      "english": "ridere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "riga",
+      "italian": "riga",
+      "english": "riga",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "rigido",
+      "italian": "rigido",
+      "english": "rigido",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "rileggere",
+      "italian": "rileggere",
+      "english": "rileggere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "rimettere",
+      "italian": "rimettere",
+      "english": "rimettere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "rinnovare",
+      "italian": "rinnovare",
+      "english": "rinnovare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ripetere",
+      "italian": "ripetere",
+      "english": "ripetere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "risalire",
+      "italian": "risalire",
+      "english": "risalire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "risata",
+      "italian": "risata",
+      "english": "risata",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "risposta",
+      "italian": "risposta",
+      "english": "risposta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "ritardo",
+      "italian": "ritardo",
+      "english": "ritardo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "riuscire",
+      "italian": "riuscire",
+      "english": "riuscire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "romanzo",
+      "italian": "romanzo",
+      "english": "romanzo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "rosso",
+      "italian": "rosso",
+      "english": "rosso",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "salire",
+      "italian": "salire",
+      "english": "salire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "salvare",
+      "italian": "salvare",
+      "english": "salvare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "salvezza",
+      "italian": "salvezza",
+      "english": "salvezza",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "san",
+      "italian": "san",
+      "english": "san",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sara",
+      "italian": "sara",
+      "english": "sara",
+      "partOfSpeech": "proper",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sbagliare",
+      "italian": "sbagliare",
+      "english": "sbagliare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sbarra",
+      "italian": "sbarra",
+      "english": "sbarra",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scala",
+      "italian": "scala",
+      "english": "scala",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scandalo",
+      "italian": "scandalo",
+      "english": "scandalo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scanner",
+      "italian": "scanner",
+      "english": "scanner",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scansionare",
+      "italian": "scansionare",
+      "english": "scansionare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scappare",
+      "italian": "scappare",
+      "english": "scappare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scatola",
+      "italian": "scatola",
+      "english": "scatola",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scelta",
+      "italian": "scelta",
+      "english": "scelta",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scendere",
+      "italian": "scendere",
+      "english": "scendere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "schermo",
+      "italian": "schermo",
+      "english": "schermo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scrivania",
+      "italian": "scrivania",
+      "english": "scrivania",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scuotere",
+      "italian": "scuotere",
+      "english": "scuotere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scuro",
+      "italian": "scuro",
+      "english": "scuro",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "scusare",
+      "italian": "scusare",
+      "english": "scusare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sdraiare",
+      "italian": "sdraiare",
+      "english": "sdraiare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "secco",
+      "italian": "secco",
+      "english": "secco",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "secondo",
+      "italian": "secondo",
+      "english": "secondo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "segnale",
+      "italian": "segnale",
+      "english": "segnale",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "segreto",
+      "italian": "segreto",
+      "english": "segreto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "seguire",
+      "italian": "seguire",
+      "english": "seguire",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "seguito",
+      "italian": "seguito",
+      "english": "seguito",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "semaforo",
+      "italian": "semaforo",
+      "english": "semaforo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "seminterrato",
+      "italian": "seminterrato",
+      "english": "seminterrato",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "semplice",
+      "italian": "semplice",
+      "english": "semplice",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "senso",
+      "italian": "senso",
+      "english": "senso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "separare",
+      "italian": "separare",
+      "english": "separare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sguardo",
+      "italian": "sguardo",
+      "english": "sguardo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "signor",
+      "italian": "signor",
+      "english": "signor",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "signorina",
+      "italian": "signorina",
+      "english": "signorina",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "silenzio",
+      "italian": "silenzio",
+      "english": "silenzio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "slogan",
+      "italian": "slogan",
+      "english": "slogan",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "smettere",
+      "italian": "smettere",
+      "english": "smettere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sogno",
+      "italian": "sogno",
+      "english": "sogno",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sola",
+      "italian": "sola",
+      "english": "sola",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sollevare",
+      "italian": "sollevare",
+      "english": "sollevare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "soluzione",
+      "italian": "soluzione",
+      "english": "soluzione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sonno",
+      "italian": "sonno",
+      "english": "sonno",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sopra",
+      "italian": "sopra",
+      "english": "sopra",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sorriso",
+      "italian": "sorriso",
+      "english": "sorriso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spalla",
+      "italian": "spalla",
+      "english": "spalla",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spalle",
+      "italian": "spalle",
+      "english": "spalle",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sparare",
+      "italian": "sparare",
+      "english": "sparare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sparo",
+      "italian": "sparo",
+      "english": "sparo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spaventare",
+      "italian": "spaventare",
+      "english": "spaventare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spazio",
+      "italian": "spazio",
+      "english": "spazio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spegnere",
+      "italian": "spegnere",
+      "english": "spegnere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spesa",
+      "italian": "spesa",
+      "english": "spesa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spiegazione",
+      "italian": "spiegazione",
+      "english": "spiegazione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sporco",
+      "italian": "sporco",
+      "english": "sporco",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "spostare",
+      "italian": "spostare",
+      "english": "spostare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "stamattina",
+      "italian": "stamattina",
+      "english": "stamattina",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "stasera",
+      "italian": "stasera",
+      "english": "stasera",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "stato",
+      "italian": "stato",
+      "english": "stato",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "stavolta",
+      "italian": "stavolta",
+      "english": "stavolta",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "stomaco",
+      "italian": "stomaco",
+      "english": "stomaco",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "storia",
+      "italian": "storia",
+      "english": "storia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "stretto",
+      "italian": "stretto",
+      "english": "stretto",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "studente",
+      "italian": "studente",
+      "english": "studente",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sudore",
+      "italian": "sudore",
+      "english": "sudore",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sui",
+      "italian": "sui",
+      "english": "sui",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sulle",
+      "italian": "sulle",
+      "english": "sulle",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "sullo",
+      "italian": "sullo",
+      "english": "sullo",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tacere",
+      "italian": "tacere",
+      "english": "tacere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "taglio",
+      "italian": "taglio",
+      "english": "taglio",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tanica",
+      "italian": "tanica",
+      "english": "tanica",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tasca",
+      "italian": "tasca",
+      "english": "tasca",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tazza",
+      "italian": "tazza",
+      "english": "tazza",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "televisione",
+      "italian": "televisione",
+      "english": "televisione",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tenda",
+      "italian": "tenda",
+      "english": "tenda",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tenere",
+      "italian": "tenere",
+      "english": "tenere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "teoria",
+      "italian": "teoria",
+      "english": "teoria",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "terra",
+      "italian": "terra",
+      "english": "terra",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "terremoto",
+      "italian": "terremoto",
+      "english": "terremoto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "terzo",
+      "italian": "terzo",
+      "english": "terzo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "testa",
+      "italian": "testa",
+      "english": "testa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "testimoniare",
+      "italian": "testimoniare",
+      "english": "testimoniare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "timbro",
+      "italian": "timbro",
+      "english": "timbro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tirare",
+      "italian": "tirare",
+      "english": "tirare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "titolo",
+      "italian": "titolo",
+      "english": "titolo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "toccare",
+      "italian": "toccare",
+      "english": "toccare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "togliere",
+      "italian": "togliere",
+      "english": "togliere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "torcia",
+      "italian": "torcia",
+      "english": "torcia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tremare",
+      "italian": "tremare",
+      "english": "tremare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "tribunale",
+      "italian": "tribunale",
+      "english": "tribunale",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "trionfo",
+      "italian": "trionfo",
+      "english": "trionfo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "troppa",
+      "italian": "troppa",
+      "english": "troppa",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "uguale",
+      "italian": "uguale",
+      "english": "uguale",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "umano",
+      "italian": "umano",
+      "english": "umano",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "uomo",
+      "italian": "uomo",
+      "english": "uomo",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "urlare",
+      "italian": "urlare",
+      "english": "urlare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "usare",
+      "italian": "usare",
+      "english": "usare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "utile",
+      "italian": "utile",
+      "english": "utile",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vendita",
+      "italian": "vendita",
+      "english": "vendita",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vento",
+      "italian": "vento",
+      "english": "vento",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "verdetto",
+      "italian": "verdetto",
+      "english": "verdetto",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "verita",
+      "italian": "verita",
+      "english": "verita",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "versare",
+      "italian": "versare",
+      "english": "versare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vestaglia",
+      "italian": "vestaglia",
+      "english": "vestaglia",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vestito",
+      "italian": "vestito",
+      "english": "vestito",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vetro",
+      "italian": "vetro",
+      "english": "vetro",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "video",
+      "italian": "video",
+      "english": "video",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vietare",
+      "italian": "vietare",
+      "english": "vietare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vile",
+      "italian": "vile",
+      "english": "vile",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vincere",
+      "italian": "vincere",
+      "english": "vincere",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "visibile",
+      "italian": "visibile",
+      "english": "visibile",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "viso",
+      "italian": "viso",
+      "english": "viso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vista",
+      "italian": "vista",
+      "english": "vista",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vittoria",
+      "italian": "vittoria",
+      "english": "vittoria",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "vivo",
+      "italian": "vivo",
+      "english": "vivo",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    },
+    {
+      "lemmaId": "voltare",
+      "italian": "voltare",
+      "english": "voltare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "cefrLevel": "A2+",
+      "notes": "Story-local for la-casa-delle-finestre"
+    }
+  ]
+}

@@ -13,12 +13,12 @@ import {
   findSentenceById,
 } from '@/src/vocabulary/storyExamples';
 import type { LemmaEncounter, PhraseEncounter } from '@/src/vocabulary/types';
-import { Radii, Spacing, Typography } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function VocabDetailScreen() {
   const { kind, id } = useLocalSearchParams<{ kind: string; id: string }>();
-  const { colors } = useTheme();
+  const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const bundle = getContentBundle();
   const decodedId = decodeURIComponent(id ?? '');
@@ -53,16 +53,16 @@ export default function VocabDetailScreen() {
             styles.content,
             { paddingBottom: insets.bottom + Spacing.xl },
           ]}>
-          <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+          <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
             {statusLabel(phrase?.status)}
           </Text>
-          <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+          <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
             {(phrase?.surface ?? meta.surface).toUpperCase()}
           </Text>
-          <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+          <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
             {meta.naturalEn}
           </Text>
-          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
             Literally: “{meta.literalEn}”
           </Text>
 
@@ -72,23 +72,23 @@ export default function VocabDetailScreen() {
                 styles.card,
                 { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
               ]}>
-              <Text style={[Typography.caption, { color: colors.textMuted }]}>Example</Text>
-              <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
+              <Text style={[type.caption, { color: colors.textMuted }]}>Example</Text>
+              <Text style={[type.body, { color: colors.text, marginTop: Spacing.sm }]}>
                 “{example.text}”
               </Text>
             </View>
           ) : null}
 
-          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
             Seen in
           </Text>
           {chapters.map((label) => (
-            <Text key={label} style={[Typography.body, { color: colors.text, marginTop: 4 }]}>
+            <Text key={label} style={[type.body, { color: colors.text, marginTop: 4 }]}>
               {label}
             </Text>
           ))}
 
-          <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
             Encountered: {phrase?.encounterCount ?? 0}{' '}
             {phrase?.encounterCount === 1 ? 'time' : 'times'}
           </Text>
@@ -116,16 +116,16 @@ export default function VocabDetailScreen() {
           styles.content,
           { paddingBottom: insets.bottom + Spacing.xl },
         ]}>
-        <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
+        <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
           {statusLabel(lemma?.status)}
         </Text>
-        <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+        <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
           {surface.toUpperCase()}
         </Text>
-        <Text style={[Typography.label, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+        <Text style={[type.label, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
           {entry?.italian ?? decodedId}
         </Text>
-        <Text style={[Typography.body, { color: colors.textSecondary }]}>{entry?.english}</Text>
+        <Text style={[type.body, { color: colors.textSecondary }]}>{entry?.english}</Text>
 
         {example ? (
           <View
@@ -133,23 +133,23 @@ export default function VocabDetailScreen() {
               styles.card,
               { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
             ]}>
-            <Text style={[Typography.caption, { color: colors.textMuted }]}>Example</Text>
-            <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.sm }]}>
+            <Text style={[type.caption, { color: colors.textMuted }]}>Example</Text>
+            <Text style={[type.body, { color: colors.text, marginTop: Spacing.sm }]}>
               “{example.text}”
             </Text>
           </View>
         ) : null}
 
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
           Seen in
         </Text>
         {chapters.map((label) => (
-          <Text key={label} style={[Typography.body, { color: colors.text, marginTop: 4 }]}>
+          <Text key={label} style={[type.body, { color: colors.text, marginTop: 4 }]}>
             {label}
           </Text>
         ))}
 
-        <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
           Encountered: {lemma?.encounterCount ?? 0} {lemma?.encounterCount === 1 ? 'time' : 'times'}
         </Text>
       </ScrollView>

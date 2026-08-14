@@ -1,0 +1,1106 @@
+{
+  "id": "la-casa-delle-finestre-11",
+  "storyId": "la-casa-delle-finestre",
+  "number": 11,
+  "title": "Sara",
+  "titleIt": "Sara",
+  "locationIds": [
+    "scatole-comune",
+    "via-della-scuola"
+  ],
+  "characterIds": [
+    "irene-colombo",
+    "sara-neri"
+  ],
+  "difficultyLevel": 2,
+  "events": [
+    {
+      "id": "ev-la-casa-delle-finestre-11",
+      "summary": "A class photo shows Sara Neri by a window. A clerk says she wrote, stayed after the children, and was sent away for exaggerating. At night Irene might see the same woman on a bus, with a bag like paper.",
+      "characterIds": [
+        "irene-colombo"
+      ],
+      "locationIds": [
+        "scatole-comune",
+        "via-della-scuola"
+      ],
+      "rememberedFacts": [
+        "Sara Neri was a teacher here, in the last class photo",
+        "People say she wrote, stayed late, exaggerated, and was sent away",
+        "Irene is not sure she sees the same woman on a night bus",
+        "The woman’s bag looks like paper, not shopping"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Nel pomeriggio Irene apre un'altra scatola, permessa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "irene",
+            "aprire",
+            "altro",
+            "scatola",
+            "permesso"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ci sono foto di classi, anni vecchi, nomi sotto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "foto",
+            "di",
+            "classe",
+            "anno",
+            "vecchio",
+            "nome",
+            "sotto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Una foto è dell'ultima classe, due anni fa, o poco più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "foto",
+            "essere",
+            "ultimo",
+            "classe",
+            "due",
+            "anno",
+            "fa",
+            "o",
+            "poco",
+            "piu"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Dietro gli studenti c'è un'insegnante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "gli",
+            "studente",
+            "ce",
+            "insegnante"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Non è in centro. È di lato, vicino a una finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "in",
+            "centro",
+            "essere",
+            "di",
+            "lato",
+            "vicino",
+            "a",
+            "una",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Irene guarda il viso a lungo. Poi la finestra nella foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "viso",
+            "a",
+            "lungo",
+            "poi",
+            "la",
+            "finestra",
+            "nella",
+            "foto"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non sa quale stanza è. Sa solo: una finestra, una scuola, un'insegnante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "quale",
+            "stanza",
+            "essere",
+            "sapere",
+            "solo",
+            "una",
+            "finestra",
+            "una",
+            "scuola",
+            "insegnante"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Non è la sua mansarda, quella finestra. È di là, in una classe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "suo",
+            "mansarda",
+            "quello",
+            "finestra",
+            "essere",
+            "di",
+            "la",
+            "in",
+            "una",
+            "classe"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sotto la foto c'è un nome piccolo: Sara Neri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sotto",
+            "la",
+            "foto",
+            "ce",
+            "un",
+            "nome",
+            "piccolo",
+            "sara",
+            "neri"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "È la stessa persona della cartella. La stessa data, quasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "la",
+            "stesso",
+            "persona",
+            "della",
+            "cartella",
+            "la",
+            "stesso",
+            "data",
+            "quasi"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Irene confronta, nella testa: data della relazione, data della foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "confrontare",
+            "nella",
+            "testa",
+            "data",
+            "della",
+            "relazione",
+            "data",
+            "della",
+            "foto"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Vicino. Prima la carta. Poi la classe. Poi via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "prima",
+            "la",
+            "carta",
+            "poi",
+            "la",
+            "classe",
+            "poi",
+            "via"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Irene non parla. Tiene la foto con due mani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "parlare",
+            "tenere",
+            "la",
+            "foto",
+            "con",
+            "due",
+            "mano"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Guarda le altre foto della scatola. Anni prima, altri visi, altre classi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "le",
+            "altro",
+            "foto",
+            "della",
+            "scatola",
+            "anno",
+            "prima",
+            "altro",
+            "viso",
+            "altro",
+            "classe"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sara Neri c'è solo alla fine. Ultima classe, ultima finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sara",
+            "neri",
+            "ce",
+            "solo",
+            "alla",
+            "fine",
+            "ultimo",
+            "classe",
+            "ultimo",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s16",
+          "text": "Non era sempre qui. Poi c'era. Poi l'hanno mandata via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "sempre",
+            "qui",
+            "poi",
+            "ce",
+            "poi",
+            "avere",
+            "mandare",
+            "via"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s17",
+          "text": "Un uomo dell'ufficio passa e vede la foto. Non è Alme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "uomo",
+            "ufficio",
+            "passare",
+            "e",
+            "vedere",
+            "la",
+            "foto",
+            "non",
+            "essere",
+            "alme"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Ah, la Neri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ah",
+            "la",
+            "neri"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Dicevano che esagerava.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "che",
+            "esagerare"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Scriveva. Restava dopo i bambini. Poi l'hanno mandata via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "restare",
+            "dopo",
+            "i",
+            "bambino",
+            "poi",
+            "avere",
+            "mandare",
+            "via"
+          ]
+        },
+        {
+          "id": "s21",
+          "text": "Dicevano anche che portava carte a casa, dice l'uomo, già lontano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "anche",
+            "che",
+            "portare",
+            "carta",
+            "a",
+            "casa",
+            "dire",
+            "uomo",
+            "gia",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Irene non sa se è vero. Tiene la frase, come l'altra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "sapere",
+            "se",
+            "essere",
+            "vero",
+            "tenere",
+            "la",
+            "frase",
+            "come",
+            "altro"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Irene alza gli occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "alzare",
+            "gli",
+            "occhio"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Via, perché?",
+          "speakerId": "irene-colombo",
+          "kind": "dialogue",
+          "lemmas": [
+            "via",
+            "perche"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Irene sente la sua voce: troppo. Poi è tardi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "sentire",
+            "la",
+            "suo",
+            "voce",
+            "troppo",
+            "poi",
+            "essere",
+            "tardi"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Perché esagerava, dice l'uomo. La scuola era la scuola. Basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "perche",
+            "esagerare",
+            "dire",
+            "uomo",
+            "la",
+            "scuola",
+            "essere",
+            "la",
+            "scuola",
+            "basta"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Poi prende un caffè e va.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "prendere",
+            "un",
+            "caffe",
+            "e",
+            "andare"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Irene non chiede dove abita adesso. Non chiede della luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "chiedere",
+            "dove",
+            "abitare",
+            "adesso",
+            "non",
+            "chiedere",
+            "della",
+            "luce"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Tiene tre cose: scriveva, restava, esagerava.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tenere",
+            "tre",
+            "cosa",
+            "scrivere",
+            "restare",
+            "esagerare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Scrivere era il suo lavoro, pensa Irene. Restare dopo i bambini, anche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "essere",
+            "il",
+            "suo",
+            "lavoro",
+            "pensare",
+            "irene",
+            "restare",
+            "dopo",
+            "i",
+            "bambino",
+            "anche"
+          ]
+        },
+        {
+          "id": "s31",
+          "text": "Esagerava è la parola del paese. Non è una data. Non è una crepa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "esagerare",
+            "essere",
+            "la",
+            "parola",
+            "del",
+            "paese",
+            "non",
+            "essere",
+            "una",
+            "data",
+            "non",
+            "essere",
+            "una",
+            "crepa"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La relazione c'è. La foto c'è. La frase del paese c'è.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "relazione",
+            "ce",
+            "la",
+            "foto",
+            "ce",
+            "la",
+            "frase",
+            "del",
+            "paese",
+            "ce"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Mette la foto nella scatola, con calma. Non la scansiona.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mettere",
+            "la",
+            "foto",
+            "nella",
+            "scatola",
+            "con",
+            "calma",
+            "non",
+            "la",
+            "scansionare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Scrive nel quaderno: insegnante, ultima classe, finestra nella foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "nel",
+            "quaderno",
+            "insegnante",
+            "ultimo",
+            "classe",
+            "finestra",
+            "nella",
+            "foto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Non scrive: è la luce. Non lo sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "essere",
+            "la",
+            "luce",
+            "non",
+            "lo",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Di sera Irene torna a casa a piedi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "sera",
+            "irene",
+            "tornare",
+            "a",
+            "casa",
+            "a",
+            "piedi"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Non cerca Sara. Torna a casa. La fermata c'è, sulla strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "cercare",
+            "sara",
+            "tornare",
+            "a",
+            "casa",
+            "la",
+            "fermata",
+            "ce",
+            "sulla",
+            "strada"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "C'è una fermata dell'autobus, vicino alla piazza, prima della scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "fermata",
+            "autobus",
+            "vicino",
+            "alla",
+            "piazza",
+            "prima",
+            "della",
+            "scuola"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Irene si ferma perché il semaforo è rosso, non perché cerca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "si",
+            "fermare",
+            "perche",
+            "il",
+            "semaforo",
+            "essere",
+            "rosso",
+            "non",
+            "perche",
+            "cercare"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Poi vede la donna. Era già lì, o arriva ora: Irene non sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "vedere",
+            "la",
+            "donna",
+            "essere",
+            "gia",
+            "li",
+            "o",
+            "arrivare",
+            "ora",
+            "irene",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Una donna aspetta. Ha una borsa grande, rigida.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "donna",
+            "aspettare",
+            "avere",
+            "una",
+            "borsa",
+            "grande",
+            "rigido"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Irene guarda il viso, di lato, come nella foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "guardare",
+            "il",
+            "viso",
+            "di",
+            "lato",
+            "come",
+            "nella",
+            "foto"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Sembra la donna della foto. Forse. L'età, i capelli, il lato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "la",
+            "donna",
+            "della",
+            "foto",
+            "forse",
+            "eta",
+            "i",
+            "capello",
+            "il",
+            "lato"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Forse no. È sera, e la luce è poca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "forse",
+            "no",
+            "essere",
+            "sera",
+            "e",
+            "la",
+            "luce",
+            "essere",
+            "poco"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "La donna non guarda Irene. Guarda la scuola chiusa, un momento, poi la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "donna",
+            "non",
+            "guardare",
+            "irene",
+            "guardare",
+            "la",
+            "scuola",
+            "chiudere",
+            "un",
+            "momento",
+            "poi",
+            "la",
+            "strada"
+          ]
+        },
+        {
+          "id": "s46",
+          "text": "Non è un segnale. È uno sguardo. Irene non risponde, perché non c'è niente da rispondere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "segnale",
+            "essere",
+            "uno",
+            "sguardo",
+            "irene",
+            "non",
+            "rispondere",
+            "perche",
+            "non",
+            "ce",
+            "niente",
+            "da",
+            "rispondere"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "L'autobus arriva. La donna sale. Non corre. Non parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "autobus",
+            "arrivare",
+            "la",
+            "donna",
+            "salire",
+            "non",
+            "correre",
+            "non",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "La borsa sembra pesante. Come carta, non come spesa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "borsa",
+            "sembrare",
+            "pesante",
+            "come",
+            "carta",
+            "non",
+            "come",
+            "spesa"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Se portava carte a casa allora, forse porta carte adesso. Forse no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "portare",
+            "carta",
+            "a",
+            "casa",
+            "allora",
+            "forse",
+            "portare",
+            "carta",
+            "adesso",
+            "forse",
+            "no"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Irene non è sicura. Non dice: è lei. Non dice: non è lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "irene",
+            "non",
+            "essere",
+            "sicuro",
+            "non",
+            "dire",
+            "essere",
+            "lei",
+            "non",
+            "dire",
+            "non",
+            "essere",
+            "lei"
+          ]
+        },
+        {
+          "id": "s51",
+          "text": "Non prende l'autobus. Non chiama. Guarda partire l'autobus.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "prendere",
+            "autobus",
+            "non",
+            "chiamare",
+            "guardare",
+            "partire",
+            "autobus"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "A casa scrive: forse Sara. Poi aggiunge: non so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "casa",
+            "scrivere",
+            "forse",
+            "sara",
+            "poi",
+            "aggiungere",
+            "non",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Aggiunge anche: borsa come carta. Guarda la scuola, non me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aggiungere",
+            "anche",
+            "borsa",
+            "come",
+            "carta",
+            "guardare",
+            "la",
+            "scuola",
+            "non",
+            "me"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Non è una prova. È una sera. Irene lo sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "prova",
+            "essere",
+            "una",
+            "sera",
+            "irene",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Chiude il quaderno. Non chiede a Loredana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "quaderno",
+            "non",
+            "chiedere",
+            "a",
+            "loredana"
+          ]
+        },
+        {
+          "id": "s56",
+          "text": "Domani c'è di nuovo il comune. Domani c'è di nuovo la foto, nella scatola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "ce",
+            "di",
+            "nuovo",
+            "il",
+            "comune",
+            "domani",
+            "ce",
+            "di",
+            "nuovo",
+            "la",
+            "foto",
+            "nella",
+            "scatola"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Che scriveva era vero: la relazione c'è. Restava, esagerava: questo non lo sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "che",
+            "scrivere",
+            "essere",
+            "vero",
+            "la",
+            "relazione",
+            "ce",
+            "restare",
+            "esagerare",
+            "questo",
+            "non",
+            "lo",
+            "sapere"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch11_q01",
+      "chapterId": "la-casa-delle-finestre-11",
+      "type": "direct",
+      "question": "Where is Sara Neri in the class photo?",
+      "choices": [
+        "To the side, near a window, with the last class",
+        "In Irene’s attic",
+        "Behind Alme’s desk"
+      ],
+      "correctChoice": 0,
+      "explanation": "She is not in the middle. She is near a window. The name is Sara Neri.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch11_q02",
+      "chapterId": "la-casa-delle-finestre-11",
+      "type": "character",
+      "question": "What does the clerk add to “she exaggerated”?",
+      "choices": [
+        "That she wrote, stayed after the children, and was sent away",
+        "That she is still the head teacher",
+        "That she is Quinto’s sister"
+      ],
+      "correctChoice": 0,
+      "explanation": "She wrote. She stayed after the children. Then they sent her away.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch11_q03",
+      "chapterId": "la-casa-delle-finestre-11",
+      "type": "inference",
+      "question": "What might Irene see at the bus stop?",
+      "choices": [
+        "The same woman, maybe, looking at the school, with a bag like paper",
+        "Sara opening the school",
+        "Mimmo with a camera"
+      ],
+      "correctChoice": 0,
+      "explanation": "The face might match. She looks at the school, not at Irene. The bag looks like paper. Irene writes: maybe Sara. I don’t know.",
+      "difficulty": 2
+    }
+  ]
+}
