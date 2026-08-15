@@ -1,14 +1,21 @@
 import { afterEach, describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import { insertExtraStoryGroups } from '@/src/components/storiesLevelInsert';
 import {
   CASA_STORY_ID,
   LUCA_STORY_ID,
   __resetContentCache,
+  a2PlusGenrePathStories,
+  buildLearnerJourney,
   getCatalogStory,
   getChapter,
   getContentBundle,
 } from '@/src/content';
+import { extraRowsFromCatalogStories, insertExtraStoryGroups } from '@/src/components/storiesLevelInsert';
+import { REGISTERED_AVAILABLE_STORY_SOURCES } from '@/src/content/preRomeSources';
+import { CASA_DELLE_FINESTRE_SOURCE } from '@/src/content/casaFinestreSources';
 import { validateStoryCatalog } from '@/src/content/validateCatalog';
 import { __resetProgressService, __setProgressRepository, getProgressService, peekProgress } from '@/src/progress';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
@@ -51,7 +58,41 @@ describe('La casa delle finestre wiring', () => {
     );
   });
 
-  it('inserts the A2+ extra section after Luca A2', () => {
+  it('survives every Stories-list stage as an A2+ entry', async () => {
+    expect(CASA_DELLE_FINESTRE_SOURCE.storyPath).toBe('stories/la-casa-delle-finestre');
+    expect(REGISTERED_AVAILABLE_STORY_SOURCES[CASA_STORY_ID]).toBe(CASA_DELLE_FINESTRE_SOURCE);
+
+    const story = getCatalogStory(CASA_STORY_ID);
+    expect(story, 'catalog must contain la-casa-delle-finestre').toBeTruthy();
+    expect(story!.chapterCount).toBe(24);
+    expect(story!.status).toBe('available');
+    expect(story!.cefrLevel).toBe('A2+');
+    expect(story!.narrativeArc).toBe('a2-plus-genre-paths');
+    expect(story!.protagonistId).toBe('irene-colombo');
+
+    expect(getContentBundle(CASA_STORY_ID).chapters.size).toBe(24);
+
+    const selector = a2PlusGenrePathStories();
+    expect(selector.map((row) => row.id), 'Stories-list selector must return Casa').toContain(
+      CASA_STORY_ID,
+    );
+
+    const journey = buildLearnerJourney();
+    const a2plus = journey.find((band) => band.cefrLevel === 'A2+');
+    const a2PlusStories = a2plus?.groups.flatMap((group) => group.stories) ?? [];
+    expect(a2PlusStories.map((row) => row.id), 'A2+ journey band must receive Casa').toContain(
+      CASA_STORY_ID,
+    );
+
+    const repo = new MemoryReadingProgressRepository();
+    __setProgressRepository(repo);
+    const { loadStoryProgressView } = await import('@/src/progress/useReadingProgress');
+    const view = await loadStoryProgressView(CASA_STORY_ID);
+    expect(view.chapters).toHaveLength(24);
+    expect(view.chapters[0]?.status).toBe('available');
+    expect(view.chapters[1]?.status).toBe('locked');
+
+    const extraRows = extraRowsFromCatalogStories(a2PlusStories, 'A2+');
     const groups = insertExtraStoryGroups(
       [
         {
@@ -75,19 +116,20 @@ describe('La casa delle finestre wiring', () => {
           afterArcId: 'luca-a-roma-a2',
           id: 'a2-plus-genre-paths',
           cefrLevel: 'A2+',
-          title: 'La casa delle finestre',
-          stories: [
-            {
-              storyId: CASA_STORY_ID,
-              titleIt: 'La casa delle finestre',
-              completed: 0,
-              total: 24,
-              chapters: [],
-            },
-          ],
+          title: 'A2+ genre paths',
+          stories: extraRows,
         },
       ],
     );
-    expect(groups.map((group) => group.arc.id)).toEqual(['luca-a-roma-a2', 'a2-plus-genre-paths']);
+    const a2PlusGroup = groups.find((group) => group.arc.cefrLevel === 'A2+');
+    expect(a2PlusGroup, 'Stories UI must render an A2+ section').toBeTruthy();
+    expect(a2PlusGroup!.stories?.map((row) => row.storyId)).toContain(CASA_STORY_ID);
+    expect(a2PlusGroup!.stories?.find((row) => row.storyId === CASA_STORY_ID)?.total).toBe(24);
+  });
+
+  it('does not hide the A2+ section until progress rows load', () => {
+    const src = readFileSync(join(fileURLToPath(new URL('.', import.meta.url)), '../../../app/(tabs)/stories.tsx'), 'utf8');
+    expect(src).toMatch(/a2PlusStories\.length/);
+    expect(src).toMatch(/extraRowsFromCatalogStories\(a2PlusStories/);
   });
 });

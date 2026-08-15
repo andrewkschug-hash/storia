@@ -247,7 +247,7 @@ function ExtraStoryBlock({
           },
         ]}>
         <View style={styles.chapterMeta}>
-          <Text style={[type.caption, { color: colors.tint }]}>Hometown</Text>
+          <Text style={[type.caption, { color: colors.tint }]}>{story.eyebrow ?? 'Story'}</Text>
           <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>{story.titleIt}</Text>
           <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>
             {story.completed}/{story.total} chapters

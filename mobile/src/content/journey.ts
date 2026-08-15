@@ -47,7 +47,7 @@ function a1StoriesOutsideLuca(): CatalogStory[] {
   );
 }
 
-function a2PlusStoriesOutsideLuca(): CatalogStory[] {
+export function a2PlusGenrePathStories(): CatalogStory[] {
   return getCatalogStories().filter(
     (story) =>
       story.id !== LUCA_STORY_ID &&
@@ -88,7 +88,7 @@ export function buildLearnerJourney(): JourneyCefrBand[] {
   }
 
   const a1StoryGroups = groupStoriesByArc(a1StoriesOutsideLuca(), arcs);
-  const a2PlusStoryGroups = groupStoriesByArc(a2PlusStoriesOutsideLuca(), arcs);
+  const a2PlusStoryGroups = groupStoriesByArc(a2PlusGenrePathStories(), arcs);
 
   return [
     {

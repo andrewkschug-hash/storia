@@ -14,7 +14,9 @@ import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProgressBar } from '@/src/components/ProgressBar';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { StoriesLevelList, type ExtraStoryRow } from '@/src/components/StoriesLevelList';
+import { extraRowsFromCatalogStories } from '@/src/components/storiesLevelInsert';
 import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
+import { A2_PLUS_GENRE_ARC_ID, getNarrativeArc } from '@/src/content/catalog';
 import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
 import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
@@ -45,6 +47,7 @@ export default function StoriesScreen() {
         titleIt: item.titleIt,
         completed: view.chapters.filter((chapter) => chapter.status === 'completed').length,
         total: item.chapterCount,
+        eyebrow: 'Hometown',
         chapters: view.chapters,
       });
     }
@@ -53,17 +56,22 @@ export default function StoriesScreen() {
 
   const loadA2Plus = useCallback(async () => {
     const next: ExtraStoryRow[] = [];
-    for (const item of a2PlusStories) {
-      const view = await loadStoryProgressView(item.id);
-      next.push({
-        storyId: item.id,
-        titleIt: item.titleIt,
-        completed: view.chapters.filter((chapter) => chapter.status === 'completed').length,
-        total: item.chapterCount,
-        chapters: view.chapters,
-      });
+    try {
+      for (const item of a2PlusStories) {
+        const view = await loadStoryProgressView(item.id);
+        next.push({
+          storyId: item.id,
+          titleIt: item.titleIt,
+          completed: view.chapters.filter((chapter) => chapter.status === 'completed').length,
+          total: item.chapterCount,
+          eyebrow: 'A2+',
+          chapters: view.chapters,
+        });
+      }
+      setA2PlusRows(next);
+    } catch {
+      setA2PlusRows(extraRowsFromCatalogStories(a2PlusStories, 'A2+'));
     }
-    setA2PlusRows(next);
   }, [a2PlusStories.map((item) => item.id).join('|')]);
 
   useFocusEffect(
@@ -211,14 +219,17 @@ export default function StoriesScreen() {
                     },
                   ]
                 : []),
-              ...(a2PlusRows.length
+              ...(a2PlusStories.length
                 ? [
                     {
                       afterArcId: 'luca-a-roma-a2',
-                      id: 'a2-plus-genre-paths',
+                      id: A2_PLUS_GENRE_ARC_ID,
                       cefrLevel: 'A2+',
-                      title: 'La casa delle finestre',
-                      stories: a2PlusRows,
+                      title: getNarrativeArc(A2_PLUS_GENRE_ARC_ID)?.title ?? 'A2+',
+                      stories:
+                        a2PlusRows.length > 0
+                          ? a2PlusRows
+                          : extraRowsFromCatalogStories(a2PlusStories, 'A2+'),
                     },
                   ]
                 : []),

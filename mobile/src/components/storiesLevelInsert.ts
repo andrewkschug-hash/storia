@@ -12,6 +12,7 @@ export type ExtraStoryRow = {
   titleIt: string;
   completed: number;
   total: number;
+  eyebrow?: string;
   chapters: {
     id: string;
     number: number;
@@ -38,6 +39,20 @@ export type LevelGroup = {
   locked: boolean;
   containsCurrent: boolean;
 };
+
+export function extraRowsFromCatalogStories(
+  stories: { id: string; titleIt: string; chapterCount: number }[],
+  eyebrow: string,
+): ExtraStoryRow[] {
+  return stories.map((story) => ({
+    storyId: story.id,
+    titleIt: story.titleIt,
+    completed: 0,
+    total: story.chapterCount,
+    eyebrow,
+    chapters: [],
+  }));
+}
 
 export function insertExtraStoryGroups(
   groups: LevelGroup[],
