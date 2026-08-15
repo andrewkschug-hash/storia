@@ -229,6 +229,7 @@ function StatChip({
   };
   showFlame?: boolean;
 }) {
+  const { type } = useTheme();
   return (
     <View
       style={[
@@ -263,6 +264,7 @@ function DevLink({
   href: Href;
   colors: { textMuted: string };
 }) {
+  const { type } = useTheme();
   return (
     <Pressable onPress={() => router.push(href)} style={{ marginTop: Spacing.xs }}>
       <Text style={[type.caption, { color: colors.textMuted }]}>{label}</Text>
