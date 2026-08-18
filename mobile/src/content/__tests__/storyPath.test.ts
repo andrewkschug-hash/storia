@@ -59,4 +59,26 @@ describe('buildStoryPath', () => {
     expect(path.find((item) => item.kind === 'grammar')?.status).toBe('completed');
     expect(path.find((item) => item.kind === 'recap')?.status).toBe('completed');
   });
+
+  it('inserts Help Marco after the Chapter 15 recap, not as a story', () => {
+    const chapters = [11, 12, 13, 14, 15].map((n) => chapter(n, 'completed'));
+    const progress = {
+      storyId,
+      completedChapterIds: chapters.map((c) => c.id),
+      completedCheckpointIds: [
+        grammarCheckpointId(storyId, 15),
+        recapCheckpointId(storyId, 15),
+      ],
+      speakScenes: {},
+    } as ReadingProgressRecord;
+    const path = buildStoryPath(chapters, progress, storyId);
+    expect(path.filter((item) => item.kind !== 'chapter').map((item) => item.kind)).toEqual([
+      'grammar',
+      'recap',
+      'speak',
+    ]);
+    const speak = path.find((item) => item.kind === 'speak');
+    expect(speak?.kind === 'speak' && speak.title).toBe('Help Marco');
+    expect(speak?.kind === 'speak' && speak.status).toBe('available');
+  });
 });

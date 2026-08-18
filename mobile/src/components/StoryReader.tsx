@@ -12,8 +12,6 @@ import {
 
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import { ReaderSentence } from '@/src/components/ReaderSentence';
-import { ChapterEndNotes } from '@/src/components/ChapterEndNotes';
-import type { ChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { useLayout } from '@/src/theme/useLayout';
 import { Spacing } from '@/src/theme/tokens';
@@ -31,7 +29,6 @@ type Props = {
   playingSentenceId?: string | null;
   hasAudio?: (sentence: Sentence) => boolean;
   onPlayAudio?: (sentence: Sentence) => void;
-  chapterRecap?: ChapterRecap | null;
   showCompletionCta?: boolean;
   onContinueFromChapter?: () => void;
   onScrollProgress?: (progress: number) => void;
@@ -61,7 +58,6 @@ export function StoryReader({
   playingSentenceId,
   hasAudio,
   onPlayAudio,
-  chapterRecap,
   showCompletionCta,
   onContinueFromChapter,
   onScrollProgress,
@@ -172,8 +168,6 @@ export function StoryReader({
           </View>
         ))}
       </View>
-
-      {chapterRecap ? <ChapterEndNotes recap={chapterRecap} variant="compact" /> : null}
 
       {showCompletionCta ? (
         <View style={styles.completionCta}>

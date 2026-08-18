@@ -720,7 +720,7 @@
       "exerciseId": "luca-a-roma-ch12-prod-02",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-12",
-      "sourceSentenceId": "s05",
+      "sourceSentenceId": "s08",
       "promptEn": "I don't have money.",
       "expectedIt": "Non ho soldi.",
       "acceptableAnswers": [
@@ -738,16 +738,15 @@
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-12",
       "sourceSentenceId": "s09",
-      "promptEn": "What are you doing?",
-      "expectedIt": "Che cosa fai?",
+      "promptEn": "What's wrong?",
+      "expectedIt": "Cosa c'è?",
       "level": "A1",
       "focus": [
-        "question",
-        "fare"
+        "question"
       ],
       "acceptableAnswers": [
-        "Cosa fai?",
-        "Che fai?"
+        "Che cosa c'è?",
+        "Cosa c'e?"
       ],
       "match": "flexible"
     },

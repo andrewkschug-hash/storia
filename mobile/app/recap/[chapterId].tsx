@@ -3,7 +3,6 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
-import { ChapterEndNotes } from '@/src/components/ChapterEndNotes';
 import { buildChapterRecap } from '@/src/content/chapterRecap';
 import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
 import { comprehensionHref } from '@/src/content/storyHrefs';
@@ -61,12 +60,6 @@ export default function ChapterRecapScreen() {
         <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
           {recap.summary}
         </Text>
-
-        {recap.facts.length > 0 || recap.lookFors.length > 0 ? (
-          <View style={{ marginTop: Spacing.lg }}>
-            <ChapterEndNotes recap={recap} variant="full" />
-          </View>
-        ) : null}
 
         <Pressable
           onPress={async () => {

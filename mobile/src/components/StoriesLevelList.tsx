@@ -273,9 +273,9 @@ function LevelSection({
                 return (
                   <CheckpointRow
                     key={item.id}
-                    eyebrow="Review"
+                    eyebrow="Words"
                     title={`Chapters ${item.batchStart}–${item.batchEnd}`}
-                    subtitle="Practice words from this batch"
+                    subtitle="Word recap from this batch"
                     status={item.status}
                     colors={colors}
                     icon="review"

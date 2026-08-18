@@ -13,6 +13,7 @@ import type {
   UserVocabularyState,
   VocabularyStatus,
 } from '@/src/vocabulary/types';
+import { createLemmaEncounter, createPhraseEncounter } from '@/src/vocabulary/normalize';
 
 export const REVIEW_CONFIG = {
   defaultSessionSize: 5,
@@ -166,13 +167,13 @@ export class ReviewService {
     };
   }
 
-  /** Review session scoped to a chapter batch — prioritizes weak/tapped words from those chapters. */
+  /** Review session scoped to a chapter batch — struggle first, then story backfill. Never empty. */
   createBatchSession(
     state: UserVocabularyState,
     bundle: ContentBundle,
     chapterStart: number,
     chapterEnd: number,
-    ctx: ReviewContext = {},
+    ctx: Partial<ReviewContext> = {},
   ): ReviewSession {
     const limit = Math.min(
       REVIEW_CONFIG.maxSessionSize,
@@ -180,47 +181,74 @@ export class ReviewService {
     );
     const batchLemmas = lemmasInChapterRange(bundle, chapterStart, chapterEnd);
     const batchPhrases = phrasesInChapterRange(bundle, chapterStart, chapterEnd);
-    const now = ctx.now ?? new Date();
 
     const scored: ReviewCandidate[] = [];
     for (const row of Object.values(state.lemmas)) {
       if (!batchLemmas.has(row.lemmaId)) continue;
-      if (row.encounterCount <= 0 && !row.saved) continue;
+      if (row.encounterCount <= 0 && !row.saved && row.tapCount <= 0 && row.incorrectReviewCount <= 0) {
+        continue;
+      }
       const entry = bundle.lexicon.find((l) => l.lemmaId === row.lemmaId);
-      if (!isReviewableLemma(row, entry)) continue;
-      if (!isDue(row.dueAt, now) && row.reviewCount > 0 && row.tapCount === 0) continue;
-      scored.push(scoreLemma(row, entry, false));
+      if (!isReviewableLemma(row, entry) && row.incorrectReviewCount === 0 && row.tapCount === 0) {
+        continue;
+      }
+      scored.push(scoreBatchLemma(row, entry));
     }
     for (const row of Object.values(state.phrases)) {
       if (!batchPhrases.has(row.phraseId)) continue;
-      if (row.encounterCount <= 0 && !row.saved) continue;
-      scored.push(scorePhrase(row, false));
+      if (row.encounterCount <= 0 && !row.saved && row.tapCount <= 0 && row.incorrectReviewCount <= 0) {
+        continue;
+      }
+      scored.push(scoreBatchPhrase(row));
     }
 
     scored.sort((a, b) => b.priority - a.priority || a.id.localeCompare(b.id));
-    const items = scored
-      .slice(0, limit)
-      .map((c) => this.toPrompt(state, c))
-      .filter((p): p is ReviewPrompt => p !== null);
+
+    const picked = new Set<string>();
+    const items: ReviewPrompt[] = [];
+
+    for (const candidate of scored) {
+      if (items.length >= limit) break;
+      const prompt = this.toPrompt(state, candidate);
+      if (!prompt) continue;
+      items.push(prompt);
+      picked.add(`${candidate.kind}:${candidate.id}`);
+    }
+
+    for (const candidate of backfillBatchCandidates(bundle, chapterStart, chapterEnd, picked)) {
+      if (items.length >= limit) break;
+      const prompt = this.promptForBackfill(state, candidate);
+      if (!prompt) continue;
+      items.push(prompt);
+      picked.add(`${candidate.kind}:${candidate.id}`);
+    }
+
     return { items, dueCount: scored.length };
   }
 
   batchRecapCopy(chapterStart: number, chapterEnd: number, session: ReviewSession): HomeReviewCopy {
     const n = session.items.length;
-    if (n === 0) {
-      return {
-        headline: `Chapters ${chapterStart}–${chapterEnd} recap`,
-        detail: 'Nothing weak stood out — nice reading.',
-        cta: null,
-        readyCount: 0,
-      };
-    }
     return {
-      headline: `Recap: chapters ${chapterStart}–${chapterEnd}`,
-      detail: `${n} word${n === 1 ? '' : 's'} worth a second look before you continue.`,
+      headline: `Words from chapters ${chapterStart}–${chapterEnd}`,
+      detail:
+        session.dueCount > 0
+          ? `Starting with the words you struggled with — then a few from the story.`
+          : `A short recap of words from these chapters.`,
       cta: 'Review',
       readyCount: n,
     };
+  }
+
+  private promptForBackfill(state: UserVocabularyState, candidate: ReviewCandidate): ReviewPrompt | null {
+    if (candidate.kind === 'phrase') {
+      const existing = state.phrases[candidate.id];
+      if (existing) return this.phrasePrompt(existing);
+      const surface = phraseSurfaceForId(this.bundle, candidate.id) ?? candidate.id;
+      return this.phrasePrompt(createPhraseEncounter(candidate.id, surface));
+    }
+    const existing = state.lemmas[candidate.id];
+    if (existing) return this.lemmaPrompt(existing);
+    return this.lemmaPrompt(createLemmaEncounter(candidate.id));
   }
 
   toPrompt(state: UserVocabularyState, candidate: ReviewCandidate): ReviewPrompt | null {
@@ -398,6 +426,137 @@ function isDecaying(
   if (!iso) return false;
   const days = (Date.now() - new Date(iso).getTime()) / (1000 * 60 * 60 * 24);
   return days >= 14;
+}
+
+function scoreBatchLemma(row: LemmaEncounter, entry: LexiconEntry | undefined): ReviewCandidate {
+  const reasons: string[] = ['batch'];
+  let priority = 0;
+  if (row.incorrectReviewCount > 0) {
+    priority += 120 + row.incorrectReviewCount * 80;
+    reasons.push('missed-review');
+  }
+  if (row.tapCount > 0) {
+    priority += 50 + row.tapCount * 40;
+    reasons.push('tapped');
+  }
+  if (row.status === 'new' || row.status === 'learning') {
+    priority += 55;
+    reasons.push('unfamiliar');
+  }
+  priority += Math.round((1 - Math.min(1, row.familiarityScore)) * 35);
+  if (row.saved) {
+    priority += 20;
+    reasons.push('saved');
+  }
+  if (entry?.frequency === 'high') {
+    priority += 12;
+    reasons.push('high-value');
+  }
+  return {
+    kind: 'lemma',
+    id: row.lemmaId,
+    priority,
+    reasons,
+    appearsInUpcomingChapter: false,
+  };
+}
+
+function scoreBatchPhrase(row: PhraseEncounter): ReviewCandidate {
+  const reasons = ['batch', 'phrase'];
+  let priority = 40;
+  if (row.incorrectReviewCount > 0) {
+    priority += 100 + row.incorrectReviewCount * 70;
+    reasons.push('missed-review');
+  }
+  if (row.tapCount > 0) {
+    priority += 40 + row.tapCount * 30;
+    reasons.push('tapped');
+  }
+  if (row.status === 'new' || row.status === 'learning') {
+    priority += 30;
+    reasons.push('unfamiliar');
+  }
+  if (row.saved) {
+    priority += 20;
+    reasons.push('saved');
+  }
+  return {
+    kind: 'phrase',
+    id: row.phraseId,
+    priority,
+    reasons,
+    appearsInUpcomingChapter: false,
+  };
+}
+
+function backfillBatchCandidates(
+  bundle: ContentBundle,
+  chapterStart: number,
+  chapterEnd: number,
+  alreadyPicked: Set<string>,
+): ReviewCandidate[] {
+  const contentLemmas = [...lemmasInChapterRange(bundle, chapterStart, chapterEnd)].filter((id) => {
+    const entry = bundle.lexicon.find((l) => l.lemmaId === id);
+    if (!entry) return false;
+    if (CLOSED_CLASS.has(entry.partOfSpeech ?? '')) return false;
+    if (NAME_LEMMAS.has(id)) return false;
+    return true;
+  });
+
+  const introduced = contentLemmas.filter((id) => {
+    const entry = bundle.lexicon.find((l) => l.lemmaId === id);
+    const introducedAt = entry?.introducedChapter ?? 0;
+    return introducedAt >= chapterStart && introducedAt <= chapterEnd;
+  });
+  const highFreq = contentLemmas.filter((id) => bundle.lexicon.find((l) => l.lemmaId === id)?.frequency === 'high');
+  const phrases = [...phrasesInChapterRange(bundle, chapterStart, chapterEnd)];
+
+  const ordered: ReviewCandidate[] = [];
+  const seen = new Set<string>(alreadyPicked);
+
+  const push = (kind: 'lemma' | 'phrase', id: string, priority: number) => {
+    const key = `${kind}:${id}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    ordered.push({
+      kind,
+      id,
+      priority,
+      reasons: ['backfill'],
+      appearsInUpcomingChapter: false,
+    });
+  };
+
+  for (const id of phrases) push('phrase', id, 30);
+  for (const id of introduced) push('lemma', id, 25);
+  for (const id of highFreq) push('lemma', id, 15);
+  for (const id of contentLemmas) push('lemma', id, 5);
+
+  return ordered;
+}
+
+const NAME_LEMMAS = new Set([
+  'luca',
+  'sofia',
+  'marco',
+  'giulia',
+  'nonna-rosa',
+  'padrone',
+  'narrator',
+  'narratore',
+]);
+
+function phraseSurfaceForId(bundle: ContentBundle, phraseId: string): string | null {
+  for (const chapter of bundle.chapters.values()) {
+    for (const p of chapter.paragraphs) {
+      for (const s of p.sentences) {
+        for (const phrase of s.phrases ?? []) {
+          if (phraseIdFromSurface(phrase.surface) === phraseId) return phrase.surface;
+        }
+      }
+    }
+  }
+  return null;
 }
 
 function upcomingChapter(

@@ -9,7 +9,11 @@ export type ReadingEventType =
   | 'review_initiated'
   | 'audio_played'
   | 'sentence_replayed'
-  | 'comprehension_attempt';
+  | 'comprehension_attempt'
+  | 'speak_scene_started'
+  | 'speak_scene_line'
+  | 'speak_scene_completed'
+  | 'speak_scene_skipped';
 
 export type ReadingEvent = {
   id: string;

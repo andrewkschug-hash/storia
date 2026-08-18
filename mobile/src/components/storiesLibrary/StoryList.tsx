@@ -25,6 +25,7 @@ type Props = {
   onOpenStoryChapter: (storyId: string, chapterId: string) => void;
   onOpenGrammar: (batchEnd: number) => void;
   onOpenRecap: (batchEnd: number) => void;
+  onOpenSpeak: (sceneId: string) => void;
 };
 
 function tabForChapterNumber(number: number): LibraryTab {
@@ -52,6 +53,7 @@ export function StoryList({
   onOpenStoryChapter,
   onOpenGrammar,
   onOpenRecap,
+  onOpenSpeak,
 }: Props) {
   const { colors } = useTheme();
   const currentChapter = chapterStatuses.find((chapter) => chapter.id === currentChapterId);
@@ -137,6 +139,7 @@ export function StoryList({
                   onOpenStoryChapter={onOpenStoryChapter}
                   onOpenGrammar={onOpenGrammar}
                   onOpenRecap={onOpenRecap}
+                  onOpenSpeak={onOpenSpeak}
                   onShowHint={showHint}
                 />
               ) : null}

@@ -4,6 +4,7 @@ import {
   isLessonBatchEnd,
   LESSON_BATCH_SIZE,
 } from '@/src/content/lessonBatches';
+import { getSpeakSceneForBatch } from '@/src/content/speakScenes';
 import type { ChapterStatus, ReadingProgressRecord } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 
@@ -29,7 +30,21 @@ export type StoryPathRecapItem = {
   status: ChapterStatus;
 };
 
-export type StoryPathItem = StoryPathChapterItem | StoryPathGrammarItem | StoryPathRecapItem;
+export type StoryPathSpeakItem = {
+  kind: 'speak';
+  id: string;
+  sceneId: string;
+  batchStart: number;
+  batchEnd: number;
+  title: string;
+  status: ChapterStatus;
+};
+
+export type StoryPathItem =
+  | StoryPathChapterItem
+  | StoryPathGrammarItem
+  | StoryPathRecapItem
+  | StoryPathSpeakItem;
 
 export function grammarCheckpointId(storyId: string, batchEnd: number): string {
   return `${storyId}:grammar:${batchEnd}`;
@@ -102,6 +117,17 @@ export function getRecapCheckpointStatus(
   return 'available';
 }
 
+export function getSpeakPathStatus(
+  progress: ReadingProgressRecord,
+  recapStatus: ChapterStatus,
+  sceneId: string,
+): ChapterStatus {
+  if (recapStatus !== 'completed') return 'locked';
+  const history = progress.speakScenes?.[sceneId] ?? [];
+  const finished = history.some((record) => record.skipped === false && record.completedAt);
+  return finished ? 'completed' : 'available';
+}
+
 /** Insert grammar + recap nodes after every fifth chapter (Duolingo-style path). */
 export function buildStoryPath(
   chapters: ChapterListItem[],
@@ -148,19 +174,34 @@ export function buildStoryPath(
       status: grammarStatus,
     });
 
+    const recapStatus = getRecapCheckpointStatus(
+      record,
+      storyId,
+      batchEnd,
+      grammarStatus,
+      legacyBatchEnds,
+    );
+
     items.push({
       kind: 'recap',
       id: recapCheckpointId(storyId, batchEnd),
       batchStart,
       batchEnd,
-      status: getRecapCheckpointStatus(
-        record,
-        storyId,
-        batchEnd,
-        grammarStatus,
-        legacyBatchEnds,
-      ),
+      status: recapStatus,
     });
+
+    const scene = getSpeakSceneForBatch(storyId, batchEnd);
+    if (scene) {
+      items.push({
+        kind: 'speak',
+        id: scene.id,
+        sceneId: scene.id,
+        batchStart,
+        batchEnd,
+        title: scene.title,
+        status: getSpeakPathStatus(record, recapStatus, scene.id),
+      });
+    }
   }
 
   return items;

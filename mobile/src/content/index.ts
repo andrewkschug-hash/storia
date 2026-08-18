@@ -230,3 +230,8 @@ export {
 export { chapterKey, parseChapterKey, type ChapterRef } from '@/src/content/chapterRef';
 export { buildLearnerJourney, independentDraftStories, a2PlusGenrePathStories } from '@/src/content/journey';
 export { StoryLoadError } from '@/src/content/storyLoadError';
+export {
+  getSpeakSceneById,
+  getSpeakSceneForBatch,
+  getSpeakScenes,
+} from '@/src/content/speakScenes';

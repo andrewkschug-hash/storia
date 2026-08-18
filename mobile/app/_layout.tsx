@@ -140,7 +140,15 @@ function RootLayoutNav() {
         <Stack.Screen
           name="batch-recap"
           options={{
-            title: 'Batch recap',
+            title: 'Word recap',
+            headerBackTitle: 'Back',
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="speak-scene"
+          options={{
+            title: 'Speak the scene',
             headerBackTitle: 'Back',
             headerShadowVisible: false,
           }}

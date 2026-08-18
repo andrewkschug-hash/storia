@@ -19,7 +19,7 @@ import {
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { extraRowsFromCatalogStories } from '@/src/components/storiesLevelInsert';
 import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
-import { readerHref } from '@/src/content/storyHrefs';
+import { readerHref, speakSceneHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
 import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
@@ -172,6 +172,9 @@ export default function StoriesScreen() {
               router.push(
                 `/batch-recap?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${batchEnd}&returnTo=stories` as Href,
               );
+            }}
+            onOpenSpeak={(sceneId) => {
+              router.push(speakSceneHref(LUCA_STORY_ID, sceneId, 'stories'));
             }}
           />
         </ScreenContent>

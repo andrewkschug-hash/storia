@@ -230,6 +230,15 @@
             "non",
             "lo",
             "sapere"
+          ],
+          "phrases": [
+            {
+              "surface": "Non lo so",
+              "literalEn": "I do not know it",
+              "naturalEn": "I don't know",
+              "tokenStart": 0,
+              "tokenEnd": 2
+            }
           ]
         }
       ]

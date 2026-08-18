@@ -24,6 +24,7 @@ type Props = {
   onOpenStoryChapter?: (storyId: string, chapterId: string) => void;
   onOpenGrammar?: (batchEnd: number) => void;
   onOpenRecap?: (batchEnd: number) => void;
+  onOpenSpeak?: (sceneId: string) => void;
   onShowHint: (message: string) => void;
 };
 
@@ -37,6 +38,7 @@ export function StoryPathPanel({
   onOpenStoryChapter,
   onOpenGrammar,
   onOpenRecap,
+  onOpenSpeak,
   onShowHint,
 }: Props) {
   const pathItems = useMemo(() => {
@@ -59,6 +61,7 @@ export function StoryPathPanel({
               onOpenStoryChapter={onOpenStoryChapter}
               onOpenGrammar={onOpenGrammar}
               onOpenRecap={onOpenRecap}
+              onOpenSpeak={onOpenSpeak}
               onShowHint={onShowHint}
             />
           ))
@@ -89,6 +92,7 @@ function PathItemRow({
   onOpenChapter,
   onOpenGrammar,
   onOpenRecap,
+  onOpenSpeak,
   onShowHint,
 }: {
   item: StoryPathItem;
@@ -100,6 +104,7 @@ function PathItemRow({
   onOpenStoryChapter?: (storyId: string, chapterId: string) => void;
   onOpenGrammar?: (batchEnd: number) => void;
   onOpenRecap?: (batchEnd: number) => void;
+  onOpenSpeak?: (sceneId: string) => void;
   onShowHint: (message: string) => void;
 }) {
   if (item.kind === 'chapter') {
@@ -117,15 +122,19 @@ function PathItemRow({
   }
 
   const locked = item.status === 'locked';
-  const eyebrow = item.kind === 'grammar' ? 'Grammar' : 'Review';
+  const eyebrow =
+    item.kind === 'grammar' ? 'Grammar' : item.kind === 'speak' ? 'Speak the scene' : 'Words';
   const title =
-    item.kind === 'grammar'
+    item.kind === 'grammar' || item.kind === 'speak'
       ? item.title
       : `Chapters ${item.batchStart}–${item.batchEnd}`;
   const subtitle =
     item.kind === 'grammar'
       ? `After chapters ${item.batchStart}–${item.batchEnd}`
-      : 'Practice words from this batch';
+      : item.kind === 'speak'
+        ? 'Retell what happened'
+        : 'Word recap from this batch';
+  const icon = item.kind === 'grammar' ? 'book' : item.kind === 'speak' ? 'speak' : 'review';
 
   return (
     <CheckpointPathRow
@@ -133,7 +142,7 @@ function PathItemRow({
       title={title}
       subtitle={subtitle}
       status={item.status}
-      icon={item.kind === 'grammar' ? 'book' : 'review'}
+      icon={icon}
       locked={locked}
       onPress={() => {
         if (locked) {
@@ -142,6 +151,7 @@ function PathItemRow({
         }
         if (item.kind === 'grammar') onOpenGrammar?.(item.batchEnd);
         if (item.kind === 'recap') onOpenRecap?.(item.batchEnd);
+        if (item.kind === 'speak') onOpenSpeak?.(item.sceneId);
       }}
     />
   );
@@ -242,7 +252,7 @@ function CheckpointPathRow({
   title: string;
   subtitle: string;
   status: ChapterStatus;
-  icon: 'book' | 'review';
+  icon: 'book' | 'review' | 'speak';
   locked: boolean;
   onPress: () => void;
 }) {
@@ -261,7 +271,9 @@ function CheckpointPathRow({
   const symbolName =
     icon === 'book'
       ? ({ ios: 'text.book.closed.fill', android: 'menu_book', web: 'menu_book' } as const)
-      : ({ ios: 'arrow.triangle.2.circlepath', android: 'sync', web: 'sync' } as const);
+      : icon === 'speak'
+        ? ({ ios: 'quote.bubble.fill', android: 'chat_bubble', web: 'chat_bubble' } as const)
+        : ({ ios: 'arrow.triangle.2.circlepath', android: 'sync', web: 'sync' } as const);
 
   return (
     <Animated.View style={{ transform: [{ translateX: shake }] }}>

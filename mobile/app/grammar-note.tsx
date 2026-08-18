@@ -14,6 +14,7 @@ import {
   type GrammarPracticeQuestion,
   type GrammarStep,
 } from '@/src/content/lessonBatches';
+import { getSpeakSceneForBatch } from '@/src/content/speakScenes';
 import { grammarCheckpointId } from '@/src/content/storyPath';
 import { getProgressService } from '@/src/progress';
 import { Radii, Spacing } from '@/src/theme/tokens';
@@ -141,7 +142,12 @@ export default function GrammarNoteScreen() {
           ) : null}
 
           {phase === 'summary' ? (
-            <SummarySection note={note} colors={colors} type={type} />
+            <SummarySection
+              note={note}
+              hasSpeakScene={Boolean(getSpeakSceneForBatch(storyId, chapterNumber))}
+              colors={colors}
+              type={type}
+            />
           ) : null}
 
           <View style={styles.actions}>
@@ -195,7 +201,7 @@ export default function GrammarNoteScreen() {
 
             {phase === 'summary' ? (
               <PrimaryButton
-                label="Continue to review"
+                label="Continue to words"
                 colors={colors}
                 type={type}
                 minTouchTarget={minTouchTarget}
@@ -351,10 +357,12 @@ function PracticeSection({
 
 function SummarySection({
   note,
+  hasSpeakScene,
   colors,
   type,
 }: {
   note: GrammarNote;
+  hasSpeakScene: boolean;
   colors: ReturnType<typeof useTheme>['colors'];
   type: ReturnType<typeof useTheme>['type'];
 }) {
@@ -362,8 +370,8 @@ function SummarySection({
     <View>
       <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.md }]}>Nice work</Text>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md, lineHeight: 24 }]}>
-        You covered {note.steps.length} patterns from {note.title}. Next up: a quick vocabulary review from the same
-        chapters.
+        You covered {note.steps.length} patterns from {note.title}. Next: a short word recap
+        {hasSpeakScene ? ', then you can retell the scene' : ''}.
       </Text>
       <View style={{ marginTop: Spacing.lg, gap: Spacing.sm }}>
         {note.steps.map((step) => (

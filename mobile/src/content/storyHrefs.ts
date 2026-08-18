@@ -14,3 +14,9 @@ export function recapHref(storyId: string, chapterId: string): Href {
 export function comprehensionHref(storyId: string, chapterId: string): Href {
   return `/comprehension/${chapterId}?story=${encodeURIComponent(storyId)}` as Href;
 }
+
+export function speakSceneHref(storyId: string, sceneId: string, returnTo?: string): Href {
+  const query = new URLSearchParams({ story: storyId, scene: sceneId });
+  if (returnTo) query.set('returnTo', returnTo);
+  return `/speak-scene?${query.toString()}` as Href;
+}

@@ -15,6 +15,7 @@ import {
   type ComprehensionAnswerRecord,
   type ReadingProgressRecord,
   type ReadingProgressRepository,
+  type SpeakSceneRecord,
 } from '@/src/progress/types';
 
 function todayKey(date = new Date()): string {
@@ -285,6 +286,36 @@ export class ProgressService {
 
   getChapterReadingPercent(chapter: Chapter, lastSentenceId: string | null): number {
     return Math.round(this.getChapterSentenceFraction(chapter, lastSentenceId) * 100);
+  }
+
+  /**
+   * Persist a speak-scene attempt. Does not lock or unlock chapters.
+   * An in-progress session (completedAt null) is updated in place so each
+   * line vote is stored. Completed sessions always append.
+   */
+  async recordSpeakScene(record: SpeakSceneRecord): Promise<ReadingProgressRecord> {
+    const progress = await this.getOrCreate();
+    const existing = progress.speakScenes?.[record.sceneId] ?? [];
+    const nextRecord: SpeakSceneRecord = {
+      ...record,
+      lines: [...record.lines],
+      completedAt: record.completedAt ?? null,
+    };
+    const last = existing[existing.length - 1];
+    const records =
+      last && last.completedAt == null
+        ? [...existing.slice(0, -1), nextRecord]
+        : [...existing, nextRecord];
+    const next: ReadingProgressRecord = {
+      ...progress,
+      speakScenes: {
+        ...(progress.speakScenes ?? {}),
+        [record.sceneId]: records,
+      },
+      lastOpenedAt: new Date().toISOString(),
+    };
+    await this.repo.save(next);
+    return next;
   }
 
   async setCEFRLevel(level: string): Promise<ReadingProgressRecord> {

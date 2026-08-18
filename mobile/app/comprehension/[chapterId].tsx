@@ -31,13 +31,12 @@ import {
   skipProduction,
   type SelfAssessment,
 } from '@/src/production/flow';
-import { getReviewService } from '@/src/review';
 import { getVocabularyService } from '@/src/vocabulary';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
-type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'review' | 'complete';
+type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'complete';
 
 type QuestionState = {
   attempts: number;
@@ -81,11 +80,6 @@ export default function ComprehensionScreen() {
     correctChoice: number;
   } | null>(null);
   const [finishing, setFinishing] = useState(false);
-  const [reviewCopy, setReviewCopy] = useState<{
-    headline: string;
-    detail: string;
-    readyCount: number;
-  } | null>(null);
 
   const current = questions[index];
 
@@ -252,28 +246,12 @@ export default function ComprehensionScreen() {
         chapter.id,
         answers,
       );
-      const vocab = await getVocabularyService().getState();
-      const copy = getReviewService().chapterNudgeCopy(
-        chapter.number,
-        getContentBundle(storyId ?? chapter.storyId),
-        vocab,
-      );
-      if (copy.readyCount > 0) {
-        setReviewCopy(copy);
-        setPhase('review');
-        setFinishing(false);
-        return;
-      }
       setPhase('complete');
       setFinishing(false);
     } catch (e) {
       setFinishing(false);
       console.error(e);
     }
-  };
-
-  const skipReviewAndContinue = () => {
-    setPhase('complete');
   };
 
   const continueFromResults = () => {
@@ -419,43 +397,6 @@ export default function ComprehensionScreen() {
                 <Text style={[type.button, { color: colors.onTint }]}>
                   {index + 1 < questions.length ? 'Continue' : 'See results'}
                 </Text>
-              </Pressable>
-            </View>
-          </View>
-        ) : null}
-
-        {phase === 'review' && reviewCopy ? (
-          <View>
-            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Quick review?</Text>
-            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-              {reviewCopy.headline}
-            </Text>
-            <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-              {reviewCopy.detail}
-            </Text>
-            <View style={styles.row}>
-              <Pressable
-                onPress={() => {
-                  setPhase('complete');
-                  router.push('/review' as import('expo-router').Href);
-                }}
-                style={({ pressed }) => [
-                  styles.secondaryBtn,
-                  { borderColor: colors.border, opacity: pressed ? 0.88 : 1, flex: 1 },
-                ]}>
-                <Text style={[type.button, { color: colors.text }]}>Review</Text>
-              </Pressable>
-              <Pressable
-                onPress={skipReviewAndContinue}
-                style={({ pressed }) => [
-                  styles.primaryBtn,
-                  {
-                    flex: 1,
-                    backgroundColor: colors.tint,
-                    opacity: pressed || finishing ? 0.88 : 1,
-                  },
-                ]}>
-                <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
               </Pressable>
             </View>
           </View>

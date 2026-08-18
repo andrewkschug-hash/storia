@@ -6,8 +6,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { LUCA_STORY_ID, getChapterByNumber, getContentBundle } from '@/src/content';
 import { batchRangeForChapter } from '@/src/content/lessonBatches';
+import { getSpeakSceneForBatch } from '@/src/content/speakScenes';
 import { recapCheckpointId } from '@/src/content/storyPath';
-import { readerHref } from '@/src/content/storyHrefs';
+import { readerHref, speakSceneHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
 import { getReviewService } from '@/src/review';
 import type { ReviewPrompt } from '@/src/review/ReviewService';
@@ -16,6 +17,7 @@ import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Phase = 'intro' | 'prompt' | 'feedback' | 'done';
+type Vote = 'got_it' | 'almost' | 'not_yet';
 
 function continueAfterBatch(
   storyId: string,
@@ -25,6 +27,11 @@ function continueAfterBatch(
   void getProgressService(storyId)
     .completeCheckpoint(recapCheckpointId(storyId, chapterNumber))
     .then(() => {
+      const scene = getSpeakSceneForBatch(storyId, chapterNumber);
+      if (scene) {
+        router.replace(speakSceneHref(storyId, scene.id, returnTo));
+        return;
+      }
       if (returnTo === 'stories') {
         router.replace('/(tabs)/stories' as Href);
         return;
@@ -61,6 +68,7 @@ export default function BatchRecapScreen() {
   const [selected, setSelected] = useState<number | null>(null);
   const [correct, setCorrect] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [voting, setVoting] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -73,7 +81,6 @@ export default function BatchRecapScreen() {
         setItems(session.items);
         setCopy({ headline: recapCopy.headline, detail: recapCopy.detail });
         setLoading(false);
-        if (session.items.length === 0) setPhase('done');
       }
     })();
     return () => {
@@ -83,23 +90,33 @@ export default function BatchRecapScreen() {
 
   const current = items[index];
 
-  const onSelect = async (choiceIndex: number) => {
+  const onSelect = (choiceIndex: number) => {
     if (!current || phase !== 'prompt') return;
-    const isCorrect = choiceIndex === current.correctIndex;
     setSelected(choiceIndex);
-    setCorrect(isCorrect);
+    setCorrect(choiceIndex === current.correctIndex);
     setPhase('feedback');
-    await getVocabularyService().recordReview(current.kind, current.id, isCorrect);
   };
 
-  const onContinueReview = () => {
+  const goNext = () => {
     if (index + 1 < items.length) {
       setIndex(index + 1);
       setSelected(null);
+      setCorrect(false);
       setPhase('prompt');
       return;
     }
     setPhase('done');
+  };
+
+  const onVote = async (vote: Vote) => {
+    if (!current || voting) return;
+    setVoting(true);
+    try {
+      await getVocabularyService().recordReview(current.kind, current.id, vote === 'got_it');
+      goNext();
+    } finally {
+      setVoting(false);
+    }
   };
 
   useEffect(() => {
@@ -110,7 +127,7 @@ export default function BatchRecapScreen() {
 
   return (
     <AtmosphereBackground>
-      <Stack.Screen options={{ title: 'Batch recap', headerBackVisible: false }} />
+      <Stack.Screen options={{ title: 'Word recap', headerBackVisible: false }} />
       <ScrollView
         contentContainerStyle={[
           styles.content,
@@ -121,38 +138,26 @@ export default function BatchRecapScreen() {
           <Text style={[type.body, { color: colors.textSecondary }]}>Preparing…</Text>
         ) : phase === 'intro' && copy ? (
           <View>
-            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Before the next batch</Text>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>After the grammar</Text>
             <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
               {copy.headline}
             </Text>
             <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
               {copy.detail}
             </Text>
-            <View style={styles.row}>
-              <Pressable
-                onPress={() => continueAfterBatch(storyId, chapterNumber, returnTo)}
-                style={({ pressed }) => [
-                  styles.secondaryBtn,
-                  { borderColor: colors.border, opacity: pressed ? 0.88 : 1, flex: 1 },
-                ]}>
-                <Text style={[type.button, { color: colors.text }]}>Skip</Text>
-              </Pressable>
-              <Pressable
-                onPress={() => setPhase(items.length > 0 ? 'prompt' : 'done')}
-                style={({ pressed }) => [
-                  styles.primaryBtn,
-                  {
-                    backgroundColor: colors.tint,
-                    opacity: pressed ? 0.88 : 1,
-                    flex: 1,
-                    minHeight: minTouchTarget,
-                  },
-                ]}>
-                <Text style={[type.button, { color: colors.onTint }]}>
-                  {items.length > 0 ? 'Review' : 'Continue'}
-                </Text>
-              </Pressable>
-            </View>
+            <Pressable
+              onPress={() => setPhase('prompt')}
+              style={({ pressed }) => [
+                styles.primaryBtn,
+                {
+                  backgroundColor: colors.tint,
+                  opacity: pressed ? 0.88 : 1,
+                  minHeight: minTouchTarget,
+                  marginTop: Spacing.xl,
+                },
+              ]}>
+              <Text style={[type.button, { color: colors.onTint }]}>Start</Text>
+            </Pressable>
           </View>
         ) : current ? (
           <View>
@@ -185,7 +190,7 @@ export default function BatchRecapScreen() {
                   <Pressable
                     key={`${choice}-${i}`}
                     disabled={phase !== 'prompt'}
-                    onPress={() => void onSelect(i)}
+                    onPress={() => onSelect(i)}
                     style={({ pressed }) => [
                       styles.choice,
                       {
@@ -202,29 +207,85 @@ export default function BatchRecapScreen() {
             {phase === 'feedback' ? (
               <View style={{ marginTop: Spacing.xl }}>
                 <Text style={[type.label, { color: correct ? colors.tint : colors.danger }]}>
-                  {correct ? '✓ Esatto!' : 'Not quite — you’ll see it again.'}
+                  {correct ? 'That’s the answer.' : `Answer: ${current.choices[current.correctIndex]}`}
                 </Text>
-                <Pressable
-                  onPress={onContinueReview}
-                  style={({ pressed }) => [
-                    styles.primaryBtn,
-                    {
-                      backgroundColor: colors.tint,
-                      opacity: pressed ? 0.88 : 1,
-                      minHeight: minTouchTarget,
-                      marginTop: Spacing.lg,
-                    },
-                  ]}>
-                  <Text style={[type.button, { color: colors.onTint }]}>
-                    {index + 1 < items.length ? 'Continue' : 'Done'}
-                  </Text>
-                </Pressable>
+                <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+                  {current.italian} · {current.english}
+                </Text>
+                <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
+                  How did you do?
+                </Text>
+                <View style={styles.voteRow}>
+                  <VoteButton
+                    label="Got it"
+                    colors={colors}
+                    type={type}
+                    minTouchTarget={minTouchTarget}
+                    disabled={voting}
+                    onPress={() => void onVote('got_it')}
+                  />
+                  <VoteButton
+                    label="Almost"
+                    colors={colors}
+                    type={type}
+                    minTouchTarget={minTouchTarget}
+                    disabled={voting}
+                    outlined
+                    onPress={() => void onVote('almost')}
+                  />
+                  <VoteButton
+                    label="Not yet"
+                    colors={colors}
+                    type={type}
+                    minTouchTarget={minTouchTarget}
+                    disabled={voting}
+                    outlined
+                    onPress={() => void onVote('not_yet')}
+                  />
+                </View>
               </View>
             ) : null}
           </View>
         ) : null}
       </ScrollView>
     </AtmosphereBackground>
+  );
+}
+
+function VoteButton({
+  label,
+  colors,
+  type,
+  minTouchTarget,
+  outlined,
+  disabled,
+  onPress,
+}: {
+  label: string;
+  colors: ReturnType<typeof useTheme>['colors'];
+  type: ReturnType<typeof useTheme>['type'];
+  minTouchTarget: number;
+  outlined?: boolean;
+  disabled?: boolean;
+  onPress: () => void;
+}) {
+  return (
+    <Pressable
+      onPress={onPress}
+      disabled={disabled}
+      style={({ pressed }) => [
+        styles.voteBtn,
+        {
+          backgroundColor: outlined ? 'transparent' : colors.tint,
+          borderColor: colors.border,
+          minHeight: minTouchTarget,
+          opacity: pressed || disabled ? 0.88 : 1,
+        },
+      ]}>
+      <Text style={[type.button, { color: outlined ? colors.text : colors.onTint, fontSize: 14 }]}>
+        {label}
+      </Text>
+    </Pressable>
   );
 }
 
@@ -238,22 +299,24 @@ const styles = StyleSheet.create({
     borderRadius: Radii.md,
     padding: Spacing.md,
   },
-  row: {
+  voteRow: {
     flexDirection: 'row',
     gap: Spacing.sm,
-    marginTop: Spacing.xl,
+    marginTop: Spacing.md,
+  },
+  voteBtn: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.xs,
+    borderRadius: Radii.md,
+    borderWidth: StyleSheet.hairlineWidth,
   },
   primaryBtn: {
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
-  },
-  secondaryBtn: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: Spacing.md,
-    borderRadius: Radii.md,
-    borderWidth: StyleSheet.hairlineWidth,
   },
 });

@@ -17,7 +17,7 @@
   "events": [
     {
       "id": "ev-12-marco-problem",
-      "summary": "Marco needs money for a ticket and feels stressed about work.",
+      "summary": "Marco has to go home and needs a train ticket, but he does not have money.",
       "characterIds": [
         "luca",
         "sofia",
@@ -27,9 +27,9 @@
         "lavoro-caffe"
       ],
       "rememberedFacts": [
-        "Marco has a money problem",
-        "Marco needs a ticket",
-        "Marco is tired and stressed"
+        "Marco has to go home",
+        "Marco needs a train ticket",
+        "Marco does not have money for the ticket"
       ]
     }
   ],
@@ -94,17 +94,28 @@
       "sentences": [
         {
           "id": "s05",
-          "text": "Non ho soldi.",
+          "text": "Devo partire.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "non",
-            "avere",
-            "soldi"
+            "dovere",
+            "partire"
           ]
         },
         {
           "id": "s06",
+          "text": "Devo andare a casa.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "andare",
+            "a",
+            "casa"
+          ]
+        },
+        {
+          "id": "s07",
           "text": "Devo comprare un biglietto.",
           "speakerId": "marco",
           "kind": "dialogue",
@@ -116,25 +127,14 @@
           ]
         },
         {
-          "id": "s07",
-          "text": "Il lavoro è difficile.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "il",
-            "lavoro",
-            "essere",
-            "difficile"
-          ]
-        },
-        {
           "id": "s08",
-          "text": "Sono stanco.",
+          "text": "Non ho soldi.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
-            "stanco"
+            "non",
+            "avere",
+            "soldi"
           ]
         }
       ]
@@ -145,42 +145,34 @@
       "sentences": [
         {
           "id": "s09",
-          "text": "Che cosa fai?",
+          "text": "Cosa c'è?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "che",
             "cosa",
-            "fare"
+            "ce"
           ],
           "phrases": [
             {
-              "surface": "Che cosa fai?",
-              "literalEn": "What thing do you do?",
-              "naturalEn": "What are you doing? / What’s going on?",
+              "surface": "Cosa c'è?",
+              "literalEn": "What is there?",
+              "naturalEn": "What's wrong?",
               "tokenStart": 0,
-              "tokenEnd": 2
+              "tokenEnd": 1
             }
           ]
         },
         {
           "id": "s10",
-          "text": "Non lo so.",
+          "text": "C'è un problema a casa.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "non",
-            "lo",
-            "sapere"
-          ],
-          "phrases": [
-            {
-              "surface": "Non lo so",
-              "literalEn": "I do not know it",
-              "naturalEn": "I don't know",
-              "tokenStart": 0,
-              "tokenEnd": 2
-            }
+            "ce",
+            "un",
+            "problema",
+            "a",
+            "casa"
           ]
         },
         {
@@ -226,44 +218,44 @@
       "id": "ch12_q01",
       "chapterId": "luca-a-roma-12",
       "type": "event",
-      "question": "What problem does Marco have?",
-      "questionIt": "Qual è il problema di Marco?",
+      "question": "What does Marco need?",
+      "questionIt": "Di che cosa ha bisogno Marco?",
       "choices": [
-        "He needs money for a ticket",
-        "He lost his apartment key",
-        "He hates the café"
+        "A ticket to go home",
+        "A new job at the café",
+        "A key for his apartment"
       ],
       "correctChoice": 0,
-      "explanation": "Marco needs money for a ticket and feels stressed.",
+      "explanation": "Marco has to go home and must buy a ticket, but he has no money.",
       "difficulty": 1
     },
     {
       "id": "ch12_q02",
       "chapterId": "luca-a-roma-12",
       "type": "character",
-      "question": "How does Marco seem?",
-      "questionIt": "Come sta Marco?",
+      "question": "Why does Marco need the ticket?",
+      "questionIt": "Perché Marco ha bisogno del biglietto?",
       "choices": [
-        "Tired and unsure",
-        "Happy and relaxed",
-        "Angry at Luca"
+        "He has to go home",
+        "He wants to go to work",
+        "He lost his suitcase"
       ],
       "correctChoice": 0,
-      "explanation": "He is tired and says “Non lo so,” showing he is unsure.",
+      "explanation": "Marco says he has to leave and go home. There is a problem at home.",
       "difficulty": 1
     },
     {
       "id": "ch12_q03",
       "chapterId": "luca-a-roma-12",
       "type": "direct",
-      "question": "What phrase shows Marco does not know what to do?",
+      "question": "What is Marco missing?",
       "choices": [
-        "“Non lo so”",
-        "“Ci vediamo”",
-        "“Buongiorno”"
+        "Money for the ticket",
+        "A map of Rome",
+        "A table at the café"
       ],
       "correctChoice": 0,
-      "explanation": "Marco says “Non lo so” when he cannot see a clear solution.",
+      "explanation": "Marco says “Non ho soldi” — he does not have money.",
       "difficulty": 1
     }
   ]

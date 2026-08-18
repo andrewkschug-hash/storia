@@ -1,0 +1,116 @@
+{
+  "storyId": "luca-a-roma",
+  "scenes": [
+    {
+      "id": "luca-a-roma-speak-15",
+      "storyId": "luca-a-roma",
+      "batchEnd": 15,
+      "title": "Help Marco",
+      "summaryEn": "Marco is back at the café. He has a problem. He needs to go home, but he doesn't have money for a ticket.",
+      "sourceRange": {
+        "start": 11,
+        "end": 15
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-15-l01",
+          "en": "Marco goes back to the café.",
+          "it": "Marco torna al caffè.",
+          "sourceChapterId": "luca-a-roma-12",
+          "sourceSentenceId": "s01",
+          "acceptableAnswers": [
+            "Marco torna al caffe.",
+            "Torna al caffè.",
+            "Marco va al caffè."
+          ],
+          "semantic": {
+            "requiredConcepts": ["torna"],
+            "conceptAliases": {
+              "torna": ["torna", "va"]
+            },
+            "requiredPerson": ["3sg"],
+            "requiredTense": "present",
+            "requiredPolarity": "affirmative"
+          }
+        },
+        {
+          "id": "luca-a-roma-speak-15-l02",
+          "en": "He has a problem.",
+          "it": "Ha un problema.",
+          "sourceChapterId": "luca-a-roma-12",
+          "sourceSentenceId": "s03",
+          "acceptableAnswers": [
+            "Marco ha un problema.",
+            "Lui ha un problema."
+          ],
+          "semantic": {
+            "requiredConcepts": ["problema"],
+            "requiredPerson": ["3sg"],
+            "requiredTense": "present",
+            "requiredPolarity": "affirmative"
+          }
+        },
+        {
+          "id": "luca-a-roma-speak-15-l03",
+          "en": "He has to go home.",
+          "it": "Deve andare a casa.",
+          "sourceChapterId": "luca-a-roma-12",
+          "sourceSentenceId": "s06",
+          "acceptableAnswers": [
+            "Marco deve andare a casa.",
+            "Deve tornare a casa.",
+            "Lui deve andare a casa."
+          ],
+          "semantic": {
+            "requiredConcepts": ["casa"],
+            "requiredPerson": ["3sg"],
+            "requiredTense": "present",
+            "requiredPolarity": "affirmative"
+          }
+        },
+        {
+          "id": "luca-a-roma-speak-15-l04",
+          "en": "He needs to buy a ticket.",
+          "it": "Deve comprare un biglietto.",
+          "sourceChapterId": "luca-a-roma-12",
+          "sourceSentenceId": "s07",
+          "acceptableAnswers": [
+            "Marco deve comprare un biglietto.",
+            "Ha bisogno di un biglietto.",
+            "Serve un biglietto.",
+            "Vuole un biglietto."
+          ],
+          "semantic": {
+            "requiredConcepts": ["biglietto"],
+            "requiredPerson": ["3sg"],
+            "requiredTense": "present",
+            "requiredPolarity": "affirmative"
+          }
+        },
+        {
+          "id": "luca-a-roma-speak-15-l05",
+          "en": "He doesn't have money.",
+          "it": "Non ha soldi.",
+          "sourceChapterId": "luca-a-roma-12",
+          "sourceSentenceId": "s08",
+          "acceptableAnswers": [
+            "Non ha i soldi.",
+            "Marco non ha soldi.",
+            "Marco non ha i soldi.",
+            "Lui non ha soldi.",
+            "Non ha denaro."
+          ],
+          "semantic": {
+            "requiredConcepts": ["soldi"],
+            "conceptAliases": {
+              "soldi": ["soldi", "denaro"]
+            },
+            "requiredPerson": ["3sg"],
+            "requiredTense": "present",
+            "requiredPolarity": "negative"
+          }
+        }
+      ]
+    }
+  ]
+}

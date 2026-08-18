@@ -24,9 +24,14 @@ export function unlockHintForChapter(
   return previous ? `Finish Ch. ${previous.number} comprehension to unlock` : 'Locked';
 }
 
-export function unlockHintForPathItem(item: Extract<StoryPathItem, { kind: 'grammar' | 'recap' }>): string {
+export function unlockHintForPathItem(
+  item: Extract<StoryPathItem, { kind: 'grammar' | 'recap' | 'speak' }>,
+): string {
   if (item.kind === 'grammar') {
     return `Finish Ch. ${item.batchEnd} comprehension to unlock`;
+  }
+  if (item.kind === 'speak') {
+    return `Complete the word recap after Ch. ${item.batchEnd} first`;
   }
   return `Complete the Grammar step for chapters ${item.batchStart}–${item.batchEnd} first`;
 }

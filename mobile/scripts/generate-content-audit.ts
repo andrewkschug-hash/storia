@@ -40,7 +40,7 @@ const phraseHints: Record<number, string[]> = {
   9: ['Vuoi lavorare qui?', 'posso…?', 'va bene'],
   10: ['Come stai?', 'Va bene', 'Lavoriamo insieme'],
   11: ['Come stai?', 'Sì, va bene', 'Prendiamo un caffè'],
-  12: ['Che cosa fai?', 'Non lo so', 'Non ho soldi'],
+  12: ['Cosa c\'è?', 'Devo partire', 'Non ho soldi'],
   13: ['Possiamo aiutare', 'Grazie'],
   14: ['Non posso…', 'Cosa facciamo adesso?', 'Dove sei…?', 'Non lo so'],
   15: ['Perché no?', 'Dobbiamo fare un piano', 'L’aiuto è importante'],

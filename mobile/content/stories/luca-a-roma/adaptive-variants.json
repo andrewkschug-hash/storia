@@ -512,30 +512,23 @@
       ]
     },
     "luca-a-roma-12:s10": {
-      "phraseReinforces": [
-        "non_lo_so"
+      "reinforces": [
+        "casa"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Non lo so oggi.",
+          "text": "C'è un problema a casa oggi.",
           "lemmas": [
-            "non",
-            "lo",
-            "sapere",
+            "ce",
+            "un",
+            "problema",
+            "a",
+            "casa",
             "oggi"
           ],
-          "phraseReinforces": [
-            "non_lo_so"
-          ],
-          "phrases": [
-            {
-              "surface": "Non lo so",
-              "literalEn": "I do not know it",
-              "naturalEn": "I don't know",
-              "tokenStart": 0,
-              "tokenEnd": 2
-            }
+          "reinforces": [
+            "casa"
           ]
         }
       ]

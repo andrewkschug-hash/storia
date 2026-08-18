@@ -17,9 +17,8 @@ import { StoryReader } from '@/src/components/StoryReader';
 import { getAdaptiveService } from '@/src/adaptive';
 import { getAudioCatalog, getAudioService } from '@/src/audio';
 import { refreshCatalogFromGateway } from '@/src/audio/AudioService';
-import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
+import { findStoryIdForChapter, getChapter } from '@/src/content';
 import { comprehensionHref } from '@/src/content/storyHrefs';
-import { buildChapterRecap } from '@/src/content/chapterRecap';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
 import { hasSeenReaderTip, markReaderTipSeen } from '@/src/reader/storage';
@@ -150,14 +149,6 @@ export default function ReaderScreen() {
   const hasAudio = useMemo(() => {
     return sentences.some((s) => audio.sentenceAudio(s));
   }, [sentences, audioCatalogVersion]);
-
-  const chapterRecap = useMemo(() => {
-    if (!chapter) return null;
-    return buildChapterRecap(
-      chapter,
-      getContentBundle(storyId ?? chapter.storyId).lexiconById,
-    );
-  }, [chapter]);
 
   const phraseRange =
     lookup?.kind === 'phrase'
@@ -367,7 +358,6 @@ export default function ReaderScreen() {
             sentenceId: sentence.id,
           });
         }}
-        chapterRecap={chapterRecap}
         showCompletionCta
         onContinueFromChapter={() => void continueFromChapter()}
         onScrollProgress={setScrollProgress}

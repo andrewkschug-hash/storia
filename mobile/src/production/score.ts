@@ -124,6 +124,10 @@ const VERB_PERSON: Record<string, ProductionPerson> = {
   serve: '3sg',
   chiude: '3sg',
   viene: '3sg',
+  torna: '3sg',
+  deve: '3sg',
+  vuole: '3sg',
+  compra: '3sg',
   costa: '3sg',
   dipende: '3sg',
   piace: '3sg',
@@ -557,7 +561,8 @@ function personConstraintMatches(normalized: string, allowed: ProductionPerson[]
   const inferred = inferPerson(normalized);
   if (inferred && allowed.includes(inferred)) return true;
   if (allowed.includes('1pl') && /\b(dobbiamo|abbiamo|andiamo|ci serve)\b/.test(normalized)) return true;
-  if (allowed.includes('3sg') && /\b(è|ha|viene|chiude|serve|c'è)\b/.test(normalized)) return true;
+  if (allowed.includes('3sg') && /\b(è|ha|viene|chiude|serve|c'è|deve|torna|vuole|compra)\b/.test(normalized))
+    return true;
   if (allowed.includes('3pl') && /\b(vengono|chiudono|sono|hanno)\b/.test(normalized)) return true;
   return false;
 }

@@ -34,6 +34,24 @@ export type ChapterProductionRecord = {
   attempts: ChapterProductionAttempt[];
 };
 
+export type SpeakSceneVote = 'got_it' | 'almost' | 'not_yet';
+
+export type SpeakSceneLineAttempt = {
+  lineId: string;
+  vote: SpeakSceneVote;
+  score: 'correct' | 'almost' | 'incorrect' | 'unrecognized';
+  attempts: number;
+  learnerText: string;
+  timestamp: string;
+};
+
+export type SpeakSceneRecord = {
+  sceneId: string;
+  skipped: boolean;
+  completedAt: string | null;
+  lines: SpeakSceneLineAttempt[];
+};
+
 export type ReadingProgressRecord = {
   storyId: string;
   /** Catalog narrative arc. Independent of chapter numbers. */
@@ -51,6 +69,8 @@ export type ReadingProgressRecord = {
   productionByChapter?: Record<string, ChapterProductionRecord>;
   /** Grammar and batch-recap nodes on the story path (e.g. luca-a-roma:grammar:5). */
   completedCheckpointIds?: string[];
+  /** Speak-scene attempts keyed by sceneId. Never gates the next chapter. */
+  speakScenes?: Record<string, SpeakSceneRecord[]>;
   /** Learner-chosen CEFR band. Never auto-promoted from one good chapter. */
   currentCEFRLevel: string;
 };
@@ -81,6 +101,7 @@ export function createInitialProgress(
     comprehensionByChapter: {},
     productionByChapter: {},
     completedCheckpointIds: [],
+    speakScenes: {},
     currentCEFRLevel: 'A1',
   };
 }
@@ -94,6 +115,7 @@ export function normalizeProgress(
     comprehensionByChapter: record.comprehensionByChapter ?? {},
     productionByChapter: record.productionByChapter ?? {},
     completedCheckpointIds: record.completedCheckpointIds ?? [],
+    speakScenes: record.speakScenes ?? {},
     currentCEFRLevel: record.currentCEFRLevel ?? 'A1',
     narrativeArc: record.narrativeArc ?? narrativeArc,
   };
