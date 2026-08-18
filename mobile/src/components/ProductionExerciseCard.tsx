@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import type { ProductionExercise } from '@/src/content/schemas';
+import type { LexiconEntry, ProductionExercise, Sentence } from '@/src/content/schemas';
 import {
   productionCardView,
   type SelfAssessment,
   type StorySentenceCue,
 } from '@/src/production/flow';
+import { buildWordHintSegments } from '@/src/production/wordHints';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
@@ -16,7 +17,8 @@ type Props = {
   total: number;
   onContinue: () => void;
   /** Story sentence this exercise is based on. Used so prompts match 3rd-person narration. */
-  sourceSentence?: StorySentenceCue | null;
+  sourceSentence?: (StorySentenceCue & Partial<Pick<Sentence, 'tokens' | 'phrases'>>) | null;
+  lexiconById?: Map<string, LexiconEntry>;
   onAssessed?: (assessment: SelfAssessment | null) => void;
 };
 
@@ -32,16 +34,27 @@ export function ProductionExerciseCard({
   total,
   onContinue,
   sourceSentence,
+  lexiconById,
   onAssessed,
 }: Props) {
   const { colors, type, minTouchTarget } = useTheme();
   const [revealed, setRevealed] = useState(false);
   const [assessment, setAssessment] = useState<SelfAssessment | null>(null);
+  const [revealedHints, setRevealedHints] = useState<Record<string, boolean>>({});
   const view = productionCardView(exercise, index, total, revealed, sourceSentence);
+  const hintSegments =
+    lexiconById && sourceSentence?.tokens?.length
+      ? buildWordHintSegments(
+          view.promptEn,
+          sourceSentence as Sentence,
+          lexiconById,
+        )
+      : null;
 
   useEffect(() => {
     setRevealed(false);
     setAssessment(null);
+    setRevealedHints({});
   }, [exercise.exerciseId]);
 
   return (
@@ -56,7 +69,8 @@ export function ProductionExerciseCard({
         Can you say this in Italian?
       </Text>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-        Say it out loud the way the story said it, then check your answer.
+        Say it out loud the way the story said it, then check your answer. Tap an English word if
+        you forget the Italian for it.
       </Text>
 
       <View
@@ -65,11 +79,50 @@ export function ProductionExerciseCard({
           { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
         ]}>
         <Text style={[type.caption, { color: colors.textMuted }]}>English</Text>
-        <Text
-          style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}
-          accessibilityRole="text">
-          {view.promptEn}
-        </Text>
+        {hintSegments ? (
+          <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm, flexWrap: 'wrap' }]}>
+            {hintSegments.map((segment, segmentIndex) => {
+              if (!segment.tappable || !segment.hint) {
+                return (
+                  <Text key={`${segment.text}-${segmentIndex}`} style={{ color: colors.text }}>
+                    {segment.text}
+                  </Text>
+                );
+              }
+              const hintKey = `${segmentIndex}-${segment.text}`;
+              const hintVisible = revealedHints[hintKey];
+              return (
+                <Text key={hintKey}>
+                  <Text
+                    onPress={() =>
+                      setRevealedHints((prev) => ({ ...prev, [hintKey]: !prev[hintKey] }))
+                    }
+                    style={{
+                      color: hintVisible ? colors.tint : colors.text,
+                      textDecorationLine: 'underline',
+                      textDecorationStyle: 'dotted',
+                    }}
+                    accessibilityRole="button"
+                    accessibilityLabel={`Hint for ${segment.text.trim()}`}>
+                    {segment.text}
+                  </Text>
+                  {hintVisible ? (
+                    <Text style={{ color: colors.tint, fontSize: type.caption.fontSize }}>
+                      {' '}
+                      ({segment.hint}){' '}
+                    </Text>
+                  ) : null}
+                </Text>
+              );
+            })}
+          </Text>
+        ) : (
+          <Text
+            style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}
+            accessibilityRole="text">
+            {view.promptEn}
+          </Text>
+        )}
       </View>
 
       {view.showAnswerVisible ? (

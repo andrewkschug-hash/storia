@@ -130,6 +130,22 @@ function RootLayoutNav() {
           }}
         />
         <Stack.Screen
+          name="grammar-note"
+          options={{
+            title: 'A little grammar',
+            headerBackTitle: 'Back',
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="batch-recap"
+          options={{
+            title: 'Batch recap',
+            headerBackTitle: 'Back',
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
           name="review"
           options={{
             title: 'A little review',

@@ -52,13 +52,17 @@
         },
         {
           "id": "s02",
-          "text": "L'affitto costa molto.",
+          "text": "Luca ha bisogno di soldi per l'affitto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "affitto",
-            "costare",
-            "molto"
+            "luca",
+            "avere",
+            "bisogno",
+            "di",
+            "soldi",
+            "per",
+            "affitto"
           ]
         },
         {
@@ -199,13 +203,13 @@
         },
         {
           "id": "s13",
-          "text": "Luca vuole vivere a Roma.",
+          "text": "Luca vuole restare a Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "volere",
-            "vivere",
+            "restare",
             "a",
             "roma"
           ]

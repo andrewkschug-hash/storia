@@ -153,13 +153,71 @@ export class ReviewService {
     const fallback = bundle.lexicon.filter(
       (entry) => entry.introducedChapter === chapterNumber && lemmaIds.has(entry.lemmaId),
     );
-    const n = Math.min(3, encountered.length || fallback.length);
-    if (n === 0) {
+    const sessionSize = REVIEW_CONFIG.defaultSessionSize;
+    const available = encountered.length || fallback.length;
+    if (available === 0) {
       return { headline: '', detail: '', cta: null, readyCount: 0 };
     }
     return {
-      headline: `${n} word${n === 1 ? '' : 's'} from this chapter`,
+      headline: `Review ${sessionSize} key words`,
       detail: 'A quick optional review — skip anytime.',
+      cta: 'Review',
+      readyCount: sessionSize,
+    };
+  }
+
+  /** Review session scoped to a chapter batch — prioritizes weak/tapped words from those chapters. */
+  createBatchSession(
+    state: UserVocabularyState,
+    bundle: ContentBundle,
+    chapterStart: number,
+    chapterEnd: number,
+    ctx: ReviewContext = {},
+  ): ReviewSession {
+    const limit = Math.min(
+      REVIEW_CONFIG.maxSessionSize,
+      Math.max(1, ctx.limit ?? REVIEW_CONFIG.defaultSessionSize),
+    );
+    const batchLemmas = lemmasInChapterRange(bundle, chapterStart, chapterEnd);
+    const batchPhrases = phrasesInChapterRange(bundle, chapterStart, chapterEnd);
+    const now = ctx.now ?? new Date();
+
+    const scored: ReviewCandidate[] = [];
+    for (const row of Object.values(state.lemmas)) {
+      if (!batchLemmas.has(row.lemmaId)) continue;
+      if (row.encounterCount <= 0 && !row.saved) continue;
+      const entry = bundle.lexicon.find((l) => l.lemmaId === row.lemmaId);
+      if (!isReviewableLemma(row, entry)) continue;
+      if (!isDue(row.dueAt, now) && row.reviewCount > 0 && row.tapCount === 0) continue;
+      scored.push(scoreLemma(row, entry, false));
+    }
+    for (const row of Object.values(state.phrases)) {
+      if (!batchPhrases.has(row.phraseId)) continue;
+      if (row.encounterCount <= 0 && !row.saved) continue;
+      scored.push(scorePhrase(row, false));
+    }
+
+    scored.sort((a, b) => b.priority - a.priority || a.id.localeCompare(b.id));
+    const items = scored
+      .slice(0, limit)
+      .map((c) => this.toPrompt(state, c))
+      .filter((p): p is ReviewPrompt => p !== null);
+    return { items, dueCount: scored.length };
+  }
+
+  batchRecapCopy(chapterStart: number, chapterEnd: number, session: ReviewSession): HomeReviewCopy {
+    const n = session.items.length;
+    if (n === 0) {
+      return {
+        headline: `Chapters ${chapterStart}–${chapterEnd} recap`,
+        detail: 'Nothing weak stood out — nice reading.',
+        cta: null,
+        readyCount: 0,
+      };
+    }
+    return {
+      headline: `Recap: chapters ${chapterStart}–${chapterEnd}`,
+      detail: `${n} word${n === 1 ? '' : 's'} worth a second look before you continue.`,
       cta: 'Review',
       readyCount: n,
     };
@@ -369,6 +427,32 @@ function phrasesInChapter(chapter: Chapter): Set<string> {
         ids.add(phraseIdFromSurface(phrase.surface));
       }
     }
+  }
+  return ids;
+}
+
+function lemmasInChapterRange(
+  bundle: ContentBundle,
+  chapterStart: number,
+  chapterEnd: number,
+): Set<string> {
+  const ids = new Set<string>();
+  for (const chapter of bundle.chapters.values()) {
+    if (chapter.number < chapterStart || chapter.number > chapterEnd) continue;
+    for (const id of lemmasInChapter(chapter)) ids.add(id);
+  }
+  return ids;
+}
+
+function phrasesInChapterRange(
+  bundle: ContentBundle,
+  chapterStart: number,
+  chapterEnd: number,
+): Set<string> {
+  const ids = new Set<string>();
+  for (const chapter of bundle.chapters.values()) {
+    if (chapter.number < chapterStart || chapter.number > chapterEnd) continue;
+    for (const id of phrasesInChapter(chapter)) ids.add(id);
   }
   return ids;
 }

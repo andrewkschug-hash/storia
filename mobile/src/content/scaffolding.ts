@@ -10,8 +10,9 @@ export function scaffoldingBand(chapterNumber: number): ScaffoldingBand {
   return 'a2';
 }
 
+/** Comprehension checks plot understanding — keep questions in English until A2. */
 export function comprehensionUsesItalianPrompt(chapterNumber: number): boolean {
-  return chapterNumber >= 6;
+  return chapterNumber >= 25;
 }
 
 export function recapItalianPrimary(chapterNumber: number): boolean {

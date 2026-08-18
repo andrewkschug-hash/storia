@@ -80,9 +80,11 @@ describe('Phase 9 scaffolding fade', () => {
     expect(scaffoldingBand(30)).toBe('a2');
   });
 
-  it('introduces Italian comprehension from chapter 6', () => {
+  it('keeps comprehension questions in English through A1 and A1+', () => {
     expect(comprehensionUsesItalianPrompt(5)).toBe(false);
-    expect(comprehensionUsesItalianPrompt(6)).toBe(true);
+    expect(comprehensionUsesItalianPrompt(6)).toBe(false);
+    expect(comprehensionUsesItalianPrompt(24)).toBe(false);
+    expect(comprehensionUsesItalianPrompt(25)).toBe(true);
   });
 
   it('ramps questionIt across A1 chapters', () => {
@@ -127,8 +129,8 @@ describe('Phase 9 review nudge', () => {
       lexicon: [{ lemmaId: 'casa', introducedChapter: 1, italian: 'casa', english: 'house' }],
     } as never;
     const copy = new ReviewService(bundle).chapterNudgeCopy(1, bundle, { lemmas: {}, phrases: {} });
-    expect(copy.readyCount).toBeGreaterThan(0);
-    expect(copy.headline).toMatch(/from this chapter/);
+    expect(copy.readyCount).toBe(5);
+    expect(copy.headline).toMatch(/Review 5 key words/);
   });
 });
 

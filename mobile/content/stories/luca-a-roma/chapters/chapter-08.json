@@ -12,7 +12,8 @@
   ],
   "characterIds": [
     "luca",
-    "sofia"
+    "sofia",
+    "padrone"
   ],
   "events": [
     {
@@ -20,15 +21,16 @@
       "summary": "Luca asks about work at a café and waits for an answer.",
       "characterIds": [
         "luca",
-        "sofia"
+        "sofia",
+        "padrone"
       ],
       "locationIds": [
         "lavoro-caffe",
         "quartiere"
       ],
       "rememberedFacts": [
-        "Luca is looking for work at a café",
-        "Sofia told him to ask there"
+        "Luca asks about work at a café",
+        "The café owner is not sure yet"
       ]
     }
   ],
@@ -64,24 +66,30 @@
         },
         {
           "id": "s03",
-          "text": "Sofia aiuta Luca.",
+          "text": "Ieri Sofia dice: Chiedi al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "ieri",
             "sofia",
-            "aiutare",
-            "luca"
+            "dire",
+            "chiedere",
+            "al",
+            "caffe"
           ]
         },
         {
           "id": "s04",
-          "text": "Chiedi al caffè.",
-          "speakerId": "sofia",
-          "kind": "dialogue",
+          "text": "Luca ricorda le parole di Sofia.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "chiedere",
-            "al",
-            "caffe"
+            "luca",
+            "ricordare",
+            "le",
+            "parola",
+            "di",
+            "sofia"
           ]
         }
       ]
@@ -175,7 +183,7 @@
         {
           "id": "s11",
           "text": "Non so.",
-          "speakerId": "luca",
+          "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
             "non",
@@ -194,7 +202,7 @@
         {
           "id": "s12",
           "text": "Aspetta un momento.",
-          "speakerId": "sofia",
+          "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
             "aspettare",

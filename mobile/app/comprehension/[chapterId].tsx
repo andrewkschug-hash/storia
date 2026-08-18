@@ -24,6 +24,7 @@ import type {
   ProductionSelfAssessment,
 } from '@/src/progress/types';
 import { comprehensionUsesItalianPrompt } from '@/src/content/scaffolding';
+import { grammarNoteForChapter, isLessonBatchEnd } from '@/src/content/lessonBatches';
 import {
   advanceProduction,
   afterComprehensionResults,
@@ -105,6 +106,12 @@ export default function ComprehensionScreen() {
     const resolvedStoryId = storyId ?? chapter?.storyId;
     if (!resolvedStoryId) {
       router.replace('/(tabs)/home' as import('expo-router').Href);
+      return;
+    }
+    if (isLessonBatchEnd(chapterNumber) && grammarNoteForChapter(chapterNumber)) {
+      router.replace(
+        `/grammar-note?story=${encodeURIComponent(resolvedStoryId)}&chapter=${chapterNumber}` as import('expo-router').Href,
+      );
       return;
     }
     if (
@@ -530,6 +537,7 @@ export default function ComprehensionScreen() {
               sourceSentence={chapter.paragraphs
                 .flatMap((paragraph) => paragraph.sentences)
                 .find((sentence) => sentence.id === productionExercises[productionIndex].sourceSentenceId)}
+              lexiconById={getContentBundle(storyId ?? chapter.storyId).lexiconById}
               onAssessed={(assessment) => {
                 const exerciseId = productionExercises[productionIndex]?.exerciseId;
                 if (!exerciseId) return;
