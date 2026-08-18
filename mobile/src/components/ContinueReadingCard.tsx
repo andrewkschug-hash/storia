@@ -28,7 +28,7 @@ export function ContinueReadingCard({
       style={[
         styles.card,
         {
-          backgroundColor: colors.backgroundElevated,
+          backgroundColor: colors.readerSurface,
           borderColor: colors.border,
         },
       ]}>

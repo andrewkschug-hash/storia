@@ -6,14 +6,11 @@ import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
-export type PublicSectionId = 'why' | 'how' | 'journey';
-
 type Props = {
-  onScrollToSection?: (id: PublicSectionId) => void;
   continueHref?: Href | null;
 };
 
-export function PublicNav({ onScrollToSection, continueHref }: Props) {
+export function PublicNav({ continueHref }: Props) {
   const { colors } = useTheme();
   const layout = useLayout();
   const [open, setOpen] = useState(false);
@@ -23,19 +20,6 @@ export function PublicNav({ onScrollToSection, continueHref }: Props) {
     setOpen(false);
     router.push(href);
   };
-
-  const scroll = (id: PublicSectionId) => {
-    setOpen(false);
-    onScrollToSection?.(id);
-  };
-
-  const links = (
-    <>
-      <NavText label="How it works" onPress={() => scroll('how')} colors={colors} />
-      <NavText label="Why it's different" onPress={() => scroll('why')} colors={colors} />
-      <NavText label="Try walkthrough" onPress={() => go('/walkthrough')} colors={colors} />
-    </>
-  );
 
   return (
     <View
@@ -58,22 +42,6 @@ export function PublicNav({ onScrollToSection, continueHref }: Props) {
       </Pressable>
 
       {!compact ? (
-        <View style={styles.mid}>{links}</View>
-      ) : (
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={open ? 'Close menu' : 'Open menu'}
-          accessibilityState={{ expanded: open }}
-          onPress={() => setOpen((value) => !value)}
-          style={({ pressed }) => [
-            styles.menuBtn,
-            { borderColor: colors.border, opacity: pressed ? 0.8 : 1 },
-          ]}>
-          <Text style={[Typography.label, { color: colors.text }]}>{open ? 'Close' : 'Menu'}</Text>
-        </Pressable>
-      )}
-
-      {!compact ? (
         <View style={styles.right}>
           {continueHref ? (
             <Pressable
@@ -84,7 +52,7 @@ export function PublicNav({ onScrollToSection, continueHref }: Props) {
                 styles.primary,
                 { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
               ]}>
-              <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue learning</Text>
+              <Text style={[Typography.button, { color: colors.onTint }]}>Continue</Text>
             </Pressable>
           ) : (
             <>
@@ -103,12 +71,24 @@ export function PublicNav({ onScrollToSection, continueHref }: Props) {
                   styles.primary,
                   { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>Start learning</Text>
+                <Text style={[Typography.button, { color: colors.onTint }]}>Start</Text>
               </Pressable>
             </>
           )}
         </View>
-      ) : null}
+      ) : (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={open ? 'Close menu' : 'Open menu'}
+          accessibilityState={{ expanded: open }}
+          onPress={() => setOpen((value) => !value)}
+          style={({ pressed }) => [
+            styles.menuBtn,
+            { borderColor: colors.border, opacity: pressed ? 0.8 : 1 },
+          ]}>
+          <Text style={[Typography.label, { color: colors.text }]}>{open ? 'Close' : 'Menu'}</Text>
+        </Pressable>
+      )}
 
       {compact && open ? (
         <View
@@ -116,17 +96,13 @@ export function PublicNav({ onScrollToSection, continueHref }: Props) {
             styles.dropdown,
             { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
           ]}>
-          {links}
+          <NavText label="Try walkthrough" onPress={() => go('/walkthrough')} colors={colors} />
           {continueHref ? (
             <NavText label="Continue learning" onPress={() => go(continueHref)} colors={colors} />
           ) : (
             <>
               <NavText label="Log in" onPress={() => go('/account?mode=signin' as Href)} colors={colors} />
-              <NavText
-                label="Start learning"
-                onPress={() => go('/account?mode=signup' as Href)}
-                colors={colors}
-              />
+              <NavText label="Start learning" onPress={() => go('/account?mode=signup' as Href)} colors={colors} />
             </>
           )}
         </View>
@@ -166,13 +142,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     gap: Spacing.sm,
     zIndex: 2,
-  },
-  mid: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.lg,
-    flex: 1,
-    justifyContent: 'center',
   },
   right: {
     flexDirection: 'row',

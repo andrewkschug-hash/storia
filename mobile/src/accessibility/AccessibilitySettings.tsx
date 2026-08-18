@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import type { AccessibilitySettings, ColorMode, LineSpacing, TextSize } from '@/src/accessibility/types';
 import { Radii, Spacing } from '@/src/theme/tokens';
+import { useSystemColorScheme } from '@/src/theme/useSystemColorScheme';
 
 function Chip<T extends string>({
   label,
@@ -34,11 +35,19 @@ function Chip<T extends string>({
 }
 
 export function AccessibilitySettings() {
-  const { colors, type, settings, updateSettings } = useAccessibility();
+  const { colors, type, settings, scheme, updateSettings } = useAccessibility();
+  const systemScheme = useSystemColorScheme();
 
   const set = (patch: Partial<AccessibilitySettings>) => {
     void updateSettings(patch);
   };
+
+  const appearanceHint =
+    settings.colorMode === 'system'
+      ? `System follows your device (currently ${systemScheme}).`
+      : settings.colorMode === 'dark'
+        ? 'Dark mode is always on.'
+        : 'Light mode is always on.';
 
   return (
     <View>
@@ -57,6 +66,9 @@ export function AccessibilitySettings() {
           <Chip key={value} label={label} selected={settings.colorMode === value} onPress={() => set({ colorMode: value })} />
         ))}
       </View>
+      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+        {appearanceHint} Active theme: {scheme}.
+      </Text>
       <View style={styles.row}>
         <Chip
           label="High contrast"

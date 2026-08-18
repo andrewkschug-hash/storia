@@ -4,6 +4,8 @@ import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { ChapterStatus } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
+import type { ReadingProgressRecord } from '@/src/progress/types';
+import { buildStoryPath, type StoryPathItem } from '@/src/content/storyPath';
 import {
   insertExtraStoryGroups,
   type ExtraStoryRow,
@@ -21,9 +23,13 @@ type Props = {
   chapters: ChapterListItem[];
   currentChapterId: string;
   colors: ThemeColors;
+  storyId?: string;
+  progress?: ReadingProgressRecord | null;
   extraSections?: ExtraStorySection[];
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
   onOpenStoryChapter?: (storyId: string, chapterId: string) => void;
+  onOpenGrammar?: (batchEnd: number) => void;
+  onOpenRecap?: (batchEnd: number) => void;
 };
 
 export function StoriesLevelList({
@@ -31,9 +37,13 @@ export function StoriesLevelList({
   chapters,
   currentChapterId,
   colors,
+  storyId,
+  progress,
   extraSections,
   onOpenChapter,
   onOpenStoryChapter,
+  onOpenGrammar,
+  onOpenRecap,
 }: Props) {
   const { type } = useTheme();
   const groups = useMemo(() => {
@@ -92,7 +102,7 @@ export function StoriesLevelList({
             }}
             onChapterPress={(chapter) => {
               if (chapter.status === 'locked') {
-                showHint(unlockHintForChapter(chapter, chapters));
+                showHint(unlockHintForChapter(chapter, chapters, storyId, progress));
                 return;
               }
               const extraStory = group.stories?.find((story) =>
@@ -104,7 +114,25 @@ export function StoriesLevelList({
               }
               onOpenChapter(chapter.id);
             }}
+            onPathPress={(item) => {
+              if (item.kind === 'chapter') {
+                if (item.chapter.status === 'locked') {
+                  showHint(unlockHintForChapter(item.chapter, chapters, storyId, progress));
+                  return;
+                }
+                onOpenChapter(item.chapter.id);
+                return;
+              }
+              if (item.status === 'locked') {
+                showHint(unlockHintForPathItem(item));
+                return;
+              }
+              if (item.kind === 'grammar') onOpenGrammar?.(item.batchEnd);
+              if (item.kind === 'recap') onOpenRecap?.(item.batchEnd);
+            }}
             onListen={(chapterId) => onOpenChapter(chapterId, true)}
+            storyId={storyId}
+            progress={progress}
           />
         );
       })}
@@ -117,20 +145,30 @@ function LevelSection({
   expanded,
   currentChapterId,
   colors,
+  storyId,
+  progress,
   onToggle,
   onChapterPress,
+  onPathPress,
   onListen,
 }: {
   group: LevelGroup;
   expanded: boolean;
   currentChapterId: string;
   colors: ThemeColors;
+  storyId?: string;
+  progress?: ReadingProgressRecord | null;
   onToggle: () => void;
   onChapterPress: (chapter: ChapterListItem) => void;
+  onPathPress: (item: StoryPathItem) => void;
   onListen: (chapterId: string) => void;
 }) {
   const { type, minTouchTarget } = useTheme();
   const shake = useRef(new Animated.Value(0)).current;
+  const pathItems = useMemo(() => {
+    if (!storyId || group.stories) return null;
+    return buildStoryPath(group.chapters as ChapterListItem[], progress ?? null, storyId);
+  }, [storyId, group.stories, group.chapters, progress]);
 
   const triggerShake = () => {
     shake.setValue(0);
@@ -203,17 +241,59 @@ function LevelSection({
                 onOpenChapter={(chapter) => onChapterPress(chapter)}
               />
             ))
-          : group.chapters.map((chapter) => (
-            <ChapterRow
-              key={chapter.id}
-              chapter={chapter}
-              isCurrent={chapter.id === currentChapterId}
-              colors={colors}
-              onPress={() => onChapterPress(chapter)}
-              onListen={() => onListen(chapter.id)}
-              onLockedPress={() => onChapterPress(chapter)}
-            />
-          ))
+          : pathItems
+            ? pathItems.map((item) => {
+                if (item.kind === 'chapter') {
+                  return (
+                    <ChapterRow
+                      key={item.chapter.id}
+                      chapter={item.chapter}
+                      isCurrent={item.chapter.id === currentChapterId}
+                      colors={colors}
+                      onPress={() => onPathPress(item)}
+                      onListen={() => onListen(item.chapter.id)}
+                      onLockedPress={() => onPathPress(item)}
+                    />
+                  );
+                }
+                if (item.kind === 'grammar') {
+                  return (
+                    <CheckpointRow
+                      key={item.id}
+                      eyebrow="Grammar"
+                      title={item.title}
+                      subtitle={`After chapters ${item.batchStart}–${item.batchEnd}`}
+                      status={item.status}
+                      colors={colors}
+                      icon="book"
+                      onPress={() => onPathPress(item)}
+                    />
+                  );
+                }
+                return (
+                  <CheckpointRow
+                    key={item.id}
+                    eyebrow="Review"
+                    title={`Chapters ${item.batchStart}–${item.batchEnd}`}
+                    subtitle="Practice words from this batch"
+                    status={item.status}
+                    colors={colors}
+                    icon="review"
+                    onPress={() => onPathPress(item)}
+                  />
+                );
+              })
+            : group.chapters.map((chapter) => (
+                <ChapterRow
+                  key={chapter.id}
+                  chapter={chapter as ChapterListItem}
+                  isCurrent={chapter.id === currentChapterId}
+                  colors={colors}
+                  onPress={() => onChapterPress(chapter as ChapterListItem)}
+                  onListen={() => onListen(chapter.id)}
+                  onLockedPress={() => onChapterPress(chapter as ChapterListItem)}
+                />
+              ))
         : null}
     </View>
   );
@@ -269,6 +349,73 @@ function ExtraStoryBlock({
           ))
         : null}
     </View>
+  );
+}
+
+function CheckpointRow({
+  eyebrow,
+  title,
+  subtitle,
+  status,
+  colors,
+  icon,
+  onPress,
+}: {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  status: ChapterStatus;
+  colors: ThemeColors;
+  icon: 'book' | 'review';
+  onPress: () => void;
+}) {
+  const { type, minTouchTarget } = useTheme();
+  const locked = status === 'locked';
+  const shake = useRef(new Animated.Value(0)).current;
+
+  const triggerShake = () => {
+    shake.setValue(0);
+    Animated.sequence([
+      Animated.timing(shake, { toValue: 5, duration: 35, useNativeDriver: true }),
+      Animated.timing(shake, { toValue: -5, duration: 35, useNativeDriver: true }),
+      Animated.timing(shake, { toValue: 0, duration: 35, useNativeDriver: true }),
+    ]).start();
+  };
+
+  const symbolName =
+    icon === 'book'
+      ? ({ ios: 'text.book.closed.fill', android: 'menu_book', web: 'menu_book' } as const)
+      : ({ ios: 'arrow.triangle.2.circlepath', android: 'sync', web: 'sync' } as const);
+
+  return (
+    <Animated.View style={{ transform: [{ translateX: shake }] }}>
+      <Pressable
+        onPress={() => {
+          if (locked) {
+            triggerShake();
+          }
+          onPress();
+        }}
+        style={({ pressed }) => [
+          styles.checkpointRow,
+          {
+            backgroundColor: colors.readerSurface,
+            borderColor: status === 'completed' ? colors.tint : colors.accent,
+            opacity: locked ? 0.55 : pressed ? 0.88 : 1,
+            minHeight: minTouchTarget,
+          },
+        ]}>
+        <View style={styles.checkpointIcon}>
+          <SymbolView name={symbolName} tintColor={colors.accent} size={20} />
+        </View>
+        <View style={styles.chapterMeta}>
+          <Text style={[type.caption, { color: colors.accent }]}>{eyebrow}</Text>
+          <Text style={[type.label, { color: colors.text, marginTop: 2 }]}>{title}</Text>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>{subtitle}</Text>
+        </View>
+        <StatusIcon status={status} color={statusIconColor(status, colors)} />
+      </Pressable>
+    </Animated.View>
   );
 }
 
@@ -402,9 +549,33 @@ function buildLevelGroups(
     });
 }
 
-function unlockHintForChapter(chapter: ChapterListItem, chapters: ChapterListItem[]): string {
+function unlockHintForChapter(
+  chapter: ChapterListItem,
+  chapters: ChapterListItem[],
+  storyId?: string,
+  progress?: ReadingProgressRecord | null,
+): string {
+  if (storyId && progress && chapter.number > 1 && (chapter.number - 1) % 5 === 0) {
+    const batchEnd = chapter.number - 1;
+    const grammarId = `${storyId}:grammar:${batchEnd}`;
+    const recapId = `${storyId}:recap:${batchEnd}`;
+    const done = new Set(progress.completedCheckpointIds ?? []);
+    if (!done.has(grammarId)) {
+      return `Complete the Grammar review after Ch. ${batchEnd} first`;
+    }
+    if (!done.has(recapId)) {
+      return `Complete the batch Review after Ch. ${batchEnd} first`;
+    }
+  }
   const previous = chapters.find((c) => c.number === chapter.number - 1);
   return previous ? `Finish Ch. ${previous.number} comprehension to unlock` : 'Locked';
+}
+
+function unlockHintForPathItem(item: Extract<StoryPathItem, { kind: 'grammar' | 'recap' }>): string {
+  if (item.kind === 'grammar') {
+    return `Finish Ch. ${item.batchEnd} comprehension to unlock`;
+  }
+  return `Complete the Grammar step for chapters ${item.batchStart}–${item.batchEnd} first`;
 }
 
 function unlockHintForLevel(group: LevelGroup, chapters: ChapterListItem[]): string {
@@ -448,6 +619,22 @@ const styles = StyleSheet.create({
   chapterMeta: {
     flex: 1,
     paddingRight: Spacing.md,
+  },
+  checkpointRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: Radii.md,
+    borderWidth: 1.5,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.md,
+    marginBottom: Spacing.sm,
+    marginLeft: Spacing.sm,
+    gap: Spacing.sm,
+  },
+  checkpointIcon: {
+    width: 28,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   chapterActions: {
     flexDirection: 'row',

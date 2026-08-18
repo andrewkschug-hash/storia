@@ -22,6 +22,7 @@ import {
 } from '@/src/progress/continueReading';
 import { __resetProgressService, __setProgressRepository, getProgressService } from '@/src/progress';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
+import { completeBatchCheckpointsAfterChapter } from '@/src/progress/testHelpers';
 import { createInitialProgress } from '@/src/progress/types';
 import { skipProduction } from '@/src/production/flow';
 import { findSentenceById } from '@/src/vocabulary/storyExamples';
@@ -46,6 +47,7 @@ async function completeAllChapters(storyId: string, score = 1) {
       attempts: 1,
     }));
     await service.finishComprehensionAndComplete(chapter.id, answers);
+    await completeBatchCheckpointsAfterChapter(service, storyId, chapter.number);
   }
 }
 
@@ -211,6 +213,7 @@ describe('Phase 12O readiness and extensibility', () => {
           attempts: 1,
         })),
       );
+      await completeBatchCheckpointsAfterChapter(luca, LUCA_STORY_ID, chapter.number);
     }
     const lucaOnly = await evaluateLearnerCrossStoryA1();
     expect(lucaOnly.status === 'READY' || lucaOnly.status === 'CONFIDENT').toBe(false);

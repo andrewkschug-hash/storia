@@ -18,6 +18,7 @@ import {
 } from '@/src/progress';
 import { getContinueReadingTarget } from '@/src/progress/continueReading';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
+import { completeBatchCheckpointsAfterChapter } from '@/src/progress/testHelpers';
 import { loadStoryProgressView } from '@/src/progress/useReadingProgress';
 import { buildLexiconIndexFromBundle } from '@/src/vocabulary/dictionaryIndex';
 import { resolveSentenceLookup, resolveTap } from '@/src/vocabulary/resolveTap';
@@ -73,7 +74,9 @@ async function completeChapter(
     correct: opts.score >= 2 / 3,
     attempts: opts.score >= 2 / 3 ? 1 : 2,
   }));
-  return service.finishComprehensionAndComplete(chapterId, answers);
+  const progress = await service.finishComprehensionAndComplete(chapterId, answers);
+  await completeBatchCheckpointsAfterChapter(service, storyId, chapter.number);
+  return progress;
 }
 
 async function completeStory(

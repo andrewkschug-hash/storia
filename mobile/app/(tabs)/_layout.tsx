@@ -3,12 +3,10 @@ import { Tabs } from 'expo-router';
 import { Platform, useWindowDimensions } from 'react-native';
 
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
-import { useColorScheme } from '@/components/useColorScheme';
-import { Colors } from '@/src/theme/tokens';
+import { useTheme } from '@/src/theme/useTheme';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme() ?? 'light';
-  const colors = Colors[colorScheme];
+  const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const compactTabs = width < 360;
 

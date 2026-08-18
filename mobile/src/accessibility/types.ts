@@ -12,7 +12,7 @@ export type AccessibilitySettings = {
 };
 
 export const DEFAULT_ACCESSIBILITY_SETTINGS: AccessibilitySettings = {
-  colorMode: 'system',
+  colorMode: 'dark',
   highContrast: false,
   textSize: 'default',
   lineSpacing: 'default',

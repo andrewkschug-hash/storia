@@ -6,7 +6,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { LUCA_STORY_ID, getChapterByNumber, getContentBundle } from '@/src/content';
 import { batchRangeForChapter } from '@/src/content/lessonBatches';
+import { recapCheckpointId } from '@/src/content/storyPath';
 import { readerHref } from '@/src/content/storyHrefs';
+import { getProgressService } from '@/src/progress';
 import { getReviewService } from '@/src/review';
 import type { ReviewPrompt } from '@/src/review/ReviewService';
 import { getVocabularyService } from '@/src/vocabulary';
@@ -15,21 +17,37 @@ import { useTheme } from '@/src/theme/useTheme';
 
 type Phase = 'intro' | 'prompt' | 'feedback' | 'done';
 
-function continueAfterBatch(storyId: string, chapterNumber: number) {
-  if (storyId === LUCA_STORY_ID && (chapterNumber === 20 || chapterNumber === 24)) {
-    router.replace(`/level-readiness?fromChapter=${chapterNumber}` as Href);
-    return;
-  }
-  const next = getChapterByNumber(chapterNumber + 1, storyId);
-  if (next) {
-    router.replace(readerHref(storyId, next.id));
-    return;
-  }
-  router.replace('/(tabs)/home' as Href);
+function continueAfterBatch(
+  storyId: string,
+  chapterNumber: number,
+  returnTo?: string,
+) {
+  void getProgressService(storyId)
+    .completeCheckpoint(recapCheckpointId(storyId, chapterNumber))
+    .then(() => {
+      if (returnTo === 'stories') {
+        router.replace('/(tabs)/stories' as Href);
+        return;
+      }
+      if (storyId === LUCA_STORY_ID && (chapterNumber === 20 || chapterNumber === 24)) {
+        router.replace(`/level-readiness?fromChapter=${chapterNumber}` as Href);
+        return;
+      }
+      const next = getChapterByNumber(chapterNumber + 1, storyId);
+      if (next) {
+        router.replace(readerHref(storyId, next.id));
+        return;
+      }
+      router.replace('/(tabs)/home' as Href);
+    });
 }
 
 export default function BatchRecapScreen() {
-  const { story, chapter } = useLocalSearchParams<{ story?: string; chapter?: string }>();
+  const { story, chapter, returnTo } = useLocalSearchParams<{
+    story?: string;
+    chapter?: string;
+    returnTo?: string;
+  }>();
   const storyId = typeof story === 'string' ? story : LUCA_STORY_ID;
   const chapterNumber = chapter ? Number(chapter) : 0;
   const { start, end } = batchRangeForChapter(chapterNumber);
@@ -86,9 +104,9 @@ export default function BatchRecapScreen() {
 
   useEffect(() => {
     if (!loading && phase === 'done') {
-      continueAfterBatch(storyId, chapterNumber);
+      continueAfterBatch(storyId, chapterNumber, returnTo);
     }
-  }, [loading, phase, storyId, chapterNumber]);
+  }, [loading, phase, storyId, chapterNumber, returnTo]);
 
   return (
     <AtmosphereBackground>
@@ -112,7 +130,7 @@ export default function BatchRecapScreen() {
             </Text>
             <View style={styles.row}>
               <Pressable
-                onPress={() => continueAfterBatch(storyId, chapterNumber)}
+                onPress={() => continueAfterBatch(storyId, chapterNumber, returnTo)}
                 style={({ pressed }) => [
                   styles.secondaryBtn,
                   { borderColor: colors.border, opacity: pressed ? 0.88 : 1, flex: 1 },

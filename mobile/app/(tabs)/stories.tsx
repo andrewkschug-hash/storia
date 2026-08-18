@@ -1,8 +1,7 @@
-import { router, useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, type Href } from 'expo-router';
 import { useCallback, useState } from 'react';
 import {
   ActivityIndicator,
-  Pressable,
   ScrollView,
   StyleSheet,
   Text,
@@ -11,21 +10,24 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
-import { ProgressBar } from '@/src/components/ProgressBar';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { StoriesLevelList, type ExtraStoryRow } from '@/src/components/StoriesLevelList';
+import {
+  StoriesContinueHero,
+  StoriesHeader,
+  StoryList,
+} from '@/src/components/storiesLibrary';
+import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { extraRowsFromCatalogStories } from '@/src/components/storiesLevelInsert';
 import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
-import { A2_PLUS_GENRE_ARC_ID, getNarrativeArc } from '@/src/content/catalog';
 import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
 import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
-import { Radii, Spacing } from '@/src/theme/tokens';
+import { Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function StoriesScreen() {
-  const { colors, type, minTouchTarget } = useTheme();
+  const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
   const journey = buildLearnerJourney();
@@ -109,7 +111,6 @@ export default function StoriesScreen() {
   const chapterPercent = progress
     ? service.getChapterReadingPercent(continueChapter, progress.lastSentenceId)
     : 0;
-  const completed = progress ? service.getCompletedCount(progress) : 0;
 
   const openLucaChapter = async (chapterId: string, listen = false) => {
     await service.openChapter(chapterId);
@@ -121,6 +122,13 @@ export default function StoriesScreen() {
     router.push(readerHref(storyId, chapterId));
   };
 
+  const resolvedA2PlusRows =
+    a2PlusStories.length > 0 && a2PlusRows.length > 0
+      ? a2PlusRows
+      : a2PlusStories.length > 0
+        ? extraRowsFromCatalogStories(a2PlusStories, 'A2+')
+        : [];
+
   return (
     <AtmosphereBackground>
       <ScrollView
@@ -130,112 +138,41 @@ export default function StoriesScreen() {
           flexGrow: 1,
         }}
         showsVerticalScrollIndicator={false}>
-        <ScreenContent>
-          <Text
-            style={[
-              type.heroTitle,
-              {
-                color: colors.text,
-                fontSize: layout.isPhone ? 26 : 32,
-                lineHeight: layout.isPhone ? 32 : 40,
-              },
-            ]}>
-            Stories
-          </Text>
-          <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-            Start with Luca a Roma. Luca Before Rome is hometown background.
-          </Text>
+        <ScreenContent
+          maxWidth={680}
+          style={{ paddingHorizontal: layout.isPhone ? 20 : 24 }}>
+          <StoriesHeader />
 
-          <Text style={[type.chapterEyebrow, { color: colors.tint, marginTop: Spacing.xl }]}>
-            Start here
-          </Text>
-          <Text style={[type.label, { color: colors.text, marginTop: Spacing.xs }]}>
-            {story.titleIt}
-          </Text>
-          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
-            {completed} of {story.chapters.length} chapters finished · {percent}% through the story
-          </Text>
-          <View style={{ marginTop: Spacing.md }}>
-            <ProgressBar progress={percent / 100} height={8} />
-          </View>
+          <StoriesContinueHero
+            chapterNumber={continueChapter.number}
+            chapterTitleIt={continueChapter.titleIt}
+            storyTitleIt={story.titleIt}
+            percentComplete={percent}
+            chapterPercent={chapterPercent}
+            hasProgress={Boolean(progress)}
+            onRead={() => void openLucaChapter(continueChapter.id)}
+            onListen={() => void openLucaChapter(continueChapter.id, true)}
+          />
 
-          <View
-            style={[
-              styles.continueCard,
-              {
-                backgroundColor: colors.backgroundElevated,
-                borderColor: colors.border,
-              },
-            ]}>
-            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
-              {progress ? 'Continue Luca a Roma' : 'Start Luca a Roma'}
-            </Text>
-            <Text style={[type.label, { color: colors.text, marginTop: Spacing.sm }]}>
-              Capitolo {continueChapter.number} · {continueChapter.titleIt}
-            </Text>
-            {chapterPercent > 0 && chapterPercent < 100 ? (
-              <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>
-                {chapterPercent}% through this chapter
-              </Text>
-            ) : null}
-            <View style={[styles.actionRow, layout.width < 360 && styles.actionRowCompact]}>
-              <Pressable
-                onPress={() => void openLucaChapter(continueChapter.id)}
-                style={({ pressed }) => [
-                  styles.primaryBtn,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
-                ]}>
-                <Text style={[type.button, { color: colors.onTint, fontSize: 14 }]}>Read</Text>
-              </Pressable>
-              <Pressable
-                onPress={() => void openLucaChapter(continueChapter.id, true)}
-                style={({ pressed }) => [
-                  styles.secondaryBtn,
-                  {
-                    borderColor: colors.border,
-                    backgroundColor: colors.background,
-                    opacity: pressed ? 0.88 : 1,
-                  },
-                ]}>
-                <Text style={[type.label, { color: colors.text }]}>Listen</Text>
-              </Pressable>
-            </View>
-          </View>
-
-          <StoriesLevelList
-            arcs={story.arcs}
-            chapters={chapterStatuses}
+          <StoryList
+            lucaTitleIt={story.titleIt}
+            chapterStatuses={chapterStatuses}
             currentChapterId={progress?.currentChapterId ?? continueChapter.id}
-            colors={colors}
-            extraSections={[
-              ...(beforeRomeRows.length
-                ? [
-                    {
-                      afterArcId: 'luca-a-roma-a1',
-                      id: 'luca-prima-di-roma',
-                      cefrLevel: 'A1',
-                      title: 'Luca Before Rome',
-                      stories: beforeRomeRows,
-                    },
-                  ]
-                : []),
-              ...(a2PlusStories.length
-                ? [
-                    {
-                      afterArcId: 'luca-a-roma-a2',
-                      id: A2_PLUS_GENRE_ARC_ID,
-                      cefrLevel: 'A2+',
-                      title: getNarrativeArc(A2_PLUS_GENRE_ARC_ID)?.title ?? 'A2+',
-                      stories:
-                        a2PlusRows.length > 0
-                          ? a2PlusRows
-                          : extraRowsFromCatalogStories(a2PlusStories, 'A2+'),
-                    },
-                  ]
-                : []),
-            ]}
+            progress={progress}
+            beforeRomeRows={beforeRomeRows}
+            a2PlusRows={resolvedA2PlusRows}
             onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
             onOpenStoryChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
+            onOpenGrammar={(batchEnd) => {
+              router.push(
+                `/grammar-note?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${batchEnd}&returnTo=stories` as Href,
+              );
+            }}
+            onOpenRecap={(batchEnd) => {
+              router.push(
+                `/batch-recap?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${batchEnd}&returnTo=stories` as Href,
+              );
+            }}
           />
         </ScreenContent>
       </ScrollView>
@@ -244,39 +181,6 @@ export default function StoriesScreen() {
 }
 
 const styles = StyleSheet.create({
-  continueCard: {
-    marginTop: Spacing.lg,
-    borderRadius: Radii.lg,
-    borderWidth: StyleSheet.hairlineWidth,
-    padding: Spacing.lg,
-  },
-  actionRow: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-    marginTop: Spacing.md,
-  },
-  actionRowCompact: {
-    flexWrap: 'wrap',
-  },
-  primaryBtn: {
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.sm,
-    borderRadius: 10,
-    minWidth: 88,
-    minHeight: 44,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  secondaryBtn: {
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.sm,
-    borderRadius: 10,
-    borderWidth: StyleSheet.hairlineWidth,
-    minWidth: 88,
-    minHeight: 44,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   center: {
     flex: 1,
     alignItems: 'center',

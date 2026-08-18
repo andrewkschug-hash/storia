@@ -98,7 +98,7 @@ export default function HomeScreen() {
           flexGrow: 1,
         }}
         showsVerticalScrollIndicator={false}>
-        <ScreenContent>
+        <ScreenContent maxWidth={680}>
           <View style={styles.topRow}>
             <Text
               style={[
@@ -117,23 +117,6 @@ export default function HomeScreen() {
               </Pressable>
             ) : null}
           </View>
-          <Text
-            style={[
-              type.heroTitle,
-              {
-                color: colors.text,
-                marginTop: Spacing.sm,
-                fontSize: layout.isPhone ? 26 : 32,
-                lineHeight: layout.isPhone ? 32 : 40,
-              },
-            ]}>
-            {story.titleIt}
-          </Text>
-          <Text
-            style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}
-            numberOfLines={layout.isPhone ? 2 : 1}>
-            {story.synopsis}
-          </Text>
 
           <View style={styles.section}>
             <ContinueReadingCard
@@ -234,7 +217,7 @@ function StatChip({
     <View
       style={[
         styles.statChip,
-        { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+        { backgroundColor: colors.readerSurface, borderColor: colors.border },
       ]}>
       <View style={styles.statValueRow}>
         {showFlame ? (
@@ -279,7 +262,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   section: {
-    marginTop: Spacing.xl,
+    marginTop: Spacing.lg,
   },
   browseLink: {
     alignSelf: 'flex-start',

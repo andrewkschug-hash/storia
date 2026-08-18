@@ -8,7 +8,7 @@ import { Typography } from '@/src/theme/tokens';
 describe('accessibility settings', () => {
   it('falls back to defaults for junk input', () => {
     expect(parseAccessibilitySettings(null)).toEqual(DEFAULT_ACCESSIBILITY_SETTINGS);
-    expect(parseAccessibilitySettings({ colorMode: 'neon', textSize: 'huge' }).colorMode).toBe('system');
+    expect(parseAccessibilitySettings({ colorMode: 'neon', textSize: 'huge' }).colorMode).toBe('dark');
     expect(parseAccessibilitySettings({ colorMode: 'dark', highContrast: true }).highContrast).toBe(true);
   });
 

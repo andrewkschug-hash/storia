@@ -49,6 +49,8 @@ export type ReadingProgressRecord = {
   comprehensionByChapter: Record<string, ChapterComprehensionRecord>;
   /** Optional production reinforcement. Missing/empty does not block completion. */
   productionByChapter?: Record<string, ChapterProductionRecord>;
+  /** Grammar and batch-recap nodes on the story path (e.g. luca-a-roma:grammar:5). */
+  completedCheckpointIds?: string[];
   /** Learner-chosen CEFR band. Never auto-promoted from one good chapter. */
   currentCEFRLevel: string;
 };
@@ -78,6 +80,7 @@ export function createInitialProgress(
     lastStreakDate: null,
     comprehensionByChapter: {},
     productionByChapter: {},
+    completedCheckpointIds: [],
     currentCEFRLevel: 'A1',
   };
 }
@@ -90,6 +93,7 @@ export function normalizeProgress(
     ...record,
     comprehensionByChapter: record.comprehensionByChapter ?? {},
     productionByChapter: record.productionByChapter ?? {},
+    completedCheckpointIds: record.completedCheckpointIds ?? [],
     currentCEFRLevel: record.currentCEFRLevel ?? 'A1',
     narrativeArc: record.narrativeArc ?? narrativeArc,
   };

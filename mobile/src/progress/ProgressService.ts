@@ -1,4 +1,10 @@
 import type { Chapter, Story } from '@/src/content/schemas';
+import { LUCA_STORY_ID } from '@/src/content/catalog';
+import {
+  isFirstChapterAfterBatch,
+  legacyBatchEndsForProgress,
+  recapBlocksChapter,
+} from '@/src/content/storyPath';
 import { unlockAllChapters } from '@/src/progress/unlockAll';
 import {
   createInitialProgress,
@@ -67,6 +73,17 @@ export class ProgressService {
 
     const previous = this.story.chapters.find((c) => c.number === chapter.number - 1);
     if (!previous || !progress.completedChapterIds.includes(previous.id)) {
+      return 'locked';
+    }
+
+    const chapterNumberById = new Map(
+      [...this.chaptersById.values()].map((c) => [c.id, c.number] as const),
+    );
+    if (
+      this.story.id === LUCA_STORY_ID &&
+      isFirstChapterAfterBatch(chapter.number) &&
+      recapBlocksChapter(progress, this.story.id, chapter.number, chapterNumberById)
+    ) {
       return 'locked';
     }
 
@@ -279,6 +296,33 @@ export class ProgressService {
     };
     await this.repo.save(next);
     return next;
+  }
+
+  async completeCheckpoint(checkpointId: string): Promise<ReadingProgressRecord> {
+    const progress = await this.getOrCreate();
+    const completed = new Set(progress.completedCheckpointIds ?? []);
+    completed.add(checkpointId);
+    const next: ReadingProgressRecord = {
+      ...progress,
+      completedCheckpointIds: [...completed],
+      lastOpenedAt: new Date().toISOString(),
+    };
+    await this.repo.save(next);
+    return next;
+  }
+
+  legacyBatchEnds(progress: ReadingProgressRecord): number[] {
+    const chapterNumberById = new Map(
+      [...this.chaptersById.values()].map((c) => [c.id, c.number] as const),
+    );
+    return legacyBatchEndsForProgress(progress, chapterNumberById);
+  }
+
+  isRecapCheckpointComplete(progress: ReadingProgressRecord, batchEnd: number): boolean {
+    const chapterNumberById = new Map(
+      [...this.chaptersById.values()].map((c) => [c.id, c.number] as const),
+    );
+    return !recapBlocksChapter(progress, this.story.id, batchEnd + 1, chapterNumberById);
   }
 
   private nextStreak(progress: ReadingProgressRecord): number {

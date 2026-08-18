@@ -1,5 +1,4 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { useColorScheme as useSystemColorScheme } from 'react-native';
 
 import {
   loadAccessibilitySettings,
@@ -12,6 +11,7 @@ import {
   type AccessibilitySettings,
 } from '@/src/accessibility/types';
 import { Colors, HighContrastColors, type ColorSchemeName, type ThemeColors } from '@/src/theme/tokens';
+import { useSystemColorScheme } from '@/src/theme/useSystemColorScheme';
 
 type AccessibilityContextValue = {
   ready: boolean;
@@ -25,9 +25,9 @@ type AccessibilityContextValue = {
 
 const AccessibilityContext = createContext<AccessibilityContextValue | null>(null);
 
-function resolveScheme(colorMode: AccessibilitySettings['colorMode'], system: string | null | undefined): ColorSchemeName {
+function resolveScheme(colorMode: AccessibilitySettings['colorMode'], system: ColorSchemeName): ColorSchemeName {
   if (colorMode === 'light' || colorMode === 'dark') return colorMode;
-  return system === 'dark' ? 'dark' : 'light';
+  return system;
 }
 
 export function AccessibilityProvider({ children }: { children: ReactNode }) {
@@ -68,8 +68,8 @@ export function AccessibilityProvider({ children }: { children: ReactNode }) {
 const FALLBACK: AccessibilityContextValue = {
   ready: true,
   settings: DEFAULT_ACCESSIBILITY_SETTINGS,
-  scheme: 'light',
-  colors: Colors.light,
+  scheme: 'dark',
+  colors: Colors.dark,
   type: scaleTypography('default', 'default'),
   minTouchTarget: 44,
   updateSettings: async () => undefined,
