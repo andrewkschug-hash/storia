@@ -347,7 +347,7 @@ export default function AccountScreen() {
                   <TextInput
                     value={password}
                     onChangeText={setPassword}
-                    placeholder="At least 6 characters"
+                    placeholder={mode === 'signup' ? 'At least 6 characters' : 'Your password'}
                     placeholderTextColor={tone.caption}
                     secureTextEntry
                     autoCapitalize="none"
