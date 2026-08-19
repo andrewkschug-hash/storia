@@ -236,6 +236,16 @@ export function loadContentBundle(inputs: RawInputs): ContentBundle {
           `Question "${question.id}" chapterId "${question.chapterId}" does not match chapter "${source.id}"`,
         );
       }
+      for (const sourceChapterId of question.sourceChapterIds ?? []) {
+        if (!chapters.has(sourceChapterId)) {
+          throw new ContentValidationError(
+            fileLabel,
+            null,
+            'questions.sourceChapterIds',
+            `Question "${question.id}" references unknown chapter "${sourceChapterId}"`,
+          );
+        }
+      }
     }
 
     const questionIds = source.questions.map((q) => q.id);

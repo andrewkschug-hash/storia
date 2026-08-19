@@ -8,10 +8,11 @@ type Props = {
   isPlaying: boolean;
   isChapterMode: boolean;
   chapterProgress?: { current: number; total: number } | null;
-  speed: 'normal' | 'slow';
+  speed: 'normal' | 'slow' | 'faster';
   onPlayPause: () => void;
   onStop: () => void;
-  onSetSpeed: (speed: 'normal' | 'slow') => void;
+  onRestart: () => void;
+  onSetSpeed: (speed: 'normal' | 'slow' | 'faster') => void;
   onContinueFromChapter: () => void;
 };
 
@@ -23,6 +24,7 @@ export function ReaderAudioBar({
   speed,
   onPlayPause,
   onStop,
+  onRestart,
   onSetSpeed,
   onContinueFromChapter,
 }: Props) {
@@ -65,6 +67,15 @@ export function ReaderAudioBar({
               <Text style={[type.label, { color: colors.textSecondary }]}>Stop</Text>
             </Pressable>
           ) : null}
+          {hasAudio ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Restart chapter audio"
+              onPress={onRestart}
+              style={({ pressed }) => [styles.secondaryBtn, { opacity: pressed ? 0.7 : 1 }]}>
+              <Text style={[type.label, { color: colors.textSecondary }]}>Restart</Text>
+            </Pressable>
+          ) : null}
 
           {hasAudio ? (
             <View
@@ -74,23 +85,6 @@ export function ReaderAudioBar({
               ]}
               accessibilityRole="radiogroup"
               accessibilityLabel="Playback speed">
-              <Pressable
-                accessibilityRole="radio"
-                accessibilityState={{ selected: speed === 'normal' }}
-                accessibilityLabel="Natural speed"
-                onPress={() => onSetSpeed('normal')}
-                style={[
-                  styles.segmentOption,
-                  speed === 'normal' && { backgroundColor: colors.tint },
-                ]}>
-                <Text
-                  style={[
-                    type.caption,
-                    { color: speed === 'normal' ? colors.onTint : colors.textSecondary },
-                  ]}>
-                  Natural
-                </Text>
-              </Pressable>
               <Pressable
                 accessibilityRole="radio"
                 accessibilityState={{ selected: speed === 'slow' }}
@@ -105,7 +99,41 @@ export function ReaderAudioBar({
                     type.caption,
                     { color: speed === 'slow' ? colors.onTint : colors.textSecondary },
                   ]}>
-                  Slow
+                  0.75x
+                </Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="radio"
+                accessibilityState={{ selected: speed === 'normal' }}
+                accessibilityLabel="Medium speed"
+                onPress={() => onSetSpeed('normal')}
+                style={[
+                  styles.segmentOption,
+                  speed === 'normal' && { backgroundColor: colors.tint },
+                ]}>
+                <Text
+                  style={[
+                    type.caption,
+                    { color: speed === 'normal' ? colors.onTint : colors.textSecondary },
+                  ]}>
+                  0.9x
+                </Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="radio"
+                accessibilityState={{ selected: speed === 'faster' }}
+                accessibilityLabel="Full speed"
+                onPress={() => onSetSpeed('faster')}
+                style={[
+                  styles.segmentOption,
+                  speed === 'faster' && { backgroundColor: colors.tint },
+                ]}>
+                <Text
+                  style={[
+                    type.caption,
+                    { color: speed === 'faster' ? colors.onTint : colors.textSecondary },
+                  ]}>
+                  1.0x
                 </Text>
               </Pressable>
             </View>

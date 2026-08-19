@@ -16,6 +16,7 @@ export const CHAPTER_SENTENCE_GAP_MS = 650;
 export const PLAYBACK_RATE: Record<TTSSpeed, number> = {
   normal: 0.9,
   slow: 0.75,
+  faster: 1.0,
 };
 
 export type PlayResult = {
@@ -64,7 +65,7 @@ export class AudioService {
   async loadSpeed(): Promise<TTSSpeed> {
     try {
       const raw = await AsyncStorage.getItem(SPEED_KEY);
-      if (raw === 'slow' || raw === 'normal') this.speed = raw;
+      if (raw === 'slow' || raw === 'normal' || raw === 'faster') this.speed = raw;
     } catch {
       /* keep default */
     }
@@ -87,25 +88,28 @@ export class AudioService {
 
   sentenceAudio(sentence: Sentence): AudioAsset | null {
     const chapterId = this.chapterId ?? undefined;
+    const preferredSpeed: TTSSpeed = this.speed === 'faster' ? 'normal' : this.speed;
     return (
-      this.catalog.lookupSentence(sentence, this.speed, chapterId) ??
-      (this.speed === 'slow'
+      this.catalog.lookupSentence(sentence, preferredSpeed, chapterId) ??
+      (preferredSpeed === 'slow'
         ? this.catalog.lookupSentence(sentence, 'normal', chapterId)
         : null)
     );
   }
 
   phraseAudio(text: string): AudioAsset | null {
+    const preferredSpeed: TTSSpeed = this.speed === 'faster' ? 'normal' : this.speed;
     return (
-      this.catalog.lookupPhrase(text, this.speed) ??
-      (this.speed === 'slow' ? this.catalog.lookupPhrase(text, 'normal') : null)
+      this.catalog.lookupPhrase(text, preferredSpeed) ??
+      (preferredSpeed === 'slow' ? this.catalog.lookupPhrase(text, 'normal') : null)
     );
   }
 
   wordAudio(text: string): AudioAsset | null {
+    const preferredSpeed: TTSSpeed = this.speed === 'faster' ? 'normal' : this.speed;
     return (
-      this.catalog.lookupWord(text, this.speed) ??
-      (this.speed === 'slow' ? this.catalog.lookupWord(text, 'normal') : null)
+      this.catalog.lookupWord(text, preferredSpeed) ??
+      (preferredSpeed === 'slow' ? this.catalog.lookupWord(text, 'normal') : null)
     );
   }
 
@@ -163,6 +167,11 @@ export class AudioService {
       this.chapterQueue[0].id,
       this.sentenceAudio(this.chapterQueue[0]),
     );
+  }
+
+  async restartChapter(sentences: Sentence[], chapterId?: string): Promise<PlayResult> {
+    this.stop();
+    return this.playChapter(sentences, chapterId);
   }
 
   isChapterMode(): boolean {

@@ -1,5 +1,5 @@
 import { Stack, router, useLocalSearchParams } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -15,7 +15,9 @@ import { LUCA_STORY_ID, findStoryIdForChapter, getChapter, getChapterByNumber, g
 import { getProductionExercisesForChapter } from '@/src/content/productionExercises';
 import { readerHref } from '@/src/content/storyHrefs';
 import { evaluateAnswer } from '@/src/comprehension/evaluate';
+import { selectComprehensionQuestions } from '@/src/comprehension/selectQuestions';
 import { shuffleQuestionChoices } from '@/src/comprehension/shuffle';
+import type { ComprehensionQuestion } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
 import { chapterCompleteView } from '@/src/progress/chapterComplete';
 import type {
@@ -52,7 +54,8 @@ export default function ComprehensionScreen() {
   const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
 
-  const questions = chapter?.questions ?? [];
+  const [questions, setQuestions] = useState<ComprehensionQuestion[]>([]);
+  const [questionsReady, setQuestionsReady] = useState(false);
   const productionExercises = useMemo(
     () =>
       chapter
@@ -66,9 +69,7 @@ export default function ComprehensionScreen() {
   const [productionAssessments, setProductionAssessments] = useState<
     Record<string, SelfAssessment | null>
   >({});
-  const [states, setStates] = useState<QuestionState[]>(() =>
-    questions.map(() => ({ attempts: 0, correct: null, selectedIndex: null })),
-  );
+  const [states, setStates] = useState<QuestionState[]>([]);
   const [lastFeedback, setLastFeedback] = useState<{
     correct: boolean;
     explanation: string;
@@ -80,6 +81,28 @@ export default function ComprehensionScreen() {
     correctChoice: number;
   } | null>(null);
   const [finishing, setFinishing] = useState(false);
+
+  useEffect(() => {
+    if (!chapter) {
+      setQuestions([]);
+      setQuestionsReady(true);
+      return;
+    }
+    let cancelled = false;
+    void (async () => {
+      const progress = await getProgressService(storyId ?? chapter.storyId).getOrCreate();
+      if (cancelled) return;
+      const selected = selectComprehensionQuestions(chapter, progress);
+      setQuestions(selected);
+      setStates(selected.map(() => ({ attempts: 0, correct: null, selectedIndex: null })));
+      setIndex(0);
+      setPhase('intro');
+      setQuestionsReady(true);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [chapter, storyId]);
 
   const current = questions[index];
 
@@ -123,7 +146,18 @@ export default function ComprehensionScreen() {
     }
   };
 
-  if (!chapter || questions.length === 0) {
+  if (!chapter || !questionsReady) {
+    return (
+      <AtmosphereBackground>
+        <Stack.Screen options={{ title: 'Understanding' }} />
+        <View style={styles.center}>
+          <Text style={[type.body, { color: colors.textSecondary }]}>Loading…</Text>
+        </View>
+      </AtmosphereBackground>
+    );
+  }
+
+  if (questions.length === 0) {
     return (
       <AtmosphereBackground>
         <Stack.Screen options={{ title: 'Understanding' }} />

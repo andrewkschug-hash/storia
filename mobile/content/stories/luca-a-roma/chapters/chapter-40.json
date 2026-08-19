@@ -223,7 +223,7 @@
         },
         {
           "id": "s11",
-          "text": "Ha pensato al caffè, all’orario nuovo, a Giulia, a Marco, a Sofia.",
+          "text": "Ha pensato al caffè e all’orario nuovo. Poi a Giulia, a Marco e a Sofia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -231,12 +231,15 @@
             "pensare",
             "al",
             "caffe",
+            "e",
             "orario",
             "nuovo",
+            "poi",
             "a",
             "giulia",
             "a",
             "marco",
+            "e",
             "a",
             "sofia"
           ]
@@ -1025,7 +1028,7 @@
         },
         {
           "id": "s53",
-          "text": "Questa era la sua vita a Roma, per adesso: lavoro, amici, e un orario chiaro.",
+          "text": "Questa era la sua vita a Roma, per adesso: lavoro, amici, un orario chiaro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1040,7 +1043,6 @@
             "adesso",
             "lavorare",
             "amico",
-            "e",
             "un",
             "orario",
             "chiaro"

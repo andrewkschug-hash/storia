@@ -59,7 +59,7 @@ export default function ReaderScreen() {
   const yBySentence = useRef<Record<string, number>>({});
   const [scrollToY, setScrollToY] = useState<number | null>(null);
   const [playingId, setPlayingId] = useState<string | null>(null);
-  const [audioSpeed, setAudioSpeed] = useState<'normal' | 'slow'>('normal');
+  const [audioSpeed, setAudioSpeed] = useState<'normal' | 'slow' | 'faster'>('normal');
   const [isPlaying, setIsPlaying] = useState(false);
   const [chapterPlayback, setChapterPlayback] = useState<{ current: number; total: number } | null>(
     null,
@@ -68,7 +68,12 @@ export default function ReaderScreen() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showReaderTip, setShowReaderTip] = useState(false);
   const autoplayRequested = useRef(listen === '1');
+  const replayCountBySentence = useRef<Record<string, number>>({});
+  const chapterAudioRunActive = useRef(false);
+  const manualChapterStop = useRef(false);
+  const prevChapterMode = useRef(false);
   const audio = getAudioService();
+  const isChapterMode = audio.isChapterMode();
 
   const syncCatalog = useCallback(async () => {
     await refreshCatalogFromGateway(getAudioCatalog());
@@ -106,6 +111,14 @@ export default function ReaderScreen() {
         if (autoplayRequested.current) {
           autoplayRequested.current = false;
           const allSentences = adapted.paragraphs.flatMap((p) => p.sentences);
+          manualChapterStop.current = false;
+          chapterAudioRunActive.current = true;
+          trackReadingEvent({
+            type: 'audio_starts',
+            storyId: storyId ?? adapted.storyId,
+            chapterId: adapted.id,
+            meta: { source: 'autoplay' },
+          });
           void audio.playChapter(allSentences, adapted.id).then(() => syncAudioUi());
         }
       } catch (e) {
@@ -140,6 +153,34 @@ export default function ReaderScreen() {
       setScrollToY(Math.max(0, y - 40));
     }
   }, [highlightId, ready]);
+
+  useEffect(() => {
+    if (!playingId) return;
+    setHighlightId(playingId);
+    const y = yBySentence.current[playingId];
+    if (typeof y === 'number') {
+      setScrollToY(Math.max(0, y - 40));
+    }
+  }, [playingId]);
+
+  useEffect(() => {
+    const chapterModeNow = audio.isChapterMode();
+    const chapterJustCompleted =
+      prevChapterMode.current &&
+      !chapterModeNow &&
+      !isPlaying &&
+      chapterAudioRunActive.current &&
+      !manualChapterStop.current;
+    if (chapterJustCompleted) {
+      trackReadingEvent({
+        type: 'audio_completion',
+        storyId: storyId ?? chapter?.storyId,
+        chapterId: chapter?.id,
+      });
+      chapterAudioRunActive.current = false;
+    }
+    prevChapterMode.current = chapterModeNow;
+  }, [isPlaying, chapterPlayback, chapter?.id, chapter?.storyId]);
 
   const sentences = useMemo(() => {
     if (!chapter) return [] as Sentence[];
@@ -216,6 +257,8 @@ export default function ReaderScreen() {
 
   const continueFromChapter = async () => {
     if (!chapter) return;
+    manualChapterStop.current = true;
+    chapterAudioRunActive.current = false;
     audio.stop();
     syncAudioUi();
     const last = sentences[sentences.length - 1];
@@ -317,19 +360,15 @@ export default function ReaderScreen() {
             return;
           }
           const replay = playingId === sentence.id;
-          trackReadingEvent({
-            type: 'audio_played',
-            storyId: storyId ?? chapter.storyId,
-            chapterId: chapter.id,
-            sentenceId: sentence.id,
-            meta: { source: 'sentence' },
-          });
           if (replay) {
+            const nextCount = (replayCountBySentence.current[sentence.id] ?? 0) + 1;
+            replayCountBySentence.current[sentence.id] = nextCount;
             trackReadingEvent({
-              type: 'sentence_replayed',
+              type: 'sentence_replay_count',
               storyId: storyId ?? chapter.storyId,
               chapterId: chapter.id,
               sentenceId: sentence.id,
+              meta: { count: nextCount, source: 'sentence' },
             });
           }
           setHighlightId(sentence.id);
@@ -389,25 +428,48 @@ export default function ReaderScreen() {
       <ReaderAudioBar
         hasAudio={hasAudio}
         isPlaying={isPlaying}
-        isChapterMode={audio.isChapterMode()}
+        isChapterMode={isChapterMode}
         chapterProgress={chapterPlayback}
         speed={audioSpeed}
         onPlayPause={() => {
           if (!isPlaying) {
+            manualChapterStop.current = false;
+            chapterAudioRunActive.current = true;
             trackReadingEvent({
-              type: 'audio_played',
+              type: 'audio_starts',
               storyId: storyId ?? chapter.storyId,
               chapterId: chapter.id,
-              meta: { source: 'chapter' },
+              meta: { source: isChapterMode ? 'chapter_resume' : 'chapter_start' },
             });
           }
           void audio.playChapter(sentences, chapter.id).then(() => syncAudioUi());
         }}
         onStop={() => {
+          manualChapterStop.current = true;
+          chapterAudioRunActive.current = false;
           audio.stop();
           syncAudioUi();
         }}
+        onRestart={() => {
+          manualChapterStop.current = false;
+          chapterAudioRunActive.current = true;
+          trackReadingEvent({
+            type: 'audio_starts',
+            storyId: storyId ?? chapter.storyId,
+            chapterId: chapter.id,
+            meta: { source: 'chapter_restart' },
+          });
+          void audio.restartChapter(sentences, chapter.id).then(() => syncAudioUi());
+        }}
         onSetSpeed={(next) => {
+          if (next !== audioSpeed) {
+            trackReadingEvent({
+              type: 'speed_change',
+              storyId: storyId ?? chapter.storyId,
+              chapterId: chapter.id,
+              meta: { fromSpeed: audioSpeed, toSpeed: next },
+            });
+          }
           void audio.setSpeed(next).then(() => syncAudioUi());
         }}
         onContinueFromChapter={() => void continueFromChapter()}

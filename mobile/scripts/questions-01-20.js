@@ -725,6 +725,22 @@ const questionsByChapterNumber = {
       explanation: 'Returning with friends and having home and a job shows he belongs in Rome.',
       difficulty: 2,
     },
+    {
+      id: 'luca-a-roma-memory-20-01',
+      chapterId: 'luca-a-roma-20',
+      type: 'story_memory',
+      sourceChapterIds: ['luca-a-roma-12'],
+      question: 'Why does Marco need the ticket?',
+      questionIt: 'Perché Marco ha bisogno del biglietto?',
+      choices: [
+        'He must go to his mother\'s house',
+        'He wants to leave Rome forever',
+        'He lost his job at the café',
+      ],
+      correctChoice: 0,
+      explanation: 'In Chapter 12, Marco\'s mother was not well. He needed a ticket to visit her.',
+      difficulty: 1,
+    },
   ],
 };
 

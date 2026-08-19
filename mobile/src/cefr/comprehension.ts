@@ -15,6 +15,8 @@ export function questionTypeCEFR(type: ComprehensionQuestionType): CEFRLevel {
       return 'A2';
     case 'inference':
       return 'B1';
+    case 'story_memory':
+      return 'A2';
     default:
       return 'A1';
   }

@@ -216,22 +216,6 @@
             "essere",
             "risolvere"
           ]
-        },
-        {
-          "id": "s15",
-          "text": "Ieri Luca è andato in città con Sofia.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ieri",
-            "luca",
-            "essere",
-            "andare",
-            "in",
-            "citta",
-            "con",
-            "sofia"
-          ]
         }
       ]
     }

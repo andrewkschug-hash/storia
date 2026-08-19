@@ -123,6 +123,7 @@ export const ComprehensionQuestionTypeSchema = z.enum([
   'character',
   'sequence',
   'inference',
+  'story_memory',
 ]);
 
 export const ComprehensionQuestionSchema = z
@@ -136,6 +137,8 @@ export const ComprehensionQuestionSchema = z
     correctChoice: z.number().int().nonnegative(),
     explanation: z.string().min(1),
     difficulty: DifficultyLevelSchema.default(1),
+    /** Prior chapters the learner must recall to answer. Required for story_memory. */
+    sourceChapterIds: z.array(z.string().min(1)).optional(),
   })
   .superRefine((q, ctx) => {
     if (q.correctChoice >= q.choices.length) {
@@ -143,6 +146,21 @@ export const ComprehensionQuestionSchema = z
         code: 'custom',
         message: `correctChoice ${q.correctChoice} out of range for ${q.choices.length} choices`,
         path: ['correctChoice'],
+      });
+    }
+    if (q.type === 'story_memory') {
+      if (!q.sourceChapterIds?.length) {
+        ctx.addIssue({
+          code: 'custom',
+          message: 'story_memory questions require sourceChapterIds',
+          path: ['sourceChapterIds'],
+        });
+      }
+    } else if (q.sourceChapterIds?.length) {
+      ctx.addIssue({
+        code: 'custom',
+        message: 'sourceChapterIds are only allowed on story_memory questions',
+        path: ['sourceChapterIds'],
       });
     }
   });

@@ -254,6 +254,7 @@ export class VocabularyService {
 
   summarize(state: UserVocabularyState): {
     encountered: number;
+    new: number;
     learning: number;
     familiar: number;
     mastered: number;
@@ -263,6 +264,7 @@ export class VocabularyService {
     const count = (status: VocabularyStatus) => rows.filter((r) => r.status === status).length;
     return {
       encountered: rows.filter((r) => r.encounterCount > 0).length,
+      new: count('new'),
       learning: count('learning'),
       familiar: count('familiar'),
       mastered: count('mastered'),

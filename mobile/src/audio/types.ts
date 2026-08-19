@@ -1,5 +1,5 @@
 export type TTSProviderId = 'elevenlabs' | 'azure' | 'google';
-export type TTSSpeed = 'normal' | 'slow';
+export type TTSSpeed = 'normal' | 'slow' | 'faster';
 export type TTSLanguage = 'it-IT';
 
 export type AudioGenerationStatus =

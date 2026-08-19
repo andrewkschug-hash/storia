@@ -33,4 +33,4 @@ export { ADAPTIVE_CONFIG, ADAPTIVE_LEMMA_TARGETS, ADAPTIVE_PHRASE_TARGETS } from
 export { tapRate, recentTapRate } from '@/src/adaptive/metrics';
 export { selectAdaptiveChapter } from '@/src/adaptive/select';
 export { buildAdaptiveProfile } from '@/src/adaptive/profile';
-export { scoreLemma, scorePhrase } from '@/src/adaptive/scoring';
+export { selectReinforcingWords } from '@/src/adaptive/reinforcingWords';

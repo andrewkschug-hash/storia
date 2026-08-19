@@ -10,12 +10,14 @@ export type LibraryStoryRow = {
   completed: number;
   total: number;
   locked: boolean;
-  kind: 'luca-segment' | 'extra';
+  kind: 'luca-segment' | 'extra' | 'group';
   storyId: string;
   eyebrow?: string;
   chapterStart?: number;
   chapterEnd?: number;
   chapters: ChapterListItem[];
+  /** Child story rows — only populated for kind === 'group' */
+  childRows?: LibraryStoryRow[];
 };
 
 export type LockedLevelPreview = {

@@ -799,7 +799,7 @@
         },
         {
           "id": "s38",
-          "text": "Ha pensato a Marco, ancora in cerca di lavoro, e a Sofia, con i suoi giorni pieni.",
+          "text": "Ha pensato a Marco, ancora in cerca di lavoro. Ha pensato a Sofia, con i suoi giorni pieni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -812,7 +812,8 @@
             "cercare",
             "di",
             "lavorare",
-            "e",
+            "avere",
+            "pensare",
             "a",
             "sofia",
             "con",

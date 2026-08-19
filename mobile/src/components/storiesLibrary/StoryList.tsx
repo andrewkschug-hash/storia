@@ -1,17 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { buildStoryRowsForTab } from '@/src/components/storiesLibrary/buildStoryRows';
 import { LevelTabs } from '@/src/components/storiesLibrary/LevelTabs';
 import { LockedLevelsAccordion } from '@/src/components/storiesLibrary/LockedLevelsAccordion';
 import { StoryPathPanel } from '@/src/components/storiesLibrary/StoryPathPanel';
 import { StoryRow } from '@/src/components/storiesLibrary/StoryRow';
-import type { LibraryTab } from '@/src/components/storiesLibrary/types';
+import type { LibraryStoryRow, LibraryTab } from '@/src/components/storiesLibrary/types';
 import { unlockHintForLockedStory } from '@/src/components/storiesLibrary/unlockHints';
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { LUCA_STORY_ID } from '@/src/content/catalog';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
+import { Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -128,7 +129,17 @@ export function StoryList({
                 expanded={expanded}
                 onPress={() => handleRowPress(row.id, row.locked, row.chapters)}
               />
-              {expanded && !row.locked ? (
+              {expanded && !row.locked && row.kind === 'group' && row.childRows
+                ? row.childRows.map((child) => (
+                    <ChildStoryRow
+                      key={child.id}
+                      row={child}
+                      currentChapterId={currentChapterId}
+                      onOpenChapter={onOpenStoryChapter}
+                    />
+                  ))
+                : null}
+              {expanded && !row.locked && row.kind !== 'group' ? (
                 <StoryPathPanel
                   chapters={row.chapters}
                   currentChapterId={currentChapterId}
@@ -152,3 +163,70 @@ export function StoryList({
     </View>
   );
 }
+
+function ChildStoryRow({
+  row,
+  currentChapterId,
+  onOpenChapter,
+}: {
+  row: LibraryStoryRow;
+  currentChapterId: string;
+  onOpenChapter: (storyId: string, chapterId: string) => void;
+}) {
+  const { colors } = useTheme();
+  const firstAvailable = row.chapters.find(
+    (ch) => ch.status === 'available' || ch.status === 'in_progress',
+  );
+  const isCurrent = row.chapters.some((ch) => ch.id === currentChapterId);
+
+  return (
+    <Pressable
+      onPress={() => {
+        const target = firstAvailable ?? row.chapters[0];
+        if (target) onOpenChapter(row.storyId, target.id);
+      }}
+      style={({ pressed }) => [
+        childStyles.row,
+        {
+          backgroundColor: isCurrent
+            ? 'rgba(120,182,163,0.07)'
+            : pressed
+              ? 'rgba(255,255,255,0.04)'
+              : 'transparent',
+        },
+      ]}>
+      <View style={childStyles.main}>
+        <Text style={[childStyles.title, { color: colors.text }]}>{row.titleIt}</Text>
+        <Text style={[childStyles.meta, { color: colors.textMuted }]}>
+          {row.completed} / {row.total} chapters
+        </Text>
+      </View>
+    </Pressable>
+  );
+}
+
+const childStyles = StyleSheet.create({
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    marginBottom: 2,
+    marginLeft: 8,
+  },
+  main: {
+    flex: 1,
+  },
+  title: {
+    fontFamily: 'Literata_500Medium',
+    fontSize: 16,
+    lineHeight: 22,
+  },
+  meta: {
+    ...Typography.caption,
+    fontSize: 13,
+    marginTop: 2,
+    opacity: 0.7,
+  },
+});

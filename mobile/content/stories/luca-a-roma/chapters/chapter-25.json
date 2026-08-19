@@ -39,7 +39,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Lunedì mattina il caffè era diverso dal solito.",
+          "text": "Lunedì mattina il caffè è diverso dal solito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -55,11 +55,12 @@
         },
         {
           "id": "s02",
-          "text": "C’erano meno clienti e la sala era tranquilla.",
+          "text": "Ci sono meno clienti e la sala è tranquilla.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ce",
+            "ci",
+            "essere",
             "meno",
             "cliente",
             "e",
@@ -71,28 +72,23 @@
         },
         {
           "id": "s03",
-          "text": "Luca è arrivato presto e ha aperto la porta.",
+          "text": "Luca è arrivato presto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "essere",
             "arrivare",
-            "presto",
-            "e",
-            "avere",
-            "aprire",
-            "la",
-            "porta"
+            "presto"
           ]
         },
         {
           "id": "s04",
-          "text": "Ha guardato la sala e i tavoli vuoti.",
+          "text": "Luca guarda la sala e i tavoli vuoti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "avere",
+            "luca",
             "guardare",
             "la",
             "sala",
@@ -104,10 +100,16 @@
         },
         {
           "id": "s05",
-          "text": "Ha preparato i tavoli con calma come sempre.",
+          "text": "Poi ha aperto la porta e ha preparato i tavoli con calma, come sempre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "poi",
+            "avere",
+            "aprire",
+            "la",
+            "porta",
+            "e",
             "avere",
             "preparare",
             "i",
@@ -120,12 +122,10 @@
         },
         {
           "id": "s06",
-          "text": "Poi ha aspettato i clienti vicino alla porta.",
+          "text": "Aspettava i clienti vicino alla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "poi",
-            "avere",
             "aspettare",
             "i",
             "cliente",

@@ -55,20 +55,32 @@ export function buildStoryRowsForTab(input: BuildStoryRowsInput): LibraryStoryRo
 
   const rows: LibraryStoryRow[] = [lucaSegmentRow(tab, lucaTitleIt, chapterStatuses)];
 
-  if (tab === 'A1') {
-    for (const story of beforeRomeRows) {
-      rows.push({
-        id: story.storyId,
-        titleIt: story.titleIt,
-        completed: story.completed,
-        total: story.total,
-        locked: story.chapters.length > 0 && story.chapters.every((chapter) => chapter.status === 'locked'),
-        kind: 'extra',
-        storyId: story.storyId,
-        eyebrow: story.eyebrow,
-        chapters: story.chapters as ChapterListItem[],
-      });
-    }
+  if (tab === 'A1' && beforeRomeRows.length > 0) {
+    const childRows: LibraryStoryRow[] = beforeRomeRows.map((story) => ({
+      id: story.storyId,
+      titleIt: story.titleIt,
+      completed: story.completed,
+      total: story.total,
+      locked:
+        story.chapters.length > 0 && story.chapters.every((chapter) => chapter.status === 'locked'),
+      kind: 'extra' as const,
+      storyId: story.storyId,
+      chapters: story.chapters as ChapterListItem[],
+    }));
+    const totalCompleted = childRows.reduce((sum, row) => sum + row.completed, 0);
+    const totalChapters = childRows.reduce((sum, row) => sum + row.total, 0);
+    rows.push({
+      id: 'luca-before-rome',
+      titleIt: 'Luca before Rome',
+      eyebrow: 'Hometown stories',
+      completed: totalCompleted,
+      total: totalChapters,
+      locked: false,
+      kind: 'group',
+      storyId: '',
+      chapters: childRows.flatMap((row) => row.chapters),
+      childRows,
+    });
   }
 
   return rows;

@@ -338,20 +338,6 @@
           ]
         },
         {
-          "id": "s22",
-          "text": "Ieri Luca è andato al negozio.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ieri",
-            "luca",
-            "essere",
-            "andare",
-            "al",
-            "negozio"
-          ]
-        },
-        {
           "id": "s23",
           "text": "Oggi resta a casa e parla con la famiglia.",
           "speakerId": null,

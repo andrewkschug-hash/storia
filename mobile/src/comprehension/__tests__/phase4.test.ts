@@ -46,7 +46,16 @@ describe('Phase 4 comprehension content', () => {
         expect(q.correctChoice).toBeLessThan(q.choices.length);
       }
     }
-    expect(total).toBe(120);
+    expect(total).toBe(121);
+  });
+
+  it('chapter 20 includes a story-memory question with source chapters', () => {
+    const chapter = bundle.chapters.get('luca-a-roma-20');
+    expect(chapter).toBeTruthy();
+    const memory = chapter!.questions.find((q) => q.type === 'story_memory');
+    expect(memory?.id).toBe('luca-a-roma-memory-20-01');
+    expect(memory?.sourceChapterIds).toEqual(['luca-a-roma-12']);
+    expect(memory?.question).toMatch(/Marco/i);
   });
 
   it('accepts a valid question schema', () => {

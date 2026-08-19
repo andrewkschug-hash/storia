@@ -71,7 +71,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="vocabulary"
         options={{
-          title: 'Words',
+          title: 'Italian',
           tabBarIcon: ({ color }) => (
             <SymbolView
               name={{

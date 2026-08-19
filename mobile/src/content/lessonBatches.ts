@@ -1,4 +1,4 @@
-/** Chapters are grouped into batches of five for grammar notes and recap. */
+﻿/** Chapters are grouped into batches of five for grammar notes and recap. */
 
 export const LESSON_BATCH_SIZE = 5;
 
@@ -53,17 +53,17 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
     batchKey: '1-5',
     title: 'Essere and avere',
     intro:
-      'Chapters 1–5 lean on two verbs: essere (to be) and avere (to have). Here is exactly how they work in the sentences you read.',
+      'Chapters 1-5 lean on two verbs: essere (to be) and avere (to have). Here is exactly how they work in the sentences you read.',
     steps: [
       {
         title: 'Essere tells you who someone is, where they are, or how they feel',
         explanation:
-          'Essere is “to be.” In Italian you change the ending of the verb to match the subject — but you often leave out io / tu / lui because the ending already tells you who is speaking.\n\n' +
-          '• è = he / she / it is (Luca è stanco → Luca is tired)\n' +
-          '• sono = I am (Sono a Roma → I am in Rome)\n' +
-          '• sei = you are (informal)\n\n' +
-          'When you see è after a name, read it as “is”: Sofia è al bar = Sofia is at the bar.',
-        rule: 'Name + è + adjective/place = “[Name] is …”',
+          'Essere is "to be." In Italian you change the ending of the verb to match the subject - but you often leave out io / tu / lui because the ending already tells you who is speaking.\n\n' +
+          '- è = he / she / it is (Luca è stanco -> Luca is tired)\n' +
+          '- sono = I am (Sono a Roma -> I am in Rome)\n' +
+          '- sei = you are (informal)\n\n' +
+          'When you see è after a name, read it as "is": Sofia è al bar = Sofia is at the bar.',
+        rule: 'Name + è + adjective/place = "[Name] is ..."',
         examples: [
           { italian: 'Luca è a Roma.', english: 'Luca is in Rome.' },
           { italian: 'Sofia è stanca.', english: 'Sofia is tired.' },
@@ -71,14 +71,14 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         ],
       },
       {
-        title: 'Avere tells you what someone has — including feelings',
+        title: 'Avere tells you what someone has - including feelings',
         explanation:
-          'Avere is “to have.” Italian uses it for possession and for many feelings English expresses with “to be.”\n\n' +
-          '• ho = I have (Ho fame → literally “I have hunger” = I am hungry)\n' +
-          '• ha = he / she has (Luca ha una casa → Luca has a house)\n' +
-          '• hai = you have\n\n' +
-          'If an English sentence says “I am hungry / thirsty / sleepy,” Italian usually says “I have hunger / thirst / sleep.”',
-        rule: 'Ho / ha + noun often = “I am / he is …” in English',
+          'Avere is "to have." Italian uses it for possession and for many feelings English expresses with "to be."\n\n' +
+          '- ho = I have (Ho fame -> literally "I have hunger" = I am hungry)\n' +
+          '- ha = he / she has (Luca ha una casa -> Luca has a house)\n' +
+          '- hai = you have\n\n' +
+          'If an English sentence says "I am hungry / thirsty / sleepy," Italian usually says "I have hunger / thirst / sleep."',
+        rule: 'Ho / ha + noun often = "I am / he is ..." in English',
         examples: [
           { italian: 'Ho fame.', english: 'I am hungry. (lit. I have hunger)' },
           { italian: 'Luca ha poco soldi.', english: 'Luca has little money.' },
@@ -88,10 +88,10 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
       {
         title: 'Non goes right before the verb to make a sentence negative',
         explanation:
-          'To say “not,” put non immediately before the verb. Nothing else moves.\n\n' +
-          'Affirmative: Ho fame. → Negative: Non ho fame.\n' +
-          'Affirmative: Luca è stanco. → Negative: Luca non è stanco.\n\n' +
-          'Non is one word — do not split it from the verb.',
+          'To say "not," put non immediately before the verb. Nothing else moves.\n\n' +
+          'Affirmative: Ho fame. -> Negative: Non ho fame.\n' +
+          'Affirmative: Luca è stanco. -> Negative: Luca non è stanco.\n\n' +
+          'Non is one word - do not split it from the verb.',
         rule: 'Non + verb = negative sentence',
         examples: [
           { italian: 'Non ho fame.', english: 'I am not hungry.' },
@@ -106,17 +106,17 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         choices: ['Luca ha stanco.', 'Luca è stanco.', 'Luca sono stanco.'],
         correctIndex: 1,
         explanation:
-          'Use essere (è) for “is” + adjective: Luca è stanco. Avere (ha) is for possession, not adjectives like “tired.”',
+          'Use essere (è) for "is" + adjective: Luca è stanco. Avere (ha) is for possession, not adjectives like "tired."',
       },
       {
-        prompt: 'How do you say “I am hungry” in Italian?',
+        prompt: 'How do you say "I am hungry" in Italian?',
         choices: ['Sono fame.', 'Ho fame.', 'Ho affamato.'],
         correctIndex: 1,
         explanation:
-          'Italian says “I have hunger”: Ho fame. You need avere (ho), not essere, for this feeling.',
+          'Italian says "I have hunger": Ho fame. You need avere (ho), not essere, for this feeling.',
       },
       {
-        prompt: 'Which sentence means “Luca does not have much money”?',
+        prompt: 'Which sentence means "Luca does not have much money"?',
         choices: [
           'Luca non ha molti soldi.',
           'Luca ha non molti soldi.',
@@ -136,12 +136,12 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
       {
         title: 'Volere: voglio / vuole + another verb',
         explanation:
-          'Volere means “to want.” To say what you want to do, use volere + an infinitive (the -are / -ere / -ire form):\n\n' +
+          'Volere means "to want." To say what you want to do, use volere + an infinitive (the -are / -ere / -ire form):\n\n' +
           '• voglio = I want → Voglio mangiare. (I want to eat.)\n' +
           '• vuole = he / she wants → Luca vuole un lavoro. (Luca wants a job.)\n' +
           '• vuoi = you want\n\n' +
           'You can also want a thing (noun): vuole un caffè = he wants a coffee.',
-        rule: 'Volere + infinitive = “want to …”',
+        rule: 'Volere + infinitive = "want to ..."',
         examples: [
           { italian: 'Voglio mangiare.', english: 'I want to eat.' },
           { italian: 'Luca vuole un lavoro.', english: 'Luca wants a job.' },
@@ -149,14 +149,14 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         ],
       },
       {
-        title: 'Cercare: a regular verb for “to look for”',
+        title: 'Cercare: a regular verb for "to look for"',
         explanation:
           'Cercare ends in -are, so it follows the same pattern as parlare or mangiare:\n\n' +
           '• cerco = I look for / I am looking for\n' +
           '• cerchi = you look for\n' +
           '• cerca = he / she looks for\n\n' +
           'Put what you are searching for right after the verb: Cerco un lavoro. Word order is flexible — Cerco un lavoro al caffè and Al caffè cerco un lavoro both work.',
-        rule: 'Cerco / cerca + thing = “I am / he is looking for …”',
+        rule: 'Cerco / cerca + thing = "I am / he is looking for ..."',
         examples: [
           { italian: 'Luca cerca un lavoro.', english: 'Luca is looking for a job.' },
           { italian: 'Cerchi un lavoro?', english: 'Are you looking for a job?' },
@@ -179,7 +179,7 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
     ],
     practice: [
       {
-        prompt: '“I want to eat.” Which is correct?',
+        prompt: '"I want to eat." Which is correct?',
         choices: ['Voglio mangiare.', 'Voglio mangio.', 'Mangio voglio.'],
         correctIndex: 0,
         explanation: 'After volere, use the infinitive mangiare — not the conjugated mangio.',
@@ -222,7 +222,7 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
       {
         title: 'In = inside a space',
         explanation:
-          'In means “in” or “inside.” Use it for rooms, countries (sometimes), and enclosed places:\n\n' +
+          'In means "in" or "inside." Use it for rooms, countries (sometimes), and enclosed places:\n\n' +
           '• in cucina = in the kitchen\n' +
           '• in Italia = in Italy\n' +
           '• nel caffè = in the café (in + il = nel)\n\n' +
@@ -242,7 +242,7 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
           '• Soldi per l\'affitto = money for the rent\n' +
           '• Grazie per l\'aiuto = thanks for the help\n' +
           '• Un caffè per Marco = a coffee for Marco',
-        rule: 'Con + person = “with” · Per + noun = “for”',
+        rule: 'Con + person = "with" · Per + noun = "for"',
         examples: [
           { italian: 'Luca è con Sofia.', english: 'Luca is with Sofia.' },
           { italian: 'Soldi per l\'affitto.', english: 'Money for the rent.' },
@@ -258,13 +258,13 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         explanation: 'a + il combines to al: Luca va al caffè.',
       },
       {
-        prompt: '“I am in the kitchen.” Pick the right sentence.',
+        prompt: '"I am in the kitchen." Pick the right sentence.',
         choices: ['Sono a cucina.', 'Sono in cucina.', 'Sono con cucina.'],
         correctIndex: 1,
         explanation: 'Inside a room uses in: Sono in cucina.',
       },
       {
-        prompt: '“Money for the rent.” Which phrase is correct?',
+        prompt: '"Money for the rent." Which phrase is correct?',
         choices: ['Soldi con l\'affitto.', 'Soldi per l\'affitto.', 'Soldi a l\'affitto.'],
         correctIndex: 1,
         explanation: 'Per expresses purpose or recipient: per l\'affitto = for the rent.',
@@ -314,8 +314,8 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
           'The story uses present tense for what is happening now and for habits:\n\n' +
           'Luca cerca lavoro. = Luca is looking for work (now / these days).\n' +
           'Luca lavora al bar. = Luca works at the bar (regularly).\n\n' +
-          'You do not need a separate “is …-ing” form — context tells you.',
-        rule: 'One present tense covers “does” and “is doing”',
+          'You do not need a separate "is ...-ing" form - context tells you.',
+        rule: 'One present tense covers "does" and "is doing"',
         examples: [
           { italian: 'Luca cerca lavoro.', english: 'Luca is looking for work.' },
           { italian: 'Sofia parla italiano.', english: 'Sofia speaks Italian.' },
@@ -325,7 +325,7 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
     ],
     practice: [
       {
-        prompt: '“Tomorrow Sofia is coming.” Which is correct?',
+        prompt: '"Tomorrow Sofia is coming." Which is correct?',
         choices: ['Domani Sofia viene.', 'Sofia domani venire.', 'Domani Sofia va.'],
         correctIndex: 0,
         explanation: 'Time first, then subject + verb: Domani Sofia viene. Venire = to come.',
@@ -334,13 +334,290 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         prompt: 'Luca returns home. Pick the right sentence.',
         choices: ['Luca torna a casa.', 'Luca torna in casa a.', 'Luca va tornare casa.'],
         correctIndex: 0,
-        explanation: 'Tornare a casa is the fixed pattern for “return home.”',
+        explanation: 'Tornare a casa is the fixed pattern for "return home."',
       },
       {
-        prompt: '“Luca goes to the bar.” Which is correct?',
+        prompt: '"Luca goes to the bar." Which is correct?',
         choices: ['Luca viene al bar.', 'Luca va al bar.', 'Luca va in bar.'],
         correctIndex: 1,
         explanation: 'Andare (va) = to go. Al bar = to the bar (a + il).',
+      },
+    ],
+  },
+  '21-25': {
+    batchKey: '21-25',
+    title: 'Passato prossimo: completed events',
+    intro:
+      'In chapters 21-25, you mainly read completed actions/events. This is mostly passato prossimo.',
+    steps: [
+      {
+        title: 'Passato prossimo = ha/è + past participle',
+        explanation:
+          'Passato prossimo is used for a completed past event.\n\n' +
+          'Form:\n' +
+          '- ha + past participle\n' +
+          '- è + past participle (often for movement/change)\n\n' +
+          'In these chapters you see both:\n' +
+          '- Luca è arrivato presto e ha aperto la porta.\n' +
+          '- Giulia ha guardato i tavoli e non ha sorriso.\n' +
+          '- Non ha detto niente ai colleghi.',
+        rule: 'ha/è + past participle = completed past event',
+        examples: [
+          {
+            italian: 'Luca è arrivato presto e ha aperto la porta.',
+            english: 'Luca arrived early and opened the door.',
+          },
+          {
+            italian: 'Giulia ha guardato i tavoli e non ha sorriso.',
+            english: 'Giulia looked at the tables and did not smile.',
+          },
+          {
+            italian: 'Non ha detto niente ai colleghi.',
+            english: 'He did not say anything to his colleagues.',
+          },
+        ],
+      },
+      {
+        title: 'Irregular participles you already saw',
+        explanation:
+          'Some participles are irregular. Your job is to recognize them in the story.\n\n' +
+          'In these chapters you already saw:\n' +
+          '- aperto\n' +
+          '- chiuso\n' +
+          '- detto',
+        rule: 'Recognize irregular participles in passato prossimo',
+        examples: [
+          {
+            italian: 'Luca è arrivato presto e ha aperto la porta.',
+            english: 'Luca arrived early and opened the door.',
+          },
+          { italian: 'Ha chiuso la porta un momento.', english: 'He closed the door for a moment.' },
+          { italian: 'Non ha detto niente ai colleghi.', english: 'He did not say anything to his colleagues.' },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: '"Luca è arrivato presto." Which part shows the past tense?',
+        choices: ['Luca', 'è arrivato', 'presto'],
+        correctIndex: 1,
+        explanation: '"è arrivato" = è (helper) + participle. That is passato prossimo.',
+      },
+      {
+        prompt: 'Choose the correct helper for a movement/change verb: "Luca ___ al caffè presto."',
+        choices: ['ha tornato', 'è tornato', 'torna'],
+        correctIndex: 1,
+        explanation: '"è tornato" uses è with movement/change.',
+      },
+      {
+        prompt: 'In "Non ha detto niente ai colleghi.", which word is the past participle?',
+        choices: ['ha', 'detto', 'niente'],
+        correctIndex: 1,
+        explanation: 'The past participle is "detto" (after ha).',
+      },
+    ],
+  },
+  '26-30': {
+    batchKey: '26-30',
+    title: 'Imperfetto vs passato prossimo: background vs events',
+    intro:
+      'These chapters mix two past tenses:\n' +
+      '- imperfetto for background/ongoing states\n' +
+      '- passato prossimo for completed events',
+    steps: [
+      {
+        title: 'Imperfetto = was/used to (background)',
+        explanation:
+          'Imperfetto describes how things were: feelings, descriptions, and ongoing situations.\n\n' +
+          'You often see endings like:\n' +
+          '- era / c\'erano\n' +
+          '- sembrava\n' +
+          '- restava\n',
+        rule: 'Imperfetto = background/ongoing past',
+        examples: [
+          { italian: "C'erano ancora pochi clienti questa mattina, come ieri.", english: 'There were still a few customers this morning, like yesterday.' },
+          { italian: 'Giulia era già al caffè e non sorrideva.', english: 'Giulia was already at the cafe and was not smiling.' },
+          { italian: 'Marco non sembrava tranquillo.', english: 'Marco did not seem calm.' },
+        ],
+      },
+      {
+        title: 'Passato prossimo = what happened (completed events)',
+        explanation:
+          'In these chapters, completed actions/events are expressed with passato prossimo: helper verb (ha/è) + past participle.\n\n' +
+          'You then read the story forward like a sequence of events.',
+        rule: 'Passato prossimo = completed action',
+        examples: [
+          {
+            italian: 'Martedì mattina Luca è tornato al caffè presto.',
+            english: 'On Tuesday morning Luca returned to the cafe early.',
+          },
+          {
+            italian: 'Ha chiuso la porta un momento.',
+            english: 'He closed the door for a moment.',
+          },
+          {
+            italian: 'Il padrone ha chiamato Luca e Giulia vicino ai tavoli.',
+            english: 'The owner called Luca and Giulia near the tables.',
+          },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: '"Giulia era già al caffè e non sorrideva." Which word is correct?',
+        choices: ['era', 'è stata', 'ha'],
+        correctIndex: 0,
+        explanation: 'Era is imperfetto. It describes the background state.',
+      },
+      {
+        prompt: '"Martedì mattina Luca ___ al caffè presto." Which is correct?',
+        choices: ['era tornato', 'è tornato', 'torna'],
+        correctIndex: 1,
+        explanation: 'È tornato is passato prossimo (helper + participle).',
+      },
+      {
+        prompt: 'In the story, which tense typically makes the "event" feeling?',
+        choices: ['Imperfetto', 'Passato prossimo', 'Present tense only'],
+        correctIndex: 1,
+        explanation: 'Passato prossimo = completed events.',
+      },
+    ],
+  },
+  '31-35': {
+    batchKey: '31-35',
+    title: 'Connecting ideas: se, time, and reason',
+    intro:
+      'Chapters 31-35 use connectors to link ideas: se (possible situation/result), quando/mentre/poi (time), perché (reason), and però/almeno (contrast/at least).',
+    steps: [
+      {
+        title: 'Se + present: situation -> result',
+        explanation:
+          'You do not need formal terminology here. In these chapters, se works like:\n\n' +
+          '"If this happens / is possible, then this result also happens."' +
+          'In Luca stories, Italian often uses present tense in both parts.',
+        rule: 'Se + present -> possible situation/result',
+        examples: [
+          { italian: 'Se viene poca gente, non importa.', english: 'If few people come, it does not matter.' },
+          { italian: 'Se non arriva nessuno, almeno abbiamo fatto il lavoro.', english: 'If nobody arrives, at least we did the work.' },
+          { italian: 'Non possiamo solo aspettare. Dobbiamo parlare ancora, se possiamo.', english: "We cannot only wait. We have to talk again, if we can." },
+        ],
+      },
+      {
+        title: 'Quando / mentre / poi: time order',
+        explanation:
+          'These words help you follow the story:\n\n' +
+          '- quando: "when"\n' +
+          '- mentre: "while"\n' +
+          '- poi: "then/after that"',
+        rule: 'Use connectors to follow time order',
+        examples: [
+          { italian: 'Quando ha aperto la porta, Giulia era già nella sala.', english: 'When he opened the door, Giulia was already in the room.' },
+          { italian: 'Mentre portava i tavoli, Luca ascoltava la strada.', english: 'While he was carrying the tables, Luca listened to the street.' },
+          { italian: 'Poi la porta si è aperta. Marco è arrivato.', english: 'Then the door opened. Marco arrived.' },
+        ],
+      },
+      {
+        title: 'Perché / però / almeno',
+        explanation:
+          'These words add meaning after the grammar work is done:\n\n' +
+          '- perché = "because/why"\n' +
+          '- però = "but/however"\n' +
+          '- almeno = "at least"' ,
+        rule: 'Reason (perché) + contrast (però) + minimum (almeno)',
+        examples: [
+          { italian: 'L’altra parte non risponde, e io non so perché.', english: "The other side does not answer, and I do not know why." },
+          { italian: 'Sì. Però io voglio gente qui.', english: 'Yes. But I want people here.' },
+          { italian: 'Va bene. Se non arriva nessuno, almeno abbiamo fatto il lavoro.', english: 'Okay. If nobody arrives, at least we did the work.' },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: '"___ viene poca gente, non importa. Abbiamo fatto una cosa." Which word fits?',
+        choices: [
+          'Se',
+          'Quando',
+          'Poi',
+        ],
+        correctIndex: 0,
+        explanation: '"Se" introduces the possible situation/result.',
+      },
+      {
+        prompt: '"___ la porta si è aperta, Marco è arrivato." Which word fits?',
+        choices: ['Poi', 'Mentre', 'Perché'],
+        correctIndex: 0,
+        explanation: '"Poi" = then/after that.',
+      },
+      {
+        prompt: 'In "Non so ___.", which word completes the meaning of "why"?',
+        choices: ['perché', 'però', 'almeno'],
+        correctIndex: 0,
+        explanation: '"Perché" introduces reason/why.',
+      },
+    ],
+  },
+  '36-40': {
+    batchKey: '36-40',
+    title: 'Pronouns + past narration: gli/le and who did what',
+    intro:
+      'In chapters 36-40, the story keeps going in passato prossimo. To read smoothly, you need reference tracking: who did the action, and what a pronoun like "gli" refers to.',
+    steps: [
+      {
+        title: 'Passato prossimo: track the subject',
+        explanation:
+          'In passato prossimo, the action is marked by the helper verb (ha/è) + past participle.\n\n' +
+          'Before you guess meaning, find who is doing the action (usually the most recent person name, like "Luca" or "Nonna Rosa").',
+        rule: 'Helper + past participle tells you the action. Track the nearest person for who did it',
+        examples: [
+          { italian: 'Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.', english: 'Nonna Rosa called Luca and told him to stay near the door.' },
+          { italian: 'Sì. Io accetto di più, ma non voglio restare senza tempo per gli amici.', english: 'Yes. I accept more, but I do not want to stay without time for my friends.' },
+          { italian: 'Marco ha portato un caffè a Nonna Rosa, e lei ha ascoltato Luca bene.', english: 'Marco brought a coffee to Nonna Rosa, and she listened to Luca well.' },
+        ],
+      },
+      {
+        title: 'Gli (to him) in passato prossimo',
+        explanation:
+          '"Gli" is an indirect object pronoun. In the story it often appears like:\n\n' +
+          'NAME + ha/è + [verb] + e gli + ha/è + [verb/participle]...\n\n' +
+          'It means "to him / for him" and refers back to a person already mentioned.',
+        rule: 'gli = to him; it refers back to the most recent person being talked about',
+        examples: [
+          { italian: 'Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.', english: 'Nonna Rosa called Luca and told him...' },
+          { italian: 'Luca ha sentito le parole "se volete" e ha capito che poteva scegliere.', english: 'Luca heard the words "if you want" and understood he could choose.' },
+          { italian: 'Io accetto. Ho bisogno dello stipendio.', english: 'I accept. I need the salary.' },
+        ],
+      },
+      {
+        title: 'Le (to her) is the same idea',
+        explanation:
+          'You may also see "le" for feminine / to her.\n\n' +
+          'Same reading strategy: when you see the pronoun, map it back to who the sentence is about, then continue reading.',
+        rule: 'gli/le use the same reference-tracking strategy',
+        examples: [
+          { italian: 'Le persone entrano se vedono qualcuno. Tu resta lì.', english: 'People enter if they see someone. You stay there.' },
+          { italian: 'Sofia è arrivata un po\' tardi, perché il lavoro era lungo.', english: 'Sofia arrived a little late because the work was long.' },
+          { italian: 'Voglio tempo per gli amici e per la casa.', english: 'I want time for my friends and for the house.' },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'In "Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.", what does "gli" refer to?',
+        choices: ['Luca', 'Nonna Rosa', 'la porta'],
+        correctIndex: 0,
+        explanation: '"gli" refers back to Luca (the person just named).',
+      },
+      {
+        prompt: 'In passato prossimo, what should you check first to know who did the action?',
+        choices: ['The helper verb (ha/è) + the nearest person name', 'Only the last word', 'Only the adverb'],
+        correctIndex: 0,
+        explanation: 'Helper + participle marks the action; the nearest person tells you who did it.',
+      },
+      {
+        prompt: 'When you see gli/le, what should you do in your reading?',
+        choices: ['Ignore it', 'Map it to the person already mentioned', 'Translate it word-for-word into English'],
+        correctIndex: 1,
+        explanation: 'gli/le are reference words. You map them back to the person in the sentence.',
       },
     ],
   },
@@ -348,36 +625,7 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
 
 export function grammarNoteForBatch(start: number, end: number): GrammarNote | null {
   const key = `${start}-${end}`;
-  const note = GRAMMAR_BY_BATCH[key];
-  if (note) return note;
-
-  return {
-    batchKey: key,
-    title: 'Patterns from the story',
-    intro: `Chapters ${start}–${end} repeat a few sentence shapes. Here is a direct label for what you already saw — then a quick check.`,
-    steps: [
-      {
-        title: 'Look for the verb first',
-        explanation:
-          'Every sentence has a verb that tells you what happens. Find it, then notice the small words around it — articles (il, la), prepositions (a, in, di), and endings that show who is acting.\n\n' +
-          'You do not need every table memorized. If you recognize the pattern in the story, you are learning.',
-        rule: 'Find the verb → then who + where + what',
-        examples: [
-          { italian: 'Luca va al caffè.', english: 'Luca goes to the café.' },
-          { italian: 'Sono a Roma.', english: 'I am in Rome.' },
-          { italian: 'Ho bisogno di soldi.', english: 'I need money.' },
-        ],
-      },
-    ],
-    practice: [
-      {
-        prompt: 'Which word is the verb in “Luca va al caffè”?',
-        choices: ['Luca', 'va', 'caffè'],
-        correctIndex: 1,
-        explanation: 'Va (goes) is the verb — it tells you the action.',
-      },
-    ],
-  };
+  return GRAMMAR_BY_BATCH[key] ?? null;
 }
 
 export function grammarNoteForChapter(chapterNumber: number): GrammarNote | null {
