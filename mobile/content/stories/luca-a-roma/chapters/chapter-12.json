@@ -17,7 +17,7 @@
   "events": [
     {
       "id": "ev-12-marco-problem",
-      "summary": "Marco has to go home and needs a train ticket, but he does not have money.",
+      "summary": "Marco’s mother sent a message: she is not well. He must go to her house, buy a ticket, and has no money.",
       "characterIds": [
         "luca",
         "sofia",
@@ -27,9 +27,10 @@
         "lavoro-caffe"
       ],
       "rememberedFacts": [
-        "Marco has to go home",
-        "Marco needs a train ticket",
-        "Marco does not have money for the ticket"
+        "Marco’s mother is not well",
+        "The message is from Marco’s mother",
+        "Marco must go to his mother’s house",
+        "Marco needs a train ticket and has no money"
       ]
     }
   ],
@@ -94,57 +95,6 @@
       "sentences": [
         {
           "id": "s05",
-          "text": "Devo partire.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "dovere",
-            "partire"
-          ]
-        },
-        {
-          "id": "s06",
-          "text": "Devo andare a casa.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "dovere",
-            "andare",
-            "a",
-            "casa"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Devo comprare un biglietto.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "dovere",
-            "comprare",
-            "un",
-            "biglietto"
-          ]
-        },
-        {
-          "id": "s08",
-          "text": "Non ho soldi.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "non",
-            "avere",
-            "soldi"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "p3",
-      "order": 3,
-      "sentences": [
-        {
-          "id": "s09",
           "text": "Cosa c'è?",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -163,16 +113,72 @@
           ]
         },
         {
-          "id": "s10",
-          "text": "C'è un problema a casa.",
+          "id": "s06",
+          "text": "C'è un messaggio di mamma.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
             "ce",
             "un",
-            "problema",
+            "messaggio",
+            "di",
+            "mamma"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Mia mamma non sta bene.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "mio",
+            "mamma",
+            "non",
+            "stare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Devo andare a casa di mamma.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "andare",
             "a",
-            "casa"
+            "casa",
+            "di",
+            "mamma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Devo comprare un biglietto.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "comprare",
+            "un",
+            "biglietto"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Non ho soldi.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "soldi"
           ]
         },
         {
@@ -218,44 +224,44 @@
       "id": "ch12_q01",
       "chapterId": "luca-a-roma-12",
       "type": "event",
-      "question": "What does Marco need?",
-      "questionIt": "Di che cosa ha bisogno Marco?",
+      "question": "What is Marco’s problem?",
+      "questionIt": "Qual è il problema di Marco?",
       "choices": [
-        "A ticket to go home",
-        "A new job at the café",
-        "A key for his apartment"
+        "His mother is not well and he has no money for a ticket",
+        "He lost his apartment key",
+        "He hates the café"
       ],
       "correctChoice": 0,
-      "explanation": "Marco has to go home and must buy a ticket, but he has no money.",
+      "explanation": "Marco’s mother is not well. He must go to her house, but he has no money for a ticket.",
       "difficulty": 1
     },
     {
       "id": "ch12_q02",
       "chapterId": "luca-a-roma-12",
       "type": "character",
-      "question": "Why does Marco need the ticket?",
-      "questionIt": "Perché Marco ha bisogno del biglietto?",
+      "question": "Who sent Marco a message?",
+      "questionIt": "Chi manda un messaggio a Marco?",
       "choices": [
-        "He has to go home",
-        "He wants to go to work",
-        "He lost his suitcase"
+        "His mother",
+        "The padrone",
+        "A tourist"
       ],
       "correctChoice": 0,
-      "explanation": "Marco says he has to leave and go home. There is a problem at home.",
+      "explanation": "Marco says there is a message from his mamma.",
       "difficulty": 1
     },
     {
       "id": "ch12_q03",
       "chapterId": "luca-a-roma-12",
       "type": "direct",
-      "question": "What is Marco missing?",
+      "question": "Why does Marco need a ticket?",
       "choices": [
-        "Money for the ticket",
-        "A map of Rome",
-        "A table at the café"
+        "He must go to his mother’s house",
+        "He wants a new job at the café",
+        "He lost his suitcase"
       ],
       "correctChoice": 0,
-      "explanation": "Marco says “Non ho soldi” — he does not have money.",
+      "explanation": "He says “Devo andare a casa di mamma” — he must go to his mother’s house.",
       "difficulty": 1
     }
   ]

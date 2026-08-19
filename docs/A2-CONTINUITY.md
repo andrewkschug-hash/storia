@@ -8,7 +8,7 @@ Source of truth for chapters 21–40. Do not contradict A1.
 | --- | --- | --- |
 | luca | Young man from elsewhere; now has a small apartment, a café job, and friends. Kind, a little unsure, increasingly independent. | young Italian male |
 | sofia | Roman friend who helped Luca find his footing. Warm, practical. Not only a helper — she has her own work and worries. | young Italian female |
-| marco | Sofia’s friend. Had no money for a ticket; the group helped; they traveled; they found the suitcase and ticket. Grateful, still anxious about money and work. | slightly reserved male |
+| marco | Sofia’s friend. Works nearby in Rome. His mother was unwell; Sofia gave him money for a ticket; Nonna Rosa told the group to go with him; they traveled; they found the suitcase and ticket. Grateful, still anxious about money and work. | slightly reserved male |
 | giulia | Luca’s colleague at the café. Capable, wants to be taken seriously. | clear, bright female |
 | nonna-rosa | Sofia’s grandmother. Warm home, practical advice. Used when the group needs a quiet place or an older perspective. | older female |
 | padrone | Café owner. Direct. Gave Luca work starting “tomorrow” (ch. 9). Not a villain. | middle-aged male |
@@ -17,7 +17,7 @@ Source of truth for chapters 21–40. Do not contradict A1.
 
 - Luca–Sofia: friends; she showed him the neighborhood; they helped Marco together. A2: closer, more equal.
 - Luca–Giulia: coworkers since Luca’s first day (ch. 10).
-- Luca–Marco: met in ch. 11; Luca helped him.
+- Luca–Marco: met in ch. 11; Luca helped him go to his mother’s house.
 - Luca–Padrone: employer/employee.
 - Sofia–Nonna Rosa: granddaughter / grandmother.
 - Sofia–Marco: existing friends.
@@ -30,7 +30,7 @@ Rome, station, Bar Centrale, Luca’s small apartment near the center, Sofia’s
 
 - Luca has a key and a small apartment; rent matters.
 - He works at the café.
-- Marco needed a ticket; Sofia gave him money; they left together; on the trip the ticket and suitcase went missing and were found.
+- Marco’s mother was not well. She sent a message. Sofia gave him money for the ticket; he bought it; they left together after Nonna Rosa said not to let him go alone; on the trip the ticket and suitcase went missing and were found.
 - They returned to Rome together. Luca has casa, lavoro, amici.
 
 ## Unresolved / open for A2 (not contradictions)

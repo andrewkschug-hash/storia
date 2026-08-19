@@ -60,7 +60,7 @@
       "name": "Marco",
       "gender": "male",
       "ageDescription": "young adult",
-      "description": "Sofia's friend who works nearby and later needs help with a serious problem.",
+      "description": "Sofia's friend. He works nearby in Rome. His mother lives elsewhere; when she is unwell he needs help getting a ticket to go to her.",
       "storyRole": "friend in need",
       "relationships": [
         "Friend of Sofia",

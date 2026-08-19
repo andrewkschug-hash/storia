@@ -60,7 +60,7 @@ describe('speak scene — chapter 15', () => {
     expect(scene?.lines.map((line) => line.en)).toEqual([
       'Marco goes back to the café.',
       'He has a problem.',
-      'He has to go home.',
+      'He has to go to his mom\'s house.',
       'He needs to buy a ticket.',
       "He doesn't have money.",
     ]);

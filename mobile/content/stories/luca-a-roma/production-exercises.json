@@ -720,7 +720,7 @@
       "exerciseId": "luca-a-roma-ch12-prod-02",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-12",
-      "sourceSentenceId": "s08",
+      "sourceSentenceId": "s10",
       "promptEn": "I don't have money.",
       "expectedIt": "Non ho soldi.",
       "acceptableAnswers": [
@@ -737,7 +737,7 @@
       "exerciseId": "luca-a-roma-ch12-prod-03",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-12",
-      "sourceSentenceId": "s09",
+      "sourceSentenceId": "s05",
       "promptEn": "What's wrong?",
       "expectedIt": "Cosa c'è?",
       "level": "A1",
@@ -816,12 +816,15 @@
       "exerciseId": "luca-a-roma-ch13-prod-04",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-13",
-      "sourceSentenceId": "s12",
-      "promptEn": "Together it's easy.",
-      "expectedIt": "Insieme è facile.",
+      "sourceSentenceId": "s09",
+      "promptEn": "It's for the ticket.",
+      "expectedIt": "È per il biglietto.",
+      "acceptableAnswers": [
+        "E' per il biglietto."
+      ],
       "level": "A1",
       "focus": [
-        "insieme"
+        "biglietto"
       ],
       "match": "flexible"
     },
@@ -872,13 +875,16 @@
       "exerciseId": "luca-a-roma-ch14-prod-04",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-14",
-      "sourceSentenceId": "s13",
-      "promptEn": "Where are you tomorrow?",
-      "expectedIt": "Dove sei domani?",
+      "sourceSentenceId": "s07",
+      "promptEn": "I can't go alone.",
+      "expectedIt": "Non posso andare solo.",
+      "acceptableAnswers": [
+        "Non posso andare da solo."
+      ],
       "level": "A1",
       "focus": [
-        "question",
-        "domani"
+        "potere",
+        "negation"
       ],
       "match": "flexible"
     },
@@ -904,16 +910,16 @@
       "exerciseId": "luca-a-roma-ch15-prod-02",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-15",
-      "sourceSentenceId": "s07",
-      "promptEn": "Do you have an idea?",
-      "expectedIt": "Avete un'idea?",
+      "sourceSentenceId": "s09",
+      "promptEn": "Go together.",
+      "expectedIt": "Andate insieme.",
+      "acceptableAnswers": [
+        "Andiamo insieme."
+      ],
       "level": "A1",
       "focus": [
-        "question",
-        "avere"
-      ],
-      "acceptableAnswers": [
-        "Hai un'idea?"
+        "andare",
+        "insieme"
       ],
       "match": "flexible"
     },
@@ -921,7 +927,7 @@
       "exerciseId": "luca-a-roma-ch15-prod-03",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-15",
-      "sourceSentenceId": "s11",
+      "sourceSentenceId": "s12",
       "promptEn": "Why not?",
       "expectedIt": "Perché no?",
       "level": "A1",
