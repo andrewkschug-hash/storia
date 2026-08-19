@@ -5,7 +5,7 @@ export type StorySentenceCue = {
   english: string | null;
 };
 
-export type SelfAssessment = 'got_it' | 'almost' | 'not_yet';
+export type { SelfAssessment } from '@/src/vocabulary/selfAssessment';
 
 export type AfterComprehensionResults =
   | { action: 'show_production'; exercises: ProductionExercise[] }

@@ -164,17 +164,17 @@ export default function OnboardingScreen() {
               <View
                 style={[styles.sample, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
                 <Text style={[Typography.caption, { color: colors.textMuted }]}>Finished reading?</Text>
-                <View style={[styles.fakeBtn, { backgroundColor: colors.tint }]}>
-                  <Text style={[Typography.button, { color: '#F7FAF9', fontSize: 14 }]}>Continue</Text>
+                <View style={[styles.fakeBtn, { backgroundColor: colors.buttonPrimary }]}>
+                  <Text style={[Typography.button, { color: colors.onButtonPrimary, fontSize: 14 }]}>Continue</Text>
                 </View>
               </View>
               <Pressable
                 onPress={() => setStep('done')}
                 style={({ pressed }) => [
                   styles.primaryBtn,
-                  { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, marginTop: Spacing.xl },
+                  { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, marginTop: Spacing.xl },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
+                <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Continue</Text>
               </Pressable>
             </View>
           ) : null}
@@ -199,9 +199,9 @@ export default function OnboardingScreen() {
                 onPress={() => void finish()}
                 style={({ pressed }) => [
                   styles.primaryBtn,
-                  { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, marginTop: Spacing.xl },
+                  { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, marginTop: Spacing.xl },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>Start reading</Text>
+                <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Start reading</Text>
               </Pressable>
             </View>
           ) : null}

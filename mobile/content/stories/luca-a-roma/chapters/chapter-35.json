@@ -953,7 +953,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Arrivals are gradual and organic.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Come si riempie la sala?"
     },
     {
       "id": "ch35_q02",
@@ -967,7 +968,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He notices the tables and customers without a victory speech.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Come reagisce il padrone quando la sala si riempie?"
     },
     {
       "id": "ch35_q03",
@@ -981,7 +983,8 @@
       ],
       "correctChoice": 0,
       "explanation": "A customer plans to return; the café is not declared saved forever.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa dimostra per ora la sala piena?"
     }
   ]
 }

@@ -40,7 +40,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Venerdì Luca, Sofia e Marco sono andati da Nonna Rosa.",
+          "text": "Venerdì Luca, Sofia e Marco sono andati da Nonna Rosa, in una casa piccola e calda, con cose vecchie e belle.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -53,18 +53,10 @@
             "andare",
             "dare",
             "nonna",
-            "rosa"
-          ]
-        },
-        {
-          "id": "s02",
-          "text": "La casa era piccola e calda, con cose vecchie e belle.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "la",
+            "rosa",
+            "in",
+            "una",
             "casa",
-            "essere",
             "piccolo",
             "e",
             "caldo",
@@ -707,7 +699,7 @@
         },
         {
           "id": "s39",
-          "text": "Nella strada avevano un’idea e una domanda aperta.",
+          "text": "Nella strada avevano un'idea e una domanda aperta, perché la festa non era ancora un piano sicuro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -718,15 +710,8 @@
             "e",
             "una",
             "domanda",
-            "aprire"
-          ]
-        },
-        {
-          "id": "s40",
-          "text": "La festa non era ancora un piano sicuro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "aprire",
+            "perche",
             "la",
             "festa",
             "non",
@@ -769,7 +754,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Bread, coffee, music, friends — as a try.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Che idea suggerisce Nonna Rosa?"
     },
     {
       "id": "ch29_q02",
@@ -783,7 +769,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He says he has no money but has time.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Come può aiutare Marco?"
     },
     {
       "id": "ch29_q03",

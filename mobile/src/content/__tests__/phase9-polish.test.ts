@@ -101,6 +101,19 @@ describe('Phase 9 scaffolding fade', () => {
     }
   });
 
+  it('ramps questionIt across A2 chapters (25–40)', () => {
+    const chapters = [...getContentBundle().chapters.values()]
+      .filter((c) => c.number >= 25 && c.number <= 40)
+      .sort((a, b) => a.number - b.number);
+    expect(chapters).toHaveLength(16);
+    for (const ch of chapters) {
+      const withIt = ch.questions.filter((q) => !!q.questionIt).length;
+      if (ch.number <= 28) expect(withIt).toBe(1);
+      else if (ch.number <= 34) expect(withIt).toBe(2);
+      else expect(withIt).toBe(3);
+    }
+  });
+
   it('uses Italian-first recap from chapter 11', () => {
     expect(recapItalianPrimary(10)).toBe(false);
     expect(recapItalianPrimary(11)).toBe(true);

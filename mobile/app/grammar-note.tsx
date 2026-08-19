@@ -403,12 +403,12 @@ function PrimaryButton({
       style={({ pressed }) => [
         styles.primaryBtn,
         {
-          backgroundColor: colors.tint,
+          backgroundColor: colors.buttonPrimary,
           opacity: pressed ? 0.88 : 1,
           minHeight: minTouchTarget,
         },
       ]}>
-      <Text style={[type.button, { color: colors.onTint }]}>{label}</Text>
+      <Text style={[type.button, { color: colors.onButtonPrimary }]}>{label}</Text>
     </Pressable>
   );
 }

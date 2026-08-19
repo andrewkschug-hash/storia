@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { getChapter, getContentBundle } from '@/src/content';
+import { getChapter, tryGetContentBundle } from '@/src/content';
 import {
   getContinueReadingTarget,
   type ContinueReadingTarget,
@@ -29,7 +29,7 @@ export function useContinueReading() {
   }, [refresh]);
 
   const chapter = target ? getChapter(target.chapterId, target.storyId) : undefined;
-  const bundle = target ? getContentBundle(target.storyId) : undefined;
+  const bundle = target ? tryGetContentBundle(target.storyId) : undefined;
   const service = target ? getProgressService(target.storyId) : null;
   const progress = target?.progress ?? null;
   const completed = progress && service ? service.getCompletedCount(progress) : 0;

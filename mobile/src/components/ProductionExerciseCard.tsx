@@ -8,6 +8,7 @@ import {
   type StorySentenceCue,
 } from '@/src/production/flow';
 import { buildWordHintSegments } from '@/src/production/wordHints';
+import { SelfAssessmentVoteButtons } from '@/src/components/SelfAssessmentVoteButtons';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
@@ -21,12 +22,6 @@ type Props = {
   lexiconById?: Map<string, LexiconEntry>;
   onAssessed?: (assessment: SelfAssessment | null) => void;
 };
-
-const SELF_ASSESSMENT: { id: SelfAssessment; label: string }[] = [
-  { id: 'got_it', label: 'I got it' },
-  { id: 'almost', label: 'Almost' },
-  { id: 'not_yet', label: 'Not yet' },
-];
 
 export function ProductionExerciseCard({
   exercise,
@@ -133,14 +128,14 @@ export function ProductionExerciseCard({
           style={({ pressed, focused }) => [
             styles.primaryBtn,
             {
-              backgroundColor: colors.tint,
+              backgroundColor: colors.buttonPrimary,
               opacity: pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
               borderWidth: focused ? 2 : 0,
               borderColor: colors.accent,
             },
           ]}>
-          <Text style={[type.button, { color: colors.onTint }]}>Show answer</Text>
+          <Text style={[type.button, { color: colors.onButtonPrimary }]}>Show answer</Text>
         </Pressable>
       ) : null}
 
@@ -150,7 +145,7 @@ export function ProductionExerciseCard({
             styles.answerCard,
             {
               backgroundColor: colors.readerSurface,
-              borderColor: colors.tint,
+              borderColor: colors.border,
             },
           ]}>
           <Text style={[type.caption, { color: colors.textMuted }]}>Expected answer</Text>
@@ -177,38 +172,13 @@ export function ProductionExerciseCard({
       {view.howDidYouDoVisible ? (
         <View style={{ marginTop: Spacing.xl }}>
           <Text style={[type.label, { color: colors.text }]}>How did you do?</Text>
-          <View style={styles.assessmentRow}>
-            {SELF_ASSESSMENT.map((option) => {
-              const selected = assessment === option.id;
-              return (
-                <Pressable
-                  key={option.id}
-                  accessibilityRole="button"
-                  accessibilityLabel={option.label}
-                  accessibilityState={{ selected }}
-                  onPress={() => {
-                    setAssessment(option.id);
-                    onAssessed?.(option.id);
-                  }}
-                  style={({ pressed, focused }) => [
-                    styles.assessmentBtn,
-                    {
-                      backgroundColor: selected ? colors.tint : colors.backgroundElevated,
-                      borderColor: focused || selected ? colors.tint : colors.border,
-                      opacity: pressed ? 0.88 : 1,
-                    },
-                  ]}>
-                  <Text
-                    style={[
-                      type.caption,
-                      { color: selected ? colors.onTint : colors.text, textAlign: 'center' },
-                    ]}>
-                    {option.label}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </View>
+          <SelfAssessmentVoteButtons
+            selected={assessment}
+            onVote={(option) => {
+              setAssessment(option);
+              onAssessed?.(option);
+            }}
+          />
         </View>
       ) : null}
 
@@ -220,7 +190,7 @@ export function ProductionExerciseCard({
           style={({ pressed, focused }) => [
             styles.primaryBtn,
             {
-              backgroundColor: colors.tint,
+              backgroundColor: colors.buttonPrimary,
               opacity: pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
               minHeight: minTouchTarget,
@@ -228,7 +198,7 @@ export function ProductionExerciseCard({
               borderColor: colors.accent,
             },
           ]}>
-          <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
+          <Text style={[type.button, { color: colors.onButtonPrimary }]}>Continue</Text>
         </Pressable>
       ) : null}
     </View>
@@ -253,20 +223,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
-  },
-  assessmentRow: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-    marginTop: Spacing.sm,
-  },
-  assessmentBtn: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: Spacing.sm,
-    paddingHorizontal: Spacing.xs,
-    borderRadius: Radii.md,
-    borderWidth: StyleSheet.hairlineWidth,
-    minHeight: 44,
   },
 });

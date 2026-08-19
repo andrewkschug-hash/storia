@@ -25,11 +25,11 @@ function Chip<T extends string>({
         {
           minHeight: minTouchTarget,
           borderColor: selected ? colors.tint : colors.border,
-          backgroundColor: selected ? colors.tint : colors.backgroundElevated,
+          backgroundColor: selected ? colors.accentSoft : colors.backgroundElevated,
           opacity: pressed ? 0.88 : 1,
         },
       ]}>
-      <Text style={[type.label, { color: selected ? colors.onTint : colors.text }]}>{label}</Text>
+      <Text style={[type.label, { color: selected ? colors.tint : colors.text }]}>{label}</Text>
     </Pressable>
   );
 }

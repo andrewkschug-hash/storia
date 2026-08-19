@@ -147,9 +147,9 @@ export default function LevelReadinessScreen() {
                   onPress={() => void onTry()}
                   style={({ pressed }) => [
                     styles.primaryBtn,
-                    { backgroundColor: colors.tint, opacity: pressed || busy ? 0.88 : 1 },
+                    { backgroundColor: colors.buttonPrimary, opacity: pressed || busy ? 0.88 : 1 },
                   ]}>
-                  <Text style={[Typography.button, { color: '#F7FAF9' }]}>{copy.tryLabel}</Text>
+                  <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>{copy.tryLabel}</Text>
                 </Pressable>
               ) : null}
               <Pressable

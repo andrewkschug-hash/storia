@@ -39,6 +39,7 @@ import {
   type SelfAssessment,
 } from '@/src/production/flow';
 import { getVocabularyService } from '@/src/vocabulary';
+import { resolveProductionFocusLemmas } from '@/src/vocabulary/productionFocusLemmas';
 import { getReviewService } from '@/src/review';
 import type { HomeReviewCopy } from '@/src/review/ReviewService';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
@@ -279,17 +280,35 @@ export default function ComprehensionScreen() {
     await progressService.recordProduction(chapter.id, { skipped, attempts });
     if (skipped) return;
     const vocab = getVocabularyService();
+    const bundle = getContentBundle(resolvedStoryId);
     for (const exercise of productionExercises) {
-      if (assessments[exercise.exerciseId] !== 'got_it') continue;
+      const assessment = assessments[exercise.exerciseId];
+      if (!assessment || assessment === 'skipped') continue;
       const source = chapter.paragraphs
         .flatMap((paragraph) => paragraph.sentences)
         .find((sentence) => sentence.id === exercise.sourceSentenceId);
       if (!source) continue;
-      await vocab.recordProductionSuccess({
-        lemmaIds: [...new Set(source.tokens.map((token) => token.lemmaId))],
-        chapterId: chapter.id,
-        sentenceId: source.id,
-      });
+      const lemmaIds = resolveProductionFocusLemmas(
+        exercise,
+        source,
+        bundle.lexiconById,
+      );
+      if (lemmaIds.length === 0) continue;
+      await vocab.recordSelfAssessmentForLemmaIds(
+        lemmaIds,
+        assessment,
+        {
+          source: 'production',
+          storyId: resolvedStoryId,
+          chapterId: chapter.id,
+          sentenceId: source.id,
+          exerciseId: exercise.exerciseId,
+        },
+        {
+          sourceSentence: source,
+          bumpEncounterOnGotIt: assessment === 'got_it',
+        },
+      );
     }
   };
 
@@ -380,9 +399,9 @@ export default function ComprehensionScreen() {
               }}
               style={({ pressed }) => [
                 styles.primaryBtn,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget, marginTop: Spacing.xl },
+                { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget, marginTop: Spacing.xl },
               ]}>
-              <Text style={[type.button, { color: colors.onTint }]}>Begin</Text>
+              <Text style={[type.button, { color: colors.onButtonPrimary }]}>Begin</Text>
             </Pressable>
             <Pressable
               accessibilityRole="link"
@@ -466,11 +485,11 @@ export default function ComprehensionScreen() {
                   styles.primaryBtn,
                   {
                     flex: 1,
-                    backgroundColor: colors.tint,
+                    backgroundColor: colors.buttonPrimary,
                     opacity: pressed ? 0.88 : 1,
                   },
                 ]}>
-                <Text style={[type.button, { color: colors.onTint }]}>
+                <Text style={[type.button, { color: colors.onButtonPrimary }]}>
                   {index + 1 < questions.length ? 'Continue' : 'See results'}
                 </Text>
               </Pressable>
@@ -499,12 +518,12 @@ export default function ComprehensionScreen() {
               style={({ pressed }) => [
                 styles.primaryBtn,
                 {
-                  backgroundColor: colors.tint,
+                  backgroundColor: colors.buttonPrimary,
                   opacity: pressed ? 0.88 : 1,
                   marginTop: Spacing.xl,
                 },
               ]}>
-              <Text style={[type.button, { color: colors.onTint }]}>{completeCopy.button}</Text>
+              <Text style={[type.button, { color: colors.onButtonPrimary }]}>{completeCopy.button}</Text>
             </Pressable>
           </View>
         ) : null}
@@ -531,14 +550,14 @@ export default function ComprehensionScreen() {
               style={({ pressed, focused }) => [
                 styles.primaryBtn,
                 {
-                  backgroundColor: colors.tint,
+                  backgroundColor: colors.buttonPrimary,
                   opacity: pressed || finishing ? 0.88 : 1,
                   marginTop: Spacing.xl,
                   borderWidth: focused ? 2 : 0,
                   borderColor: colors.accent,
                 },
               ]}>
-              <Text style={[type.button, { color: colors.onTint }]}>
+              <Text style={[type.button, { color: colors.onButtonPrimary }]}>
                 {comprehensionResultsContinueLabel(
                   chapter.number,
                   nextChapterNumber,

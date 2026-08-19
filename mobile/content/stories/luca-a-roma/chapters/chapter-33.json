@@ -964,7 +964,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He had a work conversation and lost track of time.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Perché Marco è in ritardo?"
     },
     {
       "id": "ch33_q02",
@@ -992,7 +993,8 @@
       ],
       "correctChoice": 0,
       "explanation": "She is direct about needing him for Saturday.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa chiarisce Giulia a Marco?"
     }
   ]
 }

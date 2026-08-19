@@ -119,7 +119,7 @@
         },
         {
           "id": "s06",
-          "text": "Sofia ha ascoltato e non ha detto niente per un momento.",
+          "text": "Sofia ha ascoltato e non ha detto niente per un momento, poi hanno camminato con le persone della sera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -133,19 +133,10 @@
             "niente",
             "per",
             "un",
-            "momento"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Hanno camminato un momento con le persone della sera.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "momento",
+            "poi",
             "avere",
             "camminare",
-            "un",
-            "momento",
             "con",
             "le",
             "persona",
@@ -311,7 +302,7 @@
         },
         {
           "id": "s17",
-          "text": "Sofia non stava solo aiutando Luca a Roma.",
+          "text": "Sofia non stava solo aiutando Luca a Roma, ma pensava con lui, da amica, con la sua idea.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -322,16 +313,8 @@
             "aiutare",
             "luca",
             "a",
-            "roma"
-          ]
-        },
-        {
-          "id": "s18",
-          "text": "Stava pensando con lui, da amica, con la sua idea.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "stare",
+            "roma",
+            "ma",
             "pensare",
             "con",
             "lui",
@@ -702,7 +685,7 @@
         },
         {
           "id": "s39",
-          "text": "La notizia era ancora difficile, ma non era più solo di Luca.",
+          "text": "La notizia era ancora difficile, ma non era più solo di Luca, e prima del venerdì c'era ancora il lavoro di giovedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -717,19 +700,13 @@
             "piu",
             "solo",
             "di",
-            "luca"
-          ]
-        },
-        {
-          "id": "s40",
-          "text": "Prima del venerdì, c’era il lavoro di giovedì.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "luca",
+            "e",
             "prima",
             "del",
             "venerdi",
             "ce",
+            "ancora",
             "il",
             "lavorare",
             "di",
@@ -752,7 +729,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He repeats the padrone’s news.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa dice Luca a Sofia?"
     },
     {
       "id": "ch27_q02",

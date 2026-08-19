@@ -41,11 +41,11 @@ export function LevelTabs({ active, onChange }: Props) {
     }
   };
 
-  const trackBorder = 'rgba(120, 182, 163, 0.18)';
+  const trackBorder = colors.border;
 
   return (
     <Animated.View style={{ opacity: fade, marginBottom: 32 }}>
-      <View style={[styles.track, { borderColor: trackBorder, backgroundColor: 'rgba(255,255,255,0.03)' }]}>
+      <View style={[styles.track, { borderColor: trackBorder, backgroundColor: colors.backgroundElevated }]}>
         <Animated.View
           pointerEvents="none"
           style={[

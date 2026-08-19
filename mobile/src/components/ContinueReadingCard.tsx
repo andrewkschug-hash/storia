@@ -38,7 +38,7 @@ export function ContinueReadingCard({
           borderColor: colors.border,
         },
       ]}>
-      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
+      <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
         {eyebrow ?? (isStart ? 'Start reading' : 'Continue reading')}
       </Text>
       {storyTitleIt ? (
@@ -77,12 +77,12 @@ export function ContinueReadingCard({
         style={({ pressed }) => [
           styles.button,
           {
-            backgroundColor: colors.tint,
+            backgroundColor: colors.buttonPrimary,
             opacity: pressed ? 0.88 : 1,
             minHeight: minTouchTarget,
           },
         ]}>
-        <Text style={[type.button, { color: colors.onTint }]}>
+        <Text style={[type.button, { color: colors.onButtonPrimary }]}>
           {buttonLabel ?? (isStart ? 'Start reading' : 'Continue reading')}
         </Text>
       </Pressable>

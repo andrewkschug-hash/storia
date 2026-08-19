@@ -41,7 +41,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Il giorno dopo, sabato non era ancora arrivato.",
+          "text": "Il giorno dopo, sabato non era ancora arrivato, ma Luca e Sofia erano già al caffè la mattina presto, e Giulia li ha visti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -52,20 +52,13 @@
             "non",
             "essere",
             "ancora",
-            "arrivare"
-          ]
-        },
-        {
-          "id": "s02",
-          "text": "Luca e Sofia sono andati al caffè la mattina presto, e Giulia li ha visti.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "arrivare",
+            "ma",
             "luca",
             "e",
             "sofia",
             "essere",
-            "andare",
+            "gia",
             "al",
             "caffe",
             "la",
@@ -163,7 +156,7 @@
         },
         {
           "id": "s08",
-          "text": "Il padrone era vicino alla porta della cucina.",
+          "text": "Il padrone era vicino alla porta della cucina: ascoltava, non sembrava contento, solo stanco e poco sicuro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -174,29 +167,11 @@
             "alla",
             "porta",
             "della",
-            "cucina"
-          ]
-        },
-        {
-          "id": "s09",
-          "text": "Ha ascoltato. Non sembrava contento.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
+            "cucina",
             "ascoltare",
             "non",
             "sembrare",
-            "contento"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Sembrava solo stanco e poco sicuro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "sembrare",
+            "contento",
             "solo",
             "stanco",
             "e",
@@ -849,7 +824,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He says they can try, then he will decide.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa decide il padrone?"
     },
     {
       "id": "ch30_q02",
@@ -877,7 +853,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Luca says it is not a big restaurant.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Che tipo di incontro vogliono?"
     }
   ]
 }

@@ -517,8 +517,8 @@ function StatusIcon({ status, color }: { status: ChapterStatus; color: string })
 }
 
 function statusIconColor(status: ChapterStatus, colors: ThemeColors): string {
-  if (status === 'completed') return colors.tint;
-  if (status === 'in_progress') return colors.tintSoft;
+  if (status === 'completed') return colors.statusMastered;
+  if (status === 'in_progress') return colors.statusLearning;
   return colors.textMuted;
 }
 

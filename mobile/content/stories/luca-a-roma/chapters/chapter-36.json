@@ -1051,7 +1051,8 @@
       ],
       "correctChoice": 0,
       "explanation": "His request is about normal life continuing.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa chiede Luca?"
     },
     {
       "id": "ch36_q02",
@@ -1065,7 +1066,8 @@
       ],
       "correctChoice": 0,
       "explanation": "She stands with him as a friend and keeps him practical.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Com’è Sofia con Luca in questo capitolo?"
     },
     {
       "id": "ch36_q03",
@@ -1079,7 +1081,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He responds to what he actually saw.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Perché il padrone risponde in modo più aperto?"
     }
   ]
 }

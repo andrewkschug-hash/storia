@@ -92,9 +92,9 @@ export default function AdaptiveDebugScreen() {
           }}
           style={({ pressed }) => [
             styles.cta,
-            { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+            { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1 },
           ]}>
-          <Text style={[Typography.button, { color: '#F7FAF9' }]}>Load sample learner</Text>
+          <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Load sample learner</Text>
         </Pressable>
         {note ? (
           <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>

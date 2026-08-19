@@ -1,42 +1,42 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { getContentBundle } from '@/src/content';
-import { getReviewService } from '@/src/review';
-import type { HomeReviewCopy, ReviewSession } from '@/src/review/ReviewService';
-import { getVocabularyService } from '@/src/vocabulary';
+import { getAdaptiveService } from '@/src/adaptive';
+import { getContentBundle, LUCA_STORY_ID } from '@/src/content';
+import { buildPracticeQueue } from '@/src/practice';
+import type { ReadingProgressRecord } from '@/src/progress/types';
 import { browseVocabulary, type VocabBrowseItem } from '@/src/vocabulary/catalog';
+import { getVocabularyService } from '@/src/vocabulary';
 import type { UserVocabularyState } from '@/src/vocabulary/types';
+import { practiceHomeCopy, type YourItalianSummary } from '@/src/vocabulary/useYourItalian';
 
-export function useVocabulary(progress?: {
-  currentChapterId: string;
-  completedChapterIds: string[];
-} | null) {
+export function useVocabulary(progress?: ReadingProgressRecord | null) {
   const [state, setState] = useState<UserVocabularyState | null>(null);
   const [loading, setLoading] = useState(true);
+  const [home, setHome] = useState<ReturnType<typeof practiceHomeCopy> | null>(null);
 
   const refresh = useCallback(async () => {
     const vocab = getVocabularyService();
     const next = await vocab.getState();
     setState(next);
+
+    if (progress) {
+      const bundle = getContentBundle(progress.storyId ?? LUCA_STORY_ID);
+      const profile = await getAdaptiveService().buildProfile(progress);
+      const count = buildPracticeQueue(next, bundle, profile, { limit: 5 }).length;
+      setHome(practiceHomeCopy(count));
+    } else {
+      setHome(null);
+    }
+
     setLoading(false);
-  }, []);
+  }, [progress]);
 
   useEffect(() => {
     void refresh();
   }, [refresh]);
 
-  const summary = state ? getVocabularyService().summarize(state) : null;
+  const summary: YourItalianSummary | null = state ? getVocabularyService().summarize(state) : null;
   const lists = state ? browseVocabulary(getContentBundle(), state) : null;
-
-  let session: ReviewSession | null = null;
-  let home: HomeReviewCopy | null = null;
-  if (state && progress) {
-    session = getReviewService().createSession(state, {
-      currentChapterId: progress.currentChapterId,
-      completedChapterIds: progress.completedChapterIds,
-    });
-    home = getReviewService().homeCopy(session);
-  }
 
   return {
     state,
@@ -44,7 +44,6 @@ export function useVocabulary(progress?: {
     refresh,
     summary,
     lists,
-    session,
     home,
     learning: (lists?.learning ?? []) as VocabBrowseItem[],
     familiar: (lists?.familiar ?? []) as VocabBrowseItem[],

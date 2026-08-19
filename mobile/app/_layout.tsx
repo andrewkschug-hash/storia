@@ -162,6 +162,14 @@ function RootLayoutNav() {
           }}
         />
         <Stack.Screen
+          name="practice"
+          options={{
+            title: 'Practice',
+            headerBackTitle: 'Italian',
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
           name="vocab/[kind]/[id]"
           options={{
             title: 'Word',

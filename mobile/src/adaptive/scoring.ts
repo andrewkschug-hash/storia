@@ -4,6 +4,7 @@ import {
   ADAPTIVE_PHRASE_SET,
 } from '@/src/adaptive/config';
 import { clamp01, recentTapRate, round2, tapRate } from '@/src/adaptive/metrics';
+import { daysSince } from '@/src/vocabulary/selfAssessment';
 import type {
   AdaptiveItem,
   AdaptiveScoreFactors,
@@ -79,8 +80,10 @@ function scoreItem(args: {
   const reasons: string[] = [];
 
   const struggle = struggleScore(args.row.encounterCount, lifetime, recent.rate);
-  if (struggle >= 0.5) reasons.push('High recent tap rate');
-  else if (struggle >= 0.3) reasons.push('Still needs help');
+  const uncertainty = assessmentUncertainty(args.row);
+  const combinedStruggle = clamp01(struggle * 0.85 + uncertainty * 0.15);
+  if (combinedStruggle >= 0.5) reasons.push('High recent tap rate');
+  else if (combinedStruggle >= 0.3) reasons.push('Still needs help');
 
   let importance = args.frequency === 'high' ? 0.7 : args.frequency === 'low' ? 0.25 : 0.45;
   if (args.row.saved) {
@@ -100,7 +103,7 @@ function scoreItem(args: {
   if (overexposure > 0.5) reasons.push('Recently reinforced');
 
   const raw =
-    struggle * weights.struggle +
+    combinedStruggle * weights.struggle +
     importance * weights.importance +
     recency * weights.recency +
     storyRelevance * weights.storyRelevance +
@@ -110,7 +113,7 @@ function scoreItem(args: {
 
   const priority = round2(clamp01(raw));
   const factors: AdaptiveScoreFactors = {
-    struggle: round2(struggle),
+    struggle: round2(combinedStruggle),
     importance: round2(importance),
     recency: round2(recency),
     storyRelevance: round2(storyRelevance),
@@ -123,7 +126,7 @@ function scoreItem(args: {
     kind: args.kind,
     id: args.id,
     italian: args.italian,
-    state: exposureState(args.row.encounterCount, lifetime, recent.rate, struggle),
+    state: exposureState(args.row.encounterCount, lifetime, recent.rate, combinedStruggle),
     priority,
     factors,
     encounterCount: args.row.encounterCount,
@@ -146,6 +149,15 @@ export function struggleScore(
     return clamp01(lifetimeTapRate * 0.25);
   }
   return clamp01(lifetimeTapRate * 0.35 + recentRate * 0.65);
+}
+
+function assessmentUncertainty(row: LemmaEncounter | PhraseEncounter): number {
+  const days = daysSince(row.lastSelfAssessmentAt);
+  if (days === null || days > 14) return 0;
+  if (row.lastSelfAssessment === 'not_yet') return clamp01(0.35 + row.incorrectReviewCount * 0.08);
+  if (row.lastSelfAssessment === 'almost') return clamp01(0.2 + row.almostReviewCount * 0.05);
+  if (row.lastSelfAssessment === 'got_it') return 0;
+  return 0;
 }
 
 function recencyScore(lastEncounteredAt: string | null, now?: Date): number {

@@ -307,7 +307,11 @@ function StatusIcon({ status }: { status: ChapterStatus }) {
   if (status === 'available') return <View style={styles.iconSlot} />;
 
   const color =
-    status === 'completed' ? colors.tint : status === 'in_progress' ? colors.tintSoft : colors.textMuted;
+    status === 'completed'
+      ? colors.statusMastered
+      : status === 'in_progress'
+        ? colors.statusLearning
+        : colors.textMuted;
   const name =
     status === 'completed'
       ? ({ ios: 'checkmark.circle.fill', android: 'check_circle', web: 'check_circle' } as const)

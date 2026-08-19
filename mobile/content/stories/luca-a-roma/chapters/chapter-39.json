@@ -1029,7 +1029,8 @@
       "correctChoice": 0,
       "explanation": "Busy-day help: few hours, little money, a start.",
       "chapterId": "luca-a-roma-39",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Quale opportunità riceve Marco?"
     },
     {
       "id": "ch39_q02",
@@ -1043,7 +1044,8 @@
       "correctChoice": 0,
       "explanation": "The owner frames it as a small trial.",
       "chapterId": "luca-a-roma-39",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Perché il lavoro di Marco è solo un punto di partenza?"
     },
     {
       "id": "ch39_q03",
@@ -1057,7 +1059,8 @@
       "correctChoice": 0,
       "explanation": "Partial hours + organizing + Marco’s busy-day role.",
       "chapterId": "luca-a-roma-39",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Come sta cambiando il programma del gruppo?"
     }
   ]
 }

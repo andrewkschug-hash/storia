@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { SelfAssessmentVoteButtons } from '@/src/components/SelfAssessmentVoteButtons';
 import { LUCA_STORY_ID, getContentBundle } from '@/src/content';
 import { batchRangeForChapter } from '@/src/content/lessonBatches';
 import { recapCheckpointId } from '@/src/content/storyPath';
@@ -93,7 +94,12 @@ export default function BatchRecapScreen() {
     if (!current || voting) return;
     setVoting(true);
     try {
-      await getVocabularyService().recordReview(current.kind, current.id, vote === 'got_it');
+      await getVocabularyService().recordSelfAssessment(
+        current.kind,
+        current.id,
+        vote,
+        { source: 'batch_recap', storyId },
+      );
       goNext();
     } finally {
       setVoting(false);
@@ -131,13 +137,13 @@ export default function BatchRecapScreen() {
               style={({ pressed }) => [
                 styles.primaryBtn,
                 {
-                  backgroundColor: colors.tint,
+                  backgroundColor: colors.buttonPrimary,
                   opacity: pressed ? 0.88 : 1,
                   minHeight: minTouchTarget,
                   marginTop: Spacing.xl,
                 },
               ]}>
-              <Text style={[type.button, { color: colors.onTint }]}>Start</Text>
+              <Text style={[type.button, { color: colors.onButtonPrimary }]}>Start</Text>
             </Pressable>
           </View>
         ) : current ? (
@@ -196,77 +202,16 @@ export default function BatchRecapScreen() {
                 <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
                   How did you do?
                 </Text>
-                <View style={styles.voteRow}>
-                  <VoteButton
-                    label="Got it"
-                    colors={colors}
-                    type={type}
-                    minTouchTarget={minTouchTarget}
-                    disabled={voting}
-                    onPress={() => void onVote('got_it')}
-                  />
-                  <VoteButton
-                    label="Almost"
-                    colors={colors}
-                    type={type}
-                    minTouchTarget={minTouchTarget}
-                    disabled={voting}
-                    outlined
-                    onPress={() => void onVote('almost')}
-                  />
-                  <VoteButton
-                    label="Not yet"
-                    colors={colors}
-                    type={type}
-                    minTouchTarget={minTouchTarget}
-                    disabled={voting}
-                    outlined
-                    onPress={() => void onVote('not_yet')}
-                  />
-                </View>
+                <SelfAssessmentVoteButtons
+                  disabled={voting}
+                  onVote={(vote) => void onVote(vote)}
+                />
               </View>
             ) : null}
           </View>
         ) : null}
       </ScrollView>
     </AtmosphereBackground>
-  );
-}
-
-function VoteButton({
-  label,
-  colors,
-  type,
-  minTouchTarget,
-  outlined,
-  disabled,
-  onPress,
-}: {
-  label: string;
-  colors: ReturnType<typeof useTheme>['colors'];
-  type: ReturnType<typeof useTheme>['type'];
-  minTouchTarget: number;
-  outlined?: boolean;
-  disabled?: boolean;
-  onPress: () => void;
-}) {
-  return (
-    <Pressable
-      onPress={onPress}
-      disabled={disabled}
-      style={({ pressed }) => [
-        styles.voteBtn,
-        {
-          backgroundColor: outlined ? 'transparent' : colors.tint,
-          borderColor: colors.border,
-          minHeight: minTouchTarget,
-          opacity: pressed || disabled ? 0.88 : 1,
-        },
-      ]}>
-      <Text style={[type.button, { color: outlined ? colors.text : colors.onTint, fontSize: 14 }]}>
-        {label}
-      </Text>
-    </Pressable>
   );
 }
 
@@ -279,20 +224,6 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: Radii.md,
     padding: Spacing.md,
-  },
-  voteRow: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-    marginTop: Spacing.md,
-  },
-  voteBtn: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: Spacing.sm,
-    paddingHorizontal: Spacing.xs,
-    borderRadius: Radii.md,
-    borderWidth: StyleSheet.hairlineWidth,
   },
   primaryBtn: {
     alignItems: 'center',

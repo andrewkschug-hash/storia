@@ -178,9 +178,9 @@ export function StoryReader({
             onPress={onContinueFromChapter}
             style={({ pressed }) => [
               styles.continueBtn,
-              { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
+              { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
             ]}>
-            <Text style={[type.button, { color: colors.onTint, fontSize: type.button.fontSize }]}>Continue</Text>
+            <Text style={[type.button, { color: colors.onButtonPrimary, fontSize: type.button.fontSize }]}>Continue</Text>
           </Pressable>
         </View>
       ) : null}

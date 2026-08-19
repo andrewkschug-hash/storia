@@ -930,7 +930,8 @@
       ],
       "correctChoice": 0,
       "explanation": "The responses are weaker than hoped.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa diventa chiaro sulle risposte?"
     },
     {
       "id": "ch32_q02",
@@ -958,7 +959,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Organizing did not guarantee people or Marco’s availability.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Perché Luca è più incerto alla fine?"
     }
   ]
 }

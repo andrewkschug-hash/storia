@@ -296,11 +296,11 @@ function StudioButton({
       style={({ pressed }) => [
         styles.btn,
         {
-          backgroundColor: colors.tint,
+          backgroundColor: colors.buttonPrimary,
           opacity: disabled ? 0.45 : pressed ? 0.88 : 1,
         },
       ]}>
-      <Text style={[Typography.button, { color: '#F7FAF9' }]}>{label}</Text>
+      <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>{label}</Text>
     </Pressable>
   );
 }

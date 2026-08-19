@@ -1,4 +1,5 @@
 import type { LexiconEntry, Phrase, Sentence } from '@/src/content/schemas';
+import type { SelfAssessment } from '@/src/vocabulary/selfAssessment';
 
 export type LookupKind = 'word' | 'phrase' | 'sentence';
 export type VocabularyStatus = 'new' | 'learning' | 'familiar' | 'mastered';
@@ -72,6 +73,9 @@ export type LemmaEncounter = {
   reviewCount: number;
   correctReviewCount: number;
   incorrectReviewCount: number;
+  almostReviewCount: number;
+  lastSelfAssessment: SelfAssessment | null;
+  lastSelfAssessmentAt: string | null;
   intervalIndex: number;
   dueAt: string | null;
   familiarityScore: number;
@@ -97,6 +101,9 @@ export type PhraseEncounter = {
   reviewCount: number;
   correctReviewCount: number;
   incorrectReviewCount: number;
+  almostReviewCount: number;
+  lastSelfAssessment: SelfAssessment | null;
+  lastSelfAssessmentAt: string | null;
   intervalIndex: number;
   dueAt: string | null;
   familiarityScore: number;
@@ -138,6 +145,7 @@ export type FamiliaritySignals = {
   saved: boolean;
   correctReviewCount: number;
   incorrectReviewCount: number;
+  almostReviewCount?: number;
   lastEncounteredAt: string | null;
   lastReviewedAt: string | null;
 };

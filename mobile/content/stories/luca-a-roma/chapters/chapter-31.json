@@ -847,7 +847,8 @@
       ],
       "correctChoice": 0,
       "explanation": "They turn permission into a practical plan.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa iniziano a fare gli amici dopo il sì del padrone?"
     },
     {
       "id": "ch31_q02",
@@ -861,7 +862,8 @@
       ],
       "correctChoice": 0,
       "explanation": "She says the café cannot do everything.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Quale limite indica Giulia per il caffè?"
     },
     {
       "id": "ch31_q03",

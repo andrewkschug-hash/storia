@@ -3,15 +3,18 @@ import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { SelfAssessmentVoteButtons } from '@/src/components/SelfAssessmentVoteButtons';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { LUCA_STORY_ID } from '@/src/content';
+import { LUCA_STORY_ID, getContentBundle } from '@/src/content';
 import { getSpeakSceneById, speakLineToExercise } from '@/src/content/speakScenes';
 import { getProgressService } from '@/src/progress';
 import { routeAfterSpeakScene } from '@/src/progress/batchMilestoneRoute';
 import type { SpeakSceneLineAttempt, SpeakSceneVote } from '@/src/progress/types';
 import { scoreProductionAnswer } from '@/src/production/score';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
+import { resolveSentenceFocusLemmas } from '@/src/vocabulary/productionFocusLemmas';
+import { findSentenceById } from '@/src/vocabulary/storyExamples';
+import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
@@ -118,6 +121,31 @@ export default function SpeakSceneScreen() {
         attempts: record.attempts,
       },
     });
+    const bundle = getContentBundle(storyId);
+    const located = current.sourceSentenceId
+      ? findSentenceById(bundle, current.sourceSentenceId, current.sourceChapterId ?? undefined)
+      : null;
+    if (located) {
+      const lemmaIds = resolveSentenceFocusLemmas(located.sentence, bundle.lexiconById);
+      if (lemmaIds.length > 0) {
+        await getVocabularyService().recordSelfAssessmentForLemmaIds(
+          lemmaIds,
+          vote,
+          {
+            source: 'speak_scene',
+            storyId,
+            chapterId: located.chapter.id,
+            sentenceId: located.sentence.id,
+            sceneId: scene.id,
+            lineId: current.id,
+          },
+          {
+            sourceSentence: located.sentence,
+            bumpEncounterOnGotIt: vote === 'got_it',
+          },
+        );
+      }
+    }
     const nextLines = [...lineRecords, record];
     setLineRecords(nextLines);
     setDraft('');
@@ -168,13 +196,13 @@ export default function SpeakSceneScreen() {
                 style={({ pressed }) => [
                   styles.primaryBtn,
                   {
-                    backgroundColor: colors.tint,
+                    backgroundColor: colors.buttonPrimary,
                     opacity: pressed ? 0.88 : 1,
                     minHeight: minTouchTarget,
                     marginTop: Spacing.xl,
                   },
                 ]}>
-                <Text style={[type.button, { color: colors.onTint }]}>Start</Text>
+                <Text style={[type.button, { color: colors.onButtonPrimary }]}>Start</Text>
               </Pressable>
               <Pressable
                 onPress={() => void finishAndContinue(true, [])}
@@ -244,26 +272,22 @@ export default function SpeakSceneScreen() {
                     styles.primaryBtn,
                     styles.flexBtn,
                     {
-                      backgroundColor: colors.tint,
+                      backgroundColor: colors.buttonPrimary,
                       opacity: phase !== 'line' || !draft.trim() ? 0.5 : pressed ? 0.88 : 1,
                       minHeight: minTouchTarget,
                     },
                   ]}>
-                  <Text style={[type.button, { color: colors.onTint }]}>Type</Text>
+                  <Text style={[type.button, { color: colors.onButtonPrimary }]}>Type</Text>
                 </Pressable>
               </View>
 
               {phase === 'feedback' ? (
                 <View style={{ marginTop: Spacing.xl }}>
-                  <Text style={[type.label, { color: colors.tint }]}>{current?.it}</Text>
+                  <Text style={[type.label, { color: colors.text }]}>{current?.it}</Text>
                   <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
                     How did you do?
                   </Text>
-                  <View style={styles.voteRow}>
-                    <VoteButton label="Got it" filled colors={colors} type={type} minTouchTarget={minTouchTarget} disabled={saving} onPress={() => void onVote('got_it')} />
-                    <VoteButton label="Almost" colors={colors} type={type} minTouchTarget={minTouchTarget} disabled={saving} onPress={() => void onVote('almost')} />
-                    <VoteButton label="Not yet" colors={colors} type={type} minTouchTarget={minTouchTarget} disabled={saving} onPress={() => void onVote('not_yet')} />
-                  </View>
+                  <SelfAssessmentVoteButtons disabled={saving} onVote={(vote) => void onVote(vote)} />
                 </View>
               ) : null}
 
@@ -293,56 +317,19 @@ export default function SpeakSceneScreen() {
                 style={({ pressed }) => [
                   styles.primaryBtn,
                   {
-                    backgroundColor: colors.tint,
+                    backgroundColor: colors.buttonPrimary,
                     opacity: pressed || saving ? 0.88 : 1,
                     minHeight: minTouchTarget,
                     marginTop: Spacing.xl,
                   },
                 ]}>
-                <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
+                <Text style={[type.button, { color: colors.onButtonPrimary }]}>Continue</Text>
               </Pressable>
             </View>
           ) : null}
         </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
-  );
-}
-
-function VoteButton({
-  label,
-  filled,
-  colors,
-  type,
-  minTouchTarget,
-  disabled,
-  onPress,
-}: {
-  label: string;
-  filled?: boolean;
-  colors: ReturnType<typeof useTheme>['colors'];
-  type: ReturnType<typeof useTheme>['type'];
-  minTouchTarget: number;
-  disabled?: boolean;
-  onPress: () => void;
-}) {
-  return (
-    <Pressable
-      onPress={onPress}
-      disabled={disabled}
-      style={({ pressed }) => [
-        styles.voteBtn,
-        {
-          backgroundColor: filled ? colors.tint : 'transparent',
-          borderColor: colors.border,
-          minHeight: minTouchTarget,
-          opacity: pressed || disabled ? 0.88 : 1,
-        },
-      ]}>
-      <Text style={[type.button, { color: filled ? colors.onTint : colors.text, fontSize: 14 }]}>
-        {label}
-      </Text>
-    </Pressable>
   );
 }
 
@@ -369,19 +356,6 @@ const styles = StyleSheet.create({
   },
   flexBtn: {
     flex: 1,
-  },
-  voteRow: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-    marginTop: Spacing.md,
-  },
-  voteBtn: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: Spacing.sm,
-    borderRadius: Radii.md,
-    borderWidth: StyleSheet.hairlineWidth,
   },
   primaryBtn: {
     alignItems: 'center',

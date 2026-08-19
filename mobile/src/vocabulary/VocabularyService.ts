@@ -1,12 +1,18 @@
 import type { Chapter, ContentBundle, Sentence } from '@/src/content/schemas';
+import { ensureLearnerMigrations } from '@/src/migration/learnerMigrations';
+import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import {
   buildLexiconIndexFromBundle,
   phraseIdFromSurface,
   type LexiconIndex,
 } from '@/src/vocabulary/dictionaryIndex';
-import { nextDueAt } from '@/src/vocabulary/familiarity';
 import { refreshFamiliarity } from '@/src/vocabulary/normalize';
 import { resolveSentenceLookup, resolveTap } from '@/src/vocabulary/resolveTap';
+import {
+  applySelfAssessment,
+  type SelfAssessment,
+  type SelfAssessmentContext,
+} from '@/src/vocabulary/selfAssessment';
 import type {
   DictionaryLookup,
   LemmaEncounter,
@@ -45,9 +51,24 @@ export class VocabularyService {
     return this.bundle;
   }
 
+  private migrationsChecked = false;
+
   async getState(): Promise<UserVocabularyState> {
     if (!this.cachedState) {
       this.cachedState = await this.repo.get();
+    }
+    if (!this.migrationsChecked) {
+      await ensureLearnerMigrations(
+        async () => this.cachedState ?? (await this.repo.get()),
+        async (state) => {
+          this.cachedState = state;
+          await this.repo.save(state);
+        },
+      );
+      this.migrationsChecked = true;
+      if (!this.cachedState) {
+        this.cachedState = await this.repo.get();
+      }
     }
     return this.cachedState;
   }
@@ -101,28 +122,6 @@ export class VocabularyService {
       lookup.encounterCount = state.lemmas[lookup.lemmaId]?.encounterCount ?? 1;
     }
     return lookup;
-  }
-
-  /**
-   * Successful production can strengthen familiarity. It is not a review and
-   * cannot mark a lemma mastered.
-   */
-  async recordProductionSuccess(input: {
-    lemmaIds: string[];
-    chapterId: string;
-    sentenceId: string;
-  }): Promise<UserVocabularyState> {
-    const state = await this.getState();
-    const now = new Date().toISOString();
-    for (const lemmaId of input.lemmaIds) {
-      if (!lemmaId) continue;
-      this.touchLemma(state, lemmaId, lemmaId, input.chapterId, input.sentenceId, now, {
-        encounter: true,
-        tap: false,
-      });
-    }
-    await this.persist(state);
-    return state;
   }
 
   /**
@@ -231,25 +230,127 @@ export class VocabularyService {
     return state.lemmas[lookup.lemmaId]?.saved ?? false;
   }
 
+  /**
+   * @deprecated Prefer recordSelfAssessment. Maps boolean review outcomes.
+   */
   async recordReview(
     kind: 'lemma' | 'phrase',
     id: string,
     correct: boolean,
     now: Date = new Date(),
   ): Promise<UserVocabularyState> {
+    return this.recordSelfAssessment(kind, id, correct ? 'got_it' : 'not_yet', {
+      source: 'review_mcq',
+    }, now);
+  }
+
+  async recordSelfAssessment(
+    kind: 'lemma' | 'phrase',
+    id: string,
+    assessment: SelfAssessment,
+    ctx?: SelfAssessmentContext,
+    now: Date = new Date(),
+  ): Promise<UserVocabularyState> {
     const state = await this.getState();
-    const iso = now.toISOString();
     if (kind === 'lemma') {
       const row = state.lemmas[id] ?? createLemmaEncounter(id);
-      applyReview(row, correct, now, iso);
+      applySelfAssessment(row, assessment, now);
       state.lemmas[id] = row;
     } else {
       const row = state.phrases[id] ?? createPhraseEncounter(id, id);
-      applyReview(row, correct, now, iso);
+      applySelfAssessment(row, assessment, now);
       state.phrases[id] = row;
     }
     await this.persist(state);
+    trackReadingEvent({
+      type: 'self_assessment',
+      storyId: ctx?.storyId,
+      chapterId: ctx?.chapterId,
+      sentenceId: ctx?.sentenceId,
+      lemmaId: kind === 'lemma' ? id : undefined,
+      phraseId: kind === 'phrase' ? id : undefined,
+      meta: {
+        assessment,
+        source: ctx?.source ?? 'practice_hub',
+        exerciseId: ctx?.exerciseId ?? null,
+        sceneId: ctx?.sceneId ?? null,
+        lineId: ctx?.lineId ?? null,
+      },
+    });
     return state;
+  }
+
+  async recordSelfAssessmentForLemmaIds(
+    lemmaIds: string[],
+    assessment: SelfAssessment,
+    ctx: SelfAssessmentContext,
+    options?: { sourceSentence?: Sentence; bumpEncounterOnGotIt?: boolean },
+    now: Date = new Date(),
+  ): Promise<UserVocabularyState> {
+    const state = await this.getState();
+    const iso = now.toISOString();
+    const unique = [...new Set(lemmaIds.filter(Boolean))];
+    for (const lemmaId of unique) {
+      const row = state.lemmas[lemmaId] ?? createLemmaEncounter(lemmaId);
+      applySelfAssessment(row, assessment, now);
+      if (
+        assessment === 'got_it' &&
+        options?.bumpEncounterOnGotIt &&
+        options.sourceSentence &&
+        ctx.chapterId
+      ) {
+        row.encounterCount += 1;
+        if (!row.chaptersEncountered.includes(ctx.chapterId)) {
+          row.chaptersEncountered.push(ctx.chapterId);
+        }
+        pushEncounter(row, false, iso, ctx.chapterId);
+        if (!row.firstChapterId) row.firstChapterId = ctx.chapterId;
+        if (!row.firstEncounteredAt) row.firstEncounteredAt = iso;
+        row.lastChapterId = ctx.chapterId;
+        row.lastEncounteredAt = iso;
+        row.lastSentenceId = ctx.sentenceId ?? options.sourceSentence.id;
+        refreshFamiliarity(row, now);
+      }
+      state.lemmas[lemmaId] = row;
+    }
+    await this.persist(state);
+    for (const lemmaId of unique) {
+      trackReadingEvent({
+        type: 'self_assessment',
+        storyId: ctx.storyId,
+        chapterId: ctx.chapterId,
+        sentenceId: ctx.sentenceId,
+        lemmaId,
+        meta: {
+          assessment,
+          source: ctx.source,
+          exerciseId: ctx.exerciseId ?? null,
+          sceneId: ctx.sceneId ?? null,
+          lineId: ctx.lineId ?? null,
+        },
+      });
+    }
+    return state;
+  }
+
+  /**
+   * @deprecated Use recordSelfAssessmentForLemmaIds with got_it instead.
+   */
+  async recordProductionSuccess(input: {
+    lemmaIds: string[];
+    chapterId: string;
+    sentenceId: string;
+  }): Promise<UserVocabularyState> {
+    return this.recordSelfAssessmentForLemmaIds(
+      input.lemmaIds,
+      'got_it',
+      {
+        source: 'production',
+        chapterId: input.chapterId,
+        sentenceId: input.sentenceId,
+      },
+      { bumpEncounterOnGotIt: true },
+    );
   }
 
   summarize(state: UserVocabularyState): {
@@ -352,22 +453,6 @@ function pushEncounter(
   if (row.recentEncounters.length > 16) {
     row.recentEncounters = row.recentEncounters.slice(-16);
   }
-}
-
-function applyReview(
-  row: LemmaEncounter | PhraseEncounter,
-  correct: boolean,
-  now: Date,
-  iso: string,
-) {
-  row.reviewCount += 1;
-  if (correct) row.correctReviewCount += 1;
-  else row.incorrectReviewCount += 1;
-  row.lastReviewedAt = iso;
-  const spaced = nextDueAt(row.intervalIndex, now, correct);
-  row.intervalIndex = spaced.intervalIndex;
-  row.dueAt = spaced.dueAt;
-  refreshFamiliarity(row, now);
 }
 
 export type { WordLookup, PhraseLookup, DictionaryLookup };

@@ -15,6 +15,7 @@ export const FAMILIARITY_CONFIG = {
   saveBoost: 0.1,
   reviewBoost: 0.18,
   incorrectReviewPenalty: 0.04,
+  almostReviewPenalty: 0.02,
 } as const;
 
 export const REVIEW_INTERVAL_DAYS = [1, 3, 7, 14, 30] as const;
@@ -43,6 +44,10 @@ export function computeFamiliarity(
     0.12,
     signals.incorrectReviewCount * FAMILIARITY_CONFIG.incorrectReviewPenalty,
   );
+  const almostDrag = Math.min(
+    0.06,
+    (signals.almostReviewCount ?? 0) * FAMILIARITY_CONFIG.almostReviewPenalty,
+  );
 
   const score = clamp(
     encounterPart * 0.45 +
@@ -51,7 +56,8 @@ export function computeFamiliarity(
       reviewPart +
       savePart -
       tapDrag -
-      missDrag,
+      missDrag -
+      almostDrag,
   );
 
   const status = statusFromScore(score, signals);

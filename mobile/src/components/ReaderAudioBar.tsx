@@ -50,9 +50,9 @@ export function ReaderAudioBar({
               onPress={onPlayPause}
               style={({ pressed }) => [
                 styles.primaryBtn,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
+                { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
               ]}>
-              <Text style={[type.button, { color: colors.onTint, fontSize: 14 }]}>
+              <Text style={[type.button, { color: colors.onButtonPrimary, fontSize: 14 }]}>
                 {isPlaying ? 'Pause' : 'Play'}
               </Text>
             </Pressable>
@@ -92,12 +92,12 @@ export function ReaderAudioBar({
                 onPress={() => onSetSpeed('slow')}
                 style={[
                   styles.segmentOption,
-                  speed === 'slow' && { backgroundColor: colors.tint },
+                  speed === 'slow' && { backgroundColor: colors.accentSoft },
                 ]}>
                 <Text
                   style={[
                     type.caption,
-                    { color: speed === 'slow' ? colors.onTint : colors.textSecondary },
+                    { color: speed === 'slow' ? colors.tint : colors.textSecondary },
                   ]}>
                   0.75x
                 </Text>
@@ -109,12 +109,12 @@ export function ReaderAudioBar({
                 onPress={() => onSetSpeed('normal')}
                 style={[
                   styles.segmentOption,
-                  speed === 'normal' && { backgroundColor: colors.tint },
+                  speed === 'normal' && { backgroundColor: colors.accentSoft },
                 ]}>
                 <Text
                   style={[
                     type.caption,
-                    { color: speed === 'normal' ? colors.onTint : colors.textSecondary },
+                    { color: speed === 'normal' ? colors.tint : colors.textSecondary },
                   ]}>
                   0.9x
                 </Text>
@@ -126,12 +126,12 @@ export function ReaderAudioBar({
                 onPress={() => onSetSpeed('faster')}
                 style={[
                   styles.segmentOption,
-                  speed === 'faster' && { backgroundColor: colors.tint },
+                  speed === 'faster' && { backgroundColor: colors.accentSoft },
                 ]}>
                 <Text
                   style={[
                     type.caption,
-                    { color: speed === 'faster' ? colors.onTint : colors.textSecondary },
+                    { color: speed === 'faster' ? colors.tint : colors.textSecondary },
                   ]}>
                   1.0x
                 </Text>
@@ -147,12 +147,12 @@ export function ReaderAudioBar({
           style={({ pressed }) => [
             styles.continueBtn,
             {
-              borderColor: colors.tint,
-              backgroundColor: colors.tint,
+              borderColor: colors.border,
+              backgroundColor: colors.buttonPrimary,
               opacity: pressed ? 0.88 : 1,
             },
           ]}>
-          <Text style={[type.label, { color: colors.onTint }]}>Continue</Text>
+          <Text style={[type.label, { color: colors.onButtonPrimary }]}>Continue</Text>
         </Pressable>
       </View>
 

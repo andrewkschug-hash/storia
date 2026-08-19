@@ -1064,7 +1064,8 @@
       "correctChoice": 0,
       "explanation": "His mother passes on a clear short-term job near the family.",
       "chapterId": "luca-a-roma-40",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Quale offerta concreta riceve Luca?"
     },
     {
       "id": "ch40_q02",
@@ -1078,7 +1079,8 @@
       "correctChoice": 0,
       "explanation": "He tells his mother he is staying for now.",
       "chapterId": "luca-a-roma-40",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa sceglie Luca per adesso?"
     },
     {
       "id": "ch40_q03",
@@ -1092,7 +1094,8 @@
       "correctChoice": 0,
       "explanation": "Stay-for-now; ordinary work continues; offer remains possible later.",
       "chapterId": "luca-a-roma-40",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa resta vero sulla vita di Luca a Roma dopo la decisione?"
     }
   ]
 }

@@ -26,6 +26,9 @@ export function createLemmaEncounter(lemmaId: string): LemmaEncounter {
     reviewCount: 0,
     correctReviewCount: 0,
     incorrectReviewCount: 0,
+    almostReviewCount: 0,
+    lastSelfAssessment: null,
+    lastSelfAssessmentAt: null,
     intervalIndex: -1,
     dueAt: null,
     familiarityScore: 0,
@@ -53,6 +56,9 @@ export function createPhraseEncounter(phraseId: string, surface: string): Phrase
     reviewCount: 0,
     correctReviewCount: 0,
     incorrectReviewCount: 0,
+    almostReviewCount: 0,
+    lastSelfAssessment: null,
+    lastSelfAssessmentAt: null,
     intervalIndex: -1,
     dueAt: null,
     familiarityScore: 0,
@@ -73,6 +79,7 @@ export function refreshFamiliarity<T extends LemmaEncounter | PhraseEncounter>(
     saved: row.saved,
     correctReviewCount: row.correctReviewCount,
     incorrectReviewCount: row.incorrectReviewCount,
+    almostReviewCount: row.almostReviewCount,
     lastEncounteredAt: row.lastEncounteredAt,
     lastReviewedAt: row.lastReviewedAt,
   };
@@ -113,6 +120,9 @@ function normalizeLemma(id: string, row: Partial<LemmaEncounter>): LemmaEncounte
     reviewCount: row.reviewCount ?? 0,
     correctReviewCount: row.correctReviewCount ?? 0,
     incorrectReviewCount: row.incorrectReviewCount ?? 0,
+    almostReviewCount: row.almostReviewCount ?? 0,
+    lastSelfAssessment: row.lastSelfAssessment ?? null,
+    lastSelfAssessmentAt: row.lastSelfAssessmentAt ?? null,
     recentEncounters: [...(row.recentEncounters ?? [])],
   };
 }
@@ -132,6 +142,9 @@ function normalizePhrase(id: string, row: Partial<PhraseEncounter>): PhraseEncou
     reviewCount: row.reviewCount ?? 0,
     correctReviewCount: row.correctReviewCount ?? 0,
     incorrectReviewCount: row.incorrectReviewCount ?? 0,
+    almostReviewCount: row.almostReviewCount ?? 0,
+    lastSelfAssessment: row.lastSelfAssessment ?? null,
+    lastSelfAssessmentAt: row.lastSelfAssessmentAt ?? null,
     recentEncounters: [...(row.recentEncounters ?? [])],
   };
 }

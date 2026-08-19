@@ -1,6 +1,6 @@
-import { useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, type Href } from 'expo-router';
 import { useCallback } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
@@ -12,10 +12,10 @@ import { useTheme } from '@/src/theme/useTheme';
 import { useYourItalian } from '@/src/vocabulary/useYourItalian';
 
 const STATUS_ROWS = [
-  { key: 'new', label: 'New' },
-  { key: 'learning', label: 'Learning' },
-  { key: 'familiar', label: 'Familiar' },
-  { key: 'mastered', label: 'Mastered' },
+  { key: 'new', label: 'New', colorKey: 'statusNew' as const },
+  { key: 'learning', label: 'Learning', colorKey: 'statusLearning' as const },
+  { key: 'familiar', label: 'Familiar', colorKey: 'statusFamiliar' as const },
+  { key: 'mastered', label: 'Mastered', colorKey: 'statusMastered' as const },
 ] as const;
 
 export default function VocabularyScreen() {
@@ -23,7 +23,8 @@ export default function VocabularyScreen() {
   const insets = useSafeAreaInsets();
   const layout = useLayout();
   const { progress } = useReadingProgress();
-  const { summary, reinforcingWords, loading, refresh } = useYourItalian(progress);
+  const { summary, reinforcingWords, practiceItems, activity, loading, refresh } =
+    useYourItalian(progress);
 
   useFocusEffect(
     useCallback(() => {
@@ -32,6 +33,7 @@ export default function VocabularyScreen() {
   );
 
   const encountered = summary?.encountered ?? 0;
+  const practiceCount = practiceItems.length;
 
   return (
     <AtmosphereBackground>
@@ -65,7 +67,10 @@ export default function VocabularyScreen() {
             </Text>
           ) : (
             <>
-              <Text style={[type.stat, { color: colors.text, marginTop: Spacing.xl }]}>
+              <Text style={[type.chapterEyebrow, { color: colors.textMuted, marginTop: Spacing.xl }]}>
+                Your progress
+              </Text>
+              <Text style={[type.stat, { color: colors.text, marginTop: Spacing.sm }]}>
                 {encountered}
               </Text>
               <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
@@ -82,7 +87,10 @@ export default function VocabularyScreen() {
                 ]}>
                 {STATUS_ROWS.map((row) => (
                   <View key={row.key} style={styles.statusRow}>
-                    <Text style={[type.label, { color: colors.textSecondary }]}>{row.label}</Text>
+                    <View style={styles.statusLabel}>
+                      <View style={[styles.statusDot, { backgroundColor: colors[row.colorKey] }]} />
+                      <Text style={[type.label, { color: colors.textSecondary }]}>{row.label}</Text>
+                    </View>
                     <Text style={[type.label, { color: colors.text }]}>
                       {summary?.[row.key] ?? 0}
                     </Text>
@@ -90,9 +98,49 @@ export default function VocabularyScreen() {
                 ))}
               </View>
 
+              <View style={{ marginTop: Spacing.xxl }}>
+                <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>Practice</Text>
+                <Text style={[type.label, { color: colors.text, marginTop: Spacing.sm }]}>
+                  {practiceCount > 0
+                    ? `${practiceCount} thing${practiceCount === 1 ? '' : 's'} to work on`
+                    : "You're caught up for now"}
+                </Text>
+                {practiceItems.length > 0 ? (
+                  <View style={{ marginTop: Spacing.md, gap: Spacing.sm }}>
+                    {practiceItems.map((item) => (
+                      <View key={`${item.kind}:${item.id}`} style={styles.practiceRow}>
+                        <Text style={[type.body, { color: colors.text }]}>{item.italian}</Text>
+                        {item.assessmentLabel ? (
+                          <Text style={[type.caption, { color: colors.textMuted }]}>
+                            {item.assessmentLabel}
+                          </Text>
+                        ) : null}
+                      </View>
+                    ))}
+                  </View>
+                ) : null}
+                {practiceCount > 0 ? (
+                  <Pressable
+                    onPress={() => router.push('/practice' as Href)}
+                    style={({ pressed }) => [
+                      styles.practiceBtn,
+                      {
+                        backgroundColor: colors.tint,
+                        opacity: pressed ? 0.88 : 1,
+                        marginTop: Spacing.lg,
+                      },
+                    ]}>
+                    <Text style={[type.button, { color: colors.onTint }]}>Practice now →</Text>
+                  </Pressable>
+                ) : null}
+              </View>
+
               {reinforcingWords.length > 0 ? (
                 <View style={{ marginTop: Spacing.xxl }}>
                   <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
+                    Keep seeing
+                  </Text>
+                  <Text style={[type.caption, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
                     Words you&apos;re seeing again
                   </Text>
                   <View style={{ marginTop: Spacing.md, gap: Spacing.sm }}>
@@ -109,6 +157,19 @@ export default function VocabularyScreen() {
                   </View>
                 </View>
               ) : null}
+
+              {activity &&
+              (activity.gotIt > 0 || activity.almost > 0 || activity.notYet > 0) ? (
+                <View style={{ marginTop: Spacing.xxl }}>
+                  <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
+                    Your activity
+                  </Text>
+                  <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+                    {activity.gotIt} Got it · {activity.almost} Almost · {activity.notYet} Not yet
+                    this week
+                  </Text>
+                </View>
+              ) : null}
             </>
           )}
         </ScreenContent>
@@ -119,7 +180,7 @@ export default function VocabularyScreen() {
 
 const styles = StyleSheet.create({
   statusCard: {
-    marginTop: Spacing.xl,
+    marginTop: Spacing.lg,
     borderRadius: Radii.lg,
     borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: Spacing.lg,
@@ -131,6 +192,28 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: Spacing.xs,
+  },
+  statusLabel: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.sm,
+  },
+  statusDot: {
+    width: 8,
+    height: 8,
+    borderRadius: Radii.pill,
+  },
+  practiceRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+    gap: Spacing.md,
+  },
+  practiceBtn: {
+    borderRadius: Radii.lg,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+    alignItems: 'center',
   },
   reinforcingRow: {
     flexDirection: 'row',

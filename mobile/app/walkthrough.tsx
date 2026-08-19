@@ -234,9 +234,9 @@ export default function WalkthroughScreen() {
                   onPress={() => setState((current) => revealProduction(current))}
                   style={({ pressed }) => [
                     styles.primaryBtn,
-                    { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, marginTop: Spacing.lg },
+                    { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, marginTop: Spacing.lg },
                   ]}>
-                  <Text style={[Typography.button, { color: '#F7FAF9' }]}>Show answer</Text>
+                  <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Show answer</Text>
                 </Pressable>
               ) : (
                 <>
@@ -295,15 +295,15 @@ export default function WalkthroughScreen() {
                           style={({ pressed }) => [
                             styles.assessBtn,
                             {
-                              backgroundColor: selected ? colors.tint : colors.backgroundElevated,
-                              borderColor: colors.border,
+                              backgroundColor: selected ? colors.accentSoft : colors.backgroundElevated,
+                              borderColor: selected ? colors.tint : colors.border,
                               opacity: pressed ? 0.88 : 1,
                             },
                           ]}>
                           <Text
                             style={[
                               Typography.caption,
-                              { color: selected ? '#F7FAF9' : colors.text, textAlign: 'center' },
+                              { color: selected ? colors.tint : colors.text, textAlign: 'center' },
                             ]}>
                             {option.label}
                           </Text>
@@ -365,9 +365,9 @@ export default function WalkthroughScreen() {
                 }
                 style={({ pressed }) => [
                   styles.primaryBtn,
-                  { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                  { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1 },
                 ]}>
-                <Text style={[Typography.button, { color: '#F7FAF9' }]}>Continue</Text>
+                <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Continue</Text>
               </Pressable>
             ) : null}
             {state.step === 'complete' ? (
@@ -378,9 +378,9 @@ export default function WalkthroughScreen() {
                   onPress={() => router.push('/account?mode=signup' as Href)}
                   style={({ pressed }) => [
                     styles.primaryBtn,
-                    { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                    { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1 },
                   ]}>
-                  <Text style={[Typography.button, { color: '#F7FAF9' }]}>Start learning Italian →</Text>
+                  <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Start learning Italian →</Text>
                 </Pressable>
                 <Pressable
                   accessibilityRole="link"

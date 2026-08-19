@@ -1004,7 +1004,8 @@
       ],
       "correctChoice": 0,
       "explanation": "They do concrete prep and assign who does what.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa preparano sabato mattina?"
     },
     {
       "id": "ch34_q02",
@@ -1018,7 +1019,8 @@
       ],
       "correctChoice": 0,
       "explanation": "His presence resolves Saturday morning uncertainty through action.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Come fa Marco a mostrare che è disponibile?"
     },
     {
       "id": "ch34_q03",

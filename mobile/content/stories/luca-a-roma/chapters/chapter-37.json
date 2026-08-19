@@ -1045,7 +1045,8 @@
       ],
       "correctChoice": 0,
       "explanation": "The café stays this month and the next; hours increase.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa decide il padrone?"
     },
     {
       "id": "ch37_q02",
@@ -1059,7 +1060,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Hours and organizing are the concrete improvement.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Quale cambiamento concreto c’è per Luca e Giulia?"
     },
     {
       "id": "ch37_q03",
@@ -1073,7 +1075,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Immediate problem eased; future still open — leads into 38–40.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Perché la soluzione è buona ma non una certezza permanente?"
     }
   ]
 }

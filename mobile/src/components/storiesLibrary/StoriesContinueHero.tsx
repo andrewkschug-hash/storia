@@ -30,7 +30,7 @@ export function StoriesContinueHero({
   onListen,
 }: Props) {
   const { colors, minTouchTarget } = useTheme();
-  const borderColor = 'rgba(120, 182, 163, 0.18)';
+  const borderColor = colors.border;
 
   return (
     <View

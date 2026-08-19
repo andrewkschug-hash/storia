@@ -70,13 +70,13 @@ export default function ChapterRecapScreen() {
           style={({ pressed }) => [
             styles.primaryBtn,
             {
-              backgroundColor: colors.tint,
+              backgroundColor: colors.buttonPrimary,
               opacity: pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
               minHeight: minTouchTarget,
             },
           ]}>
-          <Text style={[type.button, { color: colors.onTint }]}>Check your understanding</Text>
+          <Text style={[type.button, { color: colors.onButtonPrimary }]}>Check your understanding</Text>
         </Pressable>
       </ScrollView>
     </AtmosphereBackground>

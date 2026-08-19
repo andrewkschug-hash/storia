@@ -92,9 +92,9 @@ export default function ReviewScreen() {
               onPress={() => router.back()}
               style={({ pressed }) => [
                 styles.cta,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
+                { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
               ]}>
-              <Text style={[type.button, { color: colors.onTint }]}>Continue</Text>
+              <Text style={[type.button, { color: colors.onButtonPrimary }]}>Continue</Text>
             </Pressable>
           </View>
         ) : current ? (
@@ -164,9 +164,9 @@ export default function ReviewScreen() {
                   onPress={onContinue}
                   style={({ pressed }) => [
                     styles.cta,
-                    { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
+                    { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
                   ]}>
-                  <Text style={[type.button, { color: colors.onTint }]}>
+                  <Text style={[type.button, { color: colors.onButtonPrimary }]}>
                     {index + 1 < items.length ? 'Continue' : 'Done'}
                   </Text>
                 </Pressable>

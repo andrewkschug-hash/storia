@@ -88,7 +88,7 @@
         },
         {
           "id": "s04",
-          "text": "Luca ha aperto la porta e ha guardato la sala.",
+          "text": "Luca ha aperto la porta e ha guardato la sala, perché c’erano ancora pochi clienti, come ieri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -101,21 +101,12 @@
             "avere",
             "guardare",
             "la",
-            "sala"
-          ]
-        },
-        {
-          "id": "s05",
-          "text": "C’erano ancora pochi clienti questa mattina, come ieri.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "sala",
+            "perche",
             "ce",
             "ancora",
             "poco",
             "cliente",
-            "questo",
-            "mattina",
             "come",
             "ieri"
           ]
@@ -208,7 +199,7 @@
         },
         {
           "id": "s11",
-          "text": "Prima i clienti entravano ogni giorno.",
+          "text": "Prima i clienti entravano ogni giorno, ma adesso i soldi del caffè non sono abbastanza per il lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -217,15 +208,8 @@
             "cliente",
             "entrare",
             "ogni",
-            "giorno"
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "Adesso i soldi del caffè non sono abbastanza per il lavoro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "giorno",
+            "ma",
             "adesso",
             "i",
             "soldi",
@@ -272,7 +256,7 @@
         },
         {
           "id": "s15",
-          "text": "La sala era tranquilla quando il padrone parlava.",
+          "text": "La sala era tranquilla quando il padrone parlava, e Luca ascoltava senza dire niente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -283,23 +267,11 @@
             "quando",
             "il",
             "padrone",
-            "parlare"
-          ]
-        },
-        {
-          "id": "s16",
-          "text": "Luca ha ascoltato con calma e non ha detto niente.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "avere",
-            "ascoltare",
-            "con",
-            "calma",
+            "parlare",
             "e",
-            "non",
-            "avere",
+            "luca",
+            "ascoltare",
+            "senza",
             "dire",
             "niente"
           ]
@@ -760,7 +732,8 @@
       ],
       "correctChoice": 0,
       "explanation": "He says he will talk with Sofia.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Con chi parlerà Luca domani?"
     }
   ]
 }

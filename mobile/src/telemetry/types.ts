@@ -17,7 +17,8 @@ export type ReadingEventType =
   | 'speak_scene_started'
   | 'speak_scene_line'
   | 'speak_scene_completed'
-  | 'speak_scene_skipped';
+  | 'speak_scene_skipped'
+  | 'self_assessment';
 
 export type ReadingEvent = {
   id: string;

@@ -100,7 +100,7 @@
         },
         {
           "id": "s05",
-          "text": "Poi ha aperto la porta e ha preparato i tavoli con calma, come sempre.",
+          "text": "Poi ha aperto la porta e ha preparato i tavoli con calma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -115,9 +115,7 @@
             "i",
             "tavolo",
             "con",
-            "calma",
-            "come",
-            "sempre"
+            "calma"
           ]
         },
         {
@@ -136,15 +134,14 @@
         },
         {
           "id": "s07",
-          "text": "Quella mattina sono entrati solo pochi clienti.",
+          "text": "La mattina sono entrati pochi clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "quello",
+            "la",
             "mattina",
             "essere",
             "entrare",
-            "solo",
             "poco",
             "cliente"
           ]
@@ -204,16 +201,14 @@
         },
         {
           "id": "s11",
-          "text": "Fuori non faceva freddo quel giorno.",
+          "text": "Fuori non faceva freddo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "fuori",
             "non",
             "fare",
-            "freddo",
-            "quello",
-            "giorno"
+            "freddo"
           ]
         },
         {
@@ -237,7 +232,7 @@
       "sentences": [
         {
           "id": "s13",
-          "text": "Il padrone è arrivato tardi quella mattina.",
+          "text": "Il padrone è arrivato tardi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -245,31 +240,12 @@
             "padrone",
             "essere",
             "arrivare",
-            "tardi",
-            "quello",
-            "mattina"
-          ]
-        },
-        {
-          "id": "s14",
-          "text": "Ha guardato i tavoli vuoti per un tempo lungo.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
-            "guardare",
-            "i",
-            "tavolo",
-            "vuoto",
-            "per",
-            "un",
-            "tempo",
-            "lungo"
+            "tardi"
           ]
         },
         {
           "id": "s15",
-          "text": "Non ha detto niente ai colleghi.",
+          "text": "Non ha detto niente a Giulia e a Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -277,27 +253,16 @@
             "avere",
             "dire",
             "niente",
-            "ai",
-            "collega"
-          ]
-        },
-        {
-          "id": "s16",
-          "text": "Questo era peggio di una domanda.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "questo",
-            "essere",
-            "peggio",
-            "di",
-            "una",
-            "domanda"
+            "a",
+            "giulia",
+            "e",
+            "a",
+            "luca"
           ]
         },
         {
           "id": "s17",
-          "text": "Lavoriamo. Vediamo come va la giornata.",
+          "text": "Lavoriamo. Vediamo come va oggi.",
           "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
@@ -305,8 +270,7 @@
             "vedere",
             "come",
             "andare",
-            "la",
-            "giornata"
+            "oggi"
           ],
           "phrases": [
             {
@@ -320,7 +284,7 @@
         },
         {
           "id": "s18",
-          "text": "Luca ha servito i pochi clienti con calma.",
+          "text": "Luca ha servito i pochi clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -329,14 +293,12 @@
             "servire",
             "i",
             "poco",
-            "cliente",
-            "con",
-            "calma"
+            "cliente"
           ]
         },
         {
           "id": "s19",
-          "text": "Ha portato caffè e ha ascoltato le loro voci.",
+          "text": "Ha portato caffè e ha ascoltato i clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -346,38 +308,20 @@
             "e",
             "avere",
             "ascoltare",
-            "le",
-            "loro",
-            "voce"
+            "i",
+            "cliente"
           ]
         },
         {
           "id": "s20",
-          "text": "Ogni cliente era importante quel giorno.",
+          "text": "Ogni cliente era importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "ogni",
             "cliente",
             "essere",
-            "importante",
-            "quello",
-            "giorno"
-          ]
-        },
-        {
-          "id": "s21",
-          "text": "Ogni conto era importante per il caffè.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ogni",
-            "conto",
-            "essere",
-            "importante",
-            "per",
-            "il",
-            "caffe"
+            "importante"
           ]
         },
         {
@@ -419,21 +363,23 @@
         },
         {
           "id": "s24",
-          "text": "Anch’io. Se il caffè va male, il mio lavoro va male.",
+          "text": "Anch’io. Il caffè non va bene, e il mio lavoro non va bene.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "anche",
-            "se",
             "il",
             "caffe",
+            "non",
             "andare",
-            "ma",
+            "bene",
+            "e",
             "il",
             "mio",
             "lavorare",
+            "non",
             "andare",
-            "ma"
+            "bene"
           ]
         },
         {
@@ -469,14 +415,13 @@
         },
         {
           "id": "s27",
-          "text": "Perché ci sono così pochi clienti adesso?",
+          "text": "Perché ci sono pochi clienti adesso?",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "perche",
             "ci",
             "essere",
-            "cosi",
             "poco",
             "cliente",
             "adesso"
@@ -525,21 +470,6 @@
             "essere",
             "importante"
           ]
-        },
-        {
-          "id": "s31",
-          "text": "Non ha detto altro in quel momento.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "non",
-            "avere",
-            "dire",
-            "altro",
-            "in",
-            "quello",
-            "momento"
-          ]
         }
       ]
     },
@@ -571,36 +501,37 @@
         },
         {
           "id": "s33",
-          "text": "Aveva abbastanza per questo mese, ma non per tanti mesi.",
+          "text": "Aveva soldi per l’affitto di questo mese, ma il mese dopo era difficile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "avere",
-            "abbastanza",
+            "soldi",
             "per",
+            "affitto",
+            "di",
             "questo",
             "mese",
             "ma",
-            "non",
-            "per",
-            "tanto",
-            "mese"
+            "il",
+            "mese",
+            "dopo",
+            "essere",
+            "difficile"
           ]
         },
         {
           "id": "s34",
-          "text": "Si è seduto vicino alla finestra e ha pensato al caffè.",
+          "text": "Luca è vicino alla finestra e pensa al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "si",
+            "luca",
             "essere",
-            "sedere",
             "vicino",
             "alla",
             "finestra",
             "e",
-            "avere",
             "pensare",
             "al",
             "caffe"
@@ -608,13 +539,11 @@
         },
         {
           "id": "s35",
-          "text": "Prima di dormire ha scritto un messaggio a Sofia.",
+          "text": "Poi ha scritto un messaggio a Sofia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "prima",
-            "di",
-            "dormire",
+            "poi",
             "avere",
             "scrivere",
             "un",
@@ -656,21 +585,6 @@
           ]
         },
         {
-          "id": "s38",
-          "text": "Luca ha letto il messaggio due volte.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "avere",
-            "leggere",
-            "il",
-            "messaggio",
-            "due",
-            "volta"
-          ]
-        },
-        {
           "id": "s39",
           "text": "Domani al caffè voleva capire di più.",
           "speakerId": null,
@@ -701,7 +615,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Many tables stay empty.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa è diverso al caffè?"
     },
     {
       "id": "ch25_q02",

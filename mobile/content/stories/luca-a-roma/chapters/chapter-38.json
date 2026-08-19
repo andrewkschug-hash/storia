@@ -1039,7 +1039,8 @@
       "correctChoice": 0,
       "explanation": "They talk about money, free time, and a practical schedule.",
       "chapterId": "luca-a-roma-38",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Di cosa parlano soprattutto Luca e Sofia a cena?"
     },
     {
       "id": "ch38_q02",
@@ -1053,7 +1054,8 @@
       "correctChoice": 0,
       "explanation": "More pay versus less free time is the tradeoff.",
       "chapterId": "luca-a-roma-38",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Perché più ore sono un problema per Luca?"
     },
     {
       "id": "ch38_q03",
@@ -1067,7 +1069,8 @@
       "correctChoice": 0,
       "explanation": "He plans a clear partial-hours request.",
       "chapterId": "luca-a-roma-38",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Quale scelta pratica Luca vuole portare al padrone?"
     }
   ]
 }

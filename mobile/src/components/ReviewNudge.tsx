@@ -34,7 +34,7 @@ export function ReviewNudge({ copy }: Props) {
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Review vocabulary"
-          onPress={() => router.push('/review' as Href)}
+          onPress={() => router.push('/practice' as Href)}
           style={({ pressed }) => [
             styles.cta,
             {

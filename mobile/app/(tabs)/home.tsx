@@ -68,7 +68,7 @@ export default function HomeScreen() {
     })();
   }, []);
 
-  if (!gateReady || loading || !target || !chapter || !story) {
+  if (!gateReady || loading) {
     return (
       <AtmosphereBackground>
         <View style={styles.center}>
@@ -83,6 +83,16 @@ export default function HomeScreen() {
       <AtmosphereBackground>
         <View style={[styles.center, { padding: Spacing.lg }]}>
           <Text style={[type.label, { color: colors.danger }]}>{error}</Text>
+        </View>
+      </AtmosphereBackground>
+    );
+  }
+
+  if (!target || !chapter || !story) {
+    return (
+      <AtmosphereBackground>
+        <View style={styles.center}>
+          <ActivityIndicator color={colors.tint} />
         </View>
       </AtmosphereBackground>
     );

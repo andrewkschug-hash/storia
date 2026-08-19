@@ -39,7 +39,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giovedì Marco è arrivato al caffè nel pomeriggio.",
+          "text": "Giovedì Marco è arrivato al caffè nel pomeriggio, quando c’erano pochi clienti e la sala era tranquilla.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -50,15 +50,8 @@
             "al",
             "caffe",
             "nel",
-            "pomeriggio"
-          ]
-        },
-        {
-          "id": "s02",
-          "text": "C’erano pochi clienti, e la sala era tranquilla.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "pomeriggio",
+            "quando",
             "ce",
             "poco",
             "cliente",
@@ -156,7 +149,7 @@
         },
         {
           "id": "s08",
-          "text": "Giulia ha portato l’acqua senza dire il prezzo.",
+          "text": "Giulia ha portato l’acqua senza dire il prezzo, e Marco ha capito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -167,26 +160,11 @@
             "senza",
             "dire",
             "il",
-            "prezzo"
-          ]
-        },
-        {
-          "id": "s09",
-          "text": "Ha capito. Marco si è seduto e ha guardato i tavoli.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
-            "capire",
-            "marco",
-            "si",
-            "essere",
-            "sedere",
+            "prezzo",
             "e",
+            "marco",
             "avere",
-            "guardare",
-            "i",
-            "tavolo"
+            "capire"
           ]
         },
         {
@@ -306,29 +284,25 @@
         },
         {
           "id": "s16",
-          "text": "Luca ha ascoltato. Il problema non era più il treno.",
+          "text": "Luca ha ascoltato, e ha capito che il problema non era più il treno, ma i soldi di ogni giorno e la paura di non trovare lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "avere",
             "ascoltare",
+            "e",
+            "avere",
+            "capire",
+            "che",
             "il",
             "problema",
             "non",
             "essere",
             "piu",
             "il",
-            "treno"
-          ]
-        },
-        {
-          "id": "s17",
-          "text": "Era i soldi di ogni giorno e la paura di non trovare lavoro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "essere",
+            "treno",
+            "ma",
             "i",
             "soldi",
             "di",
@@ -686,7 +660,7 @@
         },
         {
           "id": "s37",
-          "text": "I problemi erano due: il caffè e i soldi di Marco.",
+          "text": "I problemi erano due — il caffè e i soldi di Marco — e non avevano ancora un piano chiaro, solo un giorno e Nonna Rosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -700,30 +674,15 @@
             "i",
             "soldi",
             "di",
-            "marco"
-          ]
-        },
-        {
-          "id": "s38",
-          "text": "Non avevano ancora un piano chiaro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "marco",
+            "e",
             "non",
             "avere",
             "ancora",
             "un",
             "piano",
-            "chiaro"
-          ]
-        },
-        {
-          "id": "s39",
-          "text": "Avevano un giorno e Nonna Rosa.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
+            "chiaro",
+            "solo",
             "un",
             "giorno",
             "e",
@@ -774,7 +733,8 @@
       ],
       "correctChoice": 0,
       "explanation": "Giulia brings water; Luca will call.",
-      "difficulty": 2
+      "difficulty": 2,
+      "questionIt": "Cosa offre Luca a Marco?"
     },
     {
       "id": "ch28_q03",
