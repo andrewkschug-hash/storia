@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { SelfAssessmentVoteButtons } from '@/src/components/SelfAssessmentVoteButtons';
+import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { LUCA_STORY_ID, getContentBundle } from '@/src/content';
 import { getSpeakSceneById, speakLineToExercise } from '@/src/content/speakScenes';

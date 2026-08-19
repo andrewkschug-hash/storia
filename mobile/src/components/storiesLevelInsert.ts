@@ -1,3 +1,5 @@
+import type { ChapterStatus } from '@/src/progress/types';
+
 export type StoryArcSummary = {
   id: string;
   cefrLevel: string;
@@ -18,7 +20,7 @@ export type ExtraStoryRow = {
     number: number;
     title: string;
     titleIt: string;
-    status: string;
+    status: ChapterStatus;
   }[];
 };
 

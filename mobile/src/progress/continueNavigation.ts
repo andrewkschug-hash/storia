@@ -2,6 +2,7 @@ import { router, type Href } from 'expo-router';
 
 import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
+import { getContinueReadingTarget, type ContinueReadingTarget } from '@/src/progress/continueReading';
 
 /** Navigate to the learner's next step (chapter, grammar, or recap). */
 export async function navigateToContinueTarget(target: ContinueReadingTarget): Promise<void> {

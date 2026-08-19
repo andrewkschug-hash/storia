@@ -200,7 +200,9 @@ export const HighContrastColors = {
   },
 } as const;
 
-export type ThemeColors = (typeof Colors)[keyof typeof Colors];
+export type ThemeColors =
+  | (typeof Colors)[ColorSchemeName]
+  | (typeof HighContrastColors)[ColorSchemeName];
 export type ColorSchemeName = keyof typeof Colors;
 
 export const Spacing = {

@@ -6,6 +6,7 @@ import {
 } from '@/src/content/lessonBatches';
 import { getSpeakSceneForBatch } from '@/src/content/speakScenes';
 import type { ChapterStatus, ReadingProgressRecord } from '@/src/progress/types';
+import { createInitialProgress } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 
 export type StoryPathChapterItem = {
@@ -148,11 +149,7 @@ export function buildStoryPath(
   const items: StoryPathItem[] = [];
   const record =
     progress ??
-    ({
-      storyId,
-      completedChapterIds: [],
-      completedCheckpointIds: [],
-    } as ReadingProgressRecord);
+    createInitialProgress(storyId, chapters[0]?.id ?? `${storyId}-01`);
 
   const chapterNumberById = new Map(chapters.map((c) => [c.id, c.number]));
   const legacyBatchEnds = progress

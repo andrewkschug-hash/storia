@@ -10,6 +10,7 @@ import {
 import { buildWordHintSegments } from '@/src/production/wordHints';
 import { SelfAssessmentVoteButtons } from '@/src/components/SelfAssessmentVoteButtons';
 import { Radii, Spacing } from '@/src/theme/tokens';
+import { isPressableFocused } from '@/src/theme/pressableState';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -125,13 +126,13 @@ export function ProductionExerciseCard({
           accessibilityRole="button"
           accessibilityLabel="Show answer"
           onPress={() => setRevealed(true)}
-          style={({ pressed, focused }) => [
+          style={(state) => [
             styles.primaryBtn,
             {
               backgroundColor: colors.buttonPrimary,
-              opacity: pressed ? 0.88 : 1,
+              opacity: state.pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
-              borderWidth: focused ? 2 : 0,
+              borderWidth: isPressableFocused(state) ? 2 : 0,
               borderColor: colors.accent,
             },
           ]}>
@@ -187,14 +188,14 @@ export function ProductionExerciseCard({
           accessibilityRole="button"
           accessibilityLabel="Continue"
           onPress={onContinue}
-          style={({ pressed, focused }) => [
+          style={(state) => [
             styles.primaryBtn,
             {
               backgroundColor: colors.buttonPrimary,
-              opacity: pressed ? 0.88 : 1,
+              opacity: state.pressed ? 0.88 : 1,
               marginTop: Spacing.xl,
               minHeight: minTouchTarget,
-              borderWidth: focused ? 2 : 0,
+              borderWidth: isPressableFocused(state) ? 2 : 0,
               borderColor: colors.accent,
             },
           ]}>

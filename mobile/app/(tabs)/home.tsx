@@ -1,4 +1,4 @@
-import { router, useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, type Href } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -17,7 +17,7 @@ import { useContinueReading } from '@/src/progress/useContinueReading';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import { useLayout } from '@/src/theme/useLayout';
-import { Radii, Spacing } from '@/src/theme/tokens';
+import { Radii, Spacing, type ThemeColors } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export default function HomeScreen() {
@@ -173,11 +173,13 @@ export default function HomeScreen() {
               }}
               onContinue={() => {
                 setContinueError(null);
-                try {
-                  await navigateToContinueTarget(target);
-                } catch (e) {
-                  setContinueError(e instanceof Error ? e.message : String(e));
-                }
+                void (async () => {
+                  try {
+                    await navigateToContinueTarget(target);
+                  } catch (e) {
+                    setContinueError(e instanceof Error ? e.message : String(e));
+                  }
+                })();
               }}
             />
             <Pressable
@@ -241,13 +243,7 @@ function StatChip({
 }: {
   label: string;
   value: string;
-  colors: {
-    backgroundElevated: string;
-    border: string;
-    text: string;
-    textMuted: string;
-    accent: string;
-  };
+  colors: Pick<ThemeColors, 'backgroundElevated' | 'border' | 'text' | 'textMuted' | 'accent' | 'readerSurface'>;
   showFlame?: boolean;
 }) {
   const { type } = useTheme();

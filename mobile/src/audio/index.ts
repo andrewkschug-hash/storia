@@ -4,9 +4,9 @@ import { getContentBundle } from '@/src/content';
 import { AudioService, createCatalog } from '@/src/audio/AudioService';
 import type { AudioAsset, VoiceRoster } from '@/src/audio/types';
 import { applyVoiceRoster, currentRoster } from '@/src/audio/voiceAssignments';
-import { normalizeRoster } from '@/src/audio/logicalVoices';
+import { normalizeRoster, type RawVoiceRoster } from '@/src/audio/logicalVoices';
 
-const bundledRoster = normalizeRoster(voicesJson);
+const bundledRoster = normalizeRoster(voicesJson as RawVoiceRoster);
 
 applyVoiceRoster(bundledRoster);
 

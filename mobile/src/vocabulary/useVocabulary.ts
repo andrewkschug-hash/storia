@@ -44,7 +44,7 @@ export function useVocabulary(progress?: ReadingProgressRecord | null) {
   }, [refresh]);
 
   const summary: YourItalianSummary | null = state ? getVocabularyService().summarize(state) : null;
-  const bundle = tryGetContentBundle();
+  const bundle = tryGetContentBundle(progress?.storyId ?? LUCA_STORY_ID);
   const lists = state && bundle ? browseVocabulary(bundle, state) : null;
 
   return {

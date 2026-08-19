@@ -1,8 +1,7 @@
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
-import type { CefrLevel } from '@/src/content/schemas';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 
-export type LibraryTab = CefrLevel;
+export type LibraryTab = 'A1' | 'A1+' | 'A2' | 'A2+';
 
 export type LibraryStoryRow = {
   id: string;

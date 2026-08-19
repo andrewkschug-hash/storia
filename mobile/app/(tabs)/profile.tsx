@@ -24,6 +24,7 @@ import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { AccessibilitySettings } from '@/src/accessibility/AccessibilitySettings';
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
+import { isDevBuild } from '@/src/security/buildMode';
 import { Radii, Spacing } from '@/src/theme/tokens';
 
 export default function ProfileScreen() {
@@ -136,8 +137,8 @@ export default function ProfileScreen() {
           <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
             {account.email}
           </Text>
-          {account.role === 'developer' ? (
-            <Text style={[type.caption, { color: colors.accent, marginTop: Spacing.xs }]}>Developer</Text>
+          {isDevBuild() ? (
+            <Text style={[type.caption, { color: colors.accent, marginTop: Spacing.xs }]}>Developer build</Text>
           ) : null}
         </View>
 

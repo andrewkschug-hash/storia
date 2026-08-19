@@ -1,9 +1,12 @@
+import type { TextStyle } from 'react-native';
+
 import { LINE_SPACING_SCALE, TEXT_SIZE_SCALE, type LineSpacing, type TextSize } from '@/src/accessibility/types';
 import { Typography } from '@/src/theme/tokens';
 
-export type ScaledTypography = {
-  [K in keyof typeof Typography]: (typeof Typography)[K] & { fontSize: number; lineHeight: number };
-};
+type TypographyKey = keyof typeof Typography;
+
+/** Typography tokens scaled for accessibility settings — values are valid TextStyle objects. */
+export type ScaledTypography = Record<TypographyKey, TextStyle>;
 
 export function scaleTypography(
   textSize: TextSize = 'default',
@@ -11,14 +14,14 @@ export function scaleTypography(
 ): ScaledTypography {
   const size = TEXT_SIZE_SCALE[textSize];
   const space = LINE_SPACING_SCALE[lineSpacing];
-  const next = {} as ScaledTypography;
-  for (const key of Object.keys(Typography) as (keyof typeof Typography)[]) {
+  const scaled = {} as ScaledTypography;
+  for (const key of Object.keys(Typography) as TypographyKey[]) {
     const style = Typography[key];
-    next[key] = {
+    scaled[key] = {
       ...style,
       fontSize: Math.round(style.fontSize * size),
       lineHeight: Math.round(style.lineHeight * size * space),
     };
   }
-  return next;
+  return scaled;
 }

@@ -44,6 +44,7 @@ import { getReviewService } from '@/src/review';
 import type { HomeReviewCopy } from '@/src/review/ReviewService';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { Radii, Spacing } from '@/src/theme/tokens';
+import { isPressableFocused } from '@/src/theme/pressableState';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Phase = 'intro' | 'question' | 'feedback' | 'results' | 'production' | 'complete';
@@ -283,7 +284,7 @@ export default function ComprehensionScreen() {
     const bundle = getContentBundle(resolvedStoryId);
     for (const exercise of productionExercises) {
       const assessment = assessments[exercise.exerciseId];
-      if (!assessment || assessment === 'skipped') continue;
+      if (!assessment) continue;
       const source = chapter.paragraphs
         .flatMap((paragraph) => paragraph.sentences)
         .find((sentence) => sentence.id === exercise.sourceSentenceId);
@@ -547,13 +548,13 @@ export default function ComprehensionScreen() {
             <Pressable
               disabled={finishing}
               onPress={continueFromResults}
-              style={({ pressed, focused }) => [
+              style={(state) => [
                 styles.primaryBtn,
                 {
                   backgroundColor: colors.buttonPrimary,
-                  opacity: pressed || finishing ? 0.88 : 1,
+                  opacity: state.pressed || finishing ? 0.88 : 1,
                   marginTop: Spacing.xl,
-                  borderWidth: focused ? 2 : 0,
+                  borderWidth: isPressableFocused(state) ? 2 : 0,
                   borderColor: colors.accent,
                 },
               ]}>

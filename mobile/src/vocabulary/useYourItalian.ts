@@ -71,17 +71,20 @@ export function practiceHomeCopy(count: number): {
   headline: string;
   detail: string;
   cta: string | null;
+  readyCount: number;
 } {
   if (count <= 0) {
     return {
       headline: "You're all caught up.",
       detail: 'Keep reading — the story is the best teacher.',
       cta: null,
+      readyCount: 0,
     };
   }
   return {
     headline: `Practice ${count} word${count === 1 ? '' : 's'}`,
     detail: 'You have a few things to review from your story.',
     cta: 'Practice →',
+    readyCount: count,
   };
 }

@@ -296,7 +296,6 @@ export class VocabularyService {
       if (
         assessment === 'got_it' &&
         options?.bumpEncounterOnGotIt &&
-        options.sourceSentence &&
         ctx.chapterId
       ) {
         row.encounterCount += 1;
@@ -308,7 +307,8 @@ export class VocabularyService {
         if (!row.firstEncounteredAt) row.firstEncounteredAt = iso;
         row.lastChapterId = ctx.chapterId;
         row.lastEncounteredAt = iso;
-        row.lastSentenceId = ctx.sentenceId ?? options.sourceSentence.id;
+        row.lastSentenceId =
+          ctx.sentenceId ?? (options.sourceSentence ? options.sourceSentence.id : row.lastSentenceId);
         refreshFamiliarity(row, now);
       }
       state.lemmas[lemmaId] = row;
@@ -334,23 +334,35 @@ export class VocabularyService {
   }
 
   /**
-   * @deprecated Use recordSelfAssessmentForLemmaIds with got_it instead.
+   * Records a successful production attempt as an encounter only — not a spaced-review vote.
+   * @deprecated Prefer recordSelfAssessmentForLemmaIds when learner self-assessment should count.
    */
   async recordProductionSuccess(input: {
     lemmaIds: string[];
     chapterId: string;
     sentenceId: string;
   }): Promise<UserVocabularyState> {
-    return this.recordSelfAssessmentForLemmaIds(
-      input.lemmaIds,
-      'got_it',
-      {
-        source: 'production',
-        chapterId: input.chapterId,
-        sentenceId: input.sentenceId,
-      },
-      { bumpEncounterOnGotIt: true },
-    );
+    const state = await this.getState();
+    const now = new Date();
+    const iso = now.toISOString();
+    const unique = [...new Set(input.lemmaIds.filter(Boolean))];
+    for (const lemmaId of unique) {
+      const row = state.lemmas[lemmaId] ?? createLemmaEncounter(lemmaId);
+      row.encounterCount += 1;
+      if (!row.chaptersEncountered.includes(input.chapterId)) {
+        row.chaptersEncountered.push(input.chapterId);
+      }
+      pushEncounter(row, false, iso, input.chapterId);
+      if (!row.firstChapterId) row.firstChapterId = input.chapterId;
+      if (!row.firstEncounteredAt) row.firstEncounteredAt = iso;
+      row.lastChapterId = input.chapterId;
+      row.lastEncounteredAt = iso;
+      row.lastSentenceId = input.sentenceId;
+      refreshFamiliarity(row, now);
+      state.lemmas[lemmaId] = row;
+    }
+    await this.persist(state);
+    return state;
   }
 
   summarize(state: UserVocabularyState): {

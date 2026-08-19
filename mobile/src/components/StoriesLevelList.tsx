@@ -124,11 +124,25 @@ export function StoriesLevelList({
                 return;
               }
               if (item.status === 'locked') {
+                if (item.kind === 'speak') {
+                  showHint(`Complete the batch review after Ch. ${item.batchEnd} first`);
+                  return;
+                }
                 showHint(unlockHintForPathItem(item));
                 return;
               }
-              if (item.kind === 'grammar') onOpenGrammar?.(item.batchEnd);
-              if (item.kind === 'recap') onOpenRecap?.(item.batchEnd);
+              if (item.kind === 'grammar') {
+                onOpenGrammar?.(item.batchEnd);
+                return;
+              }
+              if (item.kind === 'recap') {
+                onOpenRecap?.(item.batchEnd);
+                return;
+              }
+              if (item.kind === 'speak') {
+                showHint(`Complete the batch review after Ch. ${item.batchEnd} first`);
+                return;
+              }
             }}
             onListen={(chapterId) => onOpenChapter(chapterId, true)}
             storyId={storyId}

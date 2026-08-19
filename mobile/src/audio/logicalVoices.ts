@@ -52,6 +52,8 @@ type RawRoster = {
   characters?: Record<string, LegacyCharacterRow>;
 };
 
+export type RawVoiceRoster = RawRoster;
+
 function emptyLogicalVoice(): LogicalVoice {
   return {
     speakingStyle: '',

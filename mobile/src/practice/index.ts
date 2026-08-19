@@ -6,3 +6,4 @@ export {
   type PracticePrompt,
   type PracticeSession,
 } from '@/src/practice/PracticeService';
+export type { PracticeQueueItem } from '@/src/vocabulary/practicePriority';
