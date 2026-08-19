@@ -98,7 +98,7 @@ export default function ReaderScreen() {
         const progress = await service.openChapter(authored.id);
         const adapted = await getAdaptiveService().resolveChapter(authored, progress);
         audio.setChapterContext(authored.id);
-        await syncCatalog();
+        void syncCatalog();
         await audio.loadSpeed();
         const tipSeen = await hasSeenReaderTip();
         if (cancelled) return;

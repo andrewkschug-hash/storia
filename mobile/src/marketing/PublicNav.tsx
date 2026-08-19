@@ -2,6 +2,7 @@ import { router, type Href } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { navigateContinueLearning } from '@/src/progress/continueNavigation';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
@@ -19,6 +20,14 @@ export function PublicNav({ continueHref }: Props) {
   const go = (href: Href) => {
     setOpen(false);
     router.push(href);
+  };
+
+  const continueLearning = () => {
+    setOpen(false);
+    if (continueHref) {
+      void navigateContinueLearning(continueHref);
+      return;
+    }
   };
 
   return (
@@ -47,7 +56,7 @@ export function PublicNav({ continueHref }: Props) {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Continue learning"
-              onPress={() => go(continueHref)}
+              onPress={continueLearning}
               style={({ pressed }) => [
                 styles.primary,
                 { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
@@ -98,7 +107,7 @@ export function PublicNav({ continueHref }: Props) {
           ]}>
           <NavText label="Try walkthrough" onPress={() => go('/walkthrough')} colors={colors} />
           {continueHref ? (
-            <NavText label="Continue learning" onPress={() => go(continueHref)} colors={colors} />
+            <NavText label="Continue learning" onPress={continueLearning} colors={colors} />
           ) : (
             <>
               <NavText label="Log in" onPress={() => go('/account?mode=signin' as Href)} colors={colors} />

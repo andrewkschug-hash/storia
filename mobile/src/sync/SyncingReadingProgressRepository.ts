@@ -15,11 +15,8 @@ export class SyncingReadingProgressRepository implements ReadingProgressReposito
   async save(progress: ReadingProgressRecord): Promise<void> {
     await this.local.save(progress);
     if (this.cloud && isMeaningfulProgress(progress)) {
-      try {
-        await this.cloud.upsertProgress(progress);
-      } catch {
-        /* keep local */
-      }
+      // Never block reading on cloud sync — local progress is the source of truth.
+      void this.cloud.upsertProgress(progress);
     }
   }
 

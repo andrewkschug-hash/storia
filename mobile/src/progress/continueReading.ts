@@ -109,9 +109,12 @@ function resolveNextAction(
   const bundle = getContentBundle(storyId);
   const current = bundle.chapters.get(progress.currentChapterId);
   if (!current) {
+    const chapterIds = bundle.story.chapters.map((chapter) => chapter.id);
+    const fallback =
+      firstIncompleteChapterId(progress, chapterIds) ?? chapterIds[0] ?? progress.currentChapterId;
     return {
-      chapterId: progress.currentChapterId,
-      nextAction: { kind: 'chapter', chapterId: progress.currentChapterId },
+      chapterId: fallback,
+      nextAction: { kind: 'chapter', chapterId: fallback },
     };
   }
   const chapterNumberById = new Map(

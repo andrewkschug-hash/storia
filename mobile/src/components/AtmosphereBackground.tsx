@@ -15,6 +15,7 @@ export function AtmosphereBackground({ children, style }: Props) {
   return (
     <View style={[styles.root, { backgroundColor: colors.background }, style]}>
       <LinearGradient
+        pointerEvents="none"
         colors={[colors.backgroundAtmosphereTop, colors.backgroundAtmosphereBottom]}
         locations={[0, 0.55]}
         style={StyleSheet.absoluteFill}

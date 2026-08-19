@@ -1,4 +1,4 @@
-import { router, useFocusEffect, type Href } from 'expo-router';
+import { router, useFocusEffect } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -11,6 +11,7 @@ import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { readerHref } from '@/src/content/storyHrefs';
+import { navigateToContinueTarget } from '@/src/progress/continueNavigation';
 import { homeContinuePresentation } from '@/src/progress/continueReading';
 import { useContinueReading } from '@/src/progress/useContinueReading';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
@@ -34,11 +35,11 @@ export default function HomeScreen() {
     loading,
     error,
     refresh,
-    service,
   } = useContinueReading();
   const { home, refresh: refreshVocab, summary } = useVocabulary(progress);
   const [gateReady, setGateReady] = useState(false);
   const [account, setAccount] = useState<LocalAccount | null>(null);
+  const [continueError, setContinueError] = useState<string | null>(null);
 
   useFocusEffect(
     useCallback(() => {
@@ -91,8 +92,17 @@ export default function HomeScreen() {
   if (!target || !chapter || !story) {
     return (
       <AtmosphereBackground>
-        <View style={styles.center}>
-          <ActivityIndicator color={colors.tint} />
+        <View style={[styles.center, { padding: Spacing.lg, gap: Spacing.md }]}>
+          <Text style={[type.body, { color: colors.textSecondary, textAlign: 'center' }]}>
+            {error ??
+              'We could not load your continue reading card. Browse stories to keep reading.'}
+          </Text>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push('/(tabs)/stories')}
+            style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1, minHeight: 44, justifyContent: 'center' })}>
+            <Text style={[type.label, { color: colors.tint }]}>Browse stories</Text>
+          </Pressable>
         </View>
       </AtmosphereBackground>
     );
@@ -136,6 +146,11 @@ export default function HomeScreen() {
           </View>
 
           <View style={styles.section}>
+            {continueError ? (
+              <Text style={[type.caption, { color: colors.danger, marginBottom: Spacing.sm }]}>
+                {continueError}
+              </Text>
+            ) : null}
             <ContinueReadingCard
               chapterTitleIt={continuePresentation.title}
               storyTitleIt={target.storyTitleIt}
@@ -156,22 +171,13 @@ export default function HomeScreen() {
                 wordsFamiliar: summary?.familiar ?? 0,
                 readingStreakDays: progress?.streakDays ?? 0,
               }}
-              onContinue={async () => {
-                if (!service) return;
-                if (target.nextAction.kind === 'grammar') {
-                  router.push(
-                    `/grammar-note?story=${encodeURIComponent(story.id)}&chapter=${target.nextAction.batchEnd}` as Href,
-                  );
-                  return;
+              onContinue={() => {
+                setContinueError(null);
+                try {
+                  navigateToContinueTarget(target);
+                } catch (e) {
+                  setContinueError(e instanceof Error ? e.message : String(e));
                 }
-                if (target.nextAction.kind === 'recap') {
-                  router.push(
-                    `/batch-recap?story=${encodeURIComponent(story.id)}&chapter=${target.nextAction.batchEnd}` as Href,
-                  );
-                  return;
-                }
-                await service.openChapter(target.nextAction.chapterId);
-                router.push(readerHref(story.id, target.nextAction.chapterId));
               }}
             />
             <Pressable

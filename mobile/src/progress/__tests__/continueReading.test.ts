@@ -6,7 +6,7 @@ import {
   isFirstChapterAfterBatch,
   recapCheckpointId,
 } from '@/src/content/storyPath';
-import { __resetProgressService, __setProgressRepository, getProgressService } from '@/src/progress';
+import { __resetProgressService, __setProgressRepository, getProgressRepository, getProgressService } from '@/src/progress';
 import { getContinueReadingTarget, homeContinuePresentation } from '@/src/progress/continueReading';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
 
@@ -100,5 +100,24 @@ describe('continue reading batch-boundary routing', () => {
     expect(presentation.title).toBe('Grammar note');
     expect(presentation.subtitle).toBe('Chapters 1–5');
     expect(presentation.buttonLabel).toBe('Continue');
+  });
+
+  it('falls back when stored currentChapterId no longer exists in content', async () => {
+    __setProgressRepository(new MemoryReadingProgressRepository());
+    __resetProgressService();
+
+    await completeThrough(10);
+    const repo = getProgressRepository();
+    const progress = await repo.get(LUCA_STORY_ID);
+    if (!progress) throw new Error('Missing progress');
+    await repo.save({
+      ...progress,
+      currentChapterId: 'luca-a-roma-99',
+      lastOpenedAt: new Date().toISOString(),
+    });
+
+    const target = await getContinueReadingTarget();
+    expect(target?.chapterId).toBe(chapterIdByNumber(11));
+    expect(target?.nextAction).toEqual({ kind: 'chapter', chapterId: chapterIdByNumber(11) });
   });
 });

@@ -127,13 +127,13 @@ export class TtsGatewayClient {
   }
 
   private async get(path: string): Promise<unknown> {
-    const res = await fetch(`${this.baseUrl.replace(/\/$/, '')}${path}`);
+    const res = await fetchWithTimeout(`${this.baseUrl.replace(/\/$/, '')}${path}`);
     if (!res.ok) throw new Error(await readError(res));
     return res.json();
   }
 
   private async postJson(path: string, body: unknown): Promise<unknown> {
-    const res = await fetch(`${this.baseUrl.replace(/\/$/, '')}${path}`, {
+    const res = await fetchWithTimeout(`${this.baseUrl.replace(/\/$/, '')}${path}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
@@ -157,4 +157,16 @@ export function gatewayBaseUrl(): string | null {
   if (fromEnv && fromEnv.length > 0) return fromEnv;
   if (typeof __DEV__ !== 'undefined' && __DEV__) return 'http://127.0.0.1:8787';
   return null;
+}
+
+const GATEWAY_FETCH_TIMEOUT_MS = 4_000;
+
+async function fetchWithTimeout(input: string, init?: RequestInit): Promise<Response> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), GATEWAY_FETCH_TIMEOUT_MS);
+  try {
+    return await fetch(input, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
 }

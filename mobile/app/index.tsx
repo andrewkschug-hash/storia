@@ -9,6 +9,7 @@ import { ScreenContent } from '@/src/components/ScreenContent';
 import { PublicNav } from '@/src/marketing/PublicNav';
 import { ReaderPreview } from '@/src/marketing/ReaderPreview';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
+import { navigateContinueLearning } from '@/src/progress/continueNavigation';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
@@ -30,7 +31,7 @@ export default function PublicHomeScreen() {
       const account = await getAccount();
       const onboarded = await hasCompletedOnboarding();
       if (account && onboarded) {
-        const href = '/(tabs)/home' as Href;
+        const href = '/home' as Href;
         setContinueHref(href);
         if (Platform.OS !== 'web') {
           router.replace(href);
@@ -146,7 +147,13 @@ export default function PublicHomeScreen() {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel={continueHref ? 'Continue learning' : 'Start learning'}
-              onPress={() => router.push((continueHref ?? '/account?mode=signup') as Href)}
+              onPress={() => {
+                if (continueHref) {
+                  void navigateContinueLearning(continueHref);
+                  return;
+                }
+                router.push('/account?mode=signup' as Href);
+              }}
               style={({ pressed }) => [
                 styles.primaryBtn,
                 {
