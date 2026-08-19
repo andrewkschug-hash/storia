@@ -18,7 +18,7 @@
   "events": [
     {
       "id": "ev-14-complicated",
-      "summary": "A phone message: Marco must leave soon; the group needs a plan.",
+      "summary": "Marco has money now, but he must leave soon and cannot go alone. They go to Nonna Rosa for advice.",
       "characterIds": [
         "luca",
         "sofia",
@@ -29,9 +29,9 @@
         "lavoro-caffe"
       ],
       "rememberedFacts": [
-        "Marco must leave soon",
-        "There is a message on the phone",
-        "The group must do something today"
+        "Marco has money for the ticket now",
+        "Marco must leave soon and cannot go alone",
+        "They go to Nonna Rosa for advice"
       ]
     }
   ],
@@ -42,26 +42,27 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Il problema non è facile.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "problema",
-            "non",
-            "essere",
-            "facile"
-          ]
-        },
-        {
-          "id": "s02",
-          "text": "Marco deve partire.",
+          "text": "Marco ha soldi adesso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "marco",
+            "avere",
+            "soldi",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ma Marco deve partire presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "marco",
             "dovere",
-            "partire"
+            "partire",
+            "presto"
           ]
         },
         {
@@ -79,13 +80,16 @@
         },
         {
           "id": "s04",
-          "text": "C'è un messaggio.",
+          "text": "Deve andare a casa di mamma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ce",
-            "un",
-            "messaggio"
+            "dovere",
+            "andare",
+            "a",
+            "casa",
+            "di",
+            "mamma"
           ]
         }
       ]
@@ -107,19 +111,6 @@
         },
         {
           "id": "s06",
-          "text": "Il messaggio dice di andare.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "il",
-            "messaggio",
-            "dire",
-            "di",
-            "andare"
-          ]
-        },
-        {
-          "id": "s07",
           "text": "Non posso stare qui.",
           "speakerId": "marco",
           "kind": "dialogue",
@@ -137,6 +128,18 @@
               "tokenStart": 0,
               "tokenEnd": 1
             }
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non posso andare solo.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "potere",
+            "andare",
+            "solo"
           ]
         },
         {
@@ -158,71 +161,6 @@
       "sentences": [
         {
           "id": "s09",
-          "text": "Il gruppo ascolta Marco.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "gruppo",
-            "ascoltare",
-            "marco"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Luca vuole aiutare.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "volere",
-            "aiutare"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Dobbiamo fare un piano.",
-          "speakerId": "giulia",
-          "kind": "dialogue",
-          "lemmas": [
-            "dovere",
-            "fare",
-            "un",
-            "piano"
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "Sì, oggi.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "si_yes",
-            "oggi"
-          ]
-        },
-        {
-          "id": "s13",
-          "text": "Dove sei domani?",
-          "speakerId": "sofia",
-          "kind": "dialogue",
-          "lemmas": [
-            "dove",
-            "essere",
-            "domani"
-          ],
-          "phrases": [
-            {
-              "surface": "Dove sei?",
-              "literalEn": "Where are you?",
-              "naturalEn": "Where are you?",
-              "tokenStart": 0,
-              "tokenEnd": 1
-            }
-          ]
-        },
-        {
-          "id": "s14",
           "text": "Non lo so.",
           "speakerId": "marco",
           "kind": "dialogue",
@@ -240,6 +178,54 @@
               "tokenEnd": 2
             }
           ]
+        },
+        {
+          "id": "s10",
+          "text": "Luca vuole aiutare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "volere",
+            "aiutare"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Andiamo a casa di Nonna Rosa.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "a",
+            "casa",
+            "di",
+            "nonna",
+            "rosa"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Nonna Rosa sa cosa fare.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "sapere",
+            "cosa",
+            "fare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Sì, oggi.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "oggi"
+          ]
         }
       ]
     }
@@ -249,44 +235,44 @@
       "id": "ch14_q01",
       "chapterId": "luca-a-roma-14",
       "type": "event",
-      "question": "What new urgency appears for Marco?",
-      "questionIt": "Cosa deve fare Marco presto?",
+      "question": "What is still a problem after Marco has money?",
+      "questionIt": "Qual è ancora il problema?",
       "choices": [
-        "He must leave soon",
+        "He must leave soon and cannot go alone",
         "He must buy a house",
         "He must become padrone"
       ],
       "correctChoice": 0,
-      "explanation": "A message makes clear that Marco has little time and must leave soon.",
+      "explanation": "He has money now, but he must leave soon and says he cannot go alone.",
       "difficulty": 1
     },
     {
       "id": "ch14_q02",
       "chapterId": "luca-a-roma-14",
       "type": "direct",
-      "question": "How do the friends learn about the urgency?",
+      "question": "Why do they go to Nonna Rosa?",
       "choices": [
-        "From a message",
-        "From a newspaper",
-        "From a tourist"
+        "She will know what to do",
+        "She sells train tickets",
+        "She is angry at Marco"
       ],
       "correctChoice": 0,
-      "explanation": "A phone message tells them Marco must leave soon.",
+      "explanation": "Giulia says Nonna Rosa knows what to do, so they go to her house.",
       "difficulty": 2
     },
     {
       "id": "ch14_q03",
       "chapterId": "luca-a-roma-14",
       "type": "sequence",
-      "question": "What do they realize they need next?",
-      "questionIt": "Di cosa hanno bisogno?",
+      "question": "What does Marco say he cannot do?",
+      "questionIt": "Cosa non può fare Marco?",
       "choices": [
-        "A plan",
-        "A bigger apartment",
-        "A new café"
+        "Go alone",
+        "Drink coffee",
+        "Talk to Sofia"
       ],
       "correctChoice": 0,
-      "explanation": "With little time left, they need a piano (plan).",
+      "explanation": "Marco says “Non posso andare solo” — he cannot go alone.",
       "difficulty": 1
     }
   ]

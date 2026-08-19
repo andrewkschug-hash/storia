@@ -1751,7 +1751,7 @@
       "partOfSpeech": "adverb",
       "difficulty": 1,
       "frequency": "high",
-      "introducedChapter": 22,
+      "introducedChapter": 14,
       "inflections": [
         "sola"
       ]
@@ -1979,7 +1979,7 @@
       "partOfSpeech": "noun",
       "difficulty": 1,
       "frequency": "medium",
-      "introducedChapter": 15
+      "introducedChapter": 14
     },
     {
       "lemmaId": "nonna",
@@ -1988,7 +1988,7 @@
       "partOfSpeech": "noun",
       "difficulty": 1,
       "frequency": "medium",
-      "introducedChapter": 15
+      "introducedChapter": 14
     },
     {
       "lemmaId": "roma",
@@ -2105,7 +2105,7 @@
       "partOfSpeech": "noun",
       "difficulty": 1,
       "frequency": "high",
-      "introducedChapter": 16
+      "introducedChapter": 15
     },
     {
       "lemmaId": "telefono",
@@ -2123,7 +2123,7 @@
       "partOfSpeech": "noun",
       "difficulty": 1,
       "frequency": "high",
-      "introducedChapter": 14,
+      "introducedChapter": 12,
       "inflections": [
         "messaggi"
       ]
@@ -3526,7 +3526,7 @@
       "partOfSpeech": "noun",
       "difficulty": 2,
       "frequency": "medium",
-      "introducedChapter": 24,
+      "introducedChapter": 12,
       "cefrLevel": "A2",
       "cefrConfidence": 0.7,
       "frequencyBand": "common",

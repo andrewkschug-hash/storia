@@ -6,7 +6,7 @@
       "storyId": "luca-a-roma",
       "batchEnd": 15,
       "title": "Help Marco",
-      "summaryEn": "Marco is back at the café. He has a problem. He needs to go home, but he doesn't have money for a ticket.",
+      "summaryEn": "Marco is back at the café. His mother is not well. He needs to go to her house, but he doesn't have money for a ticket.",
       "sourceRange": {
         "start": 11,
         "end": 15
@@ -52,14 +52,15 @@
         },
         {
           "id": "luca-a-roma-speak-15-l03",
-          "en": "He has to go home.",
-          "it": "Deve andare a casa.",
+          "en": "He has to go to his mom's house.",
+          "it": "Deve andare a casa di mamma.",
           "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s06",
+          "sourceSentenceId": "s08",
           "acceptableAnswers": [
-            "Marco deve andare a casa.",
-            "Deve tornare a casa.",
-            "Lui deve andare a casa."
+            "Marco deve andare a casa di mamma.",
+            "Deve andare a casa di mamma.",
+            "Lui deve andare a casa di mamma.",
+            "Deve andare a casa."
           ],
           "semantic": {
             "requiredConcepts": ["casa"],
@@ -73,7 +74,7 @@
           "en": "He needs to buy a ticket.",
           "it": "Deve comprare un biglietto.",
           "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s07",
+          "sourceSentenceId": "s09",
           "acceptableAnswers": [
             "Marco deve comprare un biglietto.",
             "Ha bisogno di un biglietto.",
@@ -92,7 +93,7 @@
           "en": "He doesn't have money.",
           "it": "Non ha soldi.",
           "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s08",
+          "sourceSentenceId": "s10",
           "acceptableAnswers": [
             "Non ha i soldi.",
             "Marco non ha soldi.",

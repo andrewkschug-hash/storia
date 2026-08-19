@@ -19,7 +19,7 @@
   "events": [
     {
       "id": "ev-13-help-marco",
-      "summary": "Friends pool help; Sofia gives Marco money for the ticket.",
+      "summary": "Sofia gives Marco money; that money is for the ticket he must buy.",
       "characterIds": [
         "luca",
         "sofia",
@@ -31,8 +31,8 @@
       ],
       "rememberedFacts": [
         "The group helps Marco",
-        "Sofia gives Marco money",
-        "They want to buy the ticket"
+        "Sofia gives Marco money for the ticket",
+        "Marco will buy the ticket with Sofia’s money"
       ]
     }
   ],
@@ -138,27 +138,6 @@
       "sentences": [
         {
           "id": "s08",
-          "text": "Il gruppo cerca un'idea.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "gruppo",
-            "cercare",
-            "idea"
-          ],
-          "phrases": [
-            {
-              "surface": "un'idea",
-              "literalEn": "an idea",
-              "naturalEn": "an idea",
-              "tokenStart": 3,
-              "tokenEnd": 3
-            }
-          ]
-        },
-        {
-          "id": "s09",
           "text": "Sofia dà soldi a Marco.",
           "speakerId": null,
           "kind": "narration",
@@ -171,13 +150,23 @@
           ]
         },
         {
-          "id": "s10",
-          "text": "Luca vuole comprare il biglietto.",
-          "speakerId": null,
-          "kind": "narration",
+          "id": "s09",
+          "text": "È per il biglietto.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "volere",
+            "essere",
+            "per",
+            "il",
+            "biglietto"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Compra il biglietto.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
+          "lemmas": [
             "comprare",
             "il",
             "biglietto"
@@ -185,6 +174,16 @@
         },
         {
           "id": "s11",
+          "text": "Grazie, Sofia.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "sofia"
+          ]
+        },
+        {
+          "id": "s12",
           "text": "Marco è tranquillo.",
           "speakerId": null,
           "kind": "narration",
@@ -192,17 +191,6 @@
             "marco",
             "essere",
             "tranquillo"
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "Insieme è facile.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "insieme",
-            "essere",
-            "facile"
           ]
         }
       ]
@@ -236,21 +224,21 @@
         "The train conductor"
       ],
       "correctChoice": 0,
-      "explanation": "Sofia gives him money so he can get a ticket.",
+      "explanation": "Sofia gives him money so he can buy a ticket.",
       "difficulty": 1
     },
     {
       "id": "ch13_q03",
       "chapterId": "luca-a-roma-13",
       "type": "direct",
-      "question": "What does the help allow Marco to get?",
+      "question": "What is the money for?",
       "choices": [
-        "A ticket",
+        "The ticket",
         "A new apartment",
         "A café of his own"
       ],
       "correctChoice": 0,
-      "explanation": "With the money, Marco can get the ticket he needs.",
+      "explanation": "Sofia says the money is for the ticket, and tells Marco to buy it.",
       "difficulty": 1
     }
   ]

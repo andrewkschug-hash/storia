@@ -511,24 +511,26 @@
         }
       ]
     },
-    "luca-a-roma-12:s10": {
+    "luca-a-roma-12:s07": {
       "reinforces": [
-        "casa"
+        "mamma",
+        "stare"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "C'è un problema a casa oggi.",
+          "text": "Mia mamma non sta bene oggi.",
           "lemmas": [
-            "ce",
-            "un",
-            "problema",
-            "a",
-            "casa",
+            "mio",
+            "mamma",
+            "non",
+            "stare",
+            "bene",
             "oggi"
           ],
           "reinforces": [
-            "casa"
+            "mamma",
+            "stare"
           ]
         }
       ]

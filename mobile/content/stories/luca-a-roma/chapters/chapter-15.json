@@ -20,7 +20,7 @@
   "events": [
     {
       "id": "ev-15-piano",
-      "summary": "At Nonna Rosa’s house the group makes a plan; they will leave with Marco.",
+      "summary": "They tell Nonna Rosa the problem. She tells them to go with Marco tomorrow on the train.",
       "characterIds": [
         "luca",
         "sofia",
@@ -32,8 +32,8 @@
         "casa-nonna"
       ],
       "rememberedFacts": [
-        "The group makes a plan together",
-        "Nonna Rosa gives warm advice",
+        "Nonna Rosa tells them to go with Marco",
+        "They will take the train tomorrow",
         "They will leave together tomorrow"
       ]
     }
@@ -104,47 +104,56 @@
       "sentences": [
         {
           "id": "s05",
-          "text": "Marco ha un problema.",
+          "text": "Marco deve andare a casa di mamma.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
             "marco",
-            "avere",
-            "un",
-            "problema"
+            "dovere",
+            "andare",
+            "a",
+            "casa",
+            "di",
+            "mamma"
           ]
         },
         {
           "id": "s06",
-          "text": "Vogliamo aiutare insieme.",
-          "speakerId": "luca",
+          "text": "La mamma non sta bene.",
+          "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "volere",
-            "aiutare",
-            "insieme"
+            "la",
+            "mamma",
+            "non",
+            "stare",
+            "bene"
           ]
         },
         {
           "id": "s07",
-          "text": "Avete un'idea?",
-          "speakerId": "nonna-rosa",
+          "text": "Ha soldi per il biglietto.",
+          "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "avere",
-            "idea"
+            "soldi",
+            "per",
+            "il",
+            "biglietto"
           ]
         },
         {
           "id": "s08",
-          "text": "Dobbiamo fare un piano.",
+          "text": "Marco non può andare solo.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
-            "dovere",
-            "fare",
-            "un",
-            "piano"
+            "marco",
+            "non",
+            "potere",
+            "andare",
+            "solo"
           ]
         }
       ]
@@ -165,6 +174,18 @@
         },
         {
           "id": "s10",
+          "text": "Domani prendete il treno.",
+          "speakerId": "nonna-rosa",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "prendere",
+            "il",
+            "treno"
+          ]
+        },
+        {
+          "id": "s11",
           "text": "L'aiuto è importante.",
           "speakerId": "nonna-rosa",
           "kind": "dialogue",
@@ -184,7 +205,7 @@
           ]
         },
         {
-          "id": "s11",
+          "id": "s12",
           "text": "Perché no?",
           "speakerId": "nonna-rosa",
           "kind": "dialogue",
@@ -200,19 +221,6 @@
               "tokenStart": 0,
               "tokenEnd": 1
             }
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "Il gruppo ha un piano.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "gruppo",
-            "avere",
-            "un",
-            "piano"
           ]
         },
         {
@@ -245,30 +253,30 @@
       "id": "ch15_q01",
       "chapterId": "luca-a-roma-15",
       "type": "character",
-      "question": "Whose house is part of making the plan?",
-      "questionIt": "Di chi è la casa?",
+      "question": "Who tells the group what to do?",
+      "questionIt": "Chi dice al gruppo cosa fare?",
       "choices": [
-        "Nonna Rosa’s",
-        "Giulia’s",
-        "The padrone’s"
+        "Nonna Rosa",
+        "Giulia",
+        "The padrone"
       ],
       "correctChoice": 0,
-      "explanation": "The group is at Nonna Rosa’s as they form their plan.",
+      "explanation": "They explain the problem, and Nonna Rosa tells them to go together.",
       "difficulty": 1
     },
     {
       "id": "ch15_q02",
       "chapterId": "luca-a-roma-15",
       "type": "event",
-      "question": "What do they decide?",
-      "questionIt": "Cosa decidono?",
+      "question": "What does Nonna Rosa tell them to do?",
+      "questionIt": "Cosa dice Nonna Rosa?",
       "choices": [
-        "To leave together tomorrow",
-        "To stay in Rome forever",
-        "To fire Marco"
+        "Go together on the train tomorrow",
+        "Stay in Rome forever",
+        "Fire Marco"
       ],
       "correctChoice": 0,
-      "explanation": "Their plan is to leave together the next day.",
+      "explanation": "She says go together, and take the train tomorrow.",
       "difficulty": 1
     },
     {
@@ -277,12 +285,12 @@
       "type": "inference",
       "question": "Why is Nonna Rosa important in this chapter?",
       "choices": [
-        "Her place is where the group makes the plan",
+        "She tells them not to let Marco go alone",
         "She sells them train tickets",
         "She takes Marco’s job"
       ],
       "correctChoice": 0,
-      "explanation": "The plan comes together at Nonna Rosa’s house.",
+      "explanation": "After they explain, she tells them to go with him. That is the plan.",
       "difficulty": 2
     }
   ]

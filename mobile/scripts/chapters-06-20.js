@@ -405,7 +405,7 @@ const chapter11 = chapter(
   ],
 );
 
-/** Cap. 12 — Marco has a problem */
+/** Cap. 12 — Marco’s mother is unwell; he needs a ticket and has no money */
 const chapter12 = chapter(
   {
     id: 'luca-a-roma-12',
@@ -419,13 +419,15 @@ const chapter12 = chapter(
     events: [
       {
         id: 'ev-12-marco-problem',
-        summary: 'Marco needs money for a ticket and feels stressed about work.',
+        summary:
+          'Marco’s mother sent a message: she is not well. He must go to her house, buy a ticket, and has no money.',
         characterIds: ['luca', 'sofia', 'marco'],
         locationIds: ['lavoro-caffe'],
         rememberedFacts: [
-          'Marco has a money problem',
-          'Marco needs a ticket',
-          'Marco is tired and stressed',
+          'Marco’s mother is not well',
+          'The message is from Marco’s mother',
+          'Marco must go to his mother’s house',
+          'Marco needs a train ticket and has no money',
         ],
       },
     ],
@@ -438,40 +440,38 @@ const chapter12 = chapter(
       S('s04', 'Luca e Sofia ascoltano.', ['luca', 'e', 'sofia', 'ascoltare']),
     ]),
     P('p2', 2, [
-      S('s05', 'Non ho soldi.', ['non', 'avere', 'soldi'], { speaker: 'marco' }),
-      S('s06', 'Devo comprare un biglietto.', ['dovere', 'comprare', 'un', 'biglietto'], {
-        speaker: 'marco',
-      }),
-      S('s07', 'Il lavoro è difficile.', ['il', 'lavoro', 'essere', 'difficile'], {
-        speaker: 'marco',
-      }),
-      S('s08', 'Sono stanco.', ['essere', 'stanco'], { speaker: 'marco' }),
-    ]),
-    P('p3', 3, [
-      S('s09', 'Che cosa fai?', ['che', 'cosa', 'fare'], {
+      S('s05', "Cosa c'è?", ['cosa', 'ce'], {
         speaker: 'luca',
         phrases: [
           {
-            surface: 'Che cosa fai?',
-            literalEn: 'What thing do you do?',
-            naturalEn: 'What are you doing? / What’s going on?',
+            surface: "Cosa c'è?",
+            literalEn: 'What is there?',
+            naturalEn: "What's wrong?",
             tokenStart: 0,
-            tokenEnd: 2,
+            tokenEnd: 1,
           },
         ],
       }),
-      S('s10', 'Non lo so.', ['non', 'lo', 'sapere'], {
+      S('s06', "C'è un messaggio di mamma.", ['ce', 'un', 'messaggio', 'di', 'mamma'], {
         speaker: 'marco',
-        phrases: [
-          {
-            surface: 'Non lo so',
-            literalEn: 'I do not know it',
-            naturalEn: "I don't know",
-            tokenStart: 0,
-            tokenEnd: 2,
-          },
-        ],
       }),
+      S('s07', 'Mia mamma non sta bene.', ['mio', 'mamma', 'non', 'stare', 'bene'], {
+        speaker: 'marco',
+      }),
+      S('s08', 'Devo andare a casa di mamma.', [
+        'dovere',
+        'andare',
+        'a',
+        'casa',
+        'di',
+        'mamma',
+      ], { speaker: 'marco' }),
+    ]),
+    P('p3', 3, [
+      S('s09', 'Devo comprare un biglietto.', ['dovere', 'comprare', 'un', 'biglietto'], {
+        speaker: 'marco',
+      }),
+      S('s10', 'Non ho soldi.', ['non', 'avere', 'soldi'], { speaker: 'marco' }),
       S('s11', 'Non ho tempo.', ['non', 'avere', 'tempo'], { speaker: 'marco' }),
       S('s12', 'Sofia vuole aiutare Marco.', ['sofia', 'volere', 'aiutare', 'marco']),
       S('s13', 'Luca vuole aiutare Marco.', ['luca', 'volere', 'aiutare', 'marco']),
@@ -479,7 +479,7 @@ const chapter12 = chapter(
   ],
 );
 
-/** Cap. 13 — They help Marco */
+/** Cap. 13 — Sofia gives Marco money so he can buy the ticket */
 const chapter13 = chapter(
   {
     id: 'luca-a-roma-13',
@@ -493,13 +493,13 @@ const chapter13 = chapter(
     events: [
       {
         id: 'ev-13-help-marco',
-        summary: 'Friends pool help; Sofia gives Marco money for the ticket.',
+        summary: 'Sofia gives Marco money; that money is for the ticket he must buy.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['lavoro-caffe'],
         rememberedFacts: [
           'The group helps Marco',
-          'Sofia gives Marco money',
-          'They want to buy the ticket',
+          'Sofia gives Marco money for the ticket',
+          'Marco will buy the ticket with Sofia’s money',
         ],
       },
     ],
@@ -535,32 +535,18 @@ const chapter13 = chapter(
       S('s07', 'Grazie, siete gentili.', ['grazie', 'essere', 'gentile'], { speaker: 'marco' }),
     ]),
     P('p3', 3, [
-      S('s08', "Il gruppo cerca un'idea.", ['il', 'gruppo', 'cercare', 'idea'], {
-        phrases: [
-          {
-            surface: "un'idea",
-            literalEn: 'an idea',
-            naturalEn: 'an idea',
-            tokenStart: 3,
-            tokenEnd: 3,
-          },
-        ],
+      S('s08', 'Sofia dà soldi a Marco.', ['sofia', 'dare', 'soldi', 'a', 'marco']),
+      S('s09', 'È per il biglietto.', ['essere', 'per', 'il', 'biglietto'], {
+        speaker: 'sofia',
       }),
-      S('s09', 'Sofia dà soldi a Marco.', ['sofia', 'dare', 'soldi', 'a', 'marco']),
-      S('s10', 'Luca vuole comprare il biglietto.', [
-        'luca',
-        'volere',
-        'comprare',
-        'il',
-        'biglietto',
-      ]),
-      S('s11', 'Marco è tranquillo.', ['marco', 'essere', 'tranquillo']),
-      S('s12', 'Insieme è facile.', ['insieme', 'essere', 'facile']),
+      S('s10', 'Compra il biglietto.', ['comprare', 'il', 'biglietto'], { speaker: 'sofia' }),
+      S('s11', 'Grazie, Sofia.', ['grazie', 'sofia'], { speaker: 'marco' }),
+      S('s12', 'Marco è tranquillo.', ['marco', 'essere', 'tranquillo']),
     ]),
   ],
 );
 
-/** Cap. 14 — Time pressure (no risolvere yet; reuse known vocab) */
+/** Cap. 14 — Money is solved; he still cannot go alone, and time is short */
 const chapter14 = chapter(
   {
     id: 'luca-a-roma-14',
@@ -574,30 +560,41 @@ const chapter14 = chapter(
     events: [
       {
         id: 'ev-14-complicated',
-        summary: 'A phone message: Marco must leave soon; the group needs a plan.',
+        summary:
+          'Marco has money now, but he must leave soon and cannot go alone. They go to Nonna Rosa for advice.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['lavoro-caffe'],
         rememberedFacts: [
-          'Marco must leave soon',
-          'There is a message on the phone',
-          'The group must do something today',
+          'Marco has money for the ticket now',
+          'Marco must leave soon and cannot go alone',
+          'They go to Nonna Rosa for advice',
         ],
       },
     ],
   },
   [
     P('p1', 1, [
-      S('s01', 'Il problema non è facile.', ['il', 'problema', 'non', 'essere', 'facile']),
-      S('s02', 'Marco deve partire.', ['marco', 'dovere', 'partire']),
+      S('s01', 'Marco ha soldi adesso.', ['marco', 'avere', 'soldi', 'adesso']),
+      S('s02', 'Ma Marco deve partire presto.', [
+        'ma',
+        'marco',
+        'dovere',
+        'partire',
+        'presto',
+      ]),
       S('s03', 'Marco non ha molto tempo.', ['marco', 'non', 'avere', 'molto', 'tempo']),
-      S('s04', "C'è un messaggio.", ['ce', 'un', 'messaggio']),
+      S('s04', 'Deve andare a casa di mamma.', [
+        'dovere',
+        'andare',
+        'a',
+        'casa',
+        'di',
+        'mamma',
+      ]),
     ]),
     P('p2', 2, [
       S('s05', 'Devo partire presto.', ['dovere', 'partire', 'presto'], { speaker: 'marco' }),
-      S('s06', 'Il messaggio dice di andare.', ['il', 'messaggio', 'dire', 'di', 'andare'], {
-        speaker: 'marco',
-      }),
-      S('s07', 'Non posso stare qui.', ['non', 'potere', 'stare', 'qui'], {
+      S('s06', 'Non posso stare qui.', ['non', 'potere', 'stare', 'qui'], {
         speaker: 'marco',
         phrases: [
           {
@@ -609,33 +606,42 @@ const chapter14 = chapter(
           },
         ],
       }),
+      S('s07', 'Non posso andare solo.', ['non', 'potere', 'andare', 'solo'], {
+        speaker: 'marco',
+      }),
       S('s08', 'Cosa facciamo adesso?', ['cosa', 'fare', 'adesso'], { speaker: 'sofia' }),
     ]),
     P('p3', 3, [
-      S('s09', 'Il gruppo ascolta Marco.', ['il', 'gruppo', 'ascoltare', 'marco']),
-      S('s10', 'Luca vuole aiutare.', ['luca', 'volere', 'aiutare']),
-      S('s11', 'Dobbiamo fare un piano.', ['dovere', 'fare', 'un', 'piano'], {
-        speaker: 'giulia',
-      }),
-      S('s12', 'Sì, oggi.', ['si_yes', 'oggi'], { speaker: 'luca' }),
-      S('s13', 'Dove sei domani?', ['dove', 'essere', 'domani'], {
-        speaker: 'sofia',
+      S('s09', 'Non lo so.', ['non', 'lo', 'sapere'], {
+        speaker: 'marco',
         phrases: [
           {
-            surface: 'Dove sei?',
-            literalEn: 'Where are you?',
-            naturalEn: 'Where are you?',
+            surface: 'Non lo so',
+            literalEn: 'I do not know it',
+            naturalEn: "I don't know",
             tokenStart: 0,
-            tokenEnd: 1,
+            tokenEnd: 2,
           },
         ],
       }),
-      S('s14', 'Non lo so.', ['non', 'lo', 'sapere'], { speaker: 'marco' }),
+      S('s10', 'Luca vuole aiutare.', ['luca', 'volere', 'aiutare']),
+      S('s11', 'Andiamo a casa di Nonna Rosa.', [
+        'andare',
+        'a',
+        'casa',
+        'di',
+        'nonna',
+        'rosa',
+      ], { speaker: 'sofia' }),
+      S('s12', 'Nonna Rosa sa cosa fare.', ['nonna', 'rosa', 'sapere', 'cosa', 'fare'], {
+        speaker: 'giulia',
+      }),
+      S('s13', 'Sì, oggi.', ['si_yes', 'oggi'], { speaker: 'luca' }),
     ]),
   ],
 );
 
-/** Cap. 15 — Plan with Nonna Rosa */
+/** Cap. 15 — Nonna Rosa tells them to go with Marco tomorrow */
 const chapter15 = chapter(
   {
     id: 'luca-a-roma-15',
@@ -649,12 +655,13 @@ const chapter15 = chapter(
     events: [
       {
         id: 'ev-15-piano',
-        summary: 'At Nonna Rosa’s house the group makes a plan; they will leave with Marco.',
+        summary:
+          'They tell Nonna Rosa the problem. She tells them to go with Marco tomorrow on the train.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia', 'nonna-rosa'],
         locationIds: ['casa-nonna'],
         rememberedFacts: [
-          'The group makes a plan together',
-          'Nonna Rosa gives warm advice',
+          'Nonna Rosa tells them to go with Marco',
+          'They will take the train tomorrow',
           'They will leave together tomorrow',
         ],
       },
@@ -679,20 +686,31 @@ const chapter15 = chapter(
       S('s04', 'La casa è tranquilla.', ['la', 'casa', 'essere', 'tranquillo']),
     ]),
     P('p2', 2, [
-      S('s05', 'Marco ha un problema.', ['marco', 'avere', 'un', 'problema'], {
+      S('s05', 'Marco deve andare a casa di mamma.', [
+        'marco',
+        'dovere',
+        'andare',
+        'a',
+        'casa',
+        'di',
+        'mamma',
+      ], { speaker: 'sofia' }),
+      S('s06', 'La mamma non sta bene.', ['la', 'mamma', 'non', 'stare', 'bene'], {
         speaker: 'sofia',
       }),
-      S('s06', 'Vogliamo aiutare insieme.', ['volere', 'aiutare', 'insieme'], {
+      S('s07', 'Ha soldi per il biglietto.', ['avere', 'soldi', 'per', 'il', 'biglietto'], {
         speaker: 'luca',
       }),
-      S('s07', "Avete un'idea?", ['avere', 'idea'], { speaker: 'nonna-rosa' }),
-      S('s08', 'Dobbiamo fare un piano.', ['dovere', 'fare', 'un', 'piano'], {
+      S('s08', 'Marco non può andare solo.', ['marco', 'non', 'potere', 'andare', 'solo'], {
         speaker: 'giulia',
       }),
     ]),
     P('p3', 3, [
       S('s09', 'Andate insieme.', ['andare', 'insieme'], { speaker: 'nonna-rosa' }),
-      S('s10', "L'aiuto è importante.", ['aiuto', 'essere', 'importante'], {
+      S('s10', 'Domani prendete il treno.', ['domani', 'prendere', 'il', 'treno'], {
+        speaker: 'nonna-rosa',
+      }),
+      S('s11', "L'aiuto è importante.", ['aiuto', 'essere', 'importante'], {
         speaker: 'nonna-rosa',
         phrases: [
           {
@@ -704,7 +722,7 @@ const chapter15 = chapter(
           },
         ],
       }),
-      S('s11', 'Perché no?', ['perche', 'no'], {
+      S('s12', 'Perché no?', ['perche', 'no'], {
         speaker: 'nonna-rosa',
         phrases: [
           {
@@ -716,7 +734,6 @@ const chapter15 = chapter(
           },
         ],
       }),
-      S('s12', 'Il gruppo ha un piano.', ['il', 'gruppo', 'avere', 'un', 'piano']),
       S('s13', 'Domani partono insieme.', ['domani', 'partire', 'insieme']),
       S('s14', 'Grazie, Nonna Rosa.', ['grazie', 'nonna', 'rosa'], { speaker: 'sofia' }),
     ]),
