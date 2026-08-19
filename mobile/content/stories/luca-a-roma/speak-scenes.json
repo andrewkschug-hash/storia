@@ -14,7 +14,7 @@
       "lines": [
         {
           "id": "luca-a-roma-speak-15-l01",
-          "en": "Marco goes back to the café.",
+          "en": "Marco comes back to the café.",
           "it": "Marco torna al caffè.",
           "sourceChapterId": "luca-a-roma-12",
           "sourceSentenceId": "s01",
@@ -52,7 +52,7 @@
         },
         {
           "id": "luca-a-roma-speak-15-l03",
-          "en": "He has to go to his mom's house.",
+          "en": "He has to go to his mother's house.",
           "it": "Deve andare a casa di mamma.",
           "sourceChapterId": "luca-a-roma-12",
           "sourceSentenceId": "s08",
@@ -90,7 +90,7 @@
         },
         {
           "id": "luca-a-roma-speak-15-l05",
-          "en": "He doesn't have money.",
+          "en": "He doesn't have any money.",
           "it": "Non ha soldi.",
           "sourceChapterId": "luca-a-roma-12",
           "sourceSentenceId": "s10",
@@ -110,6 +110,360 @@
             "requiredTense": "present",
             "requiredPolarity": "negative"
           }
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-20",
+      "storyId": "luca-a-roma",
+      "batchEnd": 20,
+      "title": "Back in Rome",
+      "summaryEn": "The trip is over. The friends come back to Rome, and Luca sees the life he has built there.",
+      "sourceRange": {
+        "start": 16,
+        "end": 20
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-20-l01",
+          "en": "When the trip ends, the group goes back to Rome.",
+          "it": "Poi il gruppo torna a Roma.",
+          "sourceChapterId": "luca-a-roma-20",
+          "sourceSentenceId": "s01",
+          "acceptableAnswers": [
+            "Il gruppo torna a Roma.",
+            "Poi tornano a Roma.",
+            "Tornano a Roma."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-20-l02",
+          "en": "They arrive at the station.",
+          "it": "Arrivano alla stazione.",
+          "sourceChapterId": "luca-a-roma-20",
+          "sourceSentenceId": "s02",
+          "acceptableAnswers": [
+            "Il gruppo arriva alla stazione.",
+            "Arrivano alla stazione."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-20-l03",
+          "en": "Luca is home again.",
+          "it": "Luca è a casa.",
+          "sourceChapterId": "luca-a-roma-20",
+          "sourceSentenceId": "s04",
+          "acceptableAnswers": [
+            "Luca è a casa.",
+            "È a casa.",
+            "Siamo a casa."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-20-l04",
+          "en": "He has a home, a job, and friends in Rome.",
+          "it": "Luca ha una casa, un lavoro e amici.",
+          "sourceChapterId": "luca-a-roma-20",
+          "sourceSentenceId": "s11",
+          "acceptableAnswers": [
+            "Ha una casa, un lavoro e amici.",
+            "Luca ha casa, lavoro e amici."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-20-l05",
+          "en": "Luca is happy in Rome.",
+          "it": "Luca è felice a Roma.",
+          "sourceChapterId": "luca-a-roma-20",
+          "sourceSentenceId": "s16",
+          "acceptableAnswers": [
+            "È felice a Roma.",
+            "Luca è felice a Roma."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-24",
+      "storyId": "luca-a-roma",
+      "batchEnd": 24,
+      "title": "Sunday Call",
+      "summaryEn": "On a quiet Sunday, Luca calls Nonna Rosa and tells her about his life in Rome.",
+      "sourceRange": {
+        "start": 21,
+        "end": 24
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-24-l01",
+          "en": "It's Sunday, so Luca doesn't work.",
+          "it": "Oggi è domenica e Luca non lavora.",
+          "sourceChapterId": "luca-a-roma-24",
+          "sourceSentenceId": "s01",
+          "acceptableAnswers": [
+            "Oggi è domenica e Luca non lavora.",
+            "È domenica e Luca non lavora.",
+            "Luca non lavora oggi."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-24-l02",
+          "en": "He calls Nonna Rosa.",
+          "it": "Luca chiama Nonna Rosa.",
+          "sourceChapterId": "luca-a-roma-24",
+          "sourceSentenceId": "s06",
+          "acceptableAnswers": [
+            "Luca chiama Nonna Rosa.",
+            "Chiama Nonna Rosa."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-24-l03",
+          "en": "He tells her he's doing well.",
+          "it": "Bene, grazie. Sto bene a Roma.",
+          "sourceChapterId": "luca-a-roma-24",
+          "sourceSentenceId": "s10",
+          "acceptableAnswers": [
+            "Bene, grazie. Sto bene a Roma.",
+            "Sto bene a Roma.",
+            "Luca sta bene a Roma."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-24-l04",
+          "en": "He tells her about his home, his job, and his friends.",
+          "it": "Ho una casa e un lavoro al caffè. Sì, ho Sofia, Giulia e Marco.",
+          "sourceChapterId": "luca-a-roma-24",
+          "sourceSentenceId": "s11",
+          "acceptableAnswers": [
+            "Ho una casa e un lavoro al caffè.",
+            "Ho Sofia, Giulia e Marco.",
+            "Ho una casa, un lavoro e amici."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-24-l05",
+          "en": "Rome feels like home now.",
+          "it": "Roma è casa adesso.",
+          "sourceChapterId": "luca-a-roma-24",
+          "sourceSentenceId": "s27",
+          "acceptableAnswers": [
+            "Roma è casa adesso.",
+            "Adesso Roma è casa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-30",
+      "storyId": "luca-a-roma",
+      "batchEnd": 30,
+      "title": "A Small Plan",
+      "summaryEn": "The café needs more customers. Luca and his friends ask the padrone for a small Saturday party.",
+      "sourceRange": {
+        "start": 25,
+        "end": 30
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-30-l01",
+          "en": "Luca and his friends have an idea: a small party on Saturday.",
+          "it": "Abbiamo un'idea. Una festa piccola, sabato, per il quartiere.",
+          "sourceChapterId": "luca-a-roma-30",
+          "sourceSentenceId": "s03",
+          "acceptableAnswers": [
+            "Abbiamo un'idea.",
+            "Una festa piccola sabato.",
+            "Una festa piccola per il quartiere."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-30-l02",
+          "en": "It won't work without the padrone.",
+          "it": "Senza di lui non funziona.",
+          "sourceChapterId": "luca-a-roma-30",
+          "sourceSentenceId": "s07",
+          "acceptableAnswers": [
+            "Senza di lui non funziona.",
+            "Non funziona senza il padrone."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-30-l03",
+          "en": "The padrone agrees to try.",
+          "it": "Va bene. Proviamo.",
+          "sourceChapterId": "luca-a-roma-30",
+          "sourceSentenceId": "s21",
+          "acceptableAnswers": [
+            "Va bene. Proviamo.",
+            "Il padrone dice va bene.",
+            "Proviamo sabato."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-30-l04",
+          "en": "Now they have to tell people in the neighborhood.",
+          "it": "Dobbiamo dire alle persone del quartiere.",
+          "sourceChapterId": "luca-a-roma-30",
+          "sourceSentenceId": "s27",
+          "acceptableAnswers": [
+            "Dobbiamo dire alle persone del quartiere.",
+            "Devono dire alle persone del quartiere."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-30-l05",
+          "en": "They have a plan, but they don't know yet if anyone will come.",
+          "it": "Abbiamo un piano. Non sappiamo se funziona.",
+          "sourceChapterId": "luca-a-roma-30",
+          "sourceSentenceId": "s42",
+          "acceptableAnswers": [
+            "Abbiamo un piano.",
+            "Non sappiamo se funziona.",
+            "Hanno un piano ma non sanno se funziona."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-35",
+      "storyId": "luca-a-roma",
+      "batchEnd": 35,
+      "title": "The Cafe Fills Up",
+      "summaryEn": "Saturday afternoon: the room starts empty, then neighbors arrive, and the small party finally works.",
+      "sourceRange": {
+        "start": 31,
+        "end": 35
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-35-l01",
+          "en": "At first, almost nobody is there.",
+          "it": "La sala era ancora quasi vuota.",
+          "sourceChapterId": "luca-a-roma-35",
+          "sourceSentenceId": "s01",
+          "acceptableAnswers": [
+            "La sala era quasi vuota.",
+            "La sala era ancora quasi vuota."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-35-l02",
+          "en": "Then Nonna Rosa arrives.",
+          "it": "Poi è arrivata Nonna Rosa.",
+          "sourceChapterId": "luca-a-roma-35",
+          "sourceSentenceId": "s08",
+          "acceptableAnswers": [
+            "Poi è arrivata Nonna Rosa.",
+            "È arrivata Nonna Rosa."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-35-l03",
+          "en": "More people from the neighborhood come in.",
+          "it": "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
+          "sourceChapterId": "luca-a-roma-35",
+          "sourceSentenceId": "s11",
+          "acceptableAnswers": [
+            "Arrivano persone del quartiere.",
+            "Dopo Nonna Rosa arrivano più persone."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-35-l04",
+          "en": "Before long, the room is almost full.",
+          "it": "In un'ora la sala era quasi piena.",
+          "sourceChapterId": "luca-a-roma-35",
+          "sourceSentenceId": "s15",
+          "acceptableAnswers": [
+            "La sala era quasi piena.",
+            "In un'ora la sala era quasi piena."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-35-l05",
+          "en": "Luca sees that people can come back.",
+          "it": "Le persone possono tornare.",
+          "sourceChapterId": "luca-a-roma-35",
+          "sourceSentenceId": "s45",
+          "acceptableAnswers": [
+            "Le persone possono tornare.",
+            "Luca sa che le persone possono tornare.",
+            "Adesso le persone possono tornare."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-40",
+      "storyId": "luca-a-roma",
+      "batchEnd": 40,
+      "title": "Luca Chooses Rome",
+      "summaryEn": "Luca's mother offers him a job near home. He thinks about his life in Rome and decides to stay.",
+      "sourceRange": {
+        "start": 36,
+        "end": 40
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-40-l01",
+          "en": "Luca's mother calls with a job offer near home.",
+          "it": "C'è un posto in un bar vicino a casa.",
+          "sourceChapterId": "luca-a-roma-40",
+          "sourceSentenceId": "s03",
+          "acceptableAnswers": [
+            "La mamma ha un lavoro vicino a casa.",
+            "C'è un posto in un bar vicino a casa.",
+            "C'è un lavoro vicino a casa."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-40-l02",
+          "en": "Luca has to decide this week.",
+          "it": "Luca deve rispondere questa settimana.",
+          "sourceChapterId": "luca-a-roma-40",
+          "sourceSentenceId": "s06",
+          "acceptableAnswers": [
+            "Luca deve rispondere questa settimana.",
+            "Deve rispondere questa settimana."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-40-l03",
+          "en": "He thinks about Rome — his home, his job, his friends.",
+          "it": "A Roma aveva una casa, un lavoro, e amici.",
+          "sourceChapterId": "luca-a-roma-40",
+          "sourceSentenceId": "s12",
+          "acceptableAnswers": [
+            "A Roma aveva una casa, un lavoro e amici.",
+            "A Roma ha una casa, un lavoro e amici.",
+            "Luca ha casa, lavoro e amici a Roma."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-40-l04",
+          "en": "He decides to stay in Rome for now.",
+          "it": "Per adesso resto a Roma. Non parto.",
+          "sourceChapterId": "luca-a-roma-40",
+          "sourceSentenceId": "s22",
+          "acceptableAnswers": [
+            "Per adesso resto a Roma.",
+            "Non parto.",
+            "Resto a Roma per adesso.",
+            "Luca resta a Roma."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-40-l05",
+          "en": "This is Luca's life in Rome now.",
+          "it": "Questa è la sua vita a Roma, per adesso.",
+          "sourceChapterId": "luca-a-roma-40",
+          "sourceSentenceId": "s53",
+          "acceptableAnswers": [
+            "Questa è la sua vita a Roma.",
+            "La sua vita a Roma: lavoro, amici, un orario chiaro.",
+            "Lavoro, amici, un orario chiaro."
+          ]
         }
       ]
     }

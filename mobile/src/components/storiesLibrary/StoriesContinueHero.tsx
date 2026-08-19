@@ -11,6 +11,8 @@ type Props = {
   percentComplete: number;
   chapterPercent: number;
   hasProgress: boolean;
+  eyebrow?: string;
+  subtitle?: string;
   onRead: () => void;
   onListen: () => void;
 };
@@ -22,6 +24,8 @@ export function StoriesContinueHero({
   percentComplete,
   chapterPercent,
   hasProgress,
+  eyebrow,
+  subtitle,
   onRead,
   onListen,
 }: Props) {
@@ -38,10 +42,10 @@ export function StoriesContinueHero({
         },
       ]}>
       <Text style={[styles.eyebrow, { color: colors.tint }]}>
-        {hasProgress ? 'Continue Reading' : 'Start Reading'}
+        {eyebrow ?? (hasProgress ? 'Continue Reading' : 'Start Reading')}
       </Text>
       <Text style={[styles.chapterLine, { color: colors.text }]}>
-        Capitolo {chapterNumber} · {chapterTitleIt}
+        {subtitle ?? `Capitolo ${chapterNumber} · ${chapterTitleIt}`}
       </Text>
       <Text style={[styles.meta, { color: colors.textMuted }]}>
         {storyTitleIt} · {percentComplete}% complete

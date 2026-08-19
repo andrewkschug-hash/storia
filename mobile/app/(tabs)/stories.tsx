@@ -20,6 +20,11 @@ import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { extraRowsFromCatalogStories } from '@/src/components/storiesLevelInsert';
 import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
 import { readerHref, speakSceneHref } from '@/src/content/storyHrefs';
+import {
+  getContinueReadingTarget,
+  homeContinuePresentation,
+  type ContinueReadingTarget,
+} from '@/src/progress/continueReading';
 import { getProgressService } from '@/src/progress';
 import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
@@ -37,6 +42,7 @@ export default function StoriesScreen() {
   const a2PlusStories = a2plus?.groups.flatMap((group) => group.stories) ?? [];
   const { story, progress, chapterStatuses, loading, error, refresh, service } =
     useReadingProgress(LUCA_STORY_ID);
+  const [continueTarget, setContinueTarget] = useState<ContinueReadingTarget | null>(null);
   const [beforeRomeRows, setBeforeRomeRows] = useState<ExtraStoryRow[]>([]);
   const [a2PlusRows, setA2PlusRows] = useState<ExtraStoryRow[]>([]);
 
@@ -81,6 +87,7 @@ export default function StoriesScreen() {
       void refresh();
       void loadBeforeRome();
       void loadA2Plus();
+      void getContinueReadingTarget().then(setContinueTarget);
     }, [refresh, loadBeforeRome, loadA2Plus]),
   );
 
@@ -104,17 +111,47 @@ export default function StoriesScreen() {
     );
   }
 
-  const continueChapter =
+  const fallbackChapter =
     getChapter(progress?.currentChapterId ?? story.chapters[0].id, LUCA_STORY_ID) ??
     getChapter(story.chapters[0].id, LUCA_STORY_ID)!;
+  const lucaTarget =
+    continueTarget?.storyId === LUCA_STORY_ID ? continueTarget : null;
+  const heroChapter = lucaTarget
+    ? getChapter(lucaTarget.chapterId, LUCA_STORY_ID) ?? fallbackChapter
+    : fallbackChapter;
+  const completed = progress ? service.getCompletedCount(progress) : 0;
+  const heroPresentation =
+    lucaTarget && heroChapter
+      ? homeContinuePresentation(lucaTarget, heroChapter, story.chapters.length, completed)
+      : null;
   const percent = progress ? service.getReadingPercentComplete(progress) : 0;
   const chapterPercent = progress
-    ? service.getChapterReadingPercent(continueChapter, progress.lastSentenceId)
+    ? service.getChapterReadingPercent(heroChapter, progress.lastSentenceId)
     : 0;
 
   const openLucaChapter = async (chapterId: string, listen = false) => {
     await service.openChapter(chapterId);
     router.push(readerHref(LUCA_STORY_ID, chapterId, listen));
+  };
+
+  const continueLuca = async (listen = false) => {
+    if (!lucaTarget) {
+      await openLucaChapter(fallbackChapter.id, listen);
+      return;
+    }
+    if (lucaTarget.nextAction.kind === 'grammar') {
+      router.push(
+        `/grammar-note?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${lucaTarget.nextAction.batchEnd}&returnTo=stories` as Href,
+      );
+      return;
+    }
+    if (lucaTarget.nextAction.kind === 'recap') {
+      router.push(
+        `/batch-recap?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${lucaTarget.nextAction.batchEnd}&returnTo=stories` as Href,
+      );
+      return;
+    }
+    await openLucaChapter(lucaTarget.nextAction.chapterId, listen);
   };
 
   const openStoryChapter = async (storyId: string, chapterId: string) => {
@@ -144,20 +181,28 @@ export default function StoriesScreen() {
           <StoriesHeader />
 
           <StoriesContinueHero
-            chapterNumber={continueChapter.number}
-            chapterTitleIt={continueChapter.titleIt}
+            chapterNumber={heroPresentation?.progressChapterNumber ?? heroChapter.number}
+            chapterTitleIt={heroPresentation?.title ?? heroChapter.titleIt}
             storyTitleIt={story.titleIt}
             percentComplete={percent}
             chapterPercent={chapterPercent}
             hasProgress={Boolean(progress)}
-            onRead={() => void openLucaChapter(continueChapter.id)}
-            onListen={() => void openLucaChapter(continueChapter.id, true)}
+            eyebrow={heroPresentation?.eyebrow}
+            subtitle={
+              heroPresentation && heroPresentation.title !== heroChapter.titleIt
+                ? heroPresentation.subtitle
+                : undefined
+            }
+            onRead={() => void continueLuca()}
+            onListen={() => void continueLuca(true)}
           />
 
           <StoryList
             lucaTitleIt={story.titleIt}
             chapterStatuses={chapterStatuses}
-            currentChapterId={progress?.currentChapterId ?? continueChapter.id}
+            currentChapterId={lucaTarget?.nextAction.kind === 'chapter'
+              ? lucaTarget.nextAction.chapterId
+              : progress?.currentChapterId ?? heroChapter.id}
             progress={progress}
             beforeRomeRows={beforeRomeRows}
             a2PlusRows={resolvedA2PlusRows}

@@ -6,7 +6,7 @@ import {
   type SpeakSceneLine,
 } from '@/src/content/schemas';
 
-/** V1: one authored Luca scene (chapter 15). Do not generate scenes or add more until finish-rate evidence exists. */
+/** Authored Luca speak scenes at batch milestones. */
 
 let cached: SpeakScene[] | null = null;
 

@@ -14,6 +14,7 @@ import {
 import { LUCA_STORY_ID, getChapterByNumber } from '@/src/content';
 import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
+import { routeAfterLevelReadiness } from '@/src/progress/batchMilestoneRoute';
 import { getVocabularyService } from '@/src/vocabulary';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
@@ -52,19 +53,19 @@ export default function LevelReadinessScreen() {
   const copy =
     chapterNumber >= 24
       ? {
-          eyebrow: 'Prossime storie',
-          title: 'Stai leggendo bene a questo livello.',
-          body: 'Le prossime storie saranno un po\' più lunghe e useranno più passato.',
-          tryLabel: 'Try A2',
-          stayLabel: 'Stay with A1+',
+          eyebrow: 'Continue reading',
+          title: 'Luca\'s story opens up.',
+          body: 'The next chapters are a little longer, with more past tense — the same story, told with more Italian.',
+          tryLabel: 'Continue',
+          stayLabel: 'Browse other stories',
           nextChapter: 25,
         }
       : {
-          eyebrow: 'A1 comprehension',
-          title: crossA1 ? a1StatusTitle(crossA1.status) : 'A1 comprehension',
-          body: crossA1?.message ?? 'Keep reading A1 stories.',
-          tryLabel: 'Try A1+',
-          stayLabel: 'Stay with A1',
+          eyebrow: 'Continue reading',
+          title: crossA1 ? a1StatusTitle(crossA1.status) : 'Ready for more',
+          body: crossA1?.message ?? 'The next chapters ask a little more of you — same story, richer language.',
+          tryLabel: 'Continue',
+          stayLabel: 'Browse other stories',
           nextChapter: 21,
         };
 
@@ -76,6 +77,11 @@ export default function LevelReadinessScreen() {
       const progress = await getProgressService().getOrCreate();
       const profile = await getAdaptiveService().buildProfile(progress);
       await getLevelReadinessService().chooseNext(profile);
+      const speakRoute = routeAfterLevelReadiness(LUCA_STORY_ID, chapterNumber);
+      if (speakRoute) {
+        router.replace(speakRoute);
+        return;
+      }
       const next = getChapterByNumber(copy.nextChapter);
       if (next) {
         await getProgressService().openChapter(next.id);

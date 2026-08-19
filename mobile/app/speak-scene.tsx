@@ -1,14 +1,14 @@
-import { Stack, router, useLocalSearchParams, type Href } from 'expo-router';
+import { Stack, router, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { LUCA_STORY_ID, getChapterByNumber } from '@/src/content';
+import { LUCA_STORY_ID } from '@/src/content';
 import { getSpeakSceneById, speakLineToExercise } from '@/src/content/speakScenes';
-import { readerHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
+import { routeAfterSpeakScene } from '@/src/progress/batchMilestoneRoute';
 import type { SpeakSceneLineAttempt, SpeakSceneVote } from '@/src/progress/types';
 import { scoreProductionAnswer } from '@/src/production/score';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
@@ -18,16 +18,7 @@ import { useTheme } from '@/src/theme/useTheme';
 type Phase = 'intro' | 'line' | 'feedback' | 'summary';
 
 function continueAfterScene(storyId: string, batchEnd: number, returnTo?: string) {
-  if (returnTo === 'stories') {
-    router.replace('/(tabs)/stories' as Href);
-    return;
-  }
-  const next = getChapterByNumber(batchEnd + 1, storyId);
-  if (next) {
-    router.replace(readerHref(storyId, next.id));
-    return;
-  }
-  router.replace('/(tabs)/home' as Href);
+  router.replace(routeAfterSpeakScene(storyId, batchEnd, returnTo));
 }
 
 export default function SpeakSceneScreen() {
@@ -291,7 +282,7 @@ export default function SpeakSceneScreen() {
           {phase === 'summary' ? (
             <View>
               <Text style={[type.heroTitle, { color: colors.text }]}>
-                You retold Marco's story.
+                You retold &ldquo;{scene.title}&rdquo;.
               </Text>
               <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
                 {lineRecords.length}/{scene.lines.length} ideas expressed.

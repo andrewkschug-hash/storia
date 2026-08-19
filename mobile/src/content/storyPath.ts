@@ -117,6 +117,17 @@ export function getRecapCheckpointStatus(
   return 'available';
 }
 
+export function getStandaloneSpeakPathStatus(
+  progress: ReadingProgressRecord,
+  chapterCompleted: boolean,
+  sceneId: string,
+): ChapterStatus {
+  if (!chapterCompleted) return 'locked';
+  const history = progress.speakScenes?.[sceneId] ?? [];
+  const finished = history.some((record) => record.completedAt);
+  return finished ? 'completed' : 'available';
+}
+
 export function getSpeakPathStatus(
   progress: ReadingProgressRecord,
   recapStatus: ChapterStatus,
@@ -151,7 +162,25 @@ export function buildStoryPath(
   for (const chapter of chapters) {
     items.push({ kind: 'chapter', chapter });
 
-    if (!isLessonBatchEnd(chapter.number)) continue;
+    if (!isLessonBatchEnd(chapter.number)) {
+      const midScene = getSpeakSceneForBatch(storyId, chapter.number);
+      if (midScene) {
+        items.push({
+          kind: 'speak',
+          id: midScene.id,
+          sceneId: midScene.id,
+          batchStart: midScene.sourceRange.start,
+          batchEnd: midScene.batchEnd,
+          title: midScene.title,
+          status: getStandaloneSpeakPathStatus(
+            record,
+            chapter.status === 'completed',
+            midScene.id,
+          ),
+        });
+      }
+      continue;
+    }
 
     const batchEnd = chapter.number;
     const { start: batchStart } = batchRangeForChapter(batchEnd);

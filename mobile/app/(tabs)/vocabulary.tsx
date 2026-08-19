@@ -95,9 +95,18 @@ export default function VocabularyScreen() {
                   <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
                     Words you&apos;re seeing again
                   </Text>
-                  <Text style={[type.body, { color: colors.text, marginTop: Spacing.md, lineHeight: 28 }]}>
-                    {reinforcingWords.join(' · ')}
-                  </Text>
+                  <View style={{ marginTop: Spacing.md, gap: Spacing.sm }}>
+                    {reinforcingWords.map((word) => (
+                      <View key={word.italian} style={styles.reinforcingRow}>
+                        <Text style={[type.body, { color: colors.text }]}>{word.italian}</Text>
+                        {word.chapterNumber ? (
+                          <Text style={[type.caption, { color: colors.textMuted }]}>
+                            Chapter {word.chapterNumber}
+                          </Text>
+                        ) : null}
+                      </View>
+                    ))}
+                  </View>
                 </View>
               ) : null}
             </>
@@ -122,5 +131,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: Spacing.xs,
+  },
+  reinforcingRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+    gap: Spacing.md,
   },
 });

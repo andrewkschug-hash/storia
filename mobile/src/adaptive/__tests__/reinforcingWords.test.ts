@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest';
 
-import { selectReinforcingWords } from '@/src/adaptive/reinforcingWords';
+import { getContentBundle, LUCA_STORY_ID } from '@/src/content';
+import {
+  selectReinforcingWordViews,
+  selectReinforcingWords,
+} from '@/src/adaptive/reinforcingWords';
 import type { AdaptiveItem, AdaptiveLearnerProfile } from '@/src/adaptive/types';
 
 function item(
@@ -80,5 +84,33 @@ describe('selectReinforcingWords', () => {
       2,
     );
     expect(words).toEqual(['a', 'b']);
+  });
+
+  it('includes chapter context from vocabulary state', () => {
+    const bundle = getContentBundle(LUCA_STORY_ID);
+    const chapter = [...bundle.chapters.values()].find((row) => row.number === 12);
+    if (!chapter) throw new Error('Missing chapter 12');
+
+    const views = selectReinforcingWordViews(
+      profile([item('partire', 'reinforce', 0.8)]),
+      {
+        lemmas: {
+          partire: {
+            lemmaId: 'partire',
+            encounterCount: 3,
+            lastChapterId: chapter.id,
+            tapCount: 1,
+            saved: false,
+            familiarity: 'learning',
+            lastSeenAt: null,
+            productionSuccessCount: 0,
+          },
+        },
+        phrases: {},
+      },
+      bundle,
+    );
+
+    expect(views).toEqual([{ italian: 'partire', chapterNumber: 12 }]);
   });
 });

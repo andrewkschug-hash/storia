@@ -4,12 +4,11 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
-import { LUCA_STORY_ID, getChapterByNumber, getContentBundle } from '@/src/content';
+import { LUCA_STORY_ID, getContentBundle } from '@/src/content';
 import { batchRangeForChapter } from '@/src/content/lessonBatches';
-import { getSpeakSceneForBatch } from '@/src/content/speakScenes';
 import { recapCheckpointId } from '@/src/content/storyPath';
-import { readerHref, speakSceneHref } from '@/src/content/storyHrefs';
 import { getProgressService } from '@/src/progress';
+import { routeAfterRecap } from '@/src/progress/batchMilestoneRoute';
 import { getReviewService } from '@/src/review';
 import type { ReviewPrompt } from '@/src/review/ReviewService';
 import { getVocabularyService } from '@/src/vocabulary';
@@ -27,25 +26,7 @@ function continueAfterBatch(
   void getProgressService(storyId)
     .completeCheckpoint(recapCheckpointId(storyId, chapterNumber))
     .then(() => {
-      const scene = getSpeakSceneForBatch(storyId, chapterNumber);
-      if (scene) {
-        router.replace(speakSceneHref(storyId, scene.id, returnTo));
-        return;
-      }
-      if (returnTo === 'stories') {
-        router.replace('/(tabs)/stories' as Href);
-        return;
-      }
-      if (storyId === LUCA_STORY_ID && (chapterNumber === 20 || chapterNumber === 24)) {
-        router.replace(`/level-readiness?fromChapter=${chapterNumber}` as Href);
-        return;
-      }
-      const next = getChapterByNumber(chapterNumber + 1, storyId);
-      if (next) {
-        router.replace(readerHref(storyId, next.id));
-        return;
-      }
-      router.replace('/(tabs)/home' as Href);
+      router.replace(routeAfterRecap(storyId, chapterNumber, returnTo));
     });
 }
 

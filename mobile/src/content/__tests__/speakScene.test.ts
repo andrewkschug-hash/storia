@@ -44,26 +44,47 @@ async function completeLucaThrough(service: ProgressService, throughChapter: num
   return bundle;
 }
 
-describe('speak scene — chapter 15', () => {
-  it('is an authored Chapter 15 milestone, not a catalog story', () => {
+describe('speak scene milestones', () => {
+  it('are authored milestone scenes, not catalog stories', () => {
     expect(getSpeakSceneForBatch(LUCA_STORY_ID, 5)).toBeNull();
     expect(getSpeakSceneForBatch(LUCA_STORY_ID, 10)).toBeNull();
-    expect(getSpeakSceneForBatch(LUCA_STORY_ID, 20)).toBeNull();
-    const scene = getSpeakSceneForBatch(LUCA_STORY_ID, 15);
-    expect(scene?.id).toBe('luca-a-roma-speak-15');
-    expect(scene?.storyId).toBe(LUCA_STORY_ID);
-    expect(scene?.batchEnd).toBe(15);
-    expect(scene?.title).toBe('Help Marco');
-    expect(scene?.summaryEn).toContain('Marco is back at the café');
-    expect(scene?.sourceRange).toEqual({ start: 11, end: 15 });
-    expect(scene?.lines).toHaveLength(5);
-    expect(scene?.lines.map((line) => line.en)).toEqual([
-      'Marco goes back to the café.',
+    expect(getSpeakSceneForBatch(LUCA_STORY_ID, 25)).toBeNull();
+
+    const scene15 = getSpeakSceneForBatch(LUCA_STORY_ID, 15);
+    expect(scene15?.id).toBe('luca-a-roma-speak-15');
+    expect(scene15?.sourceRange).toEqual({ start: 11, end: 15 });
+    expect(scene15?.lines).toHaveLength(5);
+    expect(scene15?.lines.map((line) => line.en)).toEqual([
+      'Marco comes back to the café.',
       'He has a problem.',
-      'He has to go to his mom\'s house.',
+      'He has to go to his mother\'s house.',
       'He needs to buy a ticket.',
-      "He doesn't have money.",
+      "He doesn't have any money.",
     ]);
+    const scene24 = getSpeakSceneForBatch(LUCA_STORY_ID, 24);
+    expect(scene24?.id).toBe('luca-a-roma-speak-24');
+    expect(scene24?.sourceRange).toEqual({ start: 21, end: 24 });
+    expect(scene24?.lines).toHaveLength(5);
+    expect(scene24?.lines[2]?.en).toBe("He tells her he's doing well.");
+    expect(scene24?.lines[4]?.en).toBe('Rome feels like home now.');
+    const scene40 = getSpeakSceneForBatch(LUCA_STORY_ID, 40);
+    expect(scene40?.id).toBe('luca-a-roma-speak-40');
+    expect(scene40?.sourceRange).toEqual({ start: 36, end: 40 });
+    expect(scene40?.lines).toHaveLength(5);
+    expect(scene40?.lines[2]?.en).toContain('Rome');
+    expect(scene40?.lines[4]?.en).toBe("This is Luca's life in Rome now.");
+    const scene20 = getSpeakSceneForBatch(LUCA_STORY_ID, 20);
+    expect(scene20?.id).toBe('luca-a-roma-speak-20');
+    expect(scene20?.sourceRange).toEqual({ start: 16, end: 20 });
+    expect(scene20?.lines).toHaveLength(5);
+    const scene30 = getSpeakSceneForBatch(LUCA_STORY_ID, 30);
+    expect(scene30?.id).toBe('luca-a-roma-speak-30');
+    expect(scene30?.sourceRange).toEqual({ start: 25, end: 30 });
+    expect(scene30?.lines).toHaveLength(5);
+    const scene35 = getSpeakSceneForBatch(LUCA_STORY_ID, 35);
+    expect(scene35?.id).toBe('luca-a-roma-speak-35');
+    expect(scene35?.sourceRange).toEqual({ start: 31, end: 35 });
+    expect(scene35?.lines).toHaveLength(5);
     expect(getCatalogStories().some((story) => story.id === 'luca-a-roma-speak-15')).toBe(false);
   });
 

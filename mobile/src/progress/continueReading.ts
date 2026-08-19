@@ -4,6 +4,12 @@ import {
   getCatalogStory,
   getContentBundle,
 } from '@/src/content';
+import { batchRangeForChapter } from '@/src/content/lessonBatches';
+import {
+  grammarCheckpointId,
+  recapBlocksChapter,
+  recapCheckpointId,
+} from '@/src/content/storyPath';
 import { peekProgress } from '@/src/progress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
 
@@ -13,7 +19,60 @@ export type ContinueReadingTarget = {
   chapterId: string;
   progress: ReadingProgressRecord | null;
   isStart: boolean;
+  nextAction: ContinueAction;
 };
+
+export type ContinueAction =
+  | { kind: 'chapter'; chapterId: string }
+  | { kind: 'grammar'; batchEnd: number }
+  | { kind: 'recap'; batchEnd: number };
+
+export type HomeContinuePresentation = {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  buttonLabel: string;
+  progressChapterNumber: number;
+};
+
+export function homeContinuePresentation(
+  target: ContinueReadingTarget,
+  chapter: { titleIt: string; number: number },
+  totalChapters: number,
+  chaptersCompleted: number,
+): HomeContinuePresentation {
+  const chapterProgressSubtitle = `Chapter ${chapter.number} of ${totalChapters}${
+    chaptersCompleted > 0 ? ` · ${chaptersCompleted} finished` : ''
+  }`;
+
+  if (target.nextAction.kind === 'grammar') {
+    const { start, end } = batchRangeForChapter(target.nextAction.batchEnd);
+    return {
+      eyebrow: 'Next up',
+      title: 'Grammar note',
+      subtitle: `Chapters ${start}–${end}`,
+      buttonLabel: 'Continue',
+      progressChapterNumber: target.nextAction.batchEnd,
+    };
+  }
+  if (target.nextAction.kind === 'recap') {
+    const { start, end } = batchRangeForChapter(target.nextAction.batchEnd);
+    return {
+      eyebrow: 'Next up',
+      title: 'Word recap',
+      subtitle: `Chapters ${start}–${end}`,
+      buttonLabel: 'Continue',
+      progressChapterNumber: target.nextAction.batchEnd,
+    };
+  }
+  return {
+    eyebrow: target.isStart ? 'Start reading' : 'Continue reading',
+    title: chapter.titleIt,
+    subtitle: chapterProgressSubtitle,
+    buttonLabel: target.isStart ? 'Start reading' : 'Continue reading',
+    progressChapterNumber: chapter.number,
+  };
+}
 
 export function isStoryFullyComplete(
   progress: ReadingProgressRecord | null | undefined,
@@ -43,6 +102,47 @@ function recommendedStartStory() {
   return available.find((story) => story.id === LUCA_STORY_ID) ?? availableReadingOrder()[0];
 }
 
+function resolveNextAction(
+  storyId: string,
+  progress: ReadingProgressRecord,
+): { chapterId: string; nextAction: ContinueAction } {
+  const bundle = getContentBundle(storyId);
+  const current = bundle.chapters.get(progress.currentChapterId);
+  if (!current) {
+    return {
+      chapterId: progress.currentChapterId,
+      nextAction: { kind: 'chapter', chapterId: progress.currentChapterId },
+    };
+  }
+  const chapterNumberById = new Map(
+    [...bundle.chapters.values()].map((chapter) => [chapter.id, chapter.number] as const),
+  );
+  if (!recapBlocksChapter(progress, storyId, current.number, chapterNumberById)) {
+    return {
+      chapterId: current.id,
+      nextAction: { kind: 'chapter', chapterId: current.id },
+    };
+  }
+
+  const batchEnd = current.number - 1;
+  const done = new Set(progress.completedCheckpointIds ?? []);
+  const grammarId = grammarCheckpointId(storyId, batchEnd);
+  const recapId = recapCheckpointId(storyId, batchEnd);
+  const chapterBefore = bundle.story.chapters.find((chapter) => chapter.number === batchEnd);
+  const fallbackChapterId = chapterBefore?.id ?? current.id;
+
+  if (!done.has(grammarId)) {
+    return { chapterId: fallbackChapterId, nextAction: { kind: 'grammar', batchEnd } };
+  }
+  if (!done.has(recapId)) {
+    return { chapterId: fallbackChapterId, nextAction: { kind: 'recap', batchEnd } };
+  }
+  return {
+    chapterId: current.id,
+    nextAction: { kind: 'chapter', chapterId: current.id },
+  };
+}
+
 /**
  * Most recently opened available story, else Luca a Roma.
  * If that story is fully complete, continue into the next incomplete
@@ -68,12 +168,14 @@ export async function getContinueReadingTarget(): Promise<ContinueReadingTarget 
     );
 
     if (!currentComplete) {
+      const resolved = resolveNextAction(latest.storyId, latest.progress);
       return {
         storyId: latest.storyId,
         storyTitleIt: currentStory?.titleIt ?? latest.storyId,
-        chapterId: latest.progress.currentChapterId,
+        chapterId: resolved.chapterId,
         progress: latest.progress,
         isStart: false,
+        nextAction: resolved.nextAction,
       };
     }
 
@@ -93,15 +195,18 @@ export async function getContinueReadingTarget(): Promise<ContinueReadingTarget 
         chapterId,
         progress: progress ?? null,
         isStart: !progress || progress.completedChapterIds.length === 0,
+        nextAction: { kind: 'chapter', chapterId },
       };
     }
 
+    const resolved = resolveNextAction(latest.storyId, latest.progress);
     return {
       storyId: latest.storyId,
       storyTitleIt: currentStory?.titleIt ?? latest.storyId,
-      chapterId: latest.progress.currentChapterId,
+      chapterId: resolved.chapterId,
       progress: latest.progress,
       isStart: false,
+      nextAction: resolved.nextAction,
     };
   }
 
@@ -116,5 +221,6 @@ export async function getContinueReadingTarget(): Promise<ContinueReadingTarget 
     chapterId: first.id,
     progress: null,
     isStart: true,
+    nextAction: { kind: 'chapter', chapterId: first.id },
   };
 }

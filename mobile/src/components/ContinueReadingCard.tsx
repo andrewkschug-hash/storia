@@ -9,6 +9,9 @@ type Props = {
   chapterTitleIt: string;
   storyTitleIt?: string;
   isStart?: boolean;
+  eyebrow?: string;
+  subtitle?: string;
+  buttonLabel?: string;
   progress: ReadingProgress;
   onContinue: () => void;
 };
@@ -17,6 +20,9 @@ export function ContinueReadingCard({
   chapterTitleIt,
   storyTitleIt,
   isStart = false,
+  eyebrow,
+  subtitle,
+  buttonLabel,
   progress,
   onContinue,
 }: Props) {
@@ -33,7 +39,7 @@ export function ContinueReadingCard({
         },
       ]}>
       <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
-        {isStart ? 'Start reading' : 'Continue reading'}
+        {eyebrow ?? (isStart ? 'Start reading' : 'Continue reading')}
       </Text>
       {storyTitleIt ? (
         <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
@@ -44,10 +50,12 @@ export function ContinueReadingCard({
         {chapterTitleIt}
       </Text>
       <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
-        Chapter {progress.chapterNumber} of {progress.totalChapters}
-        {progress.chaptersCompleted > 0
-          ? ` · ${progress.chaptersCompleted} finished`
-          : ''}
+        {subtitle ??
+          `Chapter ${progress.chapterNumber} of ${progress.totalChapters}${
+            progress.chaptersCompleted > 0
+              ? ` · ${progress.chaptersCompleted} finished`
+              : ''
+          }`}
       </Text>
 
       <View style={styles.progressBlock}>
@@ -75,7 +83,7 @@ export function ContinueReadingCard({
           },
         ]}>
         <Text style={[type.button, { color: colors.onTint }]}>
-          {isStart ? 'Start reading' : 'Continue reading'}
+          {buttonLabel ?? (isStart ? 'Start reading' : 'Continue reading')}
         </Text>
       </Pressable>
     </View>

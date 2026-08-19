@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProductionExerciseCard } from '@/src/components/ProductionExerciseCard';
+import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { LUCA_STORY_ID, findStoryIdForChapter, getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
 import { getProductionExercisesForChapter } from '@/src/content/productionExercises';
 import { readerHref } from '@/src/content/storyHrefs';
@@ -19,7 +20,11 @@ import { selectComprehensionQuestions } from '@/src/comprehension/selectQuestion
 import { shuffleQuestionChoices } from '@/src/comprehension/shuffle';
 import type { ComprehensionQuestion } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
-import { chapterCompleteView } from '@/src/progress/chapterComplete';
+import { routeAfterChapterComplete } from '@/src/progress/batchMilestoneRoute';
+import {
+  chapterCompleteView,
+  comprehensionResultsContinueLabel,
+} from '@/src/progress/chapterComplete';
 import type {
   ChapterProductionAttempt,
   ComprehensionAnswerRecord,
@@ -34,6 +39,8 @@ import {
   type SelfAssessment,
 } from '@/src/production/flow';
 import { getVocabularyService } from '@/src/vocabulary';
+import { getReviewService } from '@/src/review';
+import type { HomeReviewCopy } from '@/src/review/ReviewService';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
@@ -81,6 +88,25 @@ export default function ComprehensionScreen() {
     correctChoice: number;
   } | null>(null);
   const [finishing, setFinishing] = useState(false);
+  const [chapterReview, setChapterReview] = useState<HomeReviewCopy | null>(null);
+
+  useEffect(() => {
+    if (!chapter) {
+      setChapterReview(null);
+      return;
+    }
+    let cancelled = false;
+    void (async () => {
+      const state = await getVocabularyService().getState();
+      if (cancelled) return;
+      const bundle = getContentBundle(storyId ?? chapter.storyId);
+      const copy = getReviewService().chapterNudgeCopy(chapter.number, bundle, state);
+      setChapterReview(copy.cta ? copy : null);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [chapter, storyId]);
 
   useEffect(() => {
     if (!chapter) {
@@ -131,11 +157,9 @@ export default function ComprehensionScreen() {
       );
       return;
     }
-    if (
-      resolvedStoryId === LUCA_STORY_ID &&
-      (chapterNumber === 20 || chapterNumber === 24)
-    ) {
-      router.replace(`/level-readiness?fromChapter=${chapterNumber}` as import('expo-router').Href);
+    const milestoneRoute = routeAfterChapterComplete(resolvedStoryId, chapterNumber);
+    if (milestoneRoute) {
+      router.replace(milestoneRoute);
       return;
     }
     const next = getChapterByNumber(chapterNumber + 1, resolvedStoryId);
@@ -173,7 +197,15 @@ export default function ComprehensionScreen() {
   const completeCopy = chapterCompleteView(
     chapter.number,
     getChapterByNumber(chapter.number + 1, storyId ?? chapter.storyId)?.number ?? null,
+    storyId ?? chapter.storyId,
   );
+  const nextChapterNumber =
+    getChapterByNumber(chapter.number + 1, storyId ?? chapter.storyId)?.number ?? null;
+  const resolvedStoryId = storyId ?? chapter.storyId;
+
+  const openListenAgain = () => {
+    router.push(readerHref(resolvedStoryId, chapter.id, true));
+  };
 
   const shuffleCurrent = (questionIndex: number) => {
     const question = questions[questionIndex];
@@ -352,6 +384,16 @@ export default function ComprehensionScreen() {
               ]}>
               <Text style={[type.button, { color: colors.onTint }]}>Begin</Text>
             </Pressable>
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel="Listen to this chapter again"
+              onPress={openListenAgain}
+              style={({ pressed }) => [
+                styles.secondaryLink,
+                { opacity: pressed ? 0.7 : 1, marginTop: Spacing.md, minHeight: minTouchTarget },
+              ]}>
+              <Text style={[type.label, { color: colors.tint }]}>Listen again</Text>
+            </Pressable>
           </View>
         ) : null}
 
@@ -478,6 +520,11 @@ export default function ComprehensionScreen() {
               You can keep reading either way — this just checks the story, not your worth as a
               learner.
             </Text>
+            {chapterReview && !isLessonBatchEnd(chapter.number) ? (
+              <View style={{ marginTop: Spacing.xl }}>
+                <ReviewNudge copy={chapterReview} />
+              </View>
+            ) : null}
             <Pressable
               disabled={finishing}
               onPress={continueFromResults}
@@ -492,12 +539,23 @@ export default function ComprehensionScreen() {
                 },
               ]}>
               <Text style={[type.button, { color: colors.onTint }]}>
-                {productionExercises.length > 0
-                  ? 'Continue'
-                  : getChapterByNumber(chapter.number + 1, storyId ?? chapter.storyId)
-                    ? 'Continue story'
-                    : 'Back to home'}
+                {comprehensionResultsContinueLabel(
+                  chapter.number,
+                  nextChapterNumber,
+                  productionExercises.length > 0,
+                  storyId ?? chapter.storyId,
+                )}
               </Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel="Listen to this chapter again"
+              onPress={openListenAgain}
+              style={({ pressed }) => [
+                styles.secondaryLink,
+                { opacity: pressed ? 0.7 : 1, marginTop: Spacing.md, minHeight: minTouchTarget },
+              ]}>
+              <Text style={[type.label, { color: colors.tint }]}>Listen again</Text>
             </Pressable>
           </View>
         ) : null}
@@ -571,6 +629,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     borderRadius: Radii.md,
     borderWidth: StyleSheet.hairlineWidth,
+  },
+  secondaryLink: {
+    alignSelf: 'flex-start',
+    justifyContent: 'center',
+    paddingVertical: Spacing.sm,
   },
   row: {
     flexDirection: 'row',

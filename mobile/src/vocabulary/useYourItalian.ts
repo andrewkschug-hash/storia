@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
 
 import { getAdaptiveService } from '@/src/adaptive';
-import { selectReinforcingWords } from '@/src/adaptive/reinforcingWords';
+import {
+  selectReinforcingWordViews,
+  type ReinforcingWordView,
+} from '@/src/adaptive/reinforcingWords';
+import { getContentBundle } from '@/src/content';
 import type { ReadingProgressRecord } from '@/src/progress/types';
 import { getVocabularyService } from '@/src/vocabulary';
 
@@ -16,7 +20,7 @@ export type YourItalianSummary = {
 
 export function useYourItalian(progress: ReadingProgressRecord | null) {
   const [summary, setSummary] = useState<YourItalianSummary | null>(null);
-  const [reinforcingWords, setReinforcingWords] = useState<string[]>([]);
+  const [reinforcingWords, setReinforcingWords] = useState<ReinforcingWordView[]>([]);
   const [loading, setLoading] = useState(true);
 
   const refresh = useCallback(async () => {
@@ -26,7 +30,8 @@ export function useYourItalian(progress: ReadingProgressRecord | null) {
 
     if (progress) {
       const profile = await getAdaptiveService().buildProfile(progress);
-      setReinforcingWords(selectReinforcingWords(profile));
+      const bundle = getContentBundle(progress.storyId);
+      setReinforcingWords(selectReinforcingWordViews(profile, state, bundle));
     } else {
       setReinforcingWords([]);
     }

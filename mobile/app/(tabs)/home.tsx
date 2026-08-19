@@ -11,6 +11,7 @@ import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { readerHref } from '@/src/content/storyHrefs';
+import { homeContinuePresentation } from '@/src/progress/continueReading';
 import { useContinueReading } from '@/src/progress/useContinueReading';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
@@ -88,6 +89,12 @@ export default function HomeScreen() {
   }
 
   const brandSize = layout.isPhone ? (layout.width < 360 ? 34 : 38) : 42;
+  const continuePresentation = homeContinuePresentation(
+    target,
+    chapter,
+    story.chapters.length,
+    completed,
+  );
 
   return (
     <AtmosphereBackground>
@@ -120,13 +127,16 @@ export default function HomeScreen() {
 
           <View style={styles.section}>
             <ContinueReadingCard
-              chapterTitleIt={chapter.titleIt}
+              chapterTitleIt={continuePresentation.title}
               storyTitleIt={target.storyTitleIt}
               isStart={target.isStart}
+              eyebrow={continuePresentation.eyebrow}
+              subtitle={continuePresentation.subtitle}
+              buttonLabel={continuePresentation.buttonLabel}
               progress={{
                 storyId: story.id,
                 chapterId: chapter.id,
-                chapterNumber: chapter.number,
+                chapterNumber: continuePresentation.progressChapterNumber,
                 totalChapters: story.chapters.length,
                 percentComplete: percent,
                 chapterPercentComplete: chapterPercent,
@@ -138,8 +148,20 @@ export default function HomeScreen() {
               }}
               onContinue={async () => {
                 if (!service) return;
-                await service.openChapter(chapter.id);
-                router.push(readerHref(story.id, chapter.id));
+                if (target.nextAction.kind === 'grammar') {
+                  router.push(
+                    `/grammar-note?story=${encodeURIComponent(story.id)}&chapter=${target.nextAction.batchEnd}` as Href,
+                  );
+                  return;
+                }
+                if (target.nextAction.kind === 'recap') {
+                  router.push(
+                    `/batch-recap?story=${encodeURIComponent(story.id)}&chapter=${target.nextAction.batchEnd}` as Href,
+                  );
+                  return;
+                }
+                await service.openChapter(target.nextAction.chapterId);
+                router.push(readerHref(story.id, target.nextAction.chapterId));
               }}
             />
             <Pressable
