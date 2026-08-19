@@ -41,7 +41,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Il giorno dopo, sabato non era ancora arrivato, ma Luca e Sofia erano già al caffè la mattina presto, e Giulia li ha visti.",
+          "text": "Il giorno dopo, sabato non era ancora arrivato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -52,13 +52,19 @@
             "non",
             "essere",
             "ancora",
-            "arrivare",
-            "ma",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Luca e Sofia erano al caffè la mattina presto, e Giulia li ha visti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "luca",
             "e",
             "sofia",
             "essere",
-            "gia",
             "al",
             "caffe",
             "la",
@@ -156,7 +162,7 @@
         },
         {
           "id": "s08",
-          "text": "Il padrone era vicino alla porta della cucina: ascoltava, non sembrava contento, solo stanco e poco sicuro.",
+          "text": "Il padrone era vicino alla porta della cucina e ascoltava.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -168,17 +174,51 @@
             "porta",
             "della",
             "cucina",
-            "ascoltare",
+            "e",
+            "ascoltare"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non sembrava contento. Sembrava stanco e poco sicuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "non",
             "sembrare",
             "contento",
-            "solo",
+            "sembrare",
             "stanco",
             "e",
             "poco",
             "sicuro"
           ]
         },
+        {
+          "id": "s10",
+          "text": "Luca e Sofia lo hanno visti e non hanno parlato subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "e",
+            "sofia",
+            "lo",
+            "avere",
+            "vedere",
+            "e",
+            "non",
+            "avere",
+            "parlare",
+            "subito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
         {
           "id": "s11",
           "text": "Avete parlato di festa. Io non ho tanti soldi adesso.",
@@ -196,13 +236,7 @@
             "soldi",
             "adesso"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
+        },
         {
           "id": "s12",
           "text": "Facciamo una cosa piccola. Pane, caffè, amici.",
@@ -817,6 +851,7 @@
       "chapterId": "luca-a-roma-30",
       "type": "event",
       "question": "What does the owner decide?",
+      "questionIt": "Cosa decide il padrone?",
       "choices": [
         "They may try a small Saturday gathering",
         "He sells the café that day",
@@ -824,21 +859,21 @@
       ],
       "correctChoice": 0,
       "explanation": "He says they can try, then he will decide.",
-      "difficulty": 2,
-      "questionIt": "Cosa decide il padrone?"
+      "difficulty": 2
     },
     {
       "id": "ch30_q02",
       "chapterId": "luca-a-roma-30",
-      "type": "character",
-      "question": "Who will write messages to people?",
+      "type": "sequence",
+      "question": "What must they do after the owner agrees?",
+      "questionIt": "Cosa devono fare dopo il sì del padrone?",
       "choices": [
-        "Sofia",
-        "The owner",
-        "Luca’s dad"
+        "Tell people in the neighborhood about the festa",
+        "Close the café for the week",
+        "Buy a train ticket for Marco"
       ],
       "correctChoice": 0,
-      "explanation": "Sofia will write messages; Marco helps.",
+      "explanation": "Sofia says they must tell people; she will write messages.",
       "difficulty": 2
     },
     {
@@ -853,8 +888,7 @@
       ],
       "correctChoice": 0,
       "explanation": "Luca says it is not a big restaurant.",
-      "difficulty": 2,
-      "questionIt": "Che tipo di incontro vogliono?"
+      "difficulty": 2
     }
   ]
 }

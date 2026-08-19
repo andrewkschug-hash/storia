@@ -1,8 +1,8 @@
-import { Stack } from 'expo-router';
+import { Redirect, Stack } from 'expo-router';
 import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useDeveloperAccess } from '@/src/account';
+import { isDevBuild } from '@/src/security/buildMode';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { auditStoryCefr } from '@/src/cefr';
 import { getContentBundle } from '@/src/content';
@@ -12,30 +12,12 @@ import { useTheme } from '@/src/theme/useTheme';
 export default function CefrAuditScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { loading: accessLoading, allowed } = useDeveloperAccess();
+  const devTools = isDevBuild();
   const bundle = getContentBundle();
   const rows = auditStoryCefr(bundle);
 
-  if (accessLoading) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'CEFR audit' }} />
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <ActivityIndicator color={colors.tint} />
-        </View>
-      </AtmosphereBackground>
-    );
-  }
-
-  if (!allowed) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'CEFR audit' }} />
-        <Text style={[Typography.body, { color: colors.textSecondary, padding: Spacing.lg }]}>
-          CEFR audit is development-only.
-        </Text>
-      </AtmosphereBackground>
-    );
+  if (!devTools) {
+    return <Redirect href="/" />;
   }
 
   return (

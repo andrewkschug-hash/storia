@@ -5,6 +5,10 @@ import {
   legacyBatchEndsForProgress,
   recapBlocksChapter,
 } from '@/src/content/storyPath';
+import {
+  resolveReaderPass,
+  withPassComplete,
+} from '@/src/progress/chapterPass';
 import { unlockAllChapters } from '@/src/progress/unlockAll';
 import {
   createInitialProgress,
@@ -44,7 +48,14 @@ export class ProgressService {
     const existing = await this.repo.get(this.story.id);
     if (existing) {
       const normalized = normalizeProgress(existing, this.narrativeArc);
-      if (!existing.comprehensionByChapter || (!existing.narrativeArc && this.narrativeArc)) {
+      const migratedPasses =
+        JSON.stringify(normalized.passesByChapter ?? {}) !==
+        JSON.stringify(existing.passesByChapter ?? {});
+      if (
+        !existing.comprehensionByChapter ||
+        (!existing.narrativeArc && this.narrativeArc) ||
+        migratedPasses
+      ) {
         await this.repo.save(normalized);
       }
       return normalized;
@@ -354,6 +365,28 @@ export class ProgressService {
       [...this.chaptersById.values()].map((c) => [c.id, c.number] as const),
     );
     return !recapBlocksChapter(progress, this.story.id, batchEnd + 1, chapterNumberById);
+  }
+
+  resolveReaderPassForChapter(
+    progress: ReadingProgressRecord,
+    chapterId: string,
+    options: { listenRequested?: boolean; replay?: boolean } = {},
+  ) {
+    return resolveReaderPass(progress, chapterId, options);
+  }
+
+  async markReadPassComplete(chapterId: string): Promise<ReadingProgressRecord> {
+    const progress = await this.getOrCreate();
+    const next = withPassComplete(progress, chapterId, 'read');
+    await this.repo.save(next);
+    return next;
+  }
+
+  async markListenPassComplete(chapterId: string): Promise<ReadingProgressRecord> {
+    const progress = await this.getOrCreate();
+    const next = withPassComplete(progress, chapterId, 'listen');
+    await this.repo.save(next);
+    return next;
   }
 
   private nextStreak(progress: ReadingProgressRecord): number {

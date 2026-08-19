@@ -213,7 +213,7 @@ export default function AccountScreen() {
                   style={StyleSheet.absoluteFill}
                 />
                 <Text style={[Typography.brand, { color: tone.ink, fontSize: brandFontSize, lineHeight: brandFontSize + 6 }]}>
-                  Storia
+                  Storibase
                 </Text>
                 <View style={[styles.brandRule, { backgroundColor: tone.terracotta }]} />
                 <Text

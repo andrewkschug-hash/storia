@@ -26,6 +26,8 @@ const BANNER = `
 
 const EXPECTED_CHAPTERS = 40;
 const QUESTIONS_PER_CHAPTER = 3;
+/** Chapters with an extra story_memory comprehension question (4 total). */
+const CHAPTERS_WITH_STORY_MEMORY = new Set([20]);
 const CH40_TITLE_IT = 'Per adesso';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -245,11 +247,16 @@ function verifyAdaptive(bundle: ContentBundle) {
 
 function verifyQuestions(bundle: ContentBundle) {
   let total = 0;
+  let expectedTotal = 0;
   for (const chapter of bundle.chapters.values()) {
-    if (chapter.questions.length !== QUESTIONS_PER_CHAPTER) {
+    const expected = CHAPTERS_WITH_STORY_MEMORY.has(chapter.number)
+      ? QUESTIONS_PER_CHAPTER + 1
+      : QUESTIONS_PER_CHAPTER;
+    expectedTotal += expected;
+    if (chapter.questions.length !== expected) {
       error(
         'questions-count',
-        `Ch${chapter.number}: expected ${QUESTIONS_PER_CHAPTER} questions, got ${chapter.questions.length}`,
+        `Ch${chapter.number}: expected ${expected} questions, got ${chapter.questions.length}`,
       );
     }
     const seen = new Set<string>();
@@ -273,7 +280,7 @@ function verifyQuestions(bundle: ContentBundle) {
       }
     }
   }
-  console.log(`Questions — ${total} total (expect ${EXPECTED_CHAPTERS * QUESTIONS_PER_CHAPTER})`);
+  console.log(`Questions — ${total} total (expect ${expectedTotal})`);
 }
 
 function verifyLemmas(bundle: ContentBundle) {

@@ -1,5 +1,5 @@
 /**
- * Domain models for Storia — story-driven Italian reading engine.
+ * Domain models for Storibase — story-driven Italian reading engine.
  * Content and progress layers depend on these; UI never hard-codes narrative text.
  */
 

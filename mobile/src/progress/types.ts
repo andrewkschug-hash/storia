@@ -1,6 +1,4 @@
-/**
- * Reading progress — UI talks to ProgressService only.
- */
+import { migrateLegacyChapterPasses } from '@/src/progress/chapterPass';
 
 export type ChapterStatus = 'locked' | 'available' | 'in_progress' | 'completed';
 
@@ -52,6 +50,12 @@ export type SpeakSceneRecord = {
   lines: SpeakSceneLineAttempt[];
 };
 
+/** Guided read→listen pass completion for a chapter. */
+export type ChapterPassPhase = {
+  read?: { completedAt: string };
+  listen?: { completedAt: string };
+};
+
 export type ReadingProgressRecord = {
   storyId: string;
   /** Catalog narrative arc. Independent of chapter numbers. */
@@ -73,6 +77,8 @@ export type ReadingProgressRecord = {
   speakScenes?: Record<string, SpeakSceneRecord[]>;
   /** Learner-chosen CEFR band. Never auto-promoted from one good chapter. */
   currentCEFRLevel: string;
+  /** Read/listen pass timestamps keyed by chapterId. */
+  passesByChapter?: Record<string, ChapterPassPhase>;
 };
 
 export interface ReadingProgressRepository {
@@ -103,6 +109,7 @@ export function createInitialProgress(
     completedCheckpointIds: [],
     speakScenes: {},
     currentCEFRLevel: 'A1',
+    passesByChapter: {},
   };
 }
 
@@ -110,7 +117,7 @@ export function normalizeProgress(
   record: ReadingProgressRecord,
   narrativeArc?: string,
 ): ReadingProgressRecord {
-  return {
+  const base = {
     ...record,
     comprehensionByChapter: record.comprehensionByChapter ?? {},
     productionByChapter: record.productionByChapter ?? {},
@@ -118,5 +125,7 @@ export function normalizeProgress(
     speakScenes: record.speakScenes ?? {},
     currentCEFRLevel: record.currentCEFRLevel ?? 'A1',
     narrativeArc: record.narrativeArc ?? narrativeArc,
+    passesByChapter: record.passesByChapter ?? {},
   };
+  return migrateLegacyChapterPasses(base);
 }

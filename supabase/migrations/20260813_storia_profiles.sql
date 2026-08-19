@@ -1,4 +1,4 @@
--- Storia learner profiles (run in the NEW Storia Supabase project SQL editor).
+-- Storibase learner profiles (run in the NEW Storibase Supabase project SQL editor).
 -- Do not run this on the fragrance database.
 
 create table if not exists public.storia_profiles (

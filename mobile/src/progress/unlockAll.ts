@@ -1,6 +1,5 @@
 /**
- * Developer-account review unlock. Not __DEV__, not every local tester —
- * only the Storia developer account.
+ * Developer review unlock — enabled only in development builds.
  */
 let unlockAll = false;
 

@@ -94,7 +94,7 @@ export function gatewayDownMessage(): string {
     '  copy .env.example .env',
     '  npm start',
     '',
-    'Wait until it says: Storia TTS gateway on http://127.0.0.1:8787',
+    'Wait until it says: Storibase TTS gateway on http://127.0.0.1:8787',
     'Then come back here and tap Check connection.',
     '',
     'Windows PowerShell uses copy .env.example .env',

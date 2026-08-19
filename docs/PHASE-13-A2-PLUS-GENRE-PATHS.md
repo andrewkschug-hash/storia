@@ -460,7 +460,7 @@ Rules you can hold (*dopo il tramonto, no*). Then the face in the photo. Then th
 
 The sunset rule and the morning changes have **physical and social causes** that still feel uncanny. The “you’ve been here before” beat is a **mother/daughter double**, not a prophecy. It is the least like a language worksheet and the hardest to execute — which is why it is the best book.
 
-**Strongest first to author for Storia: *La casa delle finestre*.**
+**Strongest first to author for Storibase: *La casa delle finestre*.**
 
 Window grid, timetable, and *non scansionare* give A2+ **countable, repeatable language** and a clean suspense machine. Lower risk of generic magic. Better training for writers before Collevento.
 

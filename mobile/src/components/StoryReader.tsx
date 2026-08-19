@@ -30,6 +30,8 @@ type Props = {
   hasAudio?: (sentence: Sentence) => boolean;
   onPlayAudio?: (sentence: Sentence) => void;
   showCompletionCta?: boolean;
+  completionHint?: string;
+  completionButtonLabel?: string;
   onContinueFromChapter?: () => void;
   onScrollProgress?: (progress: number) => void;
 };
@@ -59,6 +61,8 @@ export function StoryReader({
   hasAudio,
   onPlayAudio,
   showCompletionCta,
+  completionHint,
+  completionButtonLabel = 'Continue',
   onContinueFromChapter,
   onScrollProgress,
 }: Props) {
@@ -171,16 +175,20 @@ export function StoryReader({
 
       {showCompletionCta ? (
         <View style={styles.completionCta}>
-          <Text style={[type.caption, { color: colors.textMuted }]}>Finished reading?</Text>
+          <Text style={[type.caption, { color: colors.textMuted }]}>
+            {completionHint ?? 'Finished reading?'}
+          </Text>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Continue"
+            accessibilityLabel={completionButtonLabel}
             onPress={onContinueFromChapter}
             style={({ pressed }) => [
               styles.continueBtn,
               { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1, minHeight: minTouchTarget },
             ]}>
-            <Text style={[type.button, { color: colors.onButtonPrimary, fontSize: type.button.fontSize }]}>Continue</Text>
+            <Text style={[type.button, { color: colors.onButtonPrimary, fontSize: type.button.fontSize }]}>
+              {completionButtonLabel}
+            </Text>
           </Pressable>
         </View>
       ) : null}

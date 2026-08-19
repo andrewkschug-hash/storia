@@ -338,8 +338,8 @@ console.log(
       externalBenchmarks: {
         typicalA1ActiveVocab: '500–700 (coursebook / CEFR illustrative)',
         typicalA2ActiveVocab: '1000–1500',
-        storiaA1Target: 280,
-        storiaA2Target: 500,
+        storibaseA1Target: 280,
+        storibaseA2Target: 500,
         a1HoursGuided: '90–100 classroom hours (indicative)',
         a2HoursGuided: '+150–200 from A1 (indicative)',
       },

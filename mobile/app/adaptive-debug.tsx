@@ -1,10 +1,10 @@
-import { Stack, router } from 'expo-router';
+import { Redirect, Stack, router } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 
-import { useDeveloperAccess } from '@/src/account';
+import { isDevBuild } from '@/src/security/buildMode';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { getAdaptiveService } from '@/src/adaptive';
 import type { AdaptiveLearnerProfile, AdaptationLog } from '@/src/adaptive/types';
@@ -15,7 +15,7 @@ import { useTheme } from '@/src/theme/useTheme';
 export default function AdaptiveDebugScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { loading: accessLoading, allowed } = useDeveloperAccess();
+  const devTools = isDevBuild();
   const [profile, setProfile] = useState<AdaptiveLearnerProfile | null>(null);
   const [logs, setLogs] = useState<AdaptationLog[]>([]);
   const [note, setNote] = useState<string | null>(null);
@@ -31,31 +31,13 @@ export default function AdaptiveDebugScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      if (!allowed) return;
+      if (!devTools) return;
       void refresh();
-    }, [allowed, refresh]),
+    }, [devTools, refresh]),
   );
 
-  if (accessLoading) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Adaptive' }} />
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <ActivityIndicator color={colors.tint} />
-        </View>
-      </AtmosphereBackground>
-    );
-  }
-
-  if (!allowed) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Adaptive' }} />
-        <Text style={[Typography.body, { color: colors.textSecondary, padding: Spacing.lg }]}>
-          Debug tools are only available in development.
-        </Text>
-      </AtmosphereBackground>
-    );
+  if (!devTools) {
+    return <Redirect href="/" />;
   }
 
   return (

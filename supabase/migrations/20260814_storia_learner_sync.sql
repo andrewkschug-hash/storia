@@ -1,5 +1,5 @@
--- Storia learner sync: onboarding + per-story reading progress.
--- Run in the Storia Supabase SQL editor (pzovnlxkvsnsivicxazd), not the fragrance project.
+-- Storibase learner sync: onboarding + per-story reading progress.
+-- Run in the Storibase Supabase SQL editor (pzovnlxkvsnsivicxazd), not the fragrance project.
 
 alter table public.storia_profiles
   add column if not exists onboarding_completed_at timestamptz;

@@ -1,9 +1,9 @@
-import { Stack } from 'expo-router';
+import { Redirect, Stack } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useDeveloperAccess } from '@/src/account';
+import { isDevBuild } from '@/src/security/buildMode';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import {
   friendlyGatewayError,
@@ -34,7 +34,7 @@ function playAudioUrl(url: string): string | null {
 export default function AudioStudioScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { loading: accessLoading, allowed } = useDeveloperAccess();
+  const devTools = isDevBuild();
   const bundle = getContentBundle();
   const [roster, setRoster] = useState(getVoiceRoster());
   const [chapterId, setChapterId] = useState(SAMPLE_CHAPTERS[0]);
@@ -50,9 +50,9 @@ export default function AudioStudioScreen() {
   const selected = sentences.find((s) => s.id === selectedId) ?? sentences[0];
 
   useEffect(() => {
-    if (!allowed) return;
+    if (!devTools) return;
     void hydrateVoiceRoster(getVoiceRoster()).then(setRoster);
-  }, [allowed]);
+  }, [devTools]);
 
   const base = gatewayBaseUrl();
   const client = useMemo(() => (base ? new TtsGatewayClient(base) : null), [base]);
@@ -84,26 +84,8 @@ export default function AudioStudioScreen() {
     [roster, bundle.characters, chapter?.id],
   );
 
-  if (accessLoading) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Audio studio' }} />
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <ActivityIndicator color={colors.tint} />
-        </View>
-      </AtmosphereBackground>
-    );
-  }
-
-  if (!allowed) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Audio studio' }} />
-        <Text style={[Typography.body, { color: colors.textSecondary, padding: Spacing.lg }]}>
-          Audio studio is development-only.
-        </Text>
-      </AtmosphereBackground>
-    );
+  if (!devTools) {
+    return <Redirect href="/" />;
   }
 
   const upsert = (asset: AudioAsset) => {

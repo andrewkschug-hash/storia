@@ -3,7 +3,9 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { publicRoster, readRoster, writeAssignment } from './assignments';
-import { apiKeyHint, loadGatewayEnv, providerConfigured, upsertEnvValues } from './env';
+import { authoringDisabledMessage, isAuthoringEnabled } from './authoring';
+import { gatewayStatus } from './gatewayStatus';
+import { loadGatewayEnv, providerConfigured, upsertEnvValues } from './env';
 import {
   classifyExistingAssets,
   closeGoogleApiPermit,
@@ -14,6 +16,13 @@ import {
   type PlannedGeneration,
 } from './googleTtsGuard';
 import { createTTSProvider } from './providers';
+import { readJsonBody } from './httpBody';
+import {
+  MAX_BATCH_SENTENCES,
+  MAX_TTS_TEXT_CHARS,
+  batchTooLargeMessage,
+  ttsTextTooLongMessage,
+} from './requestLimits';
 import { AssetRegistry } from './registry';
 import { audioCacheKey, textHash } from './cacheKey';
 import type { AudioAsset, TTSProviderId, TTSSpeed } from './types';
@@ -47,11 +56,20 @@ function json(res: ServerResponse, status: number, body: unknown) {
 }
 
 async function readBody(req: IncomingMessage): Promise<unknown> {
-  const chunks: Buffer[] = [];
-  for await (const chunk of req) chunks.push(Buffer.from(chunk));
-  const raw = Buffer.concat(chunks).toString('utf8');
-  if (!raw) return {};
-  return JSON.parse(raw);
+  return readJsonBody(req);
+}
+
+function rejectAuthoring(res: ServerResponse): boolean {
+  if (isAuthoringEnabled()) return false;
+  json(res, 403, { error: authoringDisabledMessage() });
+  return true;
+}
+
+function assertTtsTextLength(text: string | undefined): void {
+  if (!text) return;
+  if (text.length > MAX_TTS_TEXT_CHARS) {
+    throw new Error(ttsTextTooLongMessage(MAX_TTS_TEXT_CHARS));
+  }
 }
 
 function provider(id?: string) {
@@ -80,6 +98,7 @@ const server = createServer(async (req, res) => {
     }
 
     if (req.method === 'POST' && url.pathname === '/v1/tts/setup') {
+      if (rejectAuthoring(res)) return;
       const body = (await readBody(req)) as {
         elevenlabsApiKey?: string;
         azureSpeechKey?: string;
@@ -202,6 +221,7 @@ const server = createServer(async (req, res) => {
     }
 
     if (req.method === 'POST' && url.pathname === '/v1/tts/generate') {
+      if (rejectAuthoring(res)) return;
       const body = (await readBody(req)) as {
         text?: string;
         voiceId?: string;
@@ -215,12 +235,14 @@ const server = createServer(async (req, res) => {
         json(res, 400, { error: 'text and voiceId are required' });
         return;
       }
+      assertTtsTextLength(body.text);
       const asset = await generateOne(body);
       json(res, 200, asset);
       return;
     }
 
     if (req.method === 'POST' && url.pathname === '/v1/tts/batch') {
+      if (rejectAuthoring(res)) return;
       const body = (await readBody(req)) as {
         chapterId?: string;
         sentences?: {
@@ -236,6 +258,13 @@ const server = createServer(async (req, res) => {
         paidUsageConfirmation?: string;
       };
       const sentences = body.sentences ?? [];
+      if (sentences.length > MAX_BATCH_SENTENCES) {
+        json(res, 413, { error: batchTooLargeMessage(MAX_BATCH_SENTENCES) });
+        return;
+      }
+      for (const sentence of sentences) {
+        assertTtsTextLength(sentence.text);
+      }
       const googlePlan = sentences
         .filter((s) => ((s.provider as TTSProviderId) || ACTIVE) === 'google')
         .map((s) => plannedFromInput(s, body.chapterId));
@@ -293,45 +322,19 @@ const server = createServer(async (req, res) => {
     json(res, 404, { error: 'Not found' });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    const status = message.includes('is not configured')
-      ? 503
-      : message.includes('GENERATION BLOCKED') || message.includes('No Google TTS preflight permit')
-        ? 403
-        : 500;
+    const status =
+      message.includes('Request body exceeds') || message.includes('exceeds')
+        ? 413
+        : message.includes('is not configured')
+          ? 503
+          : message.includes('GENERATION BLOCKED') || message.includes('No Google TTS preflight permit')
+            ? 403
+            : message.includes(authoringDisabledMessage())
+              ? 403
+              : 500;
     json(res, status, { error: message });
   }
 });
-
-function gatewayStatus() {
-  return {
-    ok: true,
-    connected: true,
-    provider: ACTIVE,
-    providers: {
-      elevenlabs: {
-        id: 'elevenlabs' as const,
-        label: PROVIDER_LABEL.elevenlabs,
-        configured: providerConfigured('elevenlabs'),
-        keyHint: apiKeyHint(process.env.ELEVENLABS_API_KEY),
-      },
-      azure: {
-        id: 'azure' as const,
-        label: PROVIDER_LABEL.azure,
-        configured: providerConfigured('azure'),
-      },
-      google: {
-        id: 'google' as const,
-        label: PROVIDER_LABEL.google,
-        configured: providerConfigured('google'),
-        auth: process.env.GOOGLE_TTS_API_KEY
-          ? 'api-key'
-          : providerConfigured('google')
-            ? 'adc'
-            : null,
-      },
-    },
-  };
-}
 
 const AUTO_APPROVE = process.env.TTS_AUTO_APPROVE !== 'false';
 
@@ -517,7 +520,7 @@ function evaluateIncomingGoogle(
 }
 
 server.listen(PORT, HOST, () => {
-  console.log(`Storia TTS gateway on ${PUBLIC_BASE}`);
+  console.log(`Storibase TTS gateway on ${PUBLIC_BASE}`);
   console.log('Open Voice Lab in the app, then tap Load Italian Voices.');
   console.log('API keys stay in this folder (.env) and are never sent to the reader app.');
 });

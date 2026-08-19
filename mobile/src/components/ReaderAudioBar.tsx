@@ -14,6 +14,7 @@ type Props = {
   onRestart: () => void;
   onSetSpeed: (speed: 'normal' | 'slow' | 'faster') => void;
   onContinueFromChapter: () => void;
+  continueLabel?: string;
 };
 
 export function ReaderAudioBar({
@@ -27,6 +28,7 @@ export function ReaderAudioBar({
   onRestart,
   onSetSpeed,
   onContinueFromChapter,
+  continueLabel = 'Continue',
 }: Props) {
   const { colors, type, minTouchTarget } = useTheme();
 
@@ -142,7 +144,7 @@ export function ReaderAudioBar({
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Continue"
+          accessibilityLabel={continueLabel}
           onPress={onContinueFromChapter}
           style={({ pressed }) => [
             styles.continueBtn,
@@ -152,7 +154,7 @@ export function ReaderAudioBar({
               opacity: pressed ? 0.88 : 1,
             },
           ]}>
-          <Text style={[type.label, { color: colors.onButtonPrimary }]}>Continue</Text>
+          <Text style={[type.label, { color: colors.onButtonPrimary }]}>{continueLabel}</Text>
         </Pressable>
       </View>
 

@@ -54,7 +54,7 @@ export default function PublicHomeScreen() {
         <ScreenContent maxWidth={wide ? 960 : 680} style={styles.page}>
           <View style={[styles.hero, wide && styles.heroWide]}>
             <View style={[styles.heroCopy, wide && styles.heroCopyWide]}>
-              <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Storia</Text>
+              <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Storibase</Text>
               <Text
                 style={[
                   Typography.heroTitle,

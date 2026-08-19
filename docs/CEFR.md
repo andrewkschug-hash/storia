@@ -1,4 +1,4 @@
-# Storia CEFR progression
+# Storibase CEFR progression
 
 CEFR is a **content-targeting framework**, not a vocabulary prison and not a gate.
 

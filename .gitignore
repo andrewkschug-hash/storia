@@ -11,6 +11,9 @@ web-build/
 .env
 .env.*
 !.env.example
+mobile/.env
+mobile/.env.*
+!mobile/.env.example
 npm-debug.*
 .DS_Store
 *.pem
@@ -19,3 +22,5 @@ coverage/
 services/tts-gateway/.cache/
 services/tts-gateway/data/
 services/tts-gateway/.env
+services/tts-gateway/.env.*
+!services/tts-gateway/.env.example

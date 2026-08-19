@@ -7,10 +7,10 @@
   "staleAfter": "2026-11-14",
   "characterCounting": {
     "mode": "unicode_code_points",
-    "billedField": "SynthesizeSpeechRequest.input.text (plain text). Storia does not send SSML for Google TTS.",
+    "billedField": "SynthesizeSpeechRequest.input.text (plain text). Storibase does not send SSML for Google TTS.",
     "includesWhitespaceAndPunctuation": true,
     "ssmlTagsCounted": false,
-    "notes": "Google bills Unicode characters sent to Text-to-Speech, including spaces and punctuation. Storia counts Array.from(text).length on the exact string placed in input.text. SSML tags are not counted because this pipeline does not send SSML. If Google’s published billing definition changes, set this file’s staleAfter in the past so the guard fails closed until the config is verified again."
+    "notes": "Google bills Unicode characters sent to Text-to-Speech, including spaces and punctuation. Storibase counts Array.from(text).length on the exact string placed in input.text. SSML tags are not counted because this pipeline does not send SSML. If Google’s published billing definition changes, set this file’s staleAfter in the past so the guard fails closed until the config is verified again."
   },
   "failedRequests": {
     "localLedger": "not_counted",

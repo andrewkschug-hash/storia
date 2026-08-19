@@ -657,14 +657,14 @@
       "id": "ch24_q03",
       "chapterId": "luca-a-roma-24",
       "type": "inference",
-      "question": "What does the sentence about yesterday suggest?",
+      "question": "What does the chapter suggest about how Luca feels in Rome?",
       "choices": [
-        "Luca is starting to use past tense in the story",
-        "Luca is moving back home",
-        "The café closed forever"
+        "He feels settled and happy with his life there",
+        "He wants to leave Rome immediately",
+        "He has no friends and no job"
       ],
       "correctChoice": 0,
-      "explanation": "\"Ieri Luca è andato al negozio\" is a light past-tense moment before A2 chapters.",
+      "explanation": "Luca tells Nonna he is happy in Rome, has a home and a job, and later says Rome is home now.",
       "difficulty": 2
     }
   ]

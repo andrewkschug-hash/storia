@@ -39,19 +39,27 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giovedì Marco è arrivato al caffè nel pomeriggio, quando c’erano pochi clienti e la sala era tranquilla.",
+          "text": "Giovedì pomeriggio Marco è arrivato al caffè di Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "giovedi",
+            "pomeriggio",
             "marco",
             "essere",
             "arrivare",
             "al",
             "caffe",
-            "nel",
-            "pomeriggio",
-            "quando",
+            "di",
+            "luca"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "C’erano pochi clienti e la sala era tranquilla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "ce",
             "poco",
             "cliente",
@@ -64,7 +72,7 @@
         },
         {
           "id": "s03",
-          "text": "Luca lo ha visto e ha sorriso.",
+          "text": "Luca lo ha visto vicino alla porta del caffè e ha sorriso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -72,6 +80,11 @@
             "lo",
             "avere",
             "vedere",
+            "vicino",
+            "alla",
+            "porta",
+            "del",
+            "caffe",
             "e",
             "avere",
             "sorridere"
@@ -79,52 +92,41 @@
         },
         {
           "id": "s04",
-          "text": "Marco non sembrava tranquillo.",
+          "text": "Marco non ha sorriso. Ha parlato con voce stanca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "marco",
             "non",
-            "sembrare",
-            "tranquillo"
+            "avere",
+            "sorridere",
+            "avere",
+            "parlare",
+            "con",
+            "voce",
+            "stanco"
           ]
         },
         {
           "id": "s05",
-          "text": "Ciao. Posso stare un momento? Non ho bisogno di caffè.",
+          "text": "Ciao Luca. Posso stare un momento? Non ho soldi.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
             "ciao",
+            "luca",
             "potere",
             "stare",
             "un",
             "momento",
             "non",
             "avere",
-            "bisogno",
-            "di",
-            "caffe"
+            "soldi"
           ]
         },
         {
           "id": "s06",
-          "text": "Non ho tanti soldi. L’acqua va bene.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "non",
-            "avere",
-            "tanto",
-            "soldi",
-            "acqua",
-            "andare",
-            "bene"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Stai. Non c’è problema. L’acqua è per te.",
+          "text": "Stai. Non c’è problema. L’acqua è per te, Marco.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -135,7 +137,8 @@
             "acqua",
             "essere",
             "per",
-            "tu"
+            "tu",
+            "marco"
           ],
           "phrases": [
             {
@@ -148,8 +151,8 @@
           ]
         },
         {
-          "id": "s08",
-          "text": "Giulia ha portato l’acqua senza dire il prezzo, e Marco ha capito.",
+          "id": "s07",
+          "text": "Giulia ha portato l’acqua senza chiedere il prezzo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -158,32 +161,43 @@
             "portare",
             "acqua",
             "senza",
-            "dire",
+            "chiedere",
             "il",
-            "prezzo",
-            "e",
-            "marco",
-            "avere",
-            "capire"
+            "prezzo"
           ]
         },
         {
-          "id": "s10",
-          "text": "Qui è come i miei soldi. Pochi, e sempre gli stessi.",
-          "speakerId": "marco",
-          "kind": "dialogue",
+          "id": "s08",
+          "text": "Ha capito subito. Marco aveva bisogno di amici.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "qui",
+            "avere",
+            "capire",
+            "subito",
+            "marco",
+            "avere",
+            "bisogno",
+            "di",
+            "amico"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Marco si è seduto e ha guardato i tavoli vuoti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "si",
             "essere",
-            "come",
-            "i",
-            "mio",
-            "soldi",
-            "poco",
+            "sedere",
             "e",
-            "sempre",
-            "gli",
-            "stesso"
+            "avere",
+            "guardare",
+            "i",
+            "tavolo",
+            "vuoto"
           ]
         }
       ]
@@ -193,26 +207,57 @@
       "order": 2,
       "sentences": [
         {
-          "id": "s11",
-          "text": "Luca ha sorriso un poco. Marco parlava così con paura.",
+          "id": "s10",
+          "text": "Marco cercava lavoro ogni giorno da due settimane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "luca",
-            "avere",
-            "sorridere",
-            "un",
-            "poco",
             "marco",
-            "parlare",
-            "cosi",
-            "con",
-            "paura"
+            "cercare",
+            "lavorare",
+            "ogni",
+            "giorno",
+            "dare",
+            "due",
+            "settimana"
+          ]
+        },
+        {
+          "id": "s11",
+          "text": "Ieri ha telefonato a Luca e ha chiesto aiuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ieri",
+            "avere",
+            "telefonare",
+            "a",
+            "luca",
+            "e",
+            "avere",
+            "chiedere",
+            "aiutare"
           ]
         },
         {
           "id": "s12",
-          "text": "Il viaggio è passato. Il biglietto e la valigia li abbiamo trovati. Ricordi?",
+          "text": "Lunedì ha scritto a tre negozi del quartiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lunedi",
+            "avere",
+            "scrivere",
+            "a",
+            "tre",
+            "negozio",
+            "del",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il viaggio è passato. Il biglietto è a posto ora.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
@@ -222,18 +267,15 @@
             "passare",
             "il",
             "biglietto",
-            "e",
-            "la",
-            "valigia",
-            "li",
-            "avere",
-            "trovare",
-            "ricordare"
+            "essere",
+            "a",
+            "posto",
+            "ora"
           ]
         },
         {
-          "id": "s13",
-          "text": "Sì. Adesso sei a Roma, come noi.",
+          "id": "s14",
+          "text": "Sì. Adesso sei a Roma. Sei con noi adesso.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -242,13 +284,15 @@
             "essere",
             "a",
             "roma",
-            "come",
-            "noi"
+            "essere",
+            "con",
+            "noi",
+            "adesso"
           ]
         },
         {
-          "id": "s14",
-          "text": "Sì. Ma il lavoro no. Cerco e non trovo.",
+          "id": "s15",
+          "text": "Sì. Ma il lavoro no. Cerco e non trovo niente.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
@@ -260,110 +304,76 @@
             "cercare",
             "e",
             "non",
-            "trovare"
-          ]
-        },
-        {
-          "id": "s15",
-          "text": "Ogni giorno è lo stesso. Domande, no, e poi a casa.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "ogni",
-            "giorno",
-            "essere",
-            "lo",
-            "stesso",
-            "domanda",
-            "no",
-            "e",
-            "poi",
-            "a",
-            "casa"
+            "trovare",
+            "niente"
           ]
         },
         {
           "id": "s16",
-          "text": "Luca ha ascoltato, e ha capito che il problema non era più il treno, ma i soldi di ogni giorno e la paura di non trovare lavoro.",
+          "text": "Luca ascoltava e non ha detto niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "ascoltare",
+            "e",
+            "non",
+            "avere",
+            "dire",
+            "niente"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Il problema erano i soldi e il tempo ogni giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "problema",
+            "essere",
+            "i",
+            "soldi",
+            "e",
+            "il",
+            "tempo",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Marco aveva paura di non trovare un posto di lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "avere",
+            "paura",
+            "di",
+            "non",
+            "trovare",
+            "un",
+            "posto",
+            "di",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Luca ha ascoltato Marco con calma e senza fretta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "avere",
             "ascoltare",
+            "marco",
+            "con",
+            "calma",
             "e",
-            "avere",
-            "capire",
-            "che",
-            "il",
-            "problema",
-            "non",
-            "essere",
-            "piu",
-            "il",
-            "treno",
-            "ma",
-            "i",
-            "soldi",
-            "di",
-            "ogni",
-            "giorno",
-            "e",
-            "la",
-            "paura",
-            "di",
-            "non",
-            "trovare",
-            "lavorare"
-          ]
-        },
-        {
-          "id": "s18",
-          "text": "Anch’io ho paura. Qui il caffè forse chiude.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "anche",
-            "avere",
-            "paura",
-            "qui",
-            "il",
-            "caffe",
-            "forse",
-            "chiudere"
-          ]
-        },
-        {
-          "id": "s19",
-          "text": "Allora siamo in due. Che bella notizia.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "allora",
-            "essere",
-            "in",
-            "due",
-            "che",
-            "bello",
-            "notizia"
-          ]
-        },
-        {
-          "id": "s20",
-          "text": "Ha detto così e ha sorriso un poco. Luca anche.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
-            "dire",
-            "cosi",
-            "e",
-            "avere",
-            "sorridere",
-            "un",
-            "poco",
-            "luca",
-            "anche"
+            "senza",
+            "fretta"
           ]
         }
       ]
@@ -373,25 +383,143 @@
       "order": 3,
       "sentences": [
         {
+          "id": "s20",
+          "text": "Luca ha parlato della notizia difficile del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "parlare",
+            "della",
+            "notizia",
+            "difficile",
+            "del",
+            "caffe"
+          ]
+        },
+        {
           "id": "s21",
-          "text": "Se resta il caffè, magari serve più gente un giorno.",
-          "speakerId": "giulia",
+          "text": "Il padrone forse vende il caffè. O cambia tutto.",
+          "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "se",
-            "restare",
+            "il",
+            "padrone",
+            "forse",
+            "vendere",
             "il",
             "caffe",
-            "magari",
-            "servire",
-            "piu",
-            "gente",
-            "un",
-            "giorno"
+            "o",
+            "cambiare",
+            "tutto"
           ]
         },
         {
           "id": "s22",
+          "text": "Non ha deciso. Questa settimana è molto importante.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "decidere",
+            "questo",
+            "settimana",
+            "essere",
+            "molto",
+            "importante"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Anch’io ho paura. Qui anche il mio lavoro è difficile.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "avere",
+            "paura",
+            "qui",
+            "anche",
+            "il",
+            "mio",
+            "lavorare",
+            "essere",
+            "difficile"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Allora siamo in due con la stessa paura oggi.",
+          "speakerId": "marco",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "essere",
+            "in",
+            "due",
+            "con",
+            "la",
+            "stesso",
+            "paura",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Ha detto così e poi ha sorriso un poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "dire",
+            "cosi",
+            "e",
+            "poi",
+            "avere",
+            "sorridere",
+            "un",
+            "poco"
+          ]
+        },
+        {
+          "id": "s26",
+          "text": "Giulia ha passato tra i tavoli e ha ascoltato tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "passare",
+            "tra",
+            "i",
+            "tavolo",
+            "e",
+            "avere",
+            "ascoltare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Resta il caffè? Un giorno serve più gente qui.",
+          "speakerId": "giulia",
+          "kind": "dialogue",
+          "lemmas": [
+            "restare",
+            "il",
+            "caffe",
+            "un",
+            "giorno",
+            "servire",
+            "piu",
+            "gente",
+            "qui"
+          ]
+        },
+        {
+          "id": "s28",
           "text": "Magari. Adesso cerco ancora. Non voglio solo aspettare.",
           "speakerId": "marco",
           "kind": "dialogue",
@@ -407,33 +535,33 @@
           ]
         },
         {
-          "id": "s23",
-          "text": "Se sento qualcosa, ti chiamo. Ci penso io.",
+          "id": "s29",
+          "text": "Sento qualcosa? Ti chiamo. Ci penso io, Marco.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "se",
             "sentire",
             "qualcosa",
             "ti",
             "chiamare",
             "ci",
             "pensare",
-            "io"
+            "io",
+            "marco"
           ],
           "phrases": [
             {
               "surface": "Ci penso io",
               "literalEn": "I think about it I",
               "naturalEn": "I’ll take care of it",
-              "tokenStart": 5,
-              "tokenEnd": 7
+              "tokenStart": 3,
+              "tokenEnd": 5
             }
           ]
         },
         {
-          "id": "s24",
-          "text": "Marco ha detto grazie. Per un momento sembrava meno solo.",
+          "id": "s30",
+          "text": "Marco ha detto grazie. Per un momento ha sorriso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -444,96 +572,8 @@
             "per",
             "un",
             "momento",
-            "sembrare",
-            "meno",
-            "solo"
-          ]
-        },
-        {
-          "id": "s25",
-          "text": "Poi ha chiesto del caffè e della notizia di martedì.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "poi",
             "avere",
-            "chiedere",
-            "del",
-            "caffe",
-            "e",
-            "della",
-            "notizia",
-            "di",
-            "martedi"
-          ]
-        },
-        {
-          "id": "s26",
-          "text": "Il padrone non ha deciso. Ieri ho parlato con Sofia.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "il",
-            "padrone",
-            "non",
-            "avere",
-            "decidere",
-            "ieri",
-            "avere",
-            "parlare",
-            "con",
-            "sofia"
-          ]
-        },
-        {
-          "id": "s27",
-          "text": "Lei ascolta e fa domande. Pensa con me.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "lei",
-            "ascoltare",
-            "e",
-            "fare",
-            "domanda",
-            "pensare",
-            "con",
-            "io"
-          ]
-        },
-        {
-          "id": "s28",
-          "text": "Bene. Dobbiamo fare qualcosa, non solo aspettare.",
-          "speakerId": "giulia",
-          "kind": "dialogue",
-          "lemmas": [
-            "bene",
-            "dovere",
-            "fare",
-            "qualcosa",
-            "non",
-            "solo",
-            "aspettare"
-          ]
-        },
-        {
-          "id": "s29",
-          "text": "Io non ho soldi. Ma ho tempo. E ho bisogno degli amici.",
-          "speakerId": "marco",
-          "kind": "dialogue",
-          "lemmas": [
-            "io",
-            "non",
-            "avere",
-            "soldi",
-            "ma",
-            "avere",
-            "tempo",
-            "e",
-            "avere",
-            "bisogno",
-            "dei",
-            "amico"
+            "sorridere"
           ]
         }
       ]
@@ -543,23 +583,8 @@
       "order": 4,
       "sentences": [
         {
-          "id": "s30",
-          "text": "La sala restava quasi vuota mentre parlavano.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "la",
-            "sala",
-            "restare",
-            "quasi",
-            "vuoto",
-            "mentre",
-            "parlare"
-          ]
-        },
-        {
           "id": "s31",
-          "text": "Prima di partire, Marco ha chiesto di Sofia e del piano.",
+          "text": "Prima di partire Marco ha chiesto di Sofia e del piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -578,7 +603,41 @@
         },
         {
           "id": "s32",
-          "text": "Domani andiamo da Nonna Rosa. C’è un’idea, forse.",
+          "text": "Luca ha parlato del piano con Nonna Rosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "parlare",
+            "del",
+            "piano",
+            "con",
+            "nonna",
+            "rosa"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sofia ha scritto le domande per la nonna ieri sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sofia",
+            "avere",
+            "scrivere",
+            "le",
+            "domanda",
+            "per",
+            "la",
+            "nonna",
+            "ieri",
+            "sera"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Domani andiamo da Nonna Rosa dopo il lavoro al caffè.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -587,20 +646,22 @@
             "dare",
             "nonna",
             "rosa",
-            "ce",
-            "idea",
-            "forse"
+            "dopo",
+            "il",
+            "lavorare",
+            "al",
+            "caffe"
           ]
         },
         {
-          "id": "s33",
-          "text": "Se posso, vengo. Non ho lavoro, ma ho tempo.",
+          "id": "s35",
+          "text": "Vengo anche io. Non ho lavoro, ma ho tempo.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "se",
-            "potere",
             "venire",
+            "anche",
+            "io",
             "non",
             "avere",
             "lavorare",
@@ -610,38 +671,58 @@
           ]
         },
         {
-          "id": "s34",
-          "text": "Vieni. Insieme è meglio.",
+          "id": "s36",
+          "text": "Vieni. Insieme è meglio per tutti noi.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "venire",
             "insieme",
             "essere",
-            "meglio"
+            "meglio",
+            "per",
+            "tutto",
+            "noi"
           ]
         },
         {
-          "id": "s35",
-          "text": "Io resto qui. Domani parlo con il padrone, se posso.",
+          "id": "s37",
+          "text": "Io resto al caffè. Domani parlo con il padrone.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
             "io",
             "restare",
-            "qui",
+            "al",
+            "caffe",
             "domani",
             "parlare",
             "con",
             "il",
-            "padrone",
-            "se",
-            "potere"
+            "padrone"
           ]
         },
         {
-          "id": "s36",
-          "text": "Marco è uscito nella strada, e Luca è rimasto a lavorare.",
+          "id": "s38",
+          "text": "Giulia ha sorriso a Marco con calma e voce gentile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "sorridere",
+            "a",
+            "marco",
+            "con",
+            "calma",
+            "e",
+            "voce",
+            "gentile"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Marco è uscito nella strada del quartiere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -650,17 +731,47 @@
             "uscire",
             "nella",
             "strada",
-            "e",
+            "del",
+            "quartiere"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Luca è rimasto a lavorare fino a sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "luca",
             "essere",
             "rimanere",
             "a",
-            "lavorare"
+            "lavorare",
+            "fino",
+            "a",
+            "sera"
           ]
         },
         {
-          "id": "s37",
-          "text": "I problemi erano due — il caffè e i soldi di Marco — e non avevano ancora un piano chiaro, solo un giorno e Nonna Rosa.",
+          "id": "s41",
+          "text": "La sala era quasi vuota, ma il caffè era aperto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sala",
+            "essere",
+            "quasi",
+            "vuoto",
+            "ma",
+            "il",
+            "caffe",
+            "essere",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "I problemi erano due, ma gli amici erano gli stessi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -668,39 +779,12 @@
             "problema",
             "essere",
             "due",
-            "il",
-            "caffe",
-            "e",
-            "i",
-            "soldi",
-            "di",
-            "marco",
-            "e",
-            "non",
-            "avere",
-            "ancora",
-            "un",
-            "piano",
-            "chiaro",
-            "solo",
-            "un",
-            "giorno",
-            "e",
-            "nonna",
-            "rosa"
-          ]
-        },
-        {
-          "id": "s40",
-          "text": "Domani Nonna Rosa. Poi vediamo.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "domani",
-            "nonna",
-            "rosa",
-            "poi",
-            "vedere"
+            "ma",
+            "gli",
+            "amico",
+            "essere",
+            "gli",
+            "stesso"
           ]
         }
       ]
@@ -712,13 +796,14 @@
       "chapterId": "luca-a-roma-28",
       "type": "character",
       "question": "What is Marco’s problem now?",
+      "questionIt": "Qual è il problema di Marco adesso?",
       "choices": [
         "He cannot find work and has little money",
         "He lost his ticket again",
         "He wants to sell the café"
       ],
       "correctChoice": 0,
-      "explanation": "The trip is over; everyday money is the issue.",
+      "explanation": "The trip is over; everyday money and work are the issue.",
       "difficulty": 2
     },
     {
@@ -726,6 +811,7 @@
       "chapterId": "luca-a-roma-28",
       "type": "direct",
       "question": "What does Luca offer Marco?",
+      "questionIt": "Cosa offre Luca a Marco?",
       "choices": [
         "Water and a promise to call if he hears of work",
         "A train ticket",
@@ -733,8 +819,7 @@
       ],
       "correctChoice": 0,
       "explanation": "Giulia brings water; Luca will call.",
-      "difficulty": 2,
-      "questionIt": "Cosa offre Luca a Marco?"
+      "difficulty": 2
     },
     {
       "id": "ch28_q03",
@@ -747,7 +832,7 @@
         "To buy the café"
       ],
       "correctChoice": 0,
-      "explanation": "He has time and needs friends.",
+      "explanation": "He has time and needs friends; he will come tomorrow.",
       "difficulty": 2
     }
   ]

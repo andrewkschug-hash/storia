@@ -153,9 +153,9 @@ async function readError(res: Response): Promise<string> {
 }
 
 export function gatewayBaseUrl(): string | null {
-  const fromEnv = process.env.EXPO_PUBLIC_TTS_GATEWAY_URL;
-  if (fromEnv && fromEnv.length > 0) return fromEnv;
-  if (typeof __DEV__ !== 'undefined' && __DEV__) return 'http://127.0.0.1:8787';
+  if (typeof __DEV__ !== 'undefined' && __DEV__) {
+    return 'http://127.0.0.1:8787';
+  }
   return null;
 }
 

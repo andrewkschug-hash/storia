@@ -1,4 +1,4 @@
-# Storia — Architecture
+# Storibase — Architecture
 
 **Product:** Story-driven Italian reading engine  
 **Stack:** Expo (React Native) + TypeScript · Expo Router · Zustand · SQLite · JSON content · Node TTS gateway  

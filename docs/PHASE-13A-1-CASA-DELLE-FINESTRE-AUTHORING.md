@@ -18,7 +18,7 @@ Author ONLY the chapter I name (start with CHAPTER 01).
 
 Follow that chapter’s spec exactly: story purpose, learner-must-know, must-not-reveal, language target, recurring vocabulary, scene beats, ending hook, cut-rule.
 
-Match existing Storia chapter JSON + sentence-english shape (see Pre-Rome / Luca files for schema). New storyId: la-casa-delle-finestre. New folder only.
+Match existing Storibase chapter JSON + sentence-english shape (see Pre-Rome / Luca files for schema). New storyId: la-casa-delle-finestre. New folder only.
 
 DO NOT:
 - author other chapters in the same turn

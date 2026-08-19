@@ -17,6 +17,12 @@ export default function Root({ children }: { children: ReactNode }) {
         />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Storibase" />
+        <title>Storibase — Learn Italian through stories</title>
+        <meta
+          name="description"
+          content="Storibase is a story-driven Italian reading app. Learn through progressive chapters, not flashcards-first drills."
+        />
         <meta name="theme-color" content="#F3F6F7" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#0F1614" media="(prefers-color-scheme: dark)" />
 

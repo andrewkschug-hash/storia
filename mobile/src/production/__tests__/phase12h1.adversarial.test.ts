@@ -71,13 +71,12 @@ describe('12H.1 person', () => {
 
 describe('12H.1 tense', () => {
   it('keeps passato prossimo; rejects present, imperfect, and future', () => {
-    const shop = byId('luca-a-roma-ch24-prod-01');
-    expect(scoreProductionAnswer(shop, 'Ieri sono andato al negozio.').result).toBe('correct');
-    expect(scoreProductionAnswer(shop, 'Sono andato al negozio ieri.').result).toBe('correct');
-    expect(scoreProductionAnswer(shop, 'Vado al negozio.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(shop, 'Vado al negozio ieri.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(shop, 'Andavo al negozio ieri.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(shop, 'Andrò al negozio.').result).toBe('incorrect');
+    const arrived = byId('luca-a-roma-ch25-prod-01');
+    expect(scoreProductionAnswer(arrived, 'Luca è arrivato presto.').result).toBe('correct');
+    expect(scoreProductionAnswer(arrived, 'Luca è arrivata presto.').result).toBe('correct');
+    expect(scoreProductionAnswer(arrived, 'Luca arriva presto.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(arrived, 'Luca arrivava presto.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(arrived, 'Luca arriverà presto.').result).toBe('incorrect');
   });
 });
 
@@ -108,14 +107,10 @@ describe('12H.1 gender', () => {
     expect(scoreProductionAnswer(neu, 'Sei nuova a Roma.').result).toBe('correct');
   });
 
-  it('allows arrivato/arrivata for I arrived, but not a missing clause', () => {
+  it('allows arrivato/arrivata for Luca arrived early', () => {
     const arrived = byId('luca-a-roma-ch25-prod-01');
-    expect(scoreProductionAnswer(arrived, 'Sono arrivato presto e ho aperto la porta.').result).toBe(
-      'correct',
-    );
-    expect(scoreProductionAnswer(arrived, 'Sono arrivata presto e ho aperto la porta.').result).toBe(
-      'correct',
-    );
+    expect(scoreProductionAnswer(arrived, 'Luca è arrivato presto.').result).toBe('correct');
+    expect(scoreProductionAnswer(arrived, 'Luca è arrivata presto.').result).toBe('correct');
   });
 
   it('does not score opposite gender as correct when the prompt specifies she', () => {
@@ -147,23 +142,23 @@ describe('12H.1 subject drop', () => {
 describe('12H.1 word order', () => {
   it('allows authored time-adverb movement only', () => {
     const work = byId('luca-a-roma-ch09-prod-03');
-    const shop = byId('luca-a-roma-ch24-prod-01');
+    const family = byId('luca-a-roma-ch24-prod-01');
+    const arrived = byId('luca-a-roma-ch25-prod-01');
     expect(scoreProductionAnswer(work, 'Domani lavoro.').result).toBe('correct');
     expect(scoreProductionAnswer(work, 'Lavoro domani.').result).toBe('correct');
-    expect(scoreProductionAnswer(shop, 'Sono andato al negozio ieri.').result).toBe('correct');
+    expect(scoreProductionAnswer(family, 'Luca oggi resta a casa e parla con la famiglia.').result).toBe(
+      'correct',
+    );
     expect(scoreProductionAnswer(work, 'Lavoro io domani.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(shop, 'Al negozio andato sono ieri.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(shop, 'Non sono andato al negozio ieri.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(arrived, 'Presto Luca è arrivato.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(family, 'Non resta a casa oggi.').result).toBe('incorrect');
   });
 });
 
 describe('12H.1 articles and prepositions', () => {
   it('accepts only authored article/preposition variants', () => {
-    const shop = byId('luca-a-roma-ch24-prod-01');
     const station = byId('luca-a-roma-ch16-prod-01');
     const ticket = byId('luca-a-roma-ch13-prod-03');
-    expect(scoreProductionAnswer(shop, 'Ieri sono andato in negozio.').result).toBe('correct');
-    expect(scoreProductionAnswer(shop, 'Ieri sono andato nel negozio.').result).toBe('incorrect');
     expect(scoreProductionAnswer(station, 'Andiamo in stazione.').result).toBe('correct');
     expect(scoreProductionAnswer(station, 'Andiamo nella stazione.').result).toBe('incorrect');
     expect(scoreProductionAnswer(ticket, 'Io voglio comprare il biglietto.').result).toBe('correct');

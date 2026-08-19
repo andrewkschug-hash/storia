@@ -668,14 +668,14 @@
         }
       ]
     },
-    "luca-a-roma-25:s32": {
+    "luca-a-roma-25:s29": {
       "reinforces": [
         "tornare"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "La sera Luca è tornato a casa e ha contato i soldi per l’affitto, ancora una volta.",
+          "text": "La sera Luca è tornato a casa e ha contato i soldi per l’affitto.",
           "lemmas": [
             "la",
             "sera",
@@ -690,18 +690,16 @@
             "i",
             "soldi",
             "per",
-            "affitto",
-            "ancora",
-            "una",
-            "volta"
+            "affitto"
           ],
           "reinforces": [
-            "tornare"
+            "tornare",
+            "contare"
           ]
         }
       ]
     },
-    "luca-a-roma-26:s13": {
+    "luca-a-roma-26:s14": {
       "reinforces": [
         "vendere",
         "cambiare"
@@ -729,7 +727,7 @@
         }
       ]
     },
-    "luca-a-roma-26:s34": {
+    "luca-a-roma-26:s36": {
       "reinforces": [
         "piano",
         "aspettare"
@@ -783,7 +781,7 @@
         }
       ]
     },
-    "luca-a-roma-27:s31": {
+    "luca-a-roma-27:s35": {
       "reinforces": [
         "andare"
       ],
@@ -811,45 +809,42 @@
     },
     "luca-a-roma-28:s12": {
       "reinforces": [
-        "trovare",
-        "ricordare"
+        "cercare",
+        "lavoro"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Il viaggio è passato. Il biglietto e la valigia li abbiamo trovati. Ricordi ancora?",
+          "text": "Lunedì ha scritto a tre negozi del quartiere. Nessuno ha risposto.",
           "lemmas": [
-            "il",
-            "viaggio",
-            "essere",
-            "passare",
-            "il",
-            "biglietto",
-            "e",
-            "la",
-            "valigia",
-            "li",
+            "lunedi",
             "avere",
-            "trovare",
-            "ricordare",
-            "ancora"
+            "scrivere",
+            "a",
+            "tre",
+            "negozio",
+            "del",
+            "quartiere",
+            "nessuno",
+            "avere",
+            "rispondere"
           ],
           "reinforces": [
-            "trovare",
-            "ricordare"
+            "cercare",
+            "lavoro"
           ]
         }
       ]
     },
-    "luca-a-roma-28:s14": {
+    "luca-a-roma-28:s15": {
       "reinforces": [
         "cercare",
-        "trovare"
+        "lavoro"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Sì. Ma il lavoro no. Cerco e non trovo un posto.",
+          "text": "Sì. Ma il lavoro no. Cerco e non trovo niente.",
           "lemmas": [
             "si_yes",
             "ma",
@@ -860,91 +855,94 @@
             "e",
             "non",
             "trovare",
-            "un",
-            "posto"
+            "niente"
           ],
           "reinforces": [
             "cercare",
-            "trovare"
+            "lavoro"
           ]
         }
       ]
     },
     "luca-a-roma-28:s22": {
       "reinforces": [
-        "aspettare"
+        "decidere",
+        "notizia"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Magari. Adesso cerco ancora. Non voglio solo aspettare gli amici.",
+          "text": "Non ha deciso. Questa settimana è molto importante.",
           "lemmas": [
-            "magari",
-            "adesso",
-            "cercare",
-            "ancora",
             "non",
-            "volere",
-            "solo",
-            "aspettare",
-            "gli",
-            "amico"
+            "avere",
+            "decidere",
+            "questo",
+            "settimana",
+            "essere",
+            "molto",
+            "importante"
           ],
           "reinforces": [
-            "aspettare"
+            "decidere",
+            "notizia"
           ]
         }
       ]
     },
     "luca-a-roma-29:s23": {
       "reinforces": [
-        "aspettare"
+        "festa",
+        "gente"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Allora gli diciamo. Non aspettiamo troppo.",
+          "text": "Allora lo facciamo piccolo. Pochi soldi e tanta gente chiamata.",
           "lemmas": [
             "allora",
-            "gli",
-            "dire",
-            "non",
-            "aspettare",
-            "troppo"
+            "lo",
+            "fare",
+            "piccolo",
+            "poco",
+            "soldi",
+            "e",
+            "tanto",
+            "gente",
+            "chiamare"
           ],
           "reinforces": [
-            "aspettare"
+            "festa",
+            "gente"
           ]
         }
       ]
     },
     "luca-a-roma-29:s25": {
       "reinforces": [
-        "aiutare",
-        "lavorare"
+        "vendere",
+        "ragione"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Io posso ancora aiutare. Non ho soldi, ma ho tempo e posso lavorare.",
+          "text": "Gli diamo una ragione per restare al caffè, non per vendere.",
           "lemmas": [
-            "io",
-            "potere",
-            "ancora",
-            "aiutare",
+            "gli",
+            "dare",
+            "una",
+            "ragione",
+            "per",
+            "restare",
+            "al",
+            "caffe",
             "non",
-            "avere",
-            "soldi",
-            "ma",
-            "avere",
-            "tempo",
-            "e",
-            "potere",
-            "lavorare"
+            "per",
+            "vendere"
           ],
           "reinforces": [
-            "aiutare",
-            "lavorare"
+            "vendere",
+            "ragione"
           ]
         }
       ]

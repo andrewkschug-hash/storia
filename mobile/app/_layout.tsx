@@ -177,38 +177,42 @@ function RootLayoutNav() {
             headerShadowVisible: false,
           }}
         />
-        <Stack.Screen
-          name="adaptive-debug"
-          options={{
-            title: 'Adaptive debug',
-            headerBackTitle: 'Back',
-            headerShadowVisible: false,
-          }}
-        />
-        <Stack.Screen
-          name="voice-lab"
-          options={{
-            title: 'Voice Lab',
-            headerBackTitle: 'Back',
-            headerShadowVisible: false,
-          }}
-        />
-        <Stack.Screen
-          name="audio-studio"
-          options={{
-            title: 'Audio studio',
-            headerBackTitle: 'Back',
-            headerShadowVisible: false,
-          }}
-        />
-        <Stack.Screen
-          name="cefr-audit"
-          options={{
-            title: 'CEFR audit',
-            headerBackTitle: 'Back',
-            headerShadowVisible: false,
-          }}
-        />
+        {typeof __DEV__ !== 'undefined' && __DEV__ ? (
+          <>
+            <Stack.Screen
+              name="adaptive-debug"
+              options={{
+                title: 'Adaptive debug',
+                headerBackTitle: 'Back',
+                headerShadowVisible: false,
+              }}
+            />
+            <Stack.Screen
+              name="voice-lab"
+              options={{
+                title: 'Voice Lab',
+                headerBackTitle: 'Back',
+                headerShadowVisible: false,
+              }}
+            />
+            <Stack.Screen
+              name="audio-studio"
+              options={{
+                title: 'Audio studio',
+                headerBackTitle: 'Back',
+                headerShadowVisible: false,
+              }}
+            />
+            <Stack.Screen
+              name="cefr-audit"
+              options={{
+                title: 'CEFR audit',
+                headerBackTitle: 'Back',
+                headerShadowVisible: false,
+              }}
+            />
+          </>
+        ) : null}
       </Stack>
     </ThemeProvider>
   );

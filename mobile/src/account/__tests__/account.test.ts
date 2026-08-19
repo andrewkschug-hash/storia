@@ -1,21 +1,20 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { defaultAvatarIdForEmail, isAvatarId } from '@/src/account/avatars';
 import {
-  DEVELOPER_EMAIL,
   canAccessDeveloperTools,
   clearAccount,
   getAccount,
   hasLocalAccount,
-  isDeveloperAccount,
-  isDeveloperEmail,
-  roleForEmail,
   saveAccount,
+  signInWithPassword,
   signOutAccount,
   signUpWithPassword,
   updateAccountProfile,
 } from '@/src/account/storage';
-import { __resetUnlockAllChapters, unlockAllChapters } from '@/src/progress/unlockAll';
+import { AUTH_CONFIG_MESSAGE } from '@/src/security/productionAuth';
+import { isDevBuild } from '@/src/security/buildMode';
+import { __resetUnlockAllChapters, setUnlockAllChapters, unlockAllChapters } from '@/src/progress/unlockAll';
 
 vi.mock('@react-native-async-storage/async-storage', () => {
   const store = new Map<string, string>();
@@ -36,21 +35,55 @@ vi.mock('@react-native-async-storage/async-storage', () => {
   };
 });
 
-vi.mock('react-native', () => ({
-  Platform: { OS: 'web' },
+vi.mock('@/src/sync/learnerSession', () => ({
+  hydrateLearnerIfNeeded: vi.fn(async () => {}),
+  clearLocalLearnerState: vi.fn(async () => {}),
+}));
+
+vi.mock('@/src/onboarding/storage', () => ({
+  resetOnboarding: vi.fn(async () => {}),
+}));
+
+const supabaseMock = vi.hoisted(() => ({
+  configured: false,
+  signUp: vi.fn(),
+  signInWithPassword: vi.fn(),
+  getSession: vi.fn(async () => ({ data: { session: null }, error: null })),
+  getUser: vi.fn(async () => ({ data: { user: null } })),
+  signOut: vi.fn(async () => ({})),
+  updateUser: vi.fn(async () => ({})),
+  from: vi.fn(() => ({ upsert: vi.fn(async () => ({})) })),
 }));
 
 vi.mock('@/src/lib/supabase', () => ({
-  isSupabaseConfigured: () => false,
-  getSupabase: () => {
-    throw new Error('Supabase is not configured in tests.');
-  },
+  isSupabaseConfigured: () => supabaseMock.configured,
+  getSupabase: () => ({
+    auth: {
+      signUp: supabaseMock.signUp,
+      signInWithPassword: supabaseMock.signInWithPassword,
+      getSession: supabaseMock.getSession,
+      getUser: supabaseMock.getUser,
+      signOut: supabaseMock.signOut,
+      updateUser: supabaseMock.updateUser,
+    },
+    from: supabaseMock.from,
+  }),
 }));
 
-describe('local account persistence', () => {
+function setDevMode(dev: boolean): void {
+  (globalThis as { __DEV__?: boolean }).__DEV__ = dev;
+}
+
+describe('local account persistence (development fallback)', () => {
   beforeEach(async () => {
+    setDevMode(true);
+    supabaseMock.configured = false;
     await clearAccount();
     __resetUnlockAllChapters();
+  });
+
+  afterEach(() => {
+    vi.clearAllMocks();
   });
 
   it('starts with no account', async () => {
@@ -132,39 +165,91 @@ describe('local account persistence', () => {
   });
 });
 
-describe('developer email detection', () => {
-  it('marks andrewkschug@gmail.com as developer (case-insensitive)', () => {
-    expect(isDeveloperEmail(DEVELOPER_EMAIL)).toBe(true);
-    expect(isDeveloperEmail('AndrewKSchug@gmail.com')).toBe(true);
-    expect(isDeveloperEmail('  andrewkschug@gmail.com  ')).toBe(true);
-    expect(roleForEmail('ANDREWKSCHUG@GMAIL.COM')).toBe('developer');
+describe('developer tooling access', () => {
+  afterEach(() => {
+    setDevMode(false);
   });
 
-  it('marks other emails as learners', () => {
-    expect(isDeveloperEmail('learner@example.com')).toBe(false);
-    expect(roleForEmail('learner@example.com')).toBe('learner');
-    expect(roleForEmail('andrewkschug@example.com')).toBe('learner');
-  });
-
-  it('isDeveloperAccount follows role and email', async () => {
-    expect(isDeveloperAccount(null)).toBe(false);
-
-    const learner = await saveAccount({
-      displayName: 'Sam',
-      email: 'sam@example.com',
-    });
-    expect(isDeveloperAccount(learner)).toBe(false);
-    expect(unlockAllChapters()).toBe(false);
-
-    await clearAccount();
-    expect(unlockAllChapters()).toBe(false);
-    const developer = await saveAccount({
-      displayName: 'Andrew',
-      email: 'andrewkschug@gmail.com',
-    });
-    expect(developer.role).toBe('developer');
-    expect(isDeveloperAccount(developer)).toBe(true);
-    expect(canAccessDeveloperTools(developer)).toBe(true);
+  it('allows developer tools only in development builds', () => {
+    setDevMode(true);
+    expect(canAccessDeveloperTools(null)).toBe(true);
+    setUnlockAllChapters(isDevBuild());
     expect(unlockAllChapters()).toBe(true);
+
+    setDevMode(false);
+    expect(canAccessDeveloperTools(null)).toBe(false);
+    setUnlockAllChapters(isDevBuild());
+    expect(unlockAllChapters()).toBe(false);
+  });
+});
+
+describe('production auth fail-closed', () => {
+  beforeEach(async () => {
+    setDevMode(false);
+    supabaseMock.configured = false;
+    vi.unstubAllEnvs();
+    await clearAccount();
+    __resetUnlockAllChapters();
+  });
+
+  afterEach(() => {
+    vi.clearAllMocks();
+    vi.unstubAllEnvs();
+  });
+
+  it('does not authenticate without Supabase configuration', async () => {
+    await expect(
+      signUpWithPassword({
+        displayName: 'Alex',
+        email: 'alex@example.com',
+        password: 'secret1',
+      }),
+    ).rejects.toThrow(AUTH_CONFIG_MESSAGE);
+
+    await expect(
+      signInWithPassword({
+        email: 'alex@example.com',
+        password: 'secret1',
+      }),
+    ).rejects.toThrow(AUTH_CONFIG_MESSAGE);
+
+    expect(await getAccount()).toBeNull();
+    expect(await hasLocalAccount()).toBe(false);
+  });
+
+  it('does not allow local saveAccount in production', async () => {
+    await expect(
+      saveAccount({
+        displayName: 'Alex',
+        email: 'alex@example.com',
+      }),
+    ).rejects.toThrow(AUTH_CONFIG_MESSAGE);
+  });
+
+  it('authenticates normally when Supabase is configured', async () => {
+    supabaseMock.configured = true;
+    vi.stubEnv('EXPO_PUBLIC_SUPABASE_URL', 'https://example.supabase.co');
+    vi.stubEnv('EXPO_PUBLIC_SUPABASE_ANON_KEY', 'anon-key');
+    supabaseMock.signInWithPassword.mockResolvedValueOnce({
+      data: {
+        session: {
+          user: {
+            id: 'user-1',
+            email: 'alex@example.com',
+            created_at: '2026-01-01T00:00:00.000Z',
+            user_metadata: { display_name: 'Alex', avatar_id: 'mare' },
+          },
+        },
+        user: null,
+      },
+      error: null,
+    });
+
+    const account = await signInWithPassword({
+      email: 'alex@example.com',
+      password: 'secret1',
+    });
+    expect(account.email).toBe('alex@example.com');
+    expect(account.role).toBe('learner');
   });
 });

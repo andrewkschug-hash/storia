@@ -79,7 +79,7 @@ export default function WalkthroughScreen() {
             accessibilityLabel="Back to homepage"
             onPress={() => router.replace('/')}
             style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1, minHeight: 44, justifyContent: 'center' })}>
-            <Text style={[Typography.label, { color: colors.tint }]}>← Storia</Text>
+            <Text style={[Typography.label, { color: colors.tint }]}>← Storibase</Text>
           </Pressable>
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, marginTop: Spacing.md }]}>
             Walkthrough · {walkthroughProgressLabel(state.step)}

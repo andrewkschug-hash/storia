@@ -10,7 +10,7 @@ type DeveloperAccessState = {
 
 /**
  * Loads the local account and reports whether developer tooling should be shown.
- * Prefer `__DEV__ || isDeveloperAccount(account)` via `canAccessDeveloperTools`.
+ * Developer tooling is available only in development builds.
  */
 export function useDeveloperAccess(): DeveloperAccessState {
   const [loading, setLoading] = useState(true);

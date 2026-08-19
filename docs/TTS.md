@@ -1,4 +1,4 @@
-# Storia TTS Architecture
+# Storibase TTS Architecture
 
 Italian audio is pregenerated, reviewed, and stored. The reader never calls a TTS vendor, never uses browser/phone speech synthesis, and never autoplays.
 
@@ -27,7 +27,7 @@ npm start
 
 On macOS/Linux use `cp .env.example .env`. Wait for:
 
-`Storia TTS gateway on http://127.0.0.1:8787`
+`Storibase TTS gateway on http://127.0.0.1:8787`
 
 ### 2. Add an ElevenLabs API key
 
@@ -42,18 +42,18 @@ Do **not** put the key in the Expo app.
 
 ### Google Cloud TTS (local ADC)
 
-After ElevenLabs quota is a problem, use the Storia TTS Google Cloud project:
+After ElevenLabs quota is a problem, use the Storibase TTS Google Cloud project:
 
 ```bash
 gcloud auth login
 gcloud auth application-default login
-gcloud config set project YOUR_STORIA_TTS_PROJECT_ID
+gcloud config set project YOUR_STORIBASE_TTS_PROJECT_ID
 ```
 
 Then in `services/tts-gateway/.env`:
 
 ```
-GOOGLE_CLOUD_PROJECT=YOUR_STORIA_TTS_PROJECT_ID
+GOOGLE_CLOUD_PROJECT=YOUR_STORIBASE_TTS_PROJECT_ID
 ```
 
 Restart the gateway. Voice Lab should show **Google: Cloud TTS ready**. Do not paste a service-account JSON into the repo. Skip generating the A2 library until a tiny Italian preview sounds right.
@@ -114,7 +114,7 @@ Never put keys in the Expo bundle. The client only receives approved audio URLs 
 
 Every Google `generateSpeech` call requires a preflight permit. Scripts default to `--dry-run`.
 
-Billable characters: Unicode code points (`Array.from(text).length`) of the exact `input.text` sent to Cloud TTS. Whitespace and punctuation count. Storia does not send SSML. Pricing and free-allowance figures live only in `services/tts-gateway/config/google-tts-pricing.json`. Local usage is `services/tts-gateway/data/google-tts-usage.json` (updated only after a successful generate). The hard limit is independent of Google’s quota.
+Billable characters: Unicode code points (`Array.from(text).length`) of the exact `input.text` sent to Cloud TTS. Whitespace and punctuation count. Storibase does not send SSML. Pricing and free-allowance figures live only in `services/tts-gateway/config/google-tts-pricing.json`. Local usage is `services/tts-gateway/data/google-tts-usage.json` (updated only after a successful generate). The hard limit is independent of Google’s quota.
 
 ```
 npx tsx services/tts-gateway/scripts/google-tts-preflight.ts --target=a1 --from=1 --to=20 --dry-run
@@ -189,7 +189,7 @@ POST /v1/tts/assets/:id/approve
 POST /v1/tts/assets/:id/reject
 ```
 
-Start with `npm start` in `services/tts-gateway`. Optional client env: `EXPO_PUBLIC_TTS_GATEWAY_URL` (defaults to `http://localhost:8787` in `__DEV__`).
+Start with `npm start` in `services/tts-gateway` (binds to `127.0.0.1` by default). The reader app talks to the gateway only in development builds (`http://127.0.0.1:8787`); production builds do not use a client-side gateway URL. Authoring scripts may still set `EXPO_PUBLIC_TTS_GATEWAY_URL` locally.
 
 ## 8. Statuses
 

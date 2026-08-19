@@ -131,7 +131,7 @@ export default function StoriesScreen() {
 
   const openLucaChapter = async (chapterId: string, listen = false) => {
     await service.openChapter(chapterId);
-    router.push(readerHref(LUCA_STORY_ID, chapterId, listen));
+    router.push(readerHref(LUCA_STORY_ID, chapterId, listen, listen));
   };
 
   const continueLuca = async (listen = false) => {

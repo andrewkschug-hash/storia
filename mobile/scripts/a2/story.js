@@ -1,3 +1,12 @@
+/**
+ * LEGACY A2 DRAFT — NOT PRODUCTION SOURCE OF TRUTH
+ *
+ * Authored JSON under content/stories/luca-a-roma/chapters/ is canonical.
+ * This module holds an alternate draft (past-tense ch21 opener, different ch31–40 titles).
+ * Used only as optional input to a2/build.js (--force). Do not treat as shipped content.
+ *
+ * See docs/PHASE-10.md
+ */
 const { N, D, PH, Q } = require('./story-helpers');
 
 function ch(n, title, titleIt, locationIds, characterIds, event, paragraphs, questions) {

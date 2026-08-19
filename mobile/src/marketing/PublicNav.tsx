@@ -42,11 +42,11 @@ export function PublicNav({ continueHref }: Props) {
       ]}>
       <Pressable
         accessibilityRole="link"
-        accessibilityLabel="Storia home"
+        accessibilityLabel="Storibase home"
         onPress={() => go('/')}
         style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}>
         <Text style={[Typography.brand, { color: colors.text, fontSize: 28, lineHeight: 34 }]}>
-          Storia
+          Storibase
         </Text>
       </Pressable>
 

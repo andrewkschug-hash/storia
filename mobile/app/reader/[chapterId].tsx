@@ -13,6 +13,11 @@ import {
 import { DictionarySheet } from '@/src/components/DictionarySheet';
 import { ProgressBar } from '@/src/components/ProgressBar';
 import { ReaderAudioBar } from '@/src/components/ReaderAudioBar';
+import { ReaderPassBanner } from '@/src/components/ReaderPassBanner';
+import {
+  ReaderListenComplete,
+  ReaderReadToListenTransition,
+} from '@/src/components/ReaderPassTransition';
 import { StoryReader } from '@/src/components/StoryReader';
 import { getAdaptiveService } from '@/src/adaptive';
 import { getAudioCatalog, getAudioService } from '@/src/audio';
@@ -21,6 +26,14 @@ import { findStoryIdForChapter, getChapter } from '@/src/content';
 import { comprehensionHref } from '@/src/content/storyHrefs';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
 import { getProgressService } from '@/src/progress';
+import type { ReaderPassGuidance, ReaderPassMode } from '@/src/progress/chapterPass';
+import { isListenPassComplete, shouldUseDetailedPassInstructions } from '@/src/progress/chapterPass';
+import type { ReadingProgressRecord } from '@/src/progress/types';
+import {
+  listenCompleteCopy,
+  passInstructionCopy,
+  readToListenTransitionCopy,
+} from '@/src/reader/readerPassCopy';
 import { hasSeenReaderTip, markReaderTipSeen } from '@/src/reader/storage';
 import { trackChapterWordsRead } from '@/src/telemetry/chapterExposure';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
@@ -37,11 +50,15 @@ function goToStories() {
   router.replace('/(tabs)/stories' as Href);
 }
 
+/** Guided chapter flow steps beyond read/listen mode. */
+type GuidedStep = 'content' | 'read-transition' | 'listen-complete';
+
 export default function ReaderScreen() {
-  const { chapterId, listen, story } = useLocalSearchParams<{
+  const { chapterId, listen, replay, story } = useLocalSearchParams<{
     chapterId: string;
     listen?: string;
     story?: string;
+    replay?: string;
   }>();
   const storyId =
     (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
@@ -67,7 +84,13 @@ export default function ReaderScreen() {
   const [audioCatalogVersion, setAudioCatalogVersion] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showReaderTip, setShowReaderTip] = useState(false);
-  const autoplayRequested = useRef(listen === '1');
+  const [progressRecord, setProgressRecord] = useState<ReadingProgressRecord | null>(null);
+  const [readerPass, setReaderPass] = useState<ReaderPassMode>('read');
+  const [passGuidance, setPassGuidance] = useState<ReaderPassGuidance>('guided');
+  const [guidedStep, setGuidedStep] = useState<GuidedStep>('content');
+  const listenRequested = listen === '1';
+  const replayMode = replay === '1';
+  const autoplayRequested = useRef(false);
   const replayCountBySentence = useRef<Record<string, number>>({});
   const chapterAudioRunActive = useRef(false);
   const manualChapterStop = useRef(false);
@@ -96,6 +119,16 @@ export default function ReaderScreen() {
       try {
         const service = getProgressService(storyId ?? authored.storyId);
         const progress = await service.openChapter(authored.id);
+        const resolved = service.resolveReaderPassForChapter(progress, authored.id, {
+          listenRequested,
+          replay: replayMode,
+        });
+        setProgressRecord(progress);
+        setReaderPass(resolved.pass);
+        setPassGuidance(resolved.guidance);
+        setGuidedStep('content');
+        autoplayRequested.current =
+          listenRequested && resolved.pass === 'listen' && resolved.guidance === 'free';
         const adapted = await getAdaptiveService().resolveChapter(authored, progress);
         audio.setChapterContext(authored.id);
         void syncCatalog();
@@ -136,7 +169,7 @@ export default function ReaderScreen() {
       audio.stop();
       audio.setOnChange(null);
     };
-  }, [authored, syncCatalog]);
+  }, [authored, syncCatalog, listenRequested, replayMode]);
 
   useFocusEffect(
     useCallback(() => {
@@ -162,25 +195,6 @@ export default function ReaderScreen() {
       setScrollToY(Math.max(0, y - 40));
     }
   }, [playingId]);
-
-  useEffect(() => {
-    const chapterModeNow = audio.isChapterMode();
-    const chapterJustCompleted =
-      prevChapterMode.current &&
-      !chapterModeNow &&
-      !isPlaying &&
-      chapterAudioRunActive.current &&
-      !manualChapterStop.current;
-    if (chapterJustCompleted) {
-      trackReadingEvent({
-        type: 'audio_completion',
-        storyId: storyId ?? chapter?.storyId,
-        chapterId: chapter?.id,
-      });
-      chapterAudioRunActive.current = false;
-    }
-    prevChapterMode.current = chapterModeNow;
-  }, [isPlaying, chapterPlayback, chapter?.id, chapter?.storyId]);
 
   const sentences = useMemo(() => {
     if (!chapter) return [] as Sentence[];
@@ -255,20 +269,135 @@ export default function ReaderScreen() {
     }
   };
 
-  const continueFromChapter = async () => {
+  const detailedPassInstructions = progressRecord
+    ? shouldUseDetailedPassInstructions(progressRecord)
+    : true;
+  const passCopy = passInstructionCopy(
+    readerPass,
+    chapter?.cefrTarget ?? 'A1',
+    detailedPassInstructions,
+  );
+  const transitionCopy = readToListenTransitionCopy(detailedPassInstructions);
+  const listenDoneCopy = listenCompleteCopy(detailedPassInstructions);
+  const allowSentenceAudio = passGuidance === 'free' || readerPass === 'listen';
+
+  const goToComprehension = async () => {
     if (!chapter) return;
+    await getVocabularyService().recordChapterExposure(chapter);
+    trackChapterWordsRead(chapter, storyId);
+    router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
+  };
+
+  const finishListenPass = async () => {
+    if (!chapter) return;
+    const service = getProgressService(storyId ?? chapter.storyId);
+    const passes = progressRecord?.passesByChapter?.[chapter.id] ?? {};
+    if (!isListenPassComplete(passes)) {
+      const nextProgress = await service.markListenPassComplete(chapter.id);
+      setProgressRecord(nextProgress);
+    }
+    manualChapterStop.current = true;
+    chapterAudioRunActive.current = false;
+    audio.stop();
+    syncAudioUi();
+    setGuidedStep('listen-complete');
+  };
+
+  const finishReadPass = async () => {
+    if (!chapter) return;
+    const service = getProgressService(storyId ?? chapter.storyId);
     manualChapterStop.current = true;
     chapterAudioRunActive.current = false;
     audio.stop();
     syncAudioUi();
     const last = sentences[sentences.length - 1];
     if (last) {
-      await getProgressService(storyId ?? chapter.storyId).savePosition(chapter.id, last.id);
+      await service.savePosition(chapter.id, last.id);
     }
-    await getVocabularyService().recordChapterExposure(chapter);
-    trackChapterWordsRead(chapter, storyId);
-    router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
+    const nextProgress = await service.markReadPassComplete(chapter.id);
+    setProgressRecord(nextProgress);
+    if (!hasAudio) {
+      await service.markListenPassComplete(chapter.id);
+      await goToComprehension();
+      return;
+    }
+    if (detailedPassInstructions) {
+      setGuidedStep('read-transition');
+      return;
+    }
+    setReaderPass('listen');
+    setScrollToY(0);
   };
+
+  const startListenPass = () => {
+    setReaderPass('listen');
+    setGuidedStep('content');
+    setScrollToY(0);
+  };
+
+  const continueFromChapter = async () => {
+    if (!chapter) return;
+
+    if (passGuidance === 'free') {
+      const service = getProgressService(storyId ?? chapter.storyId);
+      manualChapterStop.current = true;
+      chapterAudioRunActive.current = false;
+      audio.stop();
+      syncAudioUi();
+      const last = sentences[sentences.length - 1];
+      if (last) {
+        await service.savePosition(chapter.id, last.id);
+      }
+      await goToComprehension();
+      return;
+    }
+
+    if (guidedStep === 'listen-complete') {
+      await goToComprehension();
+      return;
+    }
+
+    if (readerPass === 'read') {
+      await finishReadPass();
+      return;
+    }
+
+    await finishListenPass();
+  };
+
+  useEffect(() => {
+    const chapterModeNow = audio.isChapterMode();
+    const chapterJustCompleted =
+      prevChapterMode.current &&
+      !chapterModeNow &&
+      !isPlaying &&
+      chapterAudioRunActive.current &&
+      !manualChapterStop.current;
+    if (chapterJustCompleted) {
+      trackReadingEvent({
+        type: 'audio_completion',
+        storyId: storyId ?? chapter?.storyId,
+        chapterId: chapter?.id,
+      });
+      if (
+        chapter?.id &&
+        readerPass === 'listen' &&
+        passGuidance === 'guided' &&
+        guidedStep === 'content' &&
+        storyId
+      ) {
+        void finishListenPass();
+      }
+      chapterAudioRunActive.current = false;
+    }
+    prevChapterMode.current = chapterModeNow;
+  }, [isPlaying, chapterPlayback, chapter?.id, chapter?.storyId, readerPass, passGuidance, guidedStep, storyId]);
+
+  const showAudioBar =
+    guidedStep === 'content' && (passGuidance === 'free' || readerPass === 'listen');
+  const showReadCompletionCta =
+    guidedStep === 'content' && (passGuidance === 'free' || readerPass === 'read');
+  const showPassBanner = guidedStep === 'content' && passGuidance === 'guided';
 
   if (!chapter) {
     return (
@@ -300,6 +429,50 @@ export default function ReaderScreen() {
     return (
       <View style={[styles.missing, { backgroundColor: colors.readerSurface }]}>
         <ActivityIndicator color={colors.tint} />
+      </View>
+    );
+  }
+
+  if (passGuidance === 'guided' && guidedStep === 'read-transition') {
+    return (
+      <View style={{ flex: 1, backgroundColor: colors.readerSurface }}>
+        <Stack.Screen
+          options={{
+            title: `Capitolo ${chapter.number}`,
+            headerBackVisible: false,
+            headerStyle: { backgroundColor: colors.readerSurface },
+            headerTintColor: colors.tint,
+          }}
+        />
+        <ReaderReadToListenTransition
+          phaseLabel={transitionCopy.phaseLabel}
+          headline={transitionCopy.headline}
+          body={transitionCopy.body}
+          actionLabel={transitionCopy.actionLabel}
+          onAction={startListenPass}
+        />
+      </View>
+    );
+  }
+
+  if (passGuidance === 'guided' && guidedStep === 'listen-complete') {
+    return (
+      <View style={{ flex: 1, backgroundColor: colors.readerSurface }}>
+        <Stack.Screen
+          options={{
+            title: `Capitolo ${chapter.number}`,
+            headerBackVisible: false,
+            headerStyle: { backgroundColor: colors.readerSurface },
+            headerTintColor: colors.tint,
+          }}
+        />
+        <ReaderListenComplete
+          phaseLabel={listenDoneCopy.phaseLabel}
+          headline={listenDoneCopy.headline}
+          body={listenDoneCopy.body}
+          continueLabel={listenDoneCopy.continueLabel}
+          onContinue={() => void continueFromChapter()}
+        />
       </View>
     );
   }
@@ -344,6 +517,10 @@ export default function ReaderScreen() {
 
       <ProgressBar progress={scrollProgress} height={3} />
 
+      {showPassBanner ? (
+        <ReaderPassBanner copy={passCopy} detailed={detailedPassInstructions} />
+      ) : null}
+
       <StoryReader
         chapter={chapter}
         highlightedSentenceId={highlightId}
@@ -354,6 +531,7 @@ export default function ReaderScreen() {
         playingSentenceId={playingId}
         hasAudio={(sentence) => !!audio.sentenceAudio(sentence)}
         onPlayAudio={async (sentence) => {
+          if (!allowSentenceAudio) return;
           if (playingId === sentence.id && audio.isPlaying()) {
             audio.pause();
             syncAudioUi();
@@ -397,12 +575,22 @@ export default function ReaderScreen() {
             sentenceId: sentence.id,
           });
         }}
-        showCompletionCta
+        showCompletionCta={showReadCompletionCta}
+        completionHint={
+          passGuidance === 'guided' && readerPass === 'read'
+            ? passCopy.body
+            : 'Finished reading?'
+        }
+        completionButtonLabel={
+          passGuidance === 'guided' && readerPass === 'read'
+            ? passCopy.continueLabel
+            : 'Continue'
+        }
         onContinueFromChapter={() => void continueFromChapter()}
         onScrollProgress={setScrollProgress}
       />
 
-      {showReaderTip ? (
+      {showReaderTip && readerPass === 'read' ? (
         <View
           style={[
             styles.tip,
@@ -425,12 +613,18 @@ export default function ReaderScreen() {
         </View>
       ) : null}
 
+      {showAudioBar ? (
       <ReaderAudioBar
         hasAudio={hasAudio}
         isPlaying={isPlaying}
         isChapterMode={isChapterMode}
         chapterProgress={chapterPlayback}
         speed={audioSpeed}
+        continueLabel={
+          passGuidance === 'guided' && readerPass === 'listen'
+            ? passCopy.continueLabel
+            : 'Continue'
+        }
         onPlayPause={() => {
           if (!isPlaying) {
             manualChapterStop.current = false;
@@ -474,6 +668,7 @@ export default function ReaderScreen() {
         }}
         onContinueFromChapter={() => void continueFromChapter()}
       />
+      ) : null}
 
       <DictionarySheet
         lookup={lookup}

@@ -1,10 +1,10 @@
-import { Stack } from 'expo-router';
+import { Redirect, Stack } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useDeveloperAccess } from '@/src/account';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { isDevBuild } from '@/src/security/buildMode';
 import {
   ASSIGNABLE_CHARACTERS,
   DEFAULT_SAMPLE,
@@ -39,7 +39,7 @@ const PROVIDERS: TTSProviderId[] = ['google', 'elevenlabs', 'azure'];
 export default function VoiceLabScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { loading: accessLoading, allowed } = useDeveloperAccess();
+  const devTools = isDevBuild();
   const base = gatewayBaseUrl();
   const client = useMemo(() => (base ? new TtsGatewayClient(base) : null), [base]);
 
@@ -74,14 +74,14 @@ export default function VoiceLabScreen() {
   }, [client]);
 
   useEffect(() => {
-    if (!allowed) return;
+    if (!devTools) return;
     void (async () => {
       const stored = await hydrateVoiceRoster(getVoiceRoster());
       applyVoiceRoster(stored);
       setRoster(stored);
       await refreshGateway();
     })();
-  }, [allowed, refreshGateway]);
+  }, [devTools, refreshGateway]);
 
   const setLocalRoster = async (next: VoiceRoster) => {
     applyVoiceRoster(next);
@@ -89,26 +89,8 @@ export default function VoiceLabScreen() {
     await persistVoiceRoster(next);
   };
 
-  if (accessLoading) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Voice Lab' }} />
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <ActivityIndicator color={colors.tint} />
-        </View>
-      </AtmosphereBackground>
-    );
-  }
-
-  if (!allowed) {
-    return (
-      <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Voice Lab' }} />
-        <Text style={[Typography.body, { color: colors.textSecondary, padding: Spacing.lg }]}>
-          Voice Lab is development-only.
-        </Text>
-      </AtmosphereBackground>
-    );
+  if (!devTools) {
+    return <Redirect href="/" />;
   }
 
   const connected = Boolean(gateway?.connected);

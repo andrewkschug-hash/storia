@@ -1,9 +1,21 @@
 /**
  * Build Phase 10 A2 chapters 25–40 without rewriting A1 or frozen A1+ (1–24).
- * Run: node scripts/a2/build.js
+ *
+ * WARNING: Overwrites authored chapter JSON for chapters 25–40 from scripts/a2/story.js.
+ * Canonical SOT is content/stories/luca-a-roma/chapters/chapter-{25..40}.json.
+ * story.js is a LEGACY DRAFT — not production SOT. Phase 10C rewrites prose by hand.
+ *
+ * Run: node scripts/a2/build.js --force
  */
 const fs = require('fs');
 const path = require('path');
+
+const { requireGeneratorForceFlag } = require('../phase10-bridge-guard');
+requireGeneratorForceFlag('a2/build.js', {
+  chapterRange: '25–40 (+ manifest EN/adaptive for A2)',
+  extra:
+    '  Note: story.js draft diverges from authored JSON. Prefer Blueprint v1 manual rewrite.',
+});
 
 const { inflections, lemmas: newLemmas } = require('./lexicon-patch');
 const { buildLemmaMap, lemmasFor, tokenizeItalian } = require('./lemma-map');

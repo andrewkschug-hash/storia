@@ -72,6 +72,24 @@
         },
         {
           "id": "s03",
+          "text": "Luca conosce bene il caffè, ma oggi tutto è diverso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "conoscere",
+            "bene",
+            "il",
+            "caffe",
+            "ma",
+            "oggi",
+            "tutto",
+            "essere",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s04",
           "text": "Luca è arrivato presto.",
           "speakerId": null,
           "kind": "narration",
@@ -80,22 +98,6 @@
             "essere",
             "arrivare",
             "presto"
-          ]
-        },
-        {
-          "id": "s04",
-          "text": "Luca guarda la sala e i tavoli vuoti.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "guardare",
-            "la",
-            "sala",
-            "e",
-            "i",
-            "tavolo",
-            "vuoto"
           ]
         },
         {
@@ -120,26 +122,65 @@
         },
         {
           "id": "s06",
-          "text": "Aspettava i clienti vicino alla porta.",
+          "text": "Ora guarda la sala e i tavoli vuoti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "aspettare",
+            "ora",
+            "guardare",
+            "la",
+            "sala",
+            "e",
             "i",
-            "cliente",
-            "vicino",
-            "alla",
-            "porta"
+            "tavolo",
+            "vuoto"
           ]
         },
         {
           "id": "s07",
-          "text": "La mattina sono entrati pochi clienti.",
+          "text": "Aspetta vicino alla porta, ma quasi nessuno entra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "aspettare",
+            "vicino",
+            "alla",
+            "porta",
+            "ma",
+            "quasi",
+            "nessuno",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "I tavoli sono pronti, ma la sala resta vuota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "tavolo",
+            "essere",
+            "pronto",
+            "ma",
             "la",
-            "mattina",
+            "sala",
+            "restare",
+            "vuoto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Sono entrati pochi clienti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "essere",
             "entrare",
             "poco",
@@ -147,7 +188,24 @@
           ]
         },
         {
-          "id": "s08",
+          "id": "s10",
+          "text": "Luca ha servito caffè e acqua al primo cliente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "servire",
+            "caffe",
+            "e",
+            "acqua",
+            "al",
+            "primo",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s11",
           "text": "Giulia ha guardato i tavoli e non ha sorriso.",
           "speakerId": null,
           "kind": "narration",
@@ -164,7 +222,7 @@
           ]
         },
         {
-          "id": "s09",
+          "id": "s12",
           "text": "Questa settimana è strana. Quasi nessuno entra.",
           "speakerId": "giulia",
           "kind": "dialogue",
@@ -179,7 +237,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s13",
           "text": "Dipende dal tempo, forse.",
           "speakerId": "luca",
           "kind": "dialogue",
@@ -200,38 +258,32 @@
           ]
         },
         {
-          "id": "s11",
-          "text": "Fuori non faceva freddo.",
+          "id": "s14",
+          "text": "Fuori il tempo è bello, ma il caffè ha un problema.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "fuori",
-            "non",
-            "fare",
-            "freddo"
-          ]
-        },
-        {
-          "id": "s12",
-          "text": "Il problema sembrava un altro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
             "il",
-            "problema",
-            "sembrare",
+            "tempo",
+            "essere",
+            "bello",
+            "ma",
+            "il",
+            "caffe",
+            "avere",
             "un",
-            "altro"
+            "problema"
           ]
         }
       ]
     },
     {
-      "id": "p2",
-      "order": 2,
+      "id": "p3",
+      "order": 3,
       "sentences": [
         {
-          "id": "s13",
+          "id": "s15",
           "text": "Il padrone è arrivato tardi.",
           "speakerId": null,
           "kind": "narration",
@@ -244,7 +296,7 @@
           ]
         },
         {
-          "id": "s15",
+          "id": "s16",
           "text": "Non ha detto niente a Giulia e a Luca.",
           "speakerId": null,
           "kind": "narration",
@@ -276,7 +328,7 @@
             {
               "surface": "Vediamo",
               "literalEn": "we see",
-              "naturalEn": "we’ll see",
+              "naturalEn": "we'll see",
               "tokenStart": 1,
               "tokenEnd": 1
             }
@@ -314,19 +366,24 @@
         },
         {
           "id": "s20",
-          "text": "Ogni cliente era importante.",
+          "text": "Ogni cliente è importante per il caffè del quartiere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "ogni",
             "cliente",
             "essere",
-            "importante"
+            "importante",
+            "per",
+            "il",
+            "caffe",
+            "del",
+            "quartiere"
           ]
         },
         {
-          "id": "s22",
-          "text": "Nel pomeriggio la sala restava ancora quasi vuota.",
+          "id": "s21",
+          "text": "Nel pomeriggio la sala è ancora quasi vuota.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -334,21 +391,38 @@
             "pomeriggio",
             "la",
             "sala",
-            "restare",
+            "essere",
             "ancora",
             "quasi",
             "vuoto"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Il padrone guarda la sala e non parla molto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padrone",
+            "guardare",
+            "la",
+            "sala",
+            "e",
+            "non",
+            "parlare",
+            "molto"
           ]
         }
       ]
     },
     {
-      "id": "p3",
-      "order": 3,
+      "id": "p4",
+      "order": 4,
       "sentences": [
         {
           "id": "s23",
-          "text": "Il padrone è preoccupato. Io lo vedo.",
+          "text": "Il padrone è preoccupato. Lo vedo.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
@@ -356,7 +430,6 @@
             "padrone",
             "essere",
             "preoccupato",
-            "io",
             "lo",
             "vedere"
           ]
@@ -384,7 +457,7 @@
         },
         {
           "id": "s25",
-          "text": "Luca ha pensato al tempo e al lavoro.",
+          "text": "Luca ha pensato al lavoro e all’affitto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -392,33 +465,19 @@
             "avere",
             "pensare",
             "al",
-            "tempo",
+            "lavorare",
             "e",
-            "al",
-            "lavorare"
+            "affitto"
           ]
         },
         {
           "id": "s26",
-          "text": "Ha pensato anche ad un altro problema.",
+          "text": "Non capisce perché ci sono pochi clienti adesso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "avere",
-            "pensare",
-            "anche",
-            "a",
-            "un",
-            "altro",
-            "problema"
-          ]
-        },
-        {
-          "id": "s27",
-          "text": "Perché ci sono pochi clienti adesso?",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "non",
+            "capire",
             "perche",
             "ci",
             "essere",
@@ -428,21 +487,7 @@
           ]
         },
         {
-          "id": "s28",
-          "text": "Non lo sapeva e voleva capire.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "non",
-            "lo",
-            "sapere",
-            "e",
-            "volere",
-            "capire"
-          ]
-        },
-        {
-          "id": "s29",
+          "id": "s27",
           "text": "Alla sera il padrone ha chiamato Luca e Giulia.",
           "speakerId": null,
           "kind": "narration",
@@ -459,7 +504,7 @@
           ]
         },
         {
-          "id": "s30",
+          "id": "s28",
           "text": "Domani mattina parliamo. È importante.",
           "speakerId": "padrone",
           "kind": "dialogue",
@@ -474,12 +519,12 @@
       ]
     },
     {
-      "id": "p4",
-      "order": 4,
+      "id": "p5",
+      "order": 5,
       "sentences": [
         {
-          "id": "s32",
-          "text": "La sera Luca è tornato a casa e ha contato i soldi per l’affitto.",
+          "id": "s29",
+          "text": "La sera Luca è tornato a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -489,8 +534,15 @@
             "essere",
             "tornare",
             "a",
-            "casa",
-            "e",
+            "casa"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Ha contato i soldi per l’affitto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "avere",
             "contare",
             "i",
@@ -500,33 +552,49 @@
           ]
         },
         {
-          "id": "s33",
-          "text": "Aveva soldi per l’affitto di questo mese, ma il mese dopo era difficile.",
+          "id": "s31",
+          "text": "Ha i soldi per questo mese, ma il mese prossimo è difficile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "avere",
+            "i",
             "soldi",
             "per",
-            "affitto",
-            "di",
             "questo",
             "mese",
             "ma",
             "il",
             "mese",
-            "dopo",
+            "prossimo",
             "essere",
             "difficile"
           ]
         },
         {
-          "id": "s34",
-          "text": "Luca è vicino alla finestra e pensa al caffè.",
+          "id": "s32",
+          "text": "Luca pensa all’affitto e al lavoro al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
+            "pensare",
+            "affitto",
+            "e",
+            "al",
+            "lavorare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "A casa è vicino alla finestra e pensa al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "casa",
             "essere",
             "vicino",
             "alla",
@@ -535,6 +603,23 @@
             "pensare",
             "al",
             "caffe"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Il quartiere è tranquillo, ma Luca non è tranquillo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "quartiere",
+            "essere",
+            "tranquillo",
+            "ma",
+            "luca",
+            "non",
+            "essere",
+            "tranquillo"
           ]
         },
         {
@@ -554,23 +639,23 @@
         },
         {
           "id": "s36",
-          "text": "Ha detto solo che il lavoro era strano.",
+          "text": "Ha scritto: «Il lavoro è strano questa settimana.»",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "avere",
-            "dire",
-            "solo",
-            "che",
+            "scrivere",
             "il",
             "lavorare",
             "essere",
-            "strano"
+            "strano",
+            "questo",
+            "settimana"
           ]
         },
         {
           "id": "s37",
-          "text": "Sofia ha risposto tardi: “Va bene. Parliamo presto.”",
+          "text": "Sofia ha risposto tardi: «Va bene. Parliamo presto.»",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -585,14 +670,15 @@
           ]
         },
         {
-          "id": "s39",
-          "text": "Domani al caffè voleva capire di più.",
+          "id": "s38",
+          "text": "Domani al caffè Luca vuole capire di più.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "domani",
             "al",
             "caffe",
+            "luca",
             "volere",
             "capire",
             "di",
@@ -608,15 +694,15 @@
       "chapterId": "luca-a-roma-25",
       "type": "event",
       "question": "What is different at the café?",
+      "questionIt": "Cosa è diverso al caffè?",
       "choices": [
         "There are fewer customers",
         "The café is full",
         "Luca loses his key"
       ],
       "correctChoice": 0,
-      "explanation": "Many tables stay empty.",
-      "difficulty": 2,
-      "questionIt": "Cosa è diverso al caffè?"
+      "explanation": "Many tables stay empty and fewer customers come in.",
+      "difficulty": 2
     },
     {
       "id": "ch25_q02",
@@ -629,21 +715,21 @@
         "Marco"
       ],
       "correctChoice": 0,
-      "explanation": "The padrone looks at empty tables and says little.",
+      "explanation": "Giulia says the padrone is worried; he also says little when he arrives.",
       "difficulty": 2
     },
     {
       "id": "ch25_q03",
       "chapterId": "luca-a-roma-25",
-      "type": "inference",
-      "question": "Why does Luca count his money?",
+      "type": "direct",
+      "question": "What does Luca do when he gets home?",
       "choices": [
-        "Because rent still matters if work goes badly",
-        "Because he wants a new train ticket",
-        "Because Sofia asked for money"
+        "He counts his money for the rent",
+        "He packs to leave Rome",
+        "He goes straight to Sofia’s house"
       ],
       "correctChoice": 0,
-      "explanation": "He has enough for this month, not for many months.",
+      "explanation": "Luca torna a casa e conta i soldi per l’affitto.",
       "difficulty": 2
     }
   ]

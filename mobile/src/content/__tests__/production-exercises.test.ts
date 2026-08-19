@@ -184,12 +184,16 @@ describe('Luca production exercises', () => {
     expect(exercise?.match).toBe('flexible');
   });
 
-  it('introduces passato prossimo in A1+', () => {
-    const pp = dataset.exercises.filter(
+  it('introduces passato prossimo production in A2 (not frozen A1+ bridge)', () => {
+    const a1PlusPp = dataset.exercises.filter(
       (e) => e.level === 'A1+' && e.focus?.includes('passato_prossimo'),
     );
-    expect(pp.length).toBeGreaterThanOrEqual(1);
-    expect(pp.some((e) => /sono andat[oa]/i.test(e.expectedIt))).toBe(true);
+    expect(a1PlusPp).toHaveLength(0);
+
+    const a2Pp = dataset.exercises.filter(
+      (e) => e.level === 'A2' && e.focus?.includes('passato_prossimo'),
+    );
+    expect(a2Pp.length).toBeGreaterThanOrEqual(1);
   });
 
   it('lists more acceptable answers after the redesign', () => {
@@ -210,5 +214,18 @@ describe('Luca production exercises', () => {
     );
     expect(result.ok).toBe(false);
     expect(result.issues.some((i) => i.message.includes('does not exist'))).toBe(true);
+  });
+
+  it('ch27 production does not target imperfetto forms', () => {
+    const IMP_RE =
+      /\b(era|erano|aveva|faceva|restava|ascoltava|pensava|stava|voleva|sorrideva|parlava|c'era|c'erano)\b/i;
+    const ch27 = dataset.exercises.filter((e) => e.chapterId === 'luca-a-roma-27');
+    expect(ch27.length).toBeGreaterThanOrEqual(4);
+    for (const ex of ch27) {
+      expect(ex.expectedIt, ex.exerciseId).not.toMatch(IMP_RE);
+      for (const alt of ex.acceptableAnswers ?? []) {
+        expect(alt, ex.exerciseId).not.toMatch(IMP_RE);
+      }
+    }
   });
 });

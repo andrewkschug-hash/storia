@@ -132,7 +132,7 @@ export default function HomeScreen() {
                 type.brand,
                 { color: colors.text, fontSize: brandSize, lineHeight: brandSize + 6 },
               ]}>
-              Storia
+              Storibase
             </Text>
             {account ? (
               <Pressable
@@ -174,7 +174,7 @@ export default function HomeScreen() {
               onContinue={() => {
                 setContinueError(null);
                 try {
-                  navigateToContinueTarget(target);
+                  await navigateToContinueTarget(target);
                 } catch (e) {
                   setContinueError(e instanceof Error ? e.message : String(e));
                 }

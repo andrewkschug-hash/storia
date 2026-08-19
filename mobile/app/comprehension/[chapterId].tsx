@@ -205,7 +205,7 @@ export default function ComprehensionScreen() {
   const resolvedStoryId = storyId ?? chapter.storyId;
 
   const openListenAgain = () => {
-    router.push(readerHref(resolvedStoryId, chapter.id, true));
+    router.push(readerHref(resolvedStoryId, chapter.id, true, true));
   };
 
   const shuffleCurrent = (questionIndex: number) => {

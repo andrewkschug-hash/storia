@@ -9,7 +9,7 @@ export function ReaderPreview() {
 
   return (
     <View
-      accessibilityLabel="Preview of reading Italian in Storia"
+      accessibilityLabel="Preview of reading Italian in Storibase"
       style={[
         styles.card,
         { backgroundColor: colors.readerSurface, borderColor: colors.border },

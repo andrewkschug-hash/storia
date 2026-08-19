@@ -1,4 +1,4 @@
--- Optional: run in the Storia Supabase SQL editor after storia_profiles exists.
+-- Optional: run in the Storibase Supabase SQL editor after storia_profiles exists.
 -- Stores the chosen default portrait id (libro, sole, limone, mare, caffe, olivo, roma, arancia).
 
 alter table public.storia_profiles

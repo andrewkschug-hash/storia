@@ -9,13 +9,17 @@ import {
 import { getSupabase, isSupabaseConfigured } from '@/src/lib/supabase';
 import { resetOnboarding } from '@/src/onboarding/storage';
 import { setUnlockAllChapters } from '@/src/progress/unlockAll';
+import { isDevBuild } from '@/src/security/buildMode';
+import {
+  AUTH_CONFIG_MESSAGE,
+  allowsLocalAuthFallback,
+  requireSupabaseForAuth,
+} from '@/src/security/productionAuth';
 import { clearLocalLearnerState, hydrateLearnerIfNeeded } from '@/src/sync/learnerSession';
 
 const KEY = 'storia.localAccount';
 
-export const DEVELOPER_EMAIL = 'andrewkschug@gmail.com';
-
-export type AccountRole = 'developer' | 'learner';
+export type AccountRole = 'learner';
 
 export type LocalAccount = {
   email: string;
@@ -42,23 +46,9 @@ export type PasswordAuthInput = {
   displayName?: string;
 };
 
-export function isDeveloperEmail(email: string): boolean {
-  return email.trim().toLowerCase() === DEVELOPER_EMAIL;
-}
-
-export function roleForEmail(email: string): AccountRole {
-  return isDeveloperEmail(email) ? 'developer' : 'learner';
-}
-
-export function isDeveloperAccount(account: LocalAccount | null | undefined): boolean {
-  if (!account) return false;
-  return account.role === 'developer' || isDeveloperEmail(account.email);
-}
-
-/** True in Metro/dev builds, or when the local account is the developer email. */
-export function canAccessDeveloperTools(account: LocalAccount | null | undefined): boolean {
-  if (typeof __DEV__ !== 'undefined' && __DEV__) return true;
-  return isDeveloperAccount(account);
+/** Developer tooling is available only in development builds — never via email in production. */
+export function canAccessDeveloperTools(_account: LocalAccount | null | undefined): boolean {
+  return isDevBuild();
 }
 
 function normalizeAccount(raw: unknown): LocalAccount | null {
@@ -74,7 +64,7 @@ function normalizeAccount(raw: unknown): LocalAccount | null {
     email,
     displayName,
     createdAt,
-    role: roleForEmail(email),
+    role: 'learner',
     avatarId: isAvatarId(row.avatarId) ? row.avatarId : defaultAvatarIdForEmail(email),
   };
 }
@@ -100,7 +90,7 @@ function accountFromUser(user: User, fallback?: { displayName?: string; avatarId
     email,
     displayName: displayNameFromUser(user, fallback?.displayName),
     createdAt: user.created_at ?? new Date().toISOString(),
-    role: roleForEmail(email),
+    role: 'learner',
     avatarId: avatarIdFromUser(user, fallback?.avatarId),
   };
 }
@@ -120,11 +110,12 @@ async function persistRemoteProfile(userId: string, displayName: string, avatarI
       avatar_id: avatarId,
     });
   } catch {
-    /* profile table is optional until the Storia migration is applied */
+    /* profile table is optional until the Storibase migration is applied */
   }
 }
 
 async function readLocalAccount(): Promise<LocalAccount | null> {
+  if (!allowsLocalAuthFallback()) return null;
   try {
     const raw = await AsyncStorage.getItem(KEY);
     if (!raw) return null;
@@ -135,11 +126,12 @@ async function readLocalAccount(): Promise<LocalAccount | null> {
 }
 
 async function writeLocalAccount(account: LocalAccount): Promise<void> {
+  if (!allowsLocalAuthFallback()) return;
   await AsyncStorage.setItem(KEY, JSON.stringify(account));
 }
 
-function applyDeveloperUnlock(account: LocalAccount | null): void {
-  setUnlockAllChapters(isDeveloperAccount(account));
+function applyDeveloperUnlock(): void {
+  setUnlockAllChapters(isDevBuild());
 }
 
 export async function getAccount(): Promise<LocalAccount | null> {
@@ -150,31 +142,44 @@ export async function getAccount(): Promise<LocalAccount | null> {
       const user = data.session?.user;
       if (!user?.email) {
         await AsyncStorage.removeItem(KEY);
-        applyDeveloperUnlock(null);
+        applyDeveloperUnlock();
         return null;
       }
-      const local = await readLocalAccount();
+      const local = allowsLocalAuthFallback() ? await readLocalAccount() : null;
       const account = accountFromUser(user, {
         displayName: local?.displayName,
         avatarId: local?.avatarId,
       });
-      await writeLocalAccount(account);
+      if (allowsLocalAuthFallback()) {
+        await writeLocalAccount(account);
+      }
       await hydrateLearnerIfNeeded(user.id);
-      applyDeveloperUnlock(account);
+      applyDeveloperUnlock();
       return account;
     } catch {
-      const fallback = await readLocalAccount();
-      applyDeveloperUnlock(fallback);
-      return fallback;
+      if (isDevBuild()) {
+        const fallback = await readLocalAccount();
+        applyDeveloperUnlock();
+        return fallback;
+      }
+      applyDeveloperUnlock();
+      return null;
     }
   }
+  if (!allowsLocalAuthFallback()) {
+    applyDeveloperUnlock();
+    return null;
+  }
   const local = await readLocalAccount();
-  applyDeveloperUnlock(local);
+  applyDeveloperUnlock();
   return local;
 }
 
-/** Local-only cache (tests + offline fallback). Prefer signUpWithPassword / signInWithPassword. */
+/** Local-only cache (tests + development fallback). Prefer signUpWithPassword / signInWithPassword. */
 export async function saveAccount(input: SaveAccountInput): Promise<LocalAccount> {
+  if (!allowsLocalAuthFallback()) {
+    throw new Error(AUTH_CONFIG_MESSAGE);
+  }
   const email = input.email.trim();
   const displayName = input.displayName.trim();
   if (!email || !displayName) {
@@ -186,14 +191,14 @@ export async function saveAccount(input: SaveAccountInput): Promise<LocalAccount
     email,
     displayName,
     createdAt: existing?.createdAt ?? new Date().toISOString(),
-    role: roleForEmail(email),
+    role: 'learner',
     avatarId:
       input.avatarId && isAvatarId(input.avatarId)
         ? input.avatarId
         : existing?.avatarId ?? defaultAvatarIdForEmail(email),
   };
   await writeLocalAccount(account);
-  applyDeveloperUnlock(account);
+  applyDeveloperUnlock();
   return account;
 }
 
@@ -206,7 +211,9 @@ export async function updateAccountProfile(patch: UpdateProfileInput): Promise<L
   if (!isAvatarId(avatarId)) throw new Error('Choose a profile picture.');
 
   const account: LocalAccount = { ...current, displayName, avatarId };
-  await writeLocalAccount(account);
+  if (allowsLocalAuthFallback()) {
+    await writeLocalAccount(account);
+  }
 
   if (isSupabaseConfigured()) {
     try {
@@ -221,6 +228,7 @@ export async function updateAccountProfile(patch: UpdateProfileInput): Promise<L
 }
 
 export async function signUpWithPassword(input: PasswordAuthInput): Promise<LocalAccount> {
+  requireSupabaseForAuth();
   const email = input.email.trim();
   const password = input.password;
   const displayName = input.displayName?.trim() ?? '';
@@ -246,14 +254,17 @@ export async function signUpWithPassword(input: PasswordAuthInput): Promise<Loca
   }
 
   const account = accountFromUser(data.session.user, { displayName, avatarId });
-  await writeLocalAccount(account);
+  if (allowsLocalAuthFallback()) {
+    await writeLocalAccount(account);
+  }
   await persistRemoteProfile(data.session.user.id, displayName, avatarId);
   await hydrateLearnerIfNeeded(data.session.user.id);
-  applyDeveloperUnlock(account);
+  applyDeveloperUnlock();
   return account;
 }
 
 export async function signInWithPassword(input: PasswordAuthInput): Promise<LocalAccount> {
+  requireSupabaseForAuth();
   const email = input.email.trim();
   const password = input.password;
   if (!email || !password) {
@@ -262,21 +273,23 @@ export async function signInWithPassword(input: PasswordAuthInput): Promise<Loca
   if (!isSupabaseConfigured()) {
     const existing = await readLocalAccount();
     if (existing && existing.email.toLowerCase() === email.toLowerCase()) return existing;
-    throw new Error('Supabase is not configured. Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY.');
+    throw new Error(AUTH_CONFIG_MESSAGE);
   }
 
   const { data, error } = await getSupabase().auth.signInWithPassword({ email, password });
   if (error) throw new Error(error.message);
   const user = data.session?.user ?? data.user;
   if (!user?.email) throw new Error('Sign in failed.');
-  const local = await readLocalAccount();
+  const local = allowsLocalAuthFallback() ? await readLocalAccount() : null;
   const account = accountFromUser(user, {
     displayName: local?.displayName,
     avatarId: local?.avatarId,
   });
-  await writeLocalAccount(account);
+  if (allowsLocalAuthFallback()) {
+    await writeLocalAccount(account);
+  }
   await hydrateLearnerIfNeeded(user.id);
-  applyDeveloperUnlock(account);
+  applyDeveloperUnlock();
   return account;
 }
 
@@ -295,7 +308,7 @@ export async function clearAccount(): Promise<void> {
   await AsyncStorage.removeItem(KEY);
   await resetOnboarding();
   await clearLocalLearnerState();
-  applyDeveloperUnlock(null);
+  applyDeveloperUnlock();
 }
 
 /** Async convenience for screens that only need the boolean. */

@@ -1,9 +1,19 @@
 /**
  * Build A1+ bridge chapters 21–24.
- * Run from repo root: node mobile/scripts/build-a1plus-bridge.js
+ *
+ * WARNING: Overwrites authored chapter JSON for the frozen A1+ bridge (21–24).
+ * Canonical SOT is content/stories/luca-a-roma/chapters/chapter-{21..24}.json.
+ * Phase 10: do not run unless you intentionally regenerate the bridge.
+ *
+ * Run from repo root: node mobile/scripts/build-a1plus-bridge.js --force
  */
 const fs = require('fs');
 const path = require('path');
+
+const { requireGeneratorForceFlag } = require('./phase10-bridge-guard');
+requireGeneratorForceFlag('build-a1plus-bridge.js', {
+  chapterRange: '21–24 (+ manifest EN/adaptive for bridge)',
+});
 
 const {
   chapter21,

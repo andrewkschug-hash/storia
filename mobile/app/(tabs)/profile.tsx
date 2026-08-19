@@ -99,10 +99,10 @@ export default function ProfileScreen() {
     };
 
     if (Platform.OS === 'web') {
-      if (typeof window !== 'undefined' && window.confirm('Sign out of Storia?')) void run();
+      if (typeof window !== 'undefined' && window.confirm('Sign out of Storibase?')) void run();
       return;
     }
-    Alert.alert('Sign out', 'Sign out of Storia?', [
+    Alert.alert('Sign out', 'Sign out of Storibase?', [
       { text: 'Cancel', style: 'cancel' },
       { text: 'Sign out', style: 'destructive', onPress: () => void run() },
     ]);
@@ -164,7 +164,7 @@ export default function ProfileScreen() {
 
         <Text style={[type.label, { color: colors.text, marginTop: Spacing.xl }]}>Picture</Text>
         <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
-          Pick a Storia portrait — no photo upload yet.
+          Pick a Storibase portrait — no photo upload yet.
         </Text>
         <View style={styles.grid}>
           {AVATAR_PRESETS.map((preset) => {

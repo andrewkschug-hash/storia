@@ -97,7 +97,8 @@ describe('Phase 9 scaffolding fade', () => {
       if (ch.number <= 5) expect(withIt).toBe(0);
       else if (ch.number <= 10) expect(withIt).toBe(1);
       else if (ch.number <= 15) expect(withIt).toBe(2);
-      else expect(withIt).toBe(3);
+      else if (ch.number <= 19) expect(withIt).toBe(3);
+      else expect(withIt).toBe(4); // ch20: 3 chapter Qs + 1 story_memory Q, all with questionIt
     }
   });
 
@@ -108,7 +109,8 @@ describe('Phase 9 scaffolding fade', () => {
     expect(chapters).toHaveLength(16);
     for (const ch of chapters) {
       const withIt = ch.questions.filter((q) => !!q.questionIt).length;
-      if (ch.number <= 28) expect(withIt).toBe(1);
+      if (ch.number <= 27) expect(withIt).toBe(1);
+      else if (ch.number <= 31) expect(withIt).toBe(2);
       else if (ch.number <= 34) expect(withIt).toBe(2);
       else expect(withIt).toBe(3);
     }

@@ -54,12 +54,6 @@ export function upsertEnvValues(updates: Record<string, string>): void {
   writeFileSync(file, `${next.join('\n').replace(/\n+$/, '')}\n`, 'utf8');
 }
 
-/** Non-secret hint so Voice Lab can confirm which key the gateway loaded. */
-export function apiKeyHint(key: string | undefined): string | null {
-  if (!key || key.length < 12) return null;
-  return `${key.slice(0, 7)}…${key.slice(-4)}`;
-}
-
 /** Windows: %APPDATA%\gcloud\application_default_credentials.json */
 export function googleAdcPath(env: NodeJS.Dict<string | undefined> = process.env): string {
   if (env.GOOGLE_APPLICATION_CREDENTIALS) return env.GOOGLE_APPLICATION_CREDENTIALS;
