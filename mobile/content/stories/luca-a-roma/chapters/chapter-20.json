@@ -19,7 +19,7 @@
   "events": [
     {
       "id": "ev-20-return",
-      "summary": "Friends return to Rome; Luca has a home, a job, and friends.",
+      "summary": "After seeing Marco’s mother, the friends return to Rome; Luca has a home, a job, and friends.",
       "characterIds": [
         "luca",
         "sofia",
@@ -31,7 +31,7 @@
         "stazione"
       ],
       "rememberedFacts": [
-        "The group returns to Rome",
+        "The group returns to Rome after seeing Marco’s mother",
         "They are friends and happy at home"
       ]
     }
@@ -264,7 +264,7 @@
         "Nowhere—they stay on the train"
       ],
       "correctChoice": 0,
-      "explanation": "They return to Rome (tornare a casa).",
+      "explanation": "They return to Rome after seeing Marco’s mother.",
       "difficulty": 1
     },
     {

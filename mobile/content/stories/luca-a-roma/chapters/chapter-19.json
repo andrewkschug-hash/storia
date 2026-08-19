@@ -17,7 +17,7 @@
   "events": [
     {
       "id": "ev-19-solve",
-      "summary": "Together they find the suitcase and ticket and solve the problem.",
+      "summary": "They find the suitcase, then the ticket inside it. They go to Marco’s mother; she is there and she is well.",
       "characterIds": [
         "luca",
         "sofia",
@@ -28,8 +28,9 @@
         "fuori-roma"
       ],
       "rememberedFacts": [
-        "The group solves the problem together",
-        "They find the ticket and the suitcase"
+        "Giulia finds the suitcase; the ticket is inside",
+        "They go to Marco’s mother",
+        "Marco’s mother is there and she is well"
       ]
     }
   ],
@@ -54,14 +55,22 @@
         },
         {
           "id": "s02",
-          "text": "Luca cerca nella valigia.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "Dov'è la valigia?",
+          "speakerId": "luca",
+          "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "cercare",
-            "nella",
+            "dove_e",
+            "la",
             "valigia"
+          ],
+          "phrases": [
+            {
+              "surface": "Dov'è",
+              "literalEn": "Where is",
+              "naturalEn": "Where is",
+              "tokenStart": 0,
+              "tokenEnd": 0
+            }
           ]
         },
         {
@@ -97,13 +106,12 @@
       "sentences": [
         {
           "id": "s05",
-          "text": "Il biglietto è nella valigia.",
-          "speakerId": "sofia",
-          "kind": "dialogue",
+          "text": "Luca cerca nella valigia.",
+          "speakerId": null,
+          "kind": "narration",
           "lemmas": [
-            "il",
-            "biglietto",
-            "essere",
+            "luca",
+            "cercare",
             "nella",
             "valigia"
           ]
@@ -133,14 +141,15 @@
         },
         {
           "id": "s08",
-          "text": "Sì, insieme è facile.",
+          "text": "Andiamo a casa di mamma.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "si_yes",
-            "insieme",
-            "essere",
-            "facile"
+            "andare",
+            "a",
+            "casa",
+            "di",
+            "mamma"
           ]
         }
       ]
@@ -151,36 +160,38 @@
       "sentences": [
         {
           "id": "s09",
-          "text": "Il treno parte.",
+          "text": "La mamma di Marco è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "treno",
-            "partire"
+            "la",
+            "mamma",
+            "di",
+            "marco",
+            "essere",
+            "qui"
           ]
         },
         {
           "id": "s10",
-          "text": "Il gruppo è felice.",
+          "text": "La mamma sta bene.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "gruppo",
-            "essere",
-            "felice"
+            "la",
+            "mamma",
+            "stare",
+            "bene"
           ]
         },
         {
           "id": "s11",
-          "text": "Marco dice grazie.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "Ciao, mamma.",
+          "speakerId": "marco",
+          "kind": "dialogue",
           "lemmas": [
-            "marco",
-            "dire",
-            "grazie"
+            "ciao",
+            "mamma"
           ]
         },
         {
@@ -195,18 +206,6 @@
         },
         {
           "id": "s13",
-          "text": "Ci vediamo a Roma.",
-          "speakerId": "giulia",
-          "kind": "dialogue",
-          "lemmas": [
-            "ci",
-            "vedere",
-            "a",
-            "roma"
-          ]
-        },
-        {
-          "id": "s14",
           "text": "Il problema è risolto.",
           "speakerId": null,
           "kind": "narration",
@@ -215,22 +214,6 @@
             "problema",
             "essere",
             "risolvere"
-          ]
-        },
-        {
-          "id": "s15",
-          "text": "Ieri Luca è andato in città con Sofia.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ieri",
-            "luca",
-            "essere",
-            "andare",
-            "in",
-            "citta",
-            "con",
-            "sofia"
           ]
         }
       ]
@@ -271,15 +254,15 @@
       "id": "ch19_q03",
       "chapterId": "luca-a-roma-19",
       "type": "sequence",
-      "question": "What comes after they find what was missing?",
+      "question": "What comes after they find the suitcase and ticket?",
       "questionIt": "Cosa succede dopo?",
       "choices": [
-        "The problem is resolved",
+        "They see Marco’s mother, and she is well",
         "They get stuck forever",
         "They start a new job on the train"
       ],
       "correctChoice": 0,
-      "explanation": "Finding the suitcase and ticket means the crisis is over.",
+      "explanation": "They go to her house. She is there, and she is well.",
       "difficulty": 2
     }
   ]

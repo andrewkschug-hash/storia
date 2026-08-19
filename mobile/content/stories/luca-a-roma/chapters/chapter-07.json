@@ -27,7 +27,8 @@
       ],
       "rememberedFacts": [
         "Luca needs a job",
-        "Luca needs money for rent"
+        "Luca needs money for rent",
+        "Sofia tells Luca to ask at the café"
       ]
     }
   ],
@@ -178,14 +179,13 @@
         },
         {
           "id": "s11",
-          "text": "Il lavoro è importante.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "Chiedi al caffè.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
           "lemmas": [
-            "il",
-            "lavoro",
-            "essere",
-            "importante"
+            "chiedere",
+            "al",
+            "caffe"
           ]
         },
         {
@@ -244,21 +244,21 @@
         "Giulia"
       ],
       "correctChoice": 0,
-      "explanation": "Sofia says she will help him with the job search.",
+      "explanation": "Sofia says she can help, and tells him: Chiedi al caffè.",
       "difficulty": 1
     },
     {
       "id": "ch07_q03",
       "chapterId": "luca-a-roma-07",
       "type": "event",
-      "question": "What is Luca’s main goal in this chapter?",
+      "question": "What does Sofia tell Luca to do?",
       "choices": [
-        "Finding work for the rent",
-        "Moving to another city",
-        "Opening his own bar"
+        "Ask at the café",
+        "Leave Rome",
+        "Buy a train ticket"
       ],
       "correctChoice": 0,
-      "explanation": "The chapter centers on needing a job to cover rent.",
+      "explanation": "Sofia says “Chiedi al caffè” — ask at the café. Chapter 8 follows that advice.",
       "difficulty": 1
     }
   ]

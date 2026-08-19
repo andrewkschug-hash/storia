@@ -1,3 +1,10 @@
+/**
+ * Writes Luca a Roma chapters 1–20 from the JS sources.
+ *
+ * Do not run this to "sync" live JSON after plot edits to chapters 7–8:
+ * those JSON files were edited independently (job/money lines, padrone
+ * dialogue). To refresh 16–20 only, use write-chapters-16-20.js.
+ */
 const fs = require('fs');
 const path = require('path');
 

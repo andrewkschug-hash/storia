@@ -1076,17 +1076,14 @@
       "exerciseId": "luca-a-roma-ch18-prod-01",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-18",
-      "sourceSentenceId": "s02",
-      "promptEn": "The train isn't leaving.",
-      "expectedIt": "Il treno non parte.",
-      "acceptableAnswers": [
-        "Il treno non va."
-      ],
+      "sourceSentenceId": "s01",
+      "promptEn": "The train arrives.",
+      "expectedIt": "Il treno arriva.",
       "match": "flexible",
       "level": "A1",
       "focus": [
-        "negation",
-        "travel"
+        "travel",
+        "arrivare"
       ]
     },
     {
@@ -1181,13 +1178,13 @@
       "exerciseId": "luca-a-roma-ch19-prod-04",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-19",
-      "sourceSentenceId": "s13",
-      "promptEn": "See you in Rome.",
-      "expectedIt": "Ci vediamo a Roma.",
+      "sourceSentenceId": "s10",
+      "promptEn": "Mom is well.",
+      "expectedIt": "La mamma sta bene.",
       "level": "A1",
       "focus": [
-        "greeting",
-        "location"
+        "stare",
+        "mamma"
       ],
       "match": "exact"
     },

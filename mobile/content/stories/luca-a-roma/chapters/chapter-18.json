@@ -17,7 +17,7 @@
   "events": [
     {
       "id": "ev-18-surprise",
-      "summary": "The train stops; Marco cannot find the ticket; the suitcase is missing.",
+      "summary": "The train arrives in the small city; Marco cannot find the ticket; the suitcase is missing.",
       "characterIds": [
         "luca",
         "sofia",
@@ -28,7 +28,7 @@
         "fuori-roma"
       ],
       "rememberedFacts": [
-        "There is a surprise problem on the trip",
+        "The train arrives in the small city",
         "The ticket and suitcase seem lost"
       ]
     }
@@ -40,39 +40,35 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Poi c'è una sorpresa.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "poi",
-            "ce",
-            "una",
-            "sorpresa"
-          ]
-        },
-        {
-          "id": "s02",
-          "text": "Il treno non va.",
+          "text": "Il treno arriva.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "il",
             "treno",
-            "non",
-            "andare"
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Siamo in città.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "in",
+            "citta"
           ]
         },
         {
           "id": "s03",
-          "text": "C'è un problema sul treno.",
+          "text": "C'è un problema.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "ce",
             "un",
-            "problema",
-            "sul",
-            "treno"
+            "problema"
           ]
         },
         {
@@ -230,15 +226,15 @@
       "id": "ch18_q01",
       "chapterId": "luca-a-roma-18",
       "type": "event",
-      "question": "What surprise happens on the train?",
-      "questionIt": "Cosa succede sul treno?",
+      "question": "What happens when the train arrives?",
+      "questionIt": "Cosa succede quando il treno arriva?",
       "choices": [
-        "There is a problem with the ticket or suitcase",
+        "They cannot find the ticket or the suitcase",
         "They win a prize",
         "Sofia buys a house"
       ],
       "correctChoice": 0,
-      "explanation": "A problem appears: the ticket and/or valigia cannot be found.",
+      "explanation": "The train arrives in the city, then Marco cannot find the ticket and the suitcase is missing.",
       "difficulty": 1
     },
     {

@@ -18,7 +18,7 @@
   "events": [
     {
       "id": "ev-16-leave",
-      "summary": "The group goes to the station with luggage and boards the train.",
+      "summary": "The group goes to the station, puts the ticket in the suitcase, and boards the train.",
       "characterIds": [
         "luca",
         "sofia",
@@ -31,7 +31,7 @@
       "rememberedFacts": [
         "The group leaves Rome by train",
         "Marco has the ticket",
-        "They have luggage"
+        "The ticket is in the suitcase"
       ]
     }
   ],
@@ -52,12 +52,10 @@
         },
         {
           "id": "s02",
-          "text": "Il gruppo va alla stazione.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "Andiamo alla stazione.",
+          "speakerId": "sofia",
+          "kind": "dialogue",
           "lemmas": [
-            "il",
-            "gruppo",
             "andare",
             "alla",
             "stazione"
@@ -77,11 +75,10 @@
         },
         {
           "id": "s04",
-          "text": "Marco ha il biglietto.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "Ho il biglietto.",
+          "speakerId": "marco",
+          "kind": "dialogue",
           "lemmas": [
-            "marco",
             "avere",
             "il",
             "biglietto"
@@ -145,6 +142,19 @@
       "sentences": [
         {
           "id": "s09",
+          "text": "Il biglietto è nella valigia.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "biglietto",
+            "essere",
+            "nella",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Giulia chiude la valigia.",
           "speakerId": null,
           "kind": "narration",
@@ -156,7 +166,7 @@
           ]
         },
         {
-          "id": "s10",
+          "id": "s11",
           "text": "Il gruppo entra nel treno.",
           "speakerId": null,
           "kind": "narration",
@@ -166,18 +176,6 @@
             "entrare",
             "nel",
             "treno"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Il gruppo lascia Roma.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "gruppo",
-            "lasciare",
-            "roma"
           ]
         },
         {
@@ -226,15 +224,15 @@
       "id": "ch16_q02",
       "chapterId": "luca-a-roma-16",
       "type": "direct",
-      "question": "What do they bring with them?",
-      "questionIt": "Cosa portano con loro?",
+      "question": "Where is the ticket when they leave?",
+      "questionIt": "Dov’è il biglietto?",
       "choices": [
-        "A suitcase (valigia)",
-        "A new apartment key",
-        "Only empty hands"
+        "In the suitcase (valigia)",
+        "On the café table",
+        "At Nonna Rosa’s house"
       ],
       "correctChoice": 0,
-      "explanation": "They have a valigia as they head for the train.",
+      "explanation": "Luca says the ticket is in the suitcase, then Giulia closes it.",
       "difficulty": 1
     },
     {

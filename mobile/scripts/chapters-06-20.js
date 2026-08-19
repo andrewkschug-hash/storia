@@ -67,7 +67,11 @@ const chapter07 = chapter(
         summary: 'Luca needs work to pay rent; Sofia offers to help.',
         characterIds: ['luca', 'sofia'],
         locationIds: ['appartamento-luca'],
-        rememberedFacts: ['Luca needs a job', 'Luca needs money for rent'],
+        rememberedFacts: [
+          'Luca needs a job',
+          'Luca needs money for rent',
+          'Sofia tells Luca to ask at the café',
+        ],
       },
     ],
   },
@@ -102,7 +106,7 @@ const chapter07 = chapter(
         ],
       }),
       S('s10', 'Grazie.', ['grazie'], { speaker: 'luca' }),
-      S('s11', 'Il lavoro è importante.', ['il', 'lavoro', 'essere', 'importante']),
+      S('s11', 'Chiedi al caffè.', ['chiedere', 'al', 'caffe'], { speaker: 'sofia' }),
       S('s12', 'Domani Luca cerca un lavoro.', ['domani', 'luca', 'cercare', 'un', 'lavoro']),
       S('s13', 'Luca vuole vivere a Roma.', ['luca', 'volere', 'vivere', 'a', 'roma']),
     ]),
@@ -754,13 +758,13 @@ const chapter16 = chapter(
     events: [
       {
         id: 'ev-16-leave',
-        summary: 'The group goes to the station with luggage and boards the train.',
+        summary: 'The group goes to the station, puts the ticket in the suitcase, and boards the train.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['stazione'],
         rememberedFacts: [
           'The group leaves Rome by train',
           'Marco has the ticket',
-          'They have luggage',
+          'The ticket is in the suitcase',
         ],
       },
     ],
@@ -768,9 +772,9 @@ const chapter16 = chapter(
   [
     P('p1', 1, [
       S('s01', 'È mattina.', ['essere', 'mattina']),
-      S('s02', 'Il gruppo va alla stazione.', ['il', 'gruppo', 'andare', 'alla', 'stazione']),
+      S('s02', 'Andiamo alla stazione.', ['andare', 'alla', 'stazione'], { speaker: 'sofia' }),
       S('s03', 'Luca porta una valigia.', ['luca', 'portare', 'una', 'valigia']),
-      S('s04', 'Marco ha il biglietto.', ['marco', 'avere', 'il', 'biglietto']),
+      S('s04', 'Ho il biglietto.', ['avere', 'il', 'biglietto'], { speaker: 'marco' }),
     ]),
     P('p2', 2, [
       S('s05', 'La stazione è grande.', ['la', 'stazione', 'essere', 'grande']),
@@ -779,9 +783,11 @@ const chapter16 = chapter(
       S('s08', 'Sì, andiamo.', ['si_yes', 'andare'], { speaker: 'marco' }),
     ]),
     P('p3', 3, [
-      S('s09', 'Giulia chiude la valigia.', ['giulia', 'chiudere', 'la', 'valigia']),
-      S('s10', 'Il gruppo entra nel treno.', ['il', 'gruppo', 'entrare', 'nel', 'treno']),
-      S('s11', 'Il gruppo lascia Roma.', ['il', 'gruppo', 'lasciare', 'roma']),
+      S('s09', 'Il biglietto è nella valigia.', ['il', 'biglietto', 'essere', 'nella', 'valigia'], {
+        speaker: 'luca',
+      }),
+      S('s10', 'Giulia chiude la valigia.', ['giulia', 'chiudere', 'la', 'valigia']),
+      S('s11', 'Il gruppo entra nel treno.', ['il', 'gruppo', 'entrare', 'nel', 'treno']),
       S('s12', 'Il treno parte adesso.', ['il', 'treno', 'partire', 'adesso']),
       S('s13', 'Il viaggio inizia.', ['il', 'viaggio', 'iniziare']),
     ]),
@@ -802,11 +808,11 @@ const chapter17 = chapter(
     events: [
       {
         id: 'ev-17-trip',
-        summary: 'Outside Rome the trip continues; they eat and talk on the train.',
+        summary: 'On the train they see a small city; Marco says he must see his mother.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['fuori-roma'],
         rememberedFacts: [
-          'The group is outside Rome',
+          'The group is outside Rome on the way to Marco’s mother',
           'The trip is going well so far',
         ],
       },
@@ -823,12 +829,14 @@ const chapter17 = chapter(
       S('s05', 'Viaggiamo insieme.', ['viaggiare', 'insieme'], { speaker: 'sofia' }),
       S('s06', 'Sì, è bello.', ['si_yes', 'essere', 'bello'], { speaker: 'luca' }),
       S('s07', 'Come stai, Marco?', ['come', 'stare', 'marco'], { speaker: 'giulia' }),
-      S('s08', 'Bene, grazie.', ['bene', 'grazie'], { speaker: 'marco' }),
+      S('s08', 'Devo vedere mamma.', ['dovere', 'vedere', 'mamma'], { speaker: 'marco' }),
     ]),
     P('p3', 3, [
       S('s09', 'Il gruppo mangia qualcosa.', ['il', 'gruppo', 'mangiare', 'qualcosa']),
       S('s10', 'Hanno sete e fame.', ['avere', 'sete', 'e', 'fame']),
-      S('s11', 'Giulia parla con Sofia.', ['giulia', 'parlare', 'con', 'sofia']),
+      S('s11', 'Andiamo a casa di mamma.', ['andare', 'a', 'casa', 'di', 'mamma'], {
+        speaker: 'luca',
+      }),
       S('s12', 'Il viaggio va bene.', ['il', 'viaggio', 'andare', 'bene'], {
         phrases: [
           {
@@ -859,11 +867,11 @@ const chapter18 = chapter(
     events: [
       {
         id: 'ev-18-surprise',
-        summary: 'The train stops; Marco cannot find the ticket; the suitcase is missing.',
+        summary: 'The train arrives in the small city; Marco cannot find the ticket; the suitcase is missing.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['fuori-roma'],
         rememberedFacts: [
-          'There is a surprise problem on the trip',
+          'The train arrives in the small city',
           'The ticket and suitcase seem lost',
         ],
       },
@@ -871,9 +879,9 @@ const chapter18 = chapter(
   },
   [
     P('p1', 1, [
-      S('s01', "Poi c'è una sorpresa.", ['poi', 'ce', 'una', 'sorpresa']),
-      S('s02', 'Il treno non va.', ['il', 'treno', 'non', 'andare']),
-      S('s03', "C'è un problema sul treno.", ['ce', 'un', 'problema', 'sul', 'treno']),
+      S('s01', 'Il treno arriva.', ['il', 'treno', 'arrivare']),
+      S('s02', 'Siamo in città.', ['essere', 'in', 'citta'], { speaker: 'luca' }),
+      S('s03', "C'è un problema.", ['ce', 'un', 'problema']),
       S('s04', 'Marco cerca il biglietto.', ['marco', 'cercare', 'il', 'biglietto']),
     ]),
     P('p2', 2, [
@@ -922,12 +930,14 @@ const chapter19 = chapter(
     events: [
       {
         id: 'ev-19-solve',
-        summary: 'Together they find the suitcase and ticket and solve the problem.',
+        summary:
+          'They find the suitcase, then the ticket inside it. They go to Marco’s mother; she is there and she is well.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['fuori-roma'],
         rememberedFacts: [
-          'The group solves the problem together',
-          'They find the ticket and the suitcase',
+          'Giulia finds the suitcase; the ticket is inside',
+          'They go to Marco’s mother',
+          'Marco’s mother is there and she is well',
         ],
       },
     ],
@@ -942,20 +952,25 @@ const chapter19 = chapter(
         'il',
         'problema',
       ]),
-      S('s02', 'Luca cerca nella valigia.', ['luca', 'cercare', 'nella', 'valigia']),
+      S('s02', "Dov'è la valigia?", ['dove_e', 'la', 'valigia'], {
+        speaker: 'luca',
+        phrases: [
+          {
+            surface: "Dov'è",
+            literalEn: 'Where is',
+            naturalEn: 'Where is',
+            tokenStart: 0,
+            tokenEnd: 0,
+          },
+        ],
+      }),
       S('s03', 'Aspetta, la valigia è qui.', ['aspettare', 'la', 'valigia', 'essere', 'qui'], {
         speaker: 'giulia',
       }),
       S('s04', 'Giulia trova la valigia.', ['giulia', 'trovare', 'la', 'valigia']),
     ]),
     P('p2', 2, [
-      S('s05', 'Il biglietto è nella valigia.', [
-        'il',
-        'biglietto',
-        'essere',
-        'nella',
-        'valigia',
-      ], { speaker: 'sofia' }),
+      S('s05', 'Luca cerca nella valigia.', ['luca', 'cercare', 'nella', 'valigia']),
       S('s06', 'Ecco il biglietto!', ['ecco', 'il', 'biglietto'], { speaker: 'marco' }),
       S('s07', 'Insieme risolviamo il problema.', [
         'insieme',
@@ -963,28 +978,16 @@ const chapter19 = chapter(
         'il',
         'problema',
       ], { speaker: 'luca' }),
-      S('s08', 'Sì, insieme è facile.', ['si_yes', 'insieme', 'essere', 'facile'], {
+      S('s08', 'Andiamo a casa di mamma.', ['andare', 'a', 'casa', 'di', 'mamma'], {
         speaker: 'sofia',
       }),
     ]),
     P('p3', 3, [
-      S('s09', 'Il treno parte.', ['il', 'treno', 'partire']),
-      S('s10', 'Il gruppo è felice.', ['il', 'gruppo', 'essere', 'felice']),
-      S('s11', 'Marco dice grazie.', ['marco', 'dire', 'grazie']),
+      S('s09', 'La mamma di Marco è qui.', ['la', 'mamma', 'di', 'marco', 'essere', 'qui']),
+      S('s10', 'La mamma sta bene.', ['la', 'mamma', 'stare', 'bene']),
+      S('s11', 'Ciao, mamma.', ['ciao', 'mamma'], { speaker: 'marco' }),
       S('s12', 'Grazie, amici.', ['grazie', 'amico'], { speaker: 'marco' }),
-      S('s13', 'Ci vediamo a Roma.', ['ci', 'vedere', 'a', 'roma'], { speaker: 'giulia' }),
-      S('s14', 'Il problema è risolto.', ['il', 'problema', 'essere', 'risolvere']),
-      // Light past-tense foreshadow before A1+ / A2 chapters
-      S('s15', 'Ieri Luca è andato in città con Sofia.', [
-        'ieri',
-        'luca',
-        'essere',
-        'andare',
-        'in',
-        'citta',
-        'con',
-        'sofia',
-      ]),
+      S('s13', 'Il problema è risolto.', ['il', 'problema', 'essere', 'risolvere']),
     ]),
   ],
 );
@@ -1003,11 +1006,11 @@ const chapter20 = chapter(
     events: [
       {
         id: 'ev-20-return',
-        summary: 'Friends return to Rome; Luca has a home, a job, and friends.',
+        summary: 'After seeing Marco’s mother, the friends return to Rome; Luca has a home, a job, and friends.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['roma', 'stazione'],
         rememberedFacts: [
-          'The group returns to Rome',
+          'The group returns to Rome after seeing Marco’s mother',
           'They are friends and happy at home',
         ],
       },

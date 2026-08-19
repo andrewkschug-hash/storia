@@ -35,7 +35,7 @@ const phraseHints: Record<number, string[]> = {
   4: ['sta bene', 'C’è una…'],
   5: ['Come stai?', 'Bene, grazie', 'Ci vediamo', 'Ciao, sono…'],
   6: ['Come stai oggi?', 'Ci vediamo domani', 'Bene, grazie'],
-  7: ['Posso aiutare', 'Cerchi un lavoro?', 'Grazie'],
+  7: ['Posso aiutare', 'Cerchi un lavoro?', 'Chiedi al caffè', 'Grazie'],
   8: ['Scusa…', 'Non so', 'Aspetta un momento', 'Va bene'],
   9: ['Vuoi lavorare qui?', 'posso…?', 'va bene'],
   10: ['Come stai?', 'Va bene', 'Lavoriamo insieme'],
@@ -44,10 +44,10 @@ const phraseHints: Record<number, string[]> = {
   13: ['Possiamo aiutare', 'Grazie'],
   14: ['Non posso…', 'Cosa facciamo adesso?', 'Dove sei…?', 'Non lo so'],
   15: ['Perché no?', 'Dobbiamo fare un piano', 'L’aiuto è importante'],
-  16: ['Prendiamo il treno', 'Sì, andiamo'],
-  17: ['Come stai, Marco?', 'Bene, grazie', 'Il viaggio va bene'],
-  18: ['Dov’è…?', 'Scusa', 'Cosa facciamo adesso?'],
-  19: ['Aspetta…', 'Ci vediamo a Roma', 'Grazie, amici'],
+  16: ['Prendiamo il treno', 'Sì, andiamo', 'Il biglietto è nella valigia'],
+  17: ['Come stai, Marco?', 'Devo vedere mamma', 'Il viaggio va bene'],
+  18: ['Il treno arriva', 'Dov’è…?', 'Scusa', 'Cosa facciamo adesso?'],
+  19: ['Aspetta…', 'Ecco il biglietto', 'Grazie, amici', 'La mamma sta bene'],
   20: ['Come stai ora?', 'Ci vediamo', 'Siamo a casa'],
 };
 
