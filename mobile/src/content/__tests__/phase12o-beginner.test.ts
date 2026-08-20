@@ -18,6 +18,7 @@ import {
 } from '@/src/progress';
 import { getContinueReadingTarget } from '@/src/progress/continueReading';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
+import { grantA1MasteryForTests } from '@/src/progress/testHelpers';
 import { resolveSentenceLookup, resolveTap } from '@/src/vocabulary/resolveTap';
 import { buildLexiconIndexFromBundle } from '@/src/vocabulary/dictionaryIndex';
 import { MemoryUserVocabularyRepository } from '@/src/vocabulary/UserVocabularyRepository';
@@ -179,6 +180,7 @@ describe('Phase 12O true beginner onboarding', () => {
 
   it('completes S1.1 after comprehension failure, success, skip, incorrect, or correct production', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const storyId = 'luca-prima-di-roma-01';
     const chapter = getContentBundle(storyId).chapters.get('luca-prima-di-roma-01-01')!;
     const exercises = getProductionExercisesForChapter(chapter.id, storyId);
@@ -198,6 +200,7 @@ describe('Phase 12O true beginner onboarding', () => {
     expect(await failService.getChapterStatus(chapter.id)).toBe('completed');
 
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const okService = getProgressService(storyId);
     await okService.openChapter(chapter.id);
     await okService.recordProduction(chapter.id, {
@@ -219,6 +222,7 @@ describe('Phase 12O true beginner onboarding', () => {
 
   it('persists story progress independently of Luca and keeps sentence English across pre-Rome', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const pre = getProgressService('luca-prima-di-roma-01');
     const luca = getProgressService(LUCA_STORY_ID);
     const chapter = getContentBundle('luca-prima-di-roma-01').chapters.get('luca-prima-di-roma-01-01')!;

@@ -13,8 +13,8 @@ describe('batch milestone routing', () => {
     expect(String(routeAfterRecap(LUCA_STORY_ID, 15))).toContain('luca-a-roma-speak-15');
   });
 
-  it('routes speak scene at batch 20 to level readiness', () => {
-    expect(String(routeAfterSpeakScene(LUCA_STORY_ID, 20))).toContain('level-readiness?fromChapter=20');
+  it('routes speak scene at batch 20 to A1 mastery test', () => {
+    expect(String(routeAfterSpeakScene(LUCA_STORY_ID, 20))).toContain('a1-mastery-test');
   });
 
   it('routes chapter 24 completion to level readiness before speak', () => {

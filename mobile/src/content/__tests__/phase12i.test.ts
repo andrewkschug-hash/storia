@@ -32,6 +32,7 @@ import { ChapterSourceSchema, type Chapter, type Story } from '@/src/content/sch
 import { validateStoryCatalog } from '@/src/content/validateCatalog';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
 import { ProgressService } from '@/src/progress/ProgressService';
+import { a1MasteryCheckpointId } from '@/src/progress/a1Gate';
 import { createInitialProgress } from '@/src/progress/types';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
@@ -300,6 +301,7 @@ describe('Phase 12I progress isolation', () => {
       { questionId: 'q1', correct: true, attempts: 1 },
       { questionId: 'q2', correct: true, attempts: 1 },
     ];
+    await romeSvc.completeCheckpoint(a1MasteryCheckpointId(LUCA_STORY_ID));
     await preSvc.finishComprehensionAndComplete('chapter-01', answers);
 
     const preProgress = await preSvc.getOrCreate();

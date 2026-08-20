@@ -18,6 +18,7 @@ import { validateStoryCatalog } from '@/src/content/validateCatalog';
 import { getContinueReadingTarget } from '@/src/progress/continueReading';
 import { __resetProgressService, __setProgressRepository, getProgressService } from '@/src/progress';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
+import { grantA1MasteryForTests } from '@/src/progress/testHelpers';
 
 const PRE_ROME = [
   { id: 'luca-prima-di-roma-01', chapters: 6, titleIt: 'Luca si presenta' },
@@ -84,6 +85,8 @@ describe('Phase 12L pre-Rome wiring', () => {
     const repo = new MemoryReadingProgressRepository();
     __setProgressRepository(repo);
     const s2 = getProgressService('luca-prima-di-roma-02');
+    expect(await s2.getChapterStatus('luca-prima-di-roma-02-01')).toBe('locked');
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     expect(await s2.getChapterStatus('luca-prima-di-roma-02-01')).not.toBe('locked');
 
     const order = journeyOrder().map((story) => story.id);
@@ -108,10 +111,14 @@ describe('Phase 12L pre-Rome wiring', () => {
   it('continues from the most recently opened available story', async () => {
     const repo = new MemoryReadingProgressRepository();
     __setProgressRepository(repo);
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const s3 = getProgressService('luca-prima-di-roma-03');
     await s3.openChapter('luca-prima-di-roma-03-01');
     const luca = getProgressService(LUCA_STORY_ID);
     await luca.openChapter('luca-a-roma-01');
+    await luca.savePosition('luca-a-roma-01', 's01');
+    await new Promise((resolve) => setTimeout(resolve, 5));
+    await luca.savePosition('luca-a-roma-01', 's02');
 
     const target = await getContinueReadingTarget();
     expect(target?.storyId).toBe(LUCA_STORY_ID);

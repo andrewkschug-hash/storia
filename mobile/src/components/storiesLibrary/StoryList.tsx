@@ -7,7 +7,7 @@ import { LockedLevelsAccordion } from '@/src/components/storiesLibrary/LockedLev
 import { StoryPathPanel } from '@/src/components/storiesLibrary/StoryPathPanel';
 import { StoryRow } from '@/src/components/storiesLibrary/StoryRow';
 import type { LibraryStoryRow, LibraryTab } from '@/src/components/storiesLibrary/types';
-import { unlockHintForLockedStory } from '@/src/components/storiesLibrary/unlockHints';
+import { unlockHintForHometownGroup, unlockHintForLockedStory } from '@/src/components/storiesLibrary/unlockHints';
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { LUCA_STORY_ID } from '@/src/content/catalog';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
@@ -22,6 +22,8 @@ type Props = {
   progress?: ReadingProgressRecord | null;
   beforeRomeRows: ExtraStoryRow[];
   a2PlusRows: ExtraStoryRow[];
+  /** Hometown stories unlock after the A1 mastery test. */
+  hometownUnlocked?: boolean;
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
   onOpenStoryChapter: (storyId: string, chapterId: string) => void;
   onOpenGrammar: (batchEnd: number) => void;
@@ -50,6 +52,7 @@ export function StoryList({
   progress,
   beforeRomeRows,
   a2PlusRows,
+  hometownUnlocked = true,
   onOpenChapter,
   onOpenStoryChapter,
   onOpenGrammar,
@@ -73,8 +76,9 @@ export function StoryList({
         chapterStatuses,
         beforeRomeRows,
         a2PlusRows,
+        hometownUnlocked,
       }),
-    [activeTab, lucaTitleIt, chapterStatuses, beforeRomeRows, a2PlusRows],
+    [activeTab, lucaTitleIt, chapterStatuses, beforeRomeRows, a2PlusRows, hometownUnlocked],
   );
 
   useEffect(() => {
@@ -93,12 +97,20 @@ export function StoryList({
     hintTimer.current = setTimeout(() => setHint(null), 2200);
   };
 
-  const handleRowPress = (rowId: string, locked: boolean, chapters: ChapterListItem[]) => {
-    if (locked) {
-      showHint(unlockHintForLockedStory(chapters));
+  const handleRowPress = (row: LibraryStoryRow) => {
+    if (row.locked) {
+      if (row.id === 'luca-before-rome') {
+        showHint(unlockHintForHometownGroup());
+        return;
+      }
+      showHint(
+        unlockHintForLockedStory(row.chapters, {
+          a1PlusLocked: row.kind === 'luca-segment' && row.chapterStart === 21,
+        }),
+      );
       return;
     }
-    setExpandedRowId((prev) => (prev === rowId ? null : rowId));
+    setExpandedRowId((prev) => (prev === row.id ? null : row.id));
   };
 
   return (
@@ -127,7 +139,7 @@ export function StoryList({
               <StoryRow
                 row={row}
                 expanded={expanded}
-                onPress={() => handleRowPress(row.id, row.locked, row.chapters)}
+                onPress={() => handleRowPress(row)}
               />
               {expanded && !row.locked && row.kind === 'group' && row.childRows
                 ? row.childRows.map((child) => (

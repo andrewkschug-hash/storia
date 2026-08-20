@@ -1,0 +1,222 @@
+{
+  "assessmentId": "a1-mastery",
+  "level": "A1",
+  "passThreshold": 0.75,
+  "title": "Verifica A1",
+  "intro": "Vent domande su grammatica, vocabolario e la storia di Luca a Roma (capitoli 1–20). Serve almeno il 75% per passare al livello A1+ e sbloccare le storie di Pietralba. Tutto in italiano — niente traduzioni.",
+  "questions": [
+    {
+      "id": "a1m_g01",
+      "section": "grammar",
+      "batchKey": "1-5",
+      "question": "Luca ___ fame.",
+      "choices": ["ha", "è", "ho", "sono"],
+      "correctChoice": 0,
+      "explanation": "Per la fame si usa avere: Luca ha fame (letteralmente «ha fame»)."
+    },
+    {
+      "id": "a1m_g02",
+      "section": "grammar",
+      "batchKey": "1-5",
+      "question": "Sofia ___ stanca.",
+      "choices": ["è", "ha", "sono", "hanno"],
+      "correctChoice": 0,
+      "explanation": "Con gli aggettivi (stanca) si usa essere: Sofia è stanca."
+    },
+    {
+      "id": "a1m_g03",
+      "section": "grammar",
+      "batchKey": "1-5",
+      "question": "Quale frase è negativa e corretta?",
+      "choices": ["Non ho fame.", "Ho non fame.", "Non fame ho.", "Ho fame non."],
+      "correctChoice": 0,
+      "explanation": "Non va subito prima del verbo: Non ho fame."
+    },
+    {
+      "id": "a1m_g04",
+      "section": "grammar",
+      "batchKey": "6-10",
+      "question": "Luca ___ un lavoro al caffè.",
+      "choices": ["cerca", "cerco", "cerchi", "cercare"],
+      "correctChoice": 0,
+      "explanation": "Luca = lui → cerca. Cercare un lavoro = cercare un impiego."
+    },
+    {
+      "id": "a1m_g05",
+      "section": "grammar",
+      "batchKey": "6-10",
+      "question": "«Voglio mangiare.» Perché «mangiare» e non «mangio»?",
+      "choices": [
+        "Dopo volere si usa l'infinito",
+        "Mangio è troppo formale",
+        "Mangiare è al passato",
+        "Volere richiede la terza persona"
+      ],
+      "correctChoice": 0,
+      "explanation": "Volere + infinito: Voglio mangiare, non Voglio mangio."
+    },
+    {
+      "id": "a1m_g06",
+      "section": "grammar",
+      "batchKey": "11-15",
+      "question": "Luca va ___ caffè.",
+      "choices": ["al", "in", "con", "per"],
+      "correctChoice": 0,
+      "explanation": "Verso un luogo: a + il = al. Luca va al caffè."
+    },
+    {
+      "id": "a1m_g07",
+      "section": "grammar",
+      "batchKey": "11-15",
+      "question": "Sofia è ___ cucina.",
+      "choices": ["in", "a", "con", "per"],
+      "correctChoice": 0,
+      "explanation": "Dentro una stanza si usa in: Sofia è in cucina."
+    },
+    {
+      "id": "a1m_g08",
+      "section": "grammar",
+      "batchKey": "16-20",
+      "question": "Domani Luca ___ a Roma.",
+      "choices": ["torna", "tornare", "tornato", "tornando"],
+      "correctChoice": 0,
+      "explanation": "Soggetto + verbo coniugato: Luca torna. Tornare = infinito."
+    },
+    {
+      "id": "a1m_v01",
+      "section": "vocabulary",
+      "question": "Cosa significa «cercare»?",
+      "choices": [
+        "provare a trovare qualcosa",
+        "mangiare velocemente",
+        "dormire molto",
+        "partire subito"
+      ],
+      "correctChoice": 0,
+      "explanation": "Cercare = look for / provare a trovare."
+    },
+    {
+      "id": "a1m_v02",
+      "section": "vocabulary",
+      "question": "Cosa significa «affitto»?",
+      "choices": [
+        "il pagamento per casa o appartamento",
+        "un tipo di caffè",
+        "un biglietto del treno",
+        "una lettera da casa"
+      ],
+      "correctChoice": 0,
+      "explanation": "L'affitto = rent / il costo dell'alloggio."
+    },
+    {
+      "id": "a1m_v03",
+      "section": "vocabulary",
+      "question": "«Ho ___» — quale parola completa l'espressione «sono affamato»?",
+      "choices": ["fame", "sete", "sonno", "paura"],
+      "correctChoice": 0,
+      "explanation": "In italiano: Ho fame (letteralmente «ho fame»)."
+    },
+    {
+      "id": "a1m_v04",
+      "section": "vocabulary",
+      "question": "Quando si dice «Buongiorno»?",
+      "choices": [
+        "al mattino o all'inizio del giorno",
+        "solo la notte",
+        "quando si va a dormire",
+        "quando si è arrabbiati"
+      ],
+      "correctChoice": 0,
+      "explanation": "Buongiorno = good morning / saluto di giorno."
+    },
+    {
+      "id": "a1m_v05",
+      "section": "vocabulary",
+      "question": "Qual è l'opposto di «tardi»?",
+      "choices": ["presto", "domani", "sempre", "ieri"],
+      "correctChoice": 0,
+      "explanation": "Presto = early · tardi = late."
+    },
+    {
+      "id": "a1m_v06",
+      "section": "vocabulary",
+      "question": "Cosa significa «lavoro» in «Luca cerca un lavoro»?",
+      "choices": ["un impiego", "un viaggio", "un regalo", "un problema"],
+      "correctChoice": 0,
+      "explanation": "Un lavoro = a job / un impiego."
+    },
+    {
+      "id": "a1m_s01",
+      "section": "story",
+      "question": "Dove arriva Luca all'inizio della storia?",
+      "choices": ["a Roma", "a Pietralba", "a Milano", "a Firenze"],
+      "correctChoice": 0,
+      "explanation": "Luca arriva a Roma nel primo capitolo."
+    },
+    {
+      "id": "a1m_s02",
+      "section": "story",
+      "question": "Chi è Sofia?",
+      "choices": [
+        "un'amica di Luca a Roma",
+        "la nonna di Luca",
+        "la proprietaria dell'appartamento di Luca",
+        "un'impiegata alla stazione"
+      ],
+      "correctChoice": 0,
+      "explanation": "Sofia è un personaggio che Luca conosce a Roma."
+    },
+    {
+      "id": "a1m_s03",
+      "section": "story",
+      "question": "Perché Marco ha bisogno di aiuto?",
+      "choices": [
+        "Ha un problema e poco tempo",
+        "Vuole imparare l'italiano",
+        "Cerca un appartamento a Roma",
+        "Deve tornare a Pietralba"
+      ],
+      "correctChoice": 0,
+      "explanation": "Marco ha un problema urgente — Luca e gli altri lo aiutano."
+    },
+    {
+      "id": "a1m_s04",
+      "section": "story",
+      "question": "Cosa fa Luca per guadagnare soldi?",
+      "choices": [
+        "Lavora al caffè",
+        "Insegna italiano",
+        "Vende biglietti del treno",
+        "Guida un taxi"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca trova lavoro al caffè / bar."
+    },
+    {
+      "id": "a1m_s05",
+      "section": "story",
+      "question": "Nei capitoli 16–20 Luca lascia Roma per un po'. Perché?",
+      "choices": [
+        "Per aiutare Marco / risolvere un problema",
+        "Per visitare la nonna a Pietralba",
+        "Per studiare all'università",
+        "Perché non gli piace più Roma"
+      ],
+      "correctChoice": 0,
+      "explanation": "Luca parte per aiutare Marco — poi torna a Roma."
+    },
+    {
+      "id": "a1m_s06",
+      "section": "story",
+      "question": "Alla fine del capitolo 20, Luca…",
+      "choices": [
+        "torna a Roma",
+        "resta a Pietralba per sempre",
+        "va a Milano",
+        "non trova più lavoro"
+      ],
+      "correctChoice": 0,
+      "explanation": "«Tornare a casa» — Luca torna a Roma dopo il viaggio."
+    }
+  ]
+}

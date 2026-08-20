@@ -20,7 +20,7 @@ import {
 } from '@/src/components/storiesLibrary';
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { extraRowsFromCatalogStories } from '@/src/components/storiesLevelInsert';
-import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
+import { LUCA_STORY_ID, buildLearnerJourney, getChapter, getContentBundle } from '@/src/content';
 import { readerHref, speakSceneHref } from '@/src/content/storyHrefs';
 import {
   getContinueReadingTarget,
@@ -28,6 +28,7 @@ import {
   type ContinueReadingTarget,
 } from '@/src/progress/continueReading';
 import { getProgressService } from '@/src/progress';
+import { hometownStoriesUnlocked } from '@/src/progress/a1Gate';
 import { loadStoryProgressView, useReadingProgress } from '@/src/progress/useReadingProgress';
 import { useLayout } from '@/src/theme/useLayout';
 import { Spacing } from '@/src/theme/tokens';
@@ -172,6 +173,10 @@ export default function StoriesScreen() {
       : a2PlusStories.length > 0
         ? extraRowsFromCatalogStories(a2PlusStories, 'A2+')
         : [];
+  const hometownUnlocked = hometownStoriesUnlocked(
+    progress,
+    getContentBundle(LUCA_STORY_ID).chapters,
+  );
 
   return (
     <AtmosphereBackground>
@@ -219,6 +224,7 @@ export default function StoriesScreen() {
             progress={progress}
             beforeRomeRows={beforeRomeRows}
             a2PlusRows={resolvedA2PlusRows}
+            hometownUnlocked={hometownUnlocked}
             onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
             onOpenStoryChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
             onOpenGrammar={(batchEnd) => {

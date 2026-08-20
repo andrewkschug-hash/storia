@@ -31,4 +31,6 @@ export type BuildStoryRowsInput = {
   chapterStatuses: ChapterListItem[];
   beforeRomeRows: ExtraStoryRow[];
   a2PlusRows: ExtraStoryRow[];
+  /** When false, hometown stories and group stay locked until A1 mastery test passed. */
+  hometownUnlocked?: boolean;
 };

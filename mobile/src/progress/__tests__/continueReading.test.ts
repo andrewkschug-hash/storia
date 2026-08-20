@@ -9,6 +9,7 @@ import {
 import { __resetProgressService, __setProgressRepository, getProgressRepository, getProgressService } from '@/src/progress';
 import { getContinueReadingTarget, homeContinuePresentation } from '@/src/progress/continueReading';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
+import { grantA1MasteryForTests } from '@/src/progress/testHelpers';
 
 function chapterIdByNumber(number: number): string {
   const bundle = getContentBundle(LUCA_STORY_ID);
@@ -34,6 +35,9 @@ async function completeThrough(chapterNumber: number): Promise<void> {
       attempts: 1,
     }));
     await service.finishComprehensionAndComplete(chapter.id, answers);
+    if (number === 20) {
+      await grantA1MasteryForTests(service);
+    }
   }
 }
 

@@ -38,7 +38,7 @@ export function routeAfterSpeakScene(storyId: string, batchEnd: number, returnTo
     return '/(tabs)/stories' as Href;
   }
   if (storyId === LUCA_STORY_ID && batchEnd === 20) {
-    return `/level-readiness?fromChapter=20` as Href;
+    return `/a1-mastery-test` as Href;
   }
   const next = getChapterByNumber(batchEnd + 1, storyId);
   if (next) {

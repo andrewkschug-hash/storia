@@ -4,6 +4,7 @@ import { LUCA_STORY_ID, getContentBundle, getStory } from '@/src/content';
 import { navAsync } from '@/src/navigation/diagnostics';
 import { useRefreshGuard } from '@/src/navigation/useRefreshGuard';
 import { getProgressService, peekProgress } from '@/src/progress';
+import { hasPassedA1Mastery, isPreRomeStory } from '@/src/progress/a1Gate';
 import { unlockAllChapters } from '@/src/progress/unlockAll';
 import type { ChapterStatus, ReadingProgressRecord } from '@/src/progress/types';
 
@@ -27,6 +28,10 @@ export async function loadStoryProgressView(storyId: string): Promise<{
   const story = getStory(storyId);
   const existing = await peekProgress(storyId);
   if (!existing) {
+    const lucaProgress = isPreRomeStory(storyId) ? await peekProgress(LUCA_STORY_ID) : null;
+    const lucaChapters = getContentBundle(LUCA_STORY_ID).chapters;
+    const hometownLocked =
+      isPreRomeStory(storyId) && !hasPassedA1Mastery(lucaProgress, lucaChapters);
     return {
       progress: null,
       chapters: story.chapters.map((summary) => ({
@@ -34,7 +39,11 @@ export async function loadStoryProgressView(storyId: string): Promise<{
         number: summary.number,
         title: summary.title,
         titleIt: summary.titleIt,
-        status: (unlockAllChapters() || summary.number === 1 ? 'available' : 'locked') as ChapterStatus,
+        status: (hometownLocked
+          ? 'locked'
+          : unlockAllChapters() || summary.number === 1
+            ? 'available'
+            : 'locked') as ChapterStatus,
       })),
     };
   }
