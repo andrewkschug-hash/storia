@@ -329,6 +329,8 @@ export const ProductionExerciseSchema = z
     semantic: ProductionSemanticSchema.optional(),
     level: ProductionCefrLevelSchema,
     focus: z.array(z.string().min(1)).optional(),
+    /** A1 defaults to keyword prompts; set sentence to keep full-sentence production. */
+    promptScope: z.enum(['keyword', 'sentence']).optional(),
   })
   .superRefine((exercise, ctx) => {
     if (exercise.match === 'semantic' && !exercise.semantic) {

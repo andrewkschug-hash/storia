@@ -11,12 +11,14 @@ import {
 import type { ProductionExercise } from '@/src/content/schemas';
 import { ProgressService } from '@/src/progress/ProgressService';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
+import type { LexiconEntry, Sentence } from '@/src/content/schemas';
 import {
   advanceProduction,
   afterComprehensionResults,
   productionCardView,
   productionDisplayFromStory,
   skipProduction,
+  usesKeywordProduction,
 } from '@/src/production/flow';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
@@ -54,6 +56,50 @@ function sampleExercise(overrides: Partial<ProductionExercise> = {}): Production
     focus: ['avere', 'fame'],
     ...overrides,
   };
+}
+
+function lucaHaFameSource(): Sentence {
+  return {
+    id: 's05',
+    text: 'Luca ha fame.',
+    speakerId: null,
+    kind: 'narration',
+    lemmas: ['luca', 'avere', 'fame'],
+    tokens: [
+      { surface: 'Luca', lemmaId: 'luca', index: 0 },
+      { surface: 'ha', lemmaId: 'avere', index: 1 },
+      { surface: 'fame', lemmaId: 'fame', index: 2 },
+    ],
+  };
+}
+
+function sampleLexicon(): Map<string, LexiconEntry> {
+  return new Map([
+    [
+      'avere',
+      {
+        lemmaId: 'avere',
+        italian: 'avere',
+        english: 'to have',
+        partOfSpeech: 'verb',
+        difficulty: 1,
+        frequency: 'high',
+        introducedChapter: 1,
+      },
+    ],
+    [
+      'fame',
+      {
+        lemmaId: 'fame',
+        italian: 'fame',
+        english: 'hunger (in “avere fame” = to be hungry)',
+        partOfSpeech: 'noun',
+        difficulty: 1,
+        frequency: 'high',
+        introducedChapter: 1,
+      },
+    ],
+  ]);
 }
 
 describe('Phase 12D production overlay loading', () => {
@@ -110,22 +156,43 @@ describe('Phase 12D reveal and continue flow', () => {
     expect(view.promptEn).not.toMatch(/say it in italian/i);
   });
 
-  it('uses the story sentence so learners produce 3rd person, not 1st', () => {
-    const display = productionDisplayFromStory(sampleExercise(), {
-      text: 'Luca ha fame.',
-      english: 'Luca is hungry.',
-    });
+  it('A1 exercises default to keyword mode with focus words instead of full sentences', () => {
+    expect(usesKeywordProduction(sampleExercise())).toBe(true);
+
+    const display = productionDisplayFromStory(
+      sampleExercise(),
+      { text: 'Luca ha fame.', english: 'Luca is hungry.' },
+      { sourceSentence: lucaHaFameSource(), lexiconById: sampleLexicon() },
+    );
+    expect(display.promptEn).toBe('to have · hunger (in “avere fame” = to be hungry)');
+    expect(display.expectedIt).toBe('avere fame');
+    expect(display.acceptableAnswers).toEqual(expect.arrayContaining(['Ho fame.', 'Io ho fame.', 'ha']));
+
+    const view = productionCardView(
+      sampleExercise(),
+      0,
+      4,
+      true,
+      { text: 'Luca ha fame.', english: 'Luca is hungry.' },
+      { sourceSentence: lucaHaFameSource(), lexiconById: sampleLexicon() },
+    );
+    expect(view.keywordMode).toBe(true);
+    expect(view.promptEn).toBe('to have · hunger (in “avere fame” = to be hungry)');
+    expect(view.expectedIt).toBe('avere fame');
+  });
+
+  it('higher levels still use the full story sentence in 3rd person', () => {
+    const b1Exercise = sampleExercise({ level: 'B1', promptScope: undefined });
+    expect(usesKeywordProduction(b1Exercise)).toBe(false);
+
+    const display = productionDisplayFromStory(
+      b1Exercise,
+      { text: 'Luca ha fame.', english: 'Luca is hungry.' },
+      { sourceSentence: lucaHaFameSource(), lexiconById: sampleLexicon() },
+    );
     expect(display.promptEn).toBe('Luca is hungry.');
     expect(display.expectedIt).toBe('Luca ha fame.');
     expect(display.acceptableAnswers).toEqual(['Ho fame.', 'Io ho fame.']);
-
-    const view = productionCardView(sampleExercise(), 0, 4, true, {
-      text: 'Luca arriva a Roma.',
-      english: 'Luca arrives in Rome.',
-    });
-    expect(view.promptEn).toBe('Luca arrives in Rome.');
-    expect(view.expectedIt).toBe('Luca arriva a Roma.');
-    expect(view.acceptableAnswers).toContain('Ho fame.');
   });
 
   it('shows English before reveal and hides Italian', () => {

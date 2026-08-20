@@ -37,7 +37,10 @@ export function ProductionExerciseCard({
   const [revealed, setRevealed] = useState(false);
   const [assessment, setAssessment] = useState<SelfAssessment | null>(null);
   const [revealedHints, setRevealedHints] = useState<Record<string, boolean>>({});
-  const view = productionCardView(exercise, index, total, revealed, sourceSentence);
+  const view = productionCardView(exercise, index, total, revealed, sourceSentence, {
+    sourceSentence: sourceSentence as Sentence | null | undefined,
+    lexiconById,
+  });
   const hintSegments =
     lexiconById && sourceSentence?.tokens?.length
       ? buildWordHintSegments(
@@ -62,11 +65,12 @@ export function ProductionExerciseCard({
         {view.progressLabel}
       </Text>
       <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-        Can you say this in Italian?
+        {view.keywordMode ? 'Can you say the key word in Italian?' : 'Can you say this in Italian?'}
       </Text>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-        Say it out loud the way the story said it, then check your answer. Tap an English word if
-        you forget the Italian for it.
+        {view.keywordMode
+          ? 'Say the Italian word or short phrase out loud, then check your answer. Tap an English word if you forget the Italian for it.'
+          : 'Say it out loud the way the story said it, then check your answer. Tap an English word if you forget the Italian for it.'}
       </Text>
 
       <View
@@ -74,7 +78,9 @@ export function ProductionExerciseCard({
           styles.promptCard,
           { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
         ]}>
-        <Text style={[type.caption, { color: colors.textMuted }]}>English</Text>
+        <Text style={[type.caption, { color: colors.textMuted }]}>
+          {view.keywordMode ? 'Key word' : 'English'}
+        </Text>
         {hintSegments ? (
           <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm, flexWrap: 'wrap' }]}>
             {hintSegments.map((segment, segmentIndex) => {
