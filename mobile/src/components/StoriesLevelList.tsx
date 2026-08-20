@@ -284,18 +284,35 @@ function LevelSection({
                     />
                   );
                 }
-                return (
-                  <CheckpointRow
-                    key={item.id}
-                    eyebrow="Words"
-                    title={`Chapters ${item.batchStart}–${item.batchEnd}`}
-                    subtitle="Word recap from this batch"
-                    status={item.status}
-                    colors={colors}
-                    icon="review"
-                    onPress={() => onPathPress(item)}
-                  />
-                );
+                if (item.kind === 'speak') {
+                  return (
+                    <CheckpointRow
+                      key={item.id}
+                      eyebrow="Speak the scene"
+                      title={item.title}
+                      subtitle="Retell what happened"
+                      status={item.status}
+                      colors={colors}
+                      icon="speak"
+                      onPress={() => onPathPress(item)}
+                    />
+                  );
+                }
+                if (item.kind === 'recap') {
+                  return (
+                    <CheckpointRow
+                      key={item.id}
+                      eyebrow="Words"
+                      title={`Chapters ${item.batchStart}–${item.batchEnd}`}
+                      subtitle="Word recap from this batch"
+                      status={item.status}
+                      colors={colors}
+                      icon="review"
+                      onPress={() => onPathPress(item)}
+                    />
+                  );
+                }
+                return null;
               })
             : group.chapters.map((chapter) => (
                 <ChapterRow
@@ -380,7 +397,7 @@ function CheckpointRow({
   subtitle: string;
   status: ChapterStatus;
   colors: ThemeColors;
-  icon: 'book' | 'review';
+  icon: 'book' | 'review' | 'speak';
   onPress: () => void;
 }) {
   const { type, minTouchTarget } = useTheme();
@@ -399,7 +416,9 @@ function CheckpointRow({
   const symbolName =
     icon === 'book'
       ? ({ ios: 'text.book.closed.fill', android: 'menu_book', web: 'menu_book' } as const)
-      : ({ ios: 'arrow.triangle.2.circlepath', android: 'sync', web: 'sync' } as const);
+      : icon === 'speak'
+        ? ({ ios: 'quote.bubble.fill', android: 'chat_bubble', web: 'chat_bubble' } as const)
+        : ({ ios: 'arrow.triangle.2.circlepath', android: 'sync', web: 'sync' } as const);
 
   return (
     <Animated.View style={{ transform: [{ translateX: shake }] }}>

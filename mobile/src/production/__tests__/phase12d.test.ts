@@ -18,6 +18,7 @@ import {
   productionDisplayFromStory,
   skipProduction,
 } from '@/src/production/flow';
+import { countProductionWords } from '@/src/production/score';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const root = join(here, '../../../content');
@@ -111,21 +112,58 @@ describe('Phase 12D reveal and continue flow', () => {
   });
 
   it('uses the story sentence so learners produce 3rd person, not 1st', () => {
+    const display = productionDisplayFromStory(
+      sampleExercise({ level: 'A1+', promptEn: "I'm hungry.", expectedIt: 'Ho fame.' }),
+      {
+        text: 'Luca ha fame.',
+        english: 'Luca is hungry.',
+      },
+    );
+    expect(display.promptEn).toBe('Luca is hungry.');
+    expect(display.expectedIt).toBe('Luca ha fame.');
+    expect(display.acceptableAnswers).toEqual(['Ho fame.', 'Io ho fame.']);
+  });
+
+  it('keeps A1 production to a single word or short phrase, not the full story sentence', () => {
+    const bundle = loadBundle();
+    const sentence = [...bundle.chapters.values()]
+      .flatMap((chapter) => chapter.paragraphs.flatMap((paragraph) => paragraph.sentences))
+      .find((row) => row.id === 's01' && row.text.includes('arriva'));
+    expect(sentence).toBeTruthy();
+
+    const exercise = sampleExercise({
+      exerciseId: 'luca-a-roma-ch01-prod-01',
+      sourceSentenceId: 's01',
+      promptEn: 'I arrive in Rome.',
+      expectedIt: 'Arrivo a Roma.',
+      acceptableAnswers: ['Io arrivo a Roma.'],
+      focus: ['present', 'arrival'],
+      level: 'A1',
+    });
+
+    const display = productionDisplayFromStory(exercise, sentence, {
+      storySentence: sentence,
+      lexiconById: bundle.lexiconById,
+    });
+    expect(countProductionWords(display.expectedIt)).toBeLessThanOrEqual(2);
+    expect(display.promptEn.toLowerCase()).not.toContain('luca arrives in rome');
+    expect(display.expectedIt.toLowerCase()).not.toContain('luca arriva a roma');
+
+    const view = productionCardView(exercise, 0, 4, true, sentence, {
+      storySentence: sentence,
+      lexiconById: bundle.lexiconById,
+    });
+    expect(view.wordFocused).toBe(true);
+    expect(view.promptEn.toLowerCase()).not.toBe('luca arrives in rome.');
+  });
+
+  it('keeps authored two-word A1 chunks like Ho fame', () => {
     const display = productionDisplayFromStory(sampleExercise(), {
       text: 'Luca ha fame.',
       english: 'Luca is hungry.',
     });
-    expect(display.promptEn).toBe('Luca is hungry.');
-    expect(display.expectedIt).toBe('Luca ha fame.');
-    expect(display.acceptableAnswers).toEqual(['Ho fame.', 'Io ho fame.']);
-
-    const view = productionCardView(sampleExercise(), 0, 4, true, {
-      text: 'Luca arriva a Roma.',
-      english: 'Luca arrives in Rome.',
-    });
-    expect(view.promptEn).toBe('Luca arrives in Rome.');
-    expect(view.expectedIt).toBe('Luca arriva a Roma.');
-    expect(view.acceptableAnswers).toContain('Ho fame.');
+    expect(display.promptEn).toBe("I'm hungry.");
+    expect(display.expectedIt).toBe('Ho fame.');
   });
 
   it('shows English before reveal and hides Italian', () => {

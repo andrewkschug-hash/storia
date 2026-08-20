@@ -37,9 +37,12 @@ export function ProductionExerciseCard({
   const [revealed, setRevealed] = useState(false);
   const [assessment, setAssessment] = useState<SelfAssessment | null>(null);
   const [revealedHints, setRevealedHints] = useState<Record<string, boolean>>({});
-  const view = productionCardView(exercise, index, total, revealed, sourceSentence);
+  const view = productionCardView(exercise, index, total, revealed, sourceSentence, {
+    storySentence: sourceSentence,
+    lexiconById,
+  });
   const hintSegments =
-    lexiconById && sourceSentence?.tokens?.length
+    !view.wordFocused && lexiconById && sourceSentence?.tokens?.length
       ? buildWordHintSegments(
           view.promptEn,
           sourceSentence as Sentence,
@@ -62,11 +65,12 @@ export function ProductionExerciseCard({
         {view.progressLabel}
       </Text>
       <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-        Can you say this in Italian?
+        {view.wordFocused ? 'How do you say this in Italian?' : 'Can you say this in Italian?'}
       </Text>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-        Say it out loud the way the story said it, then check your answer. Tap an English word if
-        you forget the Italian for it.
+        {view.wordFocused
+          ? 'Say the Italian word out loud, then check your answer.'
+          : 'Say it out loud the way the story said it, then check your answer. Tap an English word if you forget the Italian for it.'}
       </Text>
 
       <View
