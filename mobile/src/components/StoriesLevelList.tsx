@@ -1,4 +1,4 @@
-import { SymbolView } from 'expo-symbols';
+import { AppSymbol } from '@/src/components/AppSymbol';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
@@ -231,7 +231,7 @@ function LevelSection({
             {group.locked ? (
               <StatusIcon status="locked" color={colors.textMuted} />
             ) : (
-              <SymbolView
+              <AppSymbol
                 name={{
                   ios: expanded ? 'chevron.up' : 'chevron.down',
                   android: expanded ? 'expand_less' : 'expand_more',
@@ -420,7 +420,7 @@ function CheckpointRow({
           },
         ]}>
         <View style={styles.checkpointIcon}>
-          <SymbolView name={symbolName} tintColor={colors.accent} size={20} />
+          <AppSymbol name={symbolName} tintColor={colors.accent} size={20} />
         </View>
         <View style={styles.chapterMeta}>
           <Text style={[type.caption, { color: colors.accent }]}>{eyebrow}</Text>
@@ -525,7 +525,7 @@ function StatusIcon({ status, color }: { status: ChapterStatus; color: string })
 
   return (
     <View style={styles.iconSlot}>
-      <SymbolView name={name} tintColor={color} size={18} />
+      <AppSymbol name={name} tintColor={color} size={18} />
     </View>
   );
 }

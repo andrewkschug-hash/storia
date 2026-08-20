@@ -1,4 +1,4 @@
-import { SymbolView } from 'expo-symbols';
+import { AppSymbol } from '@/src/components/AppSymbol';
 import { useMemo, useRef } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
@@ -290,7 +290,7 @@ function CheckpointPathRow({
             minHeight: minTouchTarget,
           },
         ]}>
-        <SymbolView name={symbolName} tintColor={colors.accent} size={18} />
+        <AppSymbol name={symbolName} tintColor={colors.accent} size={18} />
         <View style={[styles.pathMain, { marginLeft: 10 }]}>
           <Text style={[styles.pathEyebrow, { color: colors.accent }]}>{eyebrow}</Text>
           <Text style={[styles.pathTitle, { color: colors.text }]}>{title}</Text>
@@ -321,7 +321,7 @@ function StatusIcon({ status }: { status: ChapterStatus }) {
 
   return (
     <View style={styles.iconSlot}>
-      <SymbolView name={name} tintColor={color} size={18} />
+      <AppSymbol name={name} tintColor={color} size={18} />
     </View>
   );
 }

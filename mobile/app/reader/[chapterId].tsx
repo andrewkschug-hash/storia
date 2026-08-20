@@ -1,5 +1,5 @@
 import { Stack, router, useFocusEffect, useLocalSearchParams, type Href } from 'expo-router';
-import { SymbolView } from 'expo-symbols';
+import { AppSymbol } from '@/src/components/AppSymbol';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -500,7 +500,7 @@ export default function ReaderScreen() {
                 styles.headerBack,
                 { opacity: pressed ? 0.7 : 1, minHeight: minTouchTarget },
               ]}>
-              <SymbolView
+              <AppSymbol
                 name={{
                   ios: 'chevron.left',
                   android: 'arrow_back',

@@ -33,17 +33,8 @@ export async function loadStoryProgressView(storyId: string): Promise<{
     };
   }
   const service = getProgressService(storyId);
-  const chapters: ChapterListItem[] = [];
-  for (const summary of story.chapters) {
-    chapters.push({
-      id: summary.id,
-      number: summary.number,
-      title: summary.title,
-      titleIt: summary.titleIt,
-      status: await service.getChapterStatus(summary.id),
-    });
-  }
-  return { progress: existing, chapters };
+  const { progress, statuses } = await service.listChapterStatuses();
+  return { progress, chapters: statuses };
 }
 
 export function useReadingProgress(storyId: string = LUCA_STORY_ID) {

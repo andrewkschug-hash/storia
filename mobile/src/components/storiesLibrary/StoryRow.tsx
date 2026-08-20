@@ -1,4 +1,4 @@
-import { SymbolView } from 'expo-symbols';
+import { AppSymbol } from '@/src/components/AppSymbol';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { LibraryStoryRow } from '@/src/components/storiesLibrary/types';
@@ -35,7 +35,7 @@ export function StoryRow({ row, expanded, onPress }: Props) {
           {row.completed} / {row.total} chapters
         </Text>
       </View>
-      <SymbolView
+      <AppSymbol
         name={{
           ios: expanded ? 'chevron.up' : 'chevron.right',
           android: expanded ? 'expand_less' : 'chevron_right',

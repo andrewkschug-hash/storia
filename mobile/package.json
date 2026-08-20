@@ -5,6 +5,7 @@
   "dependencies": {
     "@expo-google-fonts/cormorant-garamond": "^0.4.1",
     "@expo-google-fonts/literata": "^0.4.3",
+    "@expo/vector-icons": "^15.0.2",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-navigation/native": "^7.3.16",
     "@supabase/supabase-js": "^2.104.1",
@@ -58,7 +59,8 @@
     "audio:check-a2": "node scripts/check-a2-audio.js --skip-gateway",
     "audio:generate-a2": "node scripts/generate-a2-audio.js",
     "audio:package-a2": "node scripts/package-a2-audio.js --dry-run",
-    "audio:validate-a2": "node scripts/validate-a2-audio.js"
+    "audio:validate-a2": "node scripts/validate-a2-audio.js",
+    "postinstall": "node scripts/patch-expo-router-symbol.js"
   },
   "private": true
 }

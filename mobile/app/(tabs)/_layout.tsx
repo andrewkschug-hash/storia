@@ -1,27 +1,35 @@
-import { SymbolView } from 'expo-symbols';
 import { Tabs } from 'expo-router';
+import { useMemo } from 'react';
 import { Platform, useWindowDimensions } from 'react-native';
 
-import { useClientOnlyValue } from '@/components/useClientOnlyValue';
+import { AppSymbol } from '@/src/components/AppSymbol';
 import { useTheme } from '@/src/theme/useTheme';
+
+const WEB_TAB_BAR_HEIGHT = 62;
 
 export default function TabLayout() {
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const compactTabs = width < 360;
 
+  const tabBarStyle = useMemo(
+    () => ({
+      backgroundColor: colors.backgroundElevated,
+      borderTopColor: colors.border,
+      minHeight: Platform.OS === 'web' ? 56 : undefined,
+      paddingBottom: Platform.OS === 'web' ? 6 : undefined,
+    }),
+    [colors.backgroundElevated, colors.border],
+  );
+
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: colors.tabIconSelected,
         tabBarInactiveTintColor: colors.tabIconDefault,
-        tabBarStyle: {
-          backgroundColor: colors.backgroundElevated,
-          borderTopColor: colors.border,
-          minHeight: Platform.OS === 'web' ? 56 : undefined,
-          paddingBottom: Platform.OS === 'web' ? 6 : undefined,
-        },
+        tabBarStyle,
         tabBarLabelStyle: compactTabs ? { fontSize: 11 } : undefined,
+        sceneStyle: Platform.OS === 'web' ? { paddingBottom: WEB_TAB_BAR_HEIGHT } : undefined,
         headerStyle: {
           backgroundColor: colors.background,
         },
@@ -31,14 +39,15 @@ export default function TabLayout() {
           color: colors.text,
         },
         headerShadowVisible: false,
-        headerShown: useClientOnlyValue(false, true),
+        headerShown: false,
+        lazy: false,
       }}>
       <Tabs.Screen
         name="home"
         options={{
           title: 'Home',
           tabBarIcon: ({ color }) => (
-            <SymbolView
+            <AppSymbol
               name={{
                 ios: 'book.fill',
                 android: 'menu_book',
@@ -56,7 +65,7 @@ export default function TabLayout() {
         options={{
           title: 'Stories',
           tabBarIcon: ({ color }) => (
-            <SymbolView
+            <AppSymbol
               name={{
                 ios: 'text.book.closed.fill',
                 android: 'auto_stories',
@@ -73,7 +82,7 @@ export default function TabLayout() {
         options={{
           title: 'Italian',
           tabBarIcon: ({ color }) => (
-            <SymbolView
+            <AppSymbol
               name={{
                 ios: 'textformat.abc',
                 android: 'translate',
@@ -90,7 +99,7 @@ export default function TabLayout() {
         options={{
           title: 'Profile',
           tabBarIcon: ({ color }) => (
-            <SymbolView
+            <AppSymbol
               name={{
                 ios: 'person.fill',
                 android: 'person',

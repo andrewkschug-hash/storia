@@ -1,5 +1,5 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   ScrollView,
@@ -45,6 +45,7 @@ export default function StoriesScreen() {
   const [continueTarget, setContinueTarget] = useState<ContinueReadingTarget | null>(null);
   const [beforeRomeRows, setBeforeRomeRows] = useState<ExtraStoryRow[]>([]);
   const [a2PlusRows, setA2PlusRows] = useState<ExtraStoryRow[]>([]);
+  const secondaryLoadedRef = useRef(false);
 
   const loadBeforeRome = useCallback(async () => {
     const next: ExtraStoryRow[] = [];
@@ -85,21 +86,19 @@ export default function StoriesScreen() {
   useFocusEffect(
     useCallback(() => {
       void refresh();
-      void loadBeforeRome();
-      void loadA2Plus();
       void getContinueReadingTarget().then(setContinueTarget);
+      if (secondaryLoadedRef.current) return;
+      // Load secondary story rows once after Luca so tab switches stay responsive.
+      const defer = setTimeout(() => {
+        secondaryLoadedRef.current = true;
+        void loadBeforeRome();
+        void loadA2Plus();
+      }, 0);
+      return () => clearTimeout(defer);
     }, [refresh, loadBeforeRome, loadA2Plus]),
   );
 
-  if (loading) {
-    return (
-      <AtmosphereBackground>
-        <View style={styles.center}>
-          <ActivityIndicator color={colors.tint} />
-        </View>
-      </AtmosphereBackground>
-    );
-  }
+  const showInitialSpinner = loading && chapterStatuses.length === 0;
 
   if (error) {
     return (
@@ -180,6 +179,12 @@ export default function StoriesScreen() {
           style={{ paddingHorizontal: layout.isPhone ? 20 : 24 }}>
           <StoriesHeader />
 
+          {showInitialSpinner ? (
+            <View style={[styles.center, { minHeight: 240 }]}>
+              <ActivityIndicator color={colors.tint} />
+            </View>
+          ) : (
+            <>
           <StoriesContinueHero
             chapterNumber={heroPresentation?.progressChapterNumber ?? heroChapter.number}
             chapterTitleIt={heroPresentation?.title ?? heroChapter.titleIt}
@@ -222,6 +227,8 @@ export default function StoriesScreen() {
               router.push(speakSceneHref(LUCA_STORY_ID, sceneId, 'stories'));
             }}
           />
+            </>
+          )}
         </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>

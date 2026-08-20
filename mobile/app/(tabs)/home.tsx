@@ -1,10 +1,10 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { SymbolView } from 'expo-symbols';
 import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getAccount, type LocalAccount } from '@/src/account/storage';
+import { AppSymbol } from '@/src/components/AppSymbol';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
@@ -19,6 +19,9 @@ import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, type ThemeColors } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
+
+/** Avoid re-running account/onboarding gate on every Home tab remount. */
+let homeGateComplete = false;
 
 export default function HomeScreen() {
   const { colors, type } = useTheme();
@@ -37,7 +40,7 @@ export default function HomeScreen() {
     refresh,
   } = useContinueReading();
   const { home, refresh: refreshVocab, summary } = useVocabulary(progress);
-  const [gateReady, setGateReady] = useState(false);
+  const [gateReady, setGateReady] = useState(homeGateComplete);
   const [account, setAccount] = useState<LocalAccount | null>(null);
   const [continueError, setContinueError] = useState<string | null>(null);
 
@@ -52,6 +55,10 @@ export default function HomeScreen() {
   );
 
   useEffect(() => {
+    if (homeGateComplete) {
+      setGateReady(true);
+      return;
+    }
     // Gate order: local account → learner onboarding → tabs.
     void (async () => {
       const local = await getAccount();
@@ -65,11 +72,13 @@ export default function HomeScreen() {
         router.replace('/onboarding' as Href);
         return;
       }
+      homeGateComplete = true;
       setGateReady(true);
     })();
   }, []);
 
-  if (!gateReady || loading) {
+  const showBlockingSpinner = !gateReady || (loading && !target && !error);
+  if (showBlockingSpinner) {
     return (
       <AtmosphereBackground>
         <View style={styles.center}>
@@ -255,7 +264,7 @@ function StatChip({
       ]}>
       <View style={styles.statValueRow}>
         {showFlame ? (
-          <SymbolView
+          <AppSymbol
             name={{
               ios: 'flame.fill',
               android: 'local_fire_department',

@@ -68,6 +68,42 @@ export class ProgressService {
 
   async getChapterStatus(chapterId: string): Promise<ChapterStatus> {
     const progress = await this.getOrCreate();
+    return this.chapterStatusForProgress(progress, chapterId);
+  }
+
+  /** One storage read for browse lists (Stories tab, hometown rows, A2+ rows). */
+  async listChapterStatuses(): Promise<{
+    progress: ReadingProgressRecord;
+    statuses: Array<{
+      id: string;
+      number: number;
+      title: string;
+      titleIt: string;
+      status: ChapterStatus;
+    }>;
+  }> {
+    const progress = await this.getOrCreate();
+    const chapterNumberById =
+      this.story.id === LUCA_STORY_ID
+        ? new Map([...this.chaptersById.values()].map((c) => [c.id, c.number] as const))
+        : undefined;
+    const statuses = this.story.chapters.map((summary) => ({
+      id: summary.id,
+      number: summary.number,
+      title: summary.title,
+      titleIt: summary.titleIt,
+      status: this.chapterStatusForProgress(progress, summary.id, chapterNumberById),
+    }));
+    return { progress, statuses };
+  }
+
+  private chapterStatusForProgress(
+    progress: ReadingProgressRecord,
+    chapterId: string,
+    chapterNumberById = this.story.id === LUCA_STORY_ID
+      ? new Map([...this.chaptersById.values()].map((c) => [c.id, c.number] as const))
+      : undefined,
+  ): ChapterStatus {
     const chapter = this.chaptersById.get(chapterId);
     if (!chapter) return 'locked';
 
@@ -88,11 +124,8 @@ export class ProgressService {
       return 'locked';
     }
 
-    const chapterNumberById = new Map(
-      [...this.chaptersById.values()].map((c) => [c.id, c.number] as const),
-    );
     if (
-      this.story.id === LUCA_STORY_ID &&
+      chapterNumberById &&
       isFirstChapterAfterBatch(chapter.number) &&
       recapBlocksChapter(progress, this.story.id, chapter.number, chapterNumberById)
     ) {
