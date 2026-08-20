@@ -1,4 +1,5 @@
-import type { ProductionExercise } from '@/src/content/schemas';
+import type { LexiconEntry, ProductionExercise, Sentence } from '@/src/content/schemas';
+import { resolveProductionFocusLemmas } from '@/src/vocabulary/productionFocusLemmas';
 
 export type StorySentenceCue = {
   text: string;
@@ -19,6 +20,7 @@ export type ProductionCardView = {
   continueVisible: boolean;
   howDidYouDoVisible: boolean;
   progressLabel: string;
+  keywordMode: boolean;
 };
 
 export function afterComprehensionResults(
@@ -46,6 +48,61 @@ export function cleanProductionPromptEn(promptEn: string): string {
   return promptEn.replace(/\s*say it in italian\.?\s*$/i, '').trim();
 }
 
+/** A1 learners practice key words, not full story sentences. Higher levels keep sentence mode. */
+export function usesKeywordProduction(exercise: ProductionExercise): boolean {
+  if (exercise.promptScope === 'sentence') return false;
+  if (exercise.promptScope === 'keyword') return true;
+  return exercise.level === 'A1';
+}
+
+function englishGloss(entry: LexiconEntry | undefined, fallback: string): string {
+  if (!entry?.english) return fallback;
+  return entry.english.split(/[,;]/)[0]?.trim() || fallback;
+}
+
+function uniqueAnswers(primary: string, extras: string[]): string[] {
+  const normalizedPrimary = primary.toLocaleLowerCase('it');
+  return [...new Set(extras.map((line) => line.trim()).filter(Boolean))].filter(
+    (line) => line.toLocaleLowerCase('it') !== normalizedPrimary,
+  );
+}
+
+/**
+ * Keyword-focused display for early A1: prompt and expected answer use 1–2 focus words,
+ * not the full narration sentence.
+ */
+export function productionKeywordDisplay(
+  exercise: ProductionExercise,
+  source: Sentence,
+  lexiconById: Map<string, LexiconEntry>,
+): { promptEn: string; expectedIt: string; acceptableAnswers: string[] } {
+  const focusIds = resolveProductionFocusLemmas(exercise, source, lexiconById, 2);
+  if (focusIds.length === 0) {
+    return {
+      promptEn: cleanProductionPromptEn(exercise.promptEn),
+      expectedIt: exercise.expectedIt,
+      acceptableAnswers: [...(exercise.acceptableAnswers ?? [])],
+    };
+  }
+
+  const promptEn = focusIds
+    .map((lemmaId) => englishGloss(lexiconById.get(lemmaId), lemmaId))
+    .join(' · ');
+
+  const surfacesByLemma = new Map(source.tokens.map((token) => [token.lemmaId, token.surface]));
+  const expectedIt = focusIds
+    .map((lemmaId) => lexiconById.get(lemmaId)?.italian ?? surfacesByLemma.get(lemmaId) ?? lemmaId)
+    .join(' ');
+
+  const extras = uniqueAnswers(expectedIt, [
+    exercise.expectedIt,
+    ...(exercise.acceptableAnswers ?? []),
+    ...focusIds.map((lemmaId) => surfacesByLemma.get(lemmaId) ?? '').filter(Boolean),
+  ]);
+
+  return { promptEn, expectedIt, acceptableAnswers: extras };
+}
+
 /**
  * Prefer the story sentence (3rd person) over overlay first-person prompts.
  * Overlay answers remain acceptable so first-person production is still OK.
@@ -53,7 +110,17 @@ export function cleanProductionPromptEn(promptEn: string): string {
 export function productionDisplayFromStory(
   exercise: ProductionExercise,
   storySentence?: StorySentenceCue | null,
+  options?: {
+    sourceSentence?: Sentence | null;
+    lexiconById?: Map<string, LexiconEntry>;
+  },
 ): { promptEn: string; expectedIt: string; acceptableAnswers: string[] } {
+  const source = options?.sourceSentence;
+  const lexicon = options?.lexiconById;
+  if (usesKeywordProduction(exercise) && source?.tokens?.length && lexicon) {
+    return productionKeywordDisplay(exercise, source, lexicon);
+  }
+
   if (!storySentence?.text.trim()) {
     return {
       promptEn: cleanProductionPromptEn(exercise.promptEn),
@@ -64,14 +131,15 @@ export function productionDisplayFromStory(
 
   const expectedIt = storySentence.text.trim();
   const promptEn = cleanProductionPromptEn(storySentence.english?.trim() || exercise.promptEn);
-  const extras = [exercise.expectedIt, ...(exercise.acceptableAnswers ?? [])]
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0 && line.toLocaleLowerCase('it') !== expectedIt.toLocaleLowerCase('it'));
+  const extras = uniqueAnswers(expectedIt, [
+    exercise.expectedIt,
+    ...(exercise.acceptableAnswers ?? []),
+  ]);
 
   return {
     promptEn,
     expectedIt,
-    acceptableAnswers: [...new Set(extras)],
+    acceptableAnswers: extras,
   };
 }
 
@@ -81,8 +149,13 @@ export function productionCardView(
   total: number,
   revealed: boolean,
   storySentence?: StorySentenceCue | null,
+  options?: {
+    sourceSentence?: Sentence | null;
+    lexiconById?: Map<string, LexiconEntry>;
+  },
 ): ProductionCardView {
-  const display = productionDisplayFromStory(exercise, storySentence);
+  const keywordMode = usesKeywordProduction(exercise);
+  const display = productionDisplayFromStory(exercise, storySentence, options);
   return {
     promptEn: display.promptEn,
     expectedIt: revealed ? display.expectedIt : null,
@@ -91,5 +164,6 @@ export function productionCardView(
     continueVisible: revealed,
     howDidYouDoVisible: revealed,
     progressLabel: `${index + 1} of ${total}`,
+    keywordMode,
   };
 }

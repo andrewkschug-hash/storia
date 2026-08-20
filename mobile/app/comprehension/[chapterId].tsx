@@ -11,7 +11,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProductionExerciseCard } from '@/src/components/ProductionExerciseCard';
-import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { LUCA_STORY_ID, findStoryIdForChapter, getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
 import { getProductionExercisesForChapter } from '@/src/content/productionExercises';
 import { readerHref } from '@/src/content/storyHrefs';
@@ -40,8 +39,6 @@ import {
 } from '@/src/production/flow';
 import { getVocabularyService } from '@/src/vocabulary';
 import { resolveProductionFocusLemmas } from '@/src/vocabulary/productionFocusLemmas';
-import { getReviewService } from '@/src/review';
-import type { HomeReviewCopy } from '@/src/review/ReviewService';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { isPressableFocused } from '@/src/theme/pressableState';
@@ -90,25 +87,6 @@ export default function ComprehensionScreen() {
     correctChoice: number;
   } | null>(null);
   const [finishing, setFinishing] = useState(false);
-  const [chapterReview, setChapterReview] = useState<HomeReviewCopy | null>(null);
-
-  useEffect(() => {
-    if (!chapter) {
-      setChapterReview(null);
-      return;
-    }
-    let cancelled = false;
-    void (async () => {
-      const state = await getVocabularyService().getState();
-      if (cancelled) return;
-      const bundle = getContentBundle(storyId ?? chapter.storyId);
-      const copy = getReviewService().chapterNudgeCopy(chapter.number, bundle, state);
-      setChapterReview(copy.cta ? copy : null);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [chapter, storyId]);
 
   useEffect(() => {
     if (!chapter) {
@@ -540,11 +518,6 @@ export default function ComprehensionScreen() {
               You can keep reading either way — this just checks the story, not your worth as a
               learner.
             </Text>
-            {chapterReview && !isLessonBatchEnd(chapter.number) ? (
-              <View style={{ marginTop: Spacing.xl }}>
-                <ReviewNudge copy={chapterReview} />
-              </View>
-            ) : null}
             <Pressable
               disabled={finishing}
               onPress={continueFromResults}
