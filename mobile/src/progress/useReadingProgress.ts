@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 
 import { LUCA_STORY_ID, getContentBundle, getStory } from '@/src/content';
+import { navAsync } from '@/src/navigation/diagnostics';
+import { useRefreshGuard } from '@/src/navigation/useRefreshGuard';
 import { getProgressService, peekProgress } from '@/src/progress';
 import { unlockAllChapters } from '@/src/progress/unlockAll';
 import type { ChapterStatus, ReadingProgressRecord } from '@/src/progress/types';
@@ -43,19 +45,28 @@ export function useReadingProgress(storyId: string = LUCA_STORY_ID) {
   const [chapterStatuses, setChapterStatuses] = useState<ChapterListItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { run } = useRefreshGuard(`reading-progress:${storyId}`);
 
   const refresh = useCallback(async () => {
+    setLoading(true);
     try {
-      const view = await loadStoryProgressView(storyId);
-      setProgress(view.progress);
-      setChapterStatuses(view.chapters);
+      const result = await run(async ({ isStale }) =>
+        navAsync(`reading-progress refresh (${storyId})`, async () => {
+          const view = await loadStoryProgressView(storyId);
+          if (isStale()) return null;
+          return view;
+        }),
+      );
+      if (!result) return;
+      setProgress(result.progress);
+      setChapterStatuses(result.chapters);
       setError(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
       setLoading(false);
     }
-  }, [storyId]);
+  }, [run, storyId]);
 
   useEffect(() => {
     try {

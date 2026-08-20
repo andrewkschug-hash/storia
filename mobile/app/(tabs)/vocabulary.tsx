@@ -1,10 +1,11 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
+import { navLog } from '@/src/navigation/diagnostics';
 import { useReadingProgress } from '@/src/progress/useReadingProgress';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useLayout } from '@/src/theme/useLayout';
@@ -28,9 +29,15 @@ export default function VocabularyScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      navLog('vocabulary focus');
       void refresh();
     }, [refresh]),
   );
+
+  useEffect(() => {
+    navLog('vocabulary mount');
+    return () => navLog('vocabulary unmount');
+  }, []);
 
   const encountered = summary?.encountered ?? 0;
   const practiceCount = practiceItems.length;

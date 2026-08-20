@@ -7,6 +7,7 @@ import type { LearnerCloud } from '@/src/sync/types';
 
 let cloudOverride: LearnerCloud | null | undefined;
 let hydratedForUser: string | null = null;
+let hydrationPromise: Promise<void> | null = null;
 
 export function getLearnerCloud(): LearnerCloud | null {
   if (cloudOverride !== undefined) return cloudOverride;
@@ -22,6 +23,7 @@ export function __setLearnerCloud(cloud: LearnerCloud | null | undefined) {
 
 export function __resetLearnerHydration() {
   hydratedForUser = null;
+  hydrationPromise = null;
 }
 
 export async function completeOnboardingAndSync(): Promise<void> {
@@ -41,14 +43,23 @@ export async function hydrateLearnerIfNeeded(userId?: string | null): Promise<vo
   if (!cloud) return;
   const key = userId ?? 'session';
   if (hydratedForUser === key) return;
-  setProgressCloud(cloud);
-  try {
-    await hydrateLearnerFromCloud(cloud, getProgressRepository());
-    hydratedForUser = key;
-    __resetProgressService();
-  } catch {
-    /* stay on local cache */
+  if (hydrationPromise) {
+    await hydrationPromise;
+    return;
   }
+  setProgressCloud(cloud);
+  hydrationPromise = (async () => {
+    try {
+      await hydrateLearnerFromCloud(cloud, getProgressRepository());
+      hydratedForUser = key;
+      __resetProgressService();
+    } catch {
+      /* stay on local cache */
+    }
+  })().finally(() => {
+    hydrationPromise = null;
+  });
+  await hydrationPromise;
 }
 
 export async function clearLocalLearnerState(): Promise<void> {
@@ -56,5 +67,6 @@ export async function clearLocalLearnerState(): Promise<void> {
   if (repo.clearAll) await repo.clearAll();
   setProgressCloud(null);
   hydratedForUser = null;
+  hydrationPromise = null;
   __resetProgressService();
 }

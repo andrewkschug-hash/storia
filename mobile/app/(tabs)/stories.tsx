@@ -1,5 +1,5 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   ScrollView,
@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
+import { navLog } from '@/src/navigation/diagnostics';
 import {
   StoriesContinueHero,
   StoriesHeader,
@@ -85,6 +86,7 @@ export default function StoriesScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      navLog('stories focus');
       void refresh();
       void getContinueReadingTarget().then(setContinueTarget);
       if (secondaryLoadedRef.current) return;
@@ -97,6 +99,11 @@ export default function StoriesScreen() {
       return () => clearTimeout(defer);
     }, [refresh, loadBeforeRome, loadA2Plus]),
   );
+
+  useEffect(() => {
+    navLog('stories mount');
+    return () => navLog('stories unmount');
+  }, []);
 
   const showInitialSpinner = loading && chapterStatuses.length === 0;
 

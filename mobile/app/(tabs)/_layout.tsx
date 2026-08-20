@@ -1,16 +1,38 @@
-import { Tabs } from 'expo-router';
-import { useMemo } from 'react';
+import { Tabs, usePathname } from 'expo-router';
+import { useEffect, useMemo, useRef } from 'react';
 import { Platform, useWindowDimensions } from 'react-native';
 
 import { AppSymbol } from '@/src/components/AppSymbol';
+import { navLog } from '@/src/navigation/diagnostics';
 import { useTheme } from '@/src/theme/useTheme';
 
 const WEB_TAB_BAR_HEIGHT = 62;
+
+const TAB_ROUTE_NAMES = ['home', 'stories', 'vocabulary', 'profile'] as const;
+
+function tabFromPathname(pathname: string): string {
+  for (const name of TAB_ROUTE_NAMES) {
+    if (pathname.includes(name)) return name;
+  }
+  return pathname;
+}
 
 export default function TabLayout() {
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const compactTabs = width < 360;
+  const pathname = usePathname();
+  const previousTab = useRef<string | null>(null);
+
+  useEffect(() => {
+    const next = tabFromPathname(pathname);
+    if (previousTab.current && previousTab.current !== next) {
+      navLog(`activeTab changing: ${previousTab.current} → ${next}`);
+    } else if (!previousTab.current) {
+      navLog(`activeTab initial: ${next}`);
+    }
+    previousTab.current = next;
+  }, [pathname]);
 
   const tabBarStyle = useMemo(
     () => ({
@@ -22,8 +44,18 @@ export default function TabLayout() {
     [colors.backgroundElevated, colors.border],
   );
 
+  const screenListeners = useMemo(
+    () => ({
+      tabPress: (event: { target?: string }) => {
+        navLog(`click: ${event.target ?? 'tab'}`, { pathname });
+      },
+    }),
+    [pathname],
+  );
+
   return (
     <Tabs
+      screenListeners={screenListeners}
       screenOptions={{
         tabBarActiveTintColor: colors.tabIconSelected,
         tabBarInactiveTintColor: colors.tabIconDefault,
@@ -40,7 +72,8 @@ export default function TabLayout() {
         },
         headerShadowVisible: false,
         headerShown: false,
-        lazy: false,
+        // Mount tabs on first visit only — avoids thundering-herd init that blocked the main thread.
+        lazy: true,
       }}>
       <Tabs.Screen
         name="home"

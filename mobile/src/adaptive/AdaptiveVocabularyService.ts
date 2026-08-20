@@ -22,7 +22,11 @@ export class AdaptiveVocabularyService {
     return this.cached;
   }
 
-  async buildProfile(progress: ReadingProgressRecord, now?: Date): Promise<AdaptiveLearnerProfile> {
+  async buildProfile(
+    progress: ReadingProgressRecord,
+    now?: Date,
+    options?: { persist?: boolean },
+  ): Promise<AdaptiveLearnerProfile> {
     const vocab = await this.vocab.getState();
     const adaptive = await this.getState();
     const profile = buildAdaptiveProfile(this.bundle, vocab, progress, {
@@ -31,6 +35,7 @@ export class AdaptiveVocabularyService {
       recentHits: adaptive.recentHits,
       now,
     });
+    if (options?.persist === false) return profile;
     adaptive.lastProfile = profile;
     adaptive.lastUpdatedAt = profile.lastUpdatedAt;
     await this.persist(adaptive);
