@@ -22,7 +22,7 @@ import {
 } from '@/src/progress/continueReading';
 import { __resetProgressService, __setProgressRepository, getProgressService } from '@/src/progress';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
-import { completeBatchCheckpointsAfterChapter } from '@/src/progress/testHelpers';
+import { completeBatchCheckpointsAfterChapter, grantA1MasteryForTests } from '@/src/progress/testHelpers';
 import { createInitialProgress } from '@/src/progress/types';
 import { skipProduction } from '@/src/production/flow';
 import { findSentenceById } from '@/src/vocabulary/storyExamples';
@@ -36,6 +36,9 @@ afterEach(() => {
 });
 
 async function completeAllChapters(storyId: string, score = 1) {
+  if (storyId !== LUCA_STORY_ID) {
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
+  }
   const service = getProgressService(storyId);
   const bundle = getContentBundle(storyId);
   for (const summary of bundle.story.chapters) {
@@ -98,6 +101,7 @@ describe('Phase 12O continue reading', () => {
 
   it('still continues inside an unfinished story', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const s3 = getProgressService('luca-prima-di-roma-03');
     await s3.openChapter('luca-prima-di-roma-03-01');
     const target = await getContinueReadingTarget();
@@ -110,6 +114,7 @@ describe('Phase 12O continue reading', () => {
 describe('Phase 12O production reinforcement', () => {
   it('lets comprehension complete when production is skipped or missing', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const service = getProgressService('luca-prima-di-roma-01');
     const chapter = getContentBundle('luca-prima-di-roma-01').chapters.get('luca-prima-di-roma-01-01')!;
     await service.openChapter(chapter.id);
@@ -132,6 +137,7 @@ describe('Phase 12O production reinforcement', () => {
 
   it('records correct production without marking vocabulary mastered', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const bundle = getContentBundle('luca-prima-di-roma-01');
     const chapter = bundle.chapters.get('luca-prima-di-roma-01-01')!;
     const service = getProgressService('luca-prima-di-roma-01');
@@ -168,6 +174,7 @@ describe('Phase 12O production reinforcement', () => {
 
   it('records incorrect production without mastery and still completes', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const service = getProgressService('luca-prima-di-roma-01');
     const chapter = getContentBundle('luca-prima-di-roma-01').chapters.get('luca-prima-di-roma-01-01')!;
     await service.openChapter(chapter.id);
@@ -187,6 +194,7 @@ describe('Phase 12O production reinforcement', () => {
 
   it('leaving production halfway does not complete the chapter', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const service = getProgressService('luca-prima-di-roma-01');
     const chapter = getContentBundle('luca-prima-di-roma-01').chapters.get('luca-prima-di-roma-01-01')!;
     await service.openChapter(chapter.id);

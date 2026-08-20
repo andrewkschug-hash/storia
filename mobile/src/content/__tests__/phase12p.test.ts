@@ -18,7 +18,8 @@ import {
 } from '@/src/progress';
 import { getContinueReadingTarget } from '@/src/progress/continueReading';
 import { MemoryReadingProgressRepository } from '@/src/progress/MemoryReadingProgressRepository';
-import { completeBatchCheckpointsAfterChapter } from '@/src/progress/testHelpers';
+import { completeBatchCheckpointsAfterChapter, grantA1MasteryForTests } from '@/src/progress/testHelpers';
+import { a1MasteryCheckpointId } from '@/src/progress/a1Gate';
 import { loadStoryProgressView } from '@/src/progress/useReadingProgress';
 import { buildLexiconIndexFromBundle } from '@/src/vocabulary/dictionaryIndex';
 import { resolveSentenceLookup, resolveTap } from '@/src/vocabulary/resolveTap';
@@ -45,6 +46,9 @@ async function completeChapter(
   chapterId: string,
   opts: { score: number; production: 'skip' | 'got_it' | 'not_yet' | 'none' },
 ) {
+  if (storyId !== LUCA_STORY_ID) {
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
+  }
   const service = getProgressService(storyId);
   const chapter = getContentBundle(storyId).chapters.get(chapterId)!;
   await service.openChapter(chapterId);
@@ -101,29 +105,32 @@ describe('Phase 12P empty-progress first journey', () => {
     expect(await peekProgress('luca-prima-di-roma-01')).toBeNull();
   });
 
-  it('does not materialize Luca progress when browsing Stories or Vocabulary', async () => {
+  it('locks hometown stories until the A1 check is passed', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
-    await getProgressService('luca-prima-di-roma-01').openChapter('luca-prima-di-roma-01-01');
+    const preView = await loadStoryProgressView('luca-prima-di-roma-01');
+    expect(preView.chapters.every((chapter) => chapter.status === 'locked')).toBe(true);
+    await expect(
+      getProgressService('luca-prima-di-roma-01').openChapter('luca-prima-di-roma-01-01'),
+    ).rejects.toThrow(/A1 check/);
 
     const lucaView = await loadStoryProgressView(LUCA_STORY_ID);
     expect(lucaView.progress).toBeNull();
     expect(lucaView.chapters[0]?.status).toBe('available');
-    expect(lucaView.chapters.slice(1).every((chapter) => chapter.status === 'locked')).toBe(true);
     expect(await peekProgress(LUCA_STORY_ID)).toBeNull();
 
     const target = await getContinueReadingTarget();
-    expect(target?.storyId).toBe('luca-prima-di-roma-01');
-    expect(target?.chapterId).toBe('luca-prima-di-roma-01-01');
+    expect(target?.storyId).toBe(LUCA_STORY_ID);
+    expect(target?.chapterId).toBe('luca-a-roma-01');
   });
 
-  it('keeps Continue Reading on pre-Rome even if Luca getOrCreate runs without an open', async () => {
+  it('keeps Continue Reading on Luca when getOrCreate runs without opening pre-Rome', async () => {
     __setProgressRepository(new MemoryReadingProgressRepository());
-    await getProgressService('luca-prima-di-roma-01').openChapter('luca-prima-di-roma-01-01');
     const created = await getProgressService(LUCA_STORY_ID).getOrCreate();
     expect(created.lastOpenedAt).toBeNull();
     expect(created.currentChapterId).toBe('luca-a-roma-01');
     const target = await getContinueReadingTarget();
-    expect(target?.storyId).toBe('luca-prima-di-roma-01');
+    expect(target?.storyId).toBe(LUCA_STORY_ID);
+    expect(target?.chapterId).toBe('luca-a-roma-01');
   });
 });
 
@@ -288,6 +295,7 @@ describe('Phase 12P Profile C — casual learner', () => {
     const repo = new MemoryReadingProgressRepository();
     __setProgressRepository(repo);
 
+    await grantA1MasteryForTests(getProgressService(LUCA_STORY_ID));
     const s1 = getProgressService('luca-prima-di-roma-01');
     await s1.openChapter('luca-prima-di-roma-01-01');
     await s1.savePosition('luca-prima-di-roma-01-01', 's07');
@@ -318,7 +326,9 @@ describe('Phase 12P Profile C — casual learner', () => {
     expect(restoredS1?.completedChapterIds).toEqual(['luca-prima-di-roma-01-01']);
     expect(restoredS3?.completedChapterIds).toEqual([]);
     expect(restoredS3?.lastSentenceId).toBe('s04');
-    expect(await peekProgress(LUCA_STORY_ID)).toBeNull();
+    const lucaProgress = await peekProgress(LUCA_STORY_ID);
+    expect(lucaProgress?.completedChapterIds).toEqual([]);
+    expect(lucaProgress?.completedCheckpointIds).toContain(a1MasteryCheckpointId());
 
     target = await getContinueReadingTarget();
     expect(target?.storyId).toBe('luca-prima-di-roma-01');
@@ -334,7 +344,8 @@ describe('Phase 12P Profile C — casual learner', () => {
     const pre = await peekProgress('luca-prima-di-roma-01');
     const luca = await peekProgress(LUCA_STORY_ID);
     expect(pre?.completedChapterIds).toEqual(['luca-prima-di-roma-01-01']);
-    expect(luca).toBeNull();
+    expect(luca?.completedChapterIds).toEqual([]);
+    expect(luca?.completedCheckpointIds).toContain(a1MasteryCheckpointId());
     expect(getChapter('luca-prima-di-roma-01-01')?.id).not.toBe(getChapter('luca-a-roma-01')?.id);
   });
 });

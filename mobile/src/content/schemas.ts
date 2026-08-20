@@ -375,6 +375,38 @@ export const SpeakScenesFileSchema = z.object({
   scenes: z.array(SpeakSceneSchema).min(1),
 });
 
+export const MasteryQuestionSectionSchema = z.enum(['grammar', 'vocabulary', 'story']);
+
+export const MasteryQuestionSchema = z
+  .object({
+    id: z.string().min(1),
+    section: MasteryQuestionSectionSchema,
+    batchKey: z.string().min(1).optional(),
+    question: z.string().min(1),
+    choices: z.array(z.string().min(1)).min(2).max(4),
+    correctChoice: z.number().int().nonnegative(),
+    explanation: z.string().min(1),
+    difficulty: DifficultyLevelSchema.default(2),
+  })
+  .superRefine((q, ctx) => {
+    if (q.correctChoice >= q.choices.length) {
+      ctx.addIssue({
+        code: 'custom',
+        message: `correctChoice ${q.correctChoice} out of range for ${q.choices.length} choices`,
+        path: ['correctChoice'],
+      });
+    }
+  });
+
+export const A1MasteryAssessmentSchema = z.object({
+  assessmentId: z.string().min(1),
+  level: z.literal('A1'),
+  passThreshold: z.number().min(0).max(1),
+  title: z.string().min(1),
+  intro: z.string().min(1),
+  questions: z.array(MasteryQuestionSchema).min(1),
+});
+
 export type Character = z.infer<typeof CharacterSchema>;
 export type Location = z.infer<typeof LocationSchema>;
 export type CefrLevel = z.infer<typeof CefrLevelSchema>;
@@ -400,6 +432,9 @@ export type ProductionExercisesFile = z.infer<typeof ProductionExercisesFileSche
 export type SpeakSceneLine = z.infer<typeof SpeakSceneLineSchema>;
 export type SpeakScene = z.infer<typeof SpeakSceneSchema>;
 export type SpeakScenesFile = z.infer<typeof SpeakScenesFileSchema>;
+export type MasteryQuestionSection = z.infer<typeof MasteryQuestionSectionSchema>;
+export type MasteryQuestion = z.infer<typeof MasteryQuestionSchema>;
+export type A1MasteryAssessment = z.infer<typeof A1MasteryAssessmentSchema>;
 export type StoryAvailability = z.infer<typeof StoryAvailabilitySchema>;
 export type NarrativeArcCatalog = z.infer<typeof NarrativeArcCatalogSchema>;
 export type CatalogStory = z.infer<typeof CatalogStorySchema>;

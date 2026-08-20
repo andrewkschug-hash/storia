@@ -37,7 +37,8 @@ function lucaSegmentRow(
 }
 
 export function buildStoryRowsForTab(input: BuildStoryRowsInput): LibraryStoryRow[] {
-  const { tab, lucaTitleIt, chapterStatuses, beforeRomeRows, a2PlusRows } = input;
+  const { tab, lucaTitleIt, chapterStatuses, beforeRomeRows, a2PlusRows, hometownUnlocked = true } =
+    input;
 
   if (tab === 'A2+') {
     return a2PlusRows.map((story) => ({
@@ -62,7 +63,8 @@ export function buildStoryRowsForTab(input: BuildStoryRowsInput): LibraryStoryRo
       completed: story.completed,
       total: story.total,
       locked:
-        story.chapters.length > 0 && story.chapters.every((chapter) => chapter.status === 'locked'),
+        !hometownUnlocked ||
+        (story.chapters.length > 0 && story.chapters.every((chapter) => chapter.status === 'locked')),
       kind: 'extra' as const,
       storyId: story.storyId,
       chapters: story.chapters as ChapterListItem[],
@@ -75,7 +77,7 @@ export function buildStoryRowsForTab(input: BuildStoryRowsInput): LibraryStoryRo
       eyebrow: 'Hometown stories',
       completed: totalCompleted,
       total: totalChapters,
-      locked: false,
+      locked: !hometownUnlocked,
       kind: 'group',
       storyId: '',
       chapters: childRows.flatMap((row) => row.chapters),

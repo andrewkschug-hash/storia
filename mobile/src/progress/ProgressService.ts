@@ -1,5 +1,10 @@
 import type { Chapter, Story } from '@/src/content/schemas';
-import { LUCA_STORY_ID } from '@/src/content/catalog';
+import { getContentBundle } from '@/src/content';
+import { LUCA_STORY_ID, PRE_ROME_ARC_ID } from '@/src/content/catalog';
+import {
+  a1PlusChapterBlocked,
+  hasPassedA1Mastery,
+} from '@/src/progress/a1Gate';
 import {
   isFirstChapterAfterBatch,
   legacyBatchEndsForProgress,
@@ -68,7 +73,13 @@ export class ProgressService {
 
   async getChapterStatus(chapterId: string): Promise<ChapterStatus> {
     const progress = await this.getOrCreate();
-    return this.chapterStatusForProgress(progress, chapterId);
+    const lucaProgress =
+      this.narrativeArc === PRE_ROME_ARC_ID ? await this.repo.get(LUCA_STORY_ID) : null;
+    const chapterNumberById =
+      this.story.id === LUCA_STORY_ID
+        ? new Map([...this.chaptersById.values()].map((c) => [c.id, c.number] as const))
+        : undefined;
+    return this.chapterStatusForProgress(progress, chapterId, chapterNumberById, lucaProgress);
   }
 
   /** One storage read for browse lists (Stories tab, hometown rows, A2+ rows). */
@@ -83,6 +94,12 @@ export class ProgressService {
     }>;
   }> {
     const progress = await this.getOrCreate();
+    const lucaProgress =
+      this.story.id === LUCA_STORY_ID
+        ? progress
+        : this.narrativeArc === PRE_ROME_ARC_ID
+          ? await this.repo.get(LUCA_STORY_ID)
+          : null;
     const chapterNumberById =
       this.story.id === LUCA_STORY_ID
         ? new Map([...this.chaptersById.values()].map((c) => [c.id, c.number] as const))
@@ -92,7 +109,12 @@ export class ProgressService {
       number: summary.number,
       title: summary.title,
       titleIt: summary.titleIt,
-      status: this.chapterStatusForProgress(progress, summary.id, chapterNumberById),
+      status: this.chapterStatusForProgress(
+        progress,
+        summary.id,
+        chapterNumberById,
+        lucaProgress,
+      ),
     }));
     return { progress, statuses };
   }
@@ -103,9 +125,21 @@ export class ProgressService {
     chapterNumberById = this.story.id === LUCA_STORY_ID
       ? new Map([...this.chaptersById.values()].map((c) => [c.id, c.number] as const))
       : undefined,
+    lucaProgress: ReadingProgressRecord | null = null,
   ): ChapterStatus {
     const chapter = this.chaptersById.get(chapterId);
     if (!chapter) return 'locked';
+
+    const lucaChapters =
+      this.story.id === LUCA_STORY_ID ? this.chaptersById : undefined;
+    const gateProgress = this.story.id === LUCA_STORY_ID ? progress : lucaProgress;
+
+    if (
+      this.narrativeArc === PRE_ROME_ARC_ID &&
+      !hasPassedA1Mastery(gateProgress, lucaChapters)
+    ) {
+      return 'locked';
+    }
 
     if (progress.completedChapterIds.includes(chapterId)) {
       return 'completed';
@@ -132,6 +166,13 @@ export class ProgressService {
       return 'locked';
     }
 
+    if (
+      this.story.id === LUCA_STORY_ID &&
+      a1PlusChapterBlocked(chapter.number, progress, this.chaptersById)
+    ) {
+      return 'locked';
+    }
+
     if (progress.currentChapterId === chapterId) {
       return 'in_progress';
     }
@@ -140,6 +181,14 @@ export class ProgressService {
   }
 
   async openChapter(chapterId: string): Promise<ReadingProgressRecord> {
+    if (this.narrativeArc === PRE_ROME_ARC_ID) {
+      const lucaProgress = await this.repo.get(LUCA_STORY_ID);
+      const lucaBundle = getContentBundle(LUCA_STORY_ID);
+      if (!hasPassedA1Mastery(lucaProgress, lucaBundle.chapters)) {
+        throw new Error('Pass the A1 check in Luca a Roma to unlock hometown stories');
+      }
+    }
+
     const status = await this.getChapterStatus(chapterId);
     if (status === 'locked') {
       throw new Error(`Chapter ${chapterId} is locked`);
