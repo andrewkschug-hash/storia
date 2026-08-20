@@ -86,6 +86,10 @@ describe('speak scene milestones', () => {
     expect(scene35?.sourceRange).toEqual({ start: 31, end: 35 });
     expect(scene35?.lines).toHaveLength(5);
     expect(getCatalogStories().some((story) => story.id === 'luca-a-roma-speak-15')).toBe(false);
+    expect(getSpeakSceneForBatch('luca-prima-di-roma-01', 5)?.id).toBe(
+      'luca-prima-di-roma-01-speak-5',
+    );
+    expect(getSpeakSceneForBatch('luca-prima-di-roma-03', 5)?.title).toBe('Paying at the counter');
   });
 
   it('scores meaning, person, and polarity rather than string equality', () => {

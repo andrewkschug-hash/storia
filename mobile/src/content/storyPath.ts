@@ -55,6 +55,11 @@ export function recapCheckpointId(storyId: string, batchEnd: number): string {
   return `${storyId}:recap:${batchEnd}`;
 }
 
+/** Luca a Roma and hometown shorts use the every-5-chapter grammar / words / speak path. */
+export function storyUsesLessonPath(storyId: string): boolean {
+  return storyId === 'luca-a-roma' || storyId.startsWith('luca-prima-di-roma-');
+}
+
 export function isFirstChapterAfterBatch(chapterNumber: number): boolean {
   return chapterNumber > 1 && (chapterNumber - 1) % LESSON_BATCH_SIZE === 0;
 }
@@ -140,7 +145,7 @@ export function getSpeakPathStatus(
   return finished ? 'completed' : 'available';
 }
 
-/** Insert grammar + recap nodes after every fifth chapter (Duolingo-style path). */
+/** Insert grammar (if authored) + recap after every fifth chapter; speak when a scene exists. */
 export function buildStoryPath(
   chapters: ChapterListItem[],
   progress: ReadingProgressRecord | null,
@@ -182,23 +187,23 @@ export function buildStoryPath(
     const batchEnd = chapter.number;
     const { start: batchStart } = batchRangeForChapter(batchEnd);
     const batchDone = chapter.status === 'completed';
-    const grammarStatus = getGrammarCheckpointStatus(
-      record,
-      storyId,
-      batchEnd,
-      batchDone,
-      legacyBatchEnds,
-    );
-    const grammarNote = grammarNoteForBatch(batchStart, batchEnd);
+    const grammarNote = grammarNoteForBatch(batchStart, batchEnd, storyId);
+    const grammarStatus = grammarNote
+      ? getGrammarCheckpointStatus(record, storyId, batchEnd, batchDone, legacyBatchEnds)
+      : batchDone
+        ? 'completed'
+        : 'locked';
 
-    items.push({
-      kind: 'grammar',
-      id: grammarCheckpointId(storyId, batchEnd),
-      batchStart,
-      batchEnd,
-      title: grammarNote?.title ?? 'Grammar',
-      status: grammarStatus,
-    });
+    if (grammarNote) {
+      items.push({
+        kind: 'grammar',
+        id: grammarCheckpointId(storyId, batchEnd),
+        batchStart,
+        batchEnd,
+        title: grammarNote.title,
+        status: grammarStatus,
+      });
+    }
 
     const recapStatus = getRecapCheckpointStatus(
       record,

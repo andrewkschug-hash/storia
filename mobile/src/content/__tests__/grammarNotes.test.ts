@@ -35,4 +35,11 @@ describe('grammar notes', () => {
     expect(grammarNoteForBatch(11, 15)?.title).toBe('Prepositions: a, in, con, per');
     expect(grammarNoteForBatch(16, 20)?.title).toBe('Time words and movement verbs');
   });
+
+  it('authors hometown grammar for chapters 1–5 of each pre-Rome story', () => {
+    expect(grammarNoteForBatch(1, 5, 'luca-prima-di-roma-01')?.title).toContain('Sono');
+    expect(grammarNoteForBatch(1, 5, 'luca-prima-di-roma-03')?.title).toContain('quanto costa');
+    expect(grammarNoteForChapter(5, 'luca-prima-di-roma-04')).toBeTruthy();
+    expect(grammarNoteForBatch(1, 5, 'luca-a-roma')?.title).toBe('Essere and avere');
+  });
 });

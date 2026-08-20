@@ -31,6 +31,12 @@ import { createInitialProgress } from '@/src/progress/types';
 import { hydrateLearnerFromCloud } from '@/src/sync/hydrateLearner';
 import { MemoryLearnerCloud } from '@/src/sync/MemoryLearnerCloud';
 import { SyncingReadingProgressRepository } from '@/src/sync/SyncingReadingProgressRepository';
+import { SyncingUserVocabularyRepository } from '@/src/sync/SyncingUserVocabularyRepository';
+import {
+  createLemmaEncounter,
+  MemoryUserVocabularyRepository,
+} from '@/src/vocabulary/UserVocabularyRepository';
+import { createEmptyVocabularyState } from '@/src/vocabulary/types';
 
 beforeEach(async () => {
   await resetOnboarding();
@@ -104,6 +110,42 @@ describe('learner cloud hydrate', () => {
     expect(await local.get('luca-prima-di-roma-03')).toBeNull();
     expect((await local.get('luca-prima-di-roma-01'))?.storyId).toBe('luca-prima-di-roma-01');
   });
+
+  it('restores vocabulary from the account', async () => {
+    const cloud = new MemoryLearnerCloud();
+    const local = new MemoryReadingProgressRepository();
+    const vocab = new MemoryUserVocabularyRepository();
+    const remoteState = createEmptyVocabularyState();
+    remoteState.lemmas['arrivare'] = {
+      ...createLemmaEncounter('arrivare'),
+      encounterCount: 3,
+      saved: true,
+    };
+    await cloud.upsertLearnerState({ vocabulary: remoteState });
+
+    const result = await hydrateLearnerFromCloud(cloud, local, vocab);
+
+    expect(result.vocabularyRestored).toBe(true);
+    expect((await vocab.get()).lemmas.arrivare?.saved).toBe(true);
+  });
+
+  it('uploads local vocabulary when the account has none yet', async () => {
+    const cloud = new MemoryLearnerCloud();
+    const local = new MemoryReadingProgressRepository();
+    const vocab = new MemoryUserVocabularyRepository();
+    const state = createEmptyVocabularyState();
+    state.lemmas['casa'] = {
+      ...createLemmaEncounter('casa'),
+      encounterCount: 2,
+      saved: true,
+    };
+    await vocab.save(state);
+
+    const result = await hydrateLearnerFromCloud(cloud, local, vocab);
+
+    expect(result.vocabularyUploaded).toBe(true);
+    expect(cloud.vocabulary?.lemmas.casa?.saved).toBe(true);
+  });
 });
 
 describe('syncing progress repository', () => {
@@ -119,5 +161,21 @@ describe('syncing progress repository', () => {
     expect(await peekProgress('luca-prima-di-roma-01')).toBeNull();
     __setProgressRepository(repo);
     expect((await peekProgress('luca-prima-di-roma-01'))?.storyId).toBe('luca-prima-di-roma-01');
+  });
+});
+
+describe('syncing vocabulary repository', () => {
+  it('writes saved words to the cloud', async () => {
+    const cloud = new MemoryLearnerCloud();
+    const local = new MemoryUserVocabularyRepository();
+    const repo = new SyncingUserVocabularyRepository(local, cloud);
+    const state = createEmptyVocabularyState();
+    state.lemmas['roma'] = {
+      ...createLemmaEncounter('roma'),
+      encounterCount: 1,
+      saved: true,
+    };
+    await repo.save(state);
+    expect(cloud.vocabulary?.lemmas.roma?.saved).toBe(true);
   });
 });

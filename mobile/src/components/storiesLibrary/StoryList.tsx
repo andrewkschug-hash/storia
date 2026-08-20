@@ -9,7 +9,7 @@ import { StoryRow } from '@/src/components/storiesLibrary/StoryRow';
 import type { LibraryStoryRow, LibraryTab } from '@/src/components/storiesLibrary/types';
 import { unlockHintForLockedStory } from '@/src/components/storiesLibrary/unlockHints';
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
-import { LUCA_STORY_ID } from '@/src/content/catalog';
+import { storyUsesLessonPath } from '@/src/content/storyPath';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
 import { Typography } from '@/src/theme/tokens';
@@ -24,9 +24,9 @@ type Props = {
   a2PlusRows: ExtraStoryRow[];
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
   onOpenStoryChapter: (storyId: string, chapterId: string) => void;
-  onOpenGrammar: (batchEnd: number) => void;
-  onOpenRecap: (batchEnd: number) => void;
-  onOpenSpeak: (sceneId: string) => void;
+  onOpenGrammar: (storyId: string, batchEnd: number) => void;
+  onOpenRecap: (storyId: string, batchEnd: number) => void;
+  onOpenSpeak: (storyId: string, sceneId: string) => void;
 };
 
 function tabForChapterNumber(number: number): LibraryTab {
@@ -62,6 +62,7 @@ export function StoryList({
     currentChapter ? tabForChapterNumber(currentChapter.number) : 'A1',
   );
   const [expandedRowId, setExpandedRowId] = useState<string | null>(null);
+  const [expandedChildId, setExpandedChildId] = useState<string | null>(null);
   const [hint, setHint] = useState<string | null>(null);
   const hintTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -79,7 +80,11 @@ export function StoryList({
 
   useEffect(() => {
     setExpandedRowId(defaultExpandedRowId(rows, currentChapterId));
-  }, [activeTab, currentChapterId, rows]);
+    const childMatch = beforeRomeRows.find((row) =>
+      row.chapters.some((chapter) => chapter.id === currentChapterId),
+    );
+    setExpandedChildId(childMatch?.storyId ?? null);
+  }, [activeTab, currentChapterId, rows, beforeRomeRows]);
 
   useEffect(() => {
     return () => {
@@ -130,21 +135,46 @@ export function StoryList({
                 onPress={() => handleRowPress(row.id, row.locked, row.chapters)}
               />
               {expanded && !row.locked && row.kind === 'group' && row.childRows
-                ? row.childRows.map((child) => (
-                    <ChildStoryRow
-                      key={child.id}
-                      row={child}
-                      currentChapterId={currentChapterId}
-                      onOpenChapter={onOpenStoryChapter}
-                    />
-                  ))
+                ? row.childRows.map((child) => {
+                    const childExpanded = expandedChildId === child.id;
+                    const source = beforeRomeRows.find((item) => item.storyId === child.storyId);
+                    return (
+                      <View key={child.id}>
+                        <ChildStoryRow
+                          row={child}
+                          expanded={childExpanded}
+                          currentChapterId={currentChapterId}
+                          onPress={() =>
+                            setExpandedChildId((prev) => (prev === child.id ? null : child.id))
+                          }
+                        />
+                        {childExpanded && !child.locked ? (
+                          <StoryPathPanel
+                            chapters={child.chapters}
+                            currentChapterId={currentChapterId}
+                            storyId={child.storyId}
+                            progress={source?.progress ?? null}
+                            useStoryPath={storyUsesLessonPath(child.storyId)}
+                            onOpenChapter={(chapterId) =>
+                              onOpenStoryChapter(child.storyId, chapterId)
+                            }
+                            onOpenStoryChapter={onOpenStoryChapter}
+                            onOpenGrammar={onOpenGrammar}
+                            onOpenRecap={onOpenRecap}
+                            onOpenSpeak={onOpenSpeak}
+                            onShowHint={showHint}
+                          />
+                        ) : null}
+                      </View>
+                    );
+                  })
                 : null}
               {expanded && !row.locked && row.kind !== 'group' ? (
                 <StoryPathPanel
                   chapters={row.chapters}
                   currentChapterId={currentChapterId}
                   storyId={row.storyId}
-                  progress={row.storyId === LUCA_STORY_ID ? progress : null}
+                  progress={row.storyId === 'luca-a-roma' ? progress : null}
                   useStoryPath={row.kind === 'luca-segment'}
                   onOpenChapter={onOpenChapter}
                   onOpenStoryChapter={onOpenStoryChapter}
@@ -166,29 +196,25 @@ export function StoryList({
 
 function ChildStoryRow({
   row,
+  expanded,
   currentChapterId,
-  onOpenChapter,
+  onPress,
 }: {
   row: LibraryStoryRow;
+  expanded: boolean;
   currentChapterId: string;
-  onOpenChapter: (storyId: string, chapterId: string) => void;
+  onPress: () => void;
 }) {
   const { colors } = useTheme();
-  const firstAvailable = row.chapters.find(
-    (ch) => ch.status === 'available' || ch.status === 'in_progress',
-  );
   const isCurrent = row.chapters.some((ch) => ch.id === currentChapterId);
 
   return (
     <Pressable
-      onPress={() => {
-        const target = firstAvailable ?? row.chapters[0];
-        if (target) onOpenChapter(row.storyId, target.id);
-      }}
+      onPress={onPress}
       style={({ pressed }) => [
         childStyles.row,
         {
-          backgroundColor: isCurrent
+          backgroundColor: isCurrent || expanded
             ? 'rgba(120,182,163,0.07)'
             : pressed
               ? 'rgba(255,255,255,0.04)'
@@ -199,6 +225,7 @@ function ChildStoryRow({
         <Text style={[childStyles.title, { color: colors.text }]}>{row.titleIt}</Text>
         <Text style={[childStyles.meta, { color: colors.textMuted }]}>
           {row.completed} / {row.total} chapters
+          {expanded ? ' · path open' : ''}
         </Text>
       </View>
     </Pressable>

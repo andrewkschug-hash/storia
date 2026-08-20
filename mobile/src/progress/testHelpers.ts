@@ -9,7 +9,8 @@ export async function completeBatchCheckpointsAfterChapter(
   storyId: string,
   chapterNumber: number,
 ): Promise<void> {
-  if (storyId !== LUCA_STORY_ID || !isLessonBatchEnd(chapterNumber)) return;
+  if (!isLessonBatchEnd(chapterNumber)) return;
+  if (storyId !== LUCA_STORY_ID && !storyId.startsWith('luca-prima-di-roma-')) return;
   await service.completeCheckpoint(grammarCheckpointId(storyId, chapterNumber));
   await service.completeCheckpoint(recapCheckpointId(storyId, chapterNumber));
 }

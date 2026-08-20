@@ -81,4 +81,23 @@ describe('buildStoryPath', () => {
     expect(speak?.kind === 'speak' && speak.title).toBe('Help Marco');
     expect(speak?.kind === 'speak' && speak.status).toBe('available');
   });
+
+  it('adds grammar, words, and speak after chapter 5 of a hometown story', () => {
+    const hometownId = 'luca-prima-di-roma-01';
+    const chapters = [1, 2, 3, 4, 5, 6].map((n) => ({
+      id: `${hometownId}-0${n}`,
+      number: n,
+      title: `Ch ${n}`,
+      titleIt: `Cap ${n}`,
+      status: (n <= 5 ? 'completed' : 'locked') as ChapterListItem['status'],
+    }));
+    const path = buildStoryPath(chapters, null, hometownId);
+    expect(path.filter((item) => item.kind !== 'chapter').map((item) => item.kind)).toEqual([
+      'grammar',
+      'recap',
+      'speak',
+    ]);
+    const speak = path.find((item) => item.kind === 'speak');
+    expect(speak?.kind === 'speak' && speak.sceneId).toBe('luca-prima-di-roma-01-speak-5');
+  });
 });

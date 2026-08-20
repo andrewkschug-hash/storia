@@ -60,6 +60,7 @@ export default function StoriesScreen() {
         total: item.chapterCount,
         eyebrow: 'Hometown',
         chapters: view.chapters,
+        progress: view.progress,
       });
     }
     setBeforeRomeRows(next);
@@ -90,7 +91,11 @@ export default function StoriesScreen() {
       navLog('stories focus');
       void refresh();
       void getContinueReadingTarget().then(setContinueTarget);
-      if (secondaryLoadedRef.current) return;
+      if (secondaryLoadedRef.current) {
+        void loadBeforeRome();
+        void loadA2Plus();
+        return;
+      }
       const cancel = deferAfterNavigation(() => {
         secondaryLoadedRef.current = true;
         navLog('stories secondary load started');
@@ -221,18 +226,18 @@ export default function StoriesScreen() {
             a2PlusRows={resolvedA2PlusRows}
             onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
             onOpenStoryChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
-            onOpenGrammar={(batchEnd) => {
+            onOpenGrammar={(storyId, batchEnd) => {
               router.push(
-                `/grammar-note?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${batchEnd}&returnTo=stories` as Href,
+                `/grammar-note?story=${encodeURIComponent(storyId)}&chapter=${batchEnd}&returnTo=stories` as Href,
               );
             }}
-            onOpenRecap={(batchEnd) => {
+            onOpenRecap={(storyId, batchEnd) => {
               router.push(
-                `/batch-recap?story=${encodeURIComponent(LUCA_STORY_ID)}&chapter=${batchEnd}&returnTo=stories` as Href,
+                `/batch-recap?story=${encodeURIComponent(storyId)}&chapter=${batchEnd}&returnTo=stories` as Href,
               );
             }}
-            onOpenSpeak={(sceneId) => {
-              router.push(speakSceneHref(LUCA_STORY_ID, sceneId, 'stories'));
+            onOpenSpeak={(storyId, sceneId) => {
+              router.push(speakSceneHref(storyId, sceneId, 'stories'));
             }}
           />
             </>

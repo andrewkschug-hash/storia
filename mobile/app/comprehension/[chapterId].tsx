@@ -131,9 +131,15 @@ export default function ComprehensionScreen() {
       router.replace('/(tabs)/home' as import('expo-router').Href);
       return;
     }
-    if (isLessonBatchEnd(chapterNumber) && grammarNoteForChapter(chapterNumber)) {
+    if (isLessonBatchEnd(chapterNumber)) {
+      if (grammarNoteForChapter(chapterNumber, resolvedStoryId)) {
+        router.replace(
+          `/grammar-note?story=${encodeURIComponent(resolvedStoryId)}&chapter=${chapterNumber}` as import('expo-router').Href,
+        );
+        return;
+      }
       router.replace(
-        `/grammar-note?story=${encodeURIComponent(resolvedStoryId)}&chapter=${chapterNumber}` as import('expo-router').Href,
+        `/batch-recap?story=${encodeURIComponent(resolvedStoryId)}&chapter=${chapterNumber}` as import('expo-router').Href,
       );
       return;
     }

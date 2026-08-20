@@ -1,6 +1,16 @@
+import { parseAccessibilitySettings } from '@/src/accessibility/storage';
+import type { AdaptivePersistedState } from '@/src/adaptive/types';
+import { createEmptyAdaptiveState } from '@/src/adaptive/types';
 import { getSupabase, isSupabaseConfigured } from '@/src/lib/supabase';
 import { normalizeProgress, type ReadingProgressRecord } from '@/src/progress/types';
-import type { LearnerCloud } from '@/src/sync/types';
+import type {
+  LearnerCloud,
+  LearnerPreferences,
+  LearnerStatePatch,
+  LearnerStateSnapshot,
+} from '@/src/sync/types';
+import { normalizeVocabularyState } from '@/src/vocabulary/normalize';
+import { createEmptyVocabularyState, type UserVocabularyState } from '@/src/vocabulary/types';
 
 async function currentUserId(): Promise<string | null> {
   if (!isSupabaseConfigured()) return null;
@@ -24,6 +34,31 @@ function asProgress(row: unknown): ReadingProgressRecord | null {
     ...record,
     completedChapterIds: Array.isArray(record.completedChapterIds) ? record.completedChapterIds : [],
   });
+}
+
+function asVocabulary(raw: unknown): UserVocabularyState | null {
+  if (!raw || typeof raw !== 'object') return null;
+  return normalizeVocabularyState(raw as Partial<UserVocabularyState>);
+}
+
+function asAdaptive(raw: unknown): AdaptivePersistedState | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const row = raw as Partial<AdaptivePersistedState>;
+  return {
+    logs: Array.isArray(row.logs) ? row.logs : [],
+    recentHits: Array.isArray(row.recentHits) ? row.recentHits : [],
+    lastProfile: row.lastProfile ?? null,
+    lastUpdatedAt: typeof row.lastUpdatedAt === 'string' ? row.lastUpdatedAt : null,
+  };
+}
+
+function asPreferences(raw: unknown): LearnerPreferences | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const speed = (raw as { audioSpeed?: unknown }).audioSpeed;
+  if (speed === 'slow' || speed === 'normal' || speed === 'faster') {
+    return { audioSpeed: speed };
+  }
+  return {};
 }
 
 export class SupabaseLearnerCloud implements LearnerCloud {
@@ -83,6 +118,51 @@ export class SupabaseLearnerCloud implements LearnerCloud {
       });
     } catch {
       /* local progress still saved */
+    }
+  }
+
+  async getLearnerState(): Promise<LearnerStateSnapshot | null> {
+    const userId = await currentUserId();
+    if (!userId) return null;
+    try {
+      const { data, error } = await getSupabase()
+        .from('storia_learner_state')
+        .select('vocabulary, accessibility, adaptive, preferences, updated_at')
+        .eq('user_id', userId)
+        .maybeSingle();
+      if (error || !data) return null;
+      return {
+        vocabulary: asVocabulary(data.vocabulary) ?? createEmptyVocabularyState(),
+        accessibility: data.accessibility ? parseAccessibilitySettings(data.accessibility) : null,
+        adaptive: asAdaptive(data.adaptive) ?? createEmptyAdaptiveState(),
+        preferences: asPreferences(data.preferences),
+        updatedAt: typeof data.updated_at === 'string' ? data.updated_at : null,
+      };
+    } catch {
+      return null;
+    }
+  }
+
+  async upsertLearnerState(patch: LearnerStatePatch): Promise<void> {
+    const userId = await currentUserId();
+    if (!userId) return;
+    try {
+      const existing = await this.getLearnerState();
+      const preferences =
+        patch.preferences !== undefined
+          ? { ...(existing?.preferences ?? {}), ...patch.preferences }
+          : existing?.preferences ?? null;
+      await getSupabase().from('storia_learner_state').upsert({
+        user_id: userId,
+        vocabulary: patch.vocabulary !== undefined ? patch.vocabulary : existing?.vocabulary ?? null,
+        accessibility:
+          patch.accessibility !== undefined ? patch.accessibility : existing?.accessibility ?? null,
+        adaptive: patch.adaptive !== undefined ? patch.adaptive : existing?.adaptive ?? null,
+        preferences,
+        updated_at: new Date().toISOString(),
+      });
+    } catch {
+      /* local state still saved */
     }
   }
 }

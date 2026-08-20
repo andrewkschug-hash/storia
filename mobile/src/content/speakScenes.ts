@@ -1,4 +1,5 @@
 import lucaScenesJson from '../../content/stories/luca-a-roma/speak-scenes.json';
+import preRomeScenesJson from '../../content/stories/luca-prima-di-roma/speak-scenes.json';
 import {
   SpeakScenesFileSchema,
   type ProductionExercise,
@@ -6,13 +7,15 @@ import {
   type SpeakSceneLine,
 } from '@/src/content/schemas';
 
-/** Authored Luca speak scenes at batch milestones. */
+/** Authored speak scenes at batch milestones (Luca a Roma + hometown shorts). */
 
 let cached: SpeakScene[] | null = null;
 
 function loadScenes(): SpeakScene[] {
   if (cached) return cached;
-  cached = SpeakScenesFileSchema.parse(lucaScenesJson).scenes;
+  const luca = SpeakScenesFileSchema.parse(lucaScenesJson).scenes;
+  const preRome = SpeakScenesFileSchema.parse(preRomeScenesJson).scenes;
+  cached = [...luca, ...preRome];
   return cached;
 }
 

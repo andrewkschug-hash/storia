@@ -116,6 +116,39 @@ async function persistRemoteProfile(userId: string, displayName: string, avatarI
   }
 }
 
+async function fetchRemoteProfile(
+  userId: string,
+): Promise<{ displayName?: string; avatarId?: AvatarId } | null> {
+  try {
+    const { data, error } = await getSupabase()
+      .from('storia_profiles')
+      .select('display_name, avatar_id')
+      .eq('id', userId)
+      .maybeSingle();
+    if (error || !data) return null;
+    const displayName =
+      typeof data.display_name === 'string' && data.display_name.trim()
+        ? data.display_name.trim()
+        : undefined;
+    const avatarId = isAvatarId(data.avatar_id) ? data.avatar_id : undefined;
+    if (!displayName && !avatarId) return null;
+    return { displayName, avatarId };
+  } catch {
+    return null;
+  }
+}
+
+async function accountFromSessionUser(
+  user: User,
+  fallback?: { displayName?: string; avatarId?: AvatarId },
+): Promise<LocalAccount> {
+  const remote = await fetchRemoteProfile(user.id);
+  return accountFromUser(user, {
+    displayName: remote?.displayName ?? fallback?.displayName,
+    avatarId: remote?.avatarId ?? fallback?.avatarId,
+  });
+}
+
 async function readLocalAccount(): Promise<LocalAccount | null> {
   if (!allowsLocalAuthFallback()) return null;
   try {
@@ -148,7 +181,7 @@ async function loadAccountOnce(): Promise<LocalAccount | null> {
         return null;
       }
       const local = allowsLocalAuthFallback() ? await readLocalAccount() : null;
-      const account = accountFromUser(user, {
+      const account = await accountFromSessionUser(user, {
         displayName: local?.displayName,
         avatarId: local?.avatarId,
       });
@@ -293,7 +326,7 @@ export async function signInWithPassword(input: PasswordAuthInput): Promise<Loca
   const user = data.session?.user ?? data.user;
   if (!user?.email) throw new Error('Sign in failed.');
   const local = allowsLocalAuthFallback() ? await readLocalAccount() : null;
-  const account = accountFromUser(user, {
+  const account = await accountFromSessionUser(user, {
     displayName: local?.displayName,
     avatarId: local?.avatarId,
   });

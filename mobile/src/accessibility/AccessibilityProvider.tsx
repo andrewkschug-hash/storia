@@ -3,6 +3,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import {
   loadAccessibilitySettings,
   saveAccessibilitySettings,
+  subscribeAccessibilitySettings,
 } from '@/src/accessibility/storage';
 import { scaleTypography, type ScaledTypography } from '@/src/accessibility/scaleTypography';
 import {
@@ -36,10 +37,20 @@ export function AccessibilityProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    void loadAccessibilitySettings().then((next) => {
-      setSettings(next);
-      setReady(true);
-    });
+    let cancelled = false;
+    const reload = () => {
+      void loadAccessibilitySettings().then((next) => {
+        if (cancelled) return;
+        setSettings(next);
+        setReady(true);
+      });
+    };
+    reload();
+    const unsubscribe = subscribeAccessibilitySettings(reload);
+    return () => {
+      cancelled = true;
+      unsubscribe();
+    };
   }, []);
 
   const updateSettings = useCallback(async (patch: Partial<AccessibilitySettings>) => {

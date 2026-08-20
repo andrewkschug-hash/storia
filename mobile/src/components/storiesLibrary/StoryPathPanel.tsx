@@ -6,8 +6,7 @@ import {
   unlockHintForChapter,
   unlockHintForPathItem,
 } from '@/src/components/storiesLibrary/unlockHints';
-import { buildStoryPath, type StoryPathItem } from '@/src/content/storyPath';
-import { LUCA_STORY_ID } from '@/src/content/catalog';
+import { buildStoryPath, storyUsesLessonPath, type StoryPathItem } from '@/src/content/storyPath';
 import type { ChapterStatus } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
@@ -22,9 +21,9 @@ type Props = {
   useStoryPath: boolean;
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
   onOpenStoryChapter?: (storyId: string, chapterId: string) => void;
-  onOpenGrammar?: (batchEnd: number) => void;
-  onOpenRecap?: (batchEnd: number) => void;
-  onOpenSpeak?: (sceneId: string) => void;
+  onOpenGrammar?: (storyId: string, batchEnd: number) => void;
+  onOpenRecap?: (storyId: string, batchEnd: number) => void;
+  onOpenSpeak?: (storyId: string, sceneId: string) => void;
   onShowHint: (message: string) => void;
 };
 
@@ -42,7 +41,7 @@ export function StoryPathPanel({
   onShowHint,
 }: Props) {
   const pathItems = useMemo(() => {
-    if (!useStoryPath || storyId !== LUCA_STORY_ID) return null;
+    if (!useStoryPath || !storyUsesLessonPath(storyId)) return null;
     return buildStoryPath(chapters, progress ?? null, storyId);
   }, [useStoryPath, storyId, chapters, progress]);
 
@@ -73,7 +72,7 @@ export function StoryPathPanel({
               allChapters={chapters}
               storyId={storyId}
               progress={progress}
-              hideListen={storyId !== LUCA_STORY_ID}
+              hideListen={!storyUsesLessonPath(storyId) || storyId !== 'luca-a-roma'}
               onOpenChapter={onOpenChapter}
               onOpenStoryChapter={onOpenStoryChapter}
               onShowHint={onShowHint}
@@ -102,9 +101,9 @@ function PathItemRow({
   progress?: ReadingProgressRecord | null;
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
   onOpenStoryChapter?: (storyId: string, chapterId: string) => void;
-  onOpenGrammar?: (batchEnd: number) => void;
-  onOpenRecap?: (batchEnd: number) => void;
-  onOpenSpeak?: (sceneId: string) => void;
+  onOpenGrammar?: (storyId: string, batchEnd: number) => void;
+  onOpenRecap?: (storyId: string, batchEnd: number) => void;
+  onOpenSpeak?: (storyId: string, sceneId: string) => void;
   onShowHint: (message: string) => void;
 }) {
   if (item.kind === 'chapter') {
@@ -149,9 +148,9 @@ function PathItemRow({
           onShowHint(unlockHintForPathItem(item));
           return;
         }
-        if (item.kind === 'grammar') onOpenGrammar?.(item.batchEnd);
-        if (item.kind === 'recap') onOpenRecap?.(item.batchEnd);
-        if (item.kind === 'speak') onOpenSpeak?.(item.sceneId);
+        if (item.kind === 'grammar') onOpenGrammar?.(storyId, item.batchEnd);
+        if (item.kind === 'recap') onOpenRecap?.(storyId, item.batchEnd);
+        if (item.kind === 'speak') onOpenSpeak?.(storyId, item.sceneId);
       }}
     />
   );

@@ -10,6 +10,19 @@ import {
 
 const KEY = 'storia:accessibility';
 
+const listeners = new Set<() => void>();
+
+export function subscribeAccessibilitySettings(listener: () => void): () => void {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+}
+
+function notifyAccessibilityListeners() {
+  for (const listener of listeners) listener();
+}
+
 function isColorMode(value: unknown): value is ColorMode {
   return value === 'system' || value === 'light' || value === 'dark';
 }
@@ -45,6 +58,23 @@ export async function loadAccessibilitySettings(): Promise<AccessibilitySettings
   }
 }
 
-export async function saveAccessibilitySettings(settings: AccessibilitySettings): Promise<void> {
+export async function clearAccessibilitySettings(): Promise<void> {
+  await AsyncStorage.removeItem(KEY);
+  notifyAccessibilityListeners();
+}
+
+export async function saveAccessibilitySettings(
+  settings: AccessibilitySettings,
+  options?: { syncCloud?: boolean },
+): Promise<void> {
   await AsyncStorage.setItem(KEY, JSON.stringify(settings));
+  notifyAccessibilityListeners();
+  if (options?.syncCloud === false) return;
+  try {
+    const { getLearnerCloud } = await import('@/src/sync/learnerSession');
+    const cloud = getLearnerCloud();
+    if (cloud) void cloud.upsertLearnerState({ accessibility: settings });
+  } catch {
+    /* local settings still saved */
+  }
 }

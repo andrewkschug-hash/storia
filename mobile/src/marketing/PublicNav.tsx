@@ -2,17 +2,19 @@ import { router, type Href } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { LandingColors } from '@/src/marketing/landingTheme';
 import { navigateContinueLearning } from '@/src/progress/continueNavigation';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
-import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
   continueHref?: Href | null;
+  onLanguagesPress?: () => void;
+  onHowItWorksPress?: () => void;
 };
 
-export function PublicNav({ continueHref }: Props) {
-  const { colors } = useTheme();
+export function PublicNav({ continueHref, onLanguagesPress, onHowItWorksPress }: Props) {
+  const colors = LandingColors;
   const layout = useLayout();
   const [open, setOpen] = useState(false);
   const compact = layout.isPhone;
@@ -26,96 +28,159 @@ export function PublicNav({ continueHref }: Props) {
     setOpen(false);
     if (continueHref) {
       void navigateContinueLearning(continueHref);
-      return;
     }
   };
 
   return (
-    <View
-      accessibilityRole="header"
-      style={[
-        styles.bar,
-        {
-          backgroundColor: colors.background,
-          borderBottomColor: colors.border,
-        },
-      ]}>
-      <Pressable
-        accessibilityRole="link"
-        accessibilityLabel="Storibase home"
-        onPress={() => go('/')}
-        style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}>
-        <Text style={[Typography.brand, { color: colors.text, fontSize: 28, lineHeight: 34 }]}>
-          Storibase
-        </Text>
-      </Pressable>
-
-      {!compact ? (
-        <View style={styles.right}>
-          {continueHref ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Continue learning"
-              onPress={continueLearning}
-              style={({ pressed }) => [
-                styles.primary,
-                { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
-              ]}>
-              <Text style={[Typography.button, { color: colors.onTint }]}>Continue</Text>
-            </Pressable>
-          ) : (
-            <>
-              <Pressable
-                accessibilityRole="link"
-                accessibilityLabel="Log in"
-                onPress={() => go('/account?mode=signin' as Href)}
-                style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1, minHeight: 44, justifyContent: 'center' })}>
-                <Text style={[Typography.label, { color: colors.textSecondary }]}>Log in</Text>
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Start learning"
-                onPress={() => go('/account?mode=signup' as Href)}
-                style={({ pressed }) => [
-                  styles.primary,
-                  { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
-                ]}>
-                <Text style={[Typography.button, { color: colors.onTint }]}>Start</Text>
-              </Pressable>
-            </>
-          )}
-        </View>
-      ) : (
+    <View>
+      <View
+        accessibilityRole="header"
+        style={[
+          styles.bar,
+          {
+            backgroundColor: colors.background,
+            borderBottomColor: colors.border,
+          },
+        ]}>
         <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={open ? 'Close menu' : 'Open menu'}
-          accessibilityState={{ expanded: open }}
-          onPress={() => setOpen((value) => !value)}
-          style={({ pressed }) => [
-            styles.menuBtn,
-            { borderColor: colors.border, opacity: pressed ? 0.8 : 1 },
-          ]}>
-          <Text style={[Typography.label, { color: colors.text }]}>{open ? 'Close' : 'Menu'}</Text>
+          accessibilityRole="link"
+          accessibilityLabel="Storibase home"
+          onPress={() => go('/')}
+          style={({ pressed }) => [styles.brandRow, { opacity: pressed ? 0.75 : 1 }]}>
+          <View style={[styles.dot, { backgroundColor: colors.accent }]} />
+          <Text style={[Typography.brand, { color: colors.text, fontSize: 26, lineHeight: 32 }]}>
+            Storibase
+          </Text>
         </Pressable>
-      )}
 
-      {compact && open ? (
-        <View
-          style={[
-            styles.dropdown,
-            { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
-          ]}>
-          <NavText label="Try walkthrough" onPress={() => go('/walkthrough')} colors={colors} />
-          {continueHref ? (
-            <NavText label="Continue learning" onPress={continueLearning} colors={colors} />
-          ) : (
-            <>
-              <NavText label="Log in" onPress={() => go('/account?mode=signin' as Href)} colors={colors} />
-              <NavText label="Start learning" onPress={() => go('/account?mode=signup' as Href)} colors={colors} />
-            </>
-          )}
+        {!compact ? (
+          <>
+            <View style={styles.centerLinks}>
+              <NavText
+                label="Languages"
+                onPress={() => {
+                  setOpen(false);
+                  if (onLanguagesPress) onLanguagesPress();
+                  else go('/');
+                }}
+                colors={colors}
+              />
+              <NavText
+                label="How it works"
+                onPress={() => {
+                  setOpen(false);
+                  if (onHowItWorksPress) onHowItWorksPress();
+                  else go('/');
+                }}
+                colors={colors}
+              />
+            </View>
+            <View style={styles.right}>
+              {continueHref ? (
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Continue learning"
+                  onPress={continueLearning}
+                  style={({ pressed }) => [
+                    styles.primary,
+                    { backgroundColor: colors.accent, opacity: pressed ? 0.88 : 1 },
+                  ]}>
+                  <Text style={[Typography.button, { color: colors.onAccent }]}>Continue</Text>
+                </Pressable>
+              ) : (
+                <>
+                  <Pressable
+                    accessibilityRole="link"
+                    accessibilityLabel="Log in"
+                    onPress={() => go('/account?mode=signin' as Href)}
+                    style={({ pressed }) => ({
+                      opacity: pressed ? 0.7 : 1,
+                      minHeight: 44,
+                      justifyContent: 'center',
+                    })}>
+                    <Text style={[Typography.label, { color: colors.textSecondary }]}>Log in</Text>
+                  </Pressable>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Start"
+                    onPress={() => go('/account?mode=signup' as Href)}
+                    style={({ pressed }) => [
+                      styles.primary,
+                      { backgroundColor: colors.accent, opacity: pressed ? 0.88 : 1 },
+                    ]}>
+                    <Text style={[Typography.button, { color: colors.onAccent }]}>Start</Text>
+                  </Pressable>
+                </>
+              )}
+            </View>
+          </>
+        ) : (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={open ? 'Close menu' : 'Open menu'}
+            accessibilityState={{ expanded: open }}
+            onPress={() => setOpen((value) => !value)}
+            style={({ pressed }) => [
+              styles.menuBtn,
+              { borderColor: colors.border, opacity: pressed ? 0.8 : 1 },
+            ]}>
+            <Text style={[Typography.label, { color: colors.text }]}>{open ? 'Close' : 'Menu'}</Text>
+          </Pressable>
+        )}
+
+        {compact && open ? (
+          <View
+            style={[
+              styles.dropdown,
+              { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+            ]}>
+            <NavText
+              label="Languages"
+              onPress={() => {
+                setOpen(false);
+                if (onLanguagesPress) onLanguagesPress();
+                else go('/');
+              }}
+              colors={colors}
+            />
+            <NavText
+              label="How it works"
+              onPress={() => {
+                setOpen(false);
+                if (onHowItWorksPress) onHowItWorksPress();
+                else go('/');
+              }}
+              colors={colors}
+            />
+            <NavText label="Try walkthrough" onPress={() => go('/walkthrough')} colors={colors} />
+            {continueHref ? (
+              <NavText label="Continue learning" onPress={continueLearning} colors={colors} />
+            ) : (
+              <>
+                <NavText
+                  label="Log in"
+                  onPress={() => go('/account?mode=signin' as Href)}
+                  colors={colors}
+                />
+                <NavText
+                  label="Start learning"
+                  onPress={() => go('/account?mode=signup' as Href)}
+                  colors={colors}
+                />
+              </>
+            )}
+          </View>
+        ) : null}
+      </View>
+
+      <View style={[styles.betaBar, { backgroundColor: colors.betaBar }]}>
+        <View style={[styles.betaTag, { backgroundColor: colors.accent }]}>
+          <Text style={[styles.betaTagText, { color: colors.onAccent }]}>BETA</Text>
         </View>
-      ) : null}
+        <Text style={[Typography.caption, { color: colors.textMuted, flex: 1 }]}>
+          Storibase currently teaches Italian only — more languages are being written.
+        </Text>
+      </View>
     </View>
   );
 }
@@ -127,7 +192,7 @@ function NavText({
 }: {
   label: string;
   onPress: () => void;
-  colors: { text: string; textSecondary: string };
+  colors: { textSecondary: string };
 }) {
   return (
     <Pressable
@@ -151,6 +216,21 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     gap: Spacing.sm,
     zIndex: 2,
+  },
+  brandRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  dot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+  },
+  centerLinks: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.lg,
   },
   right: {
     flexDirection: 'row',
@@ -180,5 +260,22 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.sm,
     gap: Spacing.xs,
+  },
+  betaBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.sm,
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.sm,
+  },
+  betaTag: {
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 4,
+  },
+  betaTagText: {
+    fontFamily: 'Literata_600SemiBold',
+    fontSize: 10,
+    letterSpacing: 1,
   },
 });

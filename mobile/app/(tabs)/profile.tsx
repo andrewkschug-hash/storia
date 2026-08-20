@@ -22,6 +22,7 @@ import {
 } from '@/src/account/storage';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { AvatarBadge } from '@/src/components/AvatarBadge';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { AccessibilitySettings } from '@/src/accessibility/AccessibilitySettings';
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import { navLog } from '@/src/navigation/diagnostics';
@@ -29,7 +30,7 @@ import { isDevBuild } from '@/src/security/buildMode';
 import { Radii, Spacing } from '@/src/theme/tokens';
 
 export default function ProfileScreen() {
-  const { colors, type } = useAccessibility();
+  const { colors, type, minTouchTarget } = useAccessibility();
   const insets = useSafeAreaInsets();
   const [account, setAccount] = useState<LocalAccount | null>(null);
   const [displayName, setDisplayName] = useState('');
@@ -129,141 +130,152 @@ export default function ProfileScreen() {
   return (
     <AtmosphereBackground>
       <ScrollView
-        contentContainerStyle={[
-          styles.content,
-          { paddingTop: insets.top + Spacing.lg, paddingBottom: insets.bottom + Spacing.xl },
-        ]}
+        contentContainerStyle={{
+          paddingTop: insets.top + Spacing.lg,
+          paddingBottom: insets.bottom + Spacing.xxl,
+        }}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}>
-        <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>Profile</Text>
-        <View style={styles.hero}>
-          <AvatarBadge avatarId={account.avatarId} size="lg" />
-          <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.md, textAlign: 'center' }]}>
-            {account.displayName}
+        <ScreenContent>
+          <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>Profile</Text>
+
+          <View style={styles.hero}>
+            <AvatarBadge avatarId={account.avatarId} size="lg" />
+            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.md, textAlign: 'center' }]}>
+              {account.displayName}
+            </Text>
+            <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs, textAlign: 'center' }]}>
+              {account.email}
+            </Text>
+            {isDevBuild() ? (
+              <Text style={[type.caption, { color: colors.accent, marginTop: Spacing.xs }]}>
+                Developer build
+              </Text>
+            ) : null}
+          </View>
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          <Text style={[type.label, { color: colors.text }]}>Account</Text>
+
+          <Text style={[styles.fieldLabel, type.caption, { color: colors.textSecondary }]}>
+            Display name
           </Text>
-          <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
-            {account.email}
+          <TextInput
+            value={displayName}
+            onChangeText={setDisplayName}
+            onBlur={() => void saveName()}
+            placeholder="Your name"
+            placeholderTextColor={colors.textMuted}
+            autoCapitalize="words"
+            autoCorrect={false}
+            editable={!saving && !signingOut}
+            style={[
+              styles.input,
+              type.body,
+              {
+                color: colors.text,
+                backgroundColor: colors.backgroundElevated,
+                borderColor: colors.border,
+                minHeight: minTouchTarget,
+              },
+            ]}
+          />
+
+          <Text style={[styles.fieldLabel, type.caption, { color: colors.textSecondary }]}>
+            Portrait
           </Text>
-          {isDevBuild() ? (
-            <Text style={[type.caption, { color: colors.accent, marginTop: Spacing.xs }]}>Developer build</Text>
+          <Text style={[type.caption, { color: colors.textMuted }]}>
+            Choose a Storibase portrait.
+          </Text>
+          <View style={styles.avatarRow}>
+            {AVATAR_PRESETS.map((preset) => {
+              const selected = preset.id === account.avatarId;
+              return (
+                <Pressable
+                  key={preset.id}
+                  onPress={() => void pickAvatar(preset.id)}
+                  disabled={saving || signingOut}
+                  accessibilityRole="button"
+                  accessibilityLabel={preset.label}
+                  accessibilityState={{ selected }}
+                  style={({ pressed }) => [
+                    styles.avatarChoice,
+                    {
+                      borderColor: selected ? colors.tint : 'transparent',
+                      opacity: pressed ? 0.85 : 1,
+                    },
+                  ]}>
+                  <AvatarBadge avatarId={preset.id} size="md" />
+                </Pressable>
+              );
+            })}
+          </View>
+
+          {error ? (
+            <Text style={[type.caption, { color: colors.danger, marginTop: Spacing.md }]}>{error}</Text>
           ) : null}
-        </View>
 
-        <Text style={[type.label, { color: colors.text, marginTop: Spacing.xl }]}>Display name</Text>
-        <TextInput
-          value={displayName}
-          onChangeText={setDisplayName}
-          onBlur={() => void saveName()}
-          placeholder="Your name"
-          placeholderTextColor={colors.textMuted}
-          autoCapitalize="words"
-          autoCorrect={false}
-          editable={!saving && !signingOut}
-          style={[
-            styles.input,
-            type.body,
-            {
-              color: colors.text,
-              backgroundColor: colors.backgroundElevated,
-              borderColor: colors.border,
-            },
-          ]}
-        />
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-        <Text style={[type.label, { color: colors.text, marginTop: Spacing.xl }]}>Picture</Text>
-        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
-          Pick a Storibase portrait — no photo upload yet.
-        </Text>
-        <View style={styles.grid}>
-          {AVATAR_PRESETS.map((preset) => {
-            const selected = preset.id === account.avatarId;
-            return (
-              <Pressable
-                key={preset.id}
-                onPress={() => void pickAvatar(preset.id)}
-                disabled={saving || signingOut}
-                accessibilityRole="button"
-                accessibilityLabel={preset.label}
-                accessibilityState={{ selected }}
-                style={({ pressed }) => [
-                  styles.avatarChoice,
-                  {
-                    borderColor: selected ? colors.tint : colors.border,
-                    backgroundColor: colors.backgroundElevated,
-                    opacity: pressed ? 0.85 : 1,
-                  },
-                ]}>
-                <AvatarBadge avatarId={preset.id} size="md" />
-                <Text style={[type.caption, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-                  {preset.label}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </View>
+          <AccessibilitySettings />
 
-        {error ? (
-          <Text style={[type.caption, { color: colors.danger, marginTop: Spacing.md }]}>{error}</Text>
-        ) : null}
-
-        <AccessibilitySettings />
-
-        <Pressable
-          onPress={onSignOut}
-          disabled={signingOut}
-          accessibilityRole="button"
-          style={({ pressed }) => [
-            styles.signOut,
-            {
-              borderColor: colors.danger,
-              opacity: signingOut ? 0.6 : pressed ? 0.85 : 1,
-            },
-          ]}>
-          <Text style={[type.button, { color: colors.danger }]}>
-            {signingOut ? 'Signing out…' : 'Sign out'}
-          </Text>
-        </Pressable>
+          <Pressable
+            onPress={onSignOut}
+            disabled={signingOut}
+            accessibilityRole="button"
+            style={({ pressed }) => [
+              styles.signOut,
+              {
+                minHeight: minTouchTarget,
+                opacity: signingOut ? 0.6 : pressed ? 0.7 : 1,
+              },
+            ]}>
+            <Text style={[type.label, { color: colors.danger }]}>
+              {signingOut ? 'Signing out…' : 'Sign out'}
+            </Text>
+          </Pressable>
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  content: {
-    paddingHorizontal: Spacing.lg,
-  },
   hero: {
     alignItems: 'center',
     marginTop: Spacing.lg,
+    marginBottom: Spacing.lg,
+  },
+  divider: {
+    height: StyleSheet.hairlineWidth,
+    marginVertical: Spacing.xl,
+  },
+  fieldLabel: {
+    marginTop: Spacing.lg,
+    marginBottom: Spacing.sm,
   },
   input: {
-    marginTop: Spacing.sm,
     borderRadius: Radii.sm,
     borderWidth: StyleSheet.hairlineWidth * 2,
     paddingHorizontal: Spacing.md,
-    paddingVertical: Spacing.md,
+    paddingVertical: Spacing.sm,
   },
-  grid: {
+  avatarRow: {
     marginTop: Spacing.md,
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: Spacing.sm,
   },
   avatarChoice: {
-    width: '23%',
-    minWidth: 72,
-    flexGrow: 1,
-    alignItems: 'center',
-    paddingVertical: Spacing.sm,
-    borderRadius: Radii.md,
+    borderRadius: 999,
     borderWidth: 2,
+    padding: 3,
   },
   signOut: {
     marginTop: Spacing.xxl,
     alignItems: 'center',
-    paddingVertical: Spacing.md,
-    borderRadius: Radii.md,
-    borderWidth: StyleSheet.hairlineWidth * 2,
+    justifyContent: 'center',
   },
   center: {
     flex: 1,

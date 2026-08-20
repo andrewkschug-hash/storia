@@ -4,7 +4,7 @@ import {
   getCatalogStory,
   getContentBundle,
 } from '@/src/content';
-import { batchRangeForChapter } from '@/src/content/lessonBatches';
+import { batchRangeForChapter, grammarNoteForBatch } from '@/src/content/lessonBatches';
 import {
   grammarCheckpointId,
   recapBlocksChapter,
@@ -133,8 +133,10 @@ function resolveNextAction(
   const recapId = recapCheckpointId(storyId, batchEnd);
   const chapterBefore = bundle.story.chapters.find((chapter) => chapter.number === batchEnd);
   const fallbackChapterId = chapterBefore?.id ?? current.id;
+  const { start, end } = batchRangeForChapter(batchEnd);
+  const grammarNote = grammarNoteForBatch(start, end, storyId);
 
-  if (!done.has(grammarId)) {
+  if (grammarNote && !done.has(grammarId)) {
     return { chapterId: fallbackChapterId, nextAction: { kind: 'grammar', batchEnd } };
   }
   if (!done.has(recapId)) {

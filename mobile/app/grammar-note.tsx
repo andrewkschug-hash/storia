@@ -33,7 +33,9 @@ export default function GrammarNoteScreen() {
   const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
 
-  const note = isLessonBatchEnd(chapterNumber) ? grammarNoteForChapter(chapterNumber) : null;
+  const note = isLessonBatchEnd(chapterNumber)
+    ? grammarNoteForChapter(chapterNumber, storyId)
+    : null;
   const { start, end } = batchRangeForChapter(chapterNumber);
 
   const [phase, setPhase] = useState<Phase>('intro');

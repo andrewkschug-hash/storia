@@ -623,15 +623,199 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
   },
 };
 
-export function grammarNoteForBatch(start: number, end: number): GrammarNote | null {
+/** Hometown story notes for chapters 1–5. Omitted batches skip the grammar node. */
+const PRE_ROME_GRAMMAR_1_5: Record<string, GrammarNote> = {
+  'luca-prima-di-roma-01': {
+    batchKey: 'luca-prima-di-roma-01:1-5',
+    title: 'Sono, è, and mi chiamo',
+    intro:
+      'In Luca’s introductions you keep seeing essere (to be) and mi chiamo. Here is how those lines work.',
+    steps: [
+      {
+        title: 'Sono / è tell who someone is',
+        explanation:
+          'sono = I am. è = he / she / it is.\n\n' +
+          'Ciao, sono Luca. = Hi, I am Luca.\n' +
+          'Davide è alla porta. = Davide is at the door.',
+        rule: 'sono = I am · è = he/she is',
+        examples: [
+          { italian: 'Sono Luca.', english: 'I am Luca.' },
+          { italian: 'Marta è mia mamma.', english: 'Marta is my mum.' },
+        ],
+      },
+      {
+        title: 'Mi chiamo names you',
+        explanation:
+          'mi chiamo = my name is (literally “I call myself”).\n\n' +
+          'Use it when you introduce yourself: Mi chiamo Luca.',
+        rule: 'Mi chiamo + name = My name is …',
+        examples: [
+          { italian: 'Mi chiamo Luca.', english: 'My name is Luca.' },
+          { italian: 'Mi chiamo Davide.', english: 'My name is Davide.' },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'How do you say “I am Luca”?',
+        choices: ['Sono Luca.', 'È Luca.', 'Mi chiama Luca.'],
+        correctIndex: 0,
+        explanation: 'sono = I am.',
+      },
+      {
+        prompt: 'What does “Mi chiamo Luca” mean?',
+        choices: ['My name is Luca.', 'I call Luca.', 'Luca is calling.'],
+        correctIndex: 0,
+        explanation: 'mi chiamo = my name is.',
+      },
+    ],
+  },
+  'luca-prima-di-roma-02': {
+    batchKey: 'luca-prima-di-roma-02:1-5',
+    title: 'Time: alle and days',
+    intro: 'Luca’s day uses clock times and weekdays. Italian puts alle before the hour.',
+    steps: [
+      {
+        title: 'Alle + hour',
+        explanation:
+          'alle otto = at eight. alle nove = at nine.\n\n' +
+          'Lunedì alle otto Chiara è a scuola.',
+        rule: 'alle + hour = at that time',
+        examples: [
+          { italian: 'Alle nove Chiara ha italiano.', english: 'At nine Chiara has Italian.' },
+          { italian: 'Alle dieci Chiara è libera.', english: 'At ten Chiara is free.' },
+        ],
+      },
+      {
+        title: 'Days of the week',
+        explanation:
+          'Days are often used without a capital letter in Italian prose, but you can still recognise them:\n' +
+          'lunedì, martedì, mercoledì…',
+        rule: 'Day + alle + hour = when something happens',
+        examples: [
+          { italian: 'Lunedì alle otto Chiara è a scuola.', english: 'Monday at eight Chiara is at school.' },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'What does “alle nove” mean?',
+        choices: ['At nine', 'On Tuesday', 'Nine euros'],
+        correctIndex: 0,
+        explanation: 'alle + hour = at that time.',
+      },
+    ],
+  },
+  'luca-prima-di-roma-03': {
+    batchKey: 'luca-prima-di-roma-03:1-5',
+    title: 'Shopping: quanto costa?',
+    intro: 'At the supermarket Luca asks prices and pays. Two patterns do most of the work.',
+    steps: [
+      {
+        title: 'Quanto costa…?',
+        explanation:
+          'Quanto costa? = How much does it cost?\n' +
+          'Quanto costa tutto? = How much does everything cost?',
+        rule: 'Quanto costa…? = How much does … cost?',
+        examples: [
+          { italian: 'Quanto costa tutto?', english: 'How much does everything cost?' },
+          { italian: 'Tutto costa dieci euro.', english: 'Everything costs ten euros.' },
+        ],
+      },
+      {
+        title: 'Si può pagare?',
+        explanation: 'Si può pagare? is a polite way to ask if you can pay / settle up.',
+        rule: 'Si può pagare? = Can I pay?',
+        examples: [{ italian: 'Si può pagare?', english: 'Can I pay?' }],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'How do you ask the total price?',
+        choices: ['Quanto costa tutto?', 'Dove costa tutto?', 'Chi costa tutto?'],
+        correctIndex: 0,
+        explanation: 'Quanto costa…? asks the price.',
+      },
+    ],
+  },
+  'luca-prima-di-roma-04': {
+    batchKey: 'luca-prima-di-roma-04:1-5',
+    title: 'Places: dov’è and c’è',
+    intro: 'Around town Luca asks where things are and notices what is there.',
+    steps: [
+      {
+        title: 'Dov’è…?',
+        explanation: 'Dov’è l’autobus? = Where is the bus?\nDov’è contracts dove + è.',
+        rule: 'Dov’è…? = Where is…?',
+        examples: [
+          { italian: 'Dov’è l’autobus?', english: 'Where is the bus?' },
+          { italian: 'La fermata è in Via Nazionale.', english: 'The bus stop is on Via Nazionale.' },
+        ],
+      },
+      {
+        title: 'C’è…',
+        explanation: 'C’è un autobus alle nove. = There is a bus at nine.\nC’è = there is.',
+        rule: 'C’è = there is',
+        examples: [{ italian: 'C’è un autobus alle nove.', english: 'There’s a bus at nine.' }],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'What does “Dov’è l’autobus?” ask?',
+        choices: ['Where the bus is', 'How much the bus costs', 'When the bus leaves'],
+        correctIndex: 0,
+        explanation: 'Dov’è = where is.',
+      },
+    ],
+  },
+  'luca-prima-di-roma-05': {
+    batchKey: 'luca-prima-di-roma-05:1-5',
+    title: 'C’è and party phrases',
+    intro: 'At Luca’s party you keep seeing c’è for what is available in the room.',
+    steps: [
+      {
+        title: 'C’è + thing',
+        explanation:
+          'C’è musica. C’è torta. C’è succo.\n' +
+          'Each line says that thing is there / available.',
+        rule: 'C’è + noun = there is …',
+        examples: [
+          { italian: 'C’è musica.', english: 'There’s music.' },
+          { italian: 'La festa è nel soggiorno.', english: 'The party is in the living room.' },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'What does “C’è torta” mean?',
+        choices: ['There’s cake.', 'I want cake.', 'Where is the cake?'],
+        correctIndex: 0,
+        explanation: 'C’è = there is.',
+      },
+    ],
+  },
+};
+
+export function grammarNoteForBatch(
+  start: number,
+  end: number,
+  storyId = 'luca-a-roma',
+): GrammarNote | null {
+  if (storyId.startsWith('luca-prima-di-roma-')) {
+    if (start === 1 && end === 5) return PRE_ROME_GRAMMAR_1_5[storyId] ?? null;
+    return null;
+  }
   const key = `${start}-${end}`;
   return GRAMMAR_BY_BATCH[key] ?? null;
 }
 
-export function grammarNoteForChapter(chapterNumber: number): GrammarNote | null {
+export function grammarNoteForChapter(
+  chapterNumber: number,
+  storyId = 'luca-a-roma',
+): GrammarNote | null {
   if (!isLessonBatchEnd(chapterNumber)) return null;
   const { start, end } = batchRangeForChapter(chapterNumber);
-  return grammarNoteForBatch(start, end);
+  return grammarNoteForBatch(start, end, storyId);
 }
 
 /** @deprecated Use `steps` on GrammarNote. Kept for any legacy references. */

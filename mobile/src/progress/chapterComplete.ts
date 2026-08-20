@@ -18,7 +18,10 @@ function batchMilestoneDetail(
   storyId: string,
 ): string {
   const { start, end } = batchRangeForChapter(chapterNumber);
-  const steps = [`a short grammar note and word recap for Chapters ${start}–${end}`];
+  const note = grammarNoteForChapter(chapterNumber, storyId);
+  const steps = note
+    ? [`a short grammar note and word recap for Chapters ${start}–${end}`]
+    : [`a word recap for Chapters ${start}–${end}`];
   const scene = getSpeakSceneForBatch(storyId, chapterNumber);
   if (scene) {
     steps.push(`retell "${scene.title}"`);
@@ -48,7 +51,7 @@ export function chapterCompleteView(
       button: 'Continue',
     };
   }
-  if (isLessonBatchEnd(chapterNumber) && grammarNoteForChapter(chapterNumber)) {
+  if (isLessonBatchEnd(chapterNumber)) {
     return {
       headline: `Chapter ${chapterNumber} completed!`,
       detail: batchMilestoneDetail(chapterNumber, nextChapterNumber, storyId),
@@ -79,7 +82,7 @@ export function comprehensionResultsContinueLabel(
   if (hasProduction) return 'Continue';
   if (nextChapterNumber == null) return 'Back to home';
   if (storyId === LUCA_STORY_ID && chapterNumber === 24) return 'Continue';
-  if (isLessonBatchEnd(chapterNumber) && grammarNoteForChapter(chapterNumber)) {
+  if (isLessonBatchEnd(chapterNumber)) {
     return 'Continue';
   }
   return 'Continue story';

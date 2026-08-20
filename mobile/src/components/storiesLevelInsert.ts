@@ -1,4 +1,4 @@
-import type { ChapterStatus } from '@/src/progress/types';
+import type { ChapterStatus, ReadingProgressRecord } from '@/src/progress/types';
 
 export type StoryArcSummary = {
   id: string;
@@ -15,6 +15,7 @@ export type ExtraStoryRow = {
   completed: number;
   total: number;
   eyebrow?: string;
+  progress?: ReadingProgressRecord | null;
   chapters: {
     id: string;
     number: number;

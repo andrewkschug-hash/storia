@@ -79,6 +79,13 @@ export class AudioService {
     } catch {
       /* ignore */
     }
+    try {
+      const { getLearnerCloud } = await import('@/src/sync/learnerSession');
+      const cloud = getLearnerCloud();
+      if (cloud) void cloud.upsertLearnerState({ preferences: { audioSpeed: speed } });
+    } catch {
+      /* local speed still saved */
+    }
     this.onChange?.();
   }
 

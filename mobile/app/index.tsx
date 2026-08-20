@@ -1,30 +1,67 @@
 import { router, type Href } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import {
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getAccount } from '@/src/account/storage';
-import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
+import { LandingColors } from '@/src/marketing/landingTheme';
+import { PublicFooter } from '@/src/marketing/PublicFooter';
 import { PublicNav } from '@/src/marketing/PublicNav';
 import { ReaderPreview } from '@/src/marketing/ReaderPreview';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { navigateContinueLearning } from '@/src/progress/continueNavigation';
 import { useLayout } from '@/src/theme/useLayout';
 import { Radii, Spacing, Typography } from '@/src/theme/tokens';
-import { useTheme } from '@/src/theme/useTheme';
 
 const PILLARS = [
-  { title: 'Read', body: 'Real Italian in context' },
-  { title: 'Remember', body: 'Words return in the story' },
-  { title: 'Speak', body: 'Say what you understand' },
+  {
+    title: 'Read',
+    headline: 'Real Italian in context',
+    body: 'Every word you learn shows up inside a sentence a character actually says — never a flashcard floating on its own.',
+  },
+  {
+    title: 'Remember',
+    headline: 'Words return in the story',
+    body: "What you tap today reappears three chapters later. You don't drill vocabulary — the story quietly reminds you of it.",
+  },
+  {
+    title: 'Speak',
+    headline: 'Say what you understand',
+    body: 'Once a chapter clicks, Storibase asks you to say it back — closing the loop from reading to speaking out loud.',
+  },
 ] as const;
 
+const SHELF_LANGUAGES = [
+  { id: 'it', label: 'Italiano', live: true },
+  { id: 'es', label: 'Español', live: false },
+  { id: 'fr', label: 'Français', live: false },
+  { id: 'de', label: 'Deutsch', live: false },
+  { id: 'ja', label: '日本語', live: false },
+  { id: 'ko', label: '한국어', live: false },
+  { id: 'pt', label: 'Português', live: false },
+] as const;
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export default function PublicHomeScreen() {
-  const { colors } = useTheme();
+  const colors = LandingColors;
   const insets = useSafeAreaInsets();
   const layout = useLayout();
+  const scrollRef = useRef<ScrollView>(null);
   const [continueHref, setContinueHref] = useState<Href | null>(null);
+  const [shelfY, setShelfY] = useState(0);
+  const [pillarsY, setPillarsY] = useState(0);
+  const [email, setEmail] = useState('');
+  const [notifyState, setNotifyState] = useState<'idle' | 'invalid' | 'done'>('idle');
 
   useEffect(() => {
     void (async () => {
@@ -40,21 +77,38 @@ export default function PublicHomeScreen() {
     })();
   }, []);
 
-  const heroSize = layout.isPhone ? 38 : 46;
   const wide = layout.isDesktop || layout.isTablet;
+  const heroSize = layout.isPhone ? 36 : 48;
+
+  const scrollTo = (y: number) => {
+    scrollRef.current?.scrollTo({ y: Math.max(0, y - 12), animated: true });
+  };
+
+  const onNotify = () => {
+    const trimmed = email.trim();
+    if (!EMAIL_RE.test(trimmed)) {
+      setNotifyState('invalid');
+      return;
+    }
+    setNotifyState('done');
+  };
 
   return (
-    <AtmosphereBackground>
-      <View style={{ paddingTop: insets.top, backgroundColor: colors.background }}>
-        <PublicNav continueHref={continueHref} />
-      </View>
+    <View style={[styles.root, { backgroundColor: colors.background, paddingTop: insets.top }]}>
+      <PublicNav
+        continueHref={continueHref}
+        onLanguagesPress={() => scrollTo(shelfY)}
+        onHowItWorksPress={() => scrollTo(pillarsY)}
+      />
       <ScrollView
-        contentContainerStyle={{ paddingBottom: insets.bottom + Spacing.xxl }}
+        ref={scrollRef}
+        contentContainerStyle={{ paddingBottom: insets.bottom + Spacing.xl }}
         showsVerticalScrollIndicator={false}>
-        <ScreenContent maxWidth={wide ? 960 : 680} style={styles.page}>
+        <ScreenContent maxWidth={wide ? 1040 : 680} style={styles.page}>
+          {/* Hero */}
           <View style={[styles.hero, wide && styles.heroWide]}>
             <View style={[styles.heroCopy, wide && styles.heroCopyWide]}>
-              <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>Storibase</Text>
+              <Text style={[Typography.chapterEyebrow, { color: colors.accent }]}>STORIBASE</Text>
               <Text
                 style={[
                   Typography.heroTitle,
@@ -66,36 +120,52 @@ export default function PublicHomeScreen() {
                   },
                 ]}
                 accessibilityRole="header">
-                Learn Italian through stories.
+                Learn a language by{' '}
+                <Text
+                  style={{
+                    fontFamily: 'Literata_400Regular_Italic',
+                    color: colors.accent,
+                  }}>
+                  living inside
+                </Text>{' '}
+                its stories.
               </Text>
               <Text
                 style={[
                   Typography.body,
-                  { color: colors.textSecondary, marginTop: Spacing.md, lineHeight: 26, maxWidth: 420 },
+                  {
+                    color: colors.textSecondary,
+                    marginTop: Spacing.md,
+                    lineHeight: 26,
+                    maxWidth: 460,
+                  },
                 ]}>
-                Follow characters chapter by chapter. No word lists — just reading that makes sense.
+                Follow one character, chapter by chapter. No word lists, no drills — just a story
+                that slowly starts to make sense in a language that used to be foreign.
               </Text>
 
               <View style={[styles.ctaRow, layout.width < 400 && styles.ctaStack]}>
                 <Pressable
                   accessibilityRole="button"
-                  accessibilityLabel="Try the walkthrough"
-                  onPress={() => router.push('/walkthrough')}
+                  accessibilityLabel="Start reading in Italian"
+                  onPress={() => router.push('/account?mode=signup' as Href)}
                   style={({ pressed }) => [
                     styles.primaryBtn,
-                    { backgroundColor: colors.tint, opacity: pressed ? 0.88 : 1 },
+                    { backgroundColor: colors.accent, opacity: pressed ? 0.88 : 1 },
                   ]}>
-                  <Text style={[Typography.button, { color: colors.onTint }]}>Try the walkthrough</Text>
+                  <Text style={[Typography.button, { color: colors.onAccent }]}>
+                    Start reading in Italian
+                  </Text>
                 </Pressable>
                 <Pressable
                   accessibilityRole="button"
-                  accessibilityLabel="Start learning"
-                  onPress={() => router.push('/account?mode=signup' as Href)}
+                  accessibilityLabel="Try the walkthrough"
+                  onPress={() => router.push('/walkthrough')}
                   style={({ pressed }) => [
                     styles.secondaryBtn,
                     { borderColor: colors.border, opacity: pressed ? 0.85 : 1 },
                   ]}>
-                  <Text style={[Typography.button, { color: colors.text }]}>Start learning</Text>
+                  <Text style={[Typography.button, { color: colors.text }]}>Try the walkthrough</Text>
                 </Pressable>
               </View>
 
@@ -120,30 +190,163 @@ export default function PublicHomeScreen() {
             </View>
           </View>
 
-          <View style={styles.pillars}>
-            {PILLARS.map((item) => (
-              <View
-                key={item.title}
+          {/* The Shelf */}
+          <View
+            onLayout={(e) => setShelfY(e.nativeEvent.layout.y)}
+            style={styles.section}>
+            <Text style={[Typography.chapterEyebrow, { color: colors.accent }]}>THE SHELF</Text>
+            <Text
+              style={[
+                Typography.heroTitle,
+                {
+                  color: colors.text,
+                  marginTop: Spacing.sm,
+                  fontSize: layout.isPhone ? 28 : 34,
+                },
+              ]}>
+              One story live. Six more being written.
+            </Text>
+            <Text
+              style={[
+                Typography.body,
+                { color: colors.textSecondary, marginTop: Spacing.md, maxWidth: 520, lineHeight: 26 },
+              ]}>
+              Every language on Storibase starts as an idea for a story. Italian is the first one
+              finished. Tell us which shelf to fill next.
+            </Text>
+
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.shelfRow}
+              style={{ marginTop: Spacing.xl }}>
+              {SHELF_LANGUAGES.map((lang) => (
+                <View
+                  key={lang.id}
+                  style={[
+                    styles.spine,
+                    {
+                      backgroundColor: lang.live ? colors.accent : colors.locked,
+                      borderColor: colors.border,
+                    },
+                  ]}>
+                  {lang.live ? (
+                    <Text style={[styles.liveTag, { color: colors.onAccent }]}>LIVE</Text>
+                  ) : (
+                    <Text style={[styles.lockTag, { color: colors.textMuted }]}>LOCK</Text>
+                  )}
+                  <Text
+                    style={[
+                      styles.spineLabel,
+                      { color: lang.live ? colors.onAccent : colors.textMuted },
+                    ]}>
+                    {lang.label}
+                  </Text>
+                </View>
+              ))}
+            </ScrollView>
+
+            <View style={[styles.notifyRow, layout.width < 480 && styles.notifyStack]}>
+              <TextInput
+                accessibilityLabel="Email for language waitlist"
+                value={email}
+                onChangeText={(value) => {
+                  setEmail(value);
+                  if (notifyState !== 'idle') setNotifyState('idle');
+                }}
+                placeholder="you@email.com"
+                placeholderTextColor={colors.textMuted}
+                keyboardType="email-address"
+                autoCapitalize="none"
+                autoCorrect={false}
                 style={[
-                  styles.pillar,
-                  { backgroundColor: colors.readerSurface, borderColor: colors.border },
+                  styles.emailInput,
+                  {
+                    color: colors.text,
+                    borderColor: notifyState === 'invalid' ? colors.accent : colors.border,
+                    backgroundColor: colors.backgroundElevated,
+                  },
+                ]}
+              />
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Notify me"
+                onPress={onNotify}
+                style={({ pressed }) => [
+                  styles.primaryBtn,
+                  {
+                    backgroundColor: colors.accent,
+                    opacity: pressed ? 0.88 : 1,
+                    paddingHorizontal: Spacing.lg,
+                  },
                 ]}>
-                <Text style={[Typography.label, { color: colors.tint }]}>{item.title}</Text>
-                <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 4 }]}>
+                <Text style={[Typography.button, { color: colors.onAccent }]}>
+                  {notifyState === 'done' ? 'You’re on the list' : 'Notify me'}
+                </Text>
+              </Pressable>
+            </View>
+            <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+              {notifyState === 'invalid'
+                ? 'Enter a valid email address.'
+                : notifyState === 'done'
+                  ? 'Thanks — we’ll email you when that language opens.'
+                  : 'We’ll email you the day your language opens — no spam before that.'}
+            </Text>
+          </View>
+
+          {/* How it works */}
+          <View
+            onLayout={(e) => setPillarsY(e.nativeEvent.layout.y)}
+            style={[
+              styles.pillarsWrap,
+              { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+            ]}>
+            {PILLARS.map((item) => (
+              <View key={item.title} style={styles.pillar}>
+                <Text style={[Typography.caption, { color: colors.textMuted }]}>{item.title}</Text>
+                <Text
+                  style={[
+                    Typography.label,
+                    {
+                      color: colors.accent,
+                      marginTop: Spacing.sm,
+                      fontFamily: 'CormorantGaramond_600SemiBold',
+                      fontSize: 22,
+                      lineHeight: 28,
+                    },
+                  ]}>
+                  {item.headline}
+                </Text>
+                <Text
+                  style={[
+                    Typography.body,
+                    { color: colors.textSecondary, marginTop: Spacing.sm, lineHeight: 24 },
+                  ]}>
                   {item.body}
                 </Text>
               </View>
             ))}
           </View>
 
+          {/* Final CTA */}
           <View
             style={[
               styles.final,
-              { backgroundColor: colors.readerSurface, borderColor: colors.border },
+              { backgroundColor: colors.backgroundCard, borderColor: colors.border },
+              wide && styles.finalWide,
             ]}>
-            <Text style={[Typography.heroTitle, { color: colors.text, fontSize: layout.isPhone ? 28 : 32 }]}>
-              Start with one story.
-            </Text>
+            <View style={{ flex: 1 }}>
+              <Text
+                style={[
+                  Typography.heroTitle,
+                  { color: colors.text, fontSize: layout.isPhone ? 28 : 34 },
+                ]}>
+                Start with one story.
+              </Text>
+              <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+                Free to begin. Italian, Chapter 1, right now.
+              </Text>
+            </View>
             <Pressable
               accessibilityRole="button"
               accessibilityLabel={continueHref ? 'Continue learning' : 'Start learning'}
@@ -157,24 +360,29 @@ export default function PublicHomeScreen() {
               style={({ pressed }) => [
                 styles.primaryBtn,
                 {
-                  backgroundColor: colors.tint,
+                  backgroundColor: colors.accent,
                   opacity: pressed ? 0.88 : 1,
-                  marginTop: Spacing.lg,
-                  alignSelf: 'flex-start',
+                  marginTop: wide ? 0 : Spacing.lg,
+                  alignSelf: wide ? 'center' : 'flex-start',
                 },
               ]}>
-              <Text style={[Typography.button, { color: colors.onTint }]}>
+              <Text style={[Typography.button, { color: colors.onAccent }]}>
                 {continueHref ? 'Continue learning' : 'Start learning'}
               </Text>
             </Pressable>
           </View>
+
+          <PublicFooter showLogin={!continueHref} />
         </ScreenContent>
       </ScrollView>
-    </AtmosphereBackground>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
   page: {
     paddingTop: Spacing.xl,
     paddingHorizontal: Spacing.lg,
@@ -224,23 +432,82 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  pillars: {
+  section: {
+    marginTop: Spacing.xxl * 1.2,
+  },
+  shelfRow: {
+    flexDirection: 'row',
+    gap: Spacing.sm,
+    paddingRight: Spacing.lg,
+  },
+  spine: {
+    width: 56,
+    height: 180,
+    borderRadius: Radii.md,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: Spacing.md,
+  },
+  liveTag: {
+    fontFamily: 'Literata_600SemiBold',
+    fontSize: 10,
+    letterSpacing: 1,
+  },
+  lockTag: {
+    fontFamily: 'Literata_600SemiBold',
+    fontSize: 9,
+    letterSpacing: 0.8,
+  },
+  spineLabel: {
+    fontFamily: 'Literata_500Medium',
+    fontSize: 13,
+    transform: [{ rotate: '-90deg' }],
+    width: 140,
+    textAlign: 'center',
+  },
+  notifyRow: {
+    flexDirection: 'row',
+    gap: Spacing.sm,
+    marginTop: Spacing.xl,
+    alignItems: 'center',
+  },
+  notifyStack: {
+    flexDirection: 'column',
+    alignItems: 'stretch',
+  },
+  emailInput: {
+    flex: 1,
+    minHeight: 48,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderRadius: Radii.md,
+    paddingHorizontal: Spacing.md,
+    fontFamily: 'Literata_400Regular',
+    fontSize: 16,
+  },
+  pillarsWrap: {
+    marginTop: Spacing.xxl,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderRadius: Radii.lg,
+    padding: Spacing.lg,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: Spacing.sm,
-    marginTop: Spacing.xxl,
+    gap: Spacing.lg,
   },
   pillar: {
     flexGrow: 1,
-    flexBasis: 140,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderRadius: Radii.lg,
-    padding: Spacing.md,
+    flexBasis: 200,
+    minWidth: 180,
   },
   final: {
     marginTop: Spacing.xxl,
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: Radii.lg,
     padding: Spacing.lg,
+  },
+  finalWide: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.lg,
   },
 });
