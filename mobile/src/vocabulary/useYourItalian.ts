@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { getAdaptiveService } from '@/src/adaptive';
 import {
@@ -38,17 +38,27 @@ type RefreshResult = {
   practiceItems: PracticePreviewItem[];
 };
 
-export function useYourItalian(progress: ReadingProgressRecord | null) {
+type Options = {
+  autoRefresh?: boolean;
+};
+
+export function useYourItalian(progress: ReadingProgressRecord | null, options?: Options) {
+  const autoRefresh = options?.autoRefresh ?? false;
   const [summary, setSummary] = useState<YourItalianSummary | null>(null);
   const [reinforcingWords, setReinforcingWords] = useState<ReinforcingWordView[]>([]);
   const [practiceItems, setPracticeItems] = useState<PracticePreviewItem[]>([]);
   const [activity, setActivity] = useState<ActivitySummary | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(autoRefresh);
   const progressKey = progressDependencyKey(progress);
+  const progressRef = useRef(progress);
+  const summaryRef = useRef(summary);
+  progressRef.current = progress;
+  summaryRef.current = summary;
   const { run } = useRefreshGuard(`your-italian:${progressKey}`);
 
   const refresh = useCallback(async () => {
-    setLoading(true);
+    const showSpinner = !summaryRef.current;
+    if (showSpinner) setLoading(true);
     try {
       const result = await run(async ({ isStale }) =>
         navAsync('your-italian refresh', async () => {
@@ -59,11 +69,12 @@ export function useYourItalian(progress: ReadingProgressRecord | null) {
           const nextActivity = await summarizeRecentActivity();
           if (isStale()) return null;
 
+          const currentProgress = progressRef.current;
           let nextReinforcing: ReinforcingWordView[] = [];
           let nextPractice: PracticePreviewItem[] = [];
-          if (progress) {
-            const bundle = getContentBundle(progress.storyId);
-            const profile = await getAdaptiveService().buildProfile(progress, undefined, {
+          if (currentProgress) {
+            const bundle = getContentBundle(currentProgress.storyId);
+            const profile = await getAdaptiveService().buildProfile(currentProgress, undefined, {
               persist: false,
             });
             if (isStale()) return null;
@@ -93,11 +104,11 @@ export function useYourItalian(progress: ReadingProgressRecord | null) {
     } finally {
       setLoading(false);
     }
-  }, [progress, progressKey, run]);
+  }, [progressKey, run]);
 
   useEffect(() => {
-    void refresh();
-  }, [refresh]);
+    if (autoRefresh) void refresh();
+  }, [autoRefresh, refresh]);
 
   return { summary, reinforcingWords, practiceItems, activity, loading, refresh };
 }

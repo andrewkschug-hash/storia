@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { getAdaptiveService } from '@/src/adaptive';
 import { LUCA_STORY_ID, tryGetContentBundle } from '@/src/content';
@@ -12,15 +12,25 @@ import { getVocabularyService } from '@/src/vocabulary';
 import type { UserVocabularyState } from '@/src/vocabulary/types';
 import { practiceHomeCopy, type YourItalianSummary } from '@/src/vocabulary/useYourItalian';
 
-export function useVocabulary(progress?: ReadingProgressRecord | null) {
+type Options = {
+  autoRefresh?: boolean;
+};
+
+export function useVocabulary(progress?: ReadingProgressRecord | null, options?: Options) {
+  const autoRefresh = options?.autoRefresh ?? false;
   const [state, setState] = useState<UserVocabularyState | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(autoRefresh);
   const [home, setHome] = useState<ReturnType<typeof practiceHomeCopy> | null>(null);
   const progressKey = progressDependencyKey(progress);
+  const progressRef = useRef(progress);
+  const stateRef = useRef(state);
+  progressRef.current = progress;
+  stateRef.current = state;
   const { run } = useRefreshGuard(`vocabulary:${progressKey}`);
 
   const refresh = useCallback(async () => {
-    setLoading(true);
+    const showSpinner = !stateRef.current;
+    if (showSpinner) setLoading(true);
     try {
       const result = await run(async ({ isStale }) =>
         navAsync('vocabulary refresh', async () => {
@@ -28,11 +38,12 @@ export function useVocabulary(progress?: ReadingProgressRecord | null) {
           const next = await vocab.getState();
           if (isStale()) return null;
 
+          const currentProgress = progressRef.current;
           let nextHome: ReturnType<typeof practiceHomeCopy> | null = null;
-          if (progress) {
-            const bundle = tryGetContentBundle(progress.storyId ?? LUCA_STORY_ID);
+          if (currentProgress) {
+            const bundle = tryGetContentBundle(currentProgress.storyId ?? LUCA_STORY_ID);
             if (bundle) {
-              const profile = await getAdaptiveService().buildProfile(progress, undefined, {
+              const profile = await getAdaptiveService().buildProfile(currentProgress, undefined, {
                 persist: false,
               });
               if (isStale()) return null;
@@ -51,11 +62,11 @@ export function useVocabulary(progress?: ReadingProgressRecord | null) {
     } finally {
       setLoading(false);
     }
-  }, [progress, progressKey, run]);
+  }, [progressKey, run]);
 
   useEffect(() => {
-    void refresh();
-  }, [refresh]);
+    if (autoRefresh) void refresh();
+  }, [autoRefresh, refresh]);
 
   const summary: YourItalianSummary | null = state ? getVocabularyService().summarize(state) : null;
   const bundle = tryGetContentBundle(progress?.storyId ?? LUCA_STORY_ID);

@@ -23,7 +23,7 @@ type Phase = 'loading' | 'prompt' | 'reveal' | 'done';
 export default function PracticeScreen() {
   const { colors, type, minTouchTarget } = useTheme();
   const insets = useSafeAreaInsets();
-  const { progress } = useReadingProgress();
+  const { progress } = useReadingProgress(LUCA_STORY_ID, { autoRefresh: true });
   const storyId = progress?.storyId ?? LUCA_STORY_ID;
 
   const [phase, setPhase] = useState<Phase>('loading');

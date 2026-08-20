@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { navLog } from '@/src/navigation/diagnostics';
-import { useReadingProgress } from '@/src/progress/useReadingProgress';
+import { usePeekProgress } from '@/src/progress/usePeekProgress';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useLayout } from '@/src/theme/useLayout';
 import { useTheme } from '@/src/theme/useTheme';
@@ -23,15 +23,16 @@ export default function VocabularyScreen() {
   const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
-  const { progress } = useReadingProgress();
+  const { progress, refresh: refreshProgress } = usePeekProgress();
   const { summary, reinforcingWords, practiceItems, activity, loading, refresh } =
     useYourItalian(progress);
 
   useFocusEffect(
     useCallback(() => {
       navLog('vocabulary focus');
+      void refreshProgress();
       void refresh();
-    }, [refresh]),
+    }, [refresh, refreshProgress]),
   );
 
   useEffect(() => {

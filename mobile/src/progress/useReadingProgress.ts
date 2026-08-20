@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { LUCA_STORY_ID, getContentBundle, getStory } from '@/src/content';
 import { navAsync } from '@/src/navigation/diagnostics';
@@ -13,6 +13,10 @@ export type ChapterListItem = {
   title: string;
   titleIt: string;
   status: ChapterStatus;
+};
+
+type Options = {
+  autoRefresh?: boolean;
 };
 
 /** Browse a story without creating a progress row (Home/Stories/Vocabulary). */
@@ -39,16 +43,25 @@ export async function loadStoryProgressView(storyId: string): Promise<{
   return { progress, chapters: statuses };
 }
 
-export function useReadingProgress(storyId: string = LUCA_STORY_ID) {
+export function useReadingProgress(storyId: string = LUCA_STORY_ID, options?: Options) {
+  const autoRefresh = options?.autoRefresh ?? false;
   const story = getStory(storyId);
   const [progress, setProgress] = useState<ReadingProgressRecord | null>(null);
   const [chapterStatuses, setChapterStatuses] = useState<ChapterListItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const progressRef = useRef(progress);
+  const chapterStatusesRef = useRef(chapterStatuses);
+  const errorRef = useRef(error);
+  progressRef.current = progress;
+  chapterStatusesRef.current = chapterStatuses;
+  errorRef.current = error;
   const { run } = useRefreshGuard(`reading-progress:${storyId}`);
 
   const refresh = useCallback(async () => {
-    setLoading(true);
+    const showSpinner =
+      chapterStatusesRef.current.length === 0 && !progressRef.current && !errorRef.current;
+    if (showSpinner) setLoading(true);
     try {
       const result = await run(async ({ isStale }) =>
         navAsync(`reading-progress refresh (${storyId})`, async () => {
@@ -76,8 +89,8 @@ export function useReadingProgress(storyId: string = LUCA_STORY_ID) {
       setLoading(false);
       return;
     }
-    void refresh();
-  }, [refresh, storyId]);
+    if (autoRefresh) void refresh();
+  }, [autoRefresh, refresh, storyId]);
 
   return {
     story,

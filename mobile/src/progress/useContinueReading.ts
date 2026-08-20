@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { getChapter, tryGetContentBundle } from '@/src/content';
 import { navAsync } from '@/src/navigation/diagnostics';
@@ -18,14 +18,24 @@ function tryGetProgressService(storyId: string): ProgressService | null {
   }
 }
 
-export function useContinueReading() {
+type Options = {
+  autoRefresh?: boolean;
+};
+
+export function useContinueReading(options?: Options) {
+  const autoRefresh = options?.autoRefresh ?? false;
   const [target, setTarget] = useState<ContinueReadingTarget | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const targetRef = useRef(target);
+  const errorRef = useRef(error);
+  targetRef.current = target;
+  errorRef.current = error;
   const { run } = useRefreshGuard('continue-reading');
 
   const refresh = useCallback(async () => {
-    setLoading(true);
+    const showSpinner = !targetRef.current && !errorRef.current;
+    if (showSpinner) setLoading(true);
     try {
       const result = await run(async ({ isStale }) =>
         navAsync('continue-reading refresh', async () => {
@@ -58,8 +68,8 @@ export function useContinueReading() {
   }, [run]);
 
   useEffect(() => {
-    void refresh();
-  }, [refresh]);
+    if (autoRefresh) void refresh();
+  }, [autoRefresh, refresh]);
 
   const chapter = target ? getChapter(target.chapterId, target.storyId) : undefined;
   const bundle = target ? tryGetContentBundle(target.storyId) : undefined;

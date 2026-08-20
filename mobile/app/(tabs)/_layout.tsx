@@ -74,6 +74,7 @@ export default function TabLayout() {
         headerShown: false,
         // Mount tabs on first visit only — avoids thundering-herd init that blocked the main thread.
         lazy: true,
+        freezeOnBlur: false,
       }}>
       <Tabs.Screen
         name="home"
