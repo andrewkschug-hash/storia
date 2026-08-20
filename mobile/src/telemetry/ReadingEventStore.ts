@@ -6,6 +6,7 @@ const KEY = 'storia:reading-events';
 const MAX_EVENTS = 8000;
 
 let memoryStore: ReadingEvent[] | null = null;
+let diskCache: ReadingEvent[] | null = null;
 
 function newId() {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
@@ -13,22 +14,30 @@ function newId() {
 
 export function __setReadingEventsForTests(events: ReadingEvent[] | null) {
   memoryStore = events;
+  diskCache = events;
 }
 
 async function readAll(): Promise<ReadingEvent[]> {
   if (memoryStore) return memoryStore;
+  if (diskCache) return diskCache;
   try {
     const raw = await AsyncStorage.getItem(KEY);
-    if (!raw) return [];
+    if (!raw) {
+      diskCache = [];
+      return diskCache;
+    }
     const parsed = JSON.parse(raw) as ReadingEvent[];
-    return Array.isArray(parsed) ? parsed : [];
+    diskCache = Array.isArray(parsed) ? parsed : [];
+    return diskCache;
   } catch {
-    return [];
+    diskCache = [];
+    return diskCache;
   }
 }
 
 async function writeAll(events: ReadingEvent[]) {
   const trimmed = events.length > MAX_EVENTS ? events.slice(events.length - MAX_EVENTS) : events;
+  diskCache = trimmed;
   if (memoryStore) {
     memoryStore = trimmed;
     return;

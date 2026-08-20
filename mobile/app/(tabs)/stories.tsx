@@ -1,5 +1,5 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   ScrollView,
@@ -11,6 +11,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
+import { navLog } from '@/src/navigation/diagnostics';
+import { deferAfterNavigation } from '@/src/navigation/deferAfterNavigation';
 import {
   StoriesContinueHero,
   StoriesHeader,
@@ -35,7 +37,7 @@ export default function StoriesScreen() {
   const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
-  const journey = buildLearnerJourney();
+  const journey = useMemo(() => buildLearnerJourney(), []);
   const a1 = journey.find((band) => band.cefrLevel === 'A1');
   const a2plus = journey.find((band) => band.cefrLevel === 'A2+');
   const preRomeStories = a1?.groups.find((group) => !group.chapterRange)?.stories ?? [];
@@ -85,18 +87,24 @@ export default function StoriesScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      navLog('stories focus');
       void refresh();
       void getContinueReadingTarget().then(setContinueTarget);
       if (secondaryLoadedRef.current) return;
-      // Load secondary story rows once after Luca so tab switches stay responsive.
-      const defer = setTimeout(() => {
+      const cancel = deferAfterNavigation(() => {
         secondaryLoadedRef.current = true;
-        void loadBeforeRome();
-        void loadA2Plus();
-      }, 0);
-      return () => clearTimeout(defer);
+        navLog('stories secondary load started');
+        void loadBeforeRome().then(() => navLog('stories before-rome load completed'));
+        void loadA2Plus().then(() => navLog('stories a2plus load completed'));
+      });
+      return cancel;
     }, [refresh, loadBeforeRome, loadA2Plus]),
   );
+
+  useEffect(() => {
+    navLog('stories mount');
+    return () => navLog('stories unmount');
+  }, []);
 
   const showInitialSpinner = loading && chapterStatuses.length === 0;
 

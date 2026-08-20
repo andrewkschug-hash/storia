@@ -19,6 +19,8 @@ import { clearLocalLearnerState, hydrateLearnerIfNeeded } from '@/src/sync/learn
 
 const KEY = 'storia.localAccount';
 
+let accountLoadPromise: Promise<LocalAccount | null> | null = null;
+
 export type AccountRole = 'learner';
 
 export type LocalAccount = {
@@ -134,7 +136,7 @@ function applyDeveloperUnlock(): void {
   setUnlockAllChapters(isDevBuild());
 }
 
-export async function getAccount(): Promise<LocalAccount | null> {
+async function loadAccountOnce(): Promise<LocalAccount | null> {
   if (isSupabaseConfigured()) {
     try {
       const { data, error } = await getSupabase().auth.getSession();
@@ -173,6 +175,16 @@ export async function getAccount(): Promise<LocalAccount | null> {
   const local = await readLocalAccount();
   applyDeveloperUnlock();
   return local;
+}
+
+/** Coalesce concurrent account reads (root layout + tab focus effects share one in-flight load). */
+export async function getAccount(): Promise<LocalAccount | null> {
+  if (!accountLoadPromise) {
+    accountLoadPromise = loadAccountOnce().finally(() => {
+      accountLoadPromise = null;
+    });
+  }
+  return accountLoadPromise;
 }
 
 /** Local-only cache (tests + development fallback). Prefer signUpWithPassword / signInWithPassword. */
@@ -298,6 +310,7 @@ export async function signOutAccount(): Promise<void> {
 }
 
 export async function clearAccount(): Promise<void> {
+  accountLoadPromise = null;
   if (isSupabaseConfigured()) {
     try {
       await getSupabase().auth.signOut();

@@ -1,11 +1,12 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ScreenContent } from '@/src/components/ScreenContent';
-import { useReadingProgress } from '@/src/progress/useReadingProgress';
+import { navLog } from '@/src/navigation/diagnostics';
+import { usePeekProgress } from '@/src/progress/usePeekProgress';
 import { Radii, Spacing } from '@/src/theme/tokens';
 import { useLayout } from '@/src/theme/useLayout';
 import { useTheme } from '@/src/theme/useTheme';
@@ -22,15 +23,22 @@ export default function VocabularyScreen() {
   const { colors, type } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
-  const { progress } = useReadingProgress();
+  const { progress, refresh: refreshProgress } = usePeekProgress();
   const { summary, reinforcingWords, practiceItems, activity, loading, refresh } =
     useYourItalian(progress);
 
   useFocusEffect(
     useCallback(() => {
+      navLog('vocabulary focus');
+      void refreshProgress();
       void refresh();
-    }, [refresh]),
+    }, [refresh, refreshProgress]),
   );
+
+  useEffect(() => {
+    navLog('vocabulary mount');
+    return () => navLog('vocabulary unmount');
+  }, []);
 
   const encountered = summary?.encountered ?? 0;
   const practiceCount = practiceItems.length;

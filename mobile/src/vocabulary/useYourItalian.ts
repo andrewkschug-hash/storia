@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { getAdaptiveService } from '@/src/adaptive';
 import {
@@ -6,6 +6,9 @@ import {
   type ReinforcingWordView,
 } from '@/src/adaptive/reinforcingWords';
 import { getContentBundle } from '@/src/content';
+import { navAsync } from '@/src/navigation/diagnostics';
+import { progressDependencyKey } from '@/src/navigation/progressKey';
+import { useRefreshGuard } from '@/src/navigation/useRefreshGuard';
 import { buildPracticeQueue, type PracticeQueueItem } from '@/src/practice';
 import type { ReadingProgressRecord } from '@/src/progress/types';
 import {
@@ -28,41 +31,84 @@ export type PracticePreviewItem = PracticeQueueItem & {
   assessmentLabel: string | null;
 };
 
-export function useYourItalian(progress: ReadingProgressRecord | null) {
+type RefreshResult = {
+  summary: YourItalianSummary;
+  activity: ActivitySummary;
+  reinforcingWords: ReinforcingWordView[];
+  practiceItems: PracticePreviewItem[];
+};
+
+type Options = {
+  autoRefresh?: boolean;
+};
+
+export function useYourItalian(progress: ReadingProgressRecord | null, options?: Options) {
+  const autoRefresh = options?.autoRefresh ?? false;
   const [summary, setSummary] = useState<YourItalianSummary | null>(null);
   const [reinforcingWords, setReinforcingWords] = useState<ReinforcingWordView[]>([]);
   const [practiceItems, setPracticeItems] = useState<PracticePreviewItem[]>([]);
   const [activity, setActivity] = useState<ActivitySummary | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(autoRefresh);
+  const progressKey = progressDependencyKey(progress);
+  const progressRef = useRef(progress);
+  const summaryRef = useRef(summary);
+  progressRef.current = progress;
+  summaryRef.current = summary;
+  const { run } = useRefreshGuard(`your-italian:${progressKey}`);
 
   const refresh = useCallback(async () => {
-    const vocab = getVocabularyService();
-    const state = await vocab.getState();
-    setSummary(vocab.summarize(state));
-    setActivity(await summarizeRecentActivity());
+    const showSpinner = !summaryRef.current;
+    if (showSpinner) setLoading(true);
+    try {
+      const result = await run(async ({ isStale }) =>
+        navAsync('your-italian refresh', async () => {
+          const vocab = getVocabularyService();
+          const state = await vocab.getState();
+          if (isStale()) return null;
+          const nextSummary = vocab.summarize(state);
+          const nextActivity = await summarizeRecentActivity();
+          if (isStale()) return null;
 
-    if (progress) {
-      const bundle = getContentBundle(progress.storyId);
-      const profile = await getAdaptiveService().buildProfile(progress);
-      setReinforcingWords(selectReinforcingWordViews(profile, state, bundle));
-      const queue = buildPracticeQueue(state, bundle, profile, { limit: 5 });
-      setPracticeItems(
-        queue.map((item) => ({
-          ...item,
-          assessmentLabel: formatLastAssessmentLabel(item.lastSelfAssessment),
-        })),
+          const currentProgress = progressRef.current;
+          let nextReinforcing: ReinforcingWordView[] = [];
+          let nextPractice: PracticePreviewItem[] = [];
+          if (currentProgress) {
+            const bundle = getContentBundle(currentProgress.storyId);
+            const profile = await getAdaptiveService().buildProfile(currentProgress, undefined, {
+              persist: false,
+            });
+            if (isStale()) return null;
+            nextReinforcing = selectReinforcingWordViews(profile, state, bundle);
+            const queue = buildPracticeQueue(state, bundle, profile, { limit: 5 });
+            nextPractice = queue.map((item) => ({
+              ...item,
+              assessmentLabel: formatLastAssessmentLabel(item.lastSelfAssessment),
+            }));
+          }
+
+          return {
+            summary: nextSummary,
+            activity: nextActivity,
+            reinforcingWords: nextReinforcing,
+            practiceItems: nextPractice,
+          } satisfies RefreshResult;
+        }),
       );
-    } else {
-      setReinforcingWords([]);
-      setPracticeItems([]);
+      if (!result) return;
+      setSummary(result.summary);
+      setActivity(result.activity);
+      setReinforcingWords(result.reinforcingWords);
+      setPracticeItems(result.practiceItems);
+    } catch (error) {
+      console.error('[Navigation] your-italian refresh failed', error);
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
-  }, [progress]);
+  }, [progressKey, run]);
 
   useEffect(() => {
-    void refresh();
-  }, [refresh]);
+    if (autoRefresh) void refresh();
+  }, [autoRefresh, refresh]);
 
   return { summary, reinforcingWords, practiceItems, activity, loading, refresh };
 }

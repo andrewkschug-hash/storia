@@ -151,7 +151,9 @@ function resolveNextAction(
  * If that story is fully complete, continue into the next incomplete
  * available story (narrative order). Does not create progress records.
  */
-export async function getContinueReadingTarget(): Promise<ContinueReadingTarget | null> {
+let continueTargetPromise: Promise<ContinueReadingTarget | null> | null = null;
+
+async function computeContinueReadingTarget(): Promise<ContinueReadingTarget | null> {
   let latest: { storyId: string; openedAt: string; progress: ReadingProgressRecord } | null = null;
 
   for (const story of getAvailableStories()) {
@@ -226,4 +228,13 @@ export async function getContinueReadingTarget(): Promise<ContinueReadingTarget 
     isStart: true,
     nextAction: { kind: 'chapter', chapterId: first.id },
   };
+}
+
+export async function getContinueReadingTarget(): Promise<ContinueReadingTarget | null> {
+  if (!continueTargetPromise) {
+    continueTargetPromise = computeContinueReadingTarget().finally(() => {
+      continueTargetPromise = null;
+    });
+  }
+  return continueTargetPromise;
 }

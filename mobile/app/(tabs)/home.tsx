@@ -10,6 +10,7 @@ import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { ScreenContent } from '@/src/components/ScreenContent';
+import { navLog } from '@/src/navigation/diagnostics';
 import { readerHref } from '@/src/content/storyHrefs';
 import { navigateToContinueTarget } from '@/src/progress/continueNavigation';
 import { homeContinuePresentation } from '@/src/progress/continueReading';
@@ -46,6 +47,7 @@ export default function HomeScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      navLog('home focus');
       void refresh();
       void refreshVocab();
       void getAccount().then((next) => {
@@ -53,6 +55,11 @@ export default function HomeScreen() {
       });
     }, [refresh, refreshVocab]),
   );
+
+  useEffect(() => {
+    navLog('home mount');
+    return () => navLog('home unmount');
+  }, []);
 
   useEffect(() => {
     if (homeGateComplete) {

@@ -1,5 +1,5 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {
   ActivityIndicator,
   Alert,
@@ -24,6 +24,7 @@ import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { AccessibilitySettings } from '@/src/accessibility/AccessibilitySettings';
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
+import { navLog } from '@/src/navigation/diagnostics';
 import { isDevBuild } from '@/src/security/buildMode';
 import { Radii, Spacing } from '@/src/theme/tokens';
 
@@ -48,9 +49,15 @@ export default function ProfileScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      navLog('profile focus');
       void load();
     }, [load]),
   );
+
+  useEffect(() => {
+    navLog('profile mount');
+    return () => navLog('profile unmount');
+  }, []);
 
   const saveName = async () => {
     const name = displayName.trim();
