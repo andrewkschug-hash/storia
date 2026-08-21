@@ -288,9 +288,6 @@
       "sourceSentenceId": "s06",
       "promptEn": "How are you?",
       "expectedIt": "Come stai?",
-      "acceptableAnswers": [
-        "Come va?"
-      ],
       "level": "A1",
       "focus": [
         "question",
@@ -463,9 +460,6 @@
       "sourceSentenceId": "s03",
       "promptEn": "Help me.",
       "expectedIt": "Aiutami.",
-      "acceptableAnswers": [
-        "Mi aiuti?"
-      ],
       "match": "flexible",
       "level": "A1",
       "focus": [
@@ -663,7 +657,6 @@
       "promptEn": "He's my friend.",
       "expectedIt": "È un mio amico.",
       "acceptableAnswers": [
-        "È un amico.",
         "È il mio amico."
       ],
       "match": "flexible",
@@ -802,7 +795,6 @@
       "promptEn": "I want to buy a ticket.",
       "expectedIt": "Voglio comprare un biglietto.",
       "acceptableAnswers": [
-        "Voglio un biglietto.",
         "Io voglio comprare il biglietto."
       ],
       "match": "flexible",
@@ -913,9 +905,6 @@
       "sourceSentenceId": "s09",
       "promptEn": "Go together.",
       "expectedIt": "Andate insieme.",
-      "acceptableAnswers": [
-        "Andiamo insieme."
-      ],
       "level": "A1",
       "focus": [
         "andare",
@@ -1079,9 +1068,6 @@
       "sourceSentenceId": "s02",
       "promptEn": "The train isn't leaving.",
       "expectedIt": "Il treno non parte.",
-      "acceptableAnswers": [
-        "Il treno non va."
-      ],
       "match": "flexible",
       "level": "A1",
       "focus": [
@@ -1529,9 +1515,6 @@
       "sourceSentenceId": "s04",
       "promptEn": "Luca arrived early.",
       "expectedIt": "Luca è arrivato presto.",
-      "acceptableAnswers": [
-        "Luca è arrivata presto."
-      ],
       "match": "flexible",
       "level": "A2",
       "focus": [

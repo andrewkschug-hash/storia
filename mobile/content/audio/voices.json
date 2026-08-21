@@ -57,8 +57,8 @@
           "voiceName": "Harry - Fierce Warrior"
         },
         "google": {
-          "voiceId": "it-IT-Chirp3-HD-Charon",
-          "voiceName": "Chirp3 HD Charon"
+          "voiceId": "it-IT-Chirp3-HD-Fenrir",
+          "voiceName": "Chirp3 HD Fenrir"
         }
       }
     },
@@ -87,8 +87,8 @@
           "voiceName": "River - Relaxed, Neutral, Informative"
         },
         "google": {
-          "voiceId": "it-IT-Chirp3-HD-Vindemiatrix",
-          "voiceName": "Chirp3 HD Vindemiatrix"
+          "voiceId": "it-IT-Chirp3-HD-Gacrux",
+          "voiceName": "Chirp3 HD Gacrux"
         }
       }
     },
@@ -100,6 +100,10 @@
         "elevenlabs": {
           "voiceId": "cjVigY5qzO86Huf0OWal",
           "voiceName": "Eric - Smooth, Trustworthy"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Schedar",
+          "voiceName": "Chirp3 HD Schedar"
         }
       }
     }

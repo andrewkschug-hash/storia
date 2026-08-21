@@ -204,9 +204,7 @@
       "promptEn": "I take the bus.",
       "expectedIt": "Prendo l'autobus.",
       "acceptableAnswers": [
-        "Io prendo l'autobus.",
-        "Luca prende l’autobus.",
-        "Luca prende l'autobus."
+        "Io prendo l'autobus."
       ],
       "match": "flexible",
       "focus": [
@@ -240,8 +238,7 @@
       "promptEn": "I buy a ticket.",
       "expectedIt": "Compro un biglietto.",
       "acceptableAnswers": [
-        "Io compro un biglietto.",
-        "Luca compra un biglietto."
+        "Io compro un biglietto."
       ],
       "match": "flexible",
       "focus": [
@@ -338,8 +335,7 @@
       "promptEn": "Today I stay in Pietralba.",
       "expectedIt": "Oggi resto a Pietralba.",
       "acceptableAnswers": [
-        "Io resto a Pietralba oggi.",
-        "Oggi Luca resta a Pietralba."
+        "Io resto a Pietralba oggi."
       ],
       "match": "flexible",
       "focus": [

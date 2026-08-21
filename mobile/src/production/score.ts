@@ -25,6 +25,7 @@ export type ProductionScoreReason =
   | 'semantic_match'
   | 'minor_morphology'
   | 'minor_recognition_like_difference'
+  | 'minor_spelling'
   | 'wrong_person'
   | 'wrong_number'
   | 'wrong_gender'
@@ -42,6 +43,8 @@ export type ProductionScoreResult = {
   mode: ProductionMatch;
   /** Alias of result — kept so existing tests/callers can read either field. */
   status: ProductionScoreStatus;
+  /** Best authorized Italian surface to show as the correction. */
+  matchedIt?: string;
 };
 
 type FlexTag = 'subject_drop' | 'gender_variant' | 'word_order_variant' | 'apostrophe_normalization';
@@ -184,8 +187,9 @@ function scored(
   result: ProductionScoreStatus,
   reason: ProductionScoreReason,
   mode: ProductionMatch,
+  matchedIt?: string,
 ): ProductionScoreResult {
-  return { result, reason, mode, status: result };
+  return { result, reason, mode, status: result, matchedIt };
 }
 
 function scoreExact(
@@ -195,7 +199,12 @@ function scoreExact(
 ): ProductionScoreResult {
   const expected = normalizeProductionText(exercise.expectedIt);
   if (normalized === expected) {
-    return scored('correct', apostropheReason(learnerText, exercise.expectedIt) ?? 'exact_match', 'exact');
+    return scored(
+      'correct',
+      apostropheReason(learnerText, exercise.expectedIt) ?? 'exact_match',
+      'exact',
+      exercise.expectedIt,
+    );
   }
   for (const alt of exercise.acceptableAnswers ?? []) {
     if (normalized === normalizeProductionText(alt)) {
@@ -203,12 +212,13 @@ function scoreExact(
         'correct',
         apostropheReason(learnerText, alt) ?? 'acceptable_answer',
         'exact',
+        alt,
       );
     }
   }
   const almost = almostAgainstAuthorized(exercise, normalized);
-  if (almost) return scored('almost', almost, 'exact');
-  return scored('incorrect', diagnoseIncorrect(exercise, normalized), 'exact');
+  if (almost) return scored('almost', almost.reason, 'exact', almost.matchedIt);
+  return scored('incorrect', diagnoseIncorrect(exercise, normalized), 'exact', exercise.expectedIt);
 }
 
 function scoreFlexible(
@@ -220,58 +230,61 @@ function scoreFlexible(
   if (hit) {
     const apostrophe = apostropheReason(learnerText, exercise.expectedIt);
     if (hit === 'exact_match' && apostrophe) {
-      return scored('correct', apostrophe, 'flexible');
+      return scored('correct', apostrophe, 'flexible', exercise.expectedIt);
     }
-    return scored('correct', hit, 'flexible');
+    return scored('correct', hit, 'flexible', exercise.expectedIt);
   }
   const almost = almostAgainstAuthorized(exercise, normalized);
-  if (almost) return scored('almost', almost, 'flexible');
-  return scored('incorrect', diagnoseIncorrect(exercise, normalized), 'flexible');
+  if (almost) return scored('almost', almost.reason, 'flexible', almost.matchedIt);
+  return scored('incorrect', diagnoseIncorrect(exercise, normalized), 'flexible', exercise.expectedIt);
 }
 
 function scoreSemantic(exercise: ProductionExercise, normalized: string): ProductionScoreResult {
   const hit = classifyFlexibleHit(exercise, normalized);
   if (hit) {
     if (hit === 'exact_match' || hit === 'acceptable_answer') {
-      return scored('correct', hit, 'semantic');
+      return scored('correct', hit, 'semantic', exercise.expectedIt);
     }
-    return scored('correct', hit === 'subject_drop' ? hit : 'semantic_match', 'semantic');
+    return scored('correct', hit === 'subject_drop' ? hit : 'semantic_match', 'semantic', exercise.expectedIt);
   }
+
+  const almost = almostAgainstAuthorized(exercise, normalized);
+  if (almost) return scored('almost', almost.reason, 'semantic', almost.matchedIt);
 
   const semantic = exercise.semantic;
   if (!semantic) {
-    return scored('unrecognized', 'unsupported_input', 'semantic');
+    return scored('unrecognized', 'unsupported_input', 'semantic', exercise.expectedIt);
   }
 
   const missingConcept = missingRequiredConcept(normalized, semantic);
   if (missingConcept) {
-    return scored('incorrect', 'missing_required_content', 'semantic');
+    return scored('incorrect', 'missing_required_content', 'semantic', exercise.expectedIt);
   }
 
   if (semantic.requiredTense && !tenseMatches(normalized, semantic.requiredTense)) {
-    return scored('incorrect', 'wrong_tense', 'semantic');
+    return scored('incorrect', 'wrong_tense', 'semantic', exercise.expectedIt);
   }
 
   if (semantic.requiredPerson && !personConstraintMatches(normalized, semantic.requiredPerson)) {
-    return scored('incorrect', 'wrong_person', 'semantic');
+    return scored('incorrect', 'wrong_person', 'semantic', exercise.expectedIt);
   }
 
   if (semantic.requiredPolarity === 'negative' && !/\bnon\b/.test(normalized)) {
-    return scored('incorrect', 'wrong_polarity', 'semantic');
+    return scored('incorrect', 'wrong_polarity', 'semantic', exercise.expectedIt);
   }
   if (semantic.requiredPolarity === 'affirmative' && polarityFlippedAffirmative(normalized, semantic)) {
-    return scored('incorrect', 'wrong_polarity', 'semantic');
+    return scored('incorrect', 'wrong_polarity', 'semantic', exercise.expectedIt);
   }
 
   const relationFail = failedRelation(normalized, semantic);
   if (relationFail === 'wrong_polarity' || relationFail === 'missing_required_content') {
-    return scored('incorrect', relationFail, 'semantic');
+    return scored('incorrect', relationFail, 'semantic', exercise.expectedIt);
   }
   if (relationFail) {
-    return scored('incorrect', 'wrong_meaning', 'semantic');
+    return scored('incorrect', 'wrong_meaning', 'semantic', exercise.expectedIt);
   }
 
-  return scored('correct', 'semantic_match', 'semantic');
+  return scored('correct', 'semantic_match', 'semantic', exercise.expectedIt);
 }
 
 function apostropheReason(learnerText: string, authored: string): ProductionScoreReason | null {
@@ -370,25 +383,151 @@ function expandFlexibleTagged(normalized: string, genderAllowed: boolean): Map<s
 function almostAgainstAuthorized(
   exercise: ProductionExercise,
   learner: string,
-): ProductionScoreReason | null {
+): { reason: ProductionScoreReason; matchedIt: string } | null {
   const genderAllowed = promptLeavesGenderOpen(exercise.promptEn);
   const authorized = new Set<string>();
-  for (const base of authorizedNormalized(exercise)) {
+  const surfaceByNormalized = new Map<string, string>();
+  for (const surface of [exercise.expectedIt, ...(exercise.acceptableAnswers ?? [])]) {
+    const base = normalizeProductionText(surface);
+    if (!base) continue;
     for (const variant of expandFlexibleTagged(base, genderAllowed).keys()) {
       authorized.add(variant);
+      if (!surfaceByNormalized.has(variant)) surfaceByNormalized.set(variant, surface);
     }
   }
+
+  const matchedSurface = (normalizedAuth: string) =>
+    surfaceByNormalized.get(normalizedAuth) ?? exercise.expectedIt;
 
   if (!genderAllowed) {
     for (const base of authorizedNormalized(exercise)) {
       for (const gendered of genderVariants(base)) {
-        if (gendered === learner) return 'minor_morphology';
+        if (gendered === learner) {
+          return { reason: 'minor_morphology', matchedIt: matchedSurface(base) };
+        }
       }
     }
   }
 
-  if (accentOnlyDifference(learner, authorized)) return 'minor_recognition_like_difference';
+  if (accentOnlyDifference(learner, authorized)) {
+    const auth = [...authorized].find((candidate) => accentOnlyAgainst(learner, candidate));
+    return {
+      reason: 'minor_recognition_like_difference',
+      matchedIt: auth ? matchedSurface(auth) : exercise.expectedIt,
+    };
+  }
+
+  const spelling = spellingAlmost(learner, authorized);
+  if (spelling) {
+    const structural = diagnoseIncorrect(exercise, learner);
+    if (
+      structural === 'wrong_person' ||
+      structural === 'wrong_number' ||
+      structural === 'wrong_tense' ||
+      structural === 'wrong_polarity' ||
+      structural === 'wrong_gender'
+    ) {
+      return null;
+    }
+    return { reason: 'minor_spelling', matchedIt: matchedSurface(spelling) };
+  }
+
   return null;
+}
+
+function accentOnlyAgainst(learner: string, auth: string): boolean {
+  return accentOnlyDifference(learner, [auth]);
+}
+
+/** Small typo tolerance: same token count, most tokens exact, limited edits on the rest. */
+function spellingAlmost(learner: string, authorized: Iterable<string>): string | null {
+  const learnerTokens = learner.split(' ').filter(Boolean);
+  if (learnerTokens.length === 0) return null;
+
+  let best: { auth: string; distance: number } | null = null;
+  for (const auth of authorized) {
+    const authTokens = auth.split(' ').filter(Boolean);
+    if (authTokens.length !== learnerTokens.length) continue;
+
+    let changed = 0;
+    let distance = 0;
+    let ok = true;
+    for (let i = 0; i < learnerTokens.length; i += 1) {
+      const a = learnerTokens[i];
+      const b = authTokens[i];
+      if (a === b) continue;
+      if (looksLikeConjugationOrMorphologySwap(a, b)) {
+        ok = false;
+        break;
+      }
+      changed += 1;
+      const edits = tokenEditDistance(a, b);
+      const allowed = maxTokenEdits(b.length);
+      if (edits > allowed) {
+        ok = false;
+        break;
+      }
+      distance += edits;
+    }
+    if (!ok || changed === 0) continue;
+    // Keep meaning close: at most half the tokens may differ, and never more than 2.
+    if (changed > Math.min(2, Math.max(1, Math.floor(authTokens.length / 2)))) continue;
+    if (!best || distance < best.distance) best = { auth, distance };
+  }
+  return best?.auth ?? null;
+}
+
+function maxTokenEdits(tokenLength: number): number {
+  if (tokenLength <= 3) return 1;
+  if (tokenLength <= 7) return 1;
+  return 2;
+}
+
+/** Same stem + different ending → conjugation/morphology, not a typo. */
+function looksLikeConjugationOrMorphologySwap(a: string, b: string): boolean {
+  const fold = (value: string) => value.normalize('NFD').replace(DIACRITIC_MARKS, '');
+  const left = fold(a);
+  const right = fold(b);
+  if (left === right || left.length < 2 || right.length < 2) return false;
+  if (left.slice(0, -1) === right.slice(0, -1) && left.slice(-1) !== right.slice(-1)) {
+    return true;
+  }
+  const minLen = Math.min(left.length, right.length);
+  if (minLen >= 4) {
+    let shared = 0;
+    while (shared < minLen && left[shared] === right[shared]) shared += 1;
+    if (shared >= 4 && shared < minLen && left.length !== right.length) return true;
+  }
+  return false;
+}
+
+function tokenEditDistance(a: string, b: string): number {
+  if (a === b) return 0;
+  const fold = (value: string) => value.normalize('NFD').replace(DIACRITIC_MARKS, '');
+  const left = fold(a);
+  const right = fold(b);
+  if (left === right) return 0;
+  return levenshtein(left, right);
+}
+
+function levenshtein(a: string, b: string): number {
+  if (a === b) return 0;
+  if (!a.length) return b.length;
+  if (!b.length) return a.length;
+  const rows = a.length + 1;
+  const cols = b.length + 1;
+  const prev = new Array<number>(cols);
+  const curr = new Array<number>(cols);
+  for (let j = 0; j < cols; j += 1) prev[j] = j;
+  for (let i = 1; i < rows; i += 1) {
+    curr[0] = i;
+    for (let j = 1; j < cols; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+    }
+    for (let j = 0; j < cols; j += 1) prev[j] = curr[j];
+  }
+  return prev[b.length];
 }
 
 function accentOnlyDifference(learner: string, authorized: Iterable<string>): boolean {

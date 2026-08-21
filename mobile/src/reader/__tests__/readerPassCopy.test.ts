@@ -11,7 +11,8 @@ describe('reader pass copy', () => {
     const copy = passInstructionCopy('read', 'A1', true);
     expect(copy.phaseLabel).toBe('PASS 1 · READ');
     expect(copy.headline).toBe('Prima leggi.');
-    expect(copy.body).toMatch(/Tap words whenever you need help/);
+    expect(copy.body).toMatch(/Read the story yourself first/);
+    expect(copy.continueLabel).toBe('Continue');
   });
 
   it('uses compact labels after the learner knows the flow', () => {
@@ -27,11 +28,16 @@ describe('reader pass copy', () => {
     expect(passInstructionCopy('listen', 'B1', true).body).toMatch(/important details/);
   });
 
-  it('uses a dedicated read-to-listen transition screen for early chapters', () => {
-    const copy = readToListenTransitionCopy(true);
-    expect(copy.headline).toBe('Bene. Ora ascolta.');
-    expect(copy.body).toMatch(/notice how it sounds/);
-    expect(copy.actionLabel).toBe('Ascolta la storia →');
+  it('offers a skippable listen prompt after reading', () => {
+    const detailed = readToListenTransitionCopy(true);
+    expect(detailed.headline).toBe('Bene. Ora ascolta.');
+    expect(detailed.actionLabel).toBe('Ascolta la storia →');
+    expect(detailed.skipLabel).toBe('Skip for now');
+    expect(detailed.body).toMatch(/skip/i);
+
+    const compact = readToListenTransitionCopy(false);
+    expect(compact.headline).toBe('Ready to listen?');
+    expect(compact.skipLabel).toBe('Skip for now');
   });
 
   it('shows listen completion before comprehension', () => {

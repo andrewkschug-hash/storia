@@ -279,7 +279,6 @@ export default function ReaderScreen() {
   );
   const transitionCopy = readToListenTransitionCopy(detailedPassInstructions);
   const listenDoneCopy = listenCompleteCopy(detailedPassInstructions);
-  const allowSentenceAudio = passGuidance === 'free' || readerPass === 'listen';
 
   const goToComprehension = async () => {
     if (!chapter) return;
@@ -321,12 +320,7 @@ export default function ReaderScreen() {
       await goToComprehension();
       return;
     }
-    if (detailedPassInstructions) {
-      setGuidedStep('read-transition');
-      return;
-    }
-    setReaderPass('listen');
-    setScrollToY(0);
+    setGuidedStep('read-transition');
   };
 
   const startListenPass = () => {
@@ -335,8 +329,30 @@ export default function ReaderScreen() {
     setScrollToY(0);
   };
 
+  const skipListenPass = async () => {
+    if (!chapter) return;
+    const service = getProgressService(storyId ?? chapter.storyId);
+    const passes = progressRecord?.passesByChapter?.[chapter.id] ?? {};
+    if (!isListenPassComplete(passes)) {
+      const nextProgress = await service.markListenPassComplete(chapter.id);
+      setProgressRecord(nextProgress);
+    }
+    trackReadingEvent({
+      type: 'audio_played',
+      storyId: storyId ?? chapter.storyId,
+      chapterId: chapter.id,
+      meta: { source: 'listen_prompt_skip' },
+    });
+    await goToComprehension();
+  };
+
   const continueFromChapter = async () => {
     if (!chapter) return;
+
+    if (guidedStep === 'listen-complete') {
+      await goToComprehension();
+      return;
+    }
 
     if (passGuidance === 'free') {
       const service = getProgressService(storyId ?? chapter.storyId);
@@ -348,11 +364,11 @@ export default function ReaderScreen() {
       if (last) {
         await service.savePosition(chapter.id, last.id);
       }
-      await goToComprehension();
-      return;
-    }
-
-    if (guidedStep === 'listen-complete') {
+      // Revisits still get the read → listen nudge (skippable).
+      if (readerPass === 'read' && hasAudio && guidedStep === 'content') {
+        setGuidedStep('read-transition');
+        return;
+      }
       await goToComprehension();
       return;
     }
@@ -382,7 +398,6 @@ export default function ReaderScreen() {
       if (
         chapter?.id &&
         readerPass === 'listen' &&
-        passGuidance === 'guided' &&
         guidedStep === 'content' &&
         storyId
       ) {
@@ -393,11 +408,11 @@ export default function ReaderScreen() {
     prevChapterMode.current = chapterModeNow;
   }, [isPlaying, chapterPlayback, chapter?.id, chapter?.storyId, readerPass, passGuidance, guidedStep, storyId]);
 
-  const showAudioBar =
-    guidedStep === 'content' && (passGuidance === 'free' || readerPass === 'listen');
+  // Chapter listen-through only after the listen pass — sentence ▶ stays available while reading.
+  const showAudioBar = guidedStep === 'content' && readerPass === 'listen';
   const showReadCompletionCta =
     guidedStep === 'content' && (passGuidance === 'free' || readerPass === 'read');
-  const showPassBanner = guidedStep === 'content' && passGuidance === 'guided';
+  const showPassBanner = guidedStep === 'content' && hasAudio;
 
   if (!chapter) {
     return (
@@ -433,7 +448,7 @@ export default function ReaderScreen() {
     );
   }
 
-  if (passGuidance === 'guided' && guidedStep === 'read-transition') {
+  if (guidedStep === 'read-transition') {
     return (
       <View style={{ flex: 1, backgroundColor: colors.readerSurface }}>
         <Stack.Screen
@@ -450,12 +465,14 @@ export default function ReaderScreen() {
           body={transitionCopy.body}
           actionLabel={transitionCopy.actionLabel}
           onAction={startListenPass}
+          skipLabel={transitionCopy.skipLabel}
+          onSkip={() => void skipListenPass()}
         />
       </View>
     );
   }
 
-  if (passGuidance === 'guided' && guidedStep === 'listen-complete') {
+  if (guidedStep === 'listen-complete') {
     return (
       <View style={{ flex: 1, backgroundColor: colors.readerSurface }}>
         <Stack.Screen
@@ -531,7 +548,6 @@ export default function ReaderScreen() {
         playingSentenceId={playingId}
         hasAudio={(sentence) => !!audio.sentenceAudio(sentence)}
         onPlayAudio={async (sentence) => {
-          if (!allowSentenceAudio) return;
           if (playingId === sentence.id && audio.isPlaying()) {
             audio.pause();
             syncAudioUi();

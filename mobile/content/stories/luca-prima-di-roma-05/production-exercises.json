@@ -10,9 +10,6 @@
       "sourceSentenceId": "s01",
       "promptEn": "Today is my birthday.",
       "expectedIt": "Oggi è il mio compleanno.",
-      "acceptableAnswers": [
-        "Oggi è il compleanno di Luca."
-      ],
       "match": "flexible",
       "focus": [
         "birthdays"
@@ -61,8 +58,7 @@
       "promptEn": "Do you want to come on Saturday?",
       "expectedIt": "Vieni sabato?",
       "acceptableAnswers": [
-        "Vuoi venire sabato?",
-        "Elisa vieni sabato?"
+        "Vuoi venire sabato?"
       ],
       "match": "semantic",
       "focus": [

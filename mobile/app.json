@@ -37,7 +37,14 @@
         }
       ],
       "expo-sqlite",
-      "expo-audio"
+      "expo-audio",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow Storibase to use the microphone so you can practice saying Italian aloud.",
+          "speechRecognitionPermission": "Allow Storibase to recognize your Italian speech on this device."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

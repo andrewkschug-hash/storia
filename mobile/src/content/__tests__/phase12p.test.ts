@@ -142,7 +142,11 @@ describe('Phase 12P S1.1 reader help', () => {
       chapterNumber: chapter.number,
     }, empty);
     expect(word.kind).toBe('word');
-    if (word.kind === 'word') expect(word.english).toBe('to be');
+    if (word.kind === 'word') {
+      expect(word.surface.toLowerCase()).toBe('è');
+      expect(word.lemmaItalian).toBe('essere');
+      expect(word.english).toBe('he/she/it is');
+    }
 
     const intro = chapter.paragraphs.flatMap((paragraph) => paragraph.sentences).find((sentence) =>
       sentence.text === 'Mi chiamo Luca.',

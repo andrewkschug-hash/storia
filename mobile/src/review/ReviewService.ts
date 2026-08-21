@@ -14,6 +14,10 @@ import type {
   VocabularyStatus,
 } from '@/src/vocabulary/types';
 import { createLemmaEncounter, createPhraseEncounter } from '@/src/vocabulary/normalize';
+import {
+  conflictsWithAccepted,
+  type ReviewItemRef,
+} from '@/src/review/reviewClusters';
 
 export const REVIEW_CONFIG = {
   defaultSessionSize: 5,
@@ -205,22 +209,57 @@ export class ReviewService {
     scored.sort((a, b) => b.priority - a.priority || a.id.localeCompare(b.id));
 
     const picked = new Set<string>();
+    const acceptedRefs: ReviewItemRef[] = [];
     const items: ReviewPrompt[] = [];
+
+    const tryAccept = (candidate: ReviewCandidate, prompt: ReviewPrompt | null): boolean => {
+      if (!prompt) return false;
+      if (items.length >= limit) return false;
+      const ref: ReviewItemRef = {
+        kind: candidate.kind,
+        id: candidate.id,
+        english: prompt.english,
+      };
+      // Prefer variety: skip near-duplicates while the pool still has other options.
+      // When under limit after the first pass, a second pass may relax — see below.
+      if (conflictsWithAccepted(ref, acceptedRefs)) return false;
+      items.push(prompt);
+      picked.add(`${candidate.kind}:${candidate.id}`);
+      acceptedRefs.push(ref);
+      return true;
+    };
 
     for (const candidate of scored) {
       if (items.length >= limit) break;
-      const prompt = this.toPrompt(state, candidate);
-      if (!prompt) continue;
-      items.push(prompt);
-      picked.add(`${candidate.kind}:${candidate.id}`);
+      tryAccept(candidate, this.toPrompt(state, candidate));
     }
 
     for (const candidate of backfillBatchCandidates(bundle, chapterStart, chapterEnd, picked)) {
       if (items.length >= limit) break;
-      const prompt = this.promptForBackfill(state, candidate);
-      if (!prompt) continue;
-      items.push(prompt);
-      picked.add(`${candidate.kind}:${candidate.id}`);
+      tryAccept(candidate, this.promptForBackfill(state, candidate));
+    }
+
+    // If the pool was too small after strict dedupe, fill remaining slots without
+    // exact id duplicates (gloss/cluster conflicts allowed only as last resort).
+    if (items.length < limit) {
+      for (const candidate of scored) {
+        if (items.length >= limit) break;
+        const key = `${candidate.kind}:${candidate.id}`;
+        if (picked.has(key)) continue;
+        const prompt = this.toPrompt(state, candidate);
+        if (!prompt) continue;
+        items.push(prompt);
+        picked.add(key);
+      }
+      for (const candidate of backfillBatchCandidates(bundle, chapterStart, chapterEnd, picked)) {
+        if (items.length >= limit) break;
+        const key = `${candidate.kind}:${candidate.id}`;
+        if (picked.has(key)) continue;
+        const prompt = this.promptForBackfill(state, candidate);
+        if (!prompt) continue;
+        items.push(prompt);
+        picked.add(key);
+      }
     }
 
     return { items, dueCount: scored.length };

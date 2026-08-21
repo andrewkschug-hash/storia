@@ -306,7 +306,6 @@
       "promptEn": "I like apples.",
       "expectedIt": "Mi piacciono le mele.",
       "acceptableAnswers": [
-        "A Luca piacciono le mele.",
         "A me piacciono le mele."
       ],
       "match": "flexible",

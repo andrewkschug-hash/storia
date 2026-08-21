@@ -7,7 +7,10 @@
       "batchEnd": 5,
       "title": "Davide at the door",
       "summaryEn": "Davide arrives at Luca's house. Retell the visit in simple Italian.",
-      "sourceRange": { "start": 1, "end": 5 },
+      "sourceRange": {
+        "start": 1,
+        "end": 5
+      },
       "lines": [
         {
           "id": "luca-prima-di-roma-01-speak-5-l01",
@@ -15,7 +18,9 @@
           "it": "Davide è alla porta.",
           "sourceChapterId": "luca-prima-di-roma-01-05",
           "sourceSentenceId": "s01",
-          "acceptableAnswers": ["Davide e alla porta.", "È alla porta."]
+          "acceptableAnswers": [
+            "È alla porta."
+          ]
         },
         {
           "id": "luca-prima-di-roma-01-speak-5-l02",
@@ -23,7 +28,9 @@
           "it": "Luca apre la porta.",
           "sourceChapterId": "luca-prima-di-roma-01-05",
           "sourceSentenceId": "s02",
-          "acceptableAnswers": ["Apre la porta."]
+          "acceptableAnswers": [
+            "Apre la porta."
+          ]
         },
         {
           "id": "luca-prima-di-roma-01-speak-5-l03",
@@ -31,7 +38,9 @@
           "it": "Ciao Davide.",
           "sourceChapterId": "luca-prima-di-roma-01-05",
           "sourceSentenceId": "s03",
-          "acceptableAnswers": ["Ciao, Davide."]
+          "acceptableAnswers": [
+            "Ciao, Davide."
+          ]
         },
         {
           "id": "luca-prima-di-roma-01-speak-5-l04",
@@ -39,7 +48,9 @@
           "it": "Davide entra nel soggiorno.",
           "sourceChapterId": "luca-prima-di-roma-01-05",
           "sourceSentenceId": "s05",
-          "acceptableAnswers": ["Entra nel soggiorno."]
+          "acceptableAnswers": [
+            "Entra nel soggiorno."
+          ]
         }
       ]
     },
@@ -49,7 +60,10 @@
       "batchEnd": 5,
       "title": "Chiara's timetable",
       "summaryEn": "Chiara has a school timetable. Retell when she is free.",
-      "sourceRange": { "start": 1, "end": 5 },
+      "sourceRange": {
+        "start": 1,
+        "end": 5
+      },
       "lines": [
         {
           "id": "luca-prima-di-roma-02-speak-5-l01",
@@ -57,7 +71,9 @@
           "it": "Chiara ha un orario.",
           "sourceChapterId": "luca-prima-di-roma-02-05",
           "sourceSentenceId": "s01",
-          "acceptableAnswers": ["Ha un orario."]
+          "acceptableAnswers": [
+            "Ha un orario."
+          ]
         },
         {
           "id": "luca-prima-di-roma-02-speak-5-l02",
@@ -65,7 +81,9 @@
           "it": "Lunedì alle otto Chiara è a scuola.",
           "sourceChapterId": "luca-prima-di-roma-02-05",
           "sourceSentenceId": "s03",
-          "acceptableAnswers": ["Lunedi alle otto Chiara e a scuola.", "Alle otto Chiara è a scuola."]
+          "acceptableAnswers": [
+            "Alle otto Chiara è a scuola."
+          ]
         },
         {
           "id": "luca-prima-di-roma-02-speak-5-l03",
@@ -73,15 +91,16 @@
           "it": "Alle nove Chiara ha italiano.",
           "sourceChapterId": "luca-prima-di-roma-02-05",
           "sourceSentenceId": "s04",
-          "acceptableAnswers": ["Alle nove ha italiano."]
+          "acceptableAnswers": [
+            "Alle nove ha italiano."
+          ]
         },
         {
           "id": "luca-prima-di-roma-02-speak-5-l04",
           "en": "At ten Chiara is free.",
           "it": "Alle dieci Chiara è libera.",
           "sourceChapterId": "luca-prima-di-roma-02-05",
-          "sourceSentenceId": "s05",
-          "acceptableAnswers": ["Alle dieci e libera.", "Alle dieci Chiara e libera."]
+          "sourceSentenceId": "s05"
         }
       ]
     },
@@ -91,7 +110,10 @@
       "batchEnd": 5,
       "title": "Paying at the counter",
       "summaryEn": "Luca pays at the supermarket. Retell the checkout.",
-      "sourceRange": { "start": 1, "end": 5 },
+      "sourceRange": {
+        "start": 1,
+        "end": 5
+      },
       "lines": [
         {
           "id": "luca-prima-di-roma-03-speak-5-l01",
@@ -99,7 +121,9 @@
           "it": "Luca è al banco.",
           "sourceChapterId": "luca-prima-di-roma-03-05",
           "sourceSentenceId": "s01",
-          "acceptableAnswers": ["È al banco.", "Luca e al banco."]
+          "acceptableAnswers": [
+            "È al banco."
+          ]
         },
         {
           "id": "luca-prima-di-roma-03-speak-5-l02",
@@ -107,7 +131,9 @@
           "it": "Si può pagare?",
           "sourceChapterId": "luca-prima-di-roma-03-05",
           "sourceSentenceId": "s02",
-          "acceptableAnswers": ["Si puo pagare?", "Posso pagare?"]
+          "acceptableAnswers": [
+            "Posso pagare?"
+          ]
         },
         {
           "id": "luca-prima-di-roma-03-speak-5-l03",
@@ -115,7 +141,9 @@
           "it": "Quanto costa tutto?",
           "sourceChapterId": "luca-prima-di-roma-03-05",
           "sourceSentenceId": "s04",
-          "acceptableAnswers": ["Quanto costa?"]
+          "acceptableAnswers": [
+            "Quanto costa?"
+          ]
         },
         {
           "id": "luca-prima-di-roma-03-speak-5-l04",
@@ -123,7 +151,9 @@
           "it": "Tutto costa dieci euro.",
           "sourceChapterId": "luca-prima-di-roma-03-05",
           "sourceSentenceId": "s05",
-          "acceptableAnswers": ["Costa dieci euro.", "Dieci euro."]
+          "acceptableAnswers": [
+            "Costa dieci euro."
+          ]
         }
       ]
     },
@@ -133,7 +163,10 @@
       "batchEnd": 5,
       "title": "The bus stop",
       "summaryEn": "Luca and Davide look for the bus. Retell what they find.",
-      "sourceRange": { "start": 1, "end": 5 },
+      "sourceRange": {
+        "start": 1,
+        "end": 5
+      },
       "lines": [
         {
           "id": "luca-prima-di-roma-04-speak-5-l01",
@@ -141,7 +174,9 @@
           "it": "Luca e Davide vanno alla fermata.",
           "sourceChapterId": "luca-prima-di-roma-04-05",
           "sourceSentenceId": "s01",
-          "acceptableAnswers": ["Vanno alla fermata."]
+          "acceptableAnswers": [
+            "Vanno alla fermata."
+          ]
         },
         {
           "id": "luca-prima-di-roma-04-speak-5-l02",
@@ -149,7 +184,9 @@
           "it": "Dov'è l'autobus?",
           "sourceChapterId": "luca-prima-di-roma-04-05",
           "sourceSentenceId": "s03",
-          "acceptableAnswers": ["Dove e l'autobus?", "Dov'e l'autobus?"]
+          "acceptableAnswers": [
+            "Dove e l'autobus?"
+          ]
         },
         {
           "id": "luca-prima-di-roma-04-speak-5-l03",
@@ -157,7 +194,9 @@
           "it": "C'è un autobus alle nove.",
           "sourceChapterId": "luca-prima-di-roma-04-05",
           "sourceSentenceId": "s05",
-          "acceptableAnswers": ["C'e un autobus alle nove.", "C'è un autobus alle 9."]
+          "acceptableAnswers": [
+            "C'è un autobus alle 9."
+          ]
         },
         {
           "id": "luca-prima-di-roma-04-speak-5-l04",
@@ -165,7 +204,9 @@
           "it": "Ma non va al parco.",
           "sourceChapterId": "luca-prima-di-roma-04-05",
           "sourceSentenceId": "s06",
-          "acceptableAnswers": ["Non va al parco."]
+          "acceptableAnswers": [
+            "Non va al parco."
+          ]
         }
       ]
     },
@@ -175,31 +216,31 @@
       "batchEnd": 5,
       "title": "At the party",
       "summaryEn": "Luca's party is in the living room. Retell what is there.",
-      "sourceRange": { "start": 1, "end": 5 },
+      "sourceRange": {
+        "start": 1,
+        "end": 5
+      },
       "lines": [
         {
           "id": "luca-prima-di-roma-05-speak-5-l01",
           "en": "The party is in the living room.",
           "it": "La festa è nel soggiorno.",
           "sourceChapterId": "luca-prima-di-roma-05-05",
-          "sourceSentenceId": "s01",
-          "acceptableAnswers": ["La festa e nel soggiorno."]
+          "sourceSentenceId": "s01"
         },
         {
           "id": "luca-prima-di-roma-05-speak-5-l02",
           "en": "There's music.",
           "it": "C'è musica.",
           "sourceChapterId": "luca-prima-di-roma-05-05",
-          "sourceSentenceId": "s02",
-          "acceptableAnswers": ["C'e musica."]
+          "sourceSentenceId": "s02"
         },
         {
           "id": "luca-prima-di-roma-05-speak-5-l03",
           "en": "There's cake.",
           "it": "C'è torta.",
           "sourceChapterId": "luca-prima-di-roma-05-05",
-          "sourceSentenceId": "s03",
-          "acceptableAnswers": ["C'e torta."]
+          "sourceSentenceId": "s03"
         },
         {
           "id": "luca-prima-di-roma-05-speak-5-l04",
@@ -207,7 +248,9 @@
           "it": "Davide arriva.",
           "sourceChapterId": "luca-prima-di-roma-05-05",
           "sourceSentenceId": "s05",
-          "acceptableAnswers": ["Arriva Davide."]
+          "acceptableAnswers": [
+            "Arriva Davide."
+          ]
         }
       ]
     }

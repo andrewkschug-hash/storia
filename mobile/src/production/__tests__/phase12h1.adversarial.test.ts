@@ -207,6 +207,22 @@ describe('12H.1 accents / almost', () => {
   });
 });
 
+describe('spelling leniency', () => {
+  it('marks single-letter typos as almost and returns matchedIt', () => {
+    const fame = byId('luca-a-roma-ch01-prod-02');
+    const typo = scoreProductionAnswer(fame, 'Ho famme');
+    expect(typo.result).toBe('almost');
+    expect(typo.reason).toBe('minor_spelling');
+    expect(typo.matchedIt).toBeTruthy();
+  });
+
+  it('does not treat person swaps as spelling almost', () => {
+    const fame = byId('luca-a-roma-ch01-prod-02');
+    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Ha fame.').reason).toBe('wrong_person');
+  });
+});
+
 describe('12H.1 extra words', () => {
   it('rejects unauthored additions in exact and flexible modes', () => {
     const thanks = synthetic({ promptEn: 'Thank you.', expectedIt: 'Grazie.', match: 'exact' });

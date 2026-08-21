@@ -1,5 +1,5 @@
 import { Stack, router, useLocalSearchParams } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -11,7 +11,12 @@ import { getSpeakSceneById, speakLineToExercise } from '@/src/content/speakScene
 import { getProgressService } from '@/src/progress';
 import { routeAfterSpeakScene } from '@/src/progress/batchMilestoneRoute';
 import type { SpeakSceneLineAttempt, SpeakSceneVote } from '@/src/progress/types';
-import { scoreProductionAnswer } from '@/src/production/score';
+import {
+  scoreProductionAnswer,
+  type ProductionScoreResult,
+  type ProductionScoreStatus,
+} from '@/src/production/score';
+import { useItalianSpeechInput } from '@/src/production/useItalianSpeechInput';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { resolveSentenceFocusLemmas } from '@/src/vocabulary/productionFocusLemmas';
 import { findSentenceById } from '@/src/vocabulary/storyExamples';
@@ -20,9 +25,43 @@ import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Phase = 'intro' | 'line' | 'feedback' | 'summary';
+type InputMode = 'type' | 'speak';
 
 function continueAfterScene(storyId: string, batchEnd: number, returnTo?: string) {
   router.replace(routeAfterSpeakScene(storyId, batchEnd, returnTo));
+}
+
+function feedbackCopy(status: ProductionScoreStatus, inputMode: InputMode): { title: string; hint: string } {
+  switch (status) {
+    case 'correct':
+      return { title: 'Correct', hint: 'Nice — that works in Italian.' };
+    case 'almost':
+      return {
+        title: 'Almost',
+        hint:
+          inputMode === 'speak'
+            ? 'Close — check the wording, then remember this form.'
+            : 'Close — check the spelling, then remember this form.',
+      };
+    case 'unrecognized':
+      return {
+        title: 'Try again',
+        hint: 'Say or type a short Italian answer, then compare with the correct line.',
+      };
+    default:
+      return { title: 'Not quite', hint: 'Here’s the Italian to learn from.' };
+  }
+}
+
+function feedbackAccent(status: ProductionScoreStatus, colors: ReturnType<typeof useTheme>['colors']) {
+  switch (status) {
+    case 'correct':
+      return colors.assessmentGotItIndicator;
+    case 'almost':
+      return colors.assessmentAlmostIndicator;
+    default:
+      return colors.assessmentNotYetIndicator;
+  }
 }
 
 export default function SpeakSceneScreen() {
@@ -41,14 +80,62 @@ export default function SpeakSceneScreen() {
   const [lineIndex, setLineIndex] = useState(0);
   const [draft, setDraft] = useState('');
   const [attempts, setAttempts] = useState(0);
+  const [lineScore, setLineScore] = useState<ProductionScoreResult | null>(null);
   const [lineRecords, setLineRecords] = useState<SpeakSceneLineAttempt[]>([]);
   const [saving, setSaving] = useState(false);
+  const [inputMode, setInputMode] = useState<InputMode>('type');
+  const [speechError, setSpeechError] = useState<string | null>(null);
 
   const current = scene?.lines[lineIndex];
   const exercise = useMemo(() => {
     if (!scene || !current) return null;
     return speakLineToExercise(scene, current);
   }, [scene, current]);
+
+  const contextualStrings = useMemo(() => {
+    if (!current) return [] as string[];
+    return [current.it, ...(current.acceptableAnswers ?? [])].filter(Boolean);
+  }, [current]);
+
+  const submitLearnerText = useCallback(
+    (text: string, mode: InputMode) => {
+      if (!exercise) return;
+      const trimmed = text.trim();
+      setInputMode(mode);
+      setDraft(trimmed);
+      setSpeechError(null);
+      const scored = scoreProductionAnswer(exercise, trimmed);
+      setLineScore(scored);
+      setAttempts((n) => n + 1);
+      setPhase('feedback');
+      trackReadingEvent({
+        type: 'speak_scene_line',
+        storyId,
+        meta: {
+          sceneId: scene?.id ?? null,
+          lineId: current?.id ?? null,
+          stage: 'scored',
+          inputMode: mode,
+          score: scored.result,
+          reason: scored.reason,
+        },
+      });
+    },
+    [current?.id, exercise, scene?.id, storyId],
+  );
+
+  const speech = useItalianSpeechInput({
+    enabled: Boolean(scene) && phase === 'line',
+    contextualStrings,
+    onFinalTranscript: (transcript) => {
+      if (transcript) {
+        submitLearnerText(transcript, 'speak');
+        return;
+      }
+      setSpeechError('Didn’t catch that — try again, or type your answer.');
+    },
+    onError: (message) => setSpeechError(message),
+  });
 
   const persist = async (skipped: boolean, lines: SpeakSceneLineAttempt[], done: boolean) => {
     if (!scene) return;
@@ -95,14 +182,26 @@ export default function SpeakSceneScreen() {
   }
 
   const onCheck = () => {
-    if (!exercise || !draft.trim()) return;
-    setAttempts((n) => n + 1);
-    setPhase('feedback');
+    if (!draft.trim() || speech.isListening) return;
+    submitLearnerText(draft, 'type');
+  };
+
+  const onSpeakPress = () => {
+    setSpeechError(null);
+    if (speech.isListening) {
+      speech.stopListening();
+      return;
+    }
+    if (speech.availability && !speech.availability.available) {
+      setSpeechError(speech.availability.message);
+      return;
+    }
+    void speech.startListening();
   };
 
   const onVote = async (vote: SpeakSceneVote) => {
     if (!exercise || !current || saving) return;
-    const scored = scoreProductionAnswer(exercise, draft);
+    const scored = lineScore ?? scoreProductionAnswer(exercise, draft);
     const record: SpeakSceneLineAttempt = {
       lineId: current.id,
       vote,
@@ -119,6 +218,8 @@ export default function SpeakSceneScreen() {
         lineId: current.id,
         vote,
         score: scored.result,
+        reason: scored.reason,
+        inputMode,
         attempts: record.attempts,
       },
     });
@@ -151,6 +252,8 @@ export default function SpeakSceneScreen() {
     setLineRecords(nextLines);
     setDraft('');
     setAttempts(0);
+    setLineScore(null);
+    setSpeechError(null);
     const done = lineIndex + 1 >= scene.lines.length;
     await persist(false, nextLines, done);
     if (!done) {
@@ -160,6 +263,12 @@ export default function SpeakSceneScreen() {
     }
     setPhase('summary');
   };
+
+  const copy = lineScore ? feedbackCopy(lineScore.result, inputMode) : null;
+  const correction = lineScore?.matchedIt ?? current?.it ?? '';
+  const inputValue = speech.isListening && speech.interim ? speech.interim : draft;
+  const speakDisabled = phase !== 'line' || saving;
+  const speakLabel = speech.isListening ? 'Listening…' : 'Speak';
 
   return (
     <AtmosphereBackground>
@@ -183,7 +292,7 @@ export default function SpeakSceneScreen() {
                 {scene.summaryEn}
               </Text>
               <Text style={[type.label, { color: colors.text, marginTop: Spacing.lg }]}>
-                Say it in Italian.
+                Say it in Italian — speak or type.
               </Text>
               <Pressable
                 onPress={() => {
@@ -236,10 +345,13 @@ export default function SpeakSceneScreen() {
               </Text>
 
               <TextInput
-                value={draft}
-                onChangeText={setDraft}
-                editable={phase === 'line'}
-                placeholder="Type it in Italian"
+                value={inputValue}
+                onChangeText={(value) => {
+                  setSpeechError(null);
+                  setDraft(value);
+                }}
+                editable={phase === 'line' && !speech.isListening}
+                placeholder={speech.isListening ? 'Listening…' : 'Type it in Italian'}
                 placeholderTextColor={colors.textMuted}
                 autoCapitalize="none"
                 autoCorrect={false}
@@ -248,45 +360,94 @@ export default function SpeakSceneScreen() {
                   styles.input,
                   {
                     color: colors.text,
-                    borderColor: colors.border,
+                    borderColor: speech.isListening
+                      ? colors.tint
+                      : phase === 'feedback' && lineScore
+                        ? feedbackAccent(lineScore.result, colors)
+                        : colors.border,
                     backgroundColor: colors.backgroundElevated,
                     minHeight: minTouchTarget,
                   },
                 ]}
               />
 
+              {speechError ? (
+                <Text style={[type.caption, { color: colors.assessmentNotYetIndicator, marginTop: Spacing.sm }]}>
+                  {speechError}
+                </Text>
+              ) : null}
+
               <View style={styles.actionRow}>
                 <Pressable
-                  disabled
-                  accessibilityState={{ disabled: true }}
-                  style={[
+                  onPress={onSpeakPress}
+                  disabled={speakDisabled}
+                  accessibilityState={{ disabled: speakDisabled, busy: speech.isListening }}
+                  style={({ pressed }) => [
                     styles.secondaryBtn,
                     styles.flexBtn,
-                    { borderColor: colors.border, opacity: 0.45 },
+                    {
+                      borderColor: speech.isListening ? colors.tint : colors.border,
+                      opacity: speakDisabled ? 0.45 : pressed ? 0.88 : 1,
+                      minHeight: minTouchTarget,
+                    },
                   ]}>
-                  <Text style={[type.button, { color: colors.textMuted }]}>Speak</Text>
+                  <Text
+                    style={[
+                      type.button,
+                      { color: speech.isListening ? colors.tint : colors.text },
+                    ]}>
+                    {speakLabel}
+                  </Text>
                 </Pressable>
                 <Pressable
                   onPress={onCheck}
-                  disabled={phase !== 'line' || !draft.trim()}
+                  disabled={phase !== 'line' || !draft.trim() || speech.isListening}
                   style={({ pressed }) => [
                     styles.primaryBtn,
                     styles.flexBtn,
                     {
                       backgroundColor: colors.buttonPrimary,
-                      opacity: phase !== 'line' || !draft.trim() ? 0.5 : pressed ? 0.88 : 1,
+                      opacity:
+                        phase !== 'line' || !draft.trim() || speech.isListening
+                          ? 0.5
+                          : pressed
+                            ? 0.88
+                            : 1,
                       minHeight: minTouchTarget,
                     },
                   ]}>
-                  <Text style={[type.button, { color: colors.onButtonPrimary }]}>Type</Text>
+                  <Text style={[type.button, { color: colors.onButtonPrimary }]}>Check</Text>
                 </Pressable>
               </View>
 
-              {phase === 'feedback' ? (
+              {phase === 'feedback' && lineScore && copy ? (
                 <View style={{ marginTop: Spacing.xl }}>
-                  <Text style={[type.label, { color: colors.text }]}>{current?.it}</Text>
+                  <Text style={[type.label, { color: feedbackAccent(lineScore.result, colors) }]}>
+                    {copy.title}
+                  </Text>
+                  <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
+                    {copy.hint}
+                  </Text>
+
+                  {lineScore.result !== 'correct' ? (
+                    <View style={{ marginTop: Spacing.lg, gap: Spacing.sm }}>
+                      <Text style={[type.caption, { color: colors.textMuted }]}>
+                        {inputMode === 'speak' ? 'You said' : 'You wrote'}
+                      </Text>
+                      <Text style={[type.body, { color: colors.text }]}>{draft.trim() || '—'}</Text>
+                      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+                        Correct Italian
+                      </Text>
+                      <Text style={[type.label, { color: colors.text }]}>{correction}</Text>
+                    </View>
+                  ) : (
+                    <Text style={[type.label, { color: colors.text, marginTop: Spacing.lg }]}>
+                      {correction}
+                    </Text>
+                  )}
+
                   <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
-                    How did you do?
+                    How did that feel?
                   </Text>
                   <SelfAssessmentVoteButtons disabled={saving} onVote={(vote) => void onVote(vote)} />
                 </View>
@@ -294,10 +455,14 @@ export default function SpeakSceneScreen() {
 
               <Pressable
                 onPress={() => void finishAndContinue(true, lineRecords)}
-                disabled={saving}
+                disabled={saving || speech.isListening}
                 style={({ pressed }) => [
                   styles.secondaryBtn,
-                  { borderColor: colors.border, opacity: pressed || saving ? 0.88 : 1, marginTop: Spacing.lg },
+                  {
+                    borderColor: colors.border,
+                    opacity: pressed || saving || speech.isListening ? 0.88 : 1,
+                    marginTop: Spacing.lg,
+                  },
                 ]}>
                 <Text style={[type.button, { color: colors.textMuted }]}>Skip</Text>
               </Pressable>

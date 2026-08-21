@@ -186,8 +186,14 @@ describe('Phase 12D reveal and continue flow', () => {
   });
 
   it('renders acceptableAnswers only after reveal, when present', () => {
-    const withAlts = productionCardView(sampleExercise(), 1, 4, true);
-    expect(withAlts.acceptableAnswers).toEqual(['Io ho fame.']);
+    const withAlts = productionCardView(
+      sampleExercise({ acceptableAnswers: ['Fame.', 'Ho fame'] }),
+      1,
+      4,
+      true,
+    );
+    // A1 word mode only keeps ≤2-word alternatives.
+    expect(withAlts.acceptableAnswers).toEqual(['Fame.', 'Ho fame']);
 
     const withoutAlts = productionCardView(
       sampleExercise({ acceptableAnswers: undefined, expectedIt: 'Buongiorno.', promptEn: 'Good morning.' }),

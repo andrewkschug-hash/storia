@@ -99,8 +99,7 @@
       "promptEn": "I get up.",
       "expectedIt": "Mi alzo.",
       "acceptableAnswers": [
-        "Io mi alzo.",
-        "Luca si alza."
+        "Io mi alzo."
       ],
       "match": "flexible",
       "focus": [
@@ -299,7 +298,6 @@
       "promptEn": "Tomorrow I get up at seven.",
       "expectedIt": "Domani mi alzo alle sette.",
       "acceptableAnswers": [
-        "Domani Luca si alza alle sette.",
         "Mi alzo alle sette domani."
       ],
       "match": "flexible",

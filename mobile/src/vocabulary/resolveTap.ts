@@ -4,6 +4,7 @@ import {
   lookupLemmaId,
   type LexiconIndex,
 } from '@/src/vocabulary/dictionaryIndex';
+import { formGlossFor } from '@/src/vocabulary/formGlosses';
 import type {
   DictionaryLookup,
   PhraseLookup,
@@ -86,7 +87,7 @@ export function resolveLemmaForm(
     surface,
     lemmaId,
     lemmaItalian: entry?.italian ?? lemmaId,
-    english: entry?.english ?? 'Meaning unavailable',
+    english: displayEnglishForForm(surface, lemmaId, entry),
     partOfSpeech: entry?.partOfSpeech,
     sentenceText,
     sentenceId,
@@ -95,6 +96,17 @@ export function resolveLemmaForm(
     tokenIndex: -1,
     encounterCount: vocab.lemmas[lemmaId]?.encounterCount ?? 0,
   };
+}
+
+/** Prefer form-level gloss when available; keep lemma english as fallback. */
+export function displayEnglishForForm(
+  surface: string,
+  lemmaId: string,
+  entry: LexiconEntry | undefined,
+): string {
+  const formGloss = formGlossFor(lemmaId, surface);
+  if (formGloss) return formGloss;
+  return entry?.english ?? 'Meaning unavailable';
 }
 
 function wordFromToken(
@@ -109,7 +121,7 @@ function wordFromToken(
     surface,
     lemmaId,
     lemmaItalian: entry?.italian ?? lemmaId,
-    english: entry?.english ?? 'Meaning unavailable',
+    english: displayEnglishForForm(surface, lemmaId, entry),
     partOfSpeech: entry?.partOfSpeech,
     sentenceText: ctx.sentence.text,
     sentenceId: ctx.sentence.id,

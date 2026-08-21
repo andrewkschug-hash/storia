@@ -20,15 +20,20 @@
           "sourceSentenceId": "s01",
           "acceptableAnswers": [
             "Marco torna al caffe.",
-            "Torna al caffè.",
-            "Marco va al caffè."
+            "Torna al caffè."
           ],
           "semantic": {
-            "requiredConcepts": ["torna"],
+            "requiredConcepts": [
+              "torna"
+            ],
             "conceptAliases": {
-              "torna": ["torna", "va"]
+              "torna": [
+                "torna"
+              ]
             },
-            "requiredPerson": ["3sg"],
+            "requiredPerson": [
+              "3sg"
+            ],
             "requiredTense": "present",
             "requiredPolarity": "affirmative"
           }
@@ -44,8 +49,12 @@
             "Lui ha un problema."
           ],
           "semantic": {
-            "requiredConcepts": ["problema"],
-            "requiredPerson": ["3sg"],
+            "requiredConcepts": [
+              "problema"
+            ],
+            "requiredPerson": [
+              "3sg"
+            ],
             "requiredTense": "present",
             "requiredPolarity": "affirmative"
           }
@@ -63,8 +72,12 @@
             "Deve andare a casa."
           ],
           "semantic": {
-            "requiredConcepts": ["casa"],
-            "requiredPerson": ["3sg"],
+            "requiredConcepts": [
+              "casa"
+            ],
+            "requiredPerson": [
+              "3sg"
+            ],
             "requiredTense": "present",
             "requiredPolarity": "affirmative"
           }
@@ -78,12 +91,15 @@
           "acceptableAnswers": [
             "Marco deve comprare un biglietto.",
             "Ha bisogno di un biglietto.",
-            "Serve un biglietto.",
-            "Vuole un biglietto."
+            "Serve un biglietto."
           ],
           "semantic": {
-            "requiredConcepts": ["biglietto"],
-            "requiredPerson": ["3sg"],
+            "requiredConcepts": [
+              "biglietto"
+            ],
+            "requiredPerson": [
+              "3sg"
+            ],
             "requiredTense": "present",
             "requiredPolarity": "affirmative"
           }
@@ -102,11 +118,18 @@
             "Non ha denaro."
           ],
           "semantic": {
-            "requiredConcepts": ["soldi"],
+            "requiredConcepts": [
+              "soldi"
+            ],
             "conceptAliases": {
-              "soldi": ["soldi", "denaro"]
+              "soldi": [
+                "soldi",
+                "denaro"
+              ]
             },
-            "requiredPerson": ["3sg"],
+            "requiredPerson": [
+              "3sg"
+            ],
             "requiredTense": "present",
             "requiredPolarity": "negative"
           }
@@ -155,8 +178,7 @@
           "sourceSentenceId": "s04",
           "acceptableAnswers": [
             "Luca è a casa.",
-            "È a casa.",
-            "Siamo a casa."
+            "È a casa."
           ]
         },
         {

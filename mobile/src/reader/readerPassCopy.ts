@@ -14,6 +14,7 @@ export type ReadToListenTransitionCopy = {
   headline: string;
   body: string;
   actionLabel: string;
+  skipLabel: string;
 };
 
 export type ListenCompleteCopy = {
@@ -42,9 +43,9 @@ export function passInstructionCopy(
       phaseLabel: detailed ? 'PASS 1 · READ' : '1 Read',
       headline: detailed ? 'Prima leggi.' : 'Read',
       body: detailed
-        ? 'Read the story yourself first. Tap words whenever you need help.'
-        : 'Read the chapter, then listen.',
-      continueLabel: detailed ? 'Continue' : 'Continue to listening',
+        ? 'Read the story yourself first. Tap words for help, or ▶ on a sentence if you need it — then continue to listen.'
+        : 'Read first, then listen. You can still play a sentence while reading.',
+      continueLabel: 'Continue',
       compactLabel: '1 Read → 2 Listen',
     };
   }
@@ -62,16 +63,18 @@ export function readToListenTransitionCopy(detailed: boolean): ReadToListenTrans
   if (!detailed) {
     return {
       phaseLabel: '2 Listen',
-      headline: 'Listen',
-      body: listenHintForLevel('A1'),
+      headline: 'Ready to listen?',
+      body: 'Hearing the chapter helps the Italian stick. You can skip if you want.',
       actionLabel: 'Ascolta la storia →',
+      skipLabel: 'Skip for now',
     };
   }
   return {
     phaseLabel: 'PASS 2 · LISTEN',
     headline: 'Bene. Ora ascolta.',
-    body: "You've read the story. Now listen to the Italian and notice how it sounds.",
+    body: "You've read the story. Listen to the Italian next — or skip if you'd rather move on.",
     actionLabel: 'Ascolta la storia →',
+    skipLabel: 'Skip for now',
   };
 }
 

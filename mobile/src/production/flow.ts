@@ -36,6 +36,33 @@ export type ProductionDisplayContext = {
   lexiconById?: Map<string, LexiconEntry>;
 };
 
+/** A1 word/chunk mode: visible Italian targets stay ≤2 words. */
+export const A1_WORD_MODE_MAX_WORDS = 2;
+
+export function isA1WordModeChunk(text: string): boolean {
+  const n = countProductionWords(text);
+  return n > 0 && n <= A1_WORD_MODE_MAX_WORDS;
+}
+
+export function filterA1WordModeAlternatives(
+  expectedIt: string,
+  candidates: Array<string | undefined | null>,
+): string[] {
+  const expectedKey = expectedIt.trim().toLocaleLowerCase('it');
+  const seen = new Set<string>(expectedKey ? [expectedKey] : []);
+  const out: string[] = [];
+  for (const raw of candidates) {
+    const line = raw?.trim();
+    if (!line) continue;
+    if (!isA1WordModeChunk(line)) continue;
+    const key = line.toLocaleLowerCase('it');
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(line);
+  }
+  return out;
+}
+
 export function afterComprehensionResults(
   exercises: ProductionExercise[],
 ): AfterComprehensionResults {
@@ -69,20 +96,6 @@ function glossEnglish(entry: LexiconEntry): string {
   return gloss;
 }
 
-function uniqueAnswers(...candidates: Array<string | undefined | null>): string[] {
-  const seen = new Set<string>();
-  const out: string[] = [];
-  for (const raw of candidates) {
-    const line = raw?.trim();
-    if (!line) continue;
-    const key = line.toLocaleLowerCase('it');
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push(line);
-  }
-  return out;
-}
-
 /**
  * A1 production should ask for a single word or a short two-word chunk —
  * never a full story sentence like "Luca arrives in Rome."
@@ -97,11 +110,11 @@ export function a1WordProductionDisplay(
   const extras = exercise.acceptableAnswers ?? [];
 
   // Authored short targets (Buongiorno, Ho fame) stay as-is — no full-sentence swap.
-  if (overlayWordCount > 0 && overlayWordCount <= 2) {
+  if (overlayWordCount > 0 && overlayWordCount <= A1_WORD_MODE_MAX_WORDS) {
     return {
       promptEn: overlayPrompt,
       expectedIt: overlayExpected,
-      acceptableAnswers: uniqueAnswers(...extras),
+      acceptableAnswers: filterA1WordModeAlternatives(overlayExpected, extras),
     };
   }
 
@@ -112,16 +125,19 @@ export function a1WordProductionDisplay(
     const primaryId = focusIds[0];
     const entry = primaryId ? lexicon.get(primaryId) : undefined;
     if (entry) {
-      const surface =
+      const surfaceRaw =
         source.tokens.find((token) => token.lemmaId === entry.lemmaId)?.surface ?? entry.italian;
+      const surface = surfaceRaw.replace(/[.,;:!?…]+$/g, '').trim() || entry.italian;
+      // Prefer the conjugated story surface when it is still a short chunk.
+      const primary = isA1WordModeChunk(surface) ? surface : entry.italian;
       return {
         promptEn: glossEnglish(entry),
-        expectedIt: entry.italian,
-        acceptableAnswers: uniqueAnswers(
+        expectedIt: primary,
+        acceptableAnswers: filterA1WordModeAlternatives(primary, [
           surface,
-          overlayExpected,
+          entry.italian,
           ...extras,
-        ).filter((line) => line.toLocaleLowerCase('it') !== entry.italian.toLocaleLowerCase('it')),
+        ]),
       };
     }
   }
@@ -132,22 +148,40 @@ export function a1WordProductionDisplay(
     .split(/\s+/)
     .map((token) => token.trim())
     .filter(Boolean);
-  const skip = new Set(['a', 'di', 'da', 'in', 'su', 'con', 'per', 'il', 'lo', 'la', 'i', 'gli', 'le', 'un', 'uno', 'una', 'e', 'o']);
+  const skip = new Set([
+    'a',
+    'di',
+    'da',
+    'in',
+    'su',
+    'con',
+    'per',
+    'il',
+    'lo',
+    'la',
+    'i',
+    'gli',
+    'le',
+    'un',
+    'uno',
+    'una',
+    'e',
+    'o',
+  ]);
   const content = tokens.find((token) => !skip.has(token.toLocaleLowerCase('it'))) ?? tokens[0];
   if (content) {
+    const primary = content.replace(/[.,;:!?]+$/g, '');
     return {
       promptEn: overlayPrompt.split(/\s+/).find((word) => word.length > 2) ?? overlayPrompt,
-      expectedIt: content.replace(/[.,;:!?]+$/g, ''),
-      acceptableAnswers: uniqueAnswers(overlayExpected, ...extras).filter(
-        (line) => line.toLocaleLowerCase('it') !== content.toLocaleLowerCase('it'),
-      ),
+      expectedIt: primary,
+      acceptableAnswers: filterA1WordModeAlternatives(primary, extras),
     };
   }
 
   return {
     promptEn: overlayPrompt,
     expectedIt: overlayExpected,
-    acceptableAnswers: uniqueAnswers(...extras),
+    acceptableAnswers: filterA1WordModeAlternatives(overlayExpected, extras),
   };
 }
 

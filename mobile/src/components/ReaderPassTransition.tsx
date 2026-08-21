@@ -9,6 +9,8 @@ type TransitionProps = {
   body: string;
   actionLabel: string;
   onAction: () => void;
+  skipLabel?: string;
+  onSkip?: () => void;
 };
 
 type CompleteProps = {
@@ -25,6 +27,8 @@ export function ReaderReadToListenTransition({
   body,
   actionLabel,
   onAction,
+  skipLabel,
+  onSkip,
 }: TransitionProps) {
   const { colors, type, minTouchTarget } = useTheme();
 
@@ -56,6 +60,22 @@ export function ReaderReadToListenTransition({
           ]}>
           <Text style={[type.button, { color: colors.onButtonPrimary }]}>{actionLabel}</Text>
         </Pressable>
+        {skipLabel && onSkip ? (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={skipLabel}
+            onPress={onSkip}
+            style={({ pressed }) => [
+              styles.secondaryBtn,
+              {
+                borderColor: colors.border,
+                opacity: pressed ? 0.88 : 1,
+                minHeight: minTouchTarget,
+              },
+            ]}>
+            <Text style={[type.button, { color: colors.textMuted }]}>{skipLabel}</Text>
+          </Pressable>
+        ) : null}
       </View>
     </View>
   );
@@ -123,5 +143,14 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.md,
     paddingHorizontal: Spacing.lg,
     borderRadius: Radii.md,
+  },
+  secondaryBtn: {
+    marginTop: Spacing.sm,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+    borderRadius: Radii.md,
+    borderWidth: StyleSheet.hairlineWidth,
   },
 });

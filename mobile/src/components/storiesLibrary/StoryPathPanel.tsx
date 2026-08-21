@@ -7,6 +7,7 @@ import {
   unlockHintForPathItem,
 } from '@/src/components/storiesLibrary/unlockHints';
 import { buildStoryPath, storyUsesLessonPath, type StoryPathItem } from '@/src/content/storyPath';
+import { LUCA_STORY_ID } from '@/src/content/catalog';
 import type { ChapterStatus } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
