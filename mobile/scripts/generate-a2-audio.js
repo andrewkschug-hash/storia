@@ -141,14 +141,20 @@ async function main() {
 
     const assets = result.assets ?? [];
     const batchErrors = result.errors ?? [];
-    for (const asset of assets) {
-      const key = asset.cacheKey || asset.id;
-      if (key && a1Keys.has(key)) {
-        skippedA1 += 1;
-        errors.push(`Refused to overwrite A1 cacheKey ${key} (${asset.contentId})`);
-        continue;
+    const returnedIds = new Set(assets.map((a) => a.contentId));
+    for (const payload of payloads) {
+      if (!returnedIds.has(payload.contentId)) {
+        failed += 1;
+        errors.push(`Missing returned asset for ${payload.contentId}`);
+      } else {
+        generated += 1;
       }
-      generated += 1;
+    }
+    for (const asset of assets) {
+      if (isA1ContentId(asset.contentId)) {
+        skippedA1 += 1;
+        errors.push(`Batch returned A1 contentId without alias: ${asset.contentId}`);
+      }
     }
     failed += batchErrors.length;
     for (const err of batchErrors) {
@@ -159,7 +165,7 @@ async function main() {
 
   console.log('\nDone');
   console.log(`  Assets kept: ${generated}`);
-  console.log(`  A1 overwrite refusals: ${skippedA1}`);
+  console.log(`  Unexpected A1 returns: ${skippedA1}`);
   console.log(`  Failures: ${failed}`);
   if (errors.length) {
     console.log('  First errors:');

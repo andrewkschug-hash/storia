@@ -367,6 +367,42 @@ function shouldReuseGeneratedAsset(
   return existing.status === 'approved' || existing.status === 'review_required';
 }
 
+/** Same audio bytes may map to multiple sentence contentIds (identical text+voice). */
+function ensureContentIdAlias(
+  assets: AudioAsset[],
+  existing: AudioAsset,
+  input: { contentId?: string; speakerId?: string },
+): AudioAsset {
+  if (!input.contentId || input.contentId === existing.contentId) return existing;
+
+  const byContent = assets.find((a) => a.contentId === input.contentId);
+  if (byContent) {
+    if (byContent.cacheKey === existing.cacheKey) return byContent;
+    byContent.cacheKey = existing.cacheKey;
+    byContent.audioUrl = existing.audioUrl;
+    byContent.voiceId = existing.voiceId;
+    byContent.provider = existing.provider;
+    byContent.text = existing.text;
+    byContent.textHash = existing.textHash;
+    byContent.speakerId = input.speakerId ?? byContent.speakerId;
+    byContent.status = 'approved';
+    byContent.approvedAt = new Date().toISOString();
+    return byContent;
+  }
+
+  const alias: AudioAsset = {
+    ...existing,
+    id: `${existing.cacheKey}::${input.contentId}`,
+    contentId: input.contentId,
+    speakerId: input.speakerId ?? existing.speakerId,
+    createdAt: new Date().toISOString(),
+    approvedAt: new Date().toISOString(),
+    status: 'approved',
+  };
+  assets.push(alias);
+  return alias;
+}
+
 async function generateOne(input: {
   text: string;
   voiceId: string;
@@ -391,8 +427,12 @@ async function generateOne(input: {
   const assets = loadAssets();
   const existing = assets.find((a) => a.cacheKey === cacheKey);
   if (shouldReuseGeneratedAsset(existing, input.regenerate) && existsSync(registry.audioPath(cacheKey))) {
+    const reused = ensureContentIdAlias(assets, existing!, {
+      contentId: input.contentId,
+      speakerId: input.speakerId,
+    });
     registry.save(assets);
-    return approveAsset(existing!);
+    return approveAsset(reused);
   }
 
   if (providerId === 'google' && !input.permitAlreadyOpen) {

@@ -12,7 +12,7 @@ function emptyVoice() {
 
 function normalizeRoster(raw) {
   const source = raw ?? {};
-  const ids = ['narrator', 'luca', 'sofia', 'marco', 'giulia', 'nonna-rosa', 'padrone'];
+  const ids = ['narrator', 'luca', 'sofia', 'marco', 'giulia', 'nonna-rosa', 'padrone', 'marta'];
   const logicalVoices = {};
   for (const id of ids) logicalVoices[id] = emptyVoice();
 
@@ -39,11 +39,19 @@ function normalizeRoster(raw) {
       ? source.activeProvider
       : 'elevenlabs';
 
+  const characters = {};
+  for (const id of Object.keys(logicalVoices)) {
+    characters[id] = { logicalVoiceId: source.characters?.[id]?.logicalVoiceId || id };
+  }
+  for (const id of ids) {
+    if (!characters[id]) characters[id] = { logicalVoiceId: id };
+  }
+
   return {
     activeProvider: active,
     generationVersion: source.generationVersion ?? 1,
     logicalVoices,
-    characters: Object.fromEntries(ids.map((id) => [id, { logicalVoiceId: source.characters?.[id]?.logicalVoiceId || id }])),
+    characters,
   };
 }
 

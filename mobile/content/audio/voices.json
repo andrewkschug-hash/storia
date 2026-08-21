@@ -106,6 +106,21 @@
           "voiceName": "Chirp3 HD Schedar"
         }
       }
+    },
+    "marta": {
+      "speakingStyle": "middle-aged Italian female, warm",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "elevenlabs": {
+          "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+          "voiceName": "Alice - Clear, Engaging Educator"
+        },
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Aoede",
+          "voiceName": "Chirp3 HD Aoede"
+        }
+      }
     }
   },
   "characters": {
@@ -129,6 +144,9 @@
     },
     "padrone": {
       "logicalVoiceId": "padrone"
+    },
+    "marta": {
+      "logicalVoiceId": "marta"
     }
   }
 }

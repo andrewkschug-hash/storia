@@ -14,7 +14,8 @@
     "luca",
     "sofia",
     "giulia",
-    "marco"
+    "marco",
+    "marta"
   ],
   "events": [
     {
@@ -22,6 +23,7 @@
       "summary": "Luca’s mother offers two months of bar work near home outside Rome; he understands and chooses to stay in Rome for now.",
       "characterIds": [
         "luca",
+        "marta",
         "sofia",
         "giulia",
         "marco"
@@ -81,14 +83,10 @@
         },
         {
           "id": "s03",
-          "text": "La mamma ha detto: c’è un posto in un bar vicino a casa.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "C’è un posto in un bar vicino a casa.",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
-            "la",
-            "mamma",
-            "avere",
-            "dire",
             "ce",
             "un",
             "posto",
@@ -103,8 +101,8 @@
         {
           "id": "s04",
           "text": "Un amico di famiglia cerca una persona. Il lavoro è per due mesi.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
             "un",
             "amico",
@@ -124,8 +122,8 @@
         {
           "id": "s05",
           "text": "Inizia il mese prossimo. Ci sono più soldi di adesso.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
             "iniziare",
             "il",
@@ -142,8 +140,8 @@
         {
           "id": "s06",
           "text": "Devi rispondere questa settimana. Se dici sì, parti e lasci Roma per un po’.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
             "dovere",
             "rispondere",
@@ -183,14 +181,10 @@
         },
         {
           "id": "s09",
-          "text": "Ha detto alla mamma: Ho capito. Devo pensare. Ti rispondo presto.",
+          "text": "Ho capito. Devo pensare. Ti rispondo presto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "avere",
-            "dire",
-            "alla",
-            "mamma",
             "avere",
             "capire",
             "dovere",
@@ -491,8 +485,8 @@
         {
           "id": "s24",
           "text": "Va bene. Se un giorno vuoi partire, mi dici. Il posto resta aperto.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
             "andare",
             "bene",

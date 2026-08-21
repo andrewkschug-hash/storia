@@ -19,6 +19,7 @@ export const ASSIGNABLE_CHARACTERS: { id: string; label: string }[] = [
   { id: 'giulia', label: 'Giulia' },
   { id: 'nonna-rosa', label: 'Nonna Rosa' },
   { id: 'padrone', label: 'Padrone' },
+  { id: 'marta', label: 'Marta' },
   { id: 'narrator', label: 'Narrator' },
 ];
 

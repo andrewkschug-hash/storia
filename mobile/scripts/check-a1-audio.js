@@ -18,7 +18,16 @@ const chaptersDir = path.join(storyPath, 'chapters');
 const voicesPath = path.join(contentRoot, 'audio', 'voices.json');
 const GATEWAY = process.env.EXPO_PUBLIC_TTS_GATEWAY_URL || 'http://127.0.0.1:8787';
 
-const REQUIRED_SPEAKERS = ['narrator', 'luca', 'sofia', 'marco', 'giulia', 'nonna-rosa', 'padrone'];
+const REQUIRED_SPEAKERS = [
+  'narrator',
+  'luca',
+  'sofia',
+  'marco',
+  'giulia',
+  'nonna-rosa',
+  'padrone',
+  'marta',
+];
 
 function loadJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));

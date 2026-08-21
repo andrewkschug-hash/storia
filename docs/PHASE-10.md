@@ -23,7 +23,7 @@ Tests & audits          vitest, validate-content.ts, a2/verify-production.ts
 | Range | Level | Status |
 |-------|-------|--------|
 | 1–20 | A1 | Stable; rebuild via `build-chapters.js` (preserves ch > 20) |
-| 21–24 | A1+ | **Frozen** — do not regenerate without `--force` |
+| 21–24 | A1+ | **Frozen** — no regeneration / rewrite; continuity-only repairs for named defects only |
 | 25–40 | A2 | Rewrite target (Blueprint v1); regenerate only via `a2/build.js --force` |
 
 ## Generator guards

@@ -15,6 +15,7 @@ export const LOGICAL_VOICE_IDS = [
   'giulia',
   'nonna-rosa',
   'padrone',
+  'marta',
 ] as const;
 
 export type LogicalVoiceId = (typeof LOGICAL_VOICE_IDS)[number];

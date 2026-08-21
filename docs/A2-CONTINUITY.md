@@ -12,6 +12,7 @@ Source of truth for chapters 21–40. Do not contradict A1.
 | giulia | Luca’s colleague at the café. Capable, wants to be taken seriously. | clear, bright female |
 | nonna-rosa | Sofia’s grandmother. Warm home, practical advice. Used when the group needs a quiet place or an older perspective. | older female |
 | padrone | Café owner. Direct. Gave Luca work starting “tomorrow” (ch. 9). Not a villain. | middle-aged male |
+| marta | Luca’s mother in Pietralba. Appears by phone (call home / future offer). | middle-aged female |
 
 ## Relationships
 
@@ -19,6 +20,7 @@ Source of truth for chapters 21–40. Do not contradict A1.
 - Luca–Giulia: coworkers since Luca’s first day (ch. 10).
 - Luca–Marco: met in ch. 11; Luca helped him go to his mother’s house.
 - Luca–Padrone: employer/employee.
+- Luca–Marta: mother/son; Sunday call (ch. 24); job-offer call (ch. 40).
 - Sofia–Nonna Rosa: granddaughter / grandmother.
 - Sofia–Marco: existing friends.
 
@@ -64,14 +66,14 @@ aspettare, cercare, trovare, arrivare, partire, tornare, incontrare, aiutare, de
 
 ## A2 arc (chapters 21–40)
 
-Throughline: the café has fewer customers; the owner may sell; friends organize a Saturday gathering; the café stays; Luca takes more hours; a letter asks about the future.
+Throughline: the café has fewer customers; the owner may sell; friends organize a Saturday gathering; the café stays; Luca takes more hours; a phone call from home asks about the future.
 
 | Ch | Beat |
 | --- | --- |
-| 21 | Luca’s work routine with Giulia |
+| 21 | Luca’s work routine with Giulia; talks with the owner |
 | 22 | Evening with Sofia as an equal friend |
-| 23 | Giulia wants more than serving coffee |
-| 24 | Call home; Luca stays in Rome |
+| 23 | Busy day; Luca and Giulia work as a team |
+| 24 | Call home (Mom); Luca stays in Rome |
 | 25 | Empty tables; rent worry |
 | 26 | Owner may sell or change the café |
 | 27 | Sofia thinks with Luca; visit Nonna |
@@ -87,7 +89,7 @@ Throughline: the café has fewer customers; the owner may sell; friends organize
 | 37 | Café stays; more hours offered |
 | 38 | Dinner with Sofia as equals |
 | 39 | Marco helps on busy days |
-| 40 | A letter; “Domani parliamo del futuro.” |
+| 40 | Mom’s job offer by phone; Luca stays in Rome for now |
 
 ## Continuity checklist (manual)
 

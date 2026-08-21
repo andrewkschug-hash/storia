@@ -12,6 +12,7 @@ export const LOGICAL_VOICE_IDS = [
   'giulia',
   'nonna-rosa',
   'padrone',
+  'marta',
 ] as const;
 
 export type ProviderBinding = { voiceId: string; voiceName?: string };

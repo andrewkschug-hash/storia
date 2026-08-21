@@ -149,7 +149,7 @@ Unchanged approved/review-required clips are not regenerated unless `regenerate:
 
 Persistent assignments live in `mobile/content/audio/voices.json`.
 
-Luca, Sofia, Marco, Giulia, Nonna Rosa, Narrator, and Padrone each have `provider`, `voiceId`, `language: it-IT`, and `speakingStyle`.
+Luca, Sofia, Marco, Giulia, Nonna Rosa, Padrone, Marta, and Narrator each have `provider`, `voiceId`, `language: it-IT`, and `speakingStyle`. Google Chirp3 HD is the production provider (`activeProvider: google`).
 
 `speakerId: null` resolves to `narrator`. A character's voice does not change between chapters unless an administrator edits the roster.
 

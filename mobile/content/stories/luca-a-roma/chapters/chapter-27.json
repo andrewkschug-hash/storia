@@ -691,15 +691,13 @@
         },
         {
           "id": "s39",
-          "text": "Giovedì io lavoro al caffè. Tu prepari le domande.",
+          "text": "Giovedì io lavoro. Tu prepari le domande.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
             "giovedi",
             "io",
             "lavorare",
-            "al",
-            "caffe",
             "tu",
             "preparare",
             "le",

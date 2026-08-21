@@ -12,7 +12,7 @@
   ],
   "characterIds": [
     "luca",
-    "nonna-rosa"
+    "marta"
   ],
   "events": [
     {
@@ -20,7 +20,7 @@
       "summary": "A quiet Sunday; Luca calls home and thinks about his new life.",
       "characterIds": [
         "luca",
-        "nonna-rosa"
+        "marta"
       ],
       "locationIds": [
         "appartamento-luca"
@@ -115,14 +115,14 @@
         },
         {
           "id": "s06",
-          "text": "Luca chiama Nonna Rosa.",
+          "text": "Luca chiama la mamma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "chiamare",
-            "nonna",
-            "rosa"
+            "la",
+            "mamma"
           ]
         }
       ]
@@ -134,7 +134,7 @@
         {
           "id": "s07",
           "text": "Pronto?",
-          "speakerId": "nonna-rosa",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "pronto"
@@ -142,12 +142,12 @@
         },
         {
           "id": "s08",
-          "text": "Ciao, Nonna. Sono Luca.",
+          "text": "Ciao, Mamma. Sono Luca.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "ciao",
-            "nonna",
+            "mamma",
             "essere",
             "luca"
           ]
@@ -155,7 +155,7 @@
         {
           "id": "s09",
           "text": "Ciao, Luca! Come stai?",
-          "speakerId": "nonna-rosa",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "ciao",
@@ -214,7 +214,7 @@
         {
           "id": "s13",
           "text": "Bene, Luca. Sono contenta.",
-          "speakerId": "nonna-rosa",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "bene",
@@ -226,7 +226,7 @@
         {
           "id": "s14",
           "text": "Hai amici a Roma?",
-          "speakerId": "nonna-rosa",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "avere",
@@ -264,12 +264,12 @@
         },
         {
           "id": "s17",
-          "text": "Nonna Rosa ascolta e sorride.",
+          "text": "La mamma ascolta e sorride.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "nonna",
-            "rosa",
+            "la",
+            "mamma",
             "ascoltare",
             "e",
             "sorridere"
@@ -277,14 +277,14 @@
         },
         {
           "id": "s18",
-          "text": "Ti voglio bene, Nonna.",
+          "text": "Ti voglio bene, Mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "ti",
             "volere",
             "bene",
-            "nonna"
+            "mamma"
           ]
         }
       ]
@@ -296,7 +296,7 @@
         {
           "id": "s19",
           "text": "Anche io ti voglio bene, Luca.",
-          "speakerId": "nonna-rosa",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "anche",
@@ -310,7 +310,7 @@
         {
           "id": "s20",
           "text": "Bene. La tua vita a Roma è bella.",
-          "speakerId": "nonna-rosa",
+          "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
             "bene",
@@ -494,12 +494,12 @@
         },
         {
           "id": "s33",
-          "text": "Nonna Rosa è contenta per Luca.",
+          "text": "La mamma è contenta per Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "nonna",
-            "rosa",
+            "la",
+            "mamma",
             "essere",
             "contento",
             "per",
@@ -555,15 +555,15 @@
         },
         {
           "id": "s37",
-          "text": "La chiamata con Nonna Rosa è importante.",
+          "text": "La chiamata con la mamma è importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "la",
             "chiamata",
             "con",
-            "nonna",
-            "rosa",
+            "la",
+            "mamma",
             "essere",
             "importante"
           ]
@@ -636,7 +636,7 @@
         "He leaves Rome on a train"
       ],
       "correctChoice": 0,
-      "explanation": "On domenica Luca does not work; he calls Nonna Rosa and stays home.",
+      "explanation": "On domenica Luca does not work; he calls his mother and stays home.",
       "difficulty": 2
     },
     {
@@ -645,12 +645,12 @@
       "type": "character",
       "question": "Who does Luca talk to on the phone?",
       "choices": [
-        "Nonna Rosa",
+        "His mother",
         "Marco",
         "The café owner"
       ],
       "correctChoice": 0,
-      "explanation": "Luca chiama Nonna Rosa and tells her about his life in Rome.",
+      "explanation": "Luca calls his mother and tells her about his life in Rome.",
       "difficulty": 2
     },
     {
@@ -664,7 +664,7 @@
         "He has no friends and no job"
       ],
       "correctChoice": 0,
-      "explanation": "Luca tells Nonna he is happy in Rome, has a home and a job, and later says Rome is home now.",
+      "explanation": "Luca tells Mom he is happy in Rome, has a home and a job, and later says Rome is home now.",
       "difficulty": 2
     }
   ]

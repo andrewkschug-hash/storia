@@ -98,7 +98,8 @@ describe('Voice Lab labels', () => {
 
   it('lists Padrone among the seven assignable logical voices', () => {
     expect(ASSIGNABLE_CHARACTERS.map((c) => c.label)).toContain('Padrone');
-    expect(ASSIGNABLE_CHARACTERS).toHaveLength(7);
+    expect(ASSIGNABLE_CHARACTERS.map((c) => c.label)).toContain('Marta');
+    expect(ASSIGNABLE_CHARACTERS).toHaveLength(8);
   });
 
   it('does not treat placeholder lab-* ids as locked voices', () => {

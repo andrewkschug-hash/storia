@@ -14,8 +14,7 @@
   "characterIds": [
     "luca",
     "giulia",
-    "padrone",
-    "marco"
+    "padrone"
   ],
   "events": [
     {
@@ -110,7 +109,7 @@
         },
         {
           "id": "s05",
-          "text": "Oggi Luca va al lavoro più presto perché deve parlare con Marco.",
+          "text": "Oggi Luca va al lavoro più presto perché vuole parlare con il padrone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -118,14 +117,15 @@
             "luca",
             "andare",
             "al",
-            "lavoro",
+            "lavorare",
             "piu",
             "presto",
             "perche",
-            "dovere",
+            "volere",
             "parlare",
             "con",
-            "marco"
+            "il",
+            "padrone"
           ]
         },
         {
@@ -637,12 +637,12 @@
       "question": "Why does Luca go to work early today?",
       "questionIt": "Perché Luca va al lavoro presto oggi?",
       "choices": [
-        "He must talk with Marco",
+        "He must talk with the owner",
         "He is leaving Rome",
         "The café is closed"
       ],
       "correctChoice": 0,
-      "explanation": "Luca goes early because he must speak with Marco (deve parlare con Marco).",
+      "explanation": "Luca goes early because he wants to speak with the owner (parlare con il padrone).",
       "difficulty": 2
     },
     {

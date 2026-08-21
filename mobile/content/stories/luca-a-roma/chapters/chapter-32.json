@@ -154,7 +154,7 @@
         },
         {
           "id": "s07",
-          "text": "Il padrone ascoltava da vicino e non sorridiva.",
+          "text": "Il padrone ascoltava da vicino e non sorridiva. Guardava i tavoli vuoti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -165,19 +165,19 @@
             "vicino",
             "e",
             "non",
-            "sorridere"
+            "sorridere",
+            "guardare",
+            "i",
+            "tavolo",
+            "vuoto"
           ]
         },
         {
           "id": "s08",
-          "text": "Guardava i tavoli vuoti. Io sono stanco. Una festa è bella.",
+          "text": "Io sono stanco. Una festa è bella.",
           "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
-            "guardare",
-            "i",
-            "tavolo",
-            "vuoto",
             "io",
             "essere",
             "stanco",
@@ -397,22 +397,14 @@
         },
         {
           "id": "s20",
-          "text": "Adesso non posso decidere. Giulia ha accettato, ma per lei era importante.",
+          "text": "Adesso non posso decidere.",
           "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
             "adesso",
             "non",
             "potere",
-            "decidere",
-            "giulia",
-            "avere",
-            "accettare",
-            "ma",
-            "per",
-            "lei",
-            "essere",
-            "importante"
+            "decidere"
           ]
         },
         {
@@ -466,14 +458,22 @@
         },
         {
           "id": "s23",
-          "text": "Se resta, voglio ore. Il padrone è tornato in cucina senza altre parole.",
+          "text": "Se resta, voglio ore.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
             "se",
             "restare",
             "volere",
-            "ora",
+            "ora"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Il padrone è tornato in cucina senza altre parole. Luca ha pensato all’affitto e alle ore di Giulia. Giulia ha accettato, ma per lei era importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "il",
             "padrone",
             "essere",
@@ -482,15 +482,7 @@
             "cucina",
             "senza",
             "altro",
-            "parola"
-          ]
-        },
-        {
-          "id": "s24",
-          "text": "Luca ha pensato all’affitto e alle ore di Giulia.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "parola",
             "luca",
             "avere",
             "pensare",
@@ -499,7 +491,15 @@
             "alle",
             "ora",
             "di",
-            "giulia"
+            "giulia",
+            "giulia",
+            "avere",
+            "accettare",
+            "ma",
+            "per",
+            "lei",
+            "essere",
+            "importante"
           ]
         }
       ]
@@ -832,29 +832,29 @@
         },
         {
           "id": "s42",
-          "text": "Ti dico quando so. Dopo la chiamata Luca ha pensato all’affitto.",
+          "text": "Ti dico quando so.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
             "ti",
             "dire",
             "quando",
-            "sapere",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Dopo la chiamata Luca ha pensato all’affitto. Se sabato non funzionava, il futuro del lavoro era difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "dopo",
             "la",
             "chiamata",
             "luca",
             "avere",
             "pensare",
-            "affitto"
-          ]
-        },
-        {
-          "id": "s43",
-          "text": "Se sabato non funzionava, il futuro del lavoro era difficile.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "affitto",
             "se",
             "sabato",
             "non",

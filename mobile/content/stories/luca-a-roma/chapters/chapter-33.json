@@ -300,7 +300,7 @@
         },
         {
           "id": "s15",
-          "text": "Lo cerchiamo ancora un po’. Poi dobbiamo tornare al lavoro. Hanno camminato insieme.",
+          "text": "Lo cerchiamo ancora un po’. Poi dobbiamo tornare al lavoro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -313,18 +313,18 @@
             "dovere",
             "tornare",
             "al",
-            "lavorare",
-            "avere",
-            "camminare",
-            "insieme"
+            "lavorare"
           ]
         },
         {
           "id": "s16",
-          "text": "Dopo un’ora hanno visto Marco vicino a un ufficio piccolo.",
+          "text": "Hanno camminato insieme. Dopo un’ora hanno visto Marco vicino a un ufficio piccolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "avere",
+            "camminare",
+            "insieme",
             "dopo",
             "ora",
             "avere",
@@ -538,7 +538,7 @@
         },
         {
           "id": "s27",
-          "text": "Non lo so ancora. Se c’è una chiamata, non posso dire di no.",
+          "text": "Non lo so ancora. Se c’è una chiamata, non posso dire di no. Ho bisogno di soldi.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
@@ -554,7 +554,11 @@
             "potere",
             "dire",
             "di",
-            "no"
+            "no",
+            "avere",
+            "bisogno",
+            "di",
+            "soldi"
           ],
           "phrases": [
             {
@@ -568,14 +572,10 @@
         },
         {
           "id": "s28",
-          "text": "Ho bisogno di soldi. Capisco. Tu hai ragione a cercare lavoro.",
-          "speakerId": "marco",
+          "text": "Capisco. Tu hai ragione a cercare lavoro.",
+          "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "avere",
-            "bisogno",
-            "di",
-            "soldi",
             "capire",
             "tu",
             "avere",
@@ -587,7 +587,7 @@
         },
         {
           "id": "s29",
-          "text": "Voglio aiutare sabato. Non posso dire sì su tutto l’orario.",
+          "text": "Voglio aiutare sabato. Non posso dire sì su tutto l’orario. Ti dico quando so.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
@@ -600,19 +600,19 @@
             "si_yes",
             "su",
             "tutto",
-            "orario"
+            "orario",
+            "ti",
+            "dire",
+            "quando",
+            "sapere"
           ]
         },
         {
           "id": "s30",
-          "text": "Ti dico quando so. Sofia ha guardato Luca senza chiudere il problema.",
+          "text": "Sofia ha guardato Luca senza chiudere il problema.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ti",
-            "dire",
-            "quando",
-            "sapere",
             "sofia",
             "avere",
             "guardare",
