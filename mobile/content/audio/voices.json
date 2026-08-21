@@ -1,6 +1,14 @@
 {
   "activeProvider": "google",
   "generationVersion": 1,
+  "catalogFreeze": {
+    "id": "AUDIO-CATALOG-v1",
+    "range": "luca-a-roma chapters 1–24",
+    "status": "frozen",
+    "provider": "google",
+    "reviewed": "2026-08-21",
+    "note": "Do not regenerate or re-package Ch 1–24 unless a pronunciation or content defect is found. Ch 25–40 audio waits for Phase 10 text lock."
+  },
   "logicalVoices": {
     "narrator": {
       "speakingStyle": "clear Italian narrative",

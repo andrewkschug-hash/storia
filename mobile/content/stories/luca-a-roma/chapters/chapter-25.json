@@ -39,40 +39,41 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Lunedì mattina il caffè è diverso dal solito.",
+          "text": "Lunedì mattina Luca torna al lavoro dopo la domenica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "lunedi",
             "mattina",
-            "il",
-            "caffe",
-            "essere",
-            "diverso",
-            "dal",
-            "solito"
+            "luca",
+            "tornare",
+            "al",
+            "lavorare",
+            "dopo",
+            "la",
+            "domenica"
           ]
         },
         {
           "id": "s02",
-          "text": "Ci sono meno clienti e la sala è tranquilla.",
+          "text": "Il quartiere è tranquillo e il tempo è bello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ci",
+            "il",
+            "quartiere",
             "essere",
-            "meno",
-            "cliente",
+            "tranquillo",
             "e",
-            "la",
-            "sala",
+            "il",
+            "tempo",
             "essere",
-            "tranquillo"
+            "bello"
           ]
         },
         {
           "id": "s03",
-          "text": "Luca conosce bene il caffè, ma oggi tutto è diverso.",
+          "text": "Luca conosce bene il caffè, ma oggi qualcosa è diverso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -83,13 +84,79 @@
             "caffe",
             "ma",
             "oggi",
-            "tutto",
+            "qualcosa",
             "essere",
             "diverso"
           ]
         },
         {
           "id": "s04",
+          "text": "La sala è più tranquilla del solito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sala",
+            "essere",
+            "piu",
+            "tranquillo",
+            "del",
+            "solito"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ci sono meno clienti. I tavoli sono pronti, ma sono vuoti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "meno",
+            "cliente",
+            "i",
+            "tavolo",
+            "essere",
+            "pronto",
+            "ma",
+            "essere",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca aspetta vicino alla porta. Quasi nessuno entra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "aspettare",
+            "vicino",
+            "alla",
+            "porta",
+            "quasi",
+            "nessuno",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Guarda i tavoli vuoti e la strada fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "i",
+            "tavolo",
+            "vuoto",
+            "e",
+            "la",
+            "strada",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s08",
           "text": "Luca è arrivato presto.",
           "speakerId": null,
           "kind": "narration",
@@ -99,14 +166,19 @@
             "arrivare",
             "presto"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
         {
-          "id": "s05",
-          "text": "Poi ha aperto la porta e ha preparato i tavoli con calma.",
+          "id": "s09",
+          "text": "Ha aperto la porta e ha preparato i tavoli con calma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "poi",
             "avere",
             "aprire",
             "la",
@@ -121,62 +193,7 @@
           ]
         },
         {
-          "id": "s06",
-          "text": "Ora guarda la sala e i tavoli vuoti.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "ora",
-            "guardare",
-            "la",
-            "sala",
-            "e",
-            "i",
-            "tavolo",
-            "vuoto"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Aspetta vicino alla porta, ma quasi nessuno entra.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "aspettare",
-            "vicino",
-            "alla",
-            "porta",
-            "ma",
-            "quasi",
-            "nessuno",
-            "entrare"
-          ]
-        },
-        {
-          "id": "s08",
-          "text": "I tavoli sono pronti, ma la sala resta vuota.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "i",
-            "tavolo",
-            "essere",
-            "pronto",
-            "ma",
-            "la",
-            "sala",
-            "restare",
-            "vuoto"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
-        {
-          "id": "s09",
+          "id": "s10",
           "text": "Sono entrati pochi clienti.",
           "speakerId": null,
           "kind": "narration",
@@ -188,8 +205,8 @@
           ]
         },
         {
-          "id": "s10",
-          "text": "Luca ha servito caffè e acqua al primo cliente.",
+          "id": "s11",
+          "text": "Luca ha servito caffè e acqua al primo cliente. Giulia ha guardato i tavoli e non ha sorriso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -201,15 +218,7 @@
             "acqua",
             "al",
             "primo",
-            "cliente"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Giulia ha guardato i tavoli e non ha sorriso.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "cliente",
             "giulia",
             "avere",
             "guardare",

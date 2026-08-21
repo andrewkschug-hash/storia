@@ -67,6 +67,12 @@ describe('speak scene milestones', () => {
     expect(scene24?.lines).toHaveLength(5);
     expect(scene24?.lines[2]?.en).toBe("He tells her he's doing well.");
     expect(scene24?.lines[4]?.en).toBe('Rome feels like home now.');
+    const scene27 = getSpeakSceneForBatch(LUCA_STORY_ID, 27);
+    expect(scene27?.id).toBe('luca-a-roma-speak-27');
+    expect(scene27?.sourceRange).toEqual({ start: 25, end: 27 });
+    expect(scene27?.lines).toHaveLength(5);
+    expect(scene27?.title).toBe('Sofia’s Opinion');
+    expect(scene27?.lines[3]?.en).toMatch(/[Ff]ear/);
     const scene40 = getSpeakSceneForBatch(LUCA_STORY_ID, 40);
     expect(scene40?.id).toBe('luca-a-roma-speak-40');
     expect(scene40?.sourceRange).toEqual({ start: 36, end: 40 });

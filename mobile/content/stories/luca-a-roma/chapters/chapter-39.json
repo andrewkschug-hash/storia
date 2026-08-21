@@ -14,7 +14,8 @@
     "marco",
     "giulia",
     "sofia",
-    "padrone"
+    "padrone",
+    "marta"
   ],
   "events": [
     {
@@ -895,8 +896,8 @@
         {
           "id": "s45",
           "text": "Ti chiamo domani. Ho una proposta di lavoro. Non è a Roma.",
-          "speakerId": null,
-          "kind": "narration",
+          "speakerId": "marta",
+          "kind": "dialogue",
           "lemmas": [
             "ti",
             "chiamare",

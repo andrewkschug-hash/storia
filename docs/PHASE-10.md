@@ -22,9 +22,9 @@ Tests & audits          vitest, validate-content.ts, a2/verify-production.ts
 
 | Range | Level | Status |
 |-------|-------|--------|
-| 1–20 | A1 | Stable; rebuild via `build-chapters.js` (preserves ch > 20) |
-| 21–24 | A1+ | **Frozen** — no regeneration / rewrite; continuity-only repairs for named defects only |
-| 25–40 | A2 | Rewrite target (Blueprint v1); regenerate only via `a2/build.js --force` |
+| 1–20 | A1 | Stable; rebuild via `build-chapters.js` (preserves ch > 20). **Audio catalog v1 frozen** (Chirp3). |
+| 21–24 | A1+ | **Frozen** prose — no regeneration / rewrite; continuity-only repairs for named defects only. **Audio catalog v1 frozen** (Chirp3). |
+| 25–40 | A2 | Rewrite target (Blueprint v1); regenerate only via `a2/build.js --force`. **No audio until text lock.** |
 
 ## Generator guards
 
@@ -37,9 +37,9 @@ Tests & audits          vitest, validate-content.ts, a2/verify-production.ts
 ## Execution order
 
 1. **10A** — SOT, guards, artifact reconciliation (no ch 21–24 prose)
-2. **10C** — Rewrite ch 25–30 (grammar staircase), then targeted 31–40 edits
-3. **Text lock** — full A2 audit
-4. **Phase 11** — A2 audio
+2. **10C** — Rewrite ch 25–30 (grammar staircase), then targeted 31–40 edits — **staircase + Speak-27 + Ch39/40 MINOR applied (2026-08-21); human read-through / text lock still open**
+3. **Text lock** — full A2 audit + human read-through
+4. **Phase 11** — A2 audio (same Chirp3 roster as frozen Ch 1–24; do not touch 1–24 assets)
 
 Do **not** start Chapter 25 prose until 10A verifies green.
 

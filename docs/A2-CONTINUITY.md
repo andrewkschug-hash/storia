@@ -80,7 +80,7 @@ Throughline: the café has fewer customers; the owner may sell; friends organize
 | 28 | Marco still needs work (ticket crisis is over) |
 | 29 | Nonna’s Saturday idea |
 | 30 | Owner lets them try |
-| 31 | Messages, bread, a forgotten detail |
+| 31 | Messages, roles, pane cost; soft RSVPs |
 | 32 | Few replies; Giulia wants more hours |
 | 33 | Marco is late (a job talk) |
 | 34 | Saturday morning prep |
@@ -104,3 +104,7 @@ Throughline: the café has fewer customers; the owner may sell; friends organize
 - [x] No new protagonist
 - [x] Chapters 1–20 were not rewritten
 - [x] Audio for A2 is not generated yet (review first)
+- [x] Ch 25–30 grammar staircase repaired (PP on-ramp → sequencing → imp recognition → contrast → context → established)
+- [x] Speak-27 opinion scene authored
+- [ ] Ch 25–40 human read-through + text lock
+- [ ] Phase 11 A2 audio (after text lock)

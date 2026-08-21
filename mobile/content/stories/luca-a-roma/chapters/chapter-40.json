@@ -160,6 +160,23 @@
           ]
         },
         {
+          "id": "s07",
+          "text": "La proposta è chiara. Luca deve scegliere con calma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "proposta",
+            "essere",
+            "chiaro",
+            "luca",
+            "dovere",
+            "scegliere",
+            "con",
+            "calma"
+          ]
+        },
+        {
           "id": "s08",
           "text": "Un lavoro vero, in un’altra città, vicino alla famiglia, per due mesi.",
           "speakerId": null,
@@ -759,6 +776,25 @@
           ]
         },
         {
+          "id": "s36",
+          "text": "Gli amici sono qui. Non c’è una festa, solo una scelta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "gli",
+            "amico",
+            "essere",
+            "qui",
+            "non",
+            "ce",
+            "una",
+            "festa",
+            "solo",
+            "una",
+            "scegliere"
+          ]
+        },
+        {
           "id": "s37",
           "text": "Domani apriamo di mattina. L’orario è pronto. Niente di speciale.",
           "speakerId": "giulia",
@@ -796,6 +832,24 @@
             "andare",
             "a",
             "casa"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Luca resta con il gruppo. Il piano del caffè continua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "restare",
+            "con",
+            "il",
+            "gruppo",
+            "il",
+            "piano",
+            "del",
+            "caffe",
+            "continuare"
           ]
         },
         {
@@ -933,6 +987,23 @@
           ]
         },
         {
+          "id": "s46",
+          "text": "Il lavoro di ogni giorno è chiaro e importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "lavorare",
+            "di",
+            "ogni",
+            "giorno",
+            "essere",
+            "chiaro",
+            "e",
+            "importante"
+          ]
+        },
+        {
           "id": "s47",
           "text": "Oggi lavoriamo. Domani anche. Questo è il lavoro, per adesso.",
           "speakerId": "giulia",
@@ -980,6 +1051,25 @@
             "caffe",
             "essere",
             "pronto"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Luca guarda i tavoli e pensa: per adesso questa è casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "guardare",
+            "i",
+            "tavolo",
+            "e",
+            "pensare",
+            "per",
+            "adesso",
+            "questo",
+            "essere",
+            "casa"
           ]
         },
         {

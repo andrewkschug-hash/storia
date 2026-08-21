@@ -20,8 +20,11 @@ describe('bundled A1 audio assets', () => {
   it('keeps a Metro require loader for every packaged catalog asset', () => {
     const source = fs.readFileSync(path.join(__dirname, '../bundledAssets.ts'), 'utf8');
     for (const asset of catalogJson.assets ?? []) {
-      expect(source).toContain(`'${asset.id}'`);
-      expect(source).toContain(`./media/${asset.id}.mp3`);
+      const file = path.basename(asset.audioUrl || '');
+      const key = file.replace(/\.mp3$/i, '');
+      expect(file).toMatch(/^tts_[a-f0-9]+\.mp3$/i);
+      expect(source).toContain(`'${key}'`);
+      expect(source).toContain(`./media/${file}`);
     }
   });
 

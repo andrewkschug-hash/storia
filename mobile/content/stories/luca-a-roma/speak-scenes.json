@@ -278,6 +278,79 @@
       ]
     },
     {
+      "id": "luca-a-roma-speak-27",
+      "storyId": "luca-a-roma",
+      "batchEnd": 27,
+      "title": "Sofia’s Opinion",
+      "summaryEn": "Sofia helps Luca separate fear from facts about the café, and they plan a small next step.",
+      "sourceRange": {
+        "start": 25,
+        "end": 27
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-27-l01",
+          "en": "The owner might sell the café, or change everything.",
+          "it": "Il padrone forse vende il caffè. O cambia tutto.",
+          "sourceChapterId": "luca-a-roma-27",
+          "sourceSentenceId": "s06",
+          "acceptableAnswers": [
+            "Il padrone forse vende il caffè.",
+            "Forse vende il caffè.",
+            "Il padrone forse cambia tutto."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-27-l02",
+          "en": "We know there are few customers. You saw it.",
+          "it": "Sappiamo che i clienti sono pochi. Tu l’hai visto.",
+          "sourceChapterId": "luca-a-roma-27",
+          "sourceSentenceId": "s17",
+          "acceptableAnswers": [
+            "Sappiamo che i clienti sono pochi.",
+            "I clienti sono pochi.",
+            "Tu l’hai visto."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-27-l03",
+          "en": "We don’t know if he is selling. He hasn’t decided.",
+          "it": "Non sappiamo se vende. Non ha deciso.",
+          "sourceChapterId": "luca-a-roma-27",
+          "sourceSentenceId": "s18",
+          "acceptableAnswers": [
+            "Non sappiamo se vende.",
+            "Non ha deciso.",
+            "Non sappiamo se vende. Non ha deciso."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-27-l04",
+          "en": "Fear isn’t a plan.",
+          "it": "La paura c’è. Ma non è un piano.",
+          "sourceChapterId": "luca-a-roma-27",
+          "sourceSentenceId": "s21",
+          "acceptableAnswers": [
+            "La paura non è un piano.",
+            "Non è un piano.",
+            "La paura c’è. Ma non è un piano."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-27-l05",
+          "en": "Let’s go to Nonna Rosa. Maybe she has an idea.",
+          "it": "Andiamo da Nonna Rosa. Magari lei ha un’idea.",
+          "sourceChapterId": "luca-a-roma-27",
+          "sourceSentenceId": "s34",
+          "acceptableAnswers": [
+            "Andiamo da Nonna Rosa.",
+            "Magari lei ha un’idea.",
+            "Andiamo da Nonna Rosa. Magari lei ha un’idea."
+          ]
+        }
+      ]
+    },
+    {
       "id": "luca-a-roma-speak-30",
       "storyId": "luca-a-roma",
       "batchEnd": 30,

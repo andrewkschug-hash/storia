@@ -4,6 +4,19 @@ Italian audio is pregenerated, reviewed, and stored. The reader never calls a TT
 
 Primary loop: **READ → HEAR → UNDERSTAND → CONTINUE**. Reading stays primary. Audio is optional support.
 
+## AUDIO CATALOG v1 — Ch. 1–24 FROZEN
+
+| Field | Value |
+|-------|--------|
+| Status | **Frozen** (human listen pass approved 2026-08-21) |
+| Provider | Google Chirp3 HD |
+| Story range | Luca a Roma chapters **1–24** (A1 + A1+) |
+| Roster | Narrator Enceladus, Luca Achird, Sofia Leda, Marco Fenrir, Giulia Laomedeia, Nonna Rosa Gacrux, Padrone Schedar, Marta Aoede |
+
+Do **not** regenerate, re-package, or swap voices for Ch. 1–24 unless a real pronunciation or content defect is found. Ch. **25–40** audio waits for Phase 10 text lock, then uses the same eight-voice Chirp3 roster.
+
+See `mobile/content/audio/voices.json` → `catalogFreeze`.
+
 ## Beginner setup (start here)
 
 You do **not** need ElevenLabs / Azure / Google voice IDs. Voice Lab shows names like “Antonio”.

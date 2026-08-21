@@ -179,7 +179,7 @@
         },
         {
           "id": "s10",
-          "text": "Poi hanno camminato un po’ nella strada.",
+          "text": "Poi hanno camminato un po’ nella strada. Il quartiere era tranquillo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -189,7 +189,11 @@
             "un",
             "poco",
             "nella",
-            "strada"
+            "strada",
+            "il",
+            "quartiere",
+            "essere",
+            "tranquillo"
           ]
         },
         {
