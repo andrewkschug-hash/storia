@@ -10,8 +10,8 @@
       "relationships": ["Daughter of Anna and Papà", "Guest of Elsa", "Peer of Neri"],
       "knownLocationIds": ["treno-halt", "collevento-strada", "locanda-elsa", "piazza-collevento", "cucina-trento"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Zephyr",
         "language": "it-IT",
         "speakingStyle": "teenage Italian female, quiet anger, precise when scared"
       }
@@ -26,8 +26,8 @@
       "relationships": ["Knew Anna Rinaldi", "Works with Tullio on village rules"],
       "knownLocationIds": ["locanda-elsa", "piazza-collevento", "collevento-strada"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Vindemiatrix",
         "language": "it-IT",
         "speakingStyle": "older Italian female, warm then sharp when the ritual is threatened"
       }
@@ -42,8 +42,8 @@
       "relationships": ["Knows the sluice clock", "Nods when Giada leaves at dawn"],
       "knownLocationIds": ["strada-diga", "piazza-collevento", "edificio-idroelettrico"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Sadachbia",
         "language": "it-IT",
         "speakingStyle": "older Italian male, flat, timed like a clock"
       }
@@ -58,8 +58,8 @@
       "relationships": ["Born in Collevento", "Wants a ride out"],
       "knownLocationIds": ["piazza-collevento", "collevento-strada", "bosco-recinto", "campo-segnale"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Iapetus",
         "language": "it-IT",
         "speakingStyle": "teenage Italian male, restless, English songs under his breath"
       }
@@ -74,8 +74,8 @@
       "relationships": ["Mother of Giada", "Former guest of Elsa"],
       "knownLocationIds": ["locanda-elsa"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Autonoe",
         "language": "it-IT",
         "speakingStyle": "adult Italian female, careful, then blunt about water after eight"
       }
@@ -90,8 +90,8 @@
       "relationships": ["Represents the dam project"],
       "knownLocationIds": ["piazza-collevento", "strada-diga", "edificio-idroelettrico"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Rasalgethi",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian male, polite, eviction with a smile"
       }
@@ -106,8 +106,8 @@
       "relationships": ["Father of Giada"],
       "knownLocationIds": ["cucina-trento"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Sadaltager",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian male, practical, not dramatic"
       }

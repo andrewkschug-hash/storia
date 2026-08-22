@@ -10,8 +10,8 @@
       "relationships": ["Daughter of Mirella", "Works with Katia under Bruna", "Knows Pietro as the Tuesday driver"],
       "knownLocationIds": ["caffe-brenta", "bancone-brenta", "scaffale-libro", "cucina-mirella", "marina-di-brenta"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Callirrhoe",
         "language": "it-IT",
         "speakingStyle": "adult Italian female, warm at the counter, careful when honest"
       }
@@ -26,8 +26,8 @@
       "relationships": ["Brother of Sergio", "Delivers to Caffè Brenta", "Writes in Bruna's book"],
       "knownLocationIds": ["caffe-brenta", "van-pietro", "ospedale-esterno", "magazzino-caffe"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Orus",
         "language": "it-IT",
         "speakingStyle": "adult Italian male, quiet, hesitant when feelings are real"
       }
@@ -42,8 +42,8 @@
       "relationships": ["Employer of Elena and Katia", "Guardian of the book"],
       "knownLocationIds": ["caffe-brenta", "bancone-brenta", "scaffale-libro", "magazzino-caffe"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Kore",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian female, firm, briefly soft"
       }
@@ -58,8 +58,8 @@
       "relationships": ["Works with Elena", "Sees Pietro and the shelf"],
       "knownLocationIds": ["caffe-brenta", "bancone-brenta"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Pulcherrima",
         "language": "it-IT",
         "speakingStyle": "young adult Italian female, dry, observant"
       }
@@ -74,8 +74,8 @@
       "relationships": ["Mother of Elena"],
       "knownLocationIds": ["cucina-mirella", "marina-di-brenta"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Sulafat",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian female, practical, a little insistent"
       }
@@ -90,8 +90,8 @@
       "relationships": ["Brother of Pietro"],
       "knownLocationIds": ["ospedale-esterno"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Alnilam",
         "language": "it-IT",
         "speakingStyle": "adult Italian male, tired, brief"
       }

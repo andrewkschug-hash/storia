@@ -138,6 +138,226 @@
           "voiceName": "Chirp3 HD Aoede"
         }
       }
+    },
+    "irene-colombo": {
+      "speakingStyle": "adult Italian female, measured, archivist",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Achernar",
+          "voiceName": "Chirp3 HD Achernar"
+        }
+      }
+    },
+    "loredana": {
+      "speakingStyle": "middle-aged Italian female, careful, defensive",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Autonoe",
+          "voiceName": "Chirp3 HD Autonoe"
+        }
+      }
+    },
+    "alme": {
+      "speakingStyle": "middle-aged Italian female, formal director",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Despina",
+          "voiceName": "Chirp3 HD Despina"
+        }
+      }
+    },
+    "quinto-belli": {
+      "speakingStyle": "older Italian male, quiet custodian",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Algenib",
+          "voiceName": "Chirp3 HD Algenib"
+        }
+      }
+    },
+    "mimmo": {
+      "speakingStyle": "young Italian male, playful skater",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Puck",
+          "voiceName": "Chirp3 HD Puck"
+        }
+      }
+    },
+    "sara-neri": {
+      "speakingStyle": "adult Italian female, urgent, quiet ex-teacher",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Erinome",
+          "voiceName": "Chirp3 HD Erinome"
+        }
+      }
+    },
+    "piva": {
+      "speakingStyle": "middle-aged Italian male, formal marshal",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Charon",
+          "voiceName": "Chirp3 HD Charon"
+        }
+      }
+    },
+    "elena-marini": {
+      "speakingStyle": "adult Italian female, warm at counter, careful",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Callirrhoe",
+          "voiceName": "Chirp3 HD Callirrhoe"
+        }
+      }
+    },
+    "pietro-baldo": {
+      "speakingStyle": "adult Italian male, quiet, hesitant when feelings are real",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Orus",
+          "voiceName": "Chirp3 HD Orus"
+        }
+      }
+    },
+    "bruna": {
+      "speakingStyle": "middle-aged Italian female, firm, seasoned cafe owner",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Kore",
+          "voiceName": "Chirp3 HD Kore"
+        }
+      }
+    },
+    "katia": {
+      "speakingStyle": "young adult Italian female, dry, observant barista",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Pulcherrima",
+          "voiceName": "Chirp3 HD Pulcherrima"
+        }
+      }
+    },
+    "mirella-marini": {
+      "speakingStyle": "middle-aged Italian female, practical, mother",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Sulafat",
+          "voiceName": "Chirp3 HD Sulafat"
+        }
+      }
+    },
+    "sergio-baldo": {
+      "speakingStyle": "adult Italian male, tired, brief brother",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Alnilam",
+          "voiceName": "Chirp3 HD Alnilam"
+        }
+      }
+    },
+    "giada-rinaldi": {
+      "speakingStyle": "teenage Italian female, quiet anger, precise",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Zephyr",
+          "voiceName": "Chirp3 HD Zephyr"
+        }
+      }
+    },
+    "elsa": {
+      "speakingStyle": "older Italian female, warm then sharp innkeeper",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Vindemiatrix",
+          "voiceName": "Chirp3 HD Vindemiatrix"
+        }
+      }
+    },
+    "tullio": {
+      "speakingStyle": "older Italian male, flat, timed like a clock",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Sadachbia",
+          "voiceName": "Chirp3 HD Sadachbia"
+        }
+      }
+    },
+    "neri": {
+      "speakingStyle": "teenage Italian male, restless youth",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Iapetus",
+          "voiceName": "Chirp3 HD Iapetus"
+        }
+      }
+    },
+    "anna-rinaldi": {
+      "speakingStyle": "adult Italian female, mother on phone, direct",
+      "language": "it-IT",
+      "gender": "female",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Autonoe",
+          "voiceName": "Chirp3 HD Autonoe"
+        }
+      }
+    },
+    "ingegnere": {
+      "speakingStyle": "middle-aged Italian male, polite bureaucratic company man",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Rasalgethi",
+          "voiceName": "Chirp3 HD Rasalgethi"
+        }
+      }
+    },
+    "papa-rinaldi": {
+      "speakingStyle": "middle-aged Italian male, practical father in Trento",
+      "language": "it-IT",
+      "gender": "male",
+      "providers": {
+        "google": {
+          "voiceId": "it-IT-Chirp3-HD-Sadaltager",
+          "voiceName": "Chirp3 HD Sadaltager"
+        }
+      }
     }
   },
   "characters": {
@@ -164,6 +384,66 @@
     },
     "marta": {
       "logicalVoiceId": "marta"
+    },
+    "irene-colombo": {
+      "logicalVoiceId": "irene-colombo"
+    },
+    "loredana": {
+      "logicalVoiceId": "loredana"
+    },
+    "alme": {
+      "logicalVoiceId": "alme"
+    },
+    "quinto-belli": {
+      "logicalVoiceId": "quinto-belli"
+    },
+    "mimmo": {
+      "logicalVoiceId": "mimmo"
+    },
+    "sara-neri": {
+      "logicalVoiceId": "sara-neri"
+    },
+    "piva": {
+      "logicalVoiceId": "piva"
+    },
+    "elena-marini": {
+      "logicalVoiceId": "elena-marini"
+    },
+    "pietro-baldo": {
+      "logicalVoiceId": "pietro-baldo"
+    },
+    "bruna": {
+      "logicalVoiceId": "bruna"
+    },
+    "katia": {
+      "logicalVoiceId": "katia"
+    },
+    "mirella-marini": {
+      "logicalVoiceId": "mirella-marini"
+    },
+    "sergio-baldo": {
+      "logicalVoiceId": "sergio-baldo"
+    },
+    "giada-rinaldi": {
+      "logicalVoiceId": "giada-rinaldi"
+    },
+    "elsa": {
+      "logicalVoiceId": "elsa"
+    },
+    "tullio": {
+      "logicalVoiceId": "tullio"
+    },
+    "neri": {
+      "logicalVoiceId": "neri"
+    },
+    "anna-rinaldi": {
+      "logicalVoiceId": "anna-rinaldi"
+    },
+    "ingegnere": {
+      "logicalVoiceId": "ingegnere"
+    },
+    "papa-rinaldi": {
+      "logicalVoiceId": "papa-rinaldi"
     }
   }
 }

@@ -3,7 +3,11 @@ import { homedir } from 'node:os';
 import { join } from 'node:path';
 
 export function envPath(): string {
-  return join(process.cwd(), '.env');
+  const local = join(process.cwd(), '.env');
+  if (existsSync(local)) return local;
+  const sub = join(process.cwd(), 'services', 'tts-gateway', '.env');
+  if (existsSync(sub)) return sub;
+  return local;
 }
 
 /** Load services/tts-gateway/.env into process.env without overriding real env vars. */

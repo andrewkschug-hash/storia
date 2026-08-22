@@ -10,8 +10,8 @@
       "relationships": ["Tenant of Loredana", "Works under Dottoressa Alme"],
       "knownLocationIds": ["mansarda-irene", "via-della-scuola", "comune", "ufficio-alme"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Achernar",
         "language": "it-IT",
         "speakingStyle": "adult Italian female, measured"
       }
@@ -26,8 +26,8 @@
       "relationships": ["Landlady of Irene", "Mother of a daughter from the last class"],
       "knownLocationIds": ["cucina-loredana", "via-della-scuola"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Autonoe",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian female, careful"
       }
@@ -42,8 +42,8 @@
       "relationships": ["Irene's supervisor at the comune"],
       "knownLocationIds": ["comune", "ufficio-alme", "scatole-comune"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Despina",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian female, formal"
       }
@@ -58,8 +58,8 @@
       "relationships": ["Knows the school building", "Allows Sara access once"],
       "knownLocationIds": ["cortile-scuola", "scuola-media", "via-della-scuola"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Algenib",
         "language": "it-IT",
         "speakingStyle": "older Italian male, quiet"
       }
@@ -74,8 +74,8 @@
       "relationships": [],
       "knownLocationIds": ["via-della-scuola", "scuola-media"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Puck",
         "language": "it-IT",
         "speakingStyle": "Italian boy, playful"
       }
@@ -90,8 +90,8 @@
       "relationships": ["Wrote about the cracks", "The person with the lamp"],
       "knownLocationIds": ["scuola-media", "via-della-scuola"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Erinome",
         "language": "it-IT",
         "speakingStyle": "adult Italian female, urgent but quiet"
       }
@@ -106,8 +106,8 @@
       "relationships": [],
       "knownLocationIds": ["caserma-piva"],
       "voice": {
-        "provider": null,
-        "voiceId": null,
+        "provider": "google",
+        "voiceId": "it-IT-Chirp3-HD-Charon",
         "language": "it-IT",
         "speakingStyle": "middle-aged Italian male, formal"
       }
