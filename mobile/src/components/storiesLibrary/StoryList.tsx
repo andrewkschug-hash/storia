@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { A2PlusPathwayPanel } from '@/src/components/pathway/A2PlusPathwayPanel';
 import { buildStoryRowsForTab } from '@/src/components/storiesLibrary/buildStoryRows';
 import { LevelTabs } from '@/src/components/storiesLibrary/LevelTabs';
 import { LockedLevelsAccordion } from '@/src/components/storiesLibrary/LockedLevelsAccordion';
@@ -10,6 +11,7 @@ import type { LibraryStoryRow, LibraryTab } from '@/src/components/storiesLibrar
 import { unlockHintForLockedStory } from '@/src/components/storiesLibrary/unlockHints';
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { storyUsesLessonPath } from '@/src/content/storyPath';
+import type { PathwayDefinition } from '@/src/pathway/paths';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
 import { Typography } from '@/src/theme/tokens';
@@ -22,11 +24,17 @@ type Props = {
   progress?: ReadingProgressRecord | null;
   beforeRomeRows: ExtraStoryRow[];
   a2PlusRows: ExtraStoryRow[];
+  a2PlusAccess: boolean;
+  a2PlusLockedHint: string;
+  primaryPathwayStoryId: string | null;
+  initialTab?: LibraryTab;
   onOpenChapter: (chapterId: string, listen?: boolean) => void;
   onOpenStoryChapter: (storyId: string, chapterId: string) => void;
   onOpenGrammar: (storyId: string, batchEnd: number) => void;
   onOpenRecap: (storyId: string, batchEnd: number) => void;
   onOpenSpeak: (storyId: string, sceneId: string) => void;
+  onSelectPathway: (pathway: PathwayDefinition) => void;
+  onA2PlusTabFocus?: () => void;
 };
 
 function tabForChapterNumber(number: number): LibraryTab {
@@ -50,16 +58,22 @@ export function StoryList({
   progress,
   beforeRomeRows,
   a2PlusRows,
+  a2PlusAccess,
+  a2PlusLockedHint,
+  primaryPathwayStoryId,
+  initialTab,
   onOpenChapter,
   onOpenStoryChapter,
   onOpenGrammar,
   onOpenRecap,
   onOpenSpeak,
+  onSelectPathway,
+  onA2PlusTabFocus,
 }: Props) {
   const { colors } = useTheme();
   const currentChapter = chapterStatuses.find((chapter) => chapter.id === currentChapterId);
-  const [activeTab, setActiveTab] = useState<LibraryTab>(() =>
-    currentChapter ? tabForChapterNumber(currentChapter.number) : 'A1',
+  const [activeTab, setActiveTab] = useState<LibraryTab>(
+    () => initialTab ?? (currentChapter ? tabForChapterNumber(currentChapter.number) : 'A1'),
   );
   const [expandedRowId, setExpandedRowId] = useState<string | null>(null);
   const [expandedChildId, setExpandedChildId] = useState<string | null>(null);
@@ -77,6 +91,12 @@ export function StoryList({
       }),
     [activeTab, lucaTitleIt, chapterStatuses, beforeRomeRows, a2PlusRows],
   );
+
+  useEffect(() => {
+    if (activeTab === 'A2+') {
+      onA2PlusTabFocus?.();
+    }
+  }, [activeTab, onA2PlusTabFocus]);
 
   useEffect(() => {
     setExpandedRowId(defaultExpandedRowId(rows, currentChapterId));
@@ -106,9 +126,13 @@ export function StoryList({
     setExpandedRowId((prev) => (prev === rowId ? null : rowId));
   };
 
+  const handleTabChange = (tab: LibraryTab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <View>
-      <LevelTabs active={activeTab} onChange={setActiveTab} />
+      <LevelTabs active={activeTab} onChange={handleTabChange} />
 
       {hint ? (
         <Text
@@ -124,6 +148,17 @@ export function StoryList({
         </Text>
       ) : null}
 
+      {activeTab === 'A2+' ? (
+        <A2PlusPathwayPanel
+          a2PlusAccess={a2PlusAccess}
+          lockedHint={a2PlusLockedHint}
+          primaryPathwayStoryId={primaryPathwayStoryId}
+          a2PlusRows={a2PlusRows}
+          onSelectAvailable={onSelectPathway}
+          onOpenStoryChapter={onOpenStoryChapter}
+          onShowHint={showHint}
+        />
+      ) : (
       <View style={{ gap: 10 }}>
         {rows.map((row) => {
           const expanded = expandedRowId === row.id;
@@ -188,6 +223,7 @@ export function StoryList({
           );
         })}
       </View>
+      )}
 
       <LockedLevelsAccordion />
     </View>

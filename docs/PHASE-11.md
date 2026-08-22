@@ -1,6 +1,6 @@
 # Phase 11 — A2 audio (Ch 25–40)
 
-**Status:** generated + packaged 2026-08-21 (Chirp3). Human listen spot-check → then freeze AUDIO CATALOG v2.  
+**Status:** generated + packaged 2026-08-21 (Chirp3). **Curriculum freeze verified** for pathway-gate work; human listen → freeze AUDIO CATALOG v2 when ready.  
 **Prerequisite:** curriculum freeze (prose + stamina patch + lesson layer) — **done**.
 
 ## Scope

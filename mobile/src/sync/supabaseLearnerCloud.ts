@@ -54,11 +54,23 @@ function asAdaptive(raw: unknown): AdaptivePersistedState | null {
 
 function asPreferences(raw: unknown): LearnerPreferences | null {
   if (!raw || typeof raw !== 'object') return null;
-  const speed = (raw as { audioSpeed?: unknown }).audioSpeed;
-  if (speed === 'slow' || speed === 'normal' || speed === 'faster') {
-    return { audioSpeed: speed };
+  const row = raw as {
+    audioSpeed?: unknown;
+    pathwayGateSeen?: unknown;
+    primaryPathwayStoryId?: unknown;
+  };
+  const prefs: LearnerPreferences = {};
+  if (row.audioSpeed === 'slow' || row.audioSpeed === 'normal' || row.audioSpeed === 'faster') {
+    prefs.audioSpeed = row.audioSpeed;
   }
-  return {};
+  if (row.pathwayGateSeen === true) prefs.pathwayGateSeen = true;
+  if (row.pathwayGateSeen === false) prefs.pathwayGateSeen = false;
+  if (typeof row.primaryPathwayStoryId === 'string') {
+    prefs.primaryPathwayStoryId = row.primaryPathwayStoryId;
+  } else if (row.primaryPathwayStoryId === null) {
+    prefs.primaryPathwayStoryId = null;
+  }
+  return Object.keys(prefs).length > 0 ? prefs : {};
 }
 
 export class SupabaseLearnerCloud implements LearnerCloud {

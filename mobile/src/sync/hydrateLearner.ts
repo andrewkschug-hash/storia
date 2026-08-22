@@ -61,11 +61,23 @@ function normalizeAdaptive(raw: unknown): AdaptivePersistedState {
 
 function normalizePreferences(raw: unknown): LearnerPreferences {
   if (!raw || typeof raw !== 'object') return {};
-  const speed = (raw as { audioSpeed?: unknown }).audioSpeed;
-  if (speed === 'slow' || speed === 'normal' || speed === 'faster') {
-    return { audioSpeed: speed };
+  const row = raw as {
+    audioSpeed?: unknown;
+    pathwayGateSeen?: unknown;
+    primaryPathwayStoryId?: unknown;
+  };
+  const prefs: LearnerPreferences = {};
+  if (row.audioSpeed === 'slow' || row.audioSpeed === 'normal' || row.audioSpeed === 'faster') {
+    prefs.audioSpeed = row.audioSpeed;
   }
-  return {};
+  if (row.pathwayGateSeen === true) prefs.pathwayGateSeen = true;
+  if (row.pathwayGateSeen === false) prefs.pathwayGateSeen = false;
+  if (typeof row.primaryPathwayStoryId === 'string') {
+    prefs.primaryPathwayStoryId = row.primaryPathwayStoryId;
+  } else if (row.primaryPathwayStoryId === null) {
+    prefs.primaryPathwayStoryId = null;
+  }
+  return prefs;
 }
 
 async function loadLocalAdaptive(): Promise<AdaptivePersistedState> {
@@ -161,10 +173,32 @@ async function hydratePreferences(cloud: LearnerCloud, remote: LearnerStateSnaps
 
   if (remotePrefs.audioSpeed) {
     await saveLocalAudioSpeed(remotePrefs.audioSpeed);
+  } else if (localSpeed) {
+    await cloud.upsertLearnerState({ preferences: { audioSpeed: localSpeed } });
+  }
+
+  // Pathway prefs: remote wins when present; otherwise upload local.
+  const { loadPathwayPrefs, savePathwayPrefs } = await import('@/src/pathway/storage');
+  const localPathway = await loadPathwayPrefs();
+  const hasRemotePathway =
+    remotePrefs.pathwayGateSeen !== undefined || remotePrefs.primaryPathwayStoryId !== undefined;
+  if (hasRemotePathway) {
+    await savePathwayPrefs({
+      pathwayGateSeen: remotePrefs.pathwayGateSeen === true || localPathway.pathwayGateSeen,
+      primaryPathwayStoryId:
+        remotePrefs.primaryPathwayStoryId !== undefined
+          ? remotePrefs.primaryPathwayStoryId
+          : localPathway.primaryPathwayStoryId,
+    });
     return;
   }
-  if (localSpeed) {
-    await cloud.upsertLearnerState({ preferences: { audioSpeed: localSpeed } });
+  if (localPathway.pathwayGateSeen || localPathway.primaryPathwayStoryId) {
+    await cloud.upsertLearnerState({
+      preferences: {
+        pathwayGateSeen: localPathway.pathwayGateSeen,
+        primaryPathwayStoryId: localPathway.primaryPathwayStoryId,
+      },
+    });
   }
 }
 

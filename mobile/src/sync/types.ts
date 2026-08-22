@@ -5,6 +5,8 @@ import type { UserVocabularyState } from '@/src/vocabulary/types';
 
 export type LearnerPreferences = {
   audioSpeed?: 'slow' | 'normal' | 'faster';
+  pathwayGateSeen?: boolean;
+  primaryPathwayStoryId?: string | null;
 };
 
 export type LearnerStateSnapshot = {

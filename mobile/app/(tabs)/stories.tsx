@@ -10,6 +10,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { PathwayGate } from '@/src/components/pathway/PathwayGate';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { navLog } from '@/src/navigation/diagnostics';
 import { deferAfterNavigation } from '@/src/navigation/deferAfterNavigation';
@@ -20,8 +21,18 @@ import {
 } from '@/src/components/storiesLibrary';
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import { extraRowsFromCatalogStories } from '@/src/components/storiesLevelInsert';
-import { LUCA_STORY_ID, buildLearnerJourney, getChapter } from '@/src/content';
+import { LUCA_STORY_ID, buildLearnerJourney, getChapter, getContentBundle } from '@/src/content';
 import { readerHref, speakSceneHref } from '@/src/content/storyHrefs';
+import {
+  a2PlusLockedHint,
+  canAccessA2Plus,
+  choosePathway,
+  loadPathwayPrefs,
+  markPathwayGateSeen,
+  shouldShowPathwayGate,
+  type PathwayPrefs,
+} from '@/src/pathway';
+import type { PathwayDefinition } from '@/src/pathway/paths';
 import {
   getContinueReadingTarget,
   homeContinuePresentation,
@@ -47,7 +58,19 @@ export default function StoriesScreen() {
   const [continueTarget, setContinueTarget] = useState<ContinueReadingTarget | null>(null);
   const [beforeRomeRows, setBeforeRomeRows] = useState<ExtraStoryRow[]>([]);
   const [a2PlusRows, setA2PlusRows] = useState<ExtraStoryRow[]>([]);
+  const [a2PlusAccess, setA2PlusAccess] = useState(false);
+  const [pathwayPrefs, setPathwayPrefs] = useState<PathwayPrefs>({
+    pathwayGateSeen: false,
+    primaryPathwayStoryId: null,
+  });
+  const [showPathwayGate, setShowPathwayGate] = useState(false);
   const secondaryLoadedRef = useRef(false);
+
+  const refreshPathwayState = useCallback(async () => {
+    const [access, prefs] = await Promise.all([canAccessA2Plus(), loadPathwayPrefs()]);
+    setA2PlusAccess(access);
+    setPathwayPrefs(prefs);
+  }, []);
 
   const loadBeforeRome = useCallback(async () => {
     const next: ExtraStoryRow[] = [];
@@ -91,6 +114,7 @@ export default function StoriesScreen() {
       navLog('stories focus');
       void refresh();
       void getContinueReadingTarget().then(setContinueTarget);
+      void refreshPathwayState();
       if (secondaryLoadedRef.current) {
         void loadBeforeRome();
         void loadA2Plus();
@@ -103,7 +127,7 @@ export default function StoriesScreen() {
         void loadA2Plus().then(() => navLog('stories a2plus load completed'));
       });
       return cancel;
-    }, [refresh, loadBeforeRome, loadA2Plus]),
+    }, [refresh, loadBeforeRome, loadA2Plus, refreshPathwayState]),
   );
 
   useEffect(() => {
@@ -171,6 +195,30 @@ export default function StoriesScreen() {
     router.push(readerHref(storyId, chapterId));
   };
 
+  const openPathwayStory = async (pathway: PathwayDefinition, openReader: boolean) => {
+    if (pathway.status !== 'available' || !pathway.storyId) return;
+    const prefs = await choosePathway(pathway.id, pathway.storyId);
+    setPathwayPrefs(prefs);
+    setShowPathwayGate(false);
+    if (!openReader) return;
+    const bundle = getContentBundle(pathway.storyId);
+    const firstChapterId = bundle.story.chapters[0]?.id;
+    if (!firstChapterId) return;
+    await openStoryChapter(pathway.storyId, firstChapterId);
+  };
+
+  const onPathwayNotNow = async () => {
+    const prefs = await markPathwayGateSeen();
+    setPathwayPrefs(prefs);
+    setShowPathwayGate(false);
+  };
+
+  const onA2PlusTabFocus = useCallback(() => {
+    void shouldShowPathwayGate().then((show) => {
+      if (show) setShowPathwayGate(true);
+    });
+  }, []);
+
   const resolvedA2PlusRows =
     a2PlusStories.length > 0 && a2PlusRows.length > 0
       ? a2PlusRows
@@ -180,6 +228,11 @@ export default function StoriesScreen() {
 
   return (
     <AtmosphereBackground>
+      <PathwayGate
+        visible={showPathwayGate}
+        onBeginPathway={(pathway) => void openPathwayStory(pathway, true)}
+        onNotNow={() => void onPathwayNotNow()}
+      />
       <ScrollView
         contentContainerStyle={{
           paddingTop: insets.top + Spacing.lg,
@@ -224,6 +277,9 @@ export default function StoriesScreen() {
             progress={progress}
             beforeRomeRows={beforeRomeRows}
             a2PlusRows={resolvedA2PlusRows}
+            a2PlusAccess={a2PlusAccess}
+            a2PlusLockedHint={a2PlusLockedHint()}
+            primaryPathwayStoryId={pathwayPrefs.primaryPathwayStoryId}
             onOpenChapter={(chapterId, listen) => void openLucaChapter(chapterId, listen)}
             onOpenStoryChapter={(storyId, chapterId) => void openStoryChapter(storyId, chapterId)}
             onOpenGrammar={(storyId, batchEnd) => {
@@ -239,6 +295,8 @@ export default function StoriesScreen() {
             onOpenSpeak={(storyId, sceneId) => {
               router.push(speakSceneHref(storyId, sceneId, 'stories'));
             }}
+            onSelectPathway={(pathway) => void openPathwayStory(pathway, false)}
+            onA2PlusTabFocus={onA2PlusTabFocus}
           />
             </>
           )}
