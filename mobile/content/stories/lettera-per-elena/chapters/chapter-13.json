@@ -1,0 +1,1243 @@
+{
+  "id": "lettera-per-elena-13",
+  "storyId": "lettera-per-elena",
+  "number": 13,
+  "title": "The almost",
+  "titleIt": "Il vano",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "caffe-brenta",
+    "scaffale-libro",
+    "magazzino-caffe",
+    "laguna-brenta",
+    "marina-di-brenta",
+    "cucina-mirella"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "bruna",
+    "mirella-marini"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-13",
+      "summary": "Elena almost writes \"sei Pietro\" in the book. Instead she writes about the lagoon, then says his name only to the water.",
+      "characterIds": [
+        "elena-marini",
+        "bruna",
+        "mirella-marini"
+      ],
+      "locationIds": [
+        "caffe-brenta",
+        "scaffale-libro",
+        "magazzino-caffe",
+        "laguna-brenta",
+        "marina-di-brenta",
+        "cucina-mirella"
+      ],
+      "rememberedFacts": [
+        "Elena almost writes \"sei Pietro\" in the book",
+        "She writes about the lagoon instead",
+        "She avoids naming him on paper",
+        "Alone at the lagoon she says his name where nobody hears"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Giovedì, dopo pranzo, il Caffè Brenta è quieto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giovedi",
+            "dopo",
+            "pranzo",
+            "il",
+            "caffe",
+            "brenta",
+            "essere",
+            "quieto"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Bruna è nel magazzino e cerca un sacco di zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "essere",
+            "nel",
+            "magazzino",
+            "e",
+            "cercare",
+            "un",
+            "sacco",
+            "di",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Elena apre il libro vicino allo scaffale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "aprire",
+            "il",
+            "libro",
+            "vicino",
+            "al",
+            "scaffale"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Prende la penna del bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "la",
+            "penna",
+            "del",
+            "banco"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Nella testa la frase è pronta, chiara, pericolosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "testa",
+            "la",
+            "frase",
+            "essere",
+            "pronto",
+            "chiaro",
+            "pericolosa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Sei Pietro?",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "pietro"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Scrive la S.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "la",
+            "s"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Poi ferma la mano, a metà lettera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "fermare",
+            "la",
+            "mano",
+            "a",
+            "meta",
+            "lettera"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Se scrive il nome, il doppio mondo finisce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "scrivere",
+            "il",
+            "nome",
+            "il",
+            "doppio",
+            "mondo",
+            "finire"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "O forse inizia qualcosa di più difficile: la voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "o",
+            "forse",
+            "iniziare",
+            "qualcosa",
+            "di",
+            "piu",
+            "difficile",
+            "la",
+            "voce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Ricorda le regole di Bruna e la frase di lunedì: non è un gioco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ricordare",
+            "le",
+            "regole",
+            "di",
+            "bruna",
+            "e",
+            "la",
+            "frase",
+            "di",
+            "lunedi",
+            "non",
+            "essere",
+            "un",
+            "gioco"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Cancella la S con una riga netta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cancella",
+            "la",
+            "s",
+            "con",
+            "una",
+            "riga",
+            "netta"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Guarda fuori dalla vetrina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "fuori",
+            "dalla",
+            "vetrina"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "C'è nebbia verso la laguna, bassa e grigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "nebbia",
+            "verso",
+            "la",
+            "laguna",
+            "basso",
+            "e",
+            "grigia"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Scrive un'altra cosa, più sicura e meno vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "altro",
+            "cosa",
+            "piu",
+            "sicuro",
+            "e",
+            "meno",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Oggi vorrei vedere la laguna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "volere",
+            "vedere",
+            "la",
+            "laguna"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Anche se ho paura del silenzio là fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anche",
+            "se",
+            "avere",
+            "paura",
+            "del",
+            "silenzio",
+            "la",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Elena rilegge e sente il peso della scelta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "rilegge",
+            "e",
+            "sentire",
+            "il",
+            "peso",
+            "della",
+            "scegliere"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "È vero e anche falso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "vero",
+            "e",
+            "anche",
+            "falso"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Vero perché la laguna esiste, e lei la vuole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vero",
+            "perche",
+            "la",
+            "laguna",
+            "esiste",
+            "e",
+            "lei",
+            "la",
+            "volere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Falso perché non è quello che voleva chiedere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "falso",
+            "perche",
+            "non",
+            "essere",
+            "quello",
+            "che",
+            "volere",
+            "chiedere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Chiude il libro prima che Bruna torni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "libro",
+            "prima",
+            "che",
+            "bruna",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Bruna torna con un sacco di zucchero sulle spalle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "tornare",
+            "con",
+            "un",
+            "sacco",
+            "di",
+            "zucchero",
+            "sul",
+            "spalle"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Hai scritto?",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "scrivere"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Elena sorprende se stessa con la risposta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sorprende",
+            "se",
+            "stesso",
+            "con",
+            "la",
+            "risposta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Sì.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Bruna non chiede cosa, e questo è un dono e una punizione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "non",
+            "chiedere",
+            "cosa",
+            "e",
+            "questo",
+            "essere",
+            "un",
+            "dono",
+            "e",
+            "una",
+            "punizione"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Dopo il turno Elena pedala verso la laguna di Brenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "il",
+            "turno",
+            "elena",
+            "pedala",
+            "verso",
+            "la",
+            "laguna",
+            "di",
+            "brenta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "L'acqua è grigia, e c'è poco vento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "essere",
+            "grigia",
+            "e",
+            "ce",
+            "poco",
+            "vento"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Elena scende dalla bici e resta in piedi sulla riva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "scende",
+            "dalla",
+            "bici",
+            "e",
+            "restare",
+            "in",
+            "piedi",
+            "sulla",
+            "riva"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Ascolta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ascoltare"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Il silenzio della laguna non è come il silenzio di casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "silenzio",
+            "della",
+            "laguna",
+            "non",
+            "essere",
+            "come",
+            "il",
+            "silenzio",
+            "di",
+            "casa"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Né come il silenzio morto tra lei e Pietro al bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ne",
+            "come",
+            "il",
+            "silenzio",
+            "morto",
+            "tra",
+            "lei",
+            "e",
+            "pietro",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Qui il silenzio ha spazio, e l'acqua si muove piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qui",
+            "il",
+            "silenzio",
+            "avere",
+            "spazio",
+            "e",
+            "acqua",
+            "si",
+            "muove",
+            "piano"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Elena parla a voce bassa, solo per l'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "parlare",
+            "a",
+            "voce",
+            "basso",
+            "solo",
+            "per",
+            "acqua"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Sei Pietro.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "pietro"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Lo dice all'acqua, non al libro, non a Katia, non a lui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "dire",
+            "acqua",
+            "non",
+            "al",
+            "libro",
+            "non",
+            "a",
+            "katia",
+            "non",
+            "a",
+            "lui"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Nessuno risponde.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "rispondere"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Torna indietro con le mani fredde e la verità ancora chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "indietro",
+            "con",
+            "le",
+            "mani",
+            "fredde",
+            "e",
+            "la",
+            "verita",
+            "ancora",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Nel libro ha lasciato la laguna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "libro",
+            "avere",
+            "lasciare",
+            "la",
+            "laguna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Nella voce ha lasciato il nome, ma solo dove nessuno poteva sentirla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "voce",
+            "avere",
+            "lasciare",
+            "il",
+            "nome",
+            "ma",
+            "solo",
+            "dove",
+            "nessuno",
+            "potere",
+            "sentirla"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "A casa, nella cucina di Mirella, mangia in silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "casa",
+            "nella",
+            "cucina",
+            "di",
+            "mirella",
+            "mangiare",
+            "in",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "La madre non insiste, questa sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "madre",
+            "non",
+            "insiste",
+            "questo",
+            "sera"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Hai freddo?",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "freddo"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Un poco.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "poco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Mirella le mette una coperta sulle spalle e non chiede altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "le",
+            "mettere",
+            "una",
+            "coperta",
+            "sul",
+            "spalle",
+            "e",
+            "non",
+            "chiedere",
+            "altro"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "La mattina Elena ha lavorato senza aprire il libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "elena",
+            "avere",
+            "lavorare",
+            "senza",
+            "aprire",
+            "il",
+            "libro"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Ha contato le ore fino al dopo pranzo, quando il locale diventa quieto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "contare",
+            "le",
+            "ora",
+            "fino",
+            "al",
+            "dopo",
+            "pranzo",
+            "quando",
+            "il",
+            "locale",
+            "diventa",
+            "quieto"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Quando finalmente prende la penna, sente il cuore nelle dita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "finalmente",
+            "prendere",
+            "la",
+            "penna",
+            "sentire",
+            "il",
+            "cuore",
+            "nelle",
+            "dita"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "La S sulla pagina sembra già un grido.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "s",
+            "sulla",
+            "pagina",
+            "sembrare",
+            "gia",
+            "un",
+            "grido"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Cancella e pensa a Bruna, a Katia, al martedì, al frigo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cancella",
+            "e",
+            "pensare",
+            "a",
+            "bruna",
+            "a",
+            "katia",
+            "al",
+            "martedi",
+            "al",
+            "frigo"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Scrivere sei Pietro sarebbe onesto, e anche una violenza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "essere",
+            "pietro",
+            "sarebbe",
+            "onesto",
+            "e",
+            "anche",
+            "una",
+            "violenza"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Così sceglie la laguna, che è vera ma non è la domanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cosi",
+            "scegliere",
+            "la",
+            "laguna",
+            "che",
+            "essere",
+            "vero",
+            "ma",
+            "non",
+            "essere",
+            "la",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Dopo il turno pedala con il vento contro il viso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "il",
+            "turno",
+            "pedala",
+            "con",
+            "il",
+            "vento",
+            "contro",
+            "il",
+            "viso"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Passa davanti al Caffè Brenta chiuso e non si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "passare",
+            "davanti",
+            "al",
+            "caffe",
+            "brenta",
+            "chiudere",
+            "e",
+            "non",
+            "si",
+            "fermare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Alla laguna resta più a lungo di quanto aveva pensato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "laguna",
+            "restare",
+            "piu",
+            "a",
+            "lungo",
+            "di",
+            "quanto",
+            "avere",
+            "pensare"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Guarda l'acqua e ripete il nome una seconda volta, ancora più piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "acqua",
+            "e",
+            "ripete",
+            "il",
+            "nome",
+            "una",
+            "seconda",
+            "volta",
+            "ancora",
+            "piu",
+            "piano"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Pietro.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "pietro"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Il nome senza punto di domanda sembra più pesante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "nome",
+            "senza",
+            "punto",
+            "di",
+            "domanda",
+            "sembrare",
+            "piu",
+            "pesante"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Torna a casa con le scarpe umide e la fame piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "a",
+            "casa",
+            "con",
+            "le",
+            "scarpe",
+            "umide",
+            "e",
+            "la",
+            "fame",
+            "piccolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Mirella ha lasciato la minestra sul fuoco e non fa domande lunghe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "avere",
+            "lasciare",
+            "la",
+            "minestra",
+            "sul",
+            "fuoco",
+            "e",
+            "non",
+            "fare",
+            "domanda",
+            "lunghe"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Elena mangia e pensa che il vano ha un sapore di quasi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "mangiare",
+            "e",
+            "pensare",
+            "che",
+            "il",
+            "vano",
+            "avere",
+            "un",
+            "sapore",
+            "di",
+            "quasi"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Quasi vero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quasi",
+            "vero"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Quasi detto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quasi",
+            "dire"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Quasi abbastanza, e invece no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quasi",
+            "abbastanza",
+            "e",
+            "invece",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Elena pensa: ho quasi scritto la verità.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "avere",
+            "quasi",
+            "scrivere",
+            "la",
+            "verita"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Quasi non basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quasi",
+            "non",
+            "basta"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Il vano resta: una S cancellata, una laguna al posto di un nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "vano",
+            "restare",
+            "una",
+            "s",
+            "cancellata",
+            "una",
+            "laguna",
+            "al",
+            "posto",
+            "di",
+            "un",
+            "nome"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch13_q01",
+      "chapterId": "lettera-per-elena-13",
+      "type": "direct",
+      "question": "What does Elena almost write?",
+      "choices": [
+        "Sei Pietro?",
+        "Vendo il libro",
+        "Katia ha ragione"
+      ],
+      "correctChoice": 0,
+      "explanation": "She starts to write sei Pietro and stops.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q02",
+      "chapterId": "lettera-per-elena-13",
+      "type": "direct",
+      "question": "What does she write instead?",
+      "choices": [
+        "About wanting to see the lagoon",
+        "About selling sugar",
+        "About leaving town"
+      ],
+      "correctChoice": 0,
+      "explanation": "She deflects into a lagoon note.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q03",
+      "chapterId": "lettera-per-elena-13",
+      "type": "direct",
+      "question": "Where does she finally say his name?",
+      "choices": [
+        "To the lagoon, alone",
+        "To Katia at the counter",
+        "In a loud voice to Bruna"
+      ],
+      "correctChoice": 0,
+      "explanation": "She says Sei Pietro to the water where nobody hears.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,1142 @@
+{
+  "id": "lettera-per-elena-02",
+  "storyId": "lettera-per-elena",
+  "number": 2,
+  "title": "Bruna",
+  "titleIt": "Bruna",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "marina-di-brenta",
+    "caffe-brenta",
+    "bancone-brenta",
+    "scaffale-libro"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "bruna",
+    "katia"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-02",
+      "summary": "Bruna explains the three rules of the book: do not sell it, do not take it home, do not ask who. She almost cries and does not explain why. Katia watches.",
+      "characterIds": [
+        "elena-marini",
+        "bruna",
+        "katia"
+      ],
+      "locationIds": [
+        "marina-di-brenta",
+        "caffe-brenta",
+        "bancone-brenta",
+        "scaffale-libro"
+      ],
+      "rememberedFacts": [
+        "Bruna gives three rules for the book",
+        "The book must not be sold",
+        "The book must not be taken home",
+        "Nobody asks who writes in the book",
+        "Bruna almost cries and does not explain",
+        "Katia is present during the explanation"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il secondo giorno a Marina di Brenta inizia con poca nebbia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "secondo",
+            "giorno",
+            "a",
+            "marina",
+            "di",
+            "brenta",
+            "iniziare",
+            "con",
+            "poco",
+            "nebbia"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Elena arriva al Caffè Brenta e trova Katia al bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "arrivare",
+            "al",
+            "caffe",
+            "brenta",
+            "e",
+            "trovare",
+            "katia",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Katia lava le tazzine con movimenti veloci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "lavare",
+            "le",
+            "tazzine",
+            "con",
+            "movimenti",
+            "veloci"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ciao. Io sono Katia. Tu sei Elena, vero?",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "ciao",
+            "io",
+            "essere",
+            "katia",
+            "tu",
+            "essere",
+            "elena",
+            "vero"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Sì. Piacere.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "piacere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Katia le passa un panno e indica lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "le",
+            "passare",
+            "un",
+            "panno",
+            "e",
+            "indica",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Bruna vuole lo zucchero sempre pieno.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "bruna",
+            "volere",
+            "lo",
+            "zucchero",
+            "sempre",
+            "pieno"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Elena annuisce. Sa già dove stare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "annuisce",
+            "sapere",
+            "gia",
+            "dove",
+            "stare"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Bruna esce dal magazzino con un blocco e una penna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "uscire",
+            "dal",
+            "magazzino",
+            "con",
+            "un",
+            "blocco",
+            "e",
+            "una",
+            "penna"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Buongiorno. Oggi ti spiego una cosa importante.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno",
+            "oggi",
+            "ti",
+            "spiegare",
+            "una",
+            "cosa",
+            "importante"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Katia abbassa lo sguardo, ma ascolta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "abbassa",
+            "lo",
+            "sguardo",
+            "ma",
+            "ascoltare"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Bruna cammina fino allo scaffale e tocca il libro grosso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "camminare",
+            "fino",
+            "al",
+            "scaffale",
+            "e",
+            "tocca",
+            "il",
+            "libro",
+            "grosso"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Questo libro resta qui. Non è in vendita.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "libro",
+            "restare",
+            "qui",
+            "non",
+            "essere",
+            "in",
+            "vendita"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Elena pensa alla parola vero della sera prima.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "alla",
+            "parola",
+            "vero",
+            "della",
+            "sera",
+            "prima"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Prima regola: non si vende. Mai.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "regola",
+            "non",
+            "si",
+            "vendere",
+            "mai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Katia alza un sopracciglio, come se conoscesse la storia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "alzare",
+            "un",
+            "sopracciglio",
+            "come",
+            "se",
+            "conoscesse",
+            "la",
+            "storia"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Seconda regola: non si porta a casa. Resta al caffè.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "seconda",
+            "regola",
+            "non",
+            "si",
+            "porta",
+            "a",
+            "casa",
+            "restare",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "E se qualcuno vuole leggerlo fuori?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "se",
+            "qualcuno",
+            "volere",
+            "leggerlo",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "No. Qui. Solo qui.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "qui",
+            "solo",
+            "qui"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Bruna apre il libro e lo richiude subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "aprire",
+            "il",
+            "libro",
+            "e",
+            "lo",
+            "richiude",
+            "subito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Terza regola: non si chiede chi scrive.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "terza",
+            "regola",
+            "non",
+            "si",
+            "chiedere",
+            "chi",
+            "scrivere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non si cerca il nome. Non si punta il dito.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "si",
+            "cercare",
+            "il",
+            "nome",
+            "non",
+            "si",
+            "punta",
+            "il",
+            "dito"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "La voce di Bruna è ferma, le mani sul libro no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "voce",
+            "di",
+            "bruna",
+            "essere",
+            "fermare",
+            "le",
+            "mani",
+            "sul",
+            "libro",
+            "no"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Capito?",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "capire"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Sì. Non si vende, non si porta a casa, non si chiede chi.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "non",
+            "si",
+            "vendere",
+            "non",
+            "si",
+            "porta",
+            "a",
+            "casa",
+            "non",
+            "si",
+            "chiedere",
+            "chi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Katia annuisce piano e mette via una tazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "annuisce",
+            "piano",
+            "e",
+            "mettere",
+            "via",
+            "una",
+            "tazza"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Bruna resta ferma davanti allo scaffale un secondo di troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "restare",
+            "fermare",
+            "davanti",
+            "al",
+            "scaffale",
+            "un",
+            "secondo",
+            "di",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Gli occhi le diventano lucidi. Guarda il libro e non parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "gli",
+            "occhi",
+            "le",
+            "diventano",
+            "lucidi",
+            "guardare",
+            "il",
+            "libro",
+            "e",
+            "non",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Elena fa un passo avanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "fare",
+            "un",
+            "passare",
+            "avanti"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Va tutto bene?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "tutto",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Bruna scuote la testa e si asciuga un occhio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "scuote",
+            "la",
+            "testa",
+            "e",
+            "si",
+            "asciuga",
+            "un",
+            "occhio"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Sì. Solo… lascia stare. Non è niente.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "solo",
+            "lasciare",
+            "stare",
+            "non",
+            "essere",
+            "niente"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Non spiega. Non dice perché il libro le fa male.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "spiegare",
+            "non",
+            "dire",
+            "perche",
+            "il",
+            "libro",
+            "le",
+            "fare",
+            "ma"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Katia guarda Elena e alza le spalle: non chiedere adesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "guardare",
+            "elena",
+            "e",
+            "alzare",
+            "le",
+            "spalle",
+            "non",
+            "chiedere",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Bruna mette il libro vicino allo zucchero e torna alla cassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "mettere",
+            "il",
+            "libro",
+            "vicino",
+            "al",
+            "zucchero",
+            "e",
+            "tornare",
+            "alla",
+            "cassa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "La voce le ritorna normale quando entra un cliente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "voce",
+            "le",
+            "ritorna",
+            "normale",
+            "quando",
+            "entrare",
+            "un",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Elena prepara un cappuccino. Katia prende un cornetto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "preparare",
+            "un",
+            "cappuccino",
+            "katia",
+            "prendere",
+            "un",
+            "cornetto"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il lavoro riparte e nasconde la scena di un minuto prima.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "lavorare",
+            "riparte",
+            "e",
+            "nasconde",
+            "la",
+            "scena",
+            "di",
+            "un",
+            "minuto",
+            "prima"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Ma Elena non dimentica le tre regole e gli occhi lucidi di Bruna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "elena",
+            "non",
+            "dimenticare",
+            "le",
+            "tre",
+            "regole",
+            "e",
+            "gli",
+            "occhi",
+            "lucidi",
+            "di",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Tra due ordini Katia parla piano vicino alla macchina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tra",
+            "due",
+            "ordini",
+            "katia",
+            "parlare",
+            "piano",
+            "vicino",
+            "alla",
+            "macchina"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Il libro è vecchio. Bruna ci tiene. Non fare domande oggi.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "libro",
+            "essere",
+            "vecchio",
+            "bruna",
+            "ci",
+            "tiene",
+            "non",
+            "fare",
+            "domanda",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Va bene.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Elena vorrebbe sapere chi ha scritto questo tavolo balla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "volere",
+            "sapere",
+            "chi",
+            "avere",
+            "scrivere",
+            "questo",
+            "tavolo",
+            "balla"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Vorrebbe sapere se qualcuno ha letto il suo vero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "sapere",
+            "se",
+            "qualcuno",
+            "avere",
+            "leggere",
+            "il",
+            "suo",
+            "vero"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Ma la terza regola è chiara: non si chiede chi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "la",
+            "terza",
+            "regola",
+            "essere",
+            "chiaro",
+            "non",
+            "si",
+            "chiedere",
+            "chi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "A metà mattina Bruna le chiede di riempire lo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "meta",
+            "mattina",
+            "bruna",
+            "le",
+            "chiedere",
+            "di",
+            "riempire",
+            "lo",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Elena apre le ciotole. Il libro è a pochi centimetri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "aprire",
+            "le",
+            "ciotole",
+            "il",
+            "libro",
+            "essere",
+            "a",
+            "poco",
+            "centimetri"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Non lo apre. Non oggi, non davanti a Bruna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "lo",
+            "aprire",
+            "non",
+            "oggi",
+            "non",
+            "davanti",
+            "a",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Nel pomeriggio il caffè è più calmo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "il",
+            "caffe",
+            "essere",
+            "piu",
+            "calmo"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Bruna conta i soldi e non parla del libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "contare",
+            "i",
+            "soldi",
+            "e",
+            "non",
+            "parlare",
+            "del",
+            "libro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Elena lava le tazzine e ripete le regole nella testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "lavare",
+            "le",
+            "tazzine",
+            "e",
+            "ripete",
+            "le",
+            "regole",
+            "nella",
+            "testa"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Non vendere. Non portare a casa. Non chiedere chi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "vendere",
+            "non",
+            "portare",
+            "a",
+            "casa",
+            "non",
+            "chiedere",
+            "chi"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Prima di uscire Bruna spegne le luci del bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "uscire",
+            "bruna",
+            "spegne",
+            "le",
+            "luce",
+            "del",
+            "banco"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Elena, grazie. Sei brava con i clienti.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "elena",
+            "grazie",
+            "essere",
+            "brava",
+            "con",
+            "i",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Grazie. A domani.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "a",
+            "domani"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Katia chiude la vetrina e mette la giacca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "chiudere",
+            "la",
+            "vetrina",
+            "e",
+            "mettere",
+            "la",
+            "giacca"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Fuori, Marina di Brenta è già in ombra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "marina",
+            "di",
+            "brenta",
+            "essere",
+            "gia",
+            "in",
+            "ombra"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Elena cammina e pensa ancora agli occhi lucidi di Bruna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "camminare",
+            "e",
+            "pensare",
+            "ancora",
+            "ai",
+            "occhi",
+            "lucidi",
+            "di",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Non ha una spiegazione. Ha tre regole e un libro vicino allo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "una",
+            "spiegazione",
+            "avere",
+            "tre",
+            "regole",
+            "e",
+            "un",
+            "libro",
+            "vicino",
+            "al",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "E sa già che domani guarderà di nuovo lo scaffale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "sapere",
+            "gia",
+            "che",
+            "domani",
+            "guardera",
+            "di",
+            "nuovo",
+            "lo",
+            "scaffale"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch02_q01",
+      "chapterId": "lettera-per-elena-02",
+      "type": "direct",
+      "question": "What are Bruna’s three rules for the book?",
+      "choices": [
+        "Do not sell it, do not take it home, do not ask who",
+        "Write every day, sign your name, leave money",
+        "Take it home, sell copies, ask the customers"
+      ],
+      "correctChoice": 0,
+      "explanation": "Bruna states the three rules clearly at the shelf.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q02",
+      "chapterId": "lettera-per-elena-02",
+      "type": "direct",
+      "question": "What happens when Bruna finishes explaining the rules?",
+      "choices": [
+        "She almost cries and does not explain why",
+        "She laughs and opens the book for Elena",
+        "She throws the book away"
+      ],
+      "correctChoice": 0,
+      "explanation": "Her eyes grow shiny; she says it is nothing and does not explain.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q03",
+      "chapterId": "lettera-per-elena-02",
+      "type": "direct",
+      "question": "Who is present when Bruna explains the rules?",
+      "choices": [
+        "Katia",
+        "Pietro",
+        "Mirella"
+      ],
+      "correctChoice": 0,
+      "explanation": "Katia is behind the counter and listens while she works.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,964 @@
+{
+  "id": "il-villaggio-che-non-esiste-05",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 5,
+  "title": "Dad on the phone",
+  "titleIt": "Papà al telefono",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "campo-segnale",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "papa-rinaldi",
+    "elsa"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-05",
+      "summary": "Giada finds signal in a field and calls her father. He tells her to take the next train; there is no next passenger train from Collevento.",
+      "characterIds": [
+        "giada-rinaldi",
+        "papa-rinaldi",
+        "elsa"
+      ],
+      "locationIds": [
+        "campo-segnale",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "Phone signal works only in a field behind the houses",
+        "Giada reaches her father who does not know Collevento",
+        "He tells her to take the next train",
+        "Elsa says there has been no passenger train for years"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La mattina Giada cerca segnale in tutto il paese, strada per strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "giada",
+            "cercare",
+            "segnale",
+            "in",
+            "tutto",
+            "il",
+            "paese",
+            "strada",
+            "per",
+            "strada"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Vicino alla fontana il telefono non prende niente, nemmeno una tacca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "alla",
+            "fontana",
+            "il",
+            "telefono",
+            "non",
+            "prendere",
+            "niente",
+            "nemmeno",
+            "una",
+            "tacca"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Elsa dice di salire al campo dietro le ultime case del paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "dire",
+            "di",
+            "salire",
+            "al",
+            "campo",
+            "dietro",
+            "le",
+            "ultime",
+            "casa",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il prato è aperto, con erba bassa e un palo di legno storto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "prato",
+            "essere",
+            "aprire",
+            "con",
+            "erba",
+            "basso",
+            "e",
+            "un",
+            "palo",
+            "di",
+            "legno",
+            "storto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Lì, vicino al palo, appare una tacca di segnale sul telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "li",
+            "vicino",
+            "al",
+            "palo",
+            "appare",
+            "una",
+            "tacca",
+            "di",
+            "segnale",
+            "sul",
+            "telefono"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Poi due tacche, abbastanza per una chiamata vera al padre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "due",
+            "tacche",
+            "abbastanza",
+            "per",
+            "una",
+            "chiamata",
+            "vero",
+            "al",
+            "padre"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Giada chiama il padre e aspetta con il cuore veloce nel petto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiamare",
+            "il",
+            "padre",
+            "e",
+            "aspettare",
+            "con",
+            "il",
+            "cuore",
+            "veloce",
+            "nel",
+            "petto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Pronto? Giada?",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "pronto",
+            "giada"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Papà, sono io. Sto bene, ma non sono a Trento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "papa",
+            "essere",
+            "io",
+            "stare",
+            "bene",
+            "ma",
+            "non",
+            "essere",
+            "a",
+            "trento"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Dove sei adesso?",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "essere",
+            "adesso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "A Collevento. Ho preso il treno sbagliato, mi sono addormentata.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "collevento",
+            "avere",
+            "prendere",
+            "il",
+            "treno",
+            "sbagliato",
+            "mi",
+            "essere",
+            "addormentata"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Collevento? Non conosco questo nome, non è sulle mie mappe.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "collevento",
+            "non",
+            "conoscere",
+            "questo",
+            "nome",
+            "non",
+            "essere",
+            "sul",
+            "mio",
+            "mappe"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "C'è una fermata con il nome cancellato sul cartello, una linea nera.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "una",
+            "fermare",
+            "con",
+            "il",
+            "nome",
+            "cancellato",
+            "sul",
+            "cartello",
+            "una",
+            "linea",
+            "nera"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Prendi il prossimo treno e vieni a Trento, subito.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "prendere",
+            "il",
+            "prossimo",
+            "treno",
+            "e",
+            "venire",
+            "a",
+            "trento",
+            "subito"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non c'è il prossimo treno, papà.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "il",
+            "prossimo",
+            "treno",
+            "papa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "La fermata è vuota e non c'è orario sul muro di cemento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "fermare",
+            "essere",
+            "vuoto",
+            "e",
+            "non",
+            "ce",
+            "orario",
+            "sul",
+            "muro",
+            "di",
+            "cemento"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Il padre resta in silenzio un momento lungo, come se pensasse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "restare",
+            "in",
+            "silenzio",
+            "un",
+            "momento",
+            "lungo",
+            "come",
+            "se",
+            "pensasse"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Chiedi a qualcuno del posto: deve esserci un modo.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiedere",
+            "a",
+            "qualcuno",
+            "del",
+            "posto",
+            "dovere",
+            "esserci",
+            "un",
+            "modo"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Chiedo. Qui dicono cose strane, però.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiedere",
+            "qui",
+            "dire",
+            "cosa",
+            "strane",
+            "pero"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Che cose?",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "cosa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Dopo il tramonto non si esce.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dopo",
+            "il",
+            "tramonto",
+            "non",
+            "si",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Il padre fa un suono corto, quasi un sospiro stanco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "fare",
+            "un",
+            "suono",
+            "corto",
+            "quasi",
+            "un",
+            "sospiro",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Non è un film, Giada.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "film",
+            "giada"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Lo so. Però qui lo dicono sul serio, senza ridere.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "pero",
+            "qui",
+            "lo",
+            "dire",
+            "sul",
+            "serio",
+            "senza",
+            "ridere"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Stai attenta e chiama quando hai un treno o un passaggio.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "stare",
+            "attenta",
+            "e",
+            "chiamare",
+            "quando",
+            "avere",
+            "un",
+            "treno",
+            "o",
+            "un",
+            "passaggio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Va bene. Ti chiamo appena posso.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "ti",
+            "chiamare",
+            "appena",
+            "potere"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "La chiamata cade e il segnale sparisce di colpo nel campo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "chiamata",
+            "cade",
+            "e",
+            "il",
+            "segnale",
+            "sparisce",
+            "di",
+            "colpo",
+            "nel",
+            "campo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Giada resta nel prato e guarda il paese sotto di lei, piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "nel",
+            "prato",
+            "e",
+            "guardare",
+            "il",
+            "paese",
+            "sotto",
+            "di",
+            "lei",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Le case sembrano normali, con tetti, camini e panni stesi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "casa",
+            "sembrare",
+            "normali",
+            "con",
+            "tetti",
+            "camini",
+            "e",
+            "panni",
+            "stesi"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Torna alla locanda con il telefono ancora caldo in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "alla",
+            "locanda",
+            "con",
+            "il",
+            "telefono",
+            "ancora",
+            "caldo",
+            "in",
+            "mano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Elsa lava i bicchieri e non sembra sorpresa della chiamata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "lavare",
+            "i",
+            "bicchieri",
+            "e",
+            "non",
+            "sembrare",
+            "sorpresa",
+            "della",
+            "chiamata"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Hai parlato con qualcuno?",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "parlare",
+            "con",
+            "qualcuno"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sì, con mio padre.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "con",
+            "mio",
+            "padre"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Dice di prendere il prossimo treno per Trento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dire",
+            "di",
+            "prendere",
+            "il",
+            "prossimo",
+            "treno",
+            "per",
+            "trento"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Non c'è.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Non c'è da anni, per i passeggeri, su questa linea.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "dare",
+            "anno",
+            "per",
+            "i",
+            "passeggeri",
+            "su",
+            "questo",
+            "linea"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Allora come si esce da qui, di giorno?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "come",
+            "si",
+            "uscire",
+            "dare",
+            "qui",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Elsa asciuga le mani sul grembiule e guarda la finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "asciuga",
+            "le",
+            "mani",
+            "sul",
+            "grembiule",
+            "e",
+            "guardare",
+            "la",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Si esce quando si può.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "si",
+            "uscire",
+            "quando",
+            "si",
+            "potere"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Non quando vuoi tu, e non dopo il tramonto.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "quando",
+            "volere",
+            "tu",
+            "e",
+            "non",
+            "dopo",
+            "il",
+            "tramonto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Giada mette il telefono in tasca e resta in piedi in cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "mettere",
+            "il",
+            "telefono",
+            "in",
+            "tasca",
+            "e",
+            "restare",
+            "in",
+            "piedi",
+            "in",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Ha parlato con il padre, e questo è vero e concreto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "parlare",
+            "con",
+            "il",
+            "padre",
+            "e",
+            "questo",
+            "essere",
+            "vero",
+            "e",
+            "concreto"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Però resta a Collevento, senza prossimo treno e senza orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "restare",
+            "a",
+            "collevento",
+            "senza",
+            "prossimo",
+            "treno",
+            "e",
+            "senza",
+            "orario"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Il campo del segnale sembra già lontano, dietro le case.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "campo",
+            "del",
+            "segnale",
+            "sembrare",
+            "gia",
+            "lontano",
+            "dietro",
+            "le",
+            "casa"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "E le parole del padre non aprono la strada bagnata della sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "le",
+            "parola",
+            "del",
+            "padre",
+            "non",
+            "aprono",
+            "la",
+            "strada",
+            "bagnata",
+            "della",
+            "sera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "In cucina Elsa riprende a lavare, come se niente fosse cambiato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "cucina",
+            "elsa",
+            "riprende",
+            "a",
+            "lavare",
+            "come",
+            "se",
+            "niente",
+            "fosse",
+            "cambiare"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Giada pensa al campo del segnale e alla voce del padre, tagliata a metà.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "al",
+            "campo",
+            "del",
+            "segnale",
+            "e",
+            "alla",
+            "voce",
+            "del",
+            "padre",
+            "tagliata",
+            "a",
+            "meta"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Senza treno e senza orario, le regole del paese pesano di più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "senza",
+            "treno",
+            "e",
+            "senza",
+            "orario",
+            "le",
+            "regole",
+            "del",
+            "paese",
+            "pesano",
+            "di",
+            "piu"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch05_q01",
+      "chapterId": "il-villaggio-che-non-esiste-05",
+      "type": "direct",
+      "question": "Where does Giada get phone signal?",
+      "choices": [
+        "In a field behind the houses",
+        "Inside Elsa's kitchen",
+        "On the train platform"
+      ],
+      "correctChoice": 0,
+      "explanation": "Near a pole in the field the signal appears.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q02",
+      "chapterId": "il-villaggio-che-non-esiste-05",
+      "type": "direct",
+      "question": "What does Giada's father tell her to do?",
+      "choices": [
+        "Take the next train to Trento",
+        "Stay a week in Collevento",
+        "Call her mother immediately"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says to take the next train and come to Trento.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q03",
+      "chapterId": "il-villaggio-che-non-esiste-05",
+      "type": "direct",
+      "question": "What does Elsa say about the next train?",
+      "choices": [
+        "There isn't one for passengers, not for years",
+        "It comes every hour",
+        "It only runs at night"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says there has been no passenger train for years.",
+      "difficulty": 2
+    }
+  ]
+}

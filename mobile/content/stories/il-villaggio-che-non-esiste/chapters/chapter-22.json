@@ -1,0 +1,1442 @@
+{
+  "id": "il-villaggio-che-non-esiste-22",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 22,
+  "title": "Dawn",
+  "titleIt": "L'alba",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "strada-diga",
+    "treno-halt",
+    "collevento-strada"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "tullio",
+    "neri",
+    "elsa"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-22",
+      "summary": "At dawn the water is down. Giada takes the workers' bus from the halt. Tullio nods. She leaves Collevento without conquering it.",
+      "characterIds": [
+        "giada-rinaldi",
+        "tullio",
+        "neri",
+        "elsa"
+      ],
+      "locationIds": [
+        "strada-diga",
+        "treno-halt",
+        "collevento-strada"
+      ],
+      "rememberedFacts": [
+        "At dawn the dam road water is down",
+        "Giada takes the workers' bus from the halt",
+        "Tullio nods as she leaves",
+        "Neri watches but does not board"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Giada si alza quando il cielo è ancora grigio chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "alzare",
+            "quando",
+            "il",
+            "cielo",
+            "essere",
+            "ancora",
+            "grigio",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "In cucina Elsa ha lasciato caffè e pane, senza discorso lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "cucina",
+            "elsa",
+            "avere",
+            "lasciare",
+            "caffe",
+            "e",
+            "pane",
+            "senza",
+            "discorso",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sulla tovaglia c'è un biglietto: buona strada, Giada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "tovaglia",
+            "ce",
+            "un",
+            "biglietto",
+            "buono",
+            "strada",
+            "giada"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il nome è giusto, finalmente scritto senza sostituzione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "nome",
+            "essere",
+            "giusto",
+            "finalmente",
+            "scrivere",
+            "senza",
+            "sostituzione"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Giada beve in piedi e prende la valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "bere",
+            "in",
+            "piedi",
+            "e",
+            "prendere",
+            "la",
+            "valigia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Esce mentre Elsa dorme ancora, o finge di dormire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uscire",
+            "mentre",
+            "elsa",
+            "dormire",
+            "ancora",
+            "o",
+            "finge",
+            "di",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "La piazza è vuota; i cartelli della notte prima sono al loro posto sbagliato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "piazza",
+            "essere",
+            "vuoto",
+            "i",
+            "cartelli",
+            "della",
+            "notte",
+            "prima",
+            "essere",
+            "al",
+            "loro",
+            "posto",
+            "sbagliato"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Giada non li sistema.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "li",
+            "sistema"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non è il suo lavoro salvare la messa in scena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "il",
+            "suo",
+            "lavorare",
+            "salvare",
+            "la",
+            "mettere",
+            "in",
+            "scena"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Sulla strada della diga l'asfalto è bagnato ma praticabile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "strada",
+            "della",
+            "diga",
+            "l'asfalto",
+            "essere",
+            "bagnato",
+            "ma",
+            "praticabile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "L'acqua della sera è scesa; restano pozze e odore di fango.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "della",
+            "sera",
+            "essere",
+            "scesa",
+            "restano",
+            "pozze",
+            "e",
+            "odore",
+            "di",
+            "fango"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Tullio è già lì, con il thermos e l'orologio nella testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "essere",
+            "gia",
+            "li",
+            "con",
+            "il",
+            "thermos",
+            "e",
+            "orologio",
+            "nella",
+            "testa"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Sei in orario.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "in",
+            "orario"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "L'acqua è giù.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "acqua",
+            "essere",
+            "giu"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "All'alba sì.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "all'alba",
+            "si_yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Camminano insieme verso la fermata cancellata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "insieme",
+            "verso",
+            "la",
+            "fermare",
+            "cancellata"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Neri arriva dall'altra parte della strada, mani in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "arrivare",
+            "altro",
+            "partire",
+            "della",
+            "strada",
+            "mani",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Non ha valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Non salgo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "salgo"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Lo vedo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "vedere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Non ho chiesto ancora.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "chiedere",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Va bene.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Neri le dà un pezzo di carta con un numero scritto storto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "le",
+            "dare",
+            "un",
+            "pezzo",
+            "di",
+            "carta",
+            "con",
+            "un",
+            "numero",
+            "scrivere",
+            "storto"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Se un giorno il segnale prende, e se io ho chiesto.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "un",
+            "giorno",
+            "il",
+            "segnale",
+            "prendere",
+            "e",
+            "se",
+            "io",
+            "avere",
+            "chiedere"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Giada mette il numero in tasca senza promettere miracoli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "mettere",
+            "il",
+            "numero",
+            "in",
+            "tasca",
+            "senza",
+            "promettere",
+            "miracoli"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Grazie.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Alla fermata il cartello Collevento è ancora barrato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "fermare",
+            "il",
+            "cartello",
+            "collevento",
+            "essere",
+            "ancora",
+            "barrato"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Giada lo guarda una volta sola, senza toccarlo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "guardare",
+            "una",
+            "volta",
+            "solo",
+            "senza",
+            "toccarlo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Arriva un bus basso, grigio, con uomini del cantiere già seduti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "arrivare",
+            "un",
+            "bus",
+            "basso",
+            "grigio",
+            "con",
+            "uomini",
+            "del",
+            "cantiere",
+            "gia",
+            "sedere"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Non è un treno turistico; è un passaggio da settimana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "treno",
+            "turistico",
+            "essere",
+            "un",
+            "passaggio",
+            "dare",
+            "settimana"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "L'autista apre la porta e guarda Giada senza sorpresa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'autista",
+            "aprire",
+            "la",
+            "porta",
+            "e",
+            "guardare",
+            "giada",
+            "senza",
+            "sorpresa"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "A volte sale qualcuno dal paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "volta",
+            "sapere",
+            "qualcuno",
+            "dal",
+            "paese"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Tullio fa un cenno breve con il mento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "fare",
+            "un",
+            "cenno",
+            "breve",
+            "con",
+            "il",
+            "mento"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "È tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Non c'è discorso di addio, non c'è benedizione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "discorso",
+            "di",
+            "addio",
+            "non",
+            "ce",
+            "benedizione"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "C'è un annuire che dice: conosci la regola e la usi al diritto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "annuire",
+            "che",
+            "dire",
+            "conoscere",
+            "la",
+            "regola",
+            "e",
+            "la",
+            "usi",
+            "al",
+            "diritto"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Giada sale con la valigia e trova un posto vicino al finestrino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sapere",
+            "con",
+            "la",
+            "valigia",
+            "e",
+            "trovare",
+            "un",
+            "posto",
+            "vicino",
+            "al",
+            "finestrino"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il bus riparte subito, perché gli operai hanno un orario vero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "bus",
+            "riparte",
+            "subito",
+            "perche",
+            "gli",
+            "operai",
+            "avere",
+            "un",
+            "orario",
+            "vero"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Fuori, Neri diventa piccolo sulla strada bagnata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "neri",
+            "diventa",
+            "piccolo",
+            "sulla",
+            "strada",
+            "bagnata"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Tullio resta fermo, thermos in mano, come ogni alba utile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "restare",
+            "fermare",
+            "thermos",
+            "in",
+            "mano",
+            "come",
+            "ogni",
+            "alba",
+            "utile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Il paese resta dietro la curva, non conquistato e non salvato da una profezia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "restare",
+            "dietro",
+            "la",
+            "curva",
+            "non",
+            "conquistato",
+            "e",
+            "non",
+            "salvato",
+            "dare",
+            "una",
+            "profezia"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Semplicemente lasciato al suo posto fuori mappa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "semplicemente",
+            "lasciare",
+            "al",
+            "suo",
+            "posto",
+            "fuori",
+            "mappa"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Giada non piange.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "piange"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Guarda i campi e conta i minuti verso una stazione che esiste sugli orari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "i",
+            "campi",
+            "e",
+            "contare",
+            "i",
+            "minuti",
+            "verso",
+            "una",
+            "stazione",
+            "che",
+            "esiste",
+            "su",
+            "orari"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Nella tasca il numero di Neri sta piegato, ancora inutilizzato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "tasca",
+            "il",
+            "numero",
+            "di",
+            "neri",
+            "stare",
+            "piegato",
+            "ancora",
+            "inutilizzato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Nella testa la voce della madre ripete: non dopo le otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "testa",
+            "la",
+            "voce",
+            "della",
+            "madre",
+            "ripete",
+            "non",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Lei è uscita prima, come si esce da una regola che hai finalmente capito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "essere",
+            "uscire",
+            "prima",
+            "come",
+            "si",
+            "uscire",
+            "dare",
+            "una",
+            "regola",
+            "che",
+            "avere",
+            "finalmente",
+            "capire"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Il bus scende verso la valle e la luce cresce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "bus",
+            "scende",
+            "verso",
+            "la",
+            "valle",
+            "e",
+            "la",
+            "luce",
+            "cresce"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Un operaio le chiede se va a Trento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "operaio",
+            "le",
+            "chiedere",
+            "se",
+            "andare",
+            "a",
+            "trento"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Sì.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Da mio padre.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dare",
+            "mio",
+            "padre"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "L'uomo annuisce e torna al sonno corto del mattino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'uomo",
+            "annuisce",
+            "e",
+            "tornare",
+            "al",
+            "sonno",
+            "corto",
+            "del",
+            "mattino"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Giada appoggia la fronte al vetro freddo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "appoggia",
+            "la",
+            "fronte",
+            "al",
+            "vetro",
+            "freddo"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Collevento non l'ha sconfitta e non l'ha eletta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "collevento",
+            "non",
+            "avere",
+            "sconfitta",
+            "e",
+            "non",
+            "avere",
+            "eletta"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Le ha chiesto di non diventare Anna, e lei ha risposto uscendo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "avere",
+            "chiedere",
+            "di",
+            "non",
+            "diventare",
+            "anna",
+            "e",
+            "lei",
+            "avere",
+            "rispondere",
+            "uscendo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Questa è l'uscita, non la conquista.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "uscire",
+            "non",
+            "la",
+            "conquista"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Quando il bus raggiunge una stazione vera, lei compra un biglietto ordinario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "il",
+            "bus",
+            "raggiunge",
+            "una",
+            "stazione",
+            "vero",
+            "lei",
+            "compra",
+            "un",
+            "biglietto",
+            "ordinario"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Il nome Trento è stampato chiaro, senza linee nere sopra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "nome",
+            "trento",
+            "essere",
+            "stampato",
+            "chiaro",
+            "senza",
+            "linee",
+            "nere",
+            "sopra"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Giada sorride poco, stanca, e sale sul treno giusto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sorridere",
+            "poco",
+            "stanco",
+            "e",
+            "sapere",
+            "sul",
+            "treno",
+            "giusto"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Dietro di lei resta un villaggio che non esiste sulle mappe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "di",
+            "lei",
+            "restare",
+            "un",
+            "villaggio",
+            "che",
+            "non",
+            "esiste",
+            "sul",
+            "mappe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Davanti c'è una cucina, un padre, e una storia da raccontare senza miracoli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davanti",
+            "ce",
+            "una",
+            "cucina",
+            "un",
+            "padre",
+            "e",
+            "una",
+            "storia",
+            "dare",
+            "raccontare",
+            "senza",
+            "miracoli"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Il treno per Trento è pieno di persone normali con valigie normali.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "treno",
+            "per",
+            "trento",
+            "essere",
+            "pieno",
+            "di",
+            "persona",
+            "normali",
+            "con",
+            "valigie",
+            "normali"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Giada appoggia la testa al sedile e non dorme subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "appoggia",
+            "la",
+            "testa",
+            "al",
+            "sedile",
+            "e",
+            "non",
+            "dormire",
+            "subito"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Ripensa al cenno di Tullio, breve come un orologio che conferma l'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ripensa",
+            "al",
+            "cenno",
+            "di",
+            "tullio",
+            "breve",
+            "come",
+            "un",
+            "orologio",
+            "che",
+            "conferma",
+            "ora"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Ripensa a Neri fermo sulla strada bagnata, senza valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ripensa",
+            "a",
+            "neri",
+            "fermare",
+            "sulla",
+            "strada",
+            "bagnata",
+            "senza",
+            "valigia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Ripensa al cartello barrato che resta dietro, non risolto e non bruciato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ripensa",
+            "al",
+            "cartello",
+            "barrato",
+            "che",
+            "restare",
+            "dietro",
+            "non",
+            "risolvere",
+            "e",
+            "non",
+            "bruciato"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Il paese continuerà a spostare nomi per un'ispezione forse futura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "continuera",
+            "a",
+            "spostare",
+            "no",
+            "per",
+            "un'ispezione",
+            "forse",
+            "futura"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "La diga continuerà ad aprire l'acqua sulla strada a un'ora precisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "diga",
+            "continuera",
+            "a",
+            "aprire",
+            "acqua",
+            "sulla",
+            "strada",
+            "a",
+            "ora",
+            "precisa"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Lei non tornerà dopo le otto a dimostrare qualcosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "non",
+            "tornera",
+            "dopo",
+            "le",
+            "otto",
+            "a",
+            "dimostrare",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Ha usato l'alba, il bus degli operai, e il proprio nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "usato",
+            "l'alba",
+            "il",
+            "bus",
+            "dei",
+            "operai",
+            "e",
+            "il",
+            "proprio",
+            "nome"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Quando il controllore passa, mostra un biglietto vero, stampato chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "il",
+            "controllore",
+            "passare",
+            "mostra",
+            "un",
+            "biglietto",
+            "vero",
+            "stampato",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Nessuna linea nera sul destino di oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "linea",
+            "nera",
+            "sul",
+            "destino",
+            "di",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Fuori scorrono stazioni che esistono sugli orari e sulle mappe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "scorrono",
+            "stazioni",
+            "che",
+            "esistono",
+            "su",
+            "orari",
+            "e",
+            "sul",
+            "mappe"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Giada le guarda con una fame quieta di cose verificabili.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "le",
+            "guardare",
+            "con",
+            "una",
+            "fame",
+            "quieta",
+            "di",
+            "cosa",
+            "verificabili"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Collevento resta una curva dietro la schiena, non una vittoria in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "collevento",
+            "restare",
+            "una",
+            "curva",
+            "dietro",
+            "la",
+            "schiena",
+            "non",
+            "una",
+            "vittoria",
+            "in",
+            "tasca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Questa è l'uscita che voleva: ordinaria, puntuale, sua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "uscire",
+            "che",
+            "volere",
+            "ordinaria",
+            "puntuale",
+            "suo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch22_q01",
+      "chapterId": "il-villaggio-che-non-esiste-22",
+      "type": "direct",
+      "question": "How does Giada leave Collevento?",
+      "choices": [
+        "On the workers' bus at dawn",
+        "In the engineer's high car at sunset",
+        "On a tourist train at noon"
+      ],
+      "correctChoice": 0,
+      "explanation": "She takes the weekday workers' bus when the water is down.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch22_q02",
+      "chapterId": "il-villaggio-che-non-esiste-22",
+      "type": "direct",
+      "question": "What does Tullio do as she leaves?",
+      "choices": [
+        "Nods",
+        "Signs her papers",
+        "Stops the bus"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio gives a short nod; that is the farewell.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch22_q03",
+      "chapterId": "il-villaggio-che-non-esiste-22",
+      "type": "inference",
+      "question": "Why doesn't Neri board?",
+      "choices": [
+        "He has not asked his people yet",
+        "The bus has no seats",
+        "Tullio forbids him"
+      ],
+      "correctChoice": 0,
+      "explanation": "Neri says he is not getting on because he has not asked yet; he gives Giada his number.",
+      "difficulty": 2
+    }
+  ]
+}

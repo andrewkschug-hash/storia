@@ -1,0 +1,1151 @@
+{
+  "id": "lettera-per-elena-08",
+  "storyId": "lettera-per-elena",
+  "number": 8,
+  "title": "Sergio",
+  "titleIt": "Sergio",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "caffe-brenta",
+    "bancone-brenta",
+    "scaffale-libro"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "bruna",
+    "katia"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-08",
+      "summary": "The stranger writes about a brother who cannot sleep. Elena wrongly assumes a breakup story.",
+      "characterIds": [
+        "elena-marini",
+        "bruna",
+        "katia"
+      ],
+      "locationIds": [
+        "caffe-brenta",
+        "bancone-brenta",
+        "scaffale-libro"
+      ],
+      "rememberedFacts": [
+        "A note mentions a brother who does not sleep",
+        "Elena assumes the writer is talking about a breakup",
+        "Bruna mentions Pietro has family problems",
+        "Elena's soft advice misses the real situation"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Venerdì Elena apre il libro prima del turno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "elena",
+            "aprire",
+            "il",
+            "libro",
+            "prima",
+            "del",
+            "turno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il caffè è ancora quieto. Lo zucchero è già sul bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "caffe",
+            "essere",
+            "ancora",
+            "quieto",
+            "lo",
+            "zucchero",
+            "essere",
+            "gia",
+            "sul",
+            "banco"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "C'è una riga nuova, scritta di fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "riga",
+            "nuovo",
+            "scritta",
+            "di",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Mio fratello non dorme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mio",
+            "fratello",
+            "non",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "La casa è piena di paura quieta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "casa",
+            "essere",
+            "pieno",
+            "di",
+            "paura",
+            "quieta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Io resto sveglio con lui e non so cosa dire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "io",
+            "restare",
+            "svegliare",
+            "con",
+            "lui",
+            "e",
+            "non",
+            "sapere",
+            "cosa",
+            "dire"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Elena legge e immagina una storia sbagliata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "leggere",
+            "e",
+            "immagina",
+            "una",
+            "storia",
+            "sbagliata"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Pensa a una relazione finita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "a",
+            "una",
+            "relazione",
+            "finire"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Pensa a un letto vuoto, a litigi, a un addio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "a",
+            "un",
+            "leggere",
+            "vuoto",
+            "a",
+            "litigi",
+            "a",
+            "un",
+            "addio"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Nella sua testa il fratello è quasi un ex, non un fratello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "suo",
+            "testa",
+            "il",
+            "fratello",
+            "essere",
+            "quasi",
+            "un",
+            "ex",
+            "non",
+            "un",
+            "fratello"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Scrive una risposta dolce e fuori posto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "una",
+            "risposta",
+            "dolce",
+            "e",
+            "fuori",
+            "posto"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "A volte le persone se ne vanno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "volta",
+            "le",
+            "persona",
+            "se",
+            "ne",
+            "andare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Non è colpa tua se il silenzio resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "colpa",
+            "tuo",
+            "se",
+            "il",
+            "silenzio",
+            "restare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il tempo aiuta, anche se adesso non sembra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "tempo",
+            "aiutare",
+            "anche",
+            "se",
+            "adesso",
+            "non",
+            "sembrare"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Chiude il libro contenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "libro",
+            "contento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Crede di aver capito e di aver aiutato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "crede",
+            "di",
+            "avere",
+            "capire",
+            "e",
+            "di",
+            "avere",
+            "aiutare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Durante il turno Bruna parla di una consegna in ritardo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "durante",
+            "il",
+            "turno",
+            "bruna",
+            "parlare",
+            "di",
+            "una",
+            "consegna",
+            "in",
+            "ritardo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Pietro questa settimana è stato in ritardo due volte.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "pietro",
+            "questo",
+            "settimana",
+            "essere",
+            "essere",
+            "in",
+            "ritardo",
+            "due",
+            "volta"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Ha problemi in famiglia, credo.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "problema",
+            "in",
+            "famiglia",
+            "credo"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Elena alza la testa dal bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "alzare",
+            "la",
+            "testa",
+            "dal",
+            "banco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Che problemi?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "problema"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non so. Non chiedo tutto. Non è il mio stile.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "sapere",
+            "non",
+            "chiedere",
+            "tutto",
+            "non",
+            "essere",
+            "il",
+            "mio",
+            "stile"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Katia lava i bicchieri e parla senza guardare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "lavare",
+            "i",
+            "bicchieri",
+            "e",
+            "parlare",
+            "senza",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Al bancone si sente tutto e niente.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "banco",
+            "si",
+            "sentire",
+            "tutto",
+            "e",
+            "niente"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Elena pensa al fratello che non dorme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "al",
+            "fratello",
+            "che",
+            "non",
+            "dormire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Nella sua testa resta ancora una rottura d'amore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "suo",
+            "testa",
+            "restare",
+            "ancora",
+            "una",
+            "rottura",
+            "d'amore"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Non collega Pietro al libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "collega",
+            "pietro",
+            "al",
+            "libro"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Non sente ancora il nome Sergio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sentire",
+            "ancora",
+            "il",
+            "nome",
+            "sergio"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Nel pomeriggio rilegge la sua risposta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "rilegge",
+            "la",
+            "suo",
+            "risposta"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Le sembra buona. Le sembra anche un po' fuori posto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "sembrare",
+            "buono",
+            "le",
+            "sembrare",
+            "anche",
+            "un",
+            "poco",
+            "fuori",
+            "posto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Ma lei non lo sa ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "lei",
+            "non",
+            "lo",
+            "sapere",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Un cliente chiede lo zucchero per il tavolo vicino alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "cliente",
+            "chiedere",
+            "lo",
+            "zucchero",
+            "per",
+            "il",
+            "tavolo",
+            "vicino",
+            "alla",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Elena lo porta al tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "lo",
+            "porta",
+            "al",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Il tavolo balla ancora un poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "tavolo",
+            "balla",
+            "ancora",
+            "un",
+            "poco"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Elena sorride alla memoria della prima riga del libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sorridere",
+            "alla",
+            "memoria",
+            "della",
+            "prima",
+            "riga",
+            "del",
+            "libro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Alla sera Katia spegne le luci del bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "sera",
+            "katia",
+            "spegne",
+            "le",
+            "luce",
+            "del",
+            "banco"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Elena tocca la copertina del libro vicino allo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "tocca",
+            "la",
+            "copertina",
+            "del",
+            "libro",
+            "vicino",
+            "al",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Spera che la persona legga e stia meglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "spera",
+            "che",
+            "la",
+            "persona",
+            "legga",
+            "e",
+            "stia",
+            "meglio"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Non sa che Sergio esiste davvero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "che",
+            "sergio",
+            "esiste",
+            "davvero"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Non sa che il fratello è in recupero dopo un incidente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "che",
+            "il",
+            "fratello",
+            "essere",
+            "in",
+            "recupero",
+            "dopo",
+            "un",
+            "incidente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Sa solo una frase sulla carta e una ipotesi sbagliata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "solo",
+            "una",
+            "frase",
+            "sulla",
+            "carta",
+            "e",
+            "una",
+            "ipotesi",
+            "sbagliata"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Chiude il caffè con Bruna e Katia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "caffe",
+            "con",
+            "bruna",
+            "e",
+            "katia"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Fuori c'è nebbia. Dentro resta il libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "ce",
+            "nebbia",
+            "dentro",
+            "restare",
+            "il",
+            "libro"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Elena cammina verso casa e ripete: mio fratello non dorme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "camminare",
+            "verso",
+            "casa",
+            "e",
+            "ripete",
+            "mio",
+            "fratello",
+            "non",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Elena rilegge la riga del fratello mentre prepara il primo caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "rilegge",
+            "la",
+            "riga",
+            "del",
+            "fratello",
+            "mentre",
+            "preparare",
+            "il",
+            "primo",
+            "caffe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Immagina ancora una donna che se n'è andata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "immagina",
+            "ancora",
+            "una",
+            "donna",
+            "che",
+            "se",
+            "n'e",
+            "andare"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Immagina porte chiuse e messaggi non letti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "immagina",
+            "porte",
+            "chiuse",
+            "e",
+            "messaggio",
+            "non",
+            "letto"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Per questo parla di persone che se ne vanno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "questo",
+            "parlare",
+            "di",
+            "persona",
+            "che",
+            "se",
+            "ne",
+            "andare"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Katia le chiede se vuole cambiare il turno di martedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "le",
+            "chiedere",
+            "se",
+            "volere",
+            "cambiare",
+            "il",
+            "turno",
+            "di",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "No. Il martedì mi va bene.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "il",
+            "martedi",
+            "mi",
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Katia alza le spalle e porta lo zucchero a un tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "alzare",
+            "le",
+            "spalle",
+            "e",
+            "porta",
+            "lo",
+            "zucchero",
+            "a",
+            "un",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Bruna torna sull'argomento di Pietro solo una volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "tornare",
+            "sull'argomento",
+            "di",
+            "pietro",
+            "solo",
+            "una",
+            "volta"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Se arriva in ritardo, non fare storie. Ha già abbastanza.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "arrivare",
+            "in",
+            "ritardo",
+            "non",
+            "fare",
+            "storie",
+            "avere",
+            "gia",
+            "abbastanza"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Va bene.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Elena pensa al libro e alla sua risposta dolce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "al",
+            "libro",
+            "e",
+            "alla",
+            "suo",
+            "risposta",
+            "dolce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Spera di non aver fatto danno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "spera",
+            "di",
+            "non",
+            "avere",
+            "fare",
+            "dare"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Non sa che ha scritto a una storia diversa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "che",
+            "avere",
+            "scrivere",
+            "a",
+            "una",
+            "storia",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Una storia di recupero, non di addio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "storia",
+            "di",
+            "recupero",
+            "non",
+            "di",
+            "addio"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Il bancone resta pieno. Il libro resta chiuso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "banco",
+            "restare",
+            "pieno",
+            "il",
+            "libro",
+            "restare",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "E l'ipotesi sbagliata resta comoda fino al prossimo capitolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "l'ipotesi",
+            "sbagliata",
+            "restare",
+            "comoda",
+            "fino",
+            "al",
+            "prossimo",
+            "capire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Ancora pensa a un amore finito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ancora",
+            "pensare",
+            "a",
+            "un",
+            "amore",
+            "finire"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "La verità è più semplice e più dura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "verita",
+            "essere",
+            "piu",
+            "semplice",
+            "e",
+            "piu",
+            "dura"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Ma quella arriva dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "quello",
+            "arrivare",
+            "dopo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch08_q01",
+      "chapterId": "lettera-per-elena-08",
+      "type": "direct",
+      "question": "What does the new note say?",
+      "choices": [
+        "A brother does not sleep",
+        "Pietro loves Elena",
+        "Bruna will sell the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "The writer mentions a brother who cannot sleep.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q02",
+      "chapterId": "lettera-per-elena-08",
+      "type": "direct",
+      "question": "What does Elena assume?",
+      "choices": [
+        "A breakup story",
+        "A job promotion",
+        "A trip to Padova"
+      ],
+      "correctChoice": 0,
+      "explanation": "She imagines a finished relationship.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q03",
+      "chapterId": "lettera-per-elena-08",
+      "type": "direct",
+      "question": "What does Bruna mention about Pietro?",
+      "choices": [
+        "Family problems",
+        "He wrote in the book",
+        "He hates Tuesdays"
+      ],
+      "correctChoice": 0,
+      "explanation": "Bruna thinks Pietro has family problems.",
+      "difficulty": 2
+    }
+  ]
+}

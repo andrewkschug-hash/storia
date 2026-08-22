@@ -1,0 +1,1582 @@
+{
+  "id": "il-villaggio-che-non-esiste-13",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 13,
+  "title": "The forest",
+  "titleIt": "Il bosco",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "bosco-recinto",
+    "memorial-1978",
+    "collevento-strada"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "neri"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-13",
+      "summary": "Giada goes into the forest despite the rule. She finds a fence with a sinkhole pictogram, not a monster sign, and the names of the 1978 survey team.",
+      "characterIds": [
+        "giada-rinaldi",
+        "neri"
+      ],
+      "locationIds": [
+        "bosco-recinto",
+        "memorial-1978",
+        "collevento-strada"
+      ],
+      "rememberedFacts": [
+        "Giada enters the forest against the village rule",
+        "The fence warning is a sinkhole pictogram",
+        "It is not a magical monster sign",
+        "Names of the 1978 survey team are listed at the memorial"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo Giada non chiede permesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "giada",
+            "non",
+            "chiedere",
+            "permesso"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Prende una bottiglia d'acqua e la foto di Anna in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "una",
+            "bottiglia",
+            "acqua",
+            "e",
+            "la",
+            "foto",
+            "di",
+            "anna",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Esce sulla strada del colle quando il sole è alto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uscire",
+            "sulla",
+            "strada",
+            "del",
+            "colle",
+            "quando",
+            "il",
+            "sole",
+            "essere",
+            "alto"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il bosco comincia subito dopo le ultime case.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "bosco",
+            "cominciare",
+            "subito",
+            "dopo",
+            "le",
+            "ultime",
+            "casa"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "L'aria cambia: più fresca, più chiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'aria",
+            "cambiare",
+            "piu",
+            "fresca",
+            "piu",
+            "chiudere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Ricorda la regola: non si va nel bosco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ricordare",
+            "la",
+            "regola",
+            "non",
+            "si",
+            "andare",
+            "nel",
+            "bosco"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ricorda anche che le regole, qui, hanno ragioni fisiche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ricordare",
+            "anche",
+            "che",
+            "le",
+            "regole",
+            "qui",
+            "avere",
+            "ragioni",
+            "fisiche"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Cammina comunque.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "comunque"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Dopo dieci minuti trova un recinto di rete metallica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "dieci",
+            "minuti",
+            "trovare",
+            "un",
+            "recinto",
+            "di",
+            "rete",
+            "metallica"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il cancello è chiuso con una catena vecchia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cancello",
+            "essere",
+            "chiudere",
+            "con",
+            "una",
+            "catena",
+            "vecchio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Sul palo c'è un cartello giallo piegato dal tempo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "palo",
+            "ce",
+            "un",
+            "cartello",
+            "giallo",
+            "piegato",
+            "dal",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "All'inizio Giada legge il disegno come un teschio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "iniziare",
+            "giada",
+            "leggere",
+            "il",
+            "disegno",
+            "come",
+            "un",
+            "teschio"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Poi si avvicina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "si",
+            "avvicina"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Non è un teschio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "teschio"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "È un pittogramma di terreno che cede: una figura stilizzata che sprofonda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "pittogramma",
+            "di",
+            "terreno",
+            "che",
+            "cede",
+            "una",
+            "figura",
+            "stilizzata",
+            "che",
+            "sprofonda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Sotto, in stampatello: PERICOLO VORAGINI.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sotto",
+            "in",
+            "stampatello",
+            "pericolo",
+            "voragini"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Giada sente sollievo e paura insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "sollievo",
+            "e",
+            "paura",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Sollievo perché non c'è un mostro da storia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sollievo",
+            "perche",
+            "non",
+            "ce",
+            "un",
+            "mostro",
+            "dare",
+            "storia"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Paura perché il suolo può aprirsi davvero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paura",
+            "perche",
+            "il",
+            "suo",
+            "potere",
+            "aprirsi",
+            "davvero"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Cammina lungo il recinto senza salirlo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "lungo",
+            "il",
+            "recinto",
+            "senza",
+            "salirlo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Cerca un punto dove la rete è più bassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cercare",
+            "un",
+            "punto",
+            "dove",
+            "la",
+            "rete",
+            "essere",
+            "piu",
+            "basso"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Trova invece una targa di metallo fissata a due pali.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "trovare",
+            "invece",
+            "una",
+            "targa",
+            "di",
+            "metallo",
+            "fissata",
+            "a",
+            "due",
+            "pali"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "La targa è sporca, ma le lettere si leggono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "targa",
+            "essere",
+            "sporca",
+            "ma",
+            "le",
+            "lettere",
+            "si",
+            "leggono"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "SQUADRA RILIEVO 1978.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "squadra",
+            "rilievo",
+            "1978"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Sotto ci sono nomi, uno sotto l'altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sotto",
+            "ci",
+            "essere",
+            "no",
+            "uno",
+            "sotto",
+            "altro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Marco Bellini.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "bellini"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Paola Greci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "paola",
+            "greci"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Stefano Mura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stefano",
+            "mura"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Luciano Ferri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luciano",
+            "ferri"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Due cognomi sono rovinati dalla ruggine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "cognomi",
+            "essere",
+            "rovinati",
+            "dalla",
+            "ruggine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Giada legge ad alta voce, piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "leggere",
+            "a",
+            "alto",
+            "voce",
+            "piano"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Non per chiamare spiriti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "per",
+            "chiamare",
+            "spiriti"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Per non dimenticare che erano persone con un lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "non",
+            "dimenticare",
+            "che",
+            "essere",
+            "persona",
+            "con",
+            "un",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Dietro la targa il terreno è irregolare, più basso, con erba diversa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "la",
+            "targa",
+            "il",
+            "terreno",
+            "essere",
+            "irregolare",
+            "piu",
+            "basso",
+            "con",
+            "erba",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Capisce: qui qualcosa è crollato, anni fa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "capire",
+            "qui",
+            "qualcosa",
+            "essere",
+            "crollato",
+            "anno",
+            "fare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Il memorial non è magia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "memorial",
+            "non",
+            "essere",
+            "magia"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "È memoria tecnica e lutto civile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "memoria",
+            "tecnica",
+            "e",
+            "lutto",
+            "civile"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Sente passi sulla foglia secca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sentire",
+            "passare",
+            "sulla",
+            "foglia",
+            "secca"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Neri arriva senza correre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "arrivare",
+            "senza",
+            "correre"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Ti avevano detto di no.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "ti",
+            "avere",
+            "dire",
+            "di",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Lo so.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Neri indica il cartello giallo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "indica",
+            "il",
+            "cartello",
+            "giallo"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Non è una storia per spaventare i bambini.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "storia",
+            "per",
+            "spaventare",
+            "i",
+            "bambini"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Il terreno mangia.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "terreno",
+            "mangiare"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Mangia macchine, strumenti, a volte gente.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "mangiare",
+            "macchine",
+            "strumenti",
+            "a",
+            "volta",
+            "gente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Giada annuisce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "annuisce"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Perché nessuno spiega così in paese?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "nessuno",
+            "spiegare",
+            "cosi",
+            "in",
+            "paese"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Neri alza un sopracciglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "alzare",
+            "un",
+            "sopracciglio"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Perché «voragine» fa meno paura di «bosco maledetto» ai turisti.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "voragine",
+            "fare",
+            "meno",
+            "paura",
+            "di",
+            "bosco",
+            "maledetto",
+            "ai",
+            "turisti"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "E noi non siamo turisti.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "noi",
+            "non",
+            "essere",
+            "turisti"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Però a volte le storie corte tengono i bambini lontani meglio delle spiegazioni.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "pero",
+            "a",
+            "volta",
+            "le",
+            "storie",
+            "corte",
+            "tengono",
+            "i",
+            "bambini",
+            "lontani",
+            "meglio",
+            "delle",
+            "spiegazioni"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Giada guarda di nuovo i nomi del 1978.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "di",
+            "nuovo",
+            "i",
+            "no",
+            "del",
+            "1978"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Loro erano qui per la diga?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "loro",
+            "essere",
+            "qui",
+            "per",
+            "la",
+            "diga"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Per il lago che doveva arrivare.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "il",
+            "lago",
+            "che",
+            "dovere",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Hanno misurato, trapano, mappe.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "misurato",
+            "trapano",
+            "mappe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Poi il terreno ha risposto male.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "il",
+            "terreno",
+            "avere",
+            "rispondere",
+            "ma"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Neri non aggiunge dettagli cruenti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "non",
+            "aggiunge",
+            "dettagli",
+            "cruenti"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Non serve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "servire"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Giada fotografa la targa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "fotografa",
+            "la",
+            "targa"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Fotografa il pittogramma della voragine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "pittogramma",
+            "della",
+            "voragine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Fotografa il punto basso dietro il recinto, da lontano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "punto",
+            "basso",
+            "dietro",
+            "il",
+            "recinto",
+            "dare",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Non supera la rete.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "supera",
+            "la",
+            "rete"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Rispetto e paura, insieme, bastano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "rispetto",
+            "e",
+            "paura",
+            "insieme",
+            "bastano"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Torniamo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "tornare"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Prima del pomeriggio le ombre mentono sulla profondità delle buche.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "del",
+            "pomeriggio",
+            "le",
+            "ombre",
+            "mentono",
+            "sulla",
+            "profondita",
+            "delle",
+            "buche"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Giada lo segue sulla strada del colle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "segue",
+            "sulla",
+            "strada",
+            "del",
+            "colle"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Nel taschino la foto di Anna batte contro il telefono a ogni passo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "taschino",
+            "la",
+            "foto",
+            "di",
+            "anna",
+            "batte",
+            "contro",
+            "il",
+            "telefono",
+            "a",
+            "ogni",
+            "passare"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Prima del recinto Giada cammina su terra dura e radici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "del",
+            "recinto",
+            "giada",
+            "camminare",
+            "su",
+            "terra",
+            "dura",
+            "e",
+            "radici"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Sente odore di funghi e di ferro umido.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sentire",
+            "odore",
+            "di",
+            "funghi",
+            "e",
+            "di",
+            "ferro",
+            "umido"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Nessun uccello canta vicino alla targa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessun",
+            "uccello",
+            "canta",
+            "vicino",
+            "alla",
+            "targa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Forse è caso, forse è il terreno che non ama il peso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "forse",
+            "essere",
+            "caso",
+            "forse",
+            "essere",
+            "il",
+            "terreno",
+            "che",
+            "non",
+            "ama",
+            "il",
+            "peso"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Giada non inventa storie sopra i fatti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "inventa",
+            "storie",
+            "sopra",
+            "i",
+            "fatti"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "I fatti bastano: nomi, anno, pericolo stampato in giallo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "fatti",
+            "bastano",
+            "no",
+            "anno",
+            "pericolo",
+            "stampato",
+            "in",
+            "giallo"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Legge di nuovo «PERICOLO VORAGINI» come si legge un orario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "leggere",
+            "di",
+            "nuovo",
+            "pericolo",
+            "voragini",
+            "come",
+            "si",
+            "leggere",
+            "un",
+            "orario"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Un orario non si discute: si usa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "orario",
+            "non",
+            "si",
+            "discute",
+            "si",
+            "usa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Neri racconta che da ragazzo qualcuno gli aveva detto del mostro del bosco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "racconta",
+            "che",
+            "dare",
+            "ragazzo",
+            "qualcuno",
+            "gli",
+            "avere",
+            "dire",
+            "del",
+            "mostro",
+            "del",
+            "bosco"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Poi ha visto i documenti in comune, in una cartella dimenticata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "avere",
+            "vedere",
+            "i",
+            "documenti",
+            "in",
+            "comune",
+            "in",
+            "una",
+            "cartella",
+            "dimenticata"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Non c'era un mostro.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "un",
+            "mostro"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "C'erano perizie e croci sulle mappe.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "perizie",
+            "e",
+            "croci",
+            "sul",
+            "mappe"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Giada apprezza che lui preferisca le perizie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "apprezza",
+            "che",
+            "lui",
+            "preferisca",
+            "le",
+            "perizie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Anche lei preferisce le prove alle favole, da sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anche",
+            "lei",
+            "preferisce",
+            "le",
+            "prove",
+            "alle",
+            "favole",
+            "dare",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Per questo odia quando gli adulti usano favole per comodità.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "questo",
+            "odia",
+            "quando",
+            "gli",
+            "adulti",
+            "usano",
+            "favole",
+            "per",
+            "comodita"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Davanti ai nomi del 1978 resta un minuto in silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davanti",
+            "ai",
+            "no",
+            "del",
+            "1978",
+            "restare",
+            "un",
+            "minuto",
+            "in",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Non prega.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "prega"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Ricorda soltanto che ogni progetto grande lascia conti umani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ricordare",
+            "soltanto",
+            "che",
+            "ogni",
+            "progetto",
+            "grande",
+            "lasciare",
+            "conto",
+            "umani"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Poi fotografa anche la catena del cancello, chiusa bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "fotografa",
+            "anche",
+            "la",
+            "catena",
+            "del",
+            "cancello",
+            "chiudere",
+            "bene"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Una prova che il divieto non è teatro vuoto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "provare",
+            "che",
+            "il",
+            "divieto",
+            "non",
+            "essere",
+            "teatro",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "È un confine fisico, tenuto da gente che sa perché.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "confine",
+            "fisico",
+            "tenuto",
+            "dare",
+            "gente",
+            "che",
+            "sapere",
+            "perche"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "Sulla via del ritorno le gambe sono più pesanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "via",
+            "del",
+            "ritorno",
+            "le",
+            "gambe",
+            "essere",
+            "piu",
+            "pesanti"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Non per lo sforzo: per il peso dei fatti nuovi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "per",
+            "lo",
+            "sforzo",
+            "per",
+            "il",
+            "peso",
+            "dei",
+            "fatti",
+            "nuovo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "Due prove diverse: una faccia, un elenco di morti tecnici.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "prove",
+            "diverso",
+            "una",
+            "faccia",
+            "un",
+            "elenco",
+            "di",
+            "morti",
+            "tecnici"
+          ]
+        },
+        {
+          "id": "s92",
+          "text": "Nessuna delle due è un destino scelto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "delle",
+            "due",
+            "essere",
+            "un",
+            "destino",
+            "scegliere"
+          ]
+        },
+        {
+          "id": "s93",
+          "text": "Sono fatti, e i fatti pesano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "fatti",
+            "e",
+            "i",
+            "fatti",
+            "pesano"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch13_q01",
+      "chapterId": "il-villaggio-che-non-esiste-13",
+      "type": "direct",
+      "question": "What does the yellow sign really warn about?",
+      "choices": [
+        "Sinkholes",
+        "Wolves",
+        "Ghosts"
+      ],
+      "correctChoice": 0,
+      "explanation": "It is a sinkhole pictogram: PERICOLO VORAGINI.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q02",
+      "chapterId": "il-villaggio-che-non-esiste-13",
+      "type": "direct",
+      "question": "What year is on the memorial plaque?",
+      "choices": [
+        "1978",
+        "2007",
+        "1999"
+      ],
+      "correctChoice": 0,
+      "explanation": "It says survey team 1978.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch13_q03",
+      "chapterId": "il-villaggio-che-non-esiste-13",
+      "type": "direct",
+      "question": "Does Giada climb past the fence?",
+      "choices": [
+        "No",
+        "Yes, to the dam",
+        "Only at night"
+      ],
+      "correctChoice": 0,
+      "explanation": "She photographs from outside and does not cross.",
+      "difficulty": 2
+    }
+  ]
+}

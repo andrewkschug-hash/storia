@@ -1,0 +1,1112 @@
+{
+  "id": "lettera-per-elena-06",
+  "storyId": "lettera-per-elena",
+  "number": 6,
+  "title": "Mirella",
+  "titleIt": "Mirella",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "cucina-mirella",
+    "marina-di-brenta",
+    "caffe-brenta"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "mirella-marini"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-06",
+      "summary": "Elena's mother wants her to stay in town. Mirella says Elena's father used to speak on paper.",
+      "characterIds": [
+        "elena-marini",
+        "mirella-marini"
+      ],
+      "locationIds": [
+        "cucina-mirella",
+        "marina-di-brenta",
+        "caffe-brenta"
+      ],
+      "rememberedFacts": [
+        "Mirella wants Elena to stay in Marina di Brenta",
+        "Elena uses the café as an escape from home talk",
+        "Elena's father used to speak on paper",
+        "Elena recognizes the habit of writing instead of speaking"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Domenica Elena è a casa di sua madre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domenica",
+            "elena",
+            "essere",
+            "a",
+            "casa",
+            "di",
+            "suo",
+            "madre"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "La cucina di Mirella è piccola e calda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "cucina",
+            "di",
+            "mirella",
+            "essere",
+            "piccolo",
+            "e",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "C'è odore di caffè e di pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "odore",
+            "di",
+            "caffe",
+            "e",
+            "di",
+            "pane"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Mirella mette due tazzine sul tavolo e lo zucchero vicino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "mettere",
+            "due",
+            "tazzine",
+            "sul",
+            "tavolo",
+            "e",
+            "lo",
+            "zucchero",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Resti qui, vero?",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "restare",
+            "qui",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Elena guarda lo zucchero e non la madre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "guardare",
+            "lo",
+            "zucchero",
+            "e",
+            "non",
+            "la",
+            "madre"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Lavoro al Caffè Brenta. Per ora sì.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "lavorare",
+            "al",
+            "caffe",
+            "brenta",
+            "per",
+            "ora",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Padova è finita.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "padova",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sì. Il lavoro là è finito.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "il",
+            "lavorare",
+            "la",
+            "essere",
+            "finire"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Mirella annuisce e riempie le tazzine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "annuisce",
+            "e",
+            "riempie",
+            "le",
+            "tazzine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Qui hai casa. Hai me. Hai il caffè.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "avere",
+            "casa",
+            "avere",
+            "io",
+            "avere",
+            "il",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Elena sorride, ma è stanca di questa pressione dolce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sorridere",
+            "ma",
+            "essere",
+            "stanco",
+            "di",
+            "questo",
+            "pressione",
+            "dolce"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il caffè mi piace. Il bancone mi piace.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "caffe",
+            "mi",
+            "piacere",
+            "il",
+            "banco",
+            "mi",
+            "piacere"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Al bancone parli tanto.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "banco",
+            "parlare",
+            "tanto"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "A casa parli poco.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "casa",
+            "parlare",
+            "poco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Elena beve il caffè e sente il silenzio della cucina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "bere",
+            "il",
+            "caffe",
+            "e",
+            "sentire",
+            "il",
+            "silenzio",
+            "della",
+            "cucina"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Al bancone è più facile.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "banco",
+            "essere",
+            "piu",
+            "facile"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Mirella guarda fuori dalla finestra, verso la nebbia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "guardare",
+            "fuori",
+            "dalla",
+            "finestra",
+            "verso",
+            "la",
+            "nebbia"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Tuo padre parlava così, sulla carta.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "tuo",
+            "padre",
+            "parlare",
+            "cosi",
+            "sulla",
+            "carta"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Elena alza gli occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "alzare",
+            "gli",
+            "occhi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Sulla carta?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "sulla",
+            "carta"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Sì. Scriveva biglietti. Scriveva frasi corte.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "scrivere",
+            "biglietti",
+            "scrivere",
+            "frasi",
+            "corte"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "In voce era più chiuso.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "in",
+            "voce",
+            "essere",
+            "piu",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Elena resta zitta un momento lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "restare",
+            "zitta",
+            "un",
+            "momento",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Pensa al libro vicino allo zucchero al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "al",
+            "libro",
+            "vicino",
+            "al",
+            "zucchero",
+            "al",
+            "caffe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Pensa alle sue risposte lunghe e alla paura del silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "alle",
+            "suo",
+            "risposte",
+            "lunghe",
+            "e",
+            "alla",
+            "paura",
+            "del",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Mamma, io non sono papà.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "io",
+            "non",
+            "essere",
+            "papa"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Lo so.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Ma a volte ti assomigli.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "a",
+            "volta",
+            "ti",
+            "assomigli"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Dopo pranzo Elena dice che deve andare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "pranzo",
+            "elena",
+            "dire",
+            "che",
+            "dovere",
+            "andare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Dove?",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Al caffè. Devo aiutare Bruna con il bancone.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "caffe",
+            "dovere",
+            "aiutare",
+            "bruna",
+            "con",
+            "il",
+            "banco"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "È domenica.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "domenica"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Lo so. Solo un'ora.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "solo",
+            "ora"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Mirella non crede del tutto, ma non ferma la figlia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "non",
+            "crede",
+            "del",
+            "tutto",
+            "ma",
+            "non",
+            "fermare",
+            "la",
+            "figlia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Elena pedala verso il Caffè Brenta con il vento in faccia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pedala",
+            "verso",
+            "il",
+            "caffe",
+            "brenta",
+            "con",
+            "il",
+            "vento",
+            "in",
+            "faccia"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Il caffè è chiuso. La porta è scura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "caffe",
+            "essere",
+            "chiudere",
+            "la",
+            "porta",
+            "essere",
+            "scura"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Lei guarda la serratura e ride di se stessa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "guardare",
+            "la",
+            "serratura",
+            "e",
+            "ride",
+            "di",
+            "se",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Ha usato il caffè come scusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "usato",
+            "il",
+            "caffe",
+            "come",
+            "scusa"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Ha paura di restare troppo nella cucina di Mirella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "paura",
+            "di",
+            "restare",
+            "troppo",
+            "nella",
+            "cucina",
+            "di",
+            "mirella"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Nella cucina le parole sono vere e pesanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "cucina",
+            "le",
+            "parola",
+            "essere",
+            "vero",
+            "e",
+            "pesanti"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Nel libro le parole sono vere in un altro modo, più sicuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "libro",
+            "le",
+            "parola",
+            "essere",
+            "vero",
+            "in",
+            "un",
+            "altro",
+            "modo",
+            "piu",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Elena torna a casa piano, senza dire dove è stata davvero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "tornare",
+            "a",
+            "casa",
+            "piano",
+            "senza",
+            "dire",
+            "dove",
+            "essere",
+            "essere",
+            "davvero"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Di sera scrive un messaggio a Bruna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "di",
+            "sera",
+            "scrivere",
+            "un",
+            "messaggio",
+            "a",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Domani arrivo presto al bancone.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "arrivare",
+            "presto",
+            "al",
+            "banco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Poi pensa al padre e alla carta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "pensare",
+            "al",
+            "padre",
+            "e",
+            "alla",
+            "carta"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Mirella taglia il pane e parla ancora di restare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "taglia",
+            "il",
+            "pane",
+            "e",
+            "parlare",
+            "ancora",
+            "di",
+            "restare"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Marina di Brenta non è Padova, ma è casa.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "marina",
+            "di",
+            "brenta",
+            "non",
+            "essere",
+            "padova",
+            "ma",
+            "essere",
+            "casa"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Elena sa che è vero e che non basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sapere",
+            "che",
+            "essere",
+            "vero",
+            "e",
+            "che",
+            "non",
+            "basta"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Nel caffè ho un bancone. Qui ho domande.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "nel",
+            "caffe",
+            "avere",
+            "un",
+            "banco",
+            "qui",
+            "avere",
+            "domanda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Le domande vanno bene.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "domanda",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Se restano in cucina, però, pesano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "restano",
+            "in",
+            "cucina",
+            "pero",
+            "pesano"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Mirella le tocca la mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "le",
+            "tocca",
+            "la",
+            "mano"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Tuo padre metteva le cose vere nei biglietti.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "tuo",
+            "padre",
+            "mettere",
+            "le",
+            "cosa",
+            "vero",
+            "nei",
+            "biglietti"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "A tavola diceva poco.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "tavola",
+            "dire",
+            "poco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Elena beve l'ultimo sorso di caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "bere",
+            "ultimo",
+            "sorso",
+            "di",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Forse anche io faccio così.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "anche",
+            "io",
+            "fare",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Lo so.",
+          "speakerId": "mirella-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Quando Elena torna dalla porta chiusa del caffè, ha freddo alle mani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "elena",
+            "tornare",
+            "dalla",
+            "porta",
+            "chiudere",
+            "del",
+            "caffe",
+            "avere",
+            "freddo",
+            "alle",
+            "mani"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Ha scappato da una verità per andare verso un'altra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "scappato",
+            "dare",
+            "una",
+            "verita",
+            "per",
+            "andare",
+            "verso",
+            "altro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "E nessuna delle due è detta in voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "nessuno",
+            "delle",
+            "due",
+            "essere",
+            "detta",
+            "in",
+            "voce"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "E al silenzio che ha ancora paura di dire ad alta voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "al",
+            "silenzio",
+            "che",
+            "avere",
+            "ancora",
+            "paura",
+            "di",
+            "dire",
+            "a",
+            "alto",
+            "voce"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Mirella vuole che resti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mirella",
+            "volere",
+            "che",
+            "restare"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Elena resta, ma nasconde la parte vera in un libro di altri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "restare",
+            "ma",
+            "nasconde",
+            "la",
+            "partire",
+            "vero",
+            "in",
+            "un",
+            "libro",
+            "di",
+            "altro"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch06_q01",
+      "chapterId": "lettera-per-elena-06",
+      "type": "direct",
+      "question": "What does Mirella want?",
+      "choices": [
+        "Elena to stay in town",
+        "Elena to return to Padova",
+        "Elena to sell the café"
+      ],
+      "correctChoice": 0,
+      "explanation": "Mirella asks if Elena is staying and lists reasons to stay.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q02",
+      "chapterId": "lettera-per-elena-06",
+      "type": "direct",
+      "question": "How did Elena's father speak, according to Mirella?",
+      "choices": [
+        "On paper",
+        "Only at the café",
+        "Never at all"
+      ],
+      "correctChoice": 0,
+      "explanation": "Mirella says he spoke on paper.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q03",
+      "chapterId": "lettera-per-elena-06",
+      "type": "direct",
+      "question": "Why does Elena leave for the café on Sunday?",
+      "choices": [
+        "To escape the heavy talk at home",
+        "Because Bruna called her in",
+        "To meet Pietro"
+      ],
+      "correctChoice": 0,
+      "explanation": "The café is closed; she used it as an excuse to leave.",
+      "difficulty": 2
+    }
+  ]
+}

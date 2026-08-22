@@ -1,0 +1,1590 @@
+{
+  "id": "il-villaggio-che-non-esiste-17",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 17,
+  "title": "Call to Bologna",
+  "titleIt": "Chiamata a Bologna",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "campo-segnale",
+    "collevento-strada"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "anna-rinaldi"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-17",
+      "summary": "Giada reaches her mother from the signal field. Anna goes silent, then says not to return after eight; she already knew about the water and never told.",
+      "characterIds": [
+        "giada-rinaldi",
+        "anna-rinaldi"
+      ],
+      "locationIds": [
+        "campo-segnale",
+        "collevento-strada"
+      ],
+      "rememberedFacts": [
+        "Giada calls her mother in Bologna from the signal field",
+        "Anna goes silent when she hears Collevento",
+        "Anna says do not return after eight",
+        "Anna already knew the evening water and never told Giada"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Dopo la lite con Elsa, Giada non resta in camera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "la",
+            "lite",
+            "con",
+            "elsa",
+            "giada",
+            "non",
+            "restare",
+            "in",
+            "camera"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Prende il telefono e scende di nuovo verso il campo dietro le case.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "il",
+            "telefono",
+            "e",
+            "scende",
+            "di",
+            "nuovo",
+            "verso",
+            "il",
+            "campo",
+            "dietro",
+            "le",
+            "casa"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Lì, una volta sola, il segnale ha funzionato con suo padre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "li",
+            "una",
+            "volta",
+            "solo",
+            "il",
+            "segnale",
+            "avere",
+            "funzionare",
+            "con",
+            "suo",
+            "padre"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Cammina tra l'erba alta con le scarpe ancora umide di ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "tra",
+            "l'erba",
+            "alto",
+            "con",
+            "le",
+            "scarpe",
+            "ancora",
+            "umide",
+            "di",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Il sole è basso, ma non è ancora tramonto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sole",
+            "essere",
+            "basso",
+            "ma",
+            "non",
+            "essere",
+            "ancora",
+            "tramonto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Controlla le barre: una, poi due, poi tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "controlla",
+            "le",
+            "barre",
+            "una",
+            "poi",
+            "due",
+            "poi",
+            "tre"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Chiama Bologna prima che la voce le manchi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiamare",
+            "bologna",
+            "prima",
+            "che",
+            "la",
+            "voce",
+            "le",
+            "manchi"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Il telefono squilla a lungo, come se nessuno volesse rispondere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "squilla",
+            "a",
+            "lungo",
+            "come",
+            "se",
+            "nessuno",
+            "volesse",
+            "rispondere"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Poi sente la voce della madre, stanca e precisa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "sentire",
+            "la",
+            "voce",
+            "della",
+            "madre",
+            "stanco",
+            "e",
+            "precisa"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Giada?",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "giada"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Mamma, sono io.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "essere",
+            "io"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sto bene, ma non sono ancora a Trento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "stare",
+            "bene",
+            "ma",
+            "non",
+            "essere",
+            "ancora",
+            "a",
+            "trento"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Anna resta in silenzio un secondo di troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "restare",
+            "in",
+            "silenzio",
+            "un",
+            "secondo",
+            "di",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Dove sei?",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dove",
+            "essere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "A Collevento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "collevento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Il silenzio diventa più lungo, quasi fisico.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "silenzio",
+            "diventa",
+            "piu",
+            "lungo",
+            "quasi",
+            "fisico"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Giada sente solo il vento nell'erba e il battito nel collo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "solo",
+            "il",
+            "vento",
+            "nell'erba",
+            "e",
+            "il",
+            "battito",
+            "nel",
+            "collo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Mamma?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Come ci sei arrivata?",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "ci",
+            "essere",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Ho preso il treno sbagliato.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "prendere",
+            "il",
+            "treno",
+            "sbagliato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Sono scesa a una fermata con il nome cancellato.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "scesa",
+            "a",
+            "una",
+            "fermare",
+            "con",
+            "il",
+            "nome",
+            "cancellato"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Anna fa un respiro corto, come se avesse ricevuto un colpo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "fare",
+            "un",
+            "respiro",
+            "corto",
+            "come",
+            "se",
+            "avesse",
+            "ricevuto",
+            "un",
+            "colpo"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Allora lo sai.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "So cosa?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "sapere",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Che quel posto esiste ancora, anche se nessuno lo scrive sulle mappe.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "quello",
+            "posto",
+            "esiste",
+            "ancora",
+            "anche",
+            "se",
+            "nessuno",
+            "lo",
+            "scrivere",
+            "sul",
+            "mappe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Giada chiude gli occhi e tiene il telefono più stretto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiudere",
+            "gli",
+            "occhi",
+            "e",
+            "tiene",
+            "il",
+            "telefono",
+            "piu",
+            "stretto"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Tu c'eri.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "c'eri"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Sì.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Avevo la tua età, e portavo quella borsa che hai preso.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "la",
+            "tuo",
+            "eta",
+            "e",
+            "portavo",
+            "quello",
+            "borsa",
+            "che",
+            "avere",
+            "prendere"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Elsa mi chiama Anna.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "elsa",
+            "mi",
+            "chiamare",
+            "anna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Guarda la mia faccia come se fossi tornata io.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare",
+            "la",
+            "mio",
+            "faccia",
+            "come",
+            "se",
+            "fossi",
+            "tornare",
+            "io"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Non tornare dopo le otto.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "tornare",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "La frase arriva secca, senza spiegazione dolce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "frase",
+            "arrivare",
+            "secca",
+            "senza",
+            "spiegazione",
+            "dolce"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Dopo le otto?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dopo",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Dopo il tramonto la strada diventa acqua.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dopo",
+            "il",
+            "tramonto",
+            "la",
+            "strada",
+            "diventa",
+            "acqua"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Lo sanno tutti lì, e lo sapevo anche io.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "tutto",
+            "li",
+            "e",
+            "lo",
+            "sapere",
+            "anche",
+            "io"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Tu lo sapevi e non me l'hai mai detto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "lo",
+            "sapevi",
+            "e",
+            "non",
+            "io",
+            "avere",
+            "mai",
+            "dire"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Anna non nega; non inventa una scusa piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "non",
+            "nega",
+            "non",
+            "inventa",
+            "una",
+            "scusa",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Pensavo che non ci saresti mai andata.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "pensare",
+            "che",
+            "non",
+            "ci",
+            "saresti",
+            "mai",
+            "andare"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Pensavo che bastasse cancellare quel nome dalla nostra casa.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "pensare",
+            "che",
+            "bastasse",
+            "cancellare",
+            "quello",
+            "nome",
+            "dalla",
+            "nostro",
+            "casa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Qui c'è il tuo nome sul registro, con la data di oggi.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "ce",
+            "il",
+            "tuo",
+            "nome",
+            "sul",
+            "registro",
+            "con",
+            "la",
+            "dare",
+            "di",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "E una foto di te a diciassette anni.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "una",
+            "foto",
+            "di",
+            "tu",
+            "a",
+            "diciassette",
+            "anno"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Anna resta di nuovo in silenzio, più breve stavolta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "restare",
+            "di",
+            "nuovo",
+            "in",
+            "silenzio",
+            "piu",
+            "breve",
+            "stavolta"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Allora ascolta me, non Elsa.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "ascoltare",
+            "io",
+            "non",
+            "elsa"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Non restare dopo le otto.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "restare",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Se torni sulla strada tardi, l'acqua arriva lo stesso.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "tornare",
+            "sulla",
+            "strada",
+            "tardi",
+            "acqua",
+            "arrivare",
+            "lo",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Non è una storia per spaventare i bambini.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "storia",
+            "per",
+            "spaventare",
+            "i",
+            "bambini"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "È un orologio della diga, e loro lo fanno ancora.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "un",
+            "orologio",
+            "della",
+            "diga",
+            "e",
+            "loro",
+            "lo",
+            "fare",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Giada guarda verso la strada della diga, già in ombra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "verso",
+            "la",
+            "strada",
+            "della",
+            "diga",
+            "gia",
+            "in",
+            "ombra"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Perché non me l'hai detto quando sono partita?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "non",
+            "io",
+            "avere",
+            "dire",
+            "quando",
+            "essere",
+            "partire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Perché avevo paura che tu andassi a cercarlo apposta.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "avere",
+            "paura",
+            "che",
+            "tu",
+            "andassi",
+            "a",
+            "cercarlo",
+            "apposta"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Come un enigma da vincere.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "un",
+            "enigma",
+            "dare",
+            "vincere"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Giada sorride amaro, perché la madre l'ha vista bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sorridere",
+            "amaro",
+            "perche",
+            "la",
+            "madre",
+            "avere",
+            "vista",
+            "bene"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Adesso ci sono dentro.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "ci",
+            "essere",
+            "dentro"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Allora esci di giorno.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "uscire",
+            "di",
+            "giorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Non diventare la ragazza che loro raccontano ogni estate.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "diventare",
+            "la",
+            "ragazza",
+            "che",
+            "loro",
+            "raccontano",
+            "ogni",
+            "estate"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Il segnale scende a una barra sola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "segnale",
+            "scende",
+            "a",
+            "una",
+            "barra",
+            "solo"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Mamma, aspetta.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Non tornare dopo le otto.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "tornare",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "La linea si spezza prima che Giada possa rispondere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "linea",
+            "si",
+            "spezza",
+            "prima",
+            "che",
+            "giada",
+            "possa",
+            "rispondere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Resta con il telefono caldo contro l'orecchio e il campo vuoto intorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "restare",
+            "con",
+            "il",
+            "telefono",
+            "caldo",
+            "contro",
+            "l'orecchio",
+            "e",
+            "il",
+            "campo",
+            "vuoto",
+            "intorno"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Sua madre sapeva dell'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "suo",
+            "madre",
+            "sapere",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Sapeva della diga, della sera, della regola vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "della",
+            "diga",
+            "della",
+            "sera",
+            "della",
+            "regola",
+            "vero"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "E ha taciuto per anni, come si tace un nome difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "avere",
+            "taciuto",
+            "per",
+            "anno",
+            "come",
+            "si",
+            "tace",
+            "un",
+            "nome",
+            "difficile"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Giada guarda l'ora sul telefono: manca poco al tramonto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "ora",
+            "sul",
+            "telefono",
+            "mancare",
+            "poco",
+            "al",
+            "tramonto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Torna verso il paese senza correre, ma senza fermarsi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "verso",
+            "il",
+            "paese",
+            "senza",
+            "correre",
+            "ma",
+            "senza",
+            "fermarsi"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Non è più solo un treno sbagliato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "piu",
+            "solo",
+            "un",
+            "treno",
+            "sbagliato"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "È una storia di famiglia che qualcuno ha nascosto sotto il silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "storia",
+            "di",
+            "famiglia",
+            "che",
+            "qualcuno",
+            "avere",
+            "nascosto",
+            "sotto",
+            "il",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "E adesso quella storia le parla con la voce di sua madre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "adesso",
+            "quello",
+            "storia",
+            "le",
+            "parlare",
+            "con",
+            "la",
+            "voce",
+            "di",
+            "suo",
+            "madre"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Non tornare dopo le otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "tornare",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Giada ripete la frase a bassa voce, come una regola nuova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ripete",
+            "la",
+            "frase",
+            "a",
+            "basso",
+            "voce",
+            "come",
+            "una",
+            "regola",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Non la regola di Elsa, e non la regola della compagnia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "la",
+            "regola",
+            "di",
+            "elsa",
+            "e",
+            "non",
+            "la",
+            "regola",
+            "della",
+            "compagnia"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "La regola di Anna, detta tardi, ma detta chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "regola",
+            "di",
+            "anna",
+            "detta",
+            "tardi",
+            "ma",
+            "detta",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Vicino alle case sente odore di cena e di legno umido.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "alle",
+            "casa",
+            "sentire",
+            "odore",
+            "di",
+            "cena",
+            "e",
+            "di",
+            "legno",
+            "umido"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Una radio lontana trasmette notizie di città che esistono sugli orari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "radio",
+            "lontano",
+            "trasmette",
+            "notizia",
+            "di",
+            "citta",
+            "che",
+            "esistono",
+            "su",
+            "orari"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Giada controlla di nuovo l'ora: ha ancora tempo prima dell'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "controlla",
+            "di",
+            "nuovo",
+            "ora",
+            "avere",
+            "ancora",
+            "tempo",
+            "prima",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Cammina più lenta, perché ora sa che la fretta non cancella la diga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "piu",
+            "lenta",
+            "perche",
+            "ora",
+            "sapere",
+            "che",
+            "la",
+            "fretta",
+            "non",
+            "cancella",
+            "la",
+            "diga"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Sa anche che la madre ha scelto il silenzio per paura, non per magia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "anche",
+            "che",
+            "la",
+            "madre",
+            "avere",
+            "scegliere",
+            "il",
+            "silenzio",
+            "per",
+            "paura",
+            "non",
+            "per",
+            "magia"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Quella paura ha lasciato Giada senza mappa familiare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quello",
+            "paura",
+            "avere",
+            "lasciare",
+            "giada",
+            "senza",
+            "mappa",
+            "familiare"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Adesso la mappa è fisica: strada, chiusa, tramonto, otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "la",
+            "mappa",
+            "essere",
+            "fisica",
+            "strada",
+            "chiudere",
+            "tramonto",
+            "otto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Entra in locanda senza cercare Elsa per una seconda lite.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "entrare",
+            "in",
+            "locanda",
+            "senza",
+            "cercare",
+            "elsa",
+            "per",
+            "una",
+            "seconda",
+            "lite"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Sale, chiude la porta, e scrive sul taccuino: mamma sapeva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "chiudere",
+            "la",
+            "porta",
+            "e",
+            "scrivere",
+            "sul",
+            "taccuino",
+            "mamma",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Sotto scrive: non dopo le otto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sotto",
+            "scrivere",
+            "non",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Poi spegne lo schermo e ascolta il paese diventare sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "spegne",
+            "lo",
+            "schermo",
+            "e",
+            "ascoltare",
+            "il",
+            "paese",
+            "diventare",
+            "sera"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Non è più arrabbiata solo con Elsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "piu",
+            "arrabbiata",
+            "solo",
+            "con",
+            "elsa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "È arrabbiata anche con il silenzio di Bologna, e un poco sollevata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "arrabbiata",
+            "anche",
+            "con",
+            "il",
+            "silenzio",
+            "di",
+            "bologna",
+            "e",
+            "un",
+            "poco",
+            "sollevata"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Almeno la regola dell'acqua ha una voce nota.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "almeno",
+            "la",
+            "regola",
+            "acqua",
+            "avere",
+            "una",
+            "voce",
+            "nota"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "La voce di Anna, che finalmente ha detto la parte difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "voce",
+            "di",
+            "anna",
+            "che",
+            "finalmente",
+            "avere",
+            "dire",
+            "la",
+            "partire",
+            "difficile"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch17_q01",
+      "chapterId": "il-villaggio-che-non-esiste-17",
+      "type": "direct",
+      "question": "What does Anna tell Giada about returning?",
+      "choices": [
+        "Do not return after eight",
+        "Stay after dark to learn more",
+        "Come back only with Elsa"
+      ],
+      "correctChoice": 0,
+      "explanation": "Anna says not to return after eight because of the water.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch17_q02",
+      "chapterId": "il-villaggio-che-non-esiste-17",
+      "type": "direct",
+      "question": "What did Anna already know?",
+      "choices": [
+        "The evening water on the dam road",
+        "That Neri would call first",
+        "That Trento had no trains"
+      ],
+      "correctChoice": 0,
+      "explanation": "Anna knew the road becomes water after sunset and never told Giada.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch17_q03",
+      "chapterId": "il-villaggio-che-non-esiste-17",
+      "type": "inference",
+      "question": "Why did Anna stay silent for years?",
+      "choices": [
+        "She hoped Giada would never go looking for Collevento",
+        "She forgot the village existed",
+        "She wanted Elsa to explain instead"
+      ],
+      "correctChoice": 0,
+      "explanation": "Anna thought erasing the name at home was enough and feared Giada would seek the riddle.",
+      "difficulty": 2
+    }
+  ]
+}

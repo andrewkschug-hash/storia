@@ -1,0 +1,64 @@
+{
+  "locations": [
+    {
+      "id": "treno-halt",
+      "name": "La fermata",
+      "city": "Collevento",
+      "description": "Disused halt. Sign Collevento with a line through it."
+    },
+    {
+      "id": "collevento-strada",
+      "name": "La strada di Collevento",
+      "city": "Collevento",
+      "description": "The one street. Smoke, inn, ordinary houses that move names overnight."
+    },
+    {
+      "id": "locanda-elsa",
+      "name": "La locanda di Elsa",
+      "city": "Collevento",
+      "description": "Elsa's inn. A room already made up. The guest register."
+    },
+    {
+      "id": "piazza-collevento",
+      "name": "La piazza",
+      "city": "Collevento",
+      "description": "The square. Re-staged for an inspection that never arrives."
+    },
+    {
+      "id": "strada-diga",
+      "name": "La strada della diga",
+      "city": "Collevento",
+      "description": "Access road that sheets with water after the evening sluice."
+    },
+    {
+      "id": "bosco-recinto",
+      "name": "Il bosco recintato",
+      "city": "Collevento",
+      "description": "Fenced forest. Sinkhole pictograms, not monsters."
+    },
+    {
+      "id": "campo-segnale",
+      "name": "Il campo del segnale",
+      "city": "Collevento",
+      "description": "A field where Giada can finally call her father."
+    },
+    {
+      "id": "edificio-idroelettrico",
+      "name": "L'edificio idroelettrico",
+      "city": "Collevento",
+      "description": "Hydro building downhill. Lights at night — not a ghost window plot."
+    },
+    {
+      "id": "cucina-trento",
+      "name": "La cucina a Trento",
+      "city": "Trento",
+      "description": "Father's ordinary kitchen. No miracle telling."
+    },
+    {
+      "id": "memorial-1978",
+      "name": "Il memorial del 1978",
+      "city": "Collevento",
+      "description": "Names of the 1978 survey team by the sinkhole fence."
+    }
+  ]
+}

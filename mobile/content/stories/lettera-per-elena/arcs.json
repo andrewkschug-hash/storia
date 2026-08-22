@@ -1,0 +1,16 @@
+{
+  "arcs": [
+    {
+      "id": "lettera-per-elena-a2-plus",
+      "storyId": "lettera-per-elena",
+      "cefrLevel": "A2+",
+      "title": "A letter for Elena",
+      "titleIt": "Una lettera per Elena",
+      "description": "An A2+ romance about handwriting, Tuesday deliveries, and saying a true sentence aloud.",
+      "narrativeStage": "Elena writes in the book and learns the face on the other side.",
+      "chapterStart": 1,
+      "chapterEnd": 22,
+      "status": "available"
+    }
+  ]
+}

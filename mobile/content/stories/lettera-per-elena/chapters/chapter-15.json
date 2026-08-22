@@ -1,0 +1,1378 @@
+{
+  "id": "lettera-per-elena-15",
+  "storyId": "lettera-per-elena",
+  "number": 15,
+  "title": "Hospital",
+  "titleIt": "Ospedale",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "ospedale-esterno",
+    "marina-di-brenta",
+    "van-pietro",
+    "caffe-brenta"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "pietro-baldo",
+    "sergio-baldo",
+    "katia",
+    "bruna"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-15",
+      "summary": "Elena waits outside the hospital. It is the first care that is not ink. Pietro is angry that she came.",
+      "characterIds": [
+        "elena-marini",
+        "pietro-baldo",
+        "sergio-baldo",
+        "katia",
+        "bruna"
+      ],
+      "locationIds": [
+        "ospedale-esterno",
+        "marina-di-brenta",
+        "van-pietro",
+        "caffe-brenta"
+      ],
+      "rememberedFacts": [
+        "Elena waits outside the hospital, not inside",
+        "This is her first care for Pietro that is not writing",
+        "Pietro is angry that she came",
+        "Sergio is in recovery; pressure, not death"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Sabato Elena non va subito al caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sabato",
+            "elena",
+            "non",
+            "andare",
+            "subito",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Pedala fino all'ospedale di Marina di Brenta, con le mani strette sul manubrio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pedala",
+            "fino",
+            "all'ospedale",
+            "di",
+            "marina",
+            "di",
+            "brenta",
+            "con",
+            "le",
+            "mani",
+            "strette",
+            "sul",
+            "manubrio"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Non entra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Resta fuori, vicino all'ingresso, dove l'aria puzza un poco di disinfettante e di pioggia vecchia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "restare",
+            "fuori",
+            "vicino",
+            "all'ingresso",
+            "dove",
+            "l'aria",
+            "puzza",
+            "un",
+            "poco",
+            "di",
+            "disinfettante",
+            "e",
+            "di",
+            "pioggia",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Ha portato un sacchetto con due panini e una bottiglia d'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "portare",
+            "un",
+            "sacchetto",
+            "con",
+            "due",
+            "panini",
+            "e",
+            "una",
+            "bottiglia",
+            "acqua"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Non sa se serve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "se",
+            "servire"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Sa solo che nel libro ha scritto scusa, e che le scuse sulla carta non bastano più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "solo",
+            "che",
+            "nel",
+            "libro",
+            "avere",
+            "scrivere",
+            "scusa",
+            "e",
+            "che",
+            "le",
+            "scuse",
+            "sulla",
+            "carta",
+            "non",
+            "bastano",
+            "piu"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Aspetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Vede uscire persone con facce stanche, e vede entrare persone con fiori e borse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vedere",
+            "uscire",
+            "persona",
+            "con",
+            "facce",
+            "stanco",
+            "e",
+            "vedere",
+            "entrare",
+            "persona",
+            "con",
+            "fiori",
+            "e",
+            "borse"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Non vede Sergio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "vedere",
+            "sergio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Sergio è dentro, in recupero, e lei non ha diritto a quella stanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sergio",
+            "essere",
+            "dentro",
+            "in",
+            "recupero",
+            "e",
+            "lei",
+            "non",
+            "avere",
+            "diritto",
+            "a",
+            "quello",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Dopo mezz'ora Pietro esce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "mezz'ora",
+            "pietro",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ha la giacca storta e gli occhi stanchi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "la",
+            "giacca",
+            "storta",
+            "e",
+            "gli",
+            "occhi",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Quando vede Elena, si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "vedere",
+            "elena",
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sorridere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Cosa fai qui?",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "fare",
+            "qui"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Elena alza il sacchetto, come una prova piccola e inutile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "alzare",
+            "il",
+            "sacchetto",
+            "come",
+            "una",
+            "provare",
+            "piccolo",
+            "e",
+            "inutile"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Ho portato qualcosa.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "portare",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Per te.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "tu"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "O per tuo fratello, se serve.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "o",
+            "per",
+            "tuo",
+            "fratello",
+            "se",
+            "servire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Pietro scuote la testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "scuote",
+            "la",
+            "testa"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non dovevi venire.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dove",
+            "venire"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "La voce è bassa, ma arrabbiata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "voce",
+            "essere",
+            "basso",
+            "ma",
+            "arrabbiata"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Elena sente il freddo salire dalle scarpe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sentire",
+            "il",
+            "freddo",
+            "salire",
+            "dal",
+            "scarpe"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Volevo solo...",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "solo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Non finisce la frase.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "finire",
+            "la",
+            "frase"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Qui fuori non c'è bancone, non c'è libro, non c'è battuta sul frigo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qui",
+            "fuori",
+            "non",
+            "ce",
+            "banco",
+            "non",
+            "ce",
+            "libro",
+            "non",
+            "ce",
+            "battuta",
+            "sul",
+            "frigo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "C'è solo la cura che non è inchiostro, e Pietro la rifiuta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "solo",
+            "la",
+            "cura",
+            "che",
+            "non",
+            "essere",
+            "inchiostro",
+            "e",
+            "pietro",
+            "la",
+            "rifiuta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Sergio sta meglio di ieri.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "sergio",
+            "stare",
+            "meglio",
+            "di",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Ma è un recupero lungo.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "essere",
+            "un",
+            "recupero",
+            "lungo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Non è un gioco, Elena.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "gioco",
+            "elena"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La frase la colpisce, perché Bruna ha detto le stesse parole sul libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "frase",
+            "la",
+            "colpisce",
+            "perche",
+            "bruna",
+            "avere",
+            "dire",
+            "le",
+            "stesso",
+            "parola",
+            "sul",
+            "libro"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Lo so.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Pietro passa una mano sui capelli e guarda il furgone, parcheggiato storto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "passare",
+            "una",
+            "mano",
+            "sui",
+            "capelli",
+            "e",
+            "guardare",
+            "il",
+            "furgone",
+            "parcheggiato",
+            "storto"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Al caffè va bene.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "caffe",
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Qui no.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "no"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Qui è famiglia.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "essere",
+            "famiglia"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Elena abbassa lo sguardo sul sacchetto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "abbassa",
+            "lo",
+            "sguardo",
+            "sul",
+            "sacchetto"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "I panini sembrano ridicoli, e l'acqua sembra poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "panini",
+            "sembrare",
+            "ridicoli",
+            "e",
+            "acqua",
+            "sembrare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Scusa.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Sono venuta lo stesso.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "venire",
+            "lo",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Pietro prende il sacchetto, ma non ringrazia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "prendere",
+            "il",
+            "sacchetto",
+            "ma",
+            "non",
+            "ringrazia"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Poi lo posa di nuovo sulle sue mani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "lo",
+            "posa",
+            "di",
+            "nuovo",
+            "sul",
+            "suo",
+            "mani"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Portalo al caffè.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "porta",
+            "al",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "O mangialo tu.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "o",
+            "mangiare",
+            "tu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Non posso avere anche te qui, adesso.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "potere",
+            "avere",
+            "anche",
+            "tu",
+            "qui",
+            "adesso"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Elena annuisce, perché la rabbia di Pietro è chiara e vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "annuisce",
+            "perche",
+            "la",
+            "rabbia",
+            "di",
+            "pietro",
+            "essere",
+            "chiaro",
+            "e",
+            "vero"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Non è una rabbia da romanzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "rabbia",
+            "dare",
+            "romanzo"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "È la rabbia di chi ha poco sonno e un fratello in recupero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "la",
+            "rabbia",
+            "di",
+            "chi",
+            "avere",
+            "poco",
+            "sonno",
+            "e",
+            "un",
+            "fratello",
+            "in",
+            "recupero"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Va bene.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Me ne vado.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "ne",
+            "andare"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Pietro non la ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "non",
+            "la",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Elena pedala via, con il sacchetto sul cestino e gli occhi umidi per il vento, o per altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pedala",
+            "via",
+            "con",
+            "il",
+            "sacchetto",
+            "sul",
+            "cestino",
+            "e",
+            "gli",
+            "occhi",
+            "umidi",
+            "per",
+            "il",
+            "vento",
+            "o",
+            "per",
+            "altro"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Per la prima volta ha portato cura senza inchiostro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "la",
+            "prima",
+            "volta",
+            "avere",
+            "portare",
+            "cura",
+            "senza",
+            "inchiostro"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Ha detto a Bruna che sarebbe arrivata tardi, senza spiegare l'ospedale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "dire",
+            "a",
+            "bruna",
+            "che",
+            "sarebbe",
+            "arrivare",
+            "tardi",
+            "senza",
+            "spiegare",
+            "l'ospedale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Bruna ha alzato un sopracciglio e ha detto va bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "avere",
+            "alzato",
+            "un",
+            "sopracciglio",
+            "e",
+            "avere",
+            "dire",
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Fuori dall'ingresso Elena conta i passi e i minuti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "dall'ingresso",
+            "elena",
+            "contare",
+            "i",
+            "passare",
+            "e",
+            "i",
+            "minuti"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Vede un'infermiera fumare in fretta e poi rientrare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vedere",
+            "un'infermiera",
+            "fumare",
+            "in",
+            "fretta",
+            "e",
+            "poi",
+            "rientrare"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Vede un uomo parlare al telefono e piangere senza rumore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vedere",
+            "un",
+            "uomo",
+            "parlare",
+            "al",
+            "telefono",
+            "e",
+            "piangere",
+            "senza",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Il sacchetto le pesa, e lei pensa che la cura vera non è pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sacchetto",
+            "le",
+            "pesa",
+            "e",
+            "lei",
+            "pensare",
+            "che",
+            "la",
+            "cura",
+            "vero",
+            "non",
+            "essere",
+            "pane"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "È presenza, e Pietro non vuole la sua presenza qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "presenza",
+            "e",
+            "pietro",
+            "non",
+            "volere",
+            "la",
+            "suo",
+            "presenza",
+            "qui"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Quando lui dice che non doveva venire, Elena non discute.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "lui",
+            "dire",
+            "che",
+            "non",
+            "dovere",
+            "venire",
+            "elena",
+            "non",
+            "discute"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Capisce la rabbia perché conosce la pressione, almeno un pezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "capire",
+            "la",
+            "rabbia",
+            "perche",
+            "conoscere",
+            "la",
+            "pressione",
+            "almeno",
+            "un",
+            "pezzo"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Sergio non sta morendo: sta recuperando, e il recupero è lento e duro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sergio",
+            "non",
+            "stare",
+            "morendo",
+            "stare",
+            "recuperando",
+            "e",
+            "il",
+            "recupero",
+            "essere",
+            "lento",
+            "e",
+            "duro"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Questo rende la scena più ordinaria e più difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "rende",
+            "la",
+            "scena",
+            "piu",
+            "ordinaria",
+            "e",
+            "piu",
+            "difficile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Non c'è un eroe, c'è un fratello stanco e una barista fuori posto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "un",
+            "eroe",
+            "ce",
+            "un",
+            "fratello",
+            "stanco",
+            "e",
+            "una",
+            "barista",
+            "fuori",
+            "posto"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Elena torna in bicicletta con le gambe pesanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "tornare",
+            "in",
+            "bicicletta",
+            "con",
+            "le",
+            "gambe",
+            "pesanti"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Al Caffè Brenta Katia chiede dove sei stata, e Elena dice fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "caffe",
+            "brenta",
+            "katia",
+            "chiedere",
+            "dove",
+            "essere",
+            "essere",
+            "e",
+            "elena",
+            "dire",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Fuori?",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "fuori"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Fuori.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "fuori"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Non apre il libro quel giorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "aprire",
+            "il",
+            "libro",
+            "quello",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Per la prima volta la carta le sembra troppo lontana dalla vita vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "la",
+            "prima",
+            "volta",
+            "la",
+            "carta",
+            "le",
+            "sembrare",
+            "troppo",
+            "lontano",
+            "dalla",
+            "vita",
+            "vero"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "E la vita vera, fuori dall'ospedale, l'ha mandata via con rabbia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "la",
+            "vita",
+            "vero",
+            "fuori",
+            "dall'ospedale",
+            "avere",
+            "mandata",
+            "via",
+            "con",
+            "rabbia"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "E per la prima volta quella cura è tornata indietro, rifiutata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "per",
+            "la",
+            "prima",
+            "volta",
+            "quello",
+            "cura",
+            "essere",
+            "tornare",
+            "indietro",
+            "rifiutata"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Dietro di lei, fuori dall'ospedale, Pietro resta solo con il furgone e con Sergio dentro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "di",
+            "lei",
+            "fuori",
+            "dall'ospedale",
+            "pietro",
+            "restare",
+            "solo",
+            "con",
+            "il",
+            "furgone",
+            "e",
+            "con",
+            "sergio",
+            "dentro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Davanti a lei c'è solo la strada verso il caffè, e un libro che non può riparare questa giornata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davanti",
+            "a",
+            "lei",
+            "ce",
+            "solo",
+            "la",
+            "strada",
+            "verso",
+            "il",
+            "caffe",
+            "e",
+            "un",
+            "libro",
+            "che",
+            "non",
+            "potere",
+            "riparare",
+            "questo",
+            "giornata"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch15_q01",
+      "chapterId": "lettera-per-elena-15",
+      "type": "direct",
+      "question": "Where does Elena wait?",
+      "choices": [
+        "Outside the hospital",
+        "Inside Sergio's room",
+        "At the lagoon"
+      ],
+      "correctChoice": 0,
+      "explanation": "She waits outside and does not go in.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q02",
+      "chapterId": "lettera-per-elena-15",
+      "type": "direct",
+      "question": "How does Pietro react to her coming?",
+      "choices": [
+        "He is angry she came",
+        "He hugs her",
+        "He asks her to stay overnight"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says she should not have come and is angry.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q03",
+      "chapterId": "lettera-per-elena-15",
+      "type": "direct",
+      "question": "What is true about Sergio?",
+      "choices": [
+        "He is in recovery, not dying",
+        "He dies that night",
+        "He writes in the book"
+      ],
+      "correctChoice": 0,
+      "explanation": "Pietro says Sergio is better and in a long recovery.",
+      "difficulty": 2
+    }
+  ]
+}

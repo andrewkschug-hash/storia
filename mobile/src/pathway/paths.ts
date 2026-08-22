@@ -37,8 +37,8 @@ export const A2_PLUS_PATHWAYS: PathwayDefinition[] = [
     titleEn: 'A letter for Elena',
     genre: 'Romance',
     hookEn: 'They tell the truth in a book. Not to each other.',
-    status: 'coming_soon',
-    storyId: null,
+    status: 'available',
+    storyId: 'lettera-per-elena',
   },
   {
     id: 'il-villaggio-che-non-esiste',
@@ -46,8 +46,8 @@ export const A2_PLUS_PATHWAYS: PathwayDefinition[] = [
     titleEn: 'The village that does not exist',
     genre: 'Fantasy',
     hookEn: 'The map shows a road the village refuses to name.',
-    status: 'coming_soon',
-    storyId: null,
+    status: 'available',
+    storyId: 'il-villaggio-che-non-esiste',
   },
 ];
 

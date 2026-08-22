@@ -1,0 +1,1565 @@
+{
+  "id": "il-villaggio-che-non-esiste-19",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 19,
+  "title": "The forest by day",
+  "titleIt": "Nel bosco di giorno",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "bosco-recinto",
+    "memorial-1978",
+    "collevento-strada"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "neri",
+    "tullio"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-19",
+      "summary": "Giada visits the fenced memorial in daylight. She reads the 1978 names, respects the sinkhole warning, and finds no ghost—only a place that asks for care.",
+      "characterIds": [
+        "giada-rinaldi",
+        "neri",
+        "tullio"
+      ],
+      "locationIds": [
+        "bosco-recinto",
+        "memorial-1978",
+        "collevento-strada"
+      ],
+      "rememberedFacts": [
+        "Giada goes to the forest memorial in daylight",
+        "The fence marks sinkholes, not a monster",
+        "She reads the names of the 1978 survey team",
+        "There is no ghost; she shows respect and leaves"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La mattina dopo Giada esce presto, mentre la piazza è ancora quieta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "dopo",
+            "giada",
+            "uscire",
+            "presto",
+            "mentre",
+            "la",
+            "piazza",
+            "essere",
+            "ancora",
+            "quieta"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Non porta la borsa di Anna; porta solo il telefono e una bottiglia d'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "porta",
+            "la",
+            "borsa",
+            "di",
+            "anna",
+            "porta",
+            "solo",
+            "il",
+            "telefono",
+            "e",
+            "una",
+            "bottiglia",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Vuole andare al bosco di giorno, come ha promesso a se stessa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "andare",
+            "al",
+            "bosco",
+            "di",
+            "giorno",
+            "come",
+            "avere",
+            "promesso",
+            "a",
+            "se",
+            "stesso"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Neri la intercetta vicino alla fontana, con le cuffie al collo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "la",
+            "intercetta",
+            "vicino",
+            "alla",
+            "fontana",
+            "con",
+            "le",
+            "cuffie",
+            "al",
+            "collo"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Di nuovo il bosco?",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "nuovo",
+            "il",
+            "bosco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Di giorno.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Voglio vedere il memorial senza correre.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "vedere",
+            "il",
+            "memorial",
+            "senza",
+            "correre"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Neri esita, poi cammina con lei per un tratto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "esita",
+            "poi",
+            "camminare",
+            "con",
+            "lei",
+            "per",
+            "un",
+            "tratto"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non c'è niente da vincere lì.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "niente",
+            "dare",
+            "vincere",
+            "li"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Lo so.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Non cerco un fantasma.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "cercare",
+            "un",
+            "fantasma"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La strada verso il recinto è stretta e piena di sassi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "verso",
+            "il",
+            "recinto",
+            "essere",
+            "stretta",
+            "e",
+            "pieno",
+            "di",
+            "sassi"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "L'aria odora di terra umida e di pino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'aria",
+            "odora",
+            "di",
+            "terra",
+            "umida",
+            "e",
+            "di",
+            "pino"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Vicino al cancello c'è il cartello con il pittogramma delle voragini.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "al",
+            "cancello",
+            "ce",
+            "il",
+            "cartello",
+            "con",
+            "il",
+            "pittogramma",
+            "delle",
+            "voragini"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non è un teschio da film; è un avviso da cantiere vero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "teschio",
+            "dare",
+            "film",
+            "essere",
+            "un",
+            "avviso",
+            "dare",
+            "cantiere",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Tullio arriva dal sentiero sotto, con il thermos in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "arrivare",
+            "dal",
+            "sentiero",
+            "sotto",
+            "con",
+            "il",
+            "thermos",
+            "in",
+            "mano"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Di giorno si può guardare.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "giorno",
+            "si",
+            "potere",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Di notte no, e non perché ci siano spiriti.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "notte",
+            "no",
+            "e",
+            "non",
+            "perche",
+            "ci",
+            "siano",
+            "spiriti"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Perché non si vedono i buchi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "non",
+            "si",
+            "vedere",
+            "i",
+            "buchi"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Giada annuisce; questa regola ha senso fisico.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "annuisce",
+            "questo",
+            "regola",
+            "avere",
+            "senso",
+            "fisico"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Neri resta fuori dal cancello, come se conoscesse già ogni nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "restare",
+            "fuori",
+            "dal",
+            "cancello",
+            "come",
+            "se",
+            "conoscesse",
+            "gia",
+            "ogni",
+            "nome"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Io non entro.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "entrare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Va bene.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Giada apre il cancelletto e cammina solo dove l'erba è calcata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "aprire",
+            "il",
+            "cancelletto",
+            "e",
+            "camminare",
+            "solo",
+            "dove",
+            "l'erba",
+            "essere",
+            "calcata"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il memorial è una lastra di pietra bassa, non un monumento grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "memorial",
+            "essere",
+            "una",
+            "lastra",
+            "di",
+            "pietra",
+            "basso",
+            "non",
+            "un",
+            "monumento",
+            "grande"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Sopra ci sono nomi, date e una frase corta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sopra",
+            "ci",
+            "essere",
+            "no",
+            "dare",
+            "e",
+            "una",
+            "frase",
+            "corta"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Squadra di rilievo, millenovecentosettantotto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "squadra",
+            "di",
+            "rilievo",
+            "millenovecentosettantotto"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Legge i cognomi uno per uno, piano, senza foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "leggere",
+            "i",
+            "cognomi",
+            "uno",
+            "per",
+            "uno",
+            "piano",
+            "senza",
+            "foto"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Non vuole trasformare il rispetto in prova da collezionare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "volere",
+            "trasformare",
+            "il",
+            "rispetto",
+            "in",
+            "provare",
+            "dare",
+            "collezionare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Alcuni nomi sono consumati dalla pioggia; altri si leggono ancora bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alcuno",
+            "no",
+            "essere",
+            "consumati",
+            "dalla",
+            "pioggia",
+            "altro",
+            "si",
+            "leggono",
+            "ancora",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Dietro la lastra il terreno scende con un bordo pericoloso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "la",
+            "lastra",
+            "il",
+            "terreno",
+            "scende",
+            "con",
+            "un",
+            "bordo",
+            "pericoloso"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Si ferma a distanza; non si avvicina al vuoto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "fermare",
+            "a",
+            "distanza",
+            "non",
+            "si",
+            "avvicina",
+            "al",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Non sente voci, non sente musica, non sente una presenza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sentire",
+            "voce",
+            "non",
+            "sentire",
+            "musica",
+            "non",
+            "sentire",
+            "una",
+            "presenza"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Sente solo il vento tra i rami e il proprio respiro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sentire",
+            "solo",
+            "il",
+            "vento",
+            "tra",
+            "i",
+            "rami",
+            "e",
+            "il",
+            "proprio",
+            "respiro"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Questo è tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "tutto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Un incidente, una memoria, un recinto che chiede attenzione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "incidente",
+            "una",
+            "memoria",
+            "un",
+            "recinto",
+            "che",
+            "chiedere",
+            "attenzione"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Non un mostro che spiega il paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "un",
+            "mostro",
+            "che",
+            "spiegare",
+            "il",
+            "paese"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Giada appoggia una mano sulla pietra fredda per un secondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "appoggia",
+            "una",
+            "mano",
+            "sulla",
+            "pietra",
+            "fredda",
+            "per",
+            "un",
+            "secondo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Poi la toglie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "la",
+            "toglie"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Non prega; non inventa una cerimonia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "prega",
+            "non",
+            "inventa",
+            "una",
+            "cerimonia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Dice soltanto, a voce bassa: grazie per i nomi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "soltanto",
+            "a",
+            "voce",
+            "basso",
+            "grazie",
+            "per",
+            "i",
+            "no"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Quando torna al cancello, Tullio la guarda senza sorridere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "tornare",
+            "al",
+            "cancello",
+            "tullio",
+            "la",
+            "guardare",
+            "senza",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Hai visto?",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Ho letto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "leggere"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Bene.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Leggere è diverso da cercare fantasmi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "leggere",
+            "essere",
+            "diverso",
+            "dare",
+            "cercare",
+            "fantasmi"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Neri cammina di nuovo con lei verso il paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "camminare",
+            "di",
+            "nuovo",
+            "con",
+            "lei",
+            "verso",
+            "il",
+            "paese"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "La gente dice cose sul bosco per tenere i bambini lontani.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "gente",
+            "dire",
+            "cosa",
+            "sul",
+            "bosco",
+            "per",
+            "tenere",
+            "i",
+            "bambini",
+            "lontani"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Lo so.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Io non ho trovato uno spirito.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "avere",
+            "trovare",
+            "uno",
+            "spirito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Ho trovato un posto che chiede di non essere usato come prova.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "trovare",
+            "un",
+            "posto",
+            "che",
+            "chiedere",
+            "di",
+            "non",
+            "essere",
+            "usato",
+            "come",
+            "provare"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Neri alza un sopracciglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "alzare",
+            "un",
+            "sopracciglio"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Prova di cosa?",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "provare",
+            "di",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Di coraggio, di mistero, di una storia più grande di noi.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "coraggio",
+            "di",
+            "mistero",
+            "di",
+            "una",
+            "storia",
+            "piu",
+            "grande",
+            "di",
+            "noi"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Qui basta la terra che cede.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "basta",
+            "la",
+            "terra",
+            "che",
+            "cede"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Camminano in silenzio per qualche minuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "in",
+            "silenzio",
+            "per",
+            "qualche",
+            "minuto"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Il sole alto rende il paese ordinario: panni, cani, una radio lontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sole",
+            "alto",
+            "rende",
+            "il",
+            "paese",
+            "ordinario",
+            "panni",
+            "cani",
+            "una",
+            "radio",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Giada pensa che il fantastico, qui, è restare nonostante le mappe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "che",
+            "il",
+            "fantastico",
+            "qui",
+            "essere",
+            "restare",
+            "nonostante",
+            "le",
+            "mappe"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Non è un altro mondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "altro",
+            "mondo"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "È questo mondo, tenuto fuori dagli orari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "questo",
+            "mondo",
+            "tenuto",
+            "fuori",
+            "dare",
+            "orari"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Davanti alla locanda si ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davanti",
+            "alla",
+            "locanda",
+            "si",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Grazie per aver camminato con me.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "per",
+            "avere",
+            "camminare",
+            "con",
+            "io"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Neri scrolla le spalle, ma non va via subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "scrolla",
+            "le",
+            "spalle",
+            "ma",
+            "non",
+            "andare",
+            "via",
+            "subito"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Se parti, avvisami.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "partire",
+            "avvisami"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Se parti tu, avvisa i tuoi.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "partire",
+            "tu",
+            "avvisa",
+            "i",
+            "tuo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Neri non risponde a quella frase.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "non",
+            "rispondere",
+            "a",
+            "quello",
+            "frase"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Mette le cuffie e resta sulla panchina della piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mettere",
+            "le",
+            "cuffie",
+            "e",
+            "restare",
+            "sulla",
+            "panchina",
+            "della",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Giada sale e lava le mani, come dopo un lavoro serio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sapere",
+            "e",
+            "lavare",
+            "le",
+            "mani",
+            "come",
+            "dopo",
+            "un",
+            "lavorare",
+            "serio"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Nella testa restano i nomi del millenovecentosettantotto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "testa",
+            "restano",
+            "i",
+            "no",
+            "del",
+            "millenovecentosettantotto"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Non per risolverli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "per",
+            "risolverli"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Per non calpestarli mentre cerca una via d'uscita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "non",
+            "calpestarli",
+            "mentre",
+            "cercare",
+            "una",
+            "via",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Il bosco di giorno non le ha dato un segreto magico.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "bosco",
+            "di",
+            "giorno",
+            "non",
+            "le",
+            "avere",
+            "dare",
+            "un",
+            "segreto",
+            "magico"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Le ha dato una misura: rispetto, distanza, uscita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "avere",
+            "dare",
+            "una",
+            "misura",
+            "rispetto",
+            "distanza",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Più tardi, dalla finestra, rivede il bordo scuro degli alberi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "piu",
+            "tardi",
+            "dalla",
+            "finestra",
+            "rivede",
+            "il",
+            "bordo",
+            "scuro",
+            "dei",
+            "alberi"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Non ha paura del bosco come di un altro mondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "paura",
+            "del",
+            "bosco",
+            "come",
+            "di",
+            "un",
+            "altro",
+            "mondo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Ha rispetto per un terreno che può cedere sotto i piedi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "rispetto",
+            "per",
+            "un",
+            "terreno",
+            "che",
+            "potere",
+            "cedere",
+            "sotto",
+            "i",
+            "piedi"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "I nomi del millenovecentosettantotto restano nella memoria senza teatralità.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "no",
+            "del",
+            "millenovecentosettantotto",
+            "restano",
+            "nella",
+            "memoria",
+            "senza",
+            "teatralita"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Giada non li usa per spiegare Elsa, né la diga, né la madre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "li",
+            "usa",
+            "per",
+            "spiegare",
+            "elsa",
+            "ne",
+            "la",
+            "diga",
+            "ne",
+            "la",
+            "madre"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Li lascia al loro posto: una memoria di lavoro andato male.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "li",
+            "lasciare",
+            "al",
+            "loro",
+            "posto",
+            "una",
+            "memoria",
+            "di",
+            "lavorare",
+            "andare",
+            "ma"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Beve acqua e lava il fango leggero dalle scarpe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bere",
+            "acqua",
+            "e",
+            "lavare",
+            "il",
+            "fango",
+            "leggero",
+            "dal",
+            "scarpe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Pensa che il rispetto è anche questo: pulire, non raccontare spiriti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "che",
+            "il",
+            "rispetto",
+            "essere",
+            "anche",
+            "questo",
+            "pulire",
+            "non",
+            "raccontare",
+            "spiriti"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Nella piazza Neri ascolta musica inglese, come sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "piazza",
+            "neri",
+            "ascoltare",
+            "musica",
+            "inglese",
+            "come",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Lei non gli chiede di entrare nel memorial con lei un'altra volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "non",
+            "gli",
+            "chiedere",
+            "di",
+            "entrare",
+            "nel",
+            "memorial",
+            "con",
+            "lei",
+            "altro",
+            "volta"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Ognuno ha i propri confini sul dolore del paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ognuno",
+            "avere",
+            "i",
+            "propri",
+            "confini",
+            "sul",
+            "dolore",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Giada ha scelto di guardare di giorno, e di andarsene senza fantasmi in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "avere",
+            "scegliere",
+            "di",
+            "guardare",
+            "di",
+            "giorno",
+            "e",
+            "di",
+            "andarsene",
+            "senza",
+            "fantasmi",
+            "in",
+            "tasca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Questa scelta le sembra più adulta della rabbia di ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "scegliere",
+            "le",
+            "sembrare",
+            "piu",
+            "adulta",
+            "della",
+            "rabbia",
+            "di",
+            "ieri"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch19_q01",
+      "chapterId": "il-villaggio-che-non-esiste-19",
+      "type": "direct",
+      "question": "What does Giada find at the memorial?",
+      "choices": [
+        "Names of the 1978 survey team and a sinkhole warning",
+        "A ghost asking her to stay",
+        "Anna's bag hidden under the stone"
+      ],
+      "correctChoice": 0,
+      "explanation": "She reads the survey names and respects the sinkhole fence; there is no ghost.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch19_q02",
+      "chapterId": "il-villaggio-che-non-esiste-19",
+      "type": "direct",
+      "question": "Why does Tullio say the forest is forbidden at night?",
+      "choices": [
+        "Because you cannot see the holes",
+        "Because spirits walk after dark",
+        "Because Elsa locks the gate"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio says it is not spirits; you simply cannot see the holes at night.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch19_q03",
+      "chapterId": "il-villaggio-che-non-esiste-19",
+      "type": "inference",
+      "question": "How does Giada treat the memorial?",
+      "choices": [
+        "With respect, without turning it into a trophy mystery",
+        "As proof she is chosen",
+        "As a place to photograph for the engineer"
+      ],
+      "correctChoice": 0,
+      "explanation": "She reads the names without photos and refuses to use the place as collected proof.",
+      "difficulty": 2
+    }
+  ]
+}

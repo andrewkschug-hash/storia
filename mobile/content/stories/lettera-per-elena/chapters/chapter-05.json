@@ -1,0 +1,1112 @@
+{
+  "id": "lettera-per-elena-05",
+  "storyId": "lettera-per-elena",
+  "number": 5,
+  "title": "Katia",
+  "titleIt": "Katia",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "caffe-brenta",
+    "bancone-brenta",
+    "scaffale-libro"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "katia",
+    "bruna"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-05",
+      "summary": "Katia says everyone writes in the book and nobody admits it. She herself has never written.",
+      "characterIds": [
+        "elena-marini",
+        "katia",
+        "bruna"
+      ],
+      "locationIds": [
+        "caffe-brenta",
+        "bancone-brenta",
+        "scaffale-libro"
+      ],
+      "rememberedFacts": [
+        "Many people write in the book",
+        "Nobody admits writing",
+        "Katia has never written in the book",
+        "Elena keeps her own writing secret"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Giovedì piove piano su Marina di Brenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giovedi",
+            "piovere",
+            "piano",
+            "su",
+            "marina",
+            "di",
+            "brenta"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il Caffè Brenta ha pochi clienti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "caffe",
+            "brenta",
+            "avere",
+            "poco",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Elena e Katia lavorano al bancone senza fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "e",
+            "katia",
+            "lavorare",
+            "al",
+            "banco",
+            "senza",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Katia asciuga una tazza e parla senza guardare Elena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "asciuga",
+            "una",
+            "tazza",
+            "e",
+            "parlare",
+            "senza",
+            "guardare",
+            "elena"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Tu hai scritto nel libro.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "avere",
+            "scrivere",
+            "nel",
+            "libro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Elena si ferma con lo zucchero in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "si",
+            "fermare",
+            "con",
+            "lo",
+            "zucchero",
+            "in",
+            "mano"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non è una domanda forte. È una frase quieta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "una",
+            "domanda",
+            "forte",
+            "essere",
+            "una",
+            "frase",
+            "quieta"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Forse.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Katia sorride un poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "sorridere",
+            "un",
+            "poco"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Tutti scrivono.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "scrivono"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Nessuno ammette.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "nessuno",
+            "ammette"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Elena mette lo zucchero in una ciotola e respira.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "mettere",
+            "lo",
+            "zucchero",
+            "in",
+            "una",
+            "ciotola",
+            "e",
+            "respira"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Anche Bruna?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Bruna guarda. Non scrive sempre.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "bruna",
+            "guardare",
+            "non",
+            "scrivere",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "A volte legge e basta.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "volta",
+            "leggere",
+            "e",
+            "basta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "E tu?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "tu"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Katia scuote la testa e mette la tazza sullo scaffale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "scuote",
+            "la",
+            "testa",
+            "e",
+            "mettere",
+            "la",
+            "tazza",
+            "sul",
+            "scaffale"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Io non ho mai scritto.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "avere",
+            "mai",
+            "scrivere"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Perché?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Perché se lo scrivo, poi è vero.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "se",
+            "lo",
+            "scrivere",
+            "poi",
+            "essere",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Elena capisce subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "capire",
+            "subito"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Per lei il libro è più facile della voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "lei",
+            "il",
+            "libro",
+            "essere",
+            "piu",
+            "facile",
+            "della",
+            "voce"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Per Katia è il contrario: la carta fa paura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "katia",
+            "essere",
+            "il",
+            "contrario",
+            "la",
+            "carta",
+            "fare",
+            "paura"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Bruna esce dal magazzino con un sacco di caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "uscire",
+            "dal",
+            "magazzino",
+            "con",
+            "un",
+            "sacco",
+            "di",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Di che parlate?",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "che",
+            "parlare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Del bancone. Dello zucchero.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "del",
+            "banco",
+            "del",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Elena non corregge la bugia piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "non",
+            "corregge",
+            "la",
+            "bugia",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Nel pomeriggio Elena rilegge alcune pagine del libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "elena",
+            "rilegge",
+            "alcuno",
+            "pagine",
+            "del",
+            "libro"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Ci sono mani diverse e inchiostri diversi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "mani",
+            "diverso",
+            "e",
+            "inchiostri",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Alcune frasi sono pratiche: il tavolo, il caffè, il martedì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alcuno",
+            "frasi",
+            "essere",
+            "pratiche",
+            "il",
+            "tavolo",
+            "il",
+            "caffe",
+            "il",
+            "martedi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Altre sono paura e solitudine.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "altro",
+            "essere",
+            "paura",
+            "e",
+            "solitudine"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Nessuno firma. Nessuno dice il proprio nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "firma",
+            "nessuno",
+            "dire",
+            "il",
+            "proprio",
+            "nome"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Elena pensa a Katia, che vede tutto e dice poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "a",
+            "katia",
+            "che",
+            "vedere",
+            "tutto",
+            "e",
+            "dire",
+            "poco"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Pensa anche a se stessa, che scrive troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "anche",
+            "a",
+            "se",
+            "stesso",
+            "che",
+            "scrivere",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Alla sera chiudono il caffè insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "sera",
+            "chiudono",
+            "il",
+            "caffe",
+            "insieme"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Katia spegne le luci vicino allo scaffale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "spegne",
+            "le",
+            "luce",
+            "vicino",
+            "al",
+            "scaffale"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Il libro resta al suo posto, vicino allo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "libro",
+            "restare",
+            "al",
+            "suo",
+            "posto",
+            "vicino",
+            "al",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Elena?",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "elena"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Sì.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Non chiedere chi scrive.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "chiedere",
+            "chi",
+            "scrivere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Lo so. È una regola di Bruna.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "essere",
+            "una",
+            "regola",
+            "di",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Katia mette la giacca e apre la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "mettere",
+            "la",
+            "giacca",
+            "e",
+            "aprire",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Non è solo una regola.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "solo",
+            "una",
+            "regola"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "È anche protezione.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "anche",
+            "protezione"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Escono insieme sotto la pioggia leggera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uscire",
+            "insieme",
+            "sotto",
+            "la",
+            "pioggia",
+            "leggera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Elena non dice che ha paura del silenzio anche lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "non",
+            "dire",
+            "che",
+            "avere",
+            "paura",
+            "del",
+            "silenzio",
+            "anche",
+            "lei"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Lo ha già scritto nel libro, dove nessuno ammette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "avere",
+            "gia",
+            "scrivere",
+            "nel",
+            "libro",
+            "dove",
+            "nessuno",
+            "ammette"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Katia cammina accanto a lei senza fare altre domande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "camminare",
+            "accanto",
+            "a",
+            "lei",
+            "senza",
+            "fare",
+            "altro",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Elena sistema le bustine di zucchero in fila sul bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sistema",
+            "le",
+            "bustine",
+            "di",
+            "zucchero",
+            "in",
+            "fila",
+            "sul",
+            "banco"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Katia parla ancora del libro come di una cosa normale e pericolosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "parlare",
+            "ancora",
+            "del",
+            "libro",
+            "come",
+            "di",
+            "una",
+            "cosa",
+            "normale",
+            "e",
+            "pericolosa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Una volta un cliente ha chiesto se si vendeva.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "volta",
+            "un",
+            "cliente",
+            "avere",
+            "chiedere",
+            "se",
+            "si",
+            "vendere"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Bruna ha detto no. Punto.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "bruna",
+            "avere",
+            "dire",
+            "no",
+            "punto"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Elena ride piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "ride",
+            "piano"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Io non lo venderei.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "lo",
+            "venderei"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Certo. Perché ci hai scritto dentro.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "certo",
+            "perche",
+            "ci",
+            "avere",
+            "scrivere",
+            "dentro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Elena non conferma e non nega.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "non",
+            "conferma",
+            "e",
+            "non",
+            "nega"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Guarda lo scaffale e cambia discorso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "lo",
+            "scaffale",
+            "e",
+            "cambiare",
+            "discorso"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Il tavolo balla ancora?",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "tavolo",
+            "balla",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Sì. Come le persone.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "come",
+            "le",
+            "persona"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Nel pomeriggio arriva un po' di sole tra la pioggia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "arrivare",
+            "un",
+            "poco",
+            "di",
+            "sole",
+            "tra",
+            "la",
+            "pioggia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Elena pensa che Katia conosce il caffè meglio di lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "che",
+            "katia",
+            "conoscere",
+            "il",
+            "caffe",
+            "meglio",
+            "di",
+            "lei"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Conosce anche i silenzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "conoscere",
+            "anche",
+            "i",
+            "silenzi"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Per questo non scrive: non vuole lasciare prove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "questo",
+            "non",
+            "scrivere",
+            "non",
+            "volere",
+            "lasciare",
+            "prove"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Al bancone sono colleghe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "banco",
+            "essere",
+            "collega"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Nel libro Elena è sola con una voce senza faccia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "libro",
+            "elena",
+            "essere",
+            "solo",
+            "con",
+            "una",
+            "voce",
+            "senza",
+            "faccia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "E Katia, che non scrive mai, sa già troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "katia",
+            "che",
+            "non",
+            "scrivere",
+            "mai",
+            "sapere",
+            "gia",
+            "troppo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch05_q01",
+      "chapterId": "lettera-per-elena-05",
+      "type": "direct",
+      "question": "What does Katia say about people and the book?",
+      "choices": [
+        "Everyone writes; nobody admits it",
+        "Only Bruna writes",
+        "Nobody ever writes"
+      ],
+      "correctChoice": 0,
+      "explanation": "Katia states that everyone writes and nobody admits it.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q02",
+      "chapterId": "lettera-per-elena-05",
+      "type": "direct",
+      "question": "Has Katia written in the book?",
+      "choices": [
+        "No, never",
+        "Yes, every day",
+        "Only once on Tuesday"
+      ],
+      "correctChoice": 0,
+      "explanation": "Katia says she has never written.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05_q03",
+      "chapterId": "lettera-per-elena-05",
+      "type": "direct",
+      "question": "Why does Katia avoid writing?",
+      "choices": [
+        "Writing would make it true",
+        "She cannot read",
+        "Bruna forbids her"
+      ],
+      "correctChoice": 0,
+      "explanation": "She says if she writes it, then it becomes true.",
+      "difficulty": 2
+    }
+  ]
+}

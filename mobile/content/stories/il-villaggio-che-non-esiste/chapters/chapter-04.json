@@ -1,0 +1,1004 @@
+{
+  "id": "il-villaggio-che-non-esiste-04",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 4,
+  "title": "The rules",
+  "titleIt": "Le regole",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "locanda-elsa",
+    "piazza-collevento"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "elsa",
+    "tullio"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-04",
+      "summary": "Elsa states the village rules: after sunset you do not leave; you do not go into the forest; in the morning you look at the square. Giada laughs; Elsa and Tullio do not.",
+      "characterIds": [
+        "giada-rinaldi",
+        "elsa",
+        "tullio"
+      ],
+      "locationIds": [
+        "locanda-elsa",
+        "piazza-collevento"
+      ],
+      "rememberedFacts": [
+        "After sunset you do not leave",
+        "You do not go into the forest",
+        "In the morning you look at the square",
+        "Giada laughs and Elsa and Tullio do not"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La sera Elsa chiama Giada in cucina con voce ferma e bassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "elsa",
+            "chiamare",
+            "giada",
+            "in",
+            "cucina",
+            "con",
+            "voce",
+            "fermare",
+            "e",
+            "basso"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "C'è anche un uomo anziano seduto vicino al tavolo di legno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "anche",
+            "un",
+            "uomo",
+            "anziano",
+            "sedere",
+            "vicino",
+            "al",
+            "tavolo",
+            "di",
+            "legno"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Si chiama Tullio e beve tè caldo da un thermos scuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "chiamare",
+            "tullio",
+            "e",
+            "bere",
+            "tu",
+            "caldo",
+            "dare",
+            "un",
+            "thermos",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ci sono regole, e le ascolti tutte, senza ridere subito.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "essere",
+            "regole",
+            "e",
+            "le",
+            "ascoltare",
+            "tutto",
+            "senza",
+            "ridere",
+            "subito"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Regole di cosa, esattamente?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "regole",
+            "di",
+            "cosa",
+            "esattamente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Del paese, e di chi resta qui dopo il tramonto.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "del",
+            "paese",
+            "e",
+            "di",
+            "chi",
+            "restare",
+            "qui",
+            "dopo",
+            "il",
+            "tramonto"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Prima regola.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "regola"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Dopo il tramonto non si esce.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "dopo",
+            "il",
+            "tramonto",
+            "non",
+            "si",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non si lascia il paese, e non si prende la strada della diga.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "si",
+            "lasciare",
+            "il",
+            "paese",
+            "e",
+            "non",
+            "si",
+            "prendere",
+            "la",
+            "strada",
+            "della",
+            "diga"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Seconda regola.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "seconda",
+            "regola"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Nel bosco non si va, di notte e di giorno senza un buon motivo.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "nel",
+            "bosco",
+            "non",
+            "si",
+            "andare",
+            "di",
+            "notte",
+            "e",
+            "di",
+            "giorno",
+            "senza",
+            "un",
+            "buon",
+            "motivo"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Terza regola.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "terza",
+            "regola"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Al mattino guardi la piazza, sempre, prima di decidere altro.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "mattino",
+            "guardare",
+            "la",
+            "piazza",
+            "sempre",
+            "prima",
+            "di",
+            "decidere",
+            "altro"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Giada ride una volta, nervosa, perché le regole sembrano un gioco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ride",
+            "una",
+            "volta",
+            "nervosa",
+            "perche",
+            "le",
+            "regole",
+            "sembrare",
+            "un",
+            "gioco"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sembra un gioco per bambini, non una legge vera.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "sembrare",
+            "un",
+            "gioco",
+            "per",
+            "bambini",
+            "non",
+            "una",
+            "leggere",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Tullio non ride e non alza gli occhi dal thermos caldo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "non",
+            "ride",
+            "e",
+            "non",
+            "alzare",
+            "gli",
+            "occhi",
+            "dal",
+            "thermos",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Elsa non ride; tiene le mani ferme sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "ride",
+            "tiene",
+            "le",
+            "mani",
+            "ferme",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Non è un gioco.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "gioco"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "L'ora è l'ora, qui, e non cambia per i turisti.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "ora",
+            "essere",
+            "ora",
+            "qui",
+            "e",
+            "non",
+            "cambiare",
+            "per",
+            "i",
+            "turisti"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Perché dopo il tramonto, di preciso?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "dopo",
+            "il",
+            "tramonto",
+            "di",
+            "preciso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Perché la strada cambia, e diventa acqua.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "la",
+            "strada",
+            "cambiare",
+            "e",
+            "diventa",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Cambia come? Io non capisco ancora.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "cambiare",
+            "come",
+            "io",
+            "non",
+            "capire",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Tullio beve e non spiega oltre, per ora: lascia il dubbio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "bere",
+            "e",
+            "non",
+            "spiegare",
+            "oltre",
+            "per",
+            "ora",
+            "lasciare",
+            "il",
+            "dubbio"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "E il bosco? Cosa c'è nel bosco di così grave?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "il",
+            "bosco",
+            "cosa",
+            "ce",
+            "nel",
+            "bosco",
+            "di",
+            "cosi",
+            "grave"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Il bosco non è per camminare come a casa vostra.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bosco",
+            "non",
+            "essere",
+            "per",
+            "camminare",
+            "come",
+            "a",
+            "casa",
+            "vostra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "È per ricordare, e per stare lontani quando non serve.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "per",
+            "ricordare",
+            "e",
+            "per",
+            "stare",
+            "lontani",
+            "quando",
+            "non",
+            "servire"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Giada guarda fuori dalla finestra della cucina, verso i tetti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "fuori",
+            "dalla",
+            "finestra",
+            "della",
+            "cucina",
+            "verso",
+            "i",
+            "tetti"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Il cielo è ancora chiaro sopra le case basse del paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cielo",
+            "essere",
+            "ancora",
+            "chiaro",
+            "sopra",
+            "le",
+            "casa",
+            "basso",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "E la piazza? Perché guardarla al mattino, ogni giorno?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "la",
+            "piazza",
+            "perche",
+            "guardarla",
+            "al",
+            "mattino",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Al mattino guardi.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "mattino",
+            "guardare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Vedi se qualcosa è mosso, o cambiato di nome sulla porta.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "vedere",
+            "se",
+            "qualcosa",
+            "essere",
+            "mosso",
+            "o",
+            "cambiare",
+            "di",
+            "nome",
+            "sulla",
+            "porta"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Mosso da chi?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mosso",
+            "dare",
+            "chi"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Elsa alza le spalle, ma la voce resta seria e ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "alzare",
+            "le",
+            "spalle",
+            "ma",
+            "la",
+            "voce",
+            "restare",
+            "seria",
+            "e",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Dalle persone che restano e che aspettano da troppo tempo.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "dal",
+            "persona",
+            "che",
+            "restano",
+            "e",
+            "che",
+            "aspettare",
+            "dare",
+            "troppo",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Giada pensa ancora che stiano esagerando, come adulti stanchi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "ancora",
+            "che",
+            "stiano",
+            "esagerando",
+            "come",
+            "adulti",
+            "stanco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Ma le facce sono serie, senza sorriso facile e senza scuse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "le",
+            "facce",
+            "essere",
+            "serie",
+            "senza",
+            "sorridere",
+            "facile",
+            "e",
+            "senza",
+            "scuse"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Io resto solo una notte.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "restare",
+            "solo",
+            "una",
+            "notte"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Domani prendo un treno e vado da mio padre a Trento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "prendere",
+            "un",
+            "treno",
+            "e",
+            "andare",
+            "dare",
+            "mio",
+            "padre",
+            "a",
+            "trento"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Se c'è.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "ce"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Cosa vuole dire, se c'è?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "volere",
+            "dire",
+            "se",
+            "ce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Vuole dire che ascolti le regole, prima di tutto.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "dire",
+            "che",
+            "ascoltare",
+            "le",
+            "regole",
+            "prima",
+            "di",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Dopo il tramonto non si esce.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "dopo",
+            "il",
+            "tramonto",
+            "non",
+            "si",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Nel bosco non si va.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "nel",
+            "bosco",
+            "non",
+            "si",
+            "andare"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Al mattino guardi la piazza.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "al",
+            "mattino",
+            "guardare",
+            "la",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Giada ripete le frasi nella testa, una per una, chiare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ripete",
+            "le",
+            "frasi",
+            "nella",
+            "testa",
+            "una",
+            "per",
+            "una",
+            "chiare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Sono semplici, troppo semplici per essere solo una storia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "semplici",
+            "troppo",
+            "semplici",
+            "per",
+            "essere",
+            "solo",
+            "una",
+            "storia"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Fuori il sole scende piano verso le colline scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "il",
+            "sole",
+            "scende",
+            "piano",
+            "verso",
+            "le",
+            "colline",
+            "scure"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Tullio chiude il thermos con un click secco e si alza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "chiudere",
+            "il",
+            "thermos",
+            "con",
+            "un",
+            "click",
+            "secco",
+            "e",
+            "si",
+            "alzare"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Questa sera non si esce.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "questo",
+            "sera",
+            "non",
+            "si",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Giada non ride più, e questo è già un piccolo cambiamento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "ride",
+            "piu",
+            "e",
+            "questo",
+            "essere",
+            "gia",
+            "un",
+            "piccolo",
+            "cambiamento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Nella testa di Giada le tre regole restano come tre porte chiuse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "testa",
+            "di",
+            "giada",
+            "le",
+            "tre",
+            "regole",
+            "restano",
+            "come",
+            "tre",
+            "porte",
+            "chiuse"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Fuori, verso la piazza, il paese sembra quieto, ma lei non è più sicura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "verso",
+            "la",
+            "piazza",
+            "il",
+            "paese",
+            "sembrare",
+            "quieto",
+            "ma",
+            "lei",
+            "non",
+            "essere",
+            "piu",
+            "sicuro"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch04_q01",
+      "chapterId": "il-villaggio-che-non-esiste-04",
+      "type": "direct",
+      "question": "What is the first rule?",
+      "choices": [
+        "After sunset you do not leave",
+        "You must sleep at noon",
+        "You must buy bread every day"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says: dopo il tramonto non si esce.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch04_q02",
+      "chapterId": "il-villaggio-che-non-esiste-04",
+      "type": "direct",
+      "question": "What should Giada do in the morning?",
+      "choices": [
+        "Look at the square",
+        "Call the police",
+        "Open the dam"
+      ],
+      "correctChoice": 0,
+      "explanation": "The third rule is to look at the square in the morning.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch04_q03",
+      "chapterId": "il-villaggio-che-non-esiste-04",
+      "type": "inference",
+      "question": "How do Elsa and Tullio treat the rules?",
+      "choices": [
+        "As serious and real",
+        "As a tourist joke",
+        "As children's stories"
+      ],
+      "correctChoice": 0,
+      "explanation": "Giada laughs, but they do not; they insist it is not a game.",
+      "difficulty": 2
+    }
+  ]
+}

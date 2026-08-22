@@ -1,0 +1,1603 @@
+{
+  "id": "il-villaggio-che-non-esiste-21",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 21,
+  "title": "No",
+  "titleIt": "No",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "piazza-collevento",
+    "locanda-elsa",
+    "strada-diga"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "ingegnere",
+    "elsa",
+    "neri",
+    "tullio"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-21",
+      "summary": "Giada refuses to be inhabited proof or Anna. She will take Neri only if he asks his people first; he does not, yet.",
+      "characterIds": [
+        "giada-rinaldi",
+        "ingegnere",
+        "elsa",
+        "neri",
+        "tullio"
+      ],
+      "locationIds": [
+        "piazza-collevento",
+        "locanda-elsa",
+        "strada-diga"
+      ],
+      "rememberedFacts": [
+        "Giada will not be proof for the engineer",
+        "Giada will not stay as Anna for Elsa",
+        "Giada will take Neri only if he asks his people",
+        "Neri does not ask his people yet"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Verso sera Giada scende in piazza con la risposta pronta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "verso",
+            "sera",
+            "giada",
+            "scende",
+            "in",
+            "piazza",
+            "con",
+            "la",
+            "risposta",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "L'ingegnere è ancora lì; Elsa sulla soglia; Neri sulla panchina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "essere",
+            "ancora",
+            "li",
+            "elsa",
+            "sulla",
+            "soglia",
+            "neri",
+            "sulla",
+            "panchina"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Tullio osserva da lontano, come un orologio umano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "osserva",
+            "dare",
+            "lontano",
+            "come",
+            "un",
+            "orologio",
+            "umano"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Ho deciso.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "decidere"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "L'ingegnere apre la cartella con un sorriso già scritto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "aprire",
+            "la",
+            "cartella",
+            "con",
+            "un",
+            "sorridere",
+            "gia",
+            "scrivere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "No.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "no"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non firmo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "firmo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Non farò da prova che questo posto è abitato per il vostro progetto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "fare",
+            "dare",
+            "provare",
+            "che",
+            "questo",
+            "posto",
+            "essere",
+            "abitato",
+            "per",
+            "il",
+            "vostro",
+            "progetto"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Il sorriso dell'ingegnere si assottiglia, ma resta educato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sorridere",
+            "dell'ingegnere",
+            "si",
+            "assottiglia",
+            "ma",
+            "restare",
+            "educato"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "È un favore piccolo.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "un",
+            "favore",
+            "piccolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Piccolo per lei, grande per me.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "piccolo",
+            "per",
+            "lei",
+            "grande",
+            "per",
+            "io"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Io non presto la mia faccia a una carta che cancella e riscrive i paesi.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "presto",
+            "la",
+            "mio",
+            "faccia",
+            "a",
+            "una",
+            "carta",
+            "che",
+            "cancella",
+            "e",
+            "riscrive",
+            "i",
+            "paese"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Si volta verso Elsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "volta",
+            "verso",
+            "elsa"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "E no anche a te.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "no",
+            "anche",
+            "a",
+            "tu"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non sono Anna.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "anna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Non resto per riempire il vuoto che mia madre ha lasciato.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "restare",
+            "per",
+            "riempire",
+            "il",
+            "vuoto",
+            "che",
+            "mio",
+            "madre",
+            "avere",
+            "lasciare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Elsa apre la bocca e la richiude.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "aprire",
+            "la",
+            "bocca",
+            "e",
+            "la",
+            "richiude"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Se parti, restiamo di nuovo senza.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "partire",
+            "restare",
+            "di",
+            "nuovo",
+            "senza"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Senza Anna, forse.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "senza",
+            "anna",
+            "forse"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Ma non senza un paese.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "non",
+            "senza",
+            "un",
+            "paese"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Il paese siete voi, anche quando nessuno firma.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "voi",
+            "anche",
+            "quando",
+            "nessuno",
+            "firma"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Anche quando l'ispezione non arriva.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "quando",
+            "l'ispezione",
+            "non",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Elsa abbassa lo sguardo verso le pietre della piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "abbassa",
+            "lo",
+            "sguardo",
+            "verso",
+            "le",
+            "pietre",
+            "della",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Poi Giada guarda Neri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "giada",
+            "guardare",
+            "neri"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Tu vuoi un passaggio.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "volere",
+            "un",
+            "passaggio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Sì.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Te lo do solo se lo chiedi alla tua gente.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "lo",
+            "dare",
+            "solo",
+            "se",
+            "lo",
+            "chiedere",
+            "alla",
+            "tuo",
+            "gente"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Non ti porto via di nascosto come un oggetto salvato.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ti",
+            "porto",
+            "via",
+            "di",
+            "nascosto",
+            "come",
+            "un",
+            "oggetto",
+            "salvato"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Neri si alza in piedi, nervoso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "si",
+            "alzare",
+            "in",
+            "piedi",
+            "nervoso"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Se lo chiedo, mi dicono di restare.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "lo",
+            "chiedere",
+            "mi",
+            "dire",
+            "di",
+            "restare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Allora resta, o parti dopo aver parlato.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "restare",
+            "o",
+            "partire",
+            "dopo",
+            "avere",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Ma non usare me come scorciatoia.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "non",
+            "usare",
+            "io",
+            "come",
+            "scorciatoia"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Neri guarda Elsa, poi Tullio, poi il suolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "guardare",
+            "elsa",
+            "poi",
+            "tullio",
+            "poi",
+            "il",
+            "suo"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "La bocca si apre, e non esce una domanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "bocca",
+            "si",
+            "aprire",
+            "e",
+            "non",
+            "uscire",
+            "una",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Non ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ancora"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Va bene.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Non oggi.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Giada annuisce; non è un trionfo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "annuisce",
+            "non",
+            "essere",
+            "un",
+            "trionfo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "È un confine tenuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "confine",
+            "tenuto"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "L'ingegnere richiude la cartella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "richiude",
+            "la",
+            "cartella"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Senza firma il progetto procede lo stesso, più lento.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "senza",
+            "firma",
+            "il",
+            "progetto",
+            "procede",
+            "lo",
+            "stesso",
+            "piu",
+            "lento"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Lei ha perso un'occasione pulita.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "avere",
+            "perso",
+            "un'occasione",
+            "pulita"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Ho tenuto il mio nome.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "tenuto",
+            "il",
+            "mio",
+            "nome"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Per me è abbastanza pulito.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "io",
+            "essere",
+            "abbastanza",
+            "pulito"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "L'ingegnere sale sulla macchina alta prima che l'ombra allunghi troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "sapere",
+            "sulla",
+            "macchina",
+            "alto",
+            "prima",
+            "che",
+            "l'ombra",
+            "allunghi",
+            "troppo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Parte verso la diga, dove le regole dei residenti non lo tengono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "partire",
+            "verso",
+            "la",
+            "diga",
+            "dove",
+            "le",
+            "regole",
+            "dei",
+            "residenti",
+            "non",
+            "lo",
+            "tengono"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Elsa resta sulla soglia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "restare",
+            "sulla",
+            "soglia"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Allora te ne vai.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "tu",
+            "ne",
+            "andare"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "All'alba.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "all'alba"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Non dopo le otto, e non come Anna.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dopo",
+            "le",
+            "otto",
+            "e",
+            "non",
+            "come",
+            "anna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Elsa fa un gesto piccolo, quasi un assenso doloroso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "fare",
+            "un",
+            "gesto",
+            "piccolo",
+            "quasi",
+            "un",
+            "assenso",
+            "doloroso"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Dormi qui stanotte.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "dormi",
+            "qui",
+            "stanotte"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "La stanza resta tua fino al mattino.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stanza",
+            "restare",
+            "tuo",
+            "fino",
+            "al",
+            "mattino"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Grazie.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Neri non chiede ancora ai suoi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "non",
+            "chiedere",
+            "ancora",
+            "ai",
+            "suo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Si rimette le cuffie e cammina verso la strada della diga, solo fino al punto sicuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "rimette",
+            "le",
+            "cuffie",
+            "e",
+            "camminare",
+            "verso",
+            "la",
+            "strada",
+            "della",
+            "diga",
+            "solo",
+            "fino",
+            "al",
+            "punto",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Giada lo segue con lo sguardo, senza corrergli dietro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "segue",
+            "con",
+            "lo",
+            "sguardo",
+            "senza",
+            "corrergli",
+            "dietro"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Tullio si avvicina e parla basso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "si",
+            "avvicina",
+            "e",
+            "parlare",
+            "basso"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Il bus degli operai passa all'alba, se sei alla fermata.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "bus",
+            "dei",
+            "operai",
+            "passare",
+            "all'alba",
+            "se",
+            "essere",
+            "alla",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Non è scritto sugli orari turistici.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "scrivere",
+            "su",
+            "orari",
+            "turistici"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Lo so da mia madre.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere",
+            "dare",
+            "mio",
+            "madre"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Tullio annuisce, soddisfatto che la conoscenza abbia una via ordinaria.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "annuisce",
+            "soddisfatto",
+            "che",
+            "la",
+            "conoscenza",
+            "abbia",
+            "una",
+            "via",
+            "ordinaria"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Dopo cena Giada prepara la valigia senza fretta teatrale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "cena",
+            "giada",
+            "preparare",
+            "la",
+            "valigia",
+            "senza",
+            "fretta",
+            "teatrale"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Lascia la foto di Anna nel cassetto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lasciare",
+            "la",
+            "foto",
+            "di",
+            "anna",
+            "nel",
+            "cassetto"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non è sua da portare via come trofeo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "suo",
+            "dare",
+            "portare",
+            "via",
+            "come",
+            "trofeo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Prende solo la borsa che aveva già rubato a Bologna, e la valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "solo",
+            "la",
+            "borsa",
+            "che",
+            "avere",
+            "gia",
+            "rubato",
+            "a",
+            "bologna",
+            "e",
+            "la",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Prima di spegnere la luce scrive un messaggio a Neri, anche senza rete.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "spegnere",
+            "la",
+            "luce",
+            "scrivere",
+            "un",
+            "messaggio",
+            "a",
+            "neri",
+            "anche",
+            "senza",
+            "rete"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Se un giorno chiedi, forse c'è ancora una strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "un",
+            "giorno",
+            "chiedere",
+            "forse",
+            "ce",
+            "ancora",
+            "una",
+            "strada"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Stasera no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stasera",
+            "no"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Giada dorme a tratti, sveglia all'idea dell'alba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "dormire",
+            "a",
+            "tratti",
+            "svegliare",
+            "idea",
+            "dell'alba"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Il no detto in piazza resta nella stanza come un mobile solido.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "no",
+            "dire",
+            "in",
+            "piazza",
+            "restare",
+            "nella",
+            "stanza",
+            "come",
+            "un",
+            "mobile",
+            "solido"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Non è conquista del paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "conquista",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "È il rifiuto di diventare la storia sbagliata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "il",
+            "rifiuto",
+            "di",
+            "diventare",
+            "la",
+            "storia",
+            "sbagliata"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Nella notte sente ancora il rumore lontano dell'acqua sulla strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "notte",
+            "sentire",
+            "ancora",
+            "il",
+            "rumore",
+            "lontano",
+            "acqua",
+            "sulla",
+            "strada"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Non prova a uscire; conosce l'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "provare",
+            "a",
+            "uscire",
+            "conoscere",
+            "ora"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Controlla la sveglia due volte e prepara i vestiti per l'alba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "controlla",
+            "la",
+            "svegliare",
+            "due",
+            "volta",
+            "e",
+            "preparare",
+            "i",
+            "vestiti",
+            "per",
+            "l'alba"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Pensa a Neri sulla panchina, con le cuffie e la domanda non detta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "a",
+            "neri",
+            "sulla",
+            "panchina",
+            "con",
+            "le",
+            "cuffie",
+            "e",
+            "la",
+            "domanda",
+            "non",
+            "detta"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Non lo giudica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "lo",
+            "giudica"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Sa quanto costa chiedere ai propri di lasciarti partire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "quanto",
+            "costare",
+            "chiedere",
+            "ai",
+            "propri",
+            "di",
+            "lasciarti",
+            "partire"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Però non può fare quella domanda al posto suo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "non",
+            "potere",
+            "fare",
+            "quello",
+            "domanda",
+            "al",
+            "posto",
+            "suo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Pensa a Elsa, che ha scritto Giada sul biglietto del caffè nella sua testa già, forse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "a",
+            "elsa",
+            "che",
+            "avere",
+            "scrivere",
+            "giada",
+            "sul",
+            "biglietto",
+            "del",
+            "caffe",
+            "nella",
+            "suo",
+            "testa",
+            "gia",
+            "forse"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "O forse lo scriverà solo al mattino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "o",
+            "forse",
+            "lo",
+            "scrivera",
+            "solo",
+            "al",
+            "mattino"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Pensa all'ingegnere, già lontano in una macchina che non teme l'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "all'ingegnere",
+            "gia",
+            "lontano",
+            "in",
+            "una",
+            "macchina",
+            "che",
+            "non",
+            "teme",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Le regole valgono per chi resta; lui visita e firma altrove.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "regole",
+            "valgono",
+            "per",
+            "chi",
+            "restare",
+            "lui",
+            "visita",
+            "e",
+            "firma",
+            "altrove"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Giada chiude gli occhi con i tre no ancora chiari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiudere",
+            "gli",
+            "occhi",
+            "con",
+            "i",
+            "tre",
+            "no",
+            "ancora",
+            "chiaro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Non prova. Non Anna. Non passaggio senza domanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "provare",
+            "non",
+            "anna",
+            "non",
+            "passaggio",
+            "senza",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "All'alba userà la regola al diritto, come sua madre anni fa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "all'alba",
+            "usera",
+            "la",
+            "regola",
+            "al",
+            "diritto",
+            "come",
+            "suo",
+            "madre",
+            "anno",
+            "fare"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Uscire, non conquistare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uscire",
+            "non",
+            "conquistare"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "Prima dell'alba sente passi leggeri in corridoio: forse Elsa che controlla la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "dell'alba",
+            "sentire",
+            "passare",
+            "leggeri",
+            "in",
+            "corridoio",
+            "forse",
+            "elsa",
+            "che",
+            "controlla",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Nessuno bussa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "bussa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "Il no detto in piazza ha già fatto il lavoro più difficile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "no",
+            "dire",
+            "in",
+            "piazza",
+            "avere",
+            "gia",
+            "fare",
+            "il",
+            "lavorare",
+            "piu",
+            "difficile"
+          ]
+        },
+        {
+          "id": "s92",
+          "text": "Adesso resta solo alzarsi, camminare, salire sul bus.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "restare",
+            "solo",
+            "alzarsi",
+            "camminare",
+            "salire",
+            "sul",
+            "bus"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch21_q01",
+      "chapterId": "il-villaggio-che-non-esiste-21",
+      "type": "direct",
+      "question": "What does Giada refuse to be for the engineer?",
+      "choices": [
+        "Proof the place is inhabited",
+        "A new innkeeper",
+        "A survey team member"
+      ],
+      "correctChoice": 0,
+      "explanation": "She will not sign or lend her face as inhabited proof.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q02",
+      "chapterId": "il-villaggio-che-non-esiste-21",
+      "type": "direct",
+      "question": "Under what condition would Giada take Neri?",
+      "choices": [
+        "If he asks his people first",
+        "If Elsa pays for the ticket",
+        "If he signs for the engineer"
+      ],
+      "correctChoice": 0,
+      "explanation": "She will give him a ride only if he asks his people; he does not, yet.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch21_q03",
+      "chapterId": "il-villaggio-che-non-esiste-21",
+      "type": "inference",
+      "question": "What does Giada's no protect?",
+      "choices": [
+        "Her own name and an exit that is not conquest",
+        "The engineer's deadline",
+        "Elsa's register ritual"
+      ],
+      "correctChoice": 0,
+      "explanation": "She keeps her name and refuses to become the wrong story; the village is not conquered.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "characters": [
+    {
+      "id": "elena-marini",
+      "name": "Elena Marini",
+      "gender": "female",
+      "ageDescription": "adult",
+      "description": "A 29-year-old barista back in Marina di Brenta. Easy at the counter; honest only in the café book.",
+      "storyRole": "protagonist",
+      "relationships": ["Daughter of Mirella", "Works with Katia under Bruna", "Knows Pietro as the Tuesday driver"],
+      "knownLocationIds": ["caffe-brenta", "bancone-brenta", "scaffale-libro", "cucina-mirella", "marina-di-brenta"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "adult Italian female, warm at the counter, careful when honest"
+      }
+    },
+    {
+      "id": "pietro-baldo",
+      "name": "Pietro Baldo",
+      "gender": "male",
+      "ageDescription": "adult",
+      "description": "A 32-year-old coffee-roaster driver who delivers on Tuesdays. Writes the truth in the book; stutters when it matters aloud.",
+      "storyRole": "love interest",
+      "relationships": ["Brother of Sergio", "Delivers to Caffè Brenta", "Writes in Bruna's book"],
+      "knownLocationIds": ["caffe-brenta", "van-pietro", "ospedale-esterno", "magazzino-caffe"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "adult Italian male, quiet, hesitant when feelings are real"
+      }
+    },
+    {
+      "id": "bruna",
+      "name": "Bruna",
+      "gender": "female",
+      "ageDescription": "middle-aged",
+      "description": "Owner of Caffè Brenta, 58. The book was her idea; almost a shrine to how shy people stay connected.",
+      "storyRole": "café owner",
+      "relationships": ["Employer of Elena and Katia", "Guardian of the book"],
+      "knownLocationIds": ["caffe-brenta", "bancone-brenta", "scaffale-libro", "magazzino-caffe"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, firm, briefly soft"
+      }
+    },
+    {
+      "id": "katia",
+      "name": "Katia",
+      "gender": "female",
+      "ageDescription": "adult",
+      "description": "Other barista, 26. Sees everything, says little. Has never written in the book.",
+      "storyRole": "coworker",
+      "relationships": ["Works with Elena", "Sees Pietro and the shelf"],
+      "knownLocationIds": ["caffe-brenta", "bancone-brenta"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young adult Italian female, dry, observant"
+      }
+    },
+    {
+      "id": "mirella-marini",
+      "name": "Mirella Marini",
+      "gender": "female",
+      "ageDescription": "middle-aged",
+      "description": "Elena's mother. Wants Elena to stay. Remembers that Elena's father spoke better on paper.",
+      "storyRole": "mother",
+      "relationships": ["Mother of Elena"],
+      "knownLocationIds": ["cucina-mirella", "marina-di-brenta"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian female, practical, a little insistent"
+      }
+    },
+    {
+      "id": "sergio-baldo",
+      "name": "Sergio Baldo",
+      "gender": "male",
+      "ageDescription": "adult",
+      "description": "Pietro's brother. After an accident he is in recovery; pressure on Pietro, not a death plot.",
+      "storyRole": "brother",
+      "relationships": ["Brother of Pietro"],
+      "knownLocationIds": ["ospedale-esterno"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "adult Italian male, tired, brief"
+      }
+    }
+  ]
+}

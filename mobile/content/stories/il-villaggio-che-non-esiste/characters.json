@@ -1,0 +1,116 @@
+{
+  "characters": [
+    {
+      "id": "giada-rinaldi",
+      "name": "Giada Rinaldi",
+      "gender": "female",
+      "ageDescription": "teenager",
+      "description": "Seventeen. Going to her father in Trento for the summer. Takes photos because she does not trust memory. Must not become Anna.",
+      "storyRole": "protagonist",
+      "relationships": ["Daughter of Anna and Papà", "Guest of Elsa", "Peer of Neri"],
+      "knownLocationIds": ["treno-halt", "collevento-strada", "locanda-elsa", "piazza-collevento", "cucina-trento"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "teenage Italian female, quiet anger, precise when scared"
+      }
+    },
+    {
+      "id": "elsa",
+      "name": "Elsa",
+      "gender": "female",
+      "ageDescription": "older adult",
+      "description": "Innkeeper in her sixties. Calls Giada Anna once. Stages the square for an inspection that never comes.",
+      "storyRole": "innkeeper",
+      "relationships": ["Knew Anna Rinaldi", "Works with Tullio on village rules"],
+      "knownLocationIds": ["locanda-elsa", "piazza-collevento", "collevento-strada"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "older Italian female, warm then sharp when the ritual is threatened"
+      }
+    },
+    {
+      "id": "tullio",
+      "name": "Tullio",
+      "gender": "male",
+      "ageDescription": "older adult",
+      "description": "In his seventies. Knows dam release times. Rules without romance.",
+      "storyRole": "elder",
+      "relationships": ["Knows the sluice clock", "Nods when Giada leaves at dawn"],
+      "knownLocationIds": ["strada-diga", "piazza-collevento", "edificio-idroelettrico"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "older Italian male, flat, timed like a clock"
+      }
+    },
+    {
+      "id": "neri",
+      "name": "Neri",
+      "gender": "male",
+      "ageDescription": "teenager",
+      "description": "About seventeen. Local. Wants to leave. Has a modern map with a blank where the village should be. Not a stand-in for Anna's abandoned boy.",
+      "storyRole": "peer",
+      "relationships": ["Born in Collevento", "Wants a ride out"],
+      "knownLocationIds": ["piazza-collevento", "collevento-strada", "bosco-recinto", "campo-segnale"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "teenage Italian male, restless, English songs under his breath"
+      }
+    },
+    {
+      "id": "anna-rinaldi",
+      "name": "Anna Rinaldi",
+      "gender": "female",
+      "ageDescription": "adult",
+      "description": "Giada's mother. Absent until a phone call. Was seventeen in Collevento in 2007. Left a boy; left the village to exist.",
+      "storyRole": "mother (phone / photo)",
+      "relationships": ["Mother of Giada", "Former guest of Elsa"],
+      "knownLocationIds": ["locanda-elsa"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "adult Italian female, careful, then blunt about water after eight"
+      }
+    },
+    {
+      "id": "ingegnere",
+      "name": "L'ingegnere",
+      "gender": "male",
+      "ageDescription": "middle-aged",
+      "description": "Company man. Polite compensation smile. Leaves in a high car at sunset — rules are for residents.",
+      "storyRole": "company man",
+      "relationships": ["Represents the dam project"],
+      "knownLocationIds": ["piazza-collevento", "strada-diga", "edificio-idroelettrico"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, polite, eviction with a smile"
+      }
+    },
+    {
+      "id": "papa-rinaldi",
+      "name": "Papà",
+      "gender": "male",
+      "ageDescription": "middle-aged",
+      "description": "Giada's father in Trento. Phone first; ordinary kitchen later. Thinks she missed a stop.",
+      "storyRole": "father",
+      "relationships": ["Father of Giada"],
+      "knownLocationIds": ["cucina-trento"],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "middle-aged Italian male, practical, not dramatic"
+      }
+    }
+  ]
+}

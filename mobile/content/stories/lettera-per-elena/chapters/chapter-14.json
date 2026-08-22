@@ -1,0 +1,1337 @@
+{
+  "id": "lettera-per-elena-14",
+  "storyId": "lettera-per-elena",
+  "number": 14,
+  "title": "The outing",
+  "titleIt": "Uscita",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "marina-di-brenta",
+    "caffe-brenta",
+    "bancone-brenta",
+    "van-pietro"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "pietro-baldo",
+    "bruna",
+    "katia"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-14",
+      "summary": "Bruna forces a staff-and-driver spritz. In a group Elena and Pietro are worse. He leaves early for Sergio.",
+      "characterIds": [
+        "elena-marini",
+        "pietro-baldo",
+        "bruna",
+        "katia"
+      ],
+      "locationIds": [
+        "marina-di-brenta",
+        "caffe-brenta",
+        "bancone-brenta",
+        "van-pietro"
+      ],
+      "rememberedFacts": [
+        "Bruna organizes a group spritz with staff and Pietro",
+        "Elena and Pietro are worse together in a group",
+        "Pietro leaves early for Sergio, his brother in recovery",
+        "Elena hears Sergio's name for the first time"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Venerdì pomeriggio Bruna batte le mani sul bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "venerdi",
+            "pomeriggio",
+            "bruna",
+            "batte",
+            "le",
+            "mani",
+            "sul",
+            "banco"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Stasera spritz.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "stasera",
+            "spritz"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Tutti.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Anche Pietro?",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "pietro"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Anche Pietro.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "pietro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Gliel'ho detto ieri, quando ha portato il caffè.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "gliel'ho",
+            "dire",
+            "ieri",
+            "quando",
+            "avere",
+            "portare",
+            "il",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Elena sente lo stomaco stretto, come prima di un esame.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sentire",
+            "lo",
+            "stomaco",
+            "stretto",
+            "come",
+            "prima",
+            "di",
+            "un",
+            "esame"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Alla sera chiudono il Caffè Brenta e camminano fino a un bar vicino, sulla strada di Marina di Brenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "sera",
+            "chiudono",
+            "il",
+            "caffe",
+            "brenta",
+            "e",
+            "camminare",
+            "fino",
+            "a",
+            "un",
+            "bar",
+            "vicino",
+            "sulla",
+            "strada",
+            "di",
+            "marina",
+            "di",
+            "brenta"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "C'è rumore, luci gialle, e tavolini fuori sotto la nebbia leggera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "rumore",
+            "luce",
+            "gialle",
+            "e",
+            "tavolini",
+            "fuori",
+            "sotto",
+            "la",
+            "nebbia",
+            "leggera"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Bruna ordina quattro spritz e parla con la barista come se fosse ancora al suo bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "ordina",
+            "quattro",
+            "spritz",
+            "e",
+            "parlare",
+            "con",
+            "la",
+            "barista",
+            "come",
+            "se",
+            "fosse",
+            "ancora",
+            "al",
+            "suo",
+            "banco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Pietro arriva in ritardo, con il furgone parcheggiato un po' lontano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "arrivare",
+            "in",
+            "ritardo",
+            "con",
+            "il",
+            "furgone",
+            "parcheggiato",
+            "un",
+            "poco",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Si siede lontano da Elena, quasi per caso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "sedere",
+            "lontano",
+            "dare",
+            "elena",
+            "quasi",
+            "per",
+            "caso"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Poi Katia lo sposta con un gesto pratico.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "katia",
+            "lo",
+            "sposta",
+            "con",
+            "un",
+            "gesto",
+            "pratico"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Qui.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Posto libero.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "posto",
+            "libero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Ora Pietro è vicino a Elena, e la distanza piccola è peggiore della distanza grande.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ora",
+            "pietro",
+            "essere",
+            "vicino",
+            "a",
+            "elena",
+            "e",
+            "la",
+            "distanza",
+            "piccolo",
+            "essere",
+            "peggiore",
+            "della",
+            "distanza",
+            "grande"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Peggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "peggio"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Parlano tutti insieme: Bruna racconta del bancone e dei clienti difficili.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "parlare",
+            "tutto",
+            "insieme",
+            "bruna",
+            "racconta",
+            "del",
+            "banco",
+            "e",
+            "dei",
+            "cliente",
+            "difficile"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Katia fa battute sul frigo e sullo zucchero finito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "fare",
+            "battute",
+            "sul",
+            "frigo",
+            "e",
+            "sul",
+            "zucchero",
+            "finire"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Elena ride al momento giusto, come al lavoro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "ride",
+            "al",
+            "momento",
+            "giusto",
+            "come",
+            "al",
+            "lavorare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Con Pietro scambia due frasi morte, che non dicono niente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "con",
+            "pietro",
+            "scambia",
+            "due",
+            "frasi",
+            "morte",
+            "che",
+            "non",
+            "dire",
+            "niente"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Buono lo spritz.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono",
+            "lo",
+            "spritz"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Sì.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Buono.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "buono"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Nel gruppo sono peggiori che al caffè, dove almeno c'è il lavoro tra loro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "gruppo",
+            "essere",
+            "peggiori",
+            "che",
+            "al",
+            "caffe",
+            "dove",
+            "almeno",
+            "ce",
+            "il",
+            "lavorare",
+            "tra",
+            "loro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Nel libro sarebbero vivi, pieni di paura e di verità.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "libro",
+            "sarebbero",
+            "voi",
+            "pieno",
+            "di",
+            "paura",
+            "e",
+            "di",
+            "verita"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Qui sono due sedie mute vicino a un bicchiere arancione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qui",
+            "essere",
+            "due",
+            "sedia",
+            "mute",
+            "vicino",
+            "a",
+            "un",
+            "bicchiere",
+            "arancione"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Elena pensa alla S cancellata e alla laguna, e non dice niente di questo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "alla",
+            "s",
+            "cancellata",
+            "e",
+            "alla",
+            "laguna",
+            "e",
+            "non",
+            "dire",
+            "niente",
+            "di",
+            "questo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Il telefono di Pietro vibra sul tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "di",
+            "pietro",
+            "vibra",
+            "sul",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Lui guarda lo schermo e diventa serio in un secondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lui",
+            "guardare",
+            "lo",
+            "schermo",
+            "e",
+            "diventa",
+            "serio",
+            "in",
+            "un",
+            "secondo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Devo andare.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "andare"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Già?",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "gia"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Sergio.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "sergio"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Mio fratello.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "mio",
+            "fratello"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Elena sente il nome per la prima volta, e il libro le torna in testa tutto insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sentire",
+            "il",
+            "nome",
+            "per",
+            "la",
+            "prima",
+            "volta",
+            "e",
+            "il",
+            "libro",
+            "le",
+            "tornare",
+            "in",
+            "testa",
+            "tutto",
+            "insieme"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Sergio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sergio"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Il fratello che non dorme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "fratello",
+            "che",
+            "non",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Il fratello dopo l'incidente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "fratello",
+            "dopo",
+            "l'incidente"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Mi dispiace.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "dispiace"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Va bene.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "È in recupero.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "in",
+            "recupero"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Ma stasera sta male, e mi chiamano.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "stasera",
+            "stare",
+            "ma",
+            "e",
+            "mi",
+            "chiamano"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Pietro lascia mezzo spritz sul tavolo e prende le chiavi del furgone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "lasciare",
+            "mezzo",
+            "spritz",
+            "sul",
+            "tavolo",
+            "e",
+            "prendere",
+            "le",
+            "chiave",
+            "del",
+            "furgone"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Esce in fretta, senza guardare Elena a lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uscire",
+            "in",
+            "fretta",
+            "senza",
+            "guardare",
+            "elena",
+            "a",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Bruna sospira e gira il bicchiere tra le mani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "sospira",
+            "e",
+            "gira",
+            "il",
+            "bicchiere",
+            "tra",
+            "le",
+            "mani"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Povero ragazzo.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "povero",
+            "ragazzo"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Katia guarda Elena, e Elena guarda il bicchiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "guardare",
+            "elena",
+            "e",
+            "elena",
+            "guardare",
+            "il",
+            "bicchiere"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Non dice: è lui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dire",
+            "essere",
+            "lui"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Non dice: ho scritto di suo fratello senza sapere il nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dire",
+            "avere",
+            "scrivere",
+            "di",
+            "suo",
+            "fratello",
+            "senza",
+            "sapere",
+            "il",
+            "nome"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Beve un sorso amaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bere",
+            "un",
+            "sorso",
+            "amaro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "L'uscita doveva aiutare, doveva renderli più semplici insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "uscire",
+            "dovere",
+            "aiutare",
+            "dovere",
+            "renderli",
+            "piu",
+            "semplici",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Ha reso tutto più chiaro e più lontano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "reso",
+            "tutto",
+            "piu",
+            "chiaro",
+            "e",
+            "piu",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Prima di uscire, Elena si guarda allo specchio del bagno del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "uscire",
+            "elena",
+            "si",
+            "guardare",
+            "al",
+            "specchio",
+            "del",
+            "bagno",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Sistema i capelli e pensa che uno spritz non è un libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sistema",
+            "i",
+            "capelli",
+            "e",
+            "pensare",
+            "che",
+            "uno",
+            "spritz",
+            "non",
+            "essere",
+            "un",
+            "libro"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Nel bar ordinano anche patatine, e Bruna insiste per pagare lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "bar",
+            "ordinano",
+            "anche",
+            "patatine",
+            "e",
+            "bruna",
+            "insiste",
+            "per",
+            "pagare",
+            "lei"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Katia racconta una storia di un cliente che voleva tre zuccheri nel tè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "racconta",
+            "una",
+            "storia",
+            "di",
+            "un",
+            "cliente",
+            "che",
+            "volere",
+            "tre",
+            "zuccheri",
+            "nel",
+            "tu"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Tutti ridono, Elena e Pietro compresi, ma le loro risate non si incontrano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tutto",
+            "ridono",
+            "elena",
+            "e",
+            "pietro",
+            "compresi",
+            "ma",
+            "le",
+            "loro",
+            "risate",
+            "non",
+            "si",
+            "incontrano"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Elena sente l'odore dell'aperitivo e lo stomaco chiuso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sentire",
+            "l'odore",
+            "dell'aperitivo",
+            "e",
+            "lo",
+            "stomaco",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Vorrebbe chiedere di Sergio senza sembrare curiosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "chiedere",
+            "di",
+            "sergio",
+            "senza",
+            "sembrare",
+            "curiosa"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Vorrebbe dire: ti ho letto, e non può.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "dire",
+            "ti",
+            "avere",
+            "leggere",
+            "e",
+            "non",
+            "potere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Quando il telefono vibra, il tavolo cambia temperatura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "il",
+            "telefono",
+            "vibra",
+            "il",
+            "tavolo",
+            "cambiare",
+            "temperatura"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Pietro parla di recupero senza dettagli inutili, e questo rende tutto più reale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "parlare",
+            "di",
+            "recupero",
+            "senza",
+            "dettagli",
+            "inutili",
+            "e",
+            "questo",
+            "rende",
+            "tutto",
+            "piu",
+            "reale"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Elena capisce che la pressione su di lui non è poesia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "capire",
+            "che",
+            "la",
+            "pressione",
+            "su",
+            "di",
+            "lui",
+            "non",
+            "essere",
+            "poesia"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "È ore, ospedale, sonno perso, un fratello che deve migliorare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "ora",
+            "ospedale",
+            "sonno",
+            "perso",
+            "un",
+            "fratello",
+            "che",
+            "dovere",
+            "migliorare"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Dopo che Pietro se ne va, Bruna propone un altro giro e Katia dice no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "che",
+            "pietro",
+            "se",
+            "ne",
+            "andare",
+            "bruna",
+            "propone",
+            "un",
+            "altro",
+            "giro",
+            "e",
+            "katia",
+            "dire",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Basta così.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "basta",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Elena lascia metà dello spritz e saluta con voce calma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "lasciare",
+            "meta",
+            "del",
+            "spritz",
+            "e",
+            "saluta",
+            "con",
+            "voce",
+            "calma"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Cammina verso casa sotto le luci gialle e ripete il nome Sergio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "verso",
+            "casa",
+            "sotto",
+            "le",
+            "luce",
+            "gialle",
+            "e",
+            "ripete",
+            "il",
+            "nome",
+            "sergio"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Ora il libro ha un volto, un furgone, e un fratello in recupero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ora",
+            "il",
+            "libro",
+            "avere",
+            "un",
+            "volto",
+            "un",
+            "furgone",
+            "e",
+            "un",
+            "fratello",
+            "in",
+            "recupero"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "E lei ha ancora paura di parlare, anche dopo lo spritz.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "lei",
+            "avere",
+            "ancora",
+            "paura",
+            "di",
+            "parlare",
+            "anche",
+            "dopo",
+            "lo",
+            "spritz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Sergio ha un nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sergio",
+            "avere",
+            "un",
+            "nome"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Pietro ha una vita fuori dal martedì e fuori dal libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "avere",
+            "una",
+            "vita",
+            "fuori",
+            "dal",
+            "martedi",
+            "e",
+            "fuori",
+            "dal",
+            "libro"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "E Elena ha ancora una bugia in bocca, e mezzo spritz che non vuole finire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "elena",
+            "avere",
+            "ancora",
+            "una",
+            "bugia",
+            "in",
+            "bocca",
+            "e",
+            "mezzo",
+            "spritz",
+            "che",
+            "non",
+            "volere",
+            "finire"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch14_q01",
+      "chapterId": "lettera-per-elena-14",
+      "type": "direct",
+      "question": "What does Bruna organize?",
+      "choices": [
+        "A group spritz",
+        "A trip to the lagoon",
+        "A book sale"
+      ],
+      "correctChoice": 0,
+      "explanation": "Bruna forces a staff-and-driver spritz night.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q02",
+      "chapterId": "lettera-per-elena-14",
+      "type": "direct",
+      "question": "How are Elena and Pietro in the group?",
+      "choices": [
+        "Worse than at the café",
+        "Open and honest",
+        "Fighting loudly"
+      ],
+      "correctChoice": 0,
+      "explanation": "In the group they are even more awkward.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q03",
+      "chapterId": "lettera-per-elena-14",
+      "type": "direct",
+      "question": "Why does Pietro leave early?",
+      "choices": [
+        "For Sergio, his brother in recovery",
+        "Because he hates spritz",
+        "To write in the book"
+      ],
+      "correctChoice": 0,
+      "explanation": "He leaves because Sergio feels bad and is in recovery.",
+      "difficulty": 2
+    }
+  ]
+}

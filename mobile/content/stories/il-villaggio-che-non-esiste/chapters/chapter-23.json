@@ -1,0 +1,1554 @@
+{
+  "id": "il-villaggio-che-non-esiste-23",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 23,
+  "title": "Trento",
+  "titleIt": "Trento",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "cucina-trento"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "papa-rinaldi"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-23",
+      "summary": "Giada reaches her father's ordinary kitchen in Trento. She tells what happened without turning it into a miracle story.",
+      "characterIds": [
+        "giada-rinaldi",
+        "papa-rinaldi"
+      ],
+      "locationIds": [
+        "cucina-trento"
+      ],
+      "rememberedFacts": [
+        "Giada arrives at her father's in Trento",
+        "They talk in an ordinary kitchen",
+        "She explains Collevento without miracle language",
+        "Her father believes the practical parts: wrong stop, water, bus"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "A Trento suo padre l'aspetta sotto l'orologio della stazione, non sotto un cartello cancellato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "trento",
+            "suo",
+            "padre",
+            "aspettare",
+            "sotto",
+            "orologio",
+            "della",
+            "stazione",
+            "non",
+            "sotto",
+            "un",
+            "cartello",
+            "cancellato"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Quando la vede, alza una mano e basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "la",
+            "vedere",
+            "alzare",
+            "una",
+            "mano",
+            "e",
+            "basta"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sei in ritardo di giorni.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "in",
+            "ritardo",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Lo so.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Andiamo a casa; mangiamo; poi parli.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "a",
+            "casa",
+            "mangiare",
+            "poi",
+            "parlare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "L'appartamento è piccolo, ordinato, con luce sulle pentole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "appartamento",
+            "essere",
+            "piccolo",
+            "ordinato",
+            "con",
+            "luce",
+            "sul",
+            "pentole"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "La cucina odora di caffè e di sapone per i piatti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "cucina",
+            "odora",
+            "di",
+            "caffe",
+            "e",
+            "di",
+            "sapone",
+            "per",
+            "i",
+            "piatto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Niente è magico; tutto è utile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "niente",
+            "essere",
+            "magico",
+            "tutto",
+            "essere",
+            "utile"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Il padre taglia il pane e versa l'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "taglia",
+            "il",
+            "pane",
+            "e",
+            "versa",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Allora.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Giada si siede e tiene le mani intorno al bicchiere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "sedere",
+            "e",
+            "tiene",
+            "le",
+            "mani",
+            "intorno",
+            "al",
+            "bicchiere"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Ho preso il treno sbagliato.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "prendere",
+            "il",
+            "treno",
+            "sbagliato"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Sono scesa a Collevento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "scesa",
+            "a",
+            "collevento"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il padre aggrotta la fronte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "aggrotta",
+            "la",
+            "fronte"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Non esiste sulle mappe.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "esiste",
+            "sul",
+            "mappe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Però c'è.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "pero",
+            "ce"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Era previsto un lago per una diga; le carte lo hanno cancellato in anticipo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "previsto",
+            "un",
+            "lago",
+            "per",
+            "una",
+            "diga",
+            "le",
+            "carte",
+            "lo",
+            "avere",
+            "cancellato",
+            "in",
+            "anticipo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "La gente è restata.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "gente",
+            "essere",
+            "restare"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Ogni sera aprono l'acqua sulla strada.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ogni",
+            "sera",
+            "aprono",
+            "acqua",
+            "sulla",
+            "strada"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Il padre ascolta senza interrompere con teorie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "ascoltare",
+            "senza",
+            "interrompere",
+            "con",
+            "teorie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Mamma lo sapeva.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "C'era da ragazza.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "dare",
+            "ragazza"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Mi ha detto di non tornare dopo le otto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "avere",
+            "dire",
+            "di",
+            "non",
+            "tornare",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Il padre posa il coltello e resta un momento fermo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "posa",
+            "il",
+            "coltello",
+            "e",
+            "restare",
+            "un",
+            "momento",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Anna non me l'ha mai raccontata così.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "anna",
+            "non",
+            "io",
+            "avere",
+            "mai",
+            "raccontata",
+            "cosi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Forse perché non è una storia da miracolo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "forse",
+            "perche",
+            "non",
+            "essere",
+            "una",
+            "storia",
+            "dare",
+            "miracolo"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "È una storia di orari, di carte, di persone che aspettano ispezioni.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "una",
+            "storia",
+            "di",
+            "orari",
+            "di",
+            "carte",
+            "di",
+            "persona",
+            "che",
+            "aspettare",
+            "ispezioni"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "E di una locanda che voleva riavere la ragazza di allora.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "di",
+            "una",
+            "locanda",
+            "che",
+            "volere",
+            "riavere",
+            "la",
+            "ragazza",
+            "di",
+            "allora"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Ti hanno fatta passare per lei?",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ti",
+            "avere",
+            "fare",
+            "passare",
+            "per",
+            "lei"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Sì.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Io ho detto no.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "avere",
+            "dire",
+            "no"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Il padre annuisce, pratico, quasi sollevato dalla chiarezza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "annuisce",
+            "pratico",
+            "quasi",
+            "sollevato",
+            "dalla",
+            "chiarezza"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Bene.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "bene"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Non dovevi diventare tua madre per stare al mondo.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dove",
+            "diventare",
+            "tuo",
+            "madre",
+            "per",
+            "stare",
+            "al",
+            "mondo"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Giada mangia un pezzo di pane e sente la stanchezza arrivare onesta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "mangiare",
+            "un",
+            "pezzo",
+            "di",
+            "pane",
+            "e",
+            "sentire",
+            "la",
+            "stanchezza",
+            "arrivare",
+            "onesta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "C'era anche un ragazzo, Neri.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "anche",
+            "un",
+            "ragazzo",
+            "neri"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Voleva uscire.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Non l'ho portato via.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "avere",
+            "portare",
+            "via"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Non ancora.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Perché?",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Perché doveva chiederlo ai suoi, e non l'ha fatto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "dovere",
+            "chiederlo",
+            "ai",
+            "suo",
+            "e",
+            "non",
+            "avere",
+            "fare"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Il padre sorride un poco, senza fare lezione lunga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "sorridere",
+            "un",
+            "poco",
+            "senza",
+            "fare",
+            "lezione",
+            "lunga"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Hai tenuto la testa.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "tenuto",
+            "la",
+            "testa"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Ho tenuto il mio nome.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "tenuto",
+            "il",
+            "mio",
+            "nome"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Fuori dalla finestra si vedono tetti normali e un pezzo di montagna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "dalla",
+            "finestra",
+            "si",
+            "vedere",
+            "tetti",
+            "normali",
+            "e",
+            "un",
+            "pezzo",
+            "di",
+            "montagna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Nessuna diga di scena; nessuna piazza da spostare per l'autunno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "diga",
+            "di",
+            "scena",
+            "nessuno",
+            "piazza",
+            "dare",
+            "spostare",
+            "per",
+            "autunno"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Il padre lava due piatti e parla mentre l'acqua scorre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "lavare",
+            "due",
+            "piatto",
+            "e",
+            "parlare",
+            "mentre",
+            "acqua",
+            "scorre"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Dormi qui oggi.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dormi",
+            "qui",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Domani telefoniamo a tua madre insieme, se vuoi.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "telefonare",
+            "a",
+            "tuo",
+            "madre",
+            "insieme",
+            "se",
+            "volere"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Va bene.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Ma non voglio raccontare Collevento come un sogno.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "non",
+            "volere",
+            "raccontare",
+            "collevento",
+            "come",
+            "un",
+            "sogno"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Né come un castigo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ne",
+            "come",
+            "un",
+            "castigo"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Era un posto vero con regole vere.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "un",
+            "posto",
+            "vero",
+            "con",
+            "regole",
+            "vero"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Il padre asciuga le mani sul canovaccio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "padre",
+            "asciuga",
+            "le",
+            "mani",
+            "sul",
+            "canovaccio"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Allora lo terremo così: vero.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "lo",
+            "terremo",
+            "cosi",
+            "vero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Giada si alza e guarda il frigorifero, il calendario, la lista della spesa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "alzare",
+            "e",
+            "guardare",
+            "il",
+            "frigorifero",
+            "il",
+            "calendario",
+            "la",
+            "lista",
+            "della",
+            "spesa"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Questa cucina non chiede che lei sia nessuno altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "cucina",
+            "non",
+            "chiedere",
+            "che",
+            "lei",
+            "sia",
+            "nessuno",
+            "altro"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Chiede solo se ha fame e se ha dormito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiedere",
+            "solo",
+            "se",
+            "avere",
+            "fame",
+            "e",
+            "se",
+            "avere",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Prima di andare in camera, tira fuori il telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "andare",
+            "in",
+            "camera",
+            "tira",
+            "fuori",
+            "il",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "C'è segnale pieno, banale e meraviglioso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "segnale",
+            "pieno",
+            "banale",
+            "e",
+            "meraviglioso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Apre la galleria foto e trova l'unica immagine che ha tenuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprire",
+            "la",
+            "galleria",
+            "foto",
+            "e",
+            "trovare",
+            "l'unica",
+            "immagine",
+            "che",
+            "avere",
+            "tenuto"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Non la mostra ancora al padre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "la",
+            "mostra",
+            "ancora",
+            "al",
+            "padre"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Non è pronto il momento; o forse lo è lei, piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "pronto",
+            "il",
+            "momento",
+            "o",
+            "forse",
+            "lo",
+            "essere",
+            "lei",
+            "piano"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Buonanotte, papà.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "buonanotte",
+            "papa"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Buonanotte.",
+          "speakerId": "papa-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "buonanotte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Nella stanza degli ospiti Giada posa la valigia e si sdraia vestita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "stanza",
+            "dei",
+            "ospiti",
+            "giada",
+            "posa",
+            "la",
+            "valigia",
+            "e",
+            "si",
+            "sdraia",
+            "vestita"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Non racconta la storia a se stessa come una vittoria.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "racconta",
+            "la",
+            "storia",
+            "a",
+            "se",
+            "stesso",
+            "come",
+            "una",
+            "vittoria"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "La racconta come un'uscita riuscita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "racconta",
+            "come",
+            "uscire",
+            "riuscita"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "E come un silenzio di famiglia che finalmente ha avuto parole pratiche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "come",
+            "un",
+            "silenzio",
+            "di",
+            "famiglia",
+            "che",
+            "finalmente",
+            "avere",
+            "avere",
+            "parola",
+            "pratiche"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Chiude gli occhi con Trento intorno, ordinario e sufficiente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "gli",
+            "occhi",
+            "con",
+            "trento",
+            "intorno",
+            "ordinario",
+            "e",
+            "sufficiente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Nel sonno non cerca dighe né registri; cerca solo riposo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "sonno",
+            "non",
+            "cercare",
+            "dighe",
+            "ne",
+            "registri",
+            "cercare",
+            "solo",
+            "riposo"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Si sveglia una volta, beve acqua, e torna a letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "svegliare",
+            "una",
+            "volta",
+            "bere",
+            "acqua",
+            "e",
+            "tornare",
+            "a",
+            "leggere"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Nella cucina il padre lascia una luce bassa, abitudine da genitore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "cucina",
+            "il",
+            "padre",
+            "lasciare",
+            "una",
+            "luce",
+            "basso",
+            "abitudine",
+            "dare",
+            "genitore"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Giada pensa che raccontare senza miracoli è un modo di rispettare i fatti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "che",
+            "raccontare",
+            "senza",
+            "miracoli",
+            "essere",
+            "un",
+            "modo",
+            "di",
+            "rispettare",
+            "i",
+            "fatti"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "I fatti erano: fermata cancellata, acqua serale, cartelli spostati al mattino, memorial, firma rifiutata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "fatti",
+            "essere",
+            "fermare",
+            "cancellata",
+            "acqua",
+            "sera",
+            "cartelli",
+            "spostati",
+            "al",
+            "mattino",
+            "memorial",
+            "firma",
+            "rifiutata"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "I fatti erano anche: Anna sapeva, Elsa voleva, Neri aspettava, Tullio annuiva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "fatti",
+            "essere",
+            "anche",
+            "anna",
+            "sapere",
+            "elsa",
+            "volere",
+            "neri",
+            "aspettare",
+            "tullio",
+            "annuiva"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Nessuno di questi fatti ha bisogno di spiriti per stare in piedi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "di",
+            "questo",
+            "fatti",
+            "avere",
+            "bisogno",
+            "di",
+            "spiriti",
+            "per",
+            "stare",
+            "in",
+            "piedi"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Al mattino parleranno di nuovo, forse con meno parole e più pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "mattino",
+            "parleranno",
+            "di",
+            "nuovo",
+            "forse",
+            "con",
+            "meno",
+            "parola",
+            "e",
+            "piu",
+            "pane"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Per ora la cucina ha fatto il suo lavoro: ricevere senza trasformarla in leggenda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "ora",
+            "la",
+            "cucina",
+            "avere",
+            "fare",
+            "il",
+            "suo",
+            "lavorare",
+            "ricevere",
+            "senza",
+            "trasformarla",
+            "in",
+            "leggenda"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Giada si volta sul fianco e sente la valigia vicino al muro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "volta",
+            "sul",
+            "fianco",
+            "e",
+            "sentire",
+            "la",
+            "valigia",
+            "vicino",
+            "al",
+            "muro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Dentro c'è ancora la borsa di Anna, ma non la storia di Anna completa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "ce",
+            "ancora",
+            "la",
+            "borsa",
+            "di",
+            "anna",
+            "ma",
+            "non",
+            "la",
+            "storia",
+            "di",
+            "anna",
+            "completa"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "C'è la sua estate che comincia tardi, e va bene così.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "la",
+            "suo",
+            "estate",
+            "che",
+            "cominciare",
+            "tardi",
+            "e",
+            "andare",
+            "bene",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Trento non chiede prove di abitazione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "trento",
+            "non",
+            "chiedere",
+            "prove",
+            "di",
+            "abitazione"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Chiede solo se ha chiuso la porta e se vuole ancora acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiedere",
+            "solo",
+            "se",
+            "avere",
+            "chiudere",
+            "la",
+            "porta",
+            "e",
+            "se",
+            "volere",
+            "ancora",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Prima di riaddormentarsi ripete a se stessa la frase detta al padre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "riaddormentarsi",
+            "ripete",
+            "a",
+            "se",
+            "stesso",
+            "la",
+            "frase",
+            "detta",
+            "al",
+            "padre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Era un posto vero con regole vere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "posto",
+            "vero",
+            "con",
+            "regole",
+            "vero"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "E lei è uscita con il proprio nome, senza miracoli da vendere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "lei",
+            "essere",
+            "uscire",
+            "con",
+            "il",
+            "proprio",
+            "nome",
+            "senza",
+            "miracoli",
+            "dare",
+            "vendere"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch23_q01",
+      "chapterId": "il-villaggio-che-non-esiste-23",
+      "type": "direct",
+      "question": "Where do Giada and her father talk?",
+      "choices": [
+        "In an ordinary kitchen in Trento",
+        "At the crossed-out halt",
+        "In Elsa's inn"
+      ],
+      "correctChoice": 0,
+      "explanation": "They sit in his ordinary kitchen with bread, water, and dishes.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch23_q02",
+      "chapterId": "il-villaggio-che-non-esiste-23",
+      "type": "direct",
+      "question": "How does Giada tell the Collevento story?",
+      "choices": [
+        "Without miracle language, as real rules and papers",
+        "As a chosen-one prophecy",
+        "As a dream she barely remembers"
+      ],
+      "correctChoice": 0,
+      "explanation": "She insists it is not a miracle or dream but a real place with real rules.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch23_q03",
+      "chapterId": "il-villaggio-che-non-esiste-23",
+      "type": "inference",
+      "question": "What matters most to her father in her account?",
+      "choices": [
+        "That she kept her own name and left sensibly",
+        "That she signed for the engineer",
+        "That she brought Neri home"
+      ],
+      "correctChoice": 0,
+      "explanation": "He is relieved she said no to being Anna and kept her head.",
+      "difficulty": 2
+    }
+  ]
+}

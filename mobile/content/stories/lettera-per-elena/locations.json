@@ -1,0 +1,58 @@
+{
+  "locations": [
+    {
+      "id": "marina-di-brenta",
+      "name": "Marina di Brenta",
+      "city": "Marina di Brenta",
+      "description": "A small lagoon-side town. Invented. Fog, bicycles, ordinary work."
+    },
+    {
+      "id": "caffe-brenta",
+      "name": "Caffè Brenta",
+      "city": "Marina di Brenta",
+      "description": "Bruna's café. The emotional center of the story."
+    },
+    {
+      "id": "bancone-brenta",
+      "name": "Il bancone",
+      "city": "Marina di Brenta",
+      "description": "The café counter where Elena talks easily and struggles to say what she means."
+    },
+    {
+      "id": "scaffale-libro",
+      "name": "Lo scaffale del libro",
+      "city": "Marina di Brenta",
+      "description": "Shelf by the sugar where the unsellable book lives."
+    },
+    {
+      "id": "cucina-mirella",
+      "name": "La cucina di Mirella",
+      "city": "Marina di Brenta",
+      "description": "Elena's mother's kitchen."
+    },
+    {
+      "id": "van-pietro",
+      "name": "Il van di Pietro",
+      "city": "Marina di Brenta",
+      "description": "Pietro's delivery van."
+    },
+    {
+      "id": "ospedale-esterno",
+      "name": "Fuori dall'ospedale",
+      "city": "Marina di Brenta",
+      "description": "Outside the hospital where Sergio recovers. Elena waits here once."
+    },
+    {
+      "id": "magazzino-caffe",
+      "name": "Il magazzino",
+      "city": "Marina di Brenta",
+      "description": "The café storeroom behind the counter."
+    },
+    {
+      "id": "laguna-brenta",
+      "name": "La laguna",
+      "city": "Marina di Brenta",
+      "description": "The lagoon. Earned once; not a tourist postcard every chapter."
+    }
+  ]
+}

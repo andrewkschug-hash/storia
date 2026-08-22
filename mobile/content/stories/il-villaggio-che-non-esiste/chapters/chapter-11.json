@@ -1,0 +1,1591 @@
+{
+  "id": "il-villaggio-che-non-esiste-11",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 11,
+  "title": "The inspection",
+  "titleIt": "L'ispezione",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "piazza-collevento",
+    "strada-diga",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "tullio",
+    "elsa"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-11",
+      "summary": "Tullio explains that the autumn inspection has been promised for thirty years and never comes. The village keeps preparing anyway.",
+      "characterIds": [
+        "giada-rinaldi",
+        "tullio",
+        "elsa"
+      ],
+      "locationIds": [
+        "piazza-collevento",
+        "strada-diga",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "The inspection is supposed to come in autumn",
+        "It has never come",
+        "They have waited about thirty years",
+        "People still stage the village for it"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Verso metà mattina Tullio siede sulla sedia fuori dal banco del pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "verso",
+            "meta",
+            "mattina",
+            "tullio",
+            "sedere",
+            "sulla",
+            "sedia",
+            "fuori",
+            "dal",
+            "banco",
+            "del",
+            "pane"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ha un thermos e un giornale vecchio piegato in quattro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "un",
+            "thermos",
+            "e",
+            "un",
+            "giornale",
+            "vecchio",
+            "piegato",
+            "in",
+            "quattro"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Giada si ferma davanti a lui con le foto ancora in testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "fermare",
+            "davanti",
+            "a",
+            "lui",
+            "con",
+            "le",
+            "foto",
+            "ancora",
+            "in",
+            "testa"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Elsa cambia i cartelli per un'ispezione.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "elsa",
+            "cambiare",
+            "i",
+            "cartelli",
+            "per",
+            "un'ispezione"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Tullio non sembra sorpreso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "non",
+            "sembrare",
+            "sorpreso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Sì.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Lo fa ogni settimana, in certi periodi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "fare",
+            "ogni",
+            "settimana",
+            "in",
+            "certi",
+            "periodi"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Quando arriva questa ispezione?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "quando",
+            "arrivare",
+            "questo",
+            "ispezione"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Tullio svita il thermos e versa un po' di caffè nella coppa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "svita",
+            "il",
+            "thermos",
+            "e",
+            "versa",
+            "un",
+            "poco",
+            "di",
+            "caffe",
+            "nella",
+            "coppa"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "In autunno.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "in",
+            "autunno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Dicevano in autunno.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "dicevano",
+            "in",
+            "autunno"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Giada aspetta il resto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "aspettare",
+            "il",
+            "restare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Tullio beve e guarda la strada della diga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "bere",
+            "e",
+            "guardare",
+            "la",
+            "strada",
+            "della",
+            "diga"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Non sono mai venuti.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "mai",
+            "venuti"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Mai?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Mai in tempo.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "mai",
+            "in",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Mai come persone che controllano case e nomi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "mai",
+            "come",
+            "persona",
+            "che",
+            "controllano",
+            "casa",
+            "e",
+            "no"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "A volte passa un tecnico.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "volta",
+            "passare",
+            "un",
+            "tecnico"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Guarda l'acqua, non noi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "guardare",
+            "acqua",
+            "non",
+            "noi"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Giada si siede sul bordo della fontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "sedere",
+            "sul",
+            "bordo",
+            "della",
+            "fontana"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Da quanto tempo aspettate?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dare",
+            "quanto",
+            "tempo",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Tullio conta sulle dita, poi smette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "contare",
+            "sul",
+            "dita",
+            "poi",
+            "smette"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Trent'anni, più o meno.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "trent'anni",
+            "piu",
+            "o",
+            "meno"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Io ero già vecchio quando hanno promesso la prima volta.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "gia",
+            "vecchio",
+            "quando",
+            "avere",
+            "promesso",
+            "la",
+            "prima",
+            "volta"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Adesso sono solo più vecchio.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "essere",
+            "solo",
+            "piu",
+            "vecchio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Elsa esce con un secchio e lava la soglia della locanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "uscire",
+            "con",
+            "un",
+            "secchio",
+            "e",
+            "lavare",
+            "la",
+            "soglia",
+            "della",
+            "locanda"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Sente la conversazione e non la ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sentire",
+            "la",
+            "conversazione",
+            "e",
+            "non",
+            "la",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Perché preparate ancora tutto?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "preparate",
+            "ancora",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Tullio alza le spalle lente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "alzare",
+            "le",
+            "spalle",
+            "lente"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Perché se smetti di prepararti, ammetti che non conti.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "se",
+            "smetti",
+            "di",
+            "prepararti",
+            "ammetti",
+            "che",
+            "non",
+            "conto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "E noi vogliamo contare, almeno sulla carta.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "noi",
+            "volere",
+            "contare",
+            "almeno",
+            "sulla",
+            "carta"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Giada pensa al registro con la data di oggi e l'inchiostro vecchio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "al",
+            "registro",
+            "con",
+            "la",
+            "dare",
+            "di",
+            "oggi",
+            "e",
+            "l'inchiostro",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Anche quello era una prova per qualcuno che non arriva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anche",
+            "quello",
+            "essere",
+            "una",
+            "provare",
+            "per",
+            "qualcuno",
+            "che",
+            "non",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "L'ispezione doveva dire se il paese restava o andava sott'acqua.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "l'ispezione",
+            "dovere",
+            "dire",
+            "se",
+            "il",
+            "paese",
+            "restare",
+            "o",
+            "andare",
+            "sott'acqua"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Poi il lago non è venuto.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "il",
+            "lago",
+            "non",
+            "essere",
+            "venire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Le carte sì.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "carte",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Le carte hanno cancellato Collevento senza bagnarlo.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "carte",
+            "avere",
+            "cancellato",
+            "collevento",
+            "senza",
+            "bagnarlo"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Giada guarda Elsa che strofina la pietra come per un ospite importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "elsa",
+            "che",
+            "strofina",
+            "la",
+            "pietra",
+            "come",
+            "per",
+            "un",
+            "ospite",
+            "importante"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "E se non vengono mai?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "se",
+            "non",
+            "venire",
+            "mai"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Elsa risponde senza alzare gli occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "rispondere",
+            "senza",
+            "alzare",
+            "gli",
+            "occhi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Allora abbiamo tenuto pulito per noi.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "avere",
+            "tenuto",
+            "pulito",
+            "per",
+            "noi"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Non è la risposta peggiore.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "risposta",
+            "peggiore"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Tullio piega il giornale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "piega",
+            "il",
+            "giornale"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "In autunno si sente di nuovo la voce in paese.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "in",
+            "autunno",
+            "si",
+            "sentire",
+            "di",
+            "nuovo",
+            "la",
+            "voce",
+            "in",
+            "paese"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Arrivano.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Quest'anno davvero.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "quest'anno",
+            "davvero"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Poi passa l'autunno.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "passare",
+            "autunno"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "E riparte l'inverno con le scale e i cartelli.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "riparte",
+            "inverno",
+            "con",
+            "le",
+            "scale",
+            "e",
+            "i",
+            "cartelli"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Giada sente una stanchezza che non è sua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "una",
+            "stanchezza",
+            "che",
+            "non",
+            "essere",
+            "suo"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Trent'anni di prove generali senza spettacolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "trent'anni",
+            "di",
+            "prove",
+            "generali",
+            "senza",
+            "spettacolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Voi sapete che è una bugia.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "voi",
+            "sapere",
+            "che",
+            "essere",
+            "una",
+            "bugia"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Sì.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Le bugie lunghe diventano abitudini.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "bugie",
+            "lunghe",
+            "diventano",
+            "abitudini"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Le abitudini tengono unite le persone.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "abitudini",
+            "tengono",
+            "unite",
+            "le",
+            "persona"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Fino a quando?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "fino",
+            "a",
+            "quando"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Tullio guarda di nuovo la diga, anche se da qui si vede poco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "guardare",
+            "di",
+            "nuovo",
+            "la",
+            "diga",
+            "anche",
+            "se",
+            "dare",
+            "qui",
+            "si",
+            "vedere",
+            "poco"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Fino a quando l'acqua decide, o le carte, o noi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "fino",
+            "a",
+            "quando",
+            "acqua",
+            "decidere",
+            "o",
+            "le",
+            "carte",
+            "o",
+            "noi"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Elsa vuota il secchio in un tombino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "vuoto",
+            "il",
+            "secchio",
+            "in",
+            "un",
+            "tombino"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Tu non sei qui per giudicarci.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "non",
+            "essere",
+            "qui",
+            "per",
+            "giudicarci"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Giada non risponde subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "rispondere",
+            "subito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "È vero: è arrivata per sbaglio, non per fare lezioni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "vero",
+            "essere",
+            "arrivare",
+            "per",
+            "sbaglio",
+            "non",
+            "per",
+            "fare",
+            "lezioni"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Però non riesce a chiamare questo solo sopravvivenza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "non",
+            "riesce",
+            "a",
+            "chiamare",
+            "questo",
+            "solo",
+            "sopravvivenza"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "È anche una trappola fatta di calendario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "anche",
+            "una",
+            "trappola",
+            "fare",
+            "di",
+            "calendario"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Tullio le offre il thermos.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "le",
+            "offrire",
+            "il",
+            "thermos"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Bevi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "bere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "L'ispezione non ha fretta.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "l'ispezione",
+            "non",
+            "avere",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Giada beve un sorso amaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "bere",
+            "un",
+            "sorso",
+            "amaro"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Io sì.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Io ho fretta di capire.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "avere",
+            "fretta",
+            "di",
+            "capire"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Tullio annuisce una volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "annuisce",
+            "una",
+            "volta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Giada chiede se esiste una lettera ufficiale dell'ispezione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiedere",
+            "se",
+            "esiste",
+            "una",
+            "lettera",
+            "ufficiale",
+            "dell'ispezione"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Tullio sorride con un lato solo della bocca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "sorridere",
+            "con",
+            "un",
+            "lato",
+            "solo",
+            "della",
+            "bocca"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Esistevano.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "esistevano"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Poi la carta si è bagnata, o persa, o messa in un cassetto troppo fondo.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "la",
+            "carta",
+            "si",
+            "essere",
+            "bagnata",
+            "o",
+            "persa",
+            "o",
+            "mettere",
+            "in",
+            "un",
+            "cassetto",
+            "troppo",
+            "fondo"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Quello che resta è la voce delle persone.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "che",
+            "restare",
+            "essere",
+            "la",
+            "voce",
+            "delle",
+            "persona"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "La voce dice: autunno.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "voce",
+            "dire",
+            "autunno"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Ogni anno la stessa stagione, come una canzone rotta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ogni",
+            "anno",
+            "la",
+            "stesso",
+            "stagione",
+            "come",
+            "una",
+            "canzone",
+            "rotta"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Elsa aggiunge che in primavera si riparano i muri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "aggiunge",
+            "che",
+            "in",
+            "primavera",
+            "si",
+            "riparano",
+            "i",
+            "muri"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "In estate si dipingono i cartelli.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "in",
+            "estate",
+            "si",
+            "dipingono",
+            "i",
+            "cartelli"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "In autunno si aspetta.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "in",
+            "autunno",
+            "si",
+            "aspettare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "In inverno si racconta che l'anno dopo sarà diverso.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "in",
+            "inverno",
+            "si",
+            "racconta",
+            "che",
+            "anno",
+            "dopo",
+            "sara",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Giada riconosce il ritmo di una famiglia che spera senza strumenti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "riconosce",
+            "il",
+            "ritmo",
+            "di",
+            "una",
+            "famiglia",
+            "che",
+            "spera",
+            "senza",
+            "strumenti"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Anche a casa sua, a volte, si ripetevano promesse senza data.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anche",
+            "a",
+            "casa",
+            "suo",
+            "a",
+            "volta",
+            "si",
+            "ripetevano",
+            "promesse",
+            "senza",
+            "dare"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Qui la promessa ha trent'anni e un secchio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qui",
+            "la",
+            "promessa",
+            "avere",
+            "trent'anni",
+            "e",
+            "un",
+            "secchio"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Tullio le mostra il giornale piegato: notizie di un'altra valle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "le",
+            "mostra",
+            "il",
+            "giornale",
+            "piegato",
+            "notizia",
+            "di",
+            "altro",
+            "valle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Di Collevento non c'è una riga.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "collevento",
+            "non",
+            "ce",
+            "una",
+            "riga"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Se non sei scritto, per molti non sei vero.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "non",
+            "essere",
+            "scrivere",
+            "per",
+            "molti",
+            "non",
+            "essere",
+            "vero"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Per questo laviamo la pietra.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "questo",
+            "lavare",
+            "la",
+            "pietra"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "Per sembrare veri nel giorno in cui qualcuno guarda.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "sembrare",
+            "vero",
+            "nel",
+            "giorno",
+            "in",
+            "cui",
+            "qualcuno",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Giada beve ancora dal thermos e sente il ferro del bordo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "bere",
+            "ancora",
+            "dal",
+            "thermos",
+            "e",
+            "sentire",
+            "il",
+            "ferro",
+            "del",
+            "bordo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "L'ispezione, capisce, è il nome che danno alla speranza istituzionale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ispezione",
+            "capire",
+            "essere",
+            "il",
+            "nome",
+            "che",
+            "dare",
+            "alla",
+            "speranza",
+            "istituzionale"
+          ]
+        },
+        {
+          "id": "s92",
+          "text": "Senza quel nome, resterebbe solo l'abitudine nuda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "senza",
+            "quello",
+            "nome",
+            "resterebbe",
+            "solo",
+            "l'abitudine",
+            "nuda"
+          ]
+        },
+        {
+          "id": "s93",
+          "text": "Allora chiedi alle carte giuste, non solo ai cartelli.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "chiedere",
+            "alle",
+            "carte",
+            "giusto",
+            "non",
+            "solo",
+            "ai",
+            "cartelli"
+          ]
+        },
+        {
+          "id": "s94",
+          "text": "Giada guarda la piazza pulita per nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "la",
+            "piazza",
+            "pulita",
+            "per",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s95",
+          "text": "L'autunno, qui, è una stagione che non finisce mai di arrivare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "autunno",
+            "qui",
+            "essere",
+            "una",
+            "stagione",
+            "che",
+            "non",
+            "finire",
+            "mai",
+            "di",
+            "arrivare"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch11_q01",
+      "chapterId": "il-villaggio-che-non-esiste-11",
+      "type": "direct",
+      "question": "When is the inspection supposed to come?",
+      "choices": [
+        "In autumn",
+        "In summer",
+        "Every Monday"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio says they used to say in autumn.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch11_q02",
+      "chapterId": "il-villaggio-che-non-esiste-11",
+      "type": "direct",
+      "question": "How long have they roughly waited?",
+      "choices": [
+        "Thirty years",
+        "Three years",
+        "Three days"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio says about thirty years.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch11_q03",
+      "chapterId": "il-villaggio-che-non-esiste-11",
+      "type": "direct",
+      "question": "Have the inspectors ever really come?",
+      "choices": [
+        "No, not as promised",
+        "Yes, every year",
+        "Only at Christmas"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio says they have never come as promised.",
+      "difficulty": 2
+    }
+  ]
+}

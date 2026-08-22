@@ -1,0 +1,1631 @@
+{
+  "id": "il-villaggio-che-non-esiste-14",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 14,
+  "title": "Neri tells",
+  "titleIt": "Neri racconta",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "strada-diga",
+    "edificio-idroelettrico",
+    "collevento-strada"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "neri"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-14",
+      "summary": "Neri explains the unfinished dam, the lake that never filled, and the redrawn maps. He says the village stays off the map to help itself, not the company: non esistiamo per aiutarli.",
+      "characterIds": [
+        "giada-rinaldi",
+        "neri"
+      ],
+      "locationIds": [
+        "strada-diga",
+        "edificio-idroelettrico",
+        "collevento-strada"
+      ],
+      "rememberedFacts": [
+        "The dam project was meant to make a lake",
+        "The lake was never finished",
+        "Maps were redrawn with Collevento blank or deleted",
+        "Neri says they do not exist on maps to help themselves, not the company"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Sulla strada della diga Neri cammina un passo avanti a Giada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "strada",
+            "della",
+            "diga",
+            "neri",
+            "camminare",
+            "un",
+            "passare",
+            "avanti",
+            "a",
+            "giada"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Non parla subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "parlare",
+            "subito"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Aspetta il punto dove si vede l'edificio idroelettrico in basso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aspettare",
+            "il",
+            "punto",
+            "dove",
+            "si",
+            "vedere",
+            "l'edificio",
+            "idroelettrico",
+            "in",
+            "basso"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Lì si ferma e indica con il mento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "li",
+            "si",
+            "fermare",
+            "e",
+            "indica",
+            "con",
+            "il",
+            "mento"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Quella doveva essere la centrale.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "dovere",
+            "essere",
+            "la",
+            "centrale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "E laggiù, dove vedi il greto largo, doveva esserci il lago.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "laggiu",
+            "dove",
+            "vedere",
+            "il",
+            "greto",
+            "largo",
+            "dovere",
+            "esserci",
+            "il",
+            "lago"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Giada guarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Non c'è un lago.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "un",
+            "lago"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "C'è terra grigia, sassi, un filo d'acqua stretto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "terra",
+            "grigia",
+            "sassi",
+            "un",
+            "filo",
+            "acqua",
+            "stretto"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Hanno costruito pezzi.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "costruito",
+            "pezzi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Hanno fatto prove.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "fare",
+            "prove"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Hanno aperto e chiuso paratie secondo orari.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "aprire",
+            "e",
+            "chiudere",
+            "paratie",
+            "secondo",
+            "orari"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Poi i soldi, o la geologia, o la politica, si sono fermati.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "i",
+            "soldi",
+            "o",
+            "la",
+            "geologia",
+            "o",
+            "la",
+            "politica",
+            "si",
+            "essere",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Il progetto è restato a metà.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "progetto",
+            "essere",
+            "restare",
+            "a",
+            "meta"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Giada pensa all'acqua ogni sera sulla strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "acqua",
+            "ogni",
+            "sera",
+            "sulla",
+            "strada"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Quindi il tramonto non è un sortilegio.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "quindi",
+            "il",
+            "tramonto",
+            "non",
+            "essere",
+            "un",
+            "sortilegio"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "È un orologio della compagnia.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "un",
+            "orologio",
+            "della",
+            "compagnia"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Aprono ancora secondo un piano vecchio.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "aprono",
+            "ancora",
+            "secondo",
+            "un",
+            "piano",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Perché è più facile tenere una procedura che cancellarla.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "essere",
+            "piu",
+            "facile",
+            "tenere",
+            "una",
+            "procedura",
+            "che",
+            "cancellarla"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Neri tira fuori dalla tasca la mappa piegata che Giada ha già visto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "tira",
+            "fuori",
+            "dalla",
+            "tasca",
+            "la",
+            "mappa",
+            "piegata",
+            "che",
+            "giada",
+            "avere",
+            "gia",
+            "vedere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "La apre sul guardrail caldo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "aprire",
+            "sul",
+            "guardrail",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Qui, guarda.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "C'è una macchia bianca dove dovrebbe esserci Collevento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "una",
+            "macchia",
+            "bianca",
+            "dove",
+            "dovrebbe",
+            "esserci",
+            "collevento"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Niente nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "niente",
+            "nome"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Niente strade disegnate.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "niente",
+            "strada",
+            "disegnate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Solo verde generico e una linea blu del fiume.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "solo",
+            "verde",
+            "generico",
+            "e",
+            "una",
+            "linea",
+            "blu",
+            "del",
+            "fiume"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Sulle carte nuove il lago futuro era già disegnato.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "sul",
+            "carte",
+            "nuovo",
+            "il",
+            "lago",
+            "futuro",
+            "essere",
+            "gia",
+            "disegnato"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Poi il lago non è arrivato.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "il",
+            "lago",
+            "non",
+            "essere",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Ma il paese restava scomodo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "il",
+            "paese",
+            "restare",
+            "scomodo"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Allora hanno lasciato il bianco.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "avere",
+            "lasciare",
+            "il",
+            "bianco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Come se non esistessimo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "se",
+            "non",
+            "esistessimo"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Giada tocca la macchia con un dito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "tocca",
+            "la",
+            "macchia",
+            "con",
+            "un",
+            "dito"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Esistete.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "esistete"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Io ci sono dentro.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "ci",
+            "essere",
+            "dentro"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Neri piega un angolo della mappa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "piega",
+            "un",
+            "angolo",
+            "della",
+            "mappa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Esistere per noi e esistere per loro non è uguale.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "esistere",
+            "per",
+            "noi",
+            "e",
+            "esistere",
+            "per",
+            "loro",
+            "non",
+            "essere",
+            "uguale"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Se torniamo sulle mappe turistiche, arrivano domande.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "tornare",
+            "sul",
+            "mappe",
+            "turistiche",
+            "arrivare",
+            "domanda"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Arrivano progetti nuovi.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivare",
+            "progetti",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Arrivano offerte per andarcene «in modo civile».",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "arrivare",
+            "offerte",
+            "per",
+            "andarcene",
+            "in",
+            "modo",
+            "civile"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Giada ascolta senza interrompere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ascoltare",
+            "senza",
+            "interrompere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Neri parla come uno che ha ripetuto queste frasi nella testa molte sere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "parlare",
+            "come",
+            "uno",
+            "che",
+            "avere",
+            "ripetuto",
+            "questo",
+            "frasi",
+            "nella",
+            "testa",
+            "molte",
+            "sera"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Gli anziani hanno deciso una cosa brutta e intelligente.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "gli",
+            "anziani",
+            "avere",
+            "decidere",
+            "una",
+            "cosa",
+            "brutta",
+            "e",
+            "intelligente"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Restare fuori.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "restare",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non esistiamo per aiutarli.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "esistiamo",
+            "per",
+            "aiutarli"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Esistiamo, se serve, solo per noi.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "esistiamo",
+            "se",
+            "servire",
+            "solo",
+            "per",
+            "noi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "La frase resta nell'aria calda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "frase",
+            "restare",
+            "nell'aria",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Giada la ripete piano, per tenerla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "la",
+            "ripete",
+            "piano",
+            "per",
+            "tenerla"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Non esistiamo per aiutarli.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "esistiamo",
+            "per",
+            "aiutarli"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Neri annuisce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "annuisce"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Per questo Elsa lava soglie per ispezioni che non vengono.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "questo",
+            "elsa",
+            "lavare",
+            "soglie",
+            "per",
+            "ispezioni",
+            "che",
+            "non",
+            "venire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Per questo i cartelli cambiano secondo carte vecchie.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "questo",
+            "i",
+            "cartelli",
+            "cambiano",
+            "secondo",
+            "carte",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "È una difesa fatta di scenografia e silenzio.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "una",
+            "difesa",
+            "fare",
+            "di",
+            "scenografia",
+            "e",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Giada guarda l'edificio in basso: finestre accese anche di giorno, forse luci di servizio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "l'edificio",
+            "in",
+            "basso",
+            "finestra",
+            "accese",
+            "anche",
+            "di",
+            "giorno",
+            "forse",
+            "luce",
+            "di",
+            "servizio"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Loro esistono eccome.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "loro",
+            "esistono",
+            "eccome"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Sì.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Hanno badge, auto alte, orari.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "badge",
+            "auto",
+            "alto",
+            "orari"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Noi abbiamo una piazza che si sposta e un nome cancellato.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "noi",
+            "avere",
+            "una",
+            "piazza",
+            "che",
+            "si",
+            "sposta",
+            "e",
+            "un",
+            "nome",
+            "cancellato"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Vuoi andartene da qui.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "andartene",
+            "dare",
+            "qui"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Neri non nega.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "non",
+            "nega"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Voglio una strada che resti strada anche dopo le otto.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "una",
+            "strada",
+            "che",
+            "restare",
+            "strada",
+            "anche",
+            "dopo",
+            "le",
+            "otto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Voglio un punto sulla mappa che non sia bianco.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "un",
+            "punto",
+            "sulla",
+            "mappa",
+            "che",
+            "non",
+            "sia",
+            "bianco"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Però se sparisco solo io, il paese resta più debole.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "pero",
+            "se",
+            "sparisco",
+            "solo",
+            "io",
+            "il",
+            "paese",
+            "restare",
+            "piu",
+            "debole"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "E loro diventano più forti.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "loro",
+            "diventano",
+            "piu",
+            "forte"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Giada ripiega la mappa insieme a lui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ripiega",
+            "la",
+            "mappa",
+            "insieme",
+            "a",
+            "lui"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Capisce meglio la rabbia quieta di Collevento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "capire",
+            "meglio",
+            "la",
+            "rabbia",
+            "quieta",
+            "di",
+            "collevento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Non è folklore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "folklore"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "È amministrazione e acqua e paura di essere utili al posto sbagliato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "amministrazione",
+            "e",
+            "acqua",
+            "e",
+            "paura",
+            "di",
+            "essere",
+            "utili",
+            "al",
+            "posto",
+            "sbagliato"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Tornano verso il paese senza dire altro per un pezzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "verso",
+            "il",
+            "paese",
+            "senza",
+            "dire",
+            "altro",
+            "per",
+            "un",
+            "pezzo"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Neri spiega che la diga ha ancora tecnici in turno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "spiegare",
+            "che",
+            "la",
+            "diga",
+            "avere",
+            "ancora",
+            "tecnici",
+            "in",
+            "turno"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Loro non vivono a Collevento.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "loro",
+            "non",
+            "vivono",
+            "a",
+            "collevento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Salgono e scendono con auto che non temono l'acqua bassa.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "salgono",
+            "e",
+            "scendono",
+            "con",
+            "auto",
+            "che",
+            "non",
+            "temono",
+            "acqua",
+            "basso"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "La sera aprono secondo un protocollo stampato anni fa.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "sera",
+            "aprono",
+            "secondo",
+            "un",
+            "protocollo",
+            "stampato",
+            "anno",
+            "fare"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Nessuno in paese ha il potere di fermare quel protocollo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "nessuno",
+            "in",
+            "paese",
+            "avere",
+            "il",
+            "potere",
+            "di",
+            "fermare",
+            "quello",
+            "protocollo"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Giada chiede perché non protestano in città.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiedere",
+            "perche",
+            "non",
+            "protestano",
+            "in",
+            "citta"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Neri ride corto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "ride",
+            "corto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Protestare richiede esistere ufficialmente.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "protestare",
+            "richiede",
+            "esistere",
+            "ufficialmente"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Noi siamo un errore amministrativo comodo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "noi",
+            "essere",
+            "un",
+            "errore",
+            "amministrativo",
+            "comodo"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Se gridiamo, diventiamo un problema da risolvere in fretta.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "gridiamo",
+            "diventiamo",
+            "un",
+            "problema",
+            "dare",
+            "risolvere",
+            "in",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "E i problemi comodi si risolvono con valigie e compensi.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "i",
+            "problema",
+            "comodi",
+            "si",
+            "risolvono",
+            "con",
+            "valigie",
+            "e",
+            "compensi"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Giada guarda di nuovo la macchia bianca sulla mappa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "di",
+            "nuovo",
+            "la",
+            "macchia",
+            "bianca",
+            "sulla",
+            "mappa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Capisce la frase «non esistiamo per aiutarli» come una regola di difesa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "capire",
+            "la",
+            "frase",
+            "non",
+            "esistiamo",
+            "per",
+            "aiutarli",
+            "come",
+            "una",
+            "regola",
+            "di",
+            "difesa"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Non come orgoglio vuoto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "come",
+            "orgoglio",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Come modo per non diventare utili al momento sbagliato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "come",
+            "modo",
+            "per",
+            "non",
+            "diventare",
+            "utili",
+            "al",
+            "momento",
+            "sbagliato"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Neri ripiega la mappa con cura, sempre sugli stessi segni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "ripiega",
+            "la",
+            "mappa",
+            "con",
+            "cura",
+            "sempre",
+            "su",
+            "stesso",
+            "segni"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Quella carta è più vera del cartello in piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quello",
+            "carta",
+            "essere",
+            "piu",
+            "vero",
+            "del",
+            "cartello",
+            "in",
+            "piazza"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Perché non cerca di sembrare un paese perfetto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "perche",
+            "non",
+            "cercare",
+            "di",
+            "sembrare",
+            "un",
+            "paese",
+            "perfetto"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Mostra solo l'assenza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mostra",
+            "solo",
+            "l'assenza"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Giada chiede se lui ha mai messo Collevento a mano sulla mappa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiedere",
+            "se",
+            "lui",
+            "avere",
+            "mai",
+            "mettere",
+            "collevento",
+            "a",
+            "mano",
+            "sulla",
+            "mappa"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "Una volta.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "volta"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Poi l'ho cancellato.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "avere",
+            "cancellato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "Avevo paura di aiutare la compagnia senza volerlo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "paura",
+            "di",
+            "aiutare",
+            "la",
+            "compagnia",
+            "senza",
+            "volerlo"
+          ]
+        },
+        {
+          "id": "s92",
+          "text": "La confessione è piccola e pesante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "confessione",
+            "essere",
+            "piccolo",
+            "e",
+            "pesante"
+          ]
+        },
+        {
+          "id": "s93",
+          "text": "Camminano ancora un tratto in silenzio, con l'edificio sotto di loro come un orologio acceso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "ancora",
+            "un",
+            "tratto",
+            "in",
+            "silenzio",
+            "con",
+            "l'edificio",
+            "sotto",
+            "di",
+            "loro",
+            "come",
+            "un",
+            "orologio",
+            "acceso"
+          ]
+        },
+        {
+          "id": "s94",
+          "text": "Il vento porta odore di cemento caldo dall'edificio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "vento",
+            "porta",
+            "odore",
+            "di",
+            "cemento",
+            "caldo",
+            "dall'edificio"
+          ]
+        },
+        {
+          "id": "s95",
+          "text": "Giada mette la frase di Neri accanto alla foto di Anna, nella testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "mettere",
+            "la",
+            "frase",
+            "di",
+            "neri",
+            "accanto",
+            "alla",
+            "foto",
+            "di",
+            "anna",
+            "nella",
+            "testa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "order": 20,
+      "sentences": [
+        {
+          "id": "s96",
+          "text": "Due modi diversi di non farsi usare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "modi",
+            "diverso",
+            "di",
+            "non",
+            "farsi",
+            "usare"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch14_q01",
+      "chapterId": "il-villaggio-che-non-esiste-14",
+      "type": "direct",
+      "question": "What was supposed to cover the valley?",
+      "choices": [
+        "A lake",
+        "A highway",
+        "A mall"
+      ],
+      "correctChoice": 0,
+      "explanation": "The dam project was meant to make a lake.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q02",
+      "chapterId": "il-villaggio-che-non-esiste-14",
+      "type": "direct",
+      "question": "What is on the modern map where Collevento should be?",
+      "choices": [
+        "A blank / white area",
+        "A big red star",
+        "A tourist hotel"
+      ],
+      "correctChoice": 0,
+      "explanation": "There is a white blotch with no name.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch14_q03",
+      "chapterId": "il-villaggio-che-non-esiste-14",
+      "type": "direct",
+      "question": "What does Neri say about existing on maps?",
+      "choices": [
+        "We do not exist to help them",
+        "We want more tourists",
+        "We love the company"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says: non esistiamo per aiutarli.",
+      "difficulty": 2
+    }
+  ]
+}

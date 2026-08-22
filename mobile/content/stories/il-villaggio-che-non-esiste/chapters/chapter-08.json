@@ -1,0 +1,938 @@
+{
+  "id": "il-villaggio-che-non-esiste-08",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 8,
+  "title": "The register",
+  "titleIt": "Il registro",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "elsa",
+    "anna-rinaldi"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-08",
+      "summary": "In the inn register Giada finds Anna Rinaldi, age 17, dated today. The ink is old.",
+      "characterIds": [
+        "giada-rinaldi",
+        "elsa",
+        "anna-rinaldi"
+      ],
+      "locationIds": [
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "The inn register lists Anna Rinaldi, 17",
+        "The written date is today's date",
+        "The ink is dry and old",
+        "Elsa says they rewrite the date every year to remember"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La sera Giada resta sola in cucina per un momento lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "sera",
+            "giada",
+            "restare",
+            "solo",
+            "in",
+            "cucina",
+            "per",
+            "un",
+            "momento",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Elsa è fuori a parlare con Tullio vicino alla porta della locanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "essere",
+            "fuori",
+            "a",
+            "parlare",
+            "con",
+            "tullio",
+            "vicino",
+            "alla",
+            "porta",
+            "della",
+            "locanda"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Sul tavolo c'è un libro spesso con la copertina scura e usata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "tavolo",
+            "ce",
+            "un",
+            "libro",
+            "spesso",
+            "con",
+            "la",
+            "copertina",
+            "scura",
+            "e",
+            "usata"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Sulla copertina c'è scritto Registro a lettere sbiadite dal tempo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "copertina",
+            "ce",
+            "scrivere",
+            "registro",
+            "a",
+            "lettere",
+            "sbiadite",
+            "dal",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Giada lo apre con cura, pagina dopo pagina, senza fretta falsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "aprire",
+            "con",
+            "cura",
+            "pagina",
+            "dopo",
+            "pagina",
+            "senza",
+            "fretta",
+            "falsa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Ci sono nomi, età e date di anni diversi, scritte a mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "no",
+            "eta",
+            "e",
+            "dare",
+            "di",
+            "anno",
+            "diverso",
+            "scritte",
+            "a",
+            "mano"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Alcune pagine sono gialle e un po' umide ai bordi del foglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alcuno",
+            "pagine",
+            "essere",
+            "gialle",
+            "e",
+            "un",
+            "poco",
+            "umide",
+            "ai",
+            "bordi",
+            "del",
+            "foglio"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Vicino alla fine trova una riga scritta a mano, ancora chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "alla",
+            "fine",
+            "trovare",
+            "una",
+            "riga",
+            "scritta",
+            "a",
+            "mano",
+            "ancora",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Anna Rinaldi, 17 anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "rinaldi",
+            "17",
+            "anno"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "La data è di oggi: giorno, mese e anno, completi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "dare",
+            "essere",
+            "di",
+            "oggi",
+            "giorno",
+            "mese",
+            "e",
+            "anno",
+            "completi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Come se Anna fosse arrivata proprio adesso, in questa sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "come",
+            "se",
+            "anna",
+            "fosse",
+            "arrivare",
+            "proprio",
+            "adesso",
+            "in",
+            "questo",
+            "sera"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Giada tocca l'inchiostro con la punta del dito, piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "tocca",
+            "l'inchiostro",
+            "con",
+            "la",
+            "punta",
+            "del",
+            "dito",
+            "piano"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Non è fresco; è secco, scuro e vecchio sotto il dito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "fresco",
+            "essere",
+            "secco",
+            "scuro",
+            "e",
+            "vecchio",
+            "sotto",
+            "il",
+            "dito"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Qualcuno ha messo la data di oggi su una riga antica del libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qualcuno",
+            "avere",
+            "mettere",
+            "la",
+            "dare",
+            "di",
+            "oggi",
+            "su",
+            "una",
+            "riga",
+            "antica",
+            "del",
+            "libro"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "O ha cambiato solo l'anno, ogni estate, come un rituale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "o",
+            "avere",
+            "cambiare",
+            "solo",
+            "anno",
+            "ogni",
+            "estate",
+            "come",
+            "un",
+            "rituale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Giada sente freddo alla schiena, sotto la maglia, senza vento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "freddo",
+            "alla",
+            "schiena",
+            "sotto",
+            "la",
+            "maglia",
+            "senza",
+            "vento"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Il cognome è Rinaldi, come il suo, lettera per lettera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cognome",
+            "essere",
+            "rinaldi",
+            "come",
+            "il",
+            "suo",
+            "lettera",
+            "per",
+            "lettera"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Come quello di sua madre, Anna, a Bologna, lontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "come",
+            "quello",
+            "di",
+            "suo",
+            "madre",
+            "anna",
+            "a",
+            "bologna",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Elsa entra e vede il libro aperto sul tavolo di legno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "entrare",
+            "e",
+            "vedere",
+            "il",
+            "libro",
+            "aprire",
+            "sul",
+            "tavolo",
+            "di",
+            "legno"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Non dovevi aprirlo.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dove",
+            "aprirlo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Perché c'è il mio cognome su questa pagina?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "ce",
+            "il",
+            "mio",
+            "cognome",
+            "su",
+            "questo",
+            "pagina"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Perché Anna era qui.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "anna",
+            "essere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "E perché la data è di oggi, con inchiostro vecchio e secco?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "perche",
+            "la",
+            "dare",
+            "essere",
+            "di",
+            "oggi",
+            "con",
+            "inchiostro",
+            "vecchio",
+            "e",
+            "secco"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Elsa chiude il registro e lo tiene contro il petto un momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "chiudere",
+            "il",
+            "registro",
+            "e",
+            "lo",
+            "tiene",
+            "contro",
+            "il",
+            "petto",
+            "un",
+            "momento"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Perché ogni anno ricordiamo.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "ogni",
+            "anno",
+            "ricordare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Ricordate o fingete che sia ancora l'estate di allora?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ricordate",
+            "o",
+            "fingete",
+            "che",
+            "sia",
+            "ancora",
+            "estate",
+            "di",
+            "allora"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Elsa non risponde; mette il libro in un cassetto e lo chiude.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "rispondere",
+            "mettere",
+            "il",
+            "libro",
+            "in",
+            "un",
+            "cassetto",
+            "e",
+            "lo",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Metti a posto le cose e vai a dormire.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "metti",
+            "a",
+            "posto",
+            "le",
+            "cosa",
+            "e",
+            "andare",
+            "a",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Domani guardi la piazza, come ti ho detto ieri.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "guardare",
+            "la",
+            "piazza",
+            "come",
+            "ti",
+            "avere",
+            "dire",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Giada sale in camera e scrive sul telefono senza rete.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sapere",
+            "in",
+            "camera",
+            "e",
+            "scrivere",
+            "sul",
+            "telefono",
+            "senza",
+            "rete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Anna Rinaldi, 17. Data di oggi. Inchiostro vecchio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "rinaldi",
+            "17",
+            "dare",
+            "di",
+            "oggi",
+            "inchiostro",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Non è magia; è un rituale sulla carta del registro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "magia",
+            "essere",
+            "un",
+            "rituale",
+            "sulla",
+            "carta",
+            "del",
+            "registro"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "O un errore ripetuto finché sembra una legge del paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "o",
+            "un",
+            "errore",
+            "ripetuto",
+            "finche",
+            "sembrare",
+            "una",
+            "leggere",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Giada guarda la borsa della madre sul pavimento della stanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "la",
+            "borsa",
+            "della",
+            "madre",
+            "sul",
+            "pavimento",
+            "della",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Dentro c'è ancora l'odore di casa a Bologna, familiare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "ce",
+            "ancora",
+            "l'odore",
+            "di",
+            "casa",
+            "a",
+            "bologna",
+            "familiare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Fuori c'è un paese che scrive di nuovo quel nome sul libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "ce",
+            "un",
+            "paese",
+            "che",
+            "scrivere",
+            "di",
+            "nuovo",
+            "quello",
+            "nome",
+            "sul",
+            "libro"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Con la data di oggi, e con paura di dimenticare Anna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "con",
+            "la",
+            "dare",
+            "di",
+            "oggi",
+            "e",
+            "con",
+            "paura",
+            "di",
+            "dimenticare",
+            "anna"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Giada spegne la luce e non dorme subito, occhi aperti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "spegne",
+            "la",
+            "luce",
+            "e",
+            "non",
+            "dormire",
+            "subito",
+            "occhi",
+            "aprire"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Nella testa resta una sola riga chiara, come un cartello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "testa",
+            "restare",
+            "una",
+            "solo",
+            "riga",
+            "chiaro",
+            "come",
+            "un",
+            "cartello"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Anna Rinaldi, diciassette anni, oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "rinaldi",
+            "diciassette",
+            "anno",
+            "oggi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "E lei, Giada, nella stessa stanza, con lo stesso cognome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "lei",
+            "giada",
+            "nella",
+            "stesso",
+            "stanza",
+            "con",
+            "lo",
+            "stesso",
+            "cognome"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Ma non è Anna, e non vuole diventarlo per nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "non",
+            "essere",
+            "anna",
+            "e",
+            "non",
+            "volere",
+            "diventarlo",
+            "per",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Il cassetto chiuso nasconde il registro, ma non cancella la riga nella memoria.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "cassetto",
+            "chiudere",
+            "nasconde",
+            "il",
+            "registro",
+            "ma",
+            "non",
+            "cancella",
+            "la",
+            "riga",
+            "nella",
+            "memoria"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Giada ripete il cognome Rinaldi e sente quanto è stretto, qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ripete",
+            "il",
+            "cognome",
+            "rinaldi",
+            "e",
+            "sentire",
+            "quanto",
+            "essere",
+            "stretto",
+            "qui"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Domani, dice Elsa, bisogna guardare la piazza: lei lo farà, ma da Giada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "dire",
+            "elsa",
+            "bisogna",
+            "guardare",
+            "la",
+            "piazza",
+            "lei",
+            "lo",
+            "fara",
+            "ma",
+            "dare",
+            "giada"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch08_q01",
+      "chapterId": "il-villaggio-che-non-esiste-08",
+      "type": "direct",
+      "question": "What name does Giada find in the register?",
+      "choices": [
+        "Anna Rinaldi, age 17",
+        "Elsa Tullio, age 60",
+        "Neri, age 17"
+      ],
+      "correctChoice": 0,
+      "explanation": "The line says Anna Rinaldi, 17 years old.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q02",
+      "chapterId": "il-villaggio-che-non-esiste-08",
+      "type": "direct",
+      "question": "What is strange about the date and the ink?",
+      "choices": [
+        "The date is today but the ink is old",
+        "The ink is wet and the date is blank",
+        "There is no date at all"
+      ],
+      "correctChoice": 0,
+      "explanation": "Today's date is written, but the ink is dry and old.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch08_q03",
+      "chapterId": "il-villaggio-che-non-esiste-08",
+      "type": "inference",
+      "question": "What does Elsa claim the copied date is for?",
+      "choices": [
+        "Remembering every year",
+        "Booking future tourists",
+        "Paying the dam company"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says every year they remember.",
+      "difficulty": 2
+    }
+  ]
+}

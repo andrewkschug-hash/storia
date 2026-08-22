@@ -1,0 +1,933 @@
+{
+  "id": "il-villaggio-che-non-esiste-06",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 6,
+  "title": "Sunset",
+  "titleIt": "Il tramonto",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "strada-diga",
+    "edificio-idroelettrico"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "tullio"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-06",
+      "summary": "Giada tries the dam road at sunset and finds water covering it. Tullio is there with a thermos and says it happens every evening on a clock.",
+      "characterIds": [
+        "giada-rinaldi",
+        "tullio"
+      ],
+      "locationIds": [
+        "strada-diga",
+        "edificio-idroelettrico"
+      ],
+      "rememberedFacts": [
+        "At sunset water covers the access road",
+        "Lights below are from the hydro building, not houses",
+        "Tullio says the dam still opens every evening",
+        "The lake was never finished but the sluice still runs"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Prima del tramonto Giada esce dalla locanda senza dirlo ad Elsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "del",
+            "tramonto",
+            "giada",
+            "uscire",
+            "dalla",
+            "locanda",
+            "senza",
+            "dire",
+            "a",
+            "elsa"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Vuole vedere con i suoi occhi la strada verso valle e la diga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "vedere",
+            "con",
+            "i",
+            "suo",
+            "occhi",
+            "la",
+            "strada",
+            "verso",
+            "valle",
+            "e",
+            "la",
+            "diga"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Cammina oltre la piazza e oltre le ultime case del paese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "oltre",
+            "la",
+            "piazza",
+            "e",
+            "oltre",
+            "le",
+            "ultime",
+            "casa",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "La strada scende tra alberi bassi e sassi ancora asciutti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "scende",
+            "tra",
+            "alberi",
+            "basso",
+            "e",
+            "sassi",
+            "ancora",
+            "asciutti"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "In fondo ci sono luci di un edificio lungo, grigio e chiuso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "fondo",
+            "ci",
+            "essere",
+            "luce",
+            "di",
+            "un",
+            "edificio",
+            "lungo",
+            "grigio",
+            "e",
+            "chiudere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Sembra un luogo di lavoro, non una casa con famiglie e bambini.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sembrare",
+            "un",
+            "luogo",
+            "di",
+            "lavorare",
+            "non",
+            "una",
+            "casa",
+            "con",
+            "famiglie",
+            "e",
+            "bambini"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Il sole tocca le colline e l'aria diventa più fredda sulla pelle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sole",
+            "tocca",
+            "le",
+            "colline",
+            "e",
+            "l'aria",
+            "diventa",
+            "piu",
+            "fredda",
+            "sulla",
+            "pelle"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Giada sente un rumore d'acqua, prima lontano, poi più vicino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "un",
+            "rumore",
+            "acqua",
+            "prima",
+            "lontano",
+            "poi",
+            "piu",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Il rumore è come una porta che si apre sotto la collina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "rumore",
+            "essere",
+            "come",
+            "una",
+            "porta",
+            "che",
+            "si",
+            "aprire",
+            "sotto",
+            "la",
+            "collina"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "L'acqua arriva sulla strada a lastra bassa e cresce piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "arrivare",
+            "sulla",
+            "strada",
+            "a",
+            "lastra",
+            "basso",
+            "e",
+            "cresce",
+            "piano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Non è un fiume naturale che nasce dalla pioggia di ieri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "fiume",
+            "naturale",
+            "che",
+            "nasce",
+            "dalla",
+            "pioggia",
+            "di",
+            "ieri"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "È una superficie che cresce e copre i sassi uno dopo l'altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "superficie",
+            "che",
+            "cresce",
+            "e",
+            "copre",
+            "i",
+            "sassi",
+            "uno",
+            "dopo",
+            "altro"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Se lei avanza, l'acqua le bagna le scarpe e le caviglie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "lei",
+            "avanza",
+            "acqua",
+            "le",
+            "bagna",
+            "le",
+            "scarpe",
+            "e",
+            "le",
+            "caviglie"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Giada si ferma e indietreggia di due passi sulla ghiaia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "fermare",
+            "e",
+            "indietreggia",
+            "di",
+            "due",
+            "passare",
+            "sulla",
+            "ghiaia"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Dietro di lei qualcuno tossisce piano, come un avviso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "di",
+            "lei",
+            "qualcuno",
+            "tossisce",
+            "piano",
+            "come",
+            "un",
+            "avviso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "È Tullio, con il thermos sotto il braccio e lo sguardo fermo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "tullio",
+            "con",
+            "il",
+            "thermos",
+            "sotto",
+            "il",
+            "braccio",
+            "e",
+            "lo",
+            "sguardo",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Ogni sera.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "ogni",
+            "sera"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "L'ora è l'ora.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "ora",
+            "essere",
+            "ora"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Chi apre l'acqua?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "chi",
+            "aprire",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La diga, ancora oggi.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "diga",
+            "ancora",
+            "oggi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Anche se il lago non c'è mai stato finito, lassù.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "se",
+            "il",
+            "lago",
+            "non",
+            "ce",
+            "mai",
+            "essere",
+            "finire",
+            "lassu"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Giada guarda l'edificio in basso, con le luci ancora accese.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "l'edificio",
+            "in",
+            "basso",
+            "con",
+            "le",
+            "luce",
+            "ancora",
+            "accese"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Non sono finestre di case illuminate per la cena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "finestra",
+            "di",
+            "casa",
+            "illuminate",
+            "per",
+            "la",
+            "cena"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Sono luci di macchine e di corridoi di lavoro, fredde e nette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "luce",
+            "di",
+            "macchine",
+            "e",
+            "di",
+            "corridoi",
+            "di",
+            "lavorare",
+            "fredde",
+            "e",
+            "nette"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Allora non è magia.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "non",
+            "essere",
+            "magia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Tullio alza le spalle come se la parola non servisse a nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "alzare",
+            "le",
+            "spalle",
+            "come",
+            "se",
+            "la",
+            "parola",
+            "non",
+            "servisse",
+            "a",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "È un orologio.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "un",
+            "orologio"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Apre e chiude, apre e chiude, da anni.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "aprire",
+            "e",
+            "chiudere",
+            "aprire",
+            "e",
+            "chiudere",
+            "dare",
+            "anno"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Noi restiamo sopra, dove la strada resta asciutta di giorno.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "noi",
+            "restare",
+            "sopra",
+            "dove",
+            "la",
+            "strada",
+            "restare",
+            "asciutta",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "L'acqua sale fino alle caviglie se lei non indietreggia subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "sapere",
+            "fino",
+            "alle",
+            "caviglie",
+            "se",
+            "lei",
+            "non",
+            "indietreggia",
+            "subito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Lei indietreggia ancora e sente il freddo dell'acqua sulle scarpe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "indietreggia",
+            "ancora",
+            "e",
+            "sentire",
+            "il",
+            "freddo",
+            "acqua",
+            "sul",
+            "scarpe"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Dopo il tramonto non si esce.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "dopo",
+            "il",
+            "tramonto",
+            "non",
+            "si",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Adesso capisci perché lo diciamo senza ridere.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "adesso",
+            "capire",
+            "perche",
+            "lo",
+            "dire",
+            "senza",
+            "ridere"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Giada guarda la strada che un'ora fa era ancora asciutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "la",
+            "strada",
+            "che",
+            "ora",
+            "fare",
+            "essere",
+            "ancora",
+            "asciutta"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Adesso è uno specchio scuro sotto il cielo che diventa notte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "adesso",
+            "essere",
+            "uno",
+            "specchio",
+            "scuro",
+            "sotto",
+            "il",
+            "cielo",
+            "che",
+            "diventa",
+            "notte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Non può passare, e non perché qualcuno urla un divieto a voce alta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "potere",
+            "passare",
+            "e",
+            "non",
+            "perche",
+            "qualcuno",
+            "urla",
+            "un",
+            "divieto",
+            "a",
+            "voce",
+            "alto"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Perché l'acqua è lì, fisica e fredda, e chiude la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "perche",
+            "acqua",
+            "essere",
+            "li",
+            "fisica",
+            "e",
+            "fredda",
+            "e",
+            "chiudere",
+            "la",
+            "strada"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Torna verso il paese con Tullio, senza molte parole inutili.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "verso",
+            "il",
+            "paese",
+            "con",
+            "tullio",
+            "senza",
+            "molte",
+            "parola",
+            "inutili"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Dietro di loro l'acqua resta sulla strada della diga, ogni sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "di",
+            "loro",
+            "acqua",
+            "restare",
+            "sulla",
+            "strada",
+            "della",
+            "diga",
+            "ogni",
+            "sera"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "All'ora fissata, come un orologio che non chiede permesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ora",
+            "fissata",
+            "come",
+            "un",
+            "orologio",
+            "che",
+            "non",
+            "chiedere",
+            "permesso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Giada non ride più delle regole di Elsa e di Tullio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "ride",
+            "piu",
+            "delle",
+            "regole",
+            "di",
+            "elsa",
+            "e",
+            "di",
+            "tullio"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Ha visto la prova, e la prova è bagnata sotto le scarpe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "vedere",
+            "la",
+            "provare",
+            "e",
+            "la",
+            "provare",
+            "essere",
+            "bagnata",
+            "sotto",
+            "le",
+            "scarpe"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Vicino all'edificio idroelettrico le luci restano accese, fredde e regolari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "all'edificio",
+            "idroelettrico",
+            "le",
+            "luce",
+            "restano",
+            "accese",
+            "fredde",
+            "e",
+            "regolari"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Giada capisce che la regola non nasce da una storia, ma da una macchina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "capire",
+            "che",
+            "la",
+            "regola",
+            "non",
+            "nasce",
+            "dare",
+            "una",
+            "storia",
+            "ma",
+            "dare",
+            "una",
+            "macchina"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Torna in paese con i piedi umidi e la testa piena di domande pratiche.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "in",
+            "paese",
+            "con",
+            "i",
+            "piedi",
+            "umidi",
+            "e",
+            "la",
+            "testa",
+            "pieno",
+            "di",
+            "domanda",
+            "pratiche"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch06_q01",
+      "chapterId": "il-villaggio-che-non-esiste-06",
+      "type": "direct",
+      "question": "What happens to the road at sunset?",
+      "choices": [
+        "Water covers it",
+        "It fills with cars",
+        "It disappears into fog"
+      ],
+      "correctChoice": 0,
+      "explanation": "Water sheets over the road.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q02",
+      "chapterId": "il-villaggio-che-non-esiste-06",
+      "type": "direct",
+      "question": "What does Tullio say about the timing?",
+      "choices": [
+        "It happens every evening; the hour is the hour",
+        "It happens only in winter",
+        "It happens when tourists arrive"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio says ogni sera and l'ora è l'ora.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch06_q03",
+      "chapterId": "il-villaggio-che-non-esiste-06",
+      "type": "inference",
+      "question": "What physical cause does Tullio give?",
+      "choices": [
+        "The dam still opens on a clock",
+        "A spell on the stones",
+        "Rain from the hills"
+      ],
+      "correctChoice": 0,
+      "explanation": "He says the dam still opens and closes like a clock.",
+      "difficulty": 2
+    }
+  ]
+}

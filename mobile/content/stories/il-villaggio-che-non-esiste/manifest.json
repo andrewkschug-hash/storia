@@ -1,0 +1,238 @@
+{
+  "id": "il-villaggio-che-non-esiste",
+  "title": "The village that does not exist",
+  "titleIt": "Il villaggio che non esiste",
+  "slug": "il-villaggio-che-non-esiste",
+  "level": 2,
+  "cefrLevel": "A2+",
+  "synopsis": "Giada scende a Collevento, cancellata dall'orario. Il paese c'è. Dopo il tramonto la strada è acqua.",
+  "characterIds": [
+    "giada-rinaldi",
+    "elsa",
+    "tullio",
+    "neri",
+    "anna-rinaldi",
+    "ingegnere",
+    "papa-rinaldi"
+  ],
+  "locationIds": [
+    "treno-halt",
+    "collevento-strada",
+    "locanda-elsa",
+    "piazza-collevento",
+    "strada-diga",
+    "bosco-recinto",
+    "campo-segnale",
+    "edificio-idroelettrico",
+    "cucina-trento",
+    "memorial-1978"
+  ],
+  "chapters": [
+    {
+      "id": "il-villaggio-che-non-esiste-01",
+      "number": 1,
+      "title": "The wrong train",
+      "titleIt": "Il treno sbagliato",
+      "difficultyLevel": 2,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-02",
+      "number": 2,
+      "title": "It's there",
+      "titleIt": "C'è",
+      "difficultyLevel": 2,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-03",
+      "number": 3,
+      "title": "Not grandmother",
+      "titleIt": "Nonna, no",
+      "difficultyLevel": 2,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-04",
+      "number": 4,
+      "title": "The rules",
+      "titleIt": "Le regole",
+      "difficultyLevel": 2,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-05",
+      "number": 5,
+      "title": "Dad on the phone",
+      "titleIt": "Papà al telefono",
+      "difficultyLevel": 2,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-06",
+      "number": 6,
+      "title": "Sunset",
+      "titleIt": "Il tramonto",
+      "difficultyLevel": 2,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-07",
+      "number": 7,
+      "title": "Neri",
+      "titleIt": "Neri",
+      "difficultyLevel": 2,
+      "file": "chapter-07.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-08",
+      "number": 8,
+      "title": "The register",
+      "titleIt": "Il registro",
+      "difficultyLevel": 2,
+      "file": "chapter-08.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-09",
+      "number": 9,
+      "title": "Yesterday",
+      "titleIt": "Ieri",
+      "difficultyLevel": 2,
+      "file": "chapter-09.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-10",
+      "number": 10,
+      "title": "Morning",
+      "titleIt": "Il mattino",
+      "difficultyLevel": 2,
+      "file": "chapter-10.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-11",
+      "number": 11,
+      "title": "The inspection",
+      "titleIt": "L'ispezione",
+      "difficultyLevel": 2,
+      "file": "chapter-11.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-12",
+      "number": 12,
+      "title": "Anna's photo",
+      "titleIt": "La foto di Anna",
+      "difficultyLevel": 2,
+      "file": "chapter-12.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-13",
+      "number": 13,
+      "title": "The forest",
+      "titleIt": "Il bosco",
+      "difficultyLevel": 2,
+      "file": "chapter-13.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-14",
+      "number": 14,
+      "title": "Neri tells",
+      "titleIt": "Neri racconta",
+      "difficultyLevel": 2,
+      "file": "chapter-14.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-15",
+      "number": 15,
+      "title": "The engineer",
+      "titleIt": "L'ingegnere",
+      "difficultyLevel": 2,
+      "file": "chapter-15.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-16",
+      "number": 16,
+      "title": "Giada hates Elsa",
+      "titleIt": "Giada odia Elsa",
+      "difficultyLevel": 2,
+      "file": "chapter-16.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-17",
+      "number": 17,
+      "title": "Call to Bologna",
+      "titleIt": "Chiamata a Bologna",
+      "difficultyLevel": 2,
+      "file": "chapter-17.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-18",
+      "number": 18,
+      "title": "Why",
+      "titleIt": "Perché",
+      "difficultyLevel": 2,
+      "file": "chapter-18.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-19",
+      "number": 19,
+      "title": "The forest by day",
+      "titleIt": "Nel bosco di giorno",
+      "difficultyLevel": 2,
+      "file": "chapter-19.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-20",
+      "number": 20,
+      "title": "Choice",
+      "titleIt": "Scelta",
+      "difficultyLevel": 2,
+      "file": "chapter-20.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-21",
+      "number": 21,
+      "title": "No",
+      "titleIt": "No",
+      "difficultyLevel": 2,
+      "file": "chapter-21.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-22",
+      "number": 22,
+      "title": "Dawn",
+      "titleIt": "L'alba",
+      "difficultyLevel": 2,
+      "file": "chapter-22.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-23",
+      "number": 23,
+      "title": "Trento",
+      "titleIt": "Trento",
+      "difficultyLevel": 2,
+      "file": "chapter-23.json"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste-24",
+      "number": 24,
+      "title": "The photo",
+      "titleIt": "La foto",
+      "difficultyLevel": 2,
+      "file": "chapter-24.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "il-villaggio-che-non-esiste-a2-plus",
+      "storyId": "il-villaggio-che-non-esiste",
+      "cefrLevel": "A2+",
+      "title": "The village that does not exist",
+      "titleIt": "Il villaggio che non esiste",
+      "description": "An A2+ folkloric mystery about maps, water, and mistaken identity — without magic.",
+      "narrativeStage": "Giada learns why Collevento does not exist on the map.",
+      "chapterStart": 1,
+      "chapterEnd": 24,
+      "status": "available"
+    }
+  ]
+}

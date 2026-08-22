@@ -1,0 +1,954 @@
+{
+  "id": "il-villaggio-che-non-esiste-02",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 2,
+  "title": "It's there",
+  "titleIt": "C'è",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "collevento-strada",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "elsa"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-02",
+      "summary": "Giada walks into Collevento, finds Elsa's inn, and is welcomed as if expected. A room is already made up.",
+      "characterIds": [
+        "giada-rinaldi",
+        "elsa"
+      ],
+      "locationIds": [
+        "collevento-strada",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "Collevento has one quiet street and smoke from chimneys",
+        "Elsa runs the inn and says Finalmente",
+        "A room is already prepared though Giada booked nothing",
+        "Elsa does not repeat Giada's name out loud"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La strada sale tra case basse di pietra e intonaco chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "sapere",
+            "tra",
+            "casa",
+            "basso",
+            "di",
+            "pietra",
+            "e",
+            "intonaco",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ci sono finestre chiuse, panni stesi e poco rumore di gente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ci",
+            "essere",
+            "finestra",
+            "chiuse",
+            "panni",
+            "stesi",
+            "e",
+            "poco",
+            "rumore",
+            "di",
+            "gente"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Dal camino di una casa esce un filo di fumo grigio e lento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dal",
+            "camino",
+            "di",
+            "una",
+            "casa",
+            "uscire",
+            "un",
+            "filo",
+            "di",
+            "fumo",
+            "grigio",
+            "e",
+            "lento"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Il paese è piccolo, ma non è abbandonato: qualcuno vive qui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "piccolo",
+            "ma",
+            "non",
+            "essere",
+            "abbandonato",
+            "qualcuno",
+            "vivere",
+            "qui"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Giada sente odore di pane caldo e di legno bruciato nel camino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "odore",
+            "di",
+            "pane",
+            "caldo",
+            "e",
+            "di",
+            "legno",
+            "bruciato",
+            "nel",
+            "camino"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Cammina piano perché la valigia tira il braccio a ogni passo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "camminare",
+            "piano",
+            "perche",
+            "la",
+            "valigia",
+            "tira",
+            "il",
+            "braccio",
+            "a",
+            "ogni",
+            "passare"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "In una piazzetta c'è una fontana che fa poco rumore sull'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "una",
+            "piazzetta",
+            "ce",
+            "una",
+            "fontana",
+            "che",
+            "fare",
+            "poco",
+            "rumore",
+            "sull'acqua"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "L'acqua cade sul sasso umido, sempre uguale, senza fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "cade",
+            "sul",
+            "sasso",
+            "umido",
+            "sempre",
+            "uguale",
+            "senza",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Vicino alla fontana una porta di legno è aperta sulla strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "alla",
+            "fontana",
+            "una",
+            "porta",
+            "di",
+            "legno",
+            "essere",
+            "aprire",
+            "sulla",
+            "strada"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Sulla porta c'è scritto Locanda a mano, con lettere scure.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sulla",
+            "porta",
+            "ce",
+            "scrivere",
+            "locanda",
+            "a",
+            "mano",
+            "con",
+            "lettere",
+            "scure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Giada bussa due volte e aspetta sulla soglia con la valigia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "bussa",
+            "due",
+            "volta",
+            "e",
+            "aspettare",
+            "sulla",
+            "soglia",
+            "con",
+            "la",
+            "valigia"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Una donna esce dalla cucina con un asciugamano ancora in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "donna",
+            "uscire",
+            "dalla",
+            "cucina",
+            "con",
+            "un",
+            "asciugamano",
+            "ancora",
+            "in",
+            "mano"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Ha i capelli grigi raccolti e le mani forti di lavoro vero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "i",
+            "capelli",
+            "grigi",
+            "raccolti",
+            "e",
+            "le",
+            "mani",
+            "forte",
+            "di",
+            "lavorare",
+            "vero"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Finalmente.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "finalmente"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Giada resta ferma, sorpresa, con la valigia ancora in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "fermare",
+            "sorpresa",
+            "con",
+            "la",
+            "valigia",
+            "ancora",
+            "in",
+            "mano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Scusi? Io non ho prenotato nessuna stanza.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusi",
+            "io",
+            "non",
+            "avere",
+            "prenotato",
+            "nessuno",
+            "stanza"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Sei arrivata.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "arrivare"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Entra, per favore. Fa fresco fuori.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "entrare",
+            "per",
+            "favore",
+            "fare",
+            "fresco",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "La stanza è già pronta, da stamattina.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stanza",
+            "essere",
+            "gia",
+            "pronto",
+            "dare",
+            "stamattina"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Io non ho chiamato nessuno e non conosco questo paese.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "avere",
+            "chiamare",
+            "nessuno",
+            "e",
+            "non",
+            "conoscere",
+            "questo",
+            "paese"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Elsa guarda la borsa vecchia di Giada e annuisce piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "guardare",
+            "la",
+            "borsa",
+            "vecchio",
+            "di",
+            "giada",
+            "e",
+            "annuisce",
+            "piano"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Non importa.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "importare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "La stanza c'è, e oggi c'è posto per te.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "stanza",
+            "ce",
+            "e",
+            "oggi",
+            "ce",
+            "posto",
+            "per",
+            "tu"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Dentro la locanda fa caldo e odora di minestra e di pane.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "la",
+            "locanda",
+            "fare",
+            "caldo",
+            "e",
+            "odora",
+            "di",
+            "minestra",
+            "e",
+            "di",
+            "pane"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "C'è un tavolo di legno scuro e due sedie diverse tra loro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "un",
+            "tavolo",
+            "di",
+            "legno",
+            "scuro",
+            "e",
+            "due",
+            "sedia",
+            "diverso",
+            "tra",
+            "loro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Sul muro ci sono fotografie vecchie in cornici semplici e storte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "muro",
+            "ci",
+            "essere",
+            "fotografie",
+            "vecchio",
+            "in",
+            "cornici",
+            "semplici",
+            "e",
+            "storte"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Elsa porta Giada su per le scale strette, senza troppe parole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "porta",
+            "giada",
+            "su",
+            "per",
+            "le",
+            "scale",
+            "strette",
+            "senza",
+            "troppo",
+            "parola"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "La stanza è piccola, pulita e già in ordine completo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "stanza",
+            "essere",
+            "piccolo",
+            "pulita",
+            "e",
+            "gia",
+            "in",
+            "ordine",
+            "completo"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Il letto è fatto con lenzuola chiare e un cuscino al centro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "leggere",
+            "essere",
+            "fare",
+            "con",
+            "lenzuola",
+            "chiare",
+            "e",
+            "un",
+            "cuscino",
+            "al",
+            "centro"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Sul comodino ci sono una bottiglia d'acqua e un bicchiere pulito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "comodino",
+            "ci",
+            "essere",
+            "una",
+            "bottiglia",
+            "acqua",
+            "e",
+            "un",
+            "bicchiere",
+            "pulito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "C'è anche un asciugamano piegato con cura sul bordo del letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ce",
+            "anche",
+            "un",
+            "asciugamano",
+            "piegato",
+            "con",
+            "cura",
+            "sul",
+            "bordo",
+            "del",
+            "leggere"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Come se qualcuno aspettasse proprio quella ragazza, da ore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "come",
+            "se",
+            "qualcuno",
+            "aspettasse",
+            "proprio",
+            "quello",
+            "ragazza",
+            "dare",
+            "ora"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Come si chiama, scusi?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "si",
+            "chiamare",
+            "scusi"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Elsa.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "elsa"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Io sono Giada Rinaldi.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "giada",
+            "rinaldi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Elsa annuisce, ma non ripete il nome ad alta voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "annuisce",
+            "ma",
+            "non",
+            "ripete",
+            "il",
+            "nome",
+            "a",
+            "alto",
+            "voce"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Mangia dopo, se hai fame.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "mangiare",
+            "dopo",
+            "se",
+            "avere",
+            "fame"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Prima riposa un poco: la salita stanca.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "prima",
+            "riposa",
+            "un",
+            "poco",
+            "la",
+            "salita",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Giada lascia la valigia vicino al letto e apre la finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lasciare",
+            "la",
+            "valigia",
+            "vicino",
+            "al",
+            "leggere",
+            "e",
+            "aprire",
+            "la",
+            "finestra"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Dalla finestra vede la strada, la fontana e il fumo dei camini.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dalla",
+            "finestra",
+            "vedere",
+            "la",
+            "strada",
+            "la",
+            "fontana",
+            "e",
+            "il",
+            "fumo",
+            "dei",
+            "camini"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Il paese c'è, con gente che vive, cucina e parla piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "ce",
+            "con",
+            "gente",
+            "che",
+            "vivere",
+            "cucina",
+            "e",
+            "parlare",
+            "piano"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Non è solo una fermata dimenticata sui binari freddi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "solo",
+            "una",
+            "fermare",
+            "dimenticata",
+            "sui",
+            "binario",
+            "freddi"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Però qualcosa non torna nella voce di Elsa, troppo sicura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "qualcosa",
+            "non",
+            "tornare",
+            "nella",
+            "voce",
+            "di",
+            "elsa",
+            "troppo",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Ha detto finalmente, come se Giada fosse in ritardo di anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "dire",
+            "finalmente",
+            "come",
+            "se",
+            "giada",
+            "fosse",
+            "in",
+            "ritardo",
+            "di",
+            "anno"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Giada chiude piano la porta della camera e si siede sul letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "chiudere",
+            "piano",
+            "la",
+            "porta",
+            "della",
+            "camera",
+            "e",
+            "si",
+            "sedere",
+            "sul",
+            "leggere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Ascolta i rumori del paese: passi, una porta, una voce lontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ascoltare",
+            "i",
+            "rumori",
+            "del",
+            "paese",
+            "passare",
+            "una",
+            "porta",
+            "una",
+            "voce",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Dentro, la stanza era pronta prima che lei bussasse alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "la",
+            "stanza",
+            "essere",
+            "pronto",
+            "prima",
+            "che",
+            "lei",
+            "bussasse",
+            "alla",
+            "porta"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch02_q01",
+      "chapterId": "il-villaggio-che-non-esiste-02",
+      "type": "direct",
+      "question": "What does Elsa say when she sees Giada?",
+      "choices": [
+        "Finalmente",
+        "Buonanotte",
+        "Errore di treno"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa's first word is Finalmente.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q02",
+      "chapterId": "il-villaggio-che-non-esiste-02",
+      "type": "direct",
+      "question": "What is ready before Giada asks?",
+      "choices": [
+        "A room at the inn",
+        "A ticket to Trento",
+        "A phone with signal"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says the room has been ready since morning.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02_q03",
+      "chapterId": "il-villaggio-che-non-esiste-02",
+      "type": "inference",
+      "question": "Why does the welcome feel strange?",
+      "choices": [
+        "Elsa acts as if Giada were expected",
+        "The inn is closed for winter",
+        "Nobody speaks Italian"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says finalmente and prepared a room though Giada booked nothing.",
+      "difficulty": 2
+    }
+  ]
+}

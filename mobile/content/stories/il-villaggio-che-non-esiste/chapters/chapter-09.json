@@ -1,0 +1,1559 @@
+{
+  "id": "il-villaggio-che-non-esiste-09",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 9,
+  "title": "Yesterday",
+  "titleIt": "Ieri",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "piazza-collevento",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "elsa",
+    "neri"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-09",
+      "summary": "Giada photographs the square in careful detail because she does not trust memory. She records signs, benches, the fountain, and shop names before anything can change.",
+      "characterIds": [
+        "giada-rinaldi",
+        "elsa",
+        "neri"
+      ],
+      "locationIds": [
+        "piazza-collevento",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "Giada photographs the square systematically",
+        "She does not trust her own memory",
+        "She records shop names, benches, and the fountain",
+        "Elsa watches her take pictures without stopping her"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "La mattina dopo il registro Giada esce con il telefono in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "mattina",
+            "dopo",
+            "il",
+            "registro",
+            "giada",
+            "uscire",
+            "con",
+            "il",
+            "telefono",
+            "in",
+            "mano"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Non vuole parlare con nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "volere",
+            "parlare",
+            "con",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Vuole solo ricordare bene ciò che vede.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "solo",
+            "ricordare",
+            "bene",
+            "cio",
+            "che",
+            "vedere"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "In piazza c'è poco vento e odore di legno bagnato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "in",
+            "piazza",
+            "ce",
+            "poco",
+            "vento",
+            "e",
+            "odore",
+            "di",
+            "legno",
+            "bagnato"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "La fontana fa un rumore piccolo, sempre uguale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "fontana",
+            "fare",
+            "un",
+            "rumore",
+            "piccolo",
+            "sempre",
+            "uguale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Giada alza il telefono e fotografa la fontana da sinistra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "alzare",
+            "il",
+            "telefono",
+            "e",
+            "fotografa",
+            "la",
+            "fontana",
+            "dare",
+            "sinistra"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Poi da destra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "dare",
+            "destra"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Poi da davanti, con le tre panchine nello stesso fotogramma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "dare",
+            "davanti",
+            "con",
+            "le",
+            "tre",
+            "panchine",
+            "nel",
+            "stesso",
+            "fotogramma"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Non ride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ride"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Lavora come se facesse un compito di scuola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lavorare",
+            "come",
+            "se",
+            "facesse",
+            "un",
+            "compito",
+            "di",
+            "scuola"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Fotografa il cartello del negozio di generi alimentari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "cartello",
+            "del",
+            "negozio",
+            "di",
+            "generi",
+            "alimentari"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Sul cartello c'è scritto: ALIMENTARI ROSSI.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "cartello",
+            "ce",
+            "scrivere",
+            "alimentari",
+            "rossi"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Fotografa anche la porta, perché la maniglia è di ferro scuro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "anche",
+            "la",
+            "porta",
+            "perche",
+            "la",
+            "maniglia",
+            "essere",
+            "di",
+            "ferro",
+            "scuro"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Fotografa il banco del pane, chiuso, con una sedia fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "banco",
+            "del",
+            "pane",
+            "chiudere",
+            "con",
+            "una",
+            "sedia",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Fotografa il nome sulla sedia: TULLIO, scritto a matita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "nome",
+            "sulla",
+            "sedia",
+            "tullio",
+            "scrivere",
+            "a",
+            "matita"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Elsa esce sulla soglia della locanda e la guarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "uscire",
+            "sulla",
+            "soglia",
+            "della",
+            "locanda",
+            "e",
+            "la",
+            "guardare"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Cosa fai, Anna?",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "fare",
+            "anna"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Giada.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "giada"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Mi chiamo Giada.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "chiamare",
+            "giada"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Elsa fa un gesto piccolo con la mano, come per scusarsi senza scusarsi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "fare",
+            "un",
+            "gesto",
+            "piccolo",
+            "con",
+            "la",
+            "mano",
+            "come",
+            "per",
+            "scusarsi",
+            "senza",
+            "scusarsi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Cosa fai, Giada?",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosa",
+            "fare",
+            "giada"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Fotografo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "fotografo"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Perché?",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Perché non mi fido della memoria.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "non",
+            "mi",
+            "fido",
+            "della",
+            "memoria"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "La mia, e anche quella degli altri.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "mio",
+            "e",
+            "anche",
+            "quello",
+            "dei",
+            "altro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Elsa non risponde subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "rispondere",
+            "subito"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Guarda la piazza come se la conoscesse da troppo tempo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "la",
+            "piazza",
+            "come",
+            "se",
+            "la",
+            "conoscesse",
+            "dare",
+            "troppo",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Ieri è già lontano.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "essere",
+            "gia",
+            "lontano"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Giada scatta ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "scatta",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Fotografa il campanile corto della cappella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "campanile",
+            "corto",
+            "della",
+            "cappella"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Fotografa il muro dove qualcuno ha messo un vaso di gerani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "muro",
+            "dove",
+            "qualcuno",
+            "avere",
+            "mettere",
+            "un",
+            "vaso",
+            "di",
+            "gerani"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Fotografa il numero sulla casa accanto: diciassette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "il",
+            "numero",
+            "sulla",
+            "casa",
+            "accanto",
+            "diciassette"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Fotografa anche le ombre, perché le ombre dicono l'ora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "anche",
+            "le",
+            "ombre",
+            "perche",
+            "le",
+            "ombre",
+            "dire",
+            "ora"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Neri arriva dalla strada della diga con le mani in tasca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "arrivare",
+            "dalla",
+            "strada",
+            "della",
+            "diga",
+            "con",
+            "le",
+            "mani",
+            "in",
+            "tasca"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Fai il turista?",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "fare",
+            "il",
+            "turista"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "No.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "no"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Faccio l'archivio.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "fare",
+            "l'archivio"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Neri guarda lo schermo del telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "guardare",
+            "lo",
+            "schermo",
+            "del",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Qui le cose si spostano.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui",
+            "le",
+            "cosa",
+            "si",
+            "spostano"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Lo so.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Per questo fotografo oggi.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "per",
+            "questo",
+            "fotografo",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Così domani posso confrontare.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "cosi",
+            "domani",
+            "potere",
+            "confrontare"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Neri alza le spalle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "alzare",
+            "le",
+            "spalle"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Confronta pure.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "confronta",
+            "pure"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Poi dimmi se ti aiuta a dormire.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "dimmi",
+            "se",
+            "ti",
+            "aiutare",
+            "a",
+            "dormire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Giada non sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Continua a camminare lungo i bordi della piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "continuare",
+            "a",
+            "camminare",
+            "lungo",
+            "i",
+            "bordi",
+            "della",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Fotografa la panchina sotto l'albero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "la",
+            "panchina",
+            "sotto",
+            "l'albero"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Fotografa la panchina vicino alla fontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "la",
+            "panchina",
+            "vicino",
+            "alla",
+            "fontana"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Fotografa la terza panchina, quella stortata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "la",
+            "terza",
+            "panchina",
+            "quello",
+            "stortata"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Annota mentalmente: tre panchine, due verdi, una marrone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "annota",
+            "mentalmente",
+            "tre",
+            "panchine",
+            "due",
+            "verdi",
+            "una",
+            "marrone"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Annota anche: cartello ROSSI, vaso a sinistra, sedia di Tullio fuori.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "annota",
+            "anche",
+            "cartello",
+            "rossi",
+            "vaso",
+            "a",
+            "sinistra",
+            "sedia",
+            "di",
+            "tullio",
+            "fuori"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Il sole sale e le ombre si accorciano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sole",
+            "sapere",
+            "e",
+            "le",
+            "ombre",
+            "si",
+            "accorciano"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Giada sente fame, ma non rientra subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "fame",
+            "ma",
+            "non",
+            "rientra",
+            "subito"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Vuole finire il giro prima che qualcuno le dica di lasciare stare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "finire",
+            "il",
+            "giro",
+            "prima",
+            "che",
+            "qualcuno",
+            "le",
+            "dica",
+            "di",
+            "lasciare",
+            "stare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Elsa resta sulla soglia ancora un minuto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "restare",
+            "sulla",
+            "soglia",
+            "ancora",
+            "un",
+            "minuto"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Poi rientra senza chiudere del tutto la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "rientra",
+            "senza",
+            "chiudere",
+            "del",
+            "tutto",
+            "la",
+            "porta"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Giada fotografa anche quella porta socchiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "fotografa",
+            "anche",
+            "quello",
+            "porta",
+            "socchiusa"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "È un dettaglio piccolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "dettaglio",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Però i dettagli piccoli, ieri, erano già mentiti nel registro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "i",
+            "dettagli",
+            "piccolo",
+            "ieri",
+            "essere",
+            "gia",
+            "mentiti",
+            "nel",
+            "registro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Alla fine ha quarantadue foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "fine",
+            "avere",
+            "quarantadue",
+            "foto"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Le rivede una per una seduta sul bordo della fontana.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "rivede",
+            "una",
+            "per",
+            "una",
+            "sedere",
+            "sul",
+            "bordo",
+            "della",
+            "fontana"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Nessuna è bella.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "essere",
+            "bello"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Sono utili.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "utili"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Questo le basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "le",
+            "basta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Quando rientra in locanda, Elsa ha preparato pane e caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "rientra",
+            "in",
+            "locanda",
+            "elsa",
+            "avere",
+            "preparare",
+            "pane",
+            "e",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Mangia in silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mangiare",
+            "in",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Il telefono resta sul tavolo, schermo spento, come una prova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "restare",
+            "sul",
+            "tavolo",
+            "schermo",
+            "spento",
+            "come",
+            "una",
+            "provare"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Conta i passi da un angolo all'altro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "i",
+            "passare",
+            "dare",
+            "un",
+            "angolo",
+            "altro"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Conta anche le finestre chiuse al primo piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "anche",
+            "le",
+            "finestra",
+            "chiuse",
+            "al",
+            "primo",
+            "piano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Vuole una prova che ieri è esistito così, e non solo nella testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "una",
+            "provare",
+            "che",
+            "ieri",
+            "essere",
+            "esistito",
+            "cosi",
+            "e",
+            "non",
+            "solo",
+            "nella",
+            "testa"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "A Bologna, dopo litigi, fotografava le stanze per ricordare chi aveva spostato cosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "bologna",
+            "dopo",
+            "litigi",
+            "fotografava",
+            "le",
+            "stanze",
+            "per",
+            "ricordare",
+            "chi",
+            "avere",
+            "spostato",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Qui fa lo stesso, ma il litigio è con un paese intero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "qui",
+            "fare",
+            "lo",
+            "stesso",
+            "ma",
+            "il",
+            "litigio",
+            "essere",
+            "con",
+            "un",
+            "paese",
+            "intero"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Il telefono scatta un suono corto a ogni foto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "scatta",
+            "un",
+            "suono",
+            "corto",
+            "a",
+            "ogni",
+            "foto"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Quel suono diventa un ritmo, quasi una preghiera laica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quello",
+            "suono",
+            "diventa",
+            "un",
+            "ritmo",
+            "quasi",
+            "una",
+            "preghiera",
+            "laica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Una donna anziana passa e scuote la testa, senza fermarsi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "donna",
+            "anziana",
+            "passare",
+            "e",
+            "scuote",
+            "la",
+            "testa",
+            "senza",
+            "fermarsi"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Giada non chiede perché.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "chiedere",
+            "perche"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Sa già che le domande, a Collevento, costano risposte lente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "gia",
+            "che",
+            "le",
+            "domanda",
+            "a",
+            "collevento",
+            "costano",
+            "risposte",
+            "lente"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Fotografa anche il cielo sopra il campanile, inutile e necessario.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "anche",
+            "il",
+            "cielo",
+            "sopra",
+            "il",
+            "campanile",
+            "inutile",
+            "e",
+            "necessario"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Se domani il cielo è uguale, almeno sa che qualcosa resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "domani",
+            "il",
+            "cielo",
+            "essere",
+            "uguale",
+            "almeno",
+            "sapere",
+            "che",
+            "qualcosa",
+            "restare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Se cambia tutto il resto, avrà i numeri e i nomi di oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "se",
+            "cambiare",
+            "tutto",
+            "il",
+            "restare",
+            "avra",
+            "i",
+            "numero",
+            "e",
+            "i",
+            "no",
+            "di",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Questa idea la tiene in piedi meglio del caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "idea",
+            "la",
+            "tiene",
+            "in",
+            "piedi",
+            "meglio",
+            "del",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Neri, prima di andarsene, le dice solo: non mostrarle a tutti.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "neri",
+            "prima",
+            "di",
+            "andarsene",
+            "le",
+            "dire",
+            "solo",
+            "non",
+            "mostrarle",
+            "a",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Alcune persone odiano le prove.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "alcuno",
+            "persona",
+            "odiano",
+            "le",
+            "prove"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Giada mette il telefono in tasca come un segreto utile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "mettere",
+            "il",
+            "telefono",
+            "in",
+            "tasca",
+            "come",
+            "un",
+            "segreto",
+            "utile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Torna a guardare la fontana un'ultima volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "a",
+            "guardare",
+            "la",
+            "fontana",
+            "ultimo",
+            "volta"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "L'acqua di ieri e l'acqua di oggi sembrano uguali.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "acqua",
+            "di",
+            "ieri",
+            "e",
+            "acqua",
+            "di",
+            "oggi",
+            "sembrare",
+            "uguali"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Le panchine, però, non le crede più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "panchine",
+            "pero",
+            "non",
+            "le",
+            "crede",
+            "piu"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "Fuori, la piazza sembra ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "la",
+            "piazza",
+            "sembrare",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Giada pensa: ieri finisce solo quando smetto di guardarlo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "ieri",
+            "finire",
+            "solo",
+            "quando",
+            "smetto",
+            "di",
+            "guardarlo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "E lei non ha ancora smesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "lei",
+            "non",
+            "avere",
+            "ancora",
+            "smesso"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch09_q01",
+      "chapterId": "il-villaggio-che-non-esiste-09",
+      "type": "direct",
+      "question": "Why does Giada photograph the square?",
+      "choices": [
+        "She does not trust memory",
+        "She wants to sell postcards",
+        "Elsa asks her to"
+      ],
+      "correctChoice": 0,
+      "explanation": "She says she does not trust memory.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch09_q02",
+      "chapterId": "il-villaggio-che-non-esiste-09",
+      "type": "direct",
+      "question": "What name is on the grocery sign?",
+      "choices": [
+        "ROSSI",
+        "NERI",
+        "ELSA"
+      ],
+      "correctChoice": 0,
+      "explanation": "The sign says ALIMENTARI ROSSI.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch09_q03",
+      "chapterId": "il-villaggio-che-non-esiste-09",
+      "type": "direct",
+      "question": "How many photos does she take?",
+      "choices": [
+        "Forty-two",
+        "Ten",
+        "Three"
+      ],
+      "correctChoice": 0,
+      "explanation": "In the end she has forty-two photos.",
+      "difficulty": 2
+    }
+  ]
+}

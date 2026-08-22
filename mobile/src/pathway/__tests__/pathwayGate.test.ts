@@ -85,11 +85,15 @@ beforeEach(async () => {
 });
 
 describe('A2+ pathway definitions', () => {
-  it('lists Casa as the only available pathway', () => {
+  it('lists all three A2+ pathways as available', () => {
     const available = A2_PLUS_PATHWAYS.filter((p) => p.status === 'available');
-    expect(available).toHaveLength(1);
-    expect(available[0].storyId).toBe(CASA_PATHWAY_STORY_ID);
-    expect(A2_PLUS_PATHWAYS.filter((p) => p.status === 'coming_soon')).toHaveLength(2);
+    expect(available).toHaveLength(3);
+    expect(available.map((p) => p.storyId)).toEqual([
+      CASA_PATHWAY_STORY_ID,
+      'lettera-per-elena',
+      'il-villaggio-che-non-esiste',
+    ]);
+    expect(A2_PLUS_PATHWAYS.filter((p) => p.status === 'coming_soon')).toHaveLength(0);
     expect(A2_PLUS_PATHWAYS.every((p) => p.hookEn.length > 0)).toBe(true);
   });
 });
@@ -178,9 +182,9 @@ describe('A2+ pathway selection persistence', () => {
     expect(await shouldShowPathwayGate()).toBe(false);
   });
 
-  it('coming-soon pathways have no storyId', () => {
-    for (const pathway of A2_PLUS_PATHWAYS.filter((p) => p.status === 'coming_soon')) {
-      expect(pathway.storyId).toBeNull();
+  it('available pathways each have a storyId', () => {
+    for (const pathway of A2_PLUS_PATHWAYS.filter((p) => p.status === 'available')) {
+      expect(pathway.storyId).toBeTruthy();
     }
   });
 });

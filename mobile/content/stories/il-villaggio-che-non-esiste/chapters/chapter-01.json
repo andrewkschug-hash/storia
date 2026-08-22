@@ -1,0 +1,928 @@
+{
+  "id": "il-villaggio-che-non-esiste-01",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 1,
+  "title": "The wrong train",
+  "titleIt": "Il treno sbagliato",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "treno-halt"
+  ],
+  "characterIds": [
+    "giada-rinaldi"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-01",
+      "summary": "Giada falls asleep on the train to Trento, wakes at a halt, and gets off alone. The station sign says Collevento with a line through the name.",
+      "characterIds": [
+        "giada-rinaldi"
+      ],
+      "locationIds": [
+        "treno-halt"
+      ],
+      "rememberedFacts": [
+        "Giada is going to her father in Trento for the summer",
+        "She falls asleep on the train and gets off alone",
+        "The halt has no ticket office and no timetable",
+        "The sign says Collevento with a line through it"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Giada è sul treno per Trento da quasi due ore.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "essere",
+            "sul",
+            "treno",
+            "per",
+            "trento",
+            "dare",
+            "quasi",
+            "due",
+            "ora"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Ha diciassette anni e va da suo padre per l'estate.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "diciassette",
+            "anno",
+            "e",
+            "andare",
+            "dare",
+            "suo",
+            "padre",
+            "per",
+            "estate"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "La madre resta a Bologna, con il lavoro e la casa quieta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "madre",
+            "restare",
+            "a",
+            "bologna",
+            "con",
+            "il",
+            "lavorare",
+            "e",
+            "la",
+            "casa",
+            "quieta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "I genitori non vivono insieme da tre anni, e lei lo sa bene.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "genitori",
+            "non",
+            "vivono",
+            "insieme",
+            "dare",
+            "tre",
+            "anno",
+            "e",
+            "lei",
+            "lo",
+            "sapere",
+            "bene"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Giada porta una valigia piccola ma pesante tra le gambe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "porta",
+            "una",
+            "valigia",
+            "piccolo",
+            "ma",
+            "pesante",
+            "tra",
+            "le",
+            "gambe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Dentro c'è anche la borsa vecchia di sua madre, presa senza chiedere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "ce",
+            "anche",
+            "la",
+            "borsa",
+            "vecchio",
+            "di",
+            "suo",
+            "madre",
+            "presa",
+            "senza",
+            "chiedere"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Il treno è lento, caldo e quasi vuoto in questo tratto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "treno",
+            "essere",
+            "lento",
+            "caldo",
+            "e",
+            "quasi",
+            "vuoto",
+            "in",
+            "questo",
+            "tratto"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Fuori ci sono colline verdi, pochi paesi e poca gente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "ci",
+            "essere",
+            "colline",
+            "verdi",
+            "poco",
+            "paese",
+            "e",
+            "poco",
+            "gente"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Giada prova a scrivere un messaggio al padre sul telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "provare",
+            "a",
+            "scrivere",
+            "un",
+            "messaggio",
+            "al",
+            "padre",
+            "sul",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Il telefono non ha segnale da molti minuti, e lei lo mette via.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "non",
+            "avere",
+            "segnale",
+            "dare",
+            "molti",
+            "minuti",
+            "e",
+            "lei",
+            "lo",
+            "mettere",
+            "via"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Chiude gli occhi solo per riposare un poco, non per dormire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "gli",
+            "occhi",
+            "solo",
+            "per",
+            "riposare",
+            "un",
+            "poco",
+            "non",
+            "per",
+            "dormire"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Il rumore regolare del treno diventa sonno senza che lei se ne accorga.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "rumore",
+            "regolare",
+            "del",
+            "treno",
+            "diventa",
+            "sonno",
+            "senza",
+            "che",
+            "lei",
+            "se",
+            "ne",
+            "accorga"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Quando si sveglia, il treno sta già frenando con un suono lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "si",
+            "svegliare",
+            "il",
+            "treno",
+            "stare",
+            "gia",
+            "frenando",
+            "con",
+            "un",
+            "suono",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Una voce registrata dice il nome di una stazione, poco chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "voce",
+            "registrata",
+            "dire",
+            "il",
+            "nome",
+            "di",
+            "una",
+            "stazione",
+            "poco",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Giada non capisce bene la parola, ma si alza in fretta lo stesso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "capire",
+            "bene",
+            "la",
+            "parola",
+            "ma",
+            "si",
+            "alzare",
+            "in",
+            "fretta",
+            "lo",
+            "stesso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Prende la valigia, la borsa della madre e scende dal treno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "la",
+            "valigia",
+            "la",
+            "borsa",
+            "della",
+            "madre",
+            "e",
+            "scende",
+            "dal",
+            "treno"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Sul marciapiede non c'è nessun altro passeggero, solo aria ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "marciapiede",
+            "non",
+            "ce",
+            "nessun",
+            "altro",
+            "passeggero",
+            "solo",
+            "aria",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Le porte si chiudono e il treno riparte subito, senza aspettare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "le",
+            "porte",
+            "si",
+            "chiudono",
+            "e",
+            "il",
+            "treno",
+            "riparte",
+            "subito",
+            "senza",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Giada resta sola sotto un tetto basso di cemento grigio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "solo",
+            "sotto",
+            "un",
+            "tetto",
+            "basso",
+            "di",
+            "cemento",
+            "grigio"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "La fermata è piccola: una panchina, un cestino, niente biglietteria.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "fermare",
+            "essere",
+            "piccolo",
+            "una",
+            "panchina",
+            "un",
+            "cestino",
+            "niente",
+            "biglietteria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Non c'è orario sul muro e non c'è una voce che spiega.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ce",
+            "orario",
+            "sul",
+            "muro",
+            "e",
+            "non",
+            "ce",
+            "una",
+            "voce",
+            "che",
+            "spiegare"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Cerca un cartello con il nome del posto, vicino ai binari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cercare",
+            "un",
+            "cartello",
+            "con",
+            "il",
+            "nome",
+            "del",
+            "posto",
+            "vicino",
+            "ai",
+            "binario"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Lo trova un po' storto, con vernice scura e vecchia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "trovare",
+            "un",
+            "poco",
+            "storto",
+            "con",
+            "vernice",
+            "scura",
+            "e",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Sul cartello c'è scritto Collevento a lettere ancora leggibili.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sul",
+            "cartello",
+            "ce",
+            "scrivere",
+            "collevento",
+            "a",
+            "lettere",
+            "ancora",
+            "leggibili"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Una linea nera passa sopra il nome, da sinistra a destra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "linea",
+            "nera",
+            "passare",
+            "sopra",
+            "il",
+            "nome",
+            "dare",
+            "sinistra",
+            "a",
+            "destra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Come se qualcuno avesse cancellato il paese dal mondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "come",
+            "se",
+            "qualcuno",
+            "avesse",
+            "cancellato",
+            "il",
+            "paese",
+            "dal",
+            "mondo"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Giada legge il cartello tre volte, piano, a voce bassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "leggere",
+            "il",
+            "cartello",
+            "tre",
+            "volta",
+            "piano",
+            "a",
+            "voce",
+            "basso"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Collevento non è Trento, e non è sulla sua lista di fermate.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "collevento",
+            "non",
+            "essere",
+            "trento",
+            "e",
+            "non",
+            "essere",
+            "sulla",
+            "suo",
+            "lista",
+            "di",
+            "fermata"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Guarda a destra e a sinistra lungo i binari vuoti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "a",
+            "destra",
+            "e",
+            "a",
+            "sinistra",
+            "lungo",
+            "i",
+            "binario",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Non vede persone, solo erba alta, silenzio e una strada stretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "vedere",
+            "persona",
+            "solo",
+            "erba",
+            "alto",
+            "silenzio",
+            "e",
+            "una",
+            "strada",
+            "stretta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "La strada sale verso le case; in fondo c'è un filo di fumo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "strada",
+            "sapere",
+            "verso",
+            "le",
+            "casa",
+            "in",
+            "fondo",
+            "ce",
+            "un",
+            "filo",
+            "di",
+            "fumo"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Forse c'è un paese vero, non solo una fermata morta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "forse",
+            "ce",
+            "un",
+            "paese",
+            "vero",
+            "non",
+            "solo",
+            "una",
+            "fermare",
+            "morta"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Il telefono mostra ancora zero segnale, senza scuse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "telefono",
+            "mostra",
+            "ancora",
+            "zero",
+            "segnale",
+            "senza",
+            "scuse"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Giada tocca la linea nera con un dito e sente la vernice secca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "tocca",
+            "la",
+            "linea",
+            "nera",
+            "con",
+            "un",
+            "dito",
+            "e",
+            "sentire",
+            "la",
+            "vernice",
+            "secca"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Non è uno scherzo fatto ieri sera da un ragazzo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "uno",
+            "scherzo",
+            "fare",
+            "ieri",
+            "sera",
+            "dare",
+            "un",
+            "ragazzo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Prende di nuovo la valigia e la borsa e cammina verso la salita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prendere",
+            "di",
+            "nuovo",
+            "la",
+            "valigia",
+            "e",
+            "la",
+            "borsa",
+            "e",
+            "camminare",
+            "verso",
+            "la",
+            "salita"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Dietro di lei il treno è già lontano tra le curve delle colline.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dietro",
+            "di",
+            "lei",
+            "il",
+            "treno",
+            "essere",
+            "gia",
+            "lontano",
+            "tra",
+            "le",
+            "curve",
+            "delle",
+            "colline"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Davanti c'è solo il nome cancellato e una salita silenziosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "davanti",
+            "ce",
+            "solo",
+            "il",
+            "nome",
+            "cancellato",
+            "e",
+            "una",
+            "salita",
+            "silenziosa"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Giada respira a fondo e inizia a salire, passo dopo passo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "respira",
+            "a",
+            "fondo",
+            "e",
+            "iniziare",
+            "a",
+            "salire",
+            "passare",
+            "dopo",
+            "passare"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Non sa ancora dove sta andando davvero, in questo pomeriggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sapere",
+            "ancora",
+            "dove",
+            "stare",
+            "andare",
+            "davvero",
+            "in",
+            "questo",
+            "pomeriggio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Sa solo che questa non è la stazione di Trento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "solo",
+            "che",
+            "questo",
+            "non",
+            "essere",
+            "la",
+            "stazione",
+            "di",
+            "trento"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "E che qualcuno, un giorno, ha voluto cancellare Collevento dal cartello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "che",
+            "qualcuno",
+            "un",
+            "giorno",
+            "avere",
+            "volere",
+            "cancellare",
+            "collevento",
+            "dal",
+            "cartello"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch01_q01",
+      "chapterId": "il-villaggio-che-non-esiste-01",
+      "type": "direct",
+      "question": "Where is Giada supposed to go?",
+      "choices": [
+        "To her father in Trento",
+        "To school in Bologna",
+        "To Rome for work"
+      ],
+      "correctChoice": 0,
+      "explanation": "She is going to her father's in Trento for the summer.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch01_q02",
+      "chapterId": "il-villaggio-che-non-esiste-01",
+      "type": "direct",
+      "question": "What does Giada notice on the station sign?",
+      "choices": [
+        "Collevento with a line through it",
+        "Trento written in red",
+        "A bus timetable"
+      ],
+      "correctChoice": 0,
+      "explanation": "The sign says Collevento, and a black line runs through the name.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch01_q03",
+      "chapterId": "il-villaggio-che-non-esiste-01",
+      "type": "inference",
+      "question": "Why is Giada alone at the halt?",
+      "choices": [
+        "Nobody else got off and the train left",
+        "Her father is waiting behind the roof",
+        "She missed a connecting bus"
+      ],
+      "correctChoice": 0,
+      "explanation": "The platform is empty and the train leaves at once.",
+      "difficulty": 2
+    }
+  ]
+}

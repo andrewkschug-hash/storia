@@ -1,0 +1,16 @@
+{
+  "arcs": [
+    {
+      "id": "il-villaggio-che-non-esiste-a2-plus",
+      "storyId": "il-villaggio-che-non-esiste",
+      "cefrLevel": "A2+",
+      "title": "The village that does not exist",
+      "titleIt": "Il villaggio che non esiste",
+      "description": "An A2+ folkloric mystery about maps, water, and mistaken identity — without magic.",
+      "narrativeStage": "Giada learns why Collevento does not exist on the map.",
+      "chapterStart": 1,
+      "chapterEnd": 24,
+      "status": "available"
+    }
+  ]
+}

@@ -29,7 +29,7 @@
       "id": "a2-plus-genre-paths",
       "title": "A2+ genre paths",
       "titleIt": "Percorsi A2+",
-      "description": "Independent A2+ stories after Luca a Roma. Not Luca chapters 41+. Start with La casa delle finestre.",
+      "description": "Independent A2+ stories after Luca a Roma. Not Luca chapters 41+. Thriller, romance, and grounded fantasy pathways.",
       "narrativeOrder": 10,
       "status": "available"
     }
@@ -138,6 +138,36 @@
       "chapterCountTarget": 24,
       "protagonistId": "irene-colombo",
       "contentPath": "stories/la-casa-delle-finestre",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "lettera-per-elena",
+      "title": "A letter for Elena",
+      "titleIt": "Una lettera per Elena",
+      "description": "At Caffè Brenta, people tell the truth in a book. Elena writes back. The Tuesday driver is already in her week.",
+      "cefrLevel": "A2+",
+      "narrativeArc": "a2-plus-genre-paths",
+      "narrativeOrder": 11,
+      "status": "available",
+      "chapterCount": 22,
+      "chapterCountTarget": 22,
+      "protagonistId": "elena-marini",
+      "contentPath": "stories/lettera-per-elena",
+      "entitySource": "shared+story-local"
+    },
+    {
+      "id": "il-villaggio-che-non-esiste",
+      "title": "The village that does not exist",
+      "titleIt": "Il villaggio che non esiste",
+      "description": "Giada gets off at Collevento — crossed out of the timetable. After sunset the road is water. No magic; only rules.",
+      "cefrLevel": "A2+",
+      "narrativeArc": "a2-plus-genre-paths",
+      "narrativeOrder": 12,
+      "status": "available",
+      "chapterCount": 24,
+      "chapterCountTarget": 24,
+      "protagonistId": "giada-rinaldi",
+      "contentPath": "stories/il-villaggio-che-non-esiste",
       "entitySource": "shared+story-local"
     },
     {

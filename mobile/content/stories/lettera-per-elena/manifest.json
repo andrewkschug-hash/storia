@@ -1,0 +1,220 @@
+{
+  "id": "lettera-per-elena",
+  "title": "A letter for Elena",
+  "titleIt": "Una lettera per Elena",
+  "slug": "lettera-per-elena",
+  "level": 2,
+  "cefrLevel": "A2+",
+  "synopsis": "Al Caffè Brenta un libro non si vende. Elena scrive a uno sconosciuto. Il martedì conosce già Pietro.",
+  "characterIds": [
+    "elena-marini",
+    "pietro-baldo",
+    "bruna",
+    "katia",
+    "mirella-marini",
+    "sergio-baldo"
+  ],
+  "locationIds": [
+    "marina-di-brenta",
+    "caffe-brenta",
+    "bancone-brenta",
+    "scaffale-libro",
+    "cucina-mirella",
+    "van-pietro",
+    "ospedale-esterno",
+    "magazzino-caffe",
+    "laguna-brenta"
+  ],
+  "chapters": [
+    {
+      "id": "lettera-per-elena-01",
+      "number": 1,
+      "title": "The sugar",
+      "titleIt": "Lo zucchero",
+      "difficultyLevel": 2,
+      "file": "chapter-01.json"
+    },
+    {
+      "id": "lettera-per-elena-02",
+      "number": 2,
+      "title": "Bruna",
+      "titleIt": "Bruna",
+      "difficultyLevel": 2,
+      "file": "chapter-02.json"
+    },
+    {
+      "id": "lettera-per-elena-03",
+      "number": 3,
+      "title": "Tuesday",
+      "titleIt": "Martedì",
+      "difficultyLevel": 2,
+      "file": "chapter-03.json"
+    },
+    {
+      "id": "lettera-per-elena-04",
+      "number": 4,
+      "title": "The second line",
+      "titleIt": "La seconda riga",
+      "difficultyLevel": 2,
+      "file": "chapter-04.json"
+    },
+    {
+      "id": "lettera-per-elena-05",
+      "number": 5,
+      "title": "Katia",
+      "titleIt": "Katia",
+      "difficultyLevel": 2,
+      "file": "chapter-05.json"
+    },
+    {
+      "id": "lettera-per-elena-06",
+      "number": 6,
+      "title": "Mirella",
+      "titleIt": "Mirella",
+      "difficultyLevel": 2,
+      "file": "chapter-06.json"
+    },
+    {
+      "id": "lettera-per-elena-07",
+      "number": 7,
+      "title": "Pietro again",
+      "titleIt": "Pietro di nuovo",
+      "difficultyLevel": 2,
+      "file": "chapter-07.json"
+    },
+    {
+      "id": "lettera-per-elena-08",
+      "number": 8,
+      "title": "Sergio",
+      "titleIt": "Sergio",
+      "difficultyLevel": 2,
+      "file": "chapter-08.json"
+    },
+    {
+      "id": "lettera-per-elena-09",
+      "number": 9,
+      "title": "Yesterday I wrote too much",
+      "titleIt": "Ieri ho scritto troppo",
+      "difficultyLevel": 2,
+      "file": "chapter-09.json"
+    },
+    {
+      "id": "lettera-per-elena-10",
+      "number": 10,
+      "title": "Bruna tells",
+      "titleIt": "Bruna racconta",
+      "difficultyLevel": 2,
+      "file": "chapter-10.json"
+    },
+    {
+      "id": "lettera-per-elena-11",
+      "number": 11,
+      "title": "A sentence in voice",
+      "titleIt": "Una frase in voce",
+      "difficultyLevel": 2,
+      "file": "chapter-11.json"
+    },
+    {
+      "id": "lettera-per-elena-12",
+      "number": 12,
+      "title": "She does not say",
+      "titleIt": "Lei non dice",
+      "difficultyLevel": 2,
+      "file": "chapter-12.json"
+    },
+    {
+      "id": "lettera-per-elena-13",
+      "number": 13,
+      "title": "The almost",
+      "titleIt": "Il vano",
+      "difficultyLevel": 2,
+      "file": "chapter-13.json"
+    },
+    {
+      "id": "lettera-per-elena-14",
+      "number": 14,
+      "title": "The outing",
+      "titleIt": "Uscita",
+      "difficultyLevel": 2,
+      "file": "chapter-14.json"
+    },
+    {
+      "id": "lettera-per-elena-15",
+      "number": 15,
+      "title": "Hospital",
+      "titleIt": "Ospedale",
+      "difficultyLevel": 2,
+      "file": "chapter-15.json"
+    },
+    {
+      "id": "lettera-per-elena-16",
+      "number": 16,
+      "title": "The argument",
+      "titleIt": "Litigio",
+      "difficultyLevel": 2,
+      "file": "chapter-16.json"
+    },
+    {
+      "id": "lettera-per-elena-17",
+      "number": 17,
+      "title": "The closed book",
+      "titleIt": "Il libro chiuso",
+      "difficultyLevel": 2,
+      "file": "chapter-17.json"
+    },
+    {
+      "id": "lettera-per-elena-18",
+      "number": 18,
+      "title": "A letter",
+      "titleIt": "Una lettera",
+      "difficultyLevel": 2,
+      "file": "chapter-18.json"
+    },
+    {
+      "id": "lettera-per-elena-19",
+      "number": 19,
+      "title": "At the counter",
+      "titleIt": "Al bancone",
+      "difficultyLevel": 2,
+      "file": "chapter-19.json"
+    },
+    {
+      "id": "lettera-per-elena-20",
+      "number": 20,
+      "title": "In the back",
+      "titleIt": "Dietro",
+      "difficultyLevel": 2,
+      "file": "chapter-20.json"
+    },
+    {
+      "id": "lettera-per-elena-21",
+      "number": 21,
+      "title": "The book remains",
+      "titleIt": "Il libro resta",
+      "difficultyLevel": 2,
+      "file": "chapter-21.json"
+    },
+    {
+      "id": "lettera-per-elena-22",
+      "number": 22,
+      "title": "Open",
+      "titleIt": "Aperto",
+      "difficultyLevel": 2,
+      "file": "chapter-22.json"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "lettera-per-elena-a2-plus",
+      "storyId": "lettera-per-elena",
+      "cefrLevel": "A2+",
+      "title": "A letter for Elena",
+      "titleIt": "Una lettera per Elena",
+      "description": "An A2+ romance about handwriting, Tuesday deliveries, and saying a true sentence aloud.",
+      "narrativeStage": "Elena writes in the book and learns the face on the other side.",
+      "chapterStart": 1,
+      "chapterEnd": 22,
+      "status": "available"
+    }
+  ]
+}

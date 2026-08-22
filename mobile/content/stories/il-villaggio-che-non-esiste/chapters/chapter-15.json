@@ -1,0 +1,1701 @@
+{
+  "id": "il-villaggio-che-non-esiste-15",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 15,
+  "title": "The engineer",
+  "titleIt": "L'ingegnere",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "piazza-collevento",
+    "strada-diga",
+    "edificio-idroelettrico",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "ingegnere",
+    "elsa",
+    "tullio",
+    "neri"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-15",
+      "summary": "A company engineer visits in daylight, smiles, and offers compensation. At sunset he leaves in a high car; the water rules are for residents, not for him.",
+      "characterIds": [
+        "giada-rinaldi",
+        "ingegnere",
+        "elsa",
+        "tullio",
+        "neri"
+      ],
+      "locationIds": [
+        "piazza-collevento",
+        "strada-diga",
+        "edificio-idroelettrico",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "An engineer visits Collevento in daylight",
+        "He smiles and talks about compensation",
+        "At sunset he leaves in a high car",
+        "The evening water rule does not stop him"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo, verso le undici, arriva un'auto alta e pulita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "verso",
+            "le",
+            "undici",
+            "arrivare",
+            "un'auto",
+            "alto",
+            "e",
+            "pulita"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Si ferma in piazza come se la piazza fosse un parcheggio normale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "fermare",
+            "in",
+            "piazza",
+            "come",
+            "se",
+            "la",
+            "piazza",
+            "fosse",
+            "un",
+            "parcheggio",
+            "normale"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Scende un uomo in camicia chiara, senza cravatta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scende",
+            "un",
+            "uomo",
+            "in",
+            "camicia",
+            "chiaro",
+            "senza",
+            "cravatta"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Sorride prima di parlare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sorridere",
+            "prima",
+            "di",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Buongiorno.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Sono dell'ufficio lavori della diga.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "ufficio",
+            "lavorare",
+            "della",
+            "diga"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Elsa esce subito, con le mani ancora bagnate.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "uscire",
+            "subito",
+            "con",
+            "le",
+            "mani",
+            "ancora",
+            "bagnate"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Tullio resta sulla sedia e non alza il giornale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "restare",
+            "sulla",
+            "sedia",
+            "e",
+            "non",
+            "alzare",
+            "il",
+            "giornale"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Neri appare dall'angolo e non saluta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "appare",
+            "dall'angolo",
+            "e",
+            "non",
+            "saluta"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Giada resta sulla soglia della locanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "sulla",
+            "soglia",
+            "della",
+            "locanda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "L'ingegnere guarda i volti come conta pezzi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "guardare",
+            "i",
+            "volti",
+            "come",
+            "contare",
+            "pezzi"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Che piacere rivedere Collevento così in ordine.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "piacere",
+            "rivedere",
+            "collevento",
+            "cosi",
+            "in",
+            "ordine"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Elsa non ringrazia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "ringrazia"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "L'ingegnere continua a sorridere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "continuare",
+            "a",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Siamo in una fase nuova di valutazione.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "in",
+            "una",
+            "fase",
+            "nuovo",
+            "di",
+            "valutazione"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Ci sono fondi di accompagnamento.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "ci",
+            "essere",
+            "fondi",
+            "di",
+            "accompagnamento"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Compensi per chi sceglie di trasferirsi in modo sereno.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "compensi",
+            "per",
+            "chi",
+            "scegliere",
+            "di",
+            "trasferirsi",
+            "in",
+            "modo",
+            "sereno"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "La parola «sereno» suona falsa nella piazza quieta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "parola",
+            "sereno",
+            "suona",
+            "falsa",
+            "nella",
+            "piazza",
+            "quieta"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Tullio parla senza alzarsi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "parlare",
+            "senza",
+            "alzarsi"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "L'ispezione di autunno?",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "l'ispezione",
+            "di",
+            "autunno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "L'ingegnere fa un gesto vago.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "fare",
+            "un",
+            "gesto",
+            "vago"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Chiamiamola visita tecnica.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiamare",
+            "visita",
+            "tecnica"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Niente drammi.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "niente",
+            "drammi"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Solo numeri e soluzioni.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "solo",
+            "numero",
+            "e",
+            "soluzioni"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Guarda Giada un secondo di troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "giada",
+            "un",
+            "secondo",
+            "di",
+            "troppo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Lei non distoglie lo sguardo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "non",
+            "distoglie",
+            "lo",
+            "sguardo"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Lei è nuova?",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "È di passaggio.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "di",
+            "passaggio"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Ospite.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "ospite"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "L'ingegnere annuisce, soddisfatto della categoria.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "annuisce",
+            "soddisfatto",
+            "della",
+            "categoria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Meglio.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "meglio"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "I passaggi complicano meno dei residenti.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "i",
+            "passaggi",
+            "complicano",
+            "meno",
+            "dei",
+            "residenti"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Lascia una cartellina sottile sul tavolino fuori dalla locanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lasciare",
+            "una",
+            "cartellina",
+            "sottile",
+            "sul",
+            "tavolino",
+            "fuori",
+            "dalla",
+            "locanda"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Dentro ci sono fogli con tabelle e una lettera stampata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "ci",
+            "essere",
+            "fogli",
+            "con",
+            "tabelle",
+            "e",
+            "una",
+            "lettera",
+            "stampata"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Leggetela con calma.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "leggetela",
+            "con",
+            "calma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Non c'è fretta oggi.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ce",
+            "fretta",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "C'è fretta nei progetti, però.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "fretta",
+            "nei",
+            "progetti",
+            "pero"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "L'ingegnere sorride a Neri come a un ragazzo intelligente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "sorridere",
+            "a",
+            "neri",
+            "come",
+            "a",
+            "un",
+            "ragazzo",
+            "intelligente"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "I progetti hanno calendari.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "i",
+            "progetti",
+            "avere",
+            "calendari"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "I paesi hanno persone.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "i",
+            "paese",
+            "avere",
+            "persona"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Noi cerchiamo di farli incontrare.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "noi",
+            "cercare",
+            "di",
+            "fare",
+            "incontrare"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Giada pensa: incontrare significa spesso schiacciare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "incontrare",
+            "significa",
+            "spesso",
+            "schiacciare"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "L'ingegnere gira un'ora tra le case, parla poco, fotografa muri e tetti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "gira",
+            "ora",
+            "tra",
+            "le",
+            "casa",
+            "parlare",
+            "poco",
+            "fotografa",
+            "muri",
+            "e",
+            "tetti"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Non fotografa i volti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "fotografa",
+            "i",
+            "volti"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Fotografa le prove che il paese è abitato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fotografa",
+            "le",
+            "prove",
+            "che",
+            "il",
+            "paese",
+            "essere",
+            "abitato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Verso sera torna in piazza e stringe la mano a Elsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "verso",
+            "sera",
+            "tornare",
+            "in",
+            "piazza",
+            "e",
+            "stringe",
+            "la",
+            "mano",
+            "a",
+            "elsa"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Grazie per l'ordine.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "per",
+            "ordine"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Aiuta tutti.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "aiutare",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Elsa ritira la mano subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "ritira",
+            "la",
+            "mano",
+            "subito"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Il sole scende dietro il colle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sole",
+            "scende",
+            "dietro",
+            "il",
+            "colle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Giada guarda l'orologio del telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "orologio",
+            "del",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Manca poco all'ora dell'acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mancare",
+            "poco",
+            "ora",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "L'ingegnere apre lo sportello dell'auto alta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "aprire",
+            "lo",
+            "sportello",
+            "dell'auto",
+            "alto"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Voi restate?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "voi",
+            "restate"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Lui la guarda sorpreso che lei parli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lui",
+            "la",
+            "guardare",
+            "sorpreso",
+            "che",
+            "lei",
+            "parlare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Io no.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "no"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Ho una riunione a valle.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "una",
+            "riunione",
+            "a",
+            "valle"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Sale, chiude, parte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "chiudere",
+            "partire"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "L'auto alta prende la strada della diga senza esitare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'auto",
+            "alto",
+            "prendere",
+            "la",
+            "strada",
+            "della",
+            "diga",
+            "senza",
+            "esitare"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Dieci minuti dopo, dalla stessa strada, arriva il rumore dell'acqua che sale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dieci",
+            "minuti",
+            "dopo",
+            "dalla",
+            "stesso",
+            "strada",
+            "arrivare",
+            "il",
+            "rumore",
+            "acqua",
+            "che",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "La carreggiata si bagna, poi si copre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "carreggiata",
+            "si",
+            "bagna",
+            "poi",
+            "si",
+            "copre"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Tullio versa il caffè come ogni sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "versa",
+            "il",
+            "caffe",
+            "come",
+            "ogni",
+            "sera"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Vedi?",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "vedere"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Le regole sono per chi abita.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "le",
+            "regole",
+            "essere",
+            "per",
+            "chi",
+            "abitare"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non per chi ha l'auto giusta e il badge giusto.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "per",
+            "chi",
+            "avere",
+            "l'auto",
+            "giusto",
+            "e",
+            "il",
+            "badge",
+            "giusto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Neri sputa a terra, lontano dai piedi di Elsa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "sputa",
+            "a",
+            "terra",
+            "lontano",
+            "dare",
+            "piedi",
+            "di",
+            "elsa"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Sorride e paga.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "sorridere",
+            "e",
+            "pagare"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Poi se ne va sopra l'acqua.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "se",
+            "ne",
+            "andare",
+            "sopra",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Giada guarda la cartellina sul tavolino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "la",
+            "cartellina",
+            "sul",
+            "tavolino"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Nessuno la apre subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "la",
+            "aprire",
+            "subito"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Aprirebbe una porta che loro tengono chiusa da anni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "aprirebbe",
+            "una",
+            "porta",
+            "che",
+            "loro",
+            "tengono",
+            "chiudere",
+            "dare",
+            "anno"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Elsa la porta dentro comunque e la mette vicino al registro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "la",
+            "porta",
+            "dentro",
+            "comunque",
+            "e",
+            "la",
+            "mettere",
+            "vicino",
+            "al",
+            "registro"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Non sopra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sopra"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Vicino, come un oggetto pericoloso e utile.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "vicino",
+            "come",
+            "un",
+            "oggetto",
+            "pericoloso",
+            "e",
+            "utile"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Giada resta a guardare la strada diventata lago basso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "a",
+            "guardare",
+            "la",
+            "strada",
+            "diventata",
+            "lago",
+            "basso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "L'ingegnere ha portato un sorriso e una via d'uscita a pagamento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "avere",
+            "portare",
+            "un",
+            "sorridere",
+            "e",
+            "una",
+            "via",
+            "uscire",
+            "a",
+            "pagamento"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Mentre l'ingegnere gira, Elsa sistema di nuovo un vaso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mentre",
+            "l'ingegnere",
+            "gira",
+            "elsa",
+            "sistema",
+            "di",
+            "nuovo",
+            "un",
+            "vaso"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Il gesto è automatico, da ispezione immaginaria.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "gesto",
+            "essere",
+            "automatico",
+            "dare",
+            "ispezione",
+            "immaginaria"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Giada lo nota e lo odia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "nota",
+            "e",
+            "lo",
+            "odia"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Odia anche il sorriso dell'uomo, troppo liscio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "odia",
+            "anche",
+            "il",
+            "sorridere",
+            "dell'uomo",
+            "troppo",
+            "liscio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Un sorriso da riunione, non da strada bagnata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "sorridere",
+            "dare",
+            "riunione",
+            "non",
+            "dare",
+            "strada",
+            "bagnata"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Nella cartellina ci sono cifre alte e parole basse: opportunità, accompagnamento, chiusura ordinata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "cartellina",
+            "ci",
+            "essere",
+            "cifre",
+            "alto",
+            "e",
+            "parola",
+            "basso",
+            "opportunita",
+            "accompagnamento",
+            "chiusura",
+            "ordinata"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Giada legge solo le prime righe e chiude.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "leggere",
+            "solo",
+            "le",
+            "prime",
+            "righe",
+            "e",
+            "chiudere"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Non vuole che i numeri le entrino in testa troppo presto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "volere",
+            "che",
+            "i",
+            "numero",
+            "le",
+            "entrino",
+            "in",
+            "testa",
+            "troppo",
+            "presto"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "L'ingegnere chiede a Tullio dell'inverno passato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "chiedere",
+            "a",
+            "tullio",
+            "inverno",
+            "passare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Tullio risponde con tre parole e uno sguardo lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tullio",
+            "rispondere",
+            "con",
+            "tre",
+            "parola",
+            "e",
+            "uno",
+            "sguardo",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Freddo.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "freddo"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Come sempre.",
+          "speakerId": "tullio",
+          "kind": "dialogue",
+          "lemmas": [
+            "come",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "L'uomo annuisce come se avesse ricevuto un rapporto completo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'uomo",
+            "annuisce",
+            "come",
+            "se",
+            "avesse",
+            "ricevuto",
+            "un",
+            "rapporto",
+            "completo"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Prima di salire in auto controlla l'orologio al polso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "salire",
+            "in",
+            "auto",
+            "controlla",
+            "orologio",
+            "al",
+            "polso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "Conosce l'ora dell'acqua meglio di molti abitanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "conoscere",
+            "ora",
+            "acqua",
+            "meglio",
+            "di",
+            "molti",
+            "abitanti"
+          ]
+        },
+        {
+          "id": "s92",
+          "text": "Per questo parte in tempo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "questo",
+            "partire",
+            "in",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s93",
+          "text": "Non perché rispetti la regola: perché la regola non lo riguarda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "perche",
+            "rispetti",
+            "la",
+            "regola",
+            "perche",
+            "la",
+            "regola",
+            "non",
+            "lo",
+            "riguarda"
+          ]
+        },
+        {
+          "id": "s94",
+          "text": "La riguarda solo se resta a piedi come gli altri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "riguarda",
+            "solo",
+            "se",
+            "restare",
+            "a",
+            "piedi",
+            "come",
+            "gli",
+            "altro"
+          ]
+        },
+        {
+          "id": "s95",
+          "text": "E lui non resta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "lui",
+            "non",
+            "restare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "order": 20,
+      "sentences": [
+        {
+          "id": "s96",
+          "text": "Quando l'acqua arriva, Giada prova a immaginare l'auto alta già lontana, asciutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "acqua",
+            "arrivare",
+            "giada",
+            "provare",
+            "a",
+            "immaginare",
+            "l'auto",
+            "alto",
+            "gia",
+            "lontano",
+            "asciutta"
+          ]
+        },
+        {
+          "id": "s97",
+          "text": "L'immagine la irrita più del rumore della corrente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'immagine",
+            "la",
+            "irrita",
+            "piu",
+            "del",
+            "rumore",
+            "della",
+            "corrente"
+          ]
+        },
+        {
+          "id": "s98",
+          "text": "Neri dice che un giorno anche lui avrà un'auto così.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "dire",
+            "che",
+            "un",
+            "giorno",
+            "anche",
+            "lui",
+            "avra",
+            "un'auto",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s99",
+          "text": "Poi aggiunge: o una biglietteria vera.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "aggiunge",
+            "o",
+            "una",
+            "biglietteria",
+            "vero"
+          ]
+        },
+        {
+          "id": "s100",
+          "text": "Elsa non commenta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "commenta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p21",
+      "order": 21,
+      "sentences": [
+        {
+          "id": "s101",
+          "text": "Guarda solo la strada che non si può più attraversare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "solo",
+            "la",
+            "strada",
+            "che",
+            "non",
+            "si",
+            "potere",
+            "piu",
+            "attraversare"
+          ]
+        },
+        {
+          "id": "s102",
+          "text": "Ha anche portato la prova più chiara della giornata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "anche",
+            "portare",
+            "la",
+            "provare",
+            "piu",
+            "chiaro",
+            "della",
+            "giornata"
+          ]
+        },
+        {
+          "id": "s103",
+          "text": "Collevento ha regole.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "collevento",
+            "avere",
+            "regole"
+          ]
+        },
+        {
+          "id": "s104",
+          "text": "La compagnia ha eccezioni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "compagnia",
+            "avere",
+            "eccezioni"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch15_q01",
+      "chapterId": "il-villaggio-che-non-esiste-15",
+      "type": "direct",
+      "question": "What does the engineer offer?",
+      "choices": [
+        "Compensation to move",
+        "Free train tickets",
+        "A festival"
+      ],
+      "correctChoice": 0,
+      "explanation": "He talks about compensation for those who move.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q02",
+      "chapterId": "il-villaggio-che-non-esiste-15",
+      "type": "direct",
+      "question": "How does he leave at sunset?",
+      "choices": [
+        "In a high car",
+        "On foot through water",
+        "He stays the night"
+      ],
+      "correctChoice": 0,
+      "explanation": "He leaves in the high car as water time arrives.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch15_q03",
+      "chapterId": "il-villaggio-che-non-esiste-15",
+      "type": "direct",
+      "question": "Who are the evening water rules for?",
+      "choices": [
+        "Residents",
+        "Everyone including the engineer",
+        "Only tourists"
+      ],
+      "correctChoice": 0,
+      "explanation": "Tullio says the rules are for those who live here.",
+      "difficulty": 2
+    }
+  ]
+}

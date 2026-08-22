@@ -1,0 +1,1271 @@
+{
+  "id": "lettera-per-elena-12",
+  "storyId": "lettera-per-elena",
+  "number": 12,
+  "title": "She does not say",
+  "titleIt": "Lei non dice",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "caffe-brenta",
+    "bancone-brenta",
+    "scaffale-libro"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "katia",
+    "bruna"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-12",
+      "summary": "Katia saw the freeze and asks if it is him. Elena lies and says she does not know.",
+      "characterIds": [
+        "elena-marini",
+        "katia",
+        "bruna"
+      ],
+      "locationIds": [
+        "caffe-brenta",
+        "bancone-brenta",
+        "scaffale-libro"
+      ],
+      "rememberedFacts": [
+        "Katia saw Elena freeze at Pietro's joke",
+        "Katia asks \"È lui, vero?\"",
+        "Elena lies: \"Non lo so\"",
+        "Elena chooses secrecy over speech"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Mercoledì Katia arriva presto, prima ancora che Bruna apra la cassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "mercoledi",
+            "katia",
+            "arrivare",
+            "presto",
+            "prima",
+            "ancora",
+            "che",
+            "bruna",
+            "apra",
+            "la",
+            "cassa"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Chiude la porta e guarda Elena senza sorridere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "la",
+            "porta",
+            "e",
+            "guardare",
+            "elena",
+            "senza",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Ieri ti sei fermata.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "ieri",
+            "ti",
+            "essere",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Elena sistema lo zucchero come se lo zucchero potesse salvarla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sistema",
+            "lo",
+            "zucchero",
+            "come",
+            "se",
+            "lo",
+            "zucchero",
+            "potesse",
+            "salvarla"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Il frigo faceva rumore.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "frigo",
+            "fare",
+            "rumore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Katia scuote la testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "scuote",
+            "la",
+            "testa"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Non era il frigo.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "il",
+            "frigo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Era la frase.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "la",
+            "frase"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Elena non risponde subito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "non",
+            "rispondere",
+            "subito"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Conta i secondi, come al bancone quando aspetta che il caffè scenda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "contare",
+            "i",
+            "secondi",
+            "come",
+            "al",
+            "banco",
+            "quando",
+            "aspettare",
+            "che",
+            "il",
+            "caffe",
+            "scenda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "È lui, vero?",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "lui",
+            "vero"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "La domanda è chiara, e Katia parla di Pietro senza dire il nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "domanda",
+            "essere",
+            "chiaro",
+            "e",
+            "katia",
+            "parlare",
+            "di",
+            "pietro",
+            "senza",
+            "dire",
+            "il",
+            "nome"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Elena guarda il libro sullo scaffale, chiuso e innocente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "guardare",
+            "il",
+            "libro",
+            "sul",
+            "scaffale",
+            "chiudere",
+            "e",
+            "innocente"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Non lo so.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "È una bugia, e le resta in bocca come un chicco di caffè amaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "bugia",
+            "e",
+            "le",
+            "restare",
+            "in",
+            "bocca",
+            "come",
+            "un",
+            "chicco",
+            "di",
+            "caffe",
+            "amaro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Katia lo sente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "lo",
+            "sentire"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Va bene.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Non dice altro in quel momento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dire",
+            "altro",
+            "in",
+            "quello",
+            "momento"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Rispetta la bugia, ma non ci crede.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "rispetta",
+            "la",
+            "bugia",
+            "ma",
+            "non",
+            "ci",
+            "crede"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Bruna entra con le chiavi e un sacco di farina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "entrare",
+            "con",
+            "le",
+            "chiave",
+            "e",
+            "un",
+            "sacco",
+            "di",
+            "farina"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Oggi abbiamo molti ordini.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "avere",
+            "molti",
+            "ordini"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Il bancone diventa pieno e rumoroso: cappuccini, macchiati, cornetti, nomi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "banco",
+            "diventa",
+            "pieno",
+            "e",
+            "rumoroso",
+            "cappuccini",
+            "macchiati",
+            "cornetti",
+            "no"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Elena lavora in automatico, con il sorriso giusto e le mani veloci.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "lavorare",
+            "in",
+            "automatico",
+            "con",
+            "il",
+            "sorridere",
+            "giusto",
+            "e",
+            "le",
+            "mani",
+            "veloci"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Dentro ripete la bugia come una regola nuova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "ripete",
+            "la",
+            "bugia",
+            "come",
+            "una",
+            "regola",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Non lo so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Ma lei sa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "lei",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "La voce di Pietro ha portato la riga fuori dal libro, e non si può rimettere dentro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "voce",
+            "di",
+            "pietro",
+            "avere",
+            "portare",
+            "la",
+            "riga",
+            "fuori",
+            "dal",
+            "libro",
+            "e",
+            "non",
+            "si",
+            "potere",
+            "rimettere",
+            "dentro"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Nel pomeriggio Katia lava le tazze in silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "katia",
+            "lavare",
+            "le",
+            "tazze",
+            "in",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Poi parla ancora una volta, a voce bassa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "parlare",
+            "ancora",
+            "una",
+            "volta",
+            "a",
+            "voce",
+            "basso"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Se è lui, puoi dirlo a me.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "essere",
+            "lui",
+            "potere",
+            "dire",
+            "a",
+            "io"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Non a Bruna.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "a",
+            "bruna"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "A me.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "io"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Elena scuote la testa e continua a asciugare un bicchiere già asciutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "scuote",
+            "la",
+            "testa",
+            "e",
+            "continuare",
+            "a",
+            "asciugare",
+            "un",
+            "bicchiere",
+            "gia",
+            "asciutto"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Non lo so.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Ripete la stessa bugia, più piccola e più dura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ripete",
+            "la",
+            "stesso",
+            "bugia",
+            "piu",
+            "piccolo",
+            "e",
+            "piu",
+            "dura"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Katia alza le spalle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "alzare",
+            "le",
+            "spalle"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Okay.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "okay"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Allora non lo sai.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "non",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Elena odia il suono della sua voce quando mente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "odia",
+            "il",
+            "suono",
+            "della",
+            "suo",
+            "voce",
+            "quando",
+            "mente"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Al bancone dice cose vere ai clienti: due zuccheri, un caffè, un tavolo vicino alla finestra.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "al",
+            "banco",
+            "dire",
+            "cosa",
+            "vero",
+            "ai",
+            "cliente",
+            "due",
+            "zuccheri",
+            "un",
+            "caffe",
+            "un",
+            "tavolo",
+            "vicino",
+            "alla",
+            "finestra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Con Katia mente, e la bugia pesa più di un sacco di farina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "con",
+            "katia",
+            "mente",
+            "e",
+            "la",
+            "bugia",
+            "pesa",
+            "piu",
+            "di",
+            "un",
+            "sacco",
+            "di",
+            "farina"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Alla sera apre il libro e non scrive.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "sera",
+            "aprire",
+            "il",
+            "libro",
+            "e",
+            "non",
+            "scrivere"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Guarda solo le pagine, le inchiostri diversi, le frasi corte e quelle lunghe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "solo",
+            "le",
+            "pagine",
+            "le",
+            "inchiostri",
+            "diverso",
+            "le",
+            "frasi",
+            "corte",
+            "e",
+            "quello",
+            "lunghe"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Ha paura di scrivere il nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "paura",
+            "di",
+            "scrivere",
+            "il",
+            "nome"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Ha paura di dire il nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "paura",
+            "di",
+            "dire",
+            "il",
+            "nome"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Così non dice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cosi",
+            "non",
+            "dire"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "E la bugia resta tra lei e Katia, come una tazza lasciata sul bancone dopo la chiusura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "la",
+            "bugia",
+            "restare",
+            "tra",
+            "lei",
+            "e",
+            "katia",
+            "come",
+            "una",
+            "tazza",
+            "lasciata",
+            "sul",
+            "banco",
+            "dopo",
+            "la",
+            "chiusura"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Dopo la domanda di Katia, Elena lavora come se potesse scappare dentro agli ordini.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dopo",
+            "la",
+            "domanda",
+            "di",
+            "katia",
+            "elena",
+            "lavorare",
+            "come",
+            "se",
+            "potesse",
+            "scappare",
+            "dentro",
+            "ai",
+            "ordini"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Prepara cinque cappuccini di fila e non sbaglia la schiuma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "preparare",
+            "cinque",
+            "cappuccini",
+            "di",
+            "fila",
+            "e",
+            "non",
+            "sbaglia",
+            "la",
+            "schiuma"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Sorride a una turista che chiede indicazioni per la laguna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sorridere",
+            "a",
+            "una",
+            "turista",
+            "che",
+            "chiedere",
+            "indicazioni",
+            "per",
+            "la",
+            "laguna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Dice la verità sulla strada e mente sulla persona.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "la",
+            "verita",
+            "sulla",
+            "strada",
+            "e",
+            "mente",
+            "sulla",
+            "persona"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Bruna passa e dice che oggi Elena è veloce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "passare",
+            "e",
+            "dire",
+            "che",
+            "oggi",
+            "elena",
+            "essere",
+            "veloce"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Elena annuisce e odia quanto è facile sembrare normale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "annuisce",
+            "e",
+            "odia",
+            "quanto",
+            "essere",
+            "facile",
+            "sembrare",
+            "normale"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "A metà pomeriggio un bicchiere le scivola e non si rompe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "a",
+            "meta",
+            "pomeriggio",
+            "un",
+            "bicchiere",
+            "le",
+            "scivola",
+            "e",
+            "non",
+            "si",
+            "rompe"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Katia lo prende al volo e alza un sopracciglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "lo",
+            "prendere",
+            "al",
+            "volo",
+            "e",
+            "alzare",
+            "un",
+            "sopracciglio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Attenzione.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "attenzione"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Elena sussurra grazie e torna al lavello.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "sussurra",
+            "grazie",
+            "e",
+            "tornare",
+            "al",
+            "lavello"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Vorrebbe dire: sì, è lui, l'ho sentito, la frase era sua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "dire",
+            "si_yes",
+            "essere",
+            "lui",
+            "avere",
+            "sentire",
+            "la",
+            "frase",
+            "essere",
+            "suo"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Invece ripete la bugia dentro, come un allenamento cattivo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "invece",
+            "ripete",
+            "la",
+            "bugia",
+            "dentro",
+            "come",
+            "un",
+            "allenamento",
+            "cattivo"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Quando Bruna va in magazzino, Katia non insiste più.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "bruna",
+            "andare",
+            "in",
+            "magazzino",
+            "katia",
+            "non",
+            "insiste",
+            "piu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Il silenzio tra loro due è pieno di cose non dette.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "silenzio",
+            "tra",
+            "loro",
+            "due",
+            "essere",
+            "pieno",
+            "di",
+            "cosa",
+            "non",
+            "dette"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Elena pensa che mentire a Katia è peggio che scrivere troppo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "pensare",
+            "che",
+            "mentire",
+            "a",
+            "katia",
+            "essere",
+            "peggio",
+            "che",
+            "scrivere",
+            "troppo"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Perché Katia ha visto, e la carta non ha occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "perche",
+            "katia",
+            "avere",
+            "vedere",
+            "e",
+            "la",
+            "carta",
+            "non",
+            "avere",
+            "occhi"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Alla fine del turno spegne la macchina del caffè e resta un minuto nel semi-buio della sala.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alla",
+            "fine",
+            "del",
+            "turno",
+            "spegne",
+            "la",
+            "macchina",
+            "del",
+            "caffe",
+            "e",
+            "restare",
+            "un",
+            "minuto",
+            "nel",
+            "se",
+            "buio",
+            "della",
+            "sala"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Poi esce e porta la bugia a casa, chiusa nella tasca del grembiule.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "uscire",
+            "e",
+            "porta",
+            "la",
+            "bugia",
+            "a",
+            "casa",
+            "chiudere",
+            "nella",
+            "tasca",
+            "del",
+            "grembiule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Prima di spegnere la luce, Elena tocca la copertina del libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "di",
+            "spegnere",
+            "la",
+            "luce",
+            "elena",
+            "tocca",
+            "la",
+            "copertina",
+            "del",
+            "libro"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Pensa: non lo so, non lo so, non lo so.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pensare",
+            "non",
+            "lo",
+            "sapere",
+            "non",
+            "lo",
+            "sapere",
+            "non",
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Ma la verità, sotto la bugia, è già ferma come un chiodo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "la",
+            "verita",
+            "sotto",
+            "la",
+            "bugia",
+            "essere",
+            "gia",
+            "fermare",
+            "come",
+            "un",
+            "chiodo"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch12_q01",
+      "chapterId": "lettera-per-elena-12",
+      "type": "direct",
+      "question": "What does Katia ask?",
+      "choices": [
+        "È lui, vero?",
+        "Vuoi vendere il libro?",
+        "Andiamo a Padova?"
+      ],
+      "correctChoice": 0,
+      "explanation": "Katia asks if it is him.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch12_q02",
+      "chapterId": "lettera-per-elena-12",
+      "type": "direct",
+      "question": "How does Elena answer?",
+      "choices": [
+        "Non lo so",
+        "Sì, è Pietro",
+        "Chiedilo a Bruna"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elena lies and says she does not know.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch12_q03",
+      "chapterId": "lettera-per-elena-12",
+      "type": "direct",
+      "question": "Does Katia believe Elena?",
+      "choices": [
+        "No, but she lets it go",
+        "Yes, completely",
+        "She tells Bruna at once"
+      ],
+      "correctChoice": 0,
+      "explanation": "Katia respects the lie but does not believe it.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -58,6 +58,8 @@ import s05c05 from '../../content/stories/luca-prima-di-roma-05/chapters/chapter
 import s05c06 from '../../content/stories/luca-prima-di-roma-05/chapters/chapter-06.json';
 
 import { CASA_DELLE_FINESTRE_SOURCE } from '@/src/content/casaFinestreSources';
+import { LETTERA_PER_ELENA_SOURCE } from '@/src/content/letteraElenaSources';
+import { VILLAGGIO_SOURCE } from '@/src/content/villaggioSources';
 
 export type RegisteredStorySource = {
   storyPath: string;
@@ -144,6 +146,8 @@ const PRE_ROME_SOURCES: Record<string, RegisteredStorySource> = {
 export const REGISTERED_AVAILABLE_STORY_SOURCES: Record<string, RegisteredStorySource> = {
   ...PRE_ROME_SOURCES,
   'la-casa-delle-finestre': CASA_DELLE_FINESTRE_SOURCE,
+  'lettera-per-elena': LETTERA_PER_ELENA_SOURCE,
+  'il-villaggio-che-non-esiste': VILLAGGIO_SOURCE,
 };
 
 export function loadRegisteredStoryBundle(

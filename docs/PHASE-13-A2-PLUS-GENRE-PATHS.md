@@ -1,33 +1,195 @@
-# Phase 13 — A2+ genre paths (architecture / audit only)
+# Phase 13 — A2+ genre paths
 
-**Status:** planning. Not in the catalog. Not available. No prose, JSON, audio, exercises, player wiring, or CEFR threshold changes.
+**Status: AUTHORED / AVAILABLE (2026-08-22).**  
+Bible constraints remain frozen. Romance and fantasy chapter packages are live in catalog + pathway UI.
 
-**Authoring (thriller first):** `docs/PHASE-13A-1-CASA-DELLE-FINESTRE-AUTHORING.md` — chapter-by-chapter spec. Do not start from “write 24 A2+ chapters.” Author one chapter at a time. Romance (13A-2) and fantasy (13A-3) wait until that spec is done.
+| Story | Status | Next action |
+|-------|--------|-------------|
+| *La casa delle finestre* | **Live** | Optional separate audit only |
+| *Una lettera per Elena* | **Authored / available** (22 ch) | Design-locked; polish only when opened |
+| *Il villaggio che non esiste* | **Authored / available** (24 ch) | Design-locked; polish only when opened |
+| Luca A2 (25–40) | **Frozen** | No changes |
 
-**Do not implement this file.** Do not edit Luca a Roma (including **Ch 25–40**), Pre-Rome, Elena, A1 readiness, scoring, or reader.
+**Pathway UI:** All three A2+ pathways are **Begin**-able after Luca Ch 40 (or dev bypass).
 
-**Relation to Phase 13A:** `docs/PHASE-13A-THREE-GENRE-PATHS.md` is a different bible (Valdombra; *Il caso della casa vuota* / *Messaggi da non mandare* / *La mappa di pietra*; A1+→A2). **Do not merge, replace, or catalog either set** until a product decision. This document is **A2+ after the existing A1 (+ Luca A2) foundation**, with the three premises named in this brief.
+**Authoring:** Thriller live. Romance + fantasy authored via `mobile/scripts/phase13/` → packaged under `mobile/content/stories/lettera-per-elena` and `il-villaggio-che-non-esiste`.
 
-**Continuity:** These paths are **not** Luca Ch 41+. They are **not** replacements for Luca A2. No Luca/Sofia/Marco cast unless requested later.
+**Do not** edit Luca a Roma (Ch 25–40), Pre-Rome, draft `elena-torna-a-casa`, lesson layer, Speak, or Casa prose when iterating Phase 13 polish.
 
-**Elena name:** Romance title uses Elena. Catalog already has `elena` / `elena-torna-a-casa` (A1 draft). Romance protagonist must be a **new ID** (recommended: `elena-marini`).
+**Relation to Phase 13A:** `docs/PHASE-13A-THREE-GENRE-PATHS.md` is a **different** bible (Valdombra; A1+→A2). Do **not** merge. This document is **A2+ after Luca A2**.
+
+**Continuity:** Paths are **not** Luca Ch 41+. No Luca/Sofia/Marco cast unless requested later.
+
+**Elena name:** Romance protagonist ID **`elena-marini`** (not catalog draft `elena` / `elena-torna-a-casa`).
 
 ---
 
-# Architecture audit (inspect only)
+# Frozen authoring constraints
 
-## What exists today
+## Romance — *Una lettera per Elena*
+
+- The **book** is the emotional engine, not a gimmick.
+- Pietro as Tuesday driver must become recognizable around **Ch 11**, not a finale reveal.
+- Real conflict: **writing honestly vs speaking honestly**.
+- Sergio = pressure/recovery, **not** a death plot.
+- **Ch 19 is not a kiss payoff.**
+- Ending is ongoing and ordinary: Thursday visit, fog, work.
+- Word ramp ≈ **380–560 → 520–720 → 600–800**.
+- Success depends on executing Tuesday-driver irony + book/voice contrast naturally.
+
+## Fantasy — *Il villaggio che non esiste*
+
+- Grounded folkloric mystery; **no** magic system, **no** chosen one.
+- Every uncanny element needs a **physical/social** explanation.
+- Machinery: dam/sluice, village staging, mistaken identity, maps, sinkholes.
+- Giada must **not** become Anna or “solve” Collevento.
+- Neri stays his own character — **not** a stand-in for the abandoned boy.
+- Ending is an **exit**, not a conquest.
+- Word ramp ≈ **400–580 → 550–780 → 650–900**.
+- Strongest narrative engine of the three (bible assessment — retained).
+
+## Information architecture (product / pedagogy)
+
+| Path | Learner stance |
+|------|----------------|
+| Elena | Understands the world; difficulty is people **not saying** what they mean |
+| Giada | Incomplete/wrong information; progressively reconstructs what **physically** happened |
+| Casa (live) | Observation, pattern, evidence |
+
+Do **not** author as more A2 chapters with swapped names. Genre paths exist because these information architectures differ.
+
+---
+
+# Authoring / polish specification (design reviews, 2026-08-22)
+
+This section is a **story-design / editorial SOT**, not an implement-now checklist. Prose polish follows only when Phase 13 polish is explicitly opened. Do **not** add plot. Protect restraint.
+
+**Giant letters over Phase 13:** Every **2–3 chapters**, the learner should understand the story **differently** than before. That is what makes these A2+ genre paths rather than more graded-reader chapters with new casts.
+
+Do **not** make these feel like Luca A2 with different characters. Difficulty is **information density** (who knows what; what a sentence means in context), not word count alone.
+
+## Product ranking (design)
+
+1. **Il villaggio che non esiste** — strongest by a clear margin (hook, rules, escalating reinterpretation, identity, restrained ending).  
+2. **La casa delle finestre** — strongest already-proven thriller structure (live).  
+3. **Una lettera per Elena** — potentially excellent; execution-sensitive (tiny human observations must land).
+
+### Product triangle (protect)
+
+| Story | Learner is trying to understand | Mechanism |
+|-------|----------------------------------|-----------|
+| Casa | What is happening? | Observe → pattern → test → reinterpret → human cause → implicated |
+| Elena | What does this person really mean? | Interpret people / writing vs speech |
+| Collevento | What actually happened here? | Reconstruct evidence / rules → physical+social landing |
+
+Choosing a path = choosing a **kind of reading experience**, not a skin.
+
+## Per-chapter editorial test (mandatory metric)
+
+For **every** chapter, before ship/polish sign-off:
+
+> **What does the reader believe at the beginning that they should no longer believe at the end?**
+
+Examples:
+
+| Chapter | Begin believing | End believing |
+|---------|-----------------|---------------|
+| Collevento 10 | The village really changes overnight | People are deliberately changing it |
+| Elena 11 | Pietro is just an awkward delivery guy | Pietro is probably the person in the book |
+| Casa 7 | The lights are random | The lights follow the timetable |
+
+If the honest answer is *“same understanding, 600 words of experience,”* the chapter needs work.
+
+## Hard authoring rules
+
+### Elena — *relationship must move*
+
+Every **2–3 chapters**, understanding of the relationship must **materially change** — not merely another note.
+
+The book is both **solution and problem**. Arc (protect):
+
+likes the person in the book → anticipates notes → suspects Pietro → **tests** whether he is → prefers written version to real interaction → book disappears → must interact without it.
+
+Phases:
+
+| Ch | Phase | Reader job |
+|----|-------|------------|
+| 1–5 | Discovery | Who is this person? |
+| 6–10 | Attachment | I care about this person. |
+| 11–13 | Recognition | Oh no. It’s Pietro. |
+| 14–16 | Collision | The book isn’t enough. |
+| 17–18 | Withdrawal | The book disappears. |
+| 19–22 | Real life | Can we talk? |
+
+**Ch 3 shelf look** is enough foreshadowing — do **not** pile five more obvious clues. Reader may clock him ~Ch 7–9; Ch **11** must confirm **emotionally** (OH / Oh no), not as Sherlock reveal. Fridge line stays **ordinary**; if he says it staring into her eyes, premise dies.
+
+**Ch 19:** speech not kiss — *Vorrei riprovare, in voce* resolves the story question. **Ch 22:** Thursday = choice; do not explain it.
+
+**Bruna:** understands the **book**, not necessarily Elena. Own attachment (husband). Hiding the book = her judgment that it stopped helping — she can be **wrong**. Not omniscient therapist / author’s mouthpiece.
+
+**Sergio:** reveals Pietro (exhausted, responsible, distracted, afraid of failing someone) — not delay machinery.
+
+### Collevento — *evidence must reinterpret*
+
+Every **2–3 chapters**, new evidence **reinterprets** something already believed.
+
+Protected information staircase:
+
+| Ch | Question |
+|----|----------|
+| 1 | Why am I here? |
+| 3 | Why do they think I’m Anna? |
+| 6 | Why can’t I leave after sunset? |
+| 8 | Why is Anna in this register? |
+| 10 | Are the village changes actually real? |
+| 12 | My mother really was here. |
+| 17 | My mother knew about the water. |
+| 18 | My mother left for a reason. |
+
+Mystery keeps **changing meaning**, not only adding mysteries. Water/road: first “impossible” → later physical mechanism → impossibility becomes **social** (people/institutions decided it shouldn’t exist).
+
+Anna progression (do **not** flatten to “everything = Anna”): they think I’m Anna → mother was here → mother knew the water → mother left for a reason. Each step changes the previous.
+
+**Neri:** own character, not abandoned-boy stand-in, **not** tutorial. Believes something about Collevento that is **partly wrong**. Pattern: Neri says X → Giada believes X → evidence says Y → better question for both.
+
+**Ch 14 (*Neri racconta*):** highest dump risk. Ruthless. He knows **his** version; photos / documents / mother / something physical contradicts part of it. If one talk explains dam + maps + history + inspection + deletion, the engine dies.
+
+**Engineer:** memorable reasonable bureaucracy, not villain. Sincerely: decades unresolved, here to solve it. Visual storytelling: **high car** leaves while others wait for water — show, don’t lecture “different rules.” Exit thought: *exists, but the world decided it doesn’t.*
+
+**Ch 23:** bread, dishes, father, ordinary talk — no extra revelation. Then *Esisteva.* Right scale: not solved / saved / magic.
+
+**Ending protect:** won’t be proof / won’t be Anna / dawn exit / identity and leaving.
+
+## Polish priority (only when polish pass opened)
+
+1. Villaggio **Ch 14** — Neri dump → partial wrongness + contradiction.  
+2. Villaggio **Ch 15–21** — engineer as legitimate bureaucracy; keep high-car contrast.  
+3. Villaggio **Ch 23** — cut thematic recap; kitchen does the work.  
+4. Elena — phase audit; idle book chapters; Bruna not therapist; Sergio = Pietro character.  
+5. Apply **belief-change test** chapter-by-chapter before audio.  
+6. Do **not** complicate concepts further to “feel A2+.” Do **not** add bigger twists.
+
+## Word guides (secondary to information density)
+
+Elena: **380–560 → 520–720 → 600–800**  
+Collevento: **400–580 → 550–780 → 650–900**
+
+A short chapter that forces tracking of knowledge can be harder than a long flat one.
+
+---
+
+# Architecture audit (historical + current)
+
+## What exists today (updated 2026-08-22)
 
 | Piece | Finding |
 |---|---|
-| Catalog | `available`: five Pre-Rome + `luca-a-roma` (40). `draft`: Elena. **No A2+ story rows.** |
-| Luca arcs | A2 = Ch 25–40 **available**. A2+ arc `luca-a-roma-a2-plus` is **planned**, `chapterStart` 41 / `chapterEnd` 40 (empty placeholder). **Do not fill it with these genre paths.** |
-| CEFR profiles | `A2+` already exists (`wordCountRange` 500–900, avg sentence 12). `narrativeStage` is still Luca’s “New problems.” Paths should use **story-local** stage copy later, not rewrite `CEFR_PROFILES` in this phase. |
-| Loader | `getContentBundle(storyId)` + Metro-static maps (`preRomeSources.ts` pattern). New stories need **new registrations**, not Luca files. |
-| IDs | Progress is `(storyId, chapterId)`. Chapter numbers are **not** globally unique. |
-| Journey | `buildLearnerJourney()` is A1 Pre-Rome + Luca 1–20 / 21–24 / 25–40. **No genre picker.** |
-| Validation | `validateStoryCatalog`: planned `chapterCount` must be **0**; **`chapterCountTarget` must be 5–8**. That rule is Pre-Rome-shaped. **A2+ novels cannot ship as `planned` without relaxing that check later.** |
-| A1 readiness | Cross-story A1 model is separate. **Do not hook genre paths into it.** |
+| Catalog | Pre-Rome + `luca-a-roma` (40) + **Casa (24)** + **lettera-per-elena (22)** + **il-villaggio-che-non-esiste (24)**; draft Elena A1 |
+| Luca A2 | Ch 25–40 **curriculum frozen**; Chirp3 audio packaged |
+| A2+ arc placeholder | `luca-a-roma-a2-plus` empty — **do not** fill with genre paths |
+| Journey / UI | A2+ pathway gate + world cards; **all three** paths Begin-able |
+| Romance / fantasy | **Authored** chapter JSON + English + lexicon-additions |
+| Validation | Novel-length `chapterCountTarget` for Casa / Elena romance / Villaggio |
 | Luca A2 files | `content/stories/luca-a-roma/chapters/chapter-25.json` … `chapter-40.json` + `docs/A2-CONTINUITY.md`. **Frozen for this phase.** |
 
 ## A. Files/directories that would eventually be needed
@@ -449,25 +611,21 @@ Rules you can hold (*dopo il tramonto, no*). Then the face in the photo. Then th
 |---|---|---|---|
 | Engine | Observation, pattern, evidence | Two channels (ink vs speech) | Rules, walking, identity |
 | Clock | Night windows; Friday shredder | Tuesdays; three days book closed | Sunset sluice; dawn bus |
-| Information | Irene has too much paper | They have too little speech | Giada has the wrong name |
+| Information | Irene has too much paper | They have too little speech | Giada has the wrong name / map |
+| Learner stance | Pattern + evidence | World clear; speech opaque | Reconstruct physical truth |
 | Ending type | Witness cost | Imperfect couple | Exit without conquest |
 
 ---
 
-# Recommendation
+# Recommendation (frozen)
 
-**Strongest overall story: *Il villaggio che non esiste*.**
+**Strongest overall story: *Il villaggio che non esiste*.**  
+**Already shipped first: *La casa delle finestre*.**  
+**Romance** works only if Tuesday-driver irony (~Ch 11) and book/voice contrast stay intact.
 
-The sunset rule and the morning changes have **physical and social causes** that still feel uncanny. The “you’ve been here before” beat is a **mother/daughter double**, not a prophecy. It is the least like a language worksheet and the hardest to execute — which is why it is the best book.
-
-**Strongest first to author for Storibase: *La casa delle finestre*.**
-
-Window grid, timetable, and *non scansionare* give A2+ **countable, repeatable language** and a clean suspense machine. Lower risk of generic magic. Better training for writers before Collevento.
-
-**Romance** is the most familiar premise; it **works** only if the Tuesday-driver irony stays (reveal ~Ch 11, not the last page). If that is diluted, it becomes notes-in-a-book stock.
-
-**Do not author yet. Do not catalog yet. Do not touch Luca A2.**
+**Hard stop until Phase 13 authoring is explicitly opened:**  
+No romance/fantasy chapter JSON. No catalog flip from Coming soon. No Luca A2 edits. Separate from draft Elena (`elena-torna-a-casa`).
 
 ---
 
-*End of Phase 13 A2+ design/audit. Hard stop.*
+*End of Phase 13 A2+ design bible. DESIGN FROZEN 2026-08-22.*

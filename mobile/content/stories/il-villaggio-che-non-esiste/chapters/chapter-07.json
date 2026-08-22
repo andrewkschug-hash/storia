@@ -1,0 +1,979 @@
+{
+  "id": "il-villaggio-che-non-esiste-07",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 7,
+  "title": "Neri",
+  "titleIt": "Neri",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "piazza-collevento",
+    "collevento-strada"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "neri"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-07",
+      "summary": "Giada meets Neri, a local teen who wants to leave. He shows a modern map with a blank where Collevento should be.",
+      "characterIds": [
+        "giada-rinaldi",
+        "neri"
+      ],
+      "locationIds": [
+        "piazza-collevento",
+        "collevento-strada"
+      ],
+      "rememberedFacts": [
+        "Neri was born in Collevento and wants to leave",
+        "After sunset he cannot leave either",
+        "His modern map has a blank over the village",
+        "He asks Giada to tell him if she finds a ride"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Il giorno dopo Giada sta in piazza vicino alla fontana, da sola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "giorno",
+            "dopo",
+            "giada",
+            "stare",
+            "in",
+            "piazza",
+            "vicino",
+            "alla",
+            "fontana",
+            "dare",
+            "solo"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Un ragazzo della sua età fuma e ascolta musica dalle cuffie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "un",
+            "ragazzo",
+            "della",
+            "suo",
+            "eta",
+            "fuma",
+            "e",
+            "ascoltare",
+            "musica",
+            "dal",
+            "cuffie"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Ha una maglia scura, scarpe consumate e lo sguardo stanco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "una",
+            "maglia",
+            "scura",
+            "scarpe",
+            "consumate",
+            "e",
+            "lo",
+            "sguardo",
+            "stanco"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "La musica è in inglese, a volume basso, quasi un segreto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "musica",
+            "essere",
+            "in",
+            "inglese",
+            "a",
+            "volume",
+            "basso",
+            "quasi",
+            "un",
+            "segreto"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Tu sei la nuova.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "essere",
+            "la",
+            "nuovo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Io sono Giada.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "essere",
+            "giada"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Neri. Nato qui, purtroppo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "neri",
+            "nato",
+            "qui",
+            "purtroppo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Vuoi andare via da Collevento?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "andare",
+            "via",
+            "dare",
+            "collevento"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sempre.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "sempre"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Ma dopo il tramonto non si esce, nemmeno io, anche se odio restare.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "dopo",
+            "il",
+            "tramonto",
+            "non",
+            "si",
+            "uscire",
+            "nemmeno",
+            "io",
+            "anche",
+            "se",
+            "odio",
+            "restare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "E di giorno?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "di",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Di giorno serve un motivo chiaro e una macchina che passa.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "di",
+            "giorno",
+            "servire",
+            "un",
+            "motivo",
+            "chiaro",
+            "e",
+            "una",
+            "macchina",
+            "che",
+            "passare"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Una persona che ti porta fuori, oltre l'acqua della sera.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "persona",
+            "che",
+            "ti",
+            "porta",
+            "fuori",
+            "oltre",
+            "acqua",
+            "della",
+            "sera"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Io ho solo le gambe e questa rabbia quieta sotto la maglia.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "avere",
+            "solo",
+            "le",
+            "gambe",
+            "e",
+            "questo",
+            "rabbia",
+            "quieta",
+            "sotto",
+            "la",
+            "maglia"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Tira fuori una carta piegata dalla tasca del pantalone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tira",
+            "fuori",
+            "una",
+            "carta",
+            "piegata",
+            "dalla",
+            "tasca",
+            "del",
+            "pantalone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "È una mappa moderna, con strade, numeri e paesi chiari intorno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "mappa",
+            "moderna",
+            "con",
+            "strada",
+            "numero",
+            "e",
+            "paese",
+            "chiaro",
+            "intorno"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Nel mezzo c'è uno spazio bianco senza nome e senza punto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "mezzo",
+            "ce",
+            "uno",
+            "spazio",
+            "bianco",
+            "senza",
+            "nome",
+            "e",
+            "senza",
+            "punto"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Niente simbolo di paese, niente scritta piccola in corsivo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "niente",
+            "simbolo",
+            "di",
+            "paese",
+            "niente",
+            "scritta",
+            "piccolo",
+            "in",
+            "corsivo"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Qui.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "qui"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Dovremmo essere qui, su questa carta nuova.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "essere",
+            "qui",
+            "su",
+            "questo",
+            "carta",
+            "nuovo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Ma non ci siamo, per la mappa: siamo un vuoto.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "non",
+            "ci",
+            "essere",
+            "per",
+            "la",
+            "mappa",
+            "essere",
+            "un",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Giada tocca lo spazio bianco con l'unghia, piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "tocca",
+            "lo",
+            "spazio",
+            "bianco",
+            "con",
+            "l'unghia",
+            "piano"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Collevento non c'è.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "collevento",
+            "non",
+            "ce"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Esatto. Non esistiamo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "esatto",
+            "non",
+            "esistiamo"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Sul serio? Anche sulle mappe nuove di quest'anno?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "sul",
+            "serio",
+            "anche",
+            "sul",
+            "mappe",
+            "nuovo",
+            "di",
+            "quest'anno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Sul serio. Per questo odio questo posto.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "sul",
+            "serio",
+            "per",
+            "questo",
+            "odio",
+            "questo",
+            "posto"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Non perché è piccolo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "perche",
+            "essere",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Perché è cancellato, come se dovesse diventare lago e basta.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "essere",
+            "cancellato",
+            "come",
+            "se",
+            "dovesse",
+            "diventare",
+            "lago",
+            "e",
+            "basta"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Giada ripensa al cartello della stazione, con la linea nera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ripensa",
+            "al",
+            "cartello",
+            "della",
+            "stazione",
+            "con",
+            "la",
+            "linea",
+            "nera"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "La linea sul nome e adesso il bianco sulla carta: stessa idea.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "linea",
+            "sul",
+            "nome",
+            "e",
+            "adesso",
+            "il",
+            "bianco",
+            "sulla",
+            "carta",
+            "stesso",
+            "idea"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Tu resti a lungo?",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "restare",
+            "a",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "No. Devo andare a Trento da mio padre, non qui.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "no",
+            "dovere",
+            "andare",
+            "a",
+            "trento",
+            "dare",
+            "mio",
+            "padre",
+            "non",
+            "qui"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Tutti dicono di andare.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "dire",
+            "di",
+            "andare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Pochi partono davvero, quando arriva l'ora dell'acqua.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "poco",
+            "partire",
+            "davvero",
+            "quando",
+            "arrivare",
+            "ora",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Neri spegne la sigaretta sotto la scarpa e guarda la valle.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "spegne",
+            "la",
+            "sigaretta",
+            "sotto",
+            "la",
+            "scarpa",
+            "e",
+            "guardare",
+            "la",
+            "valle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Se trovi una macchina, dimmelo.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "trovare",
+            "una",
+            "macchina",
+            "dimmelo"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Io non cerco magie e non cerco fantasmi nel bosco.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "cercare",
+            "magie",
+            "e",
+            "non",
+            "cercare",
+            "fantasmi",
+            "nel",
+            "bosco"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Cerco una strada che resta asciutta e un passaggio onesto.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "cercare",
+            "una",
+            "strada",
+            "che",
+            "restare",
+            "asciutta",
+            "e",
+            "un",
+            "passaggio",
+            "onesto"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Giada lo aiuta a piegare di nuovo la mappa, con attenzione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "aiutare",
+            "a",
+            "piegare",
+            "di",
+            "nuovo",
+            "la",
+            "mappa",
+            "con",
+            "attenzione"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Lo spazio bianco resta chiuso tra le pieghe, ma lei l'ha visto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lo",
+            "spazio",
+            "bianco",
+            "restare",
+            "chiudere",
+            "tra",
+            "le",
+            "pieghe",
+            "ma",
+            "lei",
+            "avere",
+            "vedere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Non può dimenticare quel vuoto al centro della carta nuova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "potere",
+            "dimenticare",
+            "quello",
+            "vuoto",
+            "al",
+            "centro",
+            "della",
+            "carta",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Neri non è una leggenda del paese e non è un fantasma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "non",
+            "essere",
+            "una",
+            "leggenda",
+            "del",
+            "paese",
+            "e",
+            "non",
+            "essere",
+            "un",
+            "fantasma"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "È un ragazzo che vuole uscire, con nome e rabbia suoi, veri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "un",
+            "ragazzo",
+            "che",
+            "volere",
+            "uscire",
+            "con",
+            "nome",
+            "e",
+            "rabbia",
+            "suo",
+            "vero"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Giada resta un momento in piazza dopo che lui se ne va.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "un",
+            "momento",
+            "in",
+            "piazza",
+            "dopo",
+            "che",
+            "lui",
+            "se",
+            "ne",
+            "andare"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Guarda la fontana e pensa allo spazio bianco sulla mappa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "la",
+            "fontana",
+            "e",
+            "pensare",
+            "al",
+            "spazio",
+            "bianco",
+            "sulla",
+            "mappa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Il paese c'è sotto i suoi piedi, anche se la carta dice di no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "ce",
+            "sotto",
+            "i",
+            "suo",
+            "piedi",
+            "anche",
+            "se",
+            "la",
+            "carta",
+            "dire",
+            "di",
+            "no"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Neri non le chiede di restare e non le chiede di diventare nessuno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "non",
+            "le",
+            "chiedere",
+            "di",
+            "restare",
+            "e",
+            "non",
+            "le",
+            "chiedere",
+            "di",
+            "diventare",
+            "nessuno"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Chiede solo un passaggio, se arriva, e una strada asciutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiedere",
+            "solo",
+            "un",
+            "passaggio",
+            "se",
+            "arrivare",
+            "e",
+            "una",
+            "strada",
+            "asciutta"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Giada piega nella mente lo spazio bianco della mappa, come un fatto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "piega",
+            "nella",
+            "mente",
+            "lo",
+            "spazio",
+            "bianco",
+            "della",
+            "mappa",
+            "come",
+            "un",
+            "fare"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Il paese esiste sotto i piedi; sulla carta, no: questa è la ferita di Neri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "esiste",
+            "sotto",
+            "i",
+            "piedi",
+            "sulla",
+            "carta",
+            "no",
+            "questo",
+            "essere",
+            "la",
+            "ferita",
+            "di",
+            "neri"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch07_q01",
+      "chapterId": "il-villaggio-che-non-esiste-07",
+      "type": "direct",
+      "question": "What does Neri show Giada?",
+      "choices": [
+        "A modern map with a blank where the village should be",
+        "A ticket to Bologna",
+        "A photo of Elsa"
+      ],
+      "correctChoice": 0,
+      "explanation": "He unfolds a new map with a white space where Collevento should be.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch07_q02",
+      "chapterId": "il-villaggio-che-non-esiste-07",
+      "type": "direct",
+      "question": "What does Neri want?",
+      "choices": [
+        "To leave Collevento",
+        "To become mayor",
+        "To open the dam"
+      ],
+      "correctChoice": 0,
+      "explanation": "He always wants to leave and asks about a ride.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch07_q03",
+      "chapterId": "il-villaggio-che-non-esiste-07",
+      "type": "inference",
+      "question": "Why does Neri hate the place?",
+      "choices": [
+        "Because it is erased from maps, not only because it is small",
+        "Because Giada took his room",
+        "Because Elsa forbids music"
+      ],
+      "correctChoice": 0,
+      "explanation": "He hates it because it is cancelled, not merely because it is small.",
+      "difficulty": 2
+    }
+  ]
+}

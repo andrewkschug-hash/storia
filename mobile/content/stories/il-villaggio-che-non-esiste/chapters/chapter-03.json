@@ -1,0 +1,976 @@
+{
+  "id": "il-villaggio-che-non-esiste-03",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 3,
+  "title": "Not grandmother",
+  "titleIt": "Nonna, no",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "elsa"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-03",
+      "summary": "Giada explains she is seventeen and headed to Trento. Elsa answers as if she were Anna, saying Anna used to say the same thing.",
+      "characterIds": [
+        "giada-rinaldi",
+        "elsa"
+      ],
+      "locationIds": [
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "Giada says she is 17 and going to Trento",
+        "Elsa says Anna used to say the same",
+        "Elsa says Anna was also seventeen",
+        "Giada insists she is not Anna and not Elsa's granddaughter"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Nel pomeriggio Giada scende in cucina, ancora stanca del treno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "giada",
+            "scende",
+            "in",
+            "cucina",
+            "ancora",
+            "stanco",
+            "del",
+            "treno"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Elsa prepara una minestra e taglia il pane fresco sul legno.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "preparare",
+            "una",
+            "minestra",
+            "e",
+            "taglia",
+            "il",
+            "pane",
+            "fresco",
+            "sul",
+            "legno"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Siediti, mangia qualcosa di caldo: ti serve.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "siediti",
+            "mangiare",
+            "qualcosa",
+            "di",
+            "caldo",
+            "ti",
+            "servire"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Giada si siede e tiene le mani intorno alla ciotola calda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "sedere",
+            "e",
+            "tiene",
+            "le",
+            "mani",
+            "intorno",
+            "alla",
+            "ciotola",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Devo andare a Trento il prima possibile.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "andare",
+            "a",
+            "trento",
+            "il",
+            "prima",
+            "possibile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Mio padre mi aspetta, e non sa ancora dove sono.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mio",
+            "padre",
+            "mi",
+            "aspettare",
+            "e",
+            "non",
+            "sapere",
+            "ancora",
+            "dove",
+            "essere"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Elsa mescola la pentola senza alzare subito gli occhi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "mescola",
+            "la",
+            "pentola",
+            "senza",
+            "alzare",
+            "subito",
+            "gli",
+            "occhi"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Anna diceva così.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "anna",
+            "dire",
+            "cosi"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Chi è Anna? Io non la conosco.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "chi",
+            "essere",
+            "anna",
+            "io",
+            "non",
+            "la",
+            "conoscere"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Elsa non risponde subito; spegne il fuoco piano, come sempre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "rispondere",
+            "subito",
+            "spegne",
+            "il",
+            "fuoco",
+            "piano",
+            "come",
+            "sempre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Io non sono Anna.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "essere",
+            "anna"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Mi chiamo Giada, e ho diciassette anni, non di più.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "chiamare",
+            "giada",
+            "e",
+            "avere",
+            "diciassette",
+            "anno",
+            "non",
+            "di",
+            "piu"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Elsa la guarda bene, dal viso ai capelli alla borsa sul pavimento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "la",
+            "guardare",
+            "bene",
+            "dal",
+            "viso",
+            "ai",
+            "capelli",
+            "alla",
+            "borsa",
+            "sul",
+            "pavimento"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Diciassette.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "diciassette"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Sì, diciassette. Devo raggiungere mio padre a Trento.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
+            "diciassette",
+            "dovere",
+            "raggiungere",
+            "mio",
+            "padre",
+            "a",
+            "trento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Anna aveva diciassette anni quando era qui, anche lei.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "anna",
+            "avere",
+            "diciassette",
+            "anno",
+            "quando",
+            "essere",
+            "qui",
+            "anche",
+            "lei"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Anche lei voleva andare a Trento, sempre, con la stessa fretta.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "lei",
+            "volere",
+            "andare",
+            "a",
+            "trento",
+            "sempre",
+            "con",
+            "la",
+            "stesso",
+            "fretta"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Io non sono sua nipote.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "essere",
+            "suo",
+            "nipote"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Non sono nessuno di questo paese, e non resto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "nessuno",
+            "di",
+            "questo",
+            "paese",
+            "e",
+            "non",
+            "restare"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Elsa mette il pane sul tavolo e siede di fronte a lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "mettere",
+            "il",
+            "pane",
+            "sul",
+            "tavolo",
+            "e",
+            "sedere",
+            "di",
+            "fronte",
+            "a",
+            "lei"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Mangia.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "mangiare"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Poi parliamo con calma, senza urlare.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "parlare",
+            "con",
+            "calma",
+            "senza",
+            "urlare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Giada mangia perché ha davvero fame dopo il viaggio lungo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "mangiare",
+            "perche",
+            "avere",
+            "davvero",
+            "fame",
+            "dopo",
+            "il",
+            "viaggio",
+            "lungo"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "La minestra è buona, semplice, di verdure e brodo chiaro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "minestra",
+            "essere",
+            "buono",
+            "semplice",
+            "di",
+            "verdure",
+            "e",
+            "brodo",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Però le mani le tremano un poco sul cucchiaio di metallo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pero",
+            "le",
+            "mani",
+            "le",
+            "tremano",
+            "un",
+            "poco",
+            "sul",
+            "cucchiaio",
+            "di",
+            "metallo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Io ho preso il treno sbagliato, tutto qui.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "avere",
+            "prendere",
+            "il",
+            "treno",
+            "sbagliato",
+            "tutto",
+            "qui"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Devo tornare alla stazione e capire gli orari, se ci sono.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "tornare",
+            "alla",
+            "stazione",
+            "e",
+            "capire",
+            "gli",
+            "orari",
+            "se",
+            "ci",
+            "essere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Oggi no.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "no"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Perché no? È ancora giorno, e posso camminare.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "no",
+            "essere",
+            "ancora",
+            "giorno",
+            "e",
+            "potere",
+            "camminare"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Perché è tardi per partire da qui senza un piano.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "essere",
+            "tardi",
+            "per",
+            "partire",
+            "dare",
+            "qui",
+            "senza",
+            "un",
+            "piano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "E perché in questo paese le cose hanno un'ora precisa.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "perche",
+            "in",
+            "questo",
+            "paese",
+            "le",
+            "cosa",
+            "avere",
+            "ora",
+            "precisa"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Giada non ride; aspetta una spiegazione migliore e più chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "ride",
+            "aspettare",
+            "una",
+            "spiegazione",
+            "migliore",
+            "e",
+            "piu",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Elsa non sorride e non scherza: tiene gli occhi fermi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "sorridere",
+            "e",
+            "non",
+            "scherza",
+            "tiene",
+            "gli",
+            "occhi",
+            "fermi"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Domani mattina guardi la piazza.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "domani",
+            "mattina",
+            "guardare",
+            "la",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Poi decidi se restare una notte in più o se partire.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "decidere",
+            "se",
+            "restare",
+            "una",
+            "notte",
+            "in",
+            "piu",
+            "o",
+            "se",
+            "partire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Io parto.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "partire"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Anna diceva così, con la stessa voce sicura e giovane.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "anna",
+            "dire",
+            "cosi",
+            "con",
+            "la",
+            "stesso",
+            "voce",
+            "sicuro",
+            "e",
+            "giovane"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Giada lascia il cucchiaio nella ciotola e alza lo sguardo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lasciare",
+            "il",
+            "cucchiaio",
+            "nella",
+            "ciotola",
+            "e",
+            "alzare",
+            "lo",
+            "sguardo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Non sono Anna, e non lo sarò per te.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "anna",
+            "e",
+            "non",
+            "lo",
+            "saro",
+            "per",
+            "tu"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Lo dico chiaro, senza rabbia falsa e senza paura inutile.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "dire",
+            "chiaro",
+            "senza",
+            "rabbia",
+            "falsa",
+            "e",
+            "senza",
+            "paura",
+            "inutile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Elsa lava un piatto e parla senza guardarla in faccia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "lavare",
+            "un",
+            "piatto",
+            "e",
+            "parlare",
+            "senza",
+            "guardarla",
+            "in",
+            "faccia"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Lo so.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "lo",
+            "sapere"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Ma la faccia è la stessa, e la borsa anche, quasi uguale.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "la",
+            "faccia",
+            "essere",
+            "la",
+            "stesso",
+            "e",
+            "la",
+            "borsa",
+            "anche",
+            "quasi",
+            "uguale"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Giada tocca la propria guancia, poi la borsa sul pavimento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "tocca",
+            "la",
+            "propria",
+            "guancia",
+            "poi",
+            "la",
+            "borsa",
+            "sul",
+            "pavimento"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Non capisce ancora tutta la storia, ma sente il peso del nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "capire",
+            "ancora",
+            "tutto",
+            "la",
+            "storia",
+            "ma",
+            "sentire",
+            "il",
+            "peso",
+            "del",
+            "nome"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Sa solo che Elsa non dice nonna, come in una fiaba.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "solo",
+            "che",
+            "elsa",
+            "non",
+            "dire",
+            "nonna",
+            "come",
+            "in",
+            "una",
+            "fiaba"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Dice Anna, come un nome vivo che abita ancora questa casa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "anna",
+            "come",
+            "un",
+            "nome",
+            "vivere",
+            "che",
+            "abitare",
+            "ancora",
+            "questo",
+            "casa"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "E questo fa più paura di una storia inventata per i bambini.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "e",
+            "questo",
+            "fare",
+            "piu",
+            "paura",
+            "di",
+            "una",
+            "storia",
+            "inventata",
+            "per",
+            "i",
+            "bambini"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Nella cucina resta odore di minestra e di pane ancora caldo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "cucina",
+            "restare",
+            "odore",
+            "di",
+            "minestra",
+            "e",
+            "di",
+            "pane",
+            "ancora",
+            "caldo"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Giada pensa a Trento e alla voce del padre che ancora non conosce questa fermata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "a",
+            "trento",
+            "e",
+            "alla",
+            "voce",
+            "del",
+            "padre",
+            "che",
+            "ancora",
+            "non",
+            "conoscere",
+            "questo",
+            "fermare"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch03_q01",
+      "chapterId": "il-villaggio-che-non-esiste-03",
+      "type": "direct",
+      "question": "What does Giada tell Elsa about herself?",
+      "choices": [
+        "She is 17 and going to Trento",
+        "She lives in Collevento",
+        "She is Elsa's granddaughter"
+      ],
+      "correctChoice": 0,
+      "explanation": "Giada says she is seventeen and must go to Trento.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03_q02",
+      "chapterId": "il-villaggio-che-non-esiste-03",
+      "type": "direct",
+      "question": "How does Elsa answer Giada's plans?",
+      "choices": [
+        "Anna used to say the same thing",
+        "The next train is in ten minutes",
+        "Your father called already"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says Anna used to say that.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03_q03",
+      "chapterId": "il-villaggio-che-non-esiste-03",
+      "type": "inference",
+      "question": "What is Elsa comparing Giada to?",
+      "choices": [
+        "A girl named Anna who was also seventeen",
+        "A tourist from Bologna",
+        "A train conductor"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says Anna was seventeen and also wanted Trento, and that the face is the same.",
+      "difficulty": 2
+    }
+  ]
+}

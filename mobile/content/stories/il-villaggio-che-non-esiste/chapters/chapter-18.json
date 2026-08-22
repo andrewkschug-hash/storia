@@ -1,0 +1,1633 @@
+{
+  "id": "il-villaggio-che-non-esiste-18",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 18,
+  "title": "Why",
+  "titleIt": "Perché",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "campo-segnale",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "anna-rinaldi",
+    "elsa"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-18",
+      "summary": "Anna explains she left a boy who was not Neri's father, and left Collevento so the village could keep existing without her as its returned girl.",
+      "characterIds": [
+        "giada-rinaldi",
+        "anna-rinaldi",
+        "elsa"
+      ],
+      "locationIds": [
+        "campo-segnale",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "Anna left a boy in Collevento when she was seventeen",
+        "That boy is not Neri's father",
+        "Anna left so she would not become the village's story",
+        "She left the village to exist without needing her return"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Giada richiama subito, perché una frase non basta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "richiama",
+            "subito",
+            "perche",
+            "una",
+            "frase",
+            "non",
+            "basta"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Il segnale tiene, debole ma presente.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "segnale",
+            "tiene",
+            "debole",
+            "ma",
+            "presente"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Anna risponde al secondo squillo, come se aspettasse.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "rispondere",
+            "al",
+            "secondo",
+            "squillo",
+            "come",
+            "se",
+            "aspettasse"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Perché sei andata via?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "essere",
+            "andare",
+            "via"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Non dirmi solo dell'acqua.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "dire",
+            "solo",
+            "acqua"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Anna esita; si sente il rumore di una sedia a Bologna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "anna",
+            "esita",
+            "si",
+            "sentire",
+            "il",
+            "rumore",
+            "di",
+            "una",
+            "sedia",
+            "a",
+            "bologna"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Perché se restavo diventavo la ragazza del paese.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "se",
+            "restavo",
+            "diventavo",
+            "la",
+            "ragazza",
+            "del",
+            "paese"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Quella che torna ogni estate sulla bocca di tutti.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "che",
+            "tornare",
+            "ogni",
+            "estate",
+            "sulla",
+            "bocca",
+            "di",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "C'era un ragazzo.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ce",
+            "un",
+            "ragazzo"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Giada sente il petto stringersi, ma non interrompe.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "il",
+            "petto",
+            "stringersi",
+            "ma",
+            "non",
+            "interrompe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Un ragazzo di Collevento.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "un",
+            "ragazzo",
+            "di",
+            "collevento"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Non era un fidanzato ufficiale, e non era una fiaba.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "un",
+            "fidanzato",
+            "ufficiale",
+            "e",
+            "non",
+            "essere",
+            "una",
+            "fiaba"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Era qualcuno con cui restavo troppo a lungo sulla piazza.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "qualcuno",
+            "con",
+            "cui",
+            "restavo",
+            "troppo",
+            "a",
+            "lungo",
+            "sulla",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "È il padre di Neri?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "il",
+            "padre",
+            "di",
+            "neri"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "No.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "La risposta arriva subito, senza spazio per i nodi comodi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "risposta",
+            "arrivare",
+            "subito",
+            "senza",
+            "spazio",
+            "per",
+            "i",
+            "nodi",
+            "comodi"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Non sistemare la storia per farla tornare.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "sistemare",
+            "la",
+            "storia",
+            "per",
+            "fare",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Quel ragazzo non è il padre di nessuno che tu conosci lì.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "quello",
+            "ragazzo",
+            "non",
+            "essere",
+            "il",
+            "padre",
+            "di",
+            "nessuno",
+            "che",
+            "tu",
+            "conoscere",
+            "li"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "È andato via anni dopo, o è restato, non lo so più.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "andare",
+            "via",
+            "anno",
+            "dopo",
+            "o",
+            "essere",
+            "restare",
+            "non",
+            "lo",
+            "sapere",
+            "piu"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Non è il punto.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "il",
+            "punto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Allora qual è il punto?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "qual",
+            "essere",
+            "il",
+            "punto"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Il punto è che Elsa voleva che io fossi la prova.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "punto",
+            "essere",
+            "che",
+            "elsa",
+            "volere",
+            "che",
+            "io",
+            "fossi",
+            "la",
+            "provare"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Prova di cosa?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "provare",
+            "di",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Che Collevento aveva ancora giovani, ancora vita, ancora un futuro.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "collevento",
+            "avere",
+            "ancora",
+            "giovane",
+            "ancora",
+            "vita",
+            "ancora",
+            "un",
+            "futuro"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Volevano che restassi nel registro, non solo sul treno.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "volere",
+            "che",
+            "restassi",
+            "nel",
+            "registro",
+            "non",
+            "solo",
+            "sul",
+            "treno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Giada guarda verso la locanda, dove Elsa avrà già acceso la luce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "guardare",
+            "verso",
+            "la",
+            "locanda",
+            "dove",
+            "elsa",
+            "avra",
+            "gia",
+            "acceso",
+            "la",
+            "luce"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "E tu sei andata via.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "tu",
+            "essere",
+            "andare",
+            "via"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Sì.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Sono andata via perché il paese poteva esistere senza di me.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "andare",
+            "via",
+            "perche",
+            "il",
+            "paese",
+            "potere",
+            "esistere",
+            "senza",
+            "di",
+            "io"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Se restavo, diventavo la ragione per cui loro fingevano.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "restavo",
+            "diventavo",
+            "la",
+            "ragione",
+            "per",
+            "cui",
+            "loro",
+            "fingevano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "La ragione per spostare i cartelli e aspettare ispezioni.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "ragione",
+            "per",
+            "spostare",
+            "i",
+            "cartelli",
+            "e",
+            "aspettare",
+            "ispezioni"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "La ragione per dire: vedi, Anna è tornata.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "la",
+            "ragione",
+            "per",
+            "dire",
+            "vedere",
+            "anna",
+            "essere",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Giada cammina lentamente verso le case mentre parla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "camminare",
+            "lentamente",
+            "verso",
+            "le",
+            "casa",
+            "mentre",
+            "parlare"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "Ma tu li hai abbandonati.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ma",
+            "tu",
+            "li",
+            "avere",
+            "abbandonati"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Ho lasciato un posto che mi voleva come simbolo.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "lasciare",
+            "un",
+            "posto",
+            "che",
+            "mi",
+            "volere",
+            "come",
+            "simbolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Non è la stessa cosa.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "la",
+            "stesso",
+            "cosa"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "E il ragazzo?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "il",
+            "ragazzo"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Gli ho detto la verità una sera, prima dell'acqua.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "gli",
+            "avere",
+            "dire",
+            "la",
+            "verita",
+            "una",
+            "sera",
+            "prima",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Che partivo, e che non tornavo per diventare una storia.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "partivo",
+            "e",
+            "che",
+            "non",
+            "tornavo",
+            "per",
+            "diventare",
+            "una",
+            "storia"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Ha pianto?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "pianto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Ha detto che capiva, e forse non capiva.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "dire",
+            "che",
+            "capire",
+            "e",
+            "forse",
+            "non",
+            "capire"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Poi ho preso il bus degli operai all'alba, come fanno pochi.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "avere",
+            "prendere",
+            "il",
+            "bus",
+            "dei",
+            "operai",
+            "all'alba",
+            "come",
+            "fare",
+            "poco"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Giada si ferma vicino alla fontana della piazzetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "si",
+            "fermare",
+            "vicino",
+            "alla",
+            "fontana",
+            "della",
+            "piazzetta"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Quindi io non sono qui per chiudere il tuo cerchio.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "quindi",
+            "io",
+            "non",
+            "essere",
+            "qui",
+            "per",
+            "chiudere",
+            "il",
+            "tuo",
+            "cerchio"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "No.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Tu sei Giada.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "tu",
+            "essere",
+            "giada"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Se resti per loro, ripeti il mio errore al contrario.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "restare",
+            "per",
+            "loro",
+            "ripeti",
+            "il",
+            "mio",
+            "errore",
+            "al",
+            "contrario"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Se scappi senza capire, ripeti la mia paura.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "scappi",
+            "senza",
+            "capire",
+            "ripeti",
+            "la",
+            "mio",
+            "paura"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Allora cosa faccio?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "cosa",
+            "fare"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Capisci perché esiste ancora, e poi esci.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "capire",
+            "perche",
+            "esiste",
+            "ancora",
+            "e",
+            "poi",
+            "uscire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Senza diventare la ragazza del registro.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "senza",
+            "diventare",
+            "la",
+            "ragazza",
+            "del",
+            "registro"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Elsa esce sulla soglia della locanda e guarda Giada al telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "uscire",
+            "sulla",
+            "soglia",
+            "della",
+            "locanda",
+            "e",
+            "guardare",
+            "giada",
+            "al",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Non ti chiama per caso.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "ti",
+            "chiamare",
+            "per",
+            "caso"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Giada alza una mano: aspetta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "alzare",
+            "una",
+            "mano",
+            "aspettare"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Mamma, Elsa è qui.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mamma",
+            "elsa",
+            "essere",
+            "qui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Dille che non sei me.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "dille",
+            "che",
+            "non",
+            "essere",
+            "io"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Glielo dico da giorni.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "glielo",
+            "dire",
+            "dare",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Allora dillo anche con i piedi: parti all'alba.",
+          "speakerId": "anna-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "allora",
+            "dillo",
+            "anche",
+            "con",
+            "i",
+            "piedi",
+            "partire",
+            "all'alba"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Il segnale cade di nuovo, ma questa volta Giada ha abbastanza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "segnale",
+            "cade",
+            "di",
+            "nuovo",
+            "ma",
+            "questo",
+            "volta",
+            "giada",
+            "avere",
+            "abbastanza"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Chiude la chiamata e guarda Elsa senza odio fresco.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "la",
+            "chiamata",
+            "e",
+            "guardare",
+            "elsa",
+            "senza",
+            "odio",
+            "fresco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Mia madre ha lasciato un ragazzo.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "mio",
+            "madre",
+            "avere",
+            "lasciare",
+            "un",
+            "ragazzo"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Non è il padre di Neri.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "il",
+            "padre",
+            "di",
+            "neri"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "E se n'è andata perché voleva che Collevento esistesse senza di lei.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "e",
+            "se",
+            "n'e",
+            "andare",
+            "perche",
+            "volere",
+            "che",
+            "collevento",
+            "esistesse",
+            "senza",
+            "di",
+            "lei"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Elsa abbassa gli occhi, come se quella frase le facesse male.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "abbassa",
+            "gli",
+            "occhi",
+            "come",
+            "se",
+            "quello",
+            "frase",
+            "le",
+            "facesse",
+            "ma"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Anna poteva restare.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "anna",
+            "potere",
+            "restare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Poteva, ma non doveva diventare la vostra prova.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "potere",
+            "ma",
+            "non",
+            "dovere",
+            "diventare",
+            "la",
+            "vostra",
+            "provare"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Né io.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "ne",
+            "io"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Elsa non risponde; rientra e lascia la porta socchiusa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "rispondere",
+            "rientra",
+            "e",
+            "lasciare",
+            "la",
+            "porta",
+            "socchiusa"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Giada resta nella piazza con la voce della madre ancora nelle orecchie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "restare",
+            "nella",
+            "piazza",
+            "con",
+            "la",
+            "voce",
+            "della",
+            "madre",
+            "ancora",
+            "nelle",
+            "orecchie"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Il paese esisteva prima di Anna, e può esistere senza Giada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "paese",
+            "esisteva",
+            "prima",
+            "di",
+            "anna",
+            "e",
+            "potere",
+            "esistere",
+            "senza",
+            "giada"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Questa è la parte difficile da tenere ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "questo",
+            "essere",
+            "la",
+            "partire",
+            "difficile",
+            "dare",
+            "tenere",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Non sistemare le storie per farle tornare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sistemare",
+            "le",
+            "storie",
+            "per",
+            "fare",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "Non fare di Neri il figlio di un silenzio vecchio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "fare",
+            "di",
+            "neri",
+            "il",
+            "figlio",
+            "di",
+            "un",
+            "silenzio",
+            "vecchio"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Non fare di te stessa la figlia che ripara tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "fare",
+            "di",
+            "tu",
+            "stesso",
+            "la",
+            "figlia",
+            "che",
+            "ripara",
+            "tutto"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Giada entra in locanda, passa accanto a Elsa senza litigare ancora, e sale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "entrare",
+            "in",
+            "locanda",
+            "passare",
+            "accanto",
+            "a",
+            "elsa",
+            "senza",
+            "litigare",
+            "ancora",
+            "e",
+            "sapere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Nella stanza apre il cassetto e guarda di nuovo la foto di Anna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nella",
+            "stanza",
+            "aprire",
+            "il",
+            "cassetto",
+            "e",
+            "guardare",
+            "di",
+            "nuovo",
+            "la",
+            "foto",
+            "di",
+            "anna"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Stessa mascella, stessa età, storia diversa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "stesso",
+            "mascella",
+            "stesso",
+            "eta",
+            "storia",
+            "diverso"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Chiude il cassetto piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiudere",
+            "il",
+            "cassetto",
+            "piano"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Domani, di giorno, andrà al memorial.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "domani",
+            "di",
+            "giorno",
+            "andare",
+            "al",
+            "memorial"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Non per cercare fantasmi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "per",
+            "cercare",
+            "fantasmi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Per capire cosa resta quando le persone partono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "capire",
+            "cosa",
+            "restare",
+            "quando",
+            "le",
+            "persona",
+            "partire"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Giada pensa al ragazzo senza nome che Anna ha lasciato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "pensare",
+            "al",
+            "ragazzo",
+            "senza",
+            "nome",
+            "che",
+            "anna",
+            "avere",
+            "lasciare"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Non prova a inventargli un cognome o una casa in piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "provare",
+            "a",
+            "inventargli",
+            "un",
+            "cognome",
+            "o",
+            "una",
+            "casa",
+            "in",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Lascia quel pezzo storto, come Anna ha chiesto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lasciare",
+            "quello",
+            "pezzo",
+            "storto",
+            "come",
+            "anna",
+            "avere",
+            "chiedere"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Fuori, qualcuno sposta ancora un vaso per l'ispezione che non arriva.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "qualcuno",
+            "sposta",
+            "ancora",
+            "un",
+            "vaso",
+            "per",
+            "l'ispezione",
+            "che",
+            "non",
+            "arrivare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Dentro, Giada capisce meglio il perché della fuga di sua madre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dentro",
+            "giada",
+            "capire",
+            "meglio",
+            "il",
+            "perche",
+            "della",
+            "fuga",
+            "di",
+            "suo",
+            "madre"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Non era solo amore finito.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "solo",
+            "amore",
+            "finire"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Era il rifiuto di diventare prova e simbolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "il",
+            "rifiuto",
+            "di",
+            "diventare",
+            "provare",
+            "e",
+            "simbolo"
+          ]
+        },
+        {
+          "id": "s89",
+          "text": "Era lasciare il villaggio libero di esistere senza una ragazza al centro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "lasciare",
+            "il",
+            "villaggio",
+            "libero",
+            "di",
+            "esistere",
+            "senza",
+            "una",
+            "ragazza",
+            "al",
+            "centro"
+          ]
+        },
+        {
+          "id": "s90",
+          "text": "Giada ripete piano: il paese può esistere senza di me.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "ripete",
+            "piano",
+            "il",
+            "paese",
+            "potere",
+            "esistere",
+            "senza",
+            "di",
+            "io"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "order": 19,
+      "sentences": [
+        {
+          "id": "s91",
+          "text": "La frase non cancella la rabbia, ma le dà una direzione.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "frase",
+            "non",
+            "cancella",
+            "la",
+            "rabbia",
+            "ma",
+            "le",
+            "dare",
+            "una",
+            "direzione"
+          ]
+        },
+        {
+          "id": "s92",
+          "text": "Non sistemare. Non diventare Anna. Capire, poi uscire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "sistemare",
+            "non",
+            "diventare",
+            "anna",
+            "capire",
+            "poi",
+            "uscire"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch18_q01",
+      "chapterId": "il-villaggio-che-non-esiste-18",
+      "type": "direct",
+      "question": "Who is the boy Anna left?",
+      "choices": [
+        "Not Neri's father",
+        "Neri's father",
+        "Tullio's son"
+      ],
+      "correctChoice": 0,
+      "explanation": "Anna says clearly the boy is not Neri's father and not to tidy the story.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch18_q02",
+      "chapterId": "il-villaggio-che-non-esiste-18",
+      "type": "direct",
+      "question": "Why does Anna say she left Collevento?",
+      "choices": [
+        "So the village could exist without her as its symbol",
+        "Because the trains stopped forever",
+        "To take Elsa's inn"
+      ],
+      "correctChoice": 0,
+      "explanation": "She left so she would not become the reason they pretended and staged the place.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch18_q03",
+      "chapterId": "il-villaggio-che-non-esiste-18",
+      "type": "inference",
+      "question": "What does Giada refuse to do with Neri's story?",
+      "choices": [
+        "Make him the stand-in for Anna's abandoned boy",
+        "Ask him to drive the engineer",
+        "Give him Anna's photo"
+      ],
+      "correctChoice": 0,
+      "explanation": "She tells herself not to make Neri the child of that old silence.",
+      "difficulty": 2
+    }
+  ]
+}

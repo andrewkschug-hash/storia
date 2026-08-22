@@ -1,0 +1,1556 @@
+{
+  "id": "il-villaggio-che-non-esiste-20",
+  "storyId": "il-villaggio-che-non-esiste",
+  "number": 20,
+  "title": "Choice",
+  "titleIt": "Scelta",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "piazza-collevento",
+    "edificio-idroelettrico",
+    "locanda-elsa"
+  ],
+  "characterIds": [
+    "giada-rinaldi",
+    "ingegnere",
+    "elsa",
+    "neri"
+  ],
+  "events": [
+    {
+      "id": "ev-il-villaggio-che-non-esiste-20",
+      "summary": "Three pressures land at once: the engineer wants Giada as proof the place is inhabited; Elsa wants her as Anna; Neri wants a ride out.",
+      "characterIds": [
+        "giada-rinaldi",
+        "ingegnere",
+        "elsa",
+        "neri"
+      ],
+      "locationIds": [
+        "piazza-collevento",
+        "edificio-idroelettrico",
+        "locanda-elsa"
+      ],
+      "rememberedFacts": [
+        "The engineer wants Giada as proof Collevento is inhabited",
+        "Elsa wants Giada to stay as Anna",
+        "Neri wants a ride out with Giada",
+        "Giada hears all three asks on the same day"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Nel pomeriggio l'ingegnere torna con la macchina alta e la camicia chiara.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "l'ingegnere",
+            "tornare",
+            "con",
+            "la",
+            "macchina",
+            "alto",
+            "e",
+            "la",
+            "camicia",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Si ferma in piazza come se fosse un ospite normale.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "fermare",
+            "in",
+            "piazza",
+            "come",
+            "se",
+            "fosse",
+            "un",
+            "ospite",
+            "normale"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Giada lo vede dalla finestra della locanda e scende.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "vedere",
+            "dalla",
+            "finestra",
+            "della",
+            "locanda",
+            "e",
+            "scende"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Elsa è già fuori, con le braccia conserte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "essere",
+            "gia",
+            "fuori",
+            "con",
+            "le",
+            "braccia",
+            "conserte"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Signorina Rinaldi.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "signorina",
+            "rinaldi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Ho bisogno di una cosa semplice.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "bisogno",
+            "di",
+            "una",
+            "cosa",
+            "semplice"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Una foto sua qui, con data, e una dichiarazione breve.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "una",
+            "foto",
+            "suo",
+            "qui",
+            "con",
+            "dare",
+            "e",
+            "una",
+            "dichiarazione",
+            "breve"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Che questo posto è abitato.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "che",
+            "questo",
+            "posto",
+            "essere",
+            "abitato"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Giada lo guarda senza sorridere.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "lo",
+            "guardare",
+            "senza",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Perché proprio io?",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "proprio",
+            "io"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Perché lei non è residente da trent'anni di carte confuse.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "perche",
+            "lei",
+            "non",
+            "essere",
+            "residente",
+            "dare",
+            "trent'anni",
+            "di",
+            "carte",
+            "confuse"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Lei è giovane, di fuori, credibile per un nuovo progetto.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "essere",
+            "giovane",
+            "di",
+            "fuori",
+            "credibile",
+            "per",
+            "un",
+            "nuovo",
+            "progetto"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Se il luogo risulta abitato, cambiano i numeri.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "il",
+            "luogo",
+            "risulta",
+            "abitato",
+            "cambiano",
+            "i",
+            "numero"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Compensi, priorità, scadenze.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "compensi",
+            "priorita",
+            "scadenze"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Ossia: lei diventa una prova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ossia",
+            "lei",
+            "diventa",
+            "una",
+            "provare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Elsa interviene prima che Giada risponda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "interviene",
+            "prima",
+            "che",
+            "giada",
+            "risponda"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Lei non è una prova sua.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "lei",
+            "non",
+            "essere",
+            "una",
+            "provare",
+            "suo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "È Anna.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "essere",
+            "anna"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Deve restare qui, con noi.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "dovere",
+            "restare",
+            "qui",
+            "con",
+            "noi"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "Giada sente due mani invisibili tirarle da parti opposte.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "due",
+            "mani",
+            "invisibili",
+            "tirarle",
+            "dare",
+            "partire",
+            "opposte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Non sono Anna.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "essere",
+            "anna"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Elsa fa un passo avanti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "fare",
+            "un",
+            "passare",
+            "avanti"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Hai la stessa faccia, la stessa età, la stessa borsa.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "la",
+            "stesso",
+            "faccia",
+            "la",
+            "stesso",
+            "eta",
+            "la",
+            "stesso",
+            "borsa"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Se resti, il paese ha di nuovo una ragazza nel centro della storia.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "restare",
+            "il",
+            "paese",
+            "avere",
+            "di",
+            "nuovo",
+            "una",
+            "ragazza",
+            "nel",
+            "centro",
+            "della",
+            "storia"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "L'ingegnere alza una mano pacifica.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "alzare",
+            "una",
+            "mano",
+            "pacifica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Io non chiedo che resti per sempre.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "io",
+            "non",
+            "chiedere",
+            "che",
+            "restare",
+            "per",
+            "sempre"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Chiedo solo una firma utile.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiedere",
+            "solo",
+            "una",
+            "firma",
+            "utile"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Poi può andare a Trento con un passaggio sicuro.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "poi",
+            "potere",
+            "andare",
+            "a",
+            "trento",
+            "con",
+            "un",
+            "passaggio",
+            "sicuro"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Neri arriva di corsa dalla strada, senza cuffie.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "arrivare",
+            "di",
+            "corsa",
+            "dalla",
+            "strada",
+            "senza",
+            "cuffie"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Ha sentito la parola passaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "sentire",
+            "la",
+            "parola",
+            "passaggio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Se lei parte, porto via anche me.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "lei",
+            "partire",
+            "porto",
+            "via",
+            "anche",
+            "io"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Non chiedo soldi.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "chiedere",
+            "soldi"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "Chiedo un sedile e una strada che non sia acqua.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "chiedere",
+            "un",
+            "sedile",
+            "e",
+            "una",
+            "strada",
+            "che",
+            "non",
+            "sia",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "La piazza resta ferma: quattro persone, tre richieste.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "piazza",
+            "restare",
+            "fermare",
+            "quattro",
+            "persona",
+            "tre",
+            "richieste"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "L'ingegnere vuole una prova abitata.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "volere",
+            "una",
+            "provare",
+            "abitata"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Elsa vuole Anna restituita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "volere",
+            "anna",
+            "restituita"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Neri vuole un passaggio fuori dalla mappa bianca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "volere",
+            "un",
+            "passaggio",
+            "fuori",
+            "dalla",
+            "mappa",
+            "bianca"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "Giada sente il sole sulla nuca e la rabbia quieta tornare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "sentire",
+            "il",
+            "sole",
+            "sulla",
+            "nuca",
+            "e",
+            "la",
+            "rabbia",
+            "quieta",
+            "tornare"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Tutti volete che io risolva qualcosa.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "tutto",
+            "volere",
+            "che",
+            "io",
+            "risolva",
+            "qualcosa"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Nessuno chiede se io voglio solo arrivare da mio padre.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "nessuno",
+            "chiedere",
+            "se",
+            "io",
+            "volere",
+            "solo",
+            "arrivare",
+            "dare",
+            "mio",
+            "padre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "L'ingegnere sorride ancora, educato.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "l'ingegnere",
+            "sorridere",
+            "ancora",
+            "educato"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Il mondo funziona con documenti.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "mondo",
+            "funzionare",
+            "con",
+            "documenti"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Elsa scuote la testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "scuote",
+            "la",
+            "testa"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Il mondo funziona con chi resta.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "mondo",
+            "funzionare",
+            "con",
+            "chi",
+            "restare"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Neri guarda Giada, non gli altri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "guardare",
+            "giada",
+            "non",
+            "gli",
+            "altro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Il mondo funziona se qualcuno ti fa salire.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "mondo",
+            "funzionare",
+            "se",
+            "qualcuno",
+            "ti",
+            "fare",
+            "salire"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Giada fa un passo indietro, verso il muro della locanda.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "fare",
+            "un",
+            "passare",
+            "indietro",
+            "verso",
+            "il",
+            "muro",
+            "della",
+            "locanda"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "Ho bisogno di pensare.",
+          "speakerId": "giada-rinaldi",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "bisogno",
+            "di",
+            "pensare"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Non firmare niente oggi.",
+          "speakerId": "elsa",
+          "kind": "dialogue",
+          "lemmas": [
+            "non",
+            "firmare",
+            "niente",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Firmi questa sera, prima che torni la diga.",
+          "speakerId": "ingegnere",
+          "kind": "dialogue",
+          "lemmas": [
+            "firmi",
+            "questo",
+            "sera",
+            "prima",
+            "che",
+            "tornare",
+            "la",
+            "diga"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Dimmi solo se c'è posto.",
+          "speakerId": "neri",
+          "kind": "dialogue",
+          "lemmas": [
+            "dimmi",
+            "solo",
+            "se",
+            "ce",
+            "posto"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Giada entra senza rispondere a nessuno dei tre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "entrare",
+            "senza",
+            "rispondere",
+            "a",
+            "nessuno",
+            "dei",
+            "tre"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Sale in camera e chiude la porta con cura.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sapere",
+            "in",
+            "camera",
+            "e",
+            "chiudere",
+            "la",
+            "porta",
+            "con",
+            "cura"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Si siede sul letto e conta le richieste sulle dita.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "si",
+            "sedere",
+            "sul",
+            "leggere",
+            "e",
+            "contare",
+            "le",
+            "richieste",
+            "sul",
+            "dita"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Una: essere prova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "una",
+            "essere",
+            "provare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "Due: essere Anna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "due",
+            "essere",
+            "anna"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Tre: essere taxi per Neri.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tre",
+            "essere",
+            "taxi",
+            "per",
+            "neri"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Nessuna delle tre è la ragazza che vuole diventare.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nessuno",
+            "delle",
+            "tre",
+            "essere",
+            "la",
+            "ragazza",
+            "che",
+            "volere",
+            "diventare"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Guarda fuori: l'ingegnere parla al telefono vicino alla macchina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "fuori",
+            "l'ingegnere",
+            "parlare",
+            "al",
+            "telefono",
+            "vicino",
+            "alla",
+            "macchina"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Elsa sposta un vaso sulla piazza, piccolo gesto di messa in scena.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "sposta",
+            "un",
+            "vaso",
+            "sulla",
+            "piazza",
+            "piccolo",
+            "gesto",
+            "di",
+            "mettere",
+            "in",
+            "scena"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Neri fuma e guarda la strada che dopo il tramonto non serve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "fuma",
+            "e",
+            "guardare",
+            "la",
+            "strada",
+            "che",
+            "dopo",
+            "il",
+            "tramonto",
+            "non",
+            "servire"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Giada apre il taccuino del telefono e scrive tre no.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "aprire",
+            "il",
+            "taccuino",
+            "del",
+            "telefono",
+            "e",
+            "scrivere",
+            "tre",
+            "no"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Non ancora detti ad alta voce, ma già chiari.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "ancora",
+            "detti",
+            "a",
+            "alto",
+            "voce",
+            "ma",
+            "gia",
+            "chiaro"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Non firmerò per rendere abitato un progetto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "firmero",
+            "per",
+            "rendere",
+            "abitato",
+            "un",
+            "progetto"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non resterò per riempire il posto di mia madre.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "restero",
+            "per",
+            "riempire",
+            "il",
+            "posto",
+            "di",
+            "mio",
+            "madre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Non porterò via Neri come un pacco, se lui non parla con i suoi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "portero",
+            "via",
+            "neri",
+            "come",
+            "un",
+            "pacco",
+            "se",
+            "lui",
+            "non",
+            "parlare",
+            "con",
+            "i",
+            "suo"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "La scelta non è tra restare e sparire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "scegliere",
+            "non",
+            "essere",
+            "tra",
+            "restare",
+            "e",
+            "sparire"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "È tra diventare oggetto delle storie altrui o uscire con il proprio nome.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "tra",
+            "diventare",
+            "oggetto",
+            "delle",
+            "storie",
+            "altrui",
+            "o",
+            "uscire",
+            "con",
+            "il",
+            "proprio",
+            "nome"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Giada spegne lo schermo e aspetta il momento di dirlo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "spegne",
+            "lo",
+            "schermo",
+            "e",
+            "aspettare",
+            "il",
+            "momento",
+            "di",
+            "dire"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Sotto la finestra le tre voci continuano, basse, come un mercato di bisogni.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "sotto",
+            "la",
+            "finestra",
+            "le",
+            "tre",
+            "voce",
+            "continuano",
+            "basso",
+            "come",
+            "un",
+            "mercato",
+            "di",
+            "bisogni"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Lei non scende ancora.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lei",
+            "non",
+            "scende",
+            "ancora"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Prima deve tenere ferma la risposta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "dovere",
+            "tenere",
+            "fermare",
+            "la",
+            "risposta"
+          ]
+        },
+        {
+          "id": "s73",
+          "text": "No.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "no"
+          ]
+        },
+        {
+          "id": "s74",
+          "text": "Scende un momento in cucina solo per bere acqua.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scende",
+            "un",
+            "momento",
+            "in",
+            "cucina",
+            "solo",
+            "per",
+            "bere",
+            "acqua"
+          ]
+        },
+        {
+          "id": "s75",
+          "text": "Elsa non parla; sistema tazze come se il lavoro potesse tenere il paese intero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "non",
+            "parlare",
+            "sistema",
+            "tazze",
+            "come",
+            "se",
+            "il",
+            "lavorare",
+            "potesse",
+            "tenere",
+            "il",
+            "paese",
+            "intero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "order": 16,
+      "sentences": [
+        {
+          "id": "s76",
+          "text": "Giada non chiede scusa per non essere Anna.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "non",
+            "chiedere",
+            "scusa",
+            "per",
+            "non",
+            "essere",
+            "anna"
+          ]
+        },
+        {
+          "id": "s77",
+          "text": "Non deve.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "dovere"
+          ]
+        },
+        {
+          "id": "s78",
+          "text": "Torna su e rilegge le tre richieste scritte sul telefono.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "tornare",
+            "su",
+            "e",
+            "rilegge",
+            "le",
+            "tre",
+            "richieste",
+            "scritte",
+            "sul",
+            "telefono"
+          ]
+        },
+        {
+          "id": "s79",
+          "text": "Prova. Anna. Passaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "provare",
+            "anna",
+            "passaggio"
+          ]
+        },
+        {
+          "id": "s80",
+          "text": "Ognuna sembra ragionevole dalla bocca di chi la fa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ognuna",
+            "sembrare",
+            "ragionevole",
+            "dalla",
+            "bocca",
+            "di",
+            "chi",
+            "la",
+            "fare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "order": 17,
+      "sentences": [
+        {
+          "id": "s81",
+          "text": "Insieme diventano una rete per catturare la sua faccia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "insieme",
+            "diventano",
+            "una",
+            "rete",
+            "per",
+            "catturare",
+            "la",
+            "suo",
+            "faccia"
+          ]
+        },
+        {
+          "id": "s82",
+          "text": "Guarda la borsa di Anna sul pavimento e la sposta sotto il letto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "guardare",
+            "la",
+            "borsa",
+            "di",
+            "anna",
+            "sul",
+            "pavimento",
+            "e",
+            "la",
+            "sposta",
+            "sotto",
+            "il",
+            "leggere"
+          ]
+        },
+        {
+          "id": "s83",
+          "text": "Non vuole che resti in vista come un costume pronto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "volere",
+            "che",
+            "restare",
+            "in",
+            "vista",
+            "come",
+            "un",
+            "costume",
+            "pronto"
+          ]
+        },
+        {
+          "id": "s84",
+          "text": "Fuori, la macchina alta dell'ingegnere fa ombra sulla piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "fuori",
+            "la",
+            "macchina",
+            "alto",
+            "dell'ingegnere",
+            "fare",
+            "ombra",
+            "sulla",
+            "piazza"
+          ]
+        },
+        {
+          "id": "s85",
+          "text": "Neri aspetta una risposta che lei non darà in fretta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "neri",
+            "aspettare",
+            "una",
+            "risposta",
+            "che",
+            "lei",
+            "non",
+            "dara",
+            "in",
+            "fretta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "order": 18,
+      "sentences": [
+        {
+          "id": "s86",
+          "text": "Elsa aspetta una restituzione che non arriverà.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elsa",
+            "aspettare",
+            "una",
+            "restituzione",
+            "che",
+            "non",
+            "arrivera"
+          ]
+        },
+        {
+          "id": "s87",
+          "text": "Giada aspetta solo di dire no con voce ferma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giada",
+            "aspettare",
+            "solo",
+            "di",
+            "dire",
+            "no",
+            "con",
+            "voce",
+            "fermare"
+          ]
+        },
+        {
+          "id": "s88",
+          "text": "Quando il sole scende ancora un poco, scende anche lei.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "il",
+            "sole",
+            "scende",
+            "ancora",
+            "un",
+            "poco",
+            "scende",
+            "anche",
+            "lei"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch20_q01",
+      "chapterId": "il-villaggio-che-non-esiste-20",
+      "type": "direct",
+      "question": "What does the engineer want from Giada?",
+      "choices": [
+        "Proof that the place is inhabited",
+        "To buy Elsa's inn",
+        "To close the memorial"
+      ],
+      "correctChoice": 0,
+      "explanation": "He wants her photo and statement that Collevento is inhabited for a new project.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch20_q02",
+      "chapterId": "il-villaggio-che-non-esiste-20",
+      "type": "direct",
+      "question": "What does Elsa want?",
+      "choices": [
+        "Giada to stay as Anna",
+        "Giada to sign for the engineer",
+        "Neri to leave tonight"
+      ],
+      "correctChoice": 0,
+      "explanation": "Elsa says she is Anna and must stay with them.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch20_q03",
+      "chapterId": "il-villaggio-che-non-esiste-20",
+      "type": "direct",
+      "question": "What does Neri ask for?",
+      "choices": [
+        "A ride out",
+        "Money from the company",
+        "Anna's photo"
+      ],
+      "correctChoice": 0,
+      "explanation": "Neri asks for a seat and a road that is not water.",
+      "difficulty": 2
+    }
+  ]
+}

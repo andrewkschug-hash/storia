@@ -1,0 +1,1211 @@
+{
+  "id": "lettera-per-elena-07",
+  "storyId": "lettera-per-elena",
+  "number": 7,
+  "title": "Pietro again",
+  "titleIt": "Pietro di nuovo",
+  "difficultyLevel": 2,
+  "locationIds": [
+    "caffe-brenta",
+    "bancone-brenta",
+    "scaffale-libro",
+    "van-pietro",
+    "magazzino-caffe"
+  ],
+  "characterIds": [
+    "elena-marini",
+    "pietro-baldo",
+    "bruna",
+    "katia"
+  ],
+  "events": [
+    {
+      "id": "ev-lettera-per-elena-07",
+      "summary": "Elena tries to talk like her notes and fails. Pietro spills coffee beans; the moment turns into comedy.",
+      "characterIds": [
+        "elena-marini",
+        "pietro-baldo",
+        "bruna",
+        "katia"
+      ],
+      "locationIds": [
+        "caffe-brenta",
+        "bancone-brenta",
+        "scaffale-libro",
+        "van-pietro",
+        "magazzino-caffe"
+      ],
+      "rememberedFacts": [
+        "Elena tries to be honest like in the book and fails",
+        "Pietro spills a bag of coffee beans",
+        "They laugh awkwardly together",
+        "Spoken conversation stays worse than the notes"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sentences": [
+        {
+          "id": "s01",
+          "text": "Martedì di nuovo. Elena aspetta il furgone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "martedi",
+            "di",
+            "nuovo",
+            "elena",
+            "aspettare",
+            "il",
+            "furgone"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Prova frasi vere nella testa, come nel libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "provare",
+            "frasi",
+            "vero",
+            "nella",
+            "testa",
+            "come",
+            "nel",
+            "libro"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Vuole essere la nota: vera, semplice, coraggiosa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "essere",
+            "la",
+            "nota",
+            "vero",
+            "semplice",
+            "coraggiosa"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Pietro entra con un sacco di chicchi di caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "entrare",
+            "con",
+            "un",
+            "sacco",
+            "di",
+            "chicchi",
+            "di",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "Buongiorno.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s06",
+          "text": "Buongiorno.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "buongiorno"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Elena respira e prova.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "respira",
+            "e",
+            "provare"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Oggi... oggi al bancone c'è molto rumore.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "oggi",
+            "al",
+            "banco",
+            "ce",
+            "molto",
+            "rumore"
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "Sì.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Non è quello che voleva dire.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "essere",
+            "quello",
+            "che",
+            "volere",
+            "dire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sentences": [
+        {
+          "id": "s11",
+          "text": "Voleva dire: oggi ho paura del silenzio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "volere",
+            "dire",
+            "oggi",
+            "avere",
+            "paura",
+            "del",
+            "silenzio"
+          ]
+        },
+        {
+          "id": "s12",
+          "text": "Ma la frase resta nel petto e non esce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "la",
+            "frase",
+            "restare",
+            "nel",
+            "petto",
+            "e",
+            "non",
+            "uscire"
+          ]
+        },
+        {
+          "id": "s13",
+          "text": "Il tempo?",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "tempo"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Nebbia. Come sempre al martedì.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "nebbia",
+            "come",
+            "sempre",
+            "al",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s15",
+          "text": "Katia sussurra dietro al bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "sussurra",
+            "dietro",
+            "al",
+            "banco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
+        {
+          "id": "s16",
+          "text": "Geniale.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "geniale"
+          ]
+        },
+        {
+          "id": "s17",
+          "text": "Elena arrossisce e odia il bancone per un secondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "arrossisce",
+            "e",
+            "odia",
+            "il",
+            "banco",
+            "per",
+            "un",
+            "secondo"
+          ]
+        },
+        {
+          "id": "s18",
+          "text": "Pietro solleva il sacco verso il magazzino.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "solleva",
+            "il",
+            "sacco",
+            "verso",
+            "il",
+            "magazzino"
+          ]
+        },
+        {
+          "id": "s19",
+          "text": "Il sacco si apre vicino allo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "sacco",
+            "si",
+            "aprire",
+            "vicino",
+            "al",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s20",
+          "text": "I chicchi di caffè cadono sul pavimento con un rumore piccolo e ridicolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "i",
+            "chicchi",
+            "di",
+            "caffe",
+            "cadono",
+            "sul",
+            "pavimento",
+            "con",
+            "un",
+            "rumore",
+            "piccolo",
+            "e",
+            "ridicolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "order": 5,
+      "sentences": [
+        {
+          "id": "s21",
+          "text": "Oh no.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "oh",
+            "no"
+          ]
+        },
+        {
+          "id": "s22",
+          "text": "Aspetta. Prendo la scopa.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "aspettare",
+            "prendere",
+            "la",
+            "scopa"
+          ]
+        },
+        {
+          "id": "s23",
+          "text": "Elena prende la scopa dietro al bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "prendere",
+            "la",
+            "scopa",
+            "dietro",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s24",
+          "text": "Pietro è in ginocchio e raccoglie i chicchi con le mani.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "essere",
+            "in",
+            "ginocchio",
+            "e",
+            "raccoglie",
+            "i",
+            "chicchi",
+            "con",
+            "le",
+            "mani"
+          ]
+        },
+        {
+          "id": "s25",
+          "text": "Scusa. Sono goffo.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "scusa",
+            "essere",
+            "goffo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "order": 6,
+      "sentences": [
+        {
+          "id": "s26",
+          "text": "Va bene. Succede. Anche il tavolo balla, qui.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "andare",
+            "bene",
+            "succede",
+            "anche",
+            "il",
+            "tavolo",
+            "balla",
+            "qui"
+          ]
+        },
+        {
+          "id": "s27",
+          "text": "Pietro alza gli occhi un momento e quasi sorride.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "alzare",
+            "gli",
+            "occhi",
+            "un",
+            "momento",
+            "e",
+            "quasi",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s28",
+          "text": "Bruna arriva dal magazzino e guarda il pavimento.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "arrivare",
+            "dal",
+            "magazzino",
+            "e",
+            "guardare",
+            "il",
+            "pavimento"
+          ]
+        },
+        {
+          "id": "s29",
+          "text": "Il caffè sul pavimento è un peccato.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "il",
+            "caffe",
+            "sul",
+            "pavimento",
+            "essere",
+            "un",
+            "peccato"
+          ]
+        },
+        {
+          "id": "s30",
+          "text": "Ma poi ride e scuote la testa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "poi",
+            "ride",
+            "e",
+            "scuote",
+            "la",
+            "testa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "order": 7,
+      "sentences": [
+        {
+          "id": "s31",
+          "text": "Almeno oggi non parlate solo di nebbia.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "almeno",
+            "oggi",
+            "non",
+            "parlare",
+            "solo",
+            "di",
+            "nebbia"
+          ]
+        },
+        {
+          "id": "s32",
+          "text": "Elena e Pietro ridono insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "e",
+            "pietro",
+            "ridono",
+            "insieme"
+          ]
+        },
+        {
+          "id": "s33",
+          "text": "È una risata corta, goffa, vera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "una",
+            "risata",
+            "corta",
+            "goffa",
+            "vero"
+          ]
+        },
+        {
+          "id": "s34",
+          "text": "È meglio del silenzio morto di martedì scorso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "meglio",
+            "del",
+            "silenzio",
+            "morto",
+            "di",
+            "martedi",
+            "scorso"
+          ]
+        },
+        {
+          "id": "s35",
+          "text": "Quando il pavimento è pulito, Pietro firma il foglio sul bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "il",
+            "pavimento",
+            "essere",
+            "pulito",
+            "pietro",
+            "firma",
+            "il",
+            "foglio",
+            "sul",
+            "banco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "order": 8,
+      "sentences": [
+        {
+          "id": "s36",
+          "text": "Elena vuole dire qualcosa di vero prima che lui esca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "volere",
+            "dire",
+            "qualcosa",
+            "di",
+            "vero",
+            "prima",
+            "che",
+            "lui",
+            "esca"
+          ]
+        },
+        {
+          "id": "s37",
+          "text": "Mi piace il martedì.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "mi",
+            "piacere",
+            "il",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s38",
+          "text": "La frase esce storta e troppo piccola.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "frase",
+            "uscire",
+            "storta",
+            "e",
+            "troppo",
+            "piccolo"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Anche a me. Il lavoro.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "anche",
+            "a",
+            "io",
+            "il",
+            "lavorare"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Lui pensa al lavoro. Lei pensava a lui.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lui",
+            "pensare",
+            "al",
+            "lavorare",
+            "lei",
+            "pensare",
+            "a",
+            "lui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "order": 9,
+      "sentences": [
+        {
+          "id": "s41",
+          "text": "Pietro guarda lo scaffale del libro un secondo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "guardare",
+            "lo",
+            "scaffale",
+            "del",
+            "libro",
+            "un",
+            "secondo"
+          ]
+        },
+        {
+          "id": "s42",
+          "text": "Poi prende le chiavi del furgone e saluta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "prendere",
+            "le",
+            "chiave",
+            "del",
+            "furgone",
+            "e",
+            "saluta"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "A martedì.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "a",
+            "martedi"
+          ]
+        },
+        {
+          "id": "s44",
+          "text": "Elena resta con la scopa in mano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "elena",
+            "restare",
+            "con",
+            "la",
+            "scopa",
+            "in",
+            "mano"
+          ]
+        },
+        {
+          "id": "s45",
+          "text": "Ha fallito di nuovo nella voce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "fallito",
+            "di",
+            "nuovo",
+            "nella",
+            "voce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "order": 10,
+      "sentences": [
+        {
+          "id": "s46",
+          "text": "Nel libro avrebbe scritto meglio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "libro",
+            "avrebbe",
+            "scrivere",
+            "meglio"
+          ]
+        },
+        {
+          "id": "s47",
+          "text": "Katia le passa vicino e parla piano.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "katia",
+            "le",
+            "passare",
+            "vicino",
+            "e",
+            "parlare",
+            "piano"
+          ]
+        },
+        {
+          "id": "s48",
+          "text": "I chicchi erano carini.",
+          "speakerId": "katia",
+          "kind": "dialogue",
+          "lemmas": [
+            "i",
+            "chicchi",
+            "essere",
+            "carini"
+          ]
+        },
+        {
+          "id": "s49",
+          "text": "Zitta.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "zitta"
+          ]
+        },
+        {
+          "id": "s50",
+          "text": "Ma anche Elena sorride, nonostante tutto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "ma",
+            "anche",
+            "elena",
+            "sorridere",
+            "nonostante",
+            "tutto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "order": 11,
+      "sentences": [
+        {
+          "id": "s51",
+          "text": "Nel pomeriggio apre il libro vicino allo zucchero.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "nel",
+            "pomeriggio",
+            "aprire",
+            "il",
+            "libro",
+            "vicino",
+            "al",
+            "zucchero"
+          ]
+        },
+        {
+          "id": "s52",
+          "text": "Non scrive la scena dei chicchi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "scrivere",
+            "la",
+            "scena",
+            "dei",
+            "chicchi"
+          ]
+        },
+        {
+          "id": "s53",
+          "text": "Scrive solo una riga onesta e brutta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "scrivere",
+            "solo",
+            "una",
+            "riga",
+            "onesta",
+            "e",
+            "brutta"
+          ]
+        },
+        {
+          "id": "s54",
+          "text": "Prima che Pietro arrivi, Elena ripete una frase al bancone vuoto.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "prima",
+            "che",
+            "pietro",
+            "arrivare",
+            "elena",
+            "ripete",
+            "una",
+            "frase",
+            "al",
+            "banco",
+            "vuoto"
+          ]
+        },
+        {
+          "id": "s55",
+          "text": "Oggi ho paura del silenzio.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "oggi",
+            "avere",
+            "paura",
+            "del",
+            "silenzio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "order": 12,
+      "sentences": [
+        {
+          "id": "s56",
+          "text": "La voce le sembra strana fuori dal libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "la",
+            "voce",
+            "le",
+            "sembrare",
+            "strano",
+            "fuori",
+            "dal",
+            "libro"
+          ]
+        },
+        {
+          "id": "s57",
+          "text": "Quando lui è lì, la frase sparisce.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "quando",
+            "lui",
+            "essere",
+            "li",
+            "la",
+            "frase",
+            "sparisce"
+          ]
+        },
+        {
+          "id": "s58",
+          "text": "Restano solo nebbia, chicchi e una scopa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "restano",
+            "solo",
+            "nebbia",
+            "chicchi",
+            "e",
+            "una",
+            "scopa"
+          ]
+        },
+        {
+          "id": "s59",
+          "text": "Bruna porta un altro sacco di zucchero sul bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "bruna",
+            "porta",
+            "un",
+            "altro",
+            "sacco",
+            "di",
+            "zucchero",
+            "sul",
+            "banco"
+          ]
+        },
+        {
+          "id": "s60",
+          "text": "Fate attenzione, voi due.",
+          "speakerId": "bruna",
+          "kind": "dialogue",
+          "lemmas": [
+            "fare",
+            "attenzione",
+            "voi",
+            "due"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "order": 13,
+      "sentences": [
+        {
+          "id": "s61",
+          "text": "Sì.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes"
+          ]
+        },
+        {
+          "id": "s62",
+          "text": "Pietro raccoglie ancora un chicco sotto lo scaffale del libro.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "pietro",
+            "raccoglie",
+            "ancora",
+            "un",
+            "chicco",
+            "sotto",
+            "lo",
+            "scaffale",
+            "del",
+            "libro"
+          ]
+        },
+        {
+          "id": "s63",
+          "text": "Il libro non si è sporcato. Elena lo controlla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "libro",
+            "non",
+            "si",
+            "essere",
+            "sporcato",
+            "elena",
+            "lo",
+            "controlla"
+          ]
+        },
+        {
+          "id": "s64",
+          "text": "Per un secondo pensa di dirgli: guardi sempre lì.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "per",
+            "un",
+            "secondo",
+            "pensare",
+            "di",
+            "dire",
+            "guardare",
+            "sempre",
+            "li"
+          ]
+        },
+        {
+          "id": "s65",
+          "text": "Non lo dice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "lo",
+            "dire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "order": 14,
+      "sentences": [
+        {
+          "id": "s66",
+          "text": "Dice solo grazie quando lui le passa la scopa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "dire",
+            "solo",
+            "grazie",
+            "quando",
+            "lui",
+            "le",
+            "passare",
+            "la",
+            "scopa"
+          ]
+        },
+        {
+          "id": "s67",
+          "text": "Grazie.",
+          "speakerId": "elena-marini",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie"
+          ]
+        },
+        {
+          "id": "s68",
+          "text": "Prego.",
+          "speakerId": "pietro-baldo",
+          "kind": "dialogue",
+          "lemmas": [
+            "prego"
+          ]
+        },
+        {
+          "id": "s69",
+          "text": "Così finisce il tentativo: con due parole piccole e tanti chicchi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "cosi",
+            "finire",
+            "il",
+            "tentativo",
+            "con",
+            "due",
+            "parola",
+            "piccolo",
+            "e",
+            "tanto",
+            "chicchi"
+          ]
+        },
+        {
+          "id": "s70",
+          "text": "Oggi ho parlato male.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "oggi",
+            "avere",
+            "parlare",
+            "ma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "order": 15,
+      "sentences": [
+        {
+          "id": "s71",
+          "text": "Poi chiude il libro e torna al bancone.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "chiudere",
+            "il",
+            "libro",
+            "e",
+            "tornare",
+            "al",
+            "banco"
+          ]
+        },
+        {
+          "id": "s72",
+          "text": "Il martedì resta goffo. Ma almeno ha riso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "il",
+            "martedi",
+            "restare",
+            "goffo",
+            "ma",
+            "almeno",
+            "avere",
+            "riso"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ch07_q01",
+      "chapterId": "lettera-per-elena-07",
+      "type": "direct",
+      "question": "What does Elena try to do with Pietro?",
+      "choices": [
+        "Speak as honestly as in the notes",
+        "Sell him the book",
+        "Invite him to Padova"
+      ],
+      "correctChoice": 0,
+      "explanation": "She wants to be like the note but fails.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch07_q02",
+      "chapterId": "lettera-per-elena-07",
+      "type": "direct",
+      "question": "What comic accident happens?",
+      "choices": [
+        "Pietro spills coffee beans",
+        "Elena burns the sugar",
+        "Bruna locks the van"
+      ],
+      "correctChoice": 0,
+      "explanation": "The sack opens and beans fall on the floor.",
+      "difficulty": 2
+    },
+    {
+      "id": "ch07_q03",
+      "chapterId": "lettera-per-elena-07",
+      "type": "direct",
+      "question": "What does Elena write later?",
+      "choices": [
+        "Oggi ho parlato male",
+        "Sei Pietro",
+        "Martedì è finito"
+      ],
+      "correctChoice": 0,
+      "explanation": "She admits in the book that she spoke badly.",
+      "difficulty": 2
+    }
+  ]
+}
