@@ -1,0 +1,2342 @@
+========================================================================
+CHAPTER 25: Meno persone / Fewer people
+========================================================================
+
+[s01 | narration] Lunedì mattina Luca è tornato al caffè.
+  EN: On Monday morning Luca went back to the café.
+
+[s02 | narration] Luca è arrivato presto.
+  EN: Luca arrived early.
+
+[s03 | narration] Ha aperto la porta.
+  EN: He opened the door.
+
+[s04 | narration] Ha preparato i tavoli.
+  EN: He prepared the tables.
+
+[s05 | narration] Sono entrati pochi clienti.
+  EN: Few customers came in.
+
+[s06 | narration] Luca ha servito un caffè.
+  EN: Luca served a coffee.
+
+[s07 | narration] Ha portato acqua a un tavolo.
+  EN: He brought water to a table.
+
+[s08 | narration] Giulia ha guardato i tavoli.
+  EN: Giulia looked at the tables.
+
+
+[s09 | narration] Non ha sorriso.
+  EN: She did not smile.
+
+[s10 | narration] Ci sono meno clienti. I tavoli sono pronti, ma sono vuoti.
+  EN: There are fewer customers. The tables are ready, but they are empty.
+
+[s11 | narration] Quasi nessuno è entrato dopo. Luca ha ascoltato la strada fuori.
+  EN: Almost nobody came in after that. Luca listened to the street outside.
+
+[s12 | giulia] Questa settimana è strana. Quasi nessuno entra.
+  EN: “This week is strange. Almost nobody comes in.”
+
+[s13 | luca] Forse è solo lunedì.
+  EN: Maybe it’s only Monday.
+
+[s14 | narration] Fuori il tempo è bello, ma al caffè ci sono pochi clienti.
+  EN: Outside the weather is nice, but at the café there are few customers.
+
+
+[s15 | narration] Il padrone è arrivato tardi.
+  EN: The owner arrived late.
+
+[s16 | narration] Non ha detto niente a Giulia e a Luca.
+  EN: He said nothing to Giulia and Luca.
+
+[s17 | padrone] Lavoriamo. Vediamo come va oggi.
+  EN: “Let’s work. We’ll see how today goes.”
+
+[s18 | narration] Luca ha servito i pochi clienti. Ha portato caffè e acqua con calma.
+  EN: Luca served the few customers. He brought coffee and water calmly.
+
+[s19 | narration] Ha portato caffè e ha ascoltato i clienti.
+  EN: He brought coffee and listened to the customers.
+
+[s20 | narration] Ogni cliente è importante per il caffè del quartiere.
+  EN: Every customer is important for the neighborhood café.
+
+[s21 | narration] Nel pomeriggio la sala è ancora quasi vuota. Luca ha pulito un tavolo e ha aspettato.
+  EN: In the afternoon the room is still almost empty. Luca cleaned a table and waited.
+
+[s22 | narration] Il padrone guarda la sala e non parla molto.
+  EN: The owner looks at the room and does not talk much.
+
+
+[s23 | giulia] Il padrone è preoccupato. Lo vedo.
+  EN: “The owner is worried. I can see it.”
+
+[s24 | luca] Anch’io. Il caffè non va bene, e il mio lavoro non va bene.
+  EN: “Me too. The café is not going well, and my job is not going well.”
+
+[s25 | narration] Luca ha pensato al lavoro e all’affitto.
+  EN: Luca thought about work and about the rent.
+
+[s26 | narration] Non capisce perché ci sono pochi clienti adesso.
+  EN: He does not understand why there are so few customers now.
+
+[s26b | narration] Ha guardato i tavoli vuoti un’altra volta.
+  EN: He looked at the empty tables one more time.
+
+[s26c | narration] Ha portato un piatto in cucina e ha lavorato con calma.
+  EN: He brought a plate to the kitchen and worked calmly.
+
+[s26d | narration] Ha preparato ancora acqua e ha aspettato vicino alla porta.
+  EN: He prepared more water and waited near the door.
+
+[s27 | narration] Alla sera il padrone ha chiamato Luca e Giulia.
+  EN: In the evening the owner called Luca and Giulia.
+
+[s28 | padrone] Domani mattina parliamo. È importante.
+  EN: “Tomorrow morning we talk. It is important.”
+
+
+[s29 | narration] La sera Luca è tornato a casa.
+  EN: In the evening Luca went home.
+
+[s30 | narration] Ha contato i soldi per l’affitto.
+  EN: He counted the money for the rent.
+
+[s31 | narration] Ha i soldi per questo mese, ma il mese prossimo è difficile.
+  EN: He has money for this month, but next month is difficult.
+
+[s32 | narration] Luca pensa all’affitto e al lavoro al caffè.
+  EN: Luca thinks about the rent and about work at the café.
+
+[s33 | narration] A casa è vicino alla finestra e pensa al caffè.
+  EN: At home he is near the window and thinks about the café.
+
+[s34 | narration] Il quartiere è tranquillo, ma Luca non è tranquillo.
+  EN: The neighborhood is quiet, but Luca is not calm.
+
+[s34b | narration] Ha messo i soldi sul tavolo e ha contato di nuovo.
+  EN: He put the money on the table and counted again.
+
+[s34c | narration] Poi ha pensato al caffè del quartiere e ai clienti di oggi.
+  EN: Then he thought about the neighborhood café and today’s customers.
+
+[s34d | narration] Ha guardato fuori dalla finestra e ha visto la strada tranquilla.
+  EN: He looked out the window and saw the quiet street.
+
+[s35 | narration] Poi ha scritto un messaggio a Sofia.
+  EN: Then he wrote a message to Sofia.
+
+[s36 | narration] Ha scritto: «Il lavoro è strano questa settimana.»
+  EN: He wrote: “Work is strange this week.”
+
+[s37 | narration] Sofia ha risposto tardi: «Va bene. Parliamo presto.»
+  EN: Sofia replied late: “Okay. We’ll talk soon.”
+
+[s38 | narration] Domani al caffè Luca vuole capire di più.
+  EN: Tomorrow at the café Luca wants to understand more.
+
+[s39 | narration] Ha chiuso la luce e ha aspettato il giorno dopo.
+  EN: He turned off the light and waited for the next day.
+
+[s40 | narration] Ha pensato di nuovo ai tavoli vuoti e al messaggio di Sofia.
+  EN: He thought again about the empty tables and Sofia’s message.
+
+[s41 | narration] Ha messo il telefono sul tavolo e ha aspettato la mattina.
+  EN: He put the phone on the table and waited for the morning.
+
+
+
+========================================================================
+CHAPTER 26: Una notizia difficile / Bad news
+========================================================================
+
+[s01 | narration] Martedì mattina Luca è tornato al caffè presto.
+  EN: Tuesday morning Luca went back to the café early.
+
+[s02 | narration] Ieri il padrone ha detto di parlare questa mattina al caffè.
+  EN: Yesterday the owner said to talk this morning at the café.
+
+[s03 | narration] Ha detto che è una cosa importante.
+  EN: He said it is an important thing.
+
+[s04 | narration] Poi Luca ha aperto la porta e ha guardato la sala.
+  EN: Then Luca opened the door and looked at the room.
+
+[s05 | narration] Ci sono ancora pochi clienti, meno di lunedì. Luca ha contato i tavoli vuoti.
+  EN: There are still few customers, fewer than Monday. Luca counted the empty tables.
+
+[s06 | narration] I tavoli sono pronti, ma la sala è quasi vuota.
+  EN: The tables are ready, but the room is almost empty.
+
+[s07 | narration] Giulia è già al caffè e non ha sorriso.
+  EN: Giulia is already at the café and did not smile.
+
+[s08 | narration] Il padrone è arrivato poco dopo.
+  EN: The owner arrived a little later.
+
+
+[s09 | narration] Poi ha chiamato Luca e Giulia vicino ai tavoli.
+  EN: Then he called Luca and Giulia near the tables.
+
+[s10 | narration] Dopo ha chiuso la porta un momento.
+  EN: After that he closed the door for a moment.
+
+[s11 | padrone] Devo dirvi una notizia difficile sul caffè.
+  EN: “I must tell you difficult news about the café.”
+
+[s12 | padrone] Il caffè non va bene. Ci sono pochi clienti.
+  EN: “The café is not going well. There are few customers.”
+
+[s13 | narration] Prima sono entrati tanti clienti ogni giorno, ma adesso ci sono meno.
+  EN: Before, many customers came in every day, but now there are fewer.
+
+[s14 | padrone] Forse vendo il caffè o forse cambio tutto.
+  EN: “Maybe I sell the café or maybe I change everything.”
+
+[s15 | padrone] Non ho deciso. Questa settimana è importante.
+  EN: “I have not decided. This week is important.”
+
+[s16 | narration] Luca ha ascoltato e non ha detto niente.
+  EN: Luca listened and said nothing.
+
+
+[s17 | narration] La notizia è difficile per Luca e per Giulia.
+  EN: The news is difficult for Luca and for Giulia.
+
+[s18 | giulia] Il padrone è preoccupato. Lo vedo.
+  EN: “The owner is worried. I can see it.”
+
+[s19 | luca] E il mio lavoro?
+  EN: “And my job?”
+
+[s20 | padrone] Dipende. Non lo so ancora.
+  EN: “It depends. I do not know yet.”
+
+[s21 | narration] Quando il padrone ha finito di parlare, Giulia ha guardato Luca.
+  EN: When the owner finished speaking, Giulia looked at Luca.
+
+[s22 | narration] Poi ha detto una parola e ha guardato la sala vuota.
+  EN: Then she said a word and looked at the empty room.
+
+[s23 | narration] Nel pomeriggio Giulia ha parlato con Luca nella sala.
+  EN: In the afternoon Giulia spoke with Luca in the room.
+
+[s24 | giulia] Resto qui. Questo posto è importante.
+  EN: “I stay here. This place is important.”
+
+[s25 | luca] Anch’io. Penso al lavoro e all’affitto ogni giorno.
+  EN: “Me too. I think about work and about the rent every day.”
+
+[s26 | narration] Luca ha pensato alla casa e al mese prossimo.
+  EN: Luca thought about home and about next month.
+
+
+[s27 | narration] Poi ha servito i pochi clienti con calma. Ha portato caffè e ha ascoltato.
+  EN: Then he served the few customers calmly. He brought coffee and listened.
+
+[s28 | narration] Dopo ha pulito i tavoli e ha preparato la sala di nuovo.
+  EN: After that he cleaned the tables and prepared the room again.
+
+[s29 | narration] Ha portato caffè e acqua ai clienti.
+  EN: He brought coffee and water to the customers.
+
+[s30 | narration] Giulia ha lavorato con lui e non ha parlato molto.
+  EN: Giulia worked with him and did not talk much.
+
+[s30b | narration] Hanno portato acqua a un altro tavolo e hanno lavorato insieme.
+  EN: They brought water to another table and worked together.
+
+[s31 | narration] Alla sera il padrone è uscito presto, stanco.
+  EN: In the evening the owner left early, tired.
+
+[s32 | narration] Poi ha chiuso la giornata e non ha detto altro.
+  EN: Then he closed the day and said nothing else.
+
+[s33 | narration] Luca ha lavorato con Giulia fino a sera.
+  EN: Luca worked with Giulia until the evening.
+
+[s33b | narration] Luca ha chiuso un momento la porta e ha guardato la strada.
+  EN: Luca closed the door for a moment and looked at the street.
+
+[s34 | narration] Dopo ha pensato a Sofia e al messaggio di ieri.
+  EN: After that he thought about Sofia and about yesterday’s message.
+
+
+[s35 | luca] Domani parlo con Sofia di questa notizia.
+  EN: “Tomorrow I talk with Sofia about this news.”
+
+[s36 | giulia] Bene. Dobbiamo fare un piano, non solo aspettare.
+  EN: “Good. We must make a plan, not only wait.”
+
+[s37 | narration] Luca ha detto di sì, ma non ha ancora un piano.
+  EN: Luca said yes, but he did not have a plan yet.
+
+[s38 | narration] Poi ha scritto un messaggio a Sofia.
+  EN: Then he wrote a message to Sofia.
+
+[s39 | narration] Ha scritto che c’è una notizia difficile al caffè.
+  EN: He wrote that there is difficult news at the café.
+
+[s40 | narration] Sofia ha risposto tardi: «Capisco. Parliamo domani.»
+  EN: Sofia replied late: “I understand. We talk tomorrow.”
+
+[s41 | narration] Luca è preoccupato. Domani vuole parlare con Sofia.
+  EN: Luca is worried. Tomorrow he wants to talk with Sofia.
+
+[s42 | narration] Domani vuole capire di più.
+  EN: Tomorrow he wants to understand more.
+
+[s43 | narration] Ha messo il telefono sul tavolo e ha aspettato la sera.
+  EN: He put the phone on the table and waited for the evening.
+
+
+
+========================================================================
+CHAPTER 27: L’opinione di Sofia / Sofia’s opinion
+========================================================================
+
+[s01 | narration] Mercoledì sera Luca ha visto Sofia vicino alla piazza.
+  EN: Wednesday evening Luca saw Sofia near the square.
+
+[s02 | narration] È mercoledì sera, dopo il lavoro al caffè.
+  EN: It is Wednesday evening, after work at the café.
+
+[s03 | narration] Sofia ha visto Luca e ha sorriso.
+  EN: Sofia saw Luca and smiled.
+
+[s04 | sofia] Bene. Parla. Ieri il messaggio è strano.
+  EN: “Good. Talk. Yesterday the message was strange.”
+
+[s05 | narration] Luca ha iniziato a parlare della notizia difficile.
+  EN: Luca started to talk about the difficult news.
+
+[s06 | luca] Il padrone forse vende il caffè. O cambia tutto.
+  EN: “The owner might sell the café. Or change everything.”
+
+[s07 | luca] Non ha deciso. Questa settimana è importante.
+  EN: “He has not decided. This week is important.”
+
+[s08 | narration] Sofia ascoltava. Non ha detto niente.
+  EN: Sofia was listening. She said nothing.
+
+[s09 | narration] Luca ha detto tutto del caffè con calma. Ha parlato dei clienti e del lavoro.
+  EN: Luca said everything about the café calmly. He talked about the customers and the job.
+
+[s10 | narration] Poi hanno camminato un po’ nella strada. Il quartiere era tranquillo.
+  EN: Then they walked a little on the street. The neighborhood was quiet.
+
+[s11 | sofia] Parla di tutto: il caffè e il lavoro.
+  EN: “Talk about everything: the café and the job.”
+
+
+[s12 | sofia] Questa è una notizia difficile. Parla di più.
+  EN: “This is difficult news. Talk more.”
+
+[s13 | luca] Ieri ci sono stati pochi clienti al caffè.
+  EN: “Yesterday there were few customers at the café.”
+
+[s14 | luca] I tavoli sono restati vuoti per molto tempo.
+  EN: “The tables stayed empty for a long time.”
+
+[s15 | luca] Io penso all’affitto e al lavoro ogni giorno.
+  EN: “I think about rent and the job every day.”
+
+[s16 | sofia] Aspetta. Cosa sappiamo adesso?
+  EN: “Wait. What do we know now?”
+
+[s17 | sofia] Sappiamo che i clienti sono pochi. Tu l’hai visto.
+  EN: “We know that the customers are few. You saw it.”
+
+[s18 | sofia] Non sappiamo se vende. Non ha deciso.
+  EN: “We do not know if he sells. He has not decided.”
+
+[s19 | narration] Luca ha guardato la strada e ha pensato. Poi ha ascoltato Sofia di nuovo.
+  EN: Luca looked at the street and thought. Then he listened to Sofia again.
+
+[s20 | luca] Hai ragione. Io ho paura, e la paura parla prima.
+  EN: “You’re right. I am afraid, and fear speaks first.”
+
+[s21 | sofia] La paura c’è. Ma non è un piano.
+  EN: “Fear is there. But it is not a plan.”
+
+[s22 | sofia] Al quartiere serve quel caffè.
+  EN: “The neighborhood needs that café.”
+
+[s23 | sofia] Il caffè del quartiere è importante per tutti.
+  EN: “The neighborhood café is important for everyone.”
+
+[s24 | sofia] La gente ci va da tanto tempo.
+  EN: “People have gone there for a long time.”
+
+[s25 | luca] Sì. Ma adesso i soldi non sono abbastanza.
+  EN: “Yes. But now the money is not enough.”
+
+[s26 | sofia] Pochi clienti non è la stessa cosa di vendere.
+  EN: “Few customers is not the same thing as selling.”
+
+
+[s27 | sofia] Dobbiamo capire perché, e fare qualcosa prima.
+  EN: We need to understand why, and do something first.
+
+[s28 | luca] Giulia dice la stessa cosa. Dobbiamo fare un piano.
+  EN: “Giulia says the same thing. We must make a plan.”
+
+[s29 | sofia] Bene. Un piano piccolo è meglio di niente.
+  EN: “Good. A small plan is better than nothing.”
+
+[s30 | sofia] Che ne dici di parlare con la gente del quartiere?
+  EN: “What do you say about talking with people in the neighborhood?”
+
+[s31 | luca] Possiamo. Ma io lavoro e non ho tanto tempo.
+  EN: “We can. But I work and I don’t have much time.”
+
+[s32 | narration] Hanno guardato un negozio e la strada del quartiere vicino.
+  EN: They looked at a shop and the nearby neighborhood street.
+
+[s32b | narration] Hanno camminato ancora un poco e hanno guardato la piazza.
+  EN: They walked a little more and looked at the square.
+
+[s33 | sofia] La nonna conosce tante persone, vecchie e giovani.
+  EN: “Grandma knows many people, old and young.”
+
+[s34 | sofia] Andiamo da Nonna Rosa. Magari lei ha un’idea.
+  EN: “Let’s go to Nonna Rosa. Maybe she has an idea.”
+
+
+[s35 | luca] Va bene. Venerdì andiamo da lei, dopo il lavoro.
+  EN: “All right. Friday we go to her, after work.”
+
+[s36 | narration] Luca ha detto di sì con calma.
+  EN: Luca said yes calmly.
+
+[s37 | narration] Sofia ha scritto le domande per la nonna.
+  EN: Sofia wrote the questions for grandma.
+
+[s38 | narration] Luca ha pensato al lavoro di giovedì, al venerdì e alla nonna.
+  EN: Luca thought about Thursday’s work, Friday, and grandma.
+
+[s38b | narration] Ha scritto due parole sul telefono e ha letto di nuovo il messaggio.
+  EN: He wrote two words on the phone and read the message again.
+
+[s39 | sofia] Giovedì io lavoro. Tu prepari le domande.
+  EN: Thursday I work. You prepare the questions.
+
+[s40 | luca] E io parlo con Giulia. Magari viene anche Marco.
+  EN: “And I talk with Giulia. Maybe Marco comes too.”
+
+[s41 | sofia] Non risolviamo tutto questa sera. Ma non aspettiamo solo.
+  EN: “We don’t solve everything this evening. But we don’t only wait.”
+
+[s42 | luca] Grazie. Mi serve la tua idea, non solo ascoltare.
+  EN: “Thanks. I need your idea, not only listening.”
+
+[s43 | narration] La notizia del caffè è ancora difficile per Luca.
+  EN: The café news is still difficult for Luca.
+
+[s44 | narration] Ma ora hanno Nonna Rosa, un piano piccolo e un primo passo.
+  EN: But now they have Nonna Rosa, a small plan, and a first step.
+
+
+
+========================================================================
+CHAPTER 28: La settimana di Marco / Marco’s week
+========================================================================
+
+[s01 | narration] Giovedì pomeriggio Marco è arrivato al caffè di Luca.
+  EN: Thursday afternoon Marco arrived at Luca’s café.
+
+[s02 | narration] C’erano pochi clienti e la sala era tranquilla.
+  EN: There were few customers and the room was quiet.
+
+[s03 | narration] Luca lo ha visto vicino alla porta del caffè e ha sorriso.
+  EN: Luca saw him near the café door and smiled.
+
+[s04 | narration] Marco non ha sorriso. Ha parlato con voce stanca.
+  EN: Marco did not smile. He spoke with a tired voice.
+
+[s05 | marco] Ciao Luca. Posso stare un momento? Non ho soldi.
+  EN: “Hi Luca. Can I stay a moment? I don’t have money.”
+
+[s06 | luca] Stai. Non c’è problema. L’acqua è per te, Marco.
+  EN: “Stay. No problem. The water is for you, Marco.”
+
+[s07 | narration] Giulia ha portato l’acqua senza chiedere il prezzo.
+  EN: Giulia brought the water without asking the price.
+
+[s08 | narration] Ha capito subito. Marco aveva bisogno di amici.
+  EN: She understood right away. Marco needed friends.
+
+[s09 | narration] Marco si è seduto e ha guardato i tavoli vuoti. Ha preso l’acqua con calma.
+  EN: Marco sat down and looked at the empty tables. He took the water calmly.
+
+
+[s10 | narration] Marco cercava lavoro ogni giorno da due settimane.
+  EN: Marco had been looking for work every day for two weeks.
+
+[s11 | narration] Ieri ha telefonato a Luca e ha chiesto aiuto.
+  EN: Yesterday he called Luca and asked for help.
+
+[s12 | narration] Lunedì ha scritto a tre negozi del quartiere.
+  EN: On Monday he wrote to three shops in the neighborhood.
+
+[s13 | marco] Adesso sono a Roma. Cerco lavoro ogni giorno.
+  EN: Now I am in Rome. I look for work every day.
+
+[s14 | luca] Sì. Sei con noi. Cerchiamo insieme un modo.
+  EN: Yes. You are with us. We’ll look for a way together.
+
+[s15 | marco] Sì. Ma il lavoro no. Cerco e non trovo niente.
+  EN: “Yes. But not work. I look and I find nothing.”
+
+[s16 | narration] Luca ascoltava e non ha detto niente.
+  EN: Luca was listening and said nothing.
+
+[s17 | narration] Il problema erano i soldi e il tempo ogni giorno.
+  EN: The problem was money and time every day.
+
+[s18 | narration] Marco aveva paura di non trovare un posto di lavoro.
+  EN: Marco was afraid of not finding a job.
+
+[s19 | narration] Luca ha ascoltato Marco con calma e senza fretta. Poi ha portato pane al tavolo.
+  EN: Luca listened to Marco calmly and without hurry. Then he brought bread to the table.
+
+
+[s20 | narration] Luca ha parlato della notizia difficile del caffè.
+  EN: Luca talked about the difficult news of the café.
+
+[s21 | luca] Il padrone forse vende il caffè. O cambia tutto.
+  EN: “The owner might sell the café. Or change everything.”
+
+[s22 | luca] Non ha deciso. Questa settimana è molto importante.
+  EN: “He has not decided. This week is very important.”
+
+[s23 | luca] Anch’io ho paura. Qui anche il mio lavoro è difficile.
+  EN: “I am afraid too. Here my job is difficult too.”
+
+[s24 | marco] Allora siamo in due con la stessa paura oggi.
+  EN: “Then there are two of us with the same fear today.”
+
+[s25 | narration] Ha detto così e poi ha sorriso un poco.
+  EN: He said it like that and then smiled a little.
+
+[s26 | narration] Giulia è passata tra i tavoli e ha ascoltato tutto.
+  EN: Giulia walked among the tables and listened to everything.
+
+[s27 | giulia] Resta il caffè? Un giorno serve più gente qui.
+  EN: “Does the café stay? One day more people are needed here.”
+
+[s28 | marco] Magari. Adesso cerco ancora. Non voglio solo aspettare.
+  EN: “Maybe. Now I still look. I don’t want to only wait.”
+
+[s29 | luca] Sento qualcosa? Ti chiamo. Ci penso io, Marco.
+  EN: “I hear something? I’ll call you. I’ll take care of it, Marco.”
+
+[s30 | narration] Marco ha detto grazie. Per un momento ha sorriso.
+  EN: Marco said thanks. For a moment he smiled.
+
+[s30b | narration] Luca ha preparato un altro caffè e ha lavorato vicino alla porta.
+  EN: Luca prepared another coffee and worked near the door.
+
+
+[s31 | narration] Prima di partire Marco ha chiesto di Sofia e del piano.
+  EN: Before leaving Marco asked about Sofia and the plan.
+
+[s32 | narration] Luca ha parlato del piano con Nonna Rosa.
+  EN: Luca talked about the plan with Nonna Rosa.
+
+[s33 | narration] Sofia ha scritto le domande per la nonna ieri sera.
+  EN: Sofia wrote the questions for grandma yesterday evening.
+
+[s34 | luca] Domani andiamo da Nonna Rosa dopo il lavoro al caffè.
+  EN: “Tomorrow we go to Nonna Rosa after work at the café.”
+
+[s35 | marco] Vengo anche io. Non ho lavoro, ma ho tempo.
+  EN: “I come too. I don’t have work, but I have time.”
+
+[s36 | luca] Vieni. Insieme è meglio per tutti noi.
+  EN: “Come. Together is better for all of us.”
+
+[s37 | giulia] Io resto al caffè. Domani parlo con il padrone.
+  EN: “I stay at the café. Tomorrow I talk with the owner.”
+
+[s38 | narration] Giulia ha sorriso a Marco con calma e voce gentile.
+  EN: Giulia smiled at Marco calmly and with a kind voice.
+
+[s39 | narration] Marco è uscito nella strada del quartiere.
+  EN: Marco went out into the neighborhood street.
+
+[s40 | narration] Luca è rimasto a lavorare fino a sera.
+  EN: Luca stayed to work until the evening.
+
+[s41 | narration] La sala era quasi vuota, ma il caffè era aperto.
+  EN: The room was almost empty, but the café was open.
+
+[s42 | narration] I problemi erano due, ma gli amici erano gli stessi.
+  EN: The problems were two, but the friends were the same.
+
+
+
+========================================================================
+CHAPTER 29: L’idea della nonna / Nonna’s idea
+========================================================================
+
+[s01 | narration] Venerdì pomeriggio Luca, Sofia e Marco sono andati da Nonna Rosa.
+  EN: On Friday afternoon Luca, Sofia and Marco went to Nonna Rosa.
+
+[s02 | narration] La casa era piccola e calda, con cose vecchie e belle.
+  EN: The house was small and warm, with old and beautiful things.
+
+[s03 | narration] Nonna Rosa li ha visti alla porta e ha sorriso.
+  EN: Nonna Rosa saw them at the door and smiled.
+
+[s04 | nonna-rosa] Entrate. Avete fame? C’è pane e qualcosa da mangiare.
+  EN: “Come in. Are you hungry? There is bread and something to eat.”
+
+[s05 | sofia] Grazie, nonna. Prima dobbiamo parlare con te.
+  EN: “Thanks, grandma. First we need to talk to you.”
+
+[s06 | narration] Si sono seduti e Luca ha spiegato la notizia del caffè.
+  EN: They sat down and Luca explained the café news.
+
+[s07 | narration] Ha detto dei clienti pochi e del padrone che forse vende.
+  EN: He spoke of the few customers and of the owner who might sell.
+
+[s08 | narration] Nonna Rosa ha ascoltato con calma e senza fretta. Ha portato pane al tavolo.
+  EN: Nonna Rosa listened calmly and without hurry. She brought bread to the table.
+
+[s09 | narration] Marco guardava il tavolo e non parlava molto. Ha bevuto un poco d’acqua.
+  EN: Marco was looking at the table and was not talking much. He drank a little water.
+
+[s10 | marco] Io cerco lavoro e non trovo niente.
+  EN: “I look for work and find nothing.”
+
+
+[s11 | nonna-rosa] Quel caffè lo conosco da tanti anni.
+  EN: “I have known that café for many years.”
+
+[s12 | nonna-rosa] Le persone del quartiere lo conoscono anche.
+  EN: “The neighborhood people know it too.”
+
+[s13 | sofia] Sì. Ma adesso pochi clienti entrano al caffè.
+  EN: “Yes. But now few customers go into the café.”
+
+[s14 | nonna-rosa] Perché nessuno chiama la gente? Un caffè non vive solo.
+  EN: “Why does nobody call the people? A café does not live alone.”
+
+[s15 | nonna-rosa] Vive con la gente. Se la gente non viene, chiude.
+  EN: “It lives with people. If people do not come, it closes.”
+
+[s16 | sofia] Che idea hai, nonna? Serve un piano piccolo.
+  EN: “What idea do you have, grandma? A small plan is needed.”
+
+[s17 | nonna-rosa] Sabato. Una festa piccola del quartiere al caffè.
+  EN: “Saturday. A small neighborhood festa at the café.”
+
+[s18 | nonna-rosa] Pane, caffè, musica, amici. Non cambia tutto in un giorno.
+  EN: “Bread, coffee, music, friends. It does not change everything in one day.”
+
+[s18b | narration] Luca ha ascoltato l’idea e ha guardato Sofia.
+  EN: Luca listened to the idea and looked at Sofia.
+
+[s19 | nonna-rosa] È una prova. La gente viene se c’è una ragione.
+  EN: “It is a try. People come if there is a reason.”
+
+[s20 | luca] Il padrone non ha deciso. Magari non vuole una festa.
+  EN: “The owner has not decided. Maybe he does not want a festa.”
+
+[s21 | marco] E se nessuno viene? Io prendo il pane e mangio da solo.
+  EN: “And if nobody comes? I take the bread and eat alone.”
+
+[s22 | narration] Sofia ha guardato Marco. Capiva la paura sotto le parole.
+  EN: Sofia looked at Marco. She understood the fear under the words.
+
+
+[s23 | sofia] Allora lo facciamo piccolo. Pochi soldi. Tanta gente chiamata.
+  EN: “Then we keep it small. Little money. Many people called.”
+
+[s24 | nonna-rosa] Allora gli diciamo. Non aspettiamo troppo.
+  EN: “Then we tell him. We don’t wait too long.”
+
+[s25 | nonna-rosa] Gli diamo una ragione per restare, non per vendere.
+  EN: “We give him a reason to stay, not to sell.”
+
+[s26 | marco] Io posso aiutare. Non ho soldi, ma ho tempo.
+  EN: “I can help. I don’t have money, but I have time.”
+
+[s27 | sofia] Io conosco gente. Posso dire alle persone del quartiere.
+  EN: “I know people. I can tell people in the neighborhood.”
+
+[s28 | luca] Io non so ancora. Se il padrone dice no, il piano finisce.
+  EN: “I still don’t know. If the owner says no, the plan ends.”
+
+[s29 | nonna-rosa] Se dice no, capiamo. Se dice sì, proviamo sabato.
+  EN: “If he says no, we understand. If he says yes, we try on Saturday.”
+
+[s30 | narration] Luca ascoltava. Non era solo il suo problema al lavoro.
+  EN: Luca was listening. It was not only his problem at work.
+
+[s31 | narration] Era una cosa del gruppo, qui a Roma.
+  EN: It was a group thing, here in Rome.
+
+[s32 | sofia] Prima serve Giulia. Lei organizza bene la sala.
+  EN: “First we need Giulia. She organizes the room well.”
+
+[s33 | marco] E serve il sì del padrone. Senza di lui non apriamo.
+  EN: “And we need the owner’s yes. Without him we don’t open.”
+
+
+[s34 | nonna-rosa] Prima parlate con Giulia e con il padrone. Poi io vengo sabato.
+  EN: “First talk with Giulia and the owner. Then I come on Saturday.”
+
+[s35 | luca] Va bene. Ci pensiamo noi. Grazie, nonna.
+  EN: “All right. We’ll take care of it. Thanks, grandma.”
+
+[s36 | narration] Hanno mangiato un poco di pane e hanno bevuto caffè.
+  EN: They ate a little bread and drank coffee.
+
+[s37 | nonna-rosa] Non avere troppa paura. Provare è meglio di aspettare.
+  EN: “Don’t be too afraid. Trying is better than waiting.”
+
+[s38 | luca] Lo so. Ma non so se funziona.
+  EN: “I know. But I don’t know if it works.”
+
+[s39 | sofia] Non lo sappiamo ancora. Prima chiediamo il sì al caffè.
+  EN: “We don’t know yet. First we ask for a yes at the café.”
+
+[s40 | narration] Poi sono andati nella strada del quartiere con calma.
+  EN: Then they went into the neighborhood street calmly.
+
+[s41 | narration] Avevano un’idea nuova e una domanda aperta.
+  EN: They had a new idea and an open question.
+
+[s42 | narration] Quella sera dovevano chiedere il sì del padrone.
+  EN: That evening they had to ask for the owner’s yes.
+
+
+
+========================================================================
+CHAPTER 30: Proviamo / We try
+========================================================================
+
+[s01 | narration] Quel pomeriggio Luca e Sofia erano al caffè, e Giulia li ha visti.
+  EN: That afternoon Luca and Sofia were at the café, and Giulia saw them.
+
+[s02 | narration] Hanno parlato piano vicino ai tavoli vuoti.
+  EN: They spoke quietly near the empty tables.
+
+[s03 | luca] Abbiamo un’idea. Una festa piccola, sabato, per il quartiere.
+  EN: “We have an idea. A small celebration, Saturday, for the neighborhood.”
+
+[s04 | sofia] Nonna Rosa ha detto questa idea. Pane, caffè, musica.
+  EN: “Nonna Rosa said this idea. Bread, coffee, music.”
+
+[s05 | sofia] È una prova. Non cambia tutto in un giorno.
+  EN: “It is a try. It does not change everything in one day.”
+
+[s06 | giulia] Mi piace. Ma il padrone deve dire sì.
+  EN: “I like it. But the owner must say yes.”
+
+[s07 | giulia] Senza di lui non funziona. Dobbiamo chiedere adesso.
+  EN: “Without him it does not work. We must ask now.”
+
+[s08 | narration] Il padrone era vicino alla porta della cucina e ascoltava.
+  EN: The owner was near the kitchen door and was listening.
+
+[s09 | narration] Non sembrava contento. Sembrava stanco e poco sicuro.
+  EN: He did not seem happy. He seemed tired and unsure.
+
+[s10 | narration] Luca e Sofia lo hanno visto e non hanno parlato subito.
+  EN: Luca and Sofia saw him and did not speak right away.
+
+
+[s11 | padrone] Avete parlato di festa. Io non ho tanti soldi adesso.
+  EN: “You talked about a celebration. I don’t have much money now.”
+
+[s12 | luca] Facciamo una cosa piccola. Pane, caffè, amici.
+  EN: “Let’s do a small thing. Bread, coffee, friends.”
+
+[s13 | luca] Non è un ristorante grande. Costa poco, se lavoriamo noi.
+  EN: “It is not a big restaurant. It costs little, if we work.”
+
+[s14 | sofia] Le persone vengono se c’è una ragione per entrare.
+  EN: “People come if there is a reason to come in.”
+
+[s15 | padrone] Una festa costa. Se non viene nessuno, resto senza soldi.
+  EN: “A celebration costs. If nobody comes, I stay without money.”
+
+[s16 | giulia] Io organizzo con loro. Preparo la sala e i tavoli.
+  EN: “I’ll organize with them. I’ll prepare the room and the tables.”
+
+[s17 | giulia] Lavoriamo insieme su questo. Tu non lavori solo.
+  EN: “We work together on this. You don’t work alone.”
+
+[s18 | luca] Se non funziona, capiamo. Se funziona, i clienti tornano.
+  EN: “If it does not work, we understand. If it works, customers come back.”
+
+[s19 | narration] Il padrone ha guardato i tavoli vuoti della sala.
+  EN: The owner looked at the empty tables in the room.
+
+[s20 | narration] Poi ha guardato i tre. Non ha detto niente subito.
+  EN: Then he looked at the three. He did not say anything right away.
+
+[s21 | padrone] Va bene. Proviamo. Sabato. Se non funziona, io decido dopo.
+  EN: “All right. Let’s try. Saturday. If it does not work, I decide after.”
+
+
+[s22 | narration] Non era un sì grande. Era un sì stanco, ma era un sì.
+  EN: It was not a big yes. It was a tired yes, but it was a yes.
+
+[s23 | sofia] Grazie. Non chiudiamo il problema oggi.
+  EN: “Thanks. We don’t close the problem today.”
+
+[s24 | sofia] Proviamo solo sabato. Poi vediamo i clienti.
+  EN: “We only try on Saturday. Then we see the customers.”
+
+[s25 | padrone] Proviamo. Poi vedo. Adesso lavoro.
+  EN: “Let’s try. Then I’ll see. Now I work.”
+
+[s26 | narration] Quando il padrone è tornato in cucina, i tre hanno parlato con calma.
+  EN: When the owner went back to the kitchen, the three talked calmly.
+
+[s27 | sofia] Allora dobbiamo dire alle persone del quartiere. Io scrivo messaggi.
+  EN: “Then we must tell people in the neighborhood. I’ll write messages.”
+
+[s28 | sofia] Marco aiuta nel quartiere, se può.
+  EN: “Marco helps in the neighborhood, if he can.”
+
+[s29 | giulia] Io preparo la sala e parlo con i clienti che vengono.
+  EN: “I’ll prepare the room and talk with the customers who come.”
+
+[s30 | luca] Io aiuto dove serve. Ci penso io alla porta.
+  EN: “I help where needed. I’ll take care of the door.”
+
+[s31 | narration] Avevano un giorno e cose da fare insieme.
+  EN: They had a day and things to do together.
+
+[s32 | narration] Non avevano ancora gente per sabato.
+  EN: They still did not have people for Saturday.
+
+[s33 | narration] La notizia difficile aveva adesso un piano, anche se piccolo.
+  EN: The difficult news now had a plan, even if small.
+
+
+[s34 | giulia] Non so se qualcuno viene. Ma adesso abbiamo un sì.
+  EN: “I don’t know if anyone comes. But now we have a yes.”
+
+[s35 | luca] Anch’io non so. Il piano c’è. Le persone no, ancora.
+  EN: “I don’t know either. The plan is there. The people are not, yet.”
+
+[s36 | sofia] Adesso lavoriamo su questo. Oggi abbiamo chiesto.
+  EN: Now we work on this. Today we asked.
+
+[s37 | narration] Dopo un poco qualche cliente è entrato al caffè.
+  EN: After a little while a few customers came into the café.
+
+[s38 | narration] Giulia ha parlato della festa con calma.
+  EN: Giulia talked about the celebration calmly.
+
+[s39 | narration] Una signora ha detto che forse veniva, se aveva tempo.
+  EN: A woman said she might come, if she had time.
+
+[s40 | narration] Un signore ha ascoltato e non ha detto sì o no.
+  EN: A man listened and did not say yes or no.
+
+[s41 | narration] Non era tanta gente. Era solo un primo passo.
+  EN: It was not many people. It was only a first step.
+
+[s42 | sofia] Abbiamo un piano. Non sappiamo se funziona.
+  EN: “We have a plan. We don’t know if it works.”
+
+[s43 | luca] Proviamo sabato. Poi vediamo chi viene.
+  EN: “We try on Saturday. Then we see who comes.”
+
+[s44 | narration] Quando Luca è tornato a casa, ha pensato al sabato e alla festa.
+  EN: When Luca went home, he thought about Saturday and the celebration.
+
+[s45 | narration] Avevano un piano. Non era chiaro se qualcuno veniva.
+  EN: They had a plan. It was not clear if anyone was coming.
+
+
+
+========================================================================
+CHAPTER 31: Il piano / The plan
+========================================================================
+
+[s01 | narration] Dopo il sì del padrone, ancora venerdì, il gruppo aveva cose da fare.
+  EN: After the owner’s yes, still on Friday, the group had things to do.
+
+[s02 | narration] Più tardi Luca, Sofia, Marco e Giulia si sono incontrati al caffè.
+  EN: Later Luca, Sofia, Marco, and Giulia met at the café.
+
+[s03 | sofia] Io scrivo messaggi alle persone del quartiere, una dopo l’altra.
+  EN: I write messages to people in the neighborhood, one after another.
+
+[s04 | marco] Io cammino e parlo, ma non posso dire che vengono tutti.
+  EN: I walk and talk, but I cannot say that everyone is coming.
+
+[s05 | giulia] Io preparo la sala: tavoli, luce, un posto per la musica.
+  EN: I prepare the room: tables, light, a place for the music.
+
+[s06 | luca] Io resto alla porta e dico buongiorno a chi entra.
+  EN: I stay at the door and say good morning to whoever comes in.
+
+[s08 | sofia] Avere un sì non è avere la festa. Dobbiamo ancora fare tutto insieme.
+  EN: Having a yes is not having the celebration. We still have to do everything together.
+
+[s09 | luca] Lo so. Non so se è abbastanza.
+  EN: I know. I don’t know if it is enough.
+
+[s10 | luca] Ma adesso abbiamo un ordine chiaro.
+  EN: But now we have a clear order.
+
+
+[s11 | narration] Mentre parlavano, un cliente è entrato e ha preso un caffè.
+  EN: While they were talking, a customer came in and took a coffee.
+
+[s12 | narration] Poi è uscito senza dire niente della festa.
+  EN: Then he went out without saying anything about the celebration.
+
+[s13 | narration] Nel pomeriggio Sofia ha scritto messaggi, uno dopo l’altro.
+  EN: In the afternoon Sofia wrote messages, one after another.
+
+[s14 | sofia] Sabato c’è caffè, pane e amici. Costa poco.
+  EN: Saturday there is coffee, bread, and friends. It costs little.
+
+[s15 | sofia] Se puoi, vieni. Qualche persona ha risposto subito. Qualche persona ha detto forse.
+  EN: If you can, come. Some people answered at once. Some people said maybe.
+
+[s16 | narration] Altre non hanno risposto. Sofia ha guardato il telefono.
+  EN: Others did not answer. Sofia looked at the phone.
+
+[s17 | sofia] Non è un no. Ma non è un sì.
+  EN: It is not a no. But it is not a yes.
+
+[s18 | sofia] Non rispondono, e non mi piace.
+  EN: They do not answer, and I don’t like it.
+
+[s19 | narration] Marco ha parlato vicino ai negozi con due persone.
+  EN: Marco spoke near the shops with two people.
+
+[s20 | marco] Uno ha detto vediamo. L’altro ha chiesto a che ora.
+  EN: One said we’ll see. The other asked at what time.
+
+[s21 | marco] Non posso dire che vengono. Posso solo dire che ho parlato.
+  EN: I cannot say that they are coming. I can only say that I spoke.
+
+
+[s22 | narration] Luca, al lavoro, ascoltava e pensava a sabato.
+  EN: Luca, at work, was listening and thinking about Saturday.
+
+[s23 | luca] Meglio di niente. Ma non è ancora gente nella sala.
+  EN: Better than nothing. But it is not yet people in the room.
+
+[s24 | narration] Giulia ha preparato un piano per la sala. Poi ha guardato la cucina.
+  EN: Giulia prepared a plan for the room. Then she looked at the kitchen.
+
+[s25 | giulia] Il caffè non può fare tutto. Pane sì, caffè sì. Cose grandi no.
+  EN: The café cannot do everything. Bread yes, coffee yes. Big things no.
+
+[s26 | luca] Va bene. Piccolo è meglio. Se costa poco, il padrone ha meno paura.
+  EN: All right. Small is better. If it costs little, the owner is less afraid.
+
+[s27 | giulia] Sabato mattina dobbiamo arrivare presto, prima dei clienti.
+  EN: Saturday morning we must arrive early, before the customers.
+
+[s28 | sofia] Io arrivo presto con i messaggi nuovi, se ci sono.
+  EN: I arrive early with the new messages, if there are any.
+
+[s29 | marco] Io aiuto, se posso. Questa settimana cerco lavoro e ho poco tempo.
+  EN: I help, if I can. This week I look for work and I have little time.
+
+[s30 | narration] Luca ha ascoltato. Non era un sì forte.
+  EN: Luca listened. It was not a strong yes.
+
+[s31 | luca] Ci penso io alla porta. Tu fai quello che puoi.
+  EN: I’ll take care of the door. You do what you can.
+
+[s32 | giulia] Se la gente viene, dobbiamo essere pronti.
+  EN: If people come, we must be ready.
+
+[s33 | giulia] Se non viene, il padrone vede una sala vuota.
+  EN: If they do not come, the owner sees an empty room.
+
+
+[s35 | narration] La sera i quattro si sono incontrati un momento vicino alla piazza.
+  EN: In the evening the four met for a moment near the square.
+
+[s36 | sofia] Qualche persona viene, forse. Non lo so ancora.
+  EN: Some people are coming, maybe. I still don’t know.
+
+[s37 | marco] Ho ascoltato forse e vediamo. Poco di sicuro.
+  EN: I heard maybe and we’ll see. Little that is sure.
+
+[s38 | giulia] Il piano c’è. Adesso serve la gente.
+  EN: The plan is there. Now we need people.
+
+[s39 | luca] Continuiamo. Oggi abbiamo organizzato insieme.
+  EN: Let’s continue. Today we organized together.
+
+[s40 | sofia] Il piano aiuta. Non chiude il problema.
+  EN: The plan helps. It does not close the problem.
+
+[s41 | narration] Quando sono andati a casa, la festa non era ancora arrivata.
+  EN: When they went home, the celebration had not arrived yet.
+
+
+
+========================================================================
+CHAPTER 32: I dubbi / Doubts
+========================================================================
+
+[s01 | narration] Venerdì sera la festa era più vicina.
+  EN: Friday evening the celebration was closer.
+
+[s02 | narration] I messaggi erano meno chiari del piano.
+  EN: The messages were less clear than the plan.
+
+[s03 | narration] Poche persone avevano detto sì. Tante avevano detto forse, o niente.
+  EN: Few people had said yes. Many had said maybe, or nothing.
+
+[s04 | giulia] Se viene poca gente, il padrone vede una sala vuota.
+  EN: If few people come, the owner sees an empty room.
+
+[s05 | giulia] È peggio di non fare niente.
+  EN: It is worse than doing nothing.
+
+[s06 | luca] Hai ragione. Organizzare è una cosa. Avere persone qui è un’altra.
+  EN: You’re right. Organizing is one thing. Having people here is another.
+
+[s07 | narration] Il padrone ascoltava da vicino e non sorridiva. Guardava i tavoli vuoti.
+  EN: The owner was listening nearby and was not smiling. He was looking at the empty tables.
+
+[s08 | padrone] Io sono stanco. Una festa è bella.
+  EN: I am tired. A celebration is nice.
+
+[s09 | padrone] Ma il caffè deve funzionare ogni giorno.
+  EN: But the café must work every day.
+
+[s10 | luca] Lo sappiamo. Per questo vogliamo le persone qui, non solo messaggi.
+  EN: We know. That is why we want people here, not only messages.
+
+[s11 | narration] Durante il giorno la sala restava quasi vuota.
+  EN: During the day the room stayed almost empty.
+
+[s12 | giulia] Allora non possiamo solo aspettare. Dobbiamo parlare ancora, se possiamo.
+  EN: Then we cannot only wait. We must talk more, if we can.
+
+
+[s13 | luca] Non so se sabato prova qualcosa, se la gente non viene.
+  EN: I don’t know if Saturday proves anything, if people do not come.
+
+[s14 | narration] Al caffè Giulia ha parlato chiaro vicino ai tavoli.
+  EN: At the café Giulia spoke clearly near the tables.
+
+[s15 | giulia] Se il caffè resta, che lavoro c’è per me?
+  EN: If the café stays, what work is there for me?
+
+[s16 | giulia] Poche ore, o un lavoro vero. Non voglio lavorare qui solo ogni tanto.
+  EN: A few hours, or real work. I don’t want to work here only now and then.
+
+[s17 | giulia] Voglio capire le ore, i soldi, il posto.
+  EN: I want to understand the hours, the money, the place.
+
+[s18 | narration] Il padrone ha guardato Giulia senza dire sì o no.
+  EN: The owner looked at Giulia without saying yes or no.
+
+[s19 | padrone] Prima vediamo sabato. Poi parliamo di ore e di soldi.
+  EN: First we see Saturday. Then we talk about hours and money.
+
+[s20 | padrone] Adesso non posso decidere.
+  EN: Now I cannot decide.
+
+[s21 | luca] Hai ragione a chiedere. Se sabato non funziona, anche le ore restano un problema.
+  EN: You’re right to ask. If Saturday does not work, the hours also stay a problem.
+
+[s22 | giulia] Io lavoro qui. Se il caffè chiude, resto senza lavoro.
+  EN: I work here. If the café closes, I am left without work.
+
+[s23 | giulia] Se resta, voglio ore.
+  EN: If it stays, I want hours.
+
+[s24 | narration] Il padrone è tornato in cucina senza altre parole.
+  EN: The owner went back to the kitchen without other words.
+
+[s24b | narration] Luca ha pensato all’affitto e alle ore di Giulia.
+  EN: Luca thought about the rent and about Giulia’s hours.
+
+[s24c | narration] Giulia ha accettato, ma per lei era importante.
+  EN: Giulia accepted, but for her it was important.
+
+
+[s25 | narration] Ha pensato anche alle persone che non rispondevano.
+  EN: He also thought about the people who were not answering.
+
+[s26 | narration] Più tardi un cliente ha chiesto se il caffè chiudeva.
+  EN: Later a customer asked if the café was closing.
+
+[s27 | luca] Non ancora. Sabato c’è una festa piccola. Può venire, se vuole.
+  EN: Not yet. Saturday there is a small celebration. You can come, if you want.
+
+[s28 | narration] Il cliente ha detto che forse veniva con la famiglia.
+  EN: The customer said he might come with the family.
+
+[s29 | narration] Una famiglia non era tanta gente, ma era meglio di niente.
+  EN: One family was not many people, but it was better than nothing.
+
+[s30 | giulia] Se parliamo, qualcuno ascolta. Dipende da noi, in parte.
+  EN: If we talk, someone listens. It depends on us, in part.
+
+[s31 | luca] L’altra parte non risponde, e io non so perché.
+  EN: The other part does not answer, and I don’t know why.
+
+[s32 | narration] La sera Luca ha chiamato Sofia e ha spiegato i messaggi.
+  EN: In the evening Luca called Sofia and explained the messages.
+
+[s33 | sofia] Allora io e Marco andiamo di nuovo nel quartiere.
+  EN: Then Marco and I go into the neighborhood again.
+
+[s34 | sofia] Non aspettiamo solo messaggi.
+  EN: We don’t only wait for messages.
+
+[s35 | luca] Io resto al caffè. Il padrone ha bisogno di vedere il nostro lavoro.
+  EN: I stay at the café. The owner needs to see our work.
+
+[s36 | narration] Sofia ha ascoltato senza grandi parole.
+  EN: Sofia listened without big words.
+
+
+[s37 | narration] Dopo, Marco ha chiamato Luca. Sembrava stanco e preoccupato.
+  EN: Afterward, Marco called Luca. He seemed tired and worried.
+
+[s38 | marco] Aiuto, se posso. Ma questa settimana cerco lavoro. Ho bisogno di soldi.
+  EN: I help, if I can. But this week I look for work. I need money.
+
+[s39 | marco] Se arriva una chiamata per un posto, non posso dire di no.
+  EN: If a call for a place arrives, I cannot say no.
+
+[s40 | luca] Lo so. Chiedo solo se sabato ci sei.
+  EN: I know. I only ask if you are there on Saturday.
+
+[s41 | marco] Voglio essere lì. Non sono sicuro di tutto l’orario.
+  EN: I want to be there. I am not sure about the whole schedule.
+
+[s42 | marco] Ti dico quando so.
+  EN: I’ll tell you when I know.
+
+[s43 | narration] Dopo la chiamata Luca ha pensato all’affitto. Se sabato non funzionava, il futuro del lavoro era difficile.
+  EN: After the call Luca thought about the rent. If Saturday did not work, the future of the job was difficult.
+
+[s44 | luca] Abbiamo un piano. Non siamo sicuri.
+  EN: We have a plan. We are not sure.
+
+[s45 | luca] E adesso non so se Marco c’è davvero.
+  EN: And now I don’t know if Marco is really there.
+
+[s46 | narration] Il piano restava, ma sembrava più difficile di ieri.
+  EN: The plan remained, but it seemed harder than yesterday.
+
+
+
+========================================================================
+CHAPTER 33: Un problema / A problem
+========================================================================
+
+[s01 | narration] Venerdì sera, prima di sabato, Sofia e Marco avevano un appuntamento in piazza.
+  EN: Friday evening, before Saturday, Sofia and Marco had a meeting in the square.
+
+[s02 | narration] Ma Marco non c’era.
+  EN: But Marco was not there.
+
+[s03 | narration] Sofia ha aspettato, ha guardato la strada, e poi ha chiamato Luca.
+  EN: Sofia waited, looked at the street, and then called Luca.
+
+[s04 | sofia] Marco non arriva. Hai sue notizie. Doveva essere qui prima.
+  EN: Marco is not arriving. Do you have news of him. He was supposed to be here earlier.
+
+[s05 | luca] No. Ieri ha detto di venire. Adesso cerco. Aspetta lì.
+  EN: No. Yesterday he said he would come. I’ll look now. Wait there.
+
+[s06 | narration] Luca ha chiesto a Giulia di restare al caffè.
+  EN: Luca asked Giulia to stay at the café.
+
+[s07 | narration] Poi è uscito verso il quartiere. Mentre camminava, aveva un po’ di paura.
+  EN: Then he went out toward the neighborhood. While he walked, he was a little afraid.
+
+[s08 | giulia] Marco aveva già avuto problemi di soldi. Se non arriva, sabato abbiamo un problema.
+  EN: Marco had already had money problems. If he does not arrive, Saturday we have a problem.
+
+[s09 | giulia] La sala non si prepara da sola.
+  EN: The room does not prepare itself.
+
+[s10 | narration] Luca ha sentito le parole di Giulia prima di uscire.
+  EN: Luca heard Giulia’s words before going out.
+
+[s11 | narration] Ci ha pensato mentre camminava.
+  EN: He thought about them while he walked.
+
+[s12 | narration] Ha cercato vicino ai negozi e vicino alla stazione. Non l’ha trovato.
+  EN: He looked near the shops and near the station. He did not find him.
+
+
+[s13 | narration] Poi ha visto Sofia, ancora in piazza, stanca di aspettare.
+  EN: Then he saw Sofia, still in the square, tired of waiting.
+
+[s14 | sofia] Forse ha dimenticato. O forse ha un problema di soldi.
+  EN: Maybe he forgot. Or maybe he has a money problem.
+
+[s15 | luca] Lo cerchiamo ancora un po’. Poi dobbiamo tornare al lavoro.
+  EN: We’ll look a little more. Then we must go back to work.
+
+[s16 | narration] Hanno camminato insieme. Dopo un’ora hanno visto Marco vicino a un ufficio piccolo.
+  EN: They walked together. After an hour they saw Marco near a small office.
+
+[s17 | narration] Marco li ha visti e si è fermato.
+  EN: Marco saw them and stopped.
+
+[s18 | narration] Sembrava stanco, non contento di arrivare tardi.
+  EN: He seemed tired, not glad to arrive late.
+
+[s19 | marco] Scusa. C’era una persona per un lavoro. Dovevo parlare.
+  EN: Sorry. There was a person about a job. I had to talk.
+
+[s20 | sofia] Non ho visto l’orario. Potevi chiamare. Noi ti aspettavamo. Il quartiere aspetta anche sabato.
+  EN: I did not see the time. You could have called. We were waiting for you. The neighborhood is also waiting for Saturday.
+
+[s21 | marco] Hai ragione. Ho pensato al lavoro e ai soldi.
+  EN: You’re right. I thought about work and money.
+
+[s22 | marco] Non ho pensato a voi subito.
+  EN: I did not think of you at once.
+
+[s23 | narration] Luca ha ascoltato. Il lavoro di Marco era importante, e gli amici anche.
+  EN: Luca listened. Marco’s work was important, and friends were too.
+
+[s24 | luca] Va bene. Adesso sei qui. Che notizia c’è, del lavoro?
+  EN: All right. Now you are here. What news is there, about the job?
+
+
+[s25 | marco] Niente di sicuro. Hanno detto vediamo. Forse una chiamata sabato mattina.
+  EN: Nothing sure. They said we’ll see. Maybe a call Saturday morning.
+
+[s26 | sofia] Sabato mattina? Proprio quando dobbiamo preparare la sala?
+  EN: Saturday morning? Exactly when we must prepare the room?
+
+[s27 | marco] Non lo so ancora. Se c’è una chiamata, non posso dire di no. Ho bisogno di soldi.
+  EN: I don’t know yet. If there is a call, I cannot say no. I need money.
+
+[s28 | luca] Capisco. Tu hai ragione a cercare lavoro.
+  EN: I understand. You’re right to look for work.
+
+[s29 | marco] Voglio aiutare sabato. Non posso dire sì su tutto l’orario. Ti dico quando so.
+  EN: I want to help Saturday. I cannot say yes about the whole schedule. I’ll tell you when I know.
+
+[s30 | narration] Sofia ha guardato Luca senza chiudere il problema.
+  EN: Sofia looked at Luca without closing the problem.
+
+[s31 | sofia] Allora andiamo al caffè. Giulia deve sapere. Sabato è domani.
+  EN: Then let’s go to the café. Giulia must know. Saturday is tomorrow.
+
+[s32 | narration] I tre sono tornati verso il caffè. Giulia li ha guardati dalla porta.
+  EN: The three went back toward the café. Giulia looked at them from the door.
+
+[s33 | giulia] Sabato abbiamo bisogno di te, Marco. Non solo di “vediamo”.
+  EN: Saturday we need you, Marco. Not only “we’ll see.”
+
+[s34 | marco] Forse ho una chiamata di lavoro sabato mattina. Se posso, vengo dopo.
+  EN: Maybe I have a work call Saturday morning. If I can, I come after.
+
+[s35 | giulia] E se non puoi? Non è un lavoro per due sole persone.
+  EN: And if you cannot? It is not a job for only two people.
+
+[s36 | luca] Facciamo il piano con quello che sappiamo.
+  EN: We make the plan with what we know.
+
+
+[s37 | luca] Se Marco arriva tardi, cambiamo il lavoro.
+  EN: If Marco arrives late, we change the work.
+
+[s38 | sofia] Non siamo sicuri di essere lì quando serve.
+  EN: We are not sure we are there when needed.
+
+[s39 | marco] Non esco senza dire niente. Vi chiamo.
+  EN: I don’t go out without saying anything. I’ll call you.
+
+[s40 | marco] Se la chiamata è lunga, arrivo dopo.
+  EN: If the call is long, I arrive after.
+
+[s41 | giulia] Va bene. Io preparo lo stesso. Ma sabato non è chiaro.
+  EN: All right. I prepare anyway. But Saturday is not clear.
+
+[s42 | narration] Era già sera. Domani era sabato. Il piano aveva ancora problemi aperti.
+  EN: It was already evening. Tomorrow was Saturday. The plan still had open problems.
+
+[s43 | luca] Abbiamo un piano. Non siamo sicuri.
+  EN: We have a plan. We are not sure.
+
+[s44 | luca] E non so se tutti quelli che servono ci sono.
+  EN: And I don’t know if everyone who is needed is there.
+
+[s45 | sofia] Domani vediamo. Oggi sappiamo il problema.
+  EN: Tomorrow we see. Today we know the problem.
+
+[s46 | narration] Quando Luca è tornato a casa, ha pensato al sabato e a Marco.
+  EN: When Luca went home, he thought about Saturday and about Marco.
+
+[s47 | narration] La festa era domani. Il sì del padrone c’era.
+  EN: The celebration was tomorrow. The owner’s yes was there.
+
+[s48 | narration] Le persone, e Marco, non erano sicuri.
+  EN: The people, and Marco, were not sure.
+
+
+
+========================================================================
+CHAPTER 34: Sabato mattina / Saturday morning
+========================================================================
+
+[s01 | narration] Sabato mattina Luca è andato al caffè presto, con un po’ di paura.
+  EN: Saturday morning Luca went to the café early, with a little fear.
+
+[s02 | narration] Non sapeva se veniva gente, e non sapeva di Marco.
+  EN: He did not know if people were coming, and he did not know about Marco.
+
+[s03 | narration] Quando ha aperto la porta, Giulia era già nella sala, con i tavoli aperti.
+  EN: When he opened the door, Giulia was already in the room, with the tables open.
+
+[s04 | giulia] Buongiorno. Oggi lavoriamo di più. Dobbiamo essere pronti.
+  EN: Good morning. Today we work more. We must be ready.
+
+[s05 | luca] Sì. Ho paura e sono contento. È strano, vero?
+  EN: Yes. I am afraid and I am glad. It is strange, right?
+
+[s06 | giulia] Un po’. Dai. Portiamo i tavoli più vicini. La sala deve sembrare aperta.
+  EN: A little. Come on. Let’s bring the tables closer. The room must seem open.
+
+[s07 | narration] Mentre portava i tavoli, Luca ascoltava la strada. C’erano poche voci.
+  EN: While he carried the tables, Luca listened to the street. There were few voices.
+
+[s08 | narration] Poi la porta si è aperta. Marco è arrivato con pane di un negozio vicino.
+  EN: Then the door opened. Marco arrived with bread from a nearby shop.
+
+[s09 | marco] C’era una chiamata. Era di poco tempo. Adesso sono qui.
+  EN: There was a call. It was a short time. Now I am here.
+
+[s10 | giulia] Hai dormito poco, vero?
+  EN: You slept little, right?
+
+[s11 | marco] Sì. Ma il pane c’è, e io anche. Che cosa faccio?
+  EN: Yes. But the bread is here, and I am too. What do I do?
+
+[s12 | narration] Luca ha sorriso un poco. Il problema di sabato mattina non era chiuso, ma era diverso.
+  EN: Luca smiled a little. The Saturday-morning problem was not closed, but it was different.
+
+
+[s13 | narration] Sofia è arrivata dopo, con messaggi nuovi sul telefono.
+  EN: Sofia arrived after, with new messages on the phone.
+
+[s14 | sofia] Qualche persona dice di sì. Qualche persona dice forse. Non lo so ancora.
+  EN: Some people say yes. Some people say maybe. I don’t know yet.
+
+[s15 | luca] Allora prepariamo lo stesso. Se vengono, siamo pronti.
+  EN: Then we prepare anyway. If they come, we are ready.
+
+[s16 | narration] Il padrone è uscito un momento dalla cucina e ha guardato i giovani e i tavoli.
+  EN: The owner came out of the kitchen for a moment and looked at the young people and the tables.
+
+[s17 | padrone] Va bene. Io resto in cucina. Se serve, chiamo.
+  EN: All right. I stay in the kitchen. If needed, I call.
+
+[s18 | narration] Hanno messo i piatti, l’acqua e il caffè. Luca ha lavato i tavoli due volte.
+  EN: They put out the plates, the water, and the coffee. Luca washed the tables twice.
+
+[s19 | narration] Giulia ha scelto un posto per la musica, non troppo forte, vicino alla finestra.
+  EN: Giulia chose a place for the music, not too loud, near the window.
+
+[s20 | luca] Che ne dici? Così le persone possono parlare.
+  EN: What do you say? This way people can talk.
+
+[s21 | giulia] Mi sembra giusto. Non vogliamo musica che chiude le voci.
+  EN: It seems right to me. We don’t want music that closes off the voices.
+
+[s22 | narration] Marco ha preparato il pane e ha messo i piatti vicino alla cucina.
+  EN: Marco prepared the bread and put the plates near the kitchen.
+
+[s23 | narration] Sofia ha scritto un piccolo segno sulla porta: “Oggi, festa. Venite.”
+  EN: Sofia wrote a small sign on the door: “Today, celebration. Come.”
+
+[s24 | sofia] Io resto vicino ai messaggi. Se qualcuno chiede l’orario, rispondo.
+  EN: I stay near the messages. If someone asks the time, I answer.
+
+
+[s25 | luca] Io resto alla porta. Quando arriva gente, dico buongiorno.
+  EN: I stay at the door. When people arrive, I say good morning.
+
+[s26 | giulia] Io servo. Se serve pane, chiamo Marco.
+  EN: I serve. If bread is needed, I call Marco.
+
+[s27 | marco] Va bene. Se non arriva nessuno, almeno abbiamo fatto il lavoro.
+  EN: All right. If nobody comes, at least we did the work.
+
+[s28 | narration] Prima della festa, la sala era pronta. C’era ancora poca voce.
+  EN: Before the celebration, the room was ready. There was still little voice.
+
+[s29 | narration] Luca ha guardato i suoi amici e ha pensato al piano della settimana.
+  EN: Luca looked at his friends and thought of the week’s plan.
+
+[s30 | narration] I tavoli, il caffè e il pane erano pronti. Adesso dovevano aspettare.
+  EN: The tables, the coffee, and the bread were ready. Now they had to wait.
+
+[s31 | sofia] Se viene poca gente, non importa. Abbiamo fatto una cosa.
+  EN: If few people come, it doesn’t matter. We did something.
+
+[s32 | luca] Sì. Però io voglio gente qui. Per Giulia, per il padrone, per noi.
+  EN: Yes. But I want people here. For Giulia, for the owner, for us.
+
+[s33 | giulia] Aspettiamo. Nel pomeriggio vediamo se il piano funziona.
+  EN: Let’s wait. In the afternoon we see if the plan works.
+
+[s34 | narration] Sofia ha messo il telefono sul tavolo e ha guardato la porta chiusa.
+  EN: Sofia put the phone on the table and looked at the closed door.
+
+[s35 | narration] Nella strada del quartiere c’erano già voci, ma nella sala non c’era ancora nessuno.
+  EN: On the neighborhood street there were already voices, but in the room there was still nobody.
+
+[s36 | narration] Marco ha guardato il pane un’altra volta.
+  EN: Marco looked at the bread another time.
+
+
+[s37 | narration] Luca ha aperto un poco la porta e ha aspettato.
+  EN: Luca opened the door a little and waited.
+
+[s38 | luca] Abbiamo fatto il nostro lavoro. Adesso aspettiamo le persone.
+  EN: We did our work. Now we wait for the people.
+
+[s39 | sofia] Sì. Oggi non possiamo fare di più.
+  EN: Yes. Today we cannot do more.
+
+[s40 | narration] Era ancora mattina. La festa non era ancora iniziata.
+  EN: It was still morning. The celebration had not started yet.
+
+[s41 | narration] Ma per la prima volta sabato, Marco era lì con loro, pronto a lavorare.
+  EN: But for the first time on Saturday, Marco was there with them, ready to work.
+
+[s42 | narration] Quando il padrone è tornato in cucina, la sala era pronta e vuota.
+  EN: When the owner went back to the kitchen, the room was ready and empty.
+
+[s43 | narration] Luca ha sentito la paura, ma era anche un po’ contento.
+  EN: Luca felt the fear, but he was also a little glad.
+
+[s44 | narration] Il caffè era pronto. Le persone, ancora no.
+  EN: The café was ready. The people, not yet.
+
+[s45 | giulia] Adesso resta il lavoro. Poi vediamo chi entra.
+  EN: Now the work remains. Then we see who comes in.
+
+
+
+========================================================================
+CHAPTER 35: La sala si riempie / The room fills
+========================================================================
+
+[s01 | narration] Nel primo pomeriggio la sala era ancora quasi vuota.
+  EN: In the early afternoon the room was still almost empty.
+
+[s02 | narration] Luca stava alla porta e diceva buongiorno a chi passava, ma pochi entravano.
+  EN: Luca stood at the door and said good morning to people who passed, but few came in.
+
+[s03 | luca] Forse non viene nessuno.
+  EN: Maybe nobody is coming.
+
+[s04 | sofia] Aspetta. È presto. Le persone del quartiere mangiano e poi escono.
+  EN: Wait. It is early. Neighborhood people eat and then go out.
+
+[s05 | narration] Giulia ha portato caffè a un tavolo vuoto, solo per fare qualcosa.
+  EN: Giulia brought coffee to an empty table, only to do something.
+
+[s06 | narration] Il padrone guardava dalla cucina, senza sorridere.
+  EN: The owner watched from the kitchen, without smiling.
+
+[s07 | narration] Marco guardava il pane e non parlava molto.
+  EN: Marco looked at the bread and did not talk much.
+
+[s08 | narration] Poi è arrivata Nonna Rosa, con un’amica vecchia e con una voce forte.
+  EN: Then Nonna Rosa arrived, with an old friend and with a strong voice.
+
+[s09 | nonna-rosa] Allora, siamo qui. Dov’è il caffè? E il pane?
+  EN: So, we are here. Where is the coffee? And the bread?
+
+[s10 | narration] Marco ha sorriso e ha portato pane e acqua. La sala non era più del tutto vuota.
+  EN: Marco smiled and brought bread and water. The room was no longer completely empty.
+
+[s11 | narration] Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia. Alcune persone erano lì perché Sofia aveva scritto loro.
+  EN: After Nonna Rosa three people from the neighborhood arrived, then a family. Some people were there because Sofia had written to them.
+
+[s12 | giulia] Vedi? Adesso comincia.
+  EN: See? Now it starts.
+
+
+[s13 | narration] Luca ha continuato a stare alla porta, un po’ meno stanco.
+  EN: Luca kept standing at the door, a little less tired.
+
+[s14 | narration] Una signora ha chiesto l’orario. Sofia ha risposto con calma.
+  EN: A woman asked about the hours. Sofia answered calmly.
+
+[s15 | narration] In un’ora la sala era quasi piena. C’era musica, voci, e c’era caffè.
+  EN: In an hour the room was almost full. There was music, voices, and there was coffee.
+
+[s16 | narration] Sofia parlava con la gente. Giulia serviva. Marco aiutava con i piatti, e due persone aspettavano ancora.
+  EN: Sofia was talking with people. Giulia was serving. Marco was helping with the plates, and two people were still waiting.
+
+[s17 | narration] Il padrone è uscito dalla cucina e ha guardato i tavoli pieni, un po’ sorpreso.
+  EN: The owner came out of the kitchen and looked at the full tables, a little surprised.
+
+[s18 | padrone] Tanta gente. Non lo vedevo da tanto tempo.
+  EN: So many people. I had not seen this in a long time.
+
+[s19 | luca] Sono persone del quartiere. Volevano una ragione per venire.
+  EN: They are neighborhood people. They wanted a reason to come.
+
+[s20 | narration] Una signora ha detto che il caffè le piaceva, e che tornava la settimana dopo.
+  EN: A woman said she liked the coffee, and that she would come back the next week.
+
+[s21 | narration] Luca ha portato acqua a un tavolo e ha ascoltato le persone parlare di Roma e di lavoro.
+  EN: Luca brought water to a table and listened to people talk about Rome and work.
+
+[s22 | narration] Non capiva tutte le parole, ma capiva la cosa importante: la sala viveva.
+  EN: He did not understand all the words, but he understood the important thing: the room was alive.
+
+[s23 | sofia] Tu stai bene alla porta. Le persone ti vedono e entrano.
+  EN: You are good at the door. People see you and come in.
+
+[s24 | luca] Grazie. Oggi lavoro qui con voi, non da solo.
+  EN: Thanks. Today I work here with you, not alone.
+
+
+[s25 | narration] Il padrone ha servito due caffè e ha guardato di nuovo la sala.
+  EN: The owner served two coffees and looked at the room again.
+
+[s26 | padrone] Funziona, almeno oggi. Non so di lunedì.
+  EN: It works, at least today. I don’t know about Monday.
+
+[s27 | giulia] Oggi conta. Le persone sono qui adesso.
+  EN: Today counts. The people are here now.
+
+[s28 | narration] Qualche cliente ha chiesto se c’era festa anche la settimana dopo.
+  EN: Some customers asked if there was a celebration the next week too.
+
+[s29 | sofia] Non ogni sabato. Ma il caffè è aperto. Potete tornare.
+  EN: Not every Saturday. But the café is open. You can come back.
+
+[s30 | narration] Marco ha portato pane a Nonna Rosa e ha ascoltato le voci vicino ai tavoli.
+  EN: Marco brought bread to Nonna Rosa and listened to the voices near the tables.
+
+[s31 | narration] Quando una famiglia è entrata tardi, Luca ha trovato un posto vicino alla finestra.
+  EN: When a family came in late, Luca found a place near the window.
+
+[s32 | narration] La musica restava non troppo forte. Le persone restavano a parlare.
+  EN: The music stayed not too loud. People stayed to talk.
+
+[s33 | narration] Giulia ha guardato Luca e ha fatto un piccolo segno: andava bene.
+  EN: Giulia looked at Luca and made a small sign: it was going well.
+
+[s34 | narration] Il padrone non ha fatto grandi parole. Ha solo lavorato e guardato.
+  EN: The owner did not make big speeches. He only worked and watched.
+
+[s36 | narration] Ma dopo settimane di tavoli vuoti, oggi c’erano clienti e amici insieme.
+  EN: But after weeks of empty tables, today there were customers and friends together.
+
+[s37 | narration] Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.
+  EN: Nonna Rosa called Luca and told him to stay near the door.
+
+
+[s38 | nonna-rosa] Le persone entrano se vedono qualcuno. Tu resta lì.
+  EN: People come in if they see someone. You stay there.
+
+[s39 | luca] Va bene. Resto.
+  EN: All right. I stay.
+
+[s40 | narration] Sofia ha messo il telefono sul tavolo. Adesso il telefono non serviva più.
+  EN: Sofia put the phone on the table. Now the phone was no longer needed.
+
+[s41 | narration] La festa piccola funzionava, almeno per queste ore.
+  EN: The small celebration was working, at least for these hours.
+
+[s42 | narration] Luca ha sentito meno paura, ma non ha detto che il problema era finito.
+  EN: Luca felt less fear, but he did not say that the problem was finished.
+
+[s43 | narration] Il padrone vedeva clienti. Questo era più importante delle parole.
+  EN: The owner was seeing customers. That was more important than words.
+
+[s44 | narration] Verso sera qualche persona è partita, e qualche persona è restata ancora.
+  EN: Toward evening some people left, and some people stayed longer.
+
+[s45 | narration] Adesso Luca sapeva una cosa: le persone potevano tornare.
+  EN: Now Luca knew one thing: people could come back.
+
+[s46 | narration] Doveva ancora chiedere il resto. Non oggi, ma presto.
+  EN: He still had to ask for the rest. Not today, but soon.
+
+
+
+========================================================================
+CHAPTER 36: Luca parla / Luca speaks
+========================================================================
+
+[s01 | narration] Più tardi, quando la sala era piena, Luca ha guardato le persone.
+  EN: Later, when the room was full, Luca looked at the people.
+
+[s01b | narration] Alcune erano entrate grazie alla festa.
+  EN: Some had come in because of the celebration.
+
+[s01c | narration] Lui voleva la gente di nuovo.
+  EN: He wanted the people again.
+
+[s02 | giulia] Parla. Due parole. Le persone sono qui anche per questo posto.
+  EN: Speak. Two words. People are here for this place too.
+
+[s03 | luca] Io? Non so. Ho paura.
+  EN: Me? I don’t know. I am afraid.
+
+[s04 | sofia] Ci pensiamo noi, se vuoi. Ma mi sembra che tu puoi.
+  EN: We can handle it, if you want. But it seems to me that you can.
+
+[s05 | narration] Luca ha guardato Nonna Rosa. Lei ha sorriso e ha detto: “Va bene così.”
+  EN: Luca looked at Nonna Rosa. She smiled and said: “It’s fine like this.”
+
+[s06 | narration] Allora Luca si è fermato nella sala, vicino ai tavoli pieni.
+  EN: Then Luca stopped in the room, near the full tables.
+
+[s07 | luca] Buona sera. Io lavoro qui. Qualche mese fa sono arrivato a Roma, solo.
+  EN: Good evening. I work here. A few months ago I arrived in Rome, alone.
+
+[s08 | luca] Adesso ho una casa, un lavoro e amici. Questo caffè è una parte di tutto questo.
+  EN: Now I have a home, a job, and friends. This café is a part of all this.
+
+[s09 | luca] Se vi piace, tornate. Non solo oggi. Anche lunedì, anche giovedì.
+  EN: If you like it, come back. Not only today. Also Monday, also Thursday.
+
+[s10 | luca] Abbiamo bisogno di persone nei giorni della settimana. Non solo di una festa.
+  EN: We need people on the days of the week. Not only for a celebration.
+
+[s11 | narration] Qualche persona ha sorriso. Qualche persona ha detto “bene” piano.
+  EN: Some people smiled. Some people said “good” quietly.
+
+[s12 | narration] Il padrone ascoltava vicino alla cucina, senza parlare.
+  EN: The owner listened near the kitchen, without speaking.
+
+[s13 | narration] Marco ha portato un caffè a Nonna Rosa, e lei ha ascoltato Luca bene.
+  EN: Marco brought a coffee to Nonna Rosa, and she listened to Luca well.
+
+
+[s14 | narration] Dopo le parole, la festa è continuata. La musica non era troppo forte. Le persone restavano.
+  EN: After the words, the celebration continued. The music was not too loud. People stayed.
+
+[s15 | nonna-rosa] Hai detto poco, e hai detto tanto. Va bene.
+  EN: You said little, and you said a lot. All right.
+
+[s16 | giulia] Il padrone ti ha ascoltato. L’ho visto.
+  EN: The owner listened to you. I saw it.
+
+[s17 | luca] Va bene. Io volevo solo dire una cosa vera.
+  EN: All right. I only wanted to say one true thing.
+
+[s18 | narration] Una famiglia ha chiesto l’orario della settimana. Giulia ha spiegato, contenta di fare di più.
+  EN: A family asked about the week’s hours. Giulia explained, glad to do more.
+
+[s19 | narration] Sofia era vicino a Luca. Non come una persona che aiuta un ragazzo nuovo, ma come un’amica.
+  EN: Sofia was near Luca, not like a person who helps a new guy, but like a friend.
+
+[s20 | sofia] Hai chiesto la cosa giusta. Tornare, non solo stare qui un giorno.
+  EN: You asked for the right thing. Coming back, not only staying here one day.
+
+[s21 | luca] Sì. Se tornano, il padrone vede lavoro. Se no, resta un giorno bello.
+  EN: Yes. If they come back, the owner sees work. If not, a nice day remains.
+
+[s22 | narration] Quando la luce è cambiata, qualche persona è partita, e qualche persona è restata ancora.
+  EN: When the light changed, some people left, and some people stayed longer.
+
+[s23 | narration] Il padrone ha chiamato Luca vicino alla cucina, con voce non forte.
+  EN: The owner called Luca near the kitchen, in a not-loud voice.
+
+[s24 | padrone] Oggi il caffè ha funzionato. Ho visto i tavoli. Ho visto le persone.
+  EN: Today the café worked. I saw the tables. I saw the people.
+
+[s25 | padrone] Non so ancora tutto. Ma oggi sì. Hai chiesto bene.
+  EN: I still don’t know everything. But today yes. You asked well.
+
+[s26 | luca] Grazie per aver detto sì a questa festa.
+  EN: Thank you for saying yes to this celebration.
+
+
+[s27 | padrone] Voi avete fatto il lavoro. Io ho solo aperto la cucina.
+  EN: You did the work. I only opened the kitchen.
+
+[s28 | narration] Luca ha ascoltato. Il padrone parlava di oggi, non di lunedì.
+  EN: Luca listened. The owner was talking about today, not about Monday.
+
+[s29 | luca] E Giulia?
+  EN: And Giulia?
+
+[s30 | padrone] Anche lei. Domani parliamo di ore e di lavoro. Non adesso.
+  EN: Her too. Tomorrow we talk about hours and work. Not now.
+
+[s31 | narration] Giulia ha sentito e ha fatto un piccolo segno a Luca: più tardi.
+  EN: Giulia heard and made a small sign to Luca: later.
+
+[s32 | narration] Sofia ha detto a Luca di bere acqua e di restare un momento fermo.
+  EN: Sofia told Luca to drink water and to stay still a moment.
+
+[s33 | sofia] Hai parlato chiaro. Adesso lasciamo lavorare la sala.
+  EN: You spoke clearly. Now let’s let the room work.
+
+[s34 | narration] Marco ha lavato i piatti e ha detto poco, come sempre.
+  EN: Marco washed the plates and said little, as always.
+
+[s35 | marco] La gente resta. Questo aiuta più di tante parole.
+  EN: People stay. This helps more than many words.
+
+[s36 | luca] Hai ragione.
+  EN: You’re right.
+
+[s37 | narration] Nonna Rosa ha pagato il caffè e ha detto che tornava giovedì, se poteva.
+  EN: Nonna Rosa paid for the coffee and said she would come back Thursday, if she could.
+
+[s38 | narration] Il padrone ha sentito quella cosa e ha guardato il conto di nuovo.
+  EN: The owner heard that and looked at the bill again.
+
+[s39 | luca] Tornate. Lavoriamo. Vediamo la settimana.
+  EN: Come back. We work. We see the week.
+
+
+[s40 | narration] Sofia ha sorriso, vera, non come una persona che spiega tutto.
+  EN: Sofia smiled, truly, not like a person who explains everything.
+
+[s41 | narration] Quando la festa era quasi finita, il padrone ha chiuso un poco la musica.
+  EN: When the celebration was almost over, the owner turned the music down a little.
+
+[s42 | padrone] Oggi è abbastanza. Domani è lunedì. Lavoriamo.
+  EN: Today is enough. Tomorrow is Monday. We work.
+
+[s43 | narration] Luca ha aiutato a mettere i piatti in cucina e ha pensato alle ore di Giulia.
+  EN: Luca helped put the plates in the kitchen and thought about Giulia’s hours.
+
+[s44 | narration] Il padrone aveva detto sì per oggi. Il resto poteva aspettare.
+  EN: The owner had said yes for today. The rest could wait.
+
+[s45 | sofia] Domani sentiamo il padrone. Oggi abbiamo fatto abbastanza.
+  EN: Tomorrow we hear the owner. Today we did enough.
+
+[s46 | luca] Sì. Oggi le persone sono arrivate. Domani chiediamo il resto.
+  EN: Yes. Today people arrived. Tomorrow we ask for the rest.
+
+[s47 | narration] Sofia ha guardato la sala ancora piena e ha parlato piano.
+  EN: Sofia looked at the still-full room and spoke quietly.
+
+
+
+========================================================================
+CHAPTER 37: Più ore / More hours
+========================================================================
+
+[s01 | narration] Lunedì mattina Luca è andato al lavoro con un po’ di paura.
+  EN: Monday morning Luca went to work with a little fear.
+
+[s02 | narration] Una festa è un giorno. Il lunedì è la vita di ogni settimana.
+  EN: A celebration is one day. Monday is the life of every week.
+
+[s03 | narration] Quando ha aperto la porta, c’erano già due clienti a un tavolo.
+  EN: When he opened the door, there were already two customers at a table.
+
+[s04 | narration] Non era una sala piena, ma non era vuota come la settimana prima.
+  EN: It was not a full room, but it was not empty like the week before.
+
+[s05 | giulia] Buongiorno. Vedi? Qualcuno è tornato.
+  EN: Good morning. See? Someone came back.
+
+[s06 | luca] Sì. Mi sembra un primo giorno vero, anche se piccolo.
+  EN: Yes. It seems to me a first real day, even if small.
+
+[s07 | narration] Hanno lavorato. Il caffè, l’acqua, i conti. Cose di ogni giorno, ma diverse.
+  EN: They worked. The coffee, the water, the bills. Everyday things, but different.
+
+[s08 | narration] Nel pomeriggio il padrone ha chiesto a Luca e Giulia di restare un momento.
+  EN: In the afternoon the owner asked Luca and Giulia to stay a moment.
+
+[s09 | padrone] Non vendo. Non adesso. Il caffè resta. Almeno questo mese, e il prossimo.
+  EN: I’m not selling. Not now. The café stays. At least this month, and the next.
+
+[s10 | giulia] Grazie. Per me è importante restare.
+  EN: Thank you. For me it is important to stay.
+
+[s11 | padrone] Voi due lavorate di più, se volete. Sabato ho visto che serve più lavoro. Ho bisogno di ore, non di una persona nuova.
+  EN: You two work more, if you want. On Saturday I saw that more work is needed. I need hours, not a new person.
+
+[s12 | narration] Luca ha sentito le parole “se volete” e ha capito che poteva scegliere.
+  EN: Luca heard the words “if you want” and understood that he could choose.
+
+
+[s13 | luca] Sì. Accetto. Ho bisogno dello stipendio, e mi piace questo posto.
+  EN: Yes. I accept. I need the pay, and I like this place.
+
+[s14 | giulia] Anch’io accetto. Ma voglio anche organizzare, non solo servire.
+  EN: I accept too. But I also want to organize, not only serve.
+
+[s15 | padrone] Va bene. Vediamo. Tu fai un piano della settimana. Io ascolto.
+  EN: All right. We’ll see. You make a weekly plan. I listen.
+
+[s16 | narration] Giulia ha sorriso, finalmente, come una persona ascoltata.
+  EN: Giulia smiled, at last, like a person who was heard.
+
+[s17 | narration] Per Luca era una notizia buona: il lavoro restava, e Giulia aveva ore vere.
+  EN: For Luca it was good news: the job was staying, and Giulia had real hours.
+
+[s18 | narration] Un mese non è tutto. Ma era un inizio vero.
+  EN: A month is not everything. But it was a real start.
+
+[s19 | narration] Ma oggi potevano lavorare senza quella paura di ieri.
+  EN: But today they could work without that fear from yesterday.
+
+[s20 | luca] E le ore nuove?
+  EN: And the new hours?
+
+[s21 | padrone] Qualche ora in più ogni settimana. Sabato abbiamo visto una cosa: c’è domanda. Poi guardiamo i clienti.
+  EN: A few more hours each week. On Saturday we saw one thing: there is demand. Then we watch the customers.
+
+[s22 | padrone] Se la gente resta, do più ore. Se no, cambiamo.
+  EN: If people stay, I give more hours. If not, we change.
+
+[s23 | giulia] Chiaro. Non è per sempre. È per adesso.
+  EN: Clear. It is not forever. It is for now.
+
+[s24 | padrone] Sì. Per adesso.
+  EN: Yes. For now.
+
+[s25 | narration] La sera Luca ha contato i soldi. L’affitto di questo mese era più sicuro.
+  EN: In the evening Luca counted the money. This month’s rent was safer.
+
+
+[s26 | narration] Ha scritto un messaggio a Sofia e a Marco: il caffè resta, per adesso.
+  EN: He wrote a message to Sofia and Marco: the café stays, for now.
+
+[s27 | narration] Sofia ha risposto subito. Marco ha risposto dopo: al sabato ha visto tanta gente, e ancora cerca lavoro.
+  EN: Sofia answered right away. Marco answered later: on Saturday he saw many people, and he is still looking for work.
+
+[s28 | narration] Luca ha chiuso la finestra e ha pensato alle ore nuove.
+  EN: Luca closed the window and thought about the new hours.
+
+[s29 | narration] Più ore voleva dire più soldi, e anche meno tempo libero.
+  EN: More hours meant more money, and also less free time.
+
+[s30 | narration] Doveva parlare di questo con Sofia. Non era una cosa da decidere da solo.
+  EN: He had to talk about this with Sofia. It was not something to decide alone.
+
+[s31 | narration] Giulia ha chiamato Luca prima di uscire e ha parlato del piano della settimana.
+  EN: Giulia called Luca before leaving and talked about the weekly plan.
+
+[s32 | giulia] Io preparo un orario chiaro. Tu guardi la porta e i clienti.
+  EN: I prepare a clear schedule. You watch the door and the customers.
+
+[s33 | luca] Va bene. E se i clienti non tornano?
+  EN: All right. And if customers don’t come back?
+
+[s34 | giulia] Allora il padrone cambia di nuovo. Ma oggi abbiamo ore vere.
+  EN: Then the owner changes again. But today we have real hours.
+
+[s37 | narration] Ma per la prima volta dopo tante settimane, Luca poteva pagare e restare.
+  EN: But for the first time after so many weeks, Luca could pay and stay.
+
+[s38 | narration] Ha pensato a Marco, ancora in cerca di lavoro. Ha pensato a Sofia, con i suoi giorni pieni.
+  EN: He thought of Marco, still looking for work, and of Sofia, with her full days.
+
+
+[s39 | narration] Domani, o dopo, doveva vedere Sofia. Voleva parlare delle ore nuove.
+  EN: Tomorrow, or later, he had to see Sofia. He wanted to talk about the new hours.
+
+[s41 | narration] Quando Luca è andato a casa, ha pensato di nuovo al sabato e ai tavoli pieni.
+  EN: When Luca went home, he thought again of Saturday and the full tables.
+
+[s42 | narration] Quel giorno aveva dato una ragione al padrone per non vendere il caffè.
+  EN: That day had given the owner a reason not to sell the café.
+
+[s43 | narration] Ha messo il telefono vicino alla finestra e ha letto di nuovo il messaggio di Sofia.
+  EN: He put the phone near the window and read Sofia’s message again.
+
+[s44 | sofia] Bene. Parliamo presto delle ore.
+  EN: Good. Let’s talk soon about the hours.
+
+[s45 | luca] Sì. Io accetto di più, ma non voglio restare senza tempo per gli amici.
+  EN: Yes. I accept more, but I don’t want to be left without time for friends.
+
+[s47 | narration] Il caffè restava. Ora c’erano più ore. Luca doveva ancora scegliere le ore.
+  EN: The café was staying. Now there were more hours. Luca still had to choose the hours.
+
+[s48 | narration] Per questa sera, questo era abbastanza.
+  EN: For this evening, that was enough.
+
+
+
+========================================================================
+CHAPTER 38: Cena con Sofia / Dinner with Sofia
+========================================================================
+
+[s01 | narration] Due sere dopo, Luca e Sofia si sono incontrati per una cena nel centro.
+  EN: Two evenings later, Luca and Sofia met for a dinner in the center.
+
+[s02 | narration] Il posto era piccolo e tranquillo, con poca luce e pochi tavoli.
+  EN: The place was small and quiet, with little light and few tables.
+
+[s03 | narration] Sofia è arrivata un po’ tardi, perché il lavoro era lungo.
+  EN: Sofia arrived a little late, because work had been long.
+
+[s04 | sofia] Allora. Il caffè resta. Tu sei contento delle ore nuove?
+  EN: So. The café is staying. Are you happy about the new hours?
+
+[s05 | luca] Sì. Ho più soldi. L’affitto di questo mese è più sicuro.
+  EN: Yes. I have more money. This month’s rent is safer.
+
+[s06 | luca] Ma ho anche meno tempo. La settimana è già piena.
+  EN: But I also have less time. The week is already full.
+
+[s07 | narration] Luca ha preso l’acqua. Sofia ha ascoltato, e non ha deciso per lui.
+  EN: Luca took the water. Sofia listened, and she did not decide for him.
+
+[s08 | sofia] Cosa vuoi, di vero? Non cosa ha detto il padrone.
+  EN: What do you want, really? Not what the owner said.
+
+[s09 | luca] Voglio restare a Roma. Voglio lavorare. Ma non voglio solo il lavoro.
+  EN: I want to stay in Rome. I want to work. But I don’t want only work.
+
+[s10 | luca] Voglio tempo per gli amici e per la casa.
+  EN: I want time for friends and for home.
+
+[s11 | sofia] Questo è chiaro. Allora le ore non devono prendere tutta la settimana.
+  EN: That is clear. Then the hours must not take the whole week.
+
+[s12 | narration] Mentre parlavano, la sala era tranquilla.
+  EN: While they talked, the room was quiet.
+
+[s13 | narration] Hanno mangiato pasta e hanno parlato del lavoro di Sofia.
+  EN: They ate pasta and talked about Sofia’s work.
+
+
+[s14 | sofia] Il mio lavoro è tanto. Qualche sera sono stanca. Qualche sera sto bene.
+  EN: My work is a lot. Some evenings I am tired. Some evenings I am fine.
+
+[s15 | luca] Anch’io. Dopo il sabato, le ore nuove sembrano grandi.
+  EN: Me too. After Saturday, the new hours feel big.
+
+[s16 | sofia] Se accetti tutte le ore, quando vedi gli amici?
+  EN: If you accept all the hours, when do you see your friends?
+
+[s17 | luca] Non so. Forse vedo gli amici poco. E questo non mi piace.
+  EN: I don’t know. Maybe I see friends little. And I don’t like that.
+
+[s18 | sofia] Allora non è un sì o un no. È una domanda di orario.
+  EN: So it’s not a yes or a no. It’s a question of schedule.
+
+[s19 | narration] Luca ha pensato all’affitto, poi agli amici, poi a Giulia.
+  EN: Luca thought about the rent, then about friends, then about Giulia.
+
+[s20 | luca] Giulia fa il piano della settimana. Io posso chiedere un orario chiaro.
+  EN: Giulia makes the week’s plan. I can ask for a clear schedule.
+
+[s21 | sofia] Sì. Parla al padrone di quello che ti serve. Lui ascolta.
+  EN: Yes. Talk to the owner about what you need. He listens.
+
+[s22 | narration] Quando Sofia ha detto “ti serve”, Luca ha capito la cosa importante.
+  EN: When Sofia said “what you need,” Luca understood the important thing.
+
+[s23 | narration] Non doveva avere paura di chiedere. Doveva solo essere chiaro.
+  EN: He didn’t have to be afraid to ask. He only had to be clear.
+
+[s24 | sofia] Vuoi più ore, ma non tutte. Va bene così.
+  EN: You want more hours, but not all of them. That’s fine.
+
+[s25 | narration] Hanno parlato di questa settimana, non di un anno lungo.
+  EN: They talked about this week, not about a long year.
+
+[s26 | luca] Lunedì e mercoledì, la sera, voglio restare libero.
+  EN: Monday and Wednesday evenings, I want to stay free.
+
+
+[s27 | luca] Martedì e giovedì posso lavorare di più, se il padrone vuole.
+  EN: Tuesday and Thursday I can work more, if the owner wants.
+
+[s28 | luca] Sabato e domenica sono difficili, perché il caffè ha bisogno di persone.
+  EN: Saturday and Sunday are hard, because the café needs people.
+
+[s29 | sofia] Questo mi sembra un piano. Non è grande, ma è un inizio.
+  EN: That seems like a plan to me. It isn’t big, but it’s a start.
+
+[s30 | narration] Sofia non ha fatto tante parole. Ha fatto domande, e ha ascoltato.
+  EN: Sofia didn’t say many words. She asked questions, and she listened.
+
+[s31 | luca] Per me sei un’amica, non solo la persona dei primi giorni.
+  EN: For me you are a friend, not only the person from the first days.
+
+[s32 | sofia] Lo so. Adesso parliamo perché vogliamo, non perché sei nuovo.
+  EN: I know. Now we talk because we want to, not because you are new.
+
+[s33 | narration] Luca ha sorriso. La cena era piccola. Ogni parola era chiara.
+  EN: Luca smiled. The dinner was small. Every word was clear.
+
+[s34 | luca] Domani parlo con il padrone. Chiedo più ore, ma non tutte.
+  EN: Tomorrow I talk with the owner. I ask for more hours, but not all.
+
+[s35 | sofia] Bene. E se il padrone dice no alle ore?
+  EN: Good. And if the owner says no to the hours?
+
+[s36 | luca] Allora cerco un altro modo. Ma prima chiedo.
+  EN: Then I look for another way. But first I ask.
+
+[s37 | narration] Dopo la cena hanno camminato un poco verso il quartiere.
+  EN: After dinner they walked a little toward the neighborhood.
+
+[s38 | narration] Roma di sera era piena di gente, e loro parlavano piano.
+  EN: Rome in the evening was full of people, and they talked quietly.
+
+[s39 | narration] Non hanno deciso tutto. Hanno deciso cosa fare il giorno dopo.
+  EN: They did not decide everything. They decided what to do the next day.
+
+
+[s40 | sofia] Ci vediamo presto. Non restare solo tra le ore del caffè.
+  EN: See you soon. Don’t stay only among the café hours.
+
+[s41 | luca] Non resto solo. Lunedì e mercoledì la sera sono liberi.
+  EN: I won’t stay only that way. Monday and Wednesday evenings are free.
+
+[s42 | narration] Sofia ha fatto un segno di sì, contenta in un modo tranquillo.
+  EN: Sofia made a yes sign, happy in a quiet way.
+
+[s43 | narration] Quando Luca è tornato a casa, ha scritto due parole sul telefono.
+  EN: When Luca got home, he wrote two words on the phone.
+
+[s44 | narration] Domani: orario chiaro con il padrone. Più ore, non tutte.
+  EN: Tomorrow: a clear schedule with the owner. More hours, not all.
+
+[s45 | narration] Ha messo il telefono vicino alla finestra e ha aspettato un momento.
+  EN: He put the phone near the window and waited a moment.
+
+[s46 | narration] Il caffè restava. Le ore nuove restavano. Ora c’era anche un piano.
+  EN: The café was staying. The new hours were staying. Now there was also a plan.
+
+[s47 | narration] Era una cosa piccola e chiara per la settimana nuova.
+  EN: It was a small, clear thing for the new week.
+
+[s49 | narration] Ha pensato a Marco, ancora in cerca di lavoro, e a Giulia con il suo piano.
+  EN: He thought about Marco, still looking for work, and about Giulia with her plan.
+
+[s50 | narration] Poi ha chiuso la luce. Domani iniziava con una domanda chiara.
+  EN: Then he turned off the light. Tomorrow started with a clear question.
+
+
+
+========================================================================
+CHAPTER 39: Un posto per Marco / A place for Marco
+========================================================================
+
+[s01 | narration] Il giorno dopo Luca ha parlato con il padrone, come deciso con Sofia.
+  EN: The next day Luca talked with the owner, as decided with Sofia.
+
+[s02 | luca] Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero.
+  EN: I want more hours, but not all. Monday and Wednesday evenings I want free time.
+
+[s03 | luca] Martedì e giovedì posso fare di più. Sabato e domenica, come serve.
+  EN: Tuesday and Thursday I can do more. Saturday and Sunday, as needed.
+
+[s04 | padrone] Va bene. Sei chiaro. Facciamo un orario giusto con Giulia.
+  EN: Okay. You’re clear. Let’s make a fair schedule with Giulia.
+
+[s05 | narration] Giulia ha ascoltato dalla porta e ha preso carta per il piano.
+  EN: Giulia listened from the door and took paper for the plan.
+
+[s06 | giulia] Bene. Così so chi è in sala, e quando. Non cambio ogni giorno.
+  EN: Good. That way I know who is in the room, and when. I don’t change every day.
+
+[s07 | narration] Mentre facevano l’orario, Marco è arrivato alla porta del caffè.
+  EN: While they were making the schedule, Marco arrived at the café door.
+
+[s08 | marco] Scusa. Posso parlare un momento? Ho bisogno di dirvi una cosa.
+  EN: Sorry. Can I talk a moment? I need to tell you something.
+
+[s09 | narration] Il padrone ha fatto segno di sì. Luca ha messo i piatti sul tavolo.
+  EN: The owner motioned yes. Luca put the plates on the table.
+
+[s10 | marco] Cerco lavoro. Non ho trovato un lavoro. Ma al sabato ho visto che serve aiuto. Posso aiutare qui.
+  EN: I’m looking for work. I haven’t found a job. But on Saturday I saw that help is needed. I can help here.
+
+[s11 | marco] Nei giorni pieni. Poche ore. Non chiedo un lavoro per sempre.
+  EN: On busy days. Few hours. I’m not asking for a job forever.
+
+[s12 | narration] Luca ha guardato Giulia. Lei ha guardato il padrone, poi ha parlato.
+  EN: Luca looked at Giulia. She looked at the owner, then she spoke.
+
+[s13 | giulia] I giorni pieni abbiamo bisogno di una persona in più. Lo abbiamo visto sabato.
+  EN: On busy days we need one more person. We saw that on Saturday.
+
+
+[s14 | padrone] Poche ore. Pochi soldi. Non è un lavoro grande. Se vuoi, proviamo.
+  EN: A few hours. Little money. It isn’t a big job. If you want, we’ll try.
+
+[s15 | marco] Voglio. Grazie. Per me è già un inizio.
+  EN: I want to. Thanks. For me it’s already a start.
+
+[s16 | narration] Marco ha fatto un segno di sì, e niente di più.
+  EN: Marco motioned yes, and nothing more.
+
+[s17 | luca] Se lavori qui, ci vediamo di più. Va bene per me.
+  EN: If you work here, we see each other more. That’s fine for me.
+
+[s18 | marco] Per me anche. Gli amici e un po’ di soldi. Meglio di niente.
+  EN: For me too. Friends and a bit of money. Better than nothing.
+
+[s19 | narration] Luca era contento in un modo tranquillo. Il problema di Marco restava.
+  EN: Luca was happy in a quiet way. Marco’s problem remained.
+
+[s20 | narration] Ma c’era un primo giorno vero al caffè, con le persone del posto.
+  EN: But there was a real first day at the café, with the people of the place.
+
+[s21 | narration] Nel pomeriggio Sofia è passata, perché voleva sentire la notizia.
+  EN: In the afternoon Sofia stopped by, because she wanted to hear the news.
+
+[s22 | luca] Marco aiuta nei giorni pieni. Non è tanto, ma è un posto.
+  EN: Marco helps on busy days. It isn’t much, but it’s a place.
+
+[s23 | sofia] Bene. Non sei più solo a cercare. Hai qualcosa di vero.
+  EN: Good. You’re not only looking alone anymore. You have something real.
+
+[s24 | narration] Marco ha detto poco. Sì. Grazie. Poi ha guardato l’orario di Giulia.
+  EN: Marco said little. Yes. Thanks. Then he looked at Giulia’s schedule.
+
+[s25 | narration] Giulia ha fatto vedere i giorni: sabato pieno, e qualche sera della settimana.
+  EN: Giulia showed the days: a full Saturday, and some evenings in the week.
+
+[s26 | giulia] Tu vieni quando la sala è piena. Io organizzo. Luca ha le sue ore.
+  EN: You come when the room is full. I organize. Luca has his hours.
+
+
+[s27 | marco] Chiaro. Io faccio quello che serve, e niente di più.
+  EN: Clear. I do what is needed, and nothing more.
+
+[s29 | padrone] Proviamo due settimane. Poi guardiamo i clienti e i soldi.
+  EN: We’ll try two weeks. Then we look at the customers and the money.
+
+[s30 | narration] Nessuno ha detto che il caffè era sicuro per sempre. Ma oggi funzionava meglio.
+  EN: Nobody said the café was safe forever. But today it was working better.
+
+[s31 | narration] Luca ha visto le ore nuove sul suo orario: più lavoro, ma non tutto.
+  EN: Luca saw the new hours on his schedule: more work, but not everything.
+
+[s32 | narration] Lunedì e mercoledì sera restavano liberi, come aveva detto a Sofia.
+  EN: Monday and Wednesday evenings stayed free, as he had told Sofia.
+
+[s33 | narration] Sofia è restata un poco, perché voleva stare lì.
+  EN: Sofia stayed a little, because she wanted to be there.
+
+[s34 | sofia] Io sono qui perché voglio. Non solo perché Luca ha un problema.
+  EN: I’m here because I want to be. Not only because Luca has a problem.
+
+[s35 | luca] Lo so. E mi piace.
+  EN: I know. And I like that.
+
+[s36 | narration] Marco ha preso un po’ d’acqua e ha chiesto dell’orario di sabato.
+  EN: Marco took a little water and asked about Saturday’s schedule.
+
+[s37 | narration] La sera i quattro hanno mangiato vicino al caffè, con pane e qualcosa da bere.
+  EN: In the evening the four of them ate near the café, with bread and something to drink.
+
+[s38 | narration] Era una cena dopo un giorno lungo.
+  EN: It was a dinner after a long day.
+
+[s39 | giulia] Il caffè resta. Marco aiuta. Luca ha un orario chiaro. Io organizzo.
+  EN: The café is staying. Marco helps. Luca has a clear schedule. I organize.
+
+
+[s40 | sofia] Anch’io sono qui perché scelgo.
+  EN: I’m here too because I choose to be.
+
+[s42 | marco] A Roma, allora. E a questo lavoro piccolo.
+  EN: To Rome, then. And to this small job.
+
+[s43 | narration] Luca ha ascoltato. Il gruppo stava meglio, ma niente era finito.
+  EN: Luca listened. The group was doing better, but nothing was finished.
+
+[s44 | narration] Quando è tornato a casa, ha visto un messaggio della mamma sul telefono.
+  EN: When he got home, he saw a message from his mother on the phone.
+
+[s45 | marta] Ti chiamo domani. Ho una proposta di lavoro. Non è a Roma.
+  EN: I’ll call you tomorrow. I have a job proposal. It isn’t in Rome.
+
+[s46 | narration] Luca ha letto le parole due volte. Non ha risposto subito.
+  EN: Luca read the words twice. He didn’t answer right away.
+
+[s47 | narration] Ha messo il telefono sul tavolo e ha guardato l’orario di Giulia, già pronto.
+  EN: He put the phone on the table and looked at Giulia’s schedule, already ready.
+
+[s48 | narration] Domani c’era la chiamata. Oggi c’era un posto per Marco.
+  EN: Tomorrow there was the call. Today there was a place for Marco.
+
+[s50 | narration] Prima di dormire ha scritto a Sofia: Domani parla la mamma. Ti dico dopo.
+  EN: Before sleeping he wrote to Sofia: Tomorrow Mom talks. I’ll tell you after.
+
+[s51 | narration] Poi ha chiuso la luce. Il caffè restava. Domani c’era la chiamata.
+  EN: Then he turned off the light. The café was staying. Tomorrow there was the call.
+
+
+
+========================================================================
+CHAPTER 40: Per adesso / For now
+========================================================================
+
+[s01 | narration] Venerdì pomeriggio la mamma ha chiamato Luca a casa.
+  EN: Friday afternoon mom called Luca at home.
+
+[s02 | narration] Luca ha preso il telefono e ha ascoltato bene.
+  EN: Luca took the phone and listened carefully.
+
+[s03 | marta] C’è un posto in un bar vicino a casa.
+  EN: There is a place in a bar near home.
+
+[s04 | marta] Un amico di famiglia cerca una persona. Il lavoro è per due mesi.
+  EN: A family friend is looking for someone. The job is for two months.
+
+[s05 | marta] Inizia il mese prossimo. Ci sono più soldi di adesso.
+  EN: It starts next month. There is more money than now.
+
+[s06 | marta] Devi rispondere questa settimana. Se dici sì, parti e lasci Roma per un po’.
+  EN: You have to answer this week. If you say yes, you leave Rome for a while.
+
+[s07 | narration] La proposta era chiara. Luca doveva scegliere con calma.
+  EN: The offer was clear. Luca had to choose calmly.
+
+[s08 | narration] Un lavoro vero, vicino a casa, vicino alla famiglia, per due mesi.
+  EN: A real job, near home, near the family, for two months.
+
+[s09 | luca] Ho capito. Devo pensare. Ti rispondo presto.
+  EN: I understand. I need to think. I’ll answer you soon.
+
+[s10 | narration] Dopo la chiamata si è seduto. Ha guardato la strada fuori dalla finestra.
+  EN: After the call he sat down. He looked at the street outside the window.
+
+[s11 | narration] Ha pensato al caffè e all’orario nuovo. Poi a Giulia, a Marco e a Sofia.
+  EN: He thought about the café and the new schedule. Then about Giulia, Marco, and Sofia.
+
+[s12 | narration] A Roma aveva una casa, un lavoro, e amici. Non era più il primo giorno.
+  EN: In Rome he had a home, a job, and friends. It wasn’t the first day anymore.
+
+[s13 | narration] Il lavoro vicino a casa pagava di più. Ma Luca non cercava solo più soldi. Aveva una vita a Roma.
+  EN: The job near home paid more. But Luca was not only looking for more money. He had a life in Rome.
+
+[s14 | narration] Ha messo il telefono sul tavolo e ha preso l’orario di Giulia.
+  EN: He put the phone on the table and took Giulia’s schedule.
+
+
+[s15 | narration] Lunedì e mercoledì sera erano liberi. Gli altri giorni lavorava di più.
+  EN: Monday and Wednesday evenings were free. The other days he worked more.
+
+[s16 | narration] Marco veniva nei giorni pieni. Il caffè aveva più clienti di prima, abbastanza.
+  EN: Marco came on busy days. The café had more customers than before, enough.
+
+[s17 | narration] Se partiva, lasciava queste cose. Se restava, diceva no a soldi e a casa.
+  EN: If he left, he left these things. If he stayed, he said no to money and to home.
+
+[s18 | narration] Non voleva partire proprio quando la sua vita cominciava a essere sua.
+  EN: He did not want to leave just when his life was starting to be his own.
+
+[s19 | narration] Ha camminato un poco, poi ha deciso.
+  EN: He walked a little, then he decided.
+
+[s20 | luca] Per adesso resto a Roma. Questo lavoro, questa casa, queste persone.
+  EN: For now I stay in Rome. This work, this home, these people.
+
+[s21 | narration] Ha chiamato la mamma di nuovo e ha parlato piano, ma chiaro.
+  EN: He called his mother again and spoke quietly, but clearly.
+
+[s22 | luca] Grazie. La proposta è buona. Ma per adesso resto qui. Non parto.
+  EN: Thanks. The proposal is good. But for now I stay here. I’m not leaving.
+
+[s23 | narration] La mamma ha ascoltato. Non era felice del tutto, ma ha capito.
+  EN: Mom listened. She wasn’t fully happy, but she understood.
+
+[s24 | marta] Capisco. Se un giorno vuoi partire, chiamami. Il posto resta aperto.
+  EN: I understand. If one day you want to leave, call me. The place stays open.
+
+[s25 | narration] Luca ha detto grazie ancora una volta, e ha chiuso la chiamata.
+  EN: Luca said thanks one more time, and ended the call.
+
+[s26 | narration] La sera, dopo il lavoro, ha parlato con Giulia mentre chiudeva i tavoli.
+  EN: In the evening, after work, he talked with Giulia while she closed the tables.
+
+[s27 | luca] La mamma aveva una proposta: un bar vicino a casa, due mesi, più soldi.
+  EN: Mom had a proposal: a bar near home, two months, more money.
+
+[s28 | luca] Ho detto no. Per adesso resto. L’orario qui mi va bene.
+  EN: I said no. For now I stay. The schedule here works for me.
+
+
+[s29 | giulia] Chiaro. Hai scelto. Domani il caffè apre lo stesso.
+  EN: Clear. You chose. Tomorrow the café opens the same.
+
+[s30 | narration] Sofia e Marco sono arrivati poco dopo, perché Luca aveva scritto un messaggio.
+  EN: Sofia and Marco arrived a little later, because Luca had written a message.
+
+[s31 | luca] C’era una proposta di lavoro fuori Roma. Ho deciso di restare, per adesso.
+  EN: There was a job proposal outside Rome. I decided to stay, for now.
+
+[s32 | sofia] Bene. Non perché è facile. Perché vuoi questa vita qui.
+  EN: Good. Not because it’s easy. Because you want this life here.
+
+[s33 | luca] Hai ragione. Non è per sempre. È per adesso.
+  EN: You’re right. It isn’t forever. It’s for now.
+
+[s34 | narration] Marco ha guardato Luca e ha fatto un piccolo segno di sì.
+  EN: Marco looked at Luca and made a small yes sign.
+
+[s35 | marco] Va bene. Allora ci vediamo al lavoro. Io sabato ci sono.
+  EN: Okay. Then see you at work. I’m there on Saturday.
+
+[s36 | narration] Gli amici erano lì. Non c’era una festa, solo una scelta.
+  EN: His friends were there. There was no celebration, only a choice.
+
+[s37 | giulia] Domani apriamo di mattina. L’orario è pronto. Niente di speciale.
+  EN: Tomorrow we open in the morning. The schedule is ready. Nothing special.
+
+[s38 | narration] Non hanno fatto una festa. Hanno parlato un poco, poi sono andati a casa.
+  EN: They didn’t throw a party. They talked a little, then they went home.
+
+[s39 | narration] Luca restava con il gruppo. Il lavoro al caffè continuava.
+  EN: Luca was staying with the group. Work at the café continued.
+
+[s40 | narration] Quando Luca è tornato a casa, ha messo il telefono sul tavolo.
+  EN: When Luca got home, he put the phone on the table.
+
+[s41 | narration] La proposta restava vera. Lui aveva detto no per adesso, non per sempre.
+  EN: The proposal remained real. He had said no for now, not forever.
+
+[s42 | narration] Ha preparato le cose per la mattina e ha guardato l’orario una volta ancora.
+  EN: He prepared his things for the morning and looked at the schedule once more.
+
+
+[s43 | narration] Lunedì mattina ha aperto il caffè con Giulia, come ogni mattina di lavoro.
+  EN: Monday morning he opened the café with Giulia, like every work morning.
+
+[s44 | narration] Marco non c’era, perché non era un giorno pieno.
+  EN: Marco was not there, because it was not a busy day.
+
+[s45 | narration] Due clienti sono entrati. Luca ha portato caffè e acqua.
+  EN: Two customers came in. Luca brought coffee and water.
+
+[s46 | narration] Giulia ha guardato i tavoli e ha parlato piano.
+  EN: Giulia looked at the tables and spoke quietly.
+
+[s47 | giulia] Oggi lavoriamo. Domani anche. Questo è il lavoro, per adesso.
+  EN: Today we work. Tomorrow too. This is the job, for now.
+
+[s48 | luca] Sì. Per adesso.
+  EN: Yes. For now.
+
+[s49 | narration] Luca guarda i tavoli e pensa: per adesso questa è casa.
+  EN: Luca looks at the tables and thinks: for now this is home.

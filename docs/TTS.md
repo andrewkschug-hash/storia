@@ -13,7 +13,17 @@ Primary loop: **READ → HEAR → UNDERSTAND → CONTINUE**. Reading stays prima
 | Story range | Luca a Roma chapters **1–24** (A1 + A1+) |
 | Roster | Narrator Enceladus, Luca Achird, Sofia Leda, Marco Fenrir, Giulia Laomedeia, Nonna Rosa Gacrux, Padrone Schedar, Marta Aoede |
 
-Do **not** regenerate, re-package, or swap voices for Ch. 1–24 unless a real pronunciation or content defect is found. Ch. **25–40** audio waits for Phase 10 text lock, then uses the same eight-voice Chirp3 roster.
+Do **not** regenerate, re-package, or swap voices for Ch. 1–24 unless a real pronunciation or content defect is found.
+
+## Phase 11 — Ch. 25–40 audio (packaged)
+
+| Field | Value |
+|-------|--------|
+| Status | **Generated + packaged** (2026-08-21); human listen → freeze v2 |
+| Provider | Google Chirp3 HD (same eight-voice roster as v1) |
+| Story range | Luca a Roma chapters **25–40** only |
+| Clips | 767 (733 standard + 34 extended) |
+| See | `docs/PHASE-11.md` |
 
 See `mobile/content/audio/voices.json` → `catalogFreeze`.
 

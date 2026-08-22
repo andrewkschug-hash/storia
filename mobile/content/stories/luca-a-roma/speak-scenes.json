@@ -1,4 +1,9 @@
 {
+  "_freeze": {
+    "status": "FROZEN",
+    "date": "2026-08-21",
+    "note": "Lesson-layer freeze. Continuity-only / named-defect repairs only. Do not reopen Speak design for style. See docs/PHASE-10.md."
+  },
   "storyId": "luca-a-roma",
   "scenes": [
     {
@@ -84,14 +89,14 @@
         },
         {
           "id": "luca-a-roma-speak-15-l04",
-          "en": "He needs to buy a ticket.",
+          "en": "He has to buy a ticket.",
           "it": "Deve comprare un biglietto.",
           "sourceChapterId": "luca-a-roma-12",
           "sourceSentenceId": "s09",
           "acceptableAnswers": [
             "Marco deve comprare un biglietto.",
-            "Ha bisogno di un biglietto.",
-            "Serve un biglietto."
+            "Deve comprare un biglietto.",
+            "Lui deve comprare un biglietto."
           ],
           "semantic": {
             "requiredConcepts": [
@@ -149,14 +154,15 @@
       "lines": [
         {
           "id": "luca-a-roma-speak-20-l01",
-          "en": "When the trip ends, the group goes back to Rome.",
+          "en": "Then the group goes back to Rome.",
           "it": "Poi il gruppo torna a Roma.",
           "sourceChapterId": "luca-a-roma-20",
           "sourceSentenceId": "s01",
           "acceptableAnswers": [
             "Il gruppo torna a Roma.",
             "Poi tornano a Roma.",
-            "Tornano a Roma."
+            "Tornano a Roma.",
+            "Poi il gruppo torna a Roma."
           ]
         },
         {
@@ -266,7 +272,7 @@
         },
         {
           "id": "luca-a-roma-speak-24-l05",
-          "en": "Rome feels like home now.",
+          "en": "Rome is home now.",
           "it": "Roma è casa adesso.",
           "sourceChapterId": "luca-a-roma-24",
           "sourceSentenceId": "s27",
@@ -434,7 +440,7 @@
       "lines": [
         {
           "id": "luca-a-roma-speak-35-l01",
-          "en": "At first, almost nobody is there.",
+          "en": "At first, the room was still almost empty.",
           "it": "La sala era ancora quasi vuota.",
           "sourceChapterId": "luca-a-roma-35",
           "sourceSentenceId": "s01",
@@ -456,18 +462,19 @@
         },
         {
           "id": "luca-a-roma-speak-35-l03",
-          "en": "More people from the neighborhood come in.",
+          "en": "More people from the neighborhood arrived.",
           "it": "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
           "sourceChapterId": "luca-a-roma-35",
           "sourceSentenceId": "s11",
           "acceptableAnswers": [
-            "Arrivano persone del quartiere.",
-            "Dopo Nonna Rosa arrivano più persone."
+            "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
+            "Sono arrivate tre persone del quartiere, poi una famiglia.",
+            "Sono arrivate più persone del quartiere."
           ]
         },
         {
           "id": "luca-a-roma-speak-35-l04",
-          "en": "Before long, the room is almost full.",
+          "en": "Within an hour, the room was almost full.",
           "it": "In un'ora la sala era quasi piena.",
           "sourceChapterId": "luca-a-roma-35",
           "sourceSentenceId": "s15",
@@ -503,14 +510,14 @@
       "lines": [
         {
           "id": "luca-a-roma-speak-40-l01",
-          "en": "Luca's mother calls with a job offer near home.",
+          "en": "There is a job opening at a bar near home.",
           "it": "C'è un posto in un bar vicino a casa.",
           "sourceChapterId": "luca-a-roma-40",
           "sourceSentenceId": "s03",
           "acceptableAnswers": [
-            "La mamma ha un lavoro vicino a casa.",
             "C'è un posto in un bar vicino a casa.",
-            "C'è un lavoro vicino a casa."
+            "C'è un lavoro vicino a casa.",
+            "C’è un posto vicino a casa."
           ]
         },
         {
@@ -526,7 +533,7 @@
         },
         {
           "id": "luca-a-roma-speak-40-l03",
-          "en": "He thinks about Rome — his home, his job, his friends.",
+          "en": "In Rome he had a home, a job, and friends.",
           "it": "A Roma aveva una casa, un lavoro, e amici.",
           "sourceChapterId": "luca-a-roma-40",
           "sourceSentenceId": "s12",
@@ -551,14 +558,14 @@
         },
         {
           "id": "luca-a-roma-speak-40-l05",
-          "en": "This is Luca's life in Rome now.",
-          "it": "Questa è la sua vita a Roma, per adesso.",
+          "en": "For now, this is home.",
+          "it": "Per adesso questa è casa.",
           "sourceChapterId": "luca-a-roma-40",
-          "sourceSentenceId": "s53",
+          "sourceSentenceId": "s49",
           "acceptableAnswers": [
-            "Questa è la sua vita a Roma.",
-            "La sua vita a Roma: lavoro, amici, un orario chiaro.",
-            "Lavoro, amici, un orario chiaro."
+            "Per adesso questa è casa.",
+            "Questa è casa, per adesso.",
+            "Adesso questa è casa."
           ]
         }
       ]

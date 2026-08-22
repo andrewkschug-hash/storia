@@ -107,7 +107,7 @@
         },
         {
           "id": "s05",
-          "text": "Ci sono ancora pochi clienti, meno di lunedì.",
+          "text": "Ci sono ancora pochi clienti, meno di lunedì. Luca ha contato i tavoli vuoti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -118,7 +118,13 @@
             "cliente",
             "meno",
             "di",
-            "lunedi"
+            "lunedi",
+            "luca",
+            "avere",
+            "contare",
+            "i",
+            "tavolo",
+            "vuoto"
           ]
         },
         {
@@ -380,14 +386,16 @@
         },
         {
           "id": "s21",
-          "text": "Dopo il padrone ha parlato, Giulia ha guardato Luca.",
+          "text": "Quando il padrone ha finito di parlare, Giulia ha guardato Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "dopo",
+            "quando",
             "il",
             "padrone",
             "avere",
+            "finire",
+            "di",
             "parlare",
             "giulia",
             "avere",
@@ -486,7 +494,7 @@
       "sentences": [
         {
           "id": "s27",
-          "text": "Poi ha servito i pochi clienti con calma.",
+          "text": "Poi ha servito i pochi clienti con calma. Ha portato caffè e ha ascoltato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -497,12 +505,18 @@
             "poco",
             "cliente",
             "con",
-            "calma"
+            "calma",
+            "avere",
+            "portare",
+            "caffe",
+            "e",
+            "avere",
+            "ascoltare"
           ]
         },
         {
           "id": "s28",
-          "text": "Dopo ha pulito i tavoli e ha preparato la sala.",
+          "text": "Dopo ha pulito i tavoli e ha preparato la sala di nuovo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -515,7 +529,9 @@
             "avere",
             "preparare",
             "la",
-            "sala"
+            "sala",
+            "di",
+            "nuovo"
           ]
         },
         {
@@ -549,6 +565,25 @@
             "avere",
             "parlare",
             "molto"
+          ]
+        },
+        {
+          "id": "s30b",
+          "text": "Hanno portato acqua a un altro tavolo e hanno lavorato insieme.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "portare",
+            "acqua",
+            "a",
+            "un",
+            "altro",
+            "tavolo",
+            "e",
+            "avere",
+            "lavorare",
+            "insieme"
           ]
         },
         {
@@ -599,6 +634,26 @@
             "fino",
             "a",
             "sera"
+          ]
+        },
+        {
+          "id": "s33b",
+          "text": "Luca ha chiuso un momento la porta e ha guardato la strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "chiudere",
+            "un",
+            "momento",
+            "la",
+            "porta",
+            "e",
+            "avere",
+            "guardare",
+            "la",
+            "strada"
           ]
         },
         {
@@ -724,19 +779,18 @@
         },
         {
           "id": "s41",
-          "text": "Luca è preoccupato, ma ha un piano per domani.",
+          "text": "Luca è preoccupato. Domani vuole parlare con Sofia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "essere",
             "preoccupato",
-            "ma",
-            "avere",
-            "un",
-            "piano",
-            "per",
-            "domani"
+            "domani",
+            "volere",
+            "parlare",
+            "con",
+            "sofia"
           ]
         },
         {
@@ -750,6 +804,25 @@
             "capire",
             "di",
             "piu"
+          ]
+        },
+        {
+          "id": "s43",
+          "text": "Ha messo il telefono sul tavolo e ha aspettato la sera.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "mettere",
+            "il",
+            "telefono",
+            "sul",
+            "tavolo",
+            "e",
+            "avere",
+            "aspettare",
+            "la",
+            "sera"
           ]
         }
       ]

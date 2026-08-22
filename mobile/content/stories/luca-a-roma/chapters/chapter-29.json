@@ -78,7 +78,7 @@
         },
         {
           "id": "s03",
-          "text": "Nonna Rosa li ha visto alla porta e ha sorriso.",
+          "text": "Nonna Rosa li ha visti alla porta e ha sorriso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -166,7 +166,7 @@
         },
         {
           "id": "s08",
-          "text": "Nonna Rosa ha ascoltato con calma e senza fretta.",
+          "text": "Nonna Rosa ha ascoltato con calma e senza fretta. Ha portato pane al tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -178,12 +178,17 @@
             "calma",
             "e",
             "senza",
-            "fretta"
+            "fretta",
+            "avere",
+            "portare",
+            "pane",
+            "al",
+            "tavolo"
           ]
         },
         {
           "id": "s09",
-          "text": "Marco guardava il tavolo e non parlava molto.",
+          "text": "Marco guardava il tavolo e non parlava molto. Ha bevuto un poco d’acqua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -194,7 +199,12 @@
             "e",
             "non",
             "parlare",
-            "molto"
+            "molto",
+            "avere",
+            "bere",
+            "un",
+            "poco",
+            "acqua"
           ]
         },
         {
@@ -348,6 +358,22 @@
             "in",
             "un",
             "giorno"
+          ]
+        },
+        {
+          "id": "s18b",
+          "text": "Luca ha ascoltato l’idea e ha guardato Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "ascoltare",
+            "idea",
+            "e",
+            "avere",
+            "guardare",
+            "sofia"
           ]
         },
         {
@@ -777,11 +803,12 @@
         },
         {
           "id": "s42",
-          "text": "Domani dovevano chiedere il sì del padrone.",
+          "text": "Quella sera dovevano chiedere il sì del padrone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "domani",
+            "quello",
+            "sera",
             "dovere",
             "chiedere",
             "il",

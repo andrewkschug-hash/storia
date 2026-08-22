@@ -36,6 +36,15 @@ describe('grammar notes', () => {
     expect(grammarNoteForBatch(16, 20)?.title).toBe('Time words and movement verbs');
   });
 
+  it('authors A2 reading/reference grammar for 36-40', () => {
+    const note = grammarNoteForBatch(36, 40);
+    expect(note?.title).toMatch(/Reading clearly/i);
+    const joined = note!.steps.map((s) => s.explanation + s.examples.map((e) => e.italian).join(' ')).join('\n');
+    expect(joined).toMatch(/le ha detto/i);
+    expect(joined).not.toMatch(/Le persone entrano/i);
+    expect(joined.toLowerCase()).not.toMatch(/most recent person/);
+  });
+
   it('authors hometown grammar for chapters 1–5 of each pre-Rome story', () => {
     expect(grammarNoteForBatch(1, 5, 'luca-prima-di-roma-01')?.title).toContain('Sono');
     expect(grammarNoteForBatch(1, 5, 'luca-prima-di-roma-03')?.title).toContain('quanto costa');

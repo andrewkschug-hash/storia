@@ -241,7 +241,7 @@
         },
         {
           "id": "s11",
-          "text": "Voi due lavorate di più, se volete. Ho bisogno di ore, non di una persona nuova.",
+          "text": "Voi due lavorate di più, se volete. Sabato ho visto che serve più lavoro. Ho bisogno di ore, non di una persona nuova.",
           "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
@@ -252,6 +252,13 @@
             "piu",
             "se",
             "volere",
+            "sabato",
+            "avere",
+            "vedere",
+            "che",
+            "servire",
+            "piu",
+            "lavorare",
             "avere",
             "bisogno",
             "di",
@@ -379,7 +386,7 @@
         },
         {
           "id": "s17",
-          "text": "Per Luca era una notizia buona due volte: il lavoro restava, e Giulia aveva il suo posto.",
+          "text": "Per Luca era una notizia buona: il lavoro restava, e Giulia aveva ore vere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -389,39 +396,32 @@
             "una",
             "notizia",
             "buono",
-            "due",
-            "volta",
             "il",
             "lavorare",
             "restare",
             "e",
             "giulia",
             "avere",
-            "il",
-            "suo",
-            "posto"
+            "ora",
+            "vero"
           ]
         },
         {
           "id": "s18",
-          "text": "Il problema grande non era del tutto finito. Un mese non è un futuro.",
+          "text": "Un mese non è tutto. Ma era un inizio vero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "problema",
-            "grande",
-            "non",
-            "essere",
-            "del",
-            "tutto",
-            "finire",
             "un",
             "mese",
             "non",
             "essere",
+            "tutto",
+            "ma",
+            "essere",
             "un",
-            "futuro"
+            "iniziare",
+            "vero"
           ]
         },
         {
@@ -455,7 +455,7 @@
         },
         {
           "id": "s21",
-          "text": "Qualche ora in più ogni settimana. Poi guardiamo i clienti.",
+          "text": "Qualche ora in più ogni settimana. Sabato abbiamo visto una cosa: c’è domanda. Poi guardiamo i clienti.",
           "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
@@ -465,6 +465,13 @@
             "piu",
             "ogni",
             "settimana",
+            "sabato",
+            "avere",
+            "vedere",
+            "una",
+            "cosa",
+            "ce",
+            "domanda",
             "poi",
             "guardare",
             "i",
@@ -568,7 +575,7 @@
         },
         {
           "id": "s27",
-          "text": "Sofia ha risposto subito. Marco ha risposto dopo, contento, e cerca ancora un lavoro.",
+          "text": "Sofia ha risposto subito. Marco ha risposto dopo: al sabato ha visto tanta gente, e ancora cerca lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -580,11 +587,15 @@
             "avere",
             "rispondere",
             "dopo",
-            "contento",
+            "al",
+            "sabato",
+            "avere",
+            "vedere",
+            "tanto",
+            "gente",
             "e",
-            "cercare",
             "ancora",
-            "un",
+            "cercare",
             "lavorare"
           ]
         },
@@ -735,48 +746,6 @@
           ]
         },
         {
-          "id": "s35",
-          "text": "Luca ha ascoltato. La notizia era buona, e non era chiusa.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "avere",
-            "ascoltare",
-            "la",
-            "notizia",
-            "essere",
-            "buono",
-            "e",
-            "non",
-            "essere",
-            "chiudere"
-          ]
-        },
-        {
-          "id": "s36",
-          "text": "Il caffè non era venduto. Il lavoro non era finito. Il futuro non era chiuso.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "caffe",
-            "non",
-            "essere",
-            "vendere",
-            "il",
-            "lavorare",
-            "non",
-            "essere",
-            "finire",
-            "il",
-            "futuro",
-            "non",
-            "essere",
-            "chiudere"
-          ]
-        },
-        {
           "id": "s37",
           "text": "Ma per la prima volta dopo tante settimane, Luca poteva pagare e restare.",
           "speakerId": null,
@@ -846,26 +815,6 @@
             "delle",
             "ora",
             "nuovo"
-          ]
-        },
-        {
-          "id": "s40",
-          "text": "Non era una notizia chiusa. Era un mese di lavoro più chiaro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "non",
-            "essere",
-            "una",
-            "notizia",
-            "chiudere",
-            "essere",
-            "un",
-            "mese",
-            "di",
-            "lavorare",
-            "piu",
-            "chiaro"
           ]
         },
         {
@@ -973,30 +922,8 @@
           ]
         },
         {
-          "id": "s46",
-          "text": "Non doveva rispondere a tutto in una sera. Doveva solo lasciare la domanda aperta.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "non",
-            "dovere",
-            "rispondere",
-            "a",
-            "tutto",
-            "in",
-            "una",
-            "sera",
-            "dovere",
-            "solo",
-            "lasciare",
-            "la",
-            "domanda",
-            "aprire"
-          ]
-        },
-        {
           "id": "s47",
-          "text": "Il caffè restava. Ora c’erano più ore. La vita chiedeva ancora di scegliere.",
+          "text": "Il caffè restava. Ora c’erano più ore. Luca doveva ancora scegliere le ore.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1007,12 +934,12 @@
             "ce",
             "piu",
             "ora",
-            "la",
-            "vita",
-            "chiedere",
+            "luca",
+            "dovere",
             "ancora",
-            "di",
-            "scegliere"
+            "scegliere",
+            "le",
+            "ora"
           ]
         },
         {

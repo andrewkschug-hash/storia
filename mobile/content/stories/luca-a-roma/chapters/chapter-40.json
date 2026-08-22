@@ -46,14 +46,11 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Il giorno dopo, nel pomeriggio, la mamma ha chiamato Luca a casa.",
+          "text": "Venerdì pomeriggio la mamma ha chiamato Luca a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "giorno",
-            "dopo",
-            "nel",
+            "venerdi",
             "pomeriggio",
             "la",
             "mamma",
@@ -161,7 +158,7 @@
         },
         {
           "id": "s07",
-          "text": "La proposta è chiara. Luca deve scegliere con calma.",
+          "text": "La proposta era chiara. Luca doveva scegliere con calma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -178,16 +175,16 @@
         },
         {
           "id": "s08",
-          "text": "Un lavoro vero, in un’altra città, vicino alla famiglia, per due mesi.",
+          "text": "Un lavoro vero, vicino a casa, vicino alla famiglia, per due mesi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "un",
             "lavorare",
             "vero",
-            "in",
-            "altro",
-            "citta",
+            "vicino",
+            "a",
+            "casa",
             "vicino",
             "alla",
             "famiglia",
@@ -280,22 +277,30 @@
         },
         {
           "id": "s13",
-          "text": "La proposta era buona. Lui doveva scegliere, non lasciare Roma per paura.",
+          "text": "Il lavoro vicino a casa pagava di più. Ma Luca non cercava solo più soldi. Aveva una vita a Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "la",
-            "proposta",
-            "essere",
-            "buono",
-            "lui",
-            "dovere",
-            "scegliere",
+            "il",
+            "lavorare",
+            "vicino",
+            "a",
+            "casa",
+            "pagare",
+            "di",
+            "piu",
+            "ma",
+            "luca",
             "non",
-            "lasciare",
-            "roma",
-            "per",
-            "paura"
+            "cercare",
+            "solo",
+            "piu",
+            "soldi",
+            "avere",
+            "una",
+            "vita",
+            "a",
+            "roma"
           ]
         },
         {
@@ -389,20 +394,22 @@
         },
         {
           "id": "s18",
-          "text": "Non aveva paura della proposta. Aveva bisogno di scegliere bene.",
+          "text": "Non voleva partire proprio quando la sua vita cominciava a essere sua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "non",
-            "avere",
-            "paura",
-            "della",
-            "proposta",
-            "avere",
-            "bisogno",
-            "di",
-            "scegliere",
-            "bene"
+            "volere",
+            "partire",
+            "proprio",
+            "quando",
+            "la",
+            "suo",
+            "vita",
+            "cominciare",
+            "a",
+            "essere",
+            "suo"
           ]
         },
         {
@@ -501,19 +508,17 @@
         },
         {
           "id": "s24",
-          "text": "Va bene. Se un giorno vuoi partire, mi dici. Il posto resta aperto.",
+          "text": "Capisco. Se un giorno vuoi partire, chiamami. Il posto resta aperto.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "andare",
-            "bene",
+            "capire",
             "se",
             "un",
             "giorno",
             "volere",
             "partire",
-            "mi",
-            "dire",
+            "chiamare",
             "il",
             "posto",
             "restare",
@@ -777,14 +782,14 @@
         },
         {
           "id": "s36",
-          "text": "Gli amici sono qui. Non c’è una festa, solo una scelta.",
+          "text": "Gli amici erano lì. Non c’era una festa, solo una scelta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "gli",
             "amico",
             "essere",
-            "qui",
+            "li",
             "non",
             "ce",
             "una",
@@ -836,7 +841,7 @@
         },
         {
           "id": "s39",
-          "text": "Luca resta con il gruppo. Il piano del caffè continua.",
+          "text": "Luca restava con il gruppo. Il lavoro al caffè continuava.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -846,8 +851,8 @@
             "il",
             "gruppo",
             "il",
-            "piano",
-            "del",
+            "lavorare",
+            "al",
             "caffe",
             "continuare"
           ]
@@ -923,13 +928,12 @@
       "sentences": [
         {
           "id": "s43",
-          "text": "Il giorno dopo ha aperto il caffè con Giulia, come ogni mattina di lavoro.",
+          "text": "Lunedì mattina ha aperto il caffè con Giulia, come ogni mattina di lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "giorno",
-            "dopo",
+            "lunedi",
+            "mattina",
             "avere",
             "aprire",
             "il",
@@ -945,7 +949,7 @@
         },
         {
           "id": "s44",
-          "text": "Marco non c’era, perché non era un giorno pieno. La sala era piccola, come sempre.",
+          "text": "Marco non c’era, perché non era un giorno pieno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -957,18 +961,12 @@
             "essere",
             "un",
             "giorno",
-            "pieno",
-            "la",
-            "sala",
-            "essere",
-            "piccolo",
-            "come",
-            "sempre"
+            "pieno"
           ]
         },
         {
           "id": "s45",
-          "text": "Due clienti sono entrati. Luca ha portato caffè e acqua, come sempre.",
+          "text": "Due clienti sono entrati. Luca ha portato caffè e acqua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -981,26 +979,24 @@
             "portare",
             "caffe",
             "e",
-            "acqua",
-            "come",
-            "sempre"
+            "acqua"
           ]
         },
         {
           "id": "s46",
-          "text": "Il lavoro di ogni giorno è chiaro e importante.",
+          "text": "Giulia ha guardato i tavoli e ha parlato piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "lavorare",
-            "di",
-            "ogni",
-            "giorno",
-            "essere",
-            "chiaro",
+            "giulia",
+            "avere",
+            "guardare",
+            "i",
+            "tavolo",
             "e",
-            "importante"
+            "avere",
+            "parlare",
+            "piano"
           ]
         },
         {
@@ -1034,27 +1030,6 @@
         },
         {
           "id": "s49",
-          "text": "La strada del quartiere era la stessa. I tavoli del caffè erano pronti.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "la",
-            "strada",
-            "del",
-            "quartiere",
-            "essere",
-            "la",
-            "stesso",
-            "i",
-            "tavolo",
-            "del",
-            "caffe",
-            "essere",
-            "pronto"
-          ]
-        },
-        {
-          "id": "s50",
           "text": "Luca guarda i tavoli e pensa: per adesso questa è casa.",
           "speakerId": null,
           "kind": "narration",
@@ -1070,66 +1045,6 @@
             "questo",
             "essere",
             "casa"
-          ]
-        },
-        {
-          "id": "s51",
-          "text": "Lunedì sera libero. Mercoledì sera libero. Il resto, al caffè.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "lunedi",
-            "sera",
-            "libero",
-            "mercoledi",
-            "sera",
-            "libero",
-            "il",
-            "restare",
-            "al",
-            "caffe"
-          ]
-        },
-        {
-          "id": "s52",
-          "text": "Ha preso un piatto vuoto e ha iniziato il giorno di lavoro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
-            "prendere",
-            "un",
-            "piatto",
-            "vuoto",
-            "e",
-            "avere",
-            "iniziare",
-            "il",
-            "giorno",
-            "di",
-            "lavorare"
-          ]
-        },
-        {
-          "id": "s53",
-          "text": "Questa era la sua vita a Roma, per adesso: lavoro, amici, un orario chiaro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "questo",
-            "essere",
-            "la",
-            "suo",
-            "vita",
-            "a",
-            "roma",
-            "per",
-            "adesso",
-            "lavorare",
-            "amico",
-            "un",
-            "orario",
-            "chiaro"
           ]
         }
       ]

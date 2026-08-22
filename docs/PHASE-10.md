@@ -24,7 +24,7 @@ Tests & audits          vitest, validate-content.ts, a2/verify-production.ts
 |-------|-------|--------|
 | 1–20 | A1 | Stable; rebuild via `build-chapters.js` (preserves ch > 20). **Audio catalog v1 frozen** (Chirp3). |
 | 21–24 | A1+ | **Frozen** prose — no regeneration / rewrite; continuity-only repairs for named defects only. **Audio catalog v1 frozen** (Chirp3). |
-| 25–40 | A2 | Rewrite target (Blueprint v1); regenerate only via `a2/build.js --force`. **No audio until text lock.** |
+| 25–40 | A2 | **CURRICULUM FROZEN (2026-08-21).** Text-locked + stamina patch locked. No prose edits except tagged defects. **Phase 11 audio packaged** (Chirp3; 767 clips; Ch 1–24 assets untouched). Human listen → freeze AUDIO CATALOG v2. Do **not** regenerate via `a2/build.js` without an explicit unlock. |
 
 ## Generator guards
 
@@ -37,9 +37,28 @@ Tests & audits          vitest, validate-content.ts, a2/verify-production.ts
 ## Execution order
 
 1. **10A** — SOT, guards, artifact reconciliation (no ch 21–24 prose)
-2. **10C** — Rewrite ch 25–30 (grammar staircase), then targeted 31–40 edits — **staircase + Speak-27 + Ch39/40 MINOR applied (2026-08-21); human read-through / text lock still open**
-3. **Text lock** — full A2 audit + human read-through
-4. **Phase 11** — A2 audio (same Chirp3 roster as frozen Ch 1–24; do not touch 1–24 assets)
+2. **10C** — Rewrite ch 25–30 (grammar staircase), then targeted 31–40 edits — **staircase + Speak-27 + Ch39/40 MINOR applied (2026-08-21)**
+3. **Text-lock polish** — applied 2026-08-21 (calendar, naturalness, Ch40 Friday→Monday epilogue).
+4. **Text lock** — **DONE 2026-08-21.** Ch 25–40 authored prose locked (human continuous read-through + ending confirmation). No casual prose edits.
+4b. **Stamina patch** — **DONE 2026-08-21.** Early-A2 length + Ch 25 soft PP sequencing + sentence outliers (see `docs/A2-STAMINA-CEFR-AUDIT.md`). Lessons untouched.
+5. **Lesson-layer freeze** — **DONE 2026-08-21.** Grammar notes, word-recap policy, and Speak scenes frozen (484/484). Continuity-only / named-defect repairs only. Do **not** reopen architecture or style polish.
+6. **Curriculum freeze → Phase 11** — **CURRICULUM FROZEN 2026-08-21.** Ch 25–40 prose frozen. Phase 11 Chirp3 audio **generated + packaged** (767 clips; Ch 1–24 untouched). Remaining: human listen spot-check → freeze AUDIO CATALOG v2.
+
+## Lesson layer — FROZEN (2026-08-21)
+
+| Asset | Path / source | Status |
+|-------|----------------|--------|
+| Grammar notes 1–40 | `mobile/src/content/lessonBatches.ts` (`GRAMMAR_BY_BATCH`) | **Frozen** |
+| Word recaps | `ReviewService.createBatchSession` / backfill policy | **Frozen** |
+| Speak scenes | `mobile/content/stories/luca-a-roma/speak-scenes.json` | **Frozen** |
+| LLM export snapshot | `mobile/content/stories/luca-a-roma/LLM-LESSONS-GRAMMAR-RECAP-SPEAK.txt` | Regenerable snapshot only |
+
+**Freeze rules**
+
+- Do **not** reopen lesson architecture, grammar-batch structure, or Speak design for style.
+- Patch only tagged **bug** findings (objectively wrong/broken). Tags: `bug` / `CEFR` / `alignment` / `pedagogy` / `speak` / `recap`.
+- Stylistic preferences do **not** trigger changes.
+- Lessons support the text that exists; they do **not** compensate for chapter stamina / CEFR cliff. That is a separate curriculum workstream.
 
 Do **not** start Chapter 25 prose until 10A verifies green.
 

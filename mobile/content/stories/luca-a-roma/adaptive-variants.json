@@ -949,27 +949,32 @@
     },
     "luca-a-roma-30:s01": {
       "reinforces": [
-        "arrivare"
+        "pomeriggio"
       ],
       "variants": [
         {
           "id": "extended",
-          "text": "Il giorno dopo, sabato non era ancora arrivato. Prima dovevano chiedere.",
+          "text": "Quel pomeriggio Luca e Sofia erano al caffè con Giulia. Dovevano chiedere il sì del padrone.",
           "lemmas": [
-            "il",
-            "giorno",
-            "dopo",
-            "sabato",
-            "non",
+            "quello",
+            "pomeriggio",
+            "luca",
+            "e",
+            "sofia",
             "essere",
-            "ancora",
-            "arrivare",
-            "prima",
+            "al",
+            "caffe",
+            "con",
+            "giulia",
             "dovere",
-            "chiedere"
+            "chiedere",
+            "il",
+            "si_yes",
+            "del",
+            "padrone"
           ],
           "reinforces": [
-            "arrivare"
+            "pomeriggio"
           ]
         }
       ]

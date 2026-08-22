@@ -7,7 +7,16 @@
     "status": "frozen",
     "provider": "google",
     "reviewed": "2026-08-21",
-    "note": "Do not regenerate or re-package Ch 1–24 unless a pronunciation or content defect is found. Ch 25–40 audio waits for Phase 10 text lock."
+    "note": "Do not regenerate or re-package Ch 1–24 unless a pronunciation or content defect is found."
+  },
+  "catalogPhase11": {
+    "id": "AUDIO-CATALOG-v2-pending-listen",
+    "range": "luca-a-roma chapters 25–40",
+    "status": "packaged",
+    "provider": "google",
+    "generated": "2026-08-21",
+    "clips": 767,
+    "note": "Chirp3 roster same as v1. Human listen spot-check before marking frozen. Do not touch Ch 1–24 assets."
   },
   "logicalVoices": {
     "narrator": {

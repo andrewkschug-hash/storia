@@ -45,13 +45,15 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Il giorno dopo Sofia e Marco avevano un appuntamento in piazza.",
+          "text": "Venerdì sera, prima di sabato, Sofia e Marco avevano un appuntamento in piazza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "giorno",
-            "dopo",
+            "venerdi",
+            "sera",
+            "prima",
+            "di",
+            "sabato",
             "sofia",
             "e",
             "marco",
@@ -664,7 +666,7 @@
         },
         {
           "id": "s33",
-          "text": "Sabato abbiamo bisogno di te, Marco. Non di vediamo.",
+          "text": "Sabato abbiamo bisogno di te, Marco. Non solo di “vediamo”.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
@@ -675,6 +677,7 @@
             "tu",
             "marco",
             "non",
+            "solo",
             "di",
             "vedere"
           ]

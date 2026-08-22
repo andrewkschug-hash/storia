@@ -39,4 +39,19 @@ describe('batch word recap', () => {
     expect(copy.readyCount).toBeGreaterThan(0);
     expect(copy.detail.toLowerCase()).not.toMatch(/nothing weak/);
   });
+
+  it('prefers batch vocabulary over filler phrases on empty-vocab backfill', () => {
+    const filler = new Set(['va_bene', 'hai_ragione', 'non_lo_so', 'vediamo', 'ci_vediamo', 'dipende']);
+    for (const [start, end] of [
+      [21, 25],
+      [26, 30],
+      [31, 35],
+      [36, 40],
+    ] as const) {
+      const session = service.createBatchSession(createEmptyVocabularyState(), bundle, start, end);
+      expect(session.items.length).toBe(5);
+      const fillerCount = session.items.filter((item) => filler.has(item.id)).length;
+      expect(fillerCount, `batch ${start}-${end}`).toBeLessThanOrEqual(1);
+    }
+  });
 });

@@ -184,7 +184,7 @@
         },
         {
           "id": "s09",
-          "text": "Marco si è seduto e ha guardato i tavoli vuoti.",
+          "text": "Marco si è seduto e ha guardato i tavoli vuoti. Ha preso l’acqua con calma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -197,7 +197,12 @@
             "guardare",
             "i",
             "tavolo",
-            "vuoto"
+            "vuoto",
+            "avere",
+            "prendere",
+            "acqua",
+            "con",
+            "calma"
           ]
         }
       ]
@@ -257,37 +262,34 @@
         },
         {
           "id": "s13",
-          "text": "Il viaggio è passato. Il biglietto è a posto ora.",
+          "text": "Adesso sono a Roma. Cerco lavoro ogni giorno.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "il",
-            "viaggio",
-            "essere",
-            "passare",
-            "il",
-            "biglietto",
-            "essere",
-            "a",
-            "posto",
-            "ora"
-          ]
-        },
-        {
-          "id": "s14",
-          "text": "Sì. Adesso sei a Roma. Sei con noi adesso.",
-          "speakerId": "luca",
-          "kind": "dialogue",
-          "lemmas": [
-            "si_yes",
             "adesso",
             "essere",
             "a",
             "roma",
+            "cercare",
+            "lavorare",
+            "ogni",
+            "giorno"
+          ]
+        },
+        {
+          "id": "s14",
+          "text": "Sì. Sei con noi. Cerchiamo insieme un modo.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "si_yes",
             "essere",
             "con",
             "noi",
-            "adesso"
+            "cercare",
+            "insieme",
+            "un",
+            "modo"
           ]
         },
         {
@@ -361,7 +363,7 @@
         },
         {
           "id": "s19",
-          "text": "Luca ha ascoltato Marco con calma e senza fretta.",
+          "text": "Luca ha ascoltato Marco con calma e senza fretta. Poi ha portato pane al tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -373,7 +375,13 @@
             "calma",
             "e",
             "senza",
-            "fretta"
+            "fretta",
+            "poi",
+            "avere",
+            "portare",
+            "pane",
+            "al",
+            "tavolo"
           ]
         }
       ]
@@ -485,12 +493,12 @@
         },
         {
           "id": "s26",
-          "text": "Giulia ha passato tra i tavoli e ha ascoltato tutto.",
+          "text": "Giulia è passata tra i tavoli e ha ascoltato tutto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "giulia",
-            "avere",
+            "essere",
             "passare",
             "tra",
             "i",
@@ -574,6 +582,26 @@
             "momento",
             "avere",
             "sorridere"
+          ]
+        },
+        {
+          "id": "s30b",
+          "text": "Luca ha preparato un altro caffè e ha lavorato vicino alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "preparare",
+            "un",
+            "altro",
+            "caffe",
+            "e",
+            "avere",
+            "lavorare",
+            "vicino",
+            "alla",
+            "porta"
           ]
         }
       ]

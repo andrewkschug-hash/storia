@@ -9,7 +9,7 @@ Luca a Roma A1 (chapters 1–20) is **not** the same as “A1 complete.” Pre-R
 ```
 A1  — Luca prima di Roma (5 planned shorts, 32 ch target) + Luca a Roma chapters 1–20
 A1+ — Luca a Roma chapters 21–24
-A2  — Luca a Roma chapters 25–40 (written; audio not generated)
+A2  — Luca a Roma chapters 25–40 (curriculum frozen; Chirp3 audio packaged 2026-08-21)
 A2+ — New problems             (planned)
 B1  — Bigger decisions         (planned)
 B1+ — Relationships & work     (planned)

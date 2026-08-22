@@ -1,4 +1,8 @@
-﻿/** Chapters are grouped into batches of five for grammar notes and recap. */
+﻿/** Chapters are grouped into batches of five for grammar notes and recap.
+ *
+ * LESSON LAYER FROZEN 2026-08-21 — do not reopen architecture or style.
+ * Continuity-only / named-defect (bug) repairs only. See docs/PHASE-10.md.
+ */
 
 export const LESSON_BATCH_SIZE = 5;
 
@@ -205,14 +209,16 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
       'Small words — a, in, con, per — tell you direction, location, company, and purpose. Here is what each one actually does.',
     steps: [
       {
-        title: 'A = toward / to (especially cities and people)',
+        title: 'A = to / at (cities and people)',
         explanation:
-          'Use a before cities and before people when someone goes to them:\n\n' +
-          '• a Roma = to Rome / in Rome (when moving or being there)\n' +
-          '• a casa = home / to home\n' +
+          'With cities, Italian often uses a for both movement and location:\n\n' +
+          '• Luca va a Roma. = Luca goes to Rome. (movement)\n' +
+          '• Marco è a Roma. = Marco is in Rome. (location)\n' +
+          '• a casa = home / at home\n' +
           '• a Marco = to Marco (giving something to someone)\n\n' +
+          'The verb tells you which reading: andare/venire/tornare → usually "to"; essere/stare → usually "in/at".\n\n' +
           'Combined with the: a + il = al, a + la = alla. Luca va al caffè = Luca goes to the café.',
-        rule: 'Movement toward a place → often a (+ article)',
+        rule: 'a + city: "to" with movement verbs, "in/at" with essere',
         examples: [
           { italian: 'Luca va a Roma.', english: 'Luca goes to Rome.' },
           { italian: 'Vado al caffè.', english: 'I am going to the café.' },
@@ -354,14 +360,14 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         title: 'Passato prossimo = ha/è + past participle',
         explanation:
           'Passato prossimo is used for a completed past event.\n\n' +
-          'Form:\n' +
-          '- ha + past participle\n' +
-          '- è + past participle (often for movement/change)\n\n' +
-          'In these chapters you see both:\n' +
+          'Form: helper verb (ha or è) + past participle.\n\n' +
+          'In the story, some movement/change verbs use essere, such as è arrivato and è tornato. Other verbs use avere, such as ha aperto and ha detto.\n\n' +
+          'For now, learn the forms you meet as complete patterns — do not treat “movement = essere” as a rule that always works.\n\n' +
+          'Examples you see:\n' +
           '- Luca è arrivato presto e ha aperto la porta.\n' +
           '- Giulia ha guardato i tavoli e non ha sorriso.\n' +
           '- Non ha detto niente ai colleghi.',
-        rule: 'ha/è + past participle = completed past event',
+        rule: 'Completed past event = ha/è + past participle (learn story forms as patterns)',
         examples: [
           {
             italian: 'Luca è arrivato presto e ha aperto la porta.',
@@ -404,10 +410,10 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         explanation: '"è arrivato" = è (helper) + participle. That is passato prossimo.',
       },
       {
-        prompt: 'Choose the correct helper for a movement/change verb: "Luca ___ al caffè presto."',
+        prompt: 'In the story, which form is correct: "Luca ___ al caffè presto"?',
         choices: ['ha tornato', 'è tornato', 'torna'],
         correctIndex: 1,
-        explanation: '"è tornato" uses è with movement/change.',
+        explanation: 'The story uses è tornato. Learn it as a pattern with essere.',
       },
       {
         prompt: 'In "Non ha detto niente ai colleghi.", which word is the past participle?',
@@ -490,12 +496,15 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
       'Chapters 31-35 use connectors to link ideas: se (possible situation/result), quando/mentre/poi (time), perché (reason), and però/almeno (contrast/at least).',
     steps: [
       {
-        title: 'Se + present: situation -> result',
+        title: 'Se + present: a possible situation',
         explanation:
           'You do not need formal terminology here. In these chapters, se works like:\n\n' +
-          '"If this happens / is possible, then this result also happens."' +
-          'In Luca stories, Italian often uses present tense in both parts.',
-        rule: 'Se + present -> possible situation/result',
+          '"If this happens / is possible…" and then a result.\n\n' +
+          'Se + present introduces a possible situation. The result can use the present or another tense depending on what you mean.\n\n' +
+          'Examples:\n' +
+          '- present result: Se viene poca gente, non importa.\n' +
+          '- past result: Se non arriva nessuno, almeno abbiamo fatto il lavoro.',
+        rule: 'Se + present = possible situation; the result tense depends on meaning',
         examples: [
           { italian: 'Se viene poca gente, non importa.', english: 'If few people come, it does not matter.' },
           { italian: 'Se non arriva nessuno, almeno abbiamo fatto il lavoro.', english: 'If nobody arrives, at least we did the work.' },
@@ -558,66 +567,110 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
   },
   '36-40': {
     batchKey: '36-40',
-    title: 'Pronouns + past narration: gli/le and who did what',
+    title: 'Reading clearly: pronouns and who did what',
     intro:
-      'In chapters 36-40, the story keeps going in passato prossimo. To read smoothly, you need reference tracking: who did the action, and what a pronoun like "gli" refers to.',
+      'Chapters 36-40 stay in past narration. This lesson is mainly reading strategy: track who acts, and map pronouns like gli / le to the person who receives the action. That helps Speak scenes where you retell decisions and events.',
     steps: [
       {
-        title: 'Passato prossimo: track the subject',
+        title: 'Passato prossimo: find who did the action',
         explanation:
-          'In passato prossimo, the action is marked by the helper verb (ha/è) + past participle.\n\n' +
-          'Before you guess meaning, find who is doing the action (usually the most recent person name, like "Luca" or "Nonna Rosa").',
-        rule: 'Helper + past participle tells you the action. Track the nearest person for who did it',
+          'Passato prossimo marks a completed action with ha/è + past participle.\n\n' +
+          'Ask: who is the subject of that helper verb? Usually a named person (Luca, Nonna Rosa, Giulia) in the same sentence or the previous one.',
+        rule: 'Helper + past participle = the action. Name the subject before you translate.',
         examples: [
-          { italian: 'Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.', english: 'Nonna Rosa called Luca and told him to stay near the door.' },
-          { italian: 'Sì. Io accetto di più, ma non voglio restare senza tempo per gli amici.', english: 'Yes. I accept more, but I do not want to stay without time for my friends.' },
-          { italian: 'Marco ha portato un caffè a Nonna Rosa, e lei ha ascoltato Luca bene.', english: 'Marco brought a coffee to Nonna Rosa, and she listened to Luca well.' },
+          {
+            italian: 'Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.',
+            english: 'Nonna Rosa called Luca and told him to stay near the door.',
+          },
+          {
+            italian: 'Marco ha portato un caffè a Nonna Rosa, e lei ha ascoltato Luca bene.',
+            english: 'Marco brought a coffee to Nonna Rosa, and she listened to Luca well.',
+          },
+          {
+            italian: 'Luca ha sentito le parole e ha capito che poteva scegliere.',
+            english: 'Luca heard the words and understood that he could choose.',
+          },
         ],
       },
       {
-        title: 'Gli (to him) in passato prossimo',
+        title: 'Gli = to him / for him (the recipient)',
         explanation:
-          '"Gli" is an indirect object pronoun. In the story it often appears like:\n\n' +
-          'NAME + ha/è + [verb] + e gli + ha/è + [verb/participle]...\n\n' +
-          'It means "to him / for him" and refers back to a person already mentioned.',
-        rule: 'gli = to him; it refers back to the most recent person being talked about',
+          'Gli is an indirect-object pronoun: to him / for him.\n\n' +
+          'Do not guess from "the nearest word." Ask: who receives the action?\n\n' +
+          'In "Nonna Rosa ha chiamato Luca e gli ha detto…", Nonna speaks, and Luca receives the message → gli = to Luca.\n\n' +
+          'In a line like "Marco ha parlato con Luca e gli ha detto…", context still decides who "him" is — usually the person receiving the message.',
+        rule: 'gli = to him / for him → identify the recipient of the action',
         examples: [
-          { italian: 'Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.', english: 'Nonna Rosa called Luca and told him...' },
-          { italian: 'Luca ha sentito le parole "se volete" e ha capito che poteva scegliere.', english: 'Luca heard the words "if you want" and understood he could choose.' },
-          { italian: 'Io accetto. Ho bisogno dello stipendio.', english: 'I accept. I need the salary.' },
+          {
+            italian: 'Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.',
+            english: 'Nonna Rosa called Luca and told him to stay near the door.',
+          },
+          {
+            italian: 'Sofia ha parlato a Luca e gli ha chiesto cosa vuole.',
+            english: 'Sofia spoke to Luca and asked him what he wants.',
+          },
         ],
       },
       {
-        title: 'Le (to her) is the same idea',
+        title: 'Le = to her / for her (same idea)',
         explanation:
-          'You may also see "le" for feminine / to her.\n\n' +
-          'Same reading strategy: when you see the pronoun, map it back to who the sentence is about, then continue reading.',
-        rule: 'gli/le use the same reference-tracking strategy',
+          'Le (indirect object) = to her / for her. Same strategy: find the recipient.\n\n' +
+          'Do not confuse this le with the article le ("the" before feminine plural nouns), as in Le persone… (= The people…).',
+        rule: 'le (pronoun) = to her → find who receives the action',
         examples: [
-          { italian: 'Le persone entrano se vedono qualcuno. Tu resta lì.', english: 'People enter if they see someone. You stay there.' },
-          { italian: 'Sofia è arrivata un po\' tardi, perché il lavoro era lungo.', english: 'Sofia arrived a little late because the work was long.' },
-          { italian: 'Voglio tempo per gli amici e per la casa.', english: 'I want time for my friends and for the house.' },
+          {
+            italian: 'Luca ha chiamato Sofia e le ha detto la verità.',
+            english: 'Luca called Sofia and told her the truth.',
+          },
+          {
+            italian: 'Giulia ha parlato a Sofia e le ha spiegato l’orario.',
+            english: 'Giulia spoke to Sofia and explained the schedule to her.',
+          },
+        ],
+      },
+      {
+        title: 'Useful for Speak 27–40: forse, se, per adesso',
+        explanation:
+          'These chapters ask you to produce more than single facts:\n\n' +
+          '• forse + present = possibility now/soon (Il padrone forse vende…)\n' +
+          '• se + present = if this happens, this result happens\n' +
+          '• per adesso = for now (a temporary choice, not forever)\n\n' +
+          'You already met se in the connectors lesson. Here you use them to explain plans and decisions.',
+        rule: 'forse / se / per adesso help you talk about possibility and temporary choices',
+        examples: [
+          {
+            italian: 'Il padrone forse vende il caffè. Non ha deciso.',
+            english: 'The owner might sell the café. He has not decided.',
+          },
+          {
+            italian: 'Se la gente viene, il padrone vede lavoro.',
+            english: 'If people come, the owner sees work.',
+          },
+          {
+            italian: 'Per adesso resto a Roma.',
+            english: 'For now I stay in Rome.',
+          },
         ],
       },
     ],
     practice: [
       {
-        prompt: 'In "Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.", what does "gli" refer to?',
-        choices: ['Luca', 'Nonna Rosa', 'la porta'],
+        prompt: 'In "Nonna Rosa ha chiamato Luca e gli ha detto di restare.", what does "gli" refer to?',
+        choices: ['Luca (the person who receives the message)', 'Nonna Rosa', 'la porta'],
         correctIndex: 0,
-        explanation: '"gli" refers back to Luca (the person just named).',
+        explanation: 'gli = to him. Luca receives what Nonna said.',
       },
       {
-        prompt: 'In passato prossimo, what should you check first to know who did the action?',
-        choices: ['The helper verb (ha/è) + the nearest person name', 'Only the last word', 'Only the adverb'],
+        prompt: 'In "Luca ha chiamato Sofia e le ha detto la verità.", what does "le" mean?',
+        choices: ['to her (Sofia)', 'the people', 'the truth'],
         correctIndex: 0,
-        explanation: 'Helper + participle marks the action; the nearest person tells you who did it.',
+        explanation: 'Here le is the pronoun "to her," not the article "the."',
       },
       {
-        prompt: 'When you see gli/le, what should you do in your reading?',
-        choices: ['Ignore it', 'Map it to the person already mentioned', 'Translate it word-for-word into English'],
-        correctIndex: 1,
-        explanation: 'gli/le are reference words. You map them back to the person in the sentence.',
+        prompt: 'What does "Per adesso resto a Roma" communicate?',
+        choices: ['A temporary choice to stay', 'A permanent promise never to leave', 'That Rome sold the café'],
+        correctIndex: 0,
+        explanation: 'Per adesso = for now — the future can still change.',
       },
     ],
   },

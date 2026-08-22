@@ -234,7 +234,7 @@
         },
         {
           "id": "s10",
-          "text": "Cerco lavoro. Non ho trovato un posto grande. Ma posso aiutare qui.",
+          "text": "Cerco lavoro. Non ho trovato un lavoro. Ma al sabato ho visto che serve aiuto. Posso aiutare qui.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
@@ -244,9 +244,15 @@
             "avere",
             "trovare",
             "un",
-            "posto",
-            "grande",
+            "lavorare",
             "ma",
+            "al",
+            "sabato",
+            "avere",
+            "vedere",
+            "che",
+            "servire",
+            "aiutare",
             "potere",
             "aiutare",
             "qui"
@@ -293,7 +299,7 @@
         },
         {
           "id": "s13",
-          "text": "I giorni pieni abbiamo bisogno di una persona in più. Lo abbiamo visto.",
+          "text": "I giorni pieni abbiamo bisogno di una persona in più. Lo abbiamo visto sabato.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
@@ -309,7 +315,8 @@
             "piu",
             "lo",
             "avere",
-            "vedere"
+            "vedere",
+            "sabato"
           ]
         }
       ]
@@ -853,23 +860,21 @@
         },
         {
           "id": "s43",
-          "text": "Luca ha ascoltato. La vita del gruppo sembrava più sicura, ma non chiusa.",
+          "text": "Luca ha ascoltato. Il gruppo stava meglio, ma niente era finito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "avere",
             "ascoltare",
-            "la",
-            "vita",
-            "del",
+            "il",
             "gruppo",
-            "sembrare",
-            "piu",
-            "sicuro",
+            "stare",
+            "meglio",
             "ma",
-            "non",
-            "chiudere"
+            "niente",
+            "essere",
+            "finire"
           ]
         },
         {
@@ -996,7 +1001,7 @@
         },
         {
           "id": "s51",
-          "text": "Poi ha chiuso la luce. Il caffè restava. Il futuro, ancora aperto.",
+          "text": "Poi ha chiuso la luce. Il caffè restava. Domani c’era la chiamata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1008,10 +1013,10 @@
             "il",
             "caffe",
             "restare",
-            "il",
-            "futuro",
-            "ancora",
-            "aprire"
+            "domani",
+            "ce",
+            "la",
+            "chiamata"
           ]
         }
       ]

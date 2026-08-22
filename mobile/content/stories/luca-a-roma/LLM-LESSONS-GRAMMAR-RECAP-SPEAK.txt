@@ -1,0 +1,1453 @@
+LUCA A ROMA — LESSONS EXPORT FOR LLM REVIEW
+Generated: 2026-08-21
+Status: LESSON LAYER FROZEN (2026-08-21) — see docs/PHASE-10.md
+Story: luca-a-roma (chapters 1–40)
+Includes: Grammar notes, Word recaps (batch review prompts), Say it in Italian (Speak scenes)
+Note: Word recaps are generated like an empty-vocab first-pass session (story backfill),
+      so they show the default chapter-batch word set, not a specific learner’s struggle list.
+
+========================================================================
+PART 1 — GRAMMAR NOTES (after every 5th chapter)
+========================================================================
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 1–5: Essere and avere
+------------------------------------------------------------------------
+
+Batch key: 1-5
+Title: Essere and avere
+
+Intro:
+Chapters 1-5 lean on two verbs: essere (to be) and avere (to have). Here is exactly how they work in the sentences you read.
+
+### Step 1: Essere tells you who someone is, where they are, or how they feel
+
+Explanation:
+Essere is "to be." In Italian you change the ending of the verb to match the subject - but you often leave out io / tu / lui because the ending already tells you who is speaking.
+
+- è = he / she / it is (Luca è stanco -> Luca is tired)
+- sono = I am (Sono a Roma -> I am in Rome)
+- sei = you are (informal)
+
+When you see è after a name, read it as "is": Sofia è al bar = Sofia is at the bar.
+
+Rule: Name + è + adjective/place = "[Name] is ..."
+
+Examples:
+  IT: Luca è a Roma.
+  EN: Luca is in Rome.
+  IT: Sofia è stanca.
+  EN: Sofia is tired.
+  IT: È mattina.
+  EN: It is morning.
+
+### Step 2: Avere tells you what someone has - including feelings
+
+Explanation:
+Avere is "to have." Italian uses it for possession and for many feelings English expresses with "to be."
+
+- ho = I have (Ho fame -> literally "I have hunger" = I am hungry)
+- ha = he / she has (Luca ha una casa -> Luca has a house)
+- hai = you have
+
+If an English sentence says "I am hungry / thirsty / sleepy," Italian usually says "I have hunger / thirst / sleep."
+
+Rule: Ho / ha + noun often = "I am / he is ..." in English
+
+Examples:
+  IT: Ho fame.
+  EN: I am hungry. (lit. I have hunger)
+  IT: Luca ha poco soldi.
+  EN: Luca has little money.
+  IT: Non ho molti soldi.
+  EN: I do not have much money.
+
+### Step 3: Non goes right before the verb to make a sentence negative
+
+Explanation:
+To say "not," put non immediately before the verb. Nothing else moves.
+
+Affirmative: Ho fame. -> Negative: Non ho fame.
+Affirmative: Luca è stanco. -> Negative: Luca non è stanco.
+
+Non is one word - do not split it from the verb.
+
+Rule: Non + verb = negative sentence
+
+Examples:
+  IT: Non ho fame.
+  EN: I am not hungry.
+  IT: Luca non è a casa.
+  EN: Luca is not at home.
+  IT: Non è tardi.
+  EN: It is not late.
+
+### Practice
+
+Q1. Luca is tired. Which sentence is correct?
+     [0] Luca ha stanco.
+   → [1] Luca è stanco.
+     [2] Luca sono stanco.
+   Explanation: Use essere (è) for "is" + adjective: Luca è stanco. Avere (ha) is for possession, not adjectives like "tired."
+
+Q2. How do you say "I am hungry" in Italian?
+     [0] Sono fame.
+   → [1] Ho fame.
+     [2] Ho affamato.
+   Explanation: Italian says "I have hunger": Ho fame. You need avere (ho), not essere, for this feeling.
+
+Q3. Which sentence means "Luca does not have much money"?
+   → [0] Luca non ha molti soldi.
+     [1] Luca ha non molti soldi.
+     [2] Non Luca ha molti soldi.
+   Explanation: Non goes directly before the verb: non ha.
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 6–10: Volere and cercare
+------------------------------------------------------------------------
+
+Batch key: 6-10
+Title: Volere and cercare
+
+Intro:
+Luca starts making plans in Rome. Two verbs drive that: volere (to want) and cercare (to look for). Here is how to build those sentences.
+
+### Step 1: Volere: voglio / vuole + another verb
+
+Explanation:
+Volere means "to want." To say what you want to do, use volere + an infinitive (the -are / -ere / -ire form):
+
+• voglio = I want → Voglio mangiare. (I want to eat.)
+• vuole = he / she wants → Luca vuole un lavoro. (Luca wants a job.)
+• vuoi = you want
+
+You can also want a thing (noun): vuole un caffè = he wants a coffee.
+
+Rule: Volere + infinitive = "want to ..."
+
+Examples:
+  IT: Voglio mangiare.
+  EN: I want to eat.
+  IT: Luca vuole un lavoro.
+  EN: Luca wants a job.
+  IT: Vuole restare a Roma.
+  EN: He wants to stay in Rome.
+
+### Step 2: Cercare: a regular verb for "to look for"
+
+Explanation:
+Cercare ends in -are, so it follows the same pattern as parlare or mangiare:
+
+• cerco = I look for / I am looking for
+• cerchi = you look for
+• cerca = he / she looks for
+
+Put what you are searching for right after the verb: Cerco un lavoro. Word order is flexible — Cerco un lavoro al caffè and Al caffè cerco un lavoro both work.
+
+Rule: Cerco / cerca + thing = "I am / he is looking for ..."
+
+Examples:
+  IT: Luca cerca un lavoro.
+  EN: Luca is looking for a job.
+  IT: Cerchi un lavoro?
+  EN: Are you looking for a job?
+  IT: Scusa, cerco un lavoro.
+  EN: Excuse me, I am looking for a job.
+
+### Step 3: Scusa and per favore soften requests
+
+Explanation:
+Scusa (excuse me — informal) and per favore (please) do not change grammar, but they appear constantly when Luca asks strangers for help.
+
+Scusa often opens a question: Scusa, cerco un lavoro.
+Per favore follows a request: Un caffè, per favore.
+
+Rule: Scusa + question = polite opening
+
+Examples:
+  IT: Scusa, dov'è il bar?
+  EN: Excuse me, where is the bar?
+  IT: Un caffè, per favore.
+  EN: A coffee, please.
+  IT: Scusa, cerco un lavoro.
+  EN: Excuse me, I am looking for a job.
+
+### Practice
+
+Q1. "I want to eat." Which is correct?
+   → [0] Voglio mangiare.
+     [1] Voglio mangio.
+     [2] Mangio voglio.
+   Explanation: After volere, use the infinitive mangiare — not the conjugated mangio.
+
+Q2. Luca is looking for a job. Pick the right sentence.
+   → [0] Luca cerca un lavoro.
+     [1] Luca cerco un lavoro.
+     [2] Luca cerca lavoro un.
+   Explanation: Third person uses cerca: Luca cerca un lavoro.
+
+Q3. Which sentence politely starts a question to a stranger?
+   → [0] Scusa, dov'è il bar?
+     [1] Dov'è scusa il bar?
+     [2] Scusa il bar dov'è?
+   Explanation: Scusa comes at the start: Scusa, dov'è il bar?
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 11–15: Prepositions: a, in, con, per
+------------------------------------------------------------------------
+
+Batch key: 11-15
+Title: Prepositions: a, in, con, per
+
+Intro:
+Small words — a, in, con, per — tell you direction, location, company, and purpose. Here is what each one actually does.
+
+### Step 1: A = to / at (cities and people)
+
+Explanation:
+With cities, Italian often uses a for both movement and location:
+
+• Luca va a Roma. = Luca goes to Rome. (movement)
+• Marco è a Roma. = Marco is in Rome. (location)
+• a casa = home / at home
+• a Marco = to Marco (giving something to someone)
+
+The verb tells you which reading: andare/venire/tornare → usually "to"; essere/stare → usually "in/at".
+
+Combined with the: a + il = al, a + la = alla. Luca va al caffè = Luca goes to the café.
+
+Rule: a + city: "to" with movement verbs, "in/at" with essere
+
+Examples:
+  IT: Luca va a Roma.
+  EN: Luca goes to Rome.
+  IT: Vado al caffè.
+  EN: I am going to the café.
+  IT: Marco è a Roma.
+  EN: Marco is in Rome.
+
+### Step 2: In = inside a space
+
+Explanation:
+In means "in" or "inside." Use it for rooms, countries (sometimes), and enclosed places:
+
+• in cucina = in the kitchen
+• in Italia = in Italy
+• nel caffè = in the café (in + il = nel)
+
+Think: a = direction toward; in = you are inside.
+
+Rule: Being inside → in / nel / nella
+
+Examples:
+  IT: Sono in casa.
+  EN: I am at home. (inside the house)
+  IT: Sofia è in cucina.
+  EN: Sofia is in the kitchen.
+  IT: Luca lavora nel caffè.
+  EN: Luca works in the café.
+
+### Step 3: Con = with · Per = for (purpose or recipient)
+
+Explanation:
+Con joins people: Luca è con Sofia = Luca is with Sofia.
+
+Per explains why or for whom:
+
+• Soldi per l'affitto = money for the rent
+• Grazie per l'aiuto = thanks for the help
+• Un caffè per Marco = a coffee for Marco
+
+Rule: Con + person = "with" · Per + noun = "for"
+
+Examples:
+  IT: Luca è con Sofia.
+  EN: Luca is with Sofia.
+  IT: Soldi per l'affitto.
+  EN: Money for the rent.
+  IT: Grazie per l'aiuto.
+  EN: Thanks for the help.
+
+### Practice
+
+Q1. Luca goes to the café. Which is correct?
+     [0] Luca va in caffè.
+   → [1] Luca va al caffè.
+     [2] Luca va a il caffè.
+   Explanation: a + il combines to al: Luca va al caffè.
+
+Q2. "I am in the kitchen." Pick the right sentence.
+     [0] Sono a cucina.
+   → [1] Sono in cucina.
+     [2] Sono con cucina.
+   Explanation: Inside a room uses in: Sono in cucina.
+
+Q3. "Money for the rent." Which phrase is correct?
+     [0] Soldi con l'affitto.
+   → [1] Soldi per l'affitto.
+     [2] Soldi a l'affitto.
+   Explanation: Per expresses purpose or recipient: per l'affitto = for the rent.
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 16–20: Time words and movement verbs
+------------------------------------------------------------------------
+
+Batch key: 16-20
+Title: Time words and movement verbs
+
+Intro:
+Chapters 16–20 add when things happen (oggi, domani) and how people move (andare, venire, tornare). Here is how those pieces fit together.
+
+### Step 1: Time words usually come first
+
+Explanation:
+Italian often opens with when something happens. The verb stays in normal order after that.
+
+• oggi = today
+• domani = tomorrow
+• ieri = yesterday
+
+Oggi Luca cerca lavoro. = Today Luca looks for work.
+Domani Sofia viene. = Tomorrow Sofia is coming.
+
+Rule: Time word + subject + verb = natural Italian order
+
+Examples:
+  IT: Oggi è lunedì.
+  EN: Today is Monday.
+  IT: Domani Luca lavora.
+  EN: Tomorrow Luca works.
+  IT: Ieri piove.
+  EN: Yesterday it rained.
+
+### Step 2: Andare = to go · Venire = to come · Tornare = to return
+
+Explanation:
+These three verbs describe movement — and they conjugate differently:
+
+• andare: vado / va → Luca va al bar. (Luca goes to the bar.)
+• venire: vengo / viene → Sofia viene domani. (Sofia is coming tomorrow.)
+• tornare: torno / torna → Luca torna a casa. (Luca returns home.)
+
+Pair them with a (direction): tornare a casa, andare a Roma.
+
+Rule: Movement verb + a + place = go/come/return to …
+
+Examples:
+  IT: Luca va al bar.
+  EN: Luca goes to the bar.
+  IT: Sofia viene domani.
+  EN: Sofia is coming tomorrow.
+  IT: Luca torna a casa.
+  EN: Luca returns home.
+
+### Step 3: Present tense = happening now or regularly
+
+Explanation:
+The story uses present tense for what is happening now and for habits:
+
+Luca cerca lavoro. = Luca is looking for work (now / these days).
+Luca lavora al bar. = Luca works at the bar (regularly).
+
+You do not need a separate "is ...-ing" form - context tells you.
+
+Rule: One present tense covers "does" and "is doing"
+
+Examples:
+  IT: Luca cerca lavoro.
+  EN: Luca is looking for work.
+  IT: Sofia parla italiano.
+  EN: Sofia speaks Italian.
+  IT: Marco lavora molto.
+  EN: Marco works a lot.
+
+### Practice
+
+Q1. "Tomorrow Sofia is coming." Which is correct?
+   → [0] Domani Sofia viene.
+     [1] Sofia domani venire.
+     [2] Domani Sofia va.
+   Explanation: Time first, then subject + verb: Domani Sofia viene. Venire = to come.
+
+Q2. Luca returns home. Pick the right sentence.
+   → [0] Luca torna a casa.
+     [1] Luca torna in casa a.
+     [2] Luca va tornare casa.
+   Explanation: Tornare a casa is the fixed pattern for "return home."
+
+Q3. "Luca goes to the bar." Which is correct?
+     [0] Luca viene al bar.
+   → [1] Luca va al bar.
+     [2] Luca va in bar.
+   Explanation: Andare (va) = to go. Al bar = to the bar (a + il).
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 21–25: Passato prossimo: completed events
+------------------------------------------------------------------------
+
+Batch key: 21-25
+Title: Passato prossimo: completed events
+
+Intro:
+In chapters 21-25, you mainly read completed actions/events. This is mostly passato prossimo.
+
+### Step 1: Passato prossimo = ha/è + past participle
+
+Explanation:
+Passato prossimo is used for a completed past event.
+
+Form: helper verb (ha or è) + past participle.
+
+In the story, some movement/change verbs use essere, such as è arrivato and è tornato. Other verbs use avere, such as ha aperto and ha detto.
+
+For now, learn the forms you meet as complete patterns — do not treat “movement = essere” as a rule that always works.
+
+Examples you see:
+- Luca è arrivato presto e ha aperto la porta.
+- Giulia ha guardato i tavoli e non ha sorriso.
+- Non ha detto niente ai colleghi.
+
+Rule: Completed past event = ha/è + past participle (learn story forms as patterns)
+
+Examples:
+  IT: Luca è arrivato presto e ha aperto la porta.
+  EN: Luca arrived early and opened the door.
+  IT: Giulia ha guardato i tavoli e non ha sorriso.
+  EN: Giulia looked at the tables and did not smile.
+  IT: Non ha detto niente ai colleghi.
+  EN: He did not say anything to his colleagues.
+
+### Step 2: Irregular participles you already saw
+
+Explanation:
+Some participles are irregular. Your job is to recognize them in the story.
+
+In these chapters you already saw:
+- aperto
+- chiuso
+- detto
+
+Rule: Recognize irregular participles in passato prossimo
+
+Examples:
+  IT: Luca è arrivato presto e ha aperto la porta.
+  EN: Luca arrived early and opened the door.
+  IT: Ha chiuso la porta un momento.
+  EN: He closed the door for a moment.
+  IT: Non ha detto niente ai colleghi.
+  EN: He did not say anything to his colleagues.
+
+### Practice
+
+Q1. "Luca è arrivato presto." Which part shows the past tense?
+     [0] Luca
+   → [1] è arrivato
+     [2] presto
+   Explanation: "è arrivato" = è (helper) + participle. That is passato prossimo.
+
+Q2. In the story, which form is correct: "Luca ___ al caffè presto"?
+     [0] ha tornato
+   → [1] è tornato
+     [2] torna
+   Explanation: The story uses è tornato. Learn it as a pattern with essere.
+
+Q3. In "Non ha detto niente ai colleghi.", which word is the past participle?
+     [0] ha
+   → [1] detto
+     [2] niente
+   Explanation: The past participle is "detto" (after ha).
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 26–30: Imperfetto vs passato prossimo: background vs events
+------------------------------------------------------------------------
+
+Batch key: 26-30
+Title: Imperfetto vs passato prossimo: background vs events
+
+Intro:
+These chapters mix two past tenses:
+- imperfetto for background/ongoing states
+- passato prossimo for completed events
+
+### Step 1: Imperfetto = was/used to (background)
+
+Explanation:
+Imperfetto describes how things were: feelings, descriptions, and ongoing situations.
+
+You often see endings like:
+- era / c'erano
+- sembrava
+- restava
+
+
+Rule: Imperfetto = background/ongoing past
+
+Examples:
+  IT: C'erano ancora pochi clienti questa mattina, come ieri.
+  EN: There were still a few customers this morning, like yesterday.
+  IT: Giulia era già al caffè e non sorrideva.
+  EN: Giulia was already at the cafe and was not smiling.
+  IT: Marco non sembrava tranquillo.
+  EN: Marco did not seem calm.
+
+### Step 2: Passato prossimo = what happened (completed events)
+
+Explanation:
+In these chapters, completed actions/events are expressed with passato prossimo: helper verb (ha/è) + past participle.
+
+You then read the story forward like a sequence of events.
+
+Rule: Passato prossimo = completed action
+
+Examples:
+  IT: Martedì mattina Luca è tornato al caffè presto.
+  EN: On Tuesday morning Luca returned to the cafe early.
+  IT: Ha chiuso la porta un momento.
+  EN: He closed the door for a moment.
+  IT: Il padrone ha chiamato Luca e Giulia vicino ai tavoli.
+  EN: The owner called Luca and Giulia near the tables.
+
+### Practice
+
+Q1. "Giulia era già al caffè e non sorrideva." Which word is correct?
+   → [0] era
+     [1] è stata
+     [2] ha
+   Explanation: Era is imperfetto. It describes the background state.
+
+Q2. "Martedì mattina Luca ___ al caffè presto." Which is correct?
+     [0] era tornato
+   → [1] è tornato
+     [2] torna
+   Explanation: È tornato is passato prossimo (helper + participle).
+
+Q3. In the story, which tense typically makes the "event" feeling?
+     [0] Imperfetto
+   → [1] Passato prossimo
+     [2] Present tense only
+   Explanation: Passato prossimo = completed events.
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 31–35: Connecting ideas: se, time, and reason
+------------------------------------------------------------------------
+
+Batch key: 31-35
+Title: Connecting ideas: se, time, and reason
+
+Intro:
+Chapters 31-35 use connectors to link ideas: se (possible situation/result), quando/mentre/poi (time), perché (reason), and però/almeno (contrast/at least).
+
+### Step 1: Se + present: a possible situation
+
+Explanation:
+You do not need formal terminology here. In these chapters, se works like:
+
+"If this happens / is possible…" and then a result.
+
+Se + present introduces a possible situation. The result can use the present or another tense depending on what you mean.
+
+Examples:
+- present result: Se viene poca gente, non importa.
+- past result: Se non arriva nessuno, almeno abbiamo fatto il lavoro.
+
+Rule: Se + present = possible situation; the result tense depends on meaning
+
+Examples:
+  IT: Se viene poca gente, non importa.
+  EN: If few people come, it does not matter.
+  IT: Se non arriva nessuno, almeno abbiamo fatto il lavoro.
+  EN: If nobody arrives, at least we did the work.
+  IT: Non possiamo solo aspettare. Dobbiamo parlare ancora, se possiamo.
+  EN: We cannot only wait. We have to talk again, if we can.
+
+### Step 2: Quando / mentre / poi: time order
+
+Explanation:
+These words help you follow the story:
+
+- quando: "when"
+- mentre: "while"
+- poi: "then/after that"
+
+Rule: Use connectors to follow time order
+
+Examples:
+  IT: Quando ha aperto la porta, Giulia era già nella sala.
+  EN: When he opened the door, Giulia was already in the room.
+  IT: Mentre portava i tavoli, Luca ascoltava la strada.
+  EN: While he was carrying the tables, Luca listened to the street.
+  IT: Poi la porta si è aperta. Marco è arrivato.
+  EN: Then the door opened. Marco arrived.
+
+### Step 3: Perché / però / almeno
+
+Explanation:
+These words add meaning after the grammar work is done:
+
+- perché = "because/why"
+- però = "but/however"
+- almeno = "at least"
+
+Rule: Reason (perché) + contrast (però) + minimum (almeno)
+
+Examples:
+  IT: L’altra parte non risponde, e io non so perché.
+  EN: The other side does not answer, and I do not know why.
+  IT: Sì. Però io voglio gente qui.
+  EN: Yes. But I want people here.
+  IT: Va bene. Se non arriva nessuno, almeno abbiamo fatto il lavoro.
+  EN: Okay. If nobody arrives, at least we did the work.
+
+### Practice
+
+Q1. "___ viene poca gente, non importa. Abbiamo fatto una cosa." Which word fits?
+   → [0] Se
+     [1] Quando
+     [2] Poi
+   Explanation: "Se" introduces the possible situation/result.
+
+Q2. "___ la porta si è aperta, Marco è arrivato." Which word fits?
+   → [0] Poi
+     [1] Mentre
+     [2] Perché
+   Explanation: "Poi" = then/after that.
+
+Q3. In "Non so ___.", which word completes the meaning of "why"?
+   → [0] perché
+     [1] però
+     [2] almeno
+   Explanation: "Perché" introduces reason/why.
+
+
+------------------------------------------------------------------------
+GRAMMAR BATCH 36–40: Reading clearly: pronouns and who did what
+------------------------------------------------------------------------
+
+Batch key: 36-40
+Title: Reading clearly: pronouns and who did what
+
+Intro:
+Chapters 36-40 stay in past narration. This lesson is mainly reading strategy: track who acts, and map pronouns like gli / le to the person who receives the action. That helps Speak scenes where you retell decisions and events.
+
+### Step 1: Passato prossimo: find who did the action
+
+Explanation:
+Passato prossimo marks a completed action with ha/è + past participle.
+
+Ask: who is the subject of that helper verb? Usually a named person (Luca, Nonna Rosa, Giulia) in the same sentence or the previous one.
+
+Rule: Helper + past participle = the action. Name the subject before you translate.
+
+Examples:
+  IT: Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.
+  EN: Nonna Rosa called Luca and told him to stay near the door.
+  IT: Marco ha portato un caffè a Nonna Rosa, e lei ha ascoltato Luca bene.
+  EN: Marco brought a coffee to Nonna Rosa, and she listened to Luca well.
+  IT: Luca ha sentito le parole e ha capito che poteva scegliere.
+  EN: Luca heard the words and understood that he could choose.
+
+### Step 2: Gli = to him / for him (the recipient)
+
+Explanation:
+Gli is an indirect-object pronoun: to him / for him.
+
+Do not guess from "the nearest word." Ask: who receives the action?
+
+In "Nonna Rosa ha chiamato Luca e gli ha detto…", Nonna speaks, and Luca receives the message → gli = to Luca.
+
+In a line like "Marco ha parlato con Luca e gli ha detto…", context still decides who "him" is — usually the person receiving the message.
+
+Rule: gli = to him / for him → identify the recipient of the action
+
+Examples:
+  IT: Nonna Rosa ha chiamato Luca e gli ha detto di restare vicino alla porta.
+  EN: Nonna Rosa called Luca and told him to stay near the door.
+  IT: Sofia ha parlato a Luca e gli ha chiesto cosa vuole.
+  EN: Sofia spoke to Luca and asked him what he wants.
+
+### Step 3: Le = to her / for her (same idea)
+
+Explanation:
+Le (indirect object) = to her / for her. Same strategy: find the recipient.
+
+Do not confuse this le with the article le ("the" before feminine plural nouns), as in Le persone… (= The people…).
+
+Rule: le (pronoun) = to her → find who receives the action
+
+Examples:
+  IT: Luca ha chiamato Sofia e le ha detto la verità.
+  EN: Luca called Sofia and told her the truth.
+  IT: Giulia ha parlato a Sofia e le ha spiegato l’orario.
+  EN: Giulia spoke to Sofia and explained the schedule to her.
+
+### Step 4: Useful for Speak 27–40: forse, se, per adesso
+
+Explanation:
+These chapters ask you to produce more than single facts:
+
+• forse + present = possibility now/soon (Il padrone forse vende…)
+• se + present = if this happens, this result happens
+• per adesso = for now (a temporary choice, not forever)
+
+You already met se in the connectors lesson. Here you use them to explain plans and decisions.
+
+Rule: forse / se / per adesso help you talk about possibility and temporary choices
+
+Examples:
+  IT: Il padrone forse vende il caffè. Non ha deciso.
+  EN: The owner might sell the café. He has not decided.
+  IT: Se la gente viene, il padrone vede lavoro.
+  EN: If people come, the owner sees work.
+  IT: Per adesso resto a Roma.
+  EN: For now I stay in Rome.
+
+### Practice
+
+Q1. In "Nonna Rosa ha chiamato Luca e gli ha detto di restare.", what does "gli" refer to?
+   → [0] Luca (the person who receives the message)
+     [1] Nonna Rosa
+     [2] la porta
+   Explanation: gli = to him. Luca receives what Nonna said.
+
+Q2. In "Luca ha chiamato Sofia e le ha detto la verità.", what does "le" mean?
+   → [0] to her (Sofia)
+     [1] the people
+     [2] the truth
+   Explanation: Here le is the pronoun "to her," not the article "the."
+
+Q3. What does "Per adesso resto a Roma" communicate?
+   → [0] A temporary choice to stay
+     [1] A permanent promise never to leave
+     [2] That Rome sold the café
+   Explanation: Per adesso = for now — the future can still change.
+
+
+========================================================================
+PART 2 — WORD RECAPS (batch review prompts)
+========================================================================
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 1–5
+------------------------------------------------------------------------
+
+Headline: Words from chapters 1–5
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] arrivare
+   Prompt EN: to arrive
+   Choices:
+       [0] to understand
+     → [1] to arrive
+       [2] to wait
+
+2. [lemma] roma
+   Prompt EN: Rome
+   Choices:
+       [0] paper / letter paper
+     → [1] Rome
+       [2] sign
+
+3. [lemma] essere
+   Prompt EN: to be
+   Choices:
+       [0] to give
+     → [1] to be
+       [2] to see
+
+4. [lemma] stazione
+   Prompt EN: station
+   Choices:
+       [0] help
+     → [1] station
+       [2] Italian
+
+5. [lemma] mattina
+   Prompt EN: morning
+   Choices:
+       [0] café / bar
+       [1] apartment
+     → [2] morning
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 6–10
+------------------------------------------------------------------------
+
+Headline: Words from chapters 6–10
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] quartiere
+   Prompt EN: neighborhood
+   Choices:
+       [0] Tuesday
+     → [1] neighborhood
+       [2] kitchen
+
+2. [lemma] negozio
+   Prompt EN: shop / store
+   Choices:
+       [0] Thursday
+     → [1] shop / store
+       [2] Friday
+
+3. [lemma] anche
+   Prompt EN: also / too
+   Choices:
+       [0] worse
+       [1] more
+     → [2] also / too
+
+4. [lemma] piazza
+   Prompt EN: square / plaza
+   Choices:
+       [0] trip / journey
+       [1] floor / plan
+     → [2] square / plaza
+
+5. [lemma] mio
+   Prompt EN: my / mine
+   Choices:
+       [0] clean
+       [1] quiet / calm
+     → [2] my / mine
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 11–15
+------------------------------------------------------------------------
+
+Headline: Words from chapters 11–15
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] amico
+   Prompt EN: friend
+   Choices:
+       [0] opportunity
+     → [1] friend
+       [2] appointment / date
+
+2. [lemma] prendere
+   Prompt EN: to take
+   Choices:
+       [0] to put
+       [1] to sit
+     → [2] to take
+
+3. [lemma] gruppo
+   Prompt EN: group
+   Choices:
+     → [0] group
+       [1] park
+       [2] right (direction)
+
+4. [lemma] problema
+   Prompt EN: problem
+   Choices:
+       [0] train
+       [1] telephone
+     → [2] problem
+
+5. [lemma] cosa
+   Prompt EN: what / thing
+   Choices:
+       [0] family
+     → [1] what / thing
+       [2] person
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 16–20
+------------------------------------------------------------------------
+
+Headline: Words from chapters 16–20
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] portare
+   Prompt EN: to bring / to carry
+   Choices:
+       [0] to close
+       [1] to live
+     → [2] to bring / to carry
+
+2. [lemma] valigia
+   Prompt EN: suitcase
+   Choices:
+     → [0] suitcase
+       [1] square / plaza
+       [2] shop / store
+
+3. [lemma] chiudere
+   Prompt EN: to close
+   Choices:
+       [0] to solve
+     → [1] to close
+       [2] to change
+
+4. [lemma] lasciare
+   Prompt EN: to leave / to let
+   Choices:
+       [0] to call
+       [1] to meet
+     → [2] to leave / to let
+
+5. [lemma] viaggio
+   Prompt EN: trip / journey
+   Choices:
+     → [0] trip / journey
+       [1] cheese
+       [2] tomato
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 21–25
+------------------------------------------------------------------------
+
+Headline: Words from chapters 21–25
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] dopo
+   Prompt EN: after
+   Choices:
+       [0] straight
+     → [1] after
+       [2] how much / how long
+
+2. [lemma] suo
+   Prompt EN: his / her / its
+   Choices:
+       [0] noisy
+       [1] sure / safe
+     → [2] his / her / its
+
+3. [lemma] vita
+   Prompt EN: life
+   Choices:
+       [0] thirst (in “avere sete” = to be thirsty)
+       [1] appointment / date
+     → [2] life
+
+4. [lemma] lunedi
+   Prompt EN: Monday
+   Choices:
+       [0] March
+     → [1] Monday
+       [2] February
+
+5. [lemma] svegliare
+   Prompt EN: to wake up
+   Choices:
+       [0] to close
+       [1] to live
+     → [2] to wake up
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 26–30
+------------------------------------------------------------------------
+
+Headline: Words from chapters 26–30
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] martedi
+   Prompt EN: Tuesday
+   Choices:
+       [0] boy / boyfriend
+     → [1] Tuesday
+       [2] girl / girlfriend
+
+2. [lemma] notizia
+   Prompt EN: news
+   Choices:
+       [0] Friday
+     → [1] news
+       [2] light
+
+3. [lemma] vendere
+   Prompt EN: to sell
+   Choices:
+     → [0] to sell
+       [1] to remain
+       [2] to stay
+
+4. [lemma] parola
+   Prompt EN: word
+   Choices:
+     → [0] word
+       [1] bedroom
+       [2] living room
+
+5. [lemma] mercoledi
+   Prompt EN: Wednesday
+   Choices:
+       [0] counter
+       [1] hectogram (100g)
+     → [2] Wednesday
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 31–35
+------------------------------------------------------------------------
+
+Headline: Words from chapters 31–35
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] chiaro
+   Prompt EN: clear
+   Choices:
+     → [0] clear
+       [1] tall / high
+       [2] short / low
+
+2. [lemma] quattro
+   Prompt EN: four
+   Choices:
+       [0] eighty
+       [1] fifty
+     → [2] four
+
+3. [lemma] vero
+   Prompt EN: true / real
+   Choices:
+     → [0] true / real
+       [1] long
+       [2] expensive / dear
+
+4. [lemma] accettare
+   Prompt EN: to accept
+   Choices:
+       [0] to give
+       [1] to stay / to be (health/state; Come stai?)
+     → [2] to accept
+
+5. [lemma] appuntamento
+   Prompt EN: appointment / date
+   Choices:
+     → [0] appointment / date
+       [1] April
+       [2] May
+
+
+------------------------------------------------------------------------
+WORD RECAP Chapters 36–40
+------------------------------------------------------------------------
+
+Headline: Words from chapters 36–40
+Detail: A short recap of words from these chapters.
+Items in session: 5 (dueCount pool: 0)
+
+1. [lemma] alcuno
+   Prompt EN: some / a few
+   Choices:
+     → [0] some / a few
+       [1] expensive / dear
+       [2] cloudy
+
+2. [lemma] bere
+   Prompt EN: to drink
+   Choices:
+     → [0] to drink
+       [1] to close
+       [2] to live
+
+3. [lemma] prossimo
+   Prompt EN: next
+   Choices:
+       [0] tall / high
+       [1] short / low
+     → [2] next
+
+4. [lemma] stipendio
+   Prompt EN: salary
+   Choices:
+       [0] vegetables
+     → [1] salary
+       [2] photo
+
+5. [lemma] finalmente
+   Prompt EN: finally
+   Choices:
+       [0] together
+     → [1] finally
+       [2] too much
+
+
+========================================================================
+PART 3 — SAY IT IN ITALIAN (Speak scenes)
+========================================================================
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-15 — Help Marco (batchEnd 15; source ch 11–15)
+------------------------------------------------------------------------
+
+Summary EN: Marco is back at the café. His mother is not well. He needs to go to her house, but he doesn't have money for a ticket.
+
+Line 1 (luca-a-roma-speak-15-l01)
+  EN prompt: Marco comes back to the café.
+  Target IT: Marco torna al caffè.
+  Source: luca-a-roma-12:s01
+  Acceptable answers:
+    - Marco torna al caffe.
+    - Torna al caffè.
+
+Line 2 (luca-a-roma-speak-15-l02)
+  EN prompt: He has a problem.
+  Target IT: Ha un problema.
+  Source: luca-a-roma-12:s03
+  Acceptable answers:
+    - Marco ha un problema.
+    - Lui ha un problema.
+
+Line 3 (luca-a-roma-speak-15-l03)
+  EN prompt: He has to go to his mother's house.
+  Target IT: Deve andare a casa di mamma.
+  Source: luca-a-roma-12:s08
+  Acceptable answers:
+    - Marco deve andare a casa di mamma.
+    - Deve andare a casa di mamma.
+    - Lui deve andare a casa di mamma.
+    - Deve andare a casa.
+
+Line 4 (luca-a-roma-speak-15-l04)
+  EN prompt: He has to buy a ticket.
+  Target IT: Deve comprare un biglietto.
+  Source: luca-a-roma-12:s09
+  Acceptable answers:
+    - Marco deve comprare un biglietto.
+    - Deve comprare un biglietto.
+    - Lui deve comprare un biglietto.
+
+Line 5 (luca-a-roma-speak-15-l05)
+  EN prompt: He doesn't have any money.
+  Target IT: Non ha soldi.
+  Source: luca-a-roma-12:s10
+  Acceptable answers:
+    - Non ha i soldi.
+    - Marco non ha soldi.
+    - Marco non ha i soldi.
+    - Lui non ha soldi.
+    - Non ha denaro.
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-20 — Back in Rome (batchEnd 20; source ch 16–20)
+------------------------------------------------------------------------
+
+Summary EN: The trip is over. The friends come back to Rome, and Luca sees the life he has built there.
+
+Line 1 (luca-a-roma-speak-20-l01)
+  EN prompt: Then the group goes back to Rome.
+  Target IT: Poi il gruppo torna a Roma.
+  Source: luca-a-roma-20:s01
+  Acceptable answers:
+    - Il gruppo torna a Roma.
+    - Poi tornano a Roma.
+    - Tornano a Roma.
+    - Poi il gruppo torna a Roma.
+
+Line 2 (luca-a-roma-speak-20-l02)
+  EN prompt: They arrive at the station.
+  Target IT: Arrivano alla stazione.
+  Source: luca-a-roma-20:s02
+  Acceptable answers:
+    - Il gruppo arriva alla stazione.
+    - Arrivano alla stazione.
+
+Line 3 (luca-a-roma-speak-20-l03)
+  EN prompt: Luca is home again.
+  Target IT: Luca è a casa.
+  Source: luca-a-roma-20:s04
+  Acceptable answers:
+    - Luca è a casa.
+    - È a casa.
+
+Line 4 (luca-a-roma-speak-20-l04)
+  EN prompt: He has a home, a job, and friends in Rome.
+  Target IT: Luca ha una casa, un lavoro e amici.
+  Source: luca-a-roma-20:s11
+  Acceptable answers:
+    - Ha una casa, un lavoro e amici.
+    - Luca ha casa, lavoro e amici.
+
+Line 5 (luca-a-roma-speak-20-l05)
+  EN prompt: Luca is happy in Rome.
+  Target IT: Luca è felice a Roma.
+  Source: luca-a-roma-20:s16
+  Acceptable answers:
+    - È felice a Roma.
+    - Luca è felice a Roma.
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-24 — Sunday Call (batchEnd 24; source ch 21–24)
+------------------------------------------------------------------------
+
+Summary EN: On a quiet Sunday, Luca calls his mom and tells her about his life in Rome.
+
+Line 1 (luca-a-roma-speak-24-l01)
+  EN prompt: It's Sunday, so Luca doesn't work.
+  Target IT: Oggi è domenica e Luca non lavora.
+  Source: luca-a-roma-24:s01
+  Acceptable answers:
+    - Oggi è domenica e Luca non lavora.
+    - È domenica e Luca non lavora.
+    - Luca non lavora oggi.
+
+Line 2 (luca-a-roma-speak-24-l02)
+  EN prompt: He calls his mom.
+  Target IT: Luca chiama la mamma.
+  Source: luca-a-roma-24:s06
+  Acceptable answers:
+    - Luca chiama la mamma.
+    - Chiama la mamma.
+    - Luca chiama Mamma.
+
+Line 3 (luca-a-roma-speak-24-l03)
+  EN prompt: He tells her he's doing well.
+  Target IT: Bene, grazie. Sto bene a Roma.
+  Source: luca-a-roma-24:s10
+  Acceptable answers:
+    - Bene, grazie. Sto bene a Roma.
+    - Sto bene a Roma.
+    - Luca sta bene a Roma.
+
+Line 4 (luca-a-roma-speak-24-l04)
+  EN prompt: He tells her about his home, his job, and his friends.
+  Target IT: Ho una casa e un lavoro al caffè. Sì, ho Sofia, Giulia e Marco.
+  Source: luca-a-roma-24:s11
+  Acceptable answers:
+    - Ho una casa e un lavoro al caffè.
+    - Ho Sofia, Giulia e Marco.
+    - Ho una casa, un lavoro e amici.
+
+Line 5 (luca-a-roma-speak-24-l05)
+  EN prompt: Rome is home now.
+  Target IT: Roma è casa adesso.
+  Source: luca-a-roma-24:s27
+  Acceptable answers:
+    - Roma è casa adesso.
+    - Adesso Roma è casa.
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-27 — Sofia’s Opinion (batchEnd 27; source ch 25–27)
+------------------------------------------------------------------------
+
+Summary EN: Sofia helps Luca separate fear from facts about the café, and they plan a small next step.
+
+Line 1 (luca-a-roma-speak-27-l01)
+  EN prompt: The owner might sell the café, or change everything.
+  Target IT: Il padrone forse vende il caffè. O cambia tutto.
+  Source: luca-a-roma-27:s06
+  Acceptable answers:
+    - Il padrone forse vende il caffè.
+    - Forse vende il caffè.
+    - Il padrone forse cambia tutto.
+
+Line 2 (luca-a-roma-speak-27-l02)
+  EN prompt: We know there are few customers. You saw it.
+  Target IT: Sappiamo che i clienti sono pochi. Tu l’hai visto.
+  Source: luca-a-roma-27:s17
+  Acceptable answers:
+    - Sappiamo che i clienti sono pochi.
+    - I clienti sono pochi.
+    - Tu l’hai visto.
+
+Line 3 (luca-a-roma-speak-27-l03)
+  EN prompt: We don’t know if he is selling. He hasn’t decided.
+  Target IT: Non sappiamo se vende. Non ha deciso.
+  Source: luca-a-roma-27:s18
+  Acceptable answers:
+    - Non sappiamo se vende.
+    - Non ha deciso.
+    - Non sappiamo se vende. Non ha deciso.
+
+Line 4 (luca-a-roma-speak-27-l04)
+  EN prompt: Fear isn’t a plan.
+  Target IT: La paura c’è. Ma non è un piano.
+  Source: luca-a-roma-27:s21
+  Acceptable answers:
+    - La paura non è un piano.
+    - Non è un piano.
+    - La paura c’è. Ma non è un piano.
+
+Line 5 (luca-a-roma-speak-27-l05)
+  EN prompt: Let’s go to Nonna Rosa. Maybe she has an idea.
+  Target IT: Andiamo da Nonna Rosa. Magari lei ha un’idea.
+  Source: luca-a-roma-27:s34
+  Acceptable answers:
+    - Andiamo da Nonna Rosa.
+    - Magari lei ha un’idea.
+    - Andiamo da Nonna Rosa. Magari lei ha un’idea.
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-30 — A Small Plan (batchEnd 30; source ch 25–30)
+------------------------------------------------------------------------
+
+Summary EN: The café needs more customers. Luca and his friends ask the padrone for a small Saturday party.
+
+Line 1 (luca-a-roma-speak-30-l01)
+  EN prompt: Luca and his friends have an idea: a small party on Saturday.
+  Target IT: Abbiamo un'idea. Una festa piccola, sabato, per il quartiere.
+  Source: luca-a-roma-30:s03
+  Acceptable answers:
+    - Abbiamo un'idea.
+    - Una festa piccola sabato.
+    - Una festa piccola per il quartiere.
+
+Line 2 (luca-a-roma-speak-30-l02)
+  EN prompt: It won't work without the padrone.
+  Target IT: Senza di lui non funziona.
+  Source: luca-a-roma-30:s07
+  Acceptable answers:
+    - Senza di lui non funziona.
+    - Non funziona senza il padrone.
+
+Line 3 (luca-a-roma-speak-30-l03)
+  EN prompt: The padrone agrees to try.
+  Target IT: Va bene. Proviamo.
+  Source: luca-a-roma-30:s21
+  Acceptable answers:
+    - Va bene. Proviamo.
+    - Il padrone dice va bene.
+    - Proviamo sabato.
+
+Line 4 (luca-a-roma-speak-30-l04)
+  EN prompt: Now they have to tell people in the neighborhood.
+  Target IT: Dobbiamo dire alle persone del quartiere.
+  Source: luca-a-roma-30:s27
+  Acceptable answers:
+    - Dobbiamo dire alle persone del quartiere.
+    - Devono dire alle persone del quartiere.
+
+Line 5 (luca-a-roma-speak-30-l05)
+  EN prompt: They have a plan, but they don't know yet if anyone will come.
+  Target IT: Abbiamo un piano. Non sappiamo se funziona.
+  Source: luca-a-roma-30:s42
+  Acceptable answers:
+    - Abbiamo un piano.
+    - Non sappiamo se funziona.
+    - Hanno un piano ma non sanno se funziona.
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-35 — The Cafe Fills Up (batchEnd 35; source ch 31–35)
+------------------------------------------------------------------------
+
+Summary EN: Saturday afternoon: the room starts empty, then neighbors arrive, and the small party finally works.
+
+Line 1 (luca-a-roma-speak-35-l01)
+  EN prompt: At first, the room was still almost empty.
+  Target IT: La sala era ancora quasi vuota.
+  Source: luca-a-roma-35:s01
+  Acceptable answers:
+    - La sala era quasi vuota.
+    - La sala era ancora quasi vuota.
+
+Line 2 (luca-a-roma-speak-35-l02)
+  EN prompt: Then Nonna Rosa arrives.
+  Target IT: Poi è arrivata Nonna Rosa.
+  Source: luca-a-roma-35:s08
+  Acceptable answers:
+    - Poi è arrivata Nonna Rosa.
+    - È arrivata Nonna Rosa.
+
+Line 3 (luca-a-roma-speak-35-l03)
+  EN prompt: More people from the neighborhood arrived.
+  Target IT: Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.
+  Source: luca-a-roma-35:s11
+  Acceptable answers:
+    - Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.
+    - Sono arrivate tre persone del quartiere, poi una famiglia.
+    - Sono arrivate più persone del quartiere.
+
+Line 4 (luca-a-roma-speak-35-l04)
+  EN prompt: Within an hour, the room was almost full.
+  Target IT: In un'ora la sala era quasi piena.
+  Source: luca-a-roma-35:s15
+  Acceptable answers:
+    - La sala era quasi piena.
+    - In un'ora la sala era quasi piena.
+
+Line 5 (luca-a-roma-speak-35-l05)
+  EN prompt: Luca sees that people can come back.
+  Target IT: Le persone possono tornare.
+  Source: luca-a-roma-35:s45
+  Acceptable answers:
+    - Le persone possono tornare.
+    - Luca sa che le persone possono tornare.
+    - Adesso le persone possono tornare.
+
+
+------------------------------------------------------------------------
+SPEAK: luca-a-roma-speak-40 — Luca Chooses Rome (batchEnd 40; source ch 36–40)
+------------------------------------------------------------------------
+
+Summary EN: Luca's mother offers him a job near home. He thinks about his life in Rome and decides to stay.
+
+Line 1 (luca-a-roma-speak-40-l01)
+  EN prompt: There is a job opening at a bar near home.
+  Target IT: C'è un posto in un bar vicino a casa.
+  Source: luca-a-roma-40:s03
+  Acceptable answers:
+    - C'è un posto in un bar vicino a casa.
+    - C'è un lavoro vicino a casa.
+    - C’è un posto vicino a casa.
+
+Line 2 (luca-a-roma-speak-40-l02)
+  EN prompt: Luca has to decide this week.
+  Target IT: Luca deve rispondere questa settimana.
+  Source: luca-a-roma-40:s06
+  Acceptable answers:
+    - Luca deve rispondere questa settimana.
+    - Deve rispondere questa settimana.
+
+Line 3 (luca-a-roma-speak-40-l03)
+  EN prompt: In Rome he had a home, a job, and friends.
+  Target IT: A Roma aveva una casa, un lavoro, e amici.
+  Source: luca-a-roma-40:s12
+  Acceptable answers:
+    - A Roma aveva una casa, un lavoro e amici.
+    - A Roma ha una casa, un lavoro e amici.
+    - Luca ha casa, lavoro e amici a Roma.
+
+Line 4 (luca-a-roma-speak-40-l04)
+  EN prompt: He decides to stay in Rome for now.
+  Target IT: Per adesso resto a Roma. Non parto.
+  Source: luca-a-roma-40:s22
+  Acceptable answers:
+    - Per adesso resto a Roma.
+    - Non parto.
+    - Resto a Roma per adesso.
+    - Luca resta a Roma.
+
+Line 5 (luca-a-roma-speak-40-l05)
+  EN prompt: For now, this is home.
+  Target IT: Per adesso questa è casa.
+  Source: luca-a-roma-40:s49
+  Acceptable answers:
+    - Per adesso questa è casa.
+    - Questa è casa, per adesso.
+    - Adesso questa è casa.
+
+
+========================================================================
+END OF EXPORT
+========================================================================
+

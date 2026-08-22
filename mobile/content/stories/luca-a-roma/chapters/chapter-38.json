@@ -363,18 +363,17 @@
         },
         {
           "id": "s18",
-          "text": "Allora non è una domanda di sì o no. È una domanda di orario.",
+          "text": "Allora non è un sì o un no. È una domanda di orario.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
             "allora",
             "non",
             "essere",
-            "una",
-            "domanda",
-            "di",
+            "un",
             "si_yes",
             "o",
+            "un",
             "no",
             "essere",
             "una",
@@ -506,15 +505,15 @@
         },
         {
           "id": "s25",
-          "text": "Hanno parlato di giorni veri, non di un anno lungo.",
+          "text": "Hanno parlato di questa settimana, non di un anno lungo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "avere",
             "parlare",
             "di",
-            "giorno",
-            "vero",
+            "questo",
+            "settimana",
             "non",
             "di",
             "un",
@@ -779,18 +778,18 @@
         },
         {
           "id": "s39",
-          "text": "Non hanno deciso il futuro lungo. Hanno deciso il giorno dopo.",
+          "text": "Non hanno deciso tutto. Hanno deciso cosa fare il giorno dopo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "non",
             "avere",
             "decidere",
-            "il",
-            "futuro",
-            "lungo",
+            "tutto",
             "avere",
             "decidere",
+            "cosa",
+            "fare",
             "il",
             "giorno",
             "dopo"
@@ -962,22 +961,6 @@
             "la",
             "settimana",
             "nuovo"
-          ]
-        },
-        {
-          "id": "s48",
-          "text": "Domani doveva parlare. Questa sera, questo era abbastanza.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "domani",
-            "dovere",
-            "parlare",
-            "questo",
-            "sera",
-            "questo",
-            "essere",
-            "abbastanza"
           ]
         },
         {

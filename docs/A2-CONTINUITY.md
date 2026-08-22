@@ -103,8 +103,11 @@ Throughline: the café has fewer customers; the owner may sell; friends organize
 - [x] A1 events are not contradicted
 - [x] No new protagonist
 - [x] Chapters 1–20 were not rewritten
-- [x] Audio for A2 is not generated yet (review first)
+- [x] Audio for A2 is not generated yet (review first) → **superseded:** curriculum frozen; Phase 11 generation started 2026-08-21
 - [x] Ch 25–30 grammar staircase repaired (PP on-ramp → sequencing → imp recognition → contrast → context → established)
 - [x] Speak-27 opinion scene authored
-- [ ] Ch 25–40 human read-through + text lock
-- [ ] Phase 11 A2 audio (after text lock)
+- [x] Ch 25–40 human read-through + text lock (2026-08-21)
+- [x] Lesson layer frozen — grammar notes, word recaps, Speak scenes (2026-08-21; 484/484)
+- [x] Curriculum freeze after stamina patch (2026-08-21)
+- [x] Phase 11 A2 audio generate + package (Chirp3 Ch 25–40; 767 clips) — human listen spot-check → freeze AUDIO CATALOG v2
+- [x] Separate workstream: A2 chapter stamina / CEFR cliff — **patched** (`docs/A2-STAMINA-CEFR-AUDIT.md`)

@@ -45,7 +45,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Più tardi, quando la sala era piena, Giulia ha fatto un segno a Luca.",
+          "text": "Più tardi, quando la sala era piena, Luca ha guardato le persone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -56,13 +56,39 @@
             "sala",
             "essere",
             "pieno",
-            "giulia",
+            "luca",
             "avere",
-            "fare",
-            "un",
-            "segno",
-            "a",
-            "luca"
+            "guardare",
+            "le",
+            "persona"
+          ]
+        },
+        {
+          "id": "s01b",
+          "text": "Alcune erano entrate grazie alla festa.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "alcuno",
+            "essere",
+            "entrare",
+            "grazie",
+            "alla",
+            "festa"
+          ]
+        },
+        {
+          "id": "s01c",
+          "text": "Lui voleva la gente di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "lui",
+            "volere",
+            "la",
+            "gente",
+            "di",
+            "nuovo"
           ]
         },
         {
@@ -627,7 +653,7 @@
         },
         {
           "id": "s28",
-          "text": "Luca ha ascoltato. Il padrone non parlava del futuro. Parlava di oggi.",
+          "text": "Luca ha ascoltato. Il padrone parlava di oggi, non di lunedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -636,13 +662,12 @@
             "ascoltare",
             "il",
             "padrone",
-            "non",
-            "parlare",
-            "del",
-            "futuro",
             "parlare",
             "di",
-            "oggi"
+            "oggi",
+            "non",
+            "di",
+            "lunedi"
           ]
         },
         {
@@ -880,7 +905,7 @@
         },
         {
           "id": "s41",
-          "text": "Quando la festa era più piccola, il padrone ha chiuso un poco la musica.",
+          "text": "Quando la festa era quasi finita, il padrone ha chiuso un poco la musica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -888,8 +913,8 @@
             "la",
             "festa",
             "essere",
-            "piu",
-            "piccolo",
+            "quasi",
+            "finire",
             "il",
             "padrone",
             "avere",
@@ -941,22 +966,21 @@
         },
         {
           "id": "s44",
-          "text": "Il sì del padrone non c’era ancora sul futuro. C’era sul giorno.",
+          "text": "Il padrone aveva detto sì per oggi. Il resto poteva aspettare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "il",
-            "si_yes",
-            "del",
             "padrone",
-            "non",
-            "ce",
-            "ancora",
-            "sul",
-            "futuro",
-            "ce",
-            "sul",
-            "giorno"
+            "avere",
+            "dire",
+            "si_yes",
+            "per",
+            "oggi",
+            "il",
+            "restare",
+            "potere",
+            "aspettare"
           ]
         },
         {
@@ -1010,29 +1034,6 @@
             "avere",
             "parlare",
             "piano"
-          ]
-        },
-        {
-          "id": "s48",
-          "text": "Oggi conta. Domani vediamo le ore.",
-          "speakerId": "sofia",
-          "kind": "dialogue",
-          "lemmas": [
-            "oggi",
-            "contare",
-            "domani",
-            "vedere",
-            "le",
-            "ora"
-          ],
-          "phrases": [
-            {
-              "surface": "Vediamo",
-              "literalEn": "we see",
-              "naturalEn": "we’ll see",
-              "tokenStart": 3,
-              "tokenEnd": 3
-            }
           ]
         }
       ]

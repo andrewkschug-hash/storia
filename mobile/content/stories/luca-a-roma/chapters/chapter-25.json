@@ -39,73 +39,126 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Lunedì mattina Luca torna al lavoro dopo la domenica.",
+          "text": "Lunedì mattina Luca è tornato al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "lunedi",
             "mattina",
             "luca",
+            "essere",
             "tornare",
             "al",
-            "lavorare",
-            "dopo",
-            "la",
-            "domenica"
+            "caffe"
           ]
         },
         {
           "id": "s02",
-          "text": "Il quartiere è tranquillo e il tempo è bello.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "quartiere",
-            "essere",
-            "tranquillo",
-            "e",
-            "il",
-            "tempo",
-            "essere",
-            "bello"
-          ]
-        },
-        {
-          "id": "s03",
-          "text": "Luca conosce bene il caffè, ma oggi qualcosa è diverso.",
+          "text": "Luca è arrivato presto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
-            "conoscere",
-            "bene",
-            "il",
-            "caffe",
-            "ma",
-            "oggi",
-            "qualcosa",
             "essere",
-            "diverso"
+            "arrivare",
+            "presto"
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "Ha aperto la porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "aprire",
+            "la",
+            "porta"
           ]
         },
         {
           "id": "s04",
-          "text": "La sala è più tranquilla del solito.",
+          "text": "Ha preparato i tavoli.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "la",
-            "sala",
-            "essere",
-            "piu",
-            "tranquillo",
-            "del",
-            "solito"
+            "avere",
+            "preparare",
+            "i",
+            "tavolo"
           ]
         },
         {
           "id": "s05",
+          "text": "Sono entrati pochi clienti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "essere",
+            "entrare",
+            "poco",
+            "cliente"
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "Luca ha servito un caffè.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "avere",
+            "servire",
+            "un",
+            "caffe"
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "Ha portato acqua a un tavolo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "portare",
+            "acqua",
+            "a",
+            "un",
+            "tavolo"
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "Giulia ha guardato i tavoli.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "giulia",
+            "avere",
+            "guardare",
+            "i",
+            "tavolo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sentences": [
+        {
+          "id": "s09",
+          "text": "Non ha sorriso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "non",
+            "avere",
+            "sorridere"
+          ]
+        },
+        {
+          "id": "s10",
           "text": "Ci sono meno clienti. I tavoli sono pronti, ma sono vuoti.",
           "speakerId": null,
           "kind": "narration",
@@ -124,110 +177,22 @@
           ]
         },
         {
-          "id": "s06",
-          "text": "Luca aspetta vicino alla porta. Quasi nessuno entra.",
+          "id": "s11",
+          "text": "Quasi nessuno è entrato dopo. Luca ha ascoltato la strada fuori.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "luca",
-            "aspettare",
-            "vicino",
-            "alla",
-            "porta",
             "quasi",
             "nessuno",
-            "entrare"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Guarda i tavoli vuoti e la strada fuori.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "guardare",
-            "i",
-            "tavolo",
-            "vuoto",
-            "e",
+            "essere",
+            "entrare",
+            "dopo",
+            "luca",
+            "avere",
+            "ascoltare",
             "la",
             "strada",
             "fuori"
-          ]
-        },
-        {
-          "id": "s08",
-          "text": "Luca è arrivato presto.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "essere",
-            "arrivare",
-            "presto"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "p2",
-      "order": 2,
-      "sentences": [
-        {
-          "id": "s09",
-          "text": "Ha aperto la porta e ha preparato i tavoli con calma.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
-            "aprire",
-            "la",
-            "porta",
-            "e",
-            "avere",
-            "preparare",
-            "i",
-            "tavolo",
-            "con",
-            "calma"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Sono entrati pochi clienti.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "essere",
-            "entrare",
-            "poco",
-            "cliente"
-          ]
-        },
-        {
-          "id": "s11",
-          "text": "Luca ha servito caffè e acqua al primo cliente. Giulia ha guardato i tavoli e non ha sorriso.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "avere",
-            "servire",
-            "caffe",
-            "e",
-            "acqua",
-            "al",
-            "primo",
-            "cliente",
-            "giulia",
-            "avere",
-            "guardare",
-            "i",
-            "tavolo",
-            "e",
-            "non",
-            "avere",
-            "sorridere"
           ]
         },
         {
@@ -247,14 +212,14 @@
         },
         {
           "id": "s13",
-          "text": "Dipende dal tempo, forse.",
+          "text": "Forse è solo lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "dipendere",
-            "dal",
-            "tempo",
-            "forse"
+            "forse",
+            "essere",
+            "solo",
+            "lunedi"
           ],
           "phrases": [
             {
@@ -268,7 +233,7 @@
         },
         {
           "id": "s14",
-          "text": "Fuori il tempo è bello, ma il caffè ha un problema.",
+          "text": "Fuori il tempo è bello, ma al caffè ci sono pochi clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -278,11 +243,12 @@
             "essere",
             "bello",
             "ma",
-            "il",
+            "al",
             "caffe",
-            "avere",
-            "un",
-            "problema"
+            "ci",
+            "essere",
+            "poco",
+            "cliente"
           ]
         }
       ]
@@ -345,7 +311,7 @@
         },
         {
           "id": "s18",
-          "text": "Luca ha servito i pochi clienti.",
+          "text": "Luca ha servito i pochi clienti. Ha portato caffè e acqua con calma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -354,7 +320,14 @@
             "servire",
             "i",
             "poco",
-            "cliente"
+            "cliente",
+            "avere",
+            "portare",
+            "caffe",
+            "e",
+            "acqua",
+            "con",
+            "calma"
           ]
         },
         {
@@ -392,7 +365,7 @@
         },
         {
           "id": "s21",
-          "text": "Nel pomeriggio la sala è ancora quasi vuota.",
+          "text": "Nel pomeriggio la sala è ancora quasi vuota. Luca ha pulito un tavolo e ha aspettato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -403,7 +376,15 @@
             "essere",
             "ancora",
             "quasi",
-            "vuoto"
+            "vuoto",
+            "luca",
+            "avere",
+            "pulito",
+            "un",
+            "tavolo",
+            "e",
+            "avere",
+            "aspettare"
           ]
         },
         {
@@ -493,6 +474,58 @@
             "poco",
             "cliente",
             "adesso"
+          ]
+        },
+        {
+          "id": "s26b",
+          "text": "Ha guardato i tavoli vuoti un’altra volta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "guardare",
+            "i",
+            "tavolo",
+            "vuoto",
+            "altro",
+            "volta"
+          ]
+        },
+        {
+          "id": "s26c",
+          "text": "Ha portato un piatto in cucina e ha lavorato con calma.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "portare",
+            "un",
+            "piatto",
+            "in",
+            "cucina",
+            "e",
+            "avere",
+            "lavorare",
+            "con",
+            "calma"
+          ]
+        },
+        {
+          "id": "s26d",
+          "text": "Ha preparato ancora acqua e ha aspettato vicino alla porta.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "preparare",
+            "ancora",
+            "acqua",
+            "e",
+            "avere",
+            "aspettare",
+            "vicino",
+            "alla",
+            "porta"
           ]
         },
         {
@@ -632,6 +665,64 @@
           ]
         },
         {
+          "id": "s34b",
+          "text": "Ha messo i soldi sul tavolo e ha contato di nuovo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "mettere",
+            "i",
+            "soldi",
+            "sul",
+            "tavolo",
+            "e",
+            "avere",
+            "contare",
+            "di",
+            "nuovo"
+          ]
+        },
+        {
+          "id": "s34c",
+          "text": "Poi ha pensato al caffè del quartiere e ai clienti di oggi.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poi",
+            "avere",
+            "pensare",
+            "al",
+            "caffe",
+            "del",
+            "quartiere",
+            "e",
+            "ai",
+            "cliente",
+            "di",
+            "oggi"
+          ]
+        },
+        {
+          "id": "s34d",
+          "text": "Ha guardato fuori dalla finestra e ha visto la strada tranquilla.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "guardare",
+            "fuori",
+            "dalla",
+            "finestra",
+            "e",
+            "avere",
+            "vedere",
+            "la",
+            "strada",
+            "tranquillo"
+          ]
+        },
+        {
           "id": "s35",
           "text": "Poi ha scritto un messaggio a Sofia.",
           "speakerId": null,
@@ -692,6 +783,63 @@
             "capire",
             "di",
             "piu"
+          ]
+        },
+        {
+          "id": "s39",
+          "text": "Ha chiuso la luce e ha aspettato il giorno dopo.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "chiudere",
+            "la",
+            "luce",
+            "e",
+            "avere",
+            "aspettare",
+            "il",
+            "giorno",
+            "dopo"
+          ]
+        },
+        {
+          "id": "s40",
+          "text": "Ha pensato di nuovo ai tavoli vuoti e al messaggio di Sofia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "pensare",
+            "di",
+            "nuovo",
+            "ai",
+            "tavolo",
+            "vuoto",
+            "e",
+            "al",
+            "messaggio",
+            "di",
+            "sofia"
+          ]
+        },
+        {
+          "id": "s41",
+          "text": "Ha messo il telefono sul tavolo e ha aspettato la mattina.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "mettere",
+            "il",
+            "telefono",
+            "sul",
+            "tavolo",
+            "e",
+            "avere",
+            "aspettare",
+            "la",
+            "mattina"
           ]
         }
       ]

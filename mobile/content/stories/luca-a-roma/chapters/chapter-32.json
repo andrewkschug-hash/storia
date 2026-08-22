@@ -44,13 +44,12 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Due giorni dopo, la festa era più vicina.",
+          "text": "Venerdì sera la festa era più vicina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "due",
-            "giorno",
-            "dopo",
+            "venerdi",
+            "sera",
             "la",
             "festa",
             "essere",
@@ -282,12 +281,12 @@
         },
         {
           "id": "s14",
-          "text": "Nel pomeriggio Giulia ha parlato chiaro vicino ai tavoli.",
+          "text": "Al caffè Giulia ha parlato chiaro vicino ai tavoli.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "nel",
-            "pomeriggio",
+            "al",
+            "caffe",
             "giulia",
             "avere",
             "parlare",
@@ -316,7 +315,7 @@
         },
         {
           "id": "s16",
-          "text": "Poche ore, o un lavoro vero. Non voglio solo un altro dopo.",
+          "text": "Poche ore, o un lavoro vero. Non voglio lavorare qui solo ogni tanto.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
@@ -328,10 +327,11 @@
             "vero",
             "non",
             "volere",
+            "lavorare",
+            "qui",
             "solo",
-            "un",
-            "altro",
-            "dopo"
+            "ogni",
+            "tanto"
           ]
         },
         {
@@ -470,7 +470,7 @@
         },
         {
           "id": "s24",
-          "text": "Il padrone è tornato in cucina senza altre parole. Luca ha pensato all’affitto e alle ore di Giulia. Giulia ha accettato, ma per lei era importante.",
+          "text": "Il padrone è tornato in cucina senza altre parole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -482,7 +482,15 @@
             "cucina",
             "senza",
             "altro",
-            "parola",
+            "parola"
+          ]
+        },
+        {
+          "id": "s24b",
+          "text": "Luca ha pensato all’affitto e alle ore di Giulia.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "luca",
             "avere",
             "pensare",
@@ -491,7 +499,15 @@
             "alle",
             "ora",
             "di",
-            "giulia",
+            "giulia"
+          ]
+        },
+        {
+          "id": "s24c",
+          "text": "Giulia ha accettato, ma per lei era importante.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
             "giulia",
             "avere",
             "accettare",
@@ -662,12 +678,11 @@
         },
         {
           "id": "s33",
-          "text": "Allora domani io e Marco andiamo di nuovo nel quartiere.",
+          "text": "Allora io e Marco andiamo di nuovo nel quartiere.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
             "allora",
-            "domani",
             "io",
             "e",
             "marco",

@@ -41,40 +41,38 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Il giorno dopo, sabato non era ancora arrivato.",
+          "text": "Quel pomeriggio Luca e Sofia erano al caffè, e Giulia li ha visti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "giorno",
-            "dopo",
-            "sabato",
-            "non",
-            "essere",
-            "ancora",
-            "arrivare"
-          ]
-        },
-        {
-          "id": "s02",
-          "text": "Luca e Sofia erano al caffè la mattina presto, e Giulia li ha visti.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
+            "quello",
+            "pomeriggio",
             "luca",
             "e",
             "sofia",
             "essere",
             "al",
             "caffe",
-            "la",
-            "mattina",
-            "presto",
             "e",
             "giulia",
             "li",
             "avere",
             "vedere"
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "Hanno parlato piano vicino ai tavoli vuoti.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "parlare",
+            "piano",
+            "vicino",
+            "ai",
+            "tavolo",
+            "vuoto"
           ]
         },
         {
@@ -196,7 +194,7 @@
         },
         {
           "id": "s10",
-          "text": "Luca e Sofia lo hanno visti e non hanno parlato subito.",
+          "text": "Luca e Sofia lo hanno visto e non hanno parlato subito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -600,18 +598,11 @@
             "fare",
             "insieme"
           ]
-        }
-      ]
-    },
-    {
-      "id": "p4",
-      "order": 4,
-      "sentences": [
+        },
         {
           "id": "s32",
-          "text": "Non avevano ancora gente per sabato.",
-          "speakerId": null,
           "kind": "narration",
+          "text": "Non avevano ancora gente per sabato.",
           "lemmas": [
             "non",
             "avere",
@@ -619,13 +610,13 @@
             "gente",
             "per",
             "sabato"
-          ]
+          ],
+          "speakerId": null
         },
         {
           "id": "s33",
-          "text": "La notizia difficile aveva adesso un piano, anche se piccolo.",
-          "speakerId": null,
           "kind": "narration",
+          "text": "La notizia difficile aveva adesso un piano, anche se piccolo.",
           "lemmas": [
             "la",
             "notizia",
@@ -637,8 +628,15 @@
             "anche",
             "se",
             "piccolo"
-          ]
-        },
+          ],
+          "speakerId": null
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "order": 4,
+      "sentences": [
         {
           "id": "s34",
           "text": "Non so se qualcuno viene. Ma adesso abbiamo un sì.",
@@ -677,11 +675,11 @@
         },
         {
           "id": "s36",
-          "text": "Domani lavoriamo su questo. Oggi abbiamo chiesto.",
+          "text": "Adesso lavoriamo su questo. Oggi abbiamo chiesto.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "domani",
+            "adesso",
             "lavorare",
             "su",
             "questo",
@@ -692,12 +690,13 @@
         },
         {
           "id": "s37",
-          "text": "Nel pomeriggio qualche cliente è entrato al caffè.",
+          "text": "Dopo un poco qualche cliente è entrato al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "nel",
-            "pomeriggio",
+            "dopo",
+            "un",
+            "poco",
             "qualche",
             "cliente",
             "essere",

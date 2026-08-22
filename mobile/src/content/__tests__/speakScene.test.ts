@@ -58,7 +58,7 @@ describe('speak scene milestones', () => {
       'Marco comes back to the café.',
       'He has a problem.',
       'He has to go to his mother\'s house.',
-      'He needs to buy a ticket.',
+      'He has to buy a ticket.',
       "He doesn't have any money.",
     ]);
     const scene24 = getSpeakSceneForBatch(LUCA_STORY_ID, 24);
@@ -66,7 +66,7 @@ describe('speak scene milestones', () => {
     expect(scene24?.sourceRange).toEqual({ start: 21, end: 24 });
     expect(scene24?.lines).toHaveLength(5);
     expect(scene24?.lines[2]?.en).toBe("He tells her he's doing well.");
-    expect(scene24?.lines[4]?.en).toBe('Rome feels like home now.');
+    expect(scene24?.lines[4]?.en).toBe('Rome is home now.');
     const scene27 = getSpeakSceneForBatch(LUCA_STORY_ID, 27);
     expect(scene27?.id).toBe('luca-a-roma-speak-27');
     expect(scene27?.sourceRange).toEqual({ start: 25, end: 27 });
@@ -78,11 +78,12 @@ describe('speak scene milestones', () => {
     expect(scene40?.sourceRange).toEqual({ start: 36, end: 40 });
     expect(scene40?.lines).toHaveLength(5);
     expect(scene40?.lines[2]?.en).toContain('Rome');
-    expect(scene40?.lines[4]?.en).toBe("This is Luca's life in Rome now.");
+    expect(scene40?.lines[4]?.en).toBe('For now, this is home.');
     const scene20 = getSpeakSceneForBatch(LUCA_STORY_ID, 20);
     expect(scene20?.id).toBe('luca-a-roma-speak-20');
     expect(scene20?.sourceRange).toEqual({ start: 16, end: 20 });
     expect(scene20?.lines).toHaveLength(5);
+    expect(scene20?.lines[0]?.en).toBe('Then the group goes back to Rome.');
     const scene30 = getSpeakSceneForBatch(LUCA_STORY_ID, 30);
     expect(scene30?.id).toBe('luca-a-roma-speak-30');
     expect(scene30?.sourceRange).toEqual({ start: 25, end: 30 });
@@ -91,6 +92,7 @@ describe('speak scene milestones', () => {
     expect(scene35?.id).toBe('luca-a-roma-speak-35');
     expect(scene35?.sourceRange).toEqual({ start: 31, end: 35 });
     expect(scene35?.lines).toHaveLength(5);
+    expect(scene35?.lines[2]?.en).toMatch(/arrived/i);
     expect(getCatalogStories().some((story) => story.id === 'luca-a-roma-speak-15')).toBe(false);
     expect(getSpeakSceneForBatch('luca-prima-di-roma-01', 5)?.id).toBe(
       'luca-prima-di-roma-01-speak-5',

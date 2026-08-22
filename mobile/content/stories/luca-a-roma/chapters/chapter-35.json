@@ -228,7 +228,7 @@
         },
         {
           "id": "s11",
-          "text": "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
+          "text": "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia. Alcune persone erano lì perché Sofia aveva scritto loro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -243,7 +243,16 @@
             "quartiere",
             "poi",
             "una",
-            "famiglia"
+            "famiglia",
+            "alcuno",
+            "persona",
+            "essere",
+            "li",
+            "perche",
+            "sofia",
+            "avere",
+            "scrivere",
+            "loro"
           ]
         },
         {
@@ -284,7 +293,7 @@
         },
         {
           "id": "s14",
-          "text": "Una signora ha chiesto l’orario. Sofia ha risposto chiaro e giusto.",
+          "text": "Una signora ha chiesto l’orario. Sofia ha risposto con calma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -296,9 +305,8 @@
             "sofia",
             "avere",
             "rispondere",
-            "chiaro",
-            "e",
-            "giusto"
+            "con",
+            "calma"
           ]
         },
         {
@@ -324,7 +332,7 @@
         },
         {
           "id": "s16",
-          "text": "Sofia parlava con la gente. Giulia serviva. Marco aiutava con i piatti.",
+          "text": "Sofia parlava con la gente. Giulia serviva. Marco aiutava con i piatti, e due persone aspettavano ancora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -339,7 +347,12 @@
             "aiutare",
             "con",
             "i",
-            "piatto"
+            "piatto",
+            "e",
+            "due",
+            "persona",
+            "aspettare",
+            "ancora"
           ]
         },
         {
@@ -700,25 +713,6 @@
             "lavorare",
             "e",
             "guardare"
-          ]
-        },
-        {
-          "id": "s35",
-          "text": "Il problema non era ancora finito. Era solo un pomeriggio pieno.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "problema",
-            "non",
-            "essere",
-            "ancora",
-            "finire",
-            "essere",
-            "solo",
-            "un",
-            "pomeriggio",
-            "pieno"
           ]
         },
         {

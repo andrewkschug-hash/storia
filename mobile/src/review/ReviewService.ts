@@ -528,6 +528,15 @@ function scoreBatchPhrase(row: PhraseEncounter): ReviewCandidate {
   };
 }
 
+const FILLER_PHRASE_IDS = new Set([
+  'va_bene',
+  'hai_ragione',
+  'non_lo_so',
+  'vediamo',
+  'ci_vediamo',
+  'dipende',
+]);
+
 function backfillBatchCandidates(
   bundle: ContentBundle,
   chapterStart: number,
@@ -549,6 +558,22 @@ function backfillBatchCandidates(
   });
   const highFreq = contentLemmas.filter((id) => bundle.lexicon.find((l) => l.lemmaId === id)?.frequency === 'high');
   const phrases = [...phrasesInChapterRange(bundle, chapterStart, chapterEnd)];
+  const batchPhrases = phrases.filter((id) => !FILLER_PHRASE_IDS.has(id));
+  const fillerPhrases = phrases.filter((id) => FILLER_PHRASE_IDS.has(id));
+
+  // Spaced older items: lemmas introduced before this batch (when available).
+  const olderLemmas: string[] = [];
+  if (chapterStart > 1) {
+    const earlierEnd = chapterStart - 1;
+    const earlierStart = Math.max(1, earlierEnd - 4);
+    for (const id of lemmasInChapterRange(bundle, earlierStart, earlierEnd)) {
+      const entry = bundle.lexicon.find((l) => l.lemmaId === id);
+      if (!entry) continue;
+      if (CLOSED_CLASS.has(entry.partOfSpeech ?? '')) continue;
+      if (NAME_LEMMAS.has(id)) continue;
+      olderLemmas.push(id);
+    }
+  }
 
   const ordered: ReviewCandidate[] = [];
   const seen = new Set<string>(alreadyPicked);
@@ -566,10 +591,16 @@ function backfillBatchCandidates(
     });
   };
 
-  for (const id of phrases) push('phrase', id, 30);
-  for (const id of introduced) push('lemma', id, 25);
+  // Target mix for empty-vocab / backfill: batch-new first, then reinforcement, filler last.
+  for (const id of introduced) push('lemma', id, 40);
+  for (const id of contentLemmas) {
+    if (introduced.includes(id)) continue;
+    push('lemma', id, 28);
+  }
+  for (const id of batchPhrases) push('phrase', id, 22);
   for (const id of highFreq) push('lemma', id, 15);
-  for (const id of contentLemmas) push('lemma', id, 5);
+  for (const id of olderLemmas) push('lemma', id, 12);
+  for (const id of fillerPhrases) push('phrase', id, 4);
 
   return ordered;
 }

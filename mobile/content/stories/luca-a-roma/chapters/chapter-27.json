@@ -163,7 +163,7 @@
         },
         {
           "id": "s09",
-          "text": "Luca ha detto tutto del caffè con calma.",
+          "text": "Luca ha detto tutto del caffè con calma. Ha parlato dei clienti e del lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -174,7 +174,14 @@
             "del",
             "caffe",
             "con",
-            "calma"
+            "calma",
+            "avere",
+            "parlare",
+            "dei",
+            "cliente",
+            "e",
+            "del",
+            "lavorare"
           ]
         },
         {
@@ -328,7 +335,7 @@
         },
         {
           "id": "s19",
-          "text": "Luca ha guardato la strada e ha pensato.",
+          "text": "Luca ha guardato la strada e ha pensato. Poi ha ascoltato Sofia di nuovo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -339,7 +346,13 @@
             "strada",
             "e",
             "avere",
-            "pensare"
+            "pensare",
+            "poi",
+            "avere",
+            "ascoltare",
+            "sofia",
+            "di",
+            "nuovo"
           ]
         },
         {
@@ -470,11 +483,11 @@
       "sentences": [
         {
           "id": "s27",
-          "text": "È capire perché, e fare qualcosa prima.",
+          "text": "Dobbiamo capire perché, e fare qualcosa prima.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
+            "dovere",
             "capire",
             "perche",
             "e",
@@ -576,6 +589,24 @@
             "del",
             "quartiere",
             "vicino"
+          ]
+        },
+        {
+          "id": "s32b",
+          "text": "Hanno camminato ancora un poco e hanno guardato la piazza.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "camminare",
+            "ancora",
+            "un",
+            "poco",
+            "e",
+            "avere",
+            "guardare",
+            "la",
+            "piazza"
           ]
         },
         {
@@ -691,6 +722,27 @@
             "e",
             "alla",
             "nonna"
+          ]
+        },
+        {
+          "id": "s38b",
+          "text": "Ha scritto due parole sul telefono e ha letto di nuovo il messaggio.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "avere",
+            "scrivere",
+            "due",
+            "parola",
+            "sul",
+            "telefono",
+            "e",
+            "avere",
+            "leggere",
+            "di",
+            "nuovo",
+            "il",
+            "messaggio"
           ]
         },
         {

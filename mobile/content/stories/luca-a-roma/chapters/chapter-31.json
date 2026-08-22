@@ -43,7 +43,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Dopo il sì del padrone, il gruppo aveva un piano piccolo da fare.",
+          "text": "Dopo il sì del padrone, ancora venerdì, il gruppo aveva cose da fare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -52,30 +52,34 @@
             "si_yes",
             "del",
             "padrone",
+            "ancora",
+            "venerdi",
             "il",
             "gruppo",
             "avere",
-            "un",
-            "piano",
-            "piccolo",
+            "cosa",
             "dare",
             "fare"
           ]
         },
         {
           "id": "s02",
-          "text": "Si sono incontrati al caffè la mattina presto.",
+          "text": "Più tardi Luca, Sofia, Marco e Giulia si sono incontrati al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "piu",
+            "tardi",
+            "luca",
+            "sofia",
+            "marco",
+            "e",
+            "giulia",
             "si",
             "essere",
             "incontrare",
             "al",
-            "caffe",
-            "la",
-            "mattina",
-            "presto"
+            "caffe"
           ]
         },
         {
@@ -150,23 +154,6 @@
             "a",
             "chi",
             "entrare"
-          ]
-        },
-        {
-          "id": "s07",
-          "text": "Il piano sembrava chiaro, ma nessuno era davvero sicuro.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "piano",
-            "sembrare",
-            "chiaro",
-            "ma",
-            "nessuno",
-            "essere",
-            "davvero",
-            "sicuro"
           ]
         },
         {
@@ -673,22 +660,6 @@
       "order": 4,
       "sentences": [
         {
-          "id": "s34",
-          "text": "Il problema aveva un ordine, ma restava aperto.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "problema",
-            "avere",
-            "un",
-            "ordine",
-            "ma",
-            "restare",
-            "aprire"
-          ]
-        },
-        {
           "id": "s35",
           "text": "La sera i quattro si sono incontrati un momento vicino alla piazza.",
           "speakerId": null,
@@ -751,7 +722,7 @@
         },
         {
           "id": "s38",
-          "text": "Il piano c’è. Adesso non c’è la gente.",
+          "text": "Il piano c’è. Adesso serve la gente.",
           "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
@@ -759,19 +730,17 @@
             "piano",
             "ce",
             "adesso",
-            "non",
-            "ce",
+            "servire",
             "la",
             "gente"
           ]
         },
         {
           "id": "s39",
-          "text": "Domani continuiamo. Oggi abbiamo organizzato insieme.",
+          "text": "Continuiamo. Oggi abbiamo organizzato insieme.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "domani",
             "continuare",
             "oggi",
             "avere",
@@ -781,12 +750,11 @@
         },
         {
           "id": "s40",
-          "text": "Avere un piano aiuta. Non chiude il problema.",
+          "text": "Il piano aiuta. Non chiude il problema.",
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "avere",
-            "un",
+            "il",
             "piano",
             "aiutare",
             "non",
@@ -812,23 +780,6 @@
             "essere",
             "ancora",
             "arrivare"
-          ]
-        },
-        {
-          "id": "s42",
-          "text": "Avevano un piano piccolo, senza sapere chi veniva sabato.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "avere",
-            "un",
-            "piano",
-            "piccolo",
-            "senza",
-            "sapere",
-            "chi",
-            "venire",
-            "sabato"
           ]
         }
       ]
