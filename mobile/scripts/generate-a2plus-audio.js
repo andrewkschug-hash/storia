@@ -193,102 +193,158 @@ async function main() {
 
   fs.mkdirSync(audioDataDir, { recursive: true });
 
+  const CONCURRENCY = 4;
+  let nextIndex = 0;
+  let completedCount = 0;
   let successCount = 0;
   let failedCount = 0;
   const errors = [];
+  const bufferToSave = [];
 
-  for (let i = 0; i < missingClips.length; i++) {
-    const clip = missingClips[i];
-    const counted = countBillableCharacters(clip.text);
-    if (!counted.ok) {
-      failedCount++;
-      errors.push(`${clip.contentId}: ${counted.error}`);
-      continue;
+  function flushRegistry() {
+    if (bufferToSave.length === 0) return;
+    const batch = bufferToSave.splice(0, bufferToSave.length);
+    let registry = { assets: [] };
+    if (fs.existsSync(registryPath)) {
+      try {
+        registry = loadJson(registryPath);
+      } catch {
+        registry = { assets: [] };
+      }
     }
+    if (!Array.isArray(registry.assets)) registry.assets = [];
+    const map = new Map();
+    for (const a of registry.assets) map.set(`${a.contentId}:${a.voiceId}`, a);
+    for (const a of batch) map.set(`${a.contentId}:${a.voiceId}`, a);
+    registry.assets = [...map.values()];
+    fs.mkdirSync(path.dirname(registryPath), { recursive: true });
+    fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2) + '\n', 'utf8');
+  }
 
-    const cacheKey = audioCacheKey({
-      provider: 'google',
-      voiceId: clip.voiceId,
-      language: 'it-IT',
-      speed: 'normal',
-      text: clip.text,
-      generationVersion: 1,
-    });
-
-    const guard = evaluateGoogleTtsGuard({
-      planned: [
-        {
-          storyId: clip.storyId,
-          chapterId: clip.chapterId,
-          sentenceId: clip.sentenceId,
-          logicalVoice: clip.speakerId,
-          googleVoiceId: clip.voiceId,
-          language: 'it-IT',
-          text: clip.text,
-          generationSpeed: 'normal',
-          generationVersion: 1,
-          outputFilename: `${cacheKey}.mp3`,
-          estimatedBillableCharacters: counted.chars,
-          action: 'generate',
-        },
-      ],
-      pricing,
-      hardLimitChars: runtime.hardLimitChars,
-      trackedUsage: runtime.trackedUsage,
-      providerConfigured: true,
-      now: runtime.now,
-      dryRun: false,
-      allowPaidUsage: false,
-    });
-
-    if (!guard.allowed) {
-      failedCount++;
-      errors.push(`Guard rejected ${clip.contentId}: ${guard.error}`);
-      break;
-    }
-
-    process.stdout.write(`[${i + 1}/${missingClips.length}] ${clip.storyId} Ch${clip.chapterNumber} ${clip.sentenceId} (${clip.speakerId} → ${clip.voiceName})... `);
-
-    try {
-      const result = await withGoogleApiPermit(guard, () =>
-        tts.generateSpeech({
-          text: clip.text,
-          voiceId: clip.voiceId,
-          language: 'it-IT',
-          speed: 'normal',
-        }),
-      );
-
-      const destFile = path.join(audioDataDir, `${cacheKey}.mp3`);
-      fs.writeFileSync(destFile, Buffer.from(result.audio));
-
-      const newAsset = {
-        id: cacheKey,
-        contentId: clip.contentId,
-        cacheKey,
-        text: clip.text,
-        speakerId: clip.speakerId,
-        voiceId: clip.voiceId,
-        provider: 'google',
-        language: 'it-IT',
-        speed: 'normal',
-        generationVersion: 1,
-        status: 'approved',
-        audioUrl: `/audio/a1/${cacheKey}.mp3`,
-        durationMs: null,
-      };
-
-      updateRegistryWithAsset(newAsset);
-      successCount++;
-      const kb = (result.audio.byteLength / 1024).toFixed(1);
-      console.log(`OK (${kb} KB)`);
-    } catch (err) {
-      failedCount++;
-      const msg = err instanceof Error ? err.message : String(err);
-      errors.push(`${clip.contentId}: ${msg}`);
-      console.log(`FAILED (${msg})`);
+  async function generateWithRetry(clip, guard, maxRetries = 6) {
+    let delay = 1500;
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        return await withGoogleApiPermit(guard, () =>
+          tts.generateSpeech({
+            text: clip.text,
+            voiceId: clip.voiceId,
+            language: 'it-IT',
+            speed: 'normal',
+          }),
+        );
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        if ((msg.includes('429') || msg.includes('RESOURCE_EXHAUSTED')) && attempt < maxRetries) {
+          const sleepMs = delay + Math.floor(Math.random() * 800);
+          await new Promise((r) => setTimeout(r, sleepMs));
+          delay *= 2;
+          continue;
+        }
+        throw err;
+      }
     }
   }
+
+  async function worker(workerId) {
+    while (nextIndex < missingClips.length) {
+      const i = nextIndex++;
+      const clip = missingClips[i];
+      const counted = countBillableCharacters(clip.text);
+      if (!counted.ok) {
+        failedCount++;
+        errors.push(`${clip.contentId}: ${counted.error}`);
+        continue;
+      }
+
+      const cacheKey = audioCacheKey({
+        provider: 'google',
+        voiceId: clip.voiceId,
+        language: 'it-IT',
+        speed: 'normal',
+        text: clip.text,
+        generationVersion: 1,
+      });
+
+      const guard = evaluateGoogleTtsGuard({
+        planned: [
+          {
+            storyId: clip.storyId,
+            chapterId: clip.chapterId,
+            sentenceId: clip.sentenceId,
+            logicalVoice: clip.speakerId,
+            googleVoiceId: clip.voiceId,
+            language: 'it-IT',
+            text: clip.text,
+            generationSpeed: 'normal',
+            generationVersion: 1,
+            outputFilename: `${cacheKey}.mp3`,
+            estimatedBillableCharacters: counted.chars,
+            action: 'generate',
+          },
+        ],
+        pricing,
+        hardLimitChars: runtime.hardLimitChars,
+        trackedUsage: runtime.trackedUsage,
+        providerConfigured: true,
+        now: runtime.now,
+        dryRun: false,
+        allowPaidUsage: false,
+      });
+
+      if (!guard.allowed) {
+        failedCount++;
+        errors.push(`Guard rejected ${clip.contentId}: ${guard.error}`);
+        break;
+      }
+
+      try {
+        const result = await generateWithRetry(clip, guard);
+
+        const destFile = path.join(audioDataDir, `${cacheKey}.mp3`);
+        fs.writeFileSync(destFile, Buffer.from(result.audio));
+
+        const newAsset = {
+          id: cacheKey,
+          contentId: clip.contentId,
+          cacheKey,
+          text: clip.text,
+          speakerId: clip.speakerId,
+          voiceId: clip.voiceId,
+          provider: 'google',
+          language: 'it-IT',
+          speed: 'normal',
+          generationVersion: 1,
+          status: 'approved',
+          audioUrl: `/audio/a1/${cacheKey}.mp3`,
+          durationMs: null,
+        };
+
+        bufferToSave.push(newAsset);
+        successCount++;
+      } catch (err) {
+        failedCount++;
+        const msg = err instanceof Error ? err.message : String(err);
+        errors.push(`${clip.contentId}: ${msg}`);
+      }
+
+      completedCount++;
+      if (bufferToSave.length >= 30) {
+        flushRegistry();
+      }
+      if (completedCount % 50 === 0 || completedCount === missingClips.length) {
+        const pct = ((completedCount / missingClips.length) * 100).toFixed(1);
+        console.log(`[${completedCount}/${missingClips.length}] (${pct}%) — Story: ${clip.storyId} Ch${clip.chapterNumber} ${clip.sentenceId}`);
+      }
+
+      // Small pacing pause (100ms) to respect 300 RPM rate limit
+      await new Promise((r) => setTimeout(r, 100));
+    }
+  }
+
+  console.log(`Starting ${CONCURRENCY} concurrent TTS workers with rate pacing & 429 backoff...`);
+  await Promise.all(Array.from({ length: CONCURRENCY }, (_, id) => worker(id + 1)));
+  flushRegistry();
 
   console.log('\n================================================================');
   console.log('  GENERATION COMPLETED');

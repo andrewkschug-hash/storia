@@ -210,6 +210,8 @@ describe('Phase 12I story catalog', () => {
       'luca-prima-di-roma-05',
       LUCA_STORY_ID,
       'la-casa-delle-finestre',
+      'lettera-per-elena',
+      'il-villaggio-che-non-esiste',
     ]);
     for (let i = 1; i < journey.length; i += 1) {
       expect(journey[i].narrativeOrder).toBeGreaterThan(journey[i - 1].narrativeOrder);

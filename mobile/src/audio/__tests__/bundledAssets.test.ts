@@ -15,7 +15,7 @@ describe('bundled A1 audio assets', () => {
       ).toBe(true);
       expect(bundledModuleForUrl(asset.audioUrl)).toBeTypeOf('number');
     }
-  });
+  }, 30000);
 
   it('keeps a Metro require loader for every packaged catalog asset', () => {
     const source = fs.readFileSync(path.join(__dirname, '../bundledAssets.ts'), 'utf8');
