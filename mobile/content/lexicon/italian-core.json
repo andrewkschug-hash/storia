@@ -21506,6 +21506,933 @@
       "difficulty": 2,
       "frequency": "medium",
       "introducedChapter": 51
+    },
+    {
+      "lemmaId": "affacciarsi",
+      "italian": "affacciarsi",
+      "english": "to overlook / to face (affacciato su)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "affiancare",
+      "italian": "affiancare",
+      "english": "to place side by side / to flank",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "alternativa",
+      "italian": "alternativa",
+      "english": "alternative / choice",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "altrui",
+      "italian": "altrui",
+      "english": "of others / other people's",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "area",
+      "italian": "area",
+      "english": "area / section",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "astratto",
+      "italian": "astratto",
+      "english": "abstract",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "attorno",
+      "italian": "attorno",
+      "english": "around (attorno a)",
+      "partOfSpeech": "preposition",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "calcolo",
+      "italian": "calcolo",
+      "english": "calculation / spreadsheet (foglio di calcolo)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "carattere",
+      "italian": "carattere",
+      "english": "font character / print type",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "cifra",
+      "italian": "cifra",
+      "english": "figure / numeral / sum",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "clausola",
+      "italian": "clausola",
+      "english": "clause / contractual provision",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "collaboratore",
+      "italian": "collaboratore",
+      "english": "collaborator / employee / coworker",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "commercio",
+      "italian": "commercio",
+      "english": "commerce / trade",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "compromettere",
+      "italian": "compromettere",
+      "english": "to compromise / to damage (compromesso)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "confortevole",
+      "italian": "confortevole",
+      "english": "comfortable",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "convenevole",
+      "italian": "convenevole",
+      "english": "formality / pleasantry (senza convenevoli)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "dedicare",
+      "italian": "dedicare",
+      "english": "to dedicate / to assign to",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "deroga",
+      "italian": "deroga",
+      "english": "exception / waiver / exemption",
+      "partOfSpeech": "noun",
+      "difficulty": 3,
+      "frequency": "low",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "dubbio",
+      "italian": "dubbio",
+      "english": "doubt (mettere in dubbio = to question)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "eccellente",
+      "italian": "eccellente",
+      "english": "excellent",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "edile",
+      "italian": "edile",
+      "english": "building / construction (ditta edile)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "esaminare",
+      "italian": "esaminare",
+      "english": "to examine / to inspect",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "esclusiva",
+      "italian": "esclusiva",
+      "english": "exclusivity / exclusive right",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "essenza",
+      "italian": "essenza",
+      "english": "essence / core",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "etico",
+      "italian": "etico",
+      "english": "ethical",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "evidenziare",
+      "italian": "evidenziare",
+      "english": "to highlight",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "fedelta",
+      "italian": "fedeltà",
+      "english": "loyalty / fidelity",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "filtrare",
+      "italian": "filtrare",
+      "english": "to filter in / to seep through",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "finale",
+      "italian": "finale",
+      "english": "final / conclusive",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "finanziamento",
+      "italian": "finanziamento",
+      "english": "financing / funding",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "finanziare",
+      "italian": "finanziare",
+      "english": "to finance / to fund",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "finzione",
+      "italian": "finzione",
+      "english": "pretense / fiction (senza finzioni)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "fornitura",
+      "italian": "fornitura",
+      "english": "supply / supply agreement",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "generazione",
+      "italian": "generazione",
+      "english": "generation (di ultima generazione = latest-gen)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "gravita",
+      "italian": "gravità",
+      "english": "gravity / seriousness",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "ideale",
+      "italian": "ideale",
+      "english": "ideal",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "impianto",
+      "italian": "impianto",
+      "english": "setup / system / installation",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "incasso",
+      "italian": "incasso",
+      "english": "revenue / takings (incassi)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "indicare",
+      "italian": "indicare",
+      "english": "to point to / to indicate",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "inefficiente",
+      "italian": "inefficiente",
+      "english": "inefficient",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "insolitamente",
+      "italian": "insolitamente",
+      "english": "unusually",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "installare",
+      "italian": "installare",
+      "english": "to install",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "integrare",
+      "italian": "integrare",
+      "english": "to integrate (bilance integrate = built-in scales)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "intensamente",
+      "italian": "intensamente",
+      "english": "intensely",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "intervenire",
+      "italian": "intervenire",
+      "english": "to intervene / to step in",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "intestare",
+      "italian": "intestare",
+      "english": "to head / to print with letterhead (carta intestata)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "lettura",
+      "italian": "lettura",
+      "english": "reading (occhiali da lettura)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "lotto",
+      "italian": "lotto",
+      "english": "batch / micro-lot (micro-lotti)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "macchinario",
+      "italian": "macchinario",
+      "english": "machinery / equipment",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "marchio",
+      "italian": "marchio",
+      "english": "brand / trademark / brand name",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "maturita",
+      "italian": "maturità",
+      "english": "maturity",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "mediazione",
+      "italian": "mediazione",
+      "english": "mediation / compromise solution",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "medio",
+      "italian": "medio",
+      "english": "average / middle (superiore alla media)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "mensile",
+      "italian": "mensile",
+      "english": "monthly",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "moderno",
+      "italian": "moderno",
+      "english": "modern / state-of-the-art",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "obbligare",
+      "italian": "obbligare",
+      "english": "to obligate / to compel (obbligato)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "ostinato",
+      "italian": "ostinato",
+      "english": "stubborn / obstinate",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "pacchetto",
+      "italian": "pacchetto",
+      "english": "package / all-inclusive deal",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "pagina",
+      "italian": "pagina",
+      "english": "page",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "patto",
+      "italian": "patto",
+      "english": "pact / condition (a patto di = on condition that)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "percentuale",
+      "italian": "percentuale",
+      "english": "percentage / revenue cut",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "pizzicare",
+      "italian": "pizzicare",
+      "english": "to pinch / to sting (l'aria fredda pizzica)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "pragmatico",
+      "italian": "pragmatico",
+      "english": "pragmatic",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "prigione",
+      "italian": "prigione",
+      "english": "prison / golden cage (prigione dorata)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "principale",
+      "italian": "principale",
+      "english": "main / principal",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "prolungare",
+      "italian": "prolungare",
+      "english": "to prolong / to linger (sguardo prolungato)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "promozionale",
+      "italian": "promozionale",
+      "english": "promotional",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "pulsante",
+      "italian": "pulsante",
+      "english": "throbbing / bustling (cuore pulsante)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "puntualmente",
+      "italian": "puntualmente",
+      "english": "punctually / on time every month",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "purezza",
+      "italian": "purezza",
+      "english": "purity",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "puro",
+      "italian": "puro",
+      "english": "pure",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "quarantott'ore",
+      "italian": "quarantott'ore",
+      "english": "forty-eight hours",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "ragionevole",
+      "italian": "ragionevole",
+      "english": "reasonable",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "replicare",
+      "italian": "replicare",
+      "english": "to reply / to counter",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "riallestire",
+      "italian": "riallestire",
+      "english": "to refit / to redesign (a counter)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "ricerca",
+      "italian": "ricerca",
+      "english": "research / taste exploration",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "rotazione",
+      "italian": "rotazione",
+      "english": "rotation (a rotazione = on rotation)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "salto",
+      "italian": "salto",
+      "english": "leap / jump (salto professionale)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "scaricare",
+      "italian": "scaricare",
+      "english": "to unload / to drop off",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "scarto",
+      "italian": "scarto",
+      "english": "waste / low-grade cull (caffè di scarto)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "scheda",
+      "italian": "scheda",
+      "english": "datasheet / technical spec sheet",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "selezione",
+      "italian": "selezione",
+      "english": "selection / blend line",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "serie",
+      "italian": "serie",
+      "english": "series",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "sfumare",
+      "italian": "sfumare",
+      "english": "to vanish / to evaporate (opportunity)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "soppesare",
+      "italian": "soppesare",
+      "english": "to weigh carefully (soppesare le parole)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "sopravvivenza",
+      "italian": "sopravvivenza",
+      "english": "survival",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "sostenibile",
+      "italian": "sostenibile",
+      "english": "sustainable / economically viable",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "sperimentale",
+      "italian": "sperimentale",
+      "english": "experimental",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "sponsor",
+      "italian": "sponsor",
+      "english": "commercial sponsor",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "stagionale",
+      "italian": "stagionale",
+      "english": "seasonal",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "stampare",
+      "italian": "stampare",
+      "english": "to print (stampato su carta)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "terzo",
+      "italian": "terzo",
+      "english": "third",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "testo",
+      "italian": "testo",
+      "english": "text / contract wording",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "tranquillita",
+      "italian": "tranquillità",
+      "english": "peace of mind / tranquility",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "trecento",
+      "italian": "trecento",
+      "english": "three hundred",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "tutela",
+      "italian": "tutela",
+      "english": "protection / contractual safeguards",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "utilizzare",
+      "italian": "utilizzare",
+      "english": "to use / to utilize",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "vantaggioso",
+      "italian": "vantaggioso",
+      "english": "lucrative / advantageous",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "vent'anni",
+      "italian": "vent'anni",
+      "english": "twenty years old",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "ventimila",
+      "italian": "ventimila",
+      "english": "twenty thousand",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "vetrata",
+      "italian": "vetrata",
+      "english": "large glass window / glass pane",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "vincolo",
+      "italian": "vincolo",
+      "english": "binding constraint / exclusivity clause",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
+    },
+    {
+      "lemmaId": "visivo",
+      "italian": "visivo",
+      "english": "visual (esclusiva visiva)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 52
     }
   ]
 }

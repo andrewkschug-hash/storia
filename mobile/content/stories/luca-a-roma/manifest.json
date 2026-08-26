@@ -434,6 +434,14 @@
       "titleIt": "L'incontro al caffè letterario",
       "difficultyLevel": 3,
       "file": "chapter-51.json"
+    },
+    {
+      "id": "luca-a-roma-52",
+      "number": 52,
+      "title": "The Impossible Proposal",
+      "titleIt": "La proposta impossibile",
+      "difficultyLevel": 3,
+      "file": "chapter-52.json"
     }
   ]
 }
