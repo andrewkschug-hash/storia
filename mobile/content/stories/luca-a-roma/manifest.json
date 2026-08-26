@@ -394,6 +394,14 @@
       "titleIt": "L'offerta di Giulia",
       "difficultyLevel": 3,
       "file": "chapter-46.json"
+    },
+    {
+      "id": "luca-a-roma-47",
+      "number": 47,
+      "title": "Marco's Workshop",
+      "titleIt": "Il laboratorio di Marco",
+      "difficultyLevel": 3,
+      "file": "chapter-47.json"
     }
   ]
 }
