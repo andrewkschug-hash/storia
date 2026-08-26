@@ -1,4 +1,4 @@
-﻿/** Chapters are grouped into batches of five for grammar notes and recap.
+/** Chapters are grouped into batches of five for grammar notes and recap.
  *
  * LESSON LAYER FROZEN 2026-08-21 — do not reopen architecture or style.
  * Continuity-only / named-defect (bug) repairs only. See docs/PHASE-10.md.
@@ -671,6 +671,286 @@ const GRAMMAR_BY_BATCH: Record<string, GrammarNote> = {
         choices: ['A temporary choice to stay', 'A permanent promise never to leave', 'That Rome sold the café'],
         correctIndex: 0,
         explanation: 'Per adesso = for now — the future can still change.',
+      },
+    ],
+  },
+  '41-45': {
+    batchKey: '41-45',
+    title: 'Explaining shifts in perspective: from habit to conscious choice',
+    intro:
+      'In Chapters 41–45, the impending sale of the café shatters Luca’s comfortable routine. You will notice how Italian contrasts ongoing assumptions with sudden realizations, and how verbs of thinking and intention help you explain personal change.',
+    steps: [
+      {
+        title: 'Imperfetto for past assumptions vs. Passato Prossimo for awakening',
+        explanation:
+          'Ongoing states, habits, and passive assumptions use the imperfetto (credevo, pensavo, lavoravo). The moment a realization hits or a decisive action occurs, Italian switches to the passato prossimo (ho capito, ho deciso, si è rotto).\n\n' +
+          'This contrast is the foundation of reflective storytelling in Italian.',
+        rule: 'Ongoing mindset (imperfetto) + sudden realization (passato prossimo) = explaining how you changed',
+        examples: [
+          {
+            italian: 'Pensavo che questa routine sarebbe durata per sempre, ma ho capito che dovevo scegliere.',
+            english: 'I thought this routine would last forever, but I understood I had to choose.',
+          },
+          {
+            italian: 'Lavoravo senza pormi domande, finché Sofia mi ha chiesto cosa volessi davvero.',
+            english: 'I was working without asking myself questions, until Sofia asked me what I truly wanted.',
+          },
+        ],
+      },
+      {
+        title: 'Past modals: dovevo (passive pressure) vs. ho voluto (active choice)',
+        explanation:
+          'Notice how Luca moves from feeling constrained by external circumstances (dovevo subire gli eventi) to deliberate personal intention (ho voluto parlare con sincerità).\n\n' +
+          '• dovevo = I was expected to / I felt I had to\n' +
+          '• ho voluto = I made the deliberate decision to',
+        rule: 'dovere in past = perceived obligation · volere in passato prossimo = deliberate active choice',
+        examples: [
+          {
+            italian: 'Non volevo più accettare passivamente le decisioni degli altri.',
+            english: 'I no longer wanted to passively accept other people’s decisions.',
+          },
+          {
+            italian: 'Ho voluto salire al Gianicolo per guardare la città con occhi diversi.',
+            english: 'I chose to go up to the Gianicolo to look at the city with different eyes.',
+          },
+        ],
+      },
+      {
+        title: 'Reflexive realization: rendersi conto and decidere da solo',
+        explanation:
+          'To describe internal awakening, Italian frequently uses reflexive phrases like rendersi conto di (to realize) and disjunctive pronouns with da solo (by oneself).\n\n' +
+          '• mi sono reso conto che… = I realized that…\n' +
+          '• da solo / con le mie forze = by myself / on my own strength',
+        rule: 'rendersi conto di = to realize · da solo = on one’s own',
+        examples: [
+          {
+            italian: 'Mi sono reso conto che stavo lasciando scegliere il caso.',
+            english: 'I realized I was letting chance decide.',
+          },
+          {
+            italian: 'Questa volta voglio decidere da solo, con le mie forze.',
+            english: 'This time I want to decide on my own, with my own strength.',
+          },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'Which sentence best expresses: "I thought it was safe, but I realized I had to choose"?',
+        choices: [
+          'Pensavo fosse sicuro, ma ho capito che dovevo scegliere.',
+          'Ho pensato fosse sicuro, ma capivo che ho dovuto scegliere.',
+          'Penso sia sicuro, ma capisco che devo scegliere.',
+        ],
+        correctIndex: 0,
+        explanation: 'Use imperfetto for the ongoing past belief (pensavo) and passato prossimo for the moment of realization (ho capito).',
+      },
+      {
+        prompt: 'In "Mi sono reso conto della situazione," what does "mi sono reso conto" mean?',
+        choices: ['I realized / I became aware', 'I refused the situation', 'I returned home'],
+        correctIndex: 0,
+        explanation: 'Rendersi conto di = to realize / become conscious of.',
+      },
+      {
+        prompt: 'Which sentence shows an active, conscious decision rather than passive obligation?',
+        choices: [
+          'Ho voluto affrontare la discussione a viso aperto.',
+          'Dovevo solo aspettare che qualcuno decidesse per me.',
+          'Non potevo fare altro che rimanere fermo.',
+        ],
+        correctIndex: 0,
+        explanation: 'Ho voluto + infinitive expresses deliberate personal choice.',
+      },
+    ],
+  },
+  '46-50': {
+    batchKey: '46-50',
+    title: 'Comparing possibilities, expressing polite desires, and explaining choices',
+    intro:
+      'In Chapters 46–50, Luca is presented with two real alternatives: the corporate security of the Grand Hotel and the autonomous craft of Marco’s workshop. You will notice how the conditional and comparatives let you weigh options, express polite hesitation, and articulate clear preferences.',
+    steps: [
+      {
+        title: 'The Present Conditional: vorrei, preferirei, and polite consideration',
+        explanation:
+          'The conditional (vorrei, preferirei, potrei, sarebbe) allows you to soften statements, discuss hypothetical directions, and evaluate proposals respectfully without sounding abrupt.\n\n' +
+          '• vorrei capire = I would like to understand\n' +
+          '• preferirei costruire = I would prefer to build\n' +
+          '• sarebbe un’opportunità = it would be an opportunity',
+        rule: 'Vorrei / Preferirei + infinitive = I would like / I would prefer (nuanced desire and polite evaluation)',
+        examples: [
+          {
+            italian: 'Vorrei ringraziarti per la proposta, ma preferirei costruire un percorso indipendente.',
+            english: 'I would like to thank you for the offer, but I would prefer to build an independent path.',
+          },
+          {
+            italian: 'Sarebbe un contratto sicuro, ma non so se sia la vita che voglio.',
+            english: 'It would be a secure contract, but I do not know if it is the life I want.',
+          },
+        ],
+      },
+      {
+        title: 'Weighing alternatives: invece di and comparatives of preference',
+        explanation:
+          'When contrasting two paths, Italian uses invece di (+ infinitive) for "instead of" and comparative structures to weigh value beyond immediate security.\n\n' +
+          '• invece di + verb = instead of doing X\n' +
+          '• preferire X a Y = to prefer X over Y',
+        rule: 'invece di + infinitive = instead of doing · preferisco X a Y = I prefer X to Y',
+        examples: [
+          {
+            italian: 'Preferisco affrontare il rischio dell’incertezza invece di accettare una sicurezza passiva.',
+            english: 'I prefer to face the risk of uncertainty instead of accepting passive security.',
+          },
+          {
+            italian: 'La bottega di Marco richiede sacrificio, ma offre maggiore libertà.',
+            english: 'Marco’s workshop requires sacrifice, but offers greater freedom.',
+          },
+        ],
+      },
+      {
+        title: 'Explaining the rationale: per + infinitive and dato che',
+        explanation:
+          'To explain an important life decision to others (such as Luca’s letter to Pietralba in Chapter 48), use per + infinitive for intended purpose and dato che / perché for the underlying reason.\n\n' +
+          '• per spiegarvi = in order to explain to you\n' +
+          '• dato che Roma mi ha dato tanto = given that Rome gave me so much',
+        rule: 'per + infinitive = in order to · dato che = given that / since',
+        examples: [
+          {
+            italian: 'Vi ho scritto questa lettera per spiegarvi con sincerità la mia scelta.',
+            english: 'I wrote you this letter in order to explain my choice to you with sincerity.',
+          },
+          {
+            italian: 'Dato che ho imparato il mestiere, voglio provare a creare qualcosa di mio.',
+            english: 'Given that I learned the trade, I want to try to create something of my own.',
+          },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'How do you politely say: "I would like to thank you, but I would prefer to choose another path"?',
+        choices: [
+          'Vorrei ringraziarti, ma preferirei scegliere un’altra strada.',
+          'Ti ringrazio, ma voglio scegliere un’altra strada subito.',
+          'Ti ho ringraziato perché scelgo un’altra strada.',
+        ],
+        correctIndex: 0,
+        explanation: 'Vorrei and preferirei express gratitude and alternative intention with polite nuance.',
+      },
+      {
+        prompt: 'Which sentence means: "I want to experiment instead of accepting immediately"?',
+        choices: [
+          'Voglio fare esperimenti invece di accettare subito.',
+          'Faccio esperimenti perché accetto subito.',
+          'Ho fatto esperimenti prima di accettare subito.',
+        ],
+        correctIndex: 0,
+        explanation: 'Invece di + infinitive = instead of doing something.',
+      },
+      {
+        prompt: 'In "Vi scrivo per spiegarvi la mia decisione," what does "per spiegarvi" express?',
+        choices: ['The purpose / intention behind writing', 'The past reason why he wrote', 'A question to the parents'],
+        correctIndex: 0,
+        explanation: 'Per + infinitive expresses the deliberate purpose of an action.',
+      },
+    ],
+  },
+  '51-55': {
+    batchKey: '51-55',
+    title: 'Negotiating proposals, connecting ideas with cui, and professional counter service',
+    intro:
+      'In Chapters 51–55, Luca confronts commercial realities at Spazio Monti, builds a community alliance, says goodbye to Bruno, and opens his counter on Monday morning. You will notice how relative pronouns link complex ideas, how collaborative proposals are structured, and how polite hospitality is delivered at the counter.',
+    steps: [
+      {
+        title: 'Connecting details with prepositions + cui',
+        explanation:
+          'When linking a noun to a relative clause requiring a preposition (with which, in which, for which), Italian uses preposition + cui (con cui, in cui, per cui, da cui).\n\n' +
+          '• il progetto per cui lavoro = the project for which I work\n' +
+          '• la persona con cui collaboro = the person with whom I collaborate\n' +
+          '• il luogo in cui serviamo il caffè = the place in which we serve coffee',
+        rule: 'preposition + cui = with whom/which, in which, for which, from which',
+        examples: [
+          {
+            italian: 'Questo è il progetto per cui ho investito ogni energia.',
+            english: 'This is the project for which I invested all my energy.',
+          },
+          {
+            italian: 'Claudia è la socia con cui condividerò lo spazio e le spese.',
+            english: 'Claudia is the partner with whom I will share the space and expenses.',
+          },
+          {
+            italian: 'Il banco di castagno è il luogo in cui preparo ogni espresso con cura.',
+            english: 'The chestnut counter is the place in which I prepare every espresso with care.',
+          },
+        ],
+      },
+      {
+        title: 'Constructive negotiation: collaborative proposals and alternatives',
+        explanation:
+          'In business discussions, instead of rejecting a term outright, propose constructive compromises using collaborative phrasing.\n\n' +
+          '• se + present/imperfetto → present/conditional proposal\n' +
+          '• possiamo ridurre i costi se condividiamo… = we can reduce costs if we share…',
+        rule: 'Propose collaborative alternatives: Se noleggiamo / Se riduciamo… possiamo dividere…',
+        examples: [
+          {
+            italian: 'Se noleggiamo la macchina invece di comprarla, riduciamo i costi iniziali.',
+            english: 'If we lease the machine instead of buying it, we reduce initial costs.',
+          },
+          {
+            italian: 'Possiamo condividere i margini sul caffè con i tostatori artigianali.',
+            english: 'We can share margins on coffee with the artisan roasters.',
+          },
+        ],
+      },
+      {
+        title: 'Warm professional hospitality at the counter',
+        explanation:
+          'Welcoming a customer at the counter combines respectful formal greetings with immediate, attentive service.\n\n' +
+          '• Buongiorno a lei = Good morning to you (polite return greeting)\n' +
+          '• Le preparo subito un espresso = I will prepare an espresso for you right away\n' +
+          '• Desidera dell’acqua fresca? = Would you like some fresh water?',
+        rule: 'Formal polite service: Le preparo subito + noun (I will prepare X for you right away)',
+        examples: [
+          {
+            italian: '«Certamente, buongiorno a lei. Le preparo subito un espresso appena macinato.»',
+            english: '«Certainly, good morning to you. I will prepare a freshly ground espresso for you right away.»',
+          },
+          {
+            italian: '«Un espresso davvero eccezionale. Ci rivedremo domani mattina.»',
+            english: '«A truly exceptional espresso. You’ll see me again tomorrow morning.»',
+          },
+        ],
+      },
+    ],
+    practice: [
+      {
+        prompt: 'Which sentence correctly uses "cui" to say: "This is the reason for which I chose to stay"?',
+        choices: [
+          'Questo è il motivo per cui ho scelto di restare.',
+          'Questo è il motivo che ho scelto di restare.',
+          'Questo è il motivo cui ho scelto di restare.',
+        ],
+        correctIndex: 0,
+        explanation: 'Use per cui when the meaning requires "for which / the reason why."',
+      },
+      {
+        prompt: 'How do you propose a constructive business compromise?',
+        choices: [
+          'Se condividiamo i costi della macchina, riduciamo il rischio per entrambi.',
+          'Non voglio pagare niente e dovete fare tutto voi.',
+          'Il progetto è troppo difficile, quindi lasciamo perdere.',
+        ],
+        correctIndex: 0,
+        explanation: 'Collaborative conditional framing (Se condividiamo... riduciamo...) builds viable partnerships under commercial pressure.',
+      },
+      {
+        prompt: 'How do you greet a customer professionally and offer immediate counter service?',
+        choices: [
+          'Buongiorno a lei, Le preparo subito un espresso.',
+          'Ciao, prendi un caffè se vuoi.',
+          'Non abbiamo tempo per fare il caffè adesso.',
+        ],
+        correctIndex: 0,
+        explanation: 'Formal polite address (Le preparo subito...) provides authentic hospitality at the counter.',
       },
     ],
   },

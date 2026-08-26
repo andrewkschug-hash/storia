@@ -79,6 +79,28 @@ describe('speak scene milestones', () => {
     expect(scene40?.lines).toHaveLength(5);
     expect(scene40?.lines[2]?.en).toContain('Rome');
     expect(scene40?.lines[4]?.en).toBe('For now, this is home.');
+
+    const scene45 = getSpeakSceneForBatch(LUCA_STORY_ID, 45);
+    expect(scene45?.id).toBe('luca-a-roma-speak-45');
+    expect(scene45?.sourceRange).toEqual({ start: 41, end: 45 });
+    expect(scene45?.lines).toHaveLength(5);
+    expect(scene45?.title).toBe('A Sincere Conversation');
+    expect(scene45?.lines[2]?.it).toContain('sceglie consapevolmente');
+
+    const scene50 = getSpeakSceneForBatch(LUCA_STORY_ID, 50);
+    expect(scene50?.id).toBe('luca-a-roma-speak-50');
+    expect(scene50?.sourceRange).toEqual({ start: 46, end: 50 });
+    expect(scene50?.lines).toHaveLength(5);
+    expect(scene50?.title).toBe('The Response to Giulia');
+    expect(scene50?.lines[2]?.it).toContain('percorso indipendente');
+
+    const scene55 = getSpeakSceneForBatch(LUCA_STORY_ID, 55);
+    expect(scene55?.id).toBe('luca-a-roma-speak-55');
+    expect(scene55?.sourceRange).toEqual({ start: 51, end: 55 });
+    expect(scene55?.lines).toHaveLength(5);
+    expect(scene55?.title).toBe('The First Morning Service');
+    expect(scene55?.lines[1]?.it).toContain('Le preparo subito');
+
     const scene20 = getSpeakSceneForBatch(LUCA_STORY_ID, 20);
     expect(scene20?.id).toBe('luca-a-roma-speak-20');
     expect(scene20?.sourceRange).toEqual({ start: 16, end: 20 });

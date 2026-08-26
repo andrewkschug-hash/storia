@@ -45,10 +45,26 @@ describe('grammar notes', () => {
     expect(joined.toLowerCase()).not.toMatch(/most recent person/);
   });
 
-  it('authors hometown grammar for chapters 1–5 of each pre-Rome story', () => {
-    expect(grammarNoteForBatch(1, 5, 'luca-prima-di-roma-01')?.title).toContain('Sono');
-    expect(grammarNoteForBatch(1, 5, 'luca-prima-di-roma-03')?.title).toContain('quanto costa');
-    expect(grammarNoteForChapter(5, 'luca-prima-di-roma-04')).toBeTruthy();
-    expect(grammarNoteForBatch(1, 5, 'luca-a-roma')?.title).toBe('Essere and avere');
+  it('authors B1 grammar notes for batches 41-45, 46-50, and 51-55', () => {
+    for (const [start, end] of [[41, 45], [46, 50], [51, 55]]) {
+      const note = grammarNoteForBatch(start, end, 'luca-a-roma');
+      expect(note).toBeTruthy();
+      expect(note!.steps.length).toBe(3);
+      expect(note!.practice.length).toBe(3);
+      for (const step of note!.steps) {
+        expect(step.title.length).toBeGreaterThan(0);
+        expect(step.explanation.length).toBeGreaterThan(20);
+        expect(step.rule.length).toBeGreaterThan(0);
+        expect(step.examples.length).toBeGreaterThanOrEqual(2);
+      }
+      for (const q of note!.practice) {
+        expect(q.choices.length).toBe(3);
+        expect(q.correctIndex).toBe(0);
+        expect(q.explanation.length).toBeGreaterThan(10);
+      }
+    }
+    expect(grammarNoteForBatch(41, 45)?.title).toContain('shifts in perspective');
+    expect(grammarNoteForBatch(46, 50)?.title).toContain('Comparing possibilities');
+    expect(grammarNoteForBatch(51, 55)?.title).toContain('Negotiating proposals');
   });
 });

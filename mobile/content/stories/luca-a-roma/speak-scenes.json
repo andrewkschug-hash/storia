@@ -569,6 +569,225 @@
           ]
         }
       ]
+    },
+    {
+      "id": "luca-a-roma-speak-45",
+      "storyId": "luca-a-roma",
+      "batchEnd": 45,
+      "title": "A Sincere Conversation",
+      "summaryEn": "Sofia challenges Luca at the Gianicolo overlook. Luca explains his internal shift: why he stopped drifting passively and chose to author his own future in Rome.",
+      "sourceRange": {
+        "start": 41,
+        "end": 45
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-45-l01",
+          "en": "I realized I was letting circumstances choose for me.",
+          "it": "Mi sono reso conto che lasciavo scegliere al caso.",
+          "sourceChapterId": "luca-a-roma-45",
+          "sourceSentenceId": "s08",
+          "acceptableAnswers": [
+            "Mi sono reso conto che lasciavo scegliere al caso.",
+            "Ho capito che stavo lasciando scegliere il caso.",
+            "Mi sono reso conto che lasciavo decidere gli altri."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-45-l02",
+          "en": "Returning to Pietralba would mean escaping the problem.",
+          "it": "Tornare a Pietralba significherebbe scappare dal problema.",
+          "sourceChapterId": "luca-a-roma-45",
+          "sourceSentenceId": "s12",
+          "acceptableAnswers": [
+            "Tornare a Pietralba significherebbe scappare dal problema.",
+            "Tornare a Pietralba sarebbe una fuga.",
+            "Tornare a casa significherebbe fuggire."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-45-l03",
+          "en": "I want to be the person who consciously chooses.",
+          "it": "Voglio essere la persona che sceglie consapevolmente.",
+          "sourceChapterId": "luca-a-roma-45",
+          "sourceSentenceId": "s16",
+          "acceptableAnswers": [
+            "Voglio essere la persona che sceglie consapevolmente.",
+            "Voglio scegliere consapevolmente chi diventare.",
+            "Voglio decidere con le mie forze."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-45-l04",
+          "en": "I don't know what I will build yet, but I want to try.",
+          "it": "Non so ancora cosa costruirò, ma voglio provare.",
+          "sourceChapterId": "luca-a-roma-45",
+          "sourceSentenceId": "s18",
+          "acceptableAnswers": [
+            "Non so ancora cosa costruirò, ma voglio provare.",
+            "Non so ancora cosa farò, ma voglio provare.",
+            "Non ho ancora tutte le risposte, ma voglio provare."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-45-l05",
+          "en": "I choose to stay in Rome and build my life.",
+          "it": "Scelgo di restare a Roma e costruire la mia vita.",
+          "sourceChapterId": "luca-a-roma-45",
+          "sourceSentenceId": "s22",
+          "acceptableAnswers": [
+            "Scelgo di restare a Roma e costruire la mia vita.",
+            "Scelgo di rimanere a Roma e costruire il mio futuro.",
+            "Resto a Roma per costruire la mia vita."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-50",
+      "storyId": "luca-a-roma",
+      "batchEnd": 50,
+      "title": "The Response to Giulia",
+      "summaryEn": "Giulia presents Luca with a prestigious contract at the Grand Hotel. Luca thanks her, acknowledges the advantages, but explains his choice to pursue artisanal independence.",
+      "sourceRange": {
+        "start": 46,
+        "end": 50
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-50-l01",
+          "en": "Thank you for this offer, it is truly generous.",
+          "it": "Ti ringrazio per questa offerta, è davvero generosa.",
+          "sourceChapterId": "luca-a-roma-46",
+          "sourceSentenceId": "s12",
+          "acceptableAnswers": [
+            "Ti ringrazio per questa offerta, è davvero generosa.",
+            "Grazie per questa proposta, è una grande opportunità.",
+            "Ti ringrazio molto, è una bellissima proposta."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-50-l02",
+          "en": "I know it offers a secure contract and prestige.",
+          "it": "So che offre un contratto sicuro e prestigio.",
+          "sourceChapterId": "luca-a-roma-46",
+          "sourceSentenceId": "s14",
+          "acceptableAnswers": [
+            "So che offre un contratto sicuro e prestigio.",
+            "So che garantisce sicurezza economica e stabilità.",
+            "So che è un lavoro sicuro e prestigioso."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-50-l03",
+          "en": "However, I would prefer to build an independent path.",
+          "it": "Tuttavia, preferirei costruire un percorso indipendente.",
+          "sourceChapterId": "luca-a-roma-48",
+          "sourceSentenceId": "s08",
+          "acceptableAnswers": [
+            "Tuttavia, preferirei costruire un percorso indipendente.",
+            "Ma preferirei creare qualcosa di mio.",
+            "Però vorrei costruire una strada autonoma."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-50-l04",
+          "en": "I want to put my own hands on what I create.",
+          "it": "Voglio metterci le mani io in quello che creo.",
+          "sourceChapterId": "luca-a-roma-47",
+          "sourceSentenceId": "s14",
+          "acceptableAnswers": [
+            "Voglio metterci le mani io in quello che creo.",
+            "Voglio metterci le mie mani.",
+            "Voglio creare qualcosa con le mie mani."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-50-l05",
+          "en": "I prefer to face the risk instead of living with regret.",
+          "it": "Preferisco affrontare il rischio invece di vivere con il rimpianto.",
+          "sourceChapterId": "luca-a-roma-48",
+          "sourceSentenceId": "s18",
+          "acceptableAnswers": [
+            "Preferisco affrontare il rischio invece di vivere con il rimpianto.",
+            "Preferisco rischiare invece di avere rimpianti.",
+            "Preferisco l'incertezza invece del rimpianto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luca-a-roma-speak-55",
+      "storyId": "luca-a-roma",
+      "batchEnd": 55,
+      "title": "The First Morning Service",
+      "summaryEn": "On Monday morning at Spazio Monti, the bell rings. Luca steps behind the chestnut counter to welcome the first customer and serve espresso with professional hospitality.",
+      "sourceRange": {
+        "start": 51,
+        "end": 55
+      },
+      "lines": [
+        {
+          "id": "luca-a-roma-speak-55-l01",
+          "en": "Good morning to you, welcome to Spazio Monti.",
+          "it": "Buongiorno a lei, benvenuto allo Spazio Monti.",
+          "sourceChapterId": "luca-a-roma-55",
+          "sourceSentenceId": "s19",
+          "acceptableAnswers": [
+            "Buongiorno a lei, benvenuto allo Spazio Monti.",
+            "Buongiorno a lei, benvenuto.",
+            "Buongiorno, benvenuto allo Spazio Monti."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-55-l02",
+          "en": "I will prepare a freshly ground espresso for you right away.",
+          "it": "Le preparo subito un espresso appena macinato.",
+          "sourceChapterId": "luca-a-roma-55",
+          "sourceSentenceId": "s20",
+          "acceptableAnswers": [
+            "Le preparo subito un espresso appena macinato.",
+            "Le preparo subito un caffè espresso.",
+            "Le estraggo subito un espresso fresco."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-55-l03",
+          "en": "This single-origin coffee has notes of dark chocolate and orange.",
+          "it": "Questo caffè monorigine ha note di cioccolato amaro e arancia.",
+          "sourceChapterId": "luca-a-roma-55",
+          "sourceSentenceId": "s08",
+          "acceptableAnswers": [
+            "Questo caffè monorigine ha note di cioccolato amaro e arancia.",
+            "Questo monorigine ha note di cioccolato e scorza d'arancia.",
+            "È una miscela artigianale con aromi di cioccolato e agrumi."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-55-l04",
+          "en": "Here is your coffee with a small glass of fresh water.",
+          "it": "Ecco a lei il caffè con un bicchierino d'acqua fresca.",
+          "sourceChapterId": "luca-a-roma-55",
+          "sourceSentenceId": "s20",
+          "acceptableAnswers": [
+            "Ecco a lei il caffè con un bicchierino d'acqua fresca.",
+            "Ecco il Suo espresso con dell'acqua fresca.",
+            "Ecco a lei il caffè."
+          ]
+        },
+        {
+          "id": "luca-a-roma-speak-55-l05",
+          "en": "Thank you very much, have a wonderful day!",
+          "it": "Grazie mille a lei, e buona giornata!",
+          "sourceChapterId": "luca-a-roma-55",
+          "sourceSentenceId": "s22",
+          "acceptableAnswers": [
+            "Grazie mille a lei, e buona giornata!",
+            "Grazie mille, buona giornata!",
+            "Grazie a lei, arrivederci e buona giornata!"
+          ]
+        }
+      ]
     }
   ]
 }
