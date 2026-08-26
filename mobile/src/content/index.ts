@@ -66,6 +66,7 @@ import chapter51 from '../../content/stories/luca-a-roma/chapters/chapter-51.jso
 import chapter52 from '../../content/stories/luca-a-roma/chapters/chapter-52.json';
 import chapter53 from '../../content/stories/luca-a-roma/chapters/chapter-53.json';
 import chapter54 from '../../content/stories/luca-a-roma/chapters/chapter-54.json';
+import chapter55 from '../../content/stories/luca-a-roma/chapters/chapter-55.json';
 
 const chapterJsonByFile: Record<string, unknown> = {
   'chapter-01.json': chapter01,
@@ -122,6 +123,7 @@ const chapterJsonByFile: Record<string, unknown> = {
   'chapter-52.json': chapter52,
   'chapter-53.json': chapter53,
   'chapter-54.json': chapter54,
+  'chapter-55.json': chapter55,
 };
 
 const bundleCache = new Map<string, ContentBundle>();

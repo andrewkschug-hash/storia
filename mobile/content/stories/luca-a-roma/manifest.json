@@ -458,6 +458,14 @@
       "titleIt": "L'ultimo servizio di Bruno",
       "difficultyLevel": 3,
       "file": "chapter-54.json"
+    },
+    {
+      "id": "luca-a-roma-55",
+      "number": 55,
+      "title": "The First Day",
+      "titleIt": "Il primo giorno",
+      "difficultyLevel": 3,
+      "file": "chapter-55.json"
     }
   ]
 }

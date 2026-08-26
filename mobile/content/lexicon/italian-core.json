@@ -24287,6 +24287,852 @@
       "difficulty": 1,
       "frequency": "high",
       "introducedChapter": 54
+    },
+    {
+      "lemmaId": "acquisire",
+      "italian": "acquisire",
+      "english": "to acquire / to develop through practice",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "adagio",
+      "italian": "adagio",
+      "english": "slowly / gently / at leisure",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "addolcitore",
+      "italian": "addolcitore",
+      "english": "water softener / filter (filtro addolcitore)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "allestimento",
+      "italian": "allestimento",
+      "english": "setup / layout / furnishing (allestimento in legno)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "alloggiamento",
+      "italian": "alloggiamento",
+      "english": "housing / brew group slot",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "ape",
+      "italian": "ape",
+      "english": "bee (cera d'api = beeswax)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "appartenere",
+      "italian": "appartenere",
+      "english": "to belong to",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "applicare",
+      "italian": "applicare",
+      "english": "to apply (applicare una pressione)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "appunto",
+      "italian": "appunto",
+      "english": "note (quaderno degli appunti)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "armonia",
+      "italian": "armonia",
+      "english": "harmony",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "assaporare",
+      "italian": "assaporare",
+      "english": "to savor / to taste thoughtfully",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "avvicinarsi",
+      "italian": "avvicinarsi",
+      "english": "to approach / to step toward",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "beccuccio",
+      "italian": "beccuccio",
+      "english": "spout (beccucci del portafiltro)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "calibrazione",
+      "italian": "calibrazione",
+      "english": "calibration / dialing in",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "campanello",
+      "italian": "campanello",
+      "english": "small bell / door chime (campanello d'ottone)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "candito",
+      "italian": "candito",
+      "english": "candied (scorza d'arancia candita)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "cera",
+      "italian": "cera",
+      "english": "wax (cera d'api)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "ceramica",
+      "italian": "ceramica",
+      "english": "ceramic / porcelain (ceramica spessa)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "compostezza",
+      "italian": "compostezza",
+      "english": "poise / composure / understated dignity",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "condurre",
+      "italian": "condurre",
+      "english": "to conduct / to carry out (test condotto)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "confuso",
+      "italian": "confuso",
+      "english": "confused / disoriented",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "contemporaneo",
+      "italian": "contemporaneo",
+      "english": "contemporary / modern",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "cortese",
+      "italian": "cortese",
+      "english": "courteous / polite (cenno cortese)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "cromatura",
+      "italian": "cromatura",
+      "english": "chrome finish / chrome plating",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "depositare",
+      "italian": "depositare",
+      "english": "to deposit / to lay down (depositare una crema)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "dipinto",
+      "italian": "dipinto",
+      "english": "painting / artwork",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "disporre",
+      "italian": "disporre",
+      "english": "to arrange / to set in place",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "eccezionale",
+      "italian": "eccezionale",
+      "english": "exceptional / outstanding",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "erogatore",
+      "italian": "erogatore",
+      "english": "dispenser / brew head (gruppo erogatore)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "fatalita",
+      "italian": "fatalità",
+      "english": "fatalism / unavoidable destiny",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "filtro",
+      "italian": "filtro",
+      "english": "filter",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "folata",
+      "italian": "folata",
+      "english": "gust (folata d'aria)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "getto",
+      "italian": "getto",
+      "english": "stream / jet of espresso",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "griglia",
+      "italian": "griglia",
+      "english": "rack / warming tray (griglia scaldavivande)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "ignoto",
+      "italian": "ignoto",
+      "english": "unknown / the unknown (timore dell'ignoto)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "immergere",
+      "italian": "immergere",
+      "english": "to immerse (immerso nel blu)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "impermeabile",
+      "italian": "impermeabile",
+      "english": "raincoat / trench coat",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "impugnare",
+      "italian": "impugnare",
+      "english": "to grip / to hold firmly in hand",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "incuriosire",
+      "italian": "incuriosire",
+      "english": "to intrigue / to pique curiosity",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "inferiore",
+      "italian": "inferiore",
+      "english": "lower / bottom shelf (ripiano inferiore)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "instabile",
+      "italian": "instabile",
+      "english": "unstable / flimsy",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "invernale",
+      "italian": "invernale",
+      "english": "wintery / cold",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "istintivo",
+      "italian": "istintivo",
+      "english": "instinctive",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "laborioso",
+      "italian": "laborioso",
+      "english": "hardworking / industrious (lealtà laboriosa)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "lealta",
+      "italian": "lealtà",
+      "english": "loyalty / uprightness",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "maestria",
+      "italian": "maestria",
+      "english": "mastery / expert craftsmanship",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "manometro",
+      "italian": "manometro",
+      "english": "pressure gauge",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "microfibra",
+      "italian": "microfibra",
+      "english": "microfiber",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "mille",
+      "italian": "mille",
+      "english": "a thousand (mille imprevisti)",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "minimamente",
+      "italian": "minimamente",
+      "english": "in the slightest / in the least",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "nebbia",
+      "italian": "nebbia",
+      "english": "fog / mist",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "nutrire",
+      "italian": "nutrire",
+      "english": "to nourish / to nurture (nutrita dalla generosità)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "ombrello",
+      "italian": "ombrello",
+      "english": "umbrella",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "onorare",
+      "italian": "onorare",
+      "english": "to honor / to pay on time (onorare le rate)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "ostinatamente",
+      "italian": "ostinatamente",
+      "english": "stubbornly / doggedly",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "palmo",
+      "italian": "palmo",
+      "english": "palm of the hand (palmo della mano)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "pennellino",
+      "italian": "pennellino",
+      "english": "small brush (pennellino per il caffè)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "piallare",
+      "italian": "piallare",
+      "english": "to plane wood (piallato a mano)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "piattello",
+      "italian": "piattello",
+      "english": "scale pan / platform (piattello della bilancia)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "pioggerella",
+      "italian": "pioggerella",
+      "english": "light drizzle (pioggerella sottile)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "premere",
+      "italian": "premere",
+      "english": "to press / to push (premere un pulsante)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "premuroso",
+      "italian": "premuroso",
+      "english": "thoughtful / caring / attentive (premurosa compostezza)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "quaranta",
+      "italian": "quaranta",
+      "english": "forty",
+      "partOfSpeech": "number",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "radicato",
+      "italian": "radicato",
+      "english": "deeply rooted (radicato nella terra)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "rapidamente",
+      "italian": "rapidamente",
+      "english": "rapidly / quickly",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "regionale",
+      "italian": "regionale",
+      "english": "regional (treno regionale)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "residuo",
+      "italian": "residuo",
+      "english": "trace / remnant (residuo di ansia)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "risplendere",
+      "italian": "risplendere",
+      "english": "to shine / to gleam brightly",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "risvegliarsi",
+      "italian": "risvegliarsi",
+      "english": "to awaken (la città si risveglia)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "scaldavivande",
+      "italian": "scaldavivande",
+      "english": "cup-warming grid on espresso machine",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sciogliere",
+      "italian": "sciogliere",
+      "english": "to dissolve / to melt away (sciogliere ogni ansia)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "scoraggiare",
+      "italian": "scoraggiare",
+      "english": "to discourage (lasciarsi scoraggiare)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sequenza",
+      "italian": "sequenza",
+      "english": "sequence of steps",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "setola",
+      "italian": "setola",
+      "english": "bristle (setole del pennello)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sicuramente",
+      "italian": "sicuramente",
+      "english": "definitely / surely",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sigillo",
+      "italian": "sigillo",
+      "english": "seal (sigillo del sacchetto)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "solitudine",
+      "italian": "solitudine",
+      "english": "solitude",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sommesso",
+      "italian": "sommesso",
+      "english": "subdued / soft (sibilo sommesso)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sorprendere",
+      "italian": "sorprendere",
+      "english": "to surprise (sorpreso dal sapore)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sospensione",
+      "italian": "sospensione",
+      "english": "suspension (luci a sospensione)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sottobicchiere",
+      "italian": "sottobicchiere",
+      "english": "coaster (sottobicchiere di noce)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "spalancato",
+      "italian": "spalancato",
+      "english": "wide open / thrown wide",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "sprigionarsi",
+      "italian": "sprigionarsi",
+      "english": "to be released / to burst forth (l'aroma si sprigiona)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "squillante",
+      "italian": "squillante",
+      "english": "clear and ringing (tintinnio squillante)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "subire",
+      "italian": "subire",
+      "english": "to endure / to suffer passively",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "suburra",
+      "italian": "Suburra",
+      "english": "Suburra (historic ancient district of Monti in Rome)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "tagliare",
+      "italian": "tagliare",
+      "english": "to cut (tagliare il sigillo)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "tangibile",
+      "italian": "tangibile",
+      "english": "tangible / concrete",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "tegola",
+      "italian": "tegola",
+      "english": "roof tile (tetti di tegole)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "test",
+      "italian": "test",
+      "english": "test / trial run",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "vellutato",
+      "italian": "vellutato",
+      "english": "velvety / smooth (corpo vellutato)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "veloce",
+      "italian": "veloce",
+      "english": "fast / quick (un caffè veloce)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "verticale",
+      "italian": "verticale",
+      "english": "vertical (pressione verticale)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 55
+    },
+    {
+      "lemmaId": "visibilmente",
+      "italian": "visibilmente",
+      "english": "visibly (visibilmente colpito)",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 55
     }
   ]
 }
