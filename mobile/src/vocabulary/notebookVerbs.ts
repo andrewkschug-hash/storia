@@ -26,6 +26,7 @@ export type VerbTransformation = {
 export type WordFamilyMember = {
   wordIt: string;
   wordEn: string;
+  kind: 'derivation' | 'inflection';
   relationship: string;
   chapterNumber?: number;
 };
@@ -58,6 +59,7 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
       {
         wordIt: 'la parola',
         wordEn: 'word',
+        kind: 'derivation',
         relationship: 'Noun derivative (root parl- / parol-)',
         chapterNumber: 5,
       },
@@ -133,12 +135,14 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
       {
         wordIt: 'il lavoro',
         wordEn: 'work / job',
+        kind: 'derivation',
         relationship: 'Noun derivative (root lavor-)',
         chapterNumber: 40,
       },
       {
         wordIt: 'il lavoratore',
         wordEn: 'worker',
+        kind: 'derivation',
         relationship: 'Agent noun (-tore)',
       },
     ],
@@ -221,6 +225,7 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
       {
         wordIt: 'lo stato',
         wordEn: 'state / been',
+        kind: 'inflection',
         relationship: 'Participle and noun',
       },
     ],
@@ -303,6 +308,7 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
       {
         wordIt: 'il capito',
         wordEn: 'understood',
+        kind: 'inflection',
         relationship: 'Past participle / realization marker',
         chapterNumber: 45,
       },
@@ -378,12 +384,14 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
       {
         wordIt: 'la scelta',
         wordEn: 'choice',
+        kind: 'derivation',
         relationship: 'Noun derivative (root scelt-)',
         chapterNumber: 55,
       },
       {
         wordIt: 'scelto',
         wordEn: 'chosen',
+        kind: 'inflection',
         relationship: 'Participle / Adjective',
         chapterNumber: 55,
       },
@@ -459,11 +467,13 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
       {
         wordIt: 'la volontà',
         wordEn: 'will / willpower',
+        kind: 'derivation',
         relationship: 'Noun derivative (root vol-)',
       },
       {
         wordIt: 'voluto',
         wordEn: 'wanted / chosen intentionally',
+        kind: 'inflection',
         relationship: 'Past participle',
         chapterNumber: 48,
       },
