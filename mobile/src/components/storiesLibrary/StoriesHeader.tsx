@@ -8,9 +8,9 @@ export function StoriesHeader() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={[styles.title, { color: colors.text }]}>La biblioteca</Text>
+      <Text style={[styles.title, { color: colors.text }]}>Library</Text>
       <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-        Scegli una storia da leggere.
+        Choose a story to read.
       </Text>
     </View>
   );

@@ -37,8 +37,8 @@ export function StoryRow({ row, expanded, onPress }: Props) {
         ) : null}
         <Text style={[styles.title, { color: colors.text }]}>{row.titleIt}</Text>
         <Text style={[Typography.caption, { color: colors.textSecondary, marginTop: 2 }]}>
-          {row.completed} / {row.total} capitoli
-          {row.locked ? ' · Bloccato 🔒' : ''}
+          {row.completed} / {row.total} chapters
+          {row.locked ? ' · Locked 🔒' : ''}
         </Text>
       </View>
       <AppSymbol

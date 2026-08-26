@@ -19,11 +19,11 @@ export function GlobalLanguageHeader({ breadcrumb, avatarId }: Props) {
       <View style={styles.languagePill}>
         <View style={[styles.spineDot, { backgroundColor: colors.tint }]} />
         <Text style={[type.chapterEyebrow, { color: colors.textSecondary, letterSpacing: 1.2 }]}>
-          Italiano 🇮🇹
+          Italian 🇮🇹
         </Text>
         {breadcrumb ? (
           <>
-            <Text style={[type.caption, { color: colors.textMuted }]}>/</Text>
+            <Text style={[type.caption, { color: colors.textMuted }]}>·</Text>
             <Text style={[type.caption, { color: colors.textSecondary }]}>{breadcrumb}</Text>
           </>
         ) : null}

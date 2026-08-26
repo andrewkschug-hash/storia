@@ -97,7 +97,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="stories"
         options={{
-          title: 'Biblioteca',
+          title: 'Library',
           tabBarIcon: ({ color }) => (
             <AppSymbol
               name={{
@@ -114,7 +114,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="vocabulary"
         options={{
-          title: 'Quaderno',
+          title: 'Notebook',
           tabBarIcon: ({ color }) => (
             <AppSymbol
               name={{
@@ -131,7 +131,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Profilo',
+          title: 'Profile',
           tabBarIcon: ({ color }) => (
             <AppSymbol
               name={{

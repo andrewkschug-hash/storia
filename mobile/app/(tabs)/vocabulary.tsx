@@ -51,7 +51,7 @@ export default function VocabularyScreen() {
         }}
         showsVerticalScrollIndicator={false}>
         <ScreenContent maxWidth={680}>
-          <GlobalLanguageHeader breadcrumb="Quaderno" />
+          <GlobalLanguageHeader breadcrumb="Notebook" />
 
           <View style={styles.header}>
             <Text
@@ -63,21 +63,21 @@ export default function VocabularyScreen() {
                   lineHeight: layout.isPhone ? 34 : 42,
                 },
               ]}>
-              Il tuo quaderno
+              Your Notebook
             </Text>
             <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 15 }]}>
-              Parole incontrate nelle tue storie.
+              Words you’ve discovered while reading stories.
             </Text>
           </View>
 
           {loading ? (
             <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xl }]}>
-              Caricamento…
+              Loading…
             </Text>
           ) : encountered === 0 ? (
             <View style={[styles.emptyBox, { backgroundColor: colors.backgroundElevated }]}>
               <Text style={[type.body, { color: colors.textSecondary }]}>
-                Inizia a leggere: le parole incontrate nel racconto appariranno qui nel tuo quaderno.
+                Start reading — words you encounter in stories will appear here in your notebook.
               </Text>
             </View>
           ) : (
@@ -85,12 +85,12 @@ export default function VocabularyScreen() {
               {/* DA RIVEDERE */}
               <View style={[styles.notebookSection, { borderLeftColor: colors.tint }]}>
                 <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-                  Da rivedere
+                  Words to review
                 </Text>
                 {practiceCount > 0 ? (
                   <>
                     <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.xs, fontSize: 20, lineHeight: 26 }]}>
-                      {practiceCount} {practiceCount === 1 ? 'parola da ripassare' : 'parole da ripassare'}
+                      {practiceCount} {practiceCount === 1 ? 'word to practice' : 'words to practice'}
                     </Text>
                     <View style={{ marginTop: Spacing.sm, gap: Spacing.xs }}>
                       {practiceItems.slice(0, 5).map((item) => (
@@ -114,7 +114,7 @@ export default function VocabularyScreen() {
                     <Pressable
                       onPress={() => router.push('/practice' as Href)}
                       accessibilityRole="button"
-                      accessibilityLabel="Ripassa ora"
+                      accessibilityLabel="Practice words now"
                       style={({ pressed }) => [
                         styles.practiceBtn,
                         {
@@ -125,13 +125,13 @@ export default function VocabularyScreen() {
                         },
                       ]}>
                       <Text style={[type.button, { color: colors.onButtonPrimary }]}>
-                        Ripassa le parole →
+                        Practice words →
                       </Text>
                     </Pressable>
                   </>
                 ) : (
                   <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-                    Sei in pari! Nessuna parola in attesa di ripasso.
+                    You’re all caught up! No words waiting for review.
                   </Text>
                 )}
               </View>
@@ -139,12 +139,12 @@ export default function VocabularyScreen() {
               {/* PAROLE CHE CONOSCI */}
               <View style={[styles.progressSection, { backgroundColor: colors.backgroundElevated }]}>
                 <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
-                  Parole che conosci
+                  Words you know
                 </Text>
                 <View style={styles.statsOverview}>
                   <Text style={[styles.totalNum, { color: colors.text }]}>{encountered}</Text>
                   <Text style={[type.caption, { color: colors.textSecondary, marginLeft: Spacing.sm }]}>
-                    parole scoperte
+                    words discovered
                   </Text>
                 </View>
                 <View style={{ marginTop: Spacing.sm, marginBottom: Spacing.md }}>
@@ -153,25 +153,25 @@ export default function VocabularyScreen() {
                 <View style={styles.stagesRow}>
                   <View style={styles.stageItem}>
                     <Text style={[styles.stageNum, { color: colors.statusNew }]}>{summary?.new ?? 0}</Text>
-                    <Text style={[type.caption, { color: colors.textMuted }]}>Nuove</Text>
+                    <Text style={[type.caption, { color: colors.textMuted }]}>New</Text>
                   </View>
                   <View style={styles.stageItem}>
                     <Text style={[styles.stageNum, { color: colors.statusLearning }]}>
                       {summary?.learning ?? 0}
                     </Text>
-                    <Text style={[type.caption, { color: colors.textMuted }]}>In pratica</Text>
+                    <Text style={[type.caption, { color: colors.textMuted }]}>In Practice</Text>
                   </View>
                   <View style={styles.stageItem}>
                     <Text style={[styles.stageNum, { color: colors.statusFamiliar }]}>
                       {summary?.familiar ?? 0}
                     </Text>
-                    <Text style={[type.caption, { color: colors.textMuted }]}>Familiari</Text>
+                    <Text style={[type.caption, { color: colors.textMuted }]}>Familiar</Text>
                   </View>
                   <View style={styles.stageItem}>
                     <Text style={[styles.stageNum, { color: colors.statusMastered }]}>
                       {summary?.mastered ?? 0}
                     </Text>
-                    <Text style={[type.caption, { color: colors.textMuted }]}>Conosciute</Text>
+                    <Text style={[type.caption, { color: colors.textMuted }]}>Known</Text>
                   </View>
                 </View>
               </View>
@@ -180,10 +180,10 @@ export default function VocabularyScreen() {
               {reinforcingWords.length > 0 ? (
                 <View style={styles.reinforcingSection}>
                   <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
-                    Parole recenti
+                    Recent words
                   </Text>
                   <Text style={[type.caption, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-                    Parole che ritrovi continuando la lettura
+                    Words you’ll see again as you continue reading
                   </Text>
                   <View style={{ marginTop: Spacing.sm, gap: Spacing.xs }}>
                     {reinforcingWords.map((word) => (
@@ -193,7 +193,7 @@ export default function VocabularyScreen() {
                         </Text>
                         {word.chapterNumber ? (
                           <Text style={[type.caption, { color: colors.textMuted }]}>
-                            Capitolo {word.chapterNumber}
+                            Chapter {word.chapterNumber}
                           </Text>
                         ) : null}
                       </View>
@@ -207,10 +207,10 @@ export default function VocabularyScreen() {
               (activity.gotIt > 0 || activity.almost > 0 || activity.notYet > 0) ? (
                 <View style={styles.activitySection}>
                   <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
-                    Attività recente
+                    Recent activity
                   </Text>
                   <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-                    {activity.gotIt} Conosciute · {activity.almost} Quasi · {activity.notYet} Da rivedere
+                    {activity.gotIt} Known · {activity.almost} Almost · {activity.notYet} Need review
                   </Text>
                 </View>
               ) : null}

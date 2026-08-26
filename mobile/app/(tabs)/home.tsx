@@ -150,7 +150,7 @@ export default function HomeScreen() {
 
           <View style={styles.greetingHeader}>
             <Text style={[type.chapterEyebrow, { color: colors.tint, letterSpacing: 1.6 }]}>
-              {greeting.toUpperCase()}
+              WELCOME BACK
             </Text>
             <Text
               style={[
@@ -162,7 +162,7 @@ export default function HomeScreen() {
                   lineHeight: layout.isPhone ? 34 : 42,
                 },
               ]}>
-              Continua la tua storia
+              Continue your story
             </Text>
           </View>
 
@@ -207,7 +207,7 @@ export default function HomeScreen() {
 
           <View style={[styles.editorialStatsBox, { backgroundColor: colors.backgroundElevated }]}>
             <Text style={[type.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
-              La tua lettura
+              Your Reading
             </Text>
             <View style={styles.editorialStatsLine}>
               <View style={styles.statItem}>
@@ -215,7 +215,7 @@ export default function HomeScreen() {
                   {summary?.encountered ?? 0}
                 </Text>
                 <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2 }]}>
-                  parole
+                  words
                 </Text>
               </View>
               <View style={[styles.verticalDivider, { backgroundColor: colors.divider }]} />
@@ -224,7 +224,7 @@ export default function HomeScreen() {
                   {(progress?.streakDays ?? 0) > 0 ? `${progress?.streakDays}` : '0'}
                 </Text>
                 <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2 }]}>
-                  giorni
+                  day streak
                 </Text>
               </View>
               <View style={[styles.verticalDivider, { backgroundColor: colors.divider }]} />
@@ -233,7 +233,7 @@ export default function HomeScreen() {
                   {completed}
                 </Text>
                 <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2 }]}>
-                  capitoli
+                  {completed === 1 ? 'chapter' : 'chapters'}
                 </Text>
               </View>
             </View>
@@ -248,14 +248,14 @@ export default function HomeScreen() {
           <View style={styles.browseSection}>
             <Pressable
               accessibilityRole="link"
-              accessibilityLabel="Sfoglia la biblioteca"
+              accessibilityLabel="Explore the library"
               onPress={() => router.push('/(tabs)/stories')}
               style={({ pressed }) => [
                 styles.browseLink,
                 { opacity: pressed ? 0.7 : 1 },
               ]}>
               <Text style={[type.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
-                La biblioteca · Tutte le storie →
+                Explore the library →
               </Text>
             </Pressable>
           </View>
@@ -317,9 +317,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   statNumber: {
-    fontFamily: 'CormorantGaramond_600SemiBold',
-    fontSize: 24,
-    lineHeight: 28,
+    fontFamily: 'Literata_600SemiBold',
+    fontSize: 22,
+    lineHeight: 26,
   },
   verticalDivider: {
     width: StyleSheet.hairlineWidth,

@@ -386,6 +386,14 @@
       "titleIt": "Il bivio",
       "difficultyLevel": 3,
       "file": "chapter-45.json"
+    },
+    {
+      "id": "luca-a-roma-46",
+      "number": 46,
+      "title": "Giulia's Offer",
+      "titleIt": "L'offerta di Giulia",
+      "difficultyLevel": 3,
+      "file": "chapter-46.json"
     }
   ]
 }

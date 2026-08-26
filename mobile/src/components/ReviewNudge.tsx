@@ -11,6 +11,7 @@ type Props = {
 
 export function ReviewNudge({ copy }: Props) {
   const { colors, type, minTouchTarget } = useTheme();
+  const ctaLabel = copy.cta ? (copy.cta.includes('→') ? copy.cta : `${copy.cta} →`) : null;
 
   return (
     <View
@@ -18,20 +19,20 @@ export function ReviewNudge({ copy }: Props) {
         styles.card,
         {
           backgroundColor: colors.backgroundElevated,
-          borderLeftWidth: 3,
+          borderLeftWidth: 3.5,
           borderLeftColor: colors.accentSecondary,
         },
       ]}>
       <Text style={[type.chapterEyebrow, { color: colors.accentSecondary, letterSpacing: 1.4 }]}>
-        Una piccola ripetizione
+        Quick Review
       </Text>
       <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.xs, fontSize: 20, lineHeight: 26 }]}>
-        {copy.headline || 'Parole da rivedere'}
+        {copy.headline || 'Words to review'}
       </Text>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
-        {copy.detail || 'Ripassale prima della prossima storia.'}
+        {copy.detail || 'Review words you encountered in your recent reading.'}
       </Text>
-      {copy.cta ? (
+      {ctaLabel ? (
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Review vocabulary"
@@ -44,7 +45,7 @@ export function ReviewNudge({ copy }: Props) {
             },
           ]}>
           <Text style={[type.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
-            {copy.cta} →
+            {ctaLabel}
           </Text>
         </Pressable>
       ) : null}

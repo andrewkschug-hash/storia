@@ -244,7 +244,7 @@ export default function StoriesScreen() {
         <ScreenContent
           maxWidth={680}
           style={{ paddingHorizontal: layout.isPhone ? 20 : 24 }}>
-          <GlobalLanguageHeader breadcrumb="Biblioteca" />
+          <GlobalLanguageHeader breadcrumb="Library" />
           <StoriesHeader />
 
           {showInitialSpinner ? (

@@ -9,10 +9,10 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
 }
 
 const FUTURE_LEVELS = [
-  { level: 'B1', title: 'Lettura indipendente', detail: 'Storie più lunghe e conversazioni autentiche' },
-  { level: 'B1+', title: 'Narrazioni estese', detail: 'Trame articolate e descrizioni ricche' },
-  { level: 'B2', title: 'Scelte e complessità', detail: 'Saggi, romanzi e italiano naturale' },
-  { level: 'C1', title: 'Fluidità avanzata', detail: 'Espressioni idiomatiche e sfumature letterarie' },
+  { level: 'B1', title: 'Independent Reading', detail: 'Longer stories and natural dialogue' },
+  { level: 'B1+', title: 'Extended Narratives', detail: 'Rich descriptions and deeper plots' },
+  { level: 'B2', title: 'Complex Reading', detail: 'Full short novels and idiomatic prose' },
+  { level: 'C1', title: 'Advanced Fluency', detail: 'Nuance, idioms, and literary style' },
 ] as const;
 
 export function LockedLevelsAccordion() {
@@ -50,10 +50,10 @@ export function LockedLevelsAccordion() {
         ]}>
         <View style={styles.headerText}>
           <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
-            Più avanti
+            Upcoming Levels
           </Text>
           <Text style={[styles.title, { color: colors.textSecondary }]}>
-            Nuove storie appariranno mentre il tuo italiano cresce.
+            More stories will appear as your Italian grows.
           </Text>
         </View>
         <Animated.Text style={{ transform: [{ rotate: chevronRotate }], color: colors.textMuted, fontSize: 16 }}>

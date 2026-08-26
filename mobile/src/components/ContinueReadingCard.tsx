@@ -40,7 +40,7 @@ export function ContinueReadingCard({
         },
       ]}>
       <Text style={[type.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-        {eyebrow ?? (isStart ? 'Inizia a leggere' : 'Continua la tua storia')}
+        {eyebrow ?? (isStart ? 'START READING' : 'CONTINUE READING')}
       </Text>
       {storyTitleIt ? (
         <Text style={[type.caption, { color: colors.textSecondary, marginTop: Spacing.xs, letterSpacing: 0.8 }]}>
@@ -61,9 +61,9 @@ export function ContinueReadingCard({
       </Text>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
         {subtitle ??
-          `Capitolo ${progress.chapterNumber} di ${progress.totalChapters}${
+          `Chapter ${progress.chapterNumber} of ${progress.totalChapters}${
             progress.chaptersCompleted > 0
-              ? ` · ${progress.chaptersCompleted} completati`
+              ? ` · ${progress.chaptersCompleted} completed`
               : ''
           }`}
       </Text>
@@ -72,11 +72,11 @@ export function ContinueReadingCard({
         <ProgressBar progress={progress.percentComplete / 100} />
         <View style={styles.progressMeta}>
           <Text style={[type.caption, { color: colors.textMuted }]}>
-            {progress.percentComplete}% della storia
+            {progress.percentComplete}% of story
           </Text>
           {chapterPercent > 0 && chapterPercent < 100 ? (
             <Text style={[type.caption, { color: colors.textSecondary }]}>
-              {chapterPercent}% di questo capitolo
+              {chapterPercent}% of this chapter
             </Text>
           ) : null}
         </View>
@@ -85,7 +85,7 @@ export function ContinueReadingCard({
       <Pressable
         onPress={onContinue}
         accessibilityRole="button"
-        accessibilityLabel={`Continua a leggere ${chapterTitleIt}`}
+        accessibilityLabel={`Continue reading ${chapterTitleIt}`}
         style={({ pressed }) => [
           styles.button,
           {
@@ -95,7 +95,7 @@ export function ContinueReadingCard({
           },
         ]}>
         <Text style={[type.button, { color: colors.onButtonPrimary }]}>
-          {buttonLabel ?? (isStart ? 'Inizia a leggere →' : 'Continua a leggere →')}
+          {buttonLabel ?? (isStart ? 'Start reading →' : 'Continue reading →')}
         </Text>
       </Pressable>
     </View>

@@ -29,7 +29,7 @@ export function A2PlusPathwayPanel({
   onShowHint,
 }: Props) {
   const { colors } = useTheme();
-  const [expandedStoryId, setExpandedStoryId] = useState<string | null>(primaryPathwayStoryId);
+  const [expandedStoryId, setExpandedStoryId] = useState<string | null>(null);
 
   if (!a2PlusAccess) {
     return (
@@ -37,10 +37,10 @@ export function A2PlusPathwayPanel({
         <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
         <View style={styles.breakTextContent}>
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-            Una pausa di lettura
+            A Reading Break
           </Text>
           <Text style={[styles.breakTitle, { color: colors.text }]}>
-            Anche Luca, ogni tanto, cambia storia.
+            Even Luca changes stories once in a while.
           </Text>
           <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
             {lockedHint}
@@ -57,13 +57,13 @@ export function A2PlusPathwayPanel({
         <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
         <View style={styles.breakTextContent}>
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-            Una pausa di lettura
+            A Reading Break
           </Text>
           <Text style={[styles.breakTitle, { color: colors.text }]}>
-            Anche Luca, ogni tanto, cambia storia.
+            Even Luca changes stories once in a while.
           </Text>
           <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-            Dopo una giornata lunga, Luca cerca qualcosa di diverso da leggere. Nuovi generi, nuovi mondi, stessa lingua.
+            Explore short novels and stories chosen for you. New genres, new worlds, same Italian.
           </Text>
         </View>
         <View style={[styles.hairline, { backgroundColor: colors.divider }]} />

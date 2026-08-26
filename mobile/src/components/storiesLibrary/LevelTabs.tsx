@@ -11,10 +11,10 @@ type Props = {
 };
 
 const TAB_DESCRIPTIONS: Record<LibraryTab, { label: string; sub: string }> = {
-  A1: { label: 'A1', sub: 'Primi passi' },
-  'A1+': { label: 'A1+', sub: 'Più sicurezza' },
-  A2: { label: 'A2', sub: 'Leggere di più' },
-  'A2+': { label: 'A2+', sub: 'Esplorare' },
+  A1: { label: 'A1', sub: 'First steps' },
+  'A1+': { label: 'A1+', sub: 'Confidence' },
+  A2: { label: 'A2', sub: 'Fluency' },
+  'A2+': { label: 'A2+', sub: 'Exploration' },
 };
 
 export function LevelTabs({ active, onChange }: Props) {
@@ -23,7 +23,7 @@ export function LevelTabs({ active, onChange }: Props) {
   return (
     <View style={styles.wrap}>
       <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4, marginBottom: Spacing.sm }]}>
-        Il tuo percorso
+        Reading Pathway
       </Text>
       <View style={styles.shelfRow}>
         {LIBRARY_TABS.map((tab) => {

@@ -41,7 +41,7 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
         </Text>
         {primary ? (
           <Text style={[Typography.caption, { color: colors.highlight, fontFamily: 'Literata_600SemiBold' }]}>
-            ★ Scelta corrente
+            ★ Current Choice
           </Text>
         ) : null}
       </View>
@@ -73,10 +73,10 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
       <View style={styles.footer}>
         {available ? (
           <Text style={[Typography.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
-            {selected ? 'Chiudi capitoli ▴' : primary ? 'Continua la lettura →' : 'Leggi questa storia →'}
+            {selected ? 'Close chapters ▴' : primary ? 'Continue reading →' : 'Read this story →'}
           </Text>
         ) : (
-          <Text style={[Typography.label, { color: colors.textMuted }]}>In arrivo 🔒</Text>
+          <Text style={[Typography.label, { color: colors.textMuted }]}>Coming soon 🔒</Text>
         )}
       </View>
     </Pressable>

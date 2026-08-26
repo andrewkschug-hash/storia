@@ -65,7 +65,7 @@ export default function ProfileScreen() {
     const name = displayName.trim();
     if (!account || name === account.displayName) return;
     if (!name) {
-      setError('Inserisci un nome visibile.');
+      setError('Please enter a display name.');
       setDisplayName(account.displayName);
       return;
     }
@@ -76,7 +76,7 @@ export default function ProfileScreen() {
       setAccount(updated);
       setDisplayName(updated.displayName);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Impossibile aggiornare il nome.');
+      setError(err instanceof Error ? err.message : 'Unable to update name.');
     } finally {
       setSaving(false);
     }
@@ -90,7 +90,7 @@ export default function ProfileScreen() {
       const updated = await updateAccountProfile({ avatarId });
       setAccount(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Impossibile aggiornare il ritratto.');
+      setError(err instanceof Error ? err.message : 'Unable to update portrait.');
     } finally {
       setSaving(false);
     }
@@ -104,17 +104,17 @@ export default function ProfileScreen() {
         router.replace('/account' as Href);
       } catch {
         setSigningOut(false);
-        setError('Impossibile disconnettersi. Riprova.');
+        setError('Unable to sign out. Please try again.');
       }
     };
 
     if (Platform.OS === 'web') {
-      if (typeof window !== 'undefined' && window.confirm('Vuoi uscire da Storibase?')) void run();
+      if (typeof window !== 'undefined' && window.confirm('Are you sure you want to sign out of Storibase?')) void run();
       return;
     }
-    Alert.alert('Esci', 'Vuoi uscire da Storibase?', [
-      { text: 'Annulla', style: 'cancel' },
-      { text: 'Esci', style: 'destructive', onPress: () => void run() },
+    Alert.alert('Sign out', 'Are you sure you want to sign out of Storibase?', [
+      { text: 'Cancel', style: 'cancel' },
+      { text: 'Sign out', style: 'destructive', onPress: () => void run() },
     ]);
   };
 
@@ -138,7 +138,7 @@ export default function ProfileScreen() {
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}>
         <ScreenContent maxWidth={680}>
-          <GlobalLanguageHeader breadcrumb="Profilo" />
+          <GlobalLanguageHeader breadcrumb="Profile" />
 
           <View style={styles.hero}>
             <AvatarBadge avatarId={account.avatarId} size="lg" />
@@ -158,17 +158,17 @@ export default function ProfileScreen() {
           <View style={[styles.divider, { backgroundColor: colors.divider }]} />
 
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-            Il tuo account
+            Your Account
           </Text>
 
           <Text style={[styles.fieldLabel, type.caption, { color: colors.textSecondary }]}>
-            Nome visibile
+            Display name
           </Text>
           <TextInput
             value={displayName}
             onChangeText={setDisplayName}
             onBlur={() => void saveName()}
-            placeholder="Il tuo nome"
+            placeholder="Your name"
             placeholderTextColor={colors.textMuted}
             autoCapitalize="words"
             autoCorrect={false}
@@ -185,10 +185,10 @@ export default function ProfileScreen() {
           />
 
           <Text style={[styles.fieldLabel, type.caption, { color: colors.textSecondary }]}>
-            Ritratto
+            Portrait
           </Text>
           <Text style={[type.caption, { color: colors.textMuted }]}>
-            Scegli il tuo ritratto Storibase.
+            Choose your Storibase portrait.
           </Text>
           <View style={styles.avatarRow}>
             {AVATAR_PRESETS.map((preset) => {
@@ -234,7 +234,7 @@ export default function ProfileScreen() {
               },
             ]}>
             <Text style={[type.label, { color: colors.danger }]}>
-              {signingOut ? 'Disconnessione in corso…' : 'Esci dall’account'}
+              {signingOut ? 'Signing out…' : 'Sign out'}
             </Text>
           </Pressable>
         </ScreenContent>
