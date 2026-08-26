@@ -418,6 +418,14 @@
       "titleIt": "Un caffè diverso",
       "difficultyLevel": 3,
       "file": "chapter-49.json"
+    },
+    {
+      "id": "luca-a-roma-50",
+      "number": 50,
+      "title": "The Mysterious Customer",
+      "titleIt": "Il cliente misterioso",
+      "difficultyLevel": 3,
+      "file": "chapter-50.json"
     }
   ]
 }
