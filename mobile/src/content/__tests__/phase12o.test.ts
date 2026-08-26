@@ -291,7 +291,7 @@ describe('Phase 12O readiness and extensibility', () => {
     const expandedEval = evaluateCrossStoryA1Readiness(expanded);
     expect(expandedEval.metrics.totalA1Chapters).toBe(currentEval.metrics.totalA1Chapters + 4);
     expect(expanded.some((signal) => signal.storyId === 'mystery-night')).toBe(true);
-    expect(getContentBundle(LUCA_STORY_ID).chapters.size).toBe(40);
+    expect(getContentBundle(LUCA_STORY_ID).chapters.size).toBeGreaterThanOrEqual(40);
     expect(getContentBundle('luca-prima-di-roma-01').chapters.size).toBe(6);
   });
 

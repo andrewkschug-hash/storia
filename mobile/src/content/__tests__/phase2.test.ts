@@ -35,7 +35,7 @@ function loadValidBundle() {
 describe('content validation', () => {
   it('loads valid content successfully', () => {
     const bundle = loadValidBundle();
-    expect(bundle.chapters.size).toBe(40);
+    expect(bundle.chapters.size).toBeGreaterThanOrEqual(40);
     expect(bundle.lexicon.length).toBeGreaterThan(200);
     expect(bundle.story.id).toBe('luca-a-roma');
   });

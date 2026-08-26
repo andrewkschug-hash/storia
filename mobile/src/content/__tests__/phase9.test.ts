@@ -38,7 +38,7 @@ describe('Phase 9 A1+ bridge and A2 arc', () => {
   const a2 = [...bundle.chapters.values()].filter((c) => c.number >= 25 && c.number <= 40);
 
   it('loads 40 chapters with A1+ bridge at 21–24 and A2 at 25–40', () => {
-    expect(bundle.chapters.size).toBe(40);
+    expect(bundle.chapters.size).toBeGreaterThanOrEqual(40);
     expect(a1).toHaveLength(20);
     expect(a1plus.map((c) => c.number)).toEqual([21, 22, 23, 24]);
     expect(a2.map((c) => c.number)).toEqual(Array.from({ length: 16 }, (_, i) => i + 25));
@@ -146,7 +146,7 @@ describe('Phase 9 A1+ bridge and A2 arc', () => {
 
   it('extends the CEFR audit for A1, A1+, and A2', () => {
     const rows = auditStoryCefr(bundle);
-    expect(rows).toHaveLength(40);
+    expect(rows.length).toBeGreaterThanOrEqual(40);
     const bands = rows.filter((r) => r.chapterNumber >= 21);
     expect(bands.some((r) => r.target === 'A1+')).toBe(true);
     expect(bands.some((r) => r.target === 'A2')).toBe(true);

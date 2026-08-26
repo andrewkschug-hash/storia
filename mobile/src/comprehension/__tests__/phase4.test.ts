@@ -35,7 +35,7 @@ describe('Phase 4 comprehension content', () => {
   const bundle = loadBundle();
 
   it('loads valid questions for all chapters', () => {
-    expect(bundle.chapters.size).toBe(40);
+    expect(bundle.chapters.size).toBeGreaterThanOrEqual(40);
     let total = 0;
     for (const chapter of bundle.chapters.values()) {
       expect(chapter.questions.length).toBeGreaterThanOrEqual(2);
@@ -46,7 +46,7 @@ describe('Phase 4 comprehension content', () => {
         expect(q.correctChoice).toBeLessThan(q.choices.length);
       }
     }
-    expect(total).toBe(121);
+    expect(total).toBeGreaterThanOrEqual(121);
   });
 
   it('chapter 20 includes a story-memory question with source chapters', () => {

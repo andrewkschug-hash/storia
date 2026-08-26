@@ -153,7 +153,7 @@ describe('Phase 8 chapter difficulty and audit', () => {
   const audit = auditStoryCefr(bundle);
 
   it('calculates chapter difficulty without rewriting content', () => {
-    expect(audit).toHaveLength(40);
+    expect(audit.length).toBeGreaterThanOrEqual(40);
     const ch1 = audit.find((c) => c.chapterNumber === 1)!;
     expect(ch1.target).toBe('A1');
     expect(ch1.estimated).toMatch(/^A1/);
@@ -307,7 +307,7 @@ describe('Phase 8 authoring template and story arcs', () => {
 
   it('exposes planned later arcs and available A1–A1+–A2 chapters', () => {
     expect(bundle.story.arcs.length).toBeGreaterThanOrEqual(5);
-    expect(bundle.chapters.size).toBe(40);
+    expect(bundle.chapters.size).toBeGreaterThanOrEqual(40);
     const a1Plus = bundle.story.arcs.find((a) => a.cefrLevel === 'A1+');
     const a2 = bundle.story.arcs.find((a) => a.cefrLevel === 'A2');
     expect(a1Plus?.status).toBe('available');
@@ -319,11 +319,15 @@ describe('Phase 8 authoring template and story arcs', () => {
     const a1PlusChapters = [...bundle.chapters.values()].filter(
       (c) => c.number >= 21 && c.number <= 24,
     );
-    const a2Chapters = [...bundle.chapters.values()].filter((c) => c.number >= 25);
+    const a2Chapters = [...bundle.chapters.values()].filter(
+      (c) => c.number >= 25 && c.number <= 40,
+    );
+    const b1Chapters = [...bundle.chapters.values()].filter((c) => c.number >= 41);
     expect(a1Chapters.every((c) => c.cefrTarget === 'A1')).toBe(true);
     expect(a1PlusChapters.every((c) => c.cefrTarget === 'A1+')).toBe(true);
     expect(a2Chapters.every((c) => c.cefrTarget === 'A2')).toBe(true);
     expect(a2Chapters).toHaveLength(16);
+    expect(b1Chapters.every((c) => c.cefrTarget === 'B1')).toBe(true);
   });
 
   it('creates an A2 authoring template without filling chapters', () => {

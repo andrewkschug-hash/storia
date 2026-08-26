@@ -55,7 +55,7 @@ export function validateStoryCatalog(): CatalogValidationResult {
   if (!luca) errors.push('Catalog missing luca-a-roma');
   else {
     if (luca.status !== 'available') errors.push('luca-a-roma must remain available');
-    if (luca.chapterCount !== 40) errors.push('luca-a-roma chapterCount must stay 40');
+    if (luca.chapterCount < 40) errors.push('luca-a-roma chapterCount must be at least 40');
     if (luca.narrativeArc !== LUCA_STORY_ID) errors.push('luca-a-roma narrativeArc must stay luca-a-roma');
   }
 

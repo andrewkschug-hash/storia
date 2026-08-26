@@ -61,7 +61,7 @@ describe('Phase 12L pre-Rome wiring', () => {
       expect(bundle.chapters.has('luca-a-roma-01')).toBe(false);
     }
     const luca = getContentBundle(LUCA_STORY_ID);
-    expect(luca.chapters.size).toBe(40);
+    expect(luca.chapters.size).toBeGreaterThanOrEqual(40);
     expect(luca.chapters.get('luca-a-roma-01')?.titleIt).toBe('Arrivo');
     expect(getCatalogStory(ELENA_STORY_ID)?.status).toBe('draft');
     expect(() => getContentBundle(ELENA_STORY_ID)).toThrow(/draft/);

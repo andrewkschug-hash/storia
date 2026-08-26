@@ -44,7 +44,7 @@ describe('La casa delle finestre wiring', () => {
     expect(bundle.chapters.get('la-casa-delle-finestre-24')?.titleIt).toBe("L'archivio");
     expect(getChapter('la-casa-delle-finestre-01', CASA_STORY_ID)?.paragraphs[0].sentences[0].english).toBeTruthy();
     expect(bundle.entitySource?.storyLocalCharacterIds).toContain('irene-colombo');
-    expect(getContentBundle(LUCA_STORY_ID).chapters.size).toBe(40);
+    expect(getContentBundle(LUCA_STORY_ID).chapters.size).toBeGreaterThanOrEqual(40);
   });
 
   it('keeps progress keyed by storyId', async () => {
