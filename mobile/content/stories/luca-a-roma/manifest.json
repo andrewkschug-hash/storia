@@ -450,6 +450,14 @@
       "titleIt": "Un'alleanza inaspettata",
       "difficultyLevel": 3,
       "file": "chapter-53.json"
+    },
+    {
+      "id": "luca-a-roma-54",
+      "number": 54,
+      "title": "Bruno's Last Service",
+      "titleIt": "L'ultimo servizio di Bruno",
+      "difficultyLevel": 3,
+      "file": "chapter-54.json"
     }
   ]
 }
