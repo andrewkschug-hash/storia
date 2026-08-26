@@ -354,6 +354,14 @@
       "titleIt": "Un mercoledì qualunque",
       "difficultyLevel": 3,
       "file": "chapter-41.json"
+    },
+    {
+      "id": "luca-a-roma-42",
+      "number": 42,
+      "title": "Bruno's Ledgers",
+      "titleIt": "I registri di Bruno",
+      "difficultyLevel": 3,
+      "file": "chapter-42.json"
     }
   ]
 }
