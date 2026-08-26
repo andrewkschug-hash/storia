@@ -362,6 +362,14 @@
       "titleIt": "I registri di Bruno",
       "difficultyLevel": 3,
       "file": "chapter-42.json"
+    },
+    {
+      "id": "luca-a-roma-43",
+      "number": 43,
+      "title": "The News",
+      "titleIt": "La notizia",
+      "difficultyLevel": 3,
+      "file": "chapter-43.json"
     }
   ]
 }
