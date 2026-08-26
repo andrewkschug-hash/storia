@@ -272,6 +272,16 @@ export async function updateAccountProfile(patch: UpdateProfileInput): Promise<L
   return account;
 }
 
+export function getAuthRedirectUrl(): string | undefined {
+  if (process.env.EXPO_PUBLIC_SITE_URL?.trim()) {
+    return process.env.EXPO_PUBLIC_SITE_URL.trim();
+  }
+  if (typeof window !== 'undefined' && window.location?.origin) {
+    return window.location.origin;
+  }
+  return undefined;
+}
+
 export async function signUpWithPassword(input: PasswordAuthInput): Promise<LocalAccount> {
   requireSupabaseForAuth();
   const email = input.email.trim();
@@ -288,10 +298,14 @@ export async function signUpWithPassword(input: PasswordAuthInput): Promise<Loca
   }
 
   const avatarId = defaultAvatarIdForEmail(email);
+  const emailRedirectTo = getAuthRedirectUrl();
   const { data, error } = await getSupabase().auth.signUp({
     email,
     password,
-    options: { data: { display_name: displayName, avatar_id: avatarId } },
+    options: {
+      data: { display_name: displayName, avatar_id: avatarId },
+      ...(emailRedirectTo ? { emailRedirectTo } : {}),
+    },
   });
   if (error) throw new Error(error.message);
   if (!data.session?.user) {

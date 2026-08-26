@@ -509,6 +509,7 @@ export default function VoiceLabScreen() {
             </View>
           );
         })()}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
