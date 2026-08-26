@@ -9,6 +9,10 @@ import {
   NOTEBOOK_MOMENTS,
   NOTEBOOK_PHRASES,
 } from '@/src/vocabulary/notebookData';
+import {
+  getVerbPattern,
+  NOTEBOOK_VERB_PATTERNS,
+} from '@/src/vocabulary/notebookVerbs';
 
 describe('notebookData referential integrity', () => {
   const bundle = getContentBundle(LUCA_STORY_ID);
@@ -103,5 +107,41 @@ describe('notebookData referential integrity', () => {
       expect(insight.exampleIt.length).toBeGreaterThan(0);
       expect(insight.exampleEn.length).toBeGreaterThan(0);
     }
+  });
+
+  it('guarantees all verb patterns reference valid lexicon entries and chapters', () => {
+    const seenVerbs = new Set<string>();
+
+    for (const verb of NOTEBOOK_VERB_PATTERNS) {
+      expect(seenVerbs.has(verb.lemmaId)).toBe(false);
+      seenVerbs.add(verb.lemmaId);
+
+      const entry = bundle.lexiconById.get(verb.lemmaId);
+      expect(entry, `Verb "${verb.lemmaId}" must exist in italian-core lexicon`).toBeTruthy();
+      expect(verb.infinitive.length).toBeGreaterThan(0);
+      expect(verb.english.length).toBeGreaterThan(0);
+      expect(verb.whyItChanges.length).toBeGreaterThan(15);
+
+      for (const person of ['io', 'tu', 'luiLei', 'noi', 'voi', 'loro'] as const) {
+        expect(verb.presente[person].length).toBeGreaterThan(0);
+        expect(verb.passatoProssimo[person].length).toBeGreaterThan(0);
+        expect(verb.imperfetto[person].length).toBeGreaterThan(0);
+      }
+
+      expect(verb.transformations.length).toBeGreaterThanOrEqual(3);
+      for (const t of verb.transformations) {
+        expect(t.form.length).toBeGreaterThan(0);
+        expect(t.tenseName.length).toBeGreaterThan(0);
+        expect(t.concept.length).toBeGreaterThan(0);
+        expect(t.quoteIt.length).toBeGreaterThan(0);
+        expect(t.quoteEn.length).toBeGreaterThan(0);
+        expect(t.chapterNumber).toBeGreaterThanOrEqual(1);
+        expect(t.chapterNumber).toBeLessThanOrEqual(totalChapters);
+      }
+    }
+
+    expect(getVerbPattern('parlare')).toBeTruthy();
+    expect(getVerbPattern('essere')?.presente.io).toBe('sono');
+    expect(getVerbPattern('non-existent-verb')).toBeNull();
   });
 });

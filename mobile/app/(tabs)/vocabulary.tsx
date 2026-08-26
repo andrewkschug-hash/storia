@@ -23,10 +23,14 @@ import {
   type NotebookMoment,
   type NotebookPhrase,
 } from '@/src/vocabulary/notebookData';
+import {
+  NOTEBOOK_VERB_PATTERNS,
+  type NotebookVerbPattern,
+} from '@/src/vocabulary/notebookVerbs';
 import { useYourItalian } from '@/src/vocabulary/useYourItalian';
 import { speakItalian } from '@/src/walkthrough/speakItalian';
 
-type NotebookTab = 'parole' | 'frasi' | 'grammatica' | 'momenti';
+type NotebookTab = 'parole' | 'frasi' | 'grammatica' | 'verbi' | 'momenti';
 
 function chapterIdForNumber(n: number): string {
   return n < 10 ? `luca-a-roma-0${n}` : `luca-a-roma-${n}`;
@@ -111,7 +115,7 @@ export default function VocabularyScreen() {
               Luca a Roma · B1
             </Text>
             <Text style={[type.body, { color: colors.textSecondary, marginTop: 4, fontSize: 15 }]}>
-              Parole, frasi e momenti che hai incontrato nel tuo viaggio.
+              Parole, frasi, verbi e momenti che hai incontrato nel tuo viaggio.
             </Text>
           </View>
 
@@ -147,13 +151,14 @@ export default function VocabularyScreen() {
             </View>
           ) : null}
 
-          {/* 4 SEGMENTED NOTEBOOK TABS */}
+          {/* 5 SEGMENTED NOTEBOOK TABS */}
           <View style={[styles.tabBar, { borderBottomColor: colors.divider }]}>
             {(
               [
                 { id: 'parole', label: 'Parole', icon: '📖' },
                 { id: 'frasi', label: 'Frasi', icon: '✨' },
                 { id: 'grammatica', label: 'Grammatica', icon: '💡' },
+                { id: 'verbi', label: 'Verbi', icon: '🔄' },
                 { id: 'momenti', label: 'Momenti', icon: '🗺️' },
               ] as const
             ).map((tab) => {
@@ -174,7 +179,7 @@ export default function VocabularyScreen() {
                       type.body,
                       {
                         color: active ? colors.text : colors.textMuted,
-                        fontSize: 14,
+                        fontSize: 13,
                         fontFamily: active ? 'Literata_600SemiBold' : 'Literata_400Regular',
                       },
                     ]}>
@@ -230,7 +235,18 @@ export default function VocabularyScreen() {
                 />
               )}
 
-              {/* TAB 4: MOMENTI */}
+              {/* TAB 4: VERBI */}
+              {activeTab === 'verbi' && (
+                <VerbiSection
+                  verbPatterns={NOTEBOOK_VERB_PATTERNS}
+                  colors={colors}
+                  type={type}
+                  minTouchTarget={minTouchTarget}
+                  onNavigateChapter={handleNavigateChapter}
+                />
+              )}
+
+              {/* TAB 5: MOMENTI */}
               {activeTab === 'momenti' && (
                 <MomentiSection
                   moments={NOTEBOOK_MOMENTS}
@@ -555,6 +571,230 @@ function GrammaticaSection({
   );
 }
 
+function VerbiSection({
+  verbPatterns,
+  colors,
+  type,
+  minTouchTarget,
+  onNavigateChapter,
+}: SectionProps & {
+  verbPatterns: readonly NotebookVerbPattern[];
+}) {
+  const [selectedVerbId, setSelectedVerbId] = useState<string>(verbPatterns[0]?.lemmaId ?? 'parlare');
+  const [subTab, setSubTab] = useState<'persona' | 'tempo' | 'storia'>('storia');
+
+  const selectedVerb = verbPatterns.find((v) => v.lemmaId === selectedVerbId) ?? verbPatterns[0];
+
+  return (
+    <View style={{ gap: Spacing.md }}>
+      <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.3 }]}>
+        Come cambiano le parole
+      </Text>
+      <Text style={[type.caption, { color: colors.textSecondary, marginBottom: Spacing.xs }]}>
+        Scopri come le forme verbali si trasformano in base alla persona, al tempo e all'esperienza di Luca.
+      </Text>
+
+      {/* VERB SELECTOR PILLS */}
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: Spacing.xs }}>
+        {verbPatterns.map((verb) => {
+          const active = verb.lemmaId === selectedVerb.lemmaId;
+          return (
+            <Pressable
+              key={verb.lemmaId}
+              onPress={() => setSelectedVerbId(verb.lemmaId)}
+              accessibilityRole="button"
+              style={({ pressed }) => [
+                styles.verbPill,
+                {
+                  backgroundColor: active ? colors.tint : colors.backgroundElevated,
+                  borderColor: active ? colors.tint : colors.border,
+                  opacity: pressed ? 0.8 : 1,
+                  minHeight: minTouchTarget,
+                },
+              ]}>
+              <Text
+                style={[
+                  type.body,
+                  {
+                    color: active ? colors.onTint : colors.text,
+                    fontFamily: active ? 'Literata_600SemiBold' : 'Literata_400Regular',
+                    fontSize: 13,
+                  },
+                ]}>
+                {verb.infinitive}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </ScrollView>
+
+      {/* SELECTED VERB CARD */}
+      <View style={[styles.verbCard, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+        <View style={styles.verbCardHeader}>
+          <View>
+            <Text style={[type.heroTitle, { color: colors.text, fontSize: 22, lineHeight: 28 }]}>
+              {selectedVerb.infinitive}
+            </Text>
+            <Text style={[type.caption, { color: colors.textSecondary, fontSize: 14 }]}>
+              {selectedVerb.english} · Radice: <Text style={{ fontFamily: 'Literata_600SemiBold' }}>{selectedVerb.root}</Text>
+            </Text>
+          </View>
+          <View style={[styles.groupBadge, { backgroundColor: colors.backgroundHigher }]}>
+            <Text style={[type.caption, { color: colors.tint, fontFamily: 'Literata_600SemiBold', fontSize: 11 }]}>
+              {selectedVerb.regularGroup.toUpperCase()}
+            </Text>
+          </View>
+        </View>
+
+        {/* WHY IT CHANGES */}
+        <View style={[styles.whyChangesBox, { backgroundColor: colors.backgroundAtmosphereTop, borderLeftColor: colors.tint }]}>
+          <Text style={[type.caption, { color: colors.text, fontSize: 12, lineHeight: 17 }]}>
+            💡 {selectedVerb.whyItChanges}
+          </Text>
+        </View>
+
+        {/* VERB SUB-TABS */}
+        <View style={[styles.subTabBar, { borderBottomColor: colors.divider }]}>
+          {(
+            [
+              { id: 'storia', label: '📖 Nella storia' },
+              { id: 'persona', label: '👤 Persona' },
+              { id: 'tempo', label: '⏳ Tempi' },
+            ] as const
+          ).map((st) => {
+            const active = subTab === st.id;
+            return (
+              <Pressable
+                key={st.id}
+                onPress={() => setSubTab(st.id)}
+                style={({ pressed }) => [
+                  styles.subTabItem,
+                  active && { borderBottomColor: colors.tint, borderBottomWidth: 2 },
+                  { opacity: pressed ? 0.7 : 1 },
+                ]}>
+                <Text
+                  style={[
+                    type.caption,
+                    {
+                      color: active ? colors.text : colors.textMuted,
+                      fontFamily: active ? 'Literata_600SemiBold' : 'Literata_400Regular',
+                      fontSize: 12,
+                    },
+                  ]}>
+                  {st.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+
+        {/* SUB-TAB CONTENT */}
+        {subTab === 'storia' && (
+          <View style={{ gap: Spacing.sm, marginTop: Spacing.xs }}>
+            {selectedVerb.transformations.map((trans) => (
+              <View
+                key={trans.form}
+                style={[styles.transRow, { backgroundColor: colors.backgroundHigher, borderColor: colors.border }]}>
+                <View style={styles.transHeader}>
+                  <Text style={[type.heroTitle, { color: colors.tint, fontSize: 16, lineHeight: 20 }]}>
+                    {trans.form}
+                  </Text>
+                  <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, fontSize: 11 }]}>
+                    {trans.tenseName}
+                  </Text>
+                </View>
+
+                <Text style={[type.caption, { color: colors.text, fontSize: 12, marginTop: 2 }]}>
+                  {trans.concept}
+                </Text>
+
+                <View style={{ marginTop: 4 }}>
+                  <Text style={[type.body, { color: colors.text, fontSize: 13, fontStyle: 'italic' }]}>
+                    «{trans.quoteIt}»
+                  </Text>
+                  <Text style={[type.caption, { color: colors.textSecondary, fontSize: 11, marginTop: 1 }]}>
+                    {trans.quoteEn}
+                  </Text>
+                </View>
+
+                <Pressable
+                  onPress={() => onNavigateChapter(trans.chapterNumber)}
+                  accessibilityRole="button"
+                  style={{ alignSelf: 'flex-end', marginTop: 4 }}>
+                  <Text style={[type.caption, { color: colors.tint, fontFamily: 'Literata_600SemiBold', fontSize: 11 }]}>
+                    Capitolo {trans.chapterNumber} →
+                  </Text>
+                </Pressable>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {subTab === 'persona' && (
+          <View style={[styles.conjugationGrid, { borderColor: colors.border }]}>
+            {(
+              [
+                { p: 'io', form: selectedVerb.presente.io, ending: '-o' },
+                { p: 'tu', form: selectedVerb.presente.tu, ending: '-i' },
+                { p: 'lui / lei', form: selectedVerb.presente.luiLei, ending: '-a / -e' },
+                { p: 'noi', form: selectedVerb.presente.noi, ending: '-iamo' },
+                { p: 'voi', form: selectedVerb.presente.voi, ending: '-ate / -ete / -ite' },
+                { p: 'loro', form: selectedVerb.presente.loro, ending: '-ano / -ono' },
+              ] as const
+            ).map((row) => (
+              <View key={row.p} style={[styles.gridRow, { borderBottomColor: colors.divider }]}>
+                <Text style={[type.caption, { color: colors.textMuted, width: 70, fontSize: 12 }]}>
+                  {row.p}
+                </Text>
+                <Text style={[type.body, { color: colors.text, fontFamily: 'Literata_600SemiBold', fontSize: 14, flex: 1 }]}>
+                  {row.form}
+                </Text>
+                <Text style={[type.caption, { color: colors.tint, fontSize: 11 }]}>
+                  desinenza: {row.ending}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {subTab === 'tempo' && (
+          <View style={{ gap: Spacing.xs, marginTop: Spacing.xs }}>
+            <View style={[styles.tenseCard, { backgroundColor: colors.backgroundHigher }]}>
+              <Text style={[Typography.chapterEyebrow, { color: colors.tint, fontSize: 11 }]}>Presente (Adesso / Abitudine)</Text>
+              <Text style={[type.body, { color: colors.text, fontSize: 13, marginTop: 2 }]}>
+                io {selectedVerb.presente.io} · noi {selectedVerb.presente.noi} · loro {selectedVerb.presente.loro}
+              </Text>
+            </View>
+
+            <View style={[styles.tenseCard, { backgroundColor: colors.backgroundHigher }]}>
+              <Text style={[Typography.chapterEyebrow, { color: colors.tint, fontSize: 11 }]}>Passato Prossimo (Azione compiuta)</Text>
+              <Text style={[type.body, { color: colors.text, fontSize: 13, marginTop: 2 }]}>
+                io {selectedVerb.passatoProssimo.io} · noi {selectedVerb.passatoProssimo.noi}
+              </Text>
+            </View>
+
+            <View style={[styles.tenseCard, { backgroundColor: colors.backgroundHigher }]}>
+              <Text style={[Typography.chapterEyebrow, { color: colors.tint, fontSize: 11 }]}>Imperfetto (Stato passato continuo)</Text>
+              <Text style={[type.body, { color: colors.text, fontSize: 13, marginTop: 2 }]}>
+                io {selectedVerb.imperfetto.io} · noi {selectedVerb.imperfetto.noi}
+              </Text>
+            </View>
+
+            {selectedVerb.condizionale ? (
+              <View style={[styles.tenseCard, { backgroundColor: colors.backgroundHigher }]}>
+                <Text style={[Typography.chapterEyebrow, { color: colors.tint, fontSize: 11 }]}>Condizionale (Desiderio / Garbo)</Text>
+                <Text style={[type.body, { color: colors.text, fontSize: 13, marginTop: 2 }]}>
+                  io {selectedVerb.condizionale.io} · lui/lei {selectedVerb.condizionale.luiLei}
+                </Text>
+              </View>
+            ) : null}
+          </View>
+        )}
+      </View>
+    </View>
+  );
+}
+
 function MomentiSection({
   moments,
   completedCount,
@@ -806,6 +1046,71 @@ const styles = StyleSheet.create({
     marginTop: Spacing.xs,
     paddingTop: Spacing.xs,
     borderTopWidth: 1,
+  },
+  verbPill: {
+    paddingVertical: 6,
+    paddingHorizontal: Spacing.md,
+    borderRadius: Radii.pill,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  verbCard: {
+    padding: Spacing.md,
+    borderRadius: Radii.md,
+    borderWidth: 1,
+    gap: Spacing.sm,
+  },
+  verbCardHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+  },
+  groupBadge: {
+    paddingVertical: 3,
+    paddingHorizontal: Spacing.sm,
+    borderRadius: Radii.sm,
+  },
+  whyChangesBox: {
+    padding: Spacing.sm,
+    borderRadius: Radii.sm,
+    borderLeftWidth: 3,
+  },
+  subTabBar: {
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    gap: Spacing.md,
+    marginTop: Spacing.xs,
+  },
+  subTabItem: {
+    paddingBottom: Spacing.xs,
+  },
+  transRow: {
+    padding: Spacing.sm,
+    borderRadius: Radii.sm,
+    borderWidth: 1,
+  },
+  transHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  conjugationGrid: {
+    borderWidth: 1,
+    borderRadius: Radii.sm,
+    overflow: 'hidden',
+    marginTop: Spacing.xs,
+  },
+  gridRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: Spacing.xs,
+    paddingHorizontal: Spacing.sm,
+    borderBottomWidth: 1,
+  },
+  tenseCard: {
+    padding: Spacing.sm,
+    borderRadius: Radii.sm,
   },
   momentCard: {
     padding: Spacing.md,
