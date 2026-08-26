@@ -17033,6 +17033,789 @@
       "difficulty": 1,
       "frequency": "high",
       "introducedChapter": 47
+    },
+    {
+      "lemmaId": "abbracciare",
+      "italian": "abbracciare",
+      "english": "to hug / to embrace",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "accatastare",
+      "italian": "accatastare",
+      "english": "to stack up / to pile (firewood)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "accordo",
+      "italian": "accordo",
+      "english": "agreement / deal",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "ammirare",
+      "italian": "ammirare",
+      "english": "to admire",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "artigiano",
+      "italian": "artigiano",
+      "english": "artisan / craftsman",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "bambino",
+      "italian": "bambino",
+      "english": "child / boy (da bambino = since childhood)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "bianco",
+      "italian": "bianco",
+      "english": "white",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "busta",
+      "italian": "busta",
+      "english": "envelope",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "cammino",
+      "italian": "cammino",
+      "english": "path / journey / walk",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "camomilla",
+      "italian": "camomilla",
+      "english": "chamomile tea",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "capitare",
+      "italian": "capitare",
+      "english": "to happen / to come up",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "carico",
+      "italian": "carico",
+      "english": "laden with / full of (carico di)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "cassetta",
+      "italian": "cassetta",
+      "english": "box / mailbox (cassetta postale)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "chiaramente",
+      "italian": "chiaramente",
+      "english": "clearly",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "cio",
+      "italian": "ciò",
+      "english": "that / what (ciò che)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "contenere",
+      "italian": "contenere",
+      "english": "to contain / to hold",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "delicatezza",
+      "italian": "delicatezza",
+      "english": "delicacy / sensitivity / tact",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "determinazione",
+      "italian": "determinazione",
+      "english": "determination / resolve",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "donare",
+      "italian": "donare",
+      "english": "to give / to bestow / to donate",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "educazione",
+      "italian": "educazione",
+      "english": "upbringing / manners / education",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "emozione",
+      "italian": "emozione",
+      "english": "emotion / feeling",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "esitazione",
+      "italian": "esitazione",
+      "english": "hesitation",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "esperimento",
+      "italian": "esperimento",
+      "english": "experiment / test",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "fidare",
+      "italian": "fidarsi",
+      "english": "to trust (fidarsi di = to trust in)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "finche",
+      "italian": "finché",
+      "english": "as long as / until",
+      "partOfSpeech": "conjunction",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "frettolosamente",
+      "italian": "frettolosamente",
+      "english": "hurriedly / hastily",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "fuggire",
+      "italian": "fuggire",
+      "english": "to flee / to run away",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "gabbia",
+      "italian": "gabbia",
+      "english": "cage",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "gelata",
+      "italian": "gelata",
+      "english": "frost / freeze (pl. gelate)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "gradualmente",
+      "italian": "gradualmente",
+      "english": "gradually",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "grafia",
+      "italian": "grafia",
+      "english": "handwriting",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "grazia",
+      "italian": "grazia",
+      "english": "grace / thanks (grazie a = thanks to)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "guida",
+      "italian": "guida",
+      "english": "guide / guiding light",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "ignorare",
+      "italian": "ignorare",
+      "english": "to ignore / to overlook",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "illusione",
+      "italian": "illusione",
+      "english": "illusion",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "immenso",
+      "italian": "immenso",
+      "english": "immense / vast",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "impegno",
+      "italian": "impegno",
+      "english": "commitment / diligence / effort",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "inaspettato",
+      "italian": "inaspettato",
+      "english": "unexpected",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "incontro",
+      "italian": "incontro",
+      "english": "meeting / encounter",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "incrollabile",
+      "italian": "incrollabile",
+      "english": "unshakable / steadfast",
+      "partOfSpeech": "adjective",
+      "difficulty": 3,
+      "frequency": "low",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "inseguire",
+      "italian": "inseguire",
+      "english": "to chase / to pursue",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "lamentela",
+      "italian": "lamentela",
+      "english": "complaint",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "legna",
+      "italian": "legna",
+      "english": "firewood",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "lussuoso",
+      "italian": "lussuoso",
+      "english": "luxurious",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "miscela",
+      "italian": "miscela",
+      "english": "blend (miscela di caffè = coffee blend)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "nascondere",
+      "italian": "nascondere",
+      "english": "to hide / to conceal",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "onesta",
+      "italian": "onestà",
+      "english": "honesty / integrity",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "ordinato",
+      "italian": "ordinato",
+      "english": "orderly / neat",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "ottenere",
+      "italian": "ottenere",
+      "english": "to obtain / to get",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "passato",
+      "italian": "passato",
+      "english": "past",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "petto",
+      "italian": "petto",
+      "english": "chest / heart",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "piegare",
+      "italian": "piegare",
+      "english": "to fold",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "pioggia",
+      "italian": "pioggia",
+      "english": "rain",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "poggiare",
+      "italian": "poggiare",
+      "english": "to rest / to place firmly",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "ponderato",
+      "italian": "ponderato",
+      "english": "well-considered / weighed",
+      "partOfSpeech": "adjective",
+      "difficulty": 3,
+      "frequency": "low",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "posato",
+      "italian": "posato",
+      "english": "composed / deliberate / steady",
+      "partOfSpeech": "adjective",
+      "difficulty": 3,
+      "frequency": "low",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "possibilita",
+      "italian": "possibilità",
+      "english": "possibility / opportunity",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "postale",
+      "italian": "postale",
+      "english": "postal (cassetta postale = mailbox)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "raccolto",
+      "italian": "raccolto",
+      "english": "intimate / cozy / gathered",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "radice",
+      "italian": "radice",
+      "english": "root (radici = roots)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "respiro",
+      "italian": "respiro",
+      "english": "breath",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "riconoscenza",
+      "italian": "riconoscenza",
+      "english": "gratitude / thankfulness",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "riga",
+      "italian": "riga",
+      "english": "line (of writing)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "rileggere",
+      "italian": "rileggere",
+      "english": "to reread",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "ripiano",
+      "italian": "ripiano",
+      "english": "shelf / tabletop ledge",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "sacrificio",
+      "italian": "sacrificio",
+      "english": "sacrifice",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "saldamente",
+      "italian": "saldamente",
+      "english": "firmly / solidly",
+      "partOfSpeech": "adverb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "scivolare",
+      "italian": "scivolare",
+      "english": "to slide / to slip (far scivolare = to slip into)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "scorso",
+      "italian": "scorso",
+      "english": "last / past (nei giorni scorsi)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "scrittura",
+      "italian": "scrittura",
+      "english": "writing / handwritten script",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "scrupoloso",
+      "italian": "scrupoloso",
+      "english": "scrupulous / meticulous",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "situato",
+      "italian": "situato",
+      "english": "situated / located",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "sollievo",
+      "italian": "sollievo",
+      "english": "relief",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "soprattutto",
+      "italian": "soprattutto",
+      "english": "above all / especially",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "sostenere",
+      "italian": "sostenere",
+      "english": "to undertake / to hold (sostenere un colloquio)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "spaventare",
+      "italian": "spaventare",
+      "english": "to frighten / to scare",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "spesso",
+      "italian": "spesso",
+      "english": "often",
+      "partOfSpeech": "adverb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "stufa",
+      "italian": "stufa",
+      "english": "stove / wood burner",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "tentare",
+      "italian": "tentare",
+      "english": "to tempt / to try (essere tentato = to be tempted)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "terreno",
+      "italian": "terreno",
+      "english": "ground / soil / footing",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "tostatura",
+      "italian": "tostatura",
+      "english": "roasting (coffee roasting)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "tradire",
+      "italian": "tradire",
+      "english": "to betray",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "universitario",
+      "italian": "universitario",
+      "english": "university (adj)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "vento",
+      "italian": "vento",
+      "english": "wind",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "vi",
+      "italian": "vi",
+      "english": "you (plural clitic)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "visitare",
+      "italian": "visitare",
+      "english": "to visit",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
+    },
+    {
+      "lemmaId": "vostro",
+      "italian": "vostro",
+      "english": "your / yours (plural)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 48
     }
   ]
 }

@@ -402,6 +402,14 @@
       "titleIt": "Il laboratorio di Marco",
       "difficultyLevel": 3,
       "file": "chapter-47.json"
+    },
+    {
+      "id": "luca-a-roma-48",
+      "number": 48,
+      "title": "Letter to Pietralba",
+      "titleIt": "Lettera a Pietralba",
+      "difficultyLevel": 3,
+      "file": "chapter-48.json"
     }
   ]
 }
