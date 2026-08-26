@@ -410,6 +410,14 @@
       "titleIt": "Lettera a Pietralba",
       "difficultyLevel": 3,
       "file": "chapter-48.json"
+    },
+    {
+      "id": "luca-a-roma-49",
+      "number": 49,
+      "title": "A Different Kind of Coffee",
+      "titleIt": "Un caffè diverso",
+      "difficultyLevel": 3,
+      "file": "chapter-49.json"
     }
   ]
 }
