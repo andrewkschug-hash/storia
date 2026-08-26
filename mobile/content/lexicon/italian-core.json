@@ -20363,6 +20363,1149 @@
       "difficulty": 3,
       "frequency": "low",
       "introducedChapter": 50
+    },
+    {
+      "lemmaId": "allargare",
+      "italian": "allargare",
+      "english": "to widen / to spread out (allargare le braccia)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "amministrazione",
+      "italian": "amministrazione",
+      "english": "administration / financial management",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "animare",
+      "italian": "animare",
+      "english": "to enliven / to animate",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "applaudire",
+      "italian": "applaudire",
+      "english": "to applaud / to cheer",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "arte",
+      "italian": "arte",
+      "english": "art",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "attrezzatura",
+      "italian": "attrezzatura",
+      "english": "equipment / machinery",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "attrito",
+      "italian": "attrito",
+      "english": "friction / tension",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "avanzare",
+      "italian": "avanzare",
+      "english": "to move forward / to advance",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "bagnare",
+      "italian": "bagnare",
+      "english": "to wet / to soak (bagnato = wet)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "brusio",
+      "italian": "brusio",
+      "english": "buzz / murmur / hum of voices",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "budget",
+      "italian": "budget",
+      "english": "budget",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "calcare",
+      "italian": "calcare",
+      "english": "limescale / calcium buildup",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "caotico",
+      "italian": "caotico",
+      "english": "chaotic",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "cartellina",
+      "italian": "cartellina",
+      "english": "folder / clipboard folder",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "catalogo",
+      "italian": "catalogo",
+      "english": "catalog / brochure",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "cattivo",
+      "italian": "cattivo",
+      "english": "bad / poor (cattiva disposizione = poor layout)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "cellulare",
+      "italian": "cellulare",
+      "english": "cell phone / mobile phone",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "claudia",
+      "italian": "Claudia",
+      "english": "Claudia (character name)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "clinico",
+      "italian": "clinico",
+      "english": "clinical / detached (occhio clinico = critical eye)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "collo",
+      "italian": "collo",
+      "english": "neck (collo di bottiglia = bottleneck)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "completo",
+      "italian": "completo",
+      "english": "complete / comprehensive",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "complimento",
+      "italian": "complimento",
+      "english": "compliment",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "comportare",
+      "italian": "comportare",
+      "english": "to entail / to involve",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "compromesso",
+      "italian": "compromesso",
+      "english": "compromise",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "computer",
+      "italian": "computer",
+      "english": "computer / laptop",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "conciliante",
+      "italian": "conciliante",
+      "english": "conciliatory / appeasing",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "consumare",
+      "italian": "consumare",
+      "english": "to wear out (scarpe consumate = worn shoes)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "contraddizione",
+      "italian": "contraddizione",
+      "english": "contradiction",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "controllare",
+      "italian": "controllare",
+      "english": "to check / to inspect / to audit",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "corto",
+      "italian": "corto",
+      "english": "short (capelli corti)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "costoso",
+      "italian": "costoso",
+      "english": "expensive",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "cultura",
+      "italian": "cultura",
+      "english": "culture",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "debito",
+      "italian": "debito",
+      "english": "debt",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "deciso",
+      "italian": "deciso",
+      "english": "firm / resolute (mano decisa)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "design",
+      "italian": "design",
+      "english": "design / stylish styling",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "disastro",
+      "italian": "disastro",
+      "english": "disaster / mess",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "disordine",
+      "italian": "disordine",
+      "english": "disorder / clutter",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "disposizione",
+      "italian": "disposizione",
+      "english": "layout / arrangement",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "donna",
+      "italian": "donna",
+      "english": "woman",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "duro",
+      "italian": "duro",
+      "english": "hard / tough",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "edera",
+      "italian": "edera",
+      "english": "ivy",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "espositore",
+      "italian": "espositore",
+      "english": "display case / pastry cabinet",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "esterno",
+      "italian": "esterno",
+      "english": "external / outside world",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "estetico",
+      "italian": "estetico",
+      "english": "aesthetic",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "facciata",
+      "italian": "facciata",
+      "english": "facade / front",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "fascino",
+      "italian": "fascino",
+      "english": "charm / appeal",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "fermo",
+      "italian": "fermo",
+      "english": "steady / firm (voce ferma)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "fila",
+      "italian": "fila",
+      "english": "line / queue",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "fin",
+      "italian": "fin",
+      "english": "even / since (fin da adesso = from right now)",
+      "partOfSpeech": "preposition",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "folla",
+      "italian": "folla",
+      "english": "crowd",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "fotografico",
+      "italian": "fotografico",
+      "english": "photographic",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "galleria",
+      "italian": "galleria",
+      "english": "art gallery",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "guarnizione",
+      "italian": "guarnizione",
+      "english": "gasket / seal (portafilter gasket)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "igiene",
+      "italian": "igiene",
+      "english": "hygiene / sanitation",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "imperdonabile",
+      "italian": "imperdonabile",
+      "english": "unforgivable",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "impressionare",
+      "italian": "impressionare",
+      "english": "to impress / to intimidate",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "incrostare",
+      "italian": "incrostare",
+      "english": "to encrust / to coat with scale",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "individuare",
+      "italian": "individuare",
+      "english": "to spot / to identify / to locate",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "indurire",
+      "italian": "indurire",
+      "english": "to harden",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "iniziale",
+      "italian": "iniziale",
+      "english": "initial",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "insegna",
+      "italian": "insegna",
+      "english": "shop sign / marquee sign",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "intasare",
+      "italian": "intasare",
+      "english": "to clog / to obstruct",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "lacuna",
+      "italian": "lacuna",
+      "english": "gap / shortcoming / defect",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "lancia",
+      "italian": "lancia",
+      "english": "wand / lance (lancia del vapore = steam wand)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "libreria",
+      "italian": "libreria",
+      "english": "bookshop / bookshelf area",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "lusingare",
+      "italian": "lusingare",
+      "english": "to flatter",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "massello",
+      "italian": "massello",
+      "english": "solid wood (legno massello)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "mostra",
+      "italian": "mostra",
+      "english": "exhibition / art show",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "nulla",
+      "italian": "nulla",
+      "english": "nothing / to no purpose (a nulla)",
+      "partOfSpeech": "pronoun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "opaco",
+      "italian": "opaco",
+      "english": "dull / matte / opaque",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "operativo",
+      "italian": "operativo",
+      "english": "operational / working",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "organizzativo",
+      "italian": "organizzativo",
+      "english": "organizational",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "ossidare",
+      "italian": "ossidare",
+      "english": "to oxidize / to go stale",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "palcoscenico",
+      "italian": "palcoscenico",
+      "english": "stage",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "paradiso",
+      "italian": "paradiso",
+      "english": "paradise",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "passaggio",
+      "italian": "passaggio",
+      "english": "passageway / aisle",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "piazzare",
+      "italian": "piazzare",
+      "english": "to place / to position clumsily",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "piazzetta",
+      "italian": "piazzetta",
+      "english": "small square / little piazza",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "portatile",
+      "italian": "portatile",
+      "english": "portable / laptop (computer portatile)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "preparativo",
+      "italian": "preparativo",
+      "english": "preparation (preparativi = preparations)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "presa",
+      "italian": "presa",
+      "english": "grip / handshake grip",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "preventivo",
+      "italian": "preventivo",
+      "english": "estimate / quote / cost projection",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "quadrare",
+      "italian": "quadrare",
+      "english": "to balance / to make sense (far quadrare i conti)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "quarant'anni",
+      "italian": "quarant'anni",
+      "english": "forty years old / in one's forties",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "rallentare",
+      "italian": "rallentare",
+      "english": "to slow down",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "recitare",
+      "italian": "recitare",
+      "english": "to act / to play a role (recitare una parte)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "regola",
+      "italian": "regola",
+      "english": "rule",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "responsabile",
+      "italian": "responsabile",
+      "english": "manager / head / person in charge",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "retro",
+      "italian": "retro",
+      "english": "back room / backstage area",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "revisione",
+      "italian": "revisione",
+      "english": "overhaul / full service checkup",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "ricavare",
+      "italian": "ricavare",
+      "english": "to obtain / to house within (ricavato all'interno)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "ricercato",
+      "italian": "ricercato",
+      "english": "refined / upscale",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "ricoprire",
+      "italian": "ricoprire",
+      "english": "to cover",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "rientro",
+      "italian": "rientro",
+      "english": "payback / return (piano di rientro = debt repayment plan)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "rifare",
+      "italian": "rifare",
+      "english": "to remake / to rebuild",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "riferimento",
+      "italian": "riferimento",
+      "english": "reference / benchmark (punto di riferimento)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "riorganizzazione",
+      "italian": "riorganizzazione",
+      "english": "reorganization",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "risata",
+      "italian": "risata",
+      "english": "laugh / chuckle",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "rispettare",
+      "italian": "rispettare",
+      "english": "to adhere to / to respect (rispettare un piano)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "rompere",
+      "italian": "rompere",
+      "english": "to break (rompere il silenzio / la tensione)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sampietrino",
+      "italian": "sampietrino",
+      "english": "Roman basalt cobblestone",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sarcasmo",
+      "italian": "sarcasmo",
+      "english": "sarcasm",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sbrigativo",
+      "italian": "sbrigativo",
+      "english": "brisk / curt / no-nonsense",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "scarpa",
+      "italian": "scarpa",
+      "english": "shoe",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "scorgere",
+      "italian": "scorgere",
+      "english": "to catch sight of / to spot",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "scosceso",
+      "italian": "scosceso",
+      "english": "steep (sloping street)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "scusare",
+      "italian": "scusare",
+      "english": "to excuse / to apologize (scusami)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sdrammatizzare",
+      "italian": "sdrammatizzare",
+      "english": "to defuse tension / to make light of",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "secco",
+      "italian": "secco",
+      "english": "dry / crisp / curt (presa secca)",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sedersi",
+      "italian": "sedersi",
+      "english": "to sit down (sedersi a tavolino)",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "settecento",
+      "italian": "Settecento",
+      "english": "18th century (1700s)",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "socio",
+      "italian": "socio",
+      "english": "business partner / associate",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "soffitto",
+      "italian": "soffitto",
+      "english": "ceiling",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sofisticato",
+      "italian": "sofisticato",
+      "english": "sophisticated",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "soldo",
+      "italian": "soldo",
+      "english": "money (soldi)",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sperare",
+      "italian": "sperare",
+      "english": "to hope",
+      "partOfSpeech": "verb",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "splendido",
+      "italian": "splendido",
+      "english": "splendid / beautiful",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "sporco",
+      "italian": "sporco",
+      "english": "dirty",
+      "partOfSpeech": "adjective",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "spurgare",
+      "italian": "spurgare",
+      "english": "to purge / to flush (steam wands)",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "squadrare",
+      "italian": "squadrare",
+      "english": "to size up / to look up and down",
+      "partOfSpeech": "verb",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "suggestivo",
+      "italian": "suggestivo",
+      "english": "atmospheric / charming",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "tagliente",
+      "italian": "tagliente",
+      "english": "sharp / biting (franchezza tagliente)",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "telefonata",
+      "italian": "telefonata",
+      "english": "phone call",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "tensione",
+      "italian": "tensione",
+      "english": "tension",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "tipografia",
+      "italian": "tipografia",
+      "english": "print shop / printing house",
+      "partOfSpeech": "noun",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "turista",
+      "italian": "turista",
+      "english": "tourist",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 51
+    },
+    {
+      "lemmaId": "unto",
+      "italian": "unto",
+      "english": "greasy / oily",
+      "partOfSpeech": "adjective",
+      "difficulty": 2,
+      "frequency": "medium",
+      "introducedChapter": 51
     }
   ]
 }

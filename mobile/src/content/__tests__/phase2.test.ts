@@ -220,7 +220,7 @@ describe('reading progress', () => {
     expect(progress.completedChapterIds).toContain(c2.id);
     expect(service.getCompletedCount(progress)).toBe(2);
     expect(service.getPercentComplete(progress)).toBe(
-      Math.floor((2 / bundle.story.chapters.length) * 100),
+      Math.round((2 / bundle.story.chapters.length) * 100),
     );
   });
 

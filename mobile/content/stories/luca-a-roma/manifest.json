@@ -426,6 +426,14 @@
       "titleIt": "Il cliente misterioso",
       "difficultyLevel": 3,
       "file": "chapter-50.json"
+    },
+    {
+      "id": "luca-a-roma-51",
+      "number": 51,
+      "title": "Meeting at the Literary Café",
+      "titleIt": "L'incontro al caffè letterario",
+      "difficultyLevel": 3,
+      "file": "chapter-51.json"
     }
   ]
 }
