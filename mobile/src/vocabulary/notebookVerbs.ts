@@ -23,6 +23,13 @@ export type VerbTransformation = {
   chapterNumber: number;
 };
 
+export type WordFamilyMember = {
+  wordIt: string;
+  wordEn: string;
+  relationship: string;
+  chapterNumber?: number;
+};
+
 export type NotebookVerbPattern = {
   lemmaId: string;
   infinitive: string;
@@ -30,6 +37,7 @@ export type NotebookVerbPattern = {
   root: string;
   regularGroup: 'are' | 'ere' | 'ire' | 'irregular';
   whyItChanges: string;
+  wordFamily?: WordFamilyMember[];
   presente: VerbTenseConjugation;
   passatoProssimo: VerbTenseConjugation;
   imperfetto: VerbTenseConjugation;
@@ -46,6 +54,14 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
     regularGroup: 'are',
     whyItChanges:
       'Regular -are verb: the root "parl-" stays stable, while endings indicate person (-o, -i, -a...) and tense (-avo, -avi...).',
+    wordFamily: [
+      {
+        wordIt: 'la parola',
+        wordEn: 'word',
+        relationship: 'Noun derivative (root parl- / parol-)',
+        chapterNumber: 5,
+      },
+    ],
     presente: {
       io: 'parlo',
       tu: 'parli',
@@ -113,6 +129,19 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
     regularGroup: 'are',
     whyItChanges:
       'Regular -are verb: reflects Luca’s progression from a hired hand to an independent artisan.',
+    wordFamily: [
+      {
+        wordIt: 'il lavoro',
+        wordEn: 'work / job',
+        relationship: 'Noun derivative (root lavor-)',
+        chapterNumber: 40,
+      },
+      {
+        wordIt: 'il lavoratore',
+        wordEn: 'worker',
+        relationship: 'Agent noun (-tore)',
+      },
+    ],
     presente: {
       io: 'lavoro',
       tu: 'lavori',
@@ -188,6 +217,13 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
     regularGroup: 'irregular',
     whyItChanges:
       'Irregular auxiliary: fundamental for identity (sono), past context (ero), and completed experience (sono stato).',
+    wordFamily: [
+      {
+        wordIt: 'lo stato',
+        wordEn: 'state / been',
+        relationship: 'Participle and noun',
+      },
+    ],
     presente: {
       io: 'sono',
       tu: 'sei',
@@ -263,6 +299,14 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
     regularGroup: 'ire',
     whyItChanges:
       '-ire verb with "-isc-" insertion in present singular (capisco, capisci, capisce). Highlights the moment an internal insight lands.',
+    wordFamily: [
+      {
+        wordIt: 'il capito',
+        wordEn: 'understood',
+        relationship: 'Past participle / realization marker',
+        chapterNumber: 45,
+      },
+    ],
     presente: {
       io: 'capisco',
       tu: 'capisci',
@@ -330,6 +374,20 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
     regularGroup: 'irregular',
     whyItChanges:
       'Irregular verb: the root alternates between scelg- (present), scegl- (imperfetto), and scelt- (past participle). The central theme of Luca’s story.',
+    wordFamily: [
+      {
+        wordIt: 'la scelta',
+        wordEn: 'choice',
+        relationship: 'Noun derivative (root scelt-)',
+        chapterNumber: 55,
+      },
+      {
+        wordIt: 'scelto',
+        wordEn: 'chosen',
+        relationship: 'Participle / Adjective',
+        chapterNumber: 55,
+      },
+    ],
     presente: {
       io: 'scelgo',
       tu: 'scegli',
@@ -397,6 +455,19 @@ export const NOTEBOOK_VERB_PATTERNS: readonly NotebookVerbPattern[] = [
     regularGroup: 'irregular',
     whyItChanges:
       'Modal verb: expresses desire in present (voglio), past intention (ho voluto), and polite nuance in conditional (vorrei).',
+    wordFamily: [
+      {
+        wordIt: 'la volontà',
+        wordEn: 'will / willpower',
+        relationship: 'Noun derivative (root vol-)',
+      },
+      {
+        wordIt: 'voluto',
+        wordEn: 'wanted / chosen intentionally',
+        relationship: 'Past participle',
+        chapterNumber: 48,
+      },
+    ],
     presente: {
       io: 'voglio',
       tu: 'vuoi',

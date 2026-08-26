@@ -727,6 +727,38 @@ function VerbiSection({
                 </Pressable>
               </View>
             ))}
+
+            {/* WORD FAMILY CONNECTIONS */}
+            {selectedVerb.wordFamily && selectedVerb.wordFamily.length > 0 ? (
+              <View style={[styles.wordFamilyCard, { backgroundColor: colors.backgroundAtmosphereTop, borderColor: colors.border }]}>
+                <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.1 }]}>
+                  🌱 Famiglia di parole
+                </Text>
+                <View style={{ gap: Spacing.xs, marginTop: 4 }}>
+                  {selectedVerb.wordFamily.map((wf) => (
+                    <View key={wf.wordIt} style={styles.wordFamilyRow}>
+                      <View style={{ flex: 1 }}>
+                        <Text style={[type.body, { color: colors.text, fontFamily: 'Literata_600SemiBold', fontSize: 13 }]}>
+                          {wf.wordIt} <Text style={[type.caption, { color: colors.textSecondary, fontFamily: 'Literata_400Regular' }]}>· {wf.wordEn}</Text>
+                        </Text>
+                        <Text style={[type.caption, { color: colors.textMuted, fontSize: 11 }]}>
+                          {wf.relationship}
+                        </Text>
+                      </View>
+                      {wf.chapterNumber ? (
+                        <Pressable
+                          onPress={() => onNavigateChapter(wf.chapterNumber!)}
+                          accessibilityRole="button">
+                          <Text style={[type.caption, { color: colors.tint, fontFamily: 'Literata_600SemiBold', fontSize: 11 }]}>
+                            Cap. {wf.chapterNumber} →
+                          </Text>
+                        </Pressable>
+                      ) : null}
+                    </View>
+                  ))}
+                </View>
+              </View>
+            ) : null}
           </View>
         )}
 
@@ -1094,6 +1126,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  wordFamilyCard: {
+    padding: Spacing.sm,
+    borderRadius: Radii.sm,
+    borderWidth: 1,
+    marginTop: Spacing.xs,
+  },
+  wordFamilyRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 2,
   },
   conjugationGrid: {
     borderWidth: 1,
