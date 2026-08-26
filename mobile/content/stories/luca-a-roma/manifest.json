@@ -442,6 +442,14 @@
       "titleIt": "La proposta impossibile",
       "difficultyLevel": 3,
       "file": "chapter-52.json"
+    },
+    {
+      "id": "luca-a-roma-53",
+      "number": 53,
+      "title": "An Unexpected Alliance",
+      "titleIt": "Un'alleanza inaspettata",
+      "difficultyLevel": 3,
+      "file": "chapter-53.json"
     }
   ]
 }
