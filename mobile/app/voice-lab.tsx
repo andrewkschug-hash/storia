@@ -4,6 +4,7 @@ import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, TextInput, 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { isDevBuild } from '@/src/security/buildMode';
 import {
   ASSIGNABLE_CHARACTERS,
@@ -270,8 +271,11 @@ export default function VoiceLabScreen() {
   return (
     <AtmosphereBackground>
       <Stack.Screen options={{ title: 'Voice Lab' }} />
-      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + Spacing.xl }]}>
-        <Text style={[Typography.heroTitle, { color: colors.text }]}>Voice Lab</Text>
+      <ScrollView
+        contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + Spacing.xl }]}
+        showsVerticalScrollIndicator={false}>
+        <ScreenContent maxWidth={720}>
+          <Text style={[Typography.heroTitle, { color: colors.text }]}>Voice Lab</Text>
         <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
           Character → logical voice → Google voice. Generate at 1.0×. Listen at the Reader rates:
           Natural {PLAYBACK_RATE.normal}×, Slow {PLAYBACK_RATE.slow}×, {CHAPTER_SENTENCE_GAP_MS} ms between
@@ -563,7 +567,7 @@ function LabButton({
 }
 
 const styles = StyleSheet.create({
-  content: { paddingHorizontal: Spacing.lg, paddingTop: Spacing.lg },
+  content: { paddingTop: Spacing.lg },
   input: {
     marginTop: Spacing.sm,
     borderWidth: StyleSheet.hairlineWidth,

@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { Radii, Spacing } from '@/src/theme/tokens';
+import { useLayout } from '@/src/theme/useLayout';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -31,6 +32,7 @@ export function ReaderAudioBar({
   continueLabel = 'Continue',
 }: Props) {
   const { colors, type, minTouchTarget } = useTheme();
+  const layout = useLayout();
 
   const progressLabel =
     hasAudio && isChapterMode && chapterProgress && chapterProgress.total > 0
@@ -42,8 +44,17 @@ export function ReaderAudioBar({
           : 'Audio for this chapter is not ready yet.';
 
   return (
-    <View style={[styles.bar, { borderTopColor: colors.border, backgroundColor: colors.readerSurface }]}>
-      <View style={styles.row}>
+    <View
+      style={[
+        styles.bar,
+        {
+          borderTopColor: colors.border,
+          backgroundColor: colors.readerSurface,
+          paddingHorizontal: layout.paddingHorizontal,
+        },
+      ]}>
+      <View style={[styles.inner, { maxWidth: layout.contentMaxWidth }]}>
+        <View style={styles.row}>
         <View style={styles.controls}>
           {hasAudio ? (
             <Pressable
@@ -158,18 +169,23 @@ export function ReaderAudioBar({
         </Pressable>
       </View>
 
-      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
-        {progressLabel}
-      </Text>
+        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+          {progressLabel}
+        </Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   bar: {
-    paddingHorizontal: Spacing.readerHorizontal,
     paddingVertical: Spacing.md,
     borderTopWidth: StyleSheet.hairlineWidth,
+    width: '100%',
+  },
+  inner: {
+    width: '100%',
+    alignSelf: 'center',
   },
   row: {
     flexDirection: 'row',

@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { isDevBuild } from '@/src/security/buildMode';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import {
   friendlyGatewayError,
   gatewayBaseUrl,
@@ -99,7 +100,8 @@ export default function AudioStudioScreen() {
   return (
     <AtmosphereBackground>
       <Stack.Screen options={{ title: 'Audio studio' }} />
-      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + Spacing.xl }]}>
+      <ScrollView contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + Spacing.xl }]} showsVerticalScrollIndicator={false}>
+        <ScreenContent maxWidth={720}>
         <Text style={[Typography.heroTitle, { color: colors.text }]}>Audio studio</Text>
         <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
           Generate audio for sample chapters. Clips are approved automatically and appear in the reader
@@ -256,6 +258,7 @@ export default function AudioStudioScreen() {
             </View>
           </View>
         ))}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -288,7 +291,7 @@ function StudioButton({
 }
 
 const styles = StyleSheet.create({
-  content: { paddingHorizontal: Spacing.lg, paddingTop: Spacing.lg },
+  content: { paddingTop: Spacing.lg },
   row: { flexDirection: 'row', gap: Spacing.md, marginTop: Spacing.lg, flexWrap: 'wrap' },
   btn: {
     alignSelf: 'flex-start',

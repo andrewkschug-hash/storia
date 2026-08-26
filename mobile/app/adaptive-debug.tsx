@@ -6,6 +6,7 @@ import { useFocusEffect } from 'expo-router';
 
 import { isDevBuild } from '@/src/security/buildMode';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { getAdaptiveService } from '@/src/adaptive';
 import type { AdaptiveLearnerProfile, AdaptationLog } from '@/src/adaptive/types';
 import { getProgressService } from '@/src/progress';
@@ -47,8 +48,10 @@ export default function AdaptiveDebugScreen() {
         contentContainerStyle={[
           styles.content,
           { paddingBottom: insets.bottom + Spacing.xl },
-        ]}>
-        <Text style={[Typography.heroTitle, { color: colors.text }]}>Learner profile</Text>
+        ]}
+        showsVerticalScrollIndicator={false}>
+        <ScreenContent maxWidth={720}>
+          <Text style={[Typography.heroTitle, { color: colors.text }]}>Learner profile</Text>
         {profile ? (
           <View style={{ marginTop: Spacing.md, gap: 6 }}>
             <Row label="Reading level" value={profile.readingLevel.replace('_', ' ')} />
@@ -144,6 +147,7 @@ export default function AdaptiveDebugScreen() {
         <Pressable onPress={() => router.back()} style={{ marginTop: Spacing.lg }}>
           <Text style={[Typography.label, { color: colors.tint }]}>Back</Text>
         </Pressable>
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -166,7 +170,6 @@ function Row({ label, value }: { label: string; value: string }) {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.lg,
   },
   card: {

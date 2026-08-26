@@ -133,8 +133,11 @@ const styles = StyleSheet.create({
   card: {
     borderRadius: Radii.lg,
     borderWidth: StyleSheet.hairlineWidth,
-    padding: Spacing.lg,
+    padding: Spacing.xl,
     gap: Spacing.sm,
+    maxWidth: 520,
+    width: '100%',
+    alignSelf: 'center',
   },
   primaryBtn: {
     marginTop: Spacing.lg,

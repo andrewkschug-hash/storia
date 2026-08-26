@@ -4,6 +4,7 @@ import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { getAdaptiveService } from '@/src/adaptive';
 import {
   evaluateLearnerCrossStoryA1,
@@ -107,71 +108,72 @@ export default function LevelReadinessScreen() {
         contentContainerStyle={[
           styles.content,
           { paddingTop: Spacing.lg, paddingBottom: insets.bottom + Spacing.xl },
-        ]}>
-        {!readiness || (a1Mode && !crossA1) ? (
-          <ActivityIndicator color={colors.tint} />
-        ) : (
-          <>
-            <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>{copy.eyebrow}</Text>
-            <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-              {copy.title}
-            </Text>
-            <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-              {copy.body}
-            </Text>
-            {!a1Mode ? (
-              <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.md }]}>
-                {readiness.message}
+        ]}
+        showsVerticalScrollIndicator={false}>
+        <ScreenContent maxWidth={680}>
+          {!readiness || (a1Mode && !crossA1) ? (
+            <ActivityIndicator color={colors.tint} />
+          ) : (
+            <>
+              <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>{copy.eyebrow}</Text>
+              <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+                {copy.title}
               </Text>
-            ) : null}
-
-            {a1Mode && crossA1 ? (
-              <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
-                {crossA1.groups.map((group) => (
-                  <Text key={group.id} style={[Typography.body, { color: colors.text }]}>
-                    {group.met ? '✓' : '○'}  {group.label}
-                  </Text>
-                ))}
-                {crossA1.reasons[0] ? (
-                  <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
-                    {crossA1.reasons[0]}
-                  </Text>
-                ) : null}
-              </View>
-            ) : null}
-
-            <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
-              {showA1Try ? (
-                <Pressable
-                  disabled={busy}
-                  onPress={() => void onTry()}
-                  style={({ pressed }) => [
-                    styles.primaryBtn,
-                    { backgroundColor: colors.buttonPrimary, opacity: pressed || busy ? 0.88 : 1 },
-                  ]}>
-                  <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>{copy.tryLabel}</Text>
-                </Pressable>
+              <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+                {copy.body}
+              </Text>
+              {!a1Mode ? (
+                <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.md }]}>
+                  {readiness.message}
+                </Text>
               ) : null}
-              <Pressable
-                onPress={onStay}
-                style={({ pressed }) => [
-                  styles.secondaryBtn,
-                  { borderColor: colors.border, opacity: pressed ? 0.88 : 1 },
-                ]}>
-                <Text style={[Typography.button, { color: colors.text }]}>{copy.stayLabel}</Text>
-              </Pressable>
-            </View>
-          </>
-        )}
+
+              {a1Mode && crossA1 ? (
+                <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
+                  {crossA1.groups.map((group) => (
+                    <Text key={group.id} style={[Typography.body, { color: colors.text }]}>
+                      {group.met ? '✓' : '○'}  {group.label}
+                    </Text>
+                  ))}
+                  {crossA1.reasons[0] ? (
+                    <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+                      {crossA1.reasons[0]}
+                    </Text>
+                  ) : null}
+                </View>
+              ) : null}
+
+              <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
+                {showA1Try ? (
+                  <Pressable
+                    disabled={busy}
+                    onPress={() => void onTry()}
+                    style={({ pressed }) => [
+                      styles.primaryBtn,
+                      { backgroundColor: colors.buttonPrimary, opacity: pressed || busy ? 0.88 : 1 },
+                    ]}>
+                    <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>{copy.tryLabel}</Text>
+                  </Pressable>
+                ) : null}
+                <Pressable
+                  onPress={onStay}
+                  style={({ pressed }) => [
+                    styles.secondaryBtn,
+                    { borderColor: colors.border, opacity: pressed ? 0.88 : 1 },
+                  ]}>
+                  <Text style={[Typography.button, { color: colors.text }]}>{copy.stayLabel}</Text>
+                </Pressable>
+              </View>
+            </>
+          )}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  content: {
-    paddingHorizontal: Spacing.lg,
-  },
+  content: {},
   primaryBtn: {
     alignItems: 'center',
     paddingVertical: Spacing.md,

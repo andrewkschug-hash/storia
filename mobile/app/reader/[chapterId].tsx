@@ -40,6 +40,7 @@ import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { getVocabularyService } from '@/src/vocabulary';
 import type { DictionaryLookup } from '@/src/vocabulary/types';
 import { Radii, Spacing } from '@/src/theme/tokens';
+import { useLayout } from '@/src/theme/useLayout';
 import { useTheme } from '@/src/theme/useTheme';
 
 function goToStories() {
@@ -63,6 +64,7 @@ export default function ReaderScreen() {
   const storyId =
     (typeof story === 'string' && story) || findStoryIdForChapter(chapterId) || undefined;
   const { colors, type, minTouchTarget } = useTheme();
+  const layout = useLayout();
   const authored = storyId ? getChapter(chapterId, storyId) : undefined;
   const [chapter, setChapter] = useState<Chapter | undefined>(authored);
   const [highlightId, setHighlightId] = useState<string | null>(null);
@@ -607,25 +609,28 @@ export default function ReaderScreen() {
       />
 
       {showReaderTip && readerPass === 'read' ? (
-        <View
-          style={[
-            styles.tip,
-            {
-              backgroundColor: colors.backgroundElevated,
-              borderColor: colors.border,
-            },
-          ]}>
-          <Text style={[type.caption, { color: colors.textSecondary, flex: 1 }]}>
-            Tap a word for help · Tap a sentence for English
-          </Text>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Dismiss tip"
-            onPress={dismissReaderTip}
-            hitSlop={8}
-            style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1 }]}>
-            <Text style={[type.label, { color: colors.tint }]}>Got it</Text>
-          </Pressable>
+        <View style={[styles.tipWrapper, { paddingHorizontal: layout.paddingHorizontal }]}>
+          <View
+            style={[
+              styles.tip,
+              {
+                backgroundColor: colors.backgroundElevated,
+                borderColor: colors.border,
+                maxWidth: layout.contentMaxWidth,
+              },
+            ]}>
+            <Text style={[type.caption, { color: colors.textSecondary, flex: 1 }]}>
+              Tap a word for help · Tap a sentence for English
+            </Text>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Dismiss tip"
+              onPress={dismissReaderTip}
+              hitSlop={8}
+              style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1 }]}>
+              <Text style={[type.label, { color: colors.tint }]}>Got it</Text>
+            </Pressable>
+          </View>
         </View>
       ) : null}
 
@@ -758,12 +763,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: Spacing.lg,
   },
+  tipWrapper: {
+    width: '100%',
+    alignItems: 'center',
+    marginBottom: Spacing.sm,
+  },
   tip: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: Spacing.md,
-    marginHorizontal: Spacing.readerHorizontal,
-    marginBottom: Spacing.sm,
+    width: '100%',
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.sm,
     borderRadius: Radii.sm,

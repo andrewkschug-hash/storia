@@ -201,6 +201,9 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.sm,
+    maxWidth: 580,
+    width: '100%',
+    alignSelf: 'center',
   },
   titleRow: {
     flexDirection: 'row',
