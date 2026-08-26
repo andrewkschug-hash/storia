@@ -22,12 +22,13 @@ import {
 } from '@/src/account/storage';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { AvatarBadge } from '@/src/components/AvatarBadge';
+import { GlobalLanguageHeader } from '@/src/components/GlobalLanguageHeader';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { AccessibilitySettings } from '@/src/accessibility/AccessibilitySettings';
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import { navLog } from '@/src/navigation/diagnostics';
 import { isDevBuild } from '@/src/security/buildMode';
-import { Radii, Spacing } from '@/src/theme/tokens';
+import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 
 export default function ProfileScreen() {
   const { colors, type, minTouchTarget } = useAccessibility();
@@ -64,7 +65,7 @@ export default function ProfileScreen() {
     const name = displayName.trim();
     if (!account || name === account.displayName) return;
     if (!name) {
-      setError('Add a display name.');
+      setError('Inserisci un nome visibile.');
       setDisplayName(account.displayName);
       return;
     }
@@ -75,7 +76,7 @@ export default function ProfileScreen() {
       setAccount(updated);
       setDisplayName(updated.displayName);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Could not update your name.');
+      setError(err instanceof Error ? err.message : 'Impossibile aggiornare il nome.');
     } finally {
       setSaving(false);
     }
@@ -89,7 +90,7 @@ export default function ProfileScreen() {
       const updated = await updateAccountProfile({ avatarId });
       setAccount(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Could not update your picture.');
+      setError(err instanceof Error ? err.message : 'Impossibile aggiornare il ritratto.');
     } finally {
       setSaving(false);
     }
@@ -103,17 +104,17 @@ export default function ProfileScreen() {
         router.replace('/account' as Href);
       } catch {
         setSigningOut(false);
-        setError('Could not sign out. Try again.');
+        setError('Impossibile disconnettersi. Riprova.');
       }
     };
 
     if (Platform.OS === 'web') {
-      if (typeof window !== 'undefined' && window.confirm('Sign out of Storibase?')) void run();
+      if (typeof window !== 'undefined' && window.confirm('Vuoi uscire da Storibase?')) void run();
       return;
     }
-    Alert.alert('Sign out', 'Sign out of Storibase?', [
-      { text: 'Cancel', style: 'cancel' },
-      { text: 'Sign out', style: 'destructive', onPress: () => void run() },
+    Alert.alert('Esci', 'Vuoi uscire da Storibase?', [
+      { text: 'Annulla', style: 'cancel' },
+      { text: 'Esci', style: 'destructive', onPress: () => void run() },
     ]);
   };
 
@@ -131,20 +132,20 @@ export default function ProfileScreen() {
     <AtmosphereBackground>
       <ScrollView
         contentContainerStyle={{
-          paddingTop: insets.top + Spacing.lg,
+          paddingTop: insets.top + Spacing.md,
           paddingBottom: insets.bottom + Spacing.xxl,
         }}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}>
-        <ScreenContent>
-          <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>Profile</Text>
+        <ScreenContent maxWidth={680}>
+          <GlobalLanguageHeader breadcrumb="Profilo" />
 
           <View style={styles.hero}>
             <AvatarBadge avatarId={account.avatarId} size="lg" />
-            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.md, textAlign: 'center' }]}>
+            <Text style={[styles.heroName, { color: colors.text }]}>
               {account.displayName}
             </Text>
-            <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs, textAlign: 'center' }]}>
+            <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2, textAlign: 'center' }]}>
               {account.email}
             </Text>
             {isDevBuild() ? (
@@ -154,18 +155,20 @@ export default function ProfileScreen() {
             ) : null}
           </View>
 
-          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+          <View style={[styles.divider, { backgroundColor: colors.divider }]} />
 
-          <Text style={[type.label, { color: colors.text }]}>Account</Text>
+          <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
+            Il tuo account
+          </Text>
 
           <Text style={[styles.fieldLabel, type.caption, { color: colors.textSecondary }]}>
-            Display name
+            Nome visibile
           </Text>
           <TextInput
             value={displayName}
             onChangeText={setDisplayName}
             onBlur={() => void saveName()}
-            placeholder="Your name"
+            placeholder="Il tuo nome"
             placeholderTextColor={colors.textMuted}
             autoCapitalize="words"
             autoCorrect={false}
@@ -176,17 +179,16 @@ export default function ProfileScreen() {
               {
                 color: colors.text,
                 backgroundColor: colors.backgroundElevated,
-                borderColor: colors.border,
                 minHeight: minTouchTarget,
               },
             ]}
           />
 
           <Text style={[styles.fieldLabel, type.caption, { color: colors.textSecondary }]}>
-            Portrait
+            Ritratto
           </Text>
           <Text style={[type.caption, { color: colors.textMuted }]}>
-            Choose a Storibase portrait.
+            Scegli il tuo ritratto Storibase.
           </Text>
           <View style={styles.avatarRow}>
             {AVATAR_PRESETS.map((preset) => {
@@ -216,7 +218,7 @@ export default function ProfileScreen() {
             <Text style={[type.caption, { color: colors.danger, marginTop: Spacing.md }]}>{error}</Text>
           ) : null}
 
-          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+          <View style={[styles.divider, { backgroundColor: colors.divider }]} />
 
           <AccessibilitySettings />
 
@@ -232,7 +234,7 @@ export default function ProfileScreen() {
               },
             ]}>
             <Text style={[type.label, { color: colors.danger }]}>
-              {signingOut ? 'Signing out…' : 'Sign out'}
+              {signingOut ? 'Disconnessione in corso…' : 'Esci dall’account'}
             </Text>
           </Pressable>
         </ScreenContent>
@@ -244,25 +246,31 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   hero: {
     alignItems: 'center',
-    marginTop: Spacing.lg,
-    marginBottom: Spacing.lg,
+    marginTop: Spacing.md,
+    marginBottom: Spacing.md,
+  },
+  heroName: {
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 26,
+    lineHeight: 32,
+    marginTop: Spacing.sm,
+    textAlign: 'center',
   },
   divider: {
     height: StyleSheet.hairlineWidth,
-    marginVertical: Spacing.xl,
+    marginVertical: Spacing.lg,
   },
   fieldLabel: {
-    marginTop: Spacing.lg,
-    marginBottom: Spacing.sm,
+    marginTop: Spacing.md,
+    marginBottom: Spacing.xs,
   },
   input: {
     borderRadius: Radii.sm,
-    borderWidth: StyleSheet.hairlineWidth * 2,
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.sm,
   },
   avatarRow: {
-    marginTop: Spacing.md,
+    marginTop: Spacing.sm,
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: Spacing.sm,
@@ -273,7 +281,7 @@ const styles = StyleSheet.create({
     padding: 3,
   },
   signOut: {
-    marginTop: Spacing.xxl,
+    marginTop: Spacing.xl,
     alignItems: 'center',
     justifyContent: 'center',
   },

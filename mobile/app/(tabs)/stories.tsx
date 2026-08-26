@@ -10,6 +10,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { GlobalLanguageHeader } from '@/src/components/GlobalLanguageHeader';
 import { PathwayGate } from '@/src/components/pathway/PathwayGate';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { navLog } from '@/src/navigation/diagnostics';
@@ -235,7 +236,7 @@ export default function StoriesScreen() {
       />
       <ScrollView
         contentContainerStyle={{
-          paddingTop: insets.top + Spacing.lg,
+          paddingTop: insets.top + Spacing.md,
           paddingBottom: insets.bottom + Spacing.xl,
           flexGrow: 1,
         }}
@@ -243,6 +244,7 @@ export default function StoriesScreen() {
         <ScreenContent
           maxWidth={680}
           style={{ paddingHorizontal: layout.isPhone ? 20 : 24 }}>
+          <GlobalLanguageHeader breadcrumb="Biblioteca" />
           <StoriesHeader />
 
           {showInitialSpinner ? (

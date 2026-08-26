@@ -2,7 +2,7 @@ import { AppSymbol } from '@/src/components/AppSymbol';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { LibraryStoryRow } from '@/src/components/storiesLibrary/types';
-import { Typography } from '@/src/theme/tokens';
+import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -22,17 +22,23 @@ export function StoryRow({ row, expanded, onPress }: Props) {
       style={({ pressed }) => [
         styles.row,
         {
-          backgroundColor: pressed ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.03)',
+          backgroundColor: colors.backgroundElevated,
+          borderLeftWidth: 3.5,
+          borderLeftColor: row.locked ? colors.textMuted : colors.tint,
+          opacity: row.locked ? 0.6 : pressed ? 0.88 : 1,
           minHeight: minTouchTarget,
         },
       ]}>
       <View style={styles.main}>
         {row.eyebrow ? (
-          <Text style={[styles.eyebrow, { color: colors.tint }]}>{row.eyebrow}</Text>
+          <Text style={[Typography.chapterEyebrow, { color: colors.tint, fontSize: 11, letterSpacing: 1.2 }]}>
+            {row.eyebrow}
+          </Text>
         ) : null}
         <Text style={[styles.title, { color: colors.text }]}>{row.titleIt}</Text>
-        <Text style={[styles.meta, { color: colors.textMuted }]}>
-          {row.completed} / {row.total} chapters
+        <Text style={[Typography.caption, { color: colors.textSecondary, marginTop: 2 }]}>
+          {row.completed} / {row.total} capitoli
+          {row.locked ? ' · Bloccato 🔒' : ''}
         </Text>
       </View>
       <AppSymbol
@@ -41,7 +47,7 @@ export function StoryRow({ row, expanded, onPress }: Props) {
           android: expanded ? 'expand_less' : 'chevron_right',
           web: expanded ? 'expand_less' : 'chevron_right',
         }}
-        tintColor={colors.textMuted}
+        tintColor={colors.tint}
         size={18}
       />
     </Pressable>
@@ -52,29 +58,20 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 16,
-    paddingHorizontal: 20,
-    borderRadius: 16,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+    borderRadius: Radii.md,
+    marginBottom: Spacing.xs,
   },
   main: {
     flex: 1,
-    paddingRight: 12,
-  },
-  eyebrow: {
-    ...Typography.caption,
-    fontSize: 13,
-    marginBottom: 2,
+    paddingRight: Spacing.md,
+    gap: 2,
   },
   title: {
-    fontFamily: 'Literata_600SemiBold',
-    fontSize: 20,
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 22,
     lineHeight: 28,
   },
-  meta: {
-    ...Typography.body,
-    fontSize: 15,
-    lineHeight: 22,
-    marginTop: 4,
-    opacity: 0.6,
-  },
 });
+

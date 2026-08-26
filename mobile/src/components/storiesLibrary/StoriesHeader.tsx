@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { Typography } from '@/src/theme/tokens';
+import { Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 export function StoriesHeader() {
@@ -8,9 +8,9 @@ export function StoriesHeader() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={[styles.title, { color: colors.text }]}>Stories</Text>
+      <Text style={[styles.title, { color: colors.text }]}>La biblioteca</Text>
       <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-        Continue your journey.{'\n'}Pick up where you left off, or explore another level.
+        Scegli una storia da leggere.
       </Text>
     </View>
   );
@@ -18,18 +18,19 @@ export function StoriesHeader() {
 
 const styles = StyleSheet.create({
   wrap: {
-    marginBottom: 32,
+    marginTop: Spacing.xs,
+    marginBottom: Spacing.lg,
   },
   title: {
     ...Typography.brand,
-    fontSize: 36,
-    lineHeight: 42,
+    fontSize: 34,
+    lineHeight: 40,
   },
   subtitle: {
     ...Typography.body,
-    fontSize: 16,
-    lineHeight: 24,
-    marginTop: 8,
-    opacity: 0.85,
+    fontSize: 15,
+    lineHeight: 22,
+    marginTop: 4,
   },
 });
+

@@ -12,7 +12,7 @@ type Props = {
 };
 
 export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props) {
-  const { colors } = useTheme();
+  const { colors, minTouchTarget } = useTheme();
   const available = pathway.status === 'available';
   const interactive = available && typeof onPress === 'function';
 
@@ -25,24 +25,58 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
         styles.card,
         {
           backgroundColor: colors.backgroundElevated,
-          borderColor: selected ? colors.tint : colors.border,
-          opacity: pressed && interactive ? 0.92 : 1,
+          borderLeftWidth: 3.5,
+          borderLeftColor: selected
+            ? colors.tint
+            : primary
+              ? colors.highlight
+              : colors.accentSecondary,
+          opacity: pressed && interactive ? 0.9 : 1,
+          minHeight: minTouchTarget,
         },
       ]}>
-      <Text style={[Typography.chapterEyebrow, { color: colors.textMuted }]}>{pathway.genre}</Text>
-      <Text style={[Typography.chapterTitle, { color: colors.text, marginTop: 6 }]}>
+      <View style={styles.headerRow}>
+        <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.2 }]}>
+          A2+ · {pathway.genreIt ?? pathway.genre}
+        </Text>
+        {primary ? (
+          <Text style={[Typography.caption, { color: colors.highlight, fontFamily: 'Literata_600SemiBold' }]}>
+            ★ Scelta corrente
+          </Text>
+        ) : null}
+      </View>
+
+      <Text style={[styles.title, { color: colors.text }]}>
         {pathway.titleIt}
       </Text>
-      <Text style={[Typography.body, { color: colors.textSecondary, marginTop: 8 }]}>
-        {pathway.hookEn}
+
+      <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
+        {pathway.hookIt ?? pathway.hookEn}
       </Text>
+
+      {pathway.lucaQuoteIt ? (
+        <View
+          style={[
+            styles.quoteContainer,
+            {
+              backgroundColor: 'rgba(201, 120, 88, 0.08)',
+              borderLeftWidth: 2,
+              borderLeftColor: colors.tint,
+            },
+          ]}>
+          <Text style={[Typography.caption, { color: colors.textSecondary, fontStyle: 'italic' }]}>
+            Luca: “{pathway.lucaQuoteIt}”
+          </Text>
+        </View>
+      ) : null}
+
       <View style={styles.footer}>
         {available ? (
-          <Text style={[Typography.label, { color: colors.tint }]}>
-            {primary ? 'Your path · Open' : 'Begin this story'}
+          <Text style={[Typography.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
+            {selected ? 'Chiudi capitoli ▴' : primary ? 'Continua la lettura →' : 'Leggi questa storia →'}
           </Text>
         ) : (
-          <Text style={[Typography.label, { color: colors.textMuted }]}>Coming soon</Text>
+          <Text style={[Typography.label, { color: colors.textMuted }]}>In arrivo 🔒</Text>
         )}
       </View>
     </Pressable>
@@ -51,11 +85,30 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
 
 const styles = StyleSheet.create({
   card: {
-    borderWidth: 1,
-    borderRadius: Radii.lg,
+    borderRadius: Radii.md,
     padding: Spacing.lg,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  title: {
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 22,
+    lineHeight: 28,
+    marginTop: 4,
+  },
+  quoteContainer: {
+    marginTop: Spacing.sm,
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.xs + 2,
+    borderRadius: Radii.sm,
   },
   footer: {
     marginTop: Spacing.md,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });
+

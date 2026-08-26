@@ -378,6 +378,14 @@
       "titleIt": "A Monti con Sofia",
       "difficultyLevel": 3,
       "file": "chapter-44.json"
+    },
+    {
+      "id": "luca-a-roma-45",
+      "number": 45,
+      "title": "The Crossroads",
+      "titleIt": "Il bivio",
+      "difficultyLevel": 3,
+      "file": "chapter-45.json"
     }
   ]
 }

@@ -18,17 +18,18 @@ export function ReviewNudge({ copy }: Props) {
         styles.card,
         {
           backgroundColor: colors.backgroundElevated,
-          borderColor: colors.border,
+          borderLeftWidth: 3,
+          borderLeftColor: colors.accentSecondary,
         },
       ]}>
-      <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
-        Vocabulary
+      <Text style={[type.chapterEyebrow, { color: colors.accentSecondary, letterSpacing: 1.4 }]}>
+        Una piccola ripetizione
       </Text>
-      <Text style={[type.label, { color: colors.text, marginTop: Spacing.sm }]}>
-        {copy.headline}
+      <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.xs, fontSize: 20, lineHeight: 26 }]}>
+        {copy.headline || 'Parole da rivedere'}
       </Text>
-      <Text style={[type.caption, { color: colors.textSecondary, marginTop: 4 }]}>
-        {copy.detail}
+      <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
+        {copy.detail || 'Ripassale prima della prossima storia.'}
       </Text>
       {copy.cta ? (
         <Pressable
@@ -38,13 +39,13 @@ export function ReviewNudge({ copy }: Props) {
           style={({ pressed }) => [
             styles.cta,
             {
-              borderColor: colors.border,
-              backgroundColor: colors.backgroundElevated,
-              opacity: pressed ? 0.88 : 1,
+              opacity: pressed ? 0.75 : 1,
               minHeight: minTouchTarget,
             },
           ]}>
-          <Text style={[type.label, { color: colors.tint }]}>{copy.cta}</Text>
+          <Text style={[type.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
+            {copy.cta} →
+          </Text>
         </Pressable>
       ) : null}
     </View>
@@ -53,16 +54,14 @@ export function ReviewNudge({ copy }: Props) {
 
 const styles = StyleSheet.create({
   card: {
-    borderRadius: Radii.lg,
-    borderWidth: StyleSheet.hairlineWidth,
-    padding: Spacing.lg,
+    borderRadius: Radii.md,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.lg,
   },
   cta: {
     alignSelf: 'flex-start',
-    marginTop: Spacing.md,
-    paddingHorizontal: Spacing.md,
-    paddingVertical: Spacing.sm,
-    borderRadius: Radii.sm,
-    borderWidth: StyleSheet.hairlineWidth,
+    marginTop: Spacing.sm,
+    justifyContent: 'center',
   },
 });
+

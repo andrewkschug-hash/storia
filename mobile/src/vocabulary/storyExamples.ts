@@ -56,6 +56,23 @@ export function clozeText(sentence: Sentence, lemmaId: string): string | null {
   return `${sentence.text.slice(0, start)}______${sentence.text.slice(end)}`;
 }
 
+export function clozePhraseText(
+  sentence: Sentence,
+  phraseId: string,
+): { cloze: string; surface: string } | null {
+  const phrase = (sentence.phrases ?? []).find(
+    (p) => phraseIdFromSurface(p.surface) === phraseId,
+  );
+  if (!phrase) return null;
+  const surface = phrase.surface;
+  const idx = sentence.text.indexOf(surface);
+  if (idx < 0) return { cloze: sentence.text.replace(surface, '______'), surface };
+  return {
+    cloze: `${sentence.text.slice(0, idx)}______${sentence.text.slice(idx + surface.length)}`,
+    surface,
+  };
+}
+
 export function findSentenceById(
   bundle: ContentBundle,
   sentenceId: string | null,

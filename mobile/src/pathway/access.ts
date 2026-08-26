@@ -22,5 +22,5 @@ export async function shouldShowPathwayGate(
 }
 
 export function a2PlusLockedHint(): string {
-  return 'Finish Luca a Roma Chapter 40 to unlock A2+ pathways';
+  return 'Finish Luca a Roma Chapter 40 to unlock Le pause di lettura';
 }

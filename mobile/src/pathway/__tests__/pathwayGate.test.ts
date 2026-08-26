@@ -85,7 +85,7 @@ beforeEach(async () => {
 });
 
 describe('A2+ pathway definitions', () => {
-  it('lists all three A2+ pathways as available', () => {
+  it('lists all three A2+ pathways as available with Italian book metadata', () => {
     const available = A2_PLUS_PATHWAYS.filter((p) => p.status === 'available');
     expect(available).toHaveLength(3);
     expect(available.map((p) => p.storyId)).toEqual([
@@ -95,6 +95,9 @@ describe('A2+ pathway definitions', () => {
     ]);
     expect(A2_PLUS_PATHWAYS.filter((p) => p.status === 'coming_soon')).toHaveLength(0);
     expect(A2_PLUS_PATHWAYS.every((p) => p.hookEn.length > 0)).toBe(true);
+    expect(A2_PLUS_PATHWAYS.every((p) => p.genreIt.length > 0)).toBe(true);
+    expect(A2_PLUS_PATHWAYS.every((p) => p.hookIt.length > 0)).toBe(true);
+    expect(A2_PLUS_PATHWAYS.every((p) => p.lucaQuoteIt.length > 0)).toBe(true);
   });
 });
 

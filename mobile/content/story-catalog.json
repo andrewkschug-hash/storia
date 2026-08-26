@@ -27,9 +27,9 @@
     },
     {
       "id": "a2-plus-genre-paths",
-      "title": "A2+ genre paths",
-      "titleIt": "Percorsi A2+",
-      "description": "Independent A2+ stories after Luca a Roma. Not Luca chapters 41+. Thriller, romance, and grounded fantasy pathways.",
+      "title": "Luca's Reading Breaks",
+      "titleIt": "Le pause di lettura",
+      "description": "Scopri altre storie quando vuoi. Romanzi brevi e racconti indipendenti.",
       "narrativeOrder": 10,
       "status": "available"
     }
@@ -120,7 +120,7 @@
       "narrativeArc": "luca-a-roma",
       "narrativeOrder": 6,
       "status": "available",
-      "chapterCount": 44,
+      "chapterCount": 45,
       "chapterCountTarget": 55,
       "protagonistId": "luca",
       "contentPath": "stories/luca-a-roma",

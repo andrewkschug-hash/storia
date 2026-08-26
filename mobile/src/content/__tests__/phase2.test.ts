@@ -219,7 +219,9 @@ describe('reading progress', () => {
     expect(progress.completedChapterIds).toContain(c1.id);
     expect(progress.completedChapterIds).toContain(c2.id);
     expect(service.getCompletedCount(progress)).toBe(2);
-    expect(service.getPercentComplete(progress)).toBe(5);
+    expect(service.getPercentComplete(progress)).toBe(
+      Math.floor((2 / bundle.story.chapters.length) * 100),
+    );
   });
 
   it('counts partial progress within the current chapter', async () => {

@@ -4,25 +4,30 @@ import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getAccount, type LocalAccount } from '@/src/account/storage';
-import { AppSymbol } from '@/src/components/AppSymbol';
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
-import { AvatarBadge } from '@/src/components/AvatarBadge';
 import { ContinueReadingCard } from '@/src/components/ContinueReadingCard';
+import { GlobalLanguageHeader } from '@/src/components/GlobalLanguageHeader';
 import { ReviewNudge } from '@/src/components/ReviewNudge';
 import { ScreenContent } from '@/src/components/ScreenContent';
 import { navLog } from '@/src/navigation/diagnostics';
-import { readerHref } from '@/src/content/storyHrefs';
 import { navigateToContinueTarget } from '@/src/progress/continueNavigation';
 import { homeContinuePresentation } from '@/src/progress/continueReading';
 import { useContinueReading } from '@/src/progress/useContinueReading';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useVocabulary } from '@/src/vocabulary/useVocabulary';
 import { useLayout } from '@/src/theme/useLayout';
-import { Radii, Spacing, type ThemeColors } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 /** Avoid re-running account/onboarding gate on every Home tab remount. */
 let homeGateComplete = false;
+
+function getItalianGreeting(): string {
+  const hour = new Date().getHours();
+  if (hour < 12) return 'Buongiorno';
+  if (hour < 18) return 'Buon pomeriggio';
+  return 'Buonasera';
+}
 
 export default function HomeScreen() {
   const { colors, type } = useTheme();
@@ -66,7 +71,6 @@ export default function HomeScreen() {
       setGateReady(true);
       return;
     }
-    // Gate order: local account → learner onboarding → tabs.
     void (async () => {
       const local = await getAccount();
       if (!local) {
@@ -111,54 +115,55 @@ export default function HomeScreen() {
         <View style={[styles.center, { padding: Spacing.lg, gap: Spacing.md }]}>
           <Text style={[type.body, { color: colors.textSecondary, textAlign: 'center' }]}>
             {error ??
-              'We could not load your continue reading card. Browse stories to keep reading.'}
+              'Non siamo riusciti a caricare la tua storia. Sfoglia la biblioteca per continuare.'}
           </Text>
           <Pressable
             accessibilityRole="button"
             onPress={() => router.push('/(tabs)/stories')}
             style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1, minHeight: 44, justifyContent: 'center' })}>
-            <Text style={[type.label, { color: colors.tint }]}>Browse stories</Text>
+            <Text style={[type.label, { color: colors.tint }]}>Sfoglia la biblioteca →</Text>
           </Pressable>
         </View>
       </AtmosphereBackground>
     );
   }
 
-  const brandSize = layout.isPhone ? (layout.width < 360 ? 34 : 38) : 42;
   const continuePresentation = homeContinuePresentation(
     target,
     chapter,
     story.chapters.length,
     completed,
   );
+  const greeting = getItalianGreeting();
 
   return (
     <AtmosphereBackground>
       <ScrollView
         contentContainerStyle={{
-          paddingTop: insets.top + Spacing.lg,
+          paddingTop: insets.top + Spacing.md,
           paddingBottom: insets.bottom + Spacing.xl,
           flexGrow: 1,
         }}
         showsVerticalScrollIndicator={false}>
         <ScreenContent maxWidth={680}>
-          <View style={styles.topRow}>
+          <GlobalLanguageHeader avatarId={account?.avatarId} />
+
+          <View style={styles.greetingHeader}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint, letterSpacing: 1.6 }]}>
+              {greeting.toUpperCase()}
+            </Text>
             <Text
               style={[
-                type.brand,
-                { color: colors.text, fontSize: brandSize, lineHeight: brandSize + 6 },
+                type.heroTitle,
+                {
+                  color: colors.text,
+                  marginTop: Spacing.xs,
+                  fontSize: layout.isPhone ? 28 : 34,
+                  lineHeight: layout.isPhone ? 34 : 42,
+                },
               ]}>
-              Storibase
+              Continua la tua storia
             </Text>
-            {account ? (
-              <Pressable
-                onPress={() => router.push('/(tabs)/profile')}
-                accessibilityRole="button"
-                accessibilityLabel="Open profile"
-                style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}>
-                <AvatarBadge avatarId={account.avatarId} size="sm" />
-              </Pressable>
-            ) : null}
           </View>
 
           <View style={styles.section}>
@@ -198,36 +203,40 @@ export default function HomeScreen() {
                 })();
               }}
             />
-            <Pressable
-              accessibilityRole="link"
-              accessibilityLabel="Browse stories"
-              onPress={() => router.push('/(tabs)/stories')}
-              style={({ pressed }) => [
-                styles.browseLink,
-                { opacity: pressed ? 0.7 : 1 },
-              ]}>
-              <Text style={[type.label, { color: colors.tint }]}>Browse stories</Text>
-            </Pressable>
           </View>
 
-          <View
-            style={[
-              styles.statsRow,
-              styles.section,
-              layout.width < 360 && styles.statsRowCompact,
-            ]}>
-            <StatChip label="Words" value={String(summary?.encountered ?? 0)} colors={colors} />
-            <StatChip
-              label="Streak"
-              value={(progress?.streakDays ?? 0) > 0 ? `${progress?.streakDays}d` : '—'}
-              colors={colors}
-              showFlame
-            />
-            <StatChip
-              label="Chapters"
-              value={`${completed}/${story.chapters.length}`}
-              colors={colors}
-            />
+          <View style={[styles.editorialStatsBox, { backgroundColor: colors.backgroundElevated }]}>
+            <Text style={[type.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
+              La tua lettura
+            </Text>
+            <View style={styles.editorialStatsLine}>
+              <View style={styles.statItem}>
+                <Text style={[styles.statNumber, { color: colors.text }]}>
+                  {summary?.encountered ?? 0}
+                </Text>
+                <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2 }]}>
+                  parole
+                </Text>
+              </View>
+              <View style={[styles.verticalDivider, { backgroundColor: colors.divider }]} />
+              <View style={styles.statItem}>
+                <Text style={[styles.statNumber, { color: colors.text }]}>
+                  {(progress?.streakDays ?? 0) > 0 ? `${progress?.streakDays}` : '0'}
+                </Text>
+                <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2 }]}>
+                  giorni
+                </Text>
+              </View>
+              <View style={[styles.verticalDivider, { backgroundColor: colors.divider }]} />
+              <View style={styles.statItem}>
+                <Text style={[styles.statNumber, { color: colors.text }]}>
+                  {completed}
+                </Text>
+                <Text style={[type.caption, { color: colors.textSecondary, marginTop: 2 }]}>
+                  capitoli
+                </Text>
+              </View>
+            </View>
           </View>
 
           {home ? (
@@ -236,8 +245,23 @@ export default function HomeScreen() {
             </View>
           ) : null}
 
+          <View style={styles.browseSection}>
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel="Sfoglia la biblioteca"
+              onPress={() => router.push('/(tabs)/stories')}
+              style={({ pressed }) => [
+                styles.browseLink,
+                { opacity: pressed ? 0.7 : 1 },
+              ]}>
+              <Text style={[type.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
+                La biblioteca · Tutte le storie →
+              </Text>
+            </Pressable>
+          </View>
+
           {typeof __DEV__ !== 'undefined' && __DEV__ ? (
-            <View style={[styles.devSection, { borderColor: colors.border }]}>
+            <View style={[styles.devSection, { borderTopColor: colors.divider }]}>
               <Text style={[type.caption, { color: colors.textMuted }]}>Developer</Text>
               <DevLink label="Voice Lab" href="/voice-lab" colors={colors} />
               <DevLink label="Audio studio" href="/audio-studio" colors={colors} />
@@ -248,43 +272,6 @@ export default function HomeScreen() {
         </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
-  );
-}
-
-function StatChip({
-  label,
-  value,
-  colors,
-  showFlame,
-}: {
-  label: string;
-  value: string;
-  colors: Pick<ThemeColors, 'backgroundElevated' | 'border' | 'text' | 'textMuted' | 'accent' | 'readerSurface'>;
-  showFlame?: boolean;
-}) {
-  const { type } = useTheme();
-  return (
-    <View
-      style={[
-        styles.statChip,
-        { backgroundColor: colors.readerSurface, borderColor: colors.border },
-      ]}>
-      <View style={styles.statValueRow}>
-        {showFlame ? (
-          <AppSymbol
-            name={{
-              ios: 'flame.fill',
-              android: 'local_fire_department',
-              web: 'local_fire_department',
-            }}
-            tintColor={colors.accent}
-            size={18}
-          />
-        ) : null}
-        <Text style={[type.heroTitle, { color: colors.text, fontSize: 22 }]}>{value}</Text>
-      </View>
-      <Text style={[type.caption, { color: colors.textMuted, marginTop: 2 }]}>{label}</Text>
-    </View>
   );
 }
 
@@ -306,40 +293,45 @@ function DevLink({
 }
 
 const styles = StyleSheet.create({
-  topRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+  greetingHeader: {
+    marginTop: Spacing.sm,
+    marginBottom: Spacing.xs,
   },
   section: {
     marginTop: Spacing.lg,
   },
+  editorialStatsBox: {
+    marginTop: Spacing.lg,
+    borderRadius: Radii.md,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+  },
+  editorialStatsLine: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    marginTop: Spacing.sm,
+  },
+  statItem: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  statNumber: {
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 24,
+    lineHeight: 28,
+  },
+  verticalDivider: {
+    width: StyleSheet.hairlineWidth,
+    height: 28,
+  },
+  browseSection: {
+    marginTop: Spacing.lg,
+    alignItems: 'flex-start',
+  },
   browseLink: {
-    alignSelf: 'flex-start',
-    marginTop: Spacing.md,
     minHeight: 44,
     justifyContent: 'center',
-  },
-  statsRow: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-  },
-  statsRowCompact: {
-    flexWrap: 'wrap',
-  },
-  statChip: {
-    flex: 1,
-    minWidth: 96,
-    borderRadius: Radii.md,
-    borderWidth: StyleSheet.hairlineWidth,
-    paddingVertical: Spacing.md,
-    paddingHorizontal: Spacing.sm,
-    alignItems: 'center',
-  },
-  statValueRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.xs,
   },
   devSection: {
     marginTop: Spacing.xxl,
@@ -352,3 +344,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+

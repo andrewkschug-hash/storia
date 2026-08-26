@@ -88,7 +88,7 @@ export default function TabLayout() {
                 web: 'menu_book',
               }}
               tintColor={color}
-              size={26}
+              size={24}
               weight={Platform.OS === 'ios' ? 'regular' : undefined}
             />
           ),
@@ -97,16 +97,16 @@ export default function TabLayout() {
       <Tabs.Screen
         name="stories"
         options={{
-          title: 'Stories',
+          title: 'Biblioteca',
           tabBarIcon: ({ color }) => (
             <AppSymbol
               name={{
-                ios: 'text.book.closed.fill',
+                ios: 'books.vertical.fill',
                 android: 'auto_stories',
                 web: 'auto_stories',
               }}
               tintColor={color}
-              size={26}
+              size={24}
             />
           ),
         }}
@@ -114,16 +114,16 @@ export default function TabLayout() {
       <Tabs.Screen
         name="vocabulary"
         options={{
-          title: 'Italian',
+          title: 'Quaderno',
           tabBarIcon: ({ color }) => (
             <AppSymbol
               name={{
-                ios: 'textformat.abc',
-                android: 'translate',
-                web: 'translate',
+                ios: 'note.text',
+                android: 'edit_note',
+                web: 'edit_note',
               }}
               tintColor={color}
-              size={26}
+              size={24}
             />
           ),
         }}
@@ -131,7 +131,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Profile',
+          title: 'Profilo',
           tabBarIcon: ({ color }) => (
             <AppSymbol
               name={{
@@ -140,7 +140,7 @@ export default function TabLayout() {
                 web: 'person',
               }}
               tintColor={color}
-              size={26}
+              size={24}
             />
           ),
         }}

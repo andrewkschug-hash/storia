@@ -33,21 +33,43 @@ export function A2PlusPathwayPanel({
 
   if (!a2PlusAccess) {
     return (
-      <View style={[styles.locked, { borderColor: colors.border, backgroundColor: colors.backgroundElevated }]}>
-        <Text style={[Typography.chapterTitle, { color: colors.text }]}>A2+ pathways</Text>
-        <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-          {lockedHint}
-        </Text>
+      <View style={styles.editorialBreak}>
+        <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
+        <View style={styles.breakTextContent}>
+          <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
+            Una pausa di lettura
+          </Text>
+          <Text style={[styles.breakTitle, { color: colors.text }]}>
+            Anche Luca, ogni tanto, cambia storia.
+          </Text>
+          <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
+            {lockedHint}
+          </Text>
+        </View>
+        <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
       </View>
     );
   }
 
   return (
     <View style={styles.wrap}>
-      <Text style={[Typography.body, { color: colors.textSecondary, marginBottom: Spacing.md }]}>
-        Choose what kind of Italian story you want next.
-      </Text>
-      <View style={{ gap: Spacing.md }}>
+      <View style={styles.editorialBreak}>
+        <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
+        <View style={styles.breakTextContent}>
+          <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
+            Una pausa di lettura
+          </Text>
+          <Text style={[styles.breakTitle, { color: colors.text }]}>
+            Anche Luca, ogni tanto, cambia storia.
+          </Text>
+          <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
+            Dopo una giornata lunga, Luca cerca qualcosa di diverso da leggere. Nuovi generi, nuovi mondi, stessa lingua.
+          </Text>
+        </View>
+        <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
+      </View>
+
+      <View style={{ gap: Spacing.md, marginTop: Spacing.md }}>
         {A2_PLUS_PATHWAYS.map((pathway) => {
           const row =
             pathway.storyId != null
@@ -104,11 +126,25 @@ export function A2PlusPathwayPanel({
 
 const styles = StyleSheet.create({
   wrap: {
-    marginTop: Spacing.sm,
+    marginTop: Spacing.xs,
   },
-  locked: {
-    borderWidth: 1,
-    borderRadius: Radii.lg,
-    padding: Spacing.lg,
+  editorialBreak: {
+    paddingVertical: Spacing.md,
+    gap: Spacing.md,
+  },
+  hairline: {
+    height: StyleSheet.hairlineWidth,
+    width: '100%',
+  },
+  breakTextContent: {
+    paddingHorizontal: Spacing.xs,
+    gap: 4,
+  },
+  breakTitle: {
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 24,
+    lineHeight: 30,
+    marginTop: 2,
   },
 });
+

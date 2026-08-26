@@ -166,4 +166,85 @@ describe('createPracticeSession', () => {
     expect(item?.contextPrompt).toBe('______ alla stazione.');
     expect(item?.contextAnswer).toBe('È');
   });
+
+  it('sets contextPrompt to cloze and contextAnswer to phrase surface for phrase prompts', () => {
+    const bundle: ContentBundle = {
+      story: {
+        id: 'test',
+        title: 'Test',
+        titleEn: 'Test',
+        language: 'it',
+        targetLanguage: 'it',
+        supportLanguage: 'en',
+        level: 'A1',
+        totalChapters: 1,
+        author: 'Test',
+        description: 'Test',
+        heroImage: 'test.jpg',
+      },
+      chapters: new Map([
+        [
+          'c1',
+          {
+            id: 'c1',
+            number: 1,
+            storyId: 'test',
+            titleIt: 'Capitolo 1',
+            titleEn: 'Chapter 1',
+            paragraphs: [
+              {
+                id: 'p1',
+                order: 1,
+                sentences: [
+                  {
+                    id: 's1',
+                    order: 1,
+                    text: 'Ho fame adesso.',
+                    tokens: [],
+                    phrases: [
+                      {
+                        surface: 'Ho fame',
+                        tokenStart: 0,
+                        tokenEnd: 1,
+                        naturalEn: 'I am hungry',
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      ]),
+      lexicon: [],
+      lexiconById: new Map(),
+    };
+
+    const state: UserVocabularyState = {
+      lemmas: {},
+      phrases: {
+        ho_fame: {
+          phraseId: 'ho_fame',
+          surface: 'ho fame',
+          status: 'learning',
+          encounterCount: 3,
+          tapCount: 2,
+          saved: false,
+          lastEncounteredAt: new Date().toISOString(),
+          lastReviewedAt: null,
+          incorrectReviewCount: 0,
+          familiarityScore: 0.2,
+          lastSelfAssessment: null,
+          lastSelfAssessedAt: null,
+        },
+      },
+    };
+
+    const session = createPracticeSession(state, bundle, null);
+    expect(session.items).toHaveLength(1);
+    const item = session.items[0];
+    expect(item?.id).toBe('ho_fame');
+    expect(item?.contextPrompt).toBe('______ adesso.');
+    expect(item?.contextAnswer).toBe('Ho fame');
+  });
 });

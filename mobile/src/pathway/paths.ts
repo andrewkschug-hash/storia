@@ -15,7 +15,10 @@ export type PathwayDefinition = {
   titleIt: string;
   titleEn: string;
   genre: string;
+  genreIt: string;
   hookEn: string;
+  hookIt: string;
+  lucaQuoteIt: string;
   status: PathwayStatus;
   /** Catalog storyId when playable. */
   storyId: string | null;
@@ -27,7 +30,10 @@ export const A2_PLUS_PATHWAYS: PathwayDefinition[] = [
     titleIt: 'La casa delle finestre',
     titleEn: 'The house of windows',
     genre: 'Thriller',
+    genreIt: 'Un mistero',
     hookEn: 'The school is closed. The lights are not.',
+    hookIt: 'La scuola è chiusa. Ma le luci sono ancora accese.',
+    lucaQuoteIt: '«Questa storia mi incuriosisce...»',
     status: 'available',
     storyId: CASA_PATHWAY_STORY_ID,
   },
@@ -36,7 +42,10 @@ export const A2_PLUS_PATHWAYS: PathwayDefinition[] = [
     titleIt: 'Una lettera per Elena',
     titleEn: 'A letter for Elena',
     genre: 'Romance',
+    genreIt: "Una storia d'amore",
     hookEn: 'They tell the truth in a book. Not to each other.',
+    hookIt: 'Si dicono la verità in un libro. Ma non a voce.',
+    lucaQuoteIt: '«Una lettera può cambiare molte cose.»',
     status: 'available',
     storyId: 'lettera-per-elena',
   },
@@ -45,7 +54,10 @@ export const A2_PLUS_PATHWAYS: PathwayDefinition[] = [
     titleIt: 'Il villaggio che non esiste',
     titleEn: 'The village that does not exist',
     genre: 'Fantasy',
+    genreIt: 'Un racconto fantastico',
     hookEn: 'The map shows a road the village refuses to name.',
+    hookIt: "Sulla mappa c'è una strada che il paese non vuole nominare.",
+    lucaQuoteIt: '«Un villaggio senza nome? Voglio sapere perché.»',
     status: 'available',
     storyId: 'il-villaggio-che-non-esiste',
   },

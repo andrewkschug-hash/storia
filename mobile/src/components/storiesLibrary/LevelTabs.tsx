@@ -1,9 +1,8 @@
-import { useEffect, useRef } from 'react';
-import { Animated, LayoutChangeEvent, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { LibraryTab } from '@/src/components/storiesLibrary/types';
 import { LIBRARY_TABS } from '@/src/components/storiesLibrary/buildStoryRows';
-import { Typography } from '@/src/theme/tokens';
+import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 type Props = {
@@ -11,108 +10,96 @@ type Props = {
   onChange: (tab: LibraryTab) => void;
 };
 
+const TAB_DESCRIPTIONS: Record<LibraryTab, { label: string; sub: string }> = {
+  A1: { label: 'A1', sub: 'Primi passi' },
+  'A1+': { label: 'A1+', sub: 'Più sicurezza' },
+  A2: { label: 'A2', sub: 'Leggere di più' },
+  'A2+': { label: 'A2+', sub: 'Esplorare' },
+};
+
 export function LevelTabs({ active, onChange }: Props) {
   const { colors, minTouchTarget } = useTheme();
-  const fade = useRef(new Animated.Value(1)).current;
-  const tabLayouts = useRef<Partial<Record<LibraryTab, { x: number; width: number }>>>({});
-  const indicatorInitialized = useRef(false);
-  const indicatorX = useRef(new Animated.Value(0)).current;
-  const indicatorW = useRef(new Animated.Value(0)).current;
-
-  useEffect(() => {
-    fade.setValue(0.92);
-    Animated.timing(fade, { toValue: 1, duration: 180, useNativeDriver: true }).start();
-    const layout = tabLayouts.current[active];
-    if (layout) {
-      Animated.parallel([
-        Animated.timing(indicatorX, { toValue: layout.x, duration: 180, useNativeDriver: false }),
-        Animated.timing(indicatorW, { toValue: layout.width, duration: 180, useNativeDriver: false }),
-      ]).start();
-    }
-  }, [active, fade, indicatorW, indicatorX]);
-
-  const onTabLayout = (tab: LibraryTab) => (event: LayoutChangeEvent) => {
-    const { x, width } = event.nativeEvent.layout;
-    tabLayouts.current[tab] = { x, width };
-    if (tab === active && !indicatorInitialized.current) {
-      indicatorX.setValue(x);
-      indicatorW.setValue(width);
-      indicatorInitialized.current = true;
-    }
-  };
-
-  const trackBorder = colors.border;
 
   return (
-    <Animated.View style={{ opacity: fade, marginBottom: 32 }}>
-      <View style={[styles.track, { borderColor: trackBorder, backgroundColor: colors.backgroundElevated }]}>
-        <Animated.View
-          pointerEvents="none"
-          style={[
-            styles.indicator,
-            {
-              backgroundColor: colors.tint,
-              opacity: 0.22,
-              left: indicatorX,
-              width: indicatorW,
-            },
-          ]}
-        />
+    <View style={styles.wrap}>
+      <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4, marginBottom: Spacing.sm }]}>
+        Il tuo percorso
+      </Text>
+      <View style={styles.shelfRow}>
         {LIBRARY_TABS.map((tab) => {
           const selected = tab === active;
+          const info = TAB_DESCRIPTIONS[tab];
           return (
             <Pressable
               key={tab}
               accessibilityRole="tab"
               accessibilityState={{ selected }}
-              onLayout={onTabLayout(tab)}
               onPress={() => onChange(tab)}
               style={({ pressed }) => [
                 styles.tab,
-                { minHeight: minTouchTarget, opacity: pressed ? 0.85 : 1 },
+                {
+                  backgroundColor: selected ? colors.backgroundElevated : 'transparent',
+                  borderBottomWidth: selected ? 2.5 : 0,
+                  borderBottomColor: selected ? colors.tint : 'transparent',
+                  minHeight: minTouchTarget,
+                  opacity: pressed ? 0.85 : 1,
+                },
               ]}>
               <Text
                 style={[
                   styles.tabLabel,
                   {
                     color: selected ? colors.text : colors.textMuted,
-                    fontFamily: selected ? 'Literata_600SemiBold' : 'Literata_400Regular',
+                    fontFamily: selected ? 'Literata_600SemiBold' : 'Literata_500Medium',
                   },
                 ]}>
-                {tab}
+                {info.label}
+              </Text>
+              <Text
+                style={[
+                  styles.tabSub,
+                  {
+                    color: selected ? colors.tint : colors.textMuted,
+                    opacity: selected ? 1 : 0.7,
+                  },
+                ]}>
+                {info.sub}
               </Text>
             </Pressable>
           );
         })}
       </View>
-    </Animated.View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  track: {
-    flexDirection: 'row',
-    borderRadius: 999,
-    borderWidth: 1,
-    padding: 4,
-    position: 'relative',
-    overflow: 'hidden',
+  wrap: {
+    marginBottom: Spacing.lg,
   },
-  indicator: {
-    position: 'absolute',
-    top: 4,
-    bottom: 4,
-    borderRadius: 999,
+  shelfRow: {
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    gap: Spacing.xs,
   },
   tab: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 10,
-    zIndex: 1,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: 2,
+    borderRadius: Radii.sm,
   },
   tabLabel: {
     ...Typography.label,
     fontSize: 14,
   },
+  tabSub: {
+    ...Typography.caption,
+    fontSize: 11,
+    lineHeight: 14,
+    marginTop: 2,
+    textAlign: 'center',
+  },
 });
+

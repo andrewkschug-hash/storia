@@ -34,46 +34,58 @@ export function ContinueReadingCard({
       style={[
         styles.card,
         {
-          backgroundColor: colors.readerSurface,
-          borderColor: colors.border,
+          backgroundColor: colors.backgroundElevated,
+          borderLeftWidth: 4,
+          borderLeftColor: colors.tint,
         },
       ]}>
-      <Text style={[type.chapterEyebrow, { color: colors.textMuted }]}>
-        {eyebrow ?? (isStart ? 'Start reading' : 'Continue reading')}
+      <Text style={[type.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
+        {eyebrow ?? (isStart ? 'Inizia a leggere' : 'Continua la tua storia')}
       </Text>
       {storyTitleIt ? (
-        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.xs }]}>
-          {storyTitleIt}
+        <Text style={[type.caption, { color: colors.textSecondary, marginTop: Spacing.xs, letterSpacing: 0.8 }]}>
+          {storyTitleIt.toUpperCase()}
         </Text>
       ) : null}
-      <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm, fontSize: 28 }]}>
+      <Text
+        style={[
+          type.heroTitle,
+          {
+            color: colors.text,
+            marginTop: Spacing.xs,
+            fontSize: 26,
+            lineHeight: 32,
+          },
+        ]}>
         {chapterTitleIt}
       </Text>
-      <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+      <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
         {subtitle ??
-          `Chapter ${progress.chapterNumber} of ${progress.totalChapters}${
+          `Capitolo ${progress.chapterNumber} di ${progress.totalChapters}${
             progress.chaptersCompleted > 0
-              ? ` · ${progress.chaptersCompleted} finished`
+              ? ` · ${progress.chaptersCompleted} completati`
               : ''
           }`}
       </Text>
 
       <View style={styles.progressBlock}>
         <ProgressBar progress={progress.percentComplete / 100} />
-        <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
-          {progress.percentComplete}% through the story
-        </Text>
-        {chapterPercent > 0 && chapterPercent < 100 ? (
-          <Text style={[type.caption, { color: colors.textSecondary, marginTop: 4 }]}>
-            {chapterPercent}% through this chapter
+        <View style={styles.progressMeta}>
+          <Text style={[type.caption, { color: colors.textMuted }]}>
+            {progress.percentComplete}% della storia
           </Text>
-        ) : null}
+          {chapterPercent > 0 && chapterPercent < 100 ? (
+            <Text style={[type.caption, { color: colors.textSecondary }]}>
+              {chapterPercent}% di questo capitolo
+            </Text>
+          ) : null}
+        </View>
       </View>
 
       <Pressable
         onPress={onContinue}
         accessibilityRole="button"
-        accessibilityLabel={`Continue reading ${chapterTitleIt}`}
+        accessibilityLabel={`Continua a leggere ${chapterTitleIt}`}
         style={({ pressed }) => [
           styles.button,
           {
@@ -83,7 +95,7 @@ export function ContinueReadingCard({
           },
         ]}>
         <Text style={[type.button, { color: colors.onButtonPrimary }]}>
-          {buttonLabel ?? (isStart ? 'Start reading' : 'Continue reading')}
+          {buttonLabel ?? (isStart ? 'Inizia a leggere →' : 'Continua a leggere →')}
         </Text>
       </Pressable>
     </View>
@@ -93,12 +105,16 @@ export function ContinueReadingCard({
 const styles = StyleSheet.create({
   card: {
     borderRadius: Radii.lg,
-    borderWidth: StyleSheet.hairlineWidth,
     padding: Spacing.lg,
   },
   progressBlock: {
-    marginTop: Spacing.lg,
-    marginBottom: Spacing.lg,
+    marginTop: Spacing.md,
+    marginBottom: Spacing.md,
+  },
+  progressMeta: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: Spacing.xs,
   },
   button: {
     alignItems: 'center',
@@ -107,3 +123,4 @@ const styles = StyleSheet.create({
     borderRadius: Radii.md,
   },
 });
+

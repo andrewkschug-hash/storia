@@ -1,13 +1,19 @@
 import { useRef, useState } from 'react';
 import { Animated, LayoutAnimation, Platform, Pressable, StyleSheet, Text, UIManager, View } from 'react-native';
 
-import { LOCKED_LEVEL_PREVIEWS } from '@/src/components/storiesLibrary/buildStoryRows';
-import { Typography } from '@/src/theme/tokens';
+import { Radii, Spacing, Typography } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
+
+const FUTURE_LEVELS = [
+  { level: 'B1', title: 'Lettura indipendente', detail: 'Storie più lunghe e conversazioni autentiche' },
+  { level: 'B1+', title: 'Narrazioni estese', detail: 'Trame articolate e descrizioni ricche' },
+  { level: 'B2', title: 'Scelte e complessità', detail: 'Saggi, romanzi e italiano naturale' },
+  { level: 'C1', title: 'Fluidità avanzata', detail: 'Espressioni idiomatiche e sfumature letterarie' },
+] as const;
 
 export function LockedLevelsAccordion() {
   const { colors, minTouchTarget } = useTheme();
@@ -43,33 +49,32 @@ export function LockedLevelsAccordion() {
           },
         ]}>
         <View style={styles.headerText}>
-          <Text style={[styles.title, { color: colors.textMuted }]}>Locked Levels 🔒</Text>
-          <Text style={[styles.subtitle, { color: colors.textMuted }]}>
-            Unlock B1, B2 and C1 as you progress.
+          <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.4 }]}>
+            Più avanti
+          </Text>
+          <Text style={[styles.title, { color: colors.textSecondary }]}>
+            Nuove storie appariranno mentre il tuo italiano cresce.
           </Text>
         </View>
-        <Animated.Text style={{ transform: [{ rotate: chevronRotate }], color: colors.textMuted }}>
+        <Animated.Text style={{ transform: [{ rotate: chevronRotate }], color: colors.textMuted, fontSize: 16 }}>
           ▾
         </Animated.Text>
       </Pressable>
 
       {expanded ? (
         <View style={styles.list}>
-          {LOCKED_LEVEL_PREVIEWS.map((level) => (
+          {FUTURE_LEVELS.map((level) => (
             <View
               key={level.level}
-              style={[styles.levelRow, { backgroundColor: 'rgba(255,255,255,0.03)' }]}>
+              style={[styles.levelRow, { backgroundColor: colors.backgroundElevated }]}>
               <Text style={[styles.levelLabel, { color: colors.textMuted }]}>{level.level}</Text>
               <View style={styles.levelMeta}>
-                <Text style={[styles.levelTitle, { color: colors.textMuted }]}>{level.title}</Text>
-                {level.chapterCount > 0 ? (
-                  <Text style={[styles.levelChapters, { color: colors.textMuted }]}>
-                    {level.chapterCount} chapters
-                  </Text>
-                ) : (
-                  <Text style={[styles.levelChapters, { color: colors.textMuted }]}>Coming soon</Text>
-                )}
+                <Text style={[styles.levelTitle, { color: colors.text }]}>{level.title}</Text>
+                <Text style={[styles.levelDetail, { color: colors.textSecondary }]}>
+                  {level.detail}
+                </Text>
               </View>
+              <Text style={{ color: colors.textMuted, fontSize: 12 }}>🔒</Text>
             </View>
           ))}
         </View>
@@ -80,48 +85,42 @@ export function LockedLevelsAccordion() {
 
 const styles = StyleSheet.create({
   wrap: {
-    marginTop: 32,
+    marginTop: Spacing.xl,
+    paddingTop: Spacing.md,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 12,
+    paddingVertical: Spacing.sm,
   },
   headerText: {
     flex: 1,
-    paddingRight: 12,
+    paddingRight: Spacing.md,
+    gap: 2,
   },
   title: {
-    fontFamily: 'Literata_500Medium',
-    fontSize: 15,
-    lineHeight: 22,
-    opacity: 0.7,
-  },
-  subtitle: {
-    ...Typography.body,
+    fontFamily: 'Literata_400Regular',
     fontSize: 14,
     lineHeight: 20,
-    marginTop: 4,
-    opacity: 0.55,
+    marginTop: 2,
   },
   list: {
-    gap: 8,
-    marginTop: 8,
+    gap: Spacing.sm,
+    marginTop: Spacing.sm,
   },
   levelRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-    borderRadius: 12,
-    gap: 16,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+    borderRadius: Radii.md,
+    gap: Spacing.md,
   },
   levelLabel: {
     fontFamily: 'Literata_600SemiBold',
     fontSize: 15,
-    width: 36,
-    opacity: 0.5,
+    width: 32,
   },
   levelMeta: {
     flex: 1,
@@ -129,13 +128,12 @@ const styles = StyleSheet.create({
   levelTitle: {
     fontFamily: 'Literata_500Medium',
     fontSize: 15,
-    lineHeight: 22,
-    opacity: 0.55,
+    lineHeight: 20,
   },
-  levelChapters: {
+  levelDetail: {
     ...Typography.caption,
-    fontSize: 13,
+    fontSize: 12,
     marginTop: 2,
-    opacity: 0.45,
   },
 });
+

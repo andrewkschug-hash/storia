@@ -8,6 +8,7 @@ import {
 } from '@/src/vocabulary/practicePriority';
 import type { SelfAssessment } from '@/src/vocabulary/selfAssessment';
 import {
+  clozePhraseText,
   clozeText,
   findExamplesForLemma,
   findExamplesForPhrase,
@@ -124,10 +125,16 @@ export function createPracticeSession(
 
     const examples = findExamplesForPhrase(bundle, item.id, 1);
     const example = examples[0];
+    const sentence = example
+      ? [...bundle.chapters.values()]
+          .flatMap((chapter) => chapter.paragraphs.flatMap((p) => p.sentences))
+          .find((row) => row.id === example.sentenceId)
+      : undefined;
+    const phraseCloze = sentence ? clozePhraseText(sentence, item.id) : null;
     return {
       ...item,
-      contextPrompt: example?.text ?? null,
-      contextAnswer: item.italian,
+      contextPrompt: phraseCloze?.cloze ?? null,
+      contextAnswer: phraseCloze?.surface ?? item.italian,
       exampleSentence: example?.text ?? null,
       chapterNumber: example ? chapterNumberById.get(example.chapterId) ?? null : null,
     };
