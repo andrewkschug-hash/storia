@@ -111,10 +111,12 @@ export function createPracticeSession(
             .find((row) => row.id === example.sentenceId)
         : undefined;
       const cloze = sentence ? clozeText(sentence, item.id) : null;
+      const token = sentence?.tokens.find((t) => t.lemmaId === item.id);
+      const surface = token?.surface ?? item.italian;
       return {
         ...item,
         contextPrompt: cloze,
-        contextAnswer: item.italian,
+        contextAnswer: cloze ? surface : item.italian,
         exampleSentence: example?.text ?? null,
         chapterNumber: example ? chapterNumberById.get(example.chapterId) ?? null : null,
       };

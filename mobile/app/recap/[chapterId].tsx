@@ -3,6 +3,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { buildChapterRecap } from '@/src/content/chapterRecap';
 import { findStoryIdForChapter, getChapter, getContentBundle } from '@/src/content';
 import { comprehensionHref } from '@/src/content/storyHrefs';
@@ -46,38 +47,40 @@ export default function ChapterRecapScreen() {
           { paddingBottom: insets.bottom + Spacing.xl },
         ]}
         showsVerticalScrollIndicator={false}>
-        <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Chapter recap</Text>
-        <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-          {recap.titleIt}
-        </Text>
-        <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>
-          {recap.titleEn}
-        </Text>
+        <ScreenContent maxWidth={680}>
+          <Text style={[type.chapterEyebrow, { color: colors.tint }]}>Chapter recap</Text>
+          <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+            {recap.titleIt}
+          </Text>
+          <Text style={[type.caption, { color: colors.textMuted, marginTop: 4 }]}>
+            {recap.titleEn}
+          </Text>
 
-        <Text style={[type.label, { color: colors.text, marginTop: Spacing.lg }]}>
-          What happened
-        </Text>
-        <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-          {recap.summary}
-        </Text>
+          <Text style={[type.label, { color: colors.text, marginTop: Spacing.lg }]}>
+            What happened
+          </Text>
+          <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+            {recap.summary}
+          </Text>
 
-        <Pressable
-          onPress={async () => {
-            await getVocabularyService().recordChapterExposure(chapter);
-            trackChapterWordsRead(chapter, storyId);
-            router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
-          }}
-          style={({ pressed }) => [
-            styles.primaryBtn,
-            {
-              backgroundColor: colors.buttonPrimary,
-              opacity: pressed ? 0.88 : 1,
-              marginTop: Spacing.xl,
-              minHeight: minTouchTarget,
-            },
-          ]}>
-          <Text style={[type.button, { color: colors.onButtonPrimary }]}>Check your understanding</Text>
-        </Pressable>
+          <Pressable
+            onPress={async () => {
+              await getVocabularyService().recordChapterExposure(chapter);
+              trackChapterWordsRead(chapter, storyId);
+              router.push(comprehensionHref(storyId ?? chapter.storyId, chapter.id));
+            }}
+            style={({ pressed }) => [
+              styles.primaryBtn,
+              {
+                backgroundColor: colors.buttonPrimary,
+                opacity: pressed ? 0.88 : 1,
+                marginTop: Spacing.xl,
+                minHeight: minTouchTarget,
+              },
+            ]}>
+            <Text style={[type.button, { color: colors.onButtonPrimary }]}>Check your understanding</Text>
+          </Pressable>
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -85,7 +88,6 @@ export default function ChapterRecapScreen() {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.lg,
   },
   center: {

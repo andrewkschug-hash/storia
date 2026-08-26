@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { SelfAssessmentVoteButtons } from '@/src/components/SelfAssessmentVoteButtons';
 import { LUCA_STORY_ID, getContentBundle } from '@/src/content';
 import { batchRangeForChapter } from '@/src/content/lessonBatches';
@@ -121,95 +122,99 @@ export default function BatchRecapScreen() {
           { paddingBottom: insets.bottom + Spacing.xl },
         ]}
         showsVerticalScrollIndicator={false}>
-        {loading ? (
-          <Text style={[type.body, { color: colors.textSecondary }]}>Preparing…</Text>
-        ) : phase === 'intro' && copy ? (
-          <View>
-            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>After the grammar</Text>
-            <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-              {copy.headline}
-            </Text>
-            <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-              {copy.detail}
-            </Text>
-            <Pressable
-              onPress={() => setPhase('prompt')}
-              style={({ pressed }) => [
-                styles.primaryBtn,
-                {
-                  backgroundColor: colors.buttonPrimary,
-                  opacity: pressed ? 0.88 : 1,
-                  minHeight: minTouchTarget,
-                  marginTop: Spacing.xl,
-                },
-              ]}>
-              <Text style={[type.button, { color: colors.onButtonPrimary }]}>Start</Text>
-            </Pressable>
-          </View>
-        ) : current ? (
-          <View>
-            <Text style={[type.caption, { color: colors.textMuted }]}>
-              {index + 1} of {items.length}
-            </Text>
-            <Text style={[type.chapterEyebrow, { color: colors.tint, marginTop: Spacing.lg }]}>
-              {current.question}
-            </Text>
-            <Text
-              style={[
-                current.promptType === 'cloze' ? type.body : type.heroTitle,
-                { color: colors.text, marginTop: Spacing.md },
-              ]}>
-              {current.stem}
-            </Text>
-            <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
-              {current.choices.map((choice, i) => {
-                const show = phase === 'feedback';
-                const isAnswer = i === current.correctIndex;
-                const isPick = i === selected;
-                const border = show
-                  ? isAnswer
-                    ? colors.tint
-                    : isPick
-                      ? colors.danger
-                      : colors.border
-                  : colors.border;
-                return (
-                  <Pressable
-                    key={`${choice}-${i}`}
-                    disabled={phase !== 'prompt'}
-                    onPress={() => onSelect(i)}
-                    style={({ pressed }) => [
-                      styles.choice,
-                      {
-                        backgroundColor: colors.backgroundElevated,
-                        borderColor: border,
-                        opacity: pressed && phase === 'prompt' ? 0.9 : 1,
-                      },
-                    ]}>
-                    <Text style={[type.body, { color: colors.text }]}>{choice}</Text>
-                  </Pressable>
-                );
-              })}
+        <ScreenContent maxWidth={680}>
+          {loading ? (
+            <Text style={[type.body, { color: colors.textSecondary }]}>Preparing…</Text>
+          ) : phase === 'intro' && copy ? (
+            <View>
+              <Text style={[type.chapterEyebrow, { color: colors.tint }]}>After the grammar</Text>
+              <Text style={[type.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
+                {copy.headline}
+              </Text>
+              <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
+                {copy.detail}
+              </Text>
+              <Pressable
+                onPress={() => setPhase('prompt')}
+                style={({ pressed }) => [
+                  styles.primaryBtn,
+                  {
+                    backgroundColor: colors.buttonPrimary,
+                    opacity: pressed ? 0.88 : 1,
+                    minHeight: minTouchTarget,
+                    marginTop: Spacing.xl,
+                  },
+                ]}>
+                <Text style={[type.button, { color: colors.onButtonPrimary }]}>Start</Text>
+              </Pressable>
             </View>
-            {phase === 'feedback' ? (
-              <View style={{ marginTop: Spacing.xl }}>
-                <Text style={[type.label, { color: correct ? colors.tint : colors.danger }]}>
-                  {correct ? 'That’s the answer.' : `Answer: ${current.choices[current.correctIndex]}`}
-                </Text>
-                <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-                  {current.italian} · {current.english}
-                </Text>
-                <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
-                  How did you do?
-                </Text>
-                <SelfAssessmentVoteButtons
-                  disabled={voting}
-                  onVote={(vote) => void onVote(vote)}
-                />
+          ) : current ? (
+            <View>
+              <Text style={[type.caption, { color: colors.textMuted }]}>
+                {index + 1} of {items.length}
+              </Text>
+              <Text style={[type.chapterEyebrow, { color: colors.tint, marginTop: Spacing.lg }]}>
+                {current.question}
+              </Text>
+              <Text
+                style={[
+                  current.promptType === 'cloze' ? type.body : type.heroTitle,
+                  { color: colors.text, marginTop: Spacing.md },
+                ]}>
+                {current.stem}
+              </Text>
+              <View style={{ marginTop: Spacing.xl, gap: Spacing.sm }}>
+                {current.choices.map((choice, i) => {
+                  const show = phase === 'feedback';
+                  const isAnswer = i === current.correctIndex;
+                  const isPick = i === selected;
+                  const border = show
+                    ? isAnswer
+                      ? colors.statusMastered
+                      : isPick
+                        ? colors.danger
+                        : colors.border
+                    : isPick
+                      ? colors.tint
+                      : colors.border;
+                  return (
+                    <Pressable
+                      key={`${choice}-${i}`}
+                      disabled={phase !== 'prompt'}
+                      onPress={() => onSelect(i)}
+                      style={({ pressed }) => [
+                        styles.choice,
+                        {
+                          backgroundColor: colors.backgroundElevated,
+                          borderColor: border,
+                          opacity: pressed && phase === 'prompt' ? 0.9 : 1,
+                        },
+                      ]}>
+                      <Text style={[type.body, { color: colors.text }]}>{choice}</Text>
+                    </Pressable>
+                  );
+                })}
               </View>
-            ) : null}
-          </View>
-        ) : null}
+              {phase === 'feedback' ? (
+                <View style={{ marginTop: Spacing.xl }}>
+                  <Text style={[type.label, { color: correct ? colors.tint : colors.danger }]}>
+                    {correct ? 'That’s the answer.' : `Answer: ${current.choices[current.correctIndex]}`}
+                  </Text>
+                  <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+                    {current.italian} · {current.english}
+                  </Text>
+                  <Text style={[type.caption, { color: colors.textMuted, marginTop: Spacing.lg }]}>
+                    How did you do?
+                  </Text>
+                  <SelfAssessmentVoteButtons
+                    disabled={voting}
+                    onVote={(vote) => void onVote(vote)}
+                  />
+                </View>
+              ) : null}
+            </View>
+          ) : null}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -217,7 +222,6 @@ export default function BatchRecapScreen() {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.lg,
   },
   choice: {

@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { getReviewService } from '@/src/review';
 import type { ReviewPrompt } from '@/src/review/ReviewService';
 import { getProgressService } from '@/src/progress';
@@ -78,6 +79,7 @@ export default function ReviewScreen() {
           { paddingBottom: insets.bottom + Spacing.xl },
         ]}
         showsVerticalScrollIndicator={false}>
+        <ScreenContent maxWidth={680}>
         {loading ? (
           <Text style={[type.body, { color: colors.textSecondary }]}>Preparing…</Text>
         ) : !loading && (items.length === 0 || phase === 'done') ? (
@@ -174,6 +176,7 @@ export default function ReviewScreen() {
             ) : null}
           </View>
         ) : null}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -181,7 +184,6 @@ export default function ReviewScreen() {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.lg,
   },
   choice: {

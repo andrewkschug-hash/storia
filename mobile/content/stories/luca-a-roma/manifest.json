@@ -370,6 +370,14 @@
       "titleIt": "La notizia",
       "difficultyLevel": 3,
       "file": "chapter-43.json"
+    },
+    {
+      "id": "luca-a-roma-44",
+      "number": 44,
+      "title": "In Monti with Sofia",
+      "titleIt": "A Monti con Sofia",
+      "difficultyLevel": 3,
+      "file": "chapter-44.json"
     }
   ]
 }

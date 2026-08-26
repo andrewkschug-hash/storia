@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
 import { ProductionExerciseCard } from '@/src/components/ProductionExerciseCard';
+import { ScreenContent } from '@/src/components/ScreenContent';
 import { LUCA_STORY_ID, findStoryIdForChapter, getChapter, getChapterByNumber, getContentBundle } from '@/src/content';
 import { getProductionExercisesForChapter } from '@/src/content/productionExercises';
 import { readerHref } from '@/src/content/storyHrefs';
@@ -365,6 +366,7 @@ export default function ComprehensionScreen() {
           },
         ]}
         showsVerticalScrollIndicator={false}>
+        <ScreenContent maxWidth={680}>
         {phase === 'intro' ? (
           <View>
             <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
@@ -587,6 +589,7 @@ export default function ComprehensionScreen() {
             </Pressable>
           </View>
         ) : null}
+        </ScreenContent>
       </ScrollView>
     </AtmosphereBackground>
   );
@@ -594,7 +597,6 @@ export default function ComprehensionScreen() {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: Spacing.lg,
   },
   center: {
     flex: 1,
