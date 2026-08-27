@@ -26,28 +26,23 @@ const PILLARS = [
   {
     title: 'Read',
     headline: 'Real Italian in context',
-    body: 'Every word you learn shows up inside a sentence a character actually says — never a flashcard floating on its own.',
+    body: 'Every word you learn shows up inside a sentence a character actually says, never as an isolated flashcard.',
   },
   {
     title: 'Remember',
     headline: 'Words return in the story',
-    body: "What you tap today reappears three chapters later. You don't drill vocabulary — the story quietly reminds you of it.",
+    body: 'What you tap today reappears in upcoming chapters. The story naturally reinforces vocabulary as you read.',
   },
   {
     title: 'Speak',
     headline: 'Say what you understand',
-    body: 'Once a chapter clicks, Storibase asks you to say it back — closing the loop from reading to speaking out loud.',
+    body: 'Practice speaking the story aloud in natural dialogue scenes, building confidence from the very first chapter.',
   },
 ] as const;
 
 const SHELF_LANGUAGES = [
-  { id: 'it', label: 'Italiano', live: true },
-  { id: 'es', label: 'Español', live: false },
-  { id: 'fr', label: 'Français', live: false },
-  { id: 'de', label: 'Deutsch', live: false },
-  { id: 'ja', label: '日本語', live: false },
-  { id: 'ko', label: '한국어', live: false },
-  { id: 'pt', label: 'Português', live: false },
+  { id: 'it', label: 'Italiano', live: true, tag: 'LIVE' },
+  { id: 'es', label: 'Español', live: false, tag: 'UP NEXT' },
 ] as const;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -137,11 +132,11 @@ export default function PublicHomeScreen() {
                     color: colors.textSecondary,
                     marginTop: Spacing.md,
                     lineHeight: 26,
-                    maxWidth: 460,
+                    maxWidth: 480,
                   },
                 ]}>
-                Follow one character, chapter by chapter. No word lists, no drills — just a story
-                that slowly starts to make sense in a language that used to be foreign.
+                Storibase helps you learn languages by learning to understand them, one story,
+                sentence, and voice at a time.
               </Text>
 
               <View style={[styles.ctaRow, layout.width < 400 && styles.ctaStack]}>
@@ -204,15 +199,16 @@ export default function PublicHomeScreen() {
                   fontSize: layout.isPhone ? 28 : 34,
                 },
               ]}>
-              One story live. Six more being written.
+              Italian is live. Spanish is up next.
             </Text>
             <Text
               style={[
                 Typography.body,
                 { color: colors.textSecondary, marginTop: Spacing.md, maxWidth: 520, lineHeight: 26 },
               ]}>
-              Every language on Storibase starts as an idea for a story. Italian is the first one
-              finished. Tell us which shelf to fill next.
+              Every course on Storibase is an original, chapter-by-chapter story. Italian is
+              complete, and Spanish is currently in production. Join the waitlist to be notified
+              first.
             </Text>
 
             <ScrollView
@@ -230,11 +226,13 @@ export default function PublicHomeScreen() {
                       borderColor: colors.border,
                     },
                   ]}>
-                  {lang.live ? (
-                    <Text style={[styles.liveTag, { color: colors.onAccent }]}>LIVE</Text>
-                  ) : (
-                    <Text style={[styles.lockTag, { color: colors.textMuted }]}>LOCK</Text>
-                  )}
+                  <Text
+                    style={[
+                      lang.live ? styles.liveTag : styles.lockTag,
+                      { color: lang.live ? colors.onAccent : colors.textMuted },
+                    ]}>
+                    {lang.tag}
+                  </Text>
                   <Text
                     style={[
                       styles.spineLabel,
@@ -248,7 +246,7 @@ export default function PublicHomeScreen() {
 
             <View style={[styles.notifyRow, layout.width < 480 && styles.notifyStack]}>
               <TextInput
-                accessibilityLabel="Email for language waitlist"
+                accessibilityLabel="Email for Spanish waitlist"
                 value={email}
                 onChangeText={(value) => {
                   setEmail(value);
@@ -289,8 +287,8 @@ export default function PublicHomeScreen() {
               {notifyState === 'invalid'
                 ? 'Enter a valid email address.'
                 : notifyState === 'done'
-                  ? 'Thanks — we’ll email you when that language opens.'
-                  : 'We’ll email you the day your language opens — no spam before that.'}
+                  ? 'Thanks! We will email you as soon as Spanish is ready.'
+                  : 'We will email you the day Spanish launches. No spam, ever.'}
             </Text>
           </View>
 
@@ -441,7 +439,7 @@ const styles = StyleSheet.create({
     paddingRight: Spacing.lg,
   },
   spine: {
-    width: 56,
+    width: 72,
     height: 180,
     borderRadius: Radii.md,
     borderWidth: StyleSheet.hairlineWidth,

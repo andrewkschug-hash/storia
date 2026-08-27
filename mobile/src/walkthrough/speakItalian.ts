@@ -22,7 +22,7 @@ async function loadWebVoices(synth: SpeechSynthesis): Promise<SpeechSynthesisVoi
   });
 }
 
-async function speakWithWebSpeech(text: string): Promise<void> {
+async function speakWithWebSpeech(text: string, rate: number = 0.95): Promise<void> {
   const synth = webSpeech();
   if (!synth) return Promise.reject(new Error('Speech is not available'));
 
@@ -30,7 +30,7 @@ async function speakWithWebSpeech(text: string): Promise<void> {
   synth.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'it-IT';
-  utterance.rate = 0.9;
+  utterance.rate = Math.max(0.6, Math.min(1.5, rate));
   const italian =
     voices.find((voice) => voice.lang.toLowerCase().startsWith('it-it')) ??
     voices.find((voice) => isItalianLang(voice.lang));
@@ -43,7 +43,7 @@ async function speakWithWebSpeech(text: string): Promise<void> {
   });
 }
 
-async function speakWithExpoSpeech(text: string): Promise<void> {
+async function speakWithExpoSpeech(text: string, rate: number = 0.95): Promise<void> {
   Speech.stop();
   const voices = await Speech.getAvailableVoicesAsync().catch(() => []);
   const italian =
@@ -52,7 +52,7 @@ async function speakWithExpoSpeech(text: string): Promise<void> {
   return new Promise((resolve, reject) => {
     Speech.speak(text, {
       language: 'it-IT',
-      rate: 0.88,
+      rate: Math.max(0.6, Math.min(1.5, rate * 0.95)),
       voice: italian?.identifier,
       onDone: () => resolve(),
       onStopped: () => resolve(),
@@ -67,7 +67,7 @@ export function stopSpeakingItalian(): void {
 }
 
 /** Play Italian TTS for walkthrough demo only. Does not use story audio or STT. */
-export async function speakItalian(text: string): Promise<void> {
-  if (webSpeech()) return speakWithWebSpeech(text);
-  return speakWithExpoSpeech(text);
+export async function speakItalian(text: string, rate: number = 0.95): Promise<void> {
+  if (webSpeech()) return speakWithWebSpeech(text, rate);
+  return speakWithExpoSpeech(text, rate);
 }

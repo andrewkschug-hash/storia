@@ -178,7 +178,7 @@ export function PublicNav({ continueHref, onLanguagesPress, onHowItWorksPress }:
           <Text style={[styles.betaTagText, { color: colors.onAccent }]}>BETA</Text>
         </View>
         <Text style={[Typography.caption, { color: colors.textMuted, flex: 1 }]}>
-          Storibase currently teaches Italian only — more languages are being written.
+          Storibase currently teaches Italian only. Spanish is coming next.
         </Text>
       </View>
     </View>

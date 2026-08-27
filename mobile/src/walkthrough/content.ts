@@ -9,7 +9,7 @@ export type WalkthroughGloss = {
 export const WALKTHROUGH_GLOSS: Record<string, WalkthroughGloss> = {
   luca: {
     surface: 'Luca',
-    gloss: 'Luca — the young man who just arrived in Rome.',
+    gloss: 'Luca, the young man who just arrived in Rome.',
   },
   entra: {
     surface: 'entra',
@@ -34,8 +34,8 @@ export const WALKTHROUGH_GLOSS: Record<string, WalkthroughGloss> = {
 };
 
 export const WALKTHROUGH_READING = [
-  { id: 's1', tokens: ['Luca', 'entra', 'nel', 'bar.'] },
-  { id: 's2', tokens: ['Guarda', 'intorno.'] },
+  { id: 's1', text: 'Luca entra nel bar.', tokens: ['Luca', 'entra', 'nel', 'bar.'] },
+  { id: 's2', text: 'Guarda intorno.', tokens: ['Guarda', 'intorno.'] },
 ] as const;
 
 export const WALKTHROUGH_QUESTION = {

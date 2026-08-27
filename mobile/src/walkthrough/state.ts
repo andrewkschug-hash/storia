@@ -4,6 +4,7 @@ export type WalkthroughStep =
   | 'intro'
   | 'reading'
   | 'dictionary'
+  | 'listening'
   | 'comprehension'
   | 'production'
   | 'complete';
@@ -22,6 +23,7 @@ const ORDER: WalkthroughStep[] = [
   'intro',
   'reading',
   'dictionary',
+  'listening',
   'comprehension',
   'production',
   'complete',
@@ -73,6 +75,8 @@ export function canAdvanceWalkthrough(state: WalkthroughState): boolean {
       return false;
     case 'dictionary':
       return Boolean(state.tappedToken);
+    case 'listening':
+      return true;
     case 'comprehension':
       return state.comprehensionChoice !== null;
     case 'production':
@@ -93,10 +97,10 @@ export function advanceWalkthrough(state: WalkthroughState): WalkthroughState {
   return { ...state, step: next };
 }
 
-/** From reading, continue without a tap is blocked; after dictionary, continue is allowed. */
+/** From reading, continue without a tap is blocked; after dictionary, advances to listening. */
 export function continueFromReading(state: WalkthroughState): WalkthroughState {
   if (state.step === 'dictionary' && state.tappedToken) {
-    return { ...state, step: 'comprehension' };
+    return { ...state, step: 'listening' };
   }
   if (state.step === 'reading') {
     return state;
@@ -105,18 +109,19 @@ export function continueFromReading(state: WalkthroughState): WalkthroughState {
 }
 
 export function skipToComprehension(state: WalkthroughState): WalkthroughState {
-  if (state.step !== 'reading' && state.step !== 'dictionary') return state;
+  if (state.step !== 'reading' && state.step !== 'dictionary' && state.step !== 'listening') return state;
   return { ...state, step: 'comprehension' };
 }
 
 export function walkthroughProgressLabel(step: WalkthroughStep): string {
   const labels: Record<WalkthroughStep, string> = {
-    intro: '1 of 5',
-    reading: '2 of 5',
-    dictionary: '2 of 5',
-    comprehension: '3 of 5',
-    production: '4 of 5',
-    complete: '5 of 5',
+    intro: '1 of 6',
+    reading: '2 of 6',
+    dictionary: '2 of 6',
+    listening: '3 of 6',
+    comprehension: '4 of 6',
+    production: '5 of 6',
+    complete: '6 of 6',
   };
   return labels[step];
 }

@@ -24,7 +24,7 @@ describe('walkthrough isolated state', () => {
     });
   });
 
-  it('advances intro → reading, then requires a tap before comprehension', () => {
+  it('advances intro → reading, then requires a tap before listening', () => {
     let state = createWalkthroughState();
     expect(canAdvanceWalkthrough(state)).toBe(true);
     state = advanceWalkthrough(state);
@@ -36,6 +36,9 @@ describe('walkthrough isolated state', () => {
     expect(state.step).toBe('dictionary');
     expect(state.tappedToken).toBe('entra');
     state = continueFromReading(state);
+    expect(state.step).toBe('listening');
+    expect(canAdvanceWalkthrough(state)).toBe(true);
+    state = advanceWalkthrough(state);
     expect(state.step).toBe('comprehension');
   });
 

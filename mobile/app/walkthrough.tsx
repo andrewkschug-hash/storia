@@ -1,5 +1,5 @@
 import { router, type Href } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -37,16 +37,79 @@ const ASSESSMENTS: { id: WalkthroughAssessment; label: string }[] = [
   { id: 'not_yet', label: 'Not yet' },
 ];
 
+const PLAYBACK_SPEEDS = [0.8, 1.0, 1.15] as const;
+
 export default function WalkthroughScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
   const [state, setState] = useState<WalkthroughState>(createWalkthroughState);
   const [speaking, setSpeaking] = useState(false);
+  const [playingSentenceId, setPlayingSentenceId] = useState<string | null>(null);
+  const [isPlayingPassage, setIsPlayingPassage] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState<number>(1.0);
   const [speechError, setSpeechError] = useState<string | null>(null);
+  const playbackRunIdRef = useRef(0);
+
   const gloss = state.tappedToken ? getWalkthroughGloss(state.tappedToken) : null;
 
-  useEffect(() => () => stopSpeakingItalian(), []);
+  const stopPlayback = useCallback(() => {
+    playbackRunIdRef.current += 1;
+    stopSpeakingItalian();
+    setIsPlayingPassage(false);
+    setPlayingSentenceId(null);
+    setSpeaking(false);
+  }, []);
+
+  // Stop audio whenever step changes or unmounts
+  useEffect(() => {
+    stopPlayback();
+    return () => {
+      stopPlayback();
+    };
+  }, [state.step, stopPlayback]);
+
+  const playSingleSentence = useCallback(
+    async (sentenceId: string, text: string) => {
+      stopPlayback();
+      const currentRunId = playbackRunIdRef.current;
+      setSpeechError(null);
+      setPlayingSentenceId(sentenceId);
+      try {
+        await speakItalian(text, playbackRate);
+      } catch {
+        setSpeechError('Pronunciation isn’t available on this device.');
+      } finally {
+        if (playbackRunIdRef.current === currentRunId) {
+          setPlayingSentenceId(null);
+        }
+      }
+    },
+    [playbackRate, stopPlayback],
+  );
+
+  const playPassage = useCallback(async () => {
+    stopPlayback();
+    const currentRunId = playbackRunIdRef.current;
+    setSpeechError(null);
+    setIsPlayingPassage(true);
+    try {
+      for (const sentence of WALKTHROUGH_READING) {
+        if (playbackRunIdRef.current !== currentRunId) break;
+        setPlayingSentenceId(sentence.id);
+        await speakItalian(sentence.text, playbackRate);
+        if (playbackRunIdRef.current !== currentRunId) break;
+        await new Promise((r) => setTimeout(r, 220));
+      }
+    } catch {
+      setSpeechError('Pronunciation isn’t available on this device.');
+    } finally {
+      if (playbackRunIdRef.current === currentRunId) {
+        setIsPlayingPassage(false);
+        setPlayingSentenceId(null);
+      }
+    }
+  }, [playbackRate, stopPlayback]);
 
   const title = useMemo(() => {
     switch (state.step) {
@@ -55,6 +118,8 @@ export default function WalkthroughScreen() {
       case 'reading':
       case 'dictionary':
         return 'Read';
+      case 'listening':
+        return 'Listen';
       case 'comprehension':
         return 'Understand';
       case 'production':
@@ -106,7 +171,33 @@ export default function WalkthroughScreen() {
                   styles.readerCard,
                   { backgroundColor: colors.readerSurface, borderColor: colors.border },
                 ]}>
-                <Text style={[Typography.reader, { color: colors.text }]}>Luca arriva a Roma.</Text>
+                <View style={styles.sentenceRow}>
+                  <Text style={[Typography.reader, { color: colors.text, flex: 1 }]}>
+                    Luca arriva a Roma.
+                  </Text>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Listen to sentence"
+                    onPress={() => void playSingleSentence('intro', 'Luca arriva a Roma.')}
+                    hitSlop={8}
+                    style={({ pressed }) => [
+                      styles.inlineAudioBtn,
+                      {
+                        backgroundColor:
+                          playingSentenceId === 'intro' ? colors.tint : colors.backgroundElevated,
+                        borderColor: colors.border,
+                        opacity: pressed ? 0.7 : 1,
+                      },
+                    ]}>
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        color: playingSentenceId === 'intro' ? colors.onButtonPrimary : colors.tint,
+                      }}>
+                      {playingSentenceId === 'intro' ? '❚❚' : '▶'}
+                    </Text>
+                  </Pressable>
+                </View>
               </View>
             </View>
           ) : null}
@@ -114,35 +205,67 @@ export default function WalkthroughScreen() {
           {state.step === 'reading' || state.step === 'dictionary' ? (
             <View style={styles.block}>
               <Text style={[Typography.body, { color: colors.textSecondary }]}>
-                Read a little Italian. Tap a word when you need it.
+                Read a little Italian. Tap a word when you need it, or listen to a sentence.
               </Text>
               <View
                 style={[
                   styles.readerCard,
                   { backgroundColor: colors.readerSurface, borderColor: colors.border },
                 ]}>
-                {WALKTHROUGH_READING.map((sentence) => (
-                  <View key={sentence.id} style={styles.sentence}>
-                    {sentence.tokens.map((token) => {
-                      const surface = token.replace(/[.,!?]+$/g, '');
-                      const selected = state.tappedToken === surface.toLowerCase();
-                      return (
-                        <Pressable
-                          key={`${sentence.id}-${token}`}
-                          accessibilityRole="button"
-                          accessibilityLabel={`Word: ${surface}`}
-                          onPress={() => setState((current) => tapWalkthroughToken(current, token))}
-                          style={({ pressed }) => [
-                            styles.token,
-                            selected && { backgroundColor: colors.sentenceHighlight },
-                            { opacity: pressed ? 0.85 : 1 },
-                          ]}>
-                          <Text style={[Typography.reader, { color: colors.text }]}>{token}</Text>
-                        </Pressable>
-                      );
-                    })}
-                  </View>
-                ))}
+                {WALKTHROUGH_READING.map((sentence) => {
+                  const isPlayingThis = playingSentenceId === sentence.id;
+                  return (
+                    <View key={sentence.id} style={styles.sentenceRow}>
+                      <View style={styles.tokensWrapper}>
+                        {sentence.tokens.map((token) => {
+                          const surface = token.replace(/[.,!?]+$/g, '');
+                          const selected = state.tappedToken === surface.toLowerCase();
+                          return (
+                            <Pressable
+                              key={`${sentence.id}-${token}`}
+                              accessibilityRole="button"
+                              accessibilityLabel={`Word: ${surface}`}
+                              onPress={() => setState((current) => tapWalkthroughToken(current, token))}
+                              style={({ pressed }) => [
+                                styles.token,
+                                selected && { backgroundColor: colors.sentenceHighlight },
+                                { opacity: pressed ? 0.85 : 1 },
+                              ]}>
+                              <Text style={[Typography.reader, { color: colors.text }]}>{token}</Text>
+                            </Pressable>
+                          );
+                        })}
+                      </View>
+                      <Pressable
+                        accessibilityRole="button"
+                        accessibilityLabel={`Listen to sentence: ${sentence.text}`}
+                        onPress={() => {
+                          if (isPlayingThis) {
+                            stopPlayback();
+                          } else {
+                            void playSingleSentence(sentence.id, sentence.text);
+                          }
+                        }}
+                        hitSlop={8}
+                        style={({ pressed }) => [
+                          styles.inlineAudioBtn,
+                          {
+                            backgroundColor: isPlayingThis ? colors.tint : colors.backgroundElevated,
+                            borderColor: isPlayingThis ? colors.tint : colors.border,
+                            opacity: pressed ? 0.7 : 1,
+                          },
+                        ]}>
+                        <Text
+                          style={{
+                            fontSize: 12,
+                            color: isPlayingThis ? colors.onButtonPrimary : colors.tint,
+                          }}>
+                          {isPlayingThis ? '❚❚' : '▶'}
+                        </Text>
+                      </Pressable>
+                    </View>
+                  );
+                })}
               </View>
               {state.step === 'dictionary' && gloss ? (
                 <View
@@ -150,7 +273,21 @@ export default function WalkthroughScreen() {
                     styles.gloss,
                     { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
                   ]}>
-                  <Text style={[Typography.label, { color: colors.text }]}>{gloss.surface}</Text>
+                  <View style={styles.glossHeader}>
+                    <Text style={[Typography.label, { color: colors.text }]}>{gloss.surface}</Text>
+                    <Pressable
+                      accessibilityRole="button"
+                      accessibilityLabel={`Pronounce ${gloss.surface}`}
+                      onPress={() => void speakItalian(gloss.surface, playbackRate)}
+                      hitSlop={8}
+                      style={({ pressed }) => ({
+                        opacity: pressed ? 0.6 : 1,
+                        paddingVertical: 2,
+                        paddingHorizontal: 6,
+                      })}>
+                      <Text style={[Typography.caption, { color: colors.tint }]}>🔊 Pronounce</Text>
+                    </Pressable>
+                  </View>
                   <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
                     {gloss.gloss}
                   </Text>
@@ -160,6 +297,151 @@ export default function WalkthroughScreen() {
                   Tap any word to see what it means.
                 </Text>
               )}
+            </View>
+          ) : null}
+
+          {state.step === 'listening' ? (
+            <View style={styles.block}>
+              <Text style={[Typography.caption, { color: colors.tint }]}>Pass 2 · Listen</Text>
+              <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
+                Hearing the story connects the sound of Italian to its meaning. Listen as each sentence
+                flows naturally.
+              </Text>
+              <View
+                style={[
+                  styles.readerCard,
+                  { backgroundColor: colors.readerSurface, borderColor: colors.border },
+                ]}>
+                {WALKTHROUGH_READING.map((sentence) => {
+                  const isPlayingThis = playingSentenceId === sentence.id;
+                  return (
+                    <View
+                      key={sentence.id}
+                      style={[
+                        styles.listenSentenceRow,
+                        isPlayingThis && {
+                          backgroundColor: colors.sentenceHighlight,
+                          borderColor: colors.tint,
+                        },
+                      ]}>
+                      <Pressable
+                        accessibilityRole="button"
+                        accessibilityLabel={`Play sentence: ${sentence.text}`}
+                        onPress={() => {
+                          if (isPlayingThis) {
+                            stopPlayback();
+                          } else {
+                            void playSingleSentence(sentence.id, sentence.text);
+                          }
+                        }}
+                        hitSlop={8}
+                        style={({ pressed }) => [
+                          styles.listenRowAudioBtn,
+                          {
+                            backgroundColor: isPlayingThis ? colors.tint : colors.backgroundElevated,
+                            borderColor: isPlayingThis ? colors.tint : colors.border,
+                            opacity: pressed ? 0.75 : 1,
+                          },
+                        ]}>
+                        <Text
+                          style={{
+                            fontSize: 13,
+                            color: isPlayingThis ? colors.onButtonPrimary : colors.tint,
+                          }}>
+                          {isPlayingThis ? '❚❚' : '▶'}
+                        </Text>
+                      </Pressable>
+                      <Text
+                        style={[
+                          Typography.reader,
+                          {
+                            color: colors.text,
+                            flex: 1,
+                            fontWeight: isPlayingThis ? '600' : '400',
+                          },
+                        ]}>
+                        {sentence.text}
+                      </Text>
+                    </View>
+                  );
+                })}
+              </View>
+
+              {/* Audio Deck Controls */}
+              <View
+                style={[
+                  styles.deckCard,
+                  { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+                ]}>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={isPlayingPassage ? 'Pause passage' : 'Play passage'}
+                  onPress={() => {
+                    if (isPlayingPassage) {
+                      stopPlayback();
+                    } else {
+                      void playPassage();
+                    }
+                  }}
+                  style={({ pressed }) => [
+                    styles.passagePlayBtn,
+                    {
+                      backgroundColor: colors.buttonPrimary,
+                      opacity: pressed ? 0.88 : 1,
+                    },
+                  ]}>
+                  <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>
+                    {isPlayingPassage ? '❚❚ Pause passage' : '▶ Play whole passage'}
+                  </Text>
+                </Pressable>
+
+                <View style={styles.speedSelectorRow}>
+                  <Text style={[Typography.caption, { color: colors.textMuted }]}>Speed</Text>
+                  <View style={styles.speedButtons}>
+                    {PLAYBACK_SPEEDS.map((speed) => {
+                      const active = playbackRate === speed;
+                      return (
+                        <Pressable
+                          key={speed}
+                          accessibilityRole="button"
+                          accessibilityLabel={`${speed}x speed`}
+                          accessibilityState={{ selected: active }}
+                          onPress={() => {
+                            setPlaybackRate(speed);
+                            if (isPlayingPassage) {
+                              setTimeout(() => void playPassage(), 50);
+                            }
+                          }}
+                          style={({ pressed }) => [
+                            styles.speedBtn,
+                            {
+                              backgroundColor: active ? colors.accentSoft : 'transparent',
+                              borderColor: active ? colors.tint : colors.border,
+                              opacity: pressed ? 0.8 : 1,
+                            },
+                          ]}>
+                          <Text
+                            style={[
+                              Typography.caption,
+                              {
+                                color: active ? colors.tint : colors.textSecondary,
+                                fontWeight: active ? '600' : '400',
+                              },
+                            ]}>
+                            {speed}x
+                          </Text>
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+                </View>
+              </View>
+
+              {speechError ? (
+                <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.sm }]}>
+                  {speechError}
+                </Text>
+              ) : null}
             </View>
           ) : null}
 
@@ -255,7 +537,7 @@ export default function WalkthroughScreen() {
                       onPress={() => {
                         setSpeechError(null);
                         setSpeaking(true);
-                        void speakItalian(WALKTHROUGH_PRODUCTION.expectedIt)
+                        void speakItalian(WALKTHROUGH_PRODUCTION.expectedIt, playbackRate)
                           .catch(() => {
                             setSpeechError('Pronunciation isn’t available on this device.');
                           })
@@ -367,7 +649,13 @@ export default function WalkthroughScreen() {
                   styles.primaryBtn,
                   { backgroundColor: colors.buttonPrimary, opacity: pressed ? 0.88 : 1 },
                 ]}>
-                <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>Continue</Text>
+                <Text style={[Typography.button, { color: colors.onButtonPrimary }]}>
+                  {state.step === 'dictionary'
+                    ? 'Continue to Listen →'
+                    : state.step === 'listening'
+                      ? 'Continue to Understand →'
+                      : 'Continue'}
+                </Text>
               </Pressable>
             ) : null}
             {state.step === 'complete' ? (
@@ -408,21 +696,93 @@ const styles = StyleSheet.create({
     borderRadius: Radii.lg,
     padding: Spacing.lg,
   },
-  sentence: {
+  sentenceRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: Spacing.sm,
+    gap: Spacing.sm,
+  },
+  tokensWrapper: {
+    flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 4,
-    marginBottom: Spacing.sm,
+    alignItems: 'center',
   },
   token: {
     borderRadius: Radii.sm,
     paddingHorizontal: 2,
+  },
+  inlineAudioBtn: {
+    width: 28,
+    height: 28,
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  listenSentenceRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: Spacing.xs,
+    paddingHorizontal: Spacing.sm,
+    marginBottom: Spacing.xs,
+    borderRadius: Radii.sm,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: 'transparent',
+    gap: Spacing.sm,
+  },
+  listenRowAudioBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  deckCard: {
+    marginTop: Spacing.md,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderRadius: Radii.md,
+    padding: Spacing.md,
+    gap: Spacing.md,
+  },
+  passagePlayBtn: {
+    minHeight: 44,
+    borderRadius: Radii.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: Spacing.md,
+  },
+  speedSelectorRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  speedButtons: {
+    flexDirection: 'row',
+    gap: Spacing.xs,
+  },
+  speedBtn: {
+    paddingVertical: 4,
+    paddingHorizontal: Spacing.sm,
+    borderRadius: Radii.sm,
+    borderWidth: StyleSheet.hairlineWidth,
+    minHeight: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   gloss: {
     marginTop: Spacing.md,
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: Radii.md,
     padding: Spacing.md,
+  },
+  glossHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   option: {
     marginTop: Spacing.sm,
