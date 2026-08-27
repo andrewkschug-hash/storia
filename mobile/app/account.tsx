@@ -14,7 +14,14 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { getAccount, signInWithPassword, signUpWithPassword } from '@/src/account/storage';
+import {
+  getAccount,
+  getRememberedEmail,
+  isRememberMeEnabled,
+  saveRememberedEmail,
+  signInWithPassword,
+  signUpWithPassword,
+} from '@/src/account/storage';
 import { isSupabaseConfigured } from '@/src/lib/supabase';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useLayout } from '@/src/theme/useLayout';
@@ -88,6 +95,7 @@ export default function AccountScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [focusedField, setFocusedField] = useState<'name' | 'email' | 'password' | 'confirm' | null>(
@@ -107,6 +115,14 @@ export default function AccountScreen() {
         await continueAfterAccount();
         return;
       }
+      const [savedEmail, rememberPref] = await Promise.all([
+        getRememberedEmail(),
+        isRememberMeEnabled(),
+      ]);
+      if (savedEmail) {
+        setEmail(savedEmail);
+      }
+      setRememberMe(rememberPref);
       setChecking(false);
     })();
   }, []);
@@ -144,6 +160,7 @@ export default function AccountScreen() {
       } else {
         await signInWithPassword({ email: mail, password });
       }
+      await saveRememberedEmail(mail, rememberMe);
       await continueAfterAccount();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not save your account. Please try again.');
@@ -397,6 +414,29 @@ export default function AccountScreen() {
                     </>
                   ) : null}
 
+                  <Pressable
+                    accessibilityRole="checkbox"
+                    accessibilityState={{ checked: rememberMe }}
+                    accessibilityLabel="Remember me"
+                    onPress={() => setRememberMe((prev) => !prev)}
+                    style={styles.rememberMeRow}>
+                    <View
+                      style={[
+                        styles.checkbox,
+                        {
+                          borderColor: rememberMe ? tone.accent : tone.border,
+                          backgroundColor: rememberMe ? tone.accent : tone.paper,
+                        },
+                      ]}>
+                      {rememberMe ? (
+                        <Text style={[styles.checkmark, { color: tone.paper }]}>✓</Text>
+                      ) : null}
+                    </View>
+                    <Text style={[Typography.body, styles.rememberMeText, { color: tone.ink }]}>
+                      Remember me
+                    </Text>
+                  </Pressable>
+
                   {error ? (
                     <Text style={[Typography.caption, { color: tone.terracotta, marginTop: Spacing.sm }]}>
                       {error}
@@ -544,6 +584,29 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.sm,
     minHeight: 44,
     justifyContent: 'center',
+  },
+  rememberMeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: Spacing.md,
+    paddingVertical: Spacing.xs,
+  },
+  checkbox: {
+    width: 20,
+    height: 20,
+    borderRadius: 4,
+    borderWidth: 1.5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: Spacing.sm,
+  },
+  checkmark: {
+    fontSize: 12,
+    fontWeight: '700',
+    lineHeight: 14,
+  },
+  rememberMeText: {
+    fontSize: 14,
   },
   center: {
     flex: 1,

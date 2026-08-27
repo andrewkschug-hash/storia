@@ -34,7 +34,13 @@ import {
   passInstructionCopy,
   readToListenTransitionCopy,
 } from '@/src/reader/readerPassCopy';
-import { hasSeenReaderTip, markReaderTipSeen } from '@/src/reader/storage';
+import { ReadingMindsetModal } from '@/src/components/ReadingMindsetModal';
+import {
+  hasSeenReaderTip,
+  hasSeenReadingMindset,
+  markReaderTipSeen,
+  markReadingMindsetSeen,
+} from '@/src/reader/storage';
 import { trackChapterWordsRead } from '@/src/telemetry/chapterExposure';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { getVocabularyService } from '@/src/vocabulary';
@@ -86,6 +92,7 @@ export default function ReaderScreen() {
   const [audioCatalogVersion, setAudioCatalogVersion] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showReaderTip, setShowReaderTip] = useState(false);
+  const [showMindsetModal, setShowMindsetModal] = useState(false);
   const [progressRecord, setProgressRecord] = useState<ReadingProgressRecord | null>(null);
   const [readerPass, setReaderPass] = useState<ReaderPassMode>('read');
   const [passGuidance, setPassGuidance] = useState<ReaderPassGuidance>('guided');
@@ -112,6 +119,11 @@ export default function ReaderScreen() {
     setChapterPlayback(audio.getChapterPlaybackProgress());
   };
 
+  const dismissMindset = async () => {
+    setShowMindsetModal(false);
+    await markReadingMindsetSeen();
+  };
+
   useEffect(() => {
     let cancelled = false;
     setReady(false);
@@ -135,11 +147,17 @@ export default function ReaderScreen() {
         audio.setChapterContext(authored.id);
         void syncCatalog();
         await audio.loadSpeed();
-        const tipSeen = await hasSeenReaderTip();
+        const [tipSeen, mindsetSeen] = await Promise.all([
+          hasSeenReaderTip(),
+          hasSeenReadingMindset(),
+        ]);
         if (cancelled) return;
         setChapter(adapted);
         setHighlightId(progress.lastSentenceId);
         setShowReaderTip(!tipSeen);
+        if (!mindsetSeen) {
+          setShowMindsetModal(true);
+        }
         audio.setOnChange(syncAudioUi);
         syncAudioUi();
         setReady(true);
@@ -531,6 +549,27 @@ export default function ReaderScreen() {
               <Text style={[type.label, { color: colors.tint }]}>Stories</Text>
             </Pressable>
           ),
+          headerRight: () => (
+            <Pressable
+              onPress={() => setShowMindsetModal(true)}
+              accessibilityRole="button"
+              accessibilityLabel="Reading mindset guide"
+              hitSlop={12}
+              style={({ pressed }) => [
+                styles.headerGuideBtn,
+                { opacity: pressed ? 0.7 : 1, minHeight: minTouchTarget },
+              ]}>
+              <AppSymbol
+                name={{
+                  ios: 'book.pages',
+                  android: 'menu_book',
+                  web: 'menu_book',
+                }}
+                tintColor={colors.tint}
+                size={20}
+              />
+            </Pressable>
+          ),
         }}
       />
 
@@ -745,6 +784,11 @@ export default function ReaderScreen() {
           }
         }}
       />
+
+      <ReadingMindsetModal
+        visible={showMindsetModal}
+        onDismiss={() => void dismissMindset()}
+      />
     </View>
   );
 }
@@ -755,6 +799,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 2,
     paddingRight: Spacing.sm,
+    minHeight: 44,
+  },
+  headerGuideBtn: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: Spacing.xs,
     minHeight: 44,
   },
   missing: {

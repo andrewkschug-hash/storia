@@ -5,8 +5,11 @@ import {
   canAccessDeveloperTools,
   clearAccount,
   getAccount,
+  getRememberedEmail,
   hasLocalAccount,
+  isRememberMeEnabled,
   saveAccount,
+  saveRememberedEmail,
   signInWithPassword,
   signOutAccount,
   signUpWithPassword,
@@ -170,16 +173,19 @@ describe('developer tooling access', () => {
     setDevMode(false);
   });
 
-  it('allows developer tools only in development builds', () => {
+  it('allows developer tools in development builds or for developer accounts', () => {
     setDevMode(true);
     expect(canAccessDeveloperTools(null)).toBe(true);
-    setUnlockAllChapters(isDevBuild());
+    setUnlockAllChapters(canAccessDeveloperTools(null));
     expect(unlockAllChapters()).toBe(true);
 
     setDevMode(false);
     expect(canAccessDeveloperTools(null)).toBe(false);
-    setUnlockAllChapters(isDevBuild());
-    expect(unlockAllChapters()).toBe(false);
+    expect(canAccessDeveloperTools({ role: 'learner' } as any)).toBe(false);
+    expect(canAccessDeveloperTools({ role: 'developer' } as any)).toBe(true);
+    expect(canAccessDeveloperTools({ role: 'admin' } as any)).toBe(true);
+    setUnlockAllChapters(canAccessDeveloperTools({ role: 'developer' } as any));
+    expect(unlockAllChapters()).toBe(true);
   });
 });
 
@@ -251,5 +257,63 @@ describe('production auth fail-closed', () => {
     });
     expect(account.email).toBe('alex@example.com');
     expect(account.role).toBe('learner');
+    expect(unlockAllChapters()).toBe(false);
+  });
+
+  it('authenticates developer account and unlocks chapters in production', async () => {
+    supabaseMock.configured = true;
+    vi.stubEnv('EXPO_PUBLIC_SUPABASE_URL', 'https://example.supabase.co');
+    vi.stubEnv('EXPO_PUBLIC_SUPABASE_ANON_KEY', 'anon-key');
+    supabaseMock.signInWithPassword.mockResolvedValueOnce({
+      data: {
+        session: {
+          user: {
+            id: 'dev-user-1',
+            email: 'dev@example.com',
+            created_at: '2026-01-01T00:00:00.000Z',
+            user_metadata: { display_name: 'Dev Admin', avatar_id: 'mare', role: 'developer' },
+          },
+        },
+        user: null,
+      },
+      error: null,
+    });
+
+    const account = await signInWithPassword({
+      email: 'dev@example.com',
+      password: 'secret1',
+    });
+    expect(account.email).toBe('dev@example.com');
+    expect(account.role).toBe('developer');
+    expect(canAccessDeveloperTools(account)).toBe(true);
+    expect(unlockAllChapters()).toBe(true);
+  });
+
+  describe('remember me preferences and email caching', () => {
+    it('defaults to empty string and enabled state', async () => {
+      expect(await getRememberedEmail()).toBe('');
+      expect(await isRememberMeEnabled()).toBe(true);
+    });
+
+    it('persists remembered email when enabled', async () => {
+      await saveRememberedEmail('giulia@example.com', true);
+      expect(await getRememberedEmail()).toBe('giulia@example.com');
+      expect(await isRememberMeEnabled()).toBe(true);
+    });
+
+    it('clears remembered email when disabled', async () => {
+      await saveRememberedEmail('giulia@example.com', true);
+      expect(await getRememberedEmail()).toBe('giulia@example.com');
+
+      await saveRememberedEmail('giulia@example.com', false);
+      expect(await getRememberedEmail()).toBe('');
+      expect(await isRememberMeEnabled()).toBe(false);
+    });
+
+    it('re-enabling with new email updates stored value', async () => {
+      await saveRememberedEmail('marco@example.com', true);
+      expect(await getRememberedEmail()).toBe('marco@example.com');
+      expect(await isRememberMeEnabled()).toBe(true);
+    });
   });
 });

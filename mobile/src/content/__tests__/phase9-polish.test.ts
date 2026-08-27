@@ -8,8 +8,11 @@ import {
 } from '@/src/onboarding/storage';
 import {
   hasSeenReaderTip,
+  hasSeenReadingMindset,
   markReaderTipSeen,
+  markReadingMindsetSeen,
   resetReaderTip,
+  resetReadingMindset,
 } from '@/src/reader/storage';
 import { buildChapterRecap } from '@/src/content/chapterRecap';
 import {
@@ -68,6 +71,21 @@ describe('reader tip preference', () => {
   it('persists dismissal', async () => {
     await markReaderTipSeen();
     expect(await hasSeenReaderTip()).toBe(true);
+  });
+});
+
+describe('reading mindset popup preference', () => {
+  beforeEach(async () => {
+    await resetReadingMindset();
+  });
+
+  it('is unseen on initial start of the course', async () => {
+    expect(await hasSeenReadingMindset()).toBe(false);
+  });
+
+  it('persists dismissal so it does not reappear on every chapter', async () => {
+    await markReadingMindsetSeen();
+    expect(await hasSeenReadingMindset()).toBe(true);
   });
 });
 
