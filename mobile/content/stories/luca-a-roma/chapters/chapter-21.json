@@ -70,7 +70,7 @@
             "e",
             "luca",
             "si",
-            "svegliare",
+            "sveglia",
             "presto"
           ]
         },
@@ -117,7 +117,7 @@
             "luca",
             "andare",
             "al",
-            "lavorare",
+            "lavoro",
             "piu",
             "presto",
             "perche",
@@ -322,7 +322,7 @@
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
+            "andare",
             "bene",
             "potere",
             "aiutare"
@@ -451,7 +451,7 @@
             "bene",
             "luca",
             "oggi",
-            "lavorare",
+            "lavoro",
             "bene"
           ]
         },
@@ -543,7 +543,7 @@
           "kind": "narration",
           "lemmas": [
             "domani",
-            "ce",
+            "esserci",
             "di",
             "nuovo",
             "lavoro",

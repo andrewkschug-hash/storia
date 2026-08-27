@@ -183,9 +183,10 @@ describe('Voice Lab screen copy', () => {
   });
 
   it('uses Reader playback constants', () => {
-    expect(PLAYBACK_RATE.normal).toBe(0.9);
-    expect(PLAYBACK_RATE.slow).toBe(0.75);
-    expect(CHAPTER_SENTENCE_GAP_MS).toBe(650);
+    expect(PLAYBACK_RATE.normal).toBe(1.0);
+    expect(PLAYBACK_RATE.slow).toBe(0.8);
+    expect(PLAYBACK_RATE.faster).toBe(1.15);
+    expect(CHAPTER_SENTENCE_GAP_MS).toBe(250);
   });
 });
 

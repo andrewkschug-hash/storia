@@ -201,10 +201,12 @@
       "chapterId": "luca-prima-di-roma-04-05",
       "level": "A1",
       "sourceSentenceId": "s26",
-      "promptEn": "I take the bus.",
-      "expectedIt": "Prendo l'autobus.",
+      "promptEn": "Luca takes the bus.",
+      "expectedIt": "Luca prende l'autobus.",
       "acceptableAnswers": [
-        "Io prendo l'autobus."
+        "Prendo l'autobus.",
+        "Io prendo l'autobus.",
+        "Luca prende l’autobus."
       ],
       "match": "flexible",
       "focus": [
@@ -235,10 +237,12 @@
       "chapterId": "luca-prima-di-roma-04-05",
       "level": "A1",
       "sourceSentenceId": "s16",
-      "promptEn": "I buy a ticket.",
-      "expectedIt": "Compro un biglietto.",
+      "promptEn": "Luca buys a ticket.",
+      "expectedIt": "Luca compra un biglietto.",
       "acceptableAnswers": [
-        "Io compro un biglietto."
+        "Compro un biglietto.",
+        "Io compro un biglietto.",
+        "Compra un biglietto."
       ],
       "match": "flexible",
       "focus": [
@@ -332,10 +336,12 @@
       "chapterId": "luca-prima-di-roma-04-07",
       "level": "A1",
       "sourceSentenceId": "s14",
-      "promptEn": "Today I stay in Pietralba.",
-      "expectedIt": "Oggi resto a Pietralba.",
+      "promptEn": "Today Luca stays in Pietralba.",
+      "expectedIt": "Oggi Luca resta a Pietralba.",
       "acceptableAnswers": [
-        "Io resto a Pietralba oggi."
+        "Oggi resto a Pietralba.",
+        "Io resto a Pietralba oggi.",
+        "Luca resta a Pietralba oggi."
       ],
       "match": "flexible",
       "focus": [

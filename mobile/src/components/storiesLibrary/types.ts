@@ -1,7 +1,7 @@
 import type { ExtraStoryRow } from '@/src/components/storiesLevelInsert';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 
-export type LibraryTab = 'A1' | 'A1+' | 'A2' | 'A2+';
+export type LibraryTab = 'A1' | 'A1+' | 'A2' | 'A2+' | 'B1' | 'B1+';
 
 export type LibraryStoryRow = {
   id: string;

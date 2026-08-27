@@ -67,6 +67,21 @@ import chapter52 from '../../content/stories/luca-a-roma/chapters/chapter-52.jso
 import chapter53 from '../../content/stories/luca-a-roma/chapters/chapter-53.json';
 import chapter54 from '../../content/stories/luca-a-roma/chapters/chapter-54.json';
 import chapter55 from '../../content/stories/luca-a-roma/chapters/chapter-55.json';
+import chapter56 from '../../content/stories/luca-a-roma/chapters/chapter-56.json';
+import chapter57 from '../../content/stories/luca-a-roma/chapters/chapter-57.json';
+import chapter58 from '../../content/stories/luca-a-roma/chapters/chapter-58.json';
+import chapter59 from '../../content/stories/luca-a-roma/chapters/chapter-59.json';
+import chapter60 from '../../content/stories/luca-a-roma/chapters/chapter-60.json';
+import chapter61 from '../../content/stories/luca-a-roma/chapters/chapter-61.json';
+import chapter62 from '../../content/stories/luca-a-roma/chapters/chapter-62.json';
+import chapter63 from '../../content/stories/luca-a-roma/chapters/chapter-63.json';
+import chapter64 from '../../content/stories/luca-a-roma/chapters/chapter-64.json';
+import chapter65 from '../../content/stories/luca-a-roma/chapters/chapter-65.json';
+import chapter66 from '../../content/stories/luca-a-roma/chapters/chapter-66.json';
+import chapter67 from '../../content/stories/luca-a-roma/chapters/chapter-67.json';
+import chapter68 from '../../content/stories/luca-a-roma/chapters/chapter-68.json';
+import chapter69 from '../../content/stories/luca-a-roma/chapters/chapter-69.json';
+import chapter70 from '../../content/stories/luca-a-roma/chapters/chapter-70.json';
 
 const chapterJsonByFile: Record<string, unknown> = {
   'chapter-01.json': chapter01,
@@ -124,6 +139,21 @@ const chapterJsonByFile: Record<string, unknown> = {
   'chapter-53.json': chapter53,
   'chapter-54.json': chapter54,
   'chapter-55.json': chapter55,
+  'chapter-56.json': chapter56,
+  'chapter-57.json': chapter57,
+  'chapter-58.json': chapter58,
+  'chapter-59.json': chapter59,
+  'chapter-60.json': chapter60,
+  'chapter-61.json': chapter61,
+  'chapter-62.json': chapter62,
+  'chapter-63.json': chapter63,
+  'chapter-64.json': chapter64,
+  'chapter-65.json': chapter65,
+  'chapter-66.json': chapter66,
+  'chapter-67.json': chapter67,
+  'chapter-68.json': chapter68,
+  'chapter-69.json': chapter69,
+  'chapter-70.json': chapter70,
 };
 
 const bundleCache = new Map<string, ContentBundle>();

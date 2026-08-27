@@ -187,9 +187,9 @@ describe('Phase 12N scoring', () => {
 
   it('rejects wrong tense', () => {
     const ticket = byId('luca-prima-di-roma-04', 'luca-prima-di-roma-04-ch05-prod-03');
-    expect(scoreProductionAnswer(ticket, 'Compro un biglietto.').result).toBe('correct');
-    expect(scoreProductionAnswer(ticket, 'Ho comprato un biglietto.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(ticket, 'Ho comprato un biglietto.').reason).toBe('wrong_tense');
+    expect(scoreProductionAnswer(ticket, 'Luca compra un biglietto.').result).toBe('correct');
+    expect(scoreProductionAnswer(ticket, 'Luca ha comprato un biglietto.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(ticket, 'Luca ha comprato un biglietto.').reason).toBe('wrong_tense');
   });
 
   it('rejects wrong person', () => {

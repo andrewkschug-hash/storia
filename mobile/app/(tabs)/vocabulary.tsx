@@ -68,6 +68,7 @@ export default function VocabularyScreen() {
   const percentRecognized = Math.round(progressRatio * 100);
 
   const completedCount = progress?.completedChapterIds?.length ?? 0;
+  const isB1PlusCompleted = progress?.completedChapterIds?.includes('luca-a-roma-70') ?? false;
   const isB1Completed = progress?.completedChapterIds?.includes('luca-a-roma-55') ?? false;
 
   const handlePlayAudio = useCallback(async (id: string, text: string) => {
@@ -112,24 +113,36 @@ export default function VocabularyScreen() {
               📖 Il mio quaderno
             </Text>
             <Text style={[Typography.chapterEyebrow, { color: colors.tint, marginTop: Spacing.xs, letterSpacing: 1.2 }]}>
-              Luca a Roma · B1
+              Luca a Roma · B1+ (70 Capitoli · 8 Momenti)
             </Text>
             <Text style={[type.body, { color: colors.textSecondary, marginTop: 4, fontSize: 15 }]}>
               Parole, frasi, verbi e momenti che hai incontrato nel tuo viaggio.
             </Text>
           </View>
 
-          {/* B1 COMPLETION CELEBRATION / PROGRESS NOTE */}
-          {isB1Completed ? (
-            <View style={[styles.milestoneBox, { backgroundColor: colors.backgroundElevated, borderColor: colors.highlight }]}>
-              <Text style={[Typography.chapterEyebrow, { color: colors.highlight, letterSpacing: 1.5 }]}>
-                55 capitoli vissuti
+          {/* B1+ COMPLETION CELEBRATION / PROGRESS NOTE */}
+          {isB1PlusCompleted ? (
+            <View style={[styles.milestoneBox, { backgroundColor: colors.backgroundElevated, borderColor: colors.statusMastered }]}>
+              <Text style={[Typography.chapterEyebrow, { color: colors.statusMastered, letterSpacing: 1.5 }]}>
+                ✦ Percorso B1+ completato · 70 Capitoli
               </Text>
-              <Text style={[type.heroTitle, { color: colors.text, fontSize: 18, lineHeight: 24, marginTop: Spacing.xs }]}>
-                Hai seguito Luca da Pietralba fino al suo primo giorno allo Spazio Monti.
+              <Text style={[type.heroTitle, { color: colors.text, fontSize: 19, lineHeight: 25, marginTop: Spacing.xs }]}>
+                Hai completato l’arco narrativo intero di Luca a Roma.
               </Text>
               <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14 }]}>
-                Il tuo quaderno custodisce le radici, le decisioni e le parole di questo percorso. La storia continua.
+                Dall’arrivo a Roma fino alla maestria allo Spazio Monti: oltre 40.000 parole vissute. Hai costruito una solida esperienza di lettura a livello B1+ e una vera autonomia linguistica.
+              </Text>
+            </View>
+          ) : isB1Completed ? (
+            <View style={[styles.milestoneBox, { backgroundColor: colors.backgroundElevated, borderColor: colors.highlight }]}>
+              <Text style={[Typography.chapterEyebrow, { color: colors.highlight, letterSpacing: 1.5 }]}>
+                55 capitoli vissuti · Verso il traguardo B1+
+              </Text>
+              <Text style={[type.heroTitle, { color: colors.text, fontSize: 18, lineHeight: 24, marginTop: Spacing.xs }]}>
+                Hai seguito Luca da Pietralba fino all’apertura dello Spazio Monti.
+              </Text>
+              <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14 }]}>
+                Continua nei capitoli 56–70 per consolidare la tua autonomia artigianale e completare il livello B1+.
               </Text>
             </View>
           ) : completedCount > 0 ? (
@@ -841,10 +854,10 @@ function MomentiSection({
   return (
     <View style={{ gap: Spacing.lg }}>
       <Text style={[Typography.chapterEyebrow, { color: colors.textMuted, letterSpacing: 1.3 }]}>
-        I cinque momenti di Luca
+        Gli otto momenti di Luca a Roma
       </Text>
       <Text style={[type.caption, { color: colors.textSecondary, marginBottom: Spacing.xs }]}>
-        Dall’arrivo a Roma fino alla scelta di aprire il proprio banco: l’arco narrativo completo.
+        Dall’arrivo a Roma fino alla scelta rinnovata: l’arco narrativo completo in 70 capitoli.
       </Text>
 
       {moments.map((moment, idx) => {

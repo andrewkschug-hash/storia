@@ -87,7 +87,7 @@
             "caffe",
             "e",
             "avere",
-            "sorridere"
+            "sorriso"
           ]
         },
         {
@@ -99,7 +99,7 @@
             "marco",
             "non",
             "avere",
-            "sorridere",
+            "sorriso",
             "avere",
             "parlare",
             "con",
@@ -121,7 +121,7 @@
             "momento",
             "non",
             "avere",
-            "soldi"
+            "soldo"
           ]
         },
         {
@@ -137,7 +137,7 @@
             "acqua",
             "essere",
             "per",
-            "tu",
+            "te",
             "marco"
           ],
           "phrases": [
@@ -191,7 +191,7 @@
             "marco",
             "si",
             "essere",
-            "sedere",
+            "sedersi",
             "e",
             "avere",
             "guardare",
@@ -202,7 +202,7 @@
             "prendere",
             "acqua",
             "con",
-            "calma"
+            "calmo"
           ]
         }
       ]
@@ -219,10 +219,10 @@
           "lemmas": [
             "marco",
             "cercare",
-            "lavorare",
+            "lavoro",
             "ogni",
             "giorno",
-            "dare",
+            "da",
             "due",
             "settimana"
           ]
@@ -241,7 +241,7 @@
             "e",
             "avere",
             "chiedere",
-            "aiutare"
+            "aiuto"
           ]
         },
         {
@@ -271,7 +271,7 @@
             "a",
             "roma",
             "cercare",
-            "lavorare",
+            "lavoro",
             "ogni",
             "giorno"
           ]
@@ -283,7 +283,7 @@
           "kind": "dialogue",
           "lemmas": [
             "si_yes",
-            "essere",
+            "sei",
             "con",
             "noi",
             "cercare",
@@ -301,7 +301,7 @@
             "si_yes",
             "ma",
             "il",
-            "lavorare",
+            "lavoro",
             "no",
             "cercare",
             "e",
@@ -335,7 +335,7 @@
             "problema",
             "essere",
             "i",
-            "soldi",
+            "soldo",
             "e",
             "il",
             "tempo",
@@ -358,7 +358,7 @@
             "un",
             "posto",
             "di",
-            "lavorare"
+            "lavoro"
           ]
         },
         {
@@ -372,7 +372,7 @@
             "ascoltare",
             "marco",
             "con",
-            "calma",
+            "calmo",
             "e",
             "senza",
             "fretta",
@@ -452,7 +452,7 @@
             "anche",
             "il",
             "mio",
-            "lavorare",
+            "lavoro",
             "essere",
             "difficile"
           ]
@@ -486,7 +486,7 @@
             "e",
             "poi",
             "avere",
-            "sorridere",
+            "sorriso",
             "un",
             "poco"
           ]
@@ -581,7 +581,7 @@
             "un",
             "momento",
             "avere",
-            "sorridere"
+            "sorriso"
           ]
         },
         {
@@ -616,7 +616,7 @@
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "prima",
+            "primo",
             "di",
             "partire",
             "marco",
@@ -671,12 +671,12 @@
           "lemmas": [
             "domani",
             "andare",
-            "dare",
+            "da",
             "nonna",
             "rosa",
             "dopo",
             "il",
-            "lavorare",
+            "lavoro",
             "al",
             "caffe"
           ]
@@ -692,7 +692,7 @@
             "io",
             "non",
             "avere",
-            "lavorare",
+            "lavoro",
             "ma",
             "avere",
             "tempo"
@@ -738,11 +738,11 @@
           "lemmas": [
             "giulia",
             "avere",
-            "sorridere",
+            "sorriso",
             "a",
             "marco",
             "con",
-            "calma",
+            "calmo",
             "e",
             "voce",
             "gentile"
@@ -794,7 +794,7 @@
             "il",
             "caffe",
             "essere",
-            "aprire"
+            "aperto"
           ]
         },
         {

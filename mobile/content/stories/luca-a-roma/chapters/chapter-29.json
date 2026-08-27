@@ -52,7 +52,7 @@
             "marco",
             "essere",
             "andare",
-            "dare",
+            "da",
             "nonna",
             "rosa"
           ]
@@ -91,7 +91,7 @@
             "porta",
             "e",
             "avere",
-            "sorridere"
+            "sorriso"
           ]
         },
         {
@@ -100,14 +100,14 @@
           "speakerId": "nonna-rosa",
           "kind": "dialogue",
           "lemmas": [
-            "entrare",
+            "entrata",
             "avere",
             "fame",
             "ce",
             "pane",
             "e",
             "qualcosa",
-            "dare",
+            "da",
             "mangiare"
           ]
         },
@@ -119,11 +119,11 @@
           "lemmas": [
             "grazie",
             "nonna",
-            "prima",
+            "primo",
             "dovere",
             "parlare",
             "con",
-            "tu"
+            "te"
           ]
         },
         {
@@ -134,7 +134,7 @@
           "lemmas": [
             "si",
             "essere",
-            "sedere",
+            "sedersi",
             "e",
             "luca",
             "avere",
@@ -175,7 +175,7 @@
             "avere",
             "ascoltare",
             "con",
-            "calma",
+            "calmo",
             "e",
             "senza",
             "fretta",
@@ -215,7 +215,7 @@
           "lemmas": [
             "io",
             "cercare",
-            "lavorare",
+            "lavoro",
             "e",
             "non",
             "trovare",
@@ -238,7 +238,7 @@
             "caffe",
             "lo",
             "conoscere",
-            "dare",
+            "da",
             "tanto",
             "anno"
           ]
@@ -288,7 +288,7 @@
             "un",
             "caffe",
             "non",
-            "vivere",
+            "vivo",
             "solo"
           ]
         },
@@ -298,7 +298,7 @@
           "speakerId": "nonna-rosa",
           "kind": "dialogue",
           "lemmas": [
-            "vivere",
+            "vivo",
             "con",
             "la",
             "gente",
@@ -384,7 +384,7 @@
           "lemmas": [
             "essere",
             "una",
-            "provare",
+            "prova",
             "la",
             "gente",
             "venire",
@@ -428,7 +428,7 @@
             "pane",
             "e",
             "mangiare",
-            "dare",
+            "da",
             "solo"
           ]
         },
@@ -467,7 +467,7 @@
             "fare",
             "piccolo",
             "poco",
-            "soldi",
+            "soldo",
             "tanto",
             "gente",
             "chiamata"
@@ -515,7 +515,7 @@
             "aiutare",
             "non",
             "avere",
-            "soldi",
+            "soldo",
             "ma",
             "avere",
             "tempo"
@@ -590,7 +590,7 @@
             "suo",
             "problema",
             "al",
-            "lavorare"
+            "lavoro"
           ]
         },
         {
@@ -615,7 +615,7 @@
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "prima",
+            "primo",
             "servire",
             "giulia",
             "lei",
@@ -656,7 +656,7 @@
           "speakerId": "nonna-rosa",
           "kind": "dialogue",
           "lemmas": [
-            "prima",
+            "primo",
             "parlare",
             "con",
             "giulia",
@@ -761,7 +761,7 @@
             "lo",
             "sapere",
             "ancora",
-            "prima",
+            "primo",
             "chiedere",
             "il",
             "si_yes",
@@ -783,7 +783,7 @@
             "del",
             "quartiere",
             "con",
-            "calma"
+            "calmo"
           ]
         },
         {

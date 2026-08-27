@@ -34,11 +34,19 @@ describe('chapter complete copy', () => {
     expect(chapterCompleteView(40, null).detail).toContain('then home');
   });
 
-  it('sends the learner home after the last chapter', () => {
+  it('sends the learner home after the last chapter of short stories', () => {
     expect(chapterCompleteView(6, null)).toEqual({
       headline: 'Chapter 6 completed!',
       detail: 'You’ve finished this story.',
       button: 'Back to home',
+    });
+  });
+
+  it('renders grand season finale celebration for Luca a Roma Chapter 70', () => {
+    expect(chapterCompleteView(70, null, 'luca-a-roma')).toEqual({
+      headline: '✦ Percorso B1+ completato!',
+      detail: 'Hai completato tutti i 70 capitoli di Luca a Roma (40.000+ parole) e costruito una solida esperienza di lettura a livello B1+. Prosegui per l’ultima revisione e apri il tuo quaderno.',
+      button: 'Completa il percorso',
     });
   });
 });

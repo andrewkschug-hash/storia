@@ -9,6 +9,7 @@ import {
   validateProductionExercises,
   type ProductionValidationContext,
 } from '@/src/content/validateProductionExercises';
+import { productionCardView } from '@/src/production/flow';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const root = join(here, '../../../content');
@@ -178,9 +179,9 @@ describe('Luca production exercises', () => {
     const source = context.sentencesByChapter.get('luca-a-roma-01')?.get('s01');
     const exercise = dataset.exercises.find((e) => e.exerciseId === 'luca-a-roma-ch01-prod-01');
     expect(source).toBe('Luca arriva a Roma.');
-    expect(exercise?.expectedIt).toBe('Arrivo a Roma.');
-    expect(exercise?.promptEn).toBe('I arrive in Rome.');
-    expect(exercise?.expectedIt).not.toBe(source);
+    expect(exercise?.expectedIt).toBe('Luca arriva a Roma.');
+    expect(exercise?.promptEn).toBe('Luca arrives in Rome.');
+    expect(exercise?.acceptableAnswers).toContain('Arriva a Roma.');
     expect(exercise?.match).toBe('flexible');
   });
 
@@ -225,6 +226,79 @@ describe('Luca production exercises', () => {
       expect(ex.expectedIt, ex.exerciseId).not.toMatch(IMP_RE);
       for (const alt of ex.acceptableAnswers ?? []) {
         expect(alt, ex.exerciseId).not.toMatch(IMP_RE);
+      }
+    }
+  });
+
+  it('enforces PRODUCTION_SOURCE_ALIGNMENT invariant across all production overlays', () => {
+    const lexiconRaw = JSON.parse(readFileSync(join(root, 'lexicon', 'italian-core.json'), 'utf8'));
+    const lexiconById = new Map(lexiconRaw.lexicon.map((l: any) => [l.lemmaId, l]));
+    const copulas = new Set(['è', 'sono', 'siamo', 'sei', 'siete', 'era', 'erano', 'stato', 'stata', 'sarà', 'ho', 'ha', 'abbiamo', 'avete']);
+
+    const allStoryIds = [
+      'luca-prima-di-roma-01',
+      'luca-prima-di-roma-02',
+      'luca-prima-di-roma-03',
+      'luca-prima-di-roma-04',
+      'luca-prima-di-roma-05',
+      'luca-a-roma',
+    ];
+
+    for (const storyId of allStoryIds) {
+      const sDir = join(root, 'stories', storyId);
+      const prodJson = JSON.parse(readFileSync(join(sDir, 'production-exercises.json'), 'utf8'));
+      const sChaptersDir = join(sDir, 'chapters');
+
+      const sentsById = new Map<string, any>();
+      for (const file of readdirSync(sChaptersDir).filter((f) => f.endsWith('.json'))) {
+        const ch = JSON.parse(readFileSync(join(sChaptersDir, file), 'utf8'));
+        for (const p of ch.paragraphs || []) {
+          for (const s of p.sentences || []) {
+            let tokens = s.tokens;
+            if (!tokens && s.lemmas) {
+              const words = s.text.replace(/[.,;:!?…"'«»]+/g, ' ').trim().split(/\s+/);
+              tokens = s.lemmas.map((l: string, idx: number) => ({ lemmaId: l, surface: words[idx] || l }));
+            }
+            sentsById.set(`${ch.id}:${s.id}`, { ...s, tokens });
+          }
+        }
+      }
+
+      for (let i = 0; i < prodJson.exercises.length; i++) {
+        const ex = prodJson.exercises[i];
+        const source = ex.sourceSentenceId ? sentsById.get(`${ex.chapterId}:${ex.sourceSentenceId}`) : null;
+
+        // 1. sourceSentenceId must exist in the chapter
+        expect(source, `${ex.exerciseId}: source sentence missing`).toBeDefined();
+
+        // 2. Target sentence length must not be runaway (>20 words)
+        const sourceWords = source.text.trim().split(/\s+/).length;
+        expect(sourceWords, `${ex.exerciseId}: runaway sentence length (${sourceWords})`).toBeLessThanOrEqual(20);
+
+        // 3. Render through productionCardView
+        const view = productionCardView(ex, i, prodJson.exercises.length, true, source, {
+          storySentence: source,
+          lexiconById,
+        });
+
+        // 4. Invariant: prompt is never "be" or "to be"
+        const promptLower = (view.promptEn || '').toLowerCase().trim();
+        expect(promptLower, `${ex.exerciseId}: promptEn is "be"`).not.toBe('be');
+        expect(promptLower, `${ex.exerciseId}: promptEn is "to be"`).not.toBe('to be');
+
+        // 5. Invariant: target is never a bare copula / auxiliary
+        const expectedClean = (view.expectedIt || '').toLowerCase().trim();
+        expect(copulas.has(expectedClean), `${ex.exerciseId}: bare copula target "${expectedClean}"`).toBe(false);
+
+        // 6. Invariant: no 1st-person prompt for 3rd-person narration in A1
+        const isFirstPersonPrompt = /\b(i|i'm|my|me)\b/i.test(view.promptEn || '') || /\b(i|i'm|my|me)\b/i.test(ex.promptEn || '');
+        const isThirdPersonNarration = source && !source.speakerId && source.kind === 'narration' && /\b(luca|chiara|marta|paolo|sofia|marco|davide|elisa|lui|lei)\b/i.test(source.text);
+        if (ex.level === 'A1') {
+          expect(
+            isFirstPersonPrompt && isThirdPersonNarration,
+            `${ex.exerciseId}: 1st-person prompt "${view.promptEn}" for 3rd-person narration "${source.text}"`,
+          ).toBe(false);
+        }
       }
     }
   });

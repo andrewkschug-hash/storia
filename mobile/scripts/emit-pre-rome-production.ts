@@ -57,9 +57,9 @@ const s02: Draft[] = [
   { ch: 1, n: 2, sourceSentenceId: 's06', promptEn: "It's half past seven.", expectedIt: 'Sono le sette e mezzo.', match: 'flexible', focus: ['clock'] },
   { ch: 1, n: 3, sourceSentenceId: 's05', promptEn: 'What time is it?', expectedIt: 'Che ore sono?', match: 'exact', focus: ['clock', 'questions'] },
   { ch: 1, n: 4, sourceSentenceId: 's18', promptEn: 'I have to be ready.', expectedIt: 'Devo essere pronta.', match: 'flexible', focus: ['routine', 'gender'] },
-  { ch: 2, n: 1, sourceSentenceId: 's03', promptEn: 'I wake up.', expectedIt: 'Mi sveglio.', acceptableAnswers: ['Io mi sveglio.'], match: 'flexible', focus: ['routine', 'reflexives'] },
-  { ch: 2, n: 2, sourceSentenceId: 's13', promptEn: 'I have breakfast.', expectedIt: 'Faccio colazione.', acceptableAnswers: ['Io faccio colazione.'], match: 'flexible', focus: ['routine', 'food'] },
-  { ch: 2, n: 3, sourceSentenceId: 's04', promptEn: 'I get up.', expectedIt: 'Mi alzo.', acceptableAnswers: ['Io mi alzo.', 'Luca si alza.'], match: 'flexible', focus: ['routine', 'reflexives'] },
+  { ch: 2, n: 1, sourceSentenceId: 's03', promptEn: 'Luca wakes up.', expectedIt: 'Luca si sveglia.', acceptableAnswers: ['Si sveglia.', 'Mi sveglio.', 'Io mi sveglio.'], match: 'flexible', focus: ['routine', 'reflexives'] },
+  { ch: 2, n: 2, sourceSentenceId: 's13', promptEn: 'Luca has breakfast.', expectedIt: 'Luca fa colazione.', acceptableAnswers: ['Fa colazione.', 'Faccio colazione.', 'Io faccio colazione.'], match: 'flexible', focus: ['routine', 'food'] },
+  { ch: 2, n: 3, sourceSentenceId: 's04', promptEn: 'Luca gets up.', expectedIt: 'Luca si alza.', acceptableAnswers: ['Si alza.', 'Mi alzo.', 'Io mi alzo.'], match: 'flexible', focus: ['routine', 'reflexives'] },
   { ch: 3, n: 1, sourceSentenceId: 's03', promptEn: 'Today is Monday.', expectedIt: 'Oggi è lunedì.', match: 'flexible', focus: ['days'] },
   { ch: 3, n: 2, sourceSentenceId: 's07', promptEn: 'Tomorrow is Tuesday.', expectedIt: 'Domani è martedì.', match: 'flexible', focus: ['days'] },
   { ch: 3, n: 3, sourceSentenceId: 's04', promptEn: 'What day is today?', expectedIt: 'Che giorno è oggi?', match: 'exact', focus: ['days', 'questions'] },
@@ -73,7 +73,7 @@ const s02: Draft[] = [
   { ch: 6, n: 2, sourceSentenceId: 's12', promptEn: 'Chiara comes home at four.', expectedIt: 'Chiara torna a casa alle quattro.', match: 'flexible', focus: ['routine', 'clock'] },
   { ch: 6, n: 3, sourceSentenceId: 's18', promptEn: "I'm well.", expectedIt: 'Sto bene.', acceptableAnswers: ['Io sto bene.'], match: 'flexible', focus: ['essere', 'social'] },
   { ch: 7, n: 1, sourceSentenceId: 's04', promptEn: 'Dinner is at eight.', expectedIt: 'La cena è alle otto.', match: 'flexible', focus: ['clock', 'routine'] },
-  { ch: 7, n: 2, sourceSentenceId: 's21', promptEn: 'Tomorrow I get up at seven.', expectedIt: 'Domani mi alzo alle sette.', acceptableAnswers: ['Domani Luca si alza alle sette.', 'Mi alzo alle sette domani.'], match: 'flexible', focus: ['routine', 'reflexives', 'domani'] },
+  { ch: 7, n: 2, sourceSentenceId: 's21', promptEn: 'Tomorrow Luca gets up at seven.', expectedIt: 'Domani Luca si alza alle sette.', acceptableAnswers: ['Domani mi alzo alle sette.', 'Mi alzo alle sette domani.', 'Luca si alza alle sette.'], match: 'flexible', focus: ['routine', 'reflexives', 'domani'] },
   { ch: 7, n: 3, sourceSentenceId: 's33', promptEn: 'Good night.', expectedIt: 'Buona notte.', match: 'exact', focus: ['greeting'] },
 ];
 
@@ -97,7 +97,7 @@ const s03: Draft[] = [
   { ch: 5, n: 3, sourceSentenceId: 's16', promptEn: 'Is there a receipt?', expectedIt: "C'è lo scontrino?", acceptableAnswers: ['C’è lo scontrino?'], match: 'flexible', focus: ['shopping', 'ce'] },
   { ch: 6, n: 1, sourceSentenceId: 's05', promptEn: 'The sugar is missing.', expectedIt: 'Manca lo zucchero.', match: 'flexible', focus: ['shopping', 'food'] },
   { ch: 6, n: 2, sourceSentenceId: 's18', promptEn: 'I would like the sugar, please.', expectedIt: 'Vorrei lo zucchero per favore.', acceptableAnswers: ['Vorrei lo zucchero.'], match: 'flexible', focus: ['vorrei', 'food'] },
-  { ch: 6, n: 3, sourceSentenceId: 's26', promptEn: 'I like apples.', expectedIt: 'Mi piacciono le mele.', acceptableAnswers: ['A Luca piacciono le mele.', 'A me piacciono le mele.'], match: 'flexible', focus: ['mi_piace'] },
+  { ch: 6, n: 3, sourceSentenceId: 's26', promptEn: 'Luca likes apples.', expectedIt: 'A Luca piacciono le mele.', acceptableAnswers: ['Mi piacciono le mele.', 'A me piacciono le mele.'], match: 'flexible', focus: ['mi_piace'] },
 ];
 
 const s04: Draft[] = [
@@ -114,20 +114,20 @@ const s04: Draft[] = [
   { ch: 4, n: 1, sourceSentenceId: 's01', promptEn: "It's spring today.", expectedIt: 'Oggi è primavera.', match: 'flexible', focus: ['seasons'] },
   { ch: 4, n: 2, sourceSentenceId: 's11', promptEn: "In summer it's very hot.", expectedIt: 'In estate fa molto caldo.', match: 'flexible', focus: ['seasons', 'weather'] },
   { ch: 4, n: 3, sourceSentenceId: 's16', promptEn: "In winter it's cold.", expectedIt: 'In inverno fa freddo.', match: 'flexible', focus: ['seasons', 'weather'] },
-  { ch: 5, n: 1, sourceSentenceId: 's26', promptEn: 'I take the bus.', expectedIt: "Prendo l'autobus.", acceptableAnswers: ["Io prendo l'autobus.", 'Luca prende l’autobus.', "Luca prende l'autobus."], match: 'flexible', focus: ['transport'] },
+  { ch: 5, n: 1, sourceSentenceId: 's26', promptEn: 'Luca takes the bus.', expectedIt: "Luca prende l'autobus.", acceptableAnswers: ["Prendo l'autobus.", "Io prendo l'autobus.", 'Luca prende l’autobus.'], match: 'flexible', focus: ['transport'] },
   { ch: 5, n: 2, sourceSentenceId: 's03', promptEn: 'Where is the bus?', expectedIt: "Dov'è l'autobus?", acceptableAnswers: ["Dove è l'autobus?", "Dov’è l'autobus?"], match: 'flexible', focus: ['dove', 'transport'] },
-  { ch: 5, n: 3, sourceSentenceId: 's16', promptEn: 'I buy a ticket.', expectedIt: 'Compro un biglietto.', acceptableAnswers: ['Io compro un biglietto.', 'Luca compra un biglietto.'], match: 'flexible', focus: ['transport'] },
+  { ch: 5, n: 3, sourceSentenceId: 's16', promptEn: 'Luca buys a ticket.', expectedIt: 'Luca compra un biglietto.', acceptableAnswers: ['Compro un biglietto.', 'Io compro un biglietto.', 'Compra un biglietto.'], match: 'flexible', focus: ['transport'] },
   { ch: 6, n: 1, sourceSentenceId: 's10', promptEn: 'Where is the bar?', expectedIt: "Dov'è il bar?", acceptableAnswers: ['Dove è il bar?', 'Dov’è il bar?'], match: 'flexible', focus: ['dove', 'places'] },
   { ch: 6, n: 2, sourceSentenceId: 's12', promptEn: 'Go straight and then left.', expectedIt: 'Vai dritto e poi a sinistra.', match: 'flexible', focus: ['directions'] },
   { ch: 6, n: 3, sourceSentenceId: 's20', promptEn: "It's next to the park.", expectedIt: 'Il bar è accanto al parco.', acceptableAnswers: ['È accanto al parco.', 'Il bar è vicino al parco.'], match: 'flexible', focus: ['directions', 'places'] },
   { ch: 7, n: 1, sourceSentenceId: 's04', promptEn: 'Where is the platform?', expectedIt: "Dov'è il binario?", acceptableAnswers: ['Dove è il binario?', 'Dov’è il binario?'], match: 'flexible', focus: ['dove', 'transport'] },
   { ch: 7, n: 2, sourceSentenceId: 's11', promptEn: 'The train leaves at eleven.', expectedIt: 'Il treno parte alle undici.', match: 'flexible', focus: ['transport', 'clock'] },
-  { ch: 7, n: 3, sourceSentenceId: 's14', promptEn: 'Today I stay in Pietralba.', expectedIt: 'Oggi resto a Pietralba.', acceptableAnswers: ['Io resto a Pietralba oggi.', 'Oggi Luca resta a Pietralba.'], match: 'flexible', focus: ['transport'] },
+  { ch: 7, n: 3, sourceSentenceId: 's14', promptEn: 'Today Luca stays in Pietralba.', expectedIt: 'Oggi Luca resta a Pietralba.', acceptableAnswers: ['Oggi resto a Pietralba.', 'Io resto a Pietralba oggi.', 'Luca resta a Pietralba oggi.'], match: 'flexible', focus: ['transport'] },
 ];
 
 const s05: Draft[] = [
-  { ch: 1, n: 1, sourceSentenceId: 's01', promptEn: 'Today is my birthday.', expectedIt: 'Oggi è il mio compleanno.', acceptableAnswers: ['Oggi è il compleanno di Luca.'], match: 'flexible', focus: ['birthdays'] },
-  { ch: 1, n: 2, sourceSentenceId: 's10', promptEn: 'Happy birthday.', expectedIt: 'Auguri.', acceptableAnswers: ['Auguri Luca.'], match: 'flexible', focus: ['birthdays', 'social'] },
+  { ch: 1, n: 1, sourceSentenceId: 's01', promptEn: "Today is Luca's birthday.", expectedIt: 'Oggi è il compleanno di Luca.', acceptableAnswers: ['Oggi è il mio compleanno.'], match: 'flexible', focus: ['birthdays'] },
+  { ch: 1, n: 2, sourceSentenceId: 's10', promptEn: 'Happy birthday, Luca.', expectedIt: 'Auguri Luca.', acceptableAnswers: ['Auguri.'], match: 'flexible', focus: ['birthdays', 'social'] },
   { ch: 1, n: 3, sourceSentenceId: 's06', promptEn: 'I am 24 years old.', expectedIt: 'Ho ventiquattro anni.', acceptableAnswers: ['Io ho ventiquattro anni.'], match: 'flexible', focus: ['age', 'avere'] },
   { ch: 2, n: 1, sourceSentenceId: 's05', promptEn: 'Do you want to come on Saturday?', expectedIt: 'Vieni sabato?', acceptableAnswers: ['Vuoi venire sabato?', 'Elisa vieni sabato?'], match: 'semantic', focus: ['invitations'], semantic: { requiredConcepts: ['come', 'saturday'], conceptAliases: { come: ['vieni', 'venire'], saturday: ['sabato'] }, requiredPerson: ['2sg'], requiredTense: 'present', requiredPolarity: 'affirmative' } },
   { ch: 2, n: 2, sourceSentenceId: 's06', promptEn: "Yes, I'm coming.", expectedIt: 'Sì vengo.', acceptableAnswers: ['Sì, vengo.', 'Io vengo.'], match: 'flexible', focus: ['invitations'] },

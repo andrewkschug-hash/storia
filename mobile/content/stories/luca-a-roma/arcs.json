@@ -57,20 +57,20 @@
       "description": "More natural conversations and complex situations",
       "narrativeStage": "Bigger decisions.",
       "chapterStart": 41,
-      "chapterEnd": 60,
-      "status": "planned"
+      "chapterEnd": 55,
+      "status": "available"
     },
     {
       "id": "luca-a-roma-b1-plus",
       "storyId": "luca-a-roma",
       "cefrLevel": "B1+",
-      "title": "Relationships and work",
-      "titleIt": "Relazioni e lavoro",
-      "description": "More natural conversations and complex situations",
-      "narrativeStage": "Relationships and work.",
-      "chapterStart": 61,
-      "chapterEnd": 60,
-      "status": "planned"
+      "title": "The Reality of Choice",
+      "titleIt": "La realtà della scelta",
+      "description": "Sustainability, work, and community",
+      "narrativeStage": "The reality of choice.",
+      "chapterStart": 56,
+      "chapterEnd": 70,
+      "status": "available"
     },
     {
       "id": "luca-a-roma-b2",
@@ -80,8 +80,8 @@
       "titleIt": "Una vita più complicata",
       "description": "Rich, natural Italian",
       "narrativeStage": "More complicated adult life.",
-      "chapterStart": 61,
-      "chapterEnd": 80,
+      "chapterStart": 71,
+      "chapterEnd": 85,
       "status": "planned"
     },
     {

@@ -64,7 +64,7 @@
             "sera",
             "dopo",
             "il",
-            "lavorare",
+            "lavoro",
             "al",
             "caffe"
           ]
@@ -81,7 +81,7 @@
             "luca",
             "e",
             "avere",
-            "sorridere"
+            "sorriso"
           ]
         },
         {
@@ -174,14 +174,14 @@
             "del",
             "caffe",
             "con",
-            "calma",
+            "calmo",
             "avere",
             "parlare",
             "dei",
             "cliente",
             "e",
             "del",
-            "lavorare"
+            "lavoro"
           ]
         },
         {
@@ -216,7 +216,7 @@
             "caffe",
             "e",
             "il",
-            "lavorare"
+            "lavoro"
           ]
         }
       ]
@@ -284,7 +284,7 @@
             "affitto",
             "e",
             "al",
-            "lavorare",
+            "lavoro",
             "ogni",
             "giorno"
           ]
@@ -370,7 +370,7 @@
             "la",
             "paura",
             "parlare",
-            "prima"
+            "primo"
           ],
           "phrases": [
             {
@@ -437,7 +437,7 @@
             "gente",
             "ci",
             "andare",
-            "dare",
+            "da",
             "tanto",
             "tempo"
           ]
@@ -452,7 +452,7 @@
             "ma",
             "adesso",
             "i",
-            "soldi",
+            "soldo",
             "non",
             "essere",
             "abbastanza"
@@ -493,7 +493,7 @@
             "e",
             "fare",
             "qualcosa",
-            "prima"
+            "primo"
           ]
         },
         {
@@ -565,7 +565,7 @@
             "potere",
             "ma",
             "io",
-            "lavorare",
+            "lavoro",
             "e",
             "non",
             "avere",
@@ -632,7 +632,7 @@
           "kind": "dialogue",
           "lemmas": [
             "andare",
-            "dare",
+            "da",
             "nonna",
             "rosa",
             "magari",
@@ -657,11 +657,11 @@
             "bene",
             "venerdi",
             "andare",
-            "dare",
+            "da",
             "lei",
             "dopo",
             "il",
-            "lavorare"
+            "lavoro"
           ],
           "phrases": [
             {
@@ -685,7 +685,7 @@
             "di",
             "si_yes",
             "con",
-            "calma"
+            "calmo"
           ]
         },
         {
@@ -714,7 +714,7 @@
             "avere",
             "pensare",
             "al",
-            "lavorare",
+            "lavoro",
             "di",
             "giovedi",
             "al",
@@ -753,7 +753,7 @@
           "lemmas": [
             "giovedi",
             "io",
-            "lavorare",
+            "lavoro",
             "tu",
             "preparare",
             "le",
@@ -845,7 +845,7 @@
             "e",
             "un",
             "primo",
-            "passare"
+            "passo"
           ]
         }
       ]

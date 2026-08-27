@@ -92,7 +92,7 @@
             "buongiorno",
             "giulia",
             "oggi",
-            "ce",
+            "esserci",
             "molto",
             "lavoro"
           ]
@@ -150,7 +150,7 @@
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "essere",
+            "andare",
             "bene"
           ]
         },
@@ -161,7 +161,7 @@
           "kind": "narration",
           "lemmas": [
             "luca",
-            "portare",
+            "porta",
             "acqua",
             "e",
             "caffe",
@@ -236,7 +236,7 @@
           "kind": "dialogue",
           "lemmas": [
             "grazie",
-            "essere",
+            "sei",
             "gentile"
           ]
         },

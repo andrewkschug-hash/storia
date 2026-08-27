@@ -13,6 +13,13 @@ import type { ContentBundle } from '@/src/content/schemas';
 import type { ProgressService } from '@/src/progress/ProgressService';
 import type { ReadingProgressRecord } from '@/src/progress/types';
 
+import {
+  calculateB1LongitudinalEvidence,
+  evaluateA2ToB1Readiness,
+  type A2ToB1ReadinessEvaluation,
+  type B1DiagnosticResult,
+} from '@/src/cefr/b1Readiness';
+
 export class LevelReadinessService {
   constructor(
     private readonly bundle: ContentBundle,
@@ -33,6 +40,15 @@ export class LevelReadinessService {
     return readinessFromLearner(current, profile, record, numbers, range.start, range.end);
   }
 
+  evaluateA2ToB1(
+    profile: AdaptiveLearnerProfile,
+    record: ReadingProgressRecord,
+    diagnostic: B1DiagnosticResult,
+  ): A2ToB1ReadinessEvaluation {
+    const longitudinal = calculateB1LongitudinalEvidence(profile, record);
+    return evaluateA2ToB1Readiness({ diagnostic, longitudinal });
+  }
+
   async chooseNext(profile: AdaptiveLearnerProfile): Promise<{ progress: ReadingProgressRecord; readiness: LevelReadiness }> {
     const record = await this.progress.getOrCreate();
     const readiness = this.evaluate(profile, record);
@@ -42,6 +58,13 @@ export class LevelReadinessService {
     const next = chooseLevel(readiness.currentLevel, readiness.nextLevel);
     const progress = await this.progress.setCEFRLevel(next);
     return { progress, readiness: this.evaluate(profile, progress) };
+  }
+
+  async confirmB1Promotion(): Promise<ReadingProgressRecord> {
+    const record = await this.progress.getOrCreate();
+    const current = this.currentLevel(record);
+    const next = chooseLevel(current, 'B1');
+    return this.progress.setCEFRLevel(next);
   }
 }
 

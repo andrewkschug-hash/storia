@@ -11,10 +11,12 @@ type Props = {
 };
 
 const TAB_DESCRIPTIONS: Record<LibraryTab, { label: string; sub: string }> = {
-  A1: { label: 'A1', sub: 'First steps' },
-  'A1+': { label: 'A1+', sub: 'Confidence' },
-  A2: { label: 'A2', sub: 'Fluency' },
-  'A2+': { label: 'A2+', sub: 'Exploration' },
+  A1: { label: 'A1', sub: 'Arrivo' },
+  'A1+': { label: 'A1+', sub: 'Appartenenza' },
+  A2: { label: 'A2', sub: 'Responsabilità' },
+  B1: { label: 'B1', sub: 'Due vite' },
+  'B1+': { label: 'B1+', sub: 'La scelta' },
+  'A2+': { label: 'A2+', sub: 'Percorsi' },
 };
 
 export function LevelTabs({ active, onChange }: Props) {

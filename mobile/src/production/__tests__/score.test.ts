@@ -56,7 +56,7 @@ describe('scoreProductionAnswer overlay coverage', () => {
 
   it('ignores punctuation and apostrophe unicode on canonical answers', () => {
     const fame = byId('luca-a-roma-ch01-prod-02');
-    expect(scoreProductionAnswer(fame, '  HO FAME!!!  ').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, '  LUCA HA FAME!!!  ').result).toBe('correct');
     const ce = byId('luca-a-roma-ch04-prod-03');
     expect(scoreProductionAnswer(ce, 'C’è una porta').result).toBe('correct');
     const dove = byId('luca-a-roma-ch18-prod-03');
@@ -154,11 +154,14 @@ describe('STEP 11 scoring matrix', () => {
     expect(scoreProductionAnswer(work, 'Lavoro domani.').reason).toMatch(/word_order_variant|acceptable_answer/);
   });
 
-  it('wrong person: Ho fame vs Hai fame', () => {
+  it('wrong person: Luca ha fame vs Hai fame', () => {
     const fame = byId('luca-a-roma-ch01-prod-02');
-    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, 'Luca ha fame.').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('correct');
     expect(scoreProductionAnswer(fame, 'Hai fame.').result).toBe('incorrect');
     expect(scoreProductionAnswer(fame, 'Hai fame.').reason).toBe('wrong_person');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').reason).toBe('wrong_person');
   });
 
   it('semantic: rejects missing concept, wrong polarity, wrong person', () => {
@@ -174,10 +177,11 @@ describe('STEP 11 scoring matrix', () => {
 });
 
 describe('scoreProductionAnswer adversarial overlay cases', () => {
-  it('accepts subject-drop for Ho fame and rejects wrong need', () => {
+  it('accepts subject-drop for Luca ha fame and rejects wrong need', () => {
     const fame = byId('luca-a-roma-ch01-prod-02');
-    expect(scoreProductionAnswer(fame, 'Io ho fame.').result).toBe('correct');
-    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Luca ha fame.').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('incorrect');
     expect(scoreProductionAnswer(fame, 'Ho sete.').result).toBe('incorrect');
   });
 
@@ -258,7 +262,7 @@ describe('Phase 12H overlay loader still clones', () => {
     first[0].promptEn = 'MUTATED';
     first[0].expectedIt = 'MUTATED';
     const again = getProductionExercisesForChapter('luca-a-roma-01');
-    expect(again[0].promptEn).toBe('I arrive in Rome.');
-    expect(again[0].expectedIt).toBe('Arrivo a Roma.');
+    expect(again[0].promptEn).toBe('Luca arrives in Rome.');
+    expect(again[0].expectedIt).toBe('Luca arriva a Roma.');
   });
 });

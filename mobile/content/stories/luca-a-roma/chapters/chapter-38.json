@@ -92,7 +92,7 @@
             "tardi",
             "perche",
             "il",
-            "lavorare",
+            "lavoro",
             "essere",
             "lungo"
           ]
@@ -108,7 +108,7 @@
             "caffe",
             "restare",
             "tu",
-            "essere",
+            "sei",
             "contento",
             "delle",
             "ora",
@@ -124,7 +124,7 @@
             "si_yes",
             "avere",
             "piu",
-            "soldi",
+            "soldo",
             "affitto",
             "di",
             "questo",
@@ -208,7 +208,7 @@
             "volere",
             "solo",
             "il",
-            "lavorare"
+            "lavoro"
           ]
         },
         {
@@ -275,7 +275,7 @@
             "avere",
             "parlare",
             "del",
-            "lavorare",
+            "lavoro",
             "di",
             "sofia"
           ]
@@ -294,7 +294,7 @@
           "lemmas": [
             "il",
             "mio",
-            "lavorare",
+            "lavoro",
             "essere",
             "tanto",
             "qualche",
@@ -393,7 +393,7 @@
             "pensare",
             "affitto",
             "poi",
-            "ai",
+            "a",
             "amico",
             "poi",
             "a",
@@ -599,7 +599,7 @@
             "ma",
             "essere",
             "un",
-            "iniziare"
+            "inizio"
           ],
           "phrases": [
             {
@@ -638,8 +638,8 @@
           "kind": "dialogue",
           "lemmas": [
             "per",
-            "io",
-            "essere",
+            "me",
+            "sei",
             "amico",
             "non",
             "solo",
@@ -664,7 +664,7 @@
             "volere",
             "non",
             "perche",
-            "essere",
+            "sei",
             "nuovo"
           ]
         },
@@ -676,7 +676,7 @@
           "lemmas": [
             "luca",
             "avere",
-            "sorridere",
+            "sorriso",
             "la",
             "cena",
             "essere",
@@ -684,7 +684,7 @@
             "ogni",
             "parola",
             "essere",
-            "chiaro"
+            "chiara"
           ]
         },
         {
@@ -735,7 +735,7 @@
             "altro",
             "modo",
             "ma",
-            "prima",
+            "primo",
             "chiedere"
           ]
         },
@@ -956,7 +956,7 @@
             "cosa",
             "piccolo",
             "e",
-            "chiaro",
+            "chiara",
             "per",
             "la",
             "settimana",
@@ -977,7 +977,7 @@
             "in",
             "cercare",
             "di",
-            "lavorare",
+            "lavoro",
             "e",
             "a",
             "giulia",
@@ -1003,7 +1003,7 @@
             "con",
             "una",
             "domanda",
-            "chiaro"
+            "chiara"
           ]
         }
       ]

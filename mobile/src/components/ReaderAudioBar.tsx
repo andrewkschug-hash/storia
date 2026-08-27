@@ -112,7 +112,7 @@ export function ReaderAudioBar({
                     type.caption,
                     { color: speed === 'slow' ? colors.tint : colors.textSecondary },
                   ]}>
-                  0.75x
+                  0.8x
                 </Text>
               </Pressable>
               <Pressable
@@ -129,7 +129,7 @@ export function ReaderAudioBar({
                     type.caption,
                     { color: speed === 'normal' ? colors.tint : colors.textSecondary },
                   ]}>
-                  0.9x
+                  1.0x
                 </Text>
               </Pressable>
               <Pressable
@@ -146,7 +146,7 @@ export function ReaderAudioBar({
                     type.caption,
                     { color: speed === 'faster' ? colors.tint : colors.textSecondary },
                   ]}>
-                  1.0x
+                  1.15x
                 </Text>
               </Pressable>
             </View>

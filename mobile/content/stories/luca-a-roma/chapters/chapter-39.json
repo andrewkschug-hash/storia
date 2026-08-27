@@ -113,7 +113,7 @@
           "lemmas": [
             "andare",
             "bene",
-            "essere",
+            "sei",
             "chiaro",
             "fare",
             "un",
@@ -168,7 +168,7 @@
             "e",
             "quando",
             "non",
-            "cambiare",
+            "cambio",
             "ogni",
             "giorno"
           ]
@@ -239,12 +239,12 @@
           "kind": "dialogue",
           "lemmas": [
             "cercare",
-            "lavorare",
+            "lavoro",
             "non",
             "avere",
             "trovare",
             "un",
-            "lavorare",
+            "lavoro",
             "ma",
             "al",
             "sabato",
@@ -252,7 +252,7 @@
             "vedere",
             "che",
             "servire",
-            "aiutare",
+            "aiuto",
             "potere",
             "aiutare",
             "qui"
@@ -272,7 +272,7 @@
             "non",
             "chiedere",
             "un",
-            "lavorare",
+            "lavoro",
             "per",
             "sempre"
           ]
@@ -334,11 +334,11 @@
             "poco",
             "ora",
             "poco",
-            "soldi",
+            "soldo",
             "non",
             "essere",
             "un",
-            "lavorare",
+            "lavoro",
             "grande",
             "se",
             "volere",
@@ -354,11 +354,11 @@
             "volere",
             "grazie",
             "per",
-            "io",
+            "me",
             "essere",
             "gia",
             "un",
-            "iniziare"
+            "inizio"
           ]
         },
         {
@@ -387,7 +387,7 @@
           "kind": "dialogue",
           "lemmas": [
             "se",
-            "lavorare",
+            "lavoro",
             "qui",
             "ci",
             "vedere",
@@ -396,7 +396,7 @@
             "andare",
             "bene",
             "per",
-            "io"
+            "me"
           ],
           "phrases": [
             {
@@ -415,7 +415,7 @@
           "kind": "dialogue",
           "lemmas": [
             "per",
-            "io",
+            "me",
             "anche",
             "gli",
             "amico",
@@ -423,7 +423,7 @@
             "un",
             "poco",
             "di",
-            "soldi",
+            "soldo",
             "meglio",
             "di",
             "niente"
@@ -516,7 +516,7 @@
           "lemmas": [
             "bene",
             "non",
-            "essere",
+            "sei",
             "piu",
             "solo",
             "a",
@@ -629,7 +629,7 @@
             "cliente",
             "e",
             "i",
-            "soldi"
+            "soldo"
           ]
         },
         {
@@ -670,7 +670,7 @@
             "suo",
             "orario",
             "piu",
-            "lavorare",
+            "lavoro",
             "ma",
             "non",
             "tutto"
@@ -784,7 +784,7 @@
             "pane",
             "e",
             "qualcosa",
-            "dare",
+            "da",
             "bere"
           ]
         },
@@ -854,7 +854,7 @@
             "e",
             "a",
             "questo",
-            "lavorare",
+            "lavoro",
             "piccolo"
           ]
         },
@@ -911,7 +911,7 @@
             "una",
             "proposta",
             "di",
-            "lavorare",
+            "lavoro",
             "non",
             "essere",
             "a",
@@ -983,7 +983,7 @@
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "prima",
+            "primo",
             "di",
             "dormire",
             "avere",

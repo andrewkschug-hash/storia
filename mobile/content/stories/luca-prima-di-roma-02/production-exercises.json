@@ -62,9 +62,11 @@
       "chapterId": "luca-prima-di-roma-02-02",
       "level": "A1",
       "sourceSentenceId": "s03",
-      "promptEn": "I wake up.",
-      "expectedIt": "Mi sveglio.",
+      "promptEn": "Luca wakes up.",
+      "expectedIt": "Luca si sveglia.",
       "acceptableAnswers": [
+        "Si sveglia.",
+        "Mi sveglio.",
         "Io mi sveglio."
       ],
       "match": "flexible",
@@ -79,9 +81,11 @@
       "chapterId": "luca-prima-di-roma-02-02",
       "level": "A1",
       "sourceSentenceId": "s13",
-      "promptEn": "I have breakfast.",
-      "expectedIt": "Faccio colazione.",
+      "promptEn": "Luca has breakfast.",
+      "expectedIt": "Luca fa colazione.",
       "acceptableAnswers": [
+        "Fa colazione.",
+        "Faccio colazione.",
         "Io faccio colazione."
       ],
       "match": "flexible",
@@ -96,9 +100,11 @@
       "chapterId": "luca-prima-di-roma-02-02",
       "level": "A1",
       "sourceSentenceId": "s04",
-      "promptEn": "I get up.",
-      "expectedIt": "Mi alzo.",
+      "promptEn": "Luca gets up.",
+      "expectedIt": "Luca si alza.",
       "acceptableAnswers": [
+        "Si alza.",
+        "Mi alzo.",
         "Io mi alzo."
       ],
       "match": "flexible",
@@ -295,10 +301,12 @@
       "chapterId": "luca-prima-di-roma-02-07",
       "level": "A1",
       "sourceSentenceId": "s21",
-      "promptEn": "Tomorrow I get up at seven.",
-      "expectedIt": "Domani mi alzo alle sette.",
+      "promptEn": "Tomorrow Luca gets up at seven.",
+      "expectedIt": "Domani Luca si alza alle sette.",
       "acceptableAnswers": [
-        "Mi alzo alle sette domani."
+        "Domani mi alzo alle sette.",
+        "Mi alzo alle sette domani.",
+        "Luca si alza alle sette."
       ],
       "match": "flexible",
       "focus": [

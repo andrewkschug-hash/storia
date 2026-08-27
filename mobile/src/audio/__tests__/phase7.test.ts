@@ -537,7 +537,7 @@ describe('Phase 7 reader playback', () => {
       await advance;
       expect(played).toHaveLength(2);
       expect(service.getPlayingId()).toBe('d1');
-      expect(service.playbackRate()).toBe(0.9);
+      expect(service.playbackRate()).toBe(1.0);
     } finally {
       vi.useRealTimers();
     }

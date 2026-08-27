@@ -141,6 +141,36 @@ export function buildLearnerJourney(): JourneyCefrBand[] {
       cefrLevel: 'A2+',
       groups: a2PlusStoryGroups,
     },
+    {
+      cefrLevel: 'B1',
+      groups: [
+        {
+          narrativeArc: lucaArc,
+          stories: [luca],
+          chapterRange: {
+            storyId: LUCA_STORY_ID,
+            chapterStart: 41,
+            chapterEnd: 55,
+            cefrLevel: 'B1',
+          },
+        },
+      ],
+    },
+    {
+      cefrLevel: 'B1+',
+      groups: [
+        {
+          narrativeArc: lucaArc,
+          stories: [luca],
+          chapterRange: {
+            storyId: LUCA_STORY_ID,
+            chapterStart: 56,
+            chapterEnd: 70,
+            cefrLevel: 'B1+',
+          },
+        },
+      ],
+    },
   ];
 }
 

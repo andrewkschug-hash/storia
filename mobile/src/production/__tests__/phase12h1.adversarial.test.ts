@@ -45,18 +45,20 @@ function assertContract(result: ProductionScoreResult, mode: ProductionExercise[
 }
 
 describe('12H.1 person', () => {
-  it('rejects related-person substitutions on Arrivo a Roma', () => {
+  it('rejects related-person substitutions on Arriva a Roma', () => {
     const arrive = byId('luca-a-roma-ch01-prod-01');
-    expect(scoreProductionAnswer(arrive, 'Arrivo a Roma.').result).toBe('correct');
+    expect(scoreProductionAnswer(arrive, 'Luca arriva a Roma.').result).toBe('correct');
+    expect(scoreProductionAnswer(arrive, 'Arriva a Roma.').result).toBe('correct');
     expect(scoreProductionAnswer(arrive, 'Arrivi a Roma.').result).toBe('incorrect');
     expect(scoreProductionAnswer(arrive, 'Arriviamo a Roma.').result).toBe('incorrect');
   });
 
-  it('rejects hai/ha for Ho fame', () => {
+  it('rejects hai/ho for Luca ha fame', () => {
     const fame = byId('luca-a-roma-ch01-prod-02');
-    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, 'Luca ha fame.').result).toBe('correct');
+    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('correct');
     expect(scoreProductionAnswer(fame, 'Hai fame.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('incorrect');
   });
 
   it('rejects Devo when expected is Devi, and Devi when expected is Devo', () => {
@@ -192,7 +194,7 @@ describe('12H.1 normalization', () => {
     expect(normalizeProductionText('Ho fame.')).not.toBe(normalizeProductionText('O fame.'));
     expect(normalizeProductionText('Non vengo.')).toContain('non');
     expect(scoreProductionAnswer(rome, 'Roma e grande.').result).not.toBe('correct');
-    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('incorrect');
   });
 });
 
@@ -210,7 +212,7 @@ describe('12H.1 accents / almost', () => {
 describe('spelling leniency', () => {
   it('marks single-letter typos as almost and returns matchedIt', () => {
     const fame = byId('luca-a-roma-ch01-prod-02');
-    const typo = scoreProductionAnswer(fame, 'Ho famme');
+    const typo = scoreProductionAnswer(fame, 'Luca ha famme');
     expect(typo.result).toBe('almost');
     expect(typo.reason).toBe('minor_spelling');
     expect(typo.matchedIt).toBeTruthy();
@@ -218,8 +220,8 @@ describe('spelling leniency', () => {
 
   it('does not treat person swaps as spelling almost', () => {
     const fame = byId('luca-a-roma-ch01-prod-02');
-    expect(scoreProductionAnswer(fame, 'Ha fame.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(fame, 'Ha fame.').reason).toBe('wrong_person');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Ho fame.').reason).toBe('wrong_person');
   });
 });
 
@@ -228,9 +230,9 @@ describe('12H.1 extra words', () => {
     const thanks = synthetic({ promptEn: 'Thank you.', expectedIt: 'Grazie.', match: 'exact' });
     const fame = byId('luca-a-roma-ch01-prod-02');
     expect(scoreProductionAnswer(thanks, 'Grazie mille').result).toBe('incorrect');
-    expect(scoreProductionAnswer(fame, 'Ho molta fame.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(fame, 'Ho fame oggi.').result).toBe('incorrect');
-    expect(scoreProductionAnswer(fame, 'Ho davvero fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Luca ha molta fame.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Luca ha fame oggi.').result).toBe('incorrect');
+    expect(scoreProductionAnswer(fame, 'Luca ha davvero fame.').result).toBe('incorrect');
   });
 });
 

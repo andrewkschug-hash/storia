@@ -88,6 +88,40 @@ export function cleanProductionPromptEn(promptEn: string): string {
   return promptEn.replace(/\s*say it in italian\.?\s*$/i, '').trim();
 }
 
+const BARE_COPULA_OR_AUXILIARY = new Set([
+  'è',
+  'sono',
+  'siamo',
+  'sei',
+  'siete',
+  'era',
+  'erano',
+  'stato',
+  'stata',
+  'stati',
+  'state',
+  'sarà',
+  'saranno',
+  'ho',
+  'hai',
+  'ha',
+  'abbiamo',
+  'avete',
+  'hanno',
+  'aveva',
+  'avevano',
+]);
+
+export function isBareCopulaOrAuxiliary(text: string): boolean {
+  const clean = text.trim().replace(/[.,;:!?…]+$/g, '').toLocaleLowerCase('it');
+  return BARE_COPULA_OR_AUXILIARY.has(clean);
+}
+
+export function isBareBePrompt(promptEn: string): boolean {
+  const clean = promptEn.trim().toLowerCase();
+  return clean === 'be' || clean === 'to be';
+}
+
 function glossEnglish(entry: LexiconEntry): string {
   let gloss = entry.english.split(/[,;/]/)[0]?.trim() || entry.english;
   if (entry.partOfSpeech === 'verb') {
@@ -97,8 +131,8 @@ function glossEnglish(entry: LexiconEntry): string {
 }
 
 /**
- * A1 production should ask for a single word or a short two-word chunk —
- * never a full story sentence like "Luca arrives in Rome."
+ * A1 production should ask for a single content word or a short two-word chunk —
+ * never a full story sentence and never an isolated copula/auxiliary like "be" -> "è" or "sono".
  */
 export function a1WordProductionDisplay(
   exercise: ProductionExercise,
@@ -109,29 +143,42 @@ export function a1WordProductionDisplay(
   const overlayWordCount = countProductionWords(overlayExpected);
   const extras = exercise.acceptableAnswers ?? [];
 
-  // Authored short targets (Buongiorno, Ho fame) stay as-is — no full-sentence swap.
+  // Authored short targets (Buongiorno, Ho fame, Sono Luca) stay as-is —
+  // unless they are single bare copula/auxiliary ("è", "sono") with "be" prompt.
   if (overlayWordCount > 0 && overlayWordCount <= A1_WORD_MODE_MAX_WORDS) {
-    return {
-      promptEn: overlayPrompt,
-      expectedIt: overlayExpected,
-      acceptableAnswers: filterA1WordModeAlternatives(overlayExpected, extras),
-    };
+    const isSingleBareCopula =
+      overlayWordCount === 1 &&
+      (isBareCopulaOrAuxiliary(overlayExpected) || isBareBePrompt(overlayPrompt));
+    if (!isSingleBareCopula && !isBareBePrompt(overlayPrompt)) {
+      return {
+        promptEn: overlayPrompt,
+        expectedIt: overlayExpected,
+        acceptableAnswers: filterA1WordModeAlternatives(overlayExpected, extras),
+      };
+    }
   }
 
   const source = context.storySentence;
   const lexicon = context.lexiconById;
   if (source?.tokens?.length && lexicon?.size) {
-    const focusIds = resolveProductionFocusLemmas(exercise, source as Sentence, lexicon, 2);
-    const primaryId = focusIds[0];
-    const entry = primaryId ? lexicon.get(primaryId) : undefined;
-    if (entry) {
+    const focusIds = resolveProductionFocusLemmas(exercise, source as Sentence, lexicon, 6);
+    for (const primaryId of focusIds) {
+      const entry = lexicon.get(primaryId);
+      if (!entry) continue;
+      const gloss = glossEnglish(entry);
+      if (isBareBePrompt(gloss)) continue;
+
       const surfaceRaw =
         source.tokens.find((token) => token.lemmaId === entry.lemmaId)?.surface ?? entry.italian;
       const surface = surfaceRaw.replace(/[.,;:!?…]+$/g, '').trim() || entry.italian;
-      // Prefer the conjugated story surface when it is still a short chunk.
+
+      if (isBareCopulaOrAuxiliary(surface) && countProductionWords(surface) === 1) {
+        continue;
+      }
+
       const primary = isA1WordModeChunk(surface) ? surface : entry.italian;
       return {
-        promptEn: glossEnglish(entry),
+        promptEn: gloss,
         expectedIt: primary,
         acceptableAnswers: filterA1WordModeAlternatives(primary, [
           surface,
@@ -142,7 +189,7 @@ export function a1WordProductionDisplay(
     }
   }
 
-  // Fallback: first content-ish token from the overlay Italian (skip tiny function words).
+  // Fallback: first content-bearing token from the overlay Italian (skip function words and bare copulas).
   const tokens = overlayExpected
     .replace(/[.!?…]+$/g, '')
     .split(/\s+/)
@@ -167,12 +214,23 @@ export function a1WordProductionDisplay(
     'una',
     'e',
     'o',
+    'è',
+    'sono',
+    'siamo',
+    'sei',
+    'era',
+    'ho',
+    'ha',
   ]);
   const content = tokens.find((token) => !skip.has(token.toLocaleLowerCase('it'))) ?? tokens[0];
   if (content) {
     const primary = content.replace(/[.,;:!?]+$/g, '');
+    let safePrompt = overlayPrompt.split(/\s+/).find((word) => word.length > 2) ?? overlayPrompt;
+    if (isBareBePrompt(safePrompt)) {
+      safePrompt = primary;
+    }
     return {
-      promptEn: overlayPrompt.split(/\s+/).find((word) => word.length > 2) ?? overlayPrompt,
+      promptEn: safePrompt,
       expectedIt: primary,
       acceptableAnswers: filterA1WordModeAlternatives(primary, extras),
     };
@@ -203,6 +261,19 @@ export function productionDisplayFromStory(
   }
 
   if (!storySentence?.text.trim()) {
+    return {
+      promptEn: cleanProductionPromptEn(exercise.promptEn),
+      expectedIt: exercise.expectedIt,
+      acceptableAnswers: [...(exercise.acceptableAnswers ?? [])],
+    };
+  }
+
+  const sourceWordCount = countProductionWords(storySentence.text);
+  const overlayWordCount = countProductionWords(exercise.expectedIt);
+
+  // Referential integrity check: if story sentence is a runaway expanded sentence
+  // (>16 words while overlay is <=10 words) and lacks specific English cue, fallback to authored exercise
+  if (sourceWordCount > 16 && overlayWordCount <= 10 && !storySentence.english?.trim()) {
     return {
       promptEn: cleanProductionPromptEn(exercise.promptEn),
       expectedIt: exercise.expectedIt,

@@ -333,6 +333,27 @@
         "language": "it-IT",
         "speakingStyle": "teenage Italian female"
       }
+    },
+    {
+      "id": "claudia",
+      "name": "Claudia",
+      "gender": "female",
+      "ageDescription": "young adult",
+      "description": "A ceramist and artisan who shares the Spazio Monti workshop with Marco and Luca.",
+      "storyRole": "artisan partner",
+      "relationships": [
+        "Collaborator of Luca and Marco"
+      ],
+      "knownLocationIds": [
+        "roma",
+        "quartiere"
+      ],
+      "voice": {
+        "provider": null,
+        "voiceId": null,
+        "language": "it-IT",
+        "speakingStyle": "young Italian female, creative and focused"
+      }
     }
   ]
 }

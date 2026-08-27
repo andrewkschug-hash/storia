@@ -8,8 +8,11 @@
       "chapterId": "luca-prima-di-roma-05-01",
       "level": "A1",
       "sourceSentenceId": "s01",
-      "promptEn": "Today is my birthday.",
-      "expectedIt": "Oggi è il mio compleanno.",
+      "promptEn": "Today is Luca's birthday.",
+      "expectedIt": "Oggi è il compleanno di Luca.",
+      "acceptableAnswers": [
+        "Oggi è il mio compleanno."
+      ],
       "match": "flexible",
       "focus": [
         "birthdays"
@@ -21,10 +24,10 @@
       "chapterId": "luca-prima-di-roma-05-01",
       "level": "A1",
       "sourceSentenceId": "s10",
-      "promptEn": "Happy birthday.",
-      "expectedIt": "Auguri.",
+      "promptEn": "Happy birthday, Luca.",
+      "expectedIt": "Auguri Luca.",
       "acceptableAnswers": [
-        "Auguri Luca."
+        "Auguri."
       ],
       "match": "flexible",
       "focus": [
@@ -58,7 +61,8 @@
       "promptEn": "Do you want to come on Saturday?",
       "expectedIt": "Vieni sabato?",
       "acceptableAnswers": [
-        "Vuoi venire sabato?"
+        "Vuoi venire sabato?",
+        "Elisa vieni sabato?"
       ],
       "match": "semantic",
       "focus": [

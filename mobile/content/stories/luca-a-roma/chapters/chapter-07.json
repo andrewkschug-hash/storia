@@ -60,7 +60,7 @@
             "avere",
             "bisogno",
             "di",
-            "soldi",
+            "soldo",
             "per",
             "affitto"
           ]
@@ -75,7 +75,7 @@
             "non",
             "avere",
             "molto",
-            "soldi"
+            "soldo"
           ]
         },
         {
@@ -113,7 +113,7 @@
           "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "cercare",
+            "cerchio",
             "un",
             "lavoro"
           ]
@@ -137,7 +137,7 @@
           "kind": "dialogue",
           "lemmas": [
             "volere",
-            "soldi",
+            "soldo",
             "per",
             "affitto"
           ]

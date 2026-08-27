@@ -54,10 +54,10 @@ export function previousCEFRLevel(level: CEFRLevel): CEFRLevel | null {
   return i <= 0 ? null : CEFR_LEVELS[i - 1];
 }
 
-/** Adjacent step only. Same level is allowed. Skipping (A1 → B1) is not. */
+/** Adjacent step or A2 to B1 major bridge. Same level is allowed. Skipping (A1 → B1) is not. */
 export function canTransition(from: CEFRLevel, to: CEFRLevel): boolean {
   const delta = cefrRank(to) - cefrRank(from);
-  return delta === 0 || delta === 1;
+  return delta === 0 || delta === 1 || (from === 'A2' && to === 'B1');
 }
 
 export function cefrDistance(a: CEFRLevel, b: CEFRLevel): number {

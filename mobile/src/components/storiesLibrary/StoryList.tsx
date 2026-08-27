@@ -40,7 +40,9 @@ type Props = {
 function tabForChapterNumber(number: number): LibraryTab {
   if (number <= 20) return 'A1';
   if (number <= 24) return 'A1+';
-  return 'A2';
+  if (number <= 40) return 'A2';
+  if (number <= 55) return 'B1';
+  return 'B1+';
 }
 
 function defaultExpandedRowId(

@@ -58,7 +58,7 @@
             "gruppo",
             "avere",
             "cosa",
-            "dare",
+            "da",
             "fare"
           ]
         },
@@ -107,7 +107,7 @@
           "kind": "dialogue",
           "lemmas": [
             "io",
-            "camminare",
+            "cammino",
             "e",
             "parlare",
             "ma",
@@ -147,7 +147,7 @@
             "io",
             "restare",
             "alla",
-            "portare",
+            "porta",
             "e",
             "dire",
             "buongiorno",
@@ -426,7 +426,7 @@
           "lemmas": [
             "luca",
             "al",
-            "lavorare",
+            "lavoro",
             "ascoltare",
             "e",
             "pensare",
@@ -535,7 +535,7 @@
             "dovere",
             "arrivare",
             "presto",
-            "prima",
+            "primo",
             "dei",
             "cliente"
           ]
@@ -565,13 +565,13 @@
           "kind": "dialogue",
           "lemmas": [
             "io",
-            "aiutare",
+            "aiuto",
             "se",
             "potere",
             "questo",
             "settimana",
             "cercare",
-            "lavorare",
+            "lavoro",
             "e",
             "avere",
             "poco",
@@ -604,7 +604,7 @@
             "pensare",
             "io",
             "alla",
-            "portare",
+            "porta",
             "tu",
             "fare",
             "quello",

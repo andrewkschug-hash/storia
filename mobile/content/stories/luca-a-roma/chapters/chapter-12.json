@@ -100,7 +100,7 @@
           "kind": "dialogue",
           "lemmas": [
             "cosa",
-            "ce"
+            "esserci"
           ],
           "phrases": [
             {
@@ -118,7 +118,7 @@
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "ce",
+            "esserci",
             "un",
             "messaggio",
             "di",
@@ -178,7 +178,7 @@
           "lemmas": [
             "non",
             "avere",
-            "soldi"
+            "soldo"
           ]
         },
         {

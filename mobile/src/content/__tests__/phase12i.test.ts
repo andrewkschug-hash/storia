@@ -421,7 +421,7 @@ describe('Phase 12I CEFR readiness split', () => {
 describe('Phase 12I Stories UI data model', () => {
   it('groups A1 / A1+ / A2 without requiring a UI redesign', () => {
     const journey = buildLearnerJourney();
-    expect(journey.map((band) => band.cefrLevel)).toEqual(['A1', 'A1+', 'A2', 'A2+']);
+    expect(journey.map((band) => band.cefrLevel)).toEqual(['A1', 'A1+', 'A2', 'A2+', 'B1', 'B1+']);
     expect(journey[0].groups[0].chapterRange).toEqual({
       storyId: LUCA_STORY_ID,
       chapterStart: 1,
@@ -433,6 +433,10 @@ describe('Phase 12I Stories UI data model', () => {
     expect(journey[1].groups[0].chapterRange?.chapterEnd).toBe(24);
     expect(journey[2].groups[0].chapterRange?.chapterStart).toBe(25);
     expect(journey[2].groups[0].chapterRange?.chapterEnd).toBe(40);
+    expect(journey[4].groups[0].chapterRange?.chapterStart).toBe(41);
+    expect(journey[4].groups[0].chapterRange?.chapterEnd).toBe(55);
+    expect(journey[5].groups[0].chapterRange?.chapterStart).toBe(56);
+    expect(journey[5].groups[0].chapterRange?.chapterEnd).toBe(70);
   });
 });
 

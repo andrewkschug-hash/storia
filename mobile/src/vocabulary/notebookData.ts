@@ -142,10 +142,201 @@ export const NOTEBOOK_MOMENTS: readonly NotebookMoment[] = [
       speaker: 'Bruno',
     },
   },
+  {
+    id: 'funziona-davvero',
+    chapterStart: 56,
+    chapterEnd: 60,
+    titleIt: 'Funziona davvero?',
+    titleEn: 'Does It Really Work?',
+    tagline: 'Craft vs. operational reality',
+    description:
+      'The morning rush, financial overhead, unexpected machine breakdowns, and spatial negotiations force Luca to discover that artisan excellence only endures when adapted to real human and economic rhythms.',
+    coreThemes: ['flusso', 'margine', 'resilienza', 'accordo', 'equilibrio'],
+    signatureQuote: {
+      textIt: 'Con pazienza, equilibrio, dialogo continuo e rispetto reciproco, la realtà poteva diventare la casa autentica del mestiere.',
+      textEn: 'With patience, balance, ongoing dialogue, and mutual respect, reality could become the authentic home of the craft.',
+      chapterNumber: 60,
+      speaker: 'Luca',
+    },
+  },
+  {
+    id: 'chi-ce-intorno',
+    chapterStart: 61,
+    chapterEnd: 65,
+    titleIt: "Chi c'è intorno a me?",
+    titleEn: 'Who Is Around Me?',
+    tagline: 'Respecting boundaries & discovering community',
+    description:
+      'Chiara’s focused study, Marco’s woodcraft parallel, a sudden autumn storm, and the open studio evening teach Luca that excellence is not total control over perfection, but a lasting bridge to authentic community.',
+    coreThemes: ['priorità', 'vincolo', 'rifugio', 'umiltà', 'comunità'],
+    signatureQuote: {
+      textIt: 'Non hai semplicemente aperto un bar per vendere bevande ai passanti: hai creato un luogo in cui le persone desiderano rimanere, parlare e appartenere.',
+      textEn: 'You didn’t simply open a bar to sell drinks to passersby: you created a place where people desire to stay, talk, and belong.',
+      chapterNumber: 65,
+      speaker: 'Claudia',
+    },
+  },
+  {
+    id: 'la-scelta-rinnovata',
+    chapterStart: 66,
+    chapterEnd: 70,
+    titleIt: 'La scelta rinnovata',
+    titleEn: 'The Choice Renewed',
+    tagline: 'Integration, autonomy & the B1+ capstone',
+    description:
+      'Balancing neighborhood traditions with modern craft, surviving winter through collaborative workshops, rejecting corporate buyout in favor of human scale, and taking an annual ledger inventory bring Luca full circle as a master artisan and pillar of his Roman community.',
+    coreThemes: ['tradizione', 'resilienza', 'autonomia', 'bilancio', 'sintesi'],
+    signatureQuote: {
+      textIt: 'La scelta autentica si rinnova ogni singola mattina all’alba: quando accendi la macchina, accogli il primo cliente con un sorriso sincero e decidi di non cedere al compromesso facile sulla qualità del lavoro.',
+      textEn: 'The authentic choice is renewed every single morning at dawn: when you turn on the machine, welcome the first customer with a sincere smile, and decide never to yield to easy compromise on craft quality.',
+      chapterNumber: 70,
+      speaker: 'Luca',
+    },
+  },
 ] as const;
 
 /** Selected narrative-significant vocabulary with story annotations */
 export const NARRATIVE_VOCABULARY: readonly NarrativeWordAnnotation[] = [
+  {
+    lemmaId: 'tradizione',
+    whyItMatters:
+      'Signor Sergio’s blunt morning feedback teaches Luca that authentic craft in an ancient Roman rione means respecting established neighborhood traditions rather than imposing modern trends with arrogance.',
+    storyAnchor: {
+      chapterNumber: 66,
+      quoteIt: 'Integrarsi a Roma non significava perdere la propria identità, ma costruire un ponte paziente tra la tradizione del passato e la bellezza del presente.',
+      quoteEn: 'Integrating in Rome did not mean losing one’s identity, but building a patient bridge between past tradition and present beauty.',
+    },
+  },
+  {
+    lemmaId: 'bilancio',
+    whyItMatters:
+      'The 12-month ledger inventory allows Luca to see that early panic and breakdowns were essential stepping stones toward sustainable mastery and inner calm.',
+    storyAnchor: {
+      chapterNumber: 69,
+      quoteIt: 'Il bilancio di un anno non era una semplice verifica contabile, ma la consacrazione di una trasformazione interiore irreversibile.',
+      quoteEn: 'The year-end review was not a simple accounting check, but the coronation of an irreversible inner transformation.',
+    },
+  },
+  {
+    lemmaId: 'resilienza',
+    whyItMatters:
+      'Winter foot-traffic drops force the workshop to invent collaborative weekend classes, proving that economic resilience is born from human connection and adaptable value.',
+    storyAnchor: {
+      chapterNumber: 67,
+      quoteIt: 'La resilienza economica di un’attività artigianale nasceva dalla capacità di creare valore autentico e relazioni umane durature.',
+      quoteEn: 'The economic resilience of an artisan business was born from the ability to create authentic value and lasting human relationships.',
+    },
+  },
+  {
+    lemmaId: 'comunita',
+    whyItMatters:
+      'Luca steps outside Spazio Monti during the open studio evening and realizes he is no longer an isolated apprentice trying to prove his individual worth, but part of a living community.',
+    storyAnchor: {
+      chapterNumber: 65,
+      quoteIt: 'Guardando la luce calda che illuminava l’antico lastricato di Roma, comprese finalmente che il suo mestiere era un ponte prezioso per appartenere a una vera comunità umana.',
+      quoteEn: 'Looking at the warm light illuminating Rome’s ancient cobblestones, he finally understood that his craft was a precious bridge to belong to a true human community.',
+    },
+  },
+  {
+    lemmaId: 'vincolo',
+    whyItMatters:
+      'Marco’s woodcraft parallel teaches Luca that material constraints like humidity are not defects to fight with arrogance, but an artisanal dialogue that brings out authentic sweetness.',
+    storyAnchor: {
+      chapterNumber: 62,
+      quoteIt: 'Il mestiere consiste nell’ascoltare il limite della materia e trovare il modo giusto per valorizzarla così com’è.',
+      quoteEn: 'The craft consists in listening to the material’s limits and finding the right way to value it just as it is.',
+    },
+  },
+  {
+    lemmaId: 'rifugio',
+    whyItMatters:
+      'When a violent thunderstorm hits Monti, Spazio Monti becomes a warm civic haven where strangers find shelter, dry towels, and hot spiced tea.',
+    storyAnchor: {
+      chapterNumber: 63,
+      quoteIt: 'Era diventato un rifugio civico, un porto sicuro in cui la fragilità umana poteva trovare calore, ascolto e conforto.',
+      quoteEn: 'It had become a civic haven, a safe harbor where human fragility could find warmth, listening, and comfort.',
+    },
+  },
+  {
+    lemmaId: 'accordo',
+    whyItMatters:
+      'Instead of working in isolation or defending rigid boundaries, Luca and Claudia forge an operational pact for the afternoon that turns empty space into a quiet haven.',
+    storyAnchor: {
+      chapterNumber: 60,
+      quoteIt: 'Affinché la convivenza funzioni nel lungo periodo, è fondamentale che stabiliamo regole chiare di convivenza e di suddivisione dello spazio comune.',
+      quoteEn: 'In order for cohabitation to work in the long run, it is fundamental that we establish clear rules of co-living and division of shared space.',
+    },
+  },
+  {
+    lemmaId: 'equilibrio',
+    whyItMatters:
+      'Movement 1 concludes with Luca realizing that craft mastery is not about stubborn control, but achieving balance between speed, hospitality, and economic sanity.',
+    storyAnchor: {
+      chapterNumber: 60,
+      quoteIt: 'La prova tangibile che con pazienza, equilibrio, dialogo continuo e rispetto reciproco, la realtà poteva diventare la casa autentica del mestiere.',
+      quoteEn: 'Tangible proof that with patience, balance, ongoing dialogue, and mutual respect, reality could become the authentic home of the craft.',
+    },
+  },
+  {
+    lemmaId: 'guasto',
+    whyItMatters:
+      'When the espresso machine blows a group seal before the morning rush, Luca learns that resilience is not avoiding breakdowns, but knowing how to resolve them calmly.',
+    storyAnchor: {
+      chapterNumber: 59,
+      quoteIt: 'La vera maturità nel mestiere consisteva nella capacità di affrontare il guasto senza perdere la calma.',
+      quoteEn: 'True maturity in the craft consisted in the capacity to face breakdowns without losing composure.',
+    },
+  },
+  {
+    lemmaId: 'consapevolezza',
+    whyItMatters:
+      'Bruno’s frank advice gives Luca the awareness to distinguish morning transit speed from afternoon hospitality, preventing burnout and business failure.',
+    storyAnchor: {
+      chapterNumber: 58,
+      quoteIt: 'Non sei più un ragazzo che fa esperimenti in cucina: adesso sei il titolare di una bottega che deve vivere nel mondo reale.',
+      quoteEn: 'You are no longer a kid running experiments in a kitchen: now you are the owner of a shop that must live in the real world.',
+    },
+  },
+  {
+    lemmaId: 'margine',
+    whyItMatters:
+      'Calculating the month-end balance sheet reveals to Luca that passion alone cannot pay bills: an artisan venture requires an economic margin to survive unexpected shocks.',
+    storyAnchor: {
+      chapterNumber: 57,
+      quoteIt: 'Luca sentiva il margine utile assottigliarsi come un foglio sottile di carta velina.',
+      quoteEn: 'Luca felt the operating margin thin down like a thin sheet of tissue paper.',
+    },
+  },
+  {
+    lemmaId: 'sostenibile',
+    whyItMatters:
+      'Claudia reminds Luca that choosing independence is only genuine when the craft learns how to sustain itself economically without compromising quality.',
+    storyAnchor: {
+      chapterNumber: 57,
+      quoteIt: 'Un progetto indipendente diventa solido quando la qualità del mestiere impara a essere economicamente sostenibile nel tempo.',
+      quoteEn: 'An independent project becomes solid when craft quality learns to be economically sustainable over time.',
+    },
+  },
+  {
+    lemmaId: 'flusso',
+    whyItMatters:
+      'The steady flow of morning commuters on Via dei Serpenti teaches Luca that a counter must work in harmony with the neighborhood’s real schedule.',
+    storyAnchor: {
+      chapterNumber: 56,
+      quoteIt: 'Governare il flusso delle persone e costruire un ritmo capace di reggere l’urto della realtà.',
+      quoteEn: 'Governing the flow of people and building a rhythm capable of withstanding reality.',
+    },
+  },
+  {
+    lemmaId: 'efficienza',
+    whyItMatters:
+      'Luca learns that efficiency is not panic or rushed speed, but the deliberate elimination of wasted motions to protect the soul of the craft.',
+    storyAnchor: {
+      chapterNumber: 56,
+      quoteIt: 'L’efficienza non significava lavorare con fretta e affanno; significava eliminare i gesti inutili.',
+      quoteEn: 'Efficiency did not mean working with haste and panic; it meant eliminating useless motions.',
+    },
+  },
   {
     lemmaId: 'contratto',
     whyItMatters:

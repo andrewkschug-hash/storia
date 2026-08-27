@@ -2,10 +2,12 @@ import type { BuildStoryRowsInput, LibraryStoryRow, LibraryTab } from '@/src/com
 import { LUCA_STORY_ID } from '@/src/content/catalog';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 
-const LUCA_RANGES: Record<Exclude<LibraryTab, 'A2+'>, { start: number; end: number }> = {
-  A1: { start: 1, end: 20 },
-  'A1+': { start: 21, end: 24 },
-  A2: { start: 25, end: 40 },
+const LUCA_RANGES: Record<Exclude<LibraryTab, 'A2+'>, { start: number; end: number; act: string }> = {
+  A1: { start: 1, end: 20, act: 'Atto I · Arrivo' },
+  'A1+': { start: 21, end: 24, act: 'Atto II · Appartenenza' },
+  A2: { start: 25, end: 40, act: 'Atto III · Responsabilità' },
+  B1: { start: 41, end: 55, act: 'Atto IV · Due vite possibili' },
+  'B1+': { start: 56, end: 70, act: 'Atto V · La scelta rinnovata' },
 };
 
 function chaptersInRange(chapters: ChapterListItem[], start: number, end: number): ChapterListItem[] {
@@ -17,7 +19,7 @@ function lucaSegmentRow(
   lucaTitleIt: string,
   chapterStatuses: ChapterListItem[],
 ): LibraryStoryRow {
-  const { start, end } = LUCA_RANGES[tab];
+  const { start, end, act } = LUCA_RANGES[tab];
   const inRange = chaptersInRange(chapterStatuses, start, end);
   const completed = inRange.filter((chapter) => chapter.status === 'completed').length;
   const locked = inRange.length > 0 && inRange.every((chapter) => chapter.status === 'locked');
@@ -25,6 +27,7 @@ function lucaSegmentRow(
   return {
     id: `luca-${tab}`,
     titleIt: lucaTitleIt,
+    eyebrow: act,
     completed,
     total: inRange.length || end - start + 1,
     locked,
@@ -86,11 +89,10 @@ export function buildStoryRowsForTab(input: BuildStoryRowsInput): LibraryStoryRo
   return rows;
 }
 
-export const LIBRARY_TABS: LibraryTab[] = ['A1', 'A1+', 'A2', 'A2+'];
+export const LIBRARY_TABS: LibraryTab[] = ['A1', 'A1+', 'A2', 'A2+', 'B1', 'B1+'];
 
 export const LOCKED_LEVEL_PREVIEWS = [
-  { level: 'B1', title: 'Independent reading', chapterCount: 0 },
-  { level: 'B1+', title: 'Extended narratives', chapterCount: 0 },
-  { level: 'B2', title: 'Bigger decisions', chapterCount: 0 },
-  { level: 'C1', title: 'Advanced fluency', chapterCount: 0 },
+  { level: 'B2', title: 'Nuovi orizzonti', chapterCount: 0 },
+  { level: 'C1', title: 'Padronanza autentica', chapterCount: 0 },
 ] as const;
+

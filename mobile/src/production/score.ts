@@ -622,10 +622,17 @@ function inferPerson(normalized: string): ProductionPerson | null {
     return (mapped?.[0] as ProductionPerson | undefined) ?? null;
   }
   if (parts[0] === 'mi' && parts[1] === 'sveglio') return '1sg';
+  if (parts[0] === 'si' && parts[1] === 'sveglia') return '3sg';
+  if (parts[0] === 'mi' && parts[1] === 'alzo') return '1sg';
+  if (parts[0] === 'si' && parts[1] === 'alza') return '3sg';
   if (IMPERATIVE_OR_FORMULA.test(normalized)) return null;
-  const verb = parts[0] === 'mi' || parts[0] === 'ti' || parts[0] === 'ci' ? parts[1] : parts[0];
-  if (!verb) return null;
-  return VERB_PERSON[verb] ?? null;
+  for (let i = 0; i < parts.length; i++) {
+    const word = parts[i];
+    if (VERB_PERSON[word]) {
+      return VERB_PERSON[word];
+    }
+  }
+  return null;
 }
 
 function promptLeavesGenderOpen(promptEn: string): boolean {

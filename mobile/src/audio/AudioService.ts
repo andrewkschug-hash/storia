@@ -9,14 +9,14 @@ import type { Character, Sentence } from '@/src/content/schemas';
 
 const SPEED_KEY = 'storia:audio-speed:v1';
 
-/** Quiet beat between chapter sentences so listening feels natural, not rushed. */
-export const CHAPTER_SENTENCE_GAP_MS = 650;
+/** Quiet beat between chapter sentences so listening feels natural and fluid. */
+export const CHAPTER_SENTENCE_GAP_MS = 250;
 
 /** Playback rates applied to packaged normal-speed clips. */
 export const PLAYBACK_RATE: Record<TTSSpeed, number> = {
-  normal: 0.9,
-  slow: 0.75,
-  faster: 1.0,
+  slow: 0.8,
+  normal: 1.0,
+  faster: 1.15,
 };
 
 export type PlayResult = {

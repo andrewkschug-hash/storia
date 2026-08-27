@@ -322,12 +322,16 @@ describe('Phase 8 authoring template and story arcs', () => {
     const a2Chapters = [...bundle.chapters.values()].filter(
       (c) => c.number >= 25 && c.number <= 40,
     );
-    const b1Chapters = [...bundle.chapters.values()].filter((c) => c.number >= 41);
+    const b1Chapters = [...bundle.chapters.values()].filter(
+      (c) => c.number >= 41 && c.number <= 55,
+    );
+    const b1PlusChapters = [...bundle.chapters.values()].filter((c) => c.number >= 56);
     expect(a1Chapters.every((c) => c.cefrTarget === 'A1')).toBe(true);
     expect(a1PlusChapters.every((c) => c.cefrTarget === 'A1+')).toBe(true);
     expect(a2Chapters.every((c) => c.cefrTarget === 'A2')).toBe(true);
     expect(a2Chapters).toHaveLength(16);
     expect(b1Chapters.every((c) => c.cefrTarget === 'B1')).toBe(true);
+    expect(b1PlusChapters.every((c) => c.cefrTarget === 'B1+')).toBe(true);
   });
 
   it('creates an A2 authoring template without filling chapters', () => {

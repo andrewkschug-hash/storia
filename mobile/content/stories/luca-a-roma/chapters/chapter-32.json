@@ -160,7 +160,7 @@
             "il",
             "padrone",
             "ascoltare",
-            "dare",
+            "da",
             "vicino",
             "e",
             "non",
@@ -270,7 +270,7 @@
             "sapere",
             "se",
             "sabato",
-            "provare",
+            "prova",
             "qualcosa",
             "se",
             "la",
@@ -307,10 +307,10 @@
             "caffe",
             "restare",
             "che",
-            "lavorare",
+            "lavoro",
             "ce",
             "per",
-            "io"
+            "me"
           ]
         },
         {
@@ -323,7 +323,7 @@
             "ora",
             "o",
             "un",
-            "lavorare",
+            "lavoro",
             "vero",
             "non",
             "volere",
@@ -345,7 +345,7 @@
             "le",
             "ora",
             "i",
-            "soldi",
+            "soldo",
             "il",
             "posto"
           ]
@@ -374,7 +374,7 @@
           "speakerId": "padrone",
           "kind": "dialogue",
           "lemmas": [
-            "prima",
+            "primo",
             "vedere",
             "sabato",
             "poi",
@@ -383,7 +383,7 @@
             "ora",
             "e",
             "di",
-            "soldi"
+            "soldo"
           ],
           "phrases": [
             {
@@ -445,7 +445,7 @@
           "kind": "dialogue",
           "lemmas": [
             "io",
-            "lavorare",
+            "lavoro",
             "qui",
             "se",
             "il",
@@ -453,7 +453,7 @@
             "chiudere",
             "restare",
             "senza",
-            "lavorare"
+            "lavoro"
           ]
         },
         {
@@ -625,10 +625,10 @@
             "qualcuno",
             "ascoltare",
             "dipendere",
-            "dare",
+            "da",
             "noi",
             "in",
-            "partire"
+            "parte"
           ],
           "phrases": [
             {
@@ -647,7 +647,7 @@
           "kind": "dialogue",
           "lemmas": [
             "altro",
-            "partire",
+            "parte",
             "non",
             "rispondere",
             "e",
@@ -723,7 +723,7 @@
             "vedere",
             "il",
             "nostro",
-            "lavorare"
+            "lavoro"
           ]
         },
         {
@@ -769,18 +769,18 @@
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "aiutare",
+            "aiuto",
             "se",
             "potere",
             "ma",
             "questo",
             "settimana",
             "cercare",
-            "lavorare",
+            "lavoro",
             "avere",
             "bisogno",
             "di",
-            "soldi"
+            "soldo"
           ]
         },
         {
@@ -816,7 +816,7 @@
             "se",
             "sabato",
             "ci",
-            "essere"
+            "sei"
           ],
           "phrases": [
             {
@@ -877,7 +877,7 @@
             "il",
             "futuro",
             "del",
-            "lavorare",
+            "lavoro",
             "essere",
             "difficile"
           ]

@@ -70,7 +70,7 @@
           "kind": "narration",
           "lemmas": [
             "luca",
-            "portare",
+            "porta",
             "una",
             "valigia"
           ]
@@ -111,7 +111,7 @@
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ce",
+            "esserci",
             "un",
             "treno"
           ]
@@ -188,7 +188,7 @@
           "lemmas": [
             "il",
             "treno",
-            "partire",
+            "parte",
             "adesso"
           ]
         },

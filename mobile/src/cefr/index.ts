@@ -81,3 +81,17 @@ export {
   comprehensionDifficultyScore,
   comprehensionFitsLevel,
 } from '@/src/cefr/comprehension';
+export {
+  B1_ASSESSMENT_PASSAGE,
+  B1_DIAGNOSTIC_ITEMS,
+  scoreB1Diagnostic,
+  calculateB1LongitudinalEvidence,
+  evaluateA2ToB1Readiness,
+  type B1DiagnosticItem,
+  type B1DiagnosticItemResult,
+  type B1DiagnosticResult,
+  type B1DiagnosticSection,
+  type B1HardFloors,
+  type B1LongitudinalEvidence,
+  type A2ToB1ReadinessEvaluation,
+} from '@/src/cefr/b1Readiness';

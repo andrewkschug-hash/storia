@@ -466,6 +466,126 @@
       "titleIt": "Il primo giorno",
       "difficultyLevel": 3,
       "file": "chapter-55.json"
+    },
+    {
+      "id": "luca-a-roma-56",
+      "number": 56,
+      "title": "The Tuesday Rhythm",
+      "titleIt": "Il ritmo del martedì",
+      "difficultyLevel": 3,
+      "file": "chapter-56.json"
+    },
+    {
+      "id": "luca-a-roma-57",
+      "number": 57,
+      "title": "The Month-End Accounts",
+      "titleIt": "I conti a fine mese",
+      "difficultyLevel": 3,
+      "file": "chapter-57.json"
+    },
+    {
+      "id": "luca-a-roma-58",
+      "number": 58,
+      "title": "Bruno's Counsel",
+      "titleIt": "Il consiglio di Bruno",
+      "difficultyLevel": 3,
+      "file": "chapter-58.json"
+    },
+    {
+      "id": "luca-a-roma-59",
+      "number": 59,
+      "title": "The Water Breakdown",
+      "titleIt": "L'imprevisto dell'acqua",
+      "difficultyLevel": 3,
+      "file": "chapter-59.json"
+    },
+    {
+      "id": "luca-a-roma-60",
+      "number": 60,
+      "title": "A Pact for the Afternoon",
+      "titleIt": "Un patto per il pomeriggio",
+      "difficultyLevel": 3,
+      "file": "chapter-60.json"
+    },
+    {
+      "id": "luca-a-roma-61",
+      "number": 61,
+      "title": "The Back Table",
+      "titleIt": "Il tavolo in fondo",
+      "difficultyLevel": 3,
+      "file": "chapter-61.json"
+    },
+    {
+      "id": "luca-a-roma-62",
+      "number": 62,
+      "title": "Marco's Roast",
+      "titleIt": "La tostatura di Marco",
+      "difficultyLevel": 3,
+      "file": "chapter-62.json"
+    },
+    {
+      "id": "luca-a-roma-63",
+      "number": 63,
+      "title": "A Storm in Monti",
+      "titleIt": "Un temporale a Monti",
+      "difficultyLevel": 3,
+      "file": "chapter-63.json"
+    },
+    {
+      "id": "luca-a-roma-64",
+      "number": 64,
+      "title": "The Illusion of Control",
+      "titleIt": "L'illusione del controllo",
+      "difficultyLevel": 3,
+      "file": "chapter-64.json"
+    },
+    {
+      "id": "luca-a-roma-65",
+      "number": 65,
+      "title": "A Different Point of View",
+      "titleIt": "Un punto di vista diverso",
+      "difficultyLevel": 3,
+      "file": "chapter-65.json"
+    },
+    {
+      "id": "luca-a-roma-66",
+      "number": 66,
+      "title": "The Neighborhood's Identity",
+      "titleIt": "L'identità del quartiere",
+      "difficultyLevel": 3,
+      "file": "chapter-66.json"
+    },
+    {
+      "id": "luca-a-roma-67",
+      "number": 67,
+      "title": "The Trial of Winter",
+      "titleIt": "La prova dell'inverno",
+      "difficultyLevel": 3,
+      "file": "chapter-67.json"
+    },
+    {
+      "id": "luca-a-roma-68",
+      "number": 68,
+      "title": "Bruno's Proposal",
+      "titleIt": "La proposta di Bruno",
+      "difficultyLevel": 3,
+      "file": "chapter-68.json"
+    },
+    {
+      "id": "luca-a-roma-69",
+      "number": 69,
+      "title": "One Year Balance",
+      "titleIt": "Il bilancio di un anno",
+      "difficultyLevel": 3,
+      "file": "chapter-69.json"
+    },
+    {
+      "id": "luca-a-roma-70",
+      "number": 70,
+      "title": "The Choice Renewed",
+      "titleIt": "La scelta rinnovata",
+      "difficultyLevel": 3,
+      "file": "chapter-70.json"
     }
   ]
 }

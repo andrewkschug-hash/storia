@@ -40,6 +40,12 @@ export function routeAfterSpeakScene(storyId: string, batchEnd: number, returnTo
   if (storyId === LUCA_STORY_ID && batchEnd === 20) {
     return `/level-readiness?fromChapter=20` as Href;
   }
+  if (storyId === LUCA_STORY_ID && batchEnd === 40) {
+    return `/level-readiness?fromChapter=40` as Href;
+  }
+  if (storyId === LUCA_STORY_ID && batchEnd === 70) {
+    return '/(tabs)/vocabulary' as Href;
+  }
   const next = getChapterByNumber(batchEnd + 1, storyId);
   if (next) {
     return readerHref(storyId, next.id);

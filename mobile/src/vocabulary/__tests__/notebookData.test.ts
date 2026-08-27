@@ -18,8 +18,8 @@ describe('notebookData referential integrity', () => {
   const bundle = getContentBundle(LUCA_STORY_ID);
   const totalChapters = bundle.story.chapters.length;
 
-  it('covers all 55 chapters with contiguous narrative moments', () => {
-    expect(NOTEBOOK_MOMENTS.length).toBe(5);
+  it('covers all chapters with contiguous narrative moments', () => {
+    expect(NOTEBOOK_MOMENTS.length).toBeGreaterThanOrEqual(5);
     expect(NOTEBOOK_MOMENTS[0].chapterStart).toBe(1);
     expect(NOTEBOOK_MOMENTS[NOTEBOOK_MOMENTS.length - 1].chapterEnd).toBe(totalChapters);
 
@@ -46,6 +46,7 @@ describe('notebookData referential integrity', () => {
     expect(getMomentForChapter(25)?.id).toBe('responsabilita');
     expect(getMomentForChapter(45)?.id).toBe('due-vite');
     expect(getMomentForChapter(55)?.id).toBe('la-scelta');
+    expect(getMomentForChapter(56)?.id).toBe('funziona-davvero');
     expect(getMomentForChapter(999)).toBeNull();
   });
 

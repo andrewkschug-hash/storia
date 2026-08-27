@@ -303,9 +303,10 @@
       "chapterId": "luca-prima-di-roma-03-06",
       "level": "A1",
       "sourceSentenceId": "s26",
-      "promptEn": "I like apples.",
-      "expectedIt": "Mi piacciono le mele.",
+      "promptEn": "Luca likes apples.",
+      "expectedIt": "A Luca piacciono le mele.",
       "acceptableAnswers": [
+        "Mi piacciono le mele.",
         "A me piacciono le mele."
       ],
       "match": "flexible",
