@@ -194,13 +194,13 @@
         },
         {
           "id": "s13",
-          "text": "Luca mangia qualcosa.",
+          "text": "Luca mangia cibo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "mangiare",
-            "qualcosa"
+            "cibo"
           ]
         }
       ]

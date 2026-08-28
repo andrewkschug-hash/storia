@@ -15,6 +15,7 @@ export function createDialogueState(scene?: SpeakScene | null): DialogueState {
     history: [],
     partnerAudioPlaying: false,
     partnerEnglishVisible: false,
+    revealedTranslations: {},
   };
 }
 
@@ -45,6 +46,7 @@ export function startScene(state: DialogueState, scene: SpeakScene): DialogueSta
     history,
     partnerAudioPlaying: false,
     partnerEnglishVisible: false,
+    revealedTranslations: {},
   };
 }
 
@@ -60,6 +62,17 @@ export function togglePartnerEnglish(state: DialogueState): DialogueState {
   return {
     ...state,
     partnerEnglishVisible: !state.partnerEnglishVisible,
+  };
+}
+
+export function togglePartnerTranslation(state: DialogueState, itemId: string): DialogueState {
+  const current = Boolean(state.revealedTranslations[itemId]);
+  return {
+    ...state,
+    revealedTranslations: {
+      ...state.revealedTranslations,
+      [itemId]: !current,
+    },
   };
 }
 

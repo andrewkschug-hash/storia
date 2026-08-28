@@ -53,7 +53,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Ask Sofia:",
+            "sayEn": "What is wrong?"
           }
         },
         {
@@ -87,7 +89,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Sofia:",
+            "sayEn": "We can help."
           }
         },
         {
@@ -133,7 +137,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Sofia:",
+            "sayEn": "I want to buy the ticket."
           }
         },
         {
@@ -167,7 +173,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Agree:",
+            "sayEn": "Let's go together."
           }
         }
       ]
@@ -221,7 +229,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Marco:",
+            "sayEn": "I was happy to help. How is your mom doing?"
           }
         },
         {
@@ -257,7 +267,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Propose:",
+            "sayEn": "Let's have a coffee together first before going back."
           }
         },
         {
@@ -294,7 +306,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Sofia:",
+            "sayEn": "Now I have a home, a job, and friends in Rome."
           }
         },
         {
@@ -329,7 +343,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Sofia:",
+            "sayEn": "I am happy in Rome and this is home."
           }
         }
       ]
@@ -382,7 +398,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Reassure Mom:",
+            "sayEn": "I am fine and doing well in Rome."
           }
         },
         {
@@ -418,7 +436,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Mom:",
+            "sayEn": "I have a home and a job at the café."
           }
         },
         {
@@ -454,7 +474,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Reassure Mom:",
+            "sayEn": "I am not alone and I have friends like Sofia and Giulia."
           }
         },
         {
@@ -490,7 +512,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Mom:",
+            "sayEn": "Let's talk on Sunday. I love you, Mom."
           }
         }
       ]
@@ -543,7 +567,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Explain:",
+            "sayEn": "I think about rent and my job every single day."
           }
         },
         {
@@ -578,7 +604,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Admit:",
+            "sayEn": "I am afraid, and fear is speaking first."
           }
         },
         {
@@ -612,7 +640,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Respond:",
+            "sayEn": "We must make a plan, not just wait."
           }
         },
         {
@@ -646,7 +676,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Suggest:",
+            "sayEn": "Let's go to Nonna Rosa, she might have an idea."
           }
         },
         {
@@ -681,7 +713,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Agree:",
+            "sayEn": "Let's go together right now!"
           }
         }
       ]
@@ -735,7 +769,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell the owner:",
+            "sayEn": "Sofia and I have an idea for the neighborhood."
           }
         },
         {
@@ -770,7 +806,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Reassure the owner:",
+            "sayEn": "On Saturday there will be bread, coffee, and friends, and it costs very little."
           }
         },
         {
@@ -805,7 +843,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Explain:",
+            "sayEn": "We will spread the word to the neighbors in the area."
           }
         },
         {
@@ -839,7 +879,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Negotiate:",
+            "sayEn": "All right, let's try Saturday; if it doesn't work, you can decide after."
           }
         },
         {
@@ -873,7 +915,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Say:",
+            "sayEn": "If people come, we must be ready to work hard."
           }
         }
       ]
@@ -927,7 +971,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Tell Sofia:",
+            "sayEn": "Wait calmly, we did our work."
           }
         },
         {
@@ -969,7 +1015,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Greet Nonna Rosa:",
+            "sayEn": "Come in everyone!"
           }
         },
         {
@@ -1003,7 +1051,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Propose:",
+            "sayEn": "Marco stays at the door, and we prepare the coffees."
           }
         },
         {
@@ -1037,7 +1087,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Say:",
+            "sayEn": "The neighborhood needs this café."
           }
         },
         {
@@ -1071,7 +1123,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Invite everyone:",
+            "sayEn": "Come back not only today, but also on Monday and Thursday!"
           }
         },
         {
@@ -1105,7 +1159,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Agree:",
+            "sayEn": "Working together solves the problem."
           }
         }
       ]
@@ -1158,7 +1214,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Negotiate:",
+            "sayEn": "I accept, but I want free time on Monday and Wednesday evenings."
           }
         },
         {
@@ -1191,7 +1249,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Agree:",
+            "sayEn": "This schedule works well for me."
           }
         },
         {
@@ -1231,7 +1291,9 @@
               ],
               "requiredTense": "passato_prossimo",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Confirm:",
+            "sayEn": "You offered the proposal, but I made my decision."
           }
         },
         {
@@ -1266,7 +1328,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Explain:",
+            "sayEn": "For now I stay in Rome with this work, this home, and these people."
           }
         },
         {
@@ -1301,7 +1365,9 @@
               ],
               "requiredTense": "present",
               "requiredPolarity": "affirmative"
-            }
+            },
+            "promptDirective": "Declare:",
+            "sayEn": "For now, this is home."
           }
         }
       ]

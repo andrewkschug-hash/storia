@@ -46,6 +46,7 @@ export function NotebookFilterSheet({
         status: 'all',
         chapterRange: 'all',
         savedOnly: false,
+        groupBy: 'chronology',
       });
     } else if (lens === 'phrases') {
       onPhrasesFilterChange({
@@ -102,6 +103,43 @@ export function NotebookFilterSheet({
             {/* ===================== WORDS LENS ===================== */}
             {lens === 'words' && (
               <View style={{ gap: Spacing.md }}>
+                {/* GROUP BY */}
+                <View style={styles.section}>
+                  <Text style={[styles.sectionTitle, { color: colors.textMuted }]}>
+                    GROUP BY
+                  </Text>
+                  <View style={styles.chipRow}>
+                    {(
+                      [
+                        { id: 'chronology', label: '⏱ Story Timeline' },
+                        { id: 'part_of_speech', label: '📑 Word Groups (Verbs, Nouns…)' },
+                      ] as const
+                    ).map((opt) => {
+                      const isSelected = (wordsFilter.groupBy ?? 'chronology') === opt.id;
+                      return (
+                        <Pressable
+                          key={opt.id}
+                          onPress={() => onWordsFilterChange({ ...wordsFilter, groupBy: opt.id })}
+                          style={[
+                            styles.chip,
+                            {
+                              backgroundColor: isSelected ? colors.tint : colors.backgroundHigher,
+                              borderColor: isSelected ? colors.tint : colors.border,
+                            },
+                          ]}>
+                          <Text
+                            style={[
+                              styles.chipText,
+                              { color: isSelected ? colors.onTint : colors.text },
+                            ]}>
+                            {opt.label}
+                          </Text>
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+                </View>
+
                 {/* PART OF SPEECH */}
                 <View style={styles.section}>
                   <Text style={[styles.sectionTitle, { color: colors.textMuted }]}>
@@ -111,10 +149,10 @@ export function NotebookFilterSheet({
                     {(
                       [
                         { id: 'all', label: 'All' },
-                        { id: 'noun', label: 'Nouns' },
-                        { id: 'verb', label: 'Verbs' },
-                        { id: 'adjective', label: 'Adjectives' },
-                        { id: 'adverb', label: 'Adverbs' },
+                        { id: 'verb', label: 'Verbs (Azioni)' },
+                        { id: 'noun', label: 'Nouns (Sostantivi)' },
+                        { id: 'adjective', label: 'Describing (Aggettivi)' },
+                        { id: 'adverb', label: 'Adverbs (Avverbi)' },
                         { id: 'other', label: 'Other' },
                       ] as const
                     ).map((opt) => {

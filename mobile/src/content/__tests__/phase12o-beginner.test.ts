@@ -91,7 +91,7 @@ describe('Phase 12O true beginner onboarding', () => {
     expect(s11).toEqual({ sentences: 38, tokens: 129, uniqueLemmas: 50, avgSentenceLength: 129 / 38 });
     expect(s12).toEqual({ sentences: 35, tokens: 122, uniqueLemmas: 55, avgSentenceLength: 122 / 35 });
     expect(s13).toEqual({ sentences: 35, tokens: 128, uniqueLemmas: 50, avgSentenceLength: 128 / 35 });
-    expect(luca1).toEqual({ sentences: 13, tokens: 41, uniqueLemmas: 24, avgSentenceLength: 41 / 13 });
+    expect(luca1).toEqual({ sentences: 13, tokens: 41, uniqueLemmas: 25, avgSentenceLength: 41 / 13 });
     expect(getChapter('luca-a-roma-01', LUCA_STORY_ID)?.paragraphs[0]?.sentences[0]?.text).toBe(
       'Luca arriva a Roma.',
     );

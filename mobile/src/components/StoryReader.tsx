@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { Fragment, useCallback, useEffect, useRef } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -13,6 +13,7 @@ import {
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import { ReaderSentence } from '@/src/components/ReaderSentence';
 import type { Chapter, Sentence, Token } from '@/src/content/schemas';
+import { calculateReaderScrollTarget, isHeaderTarget } from '@/src/reader/readerScroll';
 import { useLayout } from '@/src/theme/useLayout';
 import { Spacing } from '@/src/theme/tokens';
 
@@ -70,7 +71,7 @@ export function StoryReader({
   onContinueFromChapter,
   onScrollProgress,
 }: Props) {
-  const { colors, type, minTouchTarget } = useAccessibility();
+  const { colors, type, minTouchTarget, settings } = useAccessibility();
   const layout = useLayout();
   const scrollRef = useRef<ScrollView>(null);
   const didRestore = useRef(false);
@@ -78,15 +79,15 @@ export function StoryReader({
   const contentH = useRef(0);
   const offsetY = useRef(0);
 
-  const isHeaderPlaying =
-    playingSentenceId === 'header' ||
-    playingSentenceId === `header:${chapter.id}` ||
-    playingSentenceId === `header:${chapter.number}`;
+  const bodyLayoutY = useRef(0);
+  const paragraphLayoutY = useRef<Record<string, number>>({});
+  const sentenceLayoutY = useRef<Record<string, number>>({});
+  const sentenceHeights = useRef<Record<string, number>>({});
+  const lastAutoScrolledTarget = useRef<string | null>(null);
+
+  const isHeaderPlaying = isHeaderTarget(playingSentenceId, chapter);
   const isHeaderHighlighted =
-    highlightedSentenceId === 'header' ||
-    highlightedSentenceId === `header:${chapter.id}` ||
-    highlightedSentenceId === `header:${chapter.number}` ||
-    isHeaderPlaying;
+    isHeaderTarget(highlightedSentenceId, chapter) || isHeaderPlaying;
 
   const emitProgress = () => {
     if (!onScrollProgress) return;
@@ -98,20 +99,97 @@ export function StoryReader({
     onScrollProgress(Math.max(0, Math.min(1, offsetY.current / max)));
   };
 
+  const scrollToTarget = useCallback(
+    (targetId: string, animated: boolean = true) => {
+      const targetY = calculateReaderScrollTarget({
+        targetId,
+        chapter,
+        bodyY: bodyLayoutY.current,
+        paragraphY: paragraphLayoutY.current,
+        sentenceY: sentenceLayoutY.current,
+        viewportHeight: layoutH.current,
+      });
+
+      if (targetY != null && scrollRef.current) {
+        scrollRef.current.scrollTo({
+          y: targetY,
+          animated: settings.reducedMotion ? false : animated,
+        });
+      }
+    },
+    [chapter, settings.reducedMotion],
+  );
+
+  // Auto-scroll when listening/playing moves from sentence to sentence
+  useEffect(() => {
+    if (!playingSentenceId) {
+      lastAutoScrolledTarget.current = null;
+      return;
+    }
+    if (lastAutoScrolledTarget.current === playingSentenceId) return;
+    lastAutoScrolledTarget.current = playingSentenceId;
+    scrollToTarget(playingSentenceId, true);
+  }, [playingSentenceId, scrollToTarget]);
+
+  // Initial scroll position restoration on chapter open
   useEffect(() => {
     if (didRestore.current) return;
-    if (initialScrollOffset == null) return;
-    didRestore.current = true;
-    requestAnimationFrame(() => {
-      scrollRef.current?.scrollTo({ y: initialScrollOffset, animated: false });
-    });
-  }, [initialScrollOffset]);
+    if (initialScrollOffset != null) {
+      didRestore.current = true;
+      requestAnimationFrame(() => {
+        scrollRef.current?.scrollTo({ y: initialScrollOffset, animated: false });
+      });
+    } else if (highlightedSentenceId && !playingSentenceId) {
+      const targetY = calculateReaderScrollTarget({
+        targetId: highlightedSentenceId,
+        chapter,
+        bodyY: bodyLayoutY.current,
+        paragraphY: paragraphLayoutY.current,
+        sentenceY: sentenceLayoutY.current,
+        viewportHeight: layoutH.current,
+      });
+      if (targetY != null) {
+        didRestore.current = true;
+        requestAnimationFrame(() => {
+          scrollRef.current?.scrollTo({ y: targetY, animated: false });
+        });
+      }
+    }
+  }, [initialScrollOffset, highlightedSentenceId, playingSentenceId, chapter]);
 
   const onScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
     offsetY.current = event.nativeEvent.contentOffset.y;
     contentH.current = event.nativeEvent.contentSize.height;
     layoutH.current = event.nativeEvent.layoutMeasurement.height;
     emitProgress();
+  };
+
+  const onBodyLayout = (event: LayoutChangeEvent) => {
+    bodyLayoutY.current = event.nativeEvent.layout.y;
+    if (playingSentenceId) {
+      scrollToTarget(playingSentenceId, true);
+    }
+  };
+
+  const onParagraphLayout = (paragraphId: string, event: LayoutChangeEvent) => {
+    paragraphLayoutY.current[paragraphId] = event.nativeEvent.layout.y;
+    if (playingSentenceId) {
+      const currentParagraph = chapter.paragraphs.find((p) =>
+        p.sentences.some((s) => s.id === playingSentenceId),
+      );
+      if (currentParagraph?.id === paragraphId) {
+        scrollToTarget(playingSentenceId, true);
+      }
+    }
+  };
+
+  const handleSentenceLayout = (sentenceId: string, event: LayoutChangeEvent) => {
+    sentenceLayoutY.current[sentenceId] = event.nativeEvent.layout.y;
+    sentenceHeights.current[sentenceId] = event.nativeEvent.layout.height;
+    onSentenceLayout?.(sentenceId, event);
+    if (playingSentenceId === sentenceId) {
+      scrollToTarget(sentenceId, true);
+    }
   };
 
   return (
@@ -139,6 +217,9 @@ export function StoryReader({
       onLayout={(event) => {
         layoutH.current = event.nativeEvent.layout.height;
         emitProgress();
+        if (playingSentenceId) {
+          scrollToTarget(playingSentenceId, true);
+        }
       }}>
       <Pressable
         accessibilityRole={onPlayHeader ? 'button' : 'none'}
@@ -194,15 +275,17 @@ export function StoryReader({
         </View>
       </Pressable>
 
-      <View style={styles.body}>
+      <View style={styles.body} onLayout={onBodyLayout}>
         {chapter.paragraphs.map((paragraph, index) => (
-          <View key={paragraph.id}>
+          <Fragment key={paragraph.id}>
             {index > 0 ? <SceneBreak /> : null}
-            <View style={styles.paragraph}>
+            <View
+              style={styles.paragraph}
+              onLayout={(e) => onParagraphLayout(paragraph.id, e)}>
               {paragraph.sentences.map((sentence) => (
                 <View
                   key={sentence.id}
-                  onLayout={(event) => onSentenceLayout?.(sentence.id, event)}>
+                  onLayout={(event) => handleSentenceLayout(sentence.id, event)}>
                   <ReaderSentence
                     sentence={sentence}
                     highlighted={
@@ -223,7 +306,7 @@ export function StoryReader({
                 </View>
               ))}
             </View>
-          </View>
+          </Fragment>
         ))}
       </View>
 
@@ -253,7 +336,7 @@ export function StoryReader({
 const styles = StyleSheet.create({
   content: {
     paddingTop: Spacing.lg,
-    paddingBottom: Spacing.xxl,
+    paddingBottom: Spacing.xxl * 2,
   },
   headerBlock: {
     marginBottom: Spacing.xs,

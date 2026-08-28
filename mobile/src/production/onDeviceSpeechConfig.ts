@@ -5,23 +5,30 @@ export const ITALIAN_SPEECH_LOCALE = 'it-IT';
 export const SPEECH_MAX_MS = 7000;
 
 export type SpeechUnavailableReason =
-  | 'web'
+  | 'unsupported'
+  | 'permission_denied'
+  | 'blocked'
   | 'missing_module'
   | 'unavailable'
   | 'on_device_unsupported'
-  | 'permission_denied';
+  | 'no_speech'
+  | 'web'; // legacy alias for unsupported web browser
 
 export function speechUnavailableMessage(reason: SpeechUnavailableReason): string {
   switch (reason) {
+    case 'unsupported':
     case 'web':
-      return 'Speaking works in the iOS or Android app, not on web.';
+      return 'Voice input isn’t available in this browser. You can type your answer instead.';
+    case 'permission_denied':
+    case 'blocked':
+      return 'Microphone access is turned off. Allow microphone access in your browser settings to use Speak.';
+    case 'no_speech':
+      return 'We couldn’t hear that. Try again or type your answer.';
     case 'missing_module':
       return 'Speech isn’t available in this build. Use a development build.';
     case 'on_device_unsupported':
       return 'On-device Italian speech isn’t supported on this device.';
-    case 'permission_denied':
-      return 'Microphone or speech permission is needed to practice aloud.';
     default:
-      return 'Speech recognition isn’t available right now.';
+      return 'Speech recognition isn’t available right now. You can type your answer below.';
   }
 }

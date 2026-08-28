@@ -49,7 +49,7 @@ const chapter01 = chapter(
       S('s10', 'Luca entra nel bar.', ['luca', 'entrare', 'nel', 'bar']),
       S('s11', 'Buongiorno.', ['buongiorno'], { speaker: 'luca' }),
       S('s12', 'Luca vuole qualcosa.', ['luca', 'volere', 'qualcosa']),
-      S('s13', 'Luca mangia qualcosa.', ['luca', 'mangiare', 'qualcosa']),
+      S('s13', 'Luca mangia cibo.', ['luca', 'mangiare', 'cibo']),
     ]),
   ],
 );

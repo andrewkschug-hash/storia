@@ -24,6 +24,7 @@ import {
   getReadingFootprint,
   groupPhrasesByChronology,
   groupWordsByChronology,
+  groupWordsByPartOfSpeech,
   matchesCefrBand,
 } from '@/src/vocabulary/notebookSelectors';
 
@@ -94,6 +95,58 @@ describe('Notebook components & selectors', () => {
       expect(sections[0].items[0].chapterNumber).toBeGreaterThanOrEqual(
         sections[sections.length - 1].items[sections[sections.length - 1].items.length - 1].chapterNumber,
       );
+    });
+
+    it('filters phrases strictly up to the learner reading horizon so chapter 70 is never shown to an early learner', () => {
+      const emptyFilter = { search: '', speaker: 'ALL', chapterRange: 'all' as const, savedOnly: false };
+      
+      // Learner at Chapter 5
+      const ch5Phrases = filterNotebookPhrases(NOTEBOOK_PHRASES, emptyFilter, {}, 5);
+      expect(ch5Phrases.every((p) => p.chapterNumber <= 5)).toBe(true);
+      expect(ch5Phrases.some((p) => p.chapterNumber === 70)).toBe(false);
+      expect(ch5Phrases.some((p) => p.chapterNumber === 5)).toBe(true);
+
+      const ch5Sections = groupPhrasesByChronology(ch5Phrases);
+      const topPhrase = ch5Sections[0].items[0];
+      expect(topPhrase.chapterNumber).toBeLessThanOrEqual(5);
+
+      // Learner at Chapter 70
+      const ch70Phrases = filterNotebookPhrases(NOTEBOOK_PHRASES, emptyFilter, {}, 70);
+      expect(ch70Phrases.some((p) => p.chapterNumber === 70)).toBe(true);
+    });
+
+    it('filters grammar insights up to the learner reading horizon', () => {
+      const emptyFilter = { search: '', level: 'all' as const, chapterRange: 'all' as const };
+      
+      // Learner at Chapter 10
+      const ch10Grammar = filterNotebookGrammar(NOTEBOOK_GRAMMAR_INSIGHTS, emptyFilter, 10);
+      expect(ch10Grammar.every((g) => g.chapterRange.start <= 10)).toBe(true);
+    });
+
+    it('groups words into verbs, nouns, describing words (adjectives), and adverbs', () => {
+      const mockItems = [
+        { kind: 'lemma' as const, id: 'parlare', italian: 'parlare', english: 'to speak', status: 'learning' as const, saved: false, encounterCount: 3, chaptersEncountered: ['luca-a-roma-01'], partOfSpeech: 'verb' },
+        { kind: 'lemma' as const, id: 'caffe', italian: 'caffè', english: 'coffee', status: 'learning' as const, saved: false, encounterCount: 5, chaptersEncountered: ['luca-a-roma-01'], partOfSpeech: 'noun' },
+        { kind: 'lemma' as const, id: 'caldo', italian: 'caldo', english: 'hot', status: 'learning' as const, saved: false, encounterCount: 2, chaptersEncountered: ['luca-a-roma-01'], partOfSpeech: 'adjective' },
+        { kind: 'lemma' as const, id: 'sempre', italian: 'sempre', english: 'always', status: 'learning' as const, saved: false, encounterCount: 4, chaptersEncountered: ['luca-a-roma-01'], partOfSpeech: 'adverb' },
+        { kind: 'phrase' as const, id: 'ha-fame', italian: 'ha fame', english: 'is hungry', status: 'learning' as const, saved: false, encounterCount: 1, chaptersEncountered: ['luca-a-roma-01'], partOfSpeech: 'phrase' },
+      ];
+
+      const sections = groupWordsByPartOfSpeech(mockItems);
+      const sectionIds = sections.map((s) => s.id);
+      expect(sectionIds).toContain('verbs');
+      expect(sectionIds).toContain('nouns');
+      expect(sectionIds).toContain('adjectives');
+      expect(sectionIds).toContain('adverbs');
+      expect(sectionIds).toContain('other');
+
+      const verbsSection = sections.find((s) => s.id === 'verbs');
+      expect(verbsSection?.title).toBe('VERBS · AZIONI');
+      expect(verbsSection?.items.map((i) => i.id)).toEqual(['parlare']);
+
+      const adjSection = sections.find((s) => s.id === 'adjectives');
+      expect(adjSection?.title).toBe('DESCRIBING WORDS · AGGETTIVI');
+      expect(adjSection?.items.map((i) => i.id)).toEqual(['caldo']);
     });
   });
 

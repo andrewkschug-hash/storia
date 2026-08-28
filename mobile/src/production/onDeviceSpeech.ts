@@ -1,15 +1,14 @@
 /**
- * On-device Italian speech recognition helpers.
- * Native STT only — no cloud transcription, no TTS.
- *
- * Imports ExpoSpeechRecognitionModule directly (not the package index) so Metro
- * does not load useSpeechRecognitionEvent, which can fail to resolve.
+ * Unified Italian speech recognition helpers for Web, iOS, and Android.
+ * - On Web: Uses browser Web Speech API (SpeechRecognition / webkitSpeechRecognition).
+ * - On Native: Uses ExpoSpeechRecognitionModule with on-device Italian models.
  */
 
 import { Platform } from 'react-native';
 
 import {
   ITALIAN_SPEECH_LOCALE,
+  SPEECH_MAX_MS,
   speechUnavailableMessage,
   type SpeechUnavailableReason,
 } from '@/src/production/onDeviceSpeechConfig';
@@ -46,10 +45,160 @@ type LoadedSpeechPackage = {
   ExpoSpeechRecognitionModule: NativeSpeechModule;
 };
 
-let cachedModule: LoadedSpeechPackage | null | undefined;
+// Web Speech API Adapter
+class WebSpeechAdapter implements NativeSpeechModule {
+  private activeRecognition: any = null;
+  private listeners = new Map<string, Set<(event: Record<string, unknown>) => void>>();
+
+  isRecognitionAvailable(): boolean {
+    if (typeof window === 'undefined') return false;
+    return Boolean((window as any).SpeechRecognition || (window as any).webkitSpeechRecognition);
+  }
+
+  supportsOnDeviceRecognition(): boolean {
+    return false;
+  }
+
+  async requestPermissionsAsync(): Promise<{ granted: boolean }> {
+    if (!this.isRecognitionAvailable()) return { granted: false };
+    return { granted: true };
+  }
+
+  async getSupportedLocales(): Promise<{ locales?: string[]; installedLocales?: string[] }> {
+    return { locales: [ITALIAN_SPEECH_LOCALE], installedLocales: [ITALIAN_SPEECH_LOCALE] };
+  }
+
+  async androidTriggerOfflineModelDownload(): Promise<unknown> {
+    return Promise.resolve();
+  }
+
+  private emit(eventName: string, data: Record<string, unknown>) {
+    const handlers = this.listeners.get(eventName);
+    if (handlers) {
+      for (const handler of Array.from(handlers)) {
+        try {
+          handler(data);
+        } catch {
+          // ignore
+        }
+      }
+    }
+  }
+
+  start(options: Record<string, unknown>): void {
+    this.abort();
+    if (typeof window === 'undefined') return;
+    const SpeechClass = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SpeechClass) {
+      this.emit('error', {
+        error: 'unsupported',
+        message: speechUnavailableMessage('unsupported'),
+      });
+      return;
+    }
+
+    try {
+      const recognition = new SpeechClass();
+      recognition.lang = (options.lang as string) || ITALIAN_SPEECH_LOCALE;
+      recognition.interimResults = true;
+      recognition.continuous = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onresult = (event: any) => {
+        let interim = '';
+        let final = '';
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          const item = event.results[i];
+          if (item.isFinal) {
+            final += item[0].transcript;
+          } else {
+            interim += item[0].transcript;
+          }
+        }
+        const text = (final || interim).trim();
+        if (text) {
+          this.emit('result', {
+            results: [{ transcript: text }],
+            isFinal: Boolean(final),
+          });
+        }
+      };
+
+      recognition.onerror = (event: any) => {
+        const err = event.error;
+        let message = 'Speech recognition error.';
+        if (err === 'not-allowed' || err === 'service-not-allowed') {
+          message = speechUnavailableMessage('permission_denied');
+        } else if (err === 'no-speech') {
+          message = speechUnavailableMessage('no_speech');
+        } else {
+          message = speechUnavailableMessage('unavailable');
+        }
+        this.emit('error', { error: err, message });
+      };
+
+      recognition.onend = () => {
+        this.emit('end', {});
+        this.activeRecognition = null;
+      };
+
+      this.activeRecognition = recognition;
+      recognition.start();
+    } catch (e) {
+      this.emit('error', {
+        error: 'start_failed',
+        message: e instanceof Error ? e.message : String(e),
+      });
+    }
+  }
+
+  stop(): void {
+    if (this.activeRecognition) {
+      try {
+        this.activeRecognition.stop();
+      } catch {
+        // ignore
+      }
+    }
+  }
+
+  abort(): void {
+    if (this.activeRecognition) {
+      try {
+        this.activeRecognition.abort();
+      } catch {
+        // ignore
+      }
+      this.activeRecognition = null;
+    }
+  }
+
+  addListener(
+    eventName: string,
+    listener: (event: Record<string, unknown>) => void,
+  ): { remove: () => void } {
+    if (!this.listeners.has(eventName)) {
+      this.listeners.set(eventName, new Set());
+    }
+    this.listeners.get(eventName)!.add(listener);
+    return {
+      remove: () => {
+        this.listeners.get(eventName)?.delete(listener);
+      },
+    };
+  }
+}
+
+let cachedWebAdapter: WebSpeechAdapter | null = null;
+let cachedNativeModule: LoadedSpeechPackage | null | undefined;
 
 function loadModule(): LoadedSpeechPackage | null {
-  if (cachedModule !== undefined) return cachedModule;
+  if (Platform.OS === 'web') {
+    if (!cachedWebAdapter) cachedWebAdapter = new WebSpeechAdapter();
+    return { ExpoSpeechRecognitionModule: cachedWebAdapter };
+  }
+
+  if (cachedNativeModule !== undefined) return cachedNativeModule;
   try {
     // Deep import avoids package index → useSpeechRecognitionEvent resolution failures.
     // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -57,14 +206,14 @@ function loadModule(): LoadedSpeechPackage | null {
       ExpoSpeechRecognitionModule?: NativeSpeechModule;
     };
     if (!mod?.ExpoSpeechRecognitionModule) {
-      cachedModule = null;
+      cachedNativeModule = null;
       return null;
     }
-    cachedModule = { ExpoSpeechRecognitionModule: mod.ExpoSpeechRecognitionModule };
+    cachedNativeModule = { ExpoSpeechRecognitionModule: mod.ExpoSpeechRecognitionModule };
   } catch {
-    cachedModule = null;
+    cachedNativeModule = null;
   }
-  return cachedModule;
+  return cachedNativeModule;
 }
 
 export function getSpeechRecognitionModule(): LoadedSpeechPackage | null {
@@ -72,16 +221,12 @@ export function getSpeechRecognitionModule(): LoadedSpeechPackage | null {
 }
 
 export async function checkItalianSpeechAvailability(): Promise<SpeechAvailability> {
-  if (Platform.OS === 'web') {
-    return { available: false, reason: 'web', message: speechUnavailableMessage('web') };
-  }
-
   const mod = loadModule();
   if (!mod?.ExpoSpeechRecognitionModule) {
     return {
       available: false,
-      reason: 'missing_module',
-      message: speechUnavailableMessage('missing_module'),
+      reason: Platform.OS === 'web' ? 'unsupported' : 'missing_module',
+      message: speechUnavailableMessage(Platform.OS === 'web' ? 'unsupported' : 'missing_module'),
     };
   }
 
@@ -90,8 +235,8 @@ export async function checkItalianSpeechAvailability(): Promise<SpeechAvailabili
     if (!ExpoSpeechRecognitionModule.isRecognitionAvailable()) {
       return {
         available: false,
-        reason: 'unavailable',
-        message: speechUnavailableMessage('unavailable'),
+        reason: Platform.OS === 'web' ? 'unsupported' : 'unavailable',
+        message: speechUnavailableMessage(Platform.OS === 'web' ? 'unsupported' : 'unavailable'),
       };
     }
   } catch {

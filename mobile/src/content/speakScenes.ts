@@ -90,7 +90,7 @@ export function speakTurnToExercise(scene: SpeakScene, turn: SpeakSceneTurn): Pr
     storyId: scene.storyId,
     chapterId: `${scene.storyId}-${String(scene.batchEnd).padStart(2, '0')}`,
     sourceSentenceId: turn.id,
-    promptEn: learner.objectiveEn,
+    promptEn: learner.sayEn ?? learner.objectiveEn,
     expectedIt: learner.targetIt,
     acceptableAnswers: learner.acceptableAnswers,
     match: learner.semantic ? 'semantic' : 'flexible',

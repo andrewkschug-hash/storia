@@ -22,6 +22,7 @@ export type WordsFilterState = {
   status: 'all' | 'learning' | 'familiar' | 'mastered';
   chapterRange: CefrBandKey;
   savedOnly: boolean;
+  groupBy: 'chronology' | 'part_of_speech';
 };
 
 export type PhrasesFilterState = {
@@ -122,8 +123,16 @@ export function filterNotebookPhrases(
   phrases: readonly NotebookPhrase[],
   filter: PhrasesFilterState,
   optimisticSaved: Record<string, boolean>,
+  highestChapter?: number,
 ): NotebookPhrase[] {
   let list = [...phrases];
+
+  // Restrict to unlocked reading horizon if chapterRange is 'all'
+  if (filter.chapterRange === 'all' && highestChapter !== undefined) {
+    list = list.filter((p) => p.chapterNumber <= highestChapter);
+  } else if (filter.chapterRange !== 'all') {
+    list = list.filter((p) => matchesCefrBand(p.chapterNumber, filter.chapterRange));
+  }
 
   // Saved filter
   if (filter.savedOnly) {
@@ -133,11 +142,6 @@ export function filterNotebookPhrases(
   // Speaker filter
   if (filter.speaker !== 'ALL') {
     list = list.filter((p) => p.speaker.toLowerCase() === filter.speaker.toLowerCase());
-  }
-
-  // Chapter range filter
-  if (filter.chapterRange !== 'all') {
-    list = list.filter((p) => matchesCefrBand(p.chapterNumber, filter.chapterRange));
   }
 
   // Search filter
@@ -159,6 +163,7 @@ export function filterNotebookPhrases(
 export function filterNotebookGrammar(
   insights: readonly NotebookGrammarInsight[],
   filter: GrammarFilterState,
+  highestChapter?: number,
 ): NotebookGrammarInsight[] {
   let list = [...insights];
 
@@ -168,7 +173,9 @@ export function filterNotebookGrammar(
   }
 
   // Chapter range filter
-  if (filter.chapterRange !== 'all') {
+  if (filter.chapterRange === 'all' && highestChapter !== undefined) {
+    list = list.filter((g) => g.chapterRange.start <= highestChapter);
+  } else if (filter.chapterRange !== 'all') {
     list = list.filter((g) => matchesCefrBand(g.sampleChapterNumber, filter.chapterRange));
   }
 
@@ -219,6 +226,52 @@ export function groupWordsByChronology(items: VocabBrowseItem[]): ChronologySect
     { id: 'recent', title: 'RECENTLY ENCOUNTERED', items: recent },
     { id: 'earlier', title: 'EARLIER IN YOUR JOURNEY', items: earlier },
   ];
+}
+
+/** Group words grammatically by category (Verbs, Nouns, Describing words / Adjectives, Adverbs, Other) */
+export function groupWordsByPartOfSpeech(items: VocabBrowseItem[]): ChronologySection<VocabBrowseItem>[] {
+  if (items.length === 0) return [];
+
+  const verbs: VocabBrowseItem[] = [];
+  const nouns: VocabBrowseItem[] = [];
+  const adjectives: VocabBrowseItem[] = [];
+  const adverbs: VocabBrowseItem[] = [];
+  const other: VocabBrowseItem[] = [];
+
+  for (const item of items) {
+    const pos = (item.partOfSpeech || '').toLowerCase();
+    if (pos === 'verb') {
+      verbs.push(item);
+    } else if (pos === 'noun') {
+      nouns.push(item);
+    } else if (pos === 'adjective' || pos === 'adj') {
+      adjectives.push(item);
+    } else if (pos === 'adverb' || pos === 'adv') {
+      adverbs.push(item);
+    } else {
+      other.push(item);
+    }
+  }
+
+  const sections: ChronologySection<VocabBrowseItem>[] = [];
+
+  if (verbs.length > 0) {
+    sections.push({ id: 'verbs', title: 'VERBS · AZIONI', items: verbs });
+  }
+  if (nouns.length > 0) {
+    sections.push({ id: 'nouns', title: 'NOUNS · SOSTANTIVI', items: nouns });
+  }
+  if (adjectives.length > 0) {
+    sections.push({ id: 'adjectives', title: 'DESCRIBING WORDS · AGGETTIVI', items: adjectives });
+  }
+  if (adverbs.length > 0) {
+    sections.push({ id: 'adverbs', title: 'ADVERBS · AVVERBI', items: adverbs });
+  }
+  if (other.length > 0) {
+    sections.push({ id: 'other', title: 'OTHER WORDS & PHRASES', items: other });
+  }
+
+  return sections;
 }
 
 /** Group phrases chronologically */

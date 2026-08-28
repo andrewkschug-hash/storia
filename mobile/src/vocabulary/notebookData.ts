@@ -500,6 +500,16 @@ export const NARRATIVE_VOCABULARY: readonly NarrativeWordAnnotation[] = [
 /** Memorable story phrases and dialogues with canonical story provenance */
 export const NOTEBOOK_PHRASES: readonly NotebookPhrase[] = [
   {
+    id: 'phrase-ch01-buongiorno',
+    textIt: 'Buongiorno.',
+    textEn: 'Good morning.',
+    speaker: 'Luca',
+    chapterNumber: 1,
+    sourceChapterId: 'luca-a-roma-01',
+    sourceSentenceId: 's11',
+    whyMemorable: 'Luca’s very first spoken greeting upon arriving in Rome.',
+  },
+  {
     id: 'phrase-ch05-ci-vediamo',
     textIt: 'Ci vediamo.',
     textEn: 'See you.',

@@ -2095,6 +2095,19 @@
       "introducedChapter": 1
     },
     {
+      "lemmaId": "cibo",
+      "italian": "cibo",
+      "english": "food",
+      "partOfSpeech": "noun",
+      "difficulty": 1,
+      "frequency": "high",
+      "introducedChapter": 1,
+      "inflections": [
+        "cibo",
+        "cibi"
+      ]
+    },
+    {
       "lemmaId": "appartamento",
       "italian": "appartamento",
       "english": "apartment",

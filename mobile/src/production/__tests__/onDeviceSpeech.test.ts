@@ -13,9 +13,12 @@ describe('onDeviceSpeech helpers', () => {
     expect(SPEECH_MAX_MS).toBeLessThanOrEqual(10000);
   });
 
-  it('explains why speech may be unavailable', () => {
-    expect(speechUnavailableMessage('web')).toMatch(/web/i);
-    expect(speechUnavailableMessage('permission_denied')).toMatch(/permission/i);
+  it('explains why speech may be unavailable across capability states', () => {
+    expect(speechUnavailableMessage('unsupported')).toMatch(/browser|type/i);
+    expect(speechUnavailableMessage('permission_denied')).toMatch(/permission|microphone/i);
+    expect(speechUnavailableMessage('blocked')).toMatch(/microphone/i);
+    expect(speechUnavailableMessage('no_speech')).toMatch(/hear|type/i);
     expect(speechUnavailableMessage('on_device_unsupported')).toMatch(/on-device/i);
+    expect(speechUnavailableMessage('missing_module')).toMatch(/available/i);
   });
 });

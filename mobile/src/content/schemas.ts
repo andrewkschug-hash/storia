@@ -365,6 +365,8 @@ export type SpeakSceneIntent = z.infer<typeof SpeakSceneIntentSchema>;
 
 export const SpeakSceneTurnLearnerSchema = z.object({
   role: z.string().min(1).default('Luca'),
+  promptDirective: z.string().optional(),
+  sayEn: z.string().optional(),
   objectiveEn: z.string().min(1),
   intent: z.string().min(1),
   hintKeywords: z.array(z.string()).optional(),

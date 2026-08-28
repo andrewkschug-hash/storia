@@ -34,8 +34,9 @@ import {
   setPartnerAudioPlaying,
   startScene,
   submitLearnerResponse,
-  togglePartnerEnglish,
+  togglePartnerTranslation,
 } from '@/src/speakScene/dialogueMachine';
+import { resolvePromptSemantics } from '@/src/speakScene/promptFormatter';
 import type { DialogueState } from '@/src/speakScene/types';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { speakItalian, stopSpeakingItalian } from '@/src/walkthrough/speakItalian';
@@ -127,11 +128,19 @@ export default function SpeakSceneScreen() {
   const [typedInput, setTypedInput] = useState('');
   const [saving, setSaving] = useState(false);
   const [speechError, setSpeechError] = useState<string | null>(null);
+  const [playingAudioId, setPlayingAudioId] = useState<string | null>(null);
   const [lineRecords, setLineRecords] = useState<SpeakSceneLineAttempt[]>([]);
 
   const turns = scene?.turns ?? [];
   const currentTurn = turns[dialogue.turnIndex];
   const learnerTurn = currentTurn?.learnerTurn;
+
+  const promptSemantics = useMemo(() => {
+    if (!learnerTurn) {
+      return { promptDirective: 'Respond:', sayEn: '', objectiveEn: '' };
+    }
+    return resolvePromptSemantics(learnerTurn, currentTurn?.speakerName);
+  }, [learnerTurn, currentTurn?.speakerName]);
 
   const exercise = useMemo(() => {
     if (!scene || !currentTurn) return null;
@@ -143,7 +152,7 @@ export default function SpeakSceneScreen() {
     return [learnerTurn.targetIt, ...(learnerTurn.acceptableAnswers ?? [])].filter(Boolean);
   }, [learnerTurn]);
 
-  // Speech Input setup
+  // Unified Speech Input setup
   const speech = useItalianSpeechInput({
     enabled: Boolean(scene) && (dialogue.stage === 'learner_prompt' || dialogue.stage === 'evaluating'),
     contextualStrings,
@@ -154,18 +163,18 @@ export default function SpeakSceneScreen() {
         handleLearnerSubmit(transcript, 'speak');
         return;
       }
-      setSpeechError('Didn’t catch that — try again or type below.');
+      setSpeechError('We couldn’t hear that. Try again or type below.');
     },
     onError: (message) => setSpeechError(message),
   });
 
-  // Auto-scroll on new dialogue events
+  // Auto-scroll on new conversation events
   useEffect(() => {
     const timer = setTimeout(() => {
       scrollRef.current?.scrollToEnd({ animated: true });
-    }, 120);
+    }, 150);
     return () => clearTimeout(timer);
-  }, [dialogue.stage, dialogue.turnIndex, dialogue.hintLevel, dialogue.history.length]);
+  }, [dialogue.stage, dialogue.turnIndex, dialogue.history.length]);
 
   // Stop audio on unmount
   useEffect(() => {
@@ -174,13 +183,16 @@ export default function SpeakSceneScreen() {
     };
   }, []);
 
-  const handlePartnerAudio = useCallback(
-    async (text: string) => {
+  const handlePlayAudio = useCallback(
+    async (text: string, audioTrackId?: string) => {
       stopSpeakingItalian();
+      const trackKey = audioTrackId || text;
+      setPlayingAudioId(trackKey);
       setDialogue((s) => setPartnerAudioPlaying(s, true));
       try {
         await speakItalian(text, 0.95);
       } finally {
+        setPlayingAudioId(null);
         setDialogue((s) => setPartnerAudioPlaying(s, false));
       }
     },
@@ -198,7 +210,7 @@ export default function SpeakSceneScreen() {
     setDialogue(started);
     const firstTurn = turns[0];
     if (firstTurn) {
-      void handlePartnerAudio(firstTurn.it);
+      void handlePlayAudio(firstTurn.it, `${firstTurn.id}-partner`);
     }
   };
 
@@ -292,7 +304,7 @@ export default function SpeakSceneScreen() {
         // Auto-play the next partner turn audio
         const nextTurn = turns[nextState.turnIndex];
         if (nextTurn) {
-          void handlePartnerAudio(nextTurn.it);
+          void handlePlayAudio(nextTurn.it, `${nextTurn.id}-partner`);
         }
       }
     } finally {
@@ -355,7 +367,11 @@ export default function SpeakSceneScreen() {
             {/* INTRO STAGE */}
             {dialogue.stage === 'intro' ? (
               <View style={styles.introContainer}>
-                <View style={[styles.badgePill, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+                <View
+                  style={[
+                    styles.badgePill,
+                    { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+                  ]}>
                   <Text style={[type.caption, { color: colors.tint, fontWeight: '700' }]}>
                     CONVERSATION ROLEPLAY
                   </Text>
@@ -365,11 +381,19 @@ export default function SpeakSceneScreen() {
                   {scene.title}
                 </Text>
 
-                <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md, lineHeight: 24 }]}>
+                <Text
+                  style={[
+                    type.body,
+                    { color: colors.textSecondary, marginTop: Spacing.md, lineHeight: 24 },
+                  ]}>
                   {scene.summaryEn}
                 </Text>
 
-                <View style={[styles.settingCard, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+                <View
+                  style={[
+                    styles.settingCard,
+                    { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+                  ]}>
                   <Text style={[type.caption, { color: colors.textMuted, fontWeight: '600' }]}>
                     SCENE CHARACTERS & SETTING
                   </Text>
@@ -377,7 +401,11 @@ export default function SpeakSceneScreen() {
                     {(scene.characterIds ?? ['sofia', 'luca']).map((charId) => (
                       <View key={charId} style={styles.characterChip}>
                         <AvatarBadge avatarId={getCharacterAvatarId(charId)} size="sm" />
-                        <Text style={[type.label, { color: colors.text, textTransform: 'capitalize' }]}>
+                        <Text
+                          style={[
+                            type.label,
+                            { color: colors.text, textTransform: 'capitalize' },
+                          ]}>
                           {charId === 'luca' ? 'Luca (You)' : charId}
                         </Text>
                       </View>
@@ -418,7 +446,7 @@ export default function SpeakSceneScreen() {
               </View>
             ) : null}
 
-            {/* TIMELINE THREAD (HISTORY & ACTIVE DIALOGUE) */}
+            {/* CHAT MESSENGER DIALOGUE STREAM (TOP-TO-BOTTOM) */}
             {dialogue.stage !== 'intro' && dialogue.stage !== 'summary' ? (
               <View style={styles.timelineContainer}>
                 {/* Scene Header */}
@@ -431,61 +459,87 @@ export default function SpeakSceneScreen() {
                   </Text>
                 </View>
 
-                {/* Conversation History Timeline */}
-                {dialogue.history.map((item, idx) => {
+                {/* Conversation History Stream */}
+                {dialogue.history.map((item) => {
                   if (item.kind === 'partner') {
-                    const isLatest = idx === dialogue.history.length - 1;
+                    const isPlaying = playingAudioId === item.id;
+                    const isEnglishVisible = Boolean(dialogue.revealedTranslations[item.id]);
+
                     return (
                       <View key={item.id} style={styles.partnerBubbleContainer}>
                         <AvatarBadge avatarId={getCharacterAvatarId(item.speakerId)} size="md" />
                         <View style={styles.partnerBubbleContent}>
-                          <Text style={[type.caption, { color: colors.textMuted, marginBottom: 4 }]}>
-                            {item.speakerName}
+                          <Text
+                            style={[
+                              type.caption,
+                              { color: colors.textMuted, fontWeight: '700', marginBottom: 4 },
+                            ]}>
+                            {item.speakerName.toUpperCase()}
                           </Text>
                           <View
                             style={[
                               styles.partnerBubble,
                               {
                                 backgroundColor: colors.backgroundElevated,
-                                borderColor: isLatest ? colors.tint : colors.border,
+                                borderColor: colors.border,
                               },
                             ]}>
-                            <Text style={[type.body, { color: colors.text, fontSize: 18, lineHeight: 26 }]}>
+                            <Text
+                              style={[
+                                type.body,
+                                { color: colors.text, fontSize: 18, lineHeight: 26 },
+                              ]}>
                               {item.it}
                             </Text>
 
-                            {/* Audio & Translate controls */}
+                            {/* Replayable Audio & Collapsible English Translation */}
                             <View style={styles.partnerControlsRow}>
                               <Pressable
-                                onPress={() => handlePartnerAudio(item.it)}
+                                onPress={() => handlePlayAudio(item.it, item.id)}
                                 style={({ pressed }) => [
                                   styles.audioMiniBtn,
                                   {
                                     borderColor: colors.border,
-                                    backgroundColor: dialogue.partnerAudioPlaying ? colors.accentSoft : 'transparent',
+                                    backgroundColor: isPlaying
+                                      ? colors.accentSoft
+                                      : 'transparent',
                                     opacity: pressed ? 0.8 : 1,
                                   },
                                 ]}>
-                                <Text style={[type.caption, { color: colors.tint, fontWeight: '600' }]}>
-                                  🔊 {dialogue.partnerAudioPlaying ? 'Playing…' : 'Listen'}
+                                <Text
+                                  style={[
+                                    type.caption,
+                                    { color: colors.tint, fontWeight: '600' },
+                                  ]}>
+                                  🔊 {isPlaying ? 'Playing…' : 'Listen'}
                                 </Text>
                               </Pressable>
 
                               <Pressable
-                                onPress={() => setDialogue(togglePartnerEnglish)}
+                                onPress={() =>
+                                  setDialogue((s) => togglePartnerTranslation(s, item.id))
+                                }
                                 style={({ pressed }) => [
                                   styles.translateMiniBtn,
                                   { opacity: pressed ? 0.8 : 1 },
                                 ]}>
                                 <Text style={[type.caption, { color: colors.textSecondary }]}>
-                                  {dialogue.partnerEnglishVisible ? 'Hide English ▴' : 'Translate ▾'}
+                                  {isEnglishVisible ? '▾ English' : '▸ English'}
                                 </Text>
                               </Pressable>
                             </View>
 
-                            {dialogue.partnerEnglishVisible ? (
-                              <View style={[styles.translationDrawer, { borderTopColor: colors.border }]}>
-                                <Text style={[type.body, { color: colors.textSecondary, fontSize: 15 }]}>
+                            {isEnglishVisible ? (
+                              <View
+                                style={[
+                                  styles.translationDrawer,
+                                  { borderTopColor: colors.border },
+                                ]}>
+                                <Text
+                                  style={[
+                                    type.body,
+                                    { color: colors.textSecondary, fontSize: 15 },
+                                  ]}>
                                   {item.en}
                                 </Text>
                               </View>
@@ -496,7 +550,8 @@ export default function SpeakSceneScreen() {
                     );
                   }
 
-                  // Learner Turn History Item
+                  // Learner Completed Turn Bubble
+                  const isPlayingLearner = playingAudioId === item.id;
                   return (
                     <View key={item.id} style={styles.learnerBubbleContainer}>
                       <View
@@ -504,26 +559,85 @@ export default function SpeakSceneScreen() {
                           styles.learnerBubble,
                           {
                             backgroundColor: colors.accentSoft,
-                            borderColor: item.score === 'correct' ? colors.assessmentGotItIndicator : colors.border,
+                            borderColor:
+                              item.score === 'correct'
+                                ? colors.assessmentGotItIndicator
+                                : colors.border,
                           },
                         ]}>
-                        <Text style={[type.caption, { color: colors.tint, fontWeight: '700', marginBottom: 2 }]}>
-                          You · {item.role}
-                        </Text>
-                        <Text style={[type.body, { color: colors.text, fontSize: 17, lineHeight: 24 }]}>
+                        <View style={styles.learnerBubbleHeader}>
+                          <Text
+                            style={[
+                              type.caption,
+                              { color: colors.tint, fontWeight: '700', marginBottom: 2 },
+                            ]}>
+                            YOU · {item.role.toUpperCase()}
+                          </Text>
+                          {item.score === 'correct' ? (
+                            <Text
+                              style={[
+                                type.caption,
+                                { color: colors.assessmentGotItIndicator, fontWeight: '700' },
+                              ]}>
+                              ✓ Correct
+                            </Text>
+                          ) : null}
+                        </View>
+
+                        <Text
+                          style={[
+                            type.body,
+                            { color: colors.text, fontSize: 17, lineHeight: 24 },
+                          ]}>
                           {item.learnerText || item.targetIt}
                         </Text>
+
+                        <View style={{ marginTop: Spacing.xs, alignSelf: 'flex-end' }}>
+                          <Pressable
+                            onPress={() =>
+                              handlePlayAudio(item.learnerText || item.targetIt, item.id)
+                            }
+                            style={({ pressed }) => [
+                              styles.audioMiniBtn,
+                              {
+                                borderColor: colors.border,
+                                backgroundColor: isPlayingLearner
+                                  ? colors.backgroundElevated
+                                  : 'transparent',
+                                opacity: pressed ? 0.8 : 1,
+                              },
+                            ]}>
+                            <Text
+                              style={[
+                                type.caption,
+                                { color: colors.tint, fontWeight: '600' },
+                              ]}>
+                              🔊 {isPlayingLearner ? 'Playing…' : 'Replay'}
+                            </Text>
+                          </Pressable>
+                        </View>
                       </View>
                     </View>
                   );
                 })}
 
-                {/* ACTIVE LEARNER TURN CARD */}
+                {/* ACTIVE LEARNER TURN CARD (IN-STREAM PROMPT & INPUT) */}
                 {dialogue.stage === 'learner_prompt' ? (
-                  <View style={[styles.activeTurnCard, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+                  <View
+                    style={[
+                      styles.activeTurnCard,
+                      {
+                        backgroundColor: colors.backgroundElevated,
+                        borderColor: colors.border,
+                      },
+                    ]}>
                     <View style={styles.intentHeaderRow}>
-                      <Text style={[type.caption, { color: colors.tint, fontWeight: '800', letterSpacing: 0.5 }]}>
-                        YOUR ROLEPLAY TURN · {learnerTurn?.role?.toUpperCase() ?? 'LUCA'}
+                      <Text
+                        style={[
+                          type.caption,
+                          { color: colors.tint, fontWeight: '800', letterSpacing: 0.5 },
+                        ]}>
+                        {learnerTurn?.role?.toUpperCase() ?? 'LUCA'} · YOUR TURN
                       </Text>
                       <View style={[styles.intentPill, { backgroundColor: colors.accentSoft }]}>
                         <Text style={[type.caption, { color: colors.tint, fontWeight: '600' }]}>
@@ -532,28 +646,62 @@ export default function SpeakSceneScreen() {
                       </View>
                     </View>
 
-                    {/* English Objective & Instruction Prompt */}
-                    <View style={[styles.promptInstructionBox, { backgroundColor: colors.background, borderColor: colors.border }]}>
-                      <Text style={[type.caption, { color: colors.tint, fontWeight: '700', letterSpacing: 0.5 }]}>
-                        SAY THIS IN ITALIAN:
+                    {/* Semantic Prompt: Directive + Quoted Spoken Target */}
+                    <View
+                      style={[
+                        styles.promptInstructionBox,
+                        { backgroundColor: colors.background, borderColor: colors.border },
+                      ]}>
+                      <Text
+                        style={[
+                          type.caption,
+                          { color: colors.tint, fontWeight: '700', letterSpacing: 0.5 },
+                        ]}>
+                        {promptSemantics.promptDirective}
                       </Text>
-                      <Text style={[type.heroTitle, { color: colors.text, fontSize: 19, lineHeight: 26, marginTop: 4 }]}>
-                        "{learnerTurn?.objectiveEn}"
+                      <Text
+                        style={[
+                          type.heroTitle,
+                          {
+                            color: colors.text,
+                            fontSize: 20,
+                            lineHeight: 28,
+                            marginTop: 4,
+                            fontWeight: '700',
+                          },
+                        ]}>
+                        "{promptSemantics.sayEn || promptSemantics.objectiveEn}"
                       </Text>
                     </View>
 
-                    {/* 3-LEVEL SCAFFOLDING LADDER */}
+                    {/* 3-LEVEL SHARED HINT LADDER: Keywords -> Scaffold -> Model */}
                     {dialogue.hintLevel > 0 ? (
-                      <View style={[styles.hintContainer, { backgroundColor: colors.background, borderColor: colors.border }]}>
+                      <View
+                        style={[
+                          styles.hintContainer,
+                          { backgroundColor: colors.background, borderColor: colors.border },
+                        ]}>
                         {/* Level 1: Keywords */}
                         {dialogue.hintLevel >= 1 && learnerTurn?.hintKeywords?.length ? (
                           <View style={styles.hintSection}>
-                            <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700' }]}>
+                            <Text
+                              style={[
+                                type.caption,
+                                { color: colors.textMuted, fontWeight: '700' },
+                              ]}>
                               KEY WORDS:
                             </Text>
                             <View style={styles.keywordRow}>
                               {learnerTurn.hintKeywords.map((kw, i) => (
-                                <View key={i} style={[styles.keywordChip, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+                                <View
+                                  key={i}
+                                  style={[
+                                    styles.keywordChip,
+                                    {
+                                      backgroundColor: colors.backgroundElevated,
+                                      borderColor: colors.border,
+                                    },
+                                  ]}>
                                   <Text style={[type.label, { color: colors.text }]}>{kw}</Text>
                                 </View>
                               ))}
@@ -564,10 +712,18 @@ export default function SpeakSceneScreen() {
                         {/* Level 2: Cloze Scaffold */}
                         {dialogue.hintLevel >= 2 && learnerTurn?.hintScaffold ? (
                           <View style={[styles.hintSection, { marginTop: Spacing.sm }]}>
-                            <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700' }]}>
+                            <Text
+                              style={[
+                                type.caption,
+                                { color: colors.textMuted, fontWeight: '700' },
+                              ]}>
                               SENTENCE STRUCTURE:
                             </Text>
-                            <Text style={[type.body, { color: colors.tint, fontWeight: '600', fontSize: 16 }]}>
+                            <Text
+                              style={[
+                                type.body,
+                                { color: colors.tint, fontWeight: '600', fontSize: 16 },
+                              ]}>
                               {learnerTurn.hintScaffold}
                             </Text>
                           </View>
@@ -576,14 +732,24 @@ export default function SpeakSceneScreen() {
                         {/* Level 3: Full Model Response + Audio */}
                         {dialogue.hintLevel >= 3 && learnerTurn?.targetIt ? (
                           <View style={[styles.hintSection, { marginTop: Spacing.sm }]}>
-                            <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700' }]}>
+                            <Text
+                              style={[
+                                type.caption,
+                                { color: colors.textMuted, fontWeight: '700' },
+                              ]}>
                               TARGET ITALIAN MODEL:
                             </Text>
-                            <Text style={[type.body, { color: colors.text, fontWeight: '700', fontSize: 17 }]}>
+                            <Text
+                              style={[
+                                type.body,
+                                { color: colors.text, fontWeight: '700', fontSize: 17 },
+                              ]}>
                               {learnerTurn.targetIt}
                             </Text>
                             <Pressable
-                              onPress={() => handlePartnerAudio(learnerTurn.targetIt)}
+                              onPress={() =>
+                                handlePlayAudio(learnerTurn.targetIt, 'model-audio')
+                              }
                               style={({ pressed }) => [
                                 styles.audioMiniBtn,
                                 {
@@ -594,8 +760,12 @@ export default function SpeakSceneScreen() {
                                   opacity: pressed ? 0.8 : 1,
                                 },
                               ]}>
-                              <Text style={[type.caption, { color: colors.tint, fontWeight: '700' }]}>
-                                🔊 Hear Italian Model
+                              <Text
+                                style={[
+                                  type.caption,
+                                  { color: colors.tint, fontWeight: '700' },
+                                ]}>
+                                🔊 Hear Model
                               </Text>
                             </Pressable>
                           </View>
@@ -621,7 +791,7 @@ export default function SpeakSceneScreen() {
                       </Pressable>
                     ) : null}
 
-                    {/* UNIFIED INPUT AREA */}
+                    {/* UNIFIED INPUT AREA (VOICE + TEXT) */}
                     <View style={styles.inputSection}>
                       <TextInput
                         value={inputValue}
@@ -629,7 +799,11 @@ export default function SpeakSceneScreen() {
                           setSpeechError(null);
                           setTypedInput(val);
                         }}
-                        placeholder={speech.isListening ? 'Listening… speak now' : 'Type your response in Italian…'}
+                        placeholder={
+                          speech.isListening
+                            ? 'Listening… speak Italian now'
+                            : 'Type your response in Italian…'
+                        }
                         placeholderTextColor={colors.textMuted}
                         autoCapitalize="none"
                         autoCorrect={false}
@@ -646,7 +820,11 @@ export default function SpeakSceneScreen() {
                       />
 
                       {speechError ? (
-                        <Text style={[type.caption, { color: colors.assessmentNotYetIndicator, marginTop: 4 }]}>
+                        <Text
+                          style={[
+                            type.caption,
+                            { color: colors.assessmentNotYetIndicator, marginTop: 4 },
+                          ]}>
                           {speechError}
                         </Text>
                       ) : null}
@@ -666,19 +844,41 @@ export default function SpeakSceneScreen() {
                           style={({ pressed }) => [
                             styles.speakBtn,
                             {
-                              backgroundColor: speech.isListening ? colors.tint : colors.backgroundElevated,
+                              backgroundColor: speech.isListening
+                                ? colors.tint
+                                : colors.backgroundElevated,
                               borderColor: speech.isListening ? colors.tint : colors.border,
                               minHeight: minTouchTarget,
                               opacity: pressed ? 0.88 : 1,
                             },
                           ]}>
-                          <Text
-                            style={[
-                              type.button,
-                              { color: speech.isListening ? colors.onButtonPrimary : colors.tint, fontWeight: '700' },
-                            ]}>
-                            {speech.isListening ? '● Listening…' : '🎙 Speak'}
-                          </Text>
+                          <View style={{ alignItems: 'center' }}>
+                            <Text
+                              style={[
+                                type.button,
+                                {
+                                  color: speech.isListening
+                                    ? colors.onButtonPrimary
+                                    : colors.tint,
+                                  fontWeight: '700',
+                                },
+                              ]}>
+                              {speech.isListening ? '● Listening' : '🎙 Speak'}
+                            </Text>
+                            {speech.isListening ? (
+                              <Text
+                                style={[
+                                  type.caption,
+                                  {
+                                    color: colors.onButtonPrimary,
+                                    fontSize: 10,
+                                    marginTop: 1,
+                                  },
+                                ]}>
+                                Speak now
+                              </Text>
+                            ) : null}
+                          </View>
                         </Pressable>
 
                         <Pressable
@@ -693,11 +893,16 @@ export default function SpeakSceneScreen() {
                             {
                               backgroundColor: colors.buttonPrimary,
                               minHeight: minTouchTarget,
-                              opacity: !typedInput.trim() || speech.isListening ? 0.45 : pressed ? 0.88 : 1,
+                              opacity:
+                                !typedInput.trim() || speech.isListening
+                                  ? 0.45
+                                  : pressed
+                                    ? 0.88
+                                    : 1,
                             },
                           ]}>
                           <Text style={[type.button, { color: colors.onButtonPrimary }]}>
-                            Submit
+                            Submit →
                           </Text>
                         </Pressable>
                       </View>
@@ -705,15 +910,22 @@ export default function SpeakSceneScreen() {
                   </View>
                 ) : null}
 
-                {/* FEEDBACK & SELF-ASSESSMENT STAGE */}
+                {/* FEEDBACK & SELF-ASSESSMENT STAGE (IN-STREAM) */}
                 {dialogue.stage === 'feedback' ? (
-                  <View style={[styles.feedbackCard, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+                  <View
+                    style={[
+                      styles.feedbackCard,
+                      {
+                        backgroundColor: colors.backgroundElevated,
+                        borderColor: colors.border,
+                      },
+                    ]}>
                     <View style={styles.feedbackHeaderRow}>
                       <Text
                         style={[
                           type.heroTitle,
                           {
-                            fontSize: 18,
+                            fontSize: 19,
                             color:
                               dialogue.score?.result === 'correct'
                                 ? colors.assessmentGotItIndicator
@@ -729,18 +941,33 @@ export default function SpeakSceneScreen() {
                       </Text>
                     </View>
 
-                    {/* Matched target response */}
-                    <View style={[styles.targetDisplay, { backgroundColor: colors.background, borderColor: colors.border }]}>
-                      <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700' }]}>
+                    {/* Matched Target Response */}
+                    <View
+                      style={[
+                        styles.targetDisplay,
+                        { backgroundColor: colors.background, borderColor: colors.border },
+                      ]}>
+                      <Text
+                        style={[
+                          type.caption,
+                          { color: colors.textMuted, fontWeight: '700' },
+                        ]}>
                         TARGET ITALIAN:
                       </Text>
-                      <Text style={[type.body, { color: colors.text, fontWeight: '700', fontSize: 17, marginTop: 2 }]}>
+                      <Text
+                        style={[
+                          type.body,
+                          { color: colors.text, fontWeight: '700', fontSize: 18, marginTop: 2 },
+                        ]}>
                         {dialogue.score?.matchedIt ?? learnerTurn?.targetIt}
                       </Text>
 
                       <Pressable
                         onPress={() =>
-                          handlePartnerAudio(dialogue.score?.matchedIt ?? learnerTurn?.targetIt ?? '')
+                          handlePlayAudio(
+                            dialogue.score?.matchedIt ?? learnerTurn?.targetIt ?? '',
+                            'feedback-target',
+                          )
                         }
                         style={({ pressed }) => [
                           styles.audioMiniBtn,
@@ -752,19 +979,30 @@ export default function SpeakSceneScreen() {
                             opacity: pressed ? 0.8 : 1,
                           },
                         ]}>
-                        <Text style={[type.caption, { color: colors.tint, fontWeight: '700' }]}>
-                          🔊 Hear pronunciation
+                        <Text
+                          style={[
+                            type.caption,
+                            { color: colors.tint, fontWeight: '700' },
+                          ]}>
+                          🔊 Hear target pronunciation
                         </Text>
                       </Pressable>
                     </View>
 
                     {/* Self Assessment Question */}
-                    <Text style={[type.label, { color: colors.text, marginTop: Spacing.md, textAlign: 'center' }]}>
+                    <Text
+                      style={[
+                        type.label,
+                        { color: colors.text, marginTop: Spacing.md, textAlign: 'center' },
+                      ]}>
                       How comfortable did that feel?
                     </Text>
 
                     <View style={{ marginTop: Spacing.sm }}>
-                      <SelfAssessmentVoteButtons onVote={(v) => void handleVote(v)} disabled={saving} />
+                      <SelfAssessmentVoteButtons
+                        onVote={(v) => void handleVote(v)}
+                        disabled={saving}
+                      />
                     </View>
                   </View>
                 ) : null}
@@ -774,7 +1012,11 @@ export default function SpeakSceneScreen() {
             {/* SUMMARY STAGE */}
             {dialogue.stage === 'summary' ? (
               <View style={styles.summaryContainer}>
-                <View style={[styles.badgePill, { backgroundColor: colors.accentSoft, borderColor: colors.tint }]}>
+                <View
+                  style={[
+                    styles.badgePill,
+                    { backgroundColor: colors.accentSoft, borderColor: colors.tint },
+                  ]}>
                   <Text style={[type.caption, { color: colors.tint, fontWeight: '800' }]}>
                     DIALOGUE COMPLETE
                   </Text>
@@ -784,21 +1026,49 @@ export default function SpeakSceneScreen() {
                   Ottimo lavoro!
                 </Text>
 
-                <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.sm, lineHeight: 24 }]}>
-                  You participated in the entire conversation with {turns.map((t) => t.speakerName).filter((v, i, a) => a.indexOf(v) === i).join(' & ')}.
+                <Text
+                  style={[
+                    type.body,
+                    { color: colors.textSecondary, marginTop: Spacing.sm, lineHeight: 24 },
+                  ]}>
+                  You participated in the entire conversation with{' '}
+                  {turns
+                    .map((t) => t.speakerName)
+                    .filter((v, i, a) => a.indexOf(v) === i)
+                    .join(' & ')}
+                  .
                 </Text>
 
                 {/* Recap of Conversation */}
-                <View style={[styles.recapCard, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
-                  <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700', marginBottom: Spacing.sm }]}>
+                <View
+                  style={[
+                    styles.recapCard,
+                    { backgroundColor: colors.backgroundElevated, borderColor: colors.border },
+                  ]}>
+                  <Text
+                    style={[
+                      type.caption,
+                      { color: colors.textMuted, fontWeight: '700', marginBottom: Spacing.sm },
+                    ]}>
                     CONVERSATION SCRIPT RECAP
                   </Text>
                   {dialogue.history.map((item) => (
                     <View key={item.id} style={styles.recapItem}>
-                      <Text style={[type.caption, { color: item.kind === 'partner' ? colors.tint : colors.textMuted, fontWeight: '700' }]}>
+                      <Text
+                        style={[
+                          type.caption,
+                          {
+                            color: item.kind === 'partner' ? colors.tint : colors.textMuted,
+                            fontWeight: '700',
+                          },
+                        ]}>
                         {item.kind === 'partner' ? item.speakerName : `You (${item.role})`}:
                       </Text>
-                      <Text style={[type.body, { color: colors.text, fontSize: 15, marginTop: 2 }]}>
+                      <Text
+                        style={[
+                          type.body,
+                          { color: colors.text, fontSize: 15, marginTop: 2 },
+                        ]}>
                         {item.kind === 'partner' ? item.it : item.learnerText || item.targetIt}
                       </Text>
                     </View>
@@ -939,12 +1209,19 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     marginBottom: Spacing.md,
     marginLeft: 40,
+    maxWidth: '85%',
   },
   learnerBubble: {
     borderRadius: Radii.lg,
     borderTopRightRadius: 4,
     padding: Spacing.md,
     borderWidth: 1,
+  },
+  learnerBubbleHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: Spacing.sm,
   },
   activeTurnCard: {
     marginTop: Spacing.sm,
@@ -1023,6 +1300,7 @@ const styles = StyleSheet.create({
     borderRadius: Radii.pill,
     borderWidth: 1,
     paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.xs,
   },
   checkBtn: {
     flex: 1,
@@ -1030,6 +1308,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: Radii.pill,
     paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.xs,
   },
   feedbackCard: {
     marginTop: Spacing.sm,

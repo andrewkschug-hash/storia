@@ -1,6 +1,6 @@
 import { router, useFocusEffect, type Href } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AtmosphereBackground } from '@/src/components/AtmosphereBackground';
@@ -25,7 +25,7 @@ import { grammarNoteForBatch, type GrammarNote } from '@/src/content/lessonBatch
 import { readerHref } from '@/src/content/storyHrefs';
 import { navLog } from '@/src/navigation/diagnostics';
 import { usePeekProgress } from '@/src/progress/usePeekProgress';
-import { Spacing } from '@/src/theme/tokens';
+import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 import { browseVocabulary } from '@/src/vocabulary/catalog';
 import {
@@ -40,6 +40,7 @@ import {
   getReadingFootprint,
   groupPhrasesByChronology,
   groupWordsByChronology,
+  groupWordsByPartOfSpeech,
   type GrammarFilterState,
   type PhrasesFilterState,
   type WordsFilterState,
@@ -73,6 +74,7 @@ export default function VocabularyScreen() {
     status: 'all',
     chapterRange: 'all',
     savedOnly: false,
+    groupBy: 'chronology',
   });
 
   const [phrasesFilter, setPhrasesFilter] = useState<PhrasesFilterState>({
@@ -119,10 +121,18 @@ export default function VocabularyScreen() {
 
   // Derive highest chapter reached
   const highestChapter = useMemo(() => {
-    const match = progress?.currentChapterId?.match(/\d+$/);
-    const fromProgress = match ? parseInt(match[0], 10) : 1;
-    const completedCount = progress?.completedChapterIds?.length ?? 0;
-    return Math.max(1, fromProgress, completedCount);
+    let maxChapter = 1;
+    if (progress?.currentChapterId) {
+      const match = progress.currentChapterId.match(/\d+$/);
+      if (match) maxChapter = Math.max(maxChapter, parseInt(match[0], 10));
+    }
+    if (progress?.completedChapterIds) {
+      for (const id of progress.completedChapterIds) {
+        const match = id.match(/\d+$/);
+        if (match) maxChapter = Math.max(maxChapter, parseInt(match[0], 10));
+      }
+    }
+    return maxChapter;
   }, [progress]);
 
   // Audio speech handler
@@ -193,20 +203,31 @@ export default function VocabularyScreen() {
   }, [catalogItems, wordsFilter, optimisticSaved]);
 
   const wordSections = useMemo(() => {
+    if (wordsFilter.groupBy === 'part_of_speech') {
+      return groupWordsByPartOfSpeech(filteredWords);
+    }
     return groupWordsByChronology(filteredWords);
-  }, [filteredWords]);
+  }, [filteredWords, wordsFilter.groupBy]);
+
+  const availablePhrases = useMemo(() => {
+    return NOTEBOOK_PHRASES.filter((p) => p.chapterNumber <= highestChapter);
+  }, [highestChapter]);
+
+  const availableGrammar = useMemo(() => {
+    return NOTEBOOK_GRAMMAR_INSIGHTS.filter((g) => g.chapterRange.start <= highestChapter);
+  }, [highestChapter]);
 
   const filteredPhrases = useMemo(() => {
-    return filterNotebookPhrases(NOTEBOOK_PHRASES, phrasesFilter, optimisticSaved);
-  }, [phrasesFilter, optimisticSaved]);
+    return filterNotebookPhrases(NOTEBOOK_PHRASES, phrasesFilter, optimisticSaved, highestChapter);
+  }, [phrasesFilter, optimisticSaved, highestChapter]);
 
   const phraseSections = useMemo(() => {
     return groupPhrasesByChronology(filteredPhrases);
   }, [filteredPhrases]);
 
   const filteredGrammar = useMemo(() => {
-    return filterNotebookGrammar(NOTEBOOK_GRAMMAR_INSIGHTS, grammarFilter);
-  }, [grammarFilter]);
+    return filterNotebookGrammar(NOTEBOOK_GRAMMAR_INSIGHTS, grammarFilter, highestChapter);
+  }, [grammarFilter, highestChapter]);
 
   // Check if active filters exist for the current lens
   const hasActiveFilters = useMemo(() => {
@@ -215,7 +236,8 @@ export default function VocabularyScreen() {
         wordsFilter.pos !== 'all' ||
         wordsFilter.status !== 'all' ||
         wordsFilter.chapterRange !== 'all' ||
-        wordsFilter.savedOnly
+        wordsFilter.savedOnly ||
+        wordsFilter.groupBy !== 'chronology'
       );
     }
     if (activeTab === 'phrases') {
@@ -274,8 +296,8 @@ export default function VocabularyScreen() {
             onChange={setActiveTab}
             counts={{
               words: catalogItems.length,
-              phrases: NOTEBOOK_PHRASES.length,
-              grammar: NOTEBOOK_GRAMMAR_INSIGHTS.length,
+              phrases: availablePhrases.length,
+              grammar: availableGrammar.length,
             }}
           />
 
@@ -334,6 +356,94 @@ export default function VocabularyScreen() {
               {/* ============================================================ */}
               {activeTab === 'words' && (
                 <View>
+                  {/* QUICK POS & GROUPING BAR */}
+                  {catalogItems.length > 0 ? (
+                    <View style={styles.posPillBar}>
+                      <ScrollView
+                        horizontal
+                        showsHorizontalScrollIndicator={false}
+                        contentContainerStyle={styles.posPillContent}>
+                        {(
+                          [
+                            { id: 'all', label: 'All' },
+                            { id: 'verb', label: 'Verbs (Azioni)' },
+                            { id: 'noun', label: 'Nouns (Sostantivi)' },
+                            { id: 'adjective', label: 'Describing (Aggettivi)' },
+                            { id: 'adverb', label: 'Adverbs (Avverbi)' },
+                          ] as const
+                        ).map((chip) => {
+                          const isSelected = wordsFilter.pos === chip.id;
+                          return (
+                            <Pressable
+                              key={chip.id}
+                              onPress={() =>
+                                setWordsFilter((prev) => ({ ...prev, pos: chip.id }))
+                              }
+                              style={[
+                                styles.posPill,
+                                {
+                                  backgroundColor: isSelected
+                                    ? colors.tint
+                                    : colors.backgroundElevated,
+                                  borderColor: isSelected ? colors.tint : colors.border,
+                                },
+                              ]}>
+                              <Text
+                                style={[
+                                  styles.posPillText,
+                                  { color: isSelected ? colors.onTint : colors.textSecondary },
+                                ]}>
+                                {chip.label}
+                              </Text>
+                            </Pressable>
+                          );
+                        })}
+
+                        <View style={[styles.posPillDivider, { backgroundColor: colors.border }]} />
+
+                        {/* Group By Toggle */}
+                        <Pressable
+                          onPress={() =>
+                            setWordsFilter((prev) => ({
+                              ...prev,
+                              groupBy:
+                                prev.groupBy === 'part_of_speech' ? 'chronology' : 'part_of_speech',
+                            }))
+                          }
+                          style={[
+                            styles.posPill,
+                            styles.groupByPill,
+                            {
+                              backgroundColor:
+                                wordsFilter.groupBy === 'part_of_speech'
+                                  ? 'rgba(120, 182, 163, 0.15)'
+                                  : colors.backgroundElevated,
+                              borderColor:
+                                wordsFilter.groupBy === 'part_of_speech'
+                                  ? colors.tint
+                                  : colors.border,
+                            },
+                          ]}>
+                          <Text
+                            style={[
+                              styles.posPillText,
+                              {
+                                color:
+                                  wordsFilter.groupBy === 'part_of_speech'
+                                    ? colors.tint
+                                    : colors.textSecondary,
+                                fontFamily: 'Literata_600SemiBold',
+                              },
+                            ]}>
+                            {wordsFilter.groupBy === 'part_of_speech'
+                              ? '📑 Grouped by Type'
+                              : '⏱ Timeline'}
+                          </Text>
+                        </Pressable>
+                      </ScrollView>
+                    </View>
+                  ) : null}
+
                   {catalogItems.length === 0 ? (
                     <NotebookEmptyState
                       onStartReading={() =>
@@ -495,6 +605,32 @@ const styles = StyleSheet.create({
   },
   feedContainer: {
     marginTop: Spacing.xs,
+  },
+  posPillBar: {
+    marginBottom: Spacing.md,
+  },
+  posPillContent: {
+    gap: Spacing.xs + 2,
+    alignItems: 'center',
+    paddingHorizontal: 2,
+  },
+  posPill: {
+    paddingHorizontal: Spacing.sm + 4,
+    paddingVertical: 6,
+    borderRadius: Radii.pill,
+    borderWidth: 1,
+  },
+  posPillText: {
+    fontFamily: 'Literata_500Medium',
+    fontSize: 12,
+  },
+  posPillDivider: {
+    width: 1,
+    height: 18,
+    marginHorizontal: Spacing.xs,
+  },
+  groupByPill: {
+    borderWidth: 1.5,
   },
   sectionBlock: {
     marginBottom: Spacing.lg,

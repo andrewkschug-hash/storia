@@ -47,4 +47,5 @@ export type DialogueState = {
   history: DialogueHistoryItem[];
   partnerAudioPlaying: boolean;
   partnerEnglishVisible: boolean;
+  revealedTranslations: Record<string, boolean>;
 };
