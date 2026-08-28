@@ -561,12 +561,12 @@ const chapter14 = chapter(
       {
         id: 'ev-14-complicated',
         summary:
-          'Marco has money now, but he must leave soon and cannot go alone. They go to Nonna Rosa for advice.',
+          'Marco has money now, but he is afraid to travel alone and cannot go alone. They go to Nonna Rosa for advice.',
         characterIds: ['luca', 'sofia', 'marco', 'giulia'],
         locationIds: ['lavoro-caffe'],
         rememberedFacts: [
           'Marco has money for the ticket now',
-          'Marco must leave soon and cannot go alone',
+          'Marco is afraid to travel alone',
           'They go to Nonna Rosa for advice',
         ],
       },
@@ -594,18 +594,30 @@ const chapter14 = chapter(
     ]),
     P('p2', 2, [
       S('s05', 'Devo partire presto.', ['dovere', 'partire', 'presto'], { speaker: 'marco' }),
-      S('s06', 'Non posso stare qui.', ['non', 'potere', 'stare', 'qui'], {
-        speaker: 'marco',
-        phrases: [
-          {
-            surface: 'Non posso',
-            literalEn: 'I cannot',
-            naturalEn: "I can't",
-            tokenStart: 0,
-            tokenEnd: 1,
-          },
-        ],
-      }),
+      S(
+        's06',
+        'Ho paura di viaggiare da solo.',
+        ['avere', 'paura', 'di', 'viaggiare', 'da', 'solo'],
+        {
+          speaker: 'marco',
+          phrases: [
+            {
+              surface: 'Ho paura di',
+              literalEn: 'I have fear of',
+              naturalEn: 'I am afraid of',
+              tokenStart: 0,
+              tokenEnd: 2,
+            },
+            {
+              surface: 'da solo',
+              literalEn: 'from alone',
+              naturalEn: 'alone',
+              tokenStart: 4,
+              tokenEnd: 5,
+            },
+          ],
+        },
+      ),
       S('s07', 'Non posso andare solo.', ['non', 'potere', 'andare', 'solo'], {
         speaker: 'marco',
       }),

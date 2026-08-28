@@ -14,14 +14,8 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import {
-  getAccount,
-  getRememberedEmail,
-  isRememberMeEnabled,
-  saveRememberedEmail,
-  signInWithPassword,
-  signUpWithPassword,
-} from '@/src/account/storage';
+import { getAccount, getRememberedEmail, isRememberMeEnabled, saveRememberedEmail, signInWithPassword, signUpWithPassword } from '@/src/account/storage';
+import { StoribaseLogo } from '@/src/components/StoribaseLogo';
 import { isSupabaseConfigured } from '@/src/lib/supabase';
 import { hasCompletedOnboarding } from '@/src/onboarding/storage';
 import { useLayout } from '@/src/theme/useLayout';
@@ -228,6 +222,11 @@ export default function AccountScreen() {
                   start={{ x: 0, y: 0 }}
                   end={{ x: 1, y: 1 }}
                   style={StyleSheet.absoluteFill}
+                />
+                <StoribaseLogo
+                  size={layout.isPhone ? 38 : 46}
+                  variant="circle"
+                  style={{ marginBottom: Spacing.sm }}
                 />
                 <Text style={[Typography.brand, { color: tone.ink, fontSize: brandFontSize, lineHeight: brandFontSize + 6 }]}>
                   Storibase

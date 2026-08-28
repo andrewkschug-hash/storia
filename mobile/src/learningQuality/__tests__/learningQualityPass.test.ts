@@ -40,18 +40,14 @@ function loadLucaBundle() {
   });
 }
 
-describe('A1 word-mode display hygiene', () => {
-  it('filters long alternatives from A1 word mode', () => {
-    expect(isA1WordModeChunk('arrivo')).toBe(true);
-    expect(isA1WordModeChunk('Ho fame.')).toBe(true);
-    expect(isA1WordModeChunk('Arrivo a Roma.')).toBe(false);
-    expect(filterA1WordModeAlternatives('arrivo', ['Arrivo a Roma.', 'Io arrivo', 'arriva'])).toEqual([
-      'Io arrivo',
-      'arriva',
+describe('A1 alternative hygiene and display', () => {
+  it('deduplicates identical alternatives and trims whitespace', () => {
+    expect(filterA1WordModeAlternatives('Ho fame.', ['Ho fame.', 'Io ho fame.', '  Ho fame  '])).toEqual([
+      'Io ho fame.',
     ]);
   });
 
-  it('does not reveal full-sentence alternatives for long A1 overlays', () => {
+  it('keeps clean authored prompt and expected answer', () => {
     const bundle = loadLucaBundle();
     const sentence = [...bundle.chapters.values()]
       .flatMap((chapter) => chapter.paragraphs.flatMap((paragraph) => paragraph.sentences))
@@ -65,7 +61,7 @@ describe('A1 word-mode display hygiene', () => {
       sourceSentenceId: 's01',
       promptEn: 'I arrive in Rome.',
       expectedIt: 'Arrivo a Roma.',
-      acceptableAnswers: ['Io arrivo a Roma.'],
+      acceptableAnswers: ['Io arrivo a Roma.', 'Arrivo a Roma.'],
       match: 'flexible' as const,
       level: 'A1' as const,
       focus: ['present', 'arrival'],
@@ -75,41 +71,17 @@ describe('A1 word-mode display hygiene', () => {
       storySentence: sentence!,
       lexiconById: bundle.lexiconById,
     });
-    expect(countProductionWords(display.expectedIt)).toBeLessThanOrEqual(2);
-    expect(display.acceptableAnswers.every((line) => isA1WordModeChunk(line))).toBe(true);
-    expect(display.acceptableAnswers.some((line) => /a roma/i.test(line))).toBe(false);
+    expect(display.promptEn).toBe('I arrive in Rome.');
+    expect(display.expectedIt).toBe('Arrivo a Roma.');
+    expect(display.acceptableAnswers).toEqual(['Io arrivo a Roma.']);
 
     const view = productionCardView(exercise, 0, 4, true, sentence!, {
       storySentence: sentence!,
       lexiconById: bundle.lexiconById,
     });
     expect(view.wordFocused).toBe(true);
-    expect(view.acceptableAnswers.every((line) => countProductionWords(line) <= 2)).toBe(true);
-  });
-
-  it('prefers conjugated story surface over infinitive when short', () => {
-    const bundle = loadLucaBundle();
-    const sentence = [...bundle.chapters.values()]
-      .flatMap((chapter) => chapter.paragraphs.flatMap((paragraph) => paragraph.sentences))
-      .find((row) => row.id === 's01' && row.text.includes('arriva'));
-    const exercise = {
-      exerciseId: 'luca-a-roma-ch01-prod-01',
-      storyId: 'luca-a-roma',
-      chapterId: 'luca-a-roma-01',
-      sourceSentenceId: 's01',
-      promptEn: 'I arrive in Rome.',
-      expectedIt: 'Arrivo a Roma.',
-      acceptableAnswers: ['Io arrivo a Roma.'],
-      match: 'flexible' as const,
-      level: 'A1' as const,
-      focus: ['arrivare'],
-    };
-    const display = productionDisplayFromStory(exercise, sentence!, {
-      storySentence: sentence!,
-      lexiconById: bundle.lexiconById,
-    });
-    expect(countProductionWords(display.expectedIt)).toBe(1);
-    expect(display.expectedIt.toLowerCase()).not.toBe('arrivare');
+    expect(view.promptEn).toBe('I arrive in Rome.');
+    expect(view.expectedIt).toBe('Arrivo a Roma.');
   });
 });
 

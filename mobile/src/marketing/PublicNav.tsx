@@ -2,6 +2,8 @@ import { router, type Href } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { AppSymbol } from '@/src/components/AppSymbol';
+import { StoribaseLogo } from '@/src/components/StoribaseLogo';
 import { LandingColors } from '@/src/marketing/landingTheme';
 import { navigateContinueLearning } from '@/src/progress/continueNavigation';
 import { useLayout } from '@/src/theme/useLayout';
@@ -47,7 +49,7 @@ export function PublicNav({ continueHref, onLanguagesPress, onHowItWorksPress }:
           accessibilityLabel="Storibase home"
           onPress={() => go('/')}
           style={({ pressed }) => [styles.brandRow, { opacity: pressed ? 0.75 : 1 }]}>
-          <View style={[styles.dot, { backgroundColor: colors.accent }]} />
+          <StoribaseLogo size={26} variant="circle" />
           <Text style={[Typography.brand, { color: colors.text, fontSize: 26, lineHeight: 32 }]}>
             Storibase
           </Text>
@@ -117,14 +119,22 @@ export function PublicNav({ continueHref, onLanguagesPress, onHowItWorksPress }:
         ) : (
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={open ? 'Close menu' : 'Open menu'}
+            accessibilityLabel={open ? 'Close navigation menu' : 'Open navigation menu'}
             accessibilityState={{ expanded: open }}
             onPress={() => setOpen((value) => !value)}
             style={({ pressed }) => [
               styles.menuBtn,
               { borderColor: colors.border, opacity: pressed ? 0.8 : 1 },
             ]}>
-            <Text style={[Typography.label, { color: colors.text }]}>{open ? 'Close' : 'Menu'}</Text>
+            <AppSymbol
+              name={
+                open
+                  ? { ios: 'xmark', android: 'close', web: 'close' }
+                  : { ios: 'line.3.horizontal', android: 'menu', web: 'menu' }
+              }
+              size={20}
+              tintColor={colors.text}
+            />
           </Pressable>
         )}
 

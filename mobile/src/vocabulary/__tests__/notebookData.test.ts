@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
 import { getContentBundle, LUCA_STORY_ID } from '@/src/content';
+import { grammarNoteForBatch } from '@/src/content/lessonBatches';
+import { browseVocabulary } from '@/src/vocabulary/catalog';
 import {
   getMomentForChapter,
   getNarrativeAnnotation,
@@ -13,6 +15,9 @@ import {
   getVerbPattern,
   NOTEBOOK_VERB_PATTERNS,
 } from '@/src/vocabulary/notebookVerbs';
+import { VocabularyService } from '@/src/vocabulary/VocabularyService';
+import type { UserVocabularyRepository } from '@/src/vocabulary/UserVocabularyRepository';
+import type { UserVocabularyState } from '@/src/vocabulary/types';
 
 describe('notebookData referential integrity', () => {
   const bundle = getContentBundle(LUCA_STORY_ID);
@@ -144,5 +149,84 @@ describe('notebookData referential integrity', () => {
     expect(getVerbPattern('parlare')).toBeTruthy();
     expect(getVerbPattern('essere')?.presente.io).toBe('sono');
     expect(getVerbPattern('non-existent-verb')).toBeNull();
+  });
+
+  it('provides all 14 grammar lesson batches for Luca a Roma (Ch 1-70)', () => {
+    for (let batch = 1; batch <= 14; batch++) {
+      const start = (batch - 1) * 5 + 1;
+      const end = batch * 5;
+      const note = grammarNoteForBatch(start, end, LUCA_STORY_ID);
+      expect(note, `Batch ${start}-${end} must have a grammar note`).toBeTruthy();
+      expect(note?.title.length).toBeGreaterThan(0);
+      expect(note?.steps.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('enriches browseVocabulary with partOfSpeech and introducedChapter from lexicon', () => {
+    const mockState: UserVocabularyState = {
+      lemmas: {
+        caffe: {
+          lemmaId: 'caffe',
+          encounterCount: 3,
+          tapCount: 1,
+          saveCount: 0,
+          chaptersEncountered: ['luca-a-roma-01'],
+          firstChapterId: 'luca-a-roma-01',
+          lastChapterId: 'luca-a-roma-01',
+          firstEncounteredAt: new Date().toISOString(),
+          lastEncounteredAt: new Date().toISOString(),
+          lastSentenceId: null,
+          saved: false,
+          savedForms: ['caffè'],
+          savedAt: null,
+          lastReviewedAt: null,
+          reviewCount: 0,
+          correctReviewCount: 0,
+          incorrectReviewCount: 0,
+          almostReviewCount: 0,
+          lastSelfAssessment: null,
+          lastSelfAssessmentAt: null,
+          intervalIndex: 0,
+          dueAt: null,
+          familiarityScore: 0.5,
+          status: 'learning',
+          recentEncounters: [],
+        },
+      },
+      phrases: {},
+      version: 1,
+    };
+
+    const browsed = browseVocabulary(bundle, mockState);
+    expect(browsed.learning.length).toBe(1);
+    const item = browsed.learning[0];
+    expect(item.id).toBe('caffe');
+    expect(item.partOfSpeech).toBe('noun');
+    expect(item.introducedChapter).toBe(8);
+  });
+
+  it('toggles saved status correctly via VocabularyService', async () => {
+    let savedState: UserVocabularyState = {
+      lemmas: {},
+      phrases: {},
+      version: 1,
+    };
+
+    const mockRepo: UserVocabularyRepository = {
+      get: async () => savedState,
+      save: async (st) => {
+        savedState = st;
+      },
+    };
+
+    const service = new VocabularyService(mockRepo, bundle);
+
+    const isSaved1 = await service.toggleSaved('lemma', 'caffe');
+    expect(isSaved1).toBe(true);
+    expect(savedState.lemmas.caffe.saved).toBe(true);
+
+    const isSaved2 = await service.toggleSaved('lemma', 'caffe');
+    expect(isSaved2).toBe(false);
+    expect(savedState.lemmas.caffe.saved).toBe(false);
   });
 });

@@ -38,9 +38,6 @@
       "sourceSentenceId": "s13",
       "promptEn": "There is also sugar.",
       "expectedIt": "C'è anche zucchero.",
-      "acceptableAnswers": [
-        "C’è anche zucchero."
-      ],
       "match": "flexible",
       "focus": [
         "ce",
@@ -257,9 +254,6 @@
       "sourceSentenceId": "s16",
       "promptEn": "Is there a receipt?",
       "expectedIt": "C'è lo scontrino?",
-      "acceptableAnswers": [
-        "C’è lo scontrino?"
-      ],
       "match": "flexible",
       "focus": [
         "shopping",

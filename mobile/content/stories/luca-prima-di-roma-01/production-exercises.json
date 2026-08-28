@@ -177,9 +177,6 @@
       "sourceSentenceId": "s04",
       "promptEn": "There is a kitchen.",
       "expectedIt": "C'è una cucina.",
-      "acceptableAnswers": [
-        "C’è una cucina."
-      ],
       "match": "flexible",
       "focus": [
         "ce",

@@ -1,6 +1,7 @@
 import { router, type Href } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { StoribaseLogo } from '@/src/components/StoribaseLogo';
 import { LandingColors } from '@/src/marketing/landingTheme';
 import { Spacing, Typography } from '@/src/theme/tokens';
 import { useLayout } from '@/src/theme/useLayout';
@@ -24,7 +25,10 @@ export function PublicFooter({ showLogin = true }: Props) {
           gap: layout.isPhone ? Spacing.md : Spacing.lg,
         },
       ]}>
-      <Text style={[Typography.caption, { color: colors.textMuted }]}>© 2026 Storibase</Text>
+      <View style={styles.brandRow}>
+        <StoribaseLogo size={20} variant="circle" />
+        <Text style={[Typography.caption, { color: colors.textMuted }]}>© 2026 Storibase</Text>
+      </View>
       <View style={styles.links}>
         <FooterLink label="Privacy Policy" href="/privacy" />
         <FooterLink label="Terms of Service" href="/terms" />
@@ -62,5 +66,10 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     gap: Spacing.lg,
     alignItems: 'center',
+  },
+  brandRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
   },
 });

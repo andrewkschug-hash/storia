@@ -40,7 +40,11 @@ describe('batch milestone routing', () => {
   });
 
   it('routes speak scene at batch 40 to level readiness for B1 transition', () => {
-    expect(String(routeAfterSpeakScene(LUCA_STORY_ID, 40))).toContain('level-readiness?fromChapter=40');
+    expect(String(routeAfterSpeakScene(LUCA_STORY_ID, 40))).toContain('a2-readiness?fromChapter=40');
+  });
+
+  it('routes level readiness after chapter 40 to chapter 41', () => {
+    expect(String(routeAfterLevelReadiness(LUCA_STORY_ID, 40))).toContain('/reader/luca-a-roma-41');
   });
 
   it('routes recap at batch 70 to vocabulary quaderno finale', () => {

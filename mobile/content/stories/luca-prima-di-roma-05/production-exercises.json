@@ -98,7 +98,6 @@
       "promptEn": "Yes, I'm coming.",
       "expectedIt": "Sì vengo.",
       "acceptableAnswers": [
-        "Sì, vengo.",
         "Io vengo."
       ],
       "match": "flexible",

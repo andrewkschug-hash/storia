@@ -120,7 +120,7 @@ function migrateStoryProgress(state: UserVocabularyState, progress: ReadingProgr
     if (!scene) continue;
     for (const sceneRecord of records) {
       for (const lineAttempt of sceneRecord.lines ?? []) {
-        const line = scene.lines.find((row) => row.id === lineAttempt.lineId);
+        const line = (scene.lines ?? []).find((row) => row.id === lineAttempt.lineId);
         if (!line?.sourceSentenceId) continue;
         const located = findSentenceById(
           bundle,

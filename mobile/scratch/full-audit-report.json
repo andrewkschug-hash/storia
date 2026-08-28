@@ -1,0 +1,3179 @@
+[
+  {
+    "chapterId": "luca-a-roma-01",
+    "chapterNumber": 1,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca arrives in Rome.",
+      "expectedIt": "Luca arriva a Roma.",
+      "acceptable": [
+        "Arriva a Roma."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca arrives in Rome.",
+      "expectedIt": "Luca arriva a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca arriva a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-01",
+    "chapterNumber": 1,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca is hungry.",
+      "expectedIt": "Luca ha fame.",
+      "acceptable": [
+        "Ha fame."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is hungry.",
+      "expectedIt": "Luca ha fame.",
+      "acceptable": [
+        "Ha fame."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca ha fame."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-01",
+    "chapterNumber": 1,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca wants to eat.",
+      "expectedIt": "Luca vuole mangiare.",
+      "acceptable": [
+        "Vuole mangiare."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca wants to eat.",
+      "expectedIt": "Luca vuole mangiare.",
+      "acceptable": [
+        "Vuole mangiare."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca vuole mangiare."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-01",
+    "chapterNumber": 1,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Good morning.",
+      "expectedIt": "Buongiorno.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Good morning.",
+      "expectedIt": "Buongiorno.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Buongiorno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-02",
+    "chapterNumber": 2,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca is in Rome.",
+      "expectedIt": "Luca è a Roma.",
+      "acceptable": [
+        "È a Roma.",
+        "Sono a Roma.",
+        "Io sono a Roma."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is in Rome.",
+      "expectedIt": "Luca è a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca è a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-02",
+    "chapterNumber": 2,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca walks down the street.",
+      "expectedIt": "Luca cammina per la strada.",
+      "acceptable": [
+        "Cammina per la strada.",
+        "Cammino per la strada.",
+        "Io cammino per la strada."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca walks down the street.",
+      "expectedIt": "Luca cammina per la strada.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca cammina per la strada."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-02",
+    "chapterNumber": 2,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Rome is big.",
+      "expectedIt": "Roma è grande.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Rome is big.",
+      "expectedIt": "Roma è grande.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Roma è grande."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-02",
+    "chapterNumber": 2,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Rome is beautiful.",
+      "expectedIt": "Roma è bella.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Rome is beautiful.",
+      "expectedIt": "Roma è bella.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Roma è bella."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-03",
+    "chapterNumber": 3,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca is looking for a home.",
+      "expectedIt": "Luca cerca una casa.",
+      "acceptable": [
+        "Cerca una casa.",
+        "Cerco una casa.",
+        "Cerca casa."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is looking for a home.",
+      "expectedIt": "Luca cerca una casa.",
+      "acceptable": [
+        "Cerca casa."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca cerca una casa."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-03",
+    "chapterNumber": 3,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca wants an apartment.",
+      "expectedIt": "Luca vuole un appartamento.",
+      "acceptable": [
+        "Vuole un appartamento.",
+        "Voglio un appartamento."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca wants an apartment.",
+      "expectedIt": "Luca vuole un appartamento.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca vuole un appartamento."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-03",
+    "chapterNumber": 3,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca doesn't have much money.",
+      "expectedIt": "Luca non ha molti soldi.",
+      "acceptable": [
+        "Non ha molti soldi.",
+        "Non ho molti soldi."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca doesn't have much money.",
+      "expectedIt": "Luca non ha molti soldi.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca non ha molti soldi."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-03",
+    "chapterNumber": 3,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Tomorrow I look again.",
+      "expectedIt": "Domani cerco ancora.",
+      "acceptable": [
+        "Io cerco ancora domani.",
+        "Cerco ancora domani."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Tomorrow I look again.",
+      "expectedIt": "Domani cerco ancora.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Domani cerca ancora."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-04",
+    "chapterNumber": 4,
+    "level": "A1",
+    "authored": {
+      "promptEn": "The apartment is small.",
+      "expectedIt": "L'appartamento è piccolo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The apartment is small.",
+      "expectedIt": "L'appartamento è piccolo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "L'appartamento è piccolo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-04",
+    "chapterNumber": 4,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca is happy.",
+      "expectedIt": "Luca è felice.",
+      "acceptable": [
+        "È felice.",
+        "Sono felice.",
+        "Luca è contento."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is happy.",
+      "expectedIt": "Luca è felice.",
+      "acceptable": [
+        "È felice.",
+        "Sono felice."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca è felice."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-04",
+    "chapterNumber": 4,
+    "level": "A1",
+    "authored": {
+      "promptEn": "There's a door.",
+      "expectedIt": "C'è una porta.",
+      "acceptable": [
+        "C'è una porta qui."
+      ]
+    },
+    "runtime": {
+      "promptEn": "There's a door.",
+      "expectedIt": "C'è una porta.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "C'è una porta."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-04",
+    "chapterNumber": 4,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca has a home in Rome.",
+      "expectedIt": "Luca ha una casa a Roma.",
+      "acceptable": [
+        "Ha una casa a Roma.",
+        "Ho una casa a Roma."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca has a home in Rome.",
+      "expectedIt": "Luca ha una casa a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca ha una casa a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-05",
+    "chapterNumber": 5,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Hi, I'm Luca.",
+      "expectedIt": "Ciao, sono Luca.",
+      "acceptable": [
+        "Ciao, io sono Luca."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Hi, I'm Luca.",
+      "expectedIt": "Ciao, sono Luca.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ciao, sono Luca."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-05",
+    "chapterNumber": 5,
+    "level": "A1",
+    "authored": {
+      "promptEn": "How are you?",
+      "expectedIt": "Come stai?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "How are you?",
+      "expectedIt": "Come stai?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Come stai?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-05",
+    "chapterNumber": 5,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Are you new to Rome?",
+      "expectedIt": "Sei nuovo a Roma?",
+      "acceptable": [
+        "Sei nuova a Roma?"
+      ]
+    },
+    "runtime": {
+      "promptEn": "Are you new to Rome?",
+      "expectedIt": "Sei nuovo a Roma?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Sei nuovo a Roma?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-05",
+    "chapterNumber": 5,
+    "level": "A1",
+    "authored": {
+      "promptEn": "See you.",
+      "expectedIt": "Ci vediamo.",
+      "acceptable": [
+        "Ci vediamo dopo."
+      ]
+    },
+    "runtime": {
+      "promptEn": "See you.",
+      "expectedIt": "Ci vediamo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ci vediamo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-06",
+    "chapterNumber": 6,
+    "level": "A1",
+    "authored": {
+      "promptEn": "The square is beautiful.",
+      "expectedIt": "La piazza è bella.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The square is beautiful.",
+      "expectedIt": "La piazza è bella.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "La piazza è bella."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-06",
+    "chapterNumber": 6,
+    "level": "A1",
+    "authored": {
+      "promptEn": "This is the neighborhood.",
+      "expectedIt": "Questo è il quartiere.",
+      "acceptable": [
+        "Questo è il mio quartiere.",
+        "Il quartiere."
+      ]
+    },
+    "runtime": {
+      "promptEn": "This is the neighborhood.",
+      "expectedIt": "Questo è il quartiere.",
+      "acceptable": [
+        "Il quartiere."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Questo è il mio quartiere."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-06",
+    "chapterNumber": 6,
+    "level": "A1",
+    "authored": {
+      "promptEn": "How are you today?",
+      "expectedIt": "Come stai oggi?",
+      "acceptable": [
+        "Come va oggi?"
+      ]
+    },
+    "runtime": {
+      "promptEn": "How are you today?",
+      "expectedIt": "Come stai oggi?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Come stai oggi?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-06",
+    "chapterNumber": 6,
+    "level": "A1",
+    "authored": {
+      "promptEn": "See you tomorrow.",
+      "expectedIt": "Ci vediamo domani.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "See you tomorrow.",
+      "expectedIt": "Ci vediamo domani.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ci vediamo domani."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-07",
+    "chapterNumber": 7,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca wants a job.",
+      "expectedIt": "Luca vuole un lavoro.",
+      "acceptable": [
+        "Vuole un lavoro.",
+        "Cerco un lavoro.",
+        "Cerca un lavoro."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca wants a job.",
+      "expectedIt": "Luca vuole un lavoro.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca vuole un lavoro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-07",
+    "chapterNumber": 7,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Are you looking for a job?",
+      "expectedIt": "Cerchi un lavoro?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Are you looking for a job?",
+      "expectedIt": "Cerchi un lavoro?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Cerchi un lavoro?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-07",
+    "chapterNumber": 7,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Yes, I want a job.",
+      "expectedIt": "Sì, voglio un lavoro.",
+      "acceptable": [
+        "Voglio un lavoro."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Yes, I want a job.",
+      "expectedIt": "Sì, voglio un lavoro.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Sì, voglio un lavoro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-07",
+    "chapterNumber": 7,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca wants to stay in Rome.",
+      "expectedIt": "Luca vuole restare a Roma.",
+      "acceptable": [
+        "Vuole restare a Roma.",
+        "Voglio restare a Roma.",
+        "Luca vuole vivere a Roma."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca wants to stay in Rome.",
+      "expectedIt": "Luca vuole restare a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca vuole restare a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-08",
+    "chapterNumber": 8,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Ask at the café.",
+      "expectedIt": "Chiedi al caffè.",
+      "acceptable": [
+        "Chiedi al bar.",
+        "Chiedi al caffe."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Ask at the café.",
+      "expectedIt": "Chiedi al caffè.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Buongiorno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-08",
+    "chapterNumber": 8,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Excuse me, I'm looking for a job.",
+      "expectedIt": "Scusa, cerco un lavoro.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Excuse me, I'm looking for a job.",
+      "expectedIt": "Scusa, cerco un lavoro.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Scusa, cerco un lavoro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-08",
+    "chapterNumber": 8,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Wait a moment.",
+      "expectedIt": "Aspetta un momento.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Wait a moment.",
+      "expectedIt": "Aspetta un momento.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Aspetta un momento."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-08",
+    "chapterNumber": 8,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Okay.",
+      "expectedIt": "Va bene.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Okay.",
+      "expectedIt": "Va bene.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Va bene."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-09",
+    "chapterNumber": 9,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Do you want to work here?",
+      "expectedIt": "Vuoi lavorare qui?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Do you want to work here?",
+      "expectedIt": "Vuoi lavorare qui?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Vuoi lavorare qui?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-09",
+    "chapterNumber": 9,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca has a job.",
+      "expectedIt": "Luca ha un lavoro.",
+      "acceptable": [
+        "Ha un lavoro.",
+        "Ho un lavoro."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca has a job.",
+      "expectedIt": "Luca ha un lavoro.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca ha un lavoro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-09",
+    "chapterNumber": 9,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Tomorrow Luca works.",
+      "expectedIt": "Domani Luca lavora.",
+      "acceptable": [
+        "Domani lavora.",
+        "Domani lavoro.",
+        "Lavora domani."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Tomorrow Luca works.",
+      "expectedIt": "Domani Luca lavora.",
+      "acceptable": [
+        "Domani lavora.",
+        "Domani lavoro.",
+        "Lavora domani."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Domani Luca lavora."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-09",
+    "chapterNumber": 9,
+    "level": "A1",
+    "authored": {
+      "promptEn": "The job isn't hard.",
+      "expectedIt": "Il lavoro non è difficile.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The job isn't hard.",
+      "expectedIt": "Il lavoro non è difficile.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il lavoro non è difficile."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-10",
+    "chapterNumber": 10,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Today Luca works.",
+      "expectedIt": "Oggi Luca lavora.",
+      "acceptable": [
+        "Oggi lavora.",
+        "Oggi lavoro.",
+        "Lavora oggi."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Today Luca works.",
+      "expectedIt": "Oggi Luca lavora.",
+      "acceptable": [
+        "Oggi lavora.",
+        "Oggi lavoro.",
+        "Lavora oggi."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Oggi Luca lavora."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-10",
+    "chapterNumber": 10,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I work here.",
+      "expectedIt": "Lavoro qui.",
+      "acceptable": [
+        "Io lavoro qui."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I work here.",
+      "expectedIt": "Lavoro qui.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Giulia lavora qui."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-10",
+    "chapterNumber": 10,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Hi, I'm Giulia.",
+      "expectedIt": "Ciao, sono Giulia.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Hi, I'm Giulia.",
+      "expectedIt": "Ciao, sono Giulia.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ciao, sono Giulia."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-10",
+    "chapterNumber": 10,
+    "level": "A1",
+    "authored": {
+      "promptEn": "We work together.",
+      "expectedIt": "Lavoriamo insieme.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "We work together.",
+      "expectedIt": "Lavoriamo insieme.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Lavoriamo insieme."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-11",
+    "chapterNumber": 11,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca works in the café.",
+      "expectedIt": "Luca lavora nel caffè.",
+      "acceptable": [
+        "Lavora nel caffè.",
+        "Lavoro nel caffè.",
+        "Lavora al caffè."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca works in the café.",
+      "expectedIt": "Luca lavora nel caffè.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca lavora nel caffè."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-11",
+    "chapterNumber": 11,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Marco is Sofia's friend.",
+      "expectedIt": "Marco è un amico di Sofia.",
+      "acceptable": [
+        "È un amico di Sofia.",
+        "È un mio amico."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Marco is Sofia's friend.",
+      "expectedIt": "Marco è un amico di Sofia.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Marco è un amico di Sofia."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-11",
+    "chapterNumber": 11,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Hi, I'm Marco.",
+      "expectedIt": "Ciao, sono Marco.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Hi, I'm Marco.",
+      "expectedIt": "Ciao, sono Marco.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ciao, sono Marco."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-11",
+    "chapterNumber": 11,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Let's have a coffee together.",
+      "expectedIt": "Prendiamo un caffè insieme.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Let's have a coffee together.",
+      "expectedIt": "Prendiamo un caffè insieme.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Prendiamo un caffè insieme."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-12",
+    "chapterNumber": 12,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Marco has a problem.",
+      "expectedIt": "Marco ha un problema.",
+      "acceptable": [
+        "Ha un problema.",
+        "Ho un problema."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Marco has a problem.",
+      "expectedIt": "Marco ha un problema.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Marco ha un problema."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-12",
+    "chapterNumber": 12,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I don't have money.",
+      "expectedIt": "Non ho soldi.",
+      "acceptable": [
+        "Non ho i soldi."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I don't have money.",
+      "expectedIt": "Non ho soldi.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Non ho soldi."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-12",
+    "chapterNumber": 12,
+    "level": "A1",
+    "authored": {
+      "promptEn": "What's wrong?",
+      "expectedIt": "Cosa c'è?",
+      "acceptable": [
+        "Che cosa c'è?",
+        "Cosa c'e?"
+      ]
+    },
+    "runtime": {
+      "promptEn": "What's wrong?",
+      "expectedIt": "Cosa c'è?",
+      "acceptable": [
+        "Cosa c'e?"
+      ]
+    },
+    "sourceSentence": {
+      "text": "Cosa c'è?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-12",
+    "chapterNumber": 12,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I don't have time.",
+      "expectedIt": "Non ho tempo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I don't have time.",
+      "expectedIt": "Non ho tempo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Non ho tempo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-13",
+    "chapterNumber": 13,
+    "level": "A1",
+    "authored": {
+      "promptEn": "We can help.",
+      "expectedIt": "Possiamo aiutare.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "We can help.",
+      "expectedIt": "Possiamo aiutare.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Possiamo aiutare."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-13",
+    "chapterNumber": 13,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I have little money.",
+      "expectedIt": "Io ho pochi soldi.",
+      "acceptable": [
+        "Ho pochi soldi."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I have little money.",
+      "expectedIt": "Io ho pochi soldi.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Io ho pochi soldi."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-13",
+    "chapterNumber": 13,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I want to buy a ticket.",
+      "expectedIt": "Voglio comprare un biglietto.",
+      "acceptable": [
+        "Io voglio comprare il biglietto."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I want to buy a ticket.",
+      "expectedIt": "Voglio comprare un biglietto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Compra il biglietto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-13",
+    "chapterNumber": 13,
+    "level": "A1",
+    "authored": {
+      "promptEn": "It's for the ticket.",
+      "expectedIt": "È per il biglietto.",
+      "acceptable": [
+        "E' per il biglietto."
+      ]
+    },
+    "runtime": {
+      "promptEn": "It's for the ticket.",
+      "expectedIt": "È per il biglietto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "È per il biglietto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-14",
+    "chapterNumber": 14,
+    "level": "A1",
+    "authored": {
+      "promptEn": "You have to leave.",
+      "expectedIt": "Devi partire.",
+      "acceptable": [
+        "Tu devi partire."
+      ]
+    },
+    "runtime": {
+      "promptEn": "You have to leave.",
+      "expectedIt": "Devi partire.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ma Marco deve partire presto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-14",
+    "chapterNumber": 14,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I have to leave soon.",
+      "expectedIt": "Devo partire presto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I have to leave soon.",
+      "expectedIt": "Devo partire presto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Devo partire presto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-14",
+    "chapterNumber": 14,
+    "level": "A1",
+    "authored": {
+      "promptEn": "What do we do now?",
+      "expectedIt": "Cosa facciamo adesso?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "What do we do now?",
+      "expectedIt": "Cosa facciamo adesso?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Cosa facciamo adesso?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-14",
+    "chapterNumber": 14,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I can't go alone.",
+      "expectedIt": "Non posso andare solo.",
+      "acceptable": [
+        "Non posso andare da solo."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I can't go alone.",
+      "expectedIt": "Non posso andare solo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Non posso andare solo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-15",
+    "chapterNumber": 15,
+    "level": "A1",
+    "authored": {
+      "promptEn": "It's quiet here.",
+      "expectedIt": "Qui è tranquillo.",
+      "acceptable": [
+        "È tranquillo.",
+        "È tranquillo qui."
+      ]
+    },
+    "runtime": {
+      "promptEn": "It's quiet here.",
+      "expectedIt": "Qui è tranquillo.",
+      "acceptable": [
+        "È tranquillo."
+      ]
+    },
+    "sourceSentence": {
+      "text": "La casa è tranquilla."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-15",
+    "chapterNumber": 15,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Go together.",
+      "expectedIt": "Andate insieme.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Go together.",
+      "expectedIt": "Andate insieme.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Andate insieme."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-15",
+    "chapterNumber": 15,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Why not?",
+      "expectedIt": "Perché no?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Why not?",
+      "expectedIt": "Perché no?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Perché no?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-15",
+    "chapterNumber": 15,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Thank you, Nonna Rosa.",
+      "expectedIt": "Grazie, Nonna Rosa.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Thank you, Nonna Rosa.",
+      "expectedIt": "Grazie, Nonna Rosa.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Grazie, Nonna Rosa."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-16",
+    "chapterNumber": 16,
+    "level": "A1",
+    "authored": {
+      "promptEn": "We go to the station.",
+      "expectedIt": "Andiamo alla stazione.",
+      "acceptable": [
+        "Andiamo in stazione."
+      ]
+    },
+    "runtime": {
+      "promptEn": "We go to the station.",
+      "expectedIt": "Andiamo alla stazione.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il gruppo va alla stazione."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-16",
+    "chapterNumber": 16,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Marco has the ticket.",
+      "expectedIt": "Marco ha il biglietto.",
+      "acceptable": [
+        "Ha il biglietto.",
+        "Ho il biglietto."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Marco has the ticket.",
+      "expectedIt": "Marco ha il biglietto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Marco ha il biglietto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-16",
+    "chapterNumber": 16,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Let's take the train.",
+      "expectedIt": "Prendiamo il treno.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Let's take the train.",
+      "expectedIt": "Prendiamo il treno.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Prendiamo il treno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-16",
+    "chapterNumber": 16,
+    "level": "A1",
+    "authored": {
+      "promptEn": "The train leaves now.",
+      "expectedIt": "Il treno parte adesso.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The train leaves now.",
+      "expectedIt": "Il treno parte adesso.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il treno parte adesso."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-17",
+    "chapterNumber": 17,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca looks outside.",
+      "expectedIt": "Luca guarda fuori.",
+      "acceptable": [
+        "Guarda fuori.",
+        "Guardo fuori."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca looks outside.",
+      "expectedIt": "Luca guarda fuori.",
+      "acceptable": [
+        "Guarda fuori.",
+        "Guardo fuori."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca guarda fuori."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-17",
+    "chapterNumber": 17,
+    "level": "A1",
+    "authored": {
+      "promptEn": "We travel together.",
+      "expectedIt": "Viaggiamo insieme.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "We travel together.",
+      "expectedIt": "Viaggiamo insieme.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Viaggiamo insieme."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-17",
+    "chapterNumber": 17,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I'm thirsty and hungry.",
+      "expectedIt": "Ho sete e fame.",
+      "acceptable": [
+        "Ho fame e sete.",
+        "Io ho sete e fame."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I'm thirsty and hungry.",
+      "expectedIt": "Ho sete e fame.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Hanno sete e fame."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-17",
+    "chapterNumber": 17,
+    "level": "A1",
+    "authored": {
+      "promptEn": "The trip goes well.",
+      "expectedIt": "Il viaggio va bene.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The trip goes well.",
+      "expectedIt": "Il viaggio va bene.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il viaggio va bene."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-18",
+    "chapterNumber": 18,
+    "level": "A1",
+    "authored": {
+      "promptEn": "The train isn't leaving.",
+      "expectedIt": "Il treno non parte.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The train isn't leaving.",
+      "expectedIt": "Il treno non parte.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il treno non va."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-18",
+    "chapterNumber": 18,
+    "level": "A1",
+    "authored": {
+      "promptEn": "I can't find the ticket.",
+      "expectedIt": "Non trovo il biglietto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I can't find the ticket.",
+      "expectedIt": "Non trovo il biglietto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Non trovo il biglietto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-18",
+    "chapterNumber": 18,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Where's the suitcase?",
+      "expectedIt": "Dov'è la valigia?",
+      "acceptable": [
+        "Dove è la valigia?"
+      ]
+    },
+    "runtime": {
+      "promptEn": "Where's the suitcase?",
+      "expectedIt": "Dov'è la valigia?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Dov'è la valigia?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-18",
+    "chapterNumber": 18,
+    "level": "A1",
+    "authored": {
+      "promptEn": "What do we do now?",
+      "expectedIt": "Cosa facciamo adesso?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "What do we do now?",
+      "expectedIt": "Cosa facciamo adesso?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Cosa facciamo adesso?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-19",
+    "chapterNumber": 19,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Here's the ticket!",
+      "expectedIt": "Ecco il biglietto!",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Here's the ticket!",
+      "expectedIt": "Ecco il biglietto!",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ecco il biglietto!"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-19",
+    "chapterNumber": 19,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Together we can help.",
+      "expectedIt": "Insieme possiamo aiutare.",
+      "acceptable": [
+        "Possiamo aiutare insieme."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Together we can help.",
+      "expectedIt": "Insieme possiamo aiutare.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Insieme risolviamo il problema."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-19",
+    "chapterNumber": 19,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Thank you, friends.",
+      "expectedIt": "Grazie, amici.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Thank you, friends.",
+      "expectedIt": "Grazie, amici.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Grazie, amici."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-19",
+    "chapterNumber": 19,
+    "level": "A1",
+    "authored": {
+      "promptEn": "See you in Rome.",
+      "expectedIt": "Ci vediamo a Roma.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "See you in Rome.",
+      "expectedIt": "Ci vediamo a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ci vediamo a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-20",
+    "chapterNumber": 20,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca is home.",
+      "expectedIt": "Luca è a casa.",
+      "acceptable": [
+        "È a casa.",
+        "Sono a casa."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is home.",
+      "expectedIt": "Luca è a casa.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca è a casa."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-20",
+    "chapterNumber": 20,
+    "level": "A1",
+    "authored": {
+      "promptEn": "We're home.",
+      "expectedIt": "Siamo a casa.",
+      "acceptable": [
+        "Noi siamo a casa."
+      ]
+    },
+    "runtime": {
+      "promptEn": "We're home.",
+      "expectedIt": "Siamo a casa.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Siamo a casa."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-20",
+    "chapterNumber": 20,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca has a home, a job, and friends.",
+      "expectedIt": "Luca ha una casa, un lavoro e amici.",
+      "acceptable": [
+        "Ha una casa, un lavoro e amici.",
+        "Ho una casa, un lavoro e amici."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca has a home, a job, and friends.",
+      "expectedIt": "Luca ha una casa, un lavoro e amici.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca ha una casa, un lavoro e amici."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-20",
+    "chapterNumber": 20,
+    "level": "A1",
+    "authored": {
+      "promptEn": "Luca is happy in Rome.",
+      "expectedIt": "Luca è felice a Roma.",
+      "acceptable": [
+        "È felice a Roma.",
+        "Sono felice a Roma.",
+        "Io sono felice a Roma."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is happy in Rome.",
+      "expectedIt": "Luca è felice a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca è felice a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-21",
+    "chapterNumber": 21,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Today is Monday and Luca wakes up early.",
+      "expectedIt": "Oggi è lunedì e Luca si sveglia presto.",
+      "acceptable": [
+        "Oggi è lunedì. Mi sveglio presto."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Today is Monday and Luca wakes up early.",
+      "expectedIt": "Oggi è lunedì e Luca si sveglia presto.",
+      "acceptable": [
+        "Oggi è lunedì. Mi sveglio presto."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Oggi è lunedì e Luca si sveglia presto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-21",
+    "chapterNumber": 21,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Every morning Luca goes to work in the neighborhood.",
+      "expectedIt": "Ogni mattina Luca va al lavoro nel quartiere.",
+      "acceptable": [
+        "Ogni mattina vado al lavoro nel quartiere.",
+        "Vado al lavoro ogni mattina."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Every morning Luca goes to work in the neighborhood.",
+      "expectedIt": "Ogni mattina Luca va al lavoro nel quartiere.",
+      "acceptable": [
+        "Ogni mattina vado al lavoro nel quartiere.",
+        "Vado al lavoro ogni mattina."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Ogni mattina Luca va al lavoro nel quartiere."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-21",
+    "chapterNumber": 21,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Luca prepares something to eat because he is hungry.",
+      "expectedIt": "Luca prepara qualcosa da mangiare perché ha fame.",
+      "acceptable": [
+        "Preparo qualcosa perché ho fame.",
+        "Ho fame, preparo qualcosa da mangiare."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca prepares something to eat because he is hungry.",
+      "expectedIt": "Luca prepara qualcosa da mangiare perché ha fame.",
+      "acceptable": [
+        "Preparo qualcosa perché ho fame.",
+        "Ho fame, preparo qualcosa da mangiare."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca prepara qualcosa da mangiare perché ha fame."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-21",
+    "chapterNumber": 21,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "In the evening Luca goes home.",
+      "expectedIt": "La sera Luca torna a casa.",
+      "acceptable": [
+        "La sera vado a casa.",
+        "Torno a casa la sera."
+      ]
+    },
+    "runtime": {
+      "promptEn": "In the evening Luca goes home.",
+      "expectedIt": "La sera Luca torna a casa.",
+      "acceptable": [
+        "La sera vado a casa.",
+        "Torno a casa la sera."
+      ]
+    },
+    "sourceSentence": {
+      "text": "La sera Luca torna a casa."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-22",
+    "chapterNumber": 22,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Hi, Luca. How are you?",
+      "expectedIt": "Ciao, Luca. Come stai?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Hi, Luca. How are you?",
+      "expectedIt": "Ciao, Luca. Come stai?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ciao, Luca. Come stai?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-22",
+    "chapterNumber": 22,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Yes, I like to walk in the evening.",
+      "expectedIt": "Sì, mi piace camminare la sera.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Yes, I like to walk in the evening.",
+      "expectedIt": "Sì, mi piace camminare la sera.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Sì, mi piace camminare la sera."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-22",
+    "chapterNumber": 22,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "I like this neighborhood.",
+      "expectedIt": "Mi piace questo quartiere.",
+      "acceptable": [
+        "Questo quartiere mi piace."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I like this neighborhood.",
+      "expectedIt": "Mi piace questo quartiere.",
+      "acceptable": [
+        "Questo quartiere mi piace."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Mi piace questo quartiere."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-22",
+    "chapterNumber": 22,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Luca wants to stay in Rome.",
+      "expectedIt": "Luca vuole restare a Roma.",
+      "acceptable": [
+        "Io voglio restare a Roma.",
+        "Voglio stare a Roma."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca wants to stay in Rome.",
+      "expectedIt": "Luca vuole restare a Roma.",
+      "acceptable": [
+        "Io voglio restare a Roma.",
+        "Voglio stare a Roma."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca vuole restare a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-23",
+    "chapterNumber": 23,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "I'd like bread and water.",
+      "expectedIt": "Vorrei pane e acqua.",
+      "acceptable": [
+        "Pane e acqua, grazie.",
+        "Vorrei del pane e dell'acqua."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I'd like bread and water.",
+      "expectedIt": "Un cliente chiede pane e acqua.",
+      "acceptable": [
+        "Vorrei pane e acqua.",
+        "Pane e acqua, grazie.",
+        "Vorrei del pane e dell'acqua."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Un cliente chiede pane e acqua."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-23",
+    "chapterNumber": 23,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Excuse me, where is the bread?",
+      "expectedIt": "Scusa, dove è il pane?",
+      "acceptable": [
+        "Dov'è il pane?"
+      ]
+    },
+    "runtime": {
+      "promptEn": "Excuse me, where is the bread?",
+      "expectedIt": "Scusa, dove è il pane?",
+      "acceptable": [
+        "Dov'è il pane?"
+      ]
+    },
+    "sourceSentence": {
+      "text": "Scusa, dove è il pane?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-23",
+    "chapterNumber": 23,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Today is difficult, but it goes well.",
+      "expectedIt": "Oggi è difficile, ma va bene.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Today is difficult, but it goes well.",
+      "expectedIt": "Oggi è difficile, ma va bene.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Oggi è difficile, ma va bene."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-23",
+    "chapterNumber": 23,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Luca is happy at the café.",
+      "expectedIt": "Luca è felice al caffè.",
+      "acceptable": [
+        "È felice al caffè.",
+        "Sono felice al caffè.",
+        "Luca è contento al caffè."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Luca is happy at the café.",
+      "expectedIt": "Luca è felice al caffè.",
+      "acceptable": [
+        "È felice al caffè.",
+        "Sono felice al caffè.",
+        "Luca è contento al caffè."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Luca è felice al caffè."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-24",
+    "chapterNumber": 24,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Today he stays home and talks with his family.",
+      "expectedIt": "Oggi resta a casa e parla con la famiglia.",
+      "acceptable": [
+        "Luca oggi resta a casa e parla con la famiglia.",
+        "Oggi Luca resta a casa e parla con la famiglia."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Today he stays home and talks with his family.",
+      "expectedIt": "Oggi resta a casa e parla con la famiglia.",
+      "acceptable": [
+        "Luca oggi resta a casa e parla con la famiglia.",
+        "Oggi Luca resta a casa e parla con la famiglia."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Oggi resta a casa e parla con la famiglia."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-24",
+    "chapterNumber": 24,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "Fine, thanks. I am fine in Rome.",
+      "expectedIt": "Bene, grazie. Sto bene a Roma.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Fine, thanks. I am fine in Rome.",
+      "expectedIt": "Bene, grazie. Sto bene a Roma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Bene, grazie. Sto bene a Roma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-24",
+    "chapterNumber": 24,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "I have a home and a job at the café.",
+      "expectedIt": "Ho una casa e un lavoro al caffè.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I have a home and a job at the café.",
+      "expectedIt": "Ho una casa e un lavoro al caffè.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ho una casa e un lavoro al caffè."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-24",
+    "chapterNumber": 24,
+    "level": "A1+",
+    "authored": {
+      "promptEn": "I love you, Mom.",
+      "expectedIt": "Ti voglio bene, Mamma.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I love you, Mom.",
+      "expectedIt": "Ti voglio bene, Mamma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ti voglio bene, Mamma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-25",
+    "chapterNumber": 25,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Luca arrived early.",
+      "expectedIt": "Luca è arrivato presto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Luca arrived early.",
+      "expectedIt": "Luca è arrivato presto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca è arrivato presto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-25",
+    "chapterNumber": 25,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Me too. The café is not going well, and my job is not going well.”",
+      "expectedIt": "Anch’io. Il caffè non va bene, e il mio lavoro non va bene.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“Me too. The café is not going well, and my job is not going well.”",
+      "expectedIt": "Anch’io. Il caffè non va bene, e il mio lavoro non va bene.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Anch’io. Il caffè non va bene, e il mio lavoro non va bene."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-25",
+    "chapterNumber": 25,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Luca served the few customers. He brought coffee and water calmly.",
+      "expectedIt": "Luca ha servito i pochi clienti. Ha portato caffè e acqua con calma.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Luca served the few customers. He brought coffee and water calmly.",
+      "expectedIt": "Luca ha servito i pochi clienti. Ha portato caffè e acqua con calma.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca ha servito i pochi clienti. Ha portato caffè e acqua con calma."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-25",
+    "chapterNumber": 25,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Tomorrow morning we talk. It is important.”",
+      "expectedIt": "Domani mattina parliamo. È importante.",
+      "acceptable": [
+        "Parliamo domani mattina. È importante."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“Tomorrow morning we talk. It is important.”",
+      "expectedIt": "Domani mattina parliamo. È importante.",
+      "acceptable": [
+        "Parliamo domani mattina. È importante."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Domani mattina parliamo. È importante."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-26",
+    "chapterNumber": 26,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“The café is not going well. There are few customers.”",
+      "expectedIt": "Il caffè non va bene. Ci sono pochi clienti.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“The café is not going well. There are few customers.”",
+      "expectedIt": "Il caffè non va bene. Ci sono pochi clienti.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il caffè non va bene. Ci sono pochi clienti."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-26",
+    "chapterNumber": 26,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“And my job?”",
+      "expectedIt": "E il mio lavoro?",
+      "acceptable": [
+        "E il lavoro?"
+      ]
+    },
+    "runtime": {
+      "promptEn": "“And my job?”",
+      "expectedIt": "E il mio lavoro?",
+      "acceptable": [
+        "E il lavoro?"
+      ]
+    },
+    "sourceSentence": {
+      "text": "E il mio lavoro?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-26",
+    "chapterNumber": 26,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Maybe I sell the café or maybe I change everything.”",
+      "expectedIt": "Forse vendo il caffè o forse cambio tutto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“Maybe I sell the café or maybe I change everything.”",
+      "expectedIt": "Forse vendo il caffè o forse cambio tutto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Forse vendo il caffè o forse cambio tutto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-26",
+    "chapterNumber": 26,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Good. We must make a plan, not only wait.”",
+      "expectedIt": "Bene. Dobbiamo fare un piano, non solo aspettare.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“Good. We must make a plan, not only wait.”",
+      "expectedIt": "Bene. Dobbiamo fare un piano, non solo aspettare.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Bene. Dobbiamo fare un piano, non solo aspettare."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-27",
+    "chapterNumber": 27,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“I think about rent and the job every day.”",
+      "expectedIt": "Io penso all’affitto e al lavoro ogni giorno.",
+      "acceptable": [
+        "Penso all'affitto e al lavoro ogni giorno."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“I think about rent and the job every day.”",
+      "expectedIt": "Io penso all’affitto e al lavoro ogni giorno.",
+      "acceptable": [
+        "Penso all'affitto e al lavoro ogni giorno."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Io penso all’affitto e al lavoro ogni giorno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-27",
+    "chapterNumber": 27,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“You’re right. I am afraid, and fear speaks first.”",
+      "expectedIt": "Hai ragione. Io ho paura, e la paura parla prima.",
+      "acceptable": [
+        "Hai ragione. Ho paura."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“You’re right. I am afraid, and fear speaks first.”",
+      "expectedIt": "Hai ragione. Io ho paura, e la paura parla prima.",
+      "acceptable": [
+        "Hai ragione. Ho paura."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Hai ragione. Io ho paura, e la paura parla prima."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-27",
+    "chapterNumber": 27,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“The neighborhood needs that café.”",
+      "expectedIt": "Al quartiere serve quel caffè.",
+      "acceptable": [
+        "Quel caffè serve al quartiere."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“The neighborhood needs that café.”",
+      "expectedIt": "Al quartiere serve quel caffè.",
+      "acceptable": [
+        "Quel caffè serve al quartiere."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Al quartiere serve quel caffè."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-27",
+    "chapterNumber": 27,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Let’s go to Nonna Rosa. Maybe she has an idea.”",
+      "expectedIt": "Andiamo da Nonna Rosa. Magari lei ha un’idea.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“Let’s go to Nonna Rosa. Maybe she has an idea.”",
+      "expectedIt": "Andiamo da Nonna Rosa. Magari lei ha un’idea.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Andiamo da Nonna Rosa. Magari lei ha un’idea."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-28",
+    "chapterNumber": 28,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Hi Luca. Can I stay a moment? I don’t have money.”",
+      "expectedIt": "Ciao Luca. Posso stare un momento? Non ho soldi.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“Hi Luca. Can I stay a moment? I don’t have money.”",
+      "expectedIt": "Ciao Luca. Posso stare un momento? Non ho soldi.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ciao Luca. Posso stare un momento? Non ho soldi."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-28",
+    "chapterNumber": 28,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Yes. But not work. I look and I find nothing.”",
+      "expectedIt": "Sì. Ma il lavoro no. Cerco e non trovo niente.",
+      "acceptable": [
+        "Sì. Ma il lavoro no. Cerco lavoro e non trovo niente."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“Yes. But not work. I look and I find nothing.”",
+      "expectedIt": "Sì. Ma il lavoro no. Cerco e non trovo niente.",
+      "acceptable": [
+        "Sì. Ma il lavoro no. Cerco lavoro e non trovo niente."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Sì. Ma il lavoro no. Cerco e non trovo niente."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-28",
+    "chapterNumber": 28,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Luca talked about the difficult news of the café.",
+      "expectedIt": "Luca ha parlato della notizia difficile del caffè.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Luca talked about the difficult news of the café.",
+      "expectedIt": "Luca ha parlato della notizia difficile del caffè.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Luca ha parlato della notizia difficile del caffè."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-28",
+    "chapterNumber": 28,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“I come too. I don’t have work, but I have time.”",
+      "expectedIt": "Vengo anche io. Non ho lavoro, ma ho tempo.",
+      "acceptable": [
+        "Vengo. Non ho lavoro, ma ho tempo."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“I come too. I don’t have work, but I have time.”",
+      "expectedIt": "Vengo anche io. Non ho lavoro, ma ho tempo.",
+      "acceptable": [
+        "Vengo. Non ho lavoro, ma ho tempo."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Vengo anche io. Non ho lavoro, ma ho tempo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-29",
+    "chapterNumber": 29,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“Come in. Are you hungry? There is bread and something to eat.”",
+      "expectedIt": "Entrate. Avete fame? C’è pane e qualcosa da mangiare.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“Come in. Are you hungry? There is bread and something to eat.”",
+      "expectedIt": "Entrate. Avete fame? C’è pane e qualcosa da mangiare.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Entrate. Avete fame? C’è pane e qualcosa da mangiare."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-29",
+    "chapterNumber": 29,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“I look for work and find nothing.”",
+      "expectedIt": "Io cerco lavoro e non trovo niente.",
+      "acceptable": [
+        "Cerco lavoro e non trovo niente."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“I look for work and find nothing.”",
+      "expectedIt": "Io cerco lavoro e non trovo niente.",
+      "acceptable": [
+        "Cerco lavoro e non trovo niente."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Io cerco lavoro e non trovo niente."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-29",
+    "chapterNumber": 29,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“It lives with people. If people do not come, it closes.”",
+      "expectedIt": "Vive con la gente. Se la gente non viene, chiude.",
+      "acceptable": [
+        "Se la gente non viene, chiude.",
+        "Se le persone non vengono, il caffè chiude."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“It lives with people. If people do not come, it closes.”",
+      "expectedIt": "Vive con la gente. Se la gente non viene, chiude.",
+      "acceptable": [
+        "Se la gente non viene, chiude.",
+        "Se le persone non vengono, il caffè chiude."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Vive con la gente. Se la gente non viene, chiude."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-29",
+    "chapterNumber": 29,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“We don’t know yet. First we ask for a yes at the café.”",
+      "expectedIt": "Non lo sappiamo ancora. Prima chiediamo il sì al caffè.",
+      "acceptable": [
+        "Prima chiediamo il sì al caffè."
+      ]
+    },
+    "runtime": {
+      "promptEn": "“We don’t know yet. First we ask for a yes at the café.”",
+      "expectedIt": "Non lo sappiamo ancora. Prima chiediamo il sì al caffè.",
+      "acceptable": [
+        "Prima chiediamo il sì al caffè."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Non lo sappiamo ancora. Prima chiediamo il sì al caffè."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-30",
+    "chapterNumber": 30,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“We have an idea. A small celebration, Saturday, for the neighborhood.”",
+      "expectedIt": "Abbiamo un’idea. Una festa piccola, sabato, per il quartiere.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“We have an idea. A small celebration, Saturday, for the neighborhood.”",
+      "expectedIt": "Abbiamo un’idea. Una festa piccola, sabato, per il quartiere.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Abbiamo un’idea. Una festa piccola, sabato, per il quartiere."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-30",
+    "chapterNumber": 30,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“I like it. But the owner must say yes.”",
+      "expectedIt": "Mi piace. Ma il padrone deve dire sì.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“I like it. But the owner must say yes.”",
+      "expectedIt": "Mi piace. Ma il padrone deve dire sì.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Mi piace. Ma il padrone deve dire sì."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-30",
+    "chapterNumber": 30,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“All right. Let’s try. Saturday. If it does not work, I decide after.”",
+      "expectedIt": "Va bene. Proviamo. Sabato. Se non funziona, io decido dopo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“All right. Let’s try. Saturday. If it does not work, I decide after.”",
+      "expectedIt": "Va bene. Proviamo. Sabato. Se non funziona, io decido dopo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Va bene. Proviamo. Sabato. Se non funziona, io decido dopo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-30",
+    "chapterNumber": 30,
+    "level": "A2",
+    "authored": {
+      "promptEn": "“We have a plan. We don’t know if it works.”",
+      "expectedIt": "Abbiamo un piano. Non sappiamo se funziona.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "“We have a plan. We don’t know if it works.”",
+      "expectedIt": "Abbiamo un piano. Non sappiamo se funziona.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Abbiamo un piano. Non sappiamo se funziona."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-31",
+    "chapterNumber": 31,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I stay at the door and say good morning to whoever comes in.",
+      "expectedIt": "Io resto alla porta e dico buongiorno a chi entra.",
+      "acceptable": [
+        "Io resto alla porta e dico buongiorno.",
+        "Sto alla porta e dico buongiorno."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I stay at the door and say good morning to whoever comes in.",
+      "expectedIt": "Io resto alla porta e dico buongiorno a chi entra.",
+      "acceptable": [
+        "Io resto alla porta e dico buongiorno.",
+        "Sto alla porta e dico buongiorno."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Io resto alla porta e dico buongiorno a chi entra."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-31",
+    "chapterNumber": 31,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Saturday there is coffee, bread, and friends. It costs little.",
+      "expectedIt": "Sabato c’è caffè, pane e amici. Costa poco.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Saturday there is coffee, bread, and friends. It costs little.",
+      "expectedIt": "Sabato c’è caffè, pane e amici. Costa poco.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Sabato c’è caffè, pane e amici. Costa poco."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-31",
+    "chapterNumber": 31,
+    "level": "A2",
+    "authored": {
+      "promptEn": "If people come, we must be ready.",
+      "expectedIt": "Se la gente viene, dobbiamo essere pronti.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "If people come, we must be ready.",
+      "expectedIt": "Se la gente viene, dobbiamo essere pronti.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Se la gente viene, dobbiamo essere pronti."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-31",
+    "chapterNumber": 31,
+    "level": "A2",
+    "authored": {
+      "promptEn": "The plan helps. It does not close the problem.",
+      "expectedIt": "Il piano aiuta. Non chiude il problema.",
+      "acceptable": [
+        "Dobbiamo fare un piano.",
+        "Abbiamo bisogno di un piano."
+      ]
+    },
+    "runtime": {
+      "promptEn": "The plan helps. It does not close the problem.",
+      "expectedIt": "Il piano aiuta. Non chiude il problema.",
+      "acceptable": [
+        "Dobbiamo fare un piano.",
+        "Abbiamo bisogno di un piano."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Il piano aiuta. Non chiude il problema."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-32",
+    "chapterNumber": 32,
+    "level": "A2",
+    "authored": {
+      "promptEn": "If few people come, the owner sees an empty room.",
+      "expectedIt": "Se viene poca gente, il padrone vede una sala vuota.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "If few people come, the owner sees an empty room.",
+      "expectedIt": "Se viene poca gente, il padrone vede una sala vuota.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Se viene poca gente, il padrone vede una sala vuota."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-32",
+    "chapterNumber": 32,
+    "level": "A2",
+    "authored": {
+      "promptEn": "But the café must work every day.",
+      "expectedIt": "Ma il caffè deve funzionare ogni giorno.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "But the café must work every day.",
+      "expectedIt": "Ma il caffè deve funzionare ogni giorno.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ma il caffè deve funzionare ogni giorno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-32",
+    "chapterNumber": 32,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I work here. If the café closes, I am left without work.",
+      "expectedIt": "Io lavoro qui. Se il caffè chiude, resto senza lavoro.",
+      "acceptable": [
+        "Lavoro qui. Se il caffè chiude, resto senza lavoro."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I work here. If the café closes, I am left without work.",
+      "expectedIt": "Io lavoro qui. Se il caffè chiude, resto senza lavoro.",
+      "acceptable": [
+        "Lavoro qui. Se il caffè chiude, resto senza lavoro."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Io lavoro qui. Se il caffè chiude, resto senza lavoro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-32",
+    "chapterNumber": 32,
+    "level": "A2",
+    "authored": {
+      "promptEn": "We have a plan. We are not sure.",
+      "expectedIt": "Abbiamo un piano. Non siamo sicuri.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "We have a plan. We are not sure.",
+      "expectedIt": "Abbiamo un piano. Non siamo sicuri.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Abbiamo un piano. Non siamo sicuri."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-33",
+    "chapterNumber": 33,
+    "level": "A2",
+    "authored": {
+      "promptEn": "But Marco was not there.",
+      "expectedIt": "Ma Marco non c’era.",
+      "acceptable": [
+        "Marco non c’era.",
+        "Lui non c’era."
+      ]
+    },
+    "runtime": {
+      "promptEn": "But Marco was not there.",
+      "expectedIt": "Ma Marco non c’era.",
+      "acceptable": [
+        "Marco non c’era.",
+        "Lui non c’era."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Ma Marco non c’era."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-33",
+    "chapterNumber": 33,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Sorry. There was a person about a job. I had to talk.",
+      "expectedIt": "Scusa. C’era una persona per un lavoro. Dovevo parlare.",
+      "acceptable": [
+        "C'era una persona per un lavoro. Dovevo parlare."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Sorry. There was a person about a job. I had to talk.",
+      "expectedIt": "Scusa. C’era una persona per un lavoro. Dovevo parlare.",
+      "acceptable": [
+        "C'era una persona per un lavoro. Dovevo parlare."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Scusa. C’era una persona per un lavoro. Dovevo parlare."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-33",
+    "chapterNumber": 33,
+    "level": "A2",
+    "authored": {
+      "promptEn": "You’re right. I thought about work and money.",
+      "expectedIt": "Hai ragione. Ho pensato al lavoro e ai soldi.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "You’re right. I thought about work and money.",
+      "expectedIt": "Hai ragione. Ho pensato al lavoro e ai soldi.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Hai ragione. Ho pensato al lavoro e ai soldi."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-33",
+    "chapterNumber": 33,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Tomorrow we see. Today we know the problem.",
+      "expectedIt": "Domani vediamo. Oggi sappiamo il problema.",
+      "acceptable": [
+        "Vediamo domani.",
+        "Domani lo vediamo."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Tomorrow we see. Today we know the problem.",
+      "expectedIt": "Domani vediamo. Oggi sappiamo il problema.",
+      "acceptable": [
+        "Vediamo domani.",
+        "Domani lo vediamo."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Domani vediamo. Oggi sappiamo il problema."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-34",
+    "chapterNumber": 34,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Good morning. Today we work more. We must be ready.",
+      "expectedIt": "Buongiorno. Oggi lavoriamo di più. Dobbiamo essere pronti.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Good morning. Today we work more. We must be ready.",
+      "expectedIt": "Buongiorno. Oggi lavoriamo di più. Dobbiamo essere pronti.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Buongiorno. Oggi lavoriamo di più. Dobbiamo essere pronti."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-34",
+    "chapterNumber": 34,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Then we prepare anyway. If they come, we are ready.",
+      "expectedIt": "Allora prepariamo lo stesso. Se vengono, siamo pronti.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Then we prepare anyway. If they come, we are ready.",
+      "expectedIt": "Allora prepariamo lo stesso. Se vengono, siamo pronti.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Allora prepariamo lo stesso. Se vengono, siamo pronti."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-34",
+    "chapterNumber": 34,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I stay at the door. When people arrive, I say good morning.",
+      "expectedIt": "Io resto alla porta. Quando arriva gente, dico buongiorno.",
+      "acceptable": [
+        "Resto alla porta. Quando arriva gente, dico buongiorno."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I stay at the door. When people arrive, I say good morning.",
+      "expectedIt": "Io resto alla porta. Quando arriva gente, dico buongiorno.",
+      "acceptable": [
+        "Resto alla porta. Quando arriva gente, dico buongiorno."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Io resto alla porta. Quando arriva gente, dico buongiorno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-34",
+    "chapterNumber": 34,
+    "level": "A2",
+    "authored": {
+      "promptEn": "We did our work. Now we wait for the people.",
+      "expectedIt": "Abbiamo fatto il nostro lavoro. Adesso aspettiamo le persone.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "We did our work. Now we wait for the people.",
+      "expectedIt": "Abbiamo fatto il nostro lavoro. Adesso aspettiamo le persone.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Abbiamo fatto il nostro lavoro. Adesso aspettiamo le persone."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-35",
+    "chapterNumber": 35,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Maybe nobody is coming.",
+      "expectedIt": "Forse non viene nessuno.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Maybe nobody is coming.",
+      "expectedIt": "Forse non viene nessuno.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Forse non viene nessuno."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-35",
+    "chapterNumber": 35,
+    "level": "A2",
+    "authored": {
+      "promptEn": "So, we are here. Where is the coffee? And the bread?",
+      "expectedIt": "Allora, siamo qui. Dov’è il caffè? E il pane?",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "So, we are here. Where is the coffee? And the bread?",
+      "expectedIt": "Allora, siamo qui. Dov’è il caffè? E il pane?",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Allora, siamo qui. Dov’è il caffè? E il pane?"
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-35",
+    "chapterNumber": 35,
+    "level": "A2",
+    "authored": {
+      "promptEn": "So many people. I had not seen this in a long time.",
+      "expectedIt": "Tanta gente. Non lo vedevo da tanto tempo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "So many people. I had not seen this in a long time.",
+      "expectedIt": "Tanta gente. Non lo vedevo da tanto tempo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Tanta gente. Non lo vedevo da tanto tempo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-35",
+    "chapterNumber": 35,
+    "level": "A2",
+    "authored": {
+      "promptEn": "All right. I stay.",
+      "expectedIt": "Va bene. Resto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "All right. I stay.",
+      "expectedIt": "Va bene. Resto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Va bene. Resto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-36",
+    "chapterNumber": 36,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Me? I don’t know. I am afraid.",
+      "expectedIt": "Io? Non so. Ho paura.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Me? I don’t know. I am afraid.",
+      "expectedIt": "Io? Non so. Ho paura.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Io? Non so. Ho paura."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-36",
+    "chapterNumber": 36,
+    "level": "A2",
+    "authored": {
+      "promptEn": "If you like it, come back. Not only today. Also Monday, also Thursday.",
+      "expectedIt": "Se vi piace, tornate. Non solo oggi. Anche lunedì, anche giovedì.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "If you like it, come back. Not only today. Also Monday, also Thursday.",
+      "expectedIt": "Se vi piace, tornate. Non solo oggi. Anche lunedì, anche giovedì.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Se vi piace, tornate. Non solo oggi. Anche lunedì, anche giovedì."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-36",
+    "chapterNumber": 36,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Today the café worked. I saw the tables. I saw the people.",
+      "expectedIt": "Oggi il caffè ha funzionato. Ho visto i tavoli. Ho visto le persone.",
+      "acceptable": [
+        "Oggi il caffè ha funzionato e ho visto le persone."
+      ]
+    },
+    "runtime": {
+      "promptEn": "Today the café worked. I saw the tables. I saw the people.",
+      "expectedIt": "Oggi il caffè ha funzionato. Ho visto i tavoli. Ho visto le persone.",
+      "acceptable": [
+        "Oggi il caffè ha funzionato e ho visto le persone."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Oggi il caffè ha funzionato. Ho visto i tavoli. Ho visto le persone."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-36",
+    "chapterNumber": 36,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Today is enough. Tomorrow is Monday. We work.",
+      "expectedIt": "Oggi è abbastanza. Domani è lunedì. Lavoriamo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Today is enough. Tomorrow is Monday. We work.",
+      "expectedIt": "Oggi è abbastanza. Domani è lunedì. Lavoriamo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Oggi è abbastanza. Domani è lunedì. Lavoriamo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-37",
+    "chapterNumber": 37,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Good morning. See? Someone came back.",
+      "expectedIt": "Buongiorno. Vedi? Qualcuno è tornato.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Good morning. See? Someone came back.",
+      "expectedIt": "Buongiorno. Vedi? Qualcuno è tornato.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Buongiorno. Vedi? Qualcuno è tornato."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-37",
+    "chapterNumber": 37,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I’m not selling. Not now. The café stays. At least this month, and the next.",
+      "expectedIt": "Non vendo. Non adesso. Il caffè resta. Almeno questo mese, e il prossimo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I’m not selling. Not now. The café stays. At least this month, and the next.",
+      "expectedIt": "Non vendo. Non adesso. Il caffè resta. Almeno questo mese, e il prossimo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Non vendo. Non adesso. Il caffè resta. Almeno questo mese, e il prossimo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-37",
+    "chapterNumber": 37,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Yes. I accept. I need the pay, and I like this place.",
+      "expectedIt": "Sì. Accetto. Ho bisogno dello stipendio, e mi piace questo posto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Yes. I accept. I need the pay, and I like this place.",
+      "expectedIt": "Sì. Accetto. Ho bisogno dello stipendio, e mi piace questo posto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Sì. Accetto. Ho bisogno dello stipendio, e mi piace questo posto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-37",
+    "chapterNumber": 37,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Clear. It is not forever. It is for now.",
+      "expectedIt": "Chiaro. Non è per sempre. È per adesso.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Clear. It is not forever. It is for now.",
+      "expectedIt": "Chiaro. Non è per sempre. È per adesso.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Chiaro. Non è per sempre. È per adesso."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-38",
+    "chapterNumber": 38,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Yes. I have more money. This month’s rent is safer.",
+      "expectedIt": "Sì. Ho più soldi. L’affitto di questo mese è più sicuro.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Yes. I have more money. This month’s rent is safer.",
+      "expectedIt": "Sì. Ho più soldi. L’affitto di questo mese è più sicuro.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Sì. Ho più soldi. L’affitto di questo mese è più sicuro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-38",
+    "chapterNumber": 38,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I want to stay in Rome. I want to work. But I don’t want only work.",
+      "expectedIt": "Voglio restare a Roma. Voglio lavorare. Ma non voglio solo il lavoro.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I want to stay in Rome. I want to work. But I don’t want only work.",
+      "expectedIt": "Voglio restare a Roma. Voglio lavorare. Ma non voglio solo il lavoro.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Voglio restare a Roma. Voglio lavorare. Ma non voglio solo il lavoro."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-38",
+    "chapterNumber": 38,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I want time for friends and for home.",
+      "expectedIt": "Voglio tempo per gli amici e per la casa.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I want time for friends and for home.",
+      "expectedIt": "Voglio tempo per gli amici e per la casa.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Voglio tempo per gli amici e per la casa."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-38",
+    "chapterNumber": 38,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Tomorrow I talk with the owner. I ask for more hours, but not all.",
+      "expectedIt": "Domani parlo con il padrone. Chiedo più ore, ma non tutte.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Tomorrow I talk with the owner. I ask for more hours, but not all.",
+      "expectedIt": "Domani parlo con il padrone. Chiedo più ore, ma non tutte.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Domani parlo con il padrone. Chiedo più ore, ma non tutte."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-39",
+    "chapterNumber": 39,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I want more hours, but not all. Monday and Wednesday evenings I want free time.",
+      "expectedIt": "Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I want more hours, but not all. Monday and Wednesday evenings I want free time.",
+      "expectedIt": "Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Voglio più ore, ma non tutte. Lunedì e mercoledì sera voglio tempo libero."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-39",
+    "chapterNumber": 39,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I'm looking for work. I haven't found a job. But on Saturday I saw that help is needed. I can help here.",
+      "expectedIt": "Cerco lavoro. Non ho trovato un lavoro. Ma al sabato ho visto che serve aiuto. Posso aiutare qui.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I'm looking for work. I haven't found a job. But on Saturday I saw that help is needed. I can help here.",
+      "expectedIt": "Cerco lavoro. Non ho trovato un lavoro. Ma al sabato ho visto che serve aiuto. Posso aiutare qui.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Cerco lavoro. Non ho trovato un lavoro. Ma al sabato ho visto che serve aiuto. Posso aiutare qui."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-39",
+    "chapterNumber": 39,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I want to. Thanks. For me it’s already a start.",
+      "expectedIt": "Voglio. Grazie. Per me è già un inizio.",
+      "acceptable": [
+        "Voglio questo lavoro. Grazie."
+      ]
+    },
+    "runtime": {
+      "promptEn": "I want to. Thanks. For me it’s already a start.",
+      "expectedIt": "Voglio. Grazie. Per me è già un inizio.",
+      "acceptable": [
+        "Voglio questo lavoro. Grazie."
+      ]
+    },
+    "sourceSentence": {
+      "text": "Voglio. Grazie. Per me è già un inizio."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-39",
+    "chapterNumber": 39,
+    "level": "A2",
+    "authored": {
+      "promptEn": "The café is staying. Marco helps. Luca has a clear schedule. I organize.",
+      "expectedIt": "Il caffè resta. Marco aiuta. Luca ha un orario chiaro. Io organizzo.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "The café is staying. Marco helps. Luca has a clear schedule. I organize.",
+      "expectedIt": "Il caffè resta. Marco aiuta. Luca ha un orario chiaro. Io organizzo.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Il caffè resta. Marco aiuta. Luca ha un orario chiaro. Io organizzo."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-40",
+    "chapterNumber": 40,
+    "level": "A2",
+    "authored": {
+      "promptEn": "For now I stay in Rome. This work, this home, these people.",
+      "expectedIt": "Per adesso resto a Roma. Questo lavoro, questa casa, queste persone.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "For now I stay in Rome. This work, this home, these people.",
+      "expectedIt": "Per adesso resto a Roma. Questo lavoro, questa casa, queste persone.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Per adesso resto a Roma. Questo lavoro, questa casa, queste persone."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-40",
+    "chapterNumber": 40,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Thanks. The proposal is good. But for now I stay here. I’m not leaving.",
+      "expectedIt": "Grazie. La proposta è buona. Ma per adesso resto qui. Non parto.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Thanks. The proposal is good. But for now I stay here. I’m not leaving.",
+      "expectedIt": "Grazie. La proposta è buona. Ma per adesso resto qui. Non parto.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Grazie. La proposta è buona. Ma per adesso resto qui. Non parto."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-40",
+    "chapterNumber": 40,
+    "level": "A2",
+    "authored": {
+      "promptEn": "I said no. For now I stay. The schedule here works for me.",
+      "expectedIt": "Ho detto no. Per adesso resto. L’orario qui mi va bene.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "I said no. For now I stay. The schedule here works for me.",
+      "expectedIt": "Ho detto no. Per adesso resto. L’orario qui mi va bene.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Ho detto no. Per adesso resto. L’orario qui mi va bene."
+    }
+  },
+  {
+    "chapterId": "luca-a-roma-40",
+    "chapterNumber": 40,
+    "level": "A2",
+    "authored": {
+      "promptEn": "Today we work. Tomorrow too. This is the job, for now.",
+      "expectedIt": "Oggi lavoriamo. Domani anche. Questo è il lavoro, per adesso.",
+      "acceptable": []
+    },
+    "runtime": {
+      "promptEn": "Today we work. Tomorrow too. This is the job, for now.",
+      "expectedIt": "Oggi lavoriamo. Domani anche. Questo è il lavoro, per adesso.",
+      "acceptable": []
+    },
+    "sourceSentence": {
+      "text": "Oggi lavoriamo. Domani anche. Questo è il lavoro, per adesso."
+    }
+  }
+]

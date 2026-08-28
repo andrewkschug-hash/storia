@@ -29,6 +29,9 @@ function batchMilestoneDetail(
   if (storyId === LUCA_STORY_ID && chapterNumber === 20) {
     steps.push('choose what to read next');
   }
+  if (storyId === LUCA_STORY_ID && chapterNumber === 40) {
+    steps.push('A2 → B1 readiness check');
+  }
   const tail = nextChapterNumber ? `Chapter ${nextChapterNumber}` : 'home';
   return `Next: ${steps.join(', ')}, then ${tail}.`;
 }

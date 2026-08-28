@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background Circle / Rounded Container (Warm Ivory) -->
+  <circle cx="256" cy="256" r="256" fill="#F7F5F0"/>
+
+  <g transform="translate(0, 0)">
+    <!-- Left Book Leaf Outline / Fill -->
+    <path d="M192 110 L246 142 V240 L192 208 Z" fill="#F0EAE1" stroke="#C97858" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M152 134 V226 L192 208 V110 Z" fill="#E5DCCE" stroke="#C97858" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- Right Book Leaf Outline / Fill -->
+    <path d="M320 110 L266 142 V240 L320 208 Z" fill="#FDFBF7" stroke="#C97858" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M360 134 V226 L320 208 V110 Z" fill="#EFE8DC" stroke="#C97858" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- Book Spine Center Guide -->
+    <line x1="256" y1="148" x2="256" y2="242" stroke="#B65F45" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Interlocking Terracotta 'S' Ribbon -->
+    <path d="M154 180 C 130 220 160 270 230 300 C 300 330 340 360 320 405 C 300 445 230 445 190 415" 
+          fill="none" 
+          stroke="#C97858" 
+          stroke-width="28" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+
+    <!-- Slate Charcoal Speech / Dialogue Arc & Shadow -->
+    <path d="M256 244 C 330 275 365 315 352 365 C 335 430 240 455 178 410 L 148 438 L 158 385 C 140 355 146 315 180 278" 
+          fill="none" 
+          stroke="#252525" 
+          stroke-width="20" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+</svg>

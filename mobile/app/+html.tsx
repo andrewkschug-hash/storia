@@ -1,6 +1,29 @@
 import { ScrollViewStyleReset } from 'expo-router/html';
 import type { ReactNode } from 'react';
 
+const SITE_TITLE = 'Storibase — Learn Languages Through Stories';
+const SITE_DESCRIPTION =
+  'Learn languages naturally by living inside compelling stories. Build vocabulary and comprehension chapter by chapter with native audio and interactive reading.';
+const SITE_URL = 'https://www.storibase.com';
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Storibase',
+  alternateName: ['Storibase App'],
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  inLanguage: 'en',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Storibase',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/favicon.png`,
+    },
+  },
+});
+
 // This file is web-only and used to configure the root HTML for every
 // web page during static rendering.
 // The contents of this function only run in Node.js environments and
@@ -18,11 +41,36 @@ export default function Root({ children }: { children: ReactNode }) {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Storibase" />
-        <title>Storibase — Learn Italian through stories</title>
-        <meta
-          name="description"
-          content="Storibase is a story-driven Italian reading app. Learn through progressive chapters, not flashcards-first drills."
+        <meta name="application-name" content="Storibase" />
+        <title>{SITE_TITLE}</title>
+        <meta name="description" content={SITE_DESCRIPTION} />
+        <link rel="canonical" href={SITE_URL} />
+
+        {/* Favicon & Google Site Icons */}
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Storibase" />
+        <meta property="og:title" content={SITE_TITLE} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:image" content={`${SITE_URL}/favicon.png`} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@storibase" />
+        <meta name="twitter:title" content={SITE_TITLE} />
+        <meta name="twitter:description" content={SITE_DESCRIPTION} />
+        <meta name="twitter:image" content={`${SITE_URL}/favicon.png`} />
+
+        {/* Structured Data for Search Engines */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
         />
+
         <meta name="theme-color" content="#F3F6F7" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#0F1614" media="(prefers-color-scheme: dark)" />
 

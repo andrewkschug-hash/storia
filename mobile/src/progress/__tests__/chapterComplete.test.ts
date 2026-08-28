@@ -31,6 +31,7 @@ describe('chapter complete copy', () => {
 
   it('still routes batch-end learners through milestones when the story ends', () => {
     expect(chapterCompleteView(40, null).detail).toContain('retell "Luca Chooses Rome"');
+    expect(chapterCompleteView(40, null).detail).toContain('A2 → B1 readiness check');
     expect(chapterCompleteView(40, null).detail).toContain('then home');
   });
 

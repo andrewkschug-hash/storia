@@ -95,3 +95,21 @@ export {
   type B1LongitudinalEvidence,
   type A2ToB1ReadinessEvaluation,
 } from '@/src/cefr/b1Readiness';
+export {
+  A2_B1_READINESS_ASSESSMENT,
+  type A2ReadinessAssessmentData,
+  type A2ReadinessChoiceQuestion,
+  type A2ReadinessDomain,
+  type A2ReadinessProductionQuestion,
+  type A2ReadinessQuestion,
+} from '@/src/cefr/a2ReadinessAssessment';
+export {
+  evaluateA2Readiness,
+  scoreMultipleChoice,
+  scoreProduction,
+  type A2DomainResult,
+  type A2LearnerAnswer,
+  type A2QuestionResult,
+  type A2ReadinessEvaluation,
+} from '@/src/cefr/a2ReadinessService';
+

@@ -346,6 +346,44 @@ export const ProductionExercisesFileSchema = z.object({
   exercises: z.array(ProductionExerciseSchema).min(1),
 });
 
+export const SpeakSceneIntentSchema = z.enum([
+  'ask_for_information',
+  'offer_help',
+  'propose',
+  'agree',
+  'disagree',
+  'explain_problem',
+  'express_concern',
+  'invite',
+  'respond',
+  'say_goodbye',
+  'greeting',
+  'express_feeling',
+]);
+
+export type SpeakSceneIntent = z.infer<typeof SpeakSceneIntentSchema>;
+
+export const SpeakSceneTurnLearnerSchema = z.object({
+  role: z.string().min(1).default('Luca'),
+  objectiveEn: z.string().min(1),
+  intent: z.string().min(1),
+  hintKeywords: z.array(z.string()).optional(),
+  hintScaffold: z.string().optional(),
+  targetIt: z.string().min(1),
+  acceptableAnswers: z.array(z.string()).optional(),
+  semantic: ProductionSemanticSchema.optional(),
+});
+
+export const SpeakSceneTurnSchema = z.object({
+  id: z.string().min(1),
+  speakerId: z.string().min(1),
+  speakerName: z.string().min(1),
+  it: z.string().min(1),
+  en: z.string().min(1),
+  audioId: z.string().optional(),
+  learnerTurn: SpeakSceneTurnLearnerSchema.optional(),
+});
+
 /** English retell scene attached to a story milestone — not a separate story. */
 export const SpeakSceneLineSchema = z.object({
   id: z.string().min(1),
@@ -363,17 +401,28 @@ export const SpeakSceneSchema = z.object({
   batchEnd: z.number().int().positive(),
   title: z.string().min(1),
   summaryEn: z.string().min(1),
+  setting: z.string().optional(),
+  characterIds: z.array(z.string()).optional(),
   sourceRange: z.object({
     start: z.number().int().positive(),
     end: z.number().int().positive(),
   }),
-  lines: z.array(SpeakSceneLineSchema).min(1),
+  turns: z.array(SpeakSceneTurnSchema).optional(),
+  lines: z.array(SpeakSceneLineSchema).optional(),
+}).refine((data) => (data.turns && data.turns.length > 0) || (data.lines && data.lines.length > 0), {
+  message: 'SpeakScene must have either turns or lines',
 });
 
 export const SpeakScenesFileSchema = z.object({
   storyId: z.string().min(1),
   scenes: z.array(SpeakSceneSchema).min(1),
 });
+
+export type SpeakSceneTurn = z.infer<typeof SpeakSceneTurnSchema>;
+export type SpeakSceneTurnLearner = z.infer<typeof SpeakSceneTurnLearnerSchema>;
+export type SpeakSceneLine = z.infer<typeof SpeakSceneLineSchema>;
+export type SpeakScene = z.infer<typeof SpeakSceneSchema>;
+
 
 export type Character = z.infer<typeof CharacterSchema>;
 export type Location = z.infer<typeof LocationSchema>;
@@ -397,8 +446,6 @@ export type ProductionPolarity = z.infer<typeof ProductionPolaritySchema>;
 export type ProductionSemantic = z.infer<typeof ProductionSemanticSchema>;
 export type ProductionExercise = z.infer<typeof ProductionExerciseSchema>;
 export type ProductionExercisesFile = z.infer<typeof ProductionExercisesFileSchema>;
-export type SpeakSceneLine = z.infer<typeof SpeakSceneLineSchema>;
-export type SpeakScene = z.infer<typeof SpeakSceneSchema>;
 export type SpeakScenesFile = z.infer<typeof SpeakScenesFileSchema>;
 export type StoryAvailability = z.infer<typeof StoryAvailabilitySchema>;
 export type NarrativeArcCatalog = z.infer<typeof NarrativeArcCatalogSchema>;

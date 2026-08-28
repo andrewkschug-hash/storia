@@ -12,131 +12,162 @@
       "batchEnd": 15,
       "title": "Help Marco",
       "summaryEn": "Marco is back at the café. His mother is not well. He needs to go to her house, but he doesn't have money for a ticket.",
+      "setting": "lavoro-caffe",
+      "characterIds": [
+        "sofia",
+        "luca"
+      ],
       "sourceRange": {
         "start": 11,
         "end": 15
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-15-l01",
-          "en": "Marco comes back to the café.",
-          "it": "Marco torna al caffè.",
-          "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s01",
-          "acceptableAnswers": [
-            "Marco torna al caffe.",
-            "Torna al caffè."
-          ],
-          "semantic": {
-            "requiredConcepts": [
-              "torna"
+          "id": "luca-a-roma-speak-15-t01",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Luca, Marco è tornato al caffè. Ha un problema serio.",
+          "en": "Luca, Marco is back at the café. He has a serious problem.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Ask Sofia what is wrong.",
+            "intent": "ask_for_information",
+            "hintKeywords": [
+              "cosa",
+              "c'è"
             ],
-            "conceptAliases": {
-              "torna": [
-                "torna"
-              ]
-            },
-            "requiredPerson": [
-              "3sg"
+            "hintScaffold": "Cosa ______ ?",
+            "targetIt": "Cosa c'è?",
+            "acceptableAnswers": [
+              "Che cosa c'è?",
+              "Cosa succede?",
+              "Che cosa succede?",
+              "Qual è il problema?"
             ],
-            "requiredTense": "present",
-            "requiredPolarity": "affirmative"
+            "semantic": {
+              "requiredConcepts": [
+                "cosa"
+              ],
+              "requiredPerson": [
+                "3sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
           }
         },
         {
-          "id": "luca-a-roma-speak-15-l02",
-          "en": "He has a problem.",
-          "it": "Ha un problema.",
-          "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s03",
-          "acceptableAnswers": [
-            "Marco ha un problema.",
-            "Lui ha un problema."
-          ],
-          "semantic": {
-            "requiredConcepts": [
-              "problema"
+          "id": "luca-a-roma-speak-15-t02",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Sua mamma sta male e deve andare da lei, ma non ha soldi per il biglietto.",
+          "en": "His mom is unwell and he has to go to her, but he doesn't have money for the ticket.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Tell Sofia that we can help.",
+            "intent": "offer_help",
+            "hintKeywords": [
+              "potere",
+              "aiutare"
             ],
-            "requiredPerson": [
-              "3sg"
+            "hintScaffold": "Possiamo ______ .",
+            "targetIt": "Possiamo aiutare.",
+            "acceptableAnswers": [
+              "Possiamo aiutare Marco.",
+              "Io posso aiutare.",
+              "Possiamo dare una mano.",
+              "Possiamo aiutare noi."
             ],
-            "requiredTense": "present",
-            "requiredPolarity": "affirmative"
+            "semantic": {
+              "requiredConcepts": [
+                "aiutare"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
           }
         },
         {
-          "id": "luca-a-roma-speak-15-l03",
-          "en": "He has to go to his mother's house.",
-          "it": "Deve andare a casa di mamma.",
-          "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s08",
-          "acceptableAnswers": [
-            "Marco deve andare a casa di mamma.",
-            "Deve andare a casa di mamma.",
-            "Lui deve andare a casa di mamma.",
-            "Deve andare a casa."
-          ],
-          "semantic": {
-            "requiredConcepts": [
-              "casa"
-            ],
-            "requiredPerson": [
-              "3sg"
-            ],
-            "requiredTense": "present",
-            "requiredPolarity": "affirmative"
-          }
-        },
-        {
-          "id": "luca-a-roma-speak-15-l04",
-          "en": "He has to buy a ticket.",
-          "it": "Deve comprare un biglietto.",
-          "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s09",
-          "acceptableAnswers": [
-            "Marco deve comprare un biglietto.",
-            "Deve comprare un biglietto.",
-            "Lui deve comprare un biglietto."
-          ],
-          "semantic": {
-            "requiredConcepts": [
+          "id": "luca-a-roma-speak-15-t03",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Come possiamo aiutare? Il biglietto costa venti euro.",
+          "en": "How can we help? The ticket costs twenty euros.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Say that you want to buy the ticket.",
+            "intent": "propose",
+            "hintKeywords": [
+              "volere",
+              "comprare",
               "biglietto"
             ],
-            "requiredPerson": [
-              "3sg"
+            "hintScaffold": "Voglio ______ il biglietto.",
+            "targetIt": "Voglio comprare il biglietto.",
+            "acceptableAnswers": [
+              "Voglio comprare un biglietto.",
+              "Io voglio comprare il biglietto.",
+              "Compro io il biglietto.",
+              "Posso comprare il biglietto.",
+              "Voglio comprare il biglietto per Marco."
             ],
-            "requiredTense": "present",
-            "requiredPolarity": "affirmative"
+            "semantic": {
+              "requiredConcepts": [
+                "comprare",
+                "biglietto"
+              ],
+              "conceptAliases": {
+                "comprare": [
+                  "comprare",
+                  "compro",
+                  "compra",
+                  "pagare",
+                  "pago"
+                ]
+              },
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
           }
         },
         {
-          "id": "luca-a-roma-speak-15-l05",
-          "en": "He doesn't have any money.",
-          "it": "Non ha soldi.",
-          "sourceChapterId": "luca-a-roma-12",
-          "sourceSentenceId": "s10",
-          "acceptableAnswers": [
-            "Non ha i soldi.",
-            "Marco non ha soldi.",
-            "Marco non ha i soldi.",
-            "Lui non ha soldi.",
-            "Non ha denaro."
-          ],
-          "semantic": {
-            "requiredConcepts": [
-              "soldi"
+          "id": "luca-a-roma-speak-15-t04",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Grazie Luca! Andiamo insieme da Nonna Rosa a parlare?",
+          "en": "Thank you, Luca! Shall we go together to Nonna Rosa to talk?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Agree and say let's go together.",
+            "intent": "agree",
+            "hintKeywords": [
+              "andare",
+              "insieme"
             ],
-            "conceptAliases": {
-              "soldi": [
-                "soldi",
-                "denaro"
-              ]
-            },
-            "requiredPerson": [
-              "3sg"
+            "hintScaffold": "Sì, andiamo ______ .",
+            "targetIt": "Sì, andiamo insieme.",
+            "acceptableAnswers": [
+              "Andiamo insieme.",
+              "Va bene, andiamo insieme.",
+              "Sì, va bene.",
+              "Andiamo da Nonna Rosa insieme."
             ],
-            "requiredTense": "present",
-            "requiredPolarity": "negative"
+            "semantic": {
+              "requiredConcepts": [
+                "insieme"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
           }
         }
       ]
@@ -147,67 +178,159 @@
       "batchEnd": 20,
       "title": "Back in Rome",
       "summaryEn": "The trip is over. The friends come back to Rome, and Luca sees the life he has built there.",
+      "setting": "stazione",
+      "characterIds": [
+        "marco",
+        "sofia",
+        "luca"
+      ],
       "sourceRange": {
         "start": 16,
         "end": 20
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-20-l01",
-          "en": "Then the group goes back to Rome.",
-          "it": "Poi il gruppo torna a Roma.",
-          "sourceChapterId": "luca-a-roma-20",
-          "sourceSentenceId": "s01",
-          "acceptableAnswers": [
-            "Il gruppo torna a Roma.",
-            "Poi tornano a Roma.",
-            "Tornano a Roma.",
-            "Poi il gruppo torna a Roma."
-          ]
+          "id": "luca-a-roma-speak-20-t01",
+          "speakerId": "marco",
+          "speakerName": "Marco",
+          "it": "Siamo tornati a Roma! Grazie di tutto, amici miei. Senza di voi non potevo partire.",
+          "en": "We're back in Rome! Thanks for everything, my friends. Without you I couldn't leave.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Tell Marco you were happy to help and ask how his mom is doing.",
+            "intent": "ask_for_information",
+            "hintKeywords": [
+              "felice",
+              "aiutare",
+              "mamma"
+            ],
+            "hintScaffold": "Siamo felici di aiutare! Come sta tua ______ ?",
+            "targetIt": "Siamo felici di aiutare! Come sta tua mamma?",
+            "acceptableAnswers": [
+              "Come sta tua mamma?",
+              "Siamo felici di aiutare.",
+              "Felice di aiutarti! Come sta tua mamma?",
+              "È stato un piacere aiutare. Come sta tua mamma?"
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "mamma"
+              ],
+              "requiredPerson": [
+                "3sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-20-l02",
-          "en": "They arrive at the station.",
-          "it": "Arrivano alla stazione.",
-          "sourceChapterId": "luca-a-roma-20",
-          "sourceSentenceId": "s02",
-          "acceptableAnswers": [
-            "Il gruppo arriva alla stazione.",
-            "Arrivano alla stazione."
-          ]
+          "id": "luca-a-roma-speak-20-t02",
+          "speakerId": "marco",
+          "speakerName": "Marco",
+          "it": "Sta molto meglio adesso, grazie al vostro aiuto! Ora devo tornare al lavoro.",
+          "en": "She is doing much better now, thanks to your help! Now I must get back to work.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Propose having a coffee together first before going back.",
+            "intent": "propose",
+            "hintKeywords": [
+              "prendere",
+              "caffè",
+              "insieme"
+            ],
+            "hintScaffold": "Prendiamo un ______ insieme prima?",
+            "targetIt": "Prendiamo un caffè insieme?",
+            "acceptableAnswers": [
+              "Prendiamo un caffè insieme.",
+              "Andiamo a prendere un caffè insieme.",
+              "Prendiamo un caffè prima?",
+              "Beviamo un caffè insieme."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "caffè",
+                "insieme"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-20-l03",
-          "en": "Luca is home again.",
-          "it": "Luca è a casa.",
-          "sourceChapterId": "luca-a-roma-20",
-          "sourceSentenceId": "s04",
-          "acceptableAnswers": [
-            "Luca è a casa.",
-            "È a casa."
-          ]
+          "id": "luca-a-roma-speak-20-t03",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Che bella idea! Luca, ti ricordi il tuo primo giorno a Roma? Eri da solo in piazza.",
+          "en": "What a great idea! Luca, do you remember your first day in Rome? You were all alone in the square.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Say that now you have a home, a job, and friends in Rome.",
+            "intent": "respond",
+            "hintKeywords": [
+              "casa",
+              "lavoro",
+              "amici"
+            ],
+            "hintScaffold": "Ora ho una ______ , un lavoro e amici.",
+            "targetIt": "Ora ho una casa, un lavoro e amici.",
+            "acceptableAnswers": [
+              "Ho una casa, un lavoro e amici.",
+              "Adesso ho una casa, un lavoro e amici a Roma.",
+              "Ho casa, lavoro e amici adesso.",
+              "Sì, ora ho una casa, un lavoro e amici."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "casa",
+                "lavoro",
+                "amici"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-20-l04",
-          "en": "He has a home, a job, and friends in Rome.",
-          "it": "Luca ha una casa, un lavoro e amici.",
-          "sourceChapterId": "luca-a-roma-20",
-          "sourceSentenceId": "s11",
-          "acceptableAnswers": [
-            "Ha una casa, un lavoro e amici.",
-            "Luca ha casa, lavoro e amici."
-          ]
-        },
-        {
-          "id": "luca-a-roma-speak-20-l05",
-          "en": "Luca is happy in Rome.",
-          "it": "Luca è felice a Roma.",
-          "sourceChapterId": "luca-a-roma-20",
-          "sourceSentenceId": "s16",
-          "acceptableAnswers": [
-            "È felice a Roma.",
-            "Luca è felice a Roma."
-          ]
+          "id": "luca-a-roma-speak-20-t04",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "E adesso come ti senti a vivere qui?",
+          "en": "And now how do you feel living here?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Tell Sofia you are happy in Rome and that this is home.",
+            "intent": "express_feeling",
+            "hintKeywords": [
+              "felice",
+              "Roma",
+              "casa"
+            ],
+            "hintScaffold": "Sono felice a Roma, questa è ______ .",
+            "targetIt": "Sono felice a Roma, questa è casa.",
+            "acceptableAnswers": [
+              "Sono felice a Roma.",
+              "Luca è felice a Roma.",
+              "Sono felice qui a Roma.",
+              "Questa è casa adesso, sono felice."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "felice"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         }
       ]
     },
@@ -217,69 +340,158 @@
       "batchEnd": 24,
       "title": "Sunday Call",
       "summaryEn": "On a quiet Sunday, Luca calls his mom and tells her about his life in Rome.",
+      "setting": "appartamento-luca",
+      "characterIds": [
+        "marta",
+        "luca"
+      ],
       "sourceRange": {
         "start": 21,
         "end": 24
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-24-l01",
-          "en": "It's Sunday, so Luca doesn't work.",
-          "it": "Oggi è domenica e Luca non lavora.",
-          "sourceChapterId": "luca-a-roma-24",
-          "sourceSentenceId": "s01",
-          "acceptableAnswers": [
-            "Oggi è domenica e Luca non lavora.",
-            "È domenica e Luca non lavora.",
-            "Luca non lavora oggi."
-          ]
+          "id": "luca-a-roma-speak-24-t01",
+          "speakerId": "marta",
+          "speakerName": "Mamma",
+          "it": "Ciao Luca! Sei a Roma da tre settimane... come stai veramente?",
+          "en": "Hi Luca! You've been in Rome three weeks... how are you really doing?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Reassure Mom that you are fine and doing well in Rome.",
+            "intent": "express_feeling",
+            "hintKeywords": [
+              "bene",
+              "stare",
+              "Roma"
+            ],
+            "hintScaffold": "Bene, grazie. Sto ______ a Roma.",
+            "targetIt": "Bene, grazie. Sto bene a Roma.",
+            "acceptableAnswers": [
+              "Sto bene a Roma.",
+              "Tutto bene, grazie. Sto bene a Roma.",
+              "Bene, grazie. Tutto bene a Roma.",
+              "Sto bene, grazie."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "bene"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-24-l02",
-          "en": "He calls his mom.",
-          "it": "Luca chiama la mamma.",
-          "sourceChapterId": "luca-a-roma-24",
-          "sourceSentenceId": "s06",
-          "acceptableAnswers": [
-            "Luca chiama la mamma.",
-            "Chiama la mamma.",
-            "Luca chiama Mamma."
-          ]
+          "id": "luca-a-roma-speak-24-t02",
+          "speakerId": "marta",
+          "speakerName": "Mamma",
+          "it": "Meno male! Ma hai trovato una vera casa e un lavoro? O hai bisogno di aiuto?",
+          "en": "Thank goodness! But did you find a real home and work? Or do you need help?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Tell Mom you have a home and a job at the café.",
+            "intent": "respond",
+            "hintKeywords": [
+              "casa",
+              "lavoro",
+              "caffè"
+            ],
+            "hintScaffold": "Ho una ______ e un lavoro al caffè.",
+            "targetIt": "Ho una casa e un lavoro al caffè.",
+            "acceptableAnswers": [
+              "Ho una casa e lavoro al caffè.",
+              "Ho una casa e un lavoro.",
+              "Sì, ho una casa e un lavoro al caffè.",
+              "Ho trovato casa e lavoro al caffè."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "casa",
+                "lavoro"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-24-l03",
-          "en": "He tells her he's doing well.",
-          "it": "Bene, grazie. Sto bene a Roma.",
-          "sourceChapterId": "luca-a-roma-24",
-          "sourceSentenceId": "s10",
-          "acceptableAnswers": [
-            "Bene, grazie. Sto bene a Roma.",
-            "Sto bene a Roma.",
-            "Luca sta bene a Roma."
-          ]
+          "id": "luca-a-roma-speak-24-t03",
+          "speakerId": "marta",
+          "speakerName": "Mamma",
+          "it": "Al caffè? E com'è la gente? Non sei da solo in una città così grande?",
+          "en": "At the café? And how are the people? You aren't all alone in such a big city?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Reassure her that you are not alone and have friends like Sofia and Giulia.",
+            "intent": "respond",
+            "hintKeywords": [
+              "solo",
+              "amici",
+              "Sofia"
+            ],
+            "hintScaffold": "Non sono solo, ho ______ come Sofia e Giulia.",
+            "targetIt": "Non sono solo, ho amici come Sofia e Giulia.",
+            "acceptableAnswers": [
+              "Ho amici come Sofia e Giulia.",
+              "Non sono solo, ho amici.",
+              "Non sono solo.",
+              "Sì, ho amici come Sofia e Giulia.",
+              "Ho amici: Sofia, Giulia e Marco."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "amici"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-24-l04",
-          "en": "He tells her about his home, his job, and his friends.",
-          "it": "Ho una casa e un lavoro al caffè. Sì, ho Sofia, Giulia e Marco.",
-          "sourceChapterId": "luca-a-roma-24",
-          "sourceSentenceId": "s11",
-          "acceptableAnswers": [
-            "Ho una casa e un lavoro al caffè.",
-            "Ho Sofia, Giulia e Marco.",
-            "Ho una casa, un lavoro e amici."
-          ]
-        },
-        {
-          "id": "luca-a-roma-speak-24-l05",
-          "en": "Rome is home now.",
-          "it": "Roma è casa adesso.",
-          "sourceChapterId": "luca-a-roma-24",
-          "sourceSentenceId": "s27",
-          "acceptableAnswers": [
-            "Roma è casa adesso.",
-            "Adesso Roma è casa."
-          ]
+          "id": "luca-a-roma-speak-24-t04",
+          "speakerId": "marta",
+          "speakerName": "Mamma",
+          "it": "Che sollievo, Luca! Ti lascio riposare. Ci sentiamo domenica prossima?",
+          "en": "What a relief, Luca! I'll let you rest. Talk next Sunday?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Agree to talk on Sunday and tell Mom you love her.",
+            "intent": "say_goodbye",
+            "hintKeywords": [
+              "domenica",
+              "volere bene",
+              "mamma"
+            ],
+            "hintScaffold": "Sì, a domenica! Ti voglio ______ , mamma.",
+            "targetIt": "Sì, a domenica! Ti voglio bene, mamma.",
+            "acceptableAnswers": [
+              "Ti voglio bene, mamma.",
+              "A presto, mamma. Ti voglio bene.",
+              "A domenica, mamma! Ti voglio bene.",
+              "Sì, ci sentiamo domenica. Ti voglio bene, mamma.",
+              "Ti voglio bene, mamma. A presto."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "mamma"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         }
       ]
     },
@@ -289,70 +501,188 @@
       "batchEnd": 27,
       "title": "Sofia’s Opinion",
       "summaryEn": "Sofia helps Luca separate fear from facts about the café, and they plan a small next step.",
+      "setting": "quartiere",
+      "characterIds": [
+        "sofia",
+        "luca"
+      ],
       "sourceRange": {
         "start": 25,
         "end": 27
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-27-l01",
-          "en": "The owner might sell the café, or change everything.",
-          "it": "Il padrone forse vende il caffè. O cambia tutto.",
-          "sourceChapterId": "luca-a-roma-27",
-          "sourceSentenceId": "s06",
-          "acceptableAnswers": [
-            "Il padrone forse vende il caffè.",
-            "Forse vende il caffè.",
-            "Il padrone forse cambia tutto."
-          ]
+          "id": "luca-a-roma-speak-27-t01",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Luca, ti vedo preoccupato oggi al lavoro. Stai pensando alla notizia del caffè?",
+          "en": "Luca, I see you're worried today at work. Are you thinking about the café news?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Explain that you think about rent and your job every single day.",
+            "intent": "explain_problem",
+            "hintKeywords": [
+              "pensare",
+              "affitto",
+              "lavoro"
+            ],
+            "hintScaffold": "Io penso all'affitto e al ______ ogni giorno.",
+            "targetIt": "Io penso all'affitto e al lavoro ogni giorno.",
+            "acceptableAnswers": [
+              "Penso all'affitto e al lavoro ogni giorno.",
+              "Penso all'affitto e al lavoro.",
+              "Sì, penso all'affitto e al mio lavoro ogni giorno."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "affitto",
+                "lavoro"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-27-l02",
-          "en": "We know there are few customers. You saw it.",
-          "it": "Sappiamo che i clienti sono pochi. Tu l’hai visto.",
-          "sourceChapterId": "luca-a-roma-27",
-          "sourceSentenceId": "s17",
-          "acceptableAnswers": [
-            "Sappiamo che i clienti sono pochi.",
-            "I clienti sono pochi.",
-            "Tu l’hai visto."
-          ]
+          "id": "luca-a-roma-speak-27-t02",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Ti capisco, Luca. Ma il padrone non ha ancora deciso di vendere. Perché ti allarmi così?",
+          "en": "I understand you, Luca. But the owner hasn't decided to sell yet. Why get so alarmed?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Admit that you are afraid, and that fear is speaking first.",
+            "intent": "express_concern",
+            "hintKeywords": [
+              "paura",
+              "parlare",
+              "prima"
+            ],
+            "hintScaffold": "Ho paura, e la ______ parla prima.",
+            "targetIt": "Ho paura, e la paura parla prima.",
+            "acceptableAnswers": [
+              "Ho paura, e la paura parla prima.",
+              "Ho paura di perdere il lavoro.",
+              "Io ho paura, e la paura parla prima.",
+              "Ho molta paura per il lavoro."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "paura"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-27-l03",
-          "en": "We don’t know if he is selling. He hasn’t decided.",
-          "it": "Non sappiamo se vende. Non ha deciso.",
-          "sourceChapterId": "luca-a-roma-27",
-          "sourceSentenceId": "s18",
-          "acceptableAnswers": [
-            "Non sappiamo se vende.",
-            "Non ha deciso.",
-            "Non sappiamo se vende. Non ha deciso."
-          ]
+          "id": "luca-a-roma-speak-27-t03",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "La paura c'è, è normale. Ma la paura non è un piano. Che cosa dobbiamo fare noi?",
+          "en": "Fear is there, that's normal. But fear is not a plan. What must we do?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Say that we must make a plan, not just wait.",
+            "intent": "propose",
+            "hintKeywords": [
+              "dovere",
+              "fare",
+              "piano"
+            ],
+            "hintScaffold": "Dobbiamo fare un ______ , non solo aspettare.",
+            "targetIt": "Dobbiamo fare un piano, non solo aspettare.",
+            "acceptableAnswers": [
+              "Dobbiamo fare un piano.",
+              "Facciamo un piano insieme.",
+              "Dobbiamo fare un piano e non solo aspettare."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "piano"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-27-l04",
-          "en": "Fear isn’t a plan.",
-          "it": "La paura c’è. Ma non è un piano.",
-          "sourceChapterId": "luca-a-roma-27",
-          "sourceSentenceId": "s21",
-          "acceptableAnswers": [
-            "La paura non è un piano.",
-            "Non è un piano.",
-            "La paura c’è. Ma non è un piano."
-          ]
+          "id": "luca-a-roma-speak-27-t04",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Esatto! Chi nel quartiere conosce bene tutti e può darci una mano?",
+          "en": "Exactly! Who in the neighborhood knows everyone well and can give us a hand?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Suggest going to Nonna Rosa because she might have an idea.",
+            "intent": "propose",
+            "hintKeywords": [
+              "andare",
+              "Nonna Rosa",
+              "idea"
+            ],
+            "hintScaffold": "Andiamo da Nonna Rosa. Magari lei ha un' ______ .",
+            "targetIt": "Andiamo da Nonna Rosa. Magari lei ha un'idea.",
+            "acceptableAnswers": [
+              "Andiamo da Nonna Rosa.",
+              "Andiamo da Nonna Rosa, magari ha un'idea.",
+              "Andiamo da Nonna Rosa per parlare."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "andare"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-27-l05",
-          "en": "Let’s go to Nonna Rosa. Maybe she has an idea.",
-          "it": "Andiamo da Nonna Rosa. Magari lei ha un’idea.",
-          "sourceChapterId": "luca-a-roma-27",
-          "sourceSentenceId": "s34",
-          "acceptableAnswers": [
-            "Andiamo da Nonna Rosa.",
-            "Magari lei ha un’idea.",
-            "Andiamo da Nonna Rosa. Magari lei ha un’idea."
-          ]
+          "id": "luca-a-roma-speak-27-t05",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Nonna Rosa è perfetta! Andiamo subito a parlarle a casa sua?",
+          "en": "Nonna Rosa is perfect! Shall we go talk to her at her house right now?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Agree enthusiastically to go together right now.",
+            "intent": "agree",
+            "hintKeywords": [
+              "andare",
+              "insieme",
+              "subito"
+            ],
+            "hintScaffold": "Sì, andiamo ______ a casa sua!",
+            "targetIt": "Sì, andiamo insieme da lei!",
+            "acceptableAnswers": [
+              "Sì, andiamo insieme.",
+              "Andiamo insieme da lei.",
+              "Va bene, andiamo subito.",
+              "Sì, andiamo da Nonna Rosa."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "andare"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         }
       ]
     },
@@ -362,68 +692,189 @@
       "batchEnd": 30,
       "title": "A Small Plan",
       "summaryEn": "The café needs more customers. Luca and his friends ask the padrone for a small Saturday party.",
+      "setting": "lavoro-caffe",
+      "characterIds": [
+        "padrone",
+        "sofia",
+        "luca"
+      ],
       "sourceRange": {
         "start": 25,
         "end": 30
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-30-l01",
-          "en": "Luca and his friends have an idea: a small party on Saturday.",
-          "it": "Abbiamo un'idea. Una festa piccola, sabato, per il quartiere.",
-          "sourceChapterId": "luca-a-roma-30",
-          "sourceSentenceId": "s03",
-          "acceptableAnswers": [
-            "Abbiamo un'idea.",
-            "Una festa piccola sabato.",
-            "Una festa piccola per il quartiere."
-          ]
+          "id": "luca-a-roma-speak-30-t01",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Ragazzi, guardate questi tavoli vuoti. Senza clienti questo posto non può vivere.",
+          "en": "Guys, look at these empty tables. Without customers this place cannot survive.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Tell the owner that you and Sofia have an idea for the neighborhood.",
+            "intent": "propose",
+            "hintKeywords": [
+              "avere",
+              "idea",
+              "festa"
+            ],
+            "hintScaffold": "Abbiamo un' ______ : una piccola festa per il quartiere.",
+            "targetIt": "Abbiamo un'idea: una piccola festa per il quartiere.",
+            "acceptableAnswers": [
+              "Abbiamo un'idea per il caffè.",
+              "Abbiamo un'idea per il quartiere.",
+              "Abbiamo un'idea: una festa piccola per il quartiere.",
+              "Abbiamo un'idea."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "idea"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-30-l02",
-          "en": "It won't work without the padrone.",
-          "it": "Senza di lui non funziona.",
-          "sourceChapterId": "luca-a-roma-30",
-          "sourceSentenceId": "s07",
-          "acceptableAnswers": [
-            "Senza di lui non funziona.",
-            "Non funziona senza il padrone."
-          ]
+          "id": "luca-a-roma-speak-30-t02",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Una festa? Ma io non ho soldi da spendere per grandi eventi!",
+          "en": "A party? But I have no money to spend on big events!",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Reassure him that on Saturday there will be bread, coffee, and friends, and it costs very little.",
+            "intent": "propose",
+            "hintKeywords": [
+              "sabato",
+              "costare",
+              "poco"
+            ],
+            "hintScaffold": "Sabato c'è caffè, pane e amici. Costa ______ .",
+            "targetIt": "Sabato c'è caffè, pane e amici. Costa poco.",
+            "acceptableAnswers": [
+              "Costa poco.",
+              "Sabato c'è caffè e pane. Costa poco.",
+              "Non costa molto, è una festa piccola.",
+              "Costa poco per il bar."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "poco"
+              ],
+              "requiredPerson": [
+                "3sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-30-l03",
-          "en": "The padrone agrees to try.",
-          "it": "Va bene. Proviamo.",
-          "sourceChapterId": "luca-a-roma-30",
-          "sourceSentenceId": "s21",
-          "acceptableAnswers": [
-            "Va bene. Proviamo.",
-            "Il padrone dice va bene.",
-            "Proviamo sabato."
-          ]
+          "id": "luca-a-roma-speak-30-t03",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "E chi viene? Non possiamo aspettare che la gente arrivi per caso.",
+          "en": "And who comes? We can't just wait for people to show up by chance.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Explain that we will spread the word to the neighbors in the area.",
+            "intent": "propose",
+            "hintKeywords": [
+              "dire",
+              "persone",
+              "quartiere"
+            ],
+            "hintScaffold": "Dobbiamo dire alle persone del ______ .",
+            "targetIt": "Dobbiamo dire alle persone del quartiere.",
+            "acceptableAnswers": [
+              "Diciamo alle persone del quartiere.",
+              "Parliamo con la gente del quartiere.",
+              "Facciamo girare la voce nel quartiere.",
+              "Dobbiamo parlare con la gente."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "quartiere"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-30-l04",
-          "en": "Now they have to tell people in the neighborhood.",
-          "it": "Dobbiamo dire alle persone del quartiere.",
-          "sourceChapterId": "luca-a-roma-30",
-          "sourceSentenceId": "s27",
-          "acceptableAnswers": [
-            "Dobbiamo dire alle persone del quartiere.",
-            "Devono dire alle persone del quartiere."
-          ]
+          "id": "luca-a-roma-speak-30-t04",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Se nessuno si presenta sabato, io decido di vendere subito dopo.",
+          "en": "If nobody shows up on Saturday, I will decide to sell right after.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Negotiate and say: All right, let's try Saturday; if it doesn't work, you can decide after.",
+            "intent": "propose",
+            "hintKeywords": [
+              "provare",
+              "sabato",
+              "decidere"
+            ],
+            "hintScaffold": "Va bene, proviamo sabato. Se non funziona, lei decide ______ .",
+            "targetIt": "Va bene, proviamo sabato. Se non funziona, lei decide dopo.",
+            "acceptableAnswers": [
+              "Va bene. Proviamo sabato.",
+              "Proviamo sabato, poi decide lei.",
+              "Va bene, proviamo questo sabato."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "sabato"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-30-l05",
-          "en": "They have a plan, but they don't know yet if anyone will come.",
-          "it": "Abbiamo un piano. Non sappiamo se funziona.",
-          "sourceChapterId": "luca-a-roma-30",
-          "sourceSentenceId": "s42",
-          "acceptableAnswers": [
-            "Abbiamo un piano.",
-            "Non sappiamo se funziona.",
-            "Hanno un piano ma non sanno se funziona."
-          ]
+          "id": "luca-a-roma-speak-30-t05",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Ha detto di sì! Ma adesso come ci prepariamo per sabato?",
+          "en": "He said yes! But now how do we get ready for Saturday?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Say that if people come, we must be ready to work hard.",
+            "intent": "propose",
+            "hintKeywords": [
+              "dovere",
+              "essere",
+              "pronti"
+            ],
+            "hintScaffold": "Se la gente viene, dobbiamo essere ______ .",
+            "targetIt": "Se la gente viene, dobbiamo essere pronti.",
+            "acceptableAnswers": [
+              "Dobbiamo essere pronti.",
+              "Se vengono le persone, dobbiamo essere pronti.",
+              "Dobbiamo lavorare e essere pronti."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "pronti"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         }
       ]
     },
@@ -433,67 +884,229 @@
       "batchEnd": 35,
       "title": "The Cafe Fills Up",
       "summaryEn": "Saturday afternoon: the room starts empty, then neighbors arrive, and the small party finally works.",
+      "setting": "lavoro-caffe",
+      "characterIds": [
+        "sofia",
+        "rosa",
+        "padrone",
+        "luca"
+      ],
       "sourceRange": {
         "start": 31,
         "end": 35
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-35-l01",
-          "en": "At first, the room was still almost empty.",
-          "it": "La sala era ancora quasi vuota.",
-          "sourceChapterId": "luca-a-roma-35",
-          "sourceSentenceId": "s01",
-          "acceptableAnswers": [
-            "La sala era quasi vuota.",
-            "La sala era ancora quasi vuota."
-          ]
+          "id": "luca-a-roma-speak-35-t01",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Luca, è già pomeriggio e ci sono solo due persone. Forse non viene nessuno?",
+          "en": "Luca, it's already afternoon and there are only two people. Maybe nobody is coming?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Tell Sofia to wait calmly because you did your work.",
+            "intent": "express_concern",
+            "hintKeywords": [
+              "aspettare",
+              "lavoro",
+              "calma"
+            ],
+            "hintScaffold": "Abbiamo fatto il nostro lavoro. Adesso ______ con calma.",
+            "targetIt": "Abbiamo fatto il nostro lavoro. Adesso aspettiamo le persone.",
+            "acceptableAnswers": [
+              "Aspettiamo con calma.",
+              "Abbiamo fatto il nostro lavoro, aspettiamo.",
+              "Non ti preoccupare, aspettiamo le persone."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "lavoro"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-35-l02",
-          "en": "Then Nonna Rosa arrives.",
-          "it": "Poi è arrivata Nonna Rosa.",
-          "sourceChapterId": "luca-a-roma-35",
-          "sourceSentenceId": "s08",
-          "acceptableAnswers": [
-            "Poi è arrivata Nonna Rosa.",
-            "È arrivata Nonna Rosa."
-          ]
+          "id": "luca-a-roma-speak-35-t02",
+          "speakerId": "rosa",
+          "speakerName": "Nonna Rosa",
+          "it": "Buon pomeriggio ragazzi! Ho portato i vicini del palazzo e la famiglia di Marco!",
+          "en": "Good afternoon guys! I brought the apartment neighbors and Marco's family!",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Greet Nonna Rosa warmly and invite everyone in.",
+            "intent": "greeting",
+            "hintKeywords": [
+              "buongiorno",
+              "entrare",
+              "Nonna Rosa"
+            ],
+            "hintScaffold": "Buongiorno Nonna Rosa! Entrate, c'è posto per ______ !",
+            "targetIt": "Buongiorno Nonna Rosa! Entrate, c'è posto per tutti!",
+            "acceptableAnswers": [
+              "Buongiorno Nonna Rosa, entrate!",
+              "Benvenuti, entrate pure!",
+              "Buongiorno Nonna Rosa, grazie di essere venuti!"
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "Nonna Rosa"
+              ],
+              "conceptAliases": {
+                "Nonna Rosa": [
+                  "Nonna Rosa",
+                  "Rosa",
+                  "Nonna",
+                  "tutti"
+                ]
+              },
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-35-l03",
-          "en": "More people from the neighborhood arrived.",
-          "it": "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
-          "sourceChapterId": "luca-a-roma-35",
-          "sourceSentenceId": "s11",
-          "acceptableAnswers": [
-            "Dopo Nonna Rosa sono arrivate tre persone del quartiere, poi una famiglia.",
-            "Sono arrivate tre persone del quartiere, poi una famiglia.",
-            "Sono arrivate più persone del quartiere."
-          ]
+          "id": "luca-a-roma-speak-35-t03",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Incredibile... arrivano altre venti persone! Luca, Sofia, ci serve una mano!",
+          "en": "Incredible... another twenty people arriving! Luca, Sofia, we need a hand!",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Propose the work division: Marco stays at the door, and we prepare the coffees.",
+            "intent": "propose",
+            "hintKeywords": [
+              "porta",
+              "preparare",
+              "caffè"
+            ],
+            "hintScaffold": "Marco resta alla porta, noi prepariamo il ______ !",
+            "targetIt": "Marco resta alla porta, noi prepariamo il caffè!",
+            "acceptableAnswers": [
+              "Io e Sofia prepariamo il caffè!",
+              "Prepariamo subito il caffè per tutti!",
+              "Marco aiuta alla porta, noi facciamo i caffè!"
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "caffè"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-35-l04",
-          "en": "Within an hour, the room was almost full.",
-          "it": "In un'ora la sala era quasi piena.",
-          "sourceChapterId": "luca-a-roma-35",
-          "sourceSentenceId": "s15",
-          "acceptableAnswers": [
-            "La sala era quasi piena.",
-            "In un'ora la sala era quasi piena."
-          ]
+          "id": "luca-a-roma-speak-35-t04",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Tanta gente felice... non vedevo la sala così piena da anni!",
+          "en": "So many happy people... I hadn't seen the room this full in years!",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Point out that the neighborhood needs this café.",
+            "intent": "respond",
+            "hintKeywords": [
+              "quartiere",
+              "servire",
+              "caffè"
+            ],
+            "hintScaffold": "Al quartiere serve quel ______ !",
+            "targetIt": "Al quartiere serve quel caffè!",
+            "acceptableAnswers": [
+              "Vede? Il quartiere ha bisogno di questo posto.",
+              "Al quartiere serve questo caffè!",
+              "La gente vuole questo caffè."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "caffè"
+              ],
+              "requiredPerson": [
+                "3sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-35-l05",
-          "en": "Luca sees that people can come back.",
-          "it": "Le persone possono tornare.",
-          "sourceChapterId": "luca-a-roma-35",
-          "sourceSentenceId": "s45",
-          "acceptableAnswers": [
-            "Le persone possono tornare.",
-            "Luca sa che le persone possono tornare.",
-            "Adesso le persone possono tornare."
-          ]
+          "id": "luca-a-roma-speak-35-t05",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "La festa sta finendo ma tutti sono contenti. Diciamo qualcosa prima che vadano via?",
+          "en": "The party is ending but everyone is happy. Shall we say something before they leave?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Invite everyone to come back not only today, but also on Monday and Thursday.",
+            "intent": "invite",
+            "hintKeywords": [
+              "tornare",
+              "lunedì",
+              "giovedì"
+            ],
+            "hintScaffold": "Se vi piace, tornate! Anche lunedì, anche ______ .",
+            "targetIt": "Se vi piace, tornate! Anche lunedì, anche giovedì.",
+            "acceptableAnswers": [
+              "Tornate anche lunedì e giovedì!",
+              "Tornate a trovarci lunedì e giovedì.",
+              "Se vi piace, tornate presto!"
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "tornare"
+              ],
+              "requiredPerson": [
+                "2pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
+        },
+        {
+          "id": "luca-a-roma-speak-35-t06",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Oggi il caffè ha funzionato davvero. Abbiamo visto le persone sorridere.",
+          "en": "Today the café really worked. We saw people smile.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Agree and say that working together solves the problem.",
+            "intent": "agree",
+            "hintKeywords": [
+              "insieme",
+              "funzionare",
+              "lavoro"
+            ],
+            "hintScaffold": "Oggi è andata bene. Insieme risolviamo il ______ !",
+            "targetIt": "Insieme risolviamo il problema!",
+            "acceptableAnswers": [
+              "Lavorare insieme funziona!",
+              "Insieme possiamo fare tutto!",
+              "Oggi ha funzionato benissimo."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "insieme"
+              ],
+              "requiredPerson": [
+                "1pl"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         }
       ]
     },
@@ -503,70 +1116,193 @@
       "batchEnd": 40,
       "title": "Luca Chooses Rome",
       "summaryEn": "Luca's mother offers him a job near home. He thinks about his life in Rome and decides to stay.",
+      "setting": "appartamento-luca",
+      "characterIds": [
+        "padrone",
+        "sofia",
+        "luca"
+      ],
       "sourceRange": {
         "start": 36,
         "end": 40
       },
-      "lines": [
+      "turns": [
         {
-          "id": "luca-a-roma-speak-40-l01",
-          "en": "There is a job opening at a bar near home.",
-          "it": "C'è un posto in un bar vicino a casa.",
-          "sourceChapterId": "luca-a-roma-40",
-          "sourceSentenceId": "s03",
-          "acceptableAnswers": [
-            "C'è un posto in un bar vicino a casa.",
-            "C'è un lavoro vicino a casa.",
-            "C’è un posto vicino a casa."
-          ]
+          "id": "luca-a-roma-speak-40-t01",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "Luca, il caffè non chiude. Ti propongo più ore di lavoro e uno stipendio più sicuro.",
+          "en": "Luca, the café is not closing. I offer you more work hours and a more secure wage.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Negotiate your schedule: you accept, but you want free time on Monday and Wednesday evenings.",
+            "intent": "propose",
+            "hintKeywords": [
+              "accettare",
+              "tempo libero",
+              "sera"
+            ],
+            "hintScaffold": "Voglio più ore, ma lunedì e mercoledì sera voglio ______ libero.",
+            "targetIt": "Voglio più ore, ma lunedì e mercoledì sera voglio tempo libero.",
+            "acceptableAnswers": [
+              "Accetto, ma voglio tempo libero la sera.",
+              "Voglio più ore, ma anche tempo libero.",
+              "Sì, accetto, ma voglio tempo libero la sera."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "tempo"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-40-l02",
-          "en": "Luca has to decide this week.",
-          "it": "Luca deve rispondere questa settimana.",
-          "sourceChapterId": "luca-a-roma-40",
-          "sourceSentenceId": "s06",
-          "acceptableAnswers": [
-            "Luca deve rispondere questa settimana.",
-            "Deve rispondere questa settimana."
-          ]
+          "id": "luca-a-roma-speak-40-t02",
+          "speakerId": "padrone",
+          "speakerName": "Il padrone",
+          "it": "D'accordo, mi sembra una richiesta giusta. L'orario è chiaro per tutti.",
+          "en": "Agreed, that seems like a fair request. The schedule is clear for everyone.",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Agree and say that this schedule works well for you.",
+            "intent": "agree",
+            "hintKeywords": [
+              "orario",
+              "andare bene"
+            ],
+            "hintScaffold": "Grazie! L'orario qui mi va ______ .",
+            "targetIt": "Grazie! L'orario qui mi va bene.",
+            "acceptableAnswers": [
+              "L'orario mi va bene, grazie.",
+              "Grazie, questo orario mi va bene.",
+              "Perfetto, l'orario mi va benissimo."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "bene"
+              ],
+              "requiredPerson": [
+                "3sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-40-l03",
-          "en": "In Rome he had a home, a job, and friends.",
-          "it": "A Roma aveva una casa, un lavoro, e amici.",
-          "sourceChapterId": "luca-a-roma-40",
-          "sourceSentenceId": "s12",
-          "acceptableAnswers": [
-            "A Roma aveva una casa, un lavoro e amici.",
-            "A Roma ha una casa, un lavoro e amici.",
-            "Luca ha casa, lavoro e amici a Roma."
-          ]
+          "id": "luca-a-roma-speak-40-t03",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Luca, tua mamma ti ha chiamato da Pietralba? Ti ha proposto quel posto sicuro al bar vicino a casa?",
+          "en": "Luca, did your mom call from Pietralba? Did she offer you that secure job at the bar near home?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Confirm that she offered the proposal, but you made your decision.",
+            "intent": "respond",
+            "hintKeywords": [
+              "proposta",
+              "buona",
+              "dire"
+            ],
+            "hintScaffold": "La proposta è buona, ma ho detto di ______ .",
+            "targetIt": "La proposta è buona, ma ho detto di no.",
+            "acceptableAnswers": [
+              "Ho detto no alla proposta.",
+              "Sì, ma ho detto di no.",
+              "La proposta era buona, ma ho detto no."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "no"
+              ],
+              "conceptAliases": {
+                "no": [
+                  "no",
+                  "rifiutato"
+                ]
+              },
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "passato_prossimo",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-40-l04",
-          "en": "He decides to stay in Rome for now.",
-          "it": "Per adesso resto a Roma. Non parto.",
-          "sourceChapterId": "luca-a-roma-40",
-          "sourceSentenceId": "s22",
-          "acceptableAnswers": [
-            "Per adesso resto a Roma.",
-            "Non parto.",
-            "Resto a Roma per adesso.",
-            "Luca resta a Roma."
-          ]
+          "id": "luca-a-roma-speak-40-t04",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Hai rifiutato la sicurezza del tuo paese? E perché hai scelto di rimanere?",
+          "en": "You turned down the security of your hometown? And why did you choose to stay?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Explain clearly: For now I stay in Rome with this work, this home, and these people.",
+            "intent": "propose",
+            "hintKeywords": [
+              "per adesso",
+              "restare",
+              "Roma"
+            ],
+            "hintScaffold": "Per adesso resto a Roma: questo lavoro, questa casa, queste ______ .",
+            "targetIt": "Per adesso resto a Roma. Questo lavoro, questa casa, queste persone.",
+            "acceptableAnswers": [
+              "Per adesso resto a Roma.",
+              "Per adesso resto qui, non parto.",
+              "Resto a Roma con i miei amici e il lavoro.",
+              "Ho scelto di restare a Roma."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "Roma"
+              ],
+              "requiredPerson": [
+                "1sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         },
         {
-          "id": "luca-a-roma-speak-40-l05",
-          "en": "For now, this is home.",
-          "it": "Per adesso questa è casa.",
-          "sourceChapterId": "luca-a-roma-40",
-          "sourceSentenceId": "s49",
-          "acceptableAnswers": [
-            "Per adesso questa è casa.",
-            "Questa è casa, per adesso.",
-            "Adesso questa è casa."
-          ]
+          "id": "luca-a-roma-speak-40-t05",
+          "speakerId": "sofia",
+          "speakerName": "Sofia",
+          "it": "Sono fiera di te, Luca. Allora brindiamo alla nostra vita qui a Roma?",
+          "en": "I'm proud of you, Luca. Shall we toast to our life here in Rome?",
+          "learnerTurn": {
+            "role": "Luca",
+            "objectiveEn": "Agree joyfully and declare: For now, this is home.",
+            "intent": "agree",
+            "hintKeywords": [
+              "per adesso",
+              "questa",
+              "casa"
+            ],
+            "hintScaffold": "Brindiamo insieme! Per adesso questa è ______ .",
+            "targetIt": "Brindiamo insieme! Per adesso questa è casa.",
+            "acceptableAnswers": [
+              "Per adesso questa è casa!",
+              "Brindiamo! Questa è casa per adesso.",
+              "Sì! Per adesso sono a casa a Roma.",
+              "Questa è la mia casa adesso."
+            ],
+            "semantic": {
+              "requiredConcepts": [
+                "casa"
+              ],
+              "requiredPerson": [
+                "3sg"
+              ],
+              "requiredTense": "present",
+              "requiredPolarity": "affirmative"
+            }
+          }
         }
       ]
     },

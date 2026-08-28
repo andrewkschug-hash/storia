@@ -16,6 +16,9 @@ export type VocabBrowseItem = {
   saved: boolean;
   encounterCount: number;
   chaptersEncountered: string[];
+  partOfSpeech?: string;
+  cefrLevel?: string;
+  introducedChapter?: number;
 };
 
 export function browseVocabulary(
@@ -32,11 +35,21 @@ export function browseVocabulary(
   for (const row of Object.values(state.lemmas)) {
     if (row.encounterCount <= 0 && !row.saved) continue;
     const entry = bundle.lexicon.find((l) => l.lemmaId === row.lemmaId);
-    items.push(toItem('lemma', row, entry?.italian ?? row.lemmaId, entry?.english ?? ''));
+    items.push(
+      toItem(
+        'lemma',
+        row,
+        entry?.italian ?? row.lemmaId,
+        entry?.english ?? '',
+        entry?.partOfSpeech,
+        entry?.cefrLevel,
+        entry?.introducedChapter,
+      ),
+    );
   }
   for (const row of Object.values(state.phrases)) {
     if (row.encounterCount <= 0 && !row.saved) continue;
-    items.push(toItem('phrase', row, row.surface, phraseEnglish(bundle, row.phraseId)));
+    items.push(toItem('phrase', row, row.surface, phraseEnglish(bundle, row.phraseId), 'phrase'));
   }
 
   const byItalian = (a: VocabBrowseItem, b: VocabBrowseItem) =>
@@ -55,6 +68,9 @@ function toItem(
   row: LemmaEncounter | PhraseEncounter,
   italian: string,
   english: string,
+  partOfSpeech?: string,
+  cefrLevel?: string,
+  introducedChapter?: number,
 ): VocabBrowseItem {
   return {
     kind,
@@ -65,6 +81,9 @@ function toItem(
     saved: row.saved,
     encounterCount: row.encounterCount,
     chaptersEncountered: [...row.chaptersEncountered],
+    partOfSpeech,
+    cefrLevel,
+    introducedChapter,
   };
 }
 

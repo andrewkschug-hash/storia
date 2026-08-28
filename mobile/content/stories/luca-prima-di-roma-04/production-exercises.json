@@ -11,8 +11,7 @@
       "promptEn": "Where is the pharmacy?",
       "expectedIt": "Dov'è la farmacia?",
       "acceptableAnswers": [
-        "Dove è la farmacia?",
-        "Dov’è la farmacia?"
+        "Dove è la farmacia?"
       ],
       "match": "flexible",
       "focus": [
@@ -29,8 +28,7 @@
       "promptEn": "Where is the park?",
       "expectedIt": "Dov'è il parco?",
       "acceptableAnswers": [
-        "Dove è il parco?",
-        "Dov’è il parco?"
+        "Dove è il parco?"
       ],
       "match": "flexible",
       "focus": [
@@ -145,9 +143,6 @@
       "sourceSentenceId": "s04",
       "promptEn": "It's sunny.",
       "expectedIt": "C'è il sole.",
-      "acceptableAnswers": [
-        "C’è il sole."
-      ],
       "match": "flexible",
       "focus": [
         "weather",
@@ -205,8 +200,7 @@
       "expectedIt": "Luca prende l'autobus.",
       "acceptableAnswers": [
         "Prendo l'autobus.",
-        "Io prendo l'autobus.",
-        "Luca prende l’autobus."
+        "Io prendo l'autobus."
       ],
       "match": "flexible",
       "focus": [
@@ -222,8 +216,7 @@
       "promptEn": "Where is the bus?",
       "expectedIt": "Dov'è l'autobus?",
       "acceptableAnswers": [
-        "Dove è l'autobus?",
-        "Dov’è l'autobus?"
+        "Dove è l'autobus?"
       ],
       "match": "flexible",
       "focus": [
@@ -258,8 +251,7 @@
       "promptEn": "Where is the bar?",
       "expectedIt": "Dov'è il bar?",
       "acceptableAnswers": [
-        "Dove è il bar?",
-        "Dov’è il bar?"
+        "Dove è il bar?"
       ],
       "match": "flexible",
       "focus": [
@@ -307,8 +299,7 @@
       "promptEn": "Where is the platform?",
       "expectedIt": "Dov'è il binario?",
       "acceptableAnswers": [
-        "Dove è il binario?",
-        "Dov’è il binario?"
+        "Dove è il binario?"
       ],
       "match": "flexible",
       "focus": [

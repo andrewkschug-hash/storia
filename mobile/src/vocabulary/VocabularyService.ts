@@ -230,6 +230,35 @@ export class VocabularyService {
     return state.lemmas[lookup.lemmaId]?.saved ?? false;
   }
 
+  async toggleSaved(kind: 'lemma' | 'phrase', id: string): Promise<boolean> {
+    const state = await this.getState();
+    const now = new Date().toISOString();
+    let newSavedState = false;
+    if (kind === 'phrase') {
+      const row = state.phrases[id] ?? createPhraseEncounter(id, id);
+      row.saved = !row.saved;
+      newSavedState = row.saved;
+      if (row.saved) {
+        row.saveCount += 1;
+        row.savedAt = now;
+      }
+      refreshFamiliarity(row);
+      state.phrases[id] = row;
+    } else {
+      const row = state.lemmas[id] ?? createLemmaEncounter(id);
+      row.saved = !row.saved;
+      newSavedState = row.saved;
+      if (row.saved) {
+        row.saveCount += 1;
+        row.savedAt = now;
+      }
+      refreshFamiliarity(row);
+      state.lemmas[id] = row;
+    }
+    await this.persist(state);
+    return newSavedState;
+  }
+
   /**
    * @deprecated Prefer recordSelfAssessment. Maps boolean review outcomes.
    */

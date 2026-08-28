@@ -13,6 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getAccount } from '@/src/account/storage';
 import { ScreenContent } from '@/src/components/ScreenContent';
+import { StoribaseLogo } from '@/src/components/StoribaseLogo';
 import { LandingColors } from '@/src/marketing/landingTheme';
 import { PublicFooter } from '@/src/marketing/PublicFooter';
 import { PublicNav } from '@/src/marketing/PublicNav';
@@ -103,7 +104,12 @@ export default function PublicHomeScreen() {
           {/* Hero */}
           <View style={[styles.hero, wide && styles.heroWide]}>
             <View style={[styles.heroCopy, wide && styles.heroCopyWide]}>
-              <Text style={[Typography.chapterEyebrow, { color: colors.accent }]}>STORIBASE</Text>
+              <View style={styles.heroEyebrowRow}>
+                <StoribaseLogo size={28} variant="circle" />
+                <Text style={[Typography.chapterEyebrow, { color: colors.accent, letterSpacing: 2 }]}>
+                  STORIBASE
+                </Text>
+              </View>
               <Text
                 style={[
                   Typography.heroTitle,
@@ -398,6 +404,11 @@ const styles = StyleSheet.create({
   },
   heroCopyWide: {
     flex: 1.05,
+  },
+  heroEyebrowRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.sm,
   },
   heroVisual: {
     flex: 1,

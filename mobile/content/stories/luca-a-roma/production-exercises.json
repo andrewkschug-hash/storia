@@ -473,7 +473,7 @@
       "exerciseId": "luca-a-roma-ch08-prod-01",
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-08",
-      "sourceSentenceId": "s08",
+      "sourceSentenceId": "s03",
       "promptEn": "Ask at the café.",
       "expectedIt": "Chiedi al caffè.",
       "match": "flexible",
@@ -483,8 +483,7 @@
         "caffe"
       ],
       "acceptableAnswers": [
-        "Chiedi al bar.",
-        "Chiedi al caffe."
+        "Chiedi al bar."
       ]
     },
     {
@@ -616,16 +615,17 @@
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-10",
       "sourceSentenceId": "s06",
-      "promptEn": "I work here.",
-      "expectedIt": "Lavoro qui.",
+      "promptEn": "Giulia works here.",
+      "expectedIt": "Giulia lavora qui.",
       "acceptableAnswers": [
-        "Io lavoro qui."
+        "Lavora qui.",
+        "Lei lavora qui."
       ],
       "match": "flexible",
       "level": "A1",
       "focus": [
-        "lavoro",
-        "location"
+        "lavorare",
+        "qui"
       ]
     },
     {
@@ -912,11 +912,11 @@
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-15",
       "sourceSentenceId": "s04",
-      "promptEn": "It's quiet here.",
-      "expectedIt": "Qui è tranquillo.",
+      "promptEn": "The house is quiet.",
+      "expectedIt": "La casa è tranquilla.",
       "acceptableAnswers": [
-        "È tranquillo.",
-        "È tranquillo qui."
+        "È tranquilla.",
+        "La casa è silenziosa."
       ],
       "match": "flexible",
       "level": "A1",
@@ -1096,8 +1096,11 @@
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-18",
       "sourceSentenceId": "s02",
-      "promptEn": "The train isn't leaving.",
-      "expectedIt": "Il treno non parte.",
+      "promptEn": "The train isn't running.",
+      "expectedIt": "Il treno non va.",
+      "acceptableAnswers": [
+        "Il treno non parte."
+      ],
       "match": "flexible",
       "level": "A1",
       "focus": [
@@ -1167,16 +1170,17 @@
       "storyId": "luca-a-roma",
       "chapterId": "luca-a-roma-19",
       "sourceSentenceId": "s07",
-      "promptEn": "Together we can help.",
-      "expectedIt": "Insieme possiamo aiutare.",
+      "promptEn": "Together we solve the problem.",
+      "expectedIt": "Insieme risolviamo il problema.",
       "acceptableAnswers": [
-        "Possiamo aiutare insieme."
+        "Risolviamo il problema insieme.",
+        "Insieme possiamo aiutare."
       ],
       "match": "flexible",
       "level": "A1",
       "focus": [
         "insieme",
-        "potere"
+        "risolvere"
       ]
     },
     {

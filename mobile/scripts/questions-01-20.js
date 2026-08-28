@@ -461,12 +461,12 @@ const questionsByChapterNumber = {
       question: 'What is still a problem after Marco has money?',
       questionIt: 'Qual è ancora il problema?',
       choices: [
-        'He must leave soon and cannot go alone',
+        'He is afraid to travel alone and cannot go alone',
         'He must buy a house',
         'He must become padrone',
       ],
       correctChoice: 0,
-      explanation: 'He has money now, but he must leave soon and says he cannot go alone.',
+      explanation: 'He has money now, but he is afraid to travel alone and says he cannot go alone.',
       difficulty: 1,
     },
     {
@@ -491,7 +491,7 @@ const questionsByChapterNumber = {
       questionIt: 'Cosa non può fare Marco?',
       choices: ['Go alone', 'Drink coffee', 'Talk to Sofia'],
       correctChoice: 0,
-      explanation: 'Marco says “Non posso andare solo” — he cannot go alone.',
+      explanation: 'Marco is afraid to travel alone and says “Non posso andare solo” — he cannot go alone.',
       difficulty: 1,
     },
   ],

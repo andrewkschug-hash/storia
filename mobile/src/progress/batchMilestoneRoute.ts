@@ -20,6 +20,12 @@ export function routeAfterLevelReadiness(storyId: string, fromChapter: number): 
       return speakSceneHref(storyId, scene.id);
     }
   }
+  if (storyId === LUCA_STORY_ID && fromChapter === 40) {
+    const next = getChapterByNumber(41, storyId);
+    if (next) {
+      return readerHref(storyId, next.id);
+    }
+  }
   return null;
 }
 
@@ -41,7 +47,7 @@ export function routeAfterSpeakScene(storyId: string, batchEnd: number, returnTo
     return `/level-readiness?fromChapter=20` as Href;
   }
   if (storyId === LUCA_STORY_ID && batchEnd === 40) {
-    return `/level-readiness?fromChapter=40` as Href;
+    return `/a2-readiness?fromChapter=40` as Href;
   }
   if (storyId === LUCA_STORY_ID && batchEnd === 70) {
     return '/(tabs)/vocabulary' as Href;

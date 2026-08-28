@@ -111,20 +111,15 @@ describe('Phase 12D reveal and continue flow', () => {
     expect(view.promptEn).not.toMatch(/say it in italian/i);
   });
 
-  it('uses the story sentence so learners produce 3rd person, not 1st', () => {
+  it('presents clean authored English prompts and expected Italian', () => {
     const display = productionDisplayFromStory(
-      sampleExercise({ level: 'A1+', promptEn: "I'm hungry.", expectedIt: 'Ho fame.' }),
-      {
-        text: 'Luca ha fame.',
-        english: 'Luca is hungry.',
-      },
+      sampleExercise({ level: 'A1', promptEn: "How are you? Say it in Italian.", expectedIt: 'Come stai?' }),
     );
-    expect(display.promptEn).toBe('Luca is hungry.');
-    expect(display.expectedIt).toBe('Luca ha fame.');
-    expect(display.acceptableAnswers).toEqual(['Ho fame.', 'Io ho fame.']);
+    expect(display.promptEn).toBe('How are you?');
+    expect(display.expectedIt).toBe('Come stai?');
   });
 
-  it('keeps A1 production to a single word or short phrase, not the full story sentence', () => {
+  it('keeps A1 production clean without mutating authored phrases into dictionary glosses', () => {
     const bundle = loadBundle();
     const sentence = [...bundle.chapters.values()]
       .flatMap((chapter) => chapter.paragraphs.flatMap((paragraph) => paragraph.sentences))
@@ -145,16 +140,15 @@ describe('Phase 12D reveal and continue flow', () => {
       storySentence: sentence,
       lexiconById: bundle.lexiconById,
     });
-    expect(countProductionWords(display.expectedIt)).toBeLessThanOrEqual(2);
-    expect(display.promptEn.toLowerCase()).not.toContain('luca arrives in rome');
-    expect(display.expectedIt.toLowerCase()).not.toContain('luca arriva a roma');
+    expect(display.promptEn).toBe('I arrive in Rome.');
+    expect(display.expectedIt).toBe('Arrivo a Roma.');
 
     const view = productionCardView(exercise, 0, 4, true, sentence, {
       storySentence: sentence,
       lexiconById: bundle.lexiconById,
     });
     expect(view.wordFocused).toBe(true);
-    expect(view.promptEn.toLowerCase()).not.toBe('luca arrives in rome.');
+    expect(view.promptEn).toBe('I arrive in Rome.');
   });
 
   it('keeps authored two-word A1 chunks like Ho fame', () => {
@@ -185,15 +179,15 @@ describe('Phase 12D reveal and continue flow', () => {
     expect(view.howDidYouDoVisible).toBe(true);
   });
 
-  it('renders acceptableAnswers only after reveal, when present', () => {
+  it('renders acceptableAnswers only after reveal, when present and distinct', () => {
     const withAlts = productionCardView(
-      sampleExercise({ acceptableAnswers: ['Fame.', 'Ho fame'] }),
+      sampleExercise({ expectedIt: 'Ho fame.', acceptableAnswers: ['Io ho fame.', 'Ho fame.'] }),
       1,
       4,
       true,
     );
-    // A1 word mode only keeps ≤2-word alternatives.
-    expect(withAlts.acceptableAnswers).toEqual(['Fame.', 'Ho fame']);
+    // Exact duplicates of expectedIt are filtered out.
+    expect(withAlts.acceptableAnswers).toEqual(['Io ho fame.']);
 
     const withoutAlts = productionCardView(
       sampleExercise({ acceptableAnswers: undefined, expectedIt: 'Buongiorno.', promptEn: 'Good morning.' }),
