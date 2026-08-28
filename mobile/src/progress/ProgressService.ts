@@ -1,3 +1,4 @@
+import { getGateForChapter } from '@/src/cefr/levelGates';
 import type { Chapter, Story } from '@/src/content/schemas';
 import { LUCA_STORY_ID } from '@/src/content/catalog';
 import {
@@ -119,12 +120,22 @@ export class ProgressService {
       return progress.currentChapterId === chapterId ? 'in_progress' : 'available';
     }
 
+    const gate = getGateForChapter(chapter.number, undefined, this.story.id);
+    const gateUnlocked = Boolean(
+      gate &&
+        (progress.unlockedLevelGates?.includes(gate.id) ||
+          progress.demonstratedReadinessLevels?.includes(gate.level)),
+    );
+
     const previous = this.story.chapters.find((c) => c.number === chapter.number - 1);
-    if (!previous || !progress.completedChapterIds.includes(previous.id)) {
+    const prevCompleted = Boolean(previous && progress.completedChapterIds.includes(previous.id));
+
+    if (!prevCompleted && !gateUnlocked) {
       return 'locked';
     }
 
     if (
+      !gateUnlocked &&
       chapterNumberById &&
       isFirstChapterAfterBatch(chapter.number) &&
       recapBlocksChapter(progress, this.story.id, chapter.number, chapterNumberById)
@@ -418,6 +429,51 @@ export class ProgressService {
   async markListenPassComplete(chapterId: string): Promise<ReadingProgressRecord> {
     const progress = await this.getOrCreate();
     const next = withPassComplete(progress, chapterId, 'listen');
+    await this.repo.save(next);
+    return next;
+  }
+
+  /**
+   * Unlocks a destination CEFR level gate upon passing a readiness assessment.
+   * Modifies ONLY access (unlockedLevelGates) and evidence (demonstratedReadinessLevels).
+   * Does NOT overwrite currentCEFRLevel or completedChapterIds.
+   */
+  async unlockLevelGate(level: string): Promise<ReadingProgressRecord> {
+    const progress = await this.getOrCreate();
+    const gateId = `${this.story.id}:${level}`;
+    const unlocked = new Set(progress.unlockedLevelGates ?? []);
+    unlocked.add(gateId);
+    const demonstrated = new Set(progress.demonstratedReadinessLevels ?? []);
+    demonstrated.add(level);
+
+    const next: ReadingProgressRecord = {
+      ...progress,
+      unlockedLevelGates: [...unlocked],
+      demonstratedReadinessLevels: [...demonstrated],
+      lastOpenedAt: new Date().toISOString(),
+    };
+    await this.repo.save(next);
+    return next;
+  }
+
+  /**
+   * Sets the current reading position when the learner explicitly chooses to start at a chapter.
+   */
+  async startAtChapter(chapterId: string): Promise<ReadingProgressRecord> {
+    const status = await this.getChapterStatus(chapterId);
+    if (status === 'locked') {
+      throw new Error(`Cannot start at locked chapter ${chapterId}`);
+    }
+
+    const progress = await this.getOrCreate();
+    const next: ReadingProgressRecord = {
+      ...progress,
+      currentChapterId: chapterId,
+      lastSentenceId: null,
+      lastOpenedAt: new Date().toISOString(),
+      streakDays: this.nextStreak(progress),
+      lastStreakDate: todayKey(),
+    };
     await this.repo.save(next);
     return next;
   }

@@ -377,7 +377,7 @@ export default function ComprehensionScreen() {
             </Text>
             <Text
               style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-              A few short questions about what happened — not grammar, not flashcards.
+              A few short questions about what happened.
             </Text>
             <Pressable
               onPress={() => {

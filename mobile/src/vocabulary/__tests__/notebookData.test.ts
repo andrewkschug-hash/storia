@@ -80,7 +80,7 @@ describe('notebookData referential integrity', () => {
     expect(getNarrativeAnnotation('non-existent-word-xyz')).toBeNull();
   });
 
-  it('verifies all memorable phrases link to valid chapters', () => {
+  it('NOTEBOOK_PHRASES must contain only canonical story sentences', () => {
     const seenIds = new Set<string>();
 
     for (const phrase of NOTEBOOK_PHRASES) {
@@ -92,7 +92,35 @@ describe('notebookData referential integrity', () => {
       expect(phrase.textIt.length).toBeGreaterThan(0);
       expect(phrase.textEn.length).toBeGreaterThan(0);
       expect(phrase.speaker.length).toBeGreaterThan(0);
-      expect(phrase.whyMemorable.length).toBeGreaterThan(15);
+      expect(phrase.sourceChapterId.length).toBeGreaterThan(0);
+      expect(phrase.sourceSentenceId.length).toBeGreaterThan(0);
+
+      const chapter = bundle.chapters.get(phrase.sourceChapterId);
+      expect(
+        chapter,
+        `Chapter "${phrase.sourceChapterId}" for phrase "${phrase.id}" must exist in bundle`,
+      ).toBeTruthy();
+
+      let matchingSentence: { id: string; text: string; speakerId?: string | null } | undefined;
+      for (const p of chapter!.paragraphs) {
+        for (const s of p.sentences) {
+          if (s.id === phrase.sourceSentenceId) {
+            matchingSentence = s;
+            break;
+          }
+        }
+        if (matchingSentence) break;
+      }
+
+      expect(
+        matchingSentence,
+        `Sentence "${phrase.sourceSentenceId}" in chapter "${phrase.sourceChapterId}" must exist for phrase "${phrase.id}"`,
+      ).toBeTruthy();
+
+      expect(
+        matchingSentence?.text,
+        `Phrase textIt must match verbatim canonical story sentence in ${phrase.sourceChapterId}:${phrase.sourceSentenceId}`,
+      ).toBe(phrase.textIt);
     }
   });
 

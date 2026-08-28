@@ -112,4 +112,35 @@ export {
   type A2QuestionResult,
   type A2ReadinessEvaluation,
 } from '@/src/cefr/a2ReadinessService';
+export {
+  buildLevelGatesForStory,
+  getLevelGate,
+  getGateForChapter,
+  isLevelGateUnlocked,
+  type LevelGate,
+  type LevelGateBypass,
+  type LevelGatePrerequisite,
+} from '@/src/cefr/levelGates';
+export {
+  A1_PLUS_READINESS_ASSESSMENT,
+  A2_READINESS_ASSESSMENT,
+  B1_READINESS_ASSESSMENT,
+  B1_PLUS_READINESS_ASSESSMENT,
+  READINESS_ASSESSMENTS_BY_LEVEL,
+  getReadinessAssessmentForLevel,
+  evaluateReadinessAssessment,
+  scoreMultipleChoiceQuestion,
+  scoreProductionQuestion,
+  type ReadinessAssessmentData,
+  type ReadinessChoiceQuestion,
+  type ReadinessDomain,
+  type ReadinessEvaluation,
+  type ReadinessOutcome,
+  type ReadinessProductionQuestion,
+  type ReadinessQuestion,
+  type ReadinessQuestionResult,
+  type DomainScoreResult,
+  type LearnerAnswer,
+} from '@/src/cefr/readinessAssessments';
+
 

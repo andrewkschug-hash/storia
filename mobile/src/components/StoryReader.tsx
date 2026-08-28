@@ -29,6 +29,8 @@ type Props = {
   playingSentenceId?: string | null;
   hasAudio?: (sentence: Sentence) => boolean;
   onPlayAudio?: (sentence: Sentence) => void;
+  onPlayHeader?: () => void;
+  hasHeaderAudio?: boolean;
   showCompletionCta?: boolean;
   completionHint?: string;
   completionButtonLabel?: string;
@@ -60,6 +62,8 @@ export function StoryReader({
   playingSentenceId,
   hasAudio,
   onPlayAudio,
+  onPlayHeader,
+  hasHeaderAudio,
   showCompletionCta,
   completionHint,
   completionButtonLabel = 'Continue',
@@ -73,6 +77,16 @@ export function StoryReader({
   const layoutH = useRef(0);
   const contentH = useRef(0);
   const offsetY = useRef(0);
+
+  const isHeaderPlaying =
+    playingSentenceId === 'header' ||
+    playingSentenceId === `header:${chapter.id}` ||
+    playingSentenceId === `header:${chapter.number}`;
+  const isHeaderHighlighted =
+    highlightedSentenceId === 'header' ||
+    highlightedSentenceId === `header:${chapter.id}` ||
+    highlightedSentenceId === `header:${chapter.number}` ||
+    isHeaderPlaying;
 
   const emitProgress = () => {
     if (!onScrollProgress) return;
@@ -126,19 +140,59 @@ export function StoryReader({
         layoutH.current = event.nativeEvent.layout.height;
         emitProgress();
       }}>
-      <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
-        Capitolo {chapter.number}
-      </Text>
-      <Text
+      <Pressable
+        accessibilityRole={onPlayHeader ? 'button' : 'none'}
+        accessibilityLabel={`Capitolo ${chapter.number}. ${chapter.titleIt}.${onPlayHeader ? (isHeaderPlaying ? ' Pause title audio.' : ' Play title audio.') : ''}`}
+        onPress={onPlayHeader}
         style={[
-          type.chapterTitle,
-          {
-            color: colors.text,
-            marginTop: Spacing.sm,
+          styles.headerBlock,
+          isHeaderHighlighted && {
+            backgroundColor: colors.sentenceHighlight,
+            borderRadius: 8,
+            padding: Spacing.sm,
+            marginHorizontal: -Spacing.sm,
           },
         ]}>
-        {chapter.titleIt}
-      </Text>
+        <View style={styles.headerRow}>
+          <View style={{ flex: 1 }}>
+            <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
+              Capitolo {chapter.number}
+            </Text>
+            <Text
+              style={[
+                type.chapterTitle,
+                {
+                  color: colors.text,
+                  marginTop: Spacing.sm,
+                },
+              ]}>
+              {chapter.titleIt}
+            </Text>
+          </View>
+          {hasHeaderAudio || onPlayHeader ? (
+            <View
+              style={[
+                styles.headerAudioBtn,
+                {
+                  backgroundColor: isHeaderPlaying ? colors.tint : colors.backgroundElevated,
+                  borderColor: colors.border,
+                },
+              ]}>
+              <Text
+                style={[
+                  type.caption,
+                  {
+                    color: isHeaderPlaying ? colors.background : colors.textMuted,
+                    fontSize: 12,
+                    lineHeight: 14,
+                  },
+                ]}>
+                {isHeaderPlaying ? '❚❚' : '▶'}
+              </Text>
+            </View>
+          ) : null}
+        </View>
+      </Pressable>
 
       <View style={styles.body}>
         {chapter.paragraphs.map((paragraph, index) => (
@@ -200,6 +254,23 @@ const styles = StyleSheet.create({
   content: {
     paddingTop: Spacing.lg,
     paddingBottom: Spacing.xxl,
+  },
+  headerBlock: {
+    marginBottom: Spacing.xs,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: Spacing.md,
+  },
+  headerAudioBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   body: {
     marginTop: Spacing.xl,

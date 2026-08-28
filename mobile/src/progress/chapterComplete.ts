@@ -24,7 +24,7 @@ function batchMilestoneDetail(
     : [`a word recap for Chapters ${start}–${end}`];
   const scene = getSpeakSceneForBatch(storyId, chapterNumber);
   if (scene) {
-    steps.push(`retell "${scene.title}"`);
+    steps.push(`roleplay "${scene.title}"`);
   }
   if (storyId === LUCA_STORY_ID && chapterNumber === 20) {
     steps.push('choose what to read next');
@@ -38,7 +38,7 @@ function batchMilestoneDetail(
 
 function chapter24CompleteDetail(storyId: string): string {
   const scene = getSpeakSceneForBatch(storyId, 24);
-  const speakPart = scene ? `, retell "${scene.title}"` : '';
+  const speakPart = scene ? `, roleplay "${scene.title}"` : '';
   return `Next: choose what to read next${speakPart}, then Chapter 25.`;
 }
 

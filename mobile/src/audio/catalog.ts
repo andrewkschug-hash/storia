@@ -2,6 +2,7 @@ import type { AudioAsset, TTSSpeed, VoiceRoster } from '@/src/audio/types';
 import { audioCacheKey, textHash } from '@/src/audio/cacheKey';
 import { isPlayableAsset } from '@/src/audio/playable';
 import { resolveCharacterVoice, resolveSpeakerId } from '@/src/audio/voices';
+import { chapterHeaderText } from '@/src/audio/chapterHeader';
 import type { Character, Sentence } from '@/src/content/schemas';
 
 export class AudioCatalog {
@@ -53,6 +54,16 @@ export class AudioCatalog {
 
   lookupWord(text: string, speed: TTSSpeed): AudioAsset | null {
     return this.lookupSpoken(text, 'narrator', speed, `word:${textHash(text)}`);
+  }
+
+  lookupChapterHeader(
+    chapter: { id?: string; number: number; titleIt: string },
+    speed: TTSSpeed,
+  ): AudioAsset | null {
+    const text = chapterHeaderText(chapter);
+    const shortContentId = `header:${chapter.number}`;
+    const fullContentId = chapter.id ? `header:${chapter.id}` : shortContentId;
+    return this.lookupSpoken(text, 'narrator', speed, shortContentId, fullContentId);
   }
 
   private lookupSpoken(

@@ -23,14 +23,14 @@ describe('chapter complete copy', () => {
   });
 
   it('mentions speak scene and level gate at milestone batch ends', () => {
-    expect(chapterCompleteView(15, 16).detail).toContain('retell "Help Marco"');
+    expect(chapterCompleteView(15, 16).detail).toContain('roleplay "Help Marco"');
     expect(chapterCompleteView(20, 21).detail).toContain('choose what to read next');
-    expect(chapterCompleteView(24, 25).detail).toContain('retell "Sunday Call"');
+    expect(chapterCompleteView(24, 25).detail).toContain('roleplay "Sunday Call"');
     expect(chapterCompleteView(24, 25).detail).toContain('choose what to read next');
   });
 
   it('still routes batch-end learners through milestones when the story ends', () => {
-    expect(chapterCompleteView(40, null).detail).toContain('retell "Luca Chooses Rome"');
+    expect(chapterCompleteView(40, null).detail).toContain('roleplay "Luca Chooses Rome"');
     expect(chapterCompleteView(40, null).detail).toContain('A2 → B1 readiness check');
     expect(chapterCompleteView(40, null).detail).toContain('then home');
   });

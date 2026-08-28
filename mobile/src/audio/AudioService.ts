@@ -4,8 +4,14 @@ import { AudioCatalog } from '@/src/audio/catalog';
 import { isPlayableAsset } from '@/src/audio/playable';
 import { createAudioPlayer, type AudioPlayer } from '@/src/audio/playback';
 import { gatewayBaseUrl, TtsGatewayClient } from '@/src/audio/TtsGatewayClient';
+import { chapterHeaderText, isHeaderSentenceId, makeHeaderSentence } from '@/src/audio/chapterHeader';
 import type { AudioAsset, TTSSpeed, VoiceRoster } from '@/src/audio/types';
 import type { Character, Sentence } from '@/src/content/schemas';
+
+export type PlayChapterOptions = {
+  chapter?: { id?: string; number: number; titleIt: string };
+  includeHeader?: boolean;
+};
 
 const SPEED_KEY = 'storia:audio-speed:v1';
 
@@ -120,6 +126,16 @@ export class AudioService {
     );
   }
 
+  chapterHeaderAudio(chapter: { id?: string; number: number; titleIt: string }): AudioAsset | null {
+    const preferredSpeed: TTSSpeed = this.speed === 'faster' ? 'normal' : this.speed;
+    return (
+      this.catalog.lookupChapterHeader(chapter, preferredSpeed) ??
+      (preferredSpeed === 'slow'
+        ? this.catalog.lookupChapterHeader(chapter, 'normal')
+        : null)
+    );
+  }
+
   playbackRate(): number {
     return PLAYBACK_RATE[this.speed] ?? PLAYBACK_RATE.normal;
   }
@@ -127,13 +143,37 @@ export class AudioService {
   async playSentence(sentence: Sentence): Promise<PlayResult> {
     this.chapterQueue = [];
     this.lastSentence = sentence;
-    return this.playAsset(sentence.id, this.sentenceAudio(sentence));
+    const asset = this.sentenceAudio(sentence);
+    if (asset) {
+      return this.playAsset(sentence.id, asset);
+    }
+    if (isHeaderSentenceId(sentence.id)) {
+      try {
+        this.playingId = sentence.id;
+        this.onChange?.();
+        const { speakItalian } = await import('@/src/walkthrough/speakItalian');
+        await speakItalian(sentence.text, this.playbackRate());
+        this.playingId = null;
+        this.onChange?.();
+        return { played: true };
+      } catch {
+        this.playingId = null;
+        this.onChange?.();
+        return { played: false, reason: 'missing' };
+      }
+    }
+    return this.playAsset(sentence.id, null);
+  }
+
+  async playChapterHeader(chapter: { id?: string; number: number; titleIt: string }): Promise<PlayResult> {
+    const headerSentence = makeHeaderSentence(chapter);
+    return this.playSentence(headerSentence);
   }
 
   async replay(): Promise<PlayResult> {
     if (this.lastSentence) return this.playSentence(this.lastSentence);
     const current = this.chapterQueue[this.chapterIndex];
-    if (current) return this.playAsset(current.id, this.sentenceAudio(current));
+    if (current) return this.playItem(current);
     return { played: false, reason: 'missing' };
   }
 
@@ -147,8 +187,28 @@ export class AudioService {
     return this.playAsset(`phrase:${text}`, this.phraseAudio(text));
   }
 
-  async playChapter(sentences: Sentence[], chapterId?: string): Promise<PlayResult> {
-    if (chapterId) this.chapterId = chapterId;
+  async playChapter(
+    sentences: Sentence[],
+    chapterIdOrOptions?: string | PlayChapterOptions,
+    options?: PlayChapterOptions,
+  ): Promise<PlayResult> {
+    let resolvedOptions: PlayChapterOptions | undefined;
+    let resolvedChapterId: string | undefined;
+
+    if (typeof chapterIdOrOptions === 'string') {
+      resolvedChapterId = chapterIdOrOptions;
+      resolvedOptions = options;
+    } else if (typeof chapterIdOrOptions === 'object') {
+      resolvedOptions = chapterIdOrOptions;
+      resolvedChapterId = resolvedOptions?.chapter?.id;
+    }
+
+    if (resolvedChapterId) {
+      this.chapterId = resolvedChapterId;
+    } else if (resolvedOptions?.chapter?.id) {
+      this.chapterId = resolvedOptions.chapter.id;
+    }
+
     if (this.chapterQueue.length > 0) {
       if (this.player.isPlaying()) {
         this.pause();
@@ -162,23 +222,32 @@ export class AudioService {
           this.onChange?.();
           return { played: true };
         }
-        return this.playAsset(current.id, this.sentenceAudio(current));
+        return this.playItem(current);
       }
     }
 
     this.advanceToken += 1;
-    this.chapterQueue = sentences.filter((s) => this.sentenceAudio(s));
+    const headerSentence =
+      resolvedOptions?.chapter && resolvedOptions?.includeHeader !== false
+        ? makeHeaderSentence(resolvedOptions.chapter)
+        : null;
+
+    const queueCandidates = headerSentence ? [headerSentence, ...sentences] : sentences;
+    this.chapterQueue = queueCandidates.filter(
+      (s) => this.sentenceAudio(s) || (headerSentence && s.id === headerSentence.id),
+    );
     this.chapterIndex = 0;
     if (this.chapterQueue.length === 0) return { played: false, reason: 'missing' };
-    return this.playAsset(
-      this.chapterQueue[0].id,
-      this.sentenceAudio(this.chapterQueue[0]),
-    );
+    return this.playItem(this.chapterQueue[0]);
   }
 
-  async restartChapter(sentences: Sentence[], chapterId?: string): Promise<PlayResult> {
+  async restartChapter(
+    sentences: Sentence[],
+    chapterIdOrOptions?: string | PlayChapterOptions,
+    options?: PlayChapterOptions,
+  ): Promise<PlayResult> {
     this.stop();
-    return this.playChapter(sentences, chapterId);
+    return this.playChapter(sentences, chapterIdOrOptions, options);
   }
 
   isChapterMode(): boolean {
@@ -198,13 +267,54 @@ export class AudioService {
     this.chapterQueue = [];
     this.playingId = null;
     this.player.stop();
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { stopSpeakingItalian } = require('@/src/walkthrough/speakItalian');
+      stopSpeakingItalian();
+    } catch {
+      /* ignore */
+    }
     this.onChange?.();
   }
 
   pause() {
     this.advanceToken += 1;
     this.player.pause();
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { stopSpeakingItalian } = require('@/src/walkthrough/speakItalian');
+      stopSpeakingItalian();
+    } catch {
+      /* ignore */
+    }
     this.onChange?.();
+  }
+
+  private async playItem(sentence: Sentence): Promise<PlayResult> {
+    const asset = this.sentenceAudio(sentence);
+    if (asset) {
+      return this.playAsset(sentence.id, asset);
+    }
+    if (isHeaderSentenceId(sentence.id)) {
+      const token = this.advanceToken;
+      try {
+        this.playingId = sentence.id;
+        this.onChange?.();
+        const { speakItalian } = await import('@/src/walkthrough/speakItalian');
+        await speakItalian(sentence.text, this.playbackRate());
+        if (token === this.advanceToken && this.isChapterMode()) {
+          void this.advanceChapter();
+        }
+        return { played: true };
+      } catch {
+        this.playingId = null;
+        this.onChange?.();
+        return { played: false, reason: 'failed' };
+      }
+    }
+    this.playingId = null;
+    this.onChange?.();
+    return { played: false, reason: 'missing' };
   }
 
   private async playAsset(id: string, asset: AudioAsset | null): Promise<PlayResult> {
@@ -247,7 +357,7 @@ export class AudioService {
       await sleep(this.sentenceGapMs);
     }
     if (token !== this.advanceToken || this.chapterQueue.length === 0) return;
-    await this.playAsset(next.id, this.sentenceAudio(next));
+    await this.playItem(next);
   }
 }
 

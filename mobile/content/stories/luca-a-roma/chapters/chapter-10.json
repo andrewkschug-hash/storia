@@ -188,10 +188,11 @@
         },
         {
           "id": "s13",
-          "text": "Luca conosce Giulia.",
+          "text": "Ora Luca conosce Giulia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "ora",
             "luca",
             "conoscere",
             "giulia"

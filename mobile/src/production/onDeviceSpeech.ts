@@ -94,13 +94,6 @@ export async function checkItalianSpeechAvailability(): Promise<SpeechAvailabili
         message: speechUnavailableMessage('unavailable'),
       };
     }
-    if (!ExpoSpeechRecognitionModule.supportsOnDeviceRecognition()) {
-      return {
-        available: false,
-        reason: 'on_device_unsupported',
-        message: speechUnavailableMessage('on_device_unsupported'),
-      };
-    }
   } catch {
     return {
       available: false,
@@ -125,12 +118,20 @@ export async function ensureItalianSpeechPermissions(): Promise<SpeechAvailabili
     };
   }
 
-  const result = await mod.ExpoSpeechRecognitionModule.requestPermissionsAsync();
-  if (!result.granted) {
+  try {
+    const result = await mod.ExpoSpeechRecognitionModule.requestPermissionsAsync();
+    if (!result.granted) {
+      return {
+        available: false,
+        reason: 'permission_denied',
+        message: speechUnavailableMessage('permission_denied'),
+      };
+    }
+  } catch {
     return {
       available: false,
-      reason: 'permission_denied',
-      message: speechUnavailableMessage('permission_denied'),
+      reason: 'unavailable',
+      message: speechUnavailableMessage('unavailable'),
     };
   }
   return { available: true };
@@ -170,11 +171,15 @@ export function startItalianOnDeviceRecognition(input?: {
     .filter(Boolean)
     .slice(0, 8);
 
+  const supportsOnDevice = Boolean(
+    mod.ExpoSpeechRecognitionModule.supportsOnDeviceRecognition?.(),
+  );
+
   mod.ExpoSpeechRecognitionModule.start({
     lang: ITALIAN_SPEECH_LOCALE,
     interimResults: true,
     continuous: false,
-    requiresOnDeviceRecognition: true,
+    requiresOnDeviceRecognition: supportsOnDevice,
     addsPunctuation: false,
     maxAlternatives: 1,
     contextualStrings: contextual.length > 0 ? contextual : undefined,

@@ -187,10 +187,11 @@
         },
         {
           "id": "s12",
-          "text": "Luca conosce Marco.",
+          "text": "Ora Luca conosce Marco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "ora",
             "luca",
             "conoscere",
             "marco"

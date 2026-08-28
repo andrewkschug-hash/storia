@@ -324,7 +324,7 @@ export default function SpeakSceneScreen() {
   if (!scene) {
     return (
       <AtmosphereBackground>
-        <Stack.Screen options={{ title: 'Speak the Scene', headerBackVisible: false }} />
+        <Stack.Screen options={{ title: 'Conversation Roleplay', headerBackVisible: false }} />
         <View style={styles.center}>
           <Text style={[type.body, { color: colors.textSecondary }]}>Scene not found.</Text>
         </View>
@@ -336,7 +336,7 @@ export default function SpeakSceneScreen() {
 
   return (
     <AtmosphereBackground>
-      <Stack.Screen options={{ title: 'Speak the Scene', headerBackVisible: false }} />
+      <Stack.Screen options={{ title: 'Conversation Roleplay', headerBackVisible: false }} />
       <KeyboardAvoidingView
         style={styles.keyboardContainer}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
@@ -523,7 +523,7 @@ export default function SpeakSceneScreen() {
                   <View style={[styles.activeTurnCard, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
                     <View style={styles.intentHeaderRow}>
                       <Text style={[type.caption, { color: colors.tint, fontWeight: '800', letterSpacing: 0.5 }]}>
-                        YOUR TURN AS {learnerTurn?.role?.toUpperCase() ?? 'LUCA'}
+                        YOUR ROLEPLAY TURN · {learnerTurn?.role?.toUpperCase() ?? 'LUCA'}
                       </Text>
                       <View style={[styles.intentPill, { backgroundColor: colors.accentSoft }]}>
                         <Text style={[type.caption, { color: colors.tint, fontWeight: '600' }]}>
@@ -532,14 +532,19 @@ export default function SpeakSceneScreen() {
                       </View>
                     </View>
 
-                    {/* Conversational Objective Prompt */}
-                    <Text style={[type.heroTitle, { color: colors.text, fontSize: 20, lineHeight: 28, marginTop: Spacing.sm }]}>
-                      {learnerTurn?.objectiveEn}
-                    </Text>
+                    {/* English Objective & Instruction Prompt */}
+                    <View style={[styles.promptInstructionBox, { backgroundColor: colors.background, borderColor: colors.border }]}>
+                      <Text style={[type.caption, { color: colors.tint, fontWeight: '700', letterSpacing: 0.5 }]}>
+                        SAY THIS IN ITALIAN:
+                      </Text>
+                      <Text style={[type.heroTitle, { color: colors.text, fontSize: 19, lineHeight: 26, marginTop: 4 }]}>
+                        "{learnerTurn?.objectiveEn}"
+                      </Text>
+                    </View>
 
                     {/* 3-LEVEL SCAFFOLDING LADDER */}
                     {dialogue.hintLevel > 0 ? (
-                      <View style={[styles.hintContainer, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
+                      <View style={[styles.hintContainer, { backgroundColor: colors.background, borderColor: colors.border }]}>
                         {/* Level 1: Keywords */}
                         {dialogue.hintLevel >= 1 && learnerTurn?.hintKeywords?.length ? (
                           <View style={styles.hintSection}>
@@ -548,7 +553,7 @@ export default function SpeakSceneScreen() {
                             </Text>
                             <View style={styles.keywordRow}>
                               {learnerTurn.hintKeywords.map((kw, i) => (
-                                <View key={i} style={[styles.keywordChip, { backgroundColor: colors.background }]}>
+                                <View key={i} style={[styles.keywordChip, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>
                                   <Text style={[type.label, { color: colors.text }]}>{kw}</Text>
                                 </View>
                               ))}
@@ -560,7 +565,7 @@ export default function SpeakSceneScreen() {
                         {dialogue.hintLevel >= 2 && learnerTurn?.hintScaffold ? (
                           <View style={[styles.hintSection, { marginTop: Spacing.sm }]}>
                             <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700' }]}>
-                              STRUCTURE:
+                              SENTENCE STRUCTURE:
                             </Text>
                             <Text style={[type.body, { color: colors.tint, fontWeight: '600', fontSize: 16 }]}>
                               {learnerTurn.hintScaffold}
@@ -572,7 +577,7 @@ export default function SpeakSceneScreen() {
                         {dialogue.hintLevel >= 3 && learnerTurn?.targetIt ? (
                           <View style={[styles.hintSection, { marginTop: Spacing.sm }]}>
                             <Text style={[type.caption, { color: colors.textMuted, fontWeight: '700' }]}>
-                              TARGET ITALIAN:
+                              TARGET ITALIAN MODEL:
                             </Text>
                             <Text style={[type.body, { color: colors.text, fontWeight: '700', fontSize: 17 }]}>
                               {learnerTurn.targetIt}
@@ -590,7 +595,7 @@ export default function SpeakSceneScreen() {
                                 },
                               ]}>
                               <Text style={[type.caption, { color: colors.tint, fontWeight: '700' }]}>
-                                🔊 Listen & Repeat
+                                🔊 Hear Italian Model
                               </Text>
                             </Pressable>
                           </View>
@@ -608,10 +613,10 @@ export default function SpeakSceneScreen() {
                         ]}>
                         <Text style={[type.caption, { color: colors.tint, fontWeight: '600' }]}>
                           {dialogue.hintLevel === 0
-                            ? '💡 Need a hint?'
+                            ? '💡 Need word hints?'
                             : dialogue.hintLevel === 1
                               ? '🧩 Show sentence structure'
-                              : '👀 Show target response'}
+                              : '👀 Show target Italian answer'}
                         </Text>
                       </Pressable>
                     ) : null}
@@ -964,6 +969,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: Radii.pill,
+  },
+  promptInstructionBox: {
+    marginTop: Spacing.md,
+    padding: Spacing.md,
+    borderRadius: Radii.md,
+    borderWidth: 1,
   },
   hintContainer: {
     marginTop: Spacing.md,

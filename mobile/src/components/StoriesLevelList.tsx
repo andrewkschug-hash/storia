@@ -1,7 +1,10 @@
-import { AppSymbol } from '@/src/components/AppSymbol';
+import { router, type Href } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { getLevelGate, type LevelGate } from '@/src/cefr/levelGates';
+import { AppSymbol } from '@/src/components/AppSymbol';
+import { LevelGateModal } from '@/src/components/levelGate/LevelGateModal';
 import type { ChapterStatus } from '@/src/progress/types';
 import type { ChapterListItem } from '@/src/progress/useReadingProgress';
 import type { ReadingProgressRecord } from '@/src/progress/types';
@@ -54,6 +57,7 @@ export function StoriesLevelList({
   const currentArcId = groups.find((g) => g.containsCurrent)?.arc.id ?? null;
   const [expandedId, setExpandedId] = useState<string | null>(currentArcId);
   const [hint, setHint] = useState<string | null>(null);
+  const [selectedGateForModal, setSelectedGateForModal] = useState<LevelGate | null>(null);
   const hintTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -74,6 +78,17 @@ export function StoriesLevelList({
 
   return (
     <View style={{ marginTop: Spacing.xl }}>
+      <LevelGateModal
+        visible={Boolean(selectedGateForModal)}
+        gate={selectedGateForModal}
+        onClose={() => setSelectedGateForModal(null)}
+        onContinueJourney={() => setSelectedGateForModal(null)}
+        onTakeReadinessTest={(gate) => {
+          setSelectedGateForModal(null);
+          router.push(`/readiness-test?level=${gate.level}` as Href);
+        }}
+      />
+
       {hint ? (
         <Text
           style={[
@@ -95,6 +110,12 @@ export function StoriesLevelList({
             colors={colors}
             onToggle={() => {
               if (group.locked) {
+                const level = (group.arc.cefrLevel || 'A1') as any;
+                const gate = getLevelGate(level);
+                if (gate) {
+                  setSelectedGateForModal(gate);
+                  return;
+                }
                 showHint(unlockHintForLevel(group, chapters));
                 return;
               }

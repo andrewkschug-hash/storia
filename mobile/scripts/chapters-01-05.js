@@ -221,38 +221,39 @@ const chapter05 = chapter(
         summary: 'Luca meets Sofia at the familiar bar; they exchange greetings.',
         characterIds: ['luca', 'sofia'],
         locationIds: ['bar-centrale'],
-        rememberedFacts: ['Luca knows Sofia', 'They met at the bar', 'Sofia lives in Rome'],
+        rememberedFacts: ['Luca knows Sofia now', 'They met at the bar', 'Sofia lives in Rome'],
       },
     ],
   },
   [
     P('p1', 1, [
       S('s01', 'Luca va al bar.', ['luca', 'andare', 'al', 'bar']),
-      S('s02', 'Luca entra nel bar.', ['luca', 'entrare', 'nel', 'bar']),
-      S('s03', "Nel bar c'è Sofia.", ['nel', 'bar', 'ce', 'sofia']),
+      S('s02', 'Il bar è vicino alla casa.', ['il', 'bar', 'essere', 'vicino', 'alla', 'casa']),
+      S('s03', 'Luca entra nel bar.', ['luca', 'entrare', 'nel', 'bar']),
+      S('s04', 'Nel bar c’è una donna.', ['nel', 'bar', 'ce', 'una', 'donna']),
     ]),
     P('p2', 2, [
-      S('s04', 'Ciao, sono Sofia.', ['ciao', 'essere', 'sofia'], { speaker: 'sofia' }),
-      S('s05', 'Ciao, sono Luca.', ['ciao', 'essere', 'luca'], { speaker: 'luca' }),
-      S('s06', 'Come stai?', ['come', 'stare'], {
+      S('s05', 'Ciao.', ['ciao'], { speaker: 'sofia' }),
+      S('s06', 'Ciao.', ['ciao'], { speaker: 'luca' }),
+      S('s07', 'Mi chiamo Sofia.', ['mi_chiamo', 'sofia'], {
         speaker: 'sofia',
         phrases: [
           {
-            surface: 'Come stai?',
-            literalEn: 'How do you stay?',
-            naturalEn: 'How are you?',
+            surface: 'Mi chiamo',
+            literalEn: 'Myself I call',
+            naturalEn: 'My name is',
             tokenStart: 0,
             tokenEnd: 1,
           },
         ],
       }),
-      S('s07', 'Bene, grazie.', ['bene', 'grazie'], { speaker: 'luca' }),
-      S('s08', 'Sei nuovo a Roma?', ['essere', 'nuovo', 'a', 'roma'], { speaker: 'sofia' }),
-      S('s09', 'Sì, sono nuovo.', ['si_yes', 'essere', 'nuovo'], { speaker: 'luca' }),
+      S('s08', 'Ciao, mi chiamo Luca.', ['ciao', 'mi_chiamo', 'luca'], { speaker: 'luca' }),
+      S('s09', 'Sei nuovo?', ['essere', 'nuovo'], { speaker: 'sofia' }),
+      S('s10', 'Sì, sono nuovo.', ['si_yes', 'essere', 'nuovo'], { speaker: 'luca' }),
     ]),
     P('p3', 3, [
       S('s10', 'Sofia è a Roma.', ['sofia', 'essere', 'a', 'roma']),
-      S('s11', 'Luca conosce Sofia.', ['luca', 'conoscere', 'sofia']),
+      S('s11', 'Ora Luca conosce Sofia.', ['ora', 'luca', 'conoscere', 'sofia']),
       S('s12', 'Luca è felice.', ['luca', 'essere', 'felice']),
       S('s13', 'Ci vediamo.', ['ci', 'vedere'], {
         speaker: 'sofia',

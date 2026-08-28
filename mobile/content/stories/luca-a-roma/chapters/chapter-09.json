@@ -38,27 +38,26 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca torna al caffè.",
+          "text": "Il padrone guarda Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "luca",
-            "tornare",
-            "al",
-            "caffe"
+            "il",
+            "padrone",
+            "guardare",
+            "luca"
           ]
         },
         {
           "id": "s02",
-          "text": "Nel caffè c'è il padrone.",
+          "text": "Luca aspetta nel caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "luca",
+            "aspettare",
             "nel",
-            "caffe",
-            "esserci",
-            "il",
-            "padrone"
+            "caffe"
           ]
         },
         {

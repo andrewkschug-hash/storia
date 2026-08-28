@@ -79,6 +79,10 @@ export type ReadingProgressRecord = {
   currentCEFRLevel: string;
   /** Read/listen pass timestamps keyed by chapterId. */
   passesByChapter?: Record<string, ChapterPassPhase>;
+  /** CEFR levels where the learner demonstrated proficiency via readiness assessment. */
+  demonstratedReadinessLevels?: string[];
+  /** Level gate IDs bypassed via demonstrated readiness test (e.g. luca-a-roma:A2). */
+  unlockedLevelGates?: string[];
 };
 
 export interface ReadingProgressRepository {
@@ -110,6 +114,8 @@ export function createInitialProgress(
     speakScenes: {},
     currentCEFRLevel: 'A1',
     passesByChapter: {},
+    demonstratedReadinessLevels: [],
+    unlockedLevelGates: [],
   };
 }
 
@@ -126,6 +132,8 @@ export function normalizeProgress(
     currentCEFRLevel: record.currentCEFRLevel ?? 'A1',
     narrativeArc: record.narrativeArc ?? narrativeArc,
     passesByChapter: record.passesByChapter ?? {},
+    demonstratedReadinessLevels: record.demonstratedReadinessLevels ?? [],
+    unlockedLevelGates: record.unlockedLevelGates ?? [],
   };
   return migrateLegacyChapterPasses(base);
 }

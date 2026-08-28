@@ -25,7 +25,7 @@
         "bar-centrale"
       ],
       "rememberedFacts": [
-        "Luca knows Sofia",
+        "Luca knows Sofia now",
         "They met at the bar",
         "Sofia lives in Rome"
       ]
@@ -172,10 +172,11 @@
         },
         {
           "id": "s11",
-          "text": "Luca conosce Sofia.",
+          "text": "Ora Luca conosce Sofia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "ora",
             "luca",
             "conoscere",
             "sofia"

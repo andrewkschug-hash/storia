@@ -15,7 +15,11 @@ const FUTURE_LEVELS = [
   { level: 'C1', title: 'Advanced Fluency', detail: 'Nuance, idioms, and literary style' },
 ] as const;
 
-export function LockedLevelsAccordion() {
+type Props = {
+  onSelectLevel?: (level: string) => void;
+};
+
+export function LockedLevelsAccordion({ onSelectLevel }: Props = {}) {
   const { colors, minTouchTarget } = useTheme();
   const [expanded, setExpanded] = useState(false);
   const rotate = useRef(new Animated.Value(0)).current;
@@ -64,9 +68,17 @@ export function LockedLevelsAccordion() {
       {expanded ? (
         <View style={styles.list}>
           {FUTURE_LEVELS.map((level) => (
-            <View
+            <Pressable
               key={level.level}
-              style={[styles.levelRow, { backgroundColor: colors.backgroundElevated }]}>
+              onPress={() => onSelectLevel?.(level.level)}
+              style={({ pressed }) => [
+                styles.levelRow,
+                {
+                  backgroundColor: colors.backgroundElevated,
+                  opacity: pressed ? 0.85 : 1,
+                  minHeight: minTouchTarget,
+                },
+              ]}>
               <Text style={[styles.levelLabel, { color: colors.textMuted }]}>{level.level}</Text>
               <View style={styles.levelMeta}>
                 <Text style={[styles.levelTitle, { color: colors.text }]}>{level.title}</Text>
@@ -74,8 +86,10 @@ export function LockedLevelsAccordion() {
                   {level.detail}
                 </Text>
               </View>
-              <Text style={{ color: colors.textMuted, fontSize: 12 }}>🔒</Text>
-            </View>
+              <Text style={{ color: colors.tint, fontSize: 13, fontFamily: 'Literata_500Medium' }}>
+                Test →
+              </Text>
+            </Pressable>
           ))}
         </View>
       ) : null}

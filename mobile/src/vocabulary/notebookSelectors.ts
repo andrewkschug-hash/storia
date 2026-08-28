@@ -1,0 +1,243 @@
+import type { VocabBrowseItem } from '@/src/vocabulary/catalog';
+import type { NotebookGrammarInsight, NotebookPhrase } from '@/src/vocabulary/notebookData';
+
+export type NotebookLens = 'words' | 'phrases' | 'grammar';
+
+export type CefrBandKey = 'all' | 'A1' | 'A1+' | 'A2' | 'B1' | 'B1+';
+
+export const CEFR_CURRICULUM_BANDS: Record<
+  Exclude<CefrBandKey, 'all'>,
+  { label: string; min: number; max: number; levelName: string }
+> = {
+  A1: { label: 'A1 (Ch 1–20)', min: 1, max: 20, levelName: 'A1' },
+  'A1+': { label: 'A1+ (Ch 21–24)', min: 21, max: 24, levelName: 'A1+' },
+  A2: { label: 'A2 (Ch 25–40)', min: 25, max: 40, levelName: 'A2' },
+  B1: { label: 'B1 (Ch 41–55)', min: 41, max: 55, levelName: 'B1' },
+  'B1+': { label: 'B1+ (Ch 56–70)', min: 56, max: 70, levelName: 'B1+' },
+};
+
+export type WordsFilterState = {
+  search: string;
+  pos: 'all' | 'noun' | 'verb' | 'adjective' | 'adverb' | 'other';
+  status: 'all' | 'learning' | 'familiar' | 'mastered';
+  chapterRange: CefrBandKey;
+  savedOnly: boolean;
+};
+
+export type PhrasesFilterState = {
+  search: string;
+  speaker: 'ALL' | string;
+  chapterRange: CefrBandKey;
+  savedOnly: boolean;
+};
+
+export type GrammarFilterState = {
+  search: string;
+  level: CefrBandKey;
+  chapterRange: CefrBandKey;
+};
+
+/** Compute reading footprint label from vocabulary count and highest completed chapter */
+export function getReadingFootprint(
+  uniqueWordsCount: number,
+  highestChapterUnlockedOrRead: number,
+): { wordCount: number; chapterCount: number; label: string } {
+  const words = Math.max(0, uniqueWordsCount);
+  const chapters = Math.max(1, highestChapterUnlockedOrRead);
+  const chapterText = chapters === 1 ? '1 chapter in Rome' : `${chapters} chapters in Rome`;
+  const wordsText = words === 1 ? '1 word from your reading' : `${words} words from your reading`;
+  return {
+    wordCount: words,
+    chapterCount: chapters,
+    label: `${wordsText} · ${chapterText}`,
+  };
+}
+
+/** Check if chapter number falls within the selected CEFR band */
+export function matchesCefrBand(chapterNumber: number, band: CefrBandKey): boolean {
+  if (band === 'all') return true;
+  const config = CEFR_CURRICULUM_BANDS[band];
+  if (!config) return true;
+  return chapterNumber >= config.min && chapterNumber <= config.max;
+}
+
+/** Filter word items */
+export function filterNotebookWords(
+  items: VocabBrowseItem[],
+  filter: WordsFilterState,
+  optimisticSaved: Record<string, boolean>,
+): VocabBrowseItem[] {
+  let list = items;
+
+  // Saved filter
+  if (filter.savedOnly) {
+    list = list.filter((item) => {
+      const opt = optimisticSaved[`${item.kind}:${item.id}`];
+      return opt !== undefined ? opt : item.saved;
+    });
+  }
+
+  // Status filter
+  if (filter.status !== 'all') {
+    list = list.filter((item) => item.status === filter.status);
+  }
+
+  // Part of speech filter
+  if (filter.pos !== 'all') {
+    if (filter.pos === 'other') {
+      list = list.filter(
+        (item) =>
+          !item.partOfSpeech ||
+          !['noun', 'verb', 'adjective', 'adverb'].includes(item.partOfSpeech.toLowerCase()),
+      );
+    } else {
+      list = list.filter((item) => item.partOfSpeech?.toLowerCase() === filter.pos);
+    }
+  }
+
+  // Chapter range filter
+  if (filter.chapterRange !== 'all') {
+    list = list.filter((item) => {
+      const ch = item.introducedChapter ?? 1;
+      return matchesCefrBand(ch, filter.chapterRange);
+    });
+  }
+
+  // Search filter
+  const q = filter.search.trim().toLowerCase();
+  if (q) {
+    list = list.filter(
+      (item) =>
+        item.italian.toLowerCase().includes(q) ||
+        item.english.toLowerCase().includes(q) ||
+        item.id.toLowerCase().includes(q),
+    );
+  }
+
+  return list;
+}
+
+/** Filter phrase items */
+export function filterNotebookPhrases(
+  phrases: readonly NotebookPhrase[],
+  filter: PhrasesFilterState,
+  optimisticSaved: Record<string, boolean>,
+): NotebookPhrase[] {
+  let list = [...phrases];
+
+  // Saved filter
+  if (filter.savedOnly) {
+    list = list.filter((p) => optimisticSaved[`phrase:${p.id}`] ?? false);
+  }
+
+  // Speaker filter
+  if (filter.speaker !== 'ALL') {
+    list = list.filter((p) => p.speaker.toLowerCase() === filter.speaker.toLowerCase());
+  }
+
+  // Chapter range filter
+  if (filter.chapterRange !== 'all') {
+    list = list.filter((p) => matchesCefrBand(p.chapterNumber, filter.chapterRange));
+  }
+
+  // Search filter
+  const q = filter.search.trim().toLowerCase();
+  if (q) {
+    list = list.filter(
+      (p) =>
+        p.textIt.toLowerCase().includes(q) ||
+        p.textEn.toLowerCase().includes(q) ||
+        p.speaker.toLowerCase().includes(q) ||
+        (p.whyMemorable && p.whyMemorable.toLowerCase().includes(q)),
+    );
+  }
+
+  return list;
+}
+
+/** Filter grammar insights */
+export function filterNotebookGrammar(
+  insights: readonly NotebookGrammarInsight[],
+  filter: GrammarFilterState,
+): NotebookGrammarInsight[] {
+  let list = [...insights];
+
+  // Level filter
+  if (filter.level !== 'all') {
+    list = list.filter((g) => g.level.toLowerCase() === filter.level.toLowerCase());
+  }
+
+  // Chapter range filter
+  if (filter.chapterRange !== 'all') {
+    list = list.filter((g) => matchesCefrBand(g.sampleChapterNumber, filter.chapterRange));
+  }
+
+  // Search filter
+  const q = filter.search.trim().toLowerCase();
+  if (q) {
+    list = list.filter(
+      (g) =>
+        g.titleIt.toLowerCase().includes(q) ||
+        g.category.toLowerCase().includes(q) ||
+        g.explanation.toLowerCase().includes(q) ||
+        g.formula.toLowerCase().includes(q) ||
+        g.exampleIt.toLowerCase().includes(q) ||
+        g.exampleEn.toLowerCase().includes(q),
+    );
+  }
+
+  return list;
+}
+
+export type ChronologySection<T> = {
+  id: string;
+  title: string;
+  items: T[];
+};
+
+/** Group words chronologically into 'RECENTLY ENCOUNTERED' and 'EARLIER IN YOUR JOURNEY' */
+export function groupWordsByChronology(items: VocabBrowseItem[]): ChronologySection<VocabBrowseItem>[] {
+  if (items.length === 0) return [];
+
+  // Sort descending by introduced chapter
+  const sorted = [...items].sort((a, b) => {
+    const chA = a.introducedChapter ?? 1;
+    const chB = b.introducedChapter ?? 1;
+    return chB - chA;
+  });
+
+  if (sorted.length <= 6) {
+    return [{ id: 'all', title: 'YOUR WORDS', items: sorted }];
+  }
+
+  // Split into recent (top 35%) and earlier (remaining)
+  const splitIndex = Math.max(4, Math.ceil(sorted.length * 0.35));
+  const recent = sorted.slice(0, splitIndex);
+  const earlier = sorted.slice(splitIndex);
+
+  return [
+    { id: 'recent', title: 'RECENTLY ENCOUNTERED', items: recent },
+    { id: 'earlier', title: 'EARLIER IN YOUR JOURNEY', items: earlier },
+  ];
+}
+
+/** Group phrases chronologically */
+export function groupPhrasesByChronology(phrases: NotebookPhrase[]): ChronologySection<NotebookPhrase>[] {
+  if (phrases.length === 0) return [];
+
+  // Sort descending by chapter number
+  const sorted = [...phrases].sort((a, b) => b.chapterNumber - a.chapterNumber);
+
+  if (sorted.length <= 4) {
+    return [{ id: 'all', title: 'MEMORABLE LINES', items: sorted }];
+  }
+
+  const splitIndex = Math.max(3, Math.ceil(sorted.length * 0.4));
+  const recent = sorted.slice(0, splitIndex);
+  const earlier = sorted.slice(splitIndex);
+
+  return [
+    { id: 'recent', title: 'RECENTLY ENCOUNTERED', items: recent },
+    { id: 'earlier', title: 'EARLIER IN YOUR JOURNEY', items: earlier },
+  ];
+}

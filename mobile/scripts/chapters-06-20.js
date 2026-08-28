@@ -28,7 +28,7 @@ const chapter06 = chapter(
   [
     P('p1', 1, [
       S('s01', 'Luca ha una casa a Roma.', ['luca', 'avere', 'una', 'casa', 'a', 'roma']),
-      S('s02', 'Luca conosce Sofia.', ['luca', 'conoscere', 'sofia']),
+      S('s02', 'Ora Luca conosce Sofia.', ['ora', 'luca', 'conoscere', 'sofia']),
       S('s03', 'Oggi Sofia e Luca camminano.', ['oggi', 'sofia', 'e', 'luca', 'camminare']),
       S('s04', 'Vanno nel quartiere.', ['andare', 'nel', 'quartiere']),
     ]),
@@ -227,8 +227,8 @@ const chapter09 = chapter(
   },
   [
     P('p1', 1, [
-      S('s01', 'Luca torna al caffè.', ['luca', 'tornare', 'al', 'caffe']),
-      S('s02', "Nel caffè c'è il padrone.", ['nel', 'caffe', 'ce', 'il', 'padrone']),
+      S('s01', 'Il padrone guarda Luca.', ['il', 'padrone', 'guardare', 'luca']),
+      S('s02', 'Luca aspetta nel caffè.', ['luca', 'aspettare', 'nel', 'caffe']),
       S('s03', 'Luca parla con il padrone.', ['luca', 'parlare', 'con', 'il', 'padrone']),
     ]),
     P('p2', 2, [
@@ -329,7 +329,7 @@ const chapter10 = chapter(
           },
         ],
       }),
-      S('s13', 'Luca conosce Giulia.', ['luca', 'conoscere', 'giulia']),
+      S('s13', 'Ora Luca conosce Giulia.', ['ora', 'luca', 'conoscere', 'giulia']),
       S('s14', 'Il primo giorno va bene.', ['il', 'primo', 'giorno', 'andare', 'bene'], {
         phrases: [
           {
@@ -399,7 +399,7 @@ const chapter11 = chapter(
           },
         ],
       }),
-      S('s12', 'Luca conosce Marco.', ['luca', 'conoscere', 'marco']),
+      S('s12', 'Ora Luca conosce Marco.', ['ora', 'luca', 'conoscere', 'marco']),
       S('s13', 'Il gruppo è felice.', ['il', 'gruppo', 'essere', 'felice']),
     ]),
   ],

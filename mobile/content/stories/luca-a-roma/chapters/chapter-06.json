@@ -53,10 +53,11 @@
         },
         {
           "id": "s02",
-          "text": "Luca conosce Sofia.",
+          "text": "Ora Luca conosce Sofia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
+            "ora",
             "luca",
             "conoscere",
             "sofia"

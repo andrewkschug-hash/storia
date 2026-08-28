@@ -92,9 +92,19 @@ export function collectLucaGooglePlan(input: {
     const chapter = loadJson(join(storyPath, 'chapters', summary.file)) as {
       id: string;
       number: number;
+      titleIt?: string;
       paragraphs: { sentences: { id: string; text: string; speakerId?: string }[] }[];
     };
     const clips: { sentenceId: string; text: string; speakerId: string; contentId: string }[] = [];
+    if (chapter.titleIt) {
+      const cleanTitle = chapter.titleIt.trim().replace(/\.+$/, '');
+      clips.push({
+        sentenceId: 'header',
+        text: `Capitolo ${chapter.number}. ${cleanTitle}.`,
+        speakerId: 'narrator',
+        contentId: `header:${chapter.id}`,
+      });
+    }
     for (const paragraph of chapter.paragraphs ?? []) {
       for (const sentence of paragraph.sentences ?? []) {
         const speakerId = resolveSpeakerId(sentence.speakerId);

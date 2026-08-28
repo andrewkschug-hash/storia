@@ -123,7 +123,7 @@ function PathItemRow({
 
   const locked = item.status === 'locked';
   const eyebrow =
-    item.kind === 'grammar' ? 'Grammar' : item.kind === 'speak' ? 'Speak the scene' : 'Words';
+    item.kind === 'grammar' ? 'Grammar' : item.kind === 'speak' ? 'Roleplay' : 'Words';
   const title =
     item.kind === 'grammar' || item.kind === 'speak'
       ? item.title
@@ -132,7 +132,7 @@ function PathItemRow({
     item.kind === 'grammar'
       ? `After chapters ${item.batchStart}–${item.batchEnd}`
       : item.kind === 'speak'
-        ? 'Retell what happened'
+        ? 'Conversation roleplay'
         : 'Word recap from this batch';
   const icon = item.kind === 'grammar' ? 'book' : item.kind === 'speak' ? 'speak' : 'review';
 

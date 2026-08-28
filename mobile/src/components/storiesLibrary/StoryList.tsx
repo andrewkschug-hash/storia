@@ -1,6 +1,9 @@
+import { router, type Href } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { getLevelGate, type LevelGate } from '@/src/cefr/levelGates';
+import { LevelGateModal } from '@/src/components/levelGate/LevelGateModal';
 import { A2PlusPathwayPanel } from '@/src/components/pathway/A2PlusPathwayPanel';
 import { buildStoryRowsForTab } from '@/src/components/storiesLibrary/buildStoryRows';
 import { LevelTabs } from '@/src/components/storiesLibrary/LevelTabs';
@@ -80,6 +83,7 @@ export function StoryList({
   const [expandedRowId, setExpandedRowId] = useState<string | null>(null);
   const [expandedChildId, setExpandedChildId] = useState<string | null>(null);
   const [hint, setHint] = useState<string | null>(null);
+  const [selectedGateForModal, setSelectedGateForModal] = useState<LevelGate | null>(null);
   const hintTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const rows = useMemo(
@@ -122,6 +126,11 @@ export function StoryList({
 
   const handleRowPress = (rowId: string, locked: boolean, chapters: ChapterListItem[]) => {
     if (locked) {
+      const gate = getLevelGate(activeTab as any);
+      if (gate) {
+        setSelectedGateForModal(gate);
+        return;
+      }
       showHint(unlockHintForLockedStory(chapters));
       return;
     }
@@ -134,6 +143,22 @@ export function StoryList({
 
   return (
     <View>
+      <LevelGateModal
+        visible={Boolean(selectedGateForModal)}
+        gate={selectedGateForModal}
+        onClose={() => setSelectedGateForModal(null)}
+        onContinueJourney={() => {
+          setSelectedGateForModal(null);
+          if (selectedGateForModal?.previousLevel) {
+            setActiveTab(selectedGateForModal.previousLevel as LibraryTab);
+          }
+        }}
+        onTakeReadinessTest={(gate) => {
+          setSelectedGateForModal(null);
+          router.push(`/readiness-test?level=${gate.level}` as Href);
+        }}
+      />
+
       <LevelTabs active={activeTab} onChange={handleTabChange} />
 
       {hint ? (
@@ -227,7 +252,16 @@ export function StoryList({
       </View>
       )}
 
-      <LockedLevelsAccordion />
+      <LockedLevelsAccordion
+        onSelectLevel={(level) => {
+          const gate = getLevelGate(level as any);
+          if (gate) {
+            setSelectedGateForModal(gate);
+          } else {
+            router.push(`/readiness-test?level=${level}` as Href);
+          }
+        }}
+      />
     </View>
   );
 }

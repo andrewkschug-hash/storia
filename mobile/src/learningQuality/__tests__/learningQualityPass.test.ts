@@ -79,7 +79,7 @@ describe('A1 alternative hygiene and display', () => {
       storySentence: sentence!,
       lexiconById: bundle.lexiconById,
     });
-    expect(view.wordFocused).toBe(true);
+    expect(view.wordFocused).toBe(false);
     expect(view.promptEn).toBe('I arrive in Rome.');
     expect(view.expectedIt).toBe('Arrivo a Roma.');
   });

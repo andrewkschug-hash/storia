@@ -172,7 +172,9 @@ export default function ReaderScreen() {
             chapterId: adapted.id,
             meta: { source: 'autoplay' },
           });
-          void audio.playChapter(allSentences, adapted.id).then(() => syncAudioUi());
+          void audio
+            .playChapter(allSentences, adapted.id, { chapter: adapted })
+            .then(() => syncAudioUi());
         }
       } catch (e) {
         if (!cancelled) {
@@ -588,6 +590,18 @@ export default function ReaderScreen() {
         activePhraseRange={phraseRange}
         playingSentenceId={playingId}
         hasAudio={(sentence) => !!audio.sentenceAudio(sentence)}
+        hasHeaderAudio={true}
+        onPlayHeader={async () => {
+          const headerId = `header:${chapter.id}`;
+          if (playingId === headerId && audio.isPlaying()) {
+            audio.pause();
+            syncAudioUi();
+            return;
+          }
+          setHighlightId(headerId);
+          await audio.playChapterHeader(chapter);
+          syncAudioUi();
+        }}
         onPlayAudio={async (sentence) => {
           if (playingId === sentence.id && audio.isPlaying()) {
             audio.pause();
@@ -696,7 +710,7 @@ export default function ReaderScreen() {
               meta: { source: isChapterMode ? 'chapter_resume' : 'chapter_start' },
             });
           }
-          void audio.playChapter(sentences, chapter.id).then(() => syncAudioUi());
+          void audio.playChapter(sentences, chapter.id, { chapter }).then(() => syncAudioUi());
         }}
         onStop={() => {
           manualChapterStop.current = true;
@@ -713,7 +727,7 @@ export default function ReaderScreen() {
             chapterId: chapter.id,
             meta: { source: 'chapter_restart' },
           });
-          void audio.restartChapter(sentences, chapter.id).then(() => syncAudioUi());
+          void audio.restartChapter(sentences, chapter.id, { chapter }).then(() => syncAudioUi());
         }}
         onSetSpeed={(next) => {
           if (next !== audioSpeed) {

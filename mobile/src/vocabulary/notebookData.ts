@@ -38,21 +38,29 @@ export type NotebookPhrase = {
   textEn: string;
   speaker: string;
   chapterNumber: number;
-  whyMemorable: string;
+  sourceChapterId: string;
+  sourceSentenceId: string;
+  whyMemorable?: string;
 };
 
 export type NotebookGrammarInsight = {
   id: string;
+  category: string;
   titleIt: string;
   formula: string;
   exampleIt: string;
   exampleEn: string;
   explanation: string;
+  firstEncounterChapterNumber: number;
+  lessonChapterNumber: number;
+  provenanceChapterNumbers: readonly number[];
+  level: string;
+  batchKey: string;
+  sampleChapterNumber: number;
   chapterRange: {
     start: number;
     end: number;
   };
-  sampleChapterNumber: number;
 };
 
 /** The 5 narrative acts of Luca a Roma */
@@ -489,116 +497,258 @@ export const NARRATIVE_VOCABULARY: readonly NarrativeWordAnnotation[] = [
   },
 ] as const;
 
-/** Memorable story phrases and dialogues */
+/** Memorable story phrases and dialogues with canonical story provenance */
 export const NOTEBOOK_PHRASES: readonly NotebookPhrase[] = [
   {
-    id: 'phrase-ch05',
-    textIt: 'Un caffè al giorno, una parola alla volta.',
-    textEn: 'One coffee a day, one word at a time.',
-    speaker: 'Luca',
-    chapterNumber: 5,
-    whyMemorable: 'Luca’s early humble motto as he begins learning Italian and working in Rome.',
-  },
-  {
-    id: 'phrase-ch24',
-    textIt: 'Questa città non fa sconti a nessuno, ma se impari ad ascoltarla ti tiene compagnia.',
-    textEn: 'This city gives discounts to no one, but if you learn to listen, it keeps you company.',
+    id: 'phrase-ch05-ci-vediamo',
+    textIt: 'Ci vediamo.',
+    textEn: 'See you.',
     speaker: 'Sofia',
-    chapterNumber: 24,
-    whyMemorable: 'Sofia welcoming Luca into the real texture of Roman life.',
+    chapterNumber: 5,
+    sourceChapterId: 'luca-a-roma-05',
+    sourceSentenceId: 's13',
   },
   {
-    id: 'phrase-ch40',
-    textIt: 'Per adesso questa è casa.',
-    textEn: 'For now, this is home.',
+    id: 'phrase-ch05-sei-nuovo',
+    textIt: 'Sei nuovo a Roma?',
+    textEn: 'Are you new in Rome?',
+    speaker: 'Sofia',
+    chapterNumber: 5,
+    sourceChapterId: 'luca-a-roma-05',
+    sourceSentenceId: 's08',
+    whyMemorable: 'Sofia’s first question to Luca at Bar Centrale.',
+  },
+  {
+    id: 'phrase-ch08-cerco-lavoro',
+    textIt: 'Scusa, cerco un lavoro.',
+    textEn: 'Excuse me, I am looking for work.',
+    speaker: 'Luca',
+    chapterNumber: 8,
+    sourceChapterId: 'luca-a-roma-08',
+    sourceSentenceId: 's09',
+    whyMemorable: 'Luca taking his first courageous step to find work in Rome.',
+  },
+  {
+    id: 'phrase-ch21-buongiorno',
+    textIt: 'Buongiorno, Luca. Oggi arrivi presto.',
+    textEn: 'Good morning, Luca. Today you arrive early.',
+    speaker: 'Giulia',
+    chapterNumber: 21,
+    sourceChapterId: 'luca-a-roma-21',
+    sourceSentenceId: 's14',
+  },
+  {
+    id: 'phrase-ch25-tornato',
+    textIt: 'Lunedì mattina Luca è tornato al caffè.',
+    textEn: 'Monday morning Luca returned to the café.',
+    speaker: 'Luca',
+    chapterNumber: 25,
+    sourceChapterId: 'luca-a-roma-25',
+    sourceSentenceId: 's01',
+    whyMemorable: 'The pivotal moment where the narrative introduces completed past events.',
+  },
+  {
+    id: 'phrase-ch40-casa',
+    textIt: 'Luca guarda i tavoli e pensa: per adesso questa è casa.',
+    textEn: 'Luca looks at the tables and thinks: for now, this is home.',
     speaker: 'Luca',
     chapterNumber: 40,
+    sourceChapterId: 'luca-a-roma-40',
+    sourceSentenceId: 's49',
     whyMemorable: 'Luca’s realization at the end of Act 3 that his roots in Rome have taken hold.',
   },
   {
-    id: 'phrase-ch45',
-    textIt: 'Voglio essere la persona che sceglie consapevolmente.',
-    textEn: 'I want to be the person who consciously chooses.',
-    speaker: 'Luca',
-    chapterNumber: 45,
-    whyMemorable: 'The turning point on the Gianicolo where Luca sheds passivity.',
-  },
-  {
-    id: 'phrase-ch47',
-    textIt: 'Quando una cosa viene bene, so che ci ho messo io le mani.',
-    textEn: 'When something turns out well, I know I put my own hands into it.',
+    id: 'phrase-ch47-mani',
+    textIt:
+      '«Anche se ci sono notti in cui non dormo per l\'ansia dei conti e nonostante le bollette siano sempre un\'incognita, quando una cosa viene bene so che ci ho messo io le mani dall\'inizio alla fine.»',
+    textEn:
+      '“Even if there are nights when I don’t sleep from the anxiety of bills... when something turns out well I know I put my own hands into it from start to finish.”',
     speaker: 'Marco',
     chapterNumber: 47,
-    whyMemorable: 'The artisan definition of authorship that inspires Luca’s coffee venture.',
+    sourceChapterId: 'luca-a-roma-47',
+    sourceSentenceId: 's21',
+    whyMemorable: 'The artisan definition of authorship that inspires Luca’s venture.',
   },
   {
-    id: 'phrase-ch48',
-    textIt: 'Pietralba non è una prigione: è il terreno solido sotto i miei piedi.',
-    textEn: 'Pietralba is not a prison: it is the solid ground beneath my feet.',
+    id: 'phrase-ch48-pietralba',
+    textIt:
+      '«Pietralba non è mai stata una gabbia da cui fuggire o un passato da dimenticare, ma il terreno forte e sicuro su cui ho potuto poggiare saldamente i piedi per imparare a camminare nel mondo e guardare più lontano.»',
+    textEn:
+      '“Pietralba was never a cage to escape or a past to forget, but the strong and safe ground upon which I could firmly place my feet...”',
     speaker: 'Luca',
     chapterNumber: 48,
+    sourceChapterId: 'luca-a-roma-48',
+    sourceSentenceId: 's10',
     whyMemorable: 'Luca explaining to his parents that staying in Rome honors his roots.',
   },
   {
-    id: 'phrase-ch52',
-    textIt: 'Non cerco una purezza astratta, ma devo capire se posso costruire un’identità autentica.',
-    textEn: 'I am not seeking abstract purity, but I must understand if I can build an authentic identity.',
-    speaker: 'Luca',
-    chapterNumber: 52,
-    whyMemorable: 'Facing commercial pressure without compromising personal values.',
-  },
-  {
-    id: 'phrase-ch54',
-    textIt: 'Adesso tocca a te.',
-    textEn: 'Now it is your turn.',
+    id: 'phrase-ch54-tocca-a-te',
+    textIt: '«Adesso tocca a te,» ha detto semplicemente con la sua voce roca, tranquilla e paterna.',
+    textEn: '“Now it is your turn,” he said simply with his quiet, paternal voice.',
     speaker: 'Bruno',
     chapterNumber: 54,
+    sourceChapterId: 'luca-a-roma-54',
+    sourceSentenceId: 's28',
     whyMemorable: 'Bruno passing his brass tamper and lifelong craft to Luca.',
   },
   {
-    id: 'phrase-ch55',
-    textIt: 'Buongiorno a lei, benvenuto allo Spazio Monti. Le preparo subito un espresso.',
-    textEn: 'Good morning to you, welcome to Spazio Monti. I will prepare an espresso for you right away.',
+    id: 'phrase-ch68-liberta',
+    textIt:
+      '«Il vero artigiano sa che la libertà di sbagliare con la propria testa e di fare le cose con amore vale infinitamente più di qualsiasi stipendio aziendale.»',
+    textEn:
+      '“The true artisan knows that the freedom to make mistakes with your own head and to do things with love is worth infinitely more than any corporate salary.”',
+    speaker: 'Bruno',
+    chapterNumber: 68,
+    sourceChapterId: 'luca-a-roma-68',
+    sourceSentenceId: 's45',
+    whyMemorable: 'Bruno reminding Luca of the value of independent craft.',
+  },
+  {
+    id: 'phrase-ch69-ascoltare',
+    textIt:
+      '«Finché credi di sapere tutto, il legno o la macchina ti smentiscono subito e ti fanno sbagliare; quando impari ad ascoltare con umiltà, tutto comincia a funzionare con una facilità inaspettata.»',
+    textEn:
+      '“As long as you think you know everything, the wood or the machine proves you wrong; when you learn to listen with humility, everything starts working with unexpected ease.”',
+    speaker: 'Marco',
+    chapterNumber: 69,
+    sourceChapterId: 'luca-a-roma-69',
+    sourceSentenceId: 's39',
+    whyMemorable: 'The artisan mindset of humility and craft in the workshop.',
+  },
+  {
+    id: 'phrase-ch70-miscela',
+    textIt:
+      '«Buongiorno a lei, signor Sergio! La miscela speciale della casa è calda e pronta per darle la carica giusta,» rispose Luca con un sorriso caloroso e sincero.',
+    textEn:
+      '“Good morning to you, signor Sergio! The house special blend is hot and ready to give you the right boost.”',
     speaker: 'Luca',
-    chapterNumber: 55,
-    whyMemorable: 'The opening line of Luca’s new life behind his own counter.',
+    chapterNumber: 70,
+    sourceChapterId: 'luca-a-roma-70',
+    sourceSentenceId: 's16',
+    whyMemorable: 'Luca fully in his element at Spazio Monti, welcoming the neighborhood.',
   },
 ] as const;
 
-/** Concise "Una cosa che ho capito" story insights */
+/** Story-anchored grammar topics and patterns */
 export const NOTEBOOK_GRAMMAR_INSIGHTS: readonly NotebookGrammarInsight[] = [
   {
-    id: 'insight-imperfetto-passato',
-    titleIt: 'Dal pensiero all’azione',
-    formula: 'Imperfetto (background/abitudine) → Passato Prossimo (svolta)',
-    exampleIt: 'Pensavo che la routine sarebbe durata sempre, ma ho capito che dovevo scegliere.',
-    exampleEn: 'I thought the routine would last forever, but I understood I had to choose.',
+    id: 'insight-essere-avere',
+    category: 'FOUNDATION PATTERNS',
+    titleIt: 'Essere e avere',
+    formula: 'io sono / ho, tu sei / hai, lui/lei è / ha',
+    exampleIt: 'Ciao, sono Luca e ho una valigia.',
+    exampleEn: 'Hello, I am Luca and I have a suitcase.',
     explanation:
-      'Imperfetto describes how Luca used to see things passively; passato prossimo captures the moment of realization.',
-    chapterRange: { start: 41, end: 45 },
+      'Italian verbs carry the person within their ending, so subject pronouns like "io" are usually dropped unless emphasizing.',
+    firstEncounterChapterNumber: 1,
+    lessonChapterNumber: 5,
+    provenanceChapterNumbers: [1, 3, 5],
+    level: 'A1',
+    batchKey: '1-5',
+    sampleChapterNumber: 5,
+    chapterRange: { start: 1, end: 5 },
+  },
+  {
+    id: 'insight-presente-regolare',
+    category: 'DAILY ROUTINES & CRAFT',
+    titleIt: 'Presente indicativo',
+    formula: 'Verbi in -are, -ere, -ire (lavoro, prendo, servo)',
+    exampleIt: 'Ogni mattina Luca prepara il caffè al banco.',
+    exampleEn: 'Every morning Luca prepares coffee at the counter.',
+    explanation:
+      'Used for daily routines, habitual actions, and things happening right now in Luca’s Rome routine.',
+    firstEncounterChapterNumber: 6,
+    lessonChapterNumber: 10,
+    provenanceChapterNumbers: [6, 8, 10],
+    level: 'A1',
+    batchKey: '6-10',
+    sampleChapterNumber: 8,
+    chapterRange: { start: 6, end: 10 },
+  },
+  {
+    id: 'insight-passato-prossimo',
+    category: 'TALKING ABOUT THE PAST',
+    titleIt: 'Passato prossimo',
+    formula: 'avere / essere + participio passato (-ato, -uto, -ito)',
+    exampleIt: 'Lunedì mattina Luca è tornato al caffè e ha aperto la porta.',
+    exampleEn: 'Monday morning Luca returned to the café and opened the door.',
+    explanation:
+      'Describes completed actions that took place at a specific moment and whose outcome matters to the present.',
+    firstEncounterChapterNumber: 14,
+    lessonChapterNumber: 25,
+    provenanceChapterNumbers: [14, 18, 25],
+    level: 'A2',
+    batchKey: '21-25',
+    sampleChapterNumber: 25,
+    chapterRange: { start: 21, end: 25 },
+  },
+  {
+    id: 'insight-imperfetto-abitudini',
+    category: 'STORIES & MEMORIES',
+    titleIt: 'Imperfetto',
+    formula: 'Radice verbale + -avo, -evo, -ivo (pensavo, lavorava)',
+    exampleIt: 'A Pietralba la vita scorreva lenta prima di partire per Roma.',
+    exampleEn: 'In Pietralba life used to flow slowly before leaving for Rome.',
+    explanation:
+      'Used for background settings, ongoing states, memories, and habitual actions in the past.',
+    firstEncounterChapterNumber: 27,
+    lessonChapterNumber: 30,
+    provenanceChapterNumbers: [27, 28, 30],
+    level: 'A2',
+    batchKey: '26-30',
+    sampleChapterNumber: 30,
+    chapterRange: { start: 26, end: 30 },
+  },
+  {
+    id: 'insight-imperfetto-passato',
+    category: 'NARRATIVE CONTRASTS',
+    titleIt: 'Imperfetto vs Passato Prossimo',
+    formula: 'Imperfetto (sfondo/abitudine) + Passato Prossimo (svolta)',
+    exampleIt: 'Mentre lavorava al banco, Bruno ha preso il pressino di ottone.',
+    exampleEn: 'While he was working at the counter, Bruno took the brass tamper.',
+    explanation:
+      'Imperfetto sets the ongoing background scene while passato prossimo marks the turning point that interrupts it.',
+    firstEncounterChapterNumber: 35,
+    lessonChapterNumber: 45,
+    provenanceChapterNumbers: [35, 41, 45],
+    level: 'B1',
+    batchKey: '41-45',
     sampleChapterNumber: 45,
+    chapterRange: { start: 41, end: 45 },
   },
   {
     id: 'insight-condizionale-scelta',
-    titleIt: 'Valutare e preferire con garbo',
-    formula: 'Condizionale presente (vorrei / preferirei) + invece di',
-    exampleIt: 'Vorrei ringraziarti per la proposta, ma preferirei costruire un percorso indipendente.',
-    exampleEn: 'I would like to thank you for the offer, but I would prefer to build an independent path.',
+    category: 'INTENTIONS & POLITE CHOICES',
+    titleIt: 'Condizionale presente',
+    formula: 'vorrei, preferirei, sarebbe opportuno',
+    exampleIt: 'Vorrei ringraziarvi per la proposta, ma preferirei restare indipendente.',
+    exampleEn: 'I would like to thank you for the offer, but I would prefer to stay independent.',
     explanation:
-      'The conditional allows Luca to evaluate Giulia’s hotel contract with genuine gratitude while asserting his autonomy.',
-    chapterRange: { start: 46, end: 50 },
+      'Allows expressing desires, polite requests, and conscious decisions without abruptness.',
+    firstEncounterChapterNumber: 46,
+    lessonChapterNumber: 50,
+    provenanceChapterNumbers: [46, 48, 50],
+    level: 'B1',
+    batchKey: '46-50',
     sampleChapterNumber: 48,
+    chapterRange: { start: 46, end: 50 },
   },
   {
     id: 'insight-preposizioni-cui',
-    titleIt: 'Collegare le ragioni profonde',
-    formula: 'Preposizione + cui (il progetto per cui / il luogo in cui)',
-    exampleIt: 'Questo è il progetto per cui ho investito tutto: il banco in cui servo ogni espresso con cura.',
-    exampleEn: 'This is the project for which I invested everything: the counter at which I serve each espresso with care.',
+    category: 'CONNECTING IDEAS',
+    titleIt: 'Pronomi relativi con preposizione',
+    formula: 'preposizione + cui (il progetto per cui / lo spazio in cui)',
+    exampleIt: 'Questo è il progetto per cui ho lavorato: lo spazio in cui esprimo il mio mestiere.',
+    exampleEn: 'This is the project for which I worked: the space in which I express my craft.',
     explanation:
-      'Relative pronouns with cui connect physical locations and deep motivations to Luca’s daily craft at Spazio Monti.',
-    chapterRange: { start: 51, end: 55 },
+      'Connects places, people, and deep motivations to Luca’s artisan journey in Monti.',
+    firstEncounterChapterNumber: 51,
+    lessonChapterNumber: 55,
+    provenanceChapterNumbers: [51, 53, 55],
+    level: 'B1',
+    batchKey: '51-55',
     sampleChapterNumber: 55,
+    chapterRange: { start: 51, end: 55 },
   },
 ] as const;
 

@@ -147,7 +147,7 @@ describe('Phase 12D reveal and continue flow', () => {
       storySentence: sentence,
       lexiconById: bundle.lexiconById,
     });
-    expect(view.wordFocused).toBe(true);
+    expect(view.wordFocused).toBe(false);
     expect(view.promptEn).toBe('I arrive in Rome.');
   });
 

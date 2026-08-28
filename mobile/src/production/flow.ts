@@ -141,7 +141,7 @@ export function productionCardView(
     continueVisible: revealed,
     howDidYouDoVisible: revealed,
     progressLabel: `${index + 1} of ${total}`,
-    wordFocused: exercise.level === 'A1',
+    wordFocused: false,
   };
 }
 

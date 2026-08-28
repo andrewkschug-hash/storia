@@ -38,16 +38,16 @@ export function StoryRow({ row, expanded, onPress }: Props) {
         <Text style={[styles.title, { color: colors.text }]}>{row.titleIt}</Text>
         <Text style={[Typography.caption, { color: colors.textSecondary, marginTop: 2 }]}>
           {row.completed} / {row.total} chapters
-          {row.locked ? ' · Locked 🔒' : ''}
+          {row.locked ? ' · Complete prior arc or test readiness' : ''}
         </Text>
       </View>
       <AppSymbol
         name={{
-          ios: expanded ? 'chevron.up' : 'chevron.right',
-          android: expanded ? 'expand_less' : 'chevron_right',
-          web: expanded ? 'expand_less' : 'chevron_right',
+          ios: expanded ? 'chevron.up' : row.locked ? 'lock.fill' : 'chevron.right',
+          android: expanded ? 'expand_less' : row.locked ? 'lock' : 'chevron_right',
+          web: expanded ? 'expand_less' : row.locked ? 'lock' : 'chevron_right',
         }}
-        tintColor={colors.tint}
+        tintColor={row.locked ? colors.textMuted : colors.tint}
         size={18}
       />
     </Pressable>
