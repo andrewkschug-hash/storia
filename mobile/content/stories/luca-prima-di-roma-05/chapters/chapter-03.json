@@ -96,12 +96,11 @@
         },
         {
           "id": "s05",
-          "text": "A Davide piace il succo.",
+          "text": "Mi piace il succo.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "davide",
+            "mi",
             "piacere",
             "il",
             "succo"
@@ -121,12 +120,11 @@
         },
         {
           "id": "s07",
-          "text": "A Elisa piace la frutta.",
+          "text": "Mi piace la frutta.",
           "speakerId": "elisa",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "elisa",
+            "mi",
             "piacere",
             "la",
             "frutta"
@@ -134,12 +132,11 @@
         },
         {
           "id": "s08",
-          "text": "A Marta piace il pane.",
+          "text": "Mi piace il pane.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "marta",
+            "mi",
             "piacere",
             "il",
             "pane"
@@ -158,12 +155,11 @@
         },
         {
           "id": "s10",
-          "text": "A Luca piace la torta.",
+          "text": "Mi piace la torta.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
+            "mi",
             "piacere",
             "la",
             "torta"
@@ -171,12 +167,11 @@
         },
         {
           "id": "s11",
-          "text": "A Luca piace la musica.",
+          "text": "Mi piace la musica.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
+            "mi",
             "piacere",
             "la",
             "musica"
@@ -211,13 +206,12 @@
       "sentences": [
         {
           "id": "s14",
-          "text": "A Luca non piace l'olio.",
+          "text": "Non mi piace l'olio.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
             "non",
+            "mi",
             "piacere",
             "olio"
           ]
@@ -375,12 +369,11 @@
         },
         {
           "id": "s27",
-          "text": "A Luca piace la festa.",
+          "text": "Mi piace la festa.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
+            "mi",
             "piacere",
             "la",
             "festa"

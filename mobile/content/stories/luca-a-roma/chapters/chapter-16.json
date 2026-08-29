@@ -70,7 +70,7 @@
           "kind": "narration",
           "lemmas": [
             "luca",
-            "porta",
+            "portare",
             "una",
             "valigia"
           ]
@@ -188,7 +188,7 @@
           "lemmas": [
             "il",
             "treno",
-            "parte",
+            "partire",
             "adesso"
           ]
         },
@@ -229,12 +229,12 @@
       "question": "What do they bring with them?",
       "questionIt": "Cosa portano con loro?",
       "choices": [
-        "A suitcase (valigia)",
+        "A suitcase",
         "A new apartment key",
         "Only empty hands"
       ],
       "correctChoice": 0,
-      "explanation": "They have a valigia as they head for the train.",
+      "explanation": "They have a suitcase as they head for the train.",
       "difficulty": 1
     },
     {

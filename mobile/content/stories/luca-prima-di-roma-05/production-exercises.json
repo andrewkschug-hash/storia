@@ -126,7 +126,7 @@
       "storyId": "luca-prima-di-roma-05",
       "chapterId": "luca-prima-di-roma-05-03",
       "level": "A1",
-      "sourceSentenceId": "s29",
+      "sourceSentenceId": "s11",
       "promptEn": "I like music.",
       "expectedIt": "Mi piace la musica.",
       "acceptableAnswers": [
@@ -143,7 +143,7 @@
       "storyId": "luca-prima-di-roma-05",
       "chapterId": "luca-prima-di-roma-05-03",
       "level": "A1",
-      "sourceSentenceId": "s28",
+      "sourceSentenceId": "s10",
       "promptEn": "I like the cake.",
       "expectedIt": "Mi piace la torta.",
       "acceptableAnswers": [
@@ -161,7 +161,7 @@
       "storyId": "luca-prima-di-roma-05",
       "chapterId": "luca-prima-di-roma-05-03",
       "level": "A1",
-      "sourceSentenceId": "s30",
+      "sourceSentenceId": "s14",
       "promptEn": "I don't like the oil.",
       "expectedIt": "Non mi piace l'olio.",
       "acceptableAnswers": [

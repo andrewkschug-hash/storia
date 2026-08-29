@@ -2,7 +2,7 @@ import type { AudioAsset, TTSSpeed, VoiceRoster } from '@/src/audio/types';
 import { audioCacheKey, textHash } from '@/src/audio/cacheKey';
 import { isPlayableAsset } from '@/src/audio/playable';
 import { resolveCharacterVoice, resolveSpeakerId } from '@/src/audio/voices';
-import { chapterHeaderText } from '@/src/audio/chapterHeader';
+import { chapterHeaderText, isHeaderSentenceId } from '@/src/audio/chapterHeader';
 import type { Character, Sentence } from '@/src/content/schemas';
 
 export class AudioCatalog {
@@ -34,6 +34,12 @@ export class AudioCatalog {
     if (sentence.audioAssetId) {
       const pinned = this.findById(sentence.audioAssetId);
       if (pinned && pinned.text === sentence.text && pinned.speed === speed) return pinned;
+    }
+    if (isHeaderSentenceId(sentence.id)) {
+      const shortId = sentence.id;
+      const fullId = chapterId ? `header:${chapterId}` : shortId;
+      const match = this.lookupSpoken(sentence.text, 'narrator', speed, shortId, fullId);
+      if (match) return match;
     }
     const shortContentId = `sentence:${sentence.id}:${sentence.selectedVariantId}`;
     const fullContentId = chapterId

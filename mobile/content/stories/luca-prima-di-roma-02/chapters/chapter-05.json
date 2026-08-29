@@ -85,13 +85,12 @@
         },
         {
           "id": "s04",
-          "text": "Alle nove Chiara ha italiano.",
+          "text": "Alle nove ho italiano.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
             "alle",
             "nove",
-            "chiara",
             "avere",
             "italiano"
           ]

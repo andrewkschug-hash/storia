@@ -16,6 +16,8 @@ type Props = {
   saveLabel?: string;
   /** Sentence close button. Defaults to Continue reading. */
   closeLabel?: string;
+  /** Launch Translation Explorer with current lookup context. */
+  onExploreTranslation?: () => void;
 };
 
 /**
@@ -31,6 +33,7 @@ export function DictionarySheet({
   canPronounce,
   saveLabel,
   closeLabel,
+  onExploreTranslation,
 }: Props) {
   const { colors, type, minTouchTarget, settings } = useAccessibility();
   const insets = useSafeAreaInsets();
@@ -133,6 +136,25 @@ export function DictionarySheet({
               ]}>
               {lookup.sentenceText}
             </Text>
+          ) : null}
+
+          {onExploreTranslation ? (
+            <Pressable
+              onPress={onExploreTranslation}
+              accessibilityRole="button"
+              accessibilityLabel="Explore Italian in Translation Explorer"
+              style={({ pressed }) => [
+                styles.exploreBtn,
+                {
+                  backgroundColor: colors.backgroundHigher,
+                  borderColor: colors.border,
+                  opacity: pressed ? 0.8 : 1,
+                },
+              ]}>
+              <Text style={[type.label, { color: colors.tint, fontWeight: '600' }]}>
+                🌐 Explore Italian →
+              </Text>
+            </Pressable>
           ) : null}
 
           <View style={styles.actions}>
@@ -239,5 +261,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: Radii.md,
     borderWidth: StyleSheet.hairlineWidth,
+  },
+  exploreBtn: {
+    marginTop: Spacing.md,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.md,
+    borderRadius: Radii.md,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

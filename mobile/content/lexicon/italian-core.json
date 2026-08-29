@@ -43015,6 +43015,78 @@
         "un'amicizia",
         "un’amicizia"
       ]
+    },
+    {
+      "lemmaId": "settemiladuecento",
+      "italian": "settemiladuecento",
+      "english": "seven thousand two hundred (7,200)",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 57,
+      "inflections": [
+        "settemiladuecento"
+      ]
+    },
+    {
+      "lemmaId": "duemilasettecentotrentasei",
+      "italian": "duemilasettecentotrentasei",
+      "english": "two thousand seven hundred thirty-six (2,736)",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 57,
+      "inflections": [
+        "duemilasettecentotrentasei"
+      ]
+    },
+    {
+      "lemmaId": "tremilaseicento",
+      "italian": "tremilaseicento",
+      "english": "three thousand six hundred (3,600)",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 57,
+      "inflections": [
+        "tremilaseicento"
+      ]
+    },
+    {
+      "lemmaId": "ottocentosessantaquattro",
+      "italian": "ottocentosessantaquattro",
+      "english": "eight hundred sixty-four (864)",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 57,
+      "inflections": [
+        "ottocentosessantaquattro"
+      ]
+    },
+    {
+      "lemmaId": "duemilacinquecento",
+      "italian": "duemilacinquecento",
+      "english": "two thousand five hundred (2,500)",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 60,
+      "inflections": [
+        "duemilacinquecento"
+      ]
+    },
+    {
+      "lemmaId": "millesettecento",
+      "italian": "millesettecento",
+      "english": "one thousand seven hundred (1,700)",
+      "partOfSpeech": "number",
+      "difficulty": 2,
+      "frequency": "low",
+      "introducedChapter": 60,
+      "inflections": [
+        "millesettecento"
+      ]
     }
   ]
 }

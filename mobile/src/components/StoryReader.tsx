@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useEffect, useRef } from 'react';
+import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -192,6 +192,8 @@ export function StoryReader({
     }
   };
 
+  const [showTitleTranslation, setShowTitleTranslation] = useState(false);
+
   return (
     <ScrollView
       ref={scrollRef}
@@ -221,10 +223,7 @@ export function StoryReader({
           scrollToTarget(playingSentenceId, true);
         }
       }}>
-      <Pressable
-        accessibilityRole={onPlayHeader ? 'button' : 'none'}
-        accessibilityLabel={`Capitolo ${chapter.number}. ${chapter.titleIt}.${onPlayHeader ? (isHeaderPlaying ? ' Pause title audio.' : ' Play title audio.') : ''}`}
-        onPress={onPlayHeader}
+      <View
         style={[
           styles.headerBlock,
           isHeaderHighlighted && {
@@ -235,7 +234,11 @@ export function StoryReader({
           },
         ]}>
         <View style={styles.headerRow}>
-          <View style={{ flex: 1 }}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Chapter ${chapter.number}: ${chapter.titleIt}.${chapter.title ? (showTitleTranslation ? ` English: ${chapter.title}. Tap to hide translation.` : ' Tap to reveal English translation.') : ''}`}
+            onPress={() => setShowTitleTranslation((v) => !v)}
+            style={({ pressed }) => [{ flex: 1, opacity: pressed ? 0.8 : 1 }]}>
             <Text style={[type.chapterEyebrow, { color: colors.tint }]}>
               Capitolo {chapter.number}
             </Text>
@@ -249,14 +252,51 @@ export function StoryReader({
               ]}>
               {chapter.titleIt}
             </Text>
-          </View>
+            {chapter.title ? (
+              showTitleTranslation ? (
+                <Text
+                  style={[
+                    type.body,
+                    {
+                      color: colors.textSecondary,
+                      marginTop: Spacing.xs,
+                      fontStyle: 'italic',
+                    },
+                  ]}>
+                  {chapter.title}
+                </Text>
+              ) : (
+                <Text
+                  style={[
+                    type.caption,
+                    {
+                      color: colors.textMuted,
+                      marginTop: Spacing.xs,
+                    },
+                  ]}>
+                  ▸ English
+                </Text>
+              )
+            ) : null}
+          </Pressable>
           {hasHeaderAudio || onPlayHeader ? (
-            <View
-              style={[
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={
+                isHeaderPlaying
+                  ? 'Pause chapter audio'
+                  : `Play chapter ${chapter.number} audio`
+              }
+              onPress={onPlayHeader}
+              hitSlop={8}
+              style={({ pressed }) => [
                 styles.headerAudioBtn,
                 {
                   backgroundColor: isHeaderPlaying ? colors.tint : colors.backgroundElevated,
                   borderColor: colors.border,
+                  opacity: pressed ? 0.8 : 1,
+                  minWidth: Math.max(36, minTouchTarget),
+                  minHeight: Math.max(36, minTouchTarget),
                 },
               ]}>
               <Text
@@ -264,16 +304,16 @@ export function StoryReader({
                   type.caption,
                   {
                     color: isHeaderPlaying ? colors.background : colors.textMuted,
-                    fontSize: 12,
-                    lineHeight: 14,
+                    fontSize: 14,
+                    lineHeight: 16,
                   },
                 ]}>
                 {isHeaderPlaying ? '❚❚' : '▶'}
               </Text>
-            </View>
+            </Pressable>
           ) : null}
         </View>
-      </Pressable>
+      </View>
 
       <View style={styles.body} onLayout={onBodyLayout}>
         {chapter.paragraphs.map((paragraph, index) => (

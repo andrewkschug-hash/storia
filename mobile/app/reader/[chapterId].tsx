@@ -19,6 +19,12 @@ import {
   ReaderReadToListenTransition,
 } from '@/src/components/ReaderPassTransition';
 import { StoryReader } from '@/src/components/StoryReader';
+import { TranslationExplorer } from '@/src/components/TranslationExplorer';
+import {
+  resolveHeaderExplorerPayload,
+  resolveDictionaryExplorerPayload,
+} from '@/src/reader/translationExplorerLogic';
+import type { ExploreTranslationPayload } from '@/src/reader/translationExplorerTypes';
 import { getAdaptiveService } from '@/src/adaptive';
 import { getAudioCatalog, getAudioService } from '@/src/audio';
 import { refreshCatalogFromGateway } from '@/src/audio/AudioService';
@@ -93,6 +99,8 @@ export default function ReaderScreen() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showReaderTip, setShowReaderTip] = useState(false);
   const [showMindsetModal, setShowMindsetModal] = useState(false);
+  const [explorerPayload, setExplorerPayload] = useState<ExploreTranslationPayload | null>(null);
+  const [showExplorer, setShowExplorer] = useState(false);
   const [progressRecord, setProgressRecord] = useState<ReadingProgressRecord | null>(null);
   const [readerPass, setReaderPass] = useState<ReaderPassMode>('read');
   const [passGuidance, setPassGuidance] = useState<ReaderPassGuidance>('guided');
@@ -252,6 +260,49 @@ export default function ReaderScreen() {
   const dismissReaderTip = () => {
     setShowReaderTip(false);
     void markReaderTipSeen();
+  };
+
+  const openExplorerFromHeader = () => {
+    const highlightedSentence = highlightId ? sentences.find((s) => s.id === highlightId) : null;
+    const activeSentence = activeSentenceId
+      ? sentences.find((s) => s.id === activeSentenceId)
+      : null;
+    const resolved = resolveHeaderExplorerPayload({ highlightedSentence, activeSentence });
+    setExplorerPayload(resolved);
+    setShowExplorer(true);
+    trackReadingEvent({
+      type: 'translation_explorer_opened',
+      storyId: storyId ?? chapter?.storyId,
+      chapterId: chapter?.id,
+      sentenceId: highlightedSentence?.id ?? activeSentence?.id,
+      meta: {
+        source: 'reader_header',
+        inputType: resolved.contextSentence ? 'story_sentence' : 'custom',
+        hasReferenceEnglish: Boolean(resolved.referenceEnglish),
+        textLength: resolved.text.length,
+      },
+    });
+  };
+
+  const openExplorerFromDictionary = () => {
+    if (!lookup) return;
+    const matchingSentence = sentences.find((s) => s.id === lookup.sentenceId);
+    const resolved = resolveDictionaryExplorerPayload(lookup, matchingSentence);
+    closeLookup();
+    setExplorerPayload(resolved);
+    setShowExplorer(true);
+    trackReadingEvent({
+      type: 'translation_explorer_opened',
+      storyId: storyId ?? chapter?.storyId,
+      chapterId: chapter?.id,
+      sentenceId: lookup.sentenceId,
+      meta: {
+        source: resolved.source,
+        inputType: resolved.contextSentence ? 'story_sentence' : 'custom',
+        hasReferenceEnglish: Boolean(resolved.referenceEnglish),
+        textLength: resolved.text.length,
+      },
+    });
   };
 
   const onPressToken = async (sentence: Sentence, _token: Token, tokenIndex: number) => {
@@ -552,25 +603,46 @@ export default function ReaderScreen() {
             </Pressable>
           ),
           headerRight: () => (
-            <Pressable
-              onPress={() => setShowMindsetModal(true)}
-              accessibilityRole="button"
-              accessibilityLabel="Reading mindset guide"
-              hitSlop={12}
-              style={({ pressed }) => [
-                styles.headerGuideBtn,
-                { opacity: pressed ? 0.7 : 1, minHeight: minTouchTarget },
-              ]}>
-              <AppSymbol
-                name={{
-                  ios: 'book.pages',
-                  android: 'menu_book',
-                  web: 'menu_book',
-                }}
-                tintColor={colors.tint}
-                size={20}
-              />
-            </Pressable>
+            <View style={styles.headerRightRow}>
+              <Pressable
+                onPress={openExplorerFromHeader}
+                accessibilityRole="button"
+                accessibilityLabel="Explore Italian in Translation Explorer"
+                hitSlop={8}
+                style={({ pressed }) => [
+                  styles.headerExploreBtn,
+                  {
+                    backgroundColor: colors.backgroundHigher,
+                    borderColor: colors.border,
+                    opacity: pressed ? 0.7 : 1,
+                    minHeight: minTouchTarget,
+                  },
+                ]}>
+                <Text style={[type.caption, { color: colors.tint, fontWeight: '600' }]}>
+                  🌐 Explore Italian
+                </Text>
+              </Pressable>
+
+              <Pressable
+                onPress={() => setShowMindsetModal(true)}
+                accessibilityRole="button"
+                accessibilityLabel="Reading mindset guide"
+                hitSlop={12}
+                style={({ pressed }) => [
+                  styles.headerGuideBtn,
+                  { opacity: pressed ? 0.7 : 1, minHeight: minTouchTarget },
+                ]}>
+                <AppSymbol
+                  name={{
+                    ios: 'book.pages',
+                    android: 'menu_book',
+                    web: 'menu_book',
+                  }}
+                  tintColor={colors.tint}
+                  size={20}
+                />
+              </Pressable>
+            </View>
           ),
         }}
       />
@@ -593,13 +665,15 @@ export default function ReaderScreen() {
         hasHeaderAudio={true}
         onPlayHeader={async () => {
           const headerId = `header:${chapter.id}`;
-          if (playingId === headerId && audio.isPlaying()) {
+          if ((playingId === headerId || isChapterMode) && audio.isPlaying()) {
             audio.pause();
             syncAudioUi();
             return;
           }
+          manualChapterStop.current = false;
+          chapterAudioRunActive.current = true;
           setHighlightId(headerId);
-          await audio.playChapterHeader(chapter);
+          await audio.playChapter(sentences, chapter.id, { chapter });
           syncAudioUi();
         }}
         onPlayAudio={async (sentence) => {
@@ -777,6 +851,7 @@ export default function ReaderScreen() {
           else void audio.playWord(lookup.surface);
         }}
         onClose={closeLookup}
+        onExploreTranslation={openExplorerFromDictionary}
         onSave={async () => {
           if (!lookup) return;
           await getVocabularyService().saveLookup(lookup);
@@ -799,6 +874,14 @@ export default function ReaderScreen() {
         }}
       />
 
+      <TranslationExplorer
+        visible={showExplorer}
+        payload={explorerPayload}
+        onClose={() => setShowExplorer(false)}
+        storyId={storyId ?? chapter.storyId}
+        chapterId={chapter.id}
+      />
+
       <ReadingMindsetModal
         visible={showMindsetModal}
         onDismiss={() => void dismissMindset()}
@@ -814,6 +897,19 @@ const styles = StyleSheet.create({
     gap: 2,
     paddingRight: Spacing.sm,
     minHeight: 44,
+  },
+  headerRightRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.xs,
+  },
+  headerExploreBtn: {
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: 5,
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   headerGuideBtn: {
     alignItems: 'center',

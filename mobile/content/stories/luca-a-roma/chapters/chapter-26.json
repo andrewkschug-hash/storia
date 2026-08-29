@@ -298,6 +298,34 @@
           ]
         },
         {
+          "id": "s15b",
+          "text": "Luca, sei l'ultimo arrivato e devo ridurre il tuo orario a tre ore. Giulia, per ora mantengo il tuo orario.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "luca",
+            "essere",
+            "ultimo",
+            "arrivare",
+            "e",
+            "dovere",
+            "ridurre",
+            "il",
+            "tuo",
+            "orario",
+            "a",
+            "tre",
+            "ora",
+            "giulia",
+            "per",
+            "ora",
+            "mantenere",
+            "il",
+            "tuo",
+            "orario"
+          ]
+        },
+        {
           "id": "s16",
           "text": "Luca ha ascoltato e non ha detto niente.",
           "speakerId": null,
@@ -334,6 +362,26 @@
             "e",
             "per",
             "giulia"
+          ]
+        },
+        {
+          "id": "s17b",
+          "text": "L'affitto sembrava normale con più ore. Ora, con meno lavoro, sembrava costoso.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "affitto",
+            "sembrare",
+            "normale",
+            "con",
+            "piu",
+            "ora",
+            "ora",
+            "con",
+            "meno",
+            "lavoro",
+            "sembrare",
+            "costoso"
           ]
         },
         {

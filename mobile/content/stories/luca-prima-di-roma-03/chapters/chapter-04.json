@@ -271,25 +271,28 @@
         },
         {
           "id": "s19",
-          "text": "Tutto è qui.",
+          "text": "I sacchetti sono pieni.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "tutto",
+            "il",
+            "sacchetto",
             "essere",
-            "qui"
+            "pieno"
           ]
         },
         {
           "id": "s20",
-          "text": "La lista è piena.",
+          "text": "Pane latte pasta frutta e formaggio.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "la",
-            "lista",
-            "essere",
-            "pieno"
+            "pane",
+            "latte",
+            "pasta",
+            "frutta",
+            "e",
+            "formaggio"
           ]
         },
         {
@@ -380,7 +383,7 @@
         },
         {
           "id": "s28",
-          "text": "Lo zucchero non è qui.",
+          "text": "Lo zucchero non è nei sacchetti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -388,19 +391,20 @@
             "zucchero",
             "non",
             "essere",
-            "qui"
+            "nei",
+            "sacchetto"
           ]
         },
         {
           "id": "s29",
-          "text": "Lo zucchero è sulla lista.",
+          "text": "Manca lo zucchero della lista.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
+            "mancare",
             "lo",
             "zucchero",
-            "essere",
-            "sulla",
+            "della",
             "lista"
           ]
         },

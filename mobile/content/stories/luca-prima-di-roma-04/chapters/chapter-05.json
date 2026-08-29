@@ -58,6 +58,20 @@
           ]
         },
         {
+          "id": "s01b",
+          "text": "Dal parco andiamo verso il centro.",
+          "speakerId": "davide",
+          "kind": "dialogue",
+          "lemmas": [
+            "dal",
+            "parco",
+            "andare",
+            "verso",
+            "il",
+            "centro"
+          ]
+        },
+        {
           "id": "s02",
           "text": "La fermata è in Via Nazionale.",
           "speakerId": "davide",
@@ -106,15 +120,15 @@
         },
         {
           "id": "s06",
-          "text": "Ma non va al parco.",
+          "text": "Ma non va in centro.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
             "ma",
             "non",
             "andare",
-            "al",
-            "parco"
+            "in",
+            "centro"
           ]
         },
         {
@@ -181,11 +195,10 @@
         },
         {
           "id": "s12",
-          "text": "Luca vuole aspettare.",
+          "text": "Voglio aspettare.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "volere",
             "aspettare"
           ]
@@ -364,7 +377,7 @@
         },
         {
           "id": "s27",
-          "text": "Ha il biglietto.",
+          "text": "Ho il biglietto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -375,14 +388,14 @@
         },
         {
           "id": "s28",
-          "text": "L'autobus va al parco.",
+          "text": "L'autobus va in centro.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
             "autobus",
             "andare",
-            "al",
-            "parco"
+            "in",
+            "centro"
           ]
         },
         {

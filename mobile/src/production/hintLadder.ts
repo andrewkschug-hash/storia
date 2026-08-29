@@ -55,6 +55,11 @@ export function deriveFocusKeywords(
     if (LOW_INFO_STOPWORDS.has(norm) && !trimmed.includes(' ')) return;
     if (seenNorm.has(norm)) return;
 
+    // Invariant: Keyword must actually appear in expected target Italian
+    if (!expected.toLowerCase().includes(trimmed.toLowerCase())) {
+      return;
+    }
+
     // Don't add a single word if it's already contained in an existing multi-word anchor
     if (!trimmed.includes(' ') && anchors.some((a) => a.toLowerCase().split(/\s+/).includes(trimmed.toLowerCase()))) {
       return;
@@ -115,14 +120,15 @@ export function deriveFocusKeywords(
     }
   }
 
-  // 4. Fallback if tokens unavailable: extract non-stopwords from expectedIt
-  if (anchors.length === 0) {
+  // 4. Fallback / supplementary: extract non-stopwords from expectedIt if under 2 anchors
+  if (anchors.length < 2) {
     const words = expected.replace(/[.,!?;:"]/g, '').split(/\s+/);
     for (const w of words) {
       const norm = normalizeWord(w);
       if (norm && !LOW_INFO_STOPWORDS.has(norm) && norm !== 'luca') {
         addAnchor(w);
       }
+      if (anchors.length >= 3) break;
     }
   }
 

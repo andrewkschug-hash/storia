@@ -262,18 +262,23 @@
         },
         {
           "id": "s13",
-          "text": "Adesso sono a Roma. Cerco lavoro ogni giorno.",
+          "text": "Ho trovato un lavoro al supermercato, ma c'è tanto lavoro e poco tempo.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "adesso",
-            "essere",
-            "a",
-            "roma",
-            "cercare",
+            "avere",
+            "trovare",
+            "un",
             "lavoro",
-            "ogni",
-            "giorno"
+            "al",
+            "supermercato",
+            "ma",
+            "ce",
+            "tanto",
+            "lavoro",
+            "e",
+            "poco",
+            "tempo"
           ]
         },
         {

@@ -278,6 +278,37 @@ describe('Hint Ladder Engine', () => {
       expect(cloze).toContain('______');
       expect(cloze).not.toBe(exercise.expectedIt);
     });
+
+    it('handles person-transformed exercises: "We go to the station." uses "andiamo", not "va"', () => {
+      const exercise: ProductionExercise = {
+        exerciseId: 'luca-a-roma-ch16-prod-01',
+        storyId: 'luca-a-roma',
+        chapterId: 'luca-a-roma-16',
+        sourceSentenceId: 's02',
+        promptEn: 'We go to the station.',
+        expectedIt: 'Andiamo alla stazione.',
+        level: 'A1',
+        match: 'flexible',
+        focus: ['andare'],
+      };
+      const sentence = createSentence(
+        'Il gruppo va alla stazione.',
+        'The group goes to the station.',
+        [
+          { surface: 'Il', lemmaId: 'il' },
+          { surface: 'gruppo', lemmaId: 'gruppo' },
+          { surface: 'va', lemmaId: 'andare' },
+          { surface: 'alla', lemmaId: 'a' },
+          { surface: 'stazione', lemmaId: 'stazione' },
+        ],
+        [{ surface: 'alla stazione', naturalEn: 'to the station' }],
+      );
+
+      const keywords = deriveFocusKeywords(exercise, sentence, mockLexicon);
+      expect(keywords).toContain('alla stazione');
+      expect(keywords).toContain('Andiamo');
+      expect(keywords).not.toContain('va');
+    });
   });
 
   describe('Selective Tap-to-Reveal English Vocabulary (Level 0 Micro-hints)', () => {

@@ -223,11 +223,12 @@
         },
         {
           "id": "s16",
-          "text": "Vorrei del formaggio.",
+          "text": "Vorrei anche del formaggio.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "volere",
+            "anche",
             "del",
             "formaggio"
           ]
@@ -456,11 +457,10 @@
         },
         {
           "id": "s36",
-          "text": "Luca è pronto.",
+          "text": "Sono pronto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "essere",
             "pronto"
           ]
@@ -492,12 +492,11 @@
         },
         {
           "id": "s39",
-          "text": "Oggi Luca compra tutto.",
+          "text": "Oggi compro tutto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "oggi",
-            "luca",
             "comprare",
             "tutto"
           ]

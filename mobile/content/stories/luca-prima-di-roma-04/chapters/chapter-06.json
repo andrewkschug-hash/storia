@@ -60,11 +60,14 @@
         },
         {
           "id": "s02",
-          "text": "Ma Davide non è qui.",
+          "text": "C'è tanta gente e Davide non è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "ma",
+            "ce",
+            "tanto",
+            "gente",
+            "e",
             "davide",
             "non",
             "essere",
@@ -73,7 +76,20 @@
         },
         {
           "id": "s03",
-          "text": "Luca non sa dove è Davide.",
+          "text": "Luca non conosce questa strada.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "luca",
+            "non",
+            "conoscere",
+            "questo",
+            "strada"
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "Luca non sa dove siamo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -81,19 +97,7 @@
             "non",
             "sapere",
             "dove",
-            "essere",
-            "davide"
-          ]
-        },
-        {
-          "id": "s04",
-          "text": "Luca non sa.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "luca",
-            "non",
-            "sapere"
+            "essere"
           ]
         },
         {
@@ -430,12 +434,10 @@
         },
         {
           "id": "s32",
-          "text": "Luca dice grazie di nuovo.",
+          "text": "Grazie di nuovo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "dire",
             "grazie",
             "di",
             "nuovo"
@@ -468,13 +470,13 @@
         },
         {
           "id": "s35",
-          "text": "Ora Luca sa.",
+          "text": "Ora so dov'è.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "ora",
-            "luca",
-            "sapere"
+            "sapere",
+            "dove"
           ]
         },
         {

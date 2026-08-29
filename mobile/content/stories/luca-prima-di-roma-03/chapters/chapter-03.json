@@ -243,14 +243,15 @@
         },
         {
           "id": "s17",
-          "text": "Quel formaggio è economico.",
+          "text": "Quel formaggio costa due euro.",
           "speakerId": "pina",
           "kind": "dialogue",
           "lemmas": [
             "quello",
             "formaggio",
-            "essere",
-            "economico"
+            "costare",
+            "due",
+            "euro"
           ]
         },
         {

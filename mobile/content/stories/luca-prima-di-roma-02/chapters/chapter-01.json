@@ -365,11 +365,10 @@
         },
         {
           "id": "s40",
-          "text": "Chiara deve essere pronta presto.",
+          "text": "Devo essere pronta presto.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
-            "chiara",
             "dovere",
             "essere",
             "pronto",
@@ -537,15 +536,15 @@
         },
         {
           "id": "s42",
-          "text": "Poi Chiara esce di casa.",
+          "text": "Alle otto Chiara deve uscire.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "poi",
+            "alle",
+            "otto",
             "chiara",
-            "uscire",
-            "di",
-            "casa"
+            "dovere",
+            "uscire"
           ]
         }
       ]

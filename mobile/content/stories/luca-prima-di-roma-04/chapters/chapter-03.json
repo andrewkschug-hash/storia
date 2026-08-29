@@ -151,11 +151,10 @@
         },
         {
           "id": "s10",
-          "text": "Luca ha caldo.",
+          "text": "Ho caldo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "avere",
             "caldo"
           ]
@@ -411,11 +410,10 @@
         },
         {
           "id": "s30",
-          "text": "Luca è contento.",
+          "text": "Sono contento.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "essere",
             "contento"
           ]

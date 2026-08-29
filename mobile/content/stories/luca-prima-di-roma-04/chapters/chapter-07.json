@@ -198,17 +198,16 @@
         },
         {
           "id": "s13",
-          "text": "Il treno non va a Roma oggi.",
+          "text": "Questo treno non va a Roma.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
-            "il",
+            "questo",
             "treno",
             "non",
             "andare",
             "a",
-            "roma",
-            "oggi"
+            "roma"
           ]
         },
         {
@@ -249,16 +248,17 @@
         },
         {
           "id": "s17",
-          "text": "Un giorno Luca prende il treno.",
-          "speakerId": "davide",
+          "text": "Un giorno prendo quel treno per Roma.",
+          "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "un",
             "giorno",
-            "luca",
             "prendere",
-            "il",
-            "treno"
+            "quello",
+            "treno",
+            "per",
+            "roma"
           ]
         },
         {
@@ -304,37 +304,38 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "C'è un treno per Roma.",
+          "text": "Il treno per Roma parte la mattina presto.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
-            "ce",
-            "un",
+            "il",
             "treno",
             "per",
-            "roma"
+            "roma",
+            "partire",
+            "la",
+            "mattina",
+            "presto"
           ]
         },
         {
           "id": "s22",
-          "text": "Ma oggi Luca non parte.",
+          "text": "Ma oggi non parto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "ma",
             "oggi",
-            "luca",
             "non",
             "partire"
           ]
         },
         {
           "id": "s23",
-          "text": "Luca resta qui.",
+          "text": "Resto qui.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "restare",
             "qui"
           ]
@@ -406,11 +407,10 @@
         },
         {
           "id": "s29",
-          "text": "Luca non prende il treno oggi.",
+          "text": "Non prendo il treno oggi.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
             "non",
             "prendere",
             "il",
@@ -420,7 +420,7 @@
         },
         {
           "id": "s30",
-          "text": "Un giorno va a Roma.",
+          "text": "Un giorno vai a Roma.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s31",
-          "text": "Ma oggi resta qui.",
+          "text": "Ma oggi resto qui.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [

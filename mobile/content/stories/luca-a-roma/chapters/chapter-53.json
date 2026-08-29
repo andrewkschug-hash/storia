@@ -43,11 +43,17 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Nelle quarantott'ore successive all'incontro di Monti, Luca non ha sprecato neppure un minuto a lamentarsi delle condizioni rigide dello sponsor o a sognare scorciatoie facili e romantiche.",
+          "text": "Era la fine di dicembre quando, nelle quarantott'ore successive all'incontro di Monti, Luca non ha sprecato neppure un minuto a lamentarsi delle condizioni rigide dello sponsor o a sognare scorciatoie facili e romantiche.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "in",
+            "essere",
+            "la",
+            "fine",
+            "di",
+            "dicembre",
+            "quando",
+            "nelle",
             "quarantott'ore",
             "successivo",
             "incontro",
@@ -1117,7 +1123,7 @@
         },
         {
           "id": "s26",
-          "text": "«Allora abbiamo un accordo vero, Luca!» ha esclamato Matteo stringendogli la mano con calore travolgente. «Iniziamo i lavori di montaggio del bancone già la prossima settimana.»",
+          "text": "«Allora abbiamo un accordo vero, Luca!» ha esclamato Matteo stringendogli la mano con calore travolgente. «Avremo quattro mesi di tempo, da gennaio ad aprile, per completare i lavori e aprire a inizio maggio.»",
           "speakerId": null,
           "kind": "dialogue",
           "lemmas": [
@@ -1136,17 +1142,24 @@
             "con",
             "calore",
             "travolgente",
-            "iniziare",
+            "avere",
+            "quattro",
+            "mese",
+            "di",
+            "tempo",
+            "da",
+            "gennaio",
+            "a",
+            "aprile",
+            "per",
+            "completare",
             "i",
             "lavoro",
-            "di",
-            "montaggio",
-            "del",
-            "bancone",
-            "gia",
-            "la",
-            "prossimo",
-            "settimana"
+            "e",
+            "aprire",
+            "a",
+            "inizio",
+            "maggio"
           ]
         },
         {

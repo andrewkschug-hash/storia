@@ -18,7 +18,9 @@ export type ReadingEventType =
   | 'speak_scene_line'
   | 'speak_scene_completed'
   | 'speak_scene_skipped'
-  | 'self_assessment';
+  | 'self_assessment'
+  | 'translation_explorer_opened'
+  | 'translation_explorer_launched';
 
 export type ReadingEvent = {
   id: string;

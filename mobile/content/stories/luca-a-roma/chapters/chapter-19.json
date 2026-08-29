@@ -6,7 +6,8 @@
   "titleIt": "Risolvere",
   "difficultyLevel": 2,
   "locationIds": [
-    "fuori-roma"
+    "fuori-roma",
+    "stazione"
   ],
   "characterIds": [
     "luca",
@@ -17,7 +18,7 @@
   "events": [
     {
       "id": "ev-19-solve",
-      "summary": "Together they find the suitcase and ticket and solve the problem.",
+      "summary": "Giulia finds the suitcase, they find the ticket, drop Marco off at his mother's house, and the friends return to Rome.",
       "characterIds": [
         "luca",
         "sofia",
@@ -25,11 +26,13 @@
         "giulia"
       ],
       "locationIds": [
-        "fuori-roma"
+        "fuori-roma",
+        "stazione"
       ],
       "rememberedFacts": [
-        "The group solves the problem together",
-        "They find the ticket and the suitcase"
+        "Giulia finds the suitcase and they find the ticket",
+        "They bring Marco to his mother's house",
+        "The friends take the train back to Rome"
       ]
     }
   ],
@@ -54,14 +57,14 @@
         },
         {
           "id": "s02",
-          "text": "Luca cerca nella valigia.",
+          "text": "Giulia cerca nel treno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "luca",
+            "giulia",
             "cercare",
-            "nella",
-            "valigia"
+            "nel",
+            "treno"
           ]
         },
         {
@@ -79,14 +82,18 @@
         },
         {
           "id": "s04",
-          "text": "Giulia trova la valigia.",
+          "text": "Giulia trova la valigia e Luca la apre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "giulia",
             "trovare",
             "la",
-            "valigia"
+            "valigia",
+            "e",
+            "luca",
+            "la",
+            "aprire"
           ]
         }
       ]
@@ -151,36 +158,52 @@
       "sentences": [
         {
           "id": "s09",
-          "text": "Il treno parte.",
-          "speakerId": null,
-          "kind": "narration",
-          "lemmas": [
-            "il",
-            "treno",
-            "parte"
-          ]
-        },
-        {
-          "id": "s10",
-          "text": "Il gruppo è felice.",
+          "text": "Il gruppo va a casa della mamma di Marco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "il",
             "gruppo",
+            "andare",
+            "a",
+            "casa",
+            "della",
+            "mamma",
+            "di",
+            "marco"
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "Marco abbraccia la mamma ed è felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "marco",
+            "abbracciare",
+            "la",
+            "mamma",
+            "e",
             "essere",
             "felice"
           ]
         },
         {
           "id": "s11",
-          "text": "Marco dice grazie.",
+          "text": "Marco decide di restare con la mamma per alcuni giorni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "marco",
-            "dire",
-            "grazie"
+            "decidere",
+            "di",
+            "restare",
+            "con",
+            "la",
+            "mamma",
+            "per",
+            "alcuno",
+            "giorno"
           ]
         },
         {
@@ -207,14 +230,17 @@
         },
         {
           "id": "s14",
-          "text": "Il problema è risolto.",
+          "text": "Luca, Sofia e Giulia tornano alla stazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "problema",
-            "essere",
-            "risolvere"
+            "luca",
+            "sofia",
+            "e",
+            "giulia",
+            "tornare",
+            "alla",
+            "stazione"
           ]
         }
       ]
@@ -228,42 +254,42 @@
       "question": "How is the problem solved?",
       "questionIt": "Come risolvono il problema?",
       "choices": [
-        "They find the suitcase and ticket together",
-        "They abandon Marco",
+        "Giulia finds the suitcase and they find the ticket inside",
+        "They leave without the suitcase",
         "They buy a new train"
       ],
       "correctChoice": 0,
-      "explanation": "Working together, they find the valigia and the ticket.",
+      "explanation": "Giulia finds the suitcase, and Luca opens it to find the ticket.",
       "difficulty": 1
     },
     {
       "id": "ch19_q02",
       "chapterId": "luca-a-roma-19",
       "type": "character",
-      "question": "Who solves the problem?",
-      "questionIt": "Chi risolve il problema?",
+      "question": "Where does the group bring Marco?",
+      "questionIt": "Dove portano Marco?",
       "choices": [
-        "The friends, together",
-        "Only the train conductor alone",
-        "Only Nonna Rosa from Rome"
+        "To his mother's house",
+        "To a café in Milan",
+        "Back to work immediately"
       ],
       "correctChoice": 0,
-      "explanation": "They resolve it as a group.",
+      "explanation": "They accompany Marco to his mother's house so he can be with her.",
       "difficulty": 1
     },
     {
       "id": "ch19_q03",
       "chapterId": "luca-a-roma-19",
       "type": "sequence",
-      "question": "What comes after they find what was missing?",
-      "questionIt": "Cosa succede dopo?",
+      "question": "What do Luca, Sofia, and Giulia do after dropping Marco off?",
+      "questionIt": "Cosa fanno gli amici dopo?",
       "choices": [
-        "The problem is resolved",
-        "They get stuck forever",
-        "They start a new job on the train"
+        "They return to the station to go back to Rome",
+        "They move into Marco's house",
+        "They look for a new job on the train"
       ],
       "correctChoice": 0,
-      "explanation": "Finding the suitcase and ticket means the crisis is over.",
+      "explanation": "After dropping Marco off, they return to the station to take the train back to Rome.",
       "difficulty": 2
     }
   ]

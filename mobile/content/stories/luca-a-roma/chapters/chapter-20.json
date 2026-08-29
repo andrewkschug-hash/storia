@@ -13,17 +13,15 @@
   "characterIds": [
     "luca",
     "sofia",
-    "marco",
     "giulia"
   ],
   "events": [
     {
       "id": "ev-20-return",
-      "summary": "Friends return to Rome; Luca has a home, a job, and friends.",
+      "summary": "Luca, Sofia, and Giulia return to Rome; Marco is safe with his mother, and Luca feels at home.",
       "characterIds": [
         "luca",
         "sofia",
-        "marco",
         "giulia"
       ],
       "locationIds": [
@@ -31,8 +29,9 @@
         "stazione"
       ],
       "rememberedFacts": [
-        "The group returns to Rome",
-        "They are friends and happy at home"
+        "The group returns to Rome by train",
+        "Marco is with his mother",
+        "Luca has a home, a job, and friends in Rome"
       ]
     }
   ],
@@ -120,36 +119,41 @@
         },
         {
           "id": "s07",
-          "text": "Come stai ora?",
-          "speakerId": "sofia",
+          "text": "Marco è con sua mamma adesso.",
+          "speakerId": "giulia",
           "kind": "dialogue",
           "lemmas": [
-            "come",
-            "stare",
-            "ora"
+            "marco",
+            "essere",
+            "con",
+            "suo",
+            "mamma",
+            "adesso"
           ]
         },
         {
           "id": "s08",
-          "text": "Bene. Grazie per tutto.",
-          "speakerId": "marco",
+          "text": "Sì, abbiamo aiutato il nostro amico.",
+          "speakerId": "sofia",
           "kind": "dialogue",
           "lemmas": [
-            "bene",
-            "grazie",
-            "per",
-            "tutto"
+            "si_yes",
+            "avere",
+            "aiutare",
+            "il",
+            "nostro",
+            "amico"
           ]
         },
         {
           "id": "s09",
-          "text": "Siete amici importanti.",
-          "speakerId": "marco",
+          "text": "Siamo buoni amici.",
+          "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "essere",
-            "amico",
-            "importante"
+            "buono",
+            "amico"
           ]
         }
       ]
@@ -160,12 +164,14 @@
       "sentences": [
         {
           "id": "s10",
-          "text": "Il gruppo cammina nel quartiere.",
+          "text": "Luca, Sofia e Giulia camminano nel quartiere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "il",
-            "gruppo",
+            "luca",
+            "sofia",
+            "e",
+            "giulia",
             "camminare",
             "nel",
             "quartiere"
@@ -189,26 +195,27 @@
         },
         {
           "id": "s12",
-          "text": "Sofia, Giulia e Marco sono felici.",
+          "text": "Sofia e Giulia sono felici.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "sofia",
-            "giulia",
             "e",
-            "marco",
+            "giulia",
             "essere",
             "felice"
           ]
         },
         {
           "id": "s13",
-          "text": "Insieme vivono a Roma.",
+          "text": "Insieme hanno una vita a Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "insieme",
-            "vivere",
+            "avere",
+            "una",
+            "vita",
             "a",
             "roma"
           ]
@@ -256,23 +263,23 @@
       "id": "ch20_q01",
       "chapterId": "luca-a-roma-20",
       "type": "event",
-      "question": "Where do they go at the end?",
-      "questionIt": "Dove vanno alla fine?",
+      "question": "Where do they go at the end of the trip?",
+      "questionIt": "Dove vanno alla fine del viaggio?",
       "choices": [
         "Back to Rome",
         "To a new country",
         "Nowhere—they stay on the train"
       ],
       "correctChoice": 0,
-      "explanation": "They return to Rome (tornare a casa).",
+      "explanation": "They return to Rome after helping Marco.",
       "difficulty": 1
     },
     {
       "id": "ch20_q02",
       "chapterId": "luca-a-roma-20",
       "type": "direct",
-      "question": "What does Luca have when he returns?",
-      "questionIt": "Cosa ha Luca quando torna?",
+      "question": "What does Luca have in Rome?",
+      "questionIt": "Cosa ha Luca a Roma?",
       "choices": [
         "A home, a job, and friends",
         "Only a suitcase",

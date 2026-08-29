@@ -239,12 +239,11 @@
         },
         {
           "id": "s15",
-          "text": "Martedì Chiara ha scuola.",
+          "text": "Martedì ho scuola.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
             "martedi",
-            "chiara",
             "avere",
             "scuola"
           ]

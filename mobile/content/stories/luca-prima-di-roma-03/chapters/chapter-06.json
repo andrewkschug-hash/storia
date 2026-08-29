@@ -276,14 +276,15 @@
         },
         {
           "id": "s20",
-          "text": "Luca prende lo zucchero.",
-          "speakerId": null,
-          "kind": "narration",
+          "text": "Lo zucchero costa un euro.",
+          "speakerId": "pina",
+          "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "prendere",
             "lo",
-            "zucchero"
+            "zucchero",
+            "costare",
+            "un",
+            "euro"
           ]
         },
         {
@@ -307,12 +308,15 @@
         },
         {
           "id": "s23",
-          "text": "Luca paga lo zucchero.",
+          "text": "Luca paga un euro per lo zucchero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "luca",
             "pagare",
+            "un",
+            "euro",
+            "per",
             "lo",
             "zucchero"
           ]
@@ -481,13 +485,12 @@
         },
         {
           "id": "s37",
-          "text": "Luca dice grazie.",
+          "text": "Grazie mille.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "dire",
-            "grazie"
+            "grazie",
+            "mille"
           ]
         },
         {

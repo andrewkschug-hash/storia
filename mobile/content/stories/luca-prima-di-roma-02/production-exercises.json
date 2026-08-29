@@ -215,8 +215,12 @@
       "chapterId": "luca-prima-di-roma-02-05",
       "level": "A1",
       "sourceSentenceId": "s04",
-      "promptEn": "Chiara has Italian at nine.",
-      "expectedIt": "Alle nove Chiara ha italiano.",
+      "promptEn": "At nine I have Italian.",
+      "expectedIt": "Alle nove ho italiano.",
+      "acceptableAnswers": [
+        "Alle nove Chiara ha italiano.",
+        "Ho italiano alle nove."
+      ],
       "match": "flexible",
       "focus": [
         "schedules",

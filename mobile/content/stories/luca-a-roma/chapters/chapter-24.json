@@ -324,6 +324,49 @@
           ]
         },
         {
+          "id": "s20b",
+          "text": "Se un giorno vuoi tornare a casa, forse c'è un lavoro per te in un bar vicino.",
+          "speakerId": "marta",
+          "kind": "dialogue",
+          "lemmas": [
+            "se",
+            "un",
+            "giorno",
+            "volere",
+            "tornare",
+            "a",
+            "casa",
+            "forse",
+            "ce",
+            "un",
+            "lavoro",
+            "per",
+            "te",
+            "in",
+            "un",
+            "bar",
+            "vicino"
+          ]
+        },
+        {
+          "id": "s20c",
+          "text": "Grazie, Mamma, ma per ora sto bene qui a Roma.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "grazie",
+            "mamma",
+            "ma",
+            "per",
+            "ora",
+            "stare",
+            "bene",
+            "qui",
+            "a",
+            "roma"
+          ]
+        },
+        {
           "id": "s21",
           "text": "Luca guarda la piazza dal telefono.",
           "speakerId": null,

@@ -93,12 +93,11 @@
         },
         {
           "id": "s05",
-          "text": "A Luca piace la primavera.",
+          "text": "Mi piace la primavera.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
+            "mi",
             "piacere",
             "la",
             "primavera"
@@ -197,12 +196,11 @@
         },
         {
           "id": "s13",
-          "text": "A Davide piace l'estate.",
+          "text": "Mi piace l'estate.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "davide",
+            "mi",
             "piacere",
             "estate"
           ]
@@ -419,12 +417,11 @@
         },
         {
           "id": "s30",
-          "text": "A Luca piace questa stagione.",
+          "text": "Mi piace questa stagione.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "a",
-            "luca",
+            "mi",
             "piacere",
             "questo",
             "stagione"

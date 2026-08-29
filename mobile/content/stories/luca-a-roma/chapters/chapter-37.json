@@ -205,6 +205,26 @@
           ]
         },
         {
+          "id": "s08b",
+          "text": "Ho guardato i conti. Sabato abbiamo visto che i clienti possono tornare.",
+          "speakerId": "padrone",
+          "kind": "dialogue",
+          "lemmas": [
+            "avere",
+            "guardare",
+            "i",
+            "conto",
+            "sabato",
+            "avere",
+            "vedere",
+            "che",
+            "i",
+            "cliente",
+            "potere",
+            "tornare"
+          ]
+        },
+        {
           "id": "s09",
           "text": "Non vendo. Non adesso. Il caffè resta. Almeno questo mese, e il prossimo.",
           "speakerId": "padrone",

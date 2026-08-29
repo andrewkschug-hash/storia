@@ -304,6 +304,29 @@
           ]
         },
         {
+          "id": "s15b",
+          "text": "Nonna Rosa ha già alcune cose e compriamo solo quello che serve per un pomeriggio.",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "nonna",
+            "rosa",
+            "avere",
+            "gia",
+            "alcuno",
+            "cosa",
+            "e",
+            "comprare",
+            "solo",
+            "quello",
+            "che",
+            "servire",
+            "per",
+            "un",
+            "pomeriggio"
+          ]
+        },
+        {
           "id": "s16",
           "text": "Io organizzo con loro. Preparo la sala e i tavoli.",
           "speakerId": "giulia",

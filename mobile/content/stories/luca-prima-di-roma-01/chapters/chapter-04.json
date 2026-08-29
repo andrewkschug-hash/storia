@@ -123,13 +123,13 @@
         },
         {
           "id": "s07",
-          "text": "Ci sono quattro sedie.",
+          "text": "Ci sono cinque sedie.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "ci",
             "essere",
-            "quattro",
+            "cinque",
             "sedia"
           ]
         },

@@ -65,7 +65,7 @@ export class AudioService {
   }
 
   isPlaying(): boolean {
-    return this.player.isPlaying();
+    return Boolean(this.playingId) || this.player.isPlaying();
   }
 
   async loadSpeed(): Promise<TTSSpeed> {

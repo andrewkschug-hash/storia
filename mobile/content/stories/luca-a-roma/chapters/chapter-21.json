@@ -612,6 +612,23 @@
           ]
         },
         {
+          "id": "s36b",
+          "text": "Pochi giorni dopo anche Marco torna a Roma felice.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "poco",
+            "giorno",
+            "dopo",
+            "anche",
+            "marco",
+            "tornare",
+            "a",
+            "roma",
+            "felice"
+          ]
+        },
+        {
           "id": "s37",
           "text": "Luca ha amici e un lavoro importante.",
           "speakerId": null,

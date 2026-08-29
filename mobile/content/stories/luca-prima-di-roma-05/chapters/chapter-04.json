@@ -484,15 +484,15 @@
         },
         {
           "id": "s37",
-          "text": "Il compleanno è quasi qui.",
+          "text": "La festa è quasi pronta.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
-            "il",
-            "compleanno",
+            "la",
+            "festa",
             "essere",
             "quasi",
-            "qui"
+            "pronto"
           ]
         },
         {

@@ -390,11 +390,10 @@
         },
         {
           "id": "s27",
-          "text": "Davide aspetta qui in piazza.",
+          "text": "Aspetto qui in piazza.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
-            "davide",
             "aspettare",
             "qui",
             "in",

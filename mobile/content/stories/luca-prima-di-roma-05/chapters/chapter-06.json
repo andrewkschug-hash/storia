@@ -73,6 +73,20 @@
           ]
         },
         {
+          "id": "s02b",
+          "text": "Vi ricordate il treno per Roma?",
+          "speakerId": "luca",
+          "kind": "dialogue",
+          "lemmas": [
+            "vi",
+            "ricordare",
+            "il",
+            "treno",
+            "per",
+            "roma"
+          ]
+        },
+        {
           "id": "s03",
           "text": "Domani parto.",
           "speakerId": "luca",
@@ -336,12 +350,24 @@
         },
         {
           "id": "s24",
-          "text": "Buon viaggio.",
+          "text": "Hai detto: un giorno prendo quel treno. Quel giorno è oggi. Buon viaggio, Luca!",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
+            "avere",
+            "dire",
+            "un",
+            "giorno",
+            "prendere",
+            "quello",
+            "treno",
+            "quello",
+            "giorno",
+            "essere",
+            "oggi",
             "buono",
-            "viaggio"
+            "viaggio",
+            "luca"
           ]
         },
         {
@@ -481,12 +507,11 @@
         },
         {
           "id": "s36",
-          "text": "Ma Luca è anche felice.",
+          "text": "Ma sono anche felice.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
             "ma",
-            "luca",
             "essere",
             "anche",
             "felice"

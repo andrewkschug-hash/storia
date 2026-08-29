@@ -64,12 +64,13 @@
         },
         {
           "id": "s02",
-          "text": "Oggi è il dodici maggio.",
+          "text": "Oggi è lunedì, il dodici maggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "oggi",
             "essere",
+            "lunedi",
             "il",
             "dodici",
             "maggio"

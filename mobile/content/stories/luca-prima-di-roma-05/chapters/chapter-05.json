@@ -296,14 +296,17 @@
         },
         {
           "id": "s23",
-          "text": "Elisa è nuova qui.",
+          "text": "Elisa è qui per la prima volta.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
             "elisa",
             "essere",
-            "nuovo",
-            "qui"
+            "qui",
+            "per",
+            "la",
+            "primo",
+            "volta"
           ]
         },
         {
@@ -595,12 +598,10 @@
         },
         {
           "id": "s49",
-          "text": "Luca dice grazie a tutti.",
+          "text": "Grazie a tutti.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
-            "luca",
-            "dire",
             "grazie",
             "a",
             "tutto"

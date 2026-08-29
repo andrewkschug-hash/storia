@@ -58,6 +58,20 @@
           ]
         },
         {
+          "id": "s01b",
+          "text": "Chiara è la sorella di Luca.",
+          "speakerId": null,
+          "kind": "narration",
+          "lemmas": [
+            "chiara",
+            "essere",
+            "la",
+            "sorella",
+            "di",
+            "luca"
+          ]
+        },
+        {
           "id": "s02",
           "text": "Chiara guarda Luca.",
           "speakerId": null,

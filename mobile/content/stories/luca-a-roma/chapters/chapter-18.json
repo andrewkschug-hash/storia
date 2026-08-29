@@ -6,7 +6,8 @@
   "titleIt": "Una sorpresa",
   "difficultyLevel": 2,
   "locationIds": [
-    "fuori-roma"
+    "fuori-roma",
+    "stazione"
   ],
   "characterIds": [
     "luca",
@@ -17,7 +18,7 @@
   "events": [
     {
       "id": "ev-18-surprise",
-      "summary": "The train stops; Marco cannot find the ticket; the suitcase is missing.",
+      "summary": "The train stops at the station; Marco searches in panic for his ticket and suitcase.",
       "characterIds": [
         "luca",
         "sofia",
@@ -25,11 +26,12 @@
         "giulia"
       ],
       "locationIds": [
-        "fuori-roma"
+        "fuori-roma",
+        "stazione"
       ],
       "rememberedFacts": [
-        "There is a surprise problem on the trip",
-        "The ticket and suitcase seem lost"
+        "The train stops at the station outside Rome",
+        "Marco cannot find his ticket and suitcase"
       ]
     }
   ],
@@ -64,15 +66,16 @@
         },
         {
           "id": "s03",
-          "text": "C'è un problema sul treno.",
+          "text": "Il treno si ferma alla stazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
-            "esserci",
-            "un",
-            "problema",
-            "sul",
-            "treno"
+            "il",
+            "treno",
+            "si",
+            "fermare",
+            "alla",
+            "stazione"
           ]
         },
         {
@@ -151,11 +154,15 @@
         },
         {
           "id": "s09",
-          "text": "Scusa.",
+          "text": "Scusa, sono preoccupato per mamma.",
           "speakerId": "marco",
           "kind": "dialogue",
           "lemmas": [
-            "scusa"
+            "scusa",
+            "essere",
+            "preoccupato",
+            "per",
+            "mamma"
           ]
         }
       ]
@@ -179,13 +186,15 @@
         },
         {
           "id": "s11",
-          "text": "Marco è stanco.",
+          "text": "Marco è stanco e ansioso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
             "marco",
             "essere",
-            "stanco"
+            "stanco",
+            "e",
+            "ansioso"
           ]
         },
         {
@@ -233,20 +242,20 @@
       "question": "What surprise happens on the train?",
       "questionIt": "Cosa succede sul treno?",
       "choices": [
-        "There is a problem with the ticket or suitcase",
+        "The train stops at the station and the ticket and suitcase seem missing",
         "They win a prize",
         "Sofia buys a house"
       ],
       "correctChoice": 0,
-      "explanation": "A problem appears: the ticket and/or valigia cannot be found.",
+      "explanation": "The train stops, and Marco cannot find the ticket and suitcase.",
       "difficulty": 1
     },
     {
       "id": "ch18_q02",
       "chapterId": "luca-a-roma-18",
       "type": "direct",
-      "question": "What cannot be found?",
-      "questionIt": "Cosa non trovano?",
+      "question": "What cannot be found at first?",
+      "questionIt": "Cosa non trovano all'inizio?",
       "choices": [
         "The ticket and the suitcase",
         "Sofia’s phone only",
@@ -260,15 +269,15 @@
       "id": "ch18_q03",
       "chapterId": "luca-a-roma-18",
       "type": "inference",
-      "question": "Why is this a serious problem for the group?",
-      "questionIt": "Perché è un problema serio?",
+      "question": "Why is Marco so worried?",
+      "questionIt": "Perché Marco è preoccupato?",
       "choices": [
-        "Without the ticket and suitcase they cannot continue smoothly",
-        "They already arrived home",
-        "The café owner called them back"
+        "He is worried about his mother and needs to get off with his things",
+        "He wants to go to Milan instead",
+        "The café owner called him back"
       ],
       "correctChoice": 0,
-      "explanation": "Missing travel essentials stops a smooth continuation of the trip.",
+      "explanation": "Marco is stressed about visiting his sick mother and lost track of his ticket.",
       "difficulty": 2
     }
   ]
