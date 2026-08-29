@@ -6,14 +6,16 @@ import { Radii, Spacing } from '@/src/theme/tokens';
 import { useTheme } from '@/src/theme/useTheme';
 import type { VocabBrowseItem } from '@/src/vocabulary/catalog';
 import { getNarrativeAnnotation } from '@/src/vocabulary/notebookData';
+import { getItemChapter } from '@/src/vocabulary/notebookSelectors';
 import { getVerbPattern } from '@/src/vocabulary/notebookVerbs';
-import { findExamplesForLemma } from '@/src/vocabulary/storyExamples';
+import { findExamplesForLemma, findExamplesForPhrase } from '@/src/vocabulary/storyExamples';
 
 type Props = {
   item: VocabBrowseItem;
   bundle: ReturnType<typeof getContentBundle>;
   isSaved: boolean;
   isSpeaking: boolean;
+  highestChapter?: number;
   onPlayAudio: (id: string, text: string) => void;
   onToggleSave: (kind: 'lemma' | 'phrase', id: string, currentSaved: boolean) => void;
   onNavigateChapter: (chapterNum: number) => void;
@@ -25,6 +27,7 @@ export function WordEntry({
   bundle,
   isSaved,
   isSpeaking,
+  highestChapter,
   onPlayAudio,
   onToggleSave,
   onNavigateChapter,
@@ -35,19 +38,53 @@ export function WordEntry({
   const narrative = getNarrativeAnnotation(item.id);
   const verbPattern = useMemo(() => getVerbPattern(item.id), [item.id]);
 
+  // Check if narrative annotation is unlocked for this learner
+  const isNarrativeUnlocked =
+    narrative !== null &&
+    (highestChapter === undefined || narrative.storyAnchor.chapterNumber <= highestChapter);
+
   const storyExample = useMemo(() => {
-    if (item.kind !== 'lemma') return null;
-    const examples = findExamplesForLemma(bundle, item.id, 1);
+    if (item.kind === 'phrase') {
+      const phraseExamples = findExamplesForPhrase(bundle, item.id, 8);
+      if (highestChapter !== undefined) {
+        const reachedExample = phraseExamples.find((ex) => ex.chapterNumber <= highestChapter);
+        if (reachedExample) return reachedExample;
+      }
+      return phraseExamples[0] ?? null;
+    }
+    const examples = findExamplesForLemma(bundle, item.id, 8);
+    if (highestChapter !== undefined) {
+      const reachedExample = examples.find((ex) => ex.chapterNumber <= highestChapter);
+      if (reachedExample) return reachedExample;
+    }
     return examples[0] ?? null;
-  }, [bundle, item.id, item.kind]);
+  }, [bundle, item.id, item.kind, highestChapter]);
 
-  const chapterNum =
-    narrative?.storyAnchor.chapterNumber ??
-    storyExample?.chapterNumber ??
-    item.introducedChapter ??
-    1;
+  const chapterNum = useMemo(() => {
+    if (isNarrativeUnlocked && narrative) {
+      return narrative.storyAnchor.chapterNumber;
+    }
+    if (
+      storyExample &&
+      (highestChapter === undefined || storyExample.chapterNumber <= highestChapter)
+    ) {
+      return storyExample.chapterNumber;
+    }
+    return getItemChapter(item, highestChapter);
+  }, [isNarrativeUnlocked, narrative, storyExample, item, highestChapter]);
 
-  const quoteIt = narrative?.storyAnchor.quoteIt ?? storyExample?.text ?? null;
+  const quoteIt = useMemo(() => {
+    if (isNarrativeUnlocked && narrative) {
+      return narrative.storyAnchor.quoteIt;
+    }
+    if (
+      storyExample &&
+      (highestChapter === undefined || storyExample.chapterNumber <= highestChapter)
+    ) {
+      return storyExample.text;
+    }
+    return null;
+  }, [isNarrativeUnlocked, narrative, storyExample, highestChapter]);
 
   // Metadata description line
   const metaParts: string[] = [];

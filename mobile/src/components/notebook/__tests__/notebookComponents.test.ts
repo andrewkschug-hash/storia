@@ -21,6 +21,7 @@ import {
   filterNotebookGrammar,
   filterNotebookPhrases,
   filterNotebookWords,
+  getItemChapter,
   getReadingFootprint,
   groupPhrasesByChronology,
   groupWordsByChronology,
@@ -86,6 +87,141 @@ describe('Notebook components & selectors', () => {
 
       const day1Footprint = getReadingFootprint(1, 1);
       expect(day1Footprint.label).toBe('1 word from your reading · 1 chapter in Rome');
+    });
+
+    it('extracts latest encountered chapter correctly using getItemChapter and respects highestChapter', () => {
+      const itemWithEncounters = {
+        kind: 'lemma' as const,
+        id: 'caffe',
+        italian: 'caffè',
+        english: 'coffee',
+        status: 'learning' as const,
+        saved: false,
+        encounterCount: 3,
+        chaptersEncountered: ['luca-a-roma-01', 'luca-a-roma-03'],
+        introducedChapter: 8,
+      };
+
+      // Unbounded: resolves to latest chapter actually encountered (3, not static lexicon 8)
+      expect(getItemChapter(itemWithEncounters)).toBe(3);
+
+      // Bounded by learner at Chapter 2: resolves to 1 (ignoring later unreached/future encounters)
+      expect(getItemChapter(itemWithEncounters, 2)).toBe(1);
+
+      // Item with no chapter encounter history: falls back to introducedChapter bounded by maxChapter
+      const itemWithoutEncounters = {
+        kind: 'lemma' as const,
+        id: 'parola',
+        italian: 'parola',
+        english: 'word',
+        status: 'learning' as const,
+        saved: true,
+        encounterCount: 0,
+        chaptersEncountered: [],
+        introducedChapter: 15,
+      };
+      expect(getItemChapter(itemWithoutEncounters, 5)).toBe(5);
+      expect(getItemChapter(itemWithoutEncounters)).toBe(15);
+    });
+
+    it('groups words chronologically based on actual encountered chapters rather than future lexicon metadata', () => {
+      const words = [
+        {
+          kind: 'lemma' as const,
+          id: 'caffe',
+          italian: 'caffè',
+          english: 'coffee',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 5,
+          chaptersEncountered: ['luca-a-roma-01'],
+          introducedChapter: 8, // Lexicon says 8, but user met it in Ch 1
+        },
+        {
+          kind: 'lemma' as const,
+          id: 'arrivo',
+          italian: 'arrivo',
+          english: 'arrival',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 2,
+          chaptersEncountered: ['luca-a-roma-01'],
+          introducedChapter: 1,
+        },
+        {
+          kind: 'lemma' as const,
+          id: 'ponte',
+          italian: 'ponte',
+          english: 'bridge',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 2,
+          chaptersEncountered: ['luca-a-roma-02'],
+          introducedChapter: 2,
+        },
+        {
+          kind: 'lemma' as const,
+          id: 'piazza',
+          italian: 'piazza',
+          english: 'square',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 4,
+          chaptersEncountered: ['luca-a-roma-03'],
+          introducedChapter: 3,
+        },
+        {
+          kind: 'lemma' as const,
+          id: 'mercato',
+          italian: 'mercato',
+          english: 'market',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 1,
+          chaptersEncountered: ['luca-a-roma-03'],
+          introducedChapter: 3,
+        },
+        {
+          kind: 'lemma' as const,
+          id: 'strada',
+          italian: 'strada',
+          english: 'street',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 3,
+          chaptersEncountered: ['luca-a-roma-02'],
+          introducedChapter: 2,
+        },
+        {
+          kind: 'lemma' as const,
+          id: 'roma',
+          italian: 'Roma',
+          english: 'Rome',
+          status: 'learning' as const,
+          saved: false,
+          encounterCount: 6,
+          chaptersEncountered: ['luca-a-roma-01'],
+          introducedChapter: 1,
+        },
+      ];
+
+      // Learner at Chapter 3: words from Chapter 3 are at the top of recent
+      const sections = groupWordsByChronology(words, 3);
+      expect(sections.length).toBe(2);
+      expect(sections[0].id).toBe('recent');
+      expect(sections[0].title).toBe('RECENTLY ENCOUNTERED');
+
+      // Top recent items must be from Chapter 3, NOT caffè (which was only in Ch 1 despite introducedChapter=8)
+      const recentIds = sections[0].items.map((i) => i.id);
+      expect(recentIds).toContain('piazza');
+      expect(recentIds).toContain('mercato');
+      expect(recentIds).not.toContain('caffe');
+
+      // Earlier section contains words from Chapter 1
+      const earlierIds = sections[1].items.map((i) => i.id);
+      expect(earlierIds).toContain('caffe');
+      expect(earlierIds).toContain('roma');
+      expect(earlierIds).toContain('arrivo');
     });
 
     it('groups words and phrases chronologically with section titles', () => {

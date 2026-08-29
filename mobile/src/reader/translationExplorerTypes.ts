@@ -1,3 +1,5 @@
+export type TranslationDirection = 'en_to_it' | 'it_to_en';
+
 export type ExploreTranslationSource =
   | 'reader_header'
   | 'word'
@@ -6,7 +8,7 @@ export type ExploreTranslationSource =
 
 export interface ExploreTranslationPayload {
   /**
-   * The text to load into the Italian editor.
+   * The original text from the story (Italian by default).
    * Full sentence by default for word/phrase exploration to maintain sentence-first immersion.
    */
   text: string;
@@ -21,3 +23,4 @@ export interface ExploreTranslationPayload {
   /** The specific selected word or phrase surface, if exploration originated there. */
   selectedText?: string;
 }
+

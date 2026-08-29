@@ -3,6 +3,7 @@ import type { DictionaryLookup } from '@/src/vocabulary/types';
 import type {
   ExploreTranslationPayload,
   ExploreTranslationSource,
+  TranslationDirection,
 } from './translationExplorerTypes';
 
 export interface HeaderPayloadResolutionOptions {
@@ -89,3 +90,20 @@ export function resolveDictionaryExplorerPayload(
     selectedText: undefined,
   };
 }
+
+/**
+ * Resolves the initial text to display in the editor based on the chosen translation direction.
+ * In English -> Italian mode, uses reference English if available.
+ * In Italian -> English mode, uses the original Italian text.
+ */
+export function resolveInitialEditorText(
+  payload: ExploreTranslationPayload | null,
+  direction: TranslationDirection,
+): string {
+  if (!payload) return '';
+  if (direction === 'en_to_it') {
+    return payload.referenceEnglish?.trim() ?? '';
+  }
+  return payload.text.trim();
+}
+

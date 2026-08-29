@@ -4,6 +4,7 @@ import type { WordLookup, PhraseLookup, SentenceLookup } from '@/src/vocabulary/
 import {
   resolveHeaderExplorerPayload,
   resolveDictionaryExplorerPayload,
+  resolveInitialEditorText,
 } from '@/src/reader/translationExplorerLogic';
 
 describe('Translation Explorer Payload Resolution', () => {
@@ -166,4 +167,33 @@ describe('Translation Explorer Payload Resolution', () => {
       expect(payload.source).toBe('reader_header');
     });
   });
+
+  describe('resolveInitialEditorText', () => {
+    it('returns reference English when direction is en_to_it', () => {
+      const payload = resolveHeaderExplorerPayload({
+        highlightedSentence: sampleSentence,
+      });
+      const text = resolveInitialEditorText(payload, 'en_to_it');
+      expect(text).toBe('We saw each other yesterday.');
+    });
+
+    it('returns Italian text when direction is it_to_en', () => {
+      const payload = resolveHeaderExplorerPayload({
+        highlightedSentence: sampleSentence,
+      });
+      const text = resolveInitialEditorText(payload, 'it_to_en');
+      expect(text).toBe('Ci siamo visti ieri.');
+    });
+
+    it('returns empty string if payload is null or fields are absent', () => {
+      expect(resolveInitialEditorText(null, 'en_to_it')).toBe('');
+      expect(
+        resolveInitialEditorText(
+          { text: '', source: 'reader_header' },
+          'en_to_it',
+        ),
+      ).toBe('');
+    });
+  });
 });
+

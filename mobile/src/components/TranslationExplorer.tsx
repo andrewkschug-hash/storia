@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {
+  ActivityIndicator,
   KeyboardAvoidingView,
   Modal,
   Platform,
@@ -18,9 +19,18 @@ import {
   MAX_TRANSLATION_INPUT_LENGTH,
   buildGoogleTranslateUrl,
 } from '@/src/reader/googleTranslateUrl';
-import type { ExploreTranslationPayload } from '@/src/reader/translationExplorerTypes';
+import { resolveInitialEditorText } from '@/src/reader/translationExplorerLogic';
+import type {
+  ExploreTranslationPayload,
+  TranslationDirection,
+} from '@/src/reader/translationExplorerTypes';
+import {
+  translateText,
+  type TranslationLanguage,
+} from '@/src/reader/translationService';
 import { trackReadingEvent } from '@/src/telemetry/ReadingEventStore';
 import { Radii, Spacing } from '@/src/theme/tokens';
+import { speakItalian, stopSpeakingItalian } from '@/src/walkthrough/speakItalian';
 
 type Props = {
   visible: boolean;
@@ -32,8 +42,8 @@ type Props = {
 
 /**
  * First-class language experimentation laboratory.
- * Enables learners to observe the original story context, modify the Italian,
- * see the difference, and launch external reference translation seamlessly.
+ * Supports live in-app translation (default: English ➔ Italian with quick swap),
+ * audio pronunciation, one-tap copy, and story context comparison.
  */
 export function TranslationExplorer({
   visible,
@@ -45,53 +55,150 @@ export function TranslationExplorer({
   const { colors, type, minTouchTarget, settings } = useAccessibility();
   const insets = useSafeAreaInsets();
 
-  const originalText = payload?.text ?? '';
-  const [editedText, setEditedText] = useState(originalText);
+  const [direction, setDirection] = useState<TranslationDirection>('en_to_it');
+  const [editedText, setEditedText] = useState('');
+  const [translatedResult, setTranslatedResult] = useState<string | null>(null);
+  const [isTranslating, setIsTranslating] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
 
-  // Sync editor with payload whenever modal opens or payload changes
+  // Initialize/sync editor with payload when modal opens or payload changes
   useEffect(() => {
-    setEditedText(payload?.text ?? '');
-  }, [payload]);
+    if (visible && payload) {
+      setDirection('en_to_it');
+      const initial = resolveInitialEditorText(payload, 'en_to_it');
+      setEditedText(initial);
+      setTranslatedResult(null);
+      setErrorMessage(null);
+      setCopied(false);
+      setIsSpeaking(false);
+    }
+  }, [visible, payload]);
+
+  // Clean up speech when modal unmounts or closes
+  useEffect(() => {
+    if (!visible) {
+      stopSpeakingItalian();
+    }
+  }, [visible]);
 
   if (!visible || !payload) return null;
 
-  const isModified = editedText.trim() !== originalText.trim();
-  const hasOriginalStoryText = originalText.trim().length > 0;
-  const canLaunch = editedText.trim().length > 0;
+  const fromLang: TranslationLanguage = direction === 'en_to_it' ? 'en' : 'it';
+  const toLang: TranslationLanguage = direction === 'en_to_it' ? 'it' : 'en';
+
+  const defaultForCurrentDirection = resolveInitialEditorText(payload, direction);
+  const isModified =
+    defaultForCurrentDirection.length > 0 &&
+    editedText.trim() !== defaultForCurrentDirection.trim();
+  const hasStoryDefault = defaultForCurrentDirection.trim().length > 0;
+  const canTranslate = editedText.trim().length > 0 && !isTranslating;
   const isNearMaxLimit = editedText.length > 400;
 
+  const handleToggleDirection = () => {
+    const nextDirection: TranslationDirection =
+      direction === 'en_to_it' ? 'it_to_en' : 'en_to_it';
+    setDirection(nextDirection);
+    setErrorMessage(null);
+    setCopied(false);
+
+    // If we already have a translation result, pre-fill it as the new input!
+    if (translatedResult && translatedResult.trim().length > 0) {
+      setEditedText(translatedResult.trim());
+      setTranslatedResult(null);
+    } else {
+      setEditedText(resolveInitialEditorText(payload, nextDirection));
+      setTranslatedResult(null);
+    }
+  };
+
   const handleResetToStory = () => {
-    setEditedText(originalText);
+    setEditedText(resolveInitialEditorText(payload, direction));
+    setTranslatedResult(null);
+    setErrorMessage(null);
   };
 
   const handleClearText = () => {
     setEditedText('');
+    setTranslatedResult(null);
+    setErrorMessage(null);
   };
 
-  const handleLaunchTranslation = async () => {
-    if (!canLaunch) return;
+  const handleTranslate = async () => {
+    if (!canTranslate) return;
 
-    const trimmedText = editedText.trim();
+    const trimmed = editedText.trim();
+    setIsTranslating(true);
+    setErrorMessage(null);
+    setCopied(false);
+
     trackReadingEvent({
       type: 'translation_explorer_launched',
       storyId,
       chapterId,
       meta: {
         source: payload.source,
-        inputType: payload.contextSentence ? 'story_sentence' : 'custom',
-        modified: isModified,
-        hasReferenceEnglish: Boolean(payload.referenceEnglish),
-        textLength: trimmedText.length,
+        direction,
+        textLength: trimmed.length,
       },
     });
 
-    const url = buildGoogleTranslateUrl(trimmedText);
+    try {
+      const result = await translateText({
+        text: trimmed,
+        from: fromLang,
+        to: toLang,
+      });
+      setTranslatedResult(result.translatedText);
+    } catch (err) {
+      const msg =
+        err instanceof Error && err.message
+          ? err.message
+          : 'Could not complete translation. Please check your internet connection.';
+      setErrorMessage(msg);
+    } finally {
+      setIsTranslating(false);
+    }
+  };
+
+  const handleSpeak = async (textToSpeak: string) => {
+    if (!textToSpeak.trim() || isSpeaking) return;
+    setIsSpeaking(true);
+    try {
+      await speakItalian(textToSpeak.trim());
+    } catch {
+      // Best-effort TTS
+    } finally {
+      setIsSpeaking(false);
+    }
+  };
+
+  const handleCopy = async (textToCopy: string) => {
+    if (!textToCopy) return;
+    try {
+      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(textToCopy);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback
+    }
+  };
+
+  const handleOpenGoogleTranslate = async () => {
+    const trimmed = editedText.trim();
+    if (!trimmed) return;
+    const url = buildGoogleTranslateUrl(trimmed, fromLang, toLang);
     await WebBrowser.openBrowserAsync(url);
   };
 
   const hasContext = Boolean(
     payload.selectedText || payload.referenceEnglish || payload.contextSentence,
   );
+
+  const isItalianOutput = direction === 'en_to_it';
 
   return (
     <Modal
@@ -129,7 +236,9 @@ export function TranslationExplorer({
                     type.caption,
                     { color: colors.textSecondary, marginTop: 2 },
                   ]}>
-                  Try the language · Explore beyond the story
+                  {direction === 'en_to_it'
+                    ? 'Enter English · See instant Italian translation'
+                    : 'Enter Italian · See English translation'}
                 </Text>
               </View>
 
@@ -168,19 +277,7 @@ export function TranslationExplorer({
                     Exploration context
                   </Text>
 
-                  {payload.selectedText ? (
-                    <View style={styles.contextLine}>
-                      <Text style={[type.caption, { color: colors.textSecondary }]}>
-                        Exploring:
-                      </Text>
-                      <Text style={[type.caption, { color: colors.text, fontWeight: '600' }]}>
-                        “{payload.selectedText}”
-                      </Text>
-                    </View>
-                  ) : null}
-
-                  {payload.contextSentence &&
-                  payload.contextSentence !== payload.selectedText ? (
+                  {payload.contextSentence ? (
                     <View style={styles.contextLine}>
                       <Text style={[type.caption, { color: colors.textSecondary }]}>
                         In context:
@@ -196,7 +293,7 @@ export function TranslationExplorer({
                   ) : null}
 
                   {payload.referenceEnglish ? (
-                    <View style={[styles.contextLine, { marginTop: Spacing.xs }]}>
+                    <View style={[styles.contextLine, { marginTop: 2 }]}>
                       <Text style={[type.caption, { color: colors.textSecondary }]}>
                         Storia's translation:
                       </Text>
@@ -212,31 +309,114 @@ export function TranslationExplorer({
                 </View>
               ) : null}
 
+              {/* Direction Switcher Toolbar */}
+              <View
+                style={[
+                  styles.directionBar,
+                  {
+                    backgroundColor: colors.backgroundAtmosphereTop,
+                    borderColor: colors.border,
+                  },
+                ]}>
+                <Pressable
+                  onPress={() => {
+                    if (direction !== 'en_to_it') handleToggleDirection();
+                  }}
+                  accessibilityRole="button"
+                  accessibilityLabel="English to Italian mode"
+                  style={[
+                    styles.directionPill,
+                    direction === 'en_to_it'
+                      ? [styles.directionPillActive, { backgroundColor: colors.tint }]
+                      : null,
+                  ]}>
+                  <Text
+                    style={[
+                      type.caption,
+                      styles.directionText,
+                      {
+                        color:
+                          direction === 'en_to_it'
+                            ? colors.onTint
+                            : colors.textSecondary,
+                        fontWeight: direction === 'en_to_it' ? '700' : '500',
+                      },
+                    ]}>
+                    🇬🇧 English ➔ 🇮🇹 Italian
+                  </Text>
+                </Pressable>
+
+                <Pressable
+                  onPress={handleToggleDirection}
+                  accessibilityRole="button"
+                  accessibilityLabel="Swap translation direction"
+                  hitSlop={8}
+                  style={({ pressed }) => [
+                    styles.swapBtn,
+                    {
+                      borderColor: colors.border,
+                      opacity: pressed ? 0.7 : 1,
+                    },
+                  ]}>
+                  <Text style={[type.caption, { color: colors.tint, fontWeight: '700' }]}>
+                    ⇄ Swap
+                  </Text>
+                </Pressable>
+
+                <Pressable
+                  onPress={() => {
+                    if (direction !== 'it_to_en') handleToggleDirection();
+                  }}
+                  accessibilityRole="button"
+                  accessibilityLabel="Italian to English mode"
+                  style={[
+                    styles.directionPill,
+                    direction === 'it_to_en'
+                      ? [styles.directionPillActive, { backgroundColor: colors.tint }]
+                      : null,
+                  ]}>
+                  <Text
+                    style={[
+                      type.caption,
+                      styles.directionText,
+                      {
+                        color:
+                          direction === 'it_to_en'
+                            ? colors.onTint
+                            : colors.textSecondary,
+                        fontWeight: direction === 'it_to_en' ? '700' : '500',
+                      },
+                    ]}>
+                    🇮🇹 Italian ➔ 🇬🇧 English
+                  </Text>
+                </Pressable>
+              </View>
+
               {/* Editor Header Row */}
               <View style={styles.editorLabelRow}>
                 <View style={styles.labelTagRow}>
                   <Text style={[type.label, { color: colors.text, fontWeight: '600' }]}>
-                    {isModified && hasOriginalStoryText ? 'Your version' : 'Italian'}
+                    {direction === 'en_to_it' ? 'English input' : 'Italian input'}
                   </Text>
-                  {isModified && hasOriginalStoryText ? (
+                  {isModified && hasStoryDefault ? (
                     <View
                       style={[
                         styles.modifiedPill,
                         { backgroundColor: colors.accentSoft },
                       ]}>
                       <Text style={[type.caption, { color: colors.tint, fontSize: 11 }]}>
-                        Modified
+                        Customized
                       </Text>
                     </View>
                   ) : null}
                 </View>
 
                 <View style={styles.editorActionRow}>
-                  {hasOriginalStoryText && isModified ? (
+                  {hasStoryDefault && isModified ? (
                     <Pressable
                       onPress={handleResetToStory}
                       accessibilityRole="button"
-                      accessibilityLabel="Reset to story"
+                      accessibilityLabel="Reset to original story text"
                       hitSlop={8}
                       style={({ pressed }) => [
                         styles.toolBtn,
@@ -266,7 +446,7 @@ export function TranslationExplorer({
                 </View>
               </View>
 
-              {/* Italian Text Input */}
+              {/* Text Input Container */}
               <View
                 style={[
                   styles.inputContainer,
@@ -277,8 +457,15 @@ export function TranslationExplorer({
                 ]}>
                 <TextInput
                   value={editedText}
-                  onChangeText={setEditedText}
-                  placeholder="Scrivi qualcosa in italiano…"
+                  onChangeText={(val) => {
+                    setEditedText(val);
+                    if (errorMessage) setErrorMessage(null);
+                  }}
+                  placeholder={
+                    direction === 'en_to_it'
+                      ? 'Type English here to translate to Italian…'
+                      : 'Scrivi qualcosa in italiano…'
+                  }
                   placeholderTextColor={colors.textMuted}
                   multiline
                   maxLength={MAX_TRANSLATION_INPUT_LENGTH}
@@ -304,52 +491,157 @@ export function TranslationExplorer({
                 ) : null}
               </View>
 
-              {/* Action Area & Supporting Copy */}
+              {/* Translate Action Button */}
               <View style={styles.actionArea}>
                 <Pressable
-                  onPress={() => void handleLaunchTranslation()}
-                  disabled={!canLaunch}
+                  onPress={() => void handleTranslate()}
+                  disabled={!canTranslate}
                   accessibilityRole="button"
-                  accessibilityLabel={
-                    isModified ? 'See the difference' : 'Explore translation'
-                  }
+                  accessibilityLabel="Translate text"
                   style={({ pressed }) => [
                     styles.primaryCta,
                     {
-                      backgroundColor: canLaunch ? colors.tint : colors.progressTrack,
-                      opacity: !canLaunch ? 0.5 : pressed ? 0.88 : 1,
+                      backgroundColor: canTranslate ? colors.tint : colors.progressTrack,
+                      opacity: !canTranslate ? 0.5 : pressed ? 0.88 : 1,
                     },
                   ]}>
+                  {isTranslating ? (
+                    <View style={styles.loadingRow}>
+                      <ActivityIndicator size="small" color={colors.onTint} />
+                      <Text
+                        style={[
+                          type.button,
+                          { color: colors.onTint, marginLeft: Spacing.xs },
+                        ]}>
+                        Translating…
+                      </Text>
+                    </View>
+                  ) : (
+                    <Text
+                      style={[
+                        type.button,
+                        {
+                          color: canTranslate ? colors.onTint : colors.textSecondary,
+                          fontWeight: '700',
+                        },
+                      ]}>
+                      Translate to {direction === 'en_to_it' ? 'Italian' : 'English'} →
+                    </Text>
+                  )}
+                </Pressable>
+              </View>
+
+              {/* Error Banner if API fails */}
+              {errorMessage ? (
+                <View
+                  style={[
+                    styles.errorCard,
+                    { backgroundColor: colors.accentSoft, borderColor: colors.border },
+                  ]}>
+                  <Text style={[type.caption, { color: colors.tint, flex: 1 }]}>
+                    ⚠️ {errorMessage}
+                  </Text>
+                </View>
+              ) : null}
+
+              {/* Live In-App Translation Result Card */}
+              {translatedResult ? (
+                <View
+                  style={[
+                    styles.resultCard,
+                    {
+                      backgroundColor: colors.backgroundAtmosphereTop,
+                      borderColor: colors.tint,
+                    },
+                  ]}>
+                  <View style={styles.resultHeaderRow}>
+                    <Text
+                      style={[
+                        type.caption,
+                        { color: colors.tint, fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.5 },
+                      ]}>
+                      {direction === 'en_to_it'
+                        ? '🇮🇹 Italian Translation'
+                        : '🇬🇧 English Translation'}
+                    </Text>
+                  </View>
+
                   <Text
                     style={[
-                      type.button,
-                      { color: canLaunch ? colors.onTint : colors.textSecondary },
+                      type.reader,
+                      styles.resultText,
+                      { color: colors.text },
                     ]}>
-                    {isModified ? 'See the difference →' : 'Explore translation →'}
+                    {translatedResult}
+                  </Text>
+
+                  {/* Action Toolbar for Result */}
+                  <View style={styles.resultActionsRow}>
+                    {/* Pronunciation audio (available when output or input is Italian) */}
+                    {isItalianOutput ? (
+                      <Pressable
+                        onPress={() => void handleSpeak(translatedResult)}
+                        accessibilityRole="button"
+                        accessibilityLabel="Listen to Italian pronunciation"
+                        hitSlop={8}
+                        style={({ pressed }) => [
+                          styles.actionPill,
+                          {
+                            backgroundColor: colors.backgroundElevated,
+                            borderColor: colors.border,
+                            opacity: pressed || isSpeaking ? 0.7 : 1,
+                          },
+                        ]}>
+                        <Text style={[type.caption, { color: colors.tint, fontWeight: '600' }]}>
+                          {isSpeaking ? '🔊 Playing…' : '🔊 Listen'}
+                        </Text>
+                      </Pressable>
+                    ) : null}
+
+                    {/* Copy to clipboard */}
+                    <Pressable
+                      onPress={() => void handleCopy(translatedResult)}
+                      accessibilityRole="button"
+                      accessibilityLabel="Copy translated text"
+                      hitSlop={8}
+                      style={({ pressed }) => [
+                        styles.actionPill,
+                        {
+                          backgroundColor: colors.backgroundElevated,
+                          borderColor: colors.border,
+                          opacity: pressed ? 0.7 : 1,
+                        },
+                      ]}>
+                      <Text
+                        style={[
+                          type.caption,
+                          {
+                            color: copied ? colors.tint : colors.textSecondary,
+                            fontWeight: '600',
+                          },
+                        ]}>
+                        {copied ? '✓ Copied!' : '📋 Copy'}
+                      </Text>
+                    </Pressable>
+                  </View>
+                </View>
+              ) : null}
+
+              {/* Secondary Google Translate External Link */}
+              <View style={styles.footerRow}>
+                <Pressable
+                  onPress={() => void handleOpenGoogleTranslate()}
+                  accessibilityRole="button"
+                  accessibilityLabel="Open in Google Translate"
+                  hitSlop={8}
+                  style={({ pressed }) => [
+                    styles.googleLinkBtn,
+                    { opacity: pressed ? 0.7 : 1 },
+                  ]}>
+                  <Text style={[type.caption, styles.googleLinkText, { color: colors.textMuted }]}>
+                    Open in Google Translate ↗
                   </Text>
                 </Pressable>
-
-                <Text
-                  style={[
-                    type.caption,
-                    styles.supportCopy,
-                    { color: colors.textSecondary },
-                  ]}>
-                  {isModified
-                    ? 'Explore how your changes affect the meaning.'
-                    : hasOriginalStoryText
-                      ? 'Curious what happens if you change it? Edit the Italian above to experiment.'
-                      : 'Write or paste Italian to explore how it translates.'}
-                </Text>
-
-                <Text
-                  style={[
-                    type.caption,
-                    styles.poweredBy,
-                    { color: colors.textMuted },
-                  ]}>
-                  Powered by Google Translate
-                </Text>
               </View>
             </ScrollView>
           </Pressable>
@@ -374,7 +666,7 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.sm,
-    maxWidth: 580,
+    maxWidth: 620,
     width: '100%',
     maxHeight: '90%',
     alignSelf: 'center',
@@ -390,7 +682,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
-    marginBottom: Spacing.md,
+    marginBottom: Spacing.sm,
   },
   closeBtn: {
     width: 36,
@@ -401,13 +693,13 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
   },
   scrollContent: {
-    paddingBottom: Spacing.sm,
+    paddingBottom: Spacing.md,
   },
   contextCard: {
     borderRadius: Radii.md,
     borderWidth: StyleSheet.hairlineWidth,
     padding: Spacing.md,
-    marginBottom: Spacing.md,
+    marginBottom: Spacing.sm,
     gap: 4,
   },
   contextLine: {
@@ -415,6 +707,40 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
     gap: Spacing.xs,
     flexWrap: 'wrap',
+  },
+  directionBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    padding: 3,
+    marginBottom: Spacing.md,
+  },
+  directionPill: {
+    flex: 1,
+    paddingVertical: 7,
+    paddingHorizontal: Spacing.xs,
+    borderRadius: Radii.pill,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  directionPillActive: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 1,
+  },
+  directionText: {
+    fontSize: 12,
+    textAlign: 'center',
+  },
+  swapBtn: {
+    paddingHorizontal: 8,
+    paddingVertical: 5,
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    marginHorizontal: 4,
   },
   editorLabelRow: {
     flexDirection: 'row',
@@ -445,11 +771,11 @@ const styles = StyleSheet.create({
     borderRadius: Radii.md,
     borderWidth: 1,
     padding: Spacing.md,
-    minHeight: 110,
+    minHeight: 90,
     justifyContent: 'space-between',
   },
   textInput: {
-    minHeight: 80,
+    minHeight: 65,
     textAlignVertical: 'top',
     padding: 0,
   },
@@ -459,9 +785,9 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   actionArea: {
-    marginTop: Spacing.lg,
+    marginTop: Spacing.sm,
+    marginBottom: Spacing.sm,
     alignItems: 'center',
-    gap: Spacing.xs,
   },
   primaryCta: {
     width: '100%',
@@ -469,15 +795,62 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
-    minHeight: 48,
+    minHeight: 46,
   },
-  supportCopy: {
-    textAlign: 'center',
+  loadingRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  errorCard: {
+    borderRadius: Radii.md,
+    borderWidth: StyleSheet.hairlineWidth,
+    padding: Spacing.sm,
+    marginBottom: Spacing.sm,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  resultCard: {
+    borderRadius: Radii.md,
+    borderWidth: 1.5,
+    padding: Spacing.md,
+    marginTop: Spacing.xs,
+    marginBottom: Spacing.sm,
+    gap: Spacing.xs,
+  },
+  resultHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  resultText: {
+    fontSize: 18,
+    lineHeight: 26,
+    fontWeight: '500',
+  },
+  resultActionsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.sm,
     marginTop: Spacing.xs,
   },
-  poweredBy: {
-    textAlign: 'center',
-    fontSize: 11,
-    marginTop: 2,
+  actionPill: {
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: 6,
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+  },
+  footerRow: {
+    marginTop: Spacing.sm,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  googleLinkBtn: {
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+  },
+  googleLinkText: {
+    fontSize: 12,
+    textDecorationLine: 'underline',
   },
 });

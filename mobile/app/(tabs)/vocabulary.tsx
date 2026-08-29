@@ -206,8 +206,8 @@ export default function VocabularyScreen() {
     if (wordsFilter.groupBy === 'part_of_speech') {
       return groupWordsByPartOfSpeech(filteredWords);
     }
-    return groupWordsByChronology(filteredWords);
-  }, [filteredWords, wordsFilter.groupBy]);
+    return groupWordsByChronology(filteredWords, highestChapter);
+  }, [filteredWords, wordsFilter.groupBy, highestChapter]);
 
   const availablePhrases = useMemo(() => {
     return NOTEBOOK_PHRASES.filter((p) => p.chapterNumber <= highestChapter);
@@ -477,6 +477,7 @@ export default function VocabularyScreen() {
                               bundle={bundle}
                               isSaved={isSaved}
                               isSpeaking={speakingId === `word:${item.id}`}
+                              highestChapter={highestChapter}
                               onPlayAudio={handlePlayAudio}
                               onToggleSave={handleToggleSave}
                               onNavigateChapter={handleNavigateChapter}

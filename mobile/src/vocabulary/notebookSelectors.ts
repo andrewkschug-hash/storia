@@ -196,6 +196,28 @@ export function filterNotebookGrammar(
   return list;
 }
 
+/** Resolve the latest chapter where a word was encountered by the learner, bounded by maxChapter */
+export function getItemChapter(item: VocabBrowseItem, maxChapter?: number): number {
+  // Determine the highest chapter where the learner actually encountered the word.
+  let max = 0;
+  for (const chId of item.chaptersEncountered ?? []) {
+    const match = chId.match(/\d+$/);
+    if (match) {
+      const num = parseInt(match[0], 10);
+      if (num > max && (maxChapter === undefined || num <= maxChapter)) {
+        max = num;
+      }
+    }
+  }
+  // If we have any recorded encounter, return it.
+  if (max > 0) return max;
+
+  // No recorded encounters. Fall back to the static introduced chapter.
+  const intro = item.introducedChapter ?? 1;
+  if (maxChapter !== undefined) return Math.min(intro, maxChapter);
+  return intro;
+}
+
 export type ChronologySection<T> = {
   id: string;
   title: string;
@@ -203,14 +225,23 @@ export type ChronologySection<T> = {
 };
 
 /** Group words chronologically into 'RECENTLY ENCOUNTERED' and 'EARLIER IN YOUR JOURNEY' */
-export function groupWordsByChronology(items: VocabBrowseItem[]): ChronologySection<VocabBrowseItem>[] {
+export function groupWordsByChronology(
+  items: VocabBrowseItem[],
+  highestChapter?: number,
+): ChronologySection<VocabBrowseItem>[] {
   if (items.length === 0) return [];
 
-  // Sort descending by introduced chapter
+  // Sort descending by highest encountered chapter, but treat items with no encounters as earliest
   const sorted = [...items].sort((a, b) => {
-    const chA = a.introducedChapter ?? 1;
-    const chB = b.introducedChapter ?? 1;
-    return chB - chA;
+    const hasEncA = (a.chaptersEncountered?.length ?? 0) > 0;
+    const hasEncB = (b.chaptersEncountered?.length ?? 0) > 0;
+    const chA = hasEncA ? getItemChapter(a, highestChapter) : 0;
+    const chB = hasEncB ? getItemChapter(b, highestChapter) : 0;
+    if (chB !== chA) return chB - chA;
+    if (b.encounterCount !== a.encounterCount) {
+      return b.encounterCount - a.encounterCount;
+    }
+    return a.italian.localeCompare(b.italian, 'it');
   });
 
   if (sorted.length <= 6) {
