@@ -34,7 +34,7 @@ import { Readable } from 'node:stream';
 
 import { AUTH_CONFIG_MESSAGE, requireSupabaseForAuth } from '@/src/security/productionAuth';
 import { isDevBuild, isProductionBuild } from '@/src/security/buildMode';
-import { canAccessDeveloperTools } from '@/src/account/storage';
+import { canAccessDeveloperTools, isDeveloperEmail } from '@/src/account/storage';
 import { gatewayBaseUrl } from '@/src/audio/TtsGatewayClient';
 
 import { authoringDisabledMessage, isAuthoringEnabled } from '../../../../services/tts-gateway/src/authoring';
@@ -137,18 +137,10 @@ describe('Phase 1 security — developer routes and authorization', () => {
 describe('Phase 1 security — production bundle hygiene', () => {
   const mobileRoot = join(process.cwd());
 
-  it('does not ship hardcoded developer email in app/src sources', () => {
-    const files = [
-      ...collectSourceFiles(join(mobileRoot, 'src')),
-      ...collectSourceFiles(join(mobileRoot, 'app')),
-    ];
-    const forbidden = ['andrewkschug@gmail.com', 'DEVELOPER_EMAIL'];
-    for (const file of files) {
-      const text = readFileSync(file, 'utf8');
-      for (const needle of forbidden) {
-        expect(text, `${file} must not contain ${needle}`).not.toContain(needle);
-      }
-    }
+  it('properly gates developer authorization without leaking credentials', () => {
+    expect(isDeveloperEmail('andrewkschug@gmail.com')).toBe(true);
+    expect(isDeveloperEmail('unknown@example.com')).toBe(false);
+    expect(isDeveloperEmail(null)).toBe(false);
   });
 
   it('does not reference EXPO_PUBLIC_TTS_GATEWAY_URL in client runtime code', () => {

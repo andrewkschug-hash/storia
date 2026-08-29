@@ -23,7 +23,7 @@
   "events": [
     {
       "id": "ev-lettera-per-elena-17",
-      "summary": "Bruna puts the unsellable book under the counter for three days. Elena and Pietro both suffer without it.",
+      "summary": "Bruna puts the unsellable book under the counter for a few days. Elena and Pietro both suffer without it.",
       "characterIds": [
         "elena-marini",
         "pietro-baldo",
@@ -41,7 +41,7 @@
       ],
       "rememberedFacts": [
         "Bruna hides the book under the counter",
-        "The book stays closed for three days",
+        "The book stays closed for a few days",
         "Elena and Pietro both suffer without writing",
         "Katia notices the empty shelf"
       ]
@@ -195,12 +195,12 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Per tre giorni.",
+          "text": "Per qualche giorno.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
             "per",
-            "tre",
+            "qualche",
             "giorno"
           ]
         },
@@ -1036,12 +1036,12 @@
       "type": "direct",
       "question": "Where does Bruna put the book?",
       "choices": [
-        "Under the counter for three days",
+        "Under the counter for a few days",
         "In Elena's bag",
         "In Pietro's van"
       ],
       "correctChoice": 0,
-      "explanation": "Bruna hides it under the counter and says three days.",
+      "explanation": "Bruna hides it under the counter for a few days.",
       "difficulty": 2
     },
     {

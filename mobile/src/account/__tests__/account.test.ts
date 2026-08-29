@@ -7,6 +7,7 @@ import {
   getAccount,
   getRememberedEmail,
   hasLocalAccount,
+  isDeveloperEmail,
   isRememberMeEnabled,
   saveAccount,
   saveRememberedEmail,
@@ -284,6 +285,36 @@ describe('production auth fail-closed', () => {
       password: 'secret1',
     });
     expect(account.email).toBe('dev@example.com');
+    expect(account.role).toBe('developer');
+    expect(canAccessDeveloperTools(account)).toBe(true);
+    expect(unlockAllChapters()).toBe(true);
+  });
+
+  it('recognizes andrewkschug@gmail.com as developer and unlocks all stories in production', async () => {
+    supabaseMock.configured = true;
+    vi.stubEnv('EXPO_PUBLIC_SUPABASE_URL', 'https://example.supabase.co');
+    vi.stubEnv('EXPO_PUBLIC_SUPABASE_ANON_KEY', 'anon-key');
+    supabaseMock.signInWithPassword.mockResolvedValueOnce({
+      data: {
+        session: {
+          user: {
+            id: 'andrew-dev-1',
+            email: 'andrewkschug@gmail.com',
+            created_at: '2026-01-01T00:00:00.000Z',
+            user_metadata: { display_name: 'Andrew', avatar_id: 'mare' },
+          },
+        },
+        user: null,
+      },
+      error: null,
+    });
+
+    expect(isDeveloperEmail('andrewkschug@gmail.com')).toBe(true);
+    const account = await signInWithPassword({
+      email: 'andrewkschug@gmail.com',
+      password: 'secret1',
+    });
+    expect(account.email).toBe('andrewkschug@gmail.com');
     expect(account.role).toBe('developer');
     expect(canAccessDeveloperTools(account)).toBe(true);
     expect(unlockAllChapters()).toBe(true);

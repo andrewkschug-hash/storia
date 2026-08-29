@@ -11,11 +11,15 @@ import { useFonts } from 'expo-font';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useState } from 'react';
+import { Platform, StyleSheet, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import { getAccount } from '@/src/account/storage';
 import { AccessibilityProvider, useAccessibility } from '@/src/accessibility/AccessibilityProvider';
+import { StoribaseLogo } from '@/src/components/StoribaseLogo';
+import { Colors } from '@/src/theme/tokens';
+import { useSystemColorScheme } from '@/src/theme/useSystemColorScheme';
 
 export { ErrorBoundary } from 'expo-router';
 
@@ -34,20 +38,33 @@ export default function RootLayout() {
     Literata_600SemiBold,
   });
   const [accountReady, setAccountReady] = useState(false);
+  const systemScheme = useSystemColorScheme();
 
   useEffect(() => {
     if (error) throw error;
   }, [error]);
 
   useEffect(() => {
-    if (!loaded) return;
     void getAccount().finally(() => {
       setAccountReady(true);
-      void SplashScreen.hideAsync();
     });
-  }, [loaded]);
+  }, []);
+
+  useEffect(() => {
+    if (loaded && accountReady) {
+      void SplashScreen.hideAsync();
+    }
+  }, [loaded, accountReady]);
 
   if (!loaded || !accountReady) {
+    if (Platform.OS === 'web') {
+      const bg = systemScheme === 'dark' ? Colors.dark.background : Colors.light.background;
+      return (
+        <View style={[styles.webFallbackContainer, { backgroundColor: bg }]}>
+          <StoribaseLogo size={56} variant="circle" />
+        </View>
+      );
+    }
     return null;
   }
 
@@ -229,3 +246,13 @@ function RootLayoutNav() {
     </ThemeProvider>
   );
 }
+
+const styles = StyleSheet.create({
+  webFallbackContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '100%',
+  },
+});
+

@@ -9,8 +9,6 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
 }
 
 const FUTURE_LEVELS = [
-  { level: 'B1', title: 'Independent Reading', detail: 'Longer stories and natural dialogue' },
-  { level: 'B1+', title: 'Extended Narratives', detail: 'Rich descriptions and deeper plots' },
   { level: 'B2', title: 'Complex Reading', detail: 'Full short novels and idiomatic prose' },
   { level: 'C1', title: 'Advanced Fluency', detail: 'Nuance, idioms, and literary style' },
 ] as const;

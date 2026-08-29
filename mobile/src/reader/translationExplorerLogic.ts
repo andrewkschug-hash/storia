@@ -27,7 +27,7 @@ export function resolveHeaderExplorerPayload(
       text: target.text,
       source: 'reader_header',
       contextSentence: target.text,
-      referenceEnglish: target.english,
+      referenceEnglish: target.english ?? undefined,
       selectedText: undefined,
     };
   }

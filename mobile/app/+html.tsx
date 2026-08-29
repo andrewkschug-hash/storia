@@ -46,6 +46,10 @@ export default function Root({ children }: { children: ReactNode }) {
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="canonical" href={SITE_URL} />
 
+        {/* Preconnect to Google Fonts for faster font asset delivery */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
         {/* Favicon & Google Site Icons */}
         <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.png" />

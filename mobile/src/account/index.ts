@@ -7,11 +7,13 @@ export {
   type AvatarPreset,
 } from '@/src/account/avatars';
 export {
+  DEVELOPER_EMAILS,
   canAccessDeveloperTools,
   clearAccount,
   getAccount,
   getRememberedEmail,
   hasLocalAccount,
+  isDeveloperEmail,
   isRememberMeEnabled,
   saveAccount,
   saveRememberedEmail,

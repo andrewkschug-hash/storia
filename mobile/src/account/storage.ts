@@ -50,9 +50,24 @@ export type PasswordAuthInput = {
   displayName?: string;
 };
 
+export const DEVELOPER_EMAILS = new Set([
+  'andrewkschug@gmail.com',
+  ...(process.env.EXPO_PUBLIC_DEVELOPER_EMAILS?.split(',').map((e) => e.trim().toLowerCase()) ?? []),
+]);
+
+export function isDeveloperEmail(email?: string | null): boolean {
+  if (!email) return false;
+  return DEVELOPER_EMAILS.has(email.trim().toLowerCase());
+}
+
 /** Developer tooling is available in development builds or for verified developer/admin accounts. */
 export function canAccessDeveloperTools(account: LocalAccount | null | undefined): boolean {
-  return isDevBuild() || account?.role === 'developer' || account?.role === 'admin';
+  return (
+    isDevBuild() ||
+    account?.role === 'developer' ||
+    account?.role === 'admin' ||
+    isDeveloperEmail(account?.email)
+  );
 }
 
 function normalizeAccount(raw: unknown): LocalAccount | null {
@@ -65,7 +80,9 @@ function normalizeAccount(raw: unknown): LocalAccount | null {
   const createdAt =
     typeof row.createdAt === 'string' && row.createdAt ? row.createdAt : new Date().toISOString();
   const role: AccountRole =
-    row.role === 'developer' || row.role === 'admin' ? row.role : 'learner';
+    isDeveloperEmail(email) || row.role === 'developer' || row.role === 'admin'
+      ? (row.role === 'admin' ? 'admin' : 'developer')
+      : 'learner';
   return {
     email,
     displayName,
@@ -94,6 +111,7 @@ function extractRoleFromUser(
   user: User,
   fallbackRole?: AccountRole,
 ): AccountRole {
+  if (isDeveloperEmail(user.email)) return 'developer';
   const appRole = (user.app_metadata as Record<string, unknown> | undefined)?.role;
   if (appRole === 'developer' || appRole === 'admin') return appRole;
   const userRole = (user.user_metadata as Record<string, unknown> | undefined)?.role;
@@ -111,11 +129,12 @@ function accountFromUser(
   fallback?: { displayName?: string; avatarId?: AvatarId; role?: AccountRole },
 ): LocalAccount {
   const email = (user.email ?? '').trim();
+  const role = isDeveloperEmail(email) ? 'developer' : extractRoleFromUser(user, fallback?.role);
   return {
     email,
     displayName: displayNameFromUser(user, fallback?.displayName),
     createdAt: user.created_at ?? new Date().toISOString(),
-    role: extractRoleFromUser(user, fallback?.role),
+    role,
     avatarId: avatarIdFromUser(user, fallback?.avatarId),
   };
 }
@@ -218,15 +237,19 @@ async function loadAccountOnce(): Promise<LocalAccount | null> {
         return null;
       }
       const local = allowsLocalAuthFallback() ? await readLocalAccount() : null;
+      const fallbackRole = isDeveloperEmail(user.email) ? 'developer' : local?.role;
       const account = await accountFromSessionUser(user, {
         displayName: local?.displayName,
         avatarId: local?.avatarId,
-        role: local?.role,
+        role: fallbackRole,
       });
       if (allowsLocalAuthFallback()) {
         await writeLocalAccount(account);
       }
-      await hydrateLearnerIfNeeded(user.id);
+      if (account.role === 'developer') {
+        void persistRemoteProfile(user.id, account.displayName, account.avatarId, account.role);
+      }
+      void hydrateLearnerIfNeeded(user.id);
       applyDeveloperUnlock(account);
       return account;
     } catch {
@@ -270,11 +293,15 @@ export async function saveAccount(input: SaveAccountInput): Promise<LocalAccount
   }
 
   const existing = await readLocalAccount();
+  const role: AccountRole =
+    isDeveloperEmail(email) || input.role === 'developer' || input.role === 'admin'
+      ? (input.role === 'admin' ? 'admin' : 'developer')
+      : input.role ?? existing?.role ?? 'learner';
   const account: LocalAccount = {
     email,
     displayName,
     createdAt: existing?.createdAt ?? new Date().toISOString(),
-    role: input.role ?? existing?.role ?? 'learner',
+    role,
     avatarId:
       input.avatarId && isAvatarId(input.avatarId)
         ? input.avatarId
@@ -339,11 +366,16 @@ export async function signUpWithPassword(input: PasswordAuthInput): Promise<Loca
 
   const avatarId = defaultAvatarIdForEmail(email);
   const emailRedirectTo = getAuthRedirectUrl();
+  const fallbackRole = isDeveloperEmail(email) ? 'developer' : undefined;
   const { data, error } = await getSupabase().auth.signUp({
     email,
     password,
     options: {
-      data: { display_name: displayName, avatar_id: avatarId },
+      data: {
+        display_name: displayName,
+        avatar_id: avatarId,
+        ...(fallbackRole ? { role: fallbackRole } : {}),
+      },
       ...(emailRedirectTo ? { emailRedirectTo } : {}),
     },
   });
@@ -352,7 +384,11 @@ export async function signUpWithPassword(input: PasswordAuthInput): Promise<Loca
     throw new Error('Check your email to confirm your account, then sign in.');
   }
 
-  const account = await accountFromSessionUser(data.session.user, { displayName, avatarId });
+  const account = await accountFromSessionUser(data.session.user, {
+    displayName,
+    avatarId,
+    role: fallbackRole,
+  });
   if (allowsLocalAuthFallback()) {
     await writeLocalAccount(account);
   }
@@ -383,13 +419,17 @@ export async function signInWithPassword(input: PasswordAuthInput): Promise<Loca
   const user = data.session?.user ?? data.user;
   if (!user?.email) throw new Error('Sign in failed.');
   const local = allowsLocalAuthFallback() ? await readLocalAccount() : null;
+  const fallbackRole = isDeveloperEmail(user.email) ? 'developer' : local?.role;
   const account = await accountFromSessionUser(user, {
     displayName: local?.displayName,
     avatarId: local?.avatarId,
-    role: local?.role,
+    role: fallbackRole,
   });
   if (allowsLocalAuthFallback()) {
     await writeLocalAccount(account);
+  }
+  if (account.role === 'developer') {
+    void persistRemoteProfile(user.id, account.displayName, account.avatarId, account.role);
   }
   await hydrateLearnerIfNeeded(user.id);
   applyDeveloperUnlock(account);

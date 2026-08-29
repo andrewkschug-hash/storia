@@ -24,10 +24,6 @@ Bruna returns from the storeroom with a sack of beans. Did you see the book? Ele
 
 The shift continues: coffees, cappuccinos, a sandwich. Elena works well, but the book stays in her head. At noon Bruna brings her a sandwich behind the counter. Eat standing up. The first day is like that. Elena eats quickly and looks outside, into the fog.
 
-Marina di Brenta feels familiar and new at once. In the afternoon she keeps serving and does not talk about Padova. At the counter she is good. In the book, maybe, she is more true. Before closing she arranges the sugar and looks at the shelf. The fat book is there, closed, next to the bowls.
-
-Bruna turns off one light. Tomorrow we continue. Elena goes out into the cold of Marina di Brenta. In her head she still repeats: this table wobbles. True.
-
 ## Chapter 2: Bruna (Bruna)
 
 The second day in Marina di Brenta begins with little fog. Elena arrives at Caffè Brenta and finds Katia at the counter. Katia washes the cups with quick movements. Hi. I am Katia. You are Elena, right? Yes. Nice to meet you.
@@ -49,10 +45,6 @@ Her voice returns to normal when a customer comes in. Elena makes a cappuccino. 
 The book is old. Bruna cares about it. Do not ask questions today. All right. Elena would like to know who wrote this table wobbles. She would like to know if someone has read her true. But the third rule is clear: you do not ask who.
 
 In mid-morning Bruna asks her to fill the sugar. Elena opens the bowls. The book is a few centimeters away. She does not open it. Not today, not in front of Bruna. In the afternoon the café is calmer. Bruna counts the money and does not talk about the book.
-
-Elena washes the cups and repeats the rules in her head. Do not sell. Do not take home. Do not ask who. Before leaving Bruna turns off the lights at the counter. Elena, thank you. You are good with the customers. Thank you. See you tomorrow.
-
-Katia closes the display case and puts on her jacket. Outside, Marina di Brenta is already in shadow. Elena walks and still thinks of Bruna's shiny eyes. She has no explanation. She has three rules and a book by the sugar. And she already knows that tomorrow she will look at the shelf again.
 
 ## Chapter 3: Tuesday (Martedì)
 
@@ -78,14 +70,6 @@ Nothing true. Nothing alive. Katia washes a cup and speaks quietly. Nice convers
 
 Or maybe he's just in a hurry. In the afternoon the customers thin out. Elena opens the book on the shelf. There is no new line. There is still vero under questo tavolo balla.
 
-Elena closes the book and puts it back near the sugar. She thinks of Pietro's glance at the shelf. Why did he look at the book and not at her? Bruna puts the new beans in the storeroom and returns to the counter. Tuesday is always like this: coffee, papers, and little else.
-
-Elena nods and serves a customer with sugar. She would like to talk better, but she does not know how. Katia changes the subject and talks about a dirty table. That table near the window still wobbles. Elena goes to fix it with a piece of paper.
-
-While she works, she thinks again of Pietro looking at the book. Maybe he was only looking for the sugar. Or maybe not. At the end of the shift Elena washes the last cups. The van is gone. Only Tuesday remains in her head.
-
-She finds no answer. She goes back to the counter and makes another coffee. Tuesday ends like that: with fog outside and silence inside.
-
 ## Chapter 4: The second line (La seconda riga)
 
 On Wednesday the café is full from the morning. Elena works at the counter without thinking too much. She makes cappuccinos, puts out sugar, smiles. Then, between two orders, she stops near the shelf. She opens the book with hands still damp.
@@ -105,14 +89,6 @@ Elena wipes the counter twice. Then she secretly rereads her answer. It feels to
 She is afraid she said too much to a stranger. But she does not take the page away. She leaves the words where they are. In the evening Bruna counts the money near the register. Elena puts the sugar back and turns off a light.
 
 The book stays on the shelf, closed and heavy. Elena goes out and walks in the fog of Marina di Brenta. She repeats the sentence in her head like a short song. Today I am afraid of silence. She is afraid too.
-
-But at the counter nobody knows. Before writing, Elena listens to the noise of the counter. One coffee, two sugars, a table near the door. Then the new line stops her. She is afraid too, but usually she hides it with an easy sentence.
-
-In the book she hides nothing. She also writes: in Padova I talked about work. Here I talk about everything and nothing. The real silence comes later, when I close the café. Bruna asks if she wants a croissant.
-
-No, thanks. Just coffee. Elena drinks and thinks of the second line. She would like to know who is afraid of silence. But the rule is clear: you do not ask who. So she leaves the question shut in her chest.
-
-And she leaves too many answers on paper. Only the book. Only that second line. Elena thinks: next time I will write less. She is not sure she can.
 
 ## Chapter 5: Katia (Katia)
 
@@ -136,14 +112,6 @@ I know. It's one of Bruna's rules. Katia puts on her jacket and opens the door. 
 
 Elena does not say that she is afraid of silence too. She has already written it in the book, where nobody admits. Katia walks beside her without asking more questions. Elena lines up the sugar packets on the counter. Katia still talks about the book as something normal and dangerous.
 
-Once a customer asked if it was for sale. Bruna said no. Period. Elena laughs softly. I would not sell it. Of course. Because you wrote in it.
-
-Elena neither confirms nor denies. She looks at the shelf and changes the subject. Does the table still wobble? Yes. Like people. In the afternoon a little sun comes through the rain.
-
-Elena thinks that Katia knows the café better than she does. She also knows the silences. That is why she does not write: she does not want to leave proof. At the counter they are colleagues. In the book Elena is alone with a voice without a face.
-
-And Katia, who never writes, already knows too much.
-
 ## Chapter 6: Mirella (Mirella)
 
 On Sunday Elena is at her mother's house. Mirella's kitchen is small and warm. There is a smell of coffee and bread. Mirella puts two cups on the table and the sugar nearby. You're staying here, right?
@@ -161,16 +129,6 @@ She thinks of her long answers and the fear of silence. Mum, I'm not dad. I know
 Where? To the café. I have to help Bruna with the counter. It's Sunday. I know. Just an hour. Mirella does not fully believe her, but she does not stop her daughter.
 
 Elena bikes toward Caffè Brenta with the wind in her face. The café is closed. The door is dark. She looks at the lock and laughs at herself. She used the café as an excuse. She is afraid of staying too long in Mirella's kitchen.
-
-In the kitchen the words are true and heavy. In the book the words are true in another way, safer. Elena goes home slowly, without saying where she really was. In the evening she writes a message to Bruna. Tomorrow I'll arrive early at the counter.
-
-Then she thinks of her father and of paper. Mirella cuts the bread and talks again about staying. Marina di Brenta is not Padova, but it is home. Elena knows it is true and that it is not enough. At the café I have a counter. Here I have questions.
-
-Questions are fine. If they stay in the kitchen, though, they are heavy. Mirella touches her hand. Your father put true things in notes. At the table he said little.
-
-Elena drinks the last sip of coffee. Maybe I do that too. I know. When Elena returns from the café's closed door, her hands are cold. She ran from one truth toward another.
-
-And neither is said out loud. And of the silence she is still afraid to say out loud. Mirella wants her to stay. Elena stays, but she hides the true part in someone else's book.
 
 ## Chapter 7: Pietro again (Pietro di nuovo)
 
@@ -194,16 +152,6 @@ Pietro looks at the book shelf for a second. Then he takes the van keys and says
 
 In the book she would have written better. Katia passes near her and speaks quietly. The beans were cute. Shut up. But Elena smiles too, despite everything.
 
-In the afternoon she opens the book near the sugar. She does not write the bean scene. She only writes one honest, ugly line. Before Pietro arrives, Elena repeats a sentence at the empty counter. Today I am afraid of silence.
-
-Her voice sounds strange outside the book. When he is there, the sentence disappears. Only fog, beans, and a broom remain. Bruna brings another sack of sugar onto the counter. Be careful, you two.
-
-Yes. Pietro picks up one more bean under the book shelf. The book did not get dirty. Elena checks it. For a second she thinks of telling him: you always look there. She does not say it.
-
-She only says thank you when he passes her the broom. Thank you. You're welcome. That is how the attempt ends: with two small words and many beans. Today I spoke badly.
-
-Then she closes the book and goes back to the counter. Tuesday stays clumsy. But at least she laughed.
-
 ## Chapter 8: Sergio (Sergio)
 
 On Friday Elena opens the book before the shift. The café is still quiet. The sugar is already on the counter. There is a new line, written in a hurry. My brother does not sleep. The house is full of quiet fear.
@@ -222,16 +170,6 @@ But she does not know that yet. A customer asks for sugar for the table near the
 
 In the evening Katia turns off the counter lights. Elena touches the book's cover near the sugar. She hopes the person reads and feels better. She does not know that Sergio really exists. She does not know the brother is in recovery after an accident.
 
-She only knows one sentence on paper and a wrong guess. She closes the café with Bruna and Katia. Outside there is fog. Inside the book remains. Elena walks home and repeats: my brother does not sleep. Elena rereads the brother line while making the first coffee.
-
-She still imagines a woman who left. She imagines closed doors and unread messages. That is why she writes about people who leave. Katia asks if she wants to swap the Tuesday shift. No. Tuesday is fine for me.
-
-Katia shrugs and takes sugar to a table. Bruna returns to the subject of Pietro only once. If he arrives late, do not make a fuss. He already has enough. Okay. Elena thinks of the book and her soft answer.
-
-She hopes she has not done harm. She does not know she wrote to a different story. A story of recovery, not of goodbye. The counter stays full. The book stays closed. And the wrong guess stays comfortable until the next chapter.
-
-She still thinks of a finished love. The truth is simpler and harder. But that comes later.
-
 ## Chapter 9: Yesterday I wrote too much (Ieri ho scritto troppo)
 
 Saturday morning Elena arrives in Marina di Brenta with a tired face. She slept little, and she kept thinking about her long pages in the book. Yesterday I wrote too much. She says it to herself while turning the key of Caffè Brenta. Inside there is already the smell of coffee and warm croissants.
@@ -249,20 +187,6 @@ She got everything wrong. Her soft answer, full of advice about empty beds and g
 She takes the counter pen and writes little, this time. Sorry. I misunderstood. I hope your brother sleeps soon. She closes the book and stands still, with the pen still in her hand.
 
 Bruna passes behind her and touches her shoulder lightly. If the book is heavy for you, you can not write. I know. But Elena also knows another thing, more uncomfortable. If she does not write, she waits for the next line anyway.
-
-In the afternoon the café is full and noisy. Elena prefers this noise to the silence at home, where thoughts become long. She thinks of a brother who does not sleep, without knowing the name Sergio yet. She thinks of her wrong answer and the useless words she put on paper. Katia, while washing cups, speaks without looking at her.
-
-It is not an exam, Elena. It is only a book. Elena nods, but she does not agree inside. For her it is not only a book: it is a voice without a face. In the evening, after closing, she walks a little toward the lagoon and stops early.
-
-It is not a day for open water. It is a day for shame and for the book on the shelf. Walking back, she laughs bitterly under the fog. Before opening, she washes her hands and arranges the cups like every Saturday. Ordinary work keeps her standing when her head is full of paper.
-
-A customer asks for a cappuccino without foam and she makes it without mistakes. Another asks for cane sugar, and Elena thinks of the book near those jars. She would like not to open those pages again, but her fingers already know the gesture. When she reads the correction about the brother, she closes her eyes for a second. She feels foolish, and also cruel without meaning to.
-
-She treated a real wound like a finished love story. In the afternoon she washes glasses with water that is too hot and does not notice at once. Katia hands her a towel and asks no new questions. Elena counts the till money twice, to be safe. In the evening she turns off the lights one by one and leaves the shelf for last.
-
-She looks at the dark cover and thinks: tomorrow again. Shame walks home with her, but it does not close the book's door on her. In bed she rereads in her mind the three short lines she left: sorry, I misunderstood, I hope. They are few words, and they still seem both too many and too few. At the counter I am good.
-
-On paper sometimes not. And yet she already knows that tomorrow she will open the book again, even if yesterday she wrote too much.
 
 ## Chapter 10: Bruna tells (Bruna racconta)
 
@@ -286,16 +210,6 @@ And because others need to stay without shouting. Elena looks at the empty count
 
 Pietro arrives with the boxes. Elena feels a jump in her chest and does not yet know why. Yes. Tuesday. She does not yet connect the van to the book, but something has shifted.
 
-The book is no longer a private game between two pens. Elena spent the day not looking at the shelf too much. She served coffee, listened to customers, laughed at Katia's jokes. But when they were left alone, Bruna chose to speak for real. Elena feels the weight of a private story in a public place.
-
-She imagines Bruna's husband behind the same counter, shy and precise. She imagines the first page, maybe ugly, maybe practical, like the wobbling table. Bruna keeps speaking softly, as if the words could break. I do not want a museum. I want a place where shy people do not disappear.
-
-Elena nods and feels her own long answers like an excess. She used the book like a game, even if she told herself no. Now Bruna's sentence stays under her skin. While they close, Elena brings the chairs inside and counts the lights turned off. Outside the fog covers the street of Marina di Brenta.
-
-Bruna gives her the spare keys by mistake, then takes them back and laughs softly. Tomorrow you work, today you listen. Elena leaves with the sentence it is not a game still alive in her ears. She walks home and thinks of Tuesday, the van, the shelf. It is memory of a shy husband.
-
-It is a place for those who speak better with paper. And Elena, while turning off the last light, knows she is one of them.
-
 ## Chapter 11: A sentence in voice (Una frase in voce)
 
 Tuesday. Pietro's van arrives as always, a little late. Pietro comes in with the coffee boxes and hair damp from fog. In the café the fridge makes a loud, continuous noise, almost angry. Katia hits the fridge with the back of her hand. This monster never shuts up.
@@ -318,14 +232,6 @@ She rereads the old line, the one she knows by heart. Today I am afraid of silen
 
 Elena says nothing to Bruna. She says nothing to Katia, even though Katia has already seen everything. She closes the book carefully, as if she could also close the thought. But the thought stays. Before Pietro's arrival, Elena has already prepared the space for the boxes.
 
-She talked about the weather with a customer, without thinking. She put the sugar in place twice, a nervous useless gesture. When Pietro comes in, everything seems normal: boxes, signature, smell of fresh coffee. Then the joke arrives, and the normal breaks. Elena feels blood in her temples and the fridge noise becomes distant.
-
-She remembers the page, the ink, the night she answered too much. She remembers Bruna: it is not a game. And yet Pietro laughs, or almost, and talks about the fridge like a bad friend. After the van leaves, Elena washes the same cup three times. Katia whistles a song and then stops, because she sees the tension.
-
-Bruna asks if coffee is missing in the storeroom, and Elena answers late. In the afternoon she writes sentences in her mind that she does not put on paper. Is it you? Why that sentence? Why today of all days?
-
-At closing she counts the money and is off by two euros, then corrects it. She goes out into the cold and carries Pietro's voice with her, not only his lines. If it is you, Pietro, I have already answered you many times. And you do not know. And I, at the counter, still do not know how to say it out loud.
-
 ## Chapter 12: She does not say (Lei non dice)
 
 On Wednesday Katia arrives early, before Bruna even opens the till. She closes the door and looks at Elena without smiling. Yesterday you froze. Elena arranges the sugar as if sugar could save her. The fridge was making noise.
@@ -343,18 +249,6 @@ But she knows. Pietro's voice brought the line out of the book, and it cannot be
 Not to Bruna. To me. Elena shakes her head and keeps drying a glass that is already dry. I don't know. She repeats the same lie, smaller and harder.
 
 Katia shrugs. Okay. Then you don't know. Elena hates the sound of her own voice when she lies. At the counter she says true things to customers: two sugars, one coffee, a table by the window.
-
-With Katia she lies, and the lie weighs more than a sack of flour. In the evening she opens the book and does not write. She only looks at the pages, the different inks, the short sentences and the long ones. She is afraid of writing the name. She is afraid of saying the name.
-
-So she does not say. And the lie stays between her and Katia, like a cup left on the counter after closing. After Katia's question, Elena works as if she could escape inside the orders. She makes five cappuccinos in a row and does not mess up the foam. She smiles at a tourist who asks for directions to the lagoon.
-
-She tells the truth about the road and lies about the person. Bruna passes and says that today Elena is fast. Elena nods and hates how easy it is to seem normal. In mid-afternoon a glass slips from her and does not break. Katia catches it in midair and raises an eyebrow.
-
-Careful. Elena whispers thanks and goes back to the sink. She would like to say: yes, it is him, I heard it, the sentence was his. Instead she repeats the lie inside, like a bad training. When Bruna goes to the storeroom, Katia does not push further.
-
-The silence between the two of them is full of things unsaid. Elena thinks that lying to Katia is worse than writing too much. Because Katia saw, and paper has no eyes. At the end of the shift she turns off the coffee machine and stays a minute in the half-dark of the room. Then she leaves and takes the lie home, closed in the apron pocket.
-
-Before turning off the light, Elena touches the book's cover. She thinks: I don't know, I don't know, I don't know. But the truth, under the lie, is already fixed like a nail.
 
 ## Chapter 13: The almost (Il vano)
 
@@ -375,16 +269,6 @@ She listens. The lagoon's silence is not like the silence at home. Nor like the 
 You are Pietro. She says it to the water, not to the book, not to Katia, not to him. Nobody answers. She goes back with cold hands and the truth still closed. In the book she left the lagoon.
 
 In voice she left the name, but only where nobody could hear her. At home, in Mirella's kitchen, she eats in silence. Her mother does not push, this evening. Are you cold? A little.
-
-Mirella puts a blanket on her shoulders and asks nothing else. In the morning Elena worked without opening the book. She counted the hours until after lunch, when the place becomes quiet. When she finally takes the pen, she feels her heart in her fingers. The S on the page already seems like a shout.
-
-She crosses it out and thinks of Bruna, Katia, Tuesday, the fridge. Writing are you Pietro would be honest, and also a violence. So she chooses the lagoon, which is true but is not the question. After the shift she bikes with the wind against her face. She passes the closed Caffè Brenta and does not stop.
-
-At the lagoon she stays longer than she had thought. She looks at the water and repeats the name a second time, even more softly. Pietro. The name without a question mark seems heavier. She goes home with damp shoes and small hunger.
-
-Mirella has left soup on the stove and does not ask long questions. Elena eats and thinks that the futile attempt tastes like almost. Almost true. Almost said. Almost enough, and instead no.
-
-Elena thinks: I almost wrote the truth. Almost is not enough. The futile attempt remains: a crossed-out S, a lagoon in place of a name.
 
 ## Chapter 14: The outing (Uscita)
 
@@ -407,16 +291,6 @@ Sergio. The brother who does not sleep. The brother after the accident. I'm sorr
 He's in recovery. But tonight he feels bad, and they are calling me. Pietro leaves half a spritz on the table and takes the van keys. He leaves quickly, without looking at Elena for long. Bruna sighs and turns the glass in her hands.
 
 Poor guy. Katia looks at Elena, and Elena looks at the glass. She does not say: it's him. She does not say: I wrote about his brother without knowing the name. She drinks a bitter sip.
-
-The outing was supposed to help, supposed to make them simpler together. It made everything clearer and farther. Before going out, Elena looks at herself in the café bathroom mirror. She fixes her hair and thinks that a spritz is not a book. At the bar they also order chips, and Bruna insists on paying.
-
-Katia tells a story of a customer who wanted three sugars in his tea. Everyone laughs, Elena and Pietro included, but their laughs do not meet. Elena smells the aperitif and feels a closed stomach. She would like to ask about Sergio without seeming curious. She would like to say: I have read you, and she cannot.
-
-When the phone vibrates, the table changes temperature. Pietro talks about recovery without useless details, and that makes everything more real. Elena understands that the pressure on him is not poetry. It is hours, hospital, lost sleep, a brother who must get better. After Pietro leaves, Bruna proposes another round and Katia says no.
-
-That's enough. Elena leaves half the spritz and says goodbye in a calm voice. She walks home under yellow lights and repeats the name Sergio. Now the book has a face, a van, and a brother in recovery. And she is still afraid to speak, even after the spritz.
-
-Sergio has a name. Pietro has a life outside Tuesday and outside the book. And Elena still has a lie in her mouth, and half a spritz she does not want to finish.
 
 ## Chapter 15: Hospital (Ospedale)
 
@@ -441,16 +315,6 @@ I came anyway. Pietro takes the bag, but he does not thank her. Then he puts it 
 I can't have you here too, now. Elena nods, because Pietro's anger is clear and true. It is not novel anger. It is the anger of someone with little sleep and a brother in recovery. Okay.
 
 I'm leaving. Pietro does not stop her. Elena bikes away, with the bag in the basket and eyes wet from the wind, or from something else. For the first time she brought care without ink. She told Bruna she would arrive late, without explaining the hospital.
-
-Bruna raised an eyebrow and said okay. Outside the entrance Elena counts steps and minutes. She sees a nurse smoke quickly and then go back in. She sees a man talk on the phone and cry without sound. The bag feels heavy, and she thinks that real care is not bread.
-
-It is presence, and Pietro does not want her presence here. When he says she should not have come, Elena does not argue. She understands the anger because she knows the pressure, at least a piece. Sergio is not dying: he is recovering, and recovery is slow and hard. This makes the scene more ordinary and more difficult.
-
-There is no hero, there is a tired brother and a barista out of place. Elena bikes back with heavy legs. At Caffè Brenta Katia asks where she was, and Elena says outside. Outside? Outside.
-
-She does not open the book that day. For the first time the paper seems too far from real life. And real life, outside the hospital, sent her away with anger. And for the first time that care came back, refused. Behind her, outside the hospital, Pietro stays alone with the van and with Sergio inside.
-
-Ahead of her there is only the road toward the café, and a book that cannot repair this day.
 
 ## Chapter 16: The argument (Litigio)
 
@@ -494,27 +358,13 @@ Do not stay here like a guard. She stays on the sidewalk. She would like to say 
 
 The engine starts. The van moves away into the fog. Elena looks at the hospital entrance. She does not go in. She has no right to go in.
 
-She only has an open argument. And a sentence she repeats while she walks. Writing is not talking. Maybe he is right. Maybe he is wrong.
-
-She goes back to Marina di Brenta on foot. She passes the closed Caffè Brenta. She looks at the door and does not stop the bicycle of her mind. Her hands are cold. Her heart is full of unspoken words.
-
-In the book she would have written better. Outside the book she argued badly. And that is the difference that hurts. At home she tells Mirella nothing. She washes her face with cold water.
-
-She thinks of the counter, the book, the van. Near home she still hears the van noise in her head. She wonders if Sergio knows anything. She wonders if Bruna will be able to read the fight on her face. The night is long.
-
-Elena does not write. She does not have the book. And even if she had it, she would be afraid of the paper. For the first time paper seems too easy to her. Too comfortable.
-
-Too far from the hospital sidewalk. She falls asleep late, with Pietro's sentence still alive. Writing is not talking. Tomorrow she will still have to work. Tomorrow the counter will not wait for the argument.
-
-She thinks: if talking is this, I do not know how to do it.
-
 ## Chapter 17: The closed book (Il libro chiuso)
 
 The next day Bruna arrives before everyone. She takes the book from the shelf by the sugar. She puts it under the counter. Behind the boxes of napkins. Elena comes in and looks at the shelf.
 
 The shelf is empty. There is only the sugar. Where is the book? Bruna dries a cup slowly. Closed.
 
-For three days. Elena is left without words. Why? Because last night I saw you. You came back with red eyes.
+For a few days. Elena is left without words. Why? Because last night I saw you. You came back with red eyes.
 
 And Pietro did not come to say hello. Bruna sets down the cup. The book is not a hiding place for arguments. Katia arrives and looks at the shelf. Ah.
 
