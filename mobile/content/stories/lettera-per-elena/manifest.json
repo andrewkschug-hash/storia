@@ -5,7 +5,7 @@
   "slug": "lettera-per-elena",
   "level": 2,
   "cefrLevel": "A2+",
-  "synopsis": "Al Caff√® Brenta un libro non si vende. Elena scrive a uno sconosciuto. Il marted√¨ conosce gi√† Pietro.",
+  "synopsis": "Al CaffË Brenta un libro non si vende. Elena scrive a uno sconosciuto. Il martedÏ conosce gi‡ Pietro.",
   "characterIds": [
     "elena-marini",
     "pietro-baldo",
@@ -46,7 +46,7 @@
       "id": "lettera-per-elena-03",
       "number": 3,
       "title": "Tuesday",
-      "titleIt": "Marted√¨",
+      "titleIt": "MartedÏ",
       "difficultyLevel": 2,
       "file": "chapter-03.json"
     },
@@ -216,5 +216,9 @@
       "chapterEnd": 22,
       "status": "available"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "failed"
+  }
 }

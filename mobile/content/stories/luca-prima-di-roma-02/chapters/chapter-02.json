@@ -48,7 +48,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Ãˆ mattina.",
+          "text": "È mattina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -91,7 +91,7 @@
         },
         {
           "id": "s05",
-          "text": "Luca Ã¨ in camera.",
+          "text": "Luca è in camera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -138,7 +138,7 @@
         },
         {
           "id": "s09",
-          "text": "Marta Ã¨ in cucina.",
+          "text": "Marta è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -170,7 +170,7 @@
         },
         {
           "id": "s12",
-          "text": "Chiara Ã¨ in cucina.",
+          "text": "Chiara è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -226,7 +226,7 @@
         },
         {
           "id": "s14",
-          "text": "C'Ã¨ pane.",
+          "text": "C'è pane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -236,7 +236,7 @@
         },
         {
           "id": "s15",
-          "text": "C'Ã¨ latte.",
+          "text": "C'è latte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -291,7 +291,7 @@
         },
         {
           "id": "s20",
-          "text": "La colazione Ã¨ buona.",
+          "text": "La colazione è buona.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -450,7 +450,7 @@
         },
         {
           "id": "s31",
-          "text": "La mattina Ã¨ tranquilla.",
+          "text": "La mattina è tranquilla.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -475,7 +475,7 @@
         },
         {
           "id": "s33",
-          "text": "Chiara Ã¨ a scuola adesso.",
+          "text": "Chiara è a scuola adesso.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -488,7 +488,7 @@
         },
         {
           "id": "s34",
-          "text": "Luca Ã¨ a casa.",
+          "text": "Luca è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -500,7 +500,7 @@
         },
         {
           "id": "s35",
-          "text": "Oggi la mattina Ã¨ importante.",
+          "text": "Oggi la mattina è importante.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -513,7 +513,7 @@
         },
         {
           "id": "s36",
-          "text": "La famiglia Ã¨ insieme prima di scuola.",
+          "text": "La famiglia è insieme prima di scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -528,7 +528,7 @@
         },
         {
           "id": "s41",
-          "text": "Alle otto e mezzo la casa Ã¨ tranquilla.",
+          "text": "Alle otto e mezzo la casa è tranquilla.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -591,7 +591,7 @@
     {
       "id": "lpr02-ch02-q03",
       "type": "sequence",
-      "question": "What happens at eight oâ€™clock?",
+      "question": "What happens at eight o’clock?",
       "choices": [
         "Chiara leaves for school",
         "Luca goes to sleep",
@@ -602,5 +602,15 @@
       "chapterId": "luca-prima-di-roma-02-02",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-02.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 96288
+      }
+    ]
+  }
 }

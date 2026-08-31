@@ -60,7 +60,7 @@
         },
         {
           "id": "s02",
-          "text": "Un ragazzo della sua et√† fuma e ascolta musica dalle cuffie.",
+          "text": "Un ragazzo della sua et‡ fuma e ascolta musica dalle cuffie.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -97,7 +97,7 @@
         },
         {
           "id": "s04",
-          "text": "La musica √® in inglese, a volume basso, quasi un segreto.",
+          "text": "La musica Ë in inglese, a volume basso, quasi un segreto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -297,7 +297,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "√à una mappa moderna, con strade, numeri e paesi chiari intorno.",
+          "text": "» una mappa moderna, con strade, numeri e paesi chiari intorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -316,7 +316,7 @@
         },
         {
           "id": "s17",
-          "text": "Nel mezzo c'√® uno spazio bianco senza nome e senza punto.",
+          "text": "Nel mezzo c'Ë uno spazio bianco senza nome e senza punto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -416,7 +416,7 @@
         },
         {
           "id": "s23",
-          "text": "Collevento non c'√®.",
+          "text": "Collevento non c'Ë.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -475,7 +475,7 @@
         },
         {
           "id": "s27",
-          "text": "Non perch√© √® piccolo.",
+          "text": "Non perchÈ Ë piccolo.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -487,7 +487,7 @@
         },
         {
           "id": "s28",
-          "text": "Perch√© √® cancellato, come se dovesse diventare lago e basta.",
+          "text": "PerchÈ Ë cancellato, come se dovesse diventare lago e basta.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -725,7 +725,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Non pu√≤ dimenticare quel vuoto al centro della carta nuova.",
+          "text": "Non puÚ dimenticare quel vuoto al centro della carta nuova.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -743,7 +743,7 @@
         },
         {
           "id": "s42",
-          "text": "Neri non √® una leggenda del paese e non √® un fantasma.",
+          "text": "Neri non Ë una leggenda del paese e non Ë un fantasma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -763,7 +763,7 @@
         },
         {
           "id": "s43",
-          "text": "√à un ragazzo che vuole uscire, con nome e rabbia suoi, veri.",
+          "text": "» un ragazzo che vuole uscire, con nome e rabbia suoi, veri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -827,7 +827,7 @@
       "sentences": [
         {
           "id": "s46",
-          "text": "Il paese c'√® sotto i suoi piedi, anche se la carta dice di no.",
+          "text": "Il paese c'Ë sotto i suoi piedi, anche se la carta dice di no.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -908,7 +908,7 @@
         },
         {
           "id": "s50",
-          "text": "Il paese esiste sotto i piedi; sulla carta, no: questa √® la ferita di Neri.",
+          "text": "Il paese esiste sotto i piedi; sulla carta, no: questa Ë la ferita di Neri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -975,5 +975,15 @@
       "explanation": "He hates it because it is cancelled, not merely because it is small.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-07.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 173952
+      }
+    ]
+  }
 }

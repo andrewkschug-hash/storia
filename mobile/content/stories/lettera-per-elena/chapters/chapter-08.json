@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Venerd√¨ Elena apre il libro prima del turno.",
+          "text": "VenerdÏ Elena apre il libro prima del turno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -60,7 +60,7 @@
         },
         {
           "id": "s02",
-          "text": "Il caff√® √® ancora quieto. Lo zucchero √® gi√† sul bancone.",
+          "text": "Il caffË Ë ancora quieto. Lo zucchero Ë gi‡ sul bancone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -79,7 +79,7 @@
         },
         {
           "id": "s03",
-          "text": "C'√® una riga nuova, scritta di fretta.",
+          "text": "C'Ë una riga nuova, scritta di fretta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -106,7 +106,7 @@
         },
         {
           "id": "s05",
-          "text": "La casa √® piena di paura quieta.",
+          "text": "La casa Ë piena di paura quieta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -191,7 +191,7 @@
         },
         {
           "id": "s10",
-          "text": "Nella sua testa il fratello √® quasi un ex, non un fratello.",
+          "text": "Nella sua testa il fratello Ë quasi un ex, non un fratello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -247,7 +247,7 @@
         },
         {
           "id": "s13",
-          "text": "Non √® colpa tua se il silenzio resta.",
+          "text": "Non Ë colpa tua se il silenzio resta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -331,7 +331,7 @@
         },
         {
           "id": "s18",
-          "text": "Pietro questa settimana √® stato in ritardo due volte.",
+          "text": "Pietro questa settimana Ë stato in ritardo due volte.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -391,7 +391,7 @@
         },
         {
           "id": "s22",
-          "text": "Non so. Non chiedo tutto. Non √® il mio stile.",
+          "text": "Non so. Non chiedo tutto. Non Ë il mio stile.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -688,7 +688,7 @@
         },
         {
           "id": "s40",
-          "text": "Non sa che il fratello √® in recupero dopo un incidente.",
+          "text": "Non sa che il fratello Ë in recupero dopo un incidente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -717,7 +717,7 @@
       "choices": [
         "A brother does not sleep",
         "Pietro loves Elena",
-        "Bruna will sell the caf√©"
+        "Bruna will sell the cafÈ"
       ],
       "correctChoice": 0,
       "explanation": "The writer mentions a brother who cannot sleep.",
@@ -751,5 +751,15 @@
       "explanation": "Bruna thinks Pietro has family problems.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-08.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 121848
+      }
+    ]
+  }
 }

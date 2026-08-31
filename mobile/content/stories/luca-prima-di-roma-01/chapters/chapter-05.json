@@ -3,7 +3,7 @@
   "storyId": "luca-prima-di-roma-01",
   "number": 5,
   "title": "This is Davide",
-  "titleIt": "Questo Ã¨ Davide",
+  "titleIt": "Questo è Davide",
   "difficultyLevel": 1,
   "locationIds": [
     "casa-pietralba",
@@ -33,7 +33,7 @@
         "soggiorno-pietralba"
       ],
       "rememberedFacts": [
-        "Davide is Lucaâ€™s friend",
+        "Davide is Luca’s friend",
         "Davide is tall",
         "Davide is from Pietralba"
       ]
@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Davide Ã¨ alla porta.",
+          "text": "Davide è alla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -112,7 +112,7 @@
         },
         {
           "id": "s07",
-          "text": "Mamma questo Ã¨ Davide.",
+          "text": "Mamma questo è Davide.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -124,7 +124,7 @@
         },
         {
           "id": "s08",
-          "text": "Davide Ã¨ il mio amico.",
+          "text": "Davide è il mio amico.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -168,7 +168,7 @@
         },
         {
           "id": "s12",
-          "text": "Davide Ã¨ di Pietralba.",
+          "text": "Davide è di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -186,7 +186,7 @@
       "sentences": [
         {
           "id": "s13",
-          "text": "Davide Ã¨ alto.",
+          "text": "Davide è alto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -197,7 +197,7 @@
         },
         {
           "id": "s14",
-          "text": "Luca non Ã¨ alto.",
+          "text": "Luca non è alto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -209,7 +209,7 @@
         },
         {
           "id": "s15",
-          "text": "Davide Ã¨ simpatico.",
+          "text": "Davide è simpatico.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -220,7 +220,7 @@
         },
         {
           "id": "s16",
-          "text": "Lui Ã¨ un amico.",
+          "text": "Lui è un amico.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -232,7 +232,7 @@
         },
         {
           "id": "s17",
-          "text": "Lei Ã¨ la mamma.",
+          "text": "Lei è la mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -255,7 +255,7 @@
         },
         {
           "id": "s19",
-          "text": "Dov'Ã¨ la tua casa?",
+          "text": "Dov'è la tua casa?",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -267,7 +267,7 @@
         },
         {
           "id": "s20",
-          "text": "La casa Ã¨ vicina.",
+          "text": "La casa è vicina.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -279,7 +279,7 @@
         },
         {
           "id": "s21",
-          "text": "La casa di Davide Ã¨ piccola.",
+          "text": "La casa di Davide è piccola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -293,7 +293,7 @@
         },
         {
           "id": "s22",
-          "text": "Anche questa casa Ã¨ piccola.",
+          "text": "Anche questa casa è piccola.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s24",
-          "text": "Pietralba Ã¨ un paese piccolo.",
+          "text": "Pietralba è un paese piccolo.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -337,7 +337,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "Vuoi un caffÃ¨?",
+          "text": "Vuoi un caffè?",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -348,7 +348,7 @@
         },
         {
           "id": "s26",
-          "text": "SÃ¬ grazie.",
+          "text": "Sì grazie.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -358,7 +358,7 @@
         },
         {
           "id": "s27",
-          "text": "Marta Ã¨ gentile.",
+          "text": "Marta è gentile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -369,7 +369,7 @@
         },
         {
           "id": "s28",
-          "text": "Davide Ã¨ contento.",
+          "text": "Davide è contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -402,7 +402,7 @@
         },
         {
           "id": "s31",
-          "text": "SÃ¬ siamo amici.",
+          "text": "Sì siamo amici.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -431,7 +431,7 @@
         },
         {
           "id": "s34",
-          "text": "Oggi Ã¨ un giorno bello.",
+          "text": "Oggi è un giorno bello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -468,7 +468,7 @@
         },
         {
           "id": "s37",
-          "text": "Luca Ã¨ felice.",
+          "text": "Luca è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -479,7 +479,7 @@
         },
         {
           "id": "s38",
-          "text": "Davide Ã¨ un amico importante.",
+          "text": "Davide è un amico importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -499,12 +499,12 @@
       "type": "character",
       "question": "Who is Davide?",
       "choices": [
-        "Lucaâ€™s father",
-        "Lucaâ€™s friend",
+        "Luca’s father",
+        "Luca’s friend",
         "The shopkeeper"
       ],
       "correctChoice": 1,
-      "explanation": "Davide Ã¨ il mio amico.",
+      "explanation": "Davide è il mio amico.",
       "chapterId": "luca-prima-di-roma-01-05",
       "difficulty": 1
     },
@@ -518,7 +518,7 @@
         "Old and quiet"
       ],
       "correctChoice": 0,
-      "explanation": "Davide Ã¨ alto e simpatico.",
+      "explanation": "Davide è alto e simpatico.",
       "chapterId": "luca-prima-di-roma-01-05",
       "difficulty": 1
     },
@@ -532,9 +532,19 @@
         "In Rome"
       ],
       "correctChoice": 1,
-      "explanation": "Davide abita vicino. Ãˆ di Pietralba.",
+      "explanation": "Davide abita vicino. È di Pietralba.",
       "chapterId": "luca-prima-di-roma-01-05",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 64775
+      }
+    ]
+  }
 }

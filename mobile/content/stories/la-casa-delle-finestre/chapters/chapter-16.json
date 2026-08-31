@@ -2,7 +2,7 @@
   "id": "la-casa-delle-finestre-16",
   "storyId": "la-casa-delle-finestre",
   "number": 16,
-  "title": "Ireneâ€™s choice",
+  "title": "Irene’s choice",
   "titleIt": "La scelta di Irene",
   "locationIds": [
     "via-della-scuola",
@@ -95,7 +95,7 @@
         },
         {
           "id": "s04",
-          "text": "Se dico ad Alme, Alme sorride. VenerdÃ¬ distrugge lo stesso.",
+          "text": "Se dico ad Alme, Alme sorride. Venerdì distrugge lo stesso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -134,7 +134,7 @@
         },
         {
           "id": "s06",
-          "text": "Non so se Ã¨ lei. Non so se la luce Ã¨ lei.",
+          "text": "Non so se è lei. Non so se la luce è lei.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -169,7 +169,7 @@
         },
         {
           "id": "s08",
-          "text": "Irene potrebbe chiamare oggi. Potrebbe dire tutto giÃ¹, alle scatole.",
+          "text": "Irene potrebbe chiamare oggi. Potrebbe dire tutto giù, alle scatole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -187,7 +187,7 @@
         },
         {
           "id": "s09",
-          "text": "Dovrei scegliere adesso. PerÃ² sceglie di aspettare un giorno.",
+          "text": "Dovrei scegliere adesso. Però sceglie di aspettare un giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -204,7 +204,7 @@
         },
         {
           "id": "s10",
-          "text": "Scrive: un giorno. Non Ã¨ una soluzione. Ãˆ tempo.",
+          "text": "Scrive: un giorno. Non è una soluzione. È tempo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -221,7 +221,7 @@
         },
         {
           "id": "s11",
-          "text": "Un giorno non ferma venerdÃ¬. Un giorno ferma solo la voce, oggi.",
+          "text": "Un giorno non ferma venerdì. Un giorno ferma solo la voce, oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -265,7 +265,7 @@
       "sentences": [
         {
           "id": "s13",
-          "text": "Vicino alla scuola c'Ã¨ Quinto, con la tanica. Oggi non annaffia.",
+          "text": "Vicino alla scuola c'è Quinto, con la tanica. Oggi non annaffia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -312,7 +312,7 @@
         },
         {
           "id": "s16",
-          "text": "Irene si ferma di qua. Il cancello Ã¨ di lÃ .",
+          "text": "Irene si ferma di qua. Il cancello è di là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -356,7 +356,7 @@
         },
         {
           "id": "s19",
-          "text": "C'Ã¨ una cartella. Non scansionare. Lei la lascia stare, e io le do una chiave.",
+          "text": "C'è una cartella. Non scansionare. Lei la lascia stare, e io le do una chiave.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -412,7 +412,7 @@
         },
         {
           "id": "s22",
-          "text": "Se prendo la chiave, entro. La scuola non Ã¨ sicura. Loredana ha paura.",
+          "text": "Se prendo la chiave, entro. La scuola non è sicura. Loredana ha paura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -466,7 +466,7 @@
         },
         {
           "id": "s25",
-          "text": "Quinto chiude la mano. Non insiste. Non spiega perchÃ© offre.",
+          "text": "Quinto chiude la mano. Non insiste. Non spiega perché offre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -484,7 +484,7 @@
         },
         {
           "id": "s26",
-          "text": "La scuola Ã¨ vuota, dice, senza guardare le finestre.",
+          "text": "La scuola è vuota, dice, senza guardare le finestre.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -547,7 +547,7 @@
         },
         {
           "id": "s29",
-          "text": "Non dice di sÃ¬ ad Alme. Non entra di notte.",
+          "text": "Non dice di sì ad Alme. Non entra di notte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -565,7 +565,7 @@
         },
         {
           "id": "s30",
-          "text": "Aspetta un giorno. PerÃ² non resta ferma nella testa.",
+          "text": "Aspetta un giorno. Però non resta ferma nella testa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -599,7 +599,7 @@
         },
         {
           "id": "s32",
-          "text": "Non Ã¨ una prova. Ãˆ una scelta piccola: vedere la donna, se c'Ã¨, alla luce.",
+          "text": "Non è una prova. È una scelta piccola: vedere la donna, se c'è, alla luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -622,7 +622,7 @@
         },
         {
           "id": "s33",
-          "text": "Chiude il quaderno. Va al lavoro. VenerdÃ¬ Ã¨ tra tre giorni, meno uno, presto.",
+          "text": "Chiude il quaderno. Va al lavoro. Venerdì è tra tre giorni, meno uno, presto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -644,7 +644,7 @@
         },
         {
           "id": "s34",
-          "text": "Prima passa la fermata, di giorno. Non c'Ã¨ la donna. Non c'Ã¨ la borsa.",
+          "text": "Prima passa la fermata, di giorno. Non c'è la donna. Non c'è la borsa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -666,7 +666,7 @@
         },
         {
           "id": "s35",
-          "text": "Irene non aspetta l'autobus. Guarda, poi va. Cerco Sara, ha scritto. Oggi non c'Ã¨.",
+          "text": "Irene non aspetta l'autobus. Guarda, poi va. Cerco Sara, ha scritto. Oggi non c'è.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -688,7 +688,7 @@
         },
         {
           "id": "s36",
-          "text": "Non Ã¨ la fine. Ãˆ un giorno. La chiave resta con Quinto.",
+          "text": "Non è la fine. È un giorno. La chiave resta con Quinto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -758,7 +758,7 @@
       "type": "inference",
       "question": "How will Irene look for Sara?",
       "choices": [
-        "In daylight, without Quintoâ€™s key",
+        "In daylight, without Quinto’s key",
         "With the key, at night",
         "By calling Piva"
       ],
@@ -766,5 +766,15 @@
       "explanation": "She writes: in daylight, not with the key. I look for Sara.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-16.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 193464
+      }
+    ]
+  }
 }

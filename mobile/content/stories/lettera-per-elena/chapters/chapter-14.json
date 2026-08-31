@@ -48,7 +48,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Venerd√¨ pomeriggio Bruna batte le mani sul bancone.",
+          "text": "VenerdÏ pomeriggio Bruna batte le mani sul bancone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -109,7 +109,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Gliel'ho detto ieri, quando ha portato il caff√®.",
+          "text": "Gliel'ho detto ieri, quando ha portato il caffË.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -143,7 +143,7 @@
         },
         {
           "id": "s08",
-          "text": "Alla sera chiudono il Caff√® Brenta e camminano fino a un bar vicino, sulla strada di Marina di Brenta.",
+          "text": "Alla sera chiudono il CaffË Brenta e camminano fino a un bar vicino, sulla strada di Marina di Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -170,7 +170,7 @@
         },
         {
           "id": "s09",
-          "text": "C'√® rumore, luci gialle, e tavolini fuori sotto la nebbia leggera.",
+          "text": "C'Ë rumore, luci gialle, e tavolini fuori sotto la nebbia leggera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -295,7 +295,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Ora Pietro √® vicino a Elena, e la distanza piccola √® peggiore della distanza grande.",
+          "text": "Ora Pietro Ë vicino a Elena, e la distanza piccola Ë peggiore della distanza grande.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -414,7 +414,7 @@
         },
         {
           "id": "s23",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -432,7 +432,7 @@
         },
         {
           "id": "s25",
-          "text": "Nel gruppo sono peggiori che al caff√®, dove almeno c'√® il lavoro tra loro.",
+          "text": "Nel gruppo sono peggiori che al caffË, dove almeno c'Ë il lavoro tra loro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -460,7 +460,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "Nel libro sarebbero vivi, pieni di paura e di verit√†.",
+          "text": "Nel libro sarebbero vivi, pieni di paura e di verit‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -567,7 +567,7 @@
         },
         {
           "id": "s32",
-          "text": "Gi√†?",
+          "text": "Gi‡?",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -686,7 +686,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "√à in recupero.",
+          "text": "» in recupero.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -797,7 +797,7 @@
         },
         {
           "id": "s48",
-          "text": "Non dice: √® lui.",
+          "text": "Non dice: Ë lui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -862,7 +862,7 @@
       "type": "direct",
       "question": "How are Elena and Pietro in the group?",
       "choices": [
-        "Worse than at the caf√©",
+        "Worse than at the cafÈ",
         "Open and honest",
         "Fighting loudly"
       ],
@@ -884,5 +884,15 @@
       "explanation": "He leaves because Sergio feels bad and is in recovery.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-14.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 133824
+      }
+    ]
+  }
 }

@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca √® a Pietralba.",
+          "text": "Luca Ë a Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -58,7 +58,7 @@
         },
         {
           "id": "s02",
-          "text": "Pietralba √® un paese piccolo.",
+          "text": "Pietralba Ë un paese piccolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -71,7 +71,7 @@
         },
         {
           "id": "s03",
-          "text": "Pietralba non √® Roma.",
+          "text": "Pietralba non Ë Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s04",
-          "text": "Luca √® a casa.",
+          "text": "Luca Ë a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -95,7 +95,7 @@
         },
         {
           "id": "s05",
-          "text": "Luca √® nel soggiorno.",
+          "text": "Luca Ë nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -107,7 +107,7 @@
         },
         {
           "id": "s06",
-          "text": "C'√® una persona alla porta.",
+          "text": "C'Ë una persona alla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -132,7 +132,7 @@
         },
         {
           "id": "s08",
-          "text": "Davide √® qui.",
+          "text": "Davide Ë qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -321,7 +321,7 @@
         },
         {
           "id": "s24",
-          "text": "Davide √® di Pietralba.",
+          "text": "Davide Ë di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -339,7 +339,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "Luca √® di Pietralba.",
+          "text": "Luca Ë di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -351,7 +351,7 @@
         },
         {
           "id": "s26",
-          "text": "Roma √® lontana.",
+          "text": "Roma Ë lontana.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -362,7 +362,7 @@
         },
         {
           "id": "s27",
-          "text": "S√¨ Roma √® lontana.",
+          "text": "SÏ Roma Ë lontana.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -397,7 +397,7 @@
         },
         {
           "id": "s30",
-          "text": "Davide √® contento.",
+          "text": "Davide Ë contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -408,7 +408,7 @@
         },
         {
           "id": "s31",
-          "text": "Luca √® contento.",
+          "text": "Luca Ë contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -419,7 +419,7 @@
         },
         {
           "id": "s32",
-          "text": "Pietralba √® piccola ma bella.",
+          "text": "Pietralba Ë piccola ma bella.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -505,14 +505,14 @@
     {
       "id": "lpr01-ch01-q01",
       "type": "direct",
-      "question": "What is the protagonist‚Äôs name?",
+      "question": "What is the protagonistís name?",
       "choices": [
         "Davide",
         "Luca",
         "Paolo"
       ],
       "correctChoice": 1,
-      "explanation": "He says ‚ÄúMi chiamo Luca.‚Äù",
+      "explanation": "He says ìMi chiamo Luca.î",
       "chapterId": "luca-prima-di-roma-01-01",
       "difficulty": 1
     },
@@ -544,5 +544,15 @@
       "chapterId": "luca-prima-di-roma-01-01",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 83064
+      }
+    ]
+  }
 }

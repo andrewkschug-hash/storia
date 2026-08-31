@@ -66,7 +66,7 @@
         },
         {
           "id": "s02",
-          "text": "L'ingegnere √® ancora l√¨; Elsa sulla soglia; Neri sulla panchina.",
+          "text": "L'ingegnere Ë ancora lÏ; Elsa sulla soglia; Neri sulla panchina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -110,7 +110,7 @@
         },
         {
           "id": "s05",
-          "text": "L'ingegnere apre la cartella con un sorriso gi√† scritto.",
+          "text": "L'ingegnere apre la cartella con un sorriso gi‡ scritto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -152,7 +152,7 @@
         },
         {
           "id": "s08",
-          "text": "Non far√≤ da prova che questo posto √® abitato per il vostro progetto.",
+          "text": "Non farÚ da prova che questo posto Ë abitato per il vostro progetto.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -189,7 +189,7 @@
         },
         {
           "id": "s10",
-          "text": "√à un favore piccolo.",
+          "text": "» un favore piccolo.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -440,7 +440,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -618,7 +618,7 @@
         },
         {
           "id": "s38",
-          "text": "Giada annuisce; non √® un trionfo.",
+          "text": "Giada annuisce; non Ë un trionfo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -632,7 +632,7 @@
         },
         {
           "id": "s39",
-          "text": "√à un confine tenuto.",
+          "text": "» un confine tenuto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -662,7 +662,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Senza firma il progetto procede lo stesso, pi√π lento.",
+          "text": "Senza firma il progetto procede lo stesso, pi˘ lento.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -705,7 +705,7 @@
         },
         {
           "id": "s44",
-          "text": "Per me √® abbastanza pulito.",
+          "text": "Per me Ë abbastanza pulito.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -962,7 +962,7 @@
         },
         {
           "id": "s60",
-          "text": "Non √® scritto sugli orari turistici.",
+          "text": "Non Ë scritto sugli orari turistici.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -1045,7 +1045,7 @@
         },
         {
           "id": "s65",
-          "text": "Non √® sua da portare via come trofeo.",
+          "text": "Non Ë sua da portare via come trofeo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1067,7 +1067,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "Prende solo la borsa che aveva gi√† rubato a Bologna, e la valigia.",
+          "text": "Prende solo la borsa che aveva gi‡ rubato a Bologna, e la valigia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1109,7 +1109,7 @@
         },
         {
           "id": "s68",
-          "text": "Se un giorno chiedi, forse c'√® ancora una strada.",
+          "text": "Se un giorno chiedi, forse c'Ë ancora una strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1177,7 +1177,7 @@
         },
         {
           "id": "s72",
-          "text": "Non √® conquista del paese.",
+          "text": "Non Ë conquista del paese.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1190,7 +1190,7 @@
         },
         {
           "id": "s73",
-          "text": "√à il rifiuto di diventare la storia sbagliata.",
+          "text": "» il rifiuto di diventare la storia sbagliata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1312,7 +1312,7 @@
         },
         {
           "id": "s80",
-          "text": "Per√≤ non pu√≤ fare quella domanda al posto suo.",
+          "text": "PerÚ non puÚ fare quella domanda al posto suo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1335,7 +1335,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "Pensa a Elsa, che ha scritto Giada sul biglietto del caff√® nella sua testa gi√†, forse.",
+          "text": "Pensa a Elsa, che ha scritto Giada sul biglietto del caffË nella sua testa gi‡, forse.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1359,7 +1359,7 @@
         },
         {
           "id": "s82",
-          "text": "O forse lo scriver√† solo al mattino.",
+          "text": "O forse lo scriver‡ solo al mattino.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1374,7 +1374,7 @@
         },
         {
           "id": "s83",
-          "text": "Pensa all'ingegnere, gi√† lontano in una macchina che non teme l'acqua.",
+          "text": "Pensa all'ingegnere, gi‡ lontano in una macchina che non teme l'acqua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1452,7 +1452,7 @@
         },
         {
           "id": "s87",
-          "text": "All'alba user√† la regola al diritto, come sua madre anni fa.",
+          "text": "All'alba user‡ la regola al diritto, come sua madre anni fa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1519,7 +1519,7 @@
       "sentences": [
         {
           "id": "s91",
-          "text": "Il no detto in piazza ha gi√† fatto il lavoro pi√π difficile.",
+          "text": "Il no detto in piazza ha gi‡ fatto il lavoro pi˘ difficile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1599,5 +1599,15 @@
       "explanation": "She keeps her name and refuses to become the wrong story; the village is not conquered.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-21.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 279792
+      }
+    ]
+  }
 }

@@ -67,7 +67,7 @@
         },
         {
           "id": "s02",
-          "text": "Elena arriva al CaffÃ¨ Brenta e trova Katia al bancone.",
+          "text": "Elena arriva al Caffè Brenta e trova Katia al bancone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -116,7 +116,7 @@
         },
         {
           "id": "s05",
-          "text": "SÃ¬. Piacere.",
+          "text": "Sì. Piacere.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -163,7 +163,7 @@
         },
         {
           "id": "s08",
-          "text": "Elena annuisce. Sa giÃ  dove stare.",
+          "text": "Elena annuisce. Sa già dove stare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -248,7 +248,7 @@
         },
         {
           "id": "s13",
-          "text": "Questo libro resta qui. Non Ã¨ in vendita.",
+          "text": "Questo libro resta qui. Non è in vendita.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -317,7 +317,7 @@
         },
         {
           "id": "s17",
-          "text": "Seconda regola: non si porta a casa. Resta al caffÃ¨.",
+          "text": "Seconda regola: non si porta a casa. Resta al caffè.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -416,7 +416,7 @@
         },
         {
           "id": "s23",
-          "text": "La voce di Bruna Ã¨ ferma, le mani sul libro no.",
+          "text": "La voce di Bruna è ferma, le mani sul libro no.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -444,7 +444,7 @@
         },
         {
           "id": "s25",
-          "text": "SÃ¬. Non si vende, non si porta a casa, non si chiede chi.",
+          "text": "Sì. Non si vende, non si porta a casa, non si chiede chi.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -571,7 +571,7 @@
         },
         {
           "id": "s32",
-          "text": "SÃ¬. Soloâ€¦ lascia stare. Non Ã¨ niente.",
+          "text": "Sì. Solo… lascia stare. Non è niente.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -586,7 +586,7 @@
         },
         {
           "id": "s33",
-          "text": "Non spiega. Non dice perchÃ© il libro le fa male.",
+          "text": "Non spiega. Non dice perché il libro le fa male.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -743,7 +743,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Il libro Ã¨ vecchio. Bruna ci tiene. Non fare domande oggi.",
+          "text": "Il libro è vecchio. Bruna ci tiene. Non fare domande oggi.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -806,7 +806,7 @@
         },
         {
           "id": "s45",
-          "text": "Ma la terza regola Ã¨ chiara: non si chiede chi.",
+          "text": "Ma la terza regola è chiara: non si chiede chi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -830,7 +830,7 @@
       "sentences": [
         {
           "id": "s46",
-          "text": "A metÃ  mattina Bruna le chiede di riempire lo zucchero.",
+          "text": "A metà mattina Bruna le chiede di riempire lo zucchero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -848,7 +848,7 @@
         },
         {
           "id": "s47",
-          "text": "Elena apre le ciotole. Il libro Ã¨ a pochi centimetri.",
+          "text": "Elena apre le ciotole. Il libro è a pochi centimetri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -883,7 +883,7 @@
         },
         {
           "id": "s49",
-          "text": "Nel pomeriggio il caffÃ¨ Ã¨ piÃ¹ calmo.",
+          "text": "Nel pomeriggio il caffè è più calmo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -921,7 +921,7 @@
       "id": "ch02_q01",
       "chapterId": "lettera-per-elena-02",
       "type": "direct",
-      "question": "What are Brunaâ€™s three rules for the book?",
+      "question": "What are Bruna’s three rules for the book?",
       "choices": [
         "Do not sell it, do not take it home, do not ask who",
         "Write every day, sign your name, leave money",
@@ -959,5 +959,15 @@
       "explanation": "Katia is behind the counter and listens while she works.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-02.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 179352
+      }
+    ]
+  }
 }

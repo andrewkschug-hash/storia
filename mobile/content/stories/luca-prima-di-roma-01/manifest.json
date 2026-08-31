@@ -5,7 +5,7 @@
   "slug": "luca-prima-di-roma-01",
   "level": 1,
   "cefrLevel": "A1",
-  "synopsis": "A Pietralba Luca si presenta: nome, etÃ , famiglia, casa e lâ€™amico Davide.",
+  "synopsis": "A Pietralba Luca si presenta: nome, età, famiglia, casa e l’amico Davide.",
   "characterIds": [
     "luca",
     "marta",
@@ -58,7 +58,7 @@
       "id": "luca-prima-di-roma-01-05",
       "number": 5,
       "title": "This is Davide",
-      "titleIt": "Questo Ã¨ Davide",
+      "titleIt": "Questo è Davide",
       "difficultyLevel": 1,
       "file": "chapter-05.json"
     },
@@ -79,10 +79,14 @@
       "title": "Luca introduces himself",
       "titleIt": "Luca si presenta",
       "description": "A1 present-tense pre-Rome story",
-      "narrativeStage": "A Pietralba Luca si presenta: nome, etÃ , famiglia, casa e lâ€™amico Davide.",
+      "narrativeStage": "A Pietralba Luca si presenta: nome, età, famiglia, casa e l’amico Davide.",
       "chapterStart": 1,
       "chapterEnd": 6,
       "status": "planned"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "ready"
+  }
 }

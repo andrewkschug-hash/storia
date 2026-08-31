@@ -5,7 +5,7 @@
   "slug": "la-casa-delle-finestre",
   "level": 2,
   "cefrLevel": "A2+",
-  "synopsis": "Irene, archivista a San Quirico sul Nera, vede luci nella scuola chiusa. Conta, legge carte, e impara che il mistero Ã¨ di carta, non di finestre.",
+  "synopsis": "Irene, archivista a San Quirico sul Nera, vede luci nella scuola chiusa. Conta, legge carte, e impara che il mistero è di carta, non di finestre.",
   "characterIds": [
     "irene-colombo",
     "loredana",
@@ -152,7 +152,7 @@
     {
       "id": "la-casa-delle-finestre-16",
       "number": 16,
-      "title": "Ireneâ€™s choice",
+      "title": "Irene’s choice",
       "titleIt": "La scelta di Irene",
       "difficultyLevel": 2,
       "file": "chapter-16.json"
@@ -185,7 +185,7 @@
       "id": "la-casa-delle-finestre-20",
       "number": 20,
       "title": "Friday",
-      "titleIt": "VenerdÃ¬",
+      "titleIt": "Venerdì",
       "difficultyLevel": 2,
       "file": "chapter-20.json"
     },
@@ -235,5 +235,9 @@
       "chapterEnd": 24,
       "status": "available"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "ready"
+  }
 }

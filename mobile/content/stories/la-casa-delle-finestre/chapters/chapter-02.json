@@ -19,7 +19,7 @@
   "events": [
     {
       "id": "ev-la-casa-delle-finestre-02",
-      "summary": "By day the school looks empty. Loredana says it is unsafe after an earthquake. A man waters dead plants; he looks up at last nightâ€™s windows and leaves.",
+      "summary": "By day the school looks empty. Loredana says it is unsafe after an earthquake. A man waters dead plants; he looks up at last night’s windows and leaves.",
       "characterIds": [
         "irene-colombo",
         "loredana",
@@ -150,7 +150,7 @@
         },
         {
           "id": "s08",
-          "text": "Stamattina non c'Ã¨ nessuna luce.",
+          "text": "Stamattina non c'è nessuna luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -163,7 +163,7 @@
         },
         {
           "id": "s09",
-          "text": "PerÃ² ha scritto l'ora.",
+          "text": "Però ha scritto l'ora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -175,7 +175,7 @@
         },
         {
           "id": "s10",
-          "text": "Quindi non Ã¨ un sogno.",
+          "text": "Quindi non è un sogno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -233,7 +233,7 @@
         },
         {
           "id": "s14",
-          "text": "Loredana Ã¨ in cucina con il caffÃ¨.",
+          "text": "Loredana è in cucina con il caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -267,7 +267,7 @@
         },
         {
           "id": "s17",
-          "text": "SÃ¬, grazie.",
+          "text": "Sì, grazie.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -277,7 +277,7 @@
         },
         {
           "id": "s18",
-          "text": "PerÃ² ho una domanda.",
+          "text": "Però ho una domanda.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -289,7 +289,7 @@
         },
         {
           "id": "s19",
-          "text": "La scuola Ã¨ davvero vuota?",
+          "text": "La scuola è davvero vuota?",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -328,7 +328,7 @@
         },
         {
           "id": "s22",
-          "text": "C'Ã¨ stato un terremoto.",
+          "text": "C'è stato un terremoto.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -351,7 +351,7 @@
         },
         {
           "id": "s24",
-          "text": "La scuola non Ã¨ sicura.",
+          "text": "La scuola non è sicura.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -385,7 +385,7 @@
         },
         {
           "id": "s27",
-          "text": "Tutti dicono cosÃ¬.",
+          "text": "Tutti dicono così.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s31",
-          "text": "Il sole Ã¨ giÃ  alto.",
+          "text": "Il sole è già alto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -480,7 +480,7 @@
         },
         {
           "id": "s34",
-          "text": "Scusi, la scuola Ã¨ chiusa, vero?",
+          "text": "Scusi, la scuola è chiusa, vero?",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -507,7 +507,7 @@
         },
         {
           "id": "s36",
-          "text": "Ãˆ vuota. Non si entra. Nessuno entra.",
+          "text": "È vuota. Non si entra. Nessuno entra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -575,7 +575,7 @@
         },
         {
           "id": "s41",
-          "text": "La porta Ã¨ chiusa.",
+          "text": "La porta è chiusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -600,7 +600,7 @@
         },
         {
           "id": "s43",
-          "text": "Il cancello del cortile Ã¨ chiuso anche lui.",
+          "text": "Il cancello del cortile è chiuso anche lui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -622,7 +622,7 @@
       "sentences": [
         {
           "id": "s44",
-          "text": "C'Ã¨ un cortile dietro un cancello.",
+          "text": "C'è un cortile dietro un cancello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -648,7 +648,7 @@
         },
         {
           "id": "s46",
-          "text": "C'Ã¨ un uomo con i capelli grigi.",
+          "text": "C'è un uomo con i capelli grigi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -690,7 +690,7 @@
         },
         {
           "id": "s49",
-          "text": "PerÃ² le piante sono morte.",
+          "text": "Però le piante sono morte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -742,7 +742,7 @@
         },
         {
           "id": "s53",
-          "text": "Se la scuola Ã¨ vuota, perchÃ© l'acqua?",
+          "text": "Se la scuola è vuota, perché l'acqua?",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -771,7 +771,7 @@
         },
         {
           "id": "s55",
-          "text": "PerÃ² l'uomo Ã¨ lÃ¬, di giorno.",
+          "text": "Però l'uomo è lì, di giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -785,7 +785,7 @@
         },
         {
           "id": "s56",
-          "text": "L'acqua Ã¨ vera.",
+          "text": "L'acqua è vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -815,7 +815,7 @@
       "sentences": [
         {
           "id": "s58",
-          "text": "Loredana Ã¨ alla finestra di sotto.",
+          "text": "Loredana è alla finestra di sotto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -829,7 +829,7 @@
         },
         {
           "id": "s59",
-          "text": "Ãˆ Quinto.",
+          "text": "È Quinto.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -905,7 +905,7 @@
         },
         {
           "id": "s65",
-          "text": "Non c'Ã¨ una luce.",
+          "text": "Non c'è una luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1021,7 +1021,7 @@
         "Piva, the maresciallo"
       ],
       "correctChoice": 0,
-      "explanation": "Loredana says: thatâ€™s Quinto. He was the custode.",
+      "explanation": "Loredana says: that’s Quinto. He was the custode.",
       "difficulty": 2
     },
     {
@@ -1035,8 +1035,18 @@
         "He turns on a light"
       ],
       "correctChoice": 0,
-      "explanation": "Irene looks at last nightâ€™s dark row. Quinto raises his head and looks at the same windows.",
+      "explanation": "Irene looks at last night’s dark row. Quinto raises his head and looks at the same windows.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-02.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 179424
+      }
+    ]
+  }
 }

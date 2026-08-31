@@ -70,7 +70,7 @@
         },
         {
           "id": "s03",
-          "text": "Dovrei lasciare. Non dovrei guardare. Per√≤ ieri c'era una pausa, e una sera senza luce.",
+          "text": "Dovrei lasciare. Non dovrei guardare. PerÚ ieri c'era una pausa, e una sera senza luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -93,7 +93,7 @@
         },
         {
           "id": "s04",
-          "text": "Il quaderno √® chiuso. Lei lo apre lo stesso.",
+          "text": "Il quaderno Ë chiuso. Lei lo apre lo stesso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -147,7 +147,7 @@
         },
         {
           "id": "s07",
-          "text": "Aspetta le nove. Fuori √® buio. La scuola sembra vuota.",
+          "text": "Aspetta le nove. Fuori Ë buio. La scuola sembra vuota.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -199,7 +199,7 @@
         },
         {
           "id": "s10",
-          "text": "Se qualcuno √® di l√†, non √® Loredana. Questo lo ha gi√†. Non √® abbastanza.",
+          "text": "Se qualcuno Ë di l‡, non Ë Loredana. Questo lo ha gi‡. Non Ë abbastanza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -228,7 +228,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Poi c'√® una luce, alla finestra tre. Di fronte.",
+          "text": "Poi c'Ë una luce, alla finestra tre. Di fronte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -245,7 +245,7 @@
         },
         {
           "id": "s12",
-          "text": "Non va a destra. Non va al secondo piano. Resta l√¨.",
+          "text": "Non va a destra. Non va al secondo piano. Resta lÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -283,7 +283,7 @@
         },
         {
           "id": "s14",
-          "text": "Tre volte. Lente. Lunghe. Non √® l'orario. Non √® quattro, cinque, tre.",
+          "text": "Tre volte. Lente. Lunghe. Non Ë l'orario. Non Ë quattro, cinque, tre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -303,7 +303,7 @@
         },
         {
           "id": "s15",
-          "text": "Non √® Morse. Non √® un alfabeto. √à solo lento, e poi buio.",
+          "text": "Non Ë Morse. Non Ë un alfabeto. » solo lento, e poi buio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -339,7 +339,7 @@
         },
         {
           "id": "s17",
-          "text": "Qualcuno √® l√¨. O √® solo una luce che si muove male.",
+          "text": "Qualcuno Ë lÏ. O Ë solo una luce che si muove male.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -359,7 +359,7 @@
         },
         {
           "id": "s18",
-          "text": "Dovrei non rispondere. Loredana ha pianto. Per√≤ la pausa non era sul foglio.",
+          "text": "Dovrei non rispondere. Loredana ha pianto. PerÚ la pausa non era sul foglio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -397,7 +397,7 @@
         },
         {
           "id": "s20",
-          "text": "Non dovrei. Per√≤ accende. Una volta, lenta. Spegnere. Di nuovo, lenta.",
+          "text": "Non dovrei. PerÚ accende. Una volta, lenta. Spegnere. Di nuovo, lenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -519,7 +519,7 @@
         },
         {
           "id": "s27",
-          "text": "Nessuno chiama. Nessuno parla. La finestra tre √® scura.",
+          "text": "Nessuno chiama. Nessuno parla. La finestra tre Ë scura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -592,7 +592,7 @@
         },
         {
           "id": "s31",
-          "text": "Poi scrive: non √® solo un orario.",
+          "text": "Poi scrive: non Ë solo un orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -708,7 +708,7 @@
         },
         {
           "id": "s37",
-          "text": "Tre lente da l√†. Due da qua. Due da l√†. Poi niente.",
+          "text": "Tre lente da l‡. Due da qua. Due da l‡. Poi niente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -728,7 +728,7 @@
         },
         {
           "id": "s38",
-          "text": "√à semplice. √à umano. Non √® un orario, e non √® ancora un nome.",
+          "text": "» semplice. » umano. Non Ë un orario, e non Ë ancora un nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -817,7 +817,7 @@
         },
         {
           "id": "s42",
-          "text": "Per√≤ ha fatto due volte, lente, e ha ricevuto due volte, lente.",
+          "text": "PerÚ ha fatto due volte, lente, e ha ricevuto due volte, lente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -837,7 +837,7 @@
         },
         {
           "id": "s43",
-          "text": "Non √® un alfabeto. √à un s√¨ piccolo, e poi basta.",
+          "text": "Non Ë un alfabeto. » un sÏ piccolo, e poi basta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -856,7 +856,7 @@
         },
         {
           "id": "s44",
-          "text": "Qualcuno di l√† ha visto la sua lampada. Questo √® un fatto nuovo. Non √® un nome.",
+          "text": "Qualcuno di l‡ ha visto la sua lampada. Questo Ë un fatto nuovo. Non Ë un nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -881,7 +881,7 @@
         },
         {
           "id": "s45",
-          "text": "Domani c'√® il comune. Domani c'√® Loredana gi√π. Stasera c'√® solo questo, e le mani che tremano ancora.",
+          "text": "Domani c'Ë il comune. Domani c'Ë Loredana gi˘. Stasera c'Ë solo questo, e le mani che tremano ancora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -907,7 +907,7 @@
         },
         {
           "id": "s46",
-          "text": "Non √® Sara sul foglio. Non √® un piano. √à una luce che ha risposto a una luce.",
+          "text": "Non Ë Sara sul foglio. Non Ë un piano. » una luce che ha risposto a una luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -933,7 +933,7 @@
         },
         {
           "id": "s47",
-          "text": "Irene scrive di nuovo, pi√π piano: non √® solo un orario. Poi chiude. Non esce.",
+          "text": "Irene scrive di nuovo, pi˘ piano: non Ë solo un orario. Poi chiude. Non esce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -956,7 +956,7 @@
         },
         {
           "id": "s48",
-          "text": "La finestra tre resta scura. La lampada del tavolo resta spenta. Due buie, di qua e di l√†.",
+          "text": "La finestra tre resta scura. La lampada del tavolo resta spenta. Due buie, di qua e di l‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1004,7 +1004,7 @@
         },
         {
           "id": "s50",
-          "text": "Non va al cancello. Non √® un codice vero con lettere. √à tre, poi due, poi buio.",
+          "text": "Non va al cancello. Non Ë un codice vero con lettere. » tre, poi due, poi buio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1029,7 +1029,7 @@
         },
         {
           "id": "s51",
-          "text": "Dovrei. Non dovrei. Per√≤ l'ha fatto. Questo resta, senza nome.",
+          "text": "Dovrei. Non dovrei. PerÚ l'ha fatto. Questo resta, senza nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1091,7 +1091,7 @@
       "question": "What does the facing window do?",
       "choices": [
         "It flashes three slow times",
-        "It follows Monday‚Äôs timetable",
+        "It follows Mondayís timetable",
         "It stays dark all night"
       ],
       "correctChoice": 0,
@@ -1133,12 +1133,22 @@
       "question": "What does Irene write?",
       "choices": [
         "That it is not only a timetable",
-        "Sara‚Äôs name",
+        "Saraís name",
         "A Morse alphabet"
       ],
       "correctChoice": 0,
       "explanation": "She writes: it is not only a timetable. She does not write a name.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-14.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 344904
+      }
+    ]
+  }
 }

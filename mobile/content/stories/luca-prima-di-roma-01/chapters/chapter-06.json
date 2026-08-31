@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La famiglia Ã¨ in cucina.",
+          "text": "La famiglia è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -63,7 +63,7 @@
         },
         {
           "id": "s02",
-          "text": "Ãˆ ora di cena.",
+          "text": "È ora di cena.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -136,7 +136,7 @@
         },
         {
           "id": "s08",
-          "text": "Il numero della casa Ã¨ dodici.",
+          "text": "Il numero della casa è dodici.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -150,7 +150,7 @@
         },
         {
           "id": "s09",
-          "text": "Dodici Ã¨ un numero.",
+          "text": "Dodici è un numero.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -188,7 +188,7 @@
         },
         {
           "id": "s12",
-          "text": "SÃ¬ Ã¨ dodici.",
+          "text": "Sì è dodici.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -205,7 +205,7 @@
       "sentences": [
         {
           "id": "s13",
-          "text": "Il mio numero Ã¨ questo.",
+          "text": "Il mio numero è questo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -218,7 +218,7 @@
         },
         {
           "id": "s14",
-          "text": "Il telefono Ã¨ a casa.",
+          "text": "Il telefono è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -361,7 +361,7 @@
         },
         {
           "id": "s26",
-          "text": "Settanta non Ã¨ ottanta.",
+          "text": "Settanta non è ottanta.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -373,7 +373,7 @@
         },
         {
           "id": "s27",
-          "text": "Settanta Ã¨ un numero grande.",
+          "text": "Settanta è un numero grande.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -397,7 +397,7 @@
         },
         {
           "id": "s29",
-          "text": "Il numero della casa Ã¨ dodici.",
+          "text": "Il numero della casa è dodici.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -450,7 +450,7 @@
         },
         {
           "id": "s33",
-          "text": "Luca Ã¨ contento.",
+          "text": "Luca è contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -461,7 +461,7 @@
         },
         {
           "id": "s34",
-          "text": "La cena Ã¨ pronta.",
+          "text": "La cena è pronta.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -495,7 +495,7 @@
         "70"
       ],
       "correctChoice": 1,
-      "explanation": "Il numero della casa Ã¨ dodici.",
+      "explanation": "Il numero della casa è dodici.",
       "chapterId": "luca-prima-di-roma-01-06",
       "difficulty": 1
     },
@@ -527,5 +527,15 @@
       "chapterId": "luca-prima-di-roma-01-06",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-06.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 89736
+      }
+    ]
+  }
 }

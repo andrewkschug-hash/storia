@@ -79,7 +79,7 @@
         },
         {
           "id": "s03",
-          "text": "LÃ¬, una volta sola, il segnale ha funzionato con suo padre.",
+          "text": "Lì, una volta sola, il segnale ha funzionato con suo padre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -117,7 +117,7 @@
         },
         {
           "id": "s05",
-          "text": "Il sole Ã¨ basso, ma non Ã¨ ancora tramonto.",
+          "text": "Il sole è basso, ma non è ancora tramonto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -291,7 +291,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Il silenzio diventa piÃ¹ lungo, quasi fisico.",
+          "text": "Il silenzio diventa più lungo, quasi fisico.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -448,7 +448,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "Giada chiude gli occhi e tiene il telefono piÃ¹ stretto.",
+          "text": "Giada chiude gli occhi e tiene il telefono più stretto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -476,7 +476,7 @@
         },
         {
           "id": "s28",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -485,7 +485,7 @@
         },
         {
           "id": "s29",
-          "text": "Avevo la tua etÃ , e portavo quella borsa che hai preso.",
+          "text": "Avevo la tua età, e portavo quella borsa che hai preso.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -599,7 +599,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Lo sanno tutti lÃ¬, e lo sapevo anche io.",
+          "text": "Lo sanno tutti lì, e lo sapevo anche io.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -687,7 +687,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Qui c'Ã¨ il tuo nome sul registro, con la data di oggi.",
+          "text": "Qui c'è il tuo nome sul registro, con la data di oggi.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -723,7 +723,7 @@
         },
         {
           "id": "s43",
-          "text": "Anna resta di nuovo in silenzio, piÃ¹ breve stavolta.",
+          "text": "Anna resta di nuovo in silenzio, più breve stavolta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -789,7 +789,7 @@
         },
         {
           "id": "s47",
-          "text": "Non Ã¨ una storia per spaventare i bambini.",
+          "text": "Non è una storia per spaventare i bambini.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -805,7 +805,7 @@
         },
         {
           "id": "s48",
-          "text": "Ãˆ un orologio della diga, e loro lo fanno ancora.",
+          "text": "È un orologio della diga, e loro lo fanno ancora.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -823,7 +823,7 @@
         },
         {
           "id": "s49",
-          "text": "Giada guarda verso la strada della diga, giÃ  in ombra.",
+          "text": "Giada guarda verso la strada della diga, già in ombra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -841,7 +841,7 @@
         },
         {
           "id": "s50",
-          "text": "PerchÃ© non me l'hai detto quando sono partita?",
+          "text": "Perché non me l'hai detto quando sono partita?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -863,7 +863,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "PerchÃ© avevo paura che tu andassi a cercarlo apposta.",
+          "text": "Perché avevo paura che tu andassi a cercarlo apposta.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -893,7 +893,7 @@
         },
         {
           "id": "s53",
-          "text": "Giada sorride amaro, perchÃ© la madre l'ha vista bene.",
+          "text": "Giada sorride amaro, perché la madre l'ha vista bene.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1125,7 +1125,7 @@
         },
         {
           "id": "s67",
-          "text": "Non Ã¨ piÃ¹ solo un treno sbagliato.",
+          "text": "Non è più solo un treno sbagliato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1140,7 +1140,7 @@
         },
         {
           "id": "s68",
-          "text": "Ãˆ una storia di famiglia che qualcuno ha nascosto sotto il silenzio.",
+          "text": "È una storia di famiglia che qualcuno ha nascosto sotto il silenzio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1273,7 +1273,7 @@
         },
         {
           "id": "s75",
-          "text": "Una radio lontana trasmette notizie di cittÃ  che esistono sugli orari.",
+          "text": "Una radio lontana trasmette notizie di città che esistono sugli orari.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1316,7 +1316,7 @@
         },
         {
           "id": "s77",
-          "text": "Cammina piÃ¹ lenta, perchÃ© ora sa che la fretta non cancella la diga.",
+          "text": "Cammina più lenta, perché ora sa che la fretta non cancella la diga.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1375,7 +1375,7 @@
         },
         {
           "id": "s80",
-          "text": "Adesso la mappa Ã¨ fisica: strada, chiusa, tramonto, otto.",
+          "text": "Adesso la mappa è fisica: strada, chiusa, tramonto, otto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1466,7 +1466,7 @@
         },
         {
           "id": "s85",
-          "text": "Non Ã¨ piÃ¹ arrabbiata solo con Elsa.",
+          "text": "Non è più arrabbiata solo con Elsa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1487,7 +1487,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Ãˆ arrabbiata anche con il silenzio di Bologna, e un poco sollevata.",
+          "text": "È arrabbiata anche con il silenzio di Bologna, e un poco sollevata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1586,5 +1586,15 @@
       "explanation": "Anna thought erasing the name at home was enough and feared Giada would seek the riddle.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-17.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 278400
+      }
+    ]
+  }
 }

@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giada si alza quando il cielo √® ancora grigio chiaro.",
+          "text": "Giada si alza quando il cielo Ë ancora grigio chiaro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -64,7 +64,7 @@
         },
         {
           "id": "s02",
-          "text": "In cucina Elsa ha lasciato caff√® e pane, senza discorso lungo.",
+          "text": "In cucina Elsa ha lasciato caffË e pane, senza discorso lungo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s03",
-          "text": "Sulla tovaglia c'√® un biglietto: buona strada, Giada.",
+          "text": "Sulla tovaglia c'Ë un biglietto: buona strada, Giada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -99,7 +99,7 @@
         },
         {
           "id": "s04",
-          "text": "Il nome √® giusto, finalmente scritto senza sostituzione.",
+          "text": "Il nome Ë giusto, finalmente scritto senza sostituzione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -154,7 +154,7 @@
         },
         {
           "id": "s07",
-          "text": "La piazza √® vuota; i cartelli della notte prima sono al loro posto sbagliato.",
+          "text": "La piazza Ë vuota; i cartelli della notte prima sono al loro posto sbagliato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -188,7 +188,7 @@
         },
         {
           "id": "s09",
-          "text": "Non √® il suo lavoro salvare la messa in scena.",
+          "text": "Non Ë il suo lavoro salvare la messa in scena.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -206,7 +206,7 @@
         },
         {
           "id": "s10",
-          "text": "Sulla strada della diga l'asfalto √® bagnato ma praticabile.",
+          "text": "Sulla strada della diga l'asfalto Ë bagnato ma praticabile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -229,7 +229,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "L'acqua della sera √® scesa; restano pozze e odore di fango.",
+          "text": "L'acqua della sera Ë scesa; restano pozze e odore di fango.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -248,7 +248,7 @@
         },
         {
           "id": "s12",
-          "text": "Tullio √® gi√† l√¨, con il thermos e l'orologio nella testa.",
+          "text": "Tullio Ë gi‡ lÏ, con il thermos e l'orologio nella testa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -278,7 +278,7 @@
         },
         {
           "id": "s14",
-          "text": "L'acqua √® gi√π.",
+          "text": "L'acqua Ë gi˘.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -289,7 +289,7 @@
         },
         {
           "id": "s15",
-          "text": "All'alba s√¨.",
+          "text": "All'alba sÏ.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -395,7 +395,7 @@
         },
         {
           "id": "s23",
-          "text": "Neri le d√† un pezzo di carta con un numero scritto storto.",
+          "text": "Neri le d‡ un pezzo di carta con un numero scritto storto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -466,7 +466,7 @@
         },
         {
           "id": "s27",
-          "text": "Alla fermata il cartello Collevento √® ancora barrato.",
+          "text": "Alla fermata il cartello Collevento Ë ancora barrato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -498,7 +498,7 @@
         },
         {
           "id": "s29",
-          "text": "Arriva un bus basso, grigio, con uomini del cantiere gi√† seduti.",
+          "text": "Arriva un bus basso, grigio, con uomini del cantiere gi‡ seduti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -517,7 +517,7 @@
         },
         {
           "id": "s30",
-          "text": "Non √® un treno turistico; √® un passaggio da settimana.",
+          "text": "Non Ë un treno turistico; Ë un passaggio da settimana.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -588,7 +588,7 @@
         },
         {
           "id": "s34",
-          "text": "√à tutto.",
+          "text": "» tutto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -598,7 +598,7 @@
         },
         {
           "id": "s35",
-          "text": "Non c'√® discorso di addio, non c'√® benedizione.",
+          "text": "Non c'Ë discorso di addio, non c'Ë benedizione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -620,7 +620,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "C'√® un annuire che dice: conosci la regola e la usi al diritto.",
+          "text": "C'Ë un annuire che dice: conosci la regola e la usi al diritto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -661,7 +661,7 @@
         },
         {
           "id": "s38",
-          "text": "Il bus riparte subito, perch√© gli operai hanno un orario vero.",
+          "text": "Il bus riparte subito, perchÈ gli operai hanno un orario vero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -832,7 +832,7 @@
         },
         {
           "id": "s47",
-          "text": "Lei √® uscita prima, come si esce da una regola che hai finalmente capito.",
+          "text": "Lei Ë uscita prima, come si esce da una regola che hai finalmente capito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -888,7 +888,7 @@
         },
         {
           "id": "s50",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -988,7 +988,7 @@
       "sentences": [
         {
           "id": "s56",
-          "text": "Questa √® l'uscita, non la conquista.",
+          "text": "Questa Ë l'uscita, non la conquista.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1022,7 +1022,7 @@
         },
         {
           "id": "s58",
-          "text": "Il nome Trento √® stampato chiaro, senza linee nere sopra.",
+          "text": "Il nome Trento Ë stampato chiaro, senza linee nere sopra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1082,7 +1082,7 @@
       "sentences": [
         {
           "id": "s61",
-          "text": "Davanti c'√® una cucina, un padre, e una storia da raccontare senza miracoli.",
+          "text": "Davanti c'Ë una cucina, un padre, e una storia da raccontare senza miracoli.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1103,7 +1103,7 @@
         },
         {
           "id": "s62",
-          "text": "Il treno per Trento √® pieno di persone normali con valigie normali.",
+          "text": "Il treno per Trento Ë pieno di persone normali con valigie normali.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1204,7 +1204,7 @@
         },
         {
           "id": "s67",
-          "text": "Il paese continuer√† a spostare nomi per un'ispezione forse futura.",
+          "text": "Il paese continuer‡ a spostare nomi per un'ispezione forse futura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1222,7 +1222,7 @@
         },
         {
           "id": "s68",
-          "text": "La diga continuer√† ad aprire l'acqua sulla strada a un'ora precisa.",
+          "text": "La diga continuer‡ ad aprire l'acqua sulla strada a un'ora precisa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1241,7 +1241,7 @@
         },
         {
           "id": "s69",
-          "text": "Lei non torner√† dopo le otto a dimostrare qualcosa.",
+          "text": "Lei non torner‡ dopo le otto a dimostrare qualcosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1378,7 +1378,7 @@
       "sentences": [
         {
           "id": "s76",
-          "text": "Questa √® l'uscita che voleva: ordinaria, puntuale, sua.",
+          "text": "Questa Ë l'uscita che voleva: ordinaria, puntuale, sua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1438,5 +1438,15 @@
       "explanation": "Neri says he is not getting on because he has not asked yet; he gives Giada his number.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-22.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 275352
+      }
+    ]
+  }
 }

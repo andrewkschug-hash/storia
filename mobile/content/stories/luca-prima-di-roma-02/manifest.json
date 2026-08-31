@@ -55,7 +55,7 @@
     {
       "id": "luca-prima-di-roma-02-05",
       "number": 5,
-      "title": "Chiaraâ€™s timetable",
+      "title": "Chiara’s timetable",
       "titleIt": "L'orario di Chiara",
       "difficultyLevel": 1,
       "file": "chapter-05.json"
@@ -90,5 +90,9 @@
       "chapterEnd": 7,
       "status": "planned"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "ready"
+  }
 }

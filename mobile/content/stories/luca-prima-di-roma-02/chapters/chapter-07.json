@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Ãˆ sera.",
+          "text": "È sera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -71,7 +71,7 @@
         },
         {
           "id": "s03",
-          "text": "A che ora Ã¨ la cena?",
+          "text": "A che ora è la cena?",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -85,7 +85,7 @@
         },
         {
           "id": "s04",
-          "text": "La cena Ã¨ alle otto.",
+          "text": "La cena è alle otto.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -98,7 +98,7 @@
         },
         {
           "id": "s05",
-          "text": "La famiglia Ã¨ in cucina.",
+          "text": "La famiglia è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -136,7 +136,7 @@
         },
         {
           "id": "s08",
-          "text": "Lidia Ã¨ a cena.",
+          "text": "Lidia è a cena.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -148,7 +148,7 @@
         },
         {
           "id": "s09",
-          "text": "Paolo Ã¨ in cucina.",
+          "text": "Paolo è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -160,7 +160,7 @@
         },
         {
           "id": "s10",
-          "text": "Chiara Ã¨ in cucina.",
+          "text": "Chiara è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -226,7 +226,7 @@
       "sentences": [
         {
           "id": "s13",
-          "text": "La cena Ã¨ buona.",
+          "text": "La cena è buona.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -285,7 +285,7 @@
         },
         {
           "id": "s18",
-          "text": "Chiara Ã¨ stanca.",
+          "text": "Chiara è stanca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -308,7 +308,7 @@
         },
         {
           "id": "s20",
-          "text": "Domani Ã¨ martedÃ¬.",
+          "text": "Domani è martedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -333,7 +333,7 @@
         },
         {
           "id": "s22",
-          "text": "Ogni giorno Ã¨ diverso.",
+          "text": "Ogni giorno è diverso.",
           "speakerId": "lidia",
           "kind": "dialogue",
           "lemmas": [
@@ -345,7 +345,7 @@
         },
         {
           "id": "s23",
-          "text": "Ma domani c'Ã¨ scuola.",
+          "text": "Ma domani c'è scuola.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -425,7 +425,7 @@
         },
         {
           "id": "s27",
-          "text": "La giornata Ã¨ finita.",
+          "text": "La giornata è finita.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -437,7 +437,7 @@
         },
         {
           "id": "s28",
-          "text": "Oggi Ã¨ una bella giornata.",
+          "text": "Oggi è una bella giornata.",
           "speakerId": "lidia",
           "kind": "dialogue",
           "lemmas": [
@@ -450,7 +450,7 @@
         },
         {
           "id": "s29",
-          "text": "Luca Ã¨ contento.",
+          "text": "Luca è contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -461,7 +461,7 @@
         },
         {
           "id": "s30",
-          "text": "La famiglia Ã¨ insieme.",
+          "text": "La famiglia è insieme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -577,7 +577,7 @@
         "Noon"
       ],
       "correctChoice": 1,
-      "explanation": "La cena Ã¨ alle otto.",
+      "explanation": "La cena è alle otto.",
       "chapterId": "luca-prima-di-roma-02-07",
       "difficulty": 1
     },
@@ -609,5 +609,15 @@
       "chapterId": "luca-prima-di-roma-02-07",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-07.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 97104
+      }
+    ]
+  }
 }

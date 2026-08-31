@@ -59,7 +59,7 @@
         },
         {
           "id": "s02",
-          "text": "Elsa √® fuori a parlare con Tullio vicino alla porta della locanda.",
+          "text": "Elsa Ë fuori a parlare con Tullio vicino alla porta della locanda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -79,7 +79,7 @@
         },
         {
           "id": "s03",
-          "text": "Sul tavolo c'√® un libro spesso con la copertina scura e usata.",
+          "text": "Sul tavolo c'Ë un libro spesso con la copertina scura e usata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -99,7 +99,7 @@
         },
         {
           "id": "s04",
-          "text": "Sulla copertina c'√® scritto Registro a lettere sbiadite dal tempo.",
+          "text": "Sulla copertina c'Ë scritto Registro a lettere sbiadite dal tempo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -142,7 +142,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Ci sono nomi, et√† e date di anni diversi, scritte a mano.",
+          "text": "Ci sono nomi, et‡ e date di anni diversi, scritte a mano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -213,7 +213,7 @@
         },
         {
           "id": "s10",
-          "text": "La data √® di oggi: giorno, mese e anno, completi.",
+          "text": "La data Ë di oggi: giorno, mese e anno, completi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -272,7 +272,7 @@
         },
         {
           "id": "s13",
-          "text": "Non √® fresco; √® secco, scuro e vecchio sotto il dito.",
+          "text": "Non Ë fresco; Ë secco, scuro e vecchio sotto il dito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -354,7 +354,7 @@
         },
         {
           "id": "s17",
-          "text": "Il cognome √® Rinaldi, come il suo, lettera per lettera.",
+          "text": "Il cognome Ë Rinaldi, come il suo, lettera per lettera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -425,7 +425,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Perch√© c'√® il mio cognome su questa pagina?",
+          "text": "PerchÈ c'Ë il mio cognome su questa pagina?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s22",
-          "text": "Perch√© Anna era qui.",
+          "text": "PerchÈ Anna era qui.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -453,7 +453,7 @@
         },
         {
           "id": "s23",
-          "text": "E perch√© la data √® di oggi, con inchiostro vecchio e secco?",
+          "text": "E perchÈ la data Ë di oggi, con inchiostro vecchio e secco?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -493,7 +493,7 @@
         },
         {
           "id": "s25",
-          "text": "Perch√© ogni anno ricordiamo.",
+          "text": "PerchÈ ogni anno ricordiamo.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -622,7 +622,7 @@
         },
         {
           "id": "s32",
-          "text": "Non √® magia; √® un rituale sulla carta del registro.",
+          "text": "Non Ë magia; Ë un rituale sulla carta del registro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -640,7 +640,7 @@
         },
         {
           "id": "s33",
-          "text": "O un errore ripetuto finch√© sembra una legge del paese.",
+          "text": "O un errore ripetuto finchÈ sembra una legge del paese.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -676,7 +676,7 @@
         },
         {
           "id": "s35",
-          "text": "Dentro c'√® ancora l'odore di casa a Bologna, familiare.",
+          "text": "Dentro c'Ë ancora l'odore di casa a Bologna, familiare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -699,7 +699,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Fuori c'√® un paese che scrive di nuovo quel nome sul libro.",
+          "text": "Fuori c'Ë un paese che scrive di nuovo quel nome sul libro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -811,7 +811,7 @@
         },
         {
           "id": "s42",
-          "text": "Ma non √® Anna, e non vuole diventarlo per nessuno.",
+          "text": "Ma non Ë Anna, e non vuole diventarlo per nessuno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -850,7 +850,7 @@
         },
         {
           "id": "s44",
-          "text": "Giada ripete il cognome Rinaldi e sente quanto √® stretto, qui.",
+          "text": "Giada ripete il cognome Rinaldi e sente quanto Ë stretto, qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -869,7 +869,7 @@
         },
         {
           "id": "s45",
-          "text": "Domani, dice Elsa, bisogna guardare la piazza: lei lo far√†, ma da Giada.",
+          "text": "Domani, dice Elsa, bisogna guardare la piazza: lei lo far‡, ma da Giada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -934,5 +934,15 @@
       "explanation": "Elsa says every year they remember.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-08.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 175704
+      }
+    ]
+  }
 }

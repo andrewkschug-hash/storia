@@ -104,7 +104,7 @@
         },
         {
           "id": "s06",
-          "text": "La farmacia Ã¨ a destra.",
+          "text": "La farmacia è a destra.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -117,7 +117,7 @@
         },
         {
           "id": "s07",
-          "text": "Il parco Ã¨ a sinistra.",
+          "text": "Il parco è a sinistra.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -142,7 +142,7 @@
         },
         {
           "id": "s09",
-          "text": "La farmacia Ã¨ vicina.",
+          "text": "La farmacia è vicina.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -154,7 +154,7 @@
         },
         {
           "id": "s10",
-          "text": "Non Ã¨ lontano.",
+          "text": "Non è lontano.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -215,7 +215,7 @@
         },
         {
           "id": "s15",
-          "text": "La strada Ã¨ lunga e dritta.",
+          "text": "La strada è lunga e dritta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -229,7 +229,7 @@
         },
         {
           "id": "s16",
-          "text": "A sinistra c'Ã¨ il parco.",
+          "text": "A sinistra c'è il parco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -306,7 +306,7 @@
         },
         {
           "id": "s22",
-          "text": "La farmacia Ã¨ qui.",
+          "text": "La farmacia è qui.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s23",
-          "text": "La farmacia Ã¨ davanti a Luca.",
+          "text": "La farmacia è davanti a Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -332,7 +332,7 @@
         },
         {
           "id": "s24",
-          "text": "Dietro c'Ã¨ la strada.",
+          "text": "Dietro c'è la strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -381,7 +381,7 @@
         },
         {
           "id": "s28",
-          "text": "A destra Ã¨ facile.",
+          "text": "A destra è facile.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -454,7 +454,7 @@
         },
         {
           "id": "s34",
-          "text": "La farmacia Ã¨ dietro ora.",
+          "text": "La farmacia è dietro ora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -518,7 +518,7 @@
         "Underground"
       ],
       "correctChoice": 1,
-      "explanation": "La farmacia Ã¨ a destra.",
+      "explanation": "La farmacia è a destra.",
       "chapterId": "luca-prima-di-roma-04-02",
       "difficulty": 1
     },
@@ -536,5 +536,15 @@
       "chapterId": "luca-prima-di-roma-04-02",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-02.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 88488
+      }
+    ]
+  }
 }

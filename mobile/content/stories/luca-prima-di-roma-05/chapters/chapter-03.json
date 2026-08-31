@@ -47,7 +47,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Marta Ã¨ in cucina.",
+          "text": "Marta è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -238,7 +238,7 @@
         },
         {
           "id": "s16",
-          "text": "Per la festa c'Ã¨ torta.",
+          "text": "Per la festa c'è torta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -251,7 +251,7 @@
         },
         {
           "id": "s17",
-          "text": "C'Ã¨ succo.",
+          "text": "C'è succo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -261,7 +261,7 @@
         },
         {
           "id": "s18",
-          "text": "C'Ã¨ frutta.",
+          "text": "C'è frutta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -271,7 +271,7 @@
         },
         {
           "id": "s19",
-          "text": "C'Ã¨ musica.",
+          "text": "C'è musica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -281,7 +281,7 @@
         },
         {
           "id": "s20",
-          "text": "Non c'Ã¨ olio.",
+          "text": "Non c'è olio.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -302,7 +302,7 @@
         },
         {
           "id": "s22",
-          "text": "Elisa Ã¨ contenta.",
+          "text": "Elisa è contenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -313,7 +313,7 @@
         },
         {
           "id": "s23",
-          "text": "La musica Ã¨ bella.",
+          "text": "La musica è bella.",
           "speakerId": "elisa",
           "kind": "dialogue",
           "lemmas": [
@@ -325,7 +325,7 @@
         },
         {
           "id": "s24",
-          "text": "La torta Ã¨ bella.",
+          "text": "La torta è bella.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -337,7 +337,7 @@
         },
         {
           "id": "s25",
-          "text": "Il pane Ã¨ sul tavolo.",
+          "text": "Il pane è sul tavolo.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -381,7 +381,7 @@
         },
         {
           "id": "s28",
-          "text": "SÃ¬ mi piace la torta.",
+          "text": "Sì mi piace la torta.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -394,7 +394,7 @@
         },
         {
           "id": "s29",
-          "text": "SÃ¬ mi piace la musica.",
+          "text": "Sì mi piace la musica.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -420,7 +420,7 @@
         },
         {
           "id": "s31",
-          "text": "La festa Ã¨ bella.",
+          "text": "La festa è bella.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -432,7 +432,7 @@
         },
         {
           "id": "s32",
-          "text": "Marta Ã¨ felice.",
+          "text": "Marta è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -443,7 +443,7 @@
         },
         {
           "id": "s33",
-          "text": "Luca Ã¨ felice.",
+          "text": "Luca è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -481,7 +481,7 @@
         },
         {
           "id": "s36",
-          "text": "Va bene cosÃ¬.",
+          "text": "Va bene così.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -492,7 +492,7 @@
         },
         {
           "id": "s37",
-          "text": "Per la festa tutto Ã¨ pronto.",
+          "text": "Per la festa tutto è pronto.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -515,7 +515,7 @@
       "choices": [
         "Cake and music",
         "Oil and work",
-        "The Rome cafÃ©"
+        "The Rome café"
       ],
       "correctChoice": 0,
       "explanation": "A Luca piace la torta e la musica.",
@@ -550,5 +550,15 @@
       "chapterId": "luca-prima-di-roma-05-03",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-03.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 91704
+      }
+    ]
+  }
 }

@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luned√¨ sera il Caff√® Brenta √® quasi vuoto.",
+          "text": "LunedÏ sera il CaffË Brenta Ë quasi vuoto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -62,7 +62,7 @@
         },
         {
           "id": "s02",
-          "text": "Katia ha gi√† messo la giacca e ha salutato dalla porta.",
+          "text": "Katia ha gi‡ messo la giacca e ha salutato dalla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -130,7 +130,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -139,7 +139,7 @@
         },
         {
           "id": "s07",
-          "text": "Mio marito √® morto quattro anni fa.",
+          "text": "Mio marito Ë morto quattro anni fa.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -219,7 +219,7 @@
         },
         {
           "id": "s12",
-          "text": "Al bancone lavorava bene, conosceva i nomi, preparava i caff√® giusti.",
+          "text": "Al bancone lavorava bene, conosceva i nomi, preparava i caffË giusti.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -264,7 +264,7 @@
         },
         {
           "id": "s15",
-          "text": "Cos√¨ √® nato il libro, vicino allo zucchero, senza prezzo.",
+          "text": "CosÏ Ë nato il libro, vicino allo zucchero, senza prezzo.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -288,7 +288,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Elena ascolta senza interrompere, perch√© questa volta Bruna vuole parlare.",
+          "text": "Elena ascolta senza interrompere, perchÈ questa volta Bruna vuole parlare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -365,7 +365,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "A volte s√¨.",
+          "text": "A volte sÏ.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -412,7 +412,7 @@
         },
         {
           "id": "s24",
-          "text": "Sembra strano, un libro cos√¨ vicino allo zucchero.",
+          "text": "Sembra strano, un libro cosÏ vicino allo zucchero.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -485,7 +485,7 @@
         },
         {
           "id": "s28",
-          "text": "Non √® un gioco.",
+          "text": "Non Ë un gioco.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -570,7 +570,7 @@
         },
         {
           "id": "s34",
-          "text": "Elena sente la gola stretta e guarda il magazzino, dove le luci sono gi√† spente.",
+          "text": "Elena sente la gola stretta e guarda il magazzino, dove le luci sono gi‡ spente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -593,7 +593,7 @@
         },
         {
           "id": "s35",
-          "text": "E se la persona √® qui, nel caff√®?",
+          "text": "E se la persona Ë qui, nel caffË?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -654,7 +654,7 @@
         },
         {
           "id": "s39",
-          "text": "√à ancora una regola, e Bruna la ripete come una preghiera breve.",
+          "text": "» ancora una regola, e Bruna la ripete come una preghiera breve.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -674,7 +674,7 @@
         },
         {
           "id": "s40",
-          "text": "Io tengo il libro perch√© lui c'era.",
+          "text": "Io tengo il libro perchÈ lui c'era.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -695,7 +695,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "E perch√© altri hanno bisogno di restare senza gridare.",
+          "text": "E perchÈ altri hanno bisogno di restare senza gridare.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -712,7 +712,7 @@
         },
         {
           "id": "s42",
-          "text": "Elena guarda il bancone vuoto e le tazze gi√† pulite.",
+          "text": "Elena guarda il bancone vuoto e le tazze gi‡ pulite.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -764,7 +764,7 @@
         },
         {
           "id": "s45",
-          "text": "Domani √® marted√¨.",
+          "text": "Domani Ë martedÏ.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -794,7 +794,7 @@
         },
         {
           "id": "s47",
-          "text": "Elena sente un salto nel petto e non sa ancora perch√©.",
+          "text": "Elena sente un salto nel petto e non sa ancora perchÈ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -813,7 +813,7 @@
         },
         {
           "id": "s48",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -822,7 +822,7 @@
         },
         {
           "id": "s49",
-          "text": "Marted√¨.",
+          "text": "MartedÏ.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -831,7 +831,7 @@
         },
         {
           "id": "s50",
-          "text": "Non collega ancora il furgone al libro, ma qualcosa si √® spostato.",
+          "text": "Non collega ancora il furgone al libro, ma qualcosa si Ë spostato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -888,12 +888,22 @@
       "question": "What does Bruna insist about the book?",
       "choices": [
         "It is not a game",
-        "It must leave the caf√©",
+        "It must leave the cafÈ",
         "Only Katia may write"
       ],
       "correctChoice": 0,
       "explanation": "Bruna says explicitly that it is not a game.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-10.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 148104
+      }
+    ]
+  }
 }

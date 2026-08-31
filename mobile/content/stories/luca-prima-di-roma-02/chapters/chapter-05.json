@@ -2,7 +2,7 @@
   "id": "luca-prima-di-roma-02-05",
   "storyId": "luca-prima-di-roma-02",
   "number": 5,
-  "title": "Chiara‚Äôs timetable",
+  "title": "Chiaraís timetable",
   "titleIt": "L'orario di Chiara",
   "difficultyLevel": 1,
   "locationIds": [
@@ -35,7 +35,7 @@
       "rememberedFacts": [
         "Chiara starts school at 8",
         "Italian is at nine",
-        "Luca helps pap√† at 9"
+        "Luca helps pap‡ at 9"
       ]
     }
   ],
@@ -58,7 +58,7 @@
         },
         {
           "id": "s02",
-          "text": "L'orario √® sul tavolo.",
+          "text": "L'orario Ë sul tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -70,7 +70,7 @@
         },
         {
           "id": "s03",
-          "text": "Luned√¨ alle otto Chiara √® a scuola.",
+          "text": "LunedÏ alle otto Chiara Ë a scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -97,7 +97,7 @@
         },
         {
           "id": "s05",
-          "text": "Alle dieci Chiara √® libera.",
+          "text": "Alle dieci Chiara Ë libera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -110,7 +110,7 @@
         },
         {
           "id": "s06",
-          "text": "Alle undici Chiara √® ancora a scuola.",
+          "text": "Alle undici Chiara Ë ancora a scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -137,7 +137,7 @@
         },
         {
           "id": "s08",
-          "text": "Alle nove Luca aiuta pap√†.",
+          "text": "Alle nove Luca aiuta pap‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -150,7 +150,7 @@
         },
         {
           "id": "s09",
-          "text": "Alle dieci Luca √® a casa.",
+          "text": "Alle dieci Luca Ë a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -164,7 +164,7 @@
         },
         {
           "id": "s10",
-          "text": "Paolo √® a casa.",
+          "text": "Paolo Ë a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -277,7 +277,7 @@
         },
         {
           "id": "s17",
-          "text": "Marted√¨ l'orario √® diverso.",
+          "text": "MartedÏ l'orario Ë diverso.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -289,7 +289,7 @@
         },
         {
           "id": "s18",
-          "text": "Ma luned√¨ √® cos√¨.",
+          "text": "Ma lunedÏ Ë cosÏ.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -301,7 +301,7 @@
         },
         {
           "id": "s19",
-          "text": "L'orario √® ogni giorno.",
+          "text": "L'orario Ë ogni giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -335,7 +335,7 @@
         },
         {
           "id": "s22",
-          "text": "Oggi √® luned√¨.",
+          "text": "Oggi Ë lunedÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -460,7 +460,7 @@
         },
         {
           "id": "s30",
-          "text": "Alle nove io aiuto pap√†.",
+          "text": "Alle nove io aiuto pap‡.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -483,7 +483,7 @@
         },
         {
           "id": "s32",
-          "text": "L'orario √® chiaro.",
+          "text": "L'orario Ë chiaro.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -494,7 +494,7 @@
         },
         {
           "id": "s33",
-          "text": "Oggi l'orario √® importante.",
+          "text": "Oggi l'orario Ë importante.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -543,7 +543,7 @@
         },
         {
           "id": "s41",
-          "text": "Ma Luca aiuta pap√† alle nove.",
+          "text": "Ma Luca aiuta pap‡ alle nove.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -557,7 +557,7 @@
         },
         {
           "id": "s42",
-          "text": "L'orario di luned√¨ √® importante.",
+          "text": "L'orario di lunedÏ Ë importante.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -582,7 +582,7 @@
         "12:00"
       ],
       "correctChoice": 1,
-      "explanation": "Luned√¨ alle otto Chiara √® a scuola.",
+      "explanation": "LunedÏ alle otto Chiara Ë a scuola.",
       "chapterId": "luca-prima-di-roma-02-05",
       "difficulty": 1
     },
@@ -606,13 +606,23 @@
       "question": "What does Luca do at nine?",
       "choices": [
         "He goes to school",
-        "He helps pap√†",
+        "He helps pap‡",
         "He sleeps"
       ],
       "correctChoice": 1,
-      "explanation": "Alle nove Luca aiuta pap√†.",
+      "explanation": "Alle nove Luca aiuta pap‡.",
       "chapterId": "luca-prima-di-roma-02-05",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 103344
+      }
+    ]
+  }
 }

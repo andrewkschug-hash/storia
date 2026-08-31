@@ -84,5 +84,9 @@
       "chapterEnd": 6,
       "status": "planned"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "ready"
+  }
 }

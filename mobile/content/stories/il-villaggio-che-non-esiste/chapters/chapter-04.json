@@ -62,7 +62,7 @@
         },
         {
           "id": "s02",
-          "text": "C'Ã¨ anche un uomo anziano seduto vicino al tavolo di legno.",
+          "text": "C'è anche un uomo anziano seduto vicino al tavolo di legno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -81,7 +81,7 @@
         },
         {
           "id": "s03",
-          "text": "Si chiama Tullio e beve tÃ¨ caldo da un thermos scuro.",
+          "text": "Si chiama Tullio e beve tè caldo da un thermos scuro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -265,7 +265,7 @@
         },
         {
           "id": "s14",
-          "text": "Giada ride una volta, nervosa, perchÃ© le regole sembrano un gioco.",
+          "text": "Giada ride una volta, nervosa, perché le regole sembrano un gioco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -343,7 +343,7 @@
         },
         {
           "id": "s18",
-          "text": "Non Ã¨ un gioco.",
+          "text": "Non è un gioco.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -355,7 +355,7 @@
         },
         {
           "id": "s19",
-          "text": "L'ora Ã¨ l'ora, qui, e non cambia per i turisti.",
+          "text": "L'ora è l'ora, qui, e non cambia per i turisti.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -373,7 +373,7 @@
         },
         {
           "id": "s20",
-          "text": "PerchÃ© dopo il tramonto, di preciso?",
+          "text": "Perché dopo il tramonto, di preciso?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -393,7 +393,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "PerchÃ© la strada cambia, e diventa acqua.",
+          "text": "Perché la strada cambia, e diventa acqua.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s24",
-          "text": "E il bosco? Cosa c'Ã¨ nel bosco di cosÃ¬ grave?",
+          "text": "E il bosco? Cosa c'è nel bosco di così grave?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -459,7 +459,7 @@
         },
         {
           "id": "s25",
-          "text": "Il bosco non Ã¨ per camminare come a casa vostra.",
+          "text": "Il bosco non è per camminare come a casa vostra.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -483,7 +483,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "Ãˆ per ricordare, e per stare lontani quando non serve.",
+          "text": "È per ricordare, e per stare lontani quando non serve.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -519,7 +519,7 @@
         },
         {
           "id": "s28",
-          "text": "Il cielo Ã¨ ancora chiaro sopra le case basse del paese.",
+          "text": "Il cielo è ancora chiaro sopra le case basse del paese.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -538,7 +538,7 @@
         },
         {
           "id": "s29",
-          "text": "E la piazza? PerchÃ© guardarla al mattino, ogni giorno?",
+          "text": "E la piazza? Perché guardarla al mattino, ogni giorno?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -572,7 +572,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "Vedi se qualcosa Ã¨ mosso, o cambiato di nome sulla porta.",
+          "text": "Vedi se qualcosa è mosso, o cambiato di nome sulla porta.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -713,7 +713,7 @@
         },
         {
           "id": "s39",
-          "text": "Se c'Ã¨.",
+          "text": "Se c'è.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -723,7 +723,7 @@
         },
         {
           "id": "s40",
-          "text": "Cosa vuole dire, se c'Ã¨?",
+          "text": "Cosa vuole dire, se c'è?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -889,7 +889,7 @@
         },
         {
           "id": "s50",
-          "text": "Giada non ride piÃ¹, e questo Ã¨ giÃ  un piccolo cambiamento.",
+          "text": "Giada non ride più, e questo è già un piccolo cambiamento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -934,7 +934,7 @@
         },
         {
           "id": "s52",
-          "text": "Fuori, verso la piazza, il paese sembra quieto, ma lei non Ã¨ piÃ¹ sicura.",
+          "text": "Fuori, verso la piazza, il paese sembra quieto, ma lei non è più sicura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1000,5 +1000,15 @@
       "explanation": "Giada laughs, but they do not; they insist it is not a game.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 180072
+      }
+    ]
+  }
 }

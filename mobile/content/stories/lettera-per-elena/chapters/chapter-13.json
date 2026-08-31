@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Gioved√¨, dopo pranzo, il Caff√® Brenta √® quieto.",
+          "text": "GiovedÏ, dopo pranzo, il CaffË Brenta Ë quieto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -66,7 +66,7 @@
         },
         {
           "id": "s02",
-          "text": "Bruna √® nel magazzino e cerca un sacco di zucchero.",
+          "text": "Bruna Ë nel magazzino e cerca un sacco di zucchero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -112,7 +112,7 @@
         },
         {
           "id": "s05",
-          "text": "Nella testa la frase √® pronta, chiara, pericolosa.",
+          "text": "Nella testa la frase Ë pronta, chiara, pericolosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -155,7 +155,7 @@
         },
         {
           "id": "s08",
-          "text": "Poi ferma la mano, a met√† lettera.",
+          "text": "Poi ferma la mano, a met‡ lettera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -186,7 +186,7 @@
         },
         {
           "id": "s10",
-          "text": "O forse inizia qualcosa di pi√π difficile: la voce.",
+          "text": "O forse inizia qualcosa di pi˘ difficile: la voce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -209,7 +209,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Ricorda le regole di Bruna e la frase di luned√¨: non √® un gioco.",
+          "text": "Ricorda le regole di Bruna e la frase di lunedÏ: non Ë un gioco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -258,7 +258,7 @@
         },
         {
           "id": "s14",
-          "text": "C'√® nebbia verso la laguna, bassa e grigia.",
+          "text": "C'Ë nebbia verso la laguna, bassa e grigia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -274,7 +274,7 @@
         },
         {
           "id": "s15",
-          "text": "Scrive un'altra cosa, pi√π sicura e meno vera.",
+          "text": "Scrive un'altra cosa, pi˘ sicura e meno vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -309,7 +309,7 @@
         },
         {
           "id": "s17",
-          "text": "Anche se ho paura del silenzio l√† fuori.",
+          "text": "Anche se ho paura del silenzio l‡ fuori.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -341,7 +341,7 @@
         },
         {
           "id": "s19",
-          "text": "√à vero e anche falso.",
+          "text": "» vero e anche falso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -354,7 +354,7 @@
         },
         {
           "id": "s20",
-          "text": "Vero perch√© la laguna esiste, e lei la vuole.",
+          "text": "Vero perchÈ la laguna esiste, e lei la vuole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -377,7 +377,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Falso perch√© non √® quello che voleva chiedere.",
+          "text": "Falso perchÈ non Ë quello che voleva chiedere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -456,7 +456,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -465,7 +465,7 @@
         },
         {
           "id": "s27",
-          "text": "Bruna non chiede cosa, e questo √® un dono e una punizione.",
+          "text": "Bruna non chiede cosa, e questo Ë un dono e una punizione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -503,7 +503,7 @@
         },
         {
           "id": "s29",
-          "text": "L'acqua √® grigia, e c'√® poco vento.",
+          "text": "L'acqua Ë grigia, e c'Ë poco vento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -551,7 +551,7 @@
         },
         {
           "id": "s32",
-          "text": "Il silenzio della laguna non √® come il silenzio di casa.",
+          "text": "Il silenzio della laguna non Ë come il silenzio di casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -570,7 +570,7 @@
         },
         {
           "id": "s33",
-          "text": "N√© come il silenzio morto tra lei e Pietro al bancone.",
+          "text": "NÈ come il silenzio morto tra lei e Pietro al bancone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -669,7 +669,7 @@
         },
         {
           "id": "s39",
-          "text": "Torna indietro con le mani fredde e la verit√† ancora chiusa.",
+          "text": "Torna indietro con le mani fredde e la verit‡ ancora chiusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -823,5 +823,15 @@
       "explanation": "She says Sei Pietro to the water where nobody hears.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-13.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 132504
+      }
+    ]
+  }
 }

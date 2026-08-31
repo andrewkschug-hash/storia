@@ -40,7 +40,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giada si sveglia presto, prima del caffÃ¨.",
+          "text": "Giada si sveglia presto, prima del caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -88,7 +88,7 @@
         },
         {
           "id": "s04",
-          "text": "La piazza sembra la stessa, e non lo Ã¨.",
+          "text": "La piazza sembra la stessa, e non lo è.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -105,7 +105,7 @@
         },
         {
           "id": "s05",
-          "text": "Il cartello del negozio non dice piÃ¹ ROSSI.",
+          "text": "Il cartello del negozio non dice più ROSSI.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -168,7 +168,7 @@
         },
         {
           "id": "s09",
-          "text": "Oggi Ã¨ Bianchi.",
+          "text": "Oggi è Bianchi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -179,7 +179,7 @@
         },
         {
           "id": "s10",
-          "text": "La panchina stortata non Ã¨ piÃ¹ vicino alla fontana.",
+          "text": "La panchina stortata non è più vicino alla fontana.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -202,7 +202,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Ãˆ sotto l'albero, dove ieri c'era una panchina verde.",
+          "text": "È sotto l'albero, dove ieri c'era una panchina verde.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -219,7 +219,7 @@
         },
         {
           "id": "s12",
-          "text": "Il vaso di gerani Ã¨ passato a destra.",
+          "text": "Il vaso di gerani è passato a destra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -291,7 +291,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Dietro il negozio c'Ã¨ una scala.",
+          "text": "Dietro il negozio c'è una scala.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -305,7 +305,7 @@
         },
         {
           "id": "s17",
-          "text": "In cima alla scala c'Ã¨ Elsa, con un cartello nuovo sotto il braccio.",
+          "text": "In cima alla scala c'è Elsa, con un cartello nuovo sotto il braccio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -375,7 +375,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Quindi non Ã¨ magia.",
+          "text": "Quindi non è magia.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -419,7 +419,7 @@
         },
         {
           "id": "s24",
-          "text": "Non dovevi alzarti cosÃ¬ presto.",
+          "text": "Non dovevi alzarti così presto.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -495,7 +495,7 @@
         },
         {
           "id": "s29",
-          "text": "Non Ã¨ un gioco.",
+          "text": "Non è un gioco.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -507,7 +507,7 @@
         },
         {
           "id": "s30",
-          "text": "Ãˆ lavoro.",
+          "text": "È lavoro.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -735,7 +735,7 @@
       "sentences": [
         {
           "id": "s46",
-          "text": "Non secondo la veritÃ .",
+          "text": "Non secondo la verità.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -758,7 +758,7 @@
         },
         {
           "id": "s48",
-          "text": "La veritÃ , qui, Ã¨ una cosa privata.",
+          "text": "La verità, qui, è una cosa privata.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -807,7 +807,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Non Ã¨ un fantasma che sposta le cose.",
+          "text": "Non è un fantasma che sposta le cose.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -848,7 +848,7 @@
         },
         {
           "id": "s54",
-          "text": "Invece la fa arrabbiare di piÃ¹.",
+          "text": "Invece la fa arrabbiare di più.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -913,7 +913,7 @@
         },
         {
           "id": "s58",
-          "text": "Scenografia Ã¨ una parola grossa.",
+          "text": "Scenografia è una parola grossa.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -1005,7 +1005,7 @@
         },
         {
           "id": "s65",
-          "text": "La frase Ã¨ banale e dura.",
+          "text": "La frase è banale e dura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1025,7 +1025,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "Giada capisce: anche lei Ã¨ un oggetto fuori posto nella messa in scena.",
+          "text": "Giada capisce: anche lei è un oggetto fuori posto nella messa in scena.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1111,7 +1111,7 @@
       "sentences": [
         {
           "id": "s71",
-          "text": "Forse perchÃ© sa che non basterebbe.",
+          "text": "Forse perché sa che non basterebbe.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1125,7 +1125,7 @@
         },
         {
           "id": "s72",
-          "text": "Giada confronta foto e realtÃ  tre volte, come un compito di matematica.",
+          "text": "Giada confronta foto e realtà tre volte, come un compito di matematica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1145,7 +1145,7 @@
         },
         {
           "id": "s73",
-          "text": "Il numero diciassette sulla casa Ã¨ ancora lÃ¬.",
+          "text": "Il numero diciassette sulla casa è ancora lì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1161,7 +1161,7 @@
         },
         {
           "id": "s74",
-          "text": "Anche la fontana Ã¨ nello stesso posto.",
+          "text": "Anche la fontana è nello stesso posto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1197,7 +1197,7 @@
       "sentences": [
         {
           "id": "s76",
-          "text": "Questa osservazione le sembra piÃ¹ crudele di un incubo.",
+          "text": "Questa osservazione le sembra più crudele di un incubo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1230,7 +1230,7 @@
         },
         {
           "id": "s78",
-          "text": "Elsa, dopo la scoperta, parla meno e lavora di piÃ¹.",
+          "text": "Elsa, dopo la scoperta, parla meno e lavora di più.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1285,7 +1285,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "A volte sÃ¬.",
+          "text": "A volte sì.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -1321,7 +1321,7 @@
         },
         {
           "id": "s84",
-          "text": "Giada pensa agli anni di mattine cosÃ¬.",
+          "text": "Giada pensa agli anni di mattine così.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1358,7 +1358,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Capisce perchÃ© ieri Elsa ha detto che ieri Ã¨ giÃ  lontano.",
+          "text": "Capisce perché ieri Elsa ha detto che ieri è già lontano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1411,7 +1411,7 @@
         },
         {
           "id": "s89",
-          "text": "La vernice Ã¨ quasi asciutta.",
+          "text": "La vernice è quasi asciutta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1462,7 +1462,7 @@
         },
         {
           "id": "s92",
-          "text": "La ripetizione non toglie la rabbia, ma le dÃ  una forma.",
+          "text": "La ripetizione non toglie la rabbia, ma le dà una forma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1481,7 +1481,7 @@
         },
         {
           "id": "s93",
-          "text": "In cucina Giada beve acqua, non caffÃ¨.",
+          "text": "In cucina Giada beve acqua, non caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1573,5 +1573,15 @@
       "explanation": "Elsa says it is work for the inspection.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-10.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 270936
+      }
+    ]
+  }
 }

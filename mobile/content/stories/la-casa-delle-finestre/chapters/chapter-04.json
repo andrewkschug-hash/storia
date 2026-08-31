@@ -24,10 +24,10 @@
         "scuola-media"
       ],
       "rememberedFacts": [
-        "Irene draws the faÃ§ade and numbers the windows",
+        "Irene draws the façade and numbers the windows",
         "She watches a second night and writes the times",
         "The order of lights on Tuesday is not the same as Monday",
-        "Tuesdayâ€™s last light is a window that was dark on Monday"
+        "Tuesday’s last light is a window that was dark on Monday"
       ]
     }
   ],
@@ -38,7 +38,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Dopo il lavoro Irene Ã¨ in mansarda.",
+          "text": "Dopo il lavoro Irene è in mansarda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -53,7 +53,7 @@
         },
         {
           "id": "s02",
-          "text": "La scuola di fronte Ã¨ chiusa, come di giorno.",
+          "text": "La scuola di fronte è chiusa, come di giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -157,7 +157,7 @@
         },
         {
           "id": "s09",
-          "text": "Non Ã¨ bello. Ãˆ chiaro.",
+          "text": "Non è bello. È chiaro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -214,7 +214,7 @@
         },
         {
           "id": "s13",
-          "text": "La riga di lunedÃ¬ sera Ã¨ tre, quattro, cinque.",
+          "text": "La riga di lunedì sera è tre, quattro, cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -231,7 +231,7 @@
         },
         {
           "id": "s14",
-          "text": "Irene lo sa perchÃ© lunedÃ¬ ha visto quella linea.",
+          "text": "Irene lo sa perché lunedì ha visto quella linea.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -248,7 +248,7 @@
         },
         {
           "id": "s15",
-          "text": "Scrive lunedÃ¬ in alto sulla pagina.",
+          "text": "Scrive lunedì in alto sulla pagina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -282,7 +282,7 @@
       "sentences": [
         {
           "id": "s17",
-          "text": "Quando Ã¨ sera, Irene spegne la luce della stanza.",
+          "text": "Quando è sera, Irene spegne la luce della stanza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -431,7 +431,7 @@
         },
         {
           "id": "s28",
-          "text": "Ãˆ la finestra tre, al piano due.",
+          "text": "È la finestra tre, al piano due.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -446,7 +446,7 @@
         },
         {
           "id": "s29",
-          "text": "Come lunedÃ¬, pensa Irene.",
+          "text": "Come lunedì, pensa Irene.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -458,7 +458,7 @@
         },
         {
           "id": "s30",
-          "text": "Irene scrive: martedÃ¬, nove, finestra tre.",
+          "text": "Irene scrive: martedì, nove, finestra tre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -509,7 +509,7 @@
         },
         {
           "id": "s34",
-          "text": "Ãˆ la finestra quattro.",
+          "text": "È la finestra quattro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -602,7 +602,7 @@
         },
         {
           "id": "s41",
-          "text": "Alle nove e dieci c'Ã¨ una terza luce.",
+          "text": "Alle nove e dieci c'è una terza luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -630,7 +630,7 @@
         },
         {
           "id": "s43",
-          "text": "Non Ã¨ la finestra cinque.",
+          "text": "Non è la finestra cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -643,7 +643,7 @@
         },
         {
           "id": "s44",
-          "text": "Ãˆ la finestra otto, al piano tre.",
+          "text": "È la finestra otto, al piano tre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -694,7 +694,7 @@
         },
         {
           "id": "s47",
-          "text": "Irene apre la pagina di lunedÃ¬.",
+          "text": "Irene apre la pagina di lunedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -708,7 +708,7 @@
         },
         {
           "id": "s48",
-          "text": "LunedÃ¬: prima tre, poi quattro, poi cinque.",
+          "text": "Lunedì: prima tre, poi quattro, poi cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -737,7 +737,7 @@
         },
         {
           "id": "s50",
-          "text": "MartedÃ¬: prima tre, poi quattro, poi otto.",
+          "text": "Martedì: prima tre, poi quattro, poi otto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -752,7 +752,7 @@
         },
         {
           "id": "s51",
-          "text": "L'ordine non Ã¨ lo stesso.",
+          "text": "L'ordine non è lo stesso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -765,7 +765,7 @@
         },
         {
           "id": "s52",
-          "text": "La linea non Ã¨ la stessa.",
+          "text": "La linea non è la stessa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -807,7 +807,7 @@
         },
         {
           "id": "s55",
-          "text": "LunedÃ¬ la finestra otto era scura.",
+          "text": "Lunedì la finestra otto era scura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -834,7 +834,7 @@
         },
         {
           "id": "s57",
-          "text": "MartedÃ¬ l'ultima luce Ã¨ proprio lÃ¬.",
+          "text": "Martedì l'ultima luce è proprio lì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -859,7 +859,7 @@
         },
         {
           "id": "s59",
-          "text": "Irene non capisce il perchÃ©.",
+          "text": "Irene non capisce il perché.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -872,7 +872,7 @@
         },
         {
           "id": "s60",
-          "text": "PerÃ² scrive l'ora, il numero, il piano.",
+          "text": "Però scrive l'ora, il numero, il piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -905,7 +905,7 @@
         },
         {
           "id": "s62",
-          "text": "Il piano tre, lunedÃ¬, era tutto scuro.",
+          "text": "Il piano tre, lunedì, era tutto scuro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -920,7 +920,7 @@
         },
         {
           "id": "s63",
-          "text": "MartedÃ¬ no.",
+          "text": "Martedì no.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -984,7 +984,7 @@
         },
         {
           "id": "s68",
-          "text": "La finestra otto resta sulla pagina di martedÃ¬.",
+          "text": "La finestra otto resta sulla pagina di martedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1000,7 +1000,7 @@
         },
         {
           "id": "s69",
-          "text": "La scuola Ã¨ di nuovo buia.",
+          "text": "La scuola è di nuovo buia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1037,18 +1037,18 @@
       "question": "What does she write when a light appears?",
       "choices": [
         "The time and the window number",
-        "Saraâ€™s name",
+        "Sara’s name",
         "A message to the Carabinieri"
       ],
       "correctChoice": 0,
-      "explanation": "She writes Tuesday, nine, window three â€” then the later times and numbers.",
+      "explanation": "She writes Tuesday, nine, window three — then the later times and numbers.",
       "difficulty": 2
     },
     {
       "id": "ch04_q03",
       "chapterId": "la-casa-delle-finestre-04",
       "type": "direct",
-      "question": "Is Tuesdayâ€™s path the same as Mondayâ€™s?",
+      "question": "Is Tuesday’s path the same as Monday’s?",
       "choices": [
         "No. The order is different",
         "Yes. It is the same three windows",
@@ -1062,15 +1062,25 @@
       "id": "ch04_q04",
       "chapterId": "la-casa-delle-finestre-04",
       "type": "inference",
-      "question": "What is special about Tuesdayâ€™s last light?",
+      "question": "What is special about Tuesday’s last light?",
       "choices": [
         "It is a window that was dark on Monday",
-        "It is in Ireneâ€™s attic",
+        "It is in Irene’s attic",
         "Quinto turns it on from the courtyard"
       ],
       "correctChoice": 0,
       "explanation": "The last light is window eight. On Monday that window stayed dark all evening.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 205848
+      }
+    ]
+  }
 }

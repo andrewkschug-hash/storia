@@ -5,14 +5,27 @@
   "title": "The clock",
   "titleIt": "Che ore sono?",
   "difficultyLevel": 1,
-  "locationIds": ["camera-elena", "cucina-elena"],
-  "characterIds": ["elena", "teresa", "sara"],
+  "locationIds": [
+    "camera-elena",
+    "cucina-elena"
+  ],
+  "characterIds": [
+    "elena",
+    "teresa",
+    "sara"
+  ],
   "events": [
     {
       "id": "ev-04-clock",
       "summary": "Elena wakes late and Teresa helps her check the time and the morning routine.",
-      "characterIds": ["elena", "teresa"],
-      "locationIds": ["camera-elena", "cucina-elena"],
+      "characterIds": [
+        "elena",
+        "teresa"
+      ],
+      "locationIds": [
+        "camera-elena",
+        "cucina-elena"
+      ],
       "rememberedFacts": [
         "Elena wakes up late",
         "It is eight in the morning",
@@ -27,38 +40,70 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Ãˆ mattina, e Elena Ã¨ nel letto.",
+          "text": "È mattina, e Elena è nel letto.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["essere", "mattina", "e", "elena", "essere", "nel", "letto"]
+          "lemmas": [
+            "essere",
+            "mattina",
+            "e",
+            "elena",
+            "essere",
+            "nel",
+            "letto"
+          ]
         },
         {
           "id": "s02",
           "text": "Elena si sveglia tardi.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "si", "svegliarsi", "tardi"]
+          "lemmas": [
+            "elena",
+            "si",
+            "svegliarsi",
+            "tardi"
+          ]
         },
         {
           "id": "s03",
-          "text": "Oggi Elena non Ã¨ pronta.",
+          "text": "Oggi Elena non è pronta.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["oggi", "elena", "non", "essere", "pronto"]
+          "lemmas": [
+            "oggi",
+            "elena",
+            "non",
+            "essere",
+            "pronto"
+          ]
         },
         {
           "id": "s04",
-          "text": "Mamma Teresa Ã¨ alla porta della camera.",
+          "text": "Mamma Teresa è alla porta della camera.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["mamma", "teresa", "essere", "alla", "porta", "della", "camera"]
+          "lemmas": [
+            "mamma",
+            "teresa",
+            "essere",
+            "alla",
+            "porta",
+            "della",
+            "camera"
+          ]
         },
         {
           "id": "s05",
           "text": "Elena, che ore sono?",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["elena", "che", "ore", "essere"]
+          "lemmas": [
+            "elena",
+            "che",
+            "ore",
+            "essere"
+          ]
         }
       ]
     },
@@ -71,35 +116,60 @@
           "text": "Elena guarda l'ora.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "guardare", "ora"]
+          "lemmas": [
+            "elena",
+            "guardare",
+            "ora"
+          ]
         },
         {
           "id": "s07",
           "text": "Sono le otto.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["essere", "le", "otto"]
+          "lemmas": [
+            "essere",
+            "le",
+            "otto"
+          ]
         },
         {
           "id": "s08",
-          "text": "Otto di mattina. Ãˆ tardi!",
+          "text": "Otto di mattina. È tardi!",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["otto", "di", "mattina", "essere", "tardi"]
+          "lemmas": [
+            "otto",
+            "di",
+            "mattina",
+            "essere",
+            "tardi"
+          ]
         },
         {
           "id": "s09",
           "text": "Elena deve alzarsi adesso.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "dovere", "alzarsi", "adesso"]
+          "lemmas": [
+            "elena",
+            "dovere",
+            "alzarsi",
+            "adesso"
+          ]
         },
         {
           "id": "s10",
           "text": "Mi alzo, mamma. Un momento.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["mi", "alzarsi", "mamma", "un", "momento"]
+          "lemmas": [
+            "mi",
+            "alzarsi",
+            "mamma",
+            "un",
+            "momento"
+          ]
         }
       ]
     },
@@ -109,45 +179,87 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Elena Ã¨ in cucina con Teresa.",
+          "text": "Elena è in cucina con Teresa.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "essere", "in", "cucina", "con", "teresa"]
+          "lemmas": [
+            "elena",
+            "essere",
+            "in",
+            "cucina",
+            "con",
+            "teresa"
+          ]
         },
         {
           "id": "s12",
-          "text": "A che ora Ã¨ la colazione?",
+          "text": "A che ora è la colazione?",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["a", "che", "ora", "essere", "la", "colazione"]
+          "lemmas": [
+            "a",
+            "che",
+            "ora",
+            "essere",
+            "la",
+            "colazione"
+          ]
         },
         {
           "id": "s13",
-          "text": "La colazione Ã¨ alle otto.",
+          "text": "La colazione è alle otto.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["la", "colazione", "essere", "alle", "otto"]
+          "lemmas": [
+            "la",
+            "colazione",
+            "essere",
+            "alle",
+            "otto"
+          ]
         },
         {
           "id": "s14",
           "text": "Adesso sono le otto, o le nove?",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["adesso", "essere", "le", "otto", "o", "le", "nove"]
+          "lemmas": [
+            "adesso",
+            "essere",
+            "le",
+            "otto",
+            "o",
+            "le",
+            "nove"
+          ]
         },
         {
           "id": "s15",
           "text": "Sono le otto. Non sono le nove.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["essere", "le", "otto", "non", "essere", "le", "nove"]
+          "lemmas": [
+            "essere",
+            "le",
+            "otto",
+            "non",
+            "essere",
+            "le",
+            "nove"
+          ]
         },
         {
           "id": "s16",
           "text": "A mezzogiorno mangiamo, non adesso.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["a", "mezzogiorno", "mangiare", "non", "adesso"]
+          "lemmas": [
+            "a",
+            "mezzogiorno",
+            "mangiare",
+            "non",
+            "adesso"
+          ]
         }
       ]
     },
@@ -157,90 +269,191 @@
       "sentences": [
         {
           "id": "s17",
-          "text": "Di mattina Elena vuole un caffÃ¨.",
+          "text": "Di mattina Elena vuole un caffè.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["di", "mattina", "elena", "volere", "un", "caffe"]
+          "lemmas": [
+            "di",
+            "mattina",
+            "elena",
+            "volere",
+            "un",
+            "caffe"
+          ]
         },
         {
           "id": "s18",
-          "text": "Di pomeriggio Sara Ã¨ fuori.",
+          "text": "Di pomeriggio Sara è fuori.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["di", "pomeriggio", "sara", "essere", "fuori"]
+          "lemmas": [
+            "di",
+            "pomeriggio",
+            "sara",
+            "essere",
+            "fuori"
+          ]
         },
         {
           "id": "s19",
-          "text": "Di sera la famiglia Ã¨ in casa.",
+          "text": "Di sera la famiglia è in casa.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["di", "sera", "la", "famiglia", "essere", "in", "casa"]
+          "lemmas": [
+            "di",
+            "sera",
+            "la",
+            "famiglia",
+            "essere",
+            "in",
+            "casa"
+          ]
         },
         {
           "id": "s20",
           "text": "Domani Elena si sveglia alle sette.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["domani", "elena", "si", "svegliarsi", "alle", "sette"]
+          "lemmas": [
+            "domani",
+            "elena",
+            "si",
+            "svegliarsi",
+            "alle",
+            "sette"
+          ]
         },
         {
           "id": "s21",
           "text": "Alle sette, non alle otto.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["alle", "sette", "non", "alle", "otto"]
+          "lemmas": [
+            "alle",
+            "sette",
+            "non",
+            "alle",
+            "otto"
+          ]
         },
         {
           "id": "s22",
           "text": "Va bene, mamma. Domani alle sette.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["andare", "bene", "mamma", "domani", "alle", "sette"]
+          "lemmas": [
+            "andare",
+            "bene",
+            "mamma",
+            "domani",
+            "alle",
+            "sette"
+          ]
         },
         {
           "id": "s23",
-          "text": "Oggi Elena Ã¨ tardi, ma Ã¨ a casa.",
+          "text": "Oggi Elena è tardi, ma è a casa.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["oggi", "elena", "essere", "tardi", "ma", "essere", "a", "casa"]
+          "lemmas": [
+            "oggi",
+            "elena",
+            "essere",
+            "tardi",
+            "ma",
+            "essere",
+            "a",
+            "casa"
+          ]
         },
         {
           "id": "s24",
           "text": "Elena guarda l'ora ancora una volta.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "guardare", "ora", "ancora", "una", "volta"]
+          "lemmas": [
+            "elena",
+            "guardare",
+            "ora",
+            "ancora",
+            "una",
+            "volta"
+          ]
         },
         {
           "id": "s25",
-          "text": "Non Ã¨ l'una. Sono le otto di mattina.",
+          "text": "Non è l'una. Sono le otto di mattina.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["non", "essere", "uno", "essere", "le", "otto", "di", "mattina"]
+          "lemmas": [
+            "non",
+            "essere",
+            "uno",
+            "essere",
+            "le",
+            "otto",
+            "di",
+            "mattina"
+          ]
         },
         {
           "id": "s26",
           "text": "Sono le due di pomeriggio? No.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["essere", "le", "due", "di", "pomeriggio", "no"]
+          "lemmas": [
+            "essere",
+            "le",
+            "due",
+            "di",
+            "pomeriggio",
+            "no"
+          ]
         },
         {
           "id": "s27",
           "text": "A mezzogiorno sono le dodici, non le tre.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["a", "mezzogiorno", "essere", "le", "dodici", "non", "le", "tre"]
+          "lemmas": [
+            "a",
+            "mezzogiorno",
+            "essere",
+            "le",
+            "dodici",
+            "non",
+            "le",
+            "tre"
+          ]
         },
         {
           "id": "s28",
           "text": "Elena ascolta mamma e guarda l'ora in cucina.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "ascoltare", "mamma", "e", "guardare", "ora", "in", "cucina"]
+          "lemmas": [
+            "elena",
+            "ascoltare",
+            "mamma",
+            "e",
+            "guardare",
+            "ora",
+            "in",
+            "cucina"
+          ]
         }
       ]
     }
   ],
-  "questions": []
+  "questions": [],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 78696
+      }
+    ]
+  }
 }

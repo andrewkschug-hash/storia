@@ -90,7 +90,7 @@
         },
         {
           "id": "s04",
-          "text": "LÃ¬ si ferma e indica con il mento.",
+          "text": "Lì si ferma e indica con il mento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -125,7 +125,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "E laggiÃ¹, dove vedi il greto largo, doveva esserci il lago.",
+          "text": "E laggiù, dove vedi il greto largo, doveva esserci il lago.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -154,7 +154,7 @@
         },
         {
           "id": "s08",
-          "text": "Non c'Ã¨ un lago.",
+          "text": "Non c'è un lago.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -166,7 +166,7 @@
         },
         {
           "id": "s09",
-          "text": "C'Ã¨ terra grigia, sassi, un filo d'acqua stretto.",
+          "text": "C'è terra grigia, sassi, un filo d'acqua stretto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -245,7 +245,7 @@
         },
         {
           "id": "s14",
-          "text": "Il progetto Ã¨ restato a metÃ .",
+          "text": "Il progetto è restato a metà.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -280,7 +280,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Quindi il tramonto non Ã¨ un sortilegio.",
+          "text": "Quindi il tramonto non è un sortilegio.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -295,7 +295,7 @@
         },
         {
           "id": "s17",
-          "text": "Ãˆ un orologio della compagnia.",
+          "text": "È un orologio della compagnia.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -322,7 +322,7 @@
         },
         {
           "id": "s19",
-          "text": "PerchÃ© Ã¨ piÃ¹ facile tenere una procedura che cancellarla.",
+          "text": "Perché è più facile tenere una procedura che cancellarla.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -339,7 +339,7 @@
         },
         {
           "id": "s20",
-          "text": "Neri tira fuori dalla tasca la mappa piegata che Giada ha giÃ  visto.",
+          "text": "Neri tira fuori dalla tasca la mappa piegata che Giada ha già visto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -389,7 +389,7 @@
         },
         {
           "id": "s23",
-          "text": "C'Ã¨ una macchia bianca dove dovrebbe esserci Collevento.",
+          "text": "C'è una macchia bianca dove dovrebbe esserci Collevento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -449,7 +449,7 @@
         },
         {
           "id": "s27",
-          "text": "Sulle carte nuove il lago futuro era giÃ  disegnato.",
+          "text": "Sulle carte nuove il lago futuro era già disegnato.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -466,7 +466,7 @@
         },
         {
           "id": "s28",
-          "text": "Poi il lago non Ã¨ arrivato.",
+          "text": "Poi il lago non è arrivato.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -580,7 +580,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Esistere per noi e esistere per loro non Ã¨ uguale.",
+          "text": "Esistere per noi e esistere per loro non è uguale.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -624,7 +624,7 @@
         },
         {
           "id": "s39",
-          "text": "Arrivano offerte per andarcene Â«in modo civileÂ».",
+          "text": "Arrivano offerte per andarcene «in modo civile».",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -826,7 +826,7 @@
         },
         {
           "id": "s52",
-          "text": "Ãˆ una difesa fatta di scenografia e silenzio.",
+          "text": "È una difesa fatta di scenografia e silenzio.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -875,7 +875,7 @@
         },
         {
           "id": "s55",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -986,7 +986,7 @@
         },
         {
           "id": "s62",
-          "text": "PerÃ² se sparisco solo io, il paese resta piÃ¹ debole.",
+          "text": "Però se sparisco solo io, il paese resta più debole.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -1004,7 +1004,7 @@
         },
         {
           "id": "s63",
-          "text": "E loro diventano piÃ¹ forti.",
+          "text": "E loro diventano più forti.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -1053,7 +1053,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "Non Ã¨ folklore.",
+          "text": "Non è folklore.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1064,7 +1064,7 @@
         },
         {
           "id": "s67",
-          "text": "Ãˆ amministrazione e acqua e paura di essere utili al posto sbagliato.",
+          "text": "È amministrazione e acqua e paura di essere utili al posto sbagliato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1192,7 +1192,7 @@
         },
         {
           "id": "s74",
-          "text": "Giada chiede perchÃ© non protestano in cittÃ .",
+          "text": "Giada chiede perché non protestano in città.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1308,7 +1308,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "Capisce la frase Â«non esistiamo per aiutarliÂ» come una regola di difesa.",
+          "text": "Capisce la frase «non esistiamo per aiutarli» come una regola di difesa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1375,7 +1375,7 @@
         },
         {
           "id": "s85",
-          "text": "Quella carta Ã¨ piÃ¹ vera del cartello in piazza.",
+          "text": "Quella carta è più vera del cartello in piazza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1398,7 +1398,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "PerchÃ© non cerca di sembrare un paese perfetto.",
+          "text": "Perché non cerca di sembrare un paese perfetto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1488,7 +1488,7 @@
         },
         {
           "id": "s92",
-          "text": "La confessione Ã¨ piccola e pesante.",
+          "text": "La confessione è piccola e pesante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1627,5 +1627,15 @@
       "explanation": "He says: non esistiamo per aiutarli.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-14.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 299136
+      }
+    ]
+  }
 }

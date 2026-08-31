@@ -76,7 +76,7 @@
         },
         {
           "id": "s03",
-          "text": "Esce sulla strada del colle quando il sole Ã¨ alto.",
+          "text": "Esce sulla strada del colle quando il sole è alto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -110,7 +110,7 @@
         },
         {
           "id": "s05",
-          "text": "L'aria cambia: piÃ¹ fresca, piÃ¹ chiusa.",
+          "text": "L'aria cambia: più fresca, più chiusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -190,7 +190,7 @@
         },
         {
           "id": "s10",
-          "text": "Il cancello Ã¨ chiuso con una catena vecchia.",
+          "text": "Il cancello è chiuso con una catena vecchia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -212,7 +212,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Sul palo c'Ã¨ un cartello giallo piegato dal tempo.",
+          "text": "Sul palo c'è un cartello giallo piegato dal tempo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -256,7 +256,7 @@
         },
         {
           "id": "s14",
-          "text": "Non Ã¨ un teschio.",
+          "text": "Non è un teschio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -268,7 +268,7 @@
         },
         {
           "id": "s15",
-          "text": "Ãˆ un pittogramma di terreno che cede: una figura stilizzata che sprofonda.",
+          "text": "È un pittogramma di terreno che cede: una figura stilizzata che sprofonda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -321,7 +321,7 @@
         },
         {
           "id": "s18",
-          "text": "Sollievo perchÃ© non c'Ã¨ un mostro da storia.",
+          "text": "Sollievo perché non c'è un mostro da storia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -337,7 +337,7 @@
         },
         {
           "id": "s19",
-          "text": "Paura perchÃ© il suolo puÃ² aprirsi davvero.",
+          "text": "Paura perché il suolo può aprirsi davvero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -372,7 +372,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Cerca un punto dove la rete Ã¨ piÃ¹ bassa.",
+          "text": "Cerca un punto dove la rete è più bassa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -407,7 +407,7 @@
         },
         {
           "id": "s23",
-          "text": "La targa Ã¨ sporca, ma le lettere si leggono.",
+          "text": "La targa è sporca, ma le lettere si leggono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -559,7 +559,7 @@
         },
         {
           "id": "s34",
-          "text": "Dietro la targa il terreno Ã¨ irregolare, piÃ¹ basso, con erba diversa.",
+          "text": "Dietro la targa il terreno è irregolare, più basso, con erba diversa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -579,7 +579,7 @@
         },
         {
           "id": "s35",
-          "text": "Capisce: qui qualcosa Ã¨ crollato, anni fa.",
+          "text": "Capisce: qui qualcosa è crollato, anni fa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -600,7 +600,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Il memorial non Ã¨ magia.",
+          "text": "Il memorial non è magia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -613,7 +613,7 @@
         },
         {
           "id": "s37",
-          "text": "Ãˆ memoria tecnica e lutto civile.",
+          "text": "È memoria tecnica e lutto civile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -694,7 +694,7 @@
         },
         {
           "id": "s43",
-          "text": "Non Ã¨ una storia per spaventare i bambini.",
+          "text": "Non è una storia per spaventare i bambini.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -751,7 +751,7 @@
         },
         {
           "id": "s47",
-          "text": "PerchÃ© nessuno spiega cosÃ¬ in paese?",
+          "text": "Perché nessuno spiega così in paese?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -777,7 +777,7 @@
         },
         {
           "id": "s49",
-          "text": "PerchÃ© Â«voragineÂ» fa meno paura di Â«bosco maledettoÂ» ai turisti.",
+          "text": "Perché «voragine» fa meno paura di «bosco maledetto» ai turisti.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -814,7 +814,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "PerÃ² a volte le storie corte tengono i bambini lontani meglio delle spiegazioni.",
+          "text": "Però a volte le storie corte tengono i bambini lontani meglio delle spiegazioni.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -1016,7 +1016,7 @@
         },
         {
           "id": "s65",
-          "text": "Prima del pomeriggio le ombre mentono sulla profonditÃ  delle buche.",
+          "text": "Prima del pomeriggio le ombre mentono sulla profondità delle buche.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -1130,7 +1130,7 @@
       "sentences": [
         {
           "id": "s71",
-          "text": "Forse Ã¨ caso, forse Ã¨ il terreno che non ama il peso.",
+          "text": "Forse è caso, forse è il terreno che non ama il peso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1182,7 +1182,7 @@
         },
         {
           "id": "s74",
-          "text": "Legge di nuovo Â«PERICOLO VORAGINIÂ» come si legge un orario.",
+          "text": "Legge di nuovo «PERICOLO VORAGINI» come si legge un orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1325,7 +1325,7 @@
         },
         {
           "id": "s82",
-          "text": "Per questo odia quando gli adulti usano favole per comoditÃ .",
+          "text": "Per questo odia quando gli adulti usano favole per comodità.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1411,7 +1411,7 @@
         },
         {
           "id": "s87",
-          "text": "Una prova che il divieto non Ã¨ teatro vuoto.",
+          "text": "Una prova che il divieto non è teatro vuoto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1428,7 +1428,7 @@
         },
         {
           "id": "s88",
-          "text": "Ãˆ un confine fisico, tenuto da gente che sa perchÃ©.",
+          "text": "È un confine fisico, tenuto da gente che sa perché.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1446,7 +1446,7 @@
         },
         {
           "id": "s89",
-          "text": "Sulla via del ritorno le gambe sono piÃ¹ pesanti.",
+          "text": "Sulla via del ritorno le gambe sono più pesanti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1505,7 +1505,7 @@
         },
         {
           "id": "s92",
-          "text": "Nessuna delle due Ã¨ un destino scelto.",
+          "text": "Nessuna delle due è un destino scelto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1578,5 +1578,15 @@
       "explanation": "She photographs from outside and does not cross.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-13.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 296064
+      }
+    ]
+  }
 }

@@ -18,7 +18,7 @@
   "events": [
     {
       "id": "ev-il-villaggio-che-non-esiste-19",
-      "summary": "Giada visits the fenced memorial in daylight. She reads the 1978 names, respects the sinkhole warning, and finds no ghostâ€”only a place that asks for care.",
+      "summary": "Giada visits the fenced memorial in daylight. She reads the 1978 names, respects the sinkhole warning, and finds no ghost—only a place that asks for care.",
       "characterIds": [
         "giada-rinaldi",
         "neri",
@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La mattina dopo Giada esce presto, mentre la piazza Ã¨ ancora quieta.",
+          "text": "La mattina dopo Giada esce presto, mentre la piazza è ancora quieta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -184,7 +184,7 @@
         },
         {
           "id": "s09",
-          "text": "Non c'Ã¨ niente da vincere lÃ¬.",
+          "text": "Non c'è niente da vincere lì.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -226,7 +226,7 @@
         },
         {
           "id": "s12",
-          "text": "La strada verso il recinto Ã¨ stretta e piena di sassi.",
+          "text": "La strada verso il recinto è stretta e piena di sassi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -261,7 +261,7 @@
         },
         {
           "id": "s14",
-          "text": "Vicino al cancello c'Ã¨ il cartello con il pittogramma delle voragini.",
+          "text": "Vicino al cancello c'è il cartello con il pittogramma delle voragini.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -280,7 +280,7 @@
         },
         {
           "id": "s15",
-          "text": "Non Ã¨ un teschio da film; Ã¨ un avviso da cantiere vero.",
+          "text": "Non è un teschio da film; è un avviso da cantiere vero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -324,7 +324,7 @@
         },
         {
           "id": "s17",
-          "text": "Di giorno si puÃ² guardare.",
+          "text": "Di giorno si può guardare.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -337,7 +337,7 @@
         },
         {
           "id": "s18",
-          "text": "Di notte no, e non perchÃ© ci siano spiriti.",
+          "text": "Di notte no, e non perché ci siano spiriti.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -354,7 +354,7 @@
         },
         {
           "id": "s19",
-          "text": "PerchÃ© non si vedono i buchi.",
+          "text": "Perché non si vedono i buchi.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -389,7 +389,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Neri resta fuori dal cancello, come se conoscesse giÃ  ogni nome.",
+          "text": "Neri resta fuori dal cancello, come se conoscesse già ogni nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -429,7 +429,7 @@
         },
         {
           "id": "s24",
-          "text": "Giada apre il cancelletto e cammina solo dove l'erba Ã¨ calcata.",
+          "text": "Giada apre il cancelletto e cammina solo dove l'erba è calcata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -448,7 +448,7 @@
         },
         {
           "id": "s25",
-          "text": "Il memorial Ã¨ una lastra di pietra bassa, non un monumento grande.",
+          "text": "Il memorial è una lastra di pietra bassa, non un monumento grande.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -634,7 +634,7 @@
         },
         {
           "id": "s35",
-          "text": "Questo Ã¨ tutto.",
+          "text": "Questo è tutto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -801,7 +801,7 @@
       "sentences": [
         {
           "id": "s46",
-          "text": "Leggere Ã¨ diverso da cercare fantasmi.",
+          "text": "Leggere è diverso da cercare fantasmi.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -924,7 +924,7 @@
         },
         {
           "id": "s54",
-          "text": "Di coraggio, di mistero, di una storia piÃ¹ grande di noi.",
+          "text": "Di coraggio, di mistero, di una storia più grande di noi.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -997,7 +997,7 @@
         },
         {
           "id": "s58",
-          "text": "Giada pensa che il fantastico, qui, Ã¨ restare nonostante le mappe.",
+          "text": "Giada pensa che il fantastico, qui, è restare nonostante le mappe.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1016,7 +1016,7 @@
         },
         {
           "id": "s59",
-          "text": "Non Ã¨ un altro mondo.",
+          "text": "Non è un altro mondo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1029,7 +1029,7 @@
         },
         {
           "id": "s60",
-          "text": "Ãˆ questo mondo, tenuto fuori dagli orari.",
+          "text": "È questo mondo, tenuto fuori dagli orari.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1258,7 +1258,7 @@
         },
         {
           "id": "s74",
-          "text": "PiÃ¹ tardi, dalla finestra, rivede il bordo scuro degli alberi.",
+          "text": "Più tardi, dalla finestra, rivede il bordo scuro degli alberi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1300,7 +1300,7 @@
       "sentences": [
         {
           "id": "s76",
-          "text": "Ha rispetto per un terreno che puÃ² cedere sotto i piedi.",
+          "text": "Ha rispetto per un terreno che può cedere sotto i piedi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1319,7 +1319,7 @@
         },
         {
           "id": "s77",
-          "text": "I nomi del millenovecentosettantotto restano nella memoria senza teatralitÃ .",
+          "text": "I nomi del millenovecentosettantotto restano nella memoria senza teatralità.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1336,7 +1336,7 @@
         },
         {
           "id": "s78",
-          "text": "Giada non li usa per spiegare Elsa, nÃ© la diga, nÃ© la madre.",
+          "text": "Giada non li usa per spiegare Elsa, né la diga, né la madre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1399,7 +1399,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "Pensa che il rispetto Ã¨ anche questo: pulire, non raccontare spiriti.",
+          "text": "Pensa che il rispetto è anche questo: pulire, non raccontare spiriti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1499,7 +1499,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Questa scelta le sembra piÃ¹ adulta della rabbia di ieri.",
+          "text": "Questa scelta le sembra più adulta della rabbia di ieri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1561,5 +1561,15 @@
       "explanation": "She reads the names without photos and refuses to use the place as collected proof.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-19.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 274344
+      }
+    ]
+  }
 }

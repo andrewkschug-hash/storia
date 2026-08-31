@@ -60,7 +60,7 @@
         },
         {
           "id": "s02",
-          "text": "Il cancello del cortile √® chiuso, come sempre.",
+          "text": "Il cancello del cortile Ë chiuso, come sempre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -76,7 +76,7 @@
         },
         {
           "id": "s03",
-          "text": "Quinto √® l√¨, dentro.",
+          "text": "Quinto Ë lÏ, dentro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -88,7 +88,7 @@
         },
         {
           "id": "s04",
-          "text": "Irene √® fuori, in strada.",
+          "text": "Irene Ë fuori, in strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -101,7 +101,7 @@
         },
         {
           "id": "s05",
-          "text": "Tra loro c'√® il cancello.",
+          "text": "Tra loro c'Ë il cancello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -154,7 +154,7 @@
         },
         {
           "id": "s09",
-          "text": "Le piante morte sono ancora l√¨.",
+          "text": "Le piante morte sono ancora lÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -188,7 +188,7 @@
         },
         {
           "id": "s12",
-          "text": "Lei √® Quinto, vero?",
+          "text": "Lei Ë Quinto, vero?",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -212,7 +212,7 @@
         },
         {
           "id": "s14",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -300,7 +300,7 @@
         },
         {
           "id": "s21",
-          "text": "√à una bella giornata.",
+          "text": "» una bella giornata.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -323,7 +323,7 @@
         },
         {
           "id": "s23",
-          "text": "S√¨. C'√® sole.",
+          "text": "SÏ. C'Ë sole.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -334,7 +334,7 @@
         },
         {
           "id": "s24",
-          "text": "C'√® poco vento, oggi.",
+          "text": "C'Ë poco vento, oggi.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -384,7 +384,7 @@
         },
         {
           "id": "s28",
-          "text": "S√¨. Un contratto breve.",
+          "text": "SÏ. Un contratto breve.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -406,7 +406,7 @@
         },
         {
           "id": "s30",
-          "text": "Il paese √® piccolo.",
+          "text": "Il paese Ë piccolo.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -439,7 +439,7 @@
         },
         {
           "id": "s33",
-          "text": "Oggi non c'√® acqua per le piante.",
+          "text": "Oggi non c'Ë acqua per le piante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -489,7 +489,7 @@
         },
         {
           "id": "s37",
-          "text": "Basta cos√¨.",
+          "text": "Basta cosÏ.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -499,7 +499,7 @@
         },
         {
           "id": "s38",
-          "text": "Irene non chiede perch√©.",
+          "text": "Irene non chiede perchÈ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -532,7 +532,7 @@
         },
         {
           "id": "s40",
-          "text": "C'√® un mazzo di chiavi.",
+          "text": "C'Ë un mazzo di chiavi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -588,7 +588,7 @@
         },
         {
           "id": "s44",
-          "text": "Alcune sono piccole. Una √® grande.",
+          "text": "Alcune sono piccole. Una Ë grande.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -658,7 +658,7 @@
         },
         {
           "id": "s49",
-          "text": "Questa √® la porta.",
+          "text": "Questa Ë la porta.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -691,7 +691,7 @@
         },
         {
           "id": "s52",
-          "text": "Indica un'altra chiave, pi√π piccola.",
+          "text": "Indica un'altra chiave, pi˘ piccola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -726,7 +726,7 @@
         },
         {
           "id": "s55",
-          "text": "La porta grande √® quest'altra.",
+          "text": "La porta grande Ë quest'altra.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -773,7 +773,7 @@
         },
         {
           "id": "s59",
-          "text": "Non capisce quale chiave √® vera.",
+          "text": "Non capisce quale chiave Ë vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -894,7 +894,7 @@
         },
         {
           "id": "s68",
-          "text": "Non vado. Non √® il mio piano.",
+          "text": "Non vado. Non Ë il mio piano.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -909,7 +909,7 @@
         },
         {
           "id": "s69",
-          "text": "Non c'√® luce, non c'√® bisogno.",
+          "text": "Non c'Ë luce, non c'Ë bisogno.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -923,7 +923,7 @@
         },
         {
           "id": "s70",
-          "text": "La scuola √® chiusa da due anni.",
+          "text": "La scuola Ë chiusa da due anni.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -1057,7 +1057,7 @@
         },
         {
           "id": "s80",
-          "text": "Quinto sta gi√† voltando le spalle.",
+          "text": "Quinto sta gi‡ voltando le spalle.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1087,7 +1087,7 @@
         },
         {
           "id": "s82",
-          "text": "La scuola √® vuota.",
+          "text": "La scuola Ë vuota.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -1138,7 +1138,7 @@
         },
         {
           "id": "s86",
-          "text": "Scrive: chiavi. Non piano di sopra. La scuola √® vuota?",
+          "text": "Scrive: chiavi. Non piano di sopra. La scuola Ë vuota?",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1177,7 +1177,7 @@
       "choices": [
         "The caretaker of the school",
         "A teacher who still works there",
-        "Mimmo‚Äôs father"
+        "Mimmoís father"
       ],
       "correctChoice": 0,
       "explanation": "He says he is the custode.",
@@ -1191,7 +1191,7 @@
       "choices": [
         "A bunch of keys",
         "The watering can",
-        "Irene‚Äôs notebook"
+        "Ireneís notebook"
       ],
       "correctChoice": 0,
       "explanation": "He takes a ring of keys from his pocket. He points to one key, then another.",
@@ -1215,7 +1215,7 @@
       "id": "ch06_q04",
       "chapterId": "la-casa-delle-finestre-06",
       "type": "inference",
-      "question": "How does Quinto say ‚ÄúLa scuola √® vuota‚Äù?",
+      "question": "How does Quinto say ìLa scuola Ë vuotaî?",
       "choices": [
         "Toward the gate, without looking at Irene",
         "With a smile, looking her in the eye",
@@ -1225,5 +1225,15 @@
       "explanation": "He speaks toward the gate, not toward Irene. He does not look at her when he says it.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-06.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 228840
+      }
+    ]
+  }
 }

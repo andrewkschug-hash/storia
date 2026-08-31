@@ -30,7 +30,7 @@
       "rememberedFacts": [
         "A boy named Mimmo films the school for fun",
         "He says there is a ghost",
-        "Irene almost believes the kidsâ€™ story",
+        "Irene almost believes the kids’ story",
         "The video time is afternoon, not night",
         "At dusk Mimmo is gone and the real lamp starts anyway"
       ]
@@ -85,7 +85,7 @@
         },
         {
           "id": "s04",
-          "text": "Uno Ã¨ piÃ¹ grande degli altri.",
+          "text": "Uno è più grande degli altri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -99,7 +99,7 @@
         },
         {
           "id": "s05",
-          "text": "Ha diciannove anni, o cosÃ¬ dice.",
+          "text": "Ha diciannove anni, o così dice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -128,7 +128,7 @@
         },
         {
           "id": "s07",
-          "text": "Irene cammina lento, perchÃ© sente le parole.",
+          "text": "Irene cammina lento, perché sente le parole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -159,7 +159,7 @@
         },
         {
           "id": "s09",
-          "text": "Dice che c'Ã¨ un fantasma.",
+          "text": "Dice che c'è un fantasma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -184,7 +184,7 @@
         },
         {
           "id": "s11",
-          "text": "Irene ascolta perchÃ© anche lei ha visto una luce.",
+          "text": "Irene ascolta perché anche lei ha visto una luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -393,7 +393,7 @@
       "sentences": [
         {
           "id": "s27",
-          "text": "Mimmo le dÃ  il telefono.",
+          "text": "Mimmo le dà il telefono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -430,7 +430,7 @@
         },
         {
           "id": "s30",
-          "text": "C'Ã¨ la scuola, di giorno, un po' scura.",
+          "text": "C'è la scuola, di giorno, un po' scura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -478,7 +478,7 @@
         },
         {
           "id": "s33",
-          "text": "Il video Ã¨ corto.",
+          "text": "Il video è corto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -503,7 +503,7 @@
         },
         {
           "id": "s35",
-          "text": "Sembra la stessa finestra di lunedÃ¬.",
+          "text": "Sembra la stessa finestra di lunedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -539,7 +539,7 @@
         },
         {
           "id": "s38",
-          "text": "C'Ã¨ il fantasma di notte.",
+          "text": "C'è il fantasma di notte.",
           "speakerId": "mimmo",
           "kind": "dialogue",
           "lemmas": [
@@ -552,7 +552,7 @@
         },
         {
           "id": "s39",
-          "text": "I ragazzi dicono di sÃ¬.",
+          "text": "I ragazzi dicono di sì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -595,7 +595,7 @@
         },
         {
           "id": "s42",
-          "text": "C'Ã¨ l'ora del video.",
+          "text": "C'è l'ora del video.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -607,7 +607,7 @@
         },
         {
           "id": "s43",
-          "text": "C'Ã¨ anche il giorno, piccolo, sotto l'immagine.",
+          "text": "C'è anche il giorno, piccolo, sotto l'immagine.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -634,7 +634,7 @@
         },
         {
           "id": "s45",
-          "text": "Non Ã¨ notte.",
+          "text": "Non è notte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -645,7 +645,7 @@
         },
         {
           "id": "s46",
-          "text": "Ãˆ pomeriggio.",
+          "text": "È pomeriggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -705,7 +705,7 @@
         },
         {
           "id": "s51",
-          "text": "Oppure Ã¨ il fantasma di giorno. Meglio.",
+          "text": "Oppure è il fantasma di giorno. Meglio.",
           "speakerId": "mimmo",
           "kind": "dialogue",
           "lemmas": [
@@ -763,7 +763,7 @@
         },
         {
           "id": "s56",
-          "text": "PerÃ² adesso sa una cosa.",
+          "text": "Però adesso sa una cosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -776,7 +776,7 @@
         },
         {
           "id": "s57",
-          "text": "Quel video non Ã¨ la luce di sera.",
+          "text": "Quel video non è la luce di sera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -792,7 +792,7 @@
         },
         {
           "id": "s58",
-          "text": "Ãˆ un gioco del pomeriggio.",
+          "text": "È un gioco del pomeriggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -877,7 +877,7 @@
         },
         {
           "id": "s64",
-          "text": "Quando Ã¨ quasi sera, guarda di nuovo la strada.",
+          "text": "Quando è quasi sera, guarda di nuovo la strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -894,7 +894,7 @@
         },
         {
           "id": "s65",
-          "text": "Mimmo non c'Ã¨.",
+          "text": "Mimmo non c'è.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -998,7 +998,7 @@
         },
         {
           "id": "s73",
-          "text": "La strada Ã¨ vuota.",
+          "text": "La strada è vuota.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1010,7 +1010,7 @@
         },
         {
           "id": "s74",
-          "text": "Poi, alle nove, c'Ã¨ una luce.",
+          "text": "Poi, alle nove, c'è una luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1036,7 +1036,7 @@
         },
         {
           "id": "s76",
-          "text": "Non Ã¨ un video.",
+          "text": "Non è un video.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1048,7 +1048,7 @@
         },
         {
           "id": "s77",
-          "text": "Non Ã¨ pomeriggio.",
+          "text": "Non è pomeriggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1059,7 +1059,7 @@
         },
         {
           "id": "s78",
-          "text": "Mimmo Ã¨ andato via.",
+          "text": "Mimmo è andato via.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1071,7 +1071,7 @@
         },
         {
           "id": "s79",
-          "text": "La luce, perÃ², c'Ã¨ lo stesso.",
+          "text": "La luce, però, c'è lo stesso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1109,7 +1109,7 @@
         },
         {
           "id": "s82",
-          "text": "Scrive solo: nove, finestra tre, come lunedÃ¬.",
+          "text": "Scrive solo: nove, finestra tre, come lunedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1148,7 +1148,7 @@
       "choices": [
         "A ghost",
         "A teacher who still works there",
-        "Ireneâ€™s landlady"
+        "Irene’s landlady"
       ],
       "correctChoice": 0,
       "explanation": "He says there is a fantasma. A light in the windows.",
@@ -1182,5 +1182,15 @@
       "explanation": "At dusk the kids are gone. Then at nine there is a light. It is not a video.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 208632
+      }
+    ]
+  }
 }

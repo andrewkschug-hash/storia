@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Mercoled√¨ il caff√® √® pieno fin dal mattino.",
+          "text": "MercoledÏ il caffË Ë pieno fin dal mattino.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -128,7 +128,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "C'√® una riga nuova, scritta con penna nera.",
+          "text": "C'Ë una riga nuova, scritta con penna nera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -169,7 +169,7 @@
         },
         {
           "id": "s09",
-          "text": "La frase √® semplice e vera.",
+          "text": "La frase Ë semplice e vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -183,7 +183,7 @@
         },
         {
           "id": "s10",
-          "text": "Le sembra di conoscerla gi√†, dentro.",
+          "text": "Le sembra di conoscerla gi‡, dentro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -272,7 +272,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "A casa il silenzio √® pesante.",
+          "text": "A casa il silenzio Ë pesante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -286,7 +286,7 @@
         },
         {
           "id": "s17",
-          "text": "A volte preferisco lo zucchero, le tazze e il rumore del caff√®.",
+          "text": "A volte preferisco lo zucchero, le tazze e il rumore del caffË.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -319,7 +319,7 @@
         },
         {
           "id": "s19",
-          "text": "Se parlo, s√¨.",
+          "text": "Se parlo, sÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -360,7 +360,7 @@
         },
         {
           "id": "s22",
-          "text": "Vuole cancellare, ma l'inchiostro √® gi√† secco.",
+          "text": "Vuole cancellare, ma l'inchiostro Ë gi‡ secco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -407,7 +407,7 @@
         },
         {
           "id": "s25",
-          "text": "Elena sorride e lavora, ma dentro √® ancora sul libro.",
+          "text": "Elena sorride e lavora, ma dentro Ë ancora sul libro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -454,7 +454,7 @@
         },
         {
           "id": "s28",
-          "text": "S√¨. Solo pensieri.",
+          "text": "SÏ. Solo pensieri.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -556,7 +556,7 @@
         },
         {
           "id": "s35",
-          "text": "La sua √® lunga e scoperta.",
+          "text": "La sua Ë lunga e scoperta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -746,7 +746,7 @@
       "choices": [
         "Oggi ho paura del silenzio",
         "Questo tavolo balla",
-        "Marted√¨ porto il caff√®"
+        "MartedÏ porto il caffË"
       ],
       "correctChoice": 0,
       "explanation": "The stranger writes about fear of silence.",
@@ -780,5 +780,15 @@
       "explanation": "She is ashamed of the long answer.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 126504
+      }
+    ]
+  }
 }

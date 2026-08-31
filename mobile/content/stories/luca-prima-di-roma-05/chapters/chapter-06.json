@@ -61,7 +61,7 @@
         },
         {
           "id": "s02",
-          "text": "La famiglia Ã¨ in casa.",
+          "text": "La famiglia è in casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -123,7 +123,7 @@
         },
         {
           "id": "s06",
-          "text": "Roma non Ã¨ Pietralba.",
+          "text": "Roma non è Pietralba.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -135,7 +135,7 @@
         },
         {
           "id": "s07",
-          "text": "SÃ¬ mamma.",
+          "text": "Sì mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -145,7 +145,7 @@
         },
         {
           "id": "s08",
-          "text": "Paolo Ã¨ un po' triste.",
+          "text": "Paolo è un po' triste.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -158,7 +158,7 @@
         },
         {
           "id": "s09",
-          "text": "Marta Ã¨ un po' triste.",
+          "text": "Marta è un po' triste.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -183,7 +183,7 @@
         },
         {
           "id": "s11",
-          "text": "Domani Ã¨ un giorno nuovo.",
+          "text": "Domani è un giorno nuovo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -219,7 +219,7 @@
         },
         {
           "id": "s14",
-          "text": "Marta Ã¨ triste ma felice.",
+          "text": "Marta è triste ma felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -238,7 +238,7 @@
       "sentences": [
         {
           "id": "s15",
-          "text": "Ãˆ mattina.",
+          "text": "È mattina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -260,7 +260,7 @@
         },
         {
           "id": "s16",
-          "text": "Davide Ã¨ alla stazione.",
+          "text": "Davide è alla stazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -272,7 +272,7 @@
         },
         {
           "id": "s17",
-          "text": "Questa Ã¨ la stazione di Pietralba.",
+          "text": "Questa è la stazione di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -299,7 +299,7 @@
         },
         {
           "id": "s19",
-          "text": "Marta Ã¨ qui.",
+          "text": "Marta è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -310,7 +310,7 @@
         },
         {
           "id": "s20",
-          "text": "Paolo Ã¨ qui.",
+          "text": "Paolo è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -350,7 +350,7 @@
         },
         {
           "id": "s24",
-          "text": "Hai detto: un giorno prendo quel treno. Quel giorno Ã¨ oggi. Buon viaggio, Luca!",
+          "text": "Hai detto: un giorno prendo quel treno. Quel giorno è oggi. Buon viaggio, Luca!",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -399,7 +399,7 @@
       "sentences": [
         {
           "id": "s27",
-          "text": "Luca Ã¨ sul treno.",
+          "text": "Luca è sul treno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s30",
-          "text": "Pietralba Ã¨ piccola.",
+          "text": "Pietralba è piccola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -469,7 +469,7 @@
         },
         {
           "id": "s33",
-          "text": "Luca Ã¨ sul treno verso Roma.",
+          "text": "Luca è sul treno verso Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -483,7 +483,7 @@
         },
         {
           "id": "s34",
-          "text": "Roma Ã¨ lontana.",
+          "text": "Roma è lontana.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -494,7 +494,7 @@
         },
         {
           "id": "s35",
-          "text": "Luca Ã¨ un po' triste.",
+          "text": "Luca è un po' triste.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -557,7 +557,7 @@
         },
         {
           "id": "s40",
-          "text": "Pietralba Ã¨ lontana.",
+          "text": "Pietralba è lontana.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -594,7 +594,7 @@
         "Bar Centrale"
       ],
       "correctChoice": 0,
-      "explanation": "Questa Ã¨ la stazione di Pietralba.",
+      "explanation": "Questa è la stazione di Pietralba.",
       "chapterId": "luca-prima-di-roma-05-06",
       "difficulty": 1
     },
@@ -605,12 +605,22 @@
       "choices": [
         "On the train leaving Pietralba",
         "Arriving in Rome hungry",
-        "At a Rome cafÃ©"
+        "At a Rome café"
       ],
       "correctChoice": 0,
-      "explanation": "Luca Ã¨ sul treno. Il treno parte. No Rome arrival.",
+      "explanation": "Luca è sul treno. Il treno parte. No Rome arrival.",
       "chapterId": "luca-prima-di-roma-05-06",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-06.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 100848
+      }
+    ]
+  }
 }

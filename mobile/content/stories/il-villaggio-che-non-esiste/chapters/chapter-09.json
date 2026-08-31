@@ -75,7 +75,7 @@
         },
         {
           "id": "s03",
-          "text": "Vuole solo ricordare bene ci√≤ che vede.",
+          "text": "Vuole solo ricordare bene ciÚ che vede.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -90,7 +90,7 @@
         },
         {
           "id": "s04",
-          "text": "In piazza c'√® poco vento e odore di legno bagnato.",
+          "text": "In piazza c'Ë poco vento e odore di legno bagnato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -225,7 +225,7 @@
         },
         {
           "id": "s12",
-          "text": "Sul cartello c'√® scritto: ALIMENTARI ROSSI.",
+          "text": "Sul cartello c'Ë scritto: ALIMENTARI ROSSI.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -239,7 +239,7 @@
         },
         {
           "id": "s13",
-          "text": "Fotografa anche la porta, perch√© la maniglia √® di ferro scuro.",
+          "text": "Fotografa anche la porta, perchÈ la maniglia Ë di ferro scuro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -394,7 +394,7 @@
         },
         {
           "id": "s23",
-          "text": "Perch√©?",
+          "text": "PerchÈ?",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -403,7 +403,7 @@
         },
         {
           "id": "s24",
-          "text": "Perch√© non mi fido della memoria.",
+          "text": "PerchÈ non mi fido della memoria.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -468,7 +468,7 @@
         },
         {
           "id": "s28",
-          "text": "Ieri √® gi√† lontano.",
+          "text": "Ieri Ë gi‡ lontano.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -545,7 +545,7 @@
         },
         {
           "id": "s33",
-          "text": "Fotografa anche le ombre, perch√© le ombre dicono l'ora.",
+          "text": "Fotografa anche le ombre, perchÈ le ombre dicono l'ora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -672,7 +672,7 @@
         },
         {
           "id": "s42",
-          "text": "Cos√¨ domani posso confrontare.",
+          "text": "CosÏ domani posso confrontare.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -938,7 +938,7 @@
         },
         {
           "id": "s59",
-          "text": "√à un dettaglio piccolo.",
+          "text": "» un dettaglio piccolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -950,7 +950,7 @@
         },
         {
           "id": "s60",
-          "text": "Per√≤ i dettagli piccoli, ieri, erano gi√† mentiti nel registro.",
+          "text": "PerÚ i dettagli piccoli, ieri, erano gi‡ mentiti nel registro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1005,7 +1005,7 @@
         },
         {
           "id": "s63",
-          "text": "Nessuna √® bella.",
+          "text": "Nessuna Ë bella.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1043,7 +1043,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "Quando rientra in locanda, Elsa ha preparato pane e caff√®.",
+          "text": "Quando rientra in locanda, Elsa ha preparato pane e caffË.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1127,7 +1127,7 @@
       "sentences": [
         {
           "id": "s71",
-          "text": "Vuole una prova che ieri √® esistito cos√¨, e non solo nella testa.",
+          "text": "Vuole una prova che ieri Ë esistito cosÏ, e non solo nella testa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1169,7 +1169,7 @@
         },
         {
           "id": "s73",
-          "text": "Qui fa lo stesso, ma il litigio √® con un paese intero.",
+          "text": "Qui fa lo stesso, ma il litigio Ë con un paese intero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1247,7 +1247,7 @@
         },
         {
           "id": "s77",
-          "text": "Giada non chiede perch√©.",
+          "text": "Giada non chiede perchÈ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1259,7 +1259,7 @@
         },
         {
           "id": "s78",
-          "text": "Sa gi√† che le domande, a Collevento, costano risposte lente.",
+          "text": "Sa gi‡ che le domande, a Collevento, costano risposte lente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1295,7 +1295,7 @@
         },
         {
           "id": "s80",
-          "text": "Se domani il cielo √® uguale, almeno sa che qualcosa resta.",
+          "text": "Se domani il cielo Ë uguale, almeno sa che qualcosa resta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1320,7 +1320,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "Se cambia tutto il resto, avr√† i numeri e i nomi di oggi.",
+          "text": "Se cambia tutto il resto, avr‡ i numeri e i nomi di oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1341,7 +1341,7 @@
         },
         {
           "id": "s82",
-          "text": "Questa idea la tiene in piedi meglio del caff√®.",
+          "text": "Questa idea la tiene in piedi meglio del caffË.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1446,7 +1446,7 @@
         },
         {
           "id": "s88",
-          "text": "Le panchine, per√≤, non le crede pi√π.",
+          "text": "Le panchine, perÚ, non le crede pi˘.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1555,5 +1555,15 @@
       "explanation": "In the end she has forty-two photos.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-09.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 267600
+      }
+    ]
+  }
 }

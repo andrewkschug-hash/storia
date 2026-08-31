@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Verso met√† mattina Tullio siede sulla sedia fuori dal banco del pane.",
+          "text": "Verso met‡ mattina Tullio siede sulla sedia fuori dal banco del pane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -134,7 +134,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -170,7 +170,7 @@
         },
         {
           "id": "s09",
-          "text": "Tullio svita il thermos e versa un po' di caff√® nella coppa.",
+          "text": "Tullio svita il thermos e versa un po' di caffË nella coppa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -371,7 +371,7 @@
         },
         {
           "id": "s23",
-          "text": "Trent'anni, pi√π o meno.",
+          "text": "Trent'anni, pi˘ o meno.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -383,7 +383,7 @@
         },
         {
           "id": "s24",
-          "text": "Io ero gi√† vecchio quando hanno promesso la prima volta.",
+          "text": "Io ero gi‡ vecchio quando hanno promesso la prima volta.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -401,7 +401,7 @@
         },
         {
           "id": "s25",
-          "text": "Adesso sono solo pi√π vecchio.",
+          "text": "Adesso sono solo pi˘ vecchio.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -454,7 +454,7 @@
         },
         {
           "id": "s28",
-          "text": "Perch√© preparate ancora tutto?",
+          "text": "PerchÈ preparate ancora tutto?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -479,7 +479,7 @@
         },
         {
           "id": "s30",
-          "text": "Perch√© se smetti di prepararti, ammetti che non conti.",
+          "text": "PerchÈ se smetti di prepararti, ammetti che non conti.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -573,7 +573,7 @@
         },
         {
           "id": "s35",
-          "text": "Poi il lago non √® venuto.",
+          "text": "Poi il lago non Ë venuto.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -593,7 +593,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Le carte s√¨.",
+          "text": "Le carte sÏ.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -686,7 +686,7 @@
         },
         {
           "id": "s42",
-          "text": "Non √® la risposta peggiore.",
+          "text": "Non Ë la risposta peggiore.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -782,7 +782,7 @@
         },
         {
           "id": "s49",
-          "text": "Giada sente una stanchezza che non √® sua.",
+          "text": "Giada sente una stanchezza che non Ë sua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -818,7 +818,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Voi sapete che √® una bugia.",
+          "text": "Voi sapete che Ë una bugia.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -832,7 +832,7 @@
         },
         {
           "id": "s52",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -971,7 +971,7 @@
       "sentences": [
         {
           "id": "s61",
-          "text": "√à vero: √® arrivata per sbaglio, non per fare lezioni.",
+          "text": "» vero: Ë arrivata per sbaglio, non per fare lezioni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -989,7 +989,7 @@
         },
         {
           "id": "s62",
-          "text": "Per√≤ non riesce a chiamare questo solo sopravvivenza.",
+          "text": "PerÚ non riesce a chiamare questo solo sopravvivenza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1005,7 +1005,7 @@
         },
         {
           "id": "s63",
-          "text": "√à anche una trappola fatta di calendario.",
+          "text": "» anche una trappola fatta di calendario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1073,7 +1073,7 @@
         },
         {
           "id": "s68",
-          "text": "Io s√¨.",
+          "text": "Io sÏ.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -1155,7 +1155,7 @@
         },
         {
           "id": "s74",
-          "text": "Poi la carta si √® bagnata, o persa, o messa in un cassetto troppo fondo.",
+          "text": "Poi la carta si Ë bagnata, o persa, o messa in un cassetto troppo fondo.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -1178,7 +1178,7 @@
         },
         {
           "id": "s75",
-          "text": "Quello che resta √® la voce delle persone.",
+          "text": "Quello che resta Ë la voce delle persone.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -1278,7 +1278,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "In inverno si racconta che l'anno dopo sar√† diverso.",
+          "text": "In inverno si racconta che l'anno dopo sar‡ diverso.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -1373,7 +1373,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Di Collevento non c'√® una riga.",
+          "text": "Di Collevento non c'Ë una riga.",
           "speakerId": "tullio",
           "kind": "dialogue",
           "lemmas": [
@@ -1459,7 +1459,7 @@
       "sentences": [
         {
           "id": "s91",
-          "text": "L'ispezione, capisce, √® il nome che danno alla speranza istituzionale.",
+          "text": "L'ispezione, capisce, Ë il nome che danno alla speranza istituzionale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1524,7 +1524,7 @@
         },
         {
           "id": "s95",
-          "text": "L'autunno, qui, √® una stagione che non finisce mai di arrivare.",
+          "text": "L'autunno, qui, Ë una stagione che non finisce mai di arrivare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1587,5 +1587,15 @@
       "explanation": "Tullio says they have never come as promised.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-11.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 287112
+      }
+    ]
+  }
 }

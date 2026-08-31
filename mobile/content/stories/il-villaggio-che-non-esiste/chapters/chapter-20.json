@@ -101,7 +101,7 @@
         },
         {
           "id": "s04",
-          "text": "Elsa √® gi√† fuori, con le braccia conserte.",
+          "text": "Elsa Ë gi‡ fuori, con le braccia conserte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -165,7 +165,7 @@
         },
         {
           "id": "s08",
-          "text": "Che questo posto √® abitato.",
+          "text": "Che questo posto Ë abitato.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -191,7 +191,7 @@
         },
         {
           "id": "s10",
-          "text": "Perch√© proprio io?",
+          "text": "PerchÈ proprio io?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -208,7 +208,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Perch√© lei non √® residente da trent'anni di carte confuse.",
+          "text": "PerchÈ lei non Ë residente da trent'anni di carte confuse.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -226,7 +226,7 @@
         },
         {
           "id": "s12",
-          "text": "Lei √® giovane, di fuori, credibile per un nuovo progetto.",
+          "text": "Lei Ë giovane, di fuori, credibile per un nuovo progetto.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -260,7 +260,7 @@
         },
         {
           "id": "s14",
-          "text": "Compensi, priorit√†, scadenze.",
+          "text": "Compensi, priorit‡, scadenze.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -304,7 +304,7 @@
         },
         {
           "id": "s17",
-          "text": "Lei non √® una prova sua.",
+          "text": "Lei non Ë una prova sua.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s18",
-          "text": "√à Anna.",
+          "text": "» Anna.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -388,7 +388,7 @@
         },
         {
           "id": "s23",
-          "text": "Hai la stessa faccia, la stessa et√†, la stessa borsa.",
+          "text": "Hai la stessa faccia, la stessa et‡, la stessa borsa.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -474,7 +474,7 @@
         },
         {
           "id": "s28",
-          "text": "Poi pu√≤ andare a Trento con un passaggio sicuro.",
+          "text": "Poi puÚ andare a Trento con un passaggio sicuro.",
           "speakerId": "ingegnere",
           "kind": "dialogue",
           "lemmas": [
@@ -841,7 +841,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Dimmi solo se c'√® posto.",
+          "text": "Dimmi solo se c'Ë posto.",
           "speakerId": "neri",
           "kind": "dialogue",
           "lemmas": [
@@ -946,7 +946,7 @@
         },
         {
           "id": "s58",
-          "text": "Nessuna delle tre √® la ragazza che vuole diventare.",
+          "text": "Nessuna delle tre Ë la ragazza che vuole diventare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1044,7 +1044,7 @@
         },
         {
           "id": "s63",
-          "text": "Non ancora detti ad alta voce, ma gi√† chiari.",
+          "text": "Non ancora detti ad alta voce, ma gi‡ chiari.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1061,7 +1061,7 @@
         },
         {
           "id": "s64",
-          "text": "Non firmer√≤ per rendere abitato un progetto.",
+          "text": "Non firmerÚ per rendere abitato un progetto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1076,7 +1076,7 @@
         },
         {
           "id": "s65",
-          "text": "Non rester√≤ per riempire il posto di mia madre.",
+          "text": "Non resterÚ per riempire il posto di mia madre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1099,7 +1099,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "Non porter√≤ via Neri come un pacco, se lui non parla con i suoi.",
+          "text": "Non porterÚ via Neri come un pacco, se lui non parla con i suoi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1121,7 +1121,7 @@
         },
         {
           "id": "s67",
-          "text": "La scelta non √® tra restare e sparire.",
+          "text": "La scelta non Ë tra restare e sparire.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1137,7 +1137,7 @@
         },
         {
           "id": "s68",
-          "text": "√à tra diventare oggetto delle storie altrui o uscire con il proprio nome.",
+          "text": "» tra diventare oggetto delle storie altrui o uscire con il proprio nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1434,7 +1434,7 @@
         },
         {
           "id": "s85",
-          "text": "Neri aspetta una risposta che lei non dar√† in fretta.",
+          "text": "Neri aspetta una risposta che lei non dar‡ in fretta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1458,7 +1458,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Elsa aspetta una restituzione che non arriver√†.",
+          "text": "Elsa aspetta una restituzione che non arriver‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1552,5 +1552,15 @@
       "explanation": "Neri asks for a seat and a road that is not water.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-20.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 274584
+      }
+    ]
+  }
 }

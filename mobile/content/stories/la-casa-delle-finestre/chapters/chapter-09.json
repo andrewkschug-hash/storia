@@ -16,7 +16,7 @@
   "events": [
     {
       "id": "ev-la-casa-delle-finestre-09",
-      "summary": "The pause is not on the timetable. Tonight there is no light. In the morning Irene finds a new pack of camping batteries by the gate: the lamp uses batteries, not the schoolâ€™s lights.",
+      "summary": "The pause is not on the timetable. Tonight there is no light. In the morning Irene finds a new pack of camping batteries by the gate: the lamp uses batteries, not the school’s lights.",
       "characterIds": [
         "irene-colombo"
       ],
@@ -86,7 +86,7 @@
         },
         {
           "id": "s04",
-          "text": "Ha fatto quattro, cinque, poi tre. Poi si Ã¨ fermata.",
+          "text": "Ha fatto quattro, cinque, poi tre. Poi si è fermata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -104,7 +104,7 @@
         },
         {
           "id": "s05",
-          "text": "Lo ha scritto: si ferma, poi buio. Non Ã¨ sul foglio.",
+          "text": "Lo ha scritto: si ferma, poi buio. Non è sul foglio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -123,7 +123,7 @@
         },
         {
           "id": "s06",
-          "text": "Ha cancellato forse per me. Quella riga non c'Ã¨ piÃ¹.",
+          "text": "Ha cancellato forse per me. Quella riga non c'è più.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -158,7 +158,7 @@
         },
         {
           "id": "s08",
-          "text": "Di solito, alle nove, c'Ã¨ una luce. Ieri c'era, e si Ã¨ fermata.",
+          "text": "Di solito, alle nove, c'è una luce. Ieri c'era, e si è fermata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -212,7 +212,7 @@
         },
         {
           "id": "s11",
-          "text": "Prima coincidono. Poi c'Ã¨ ieri. Due fatti, uno sotto l'altro.",
+          "text": "Prima coincidono. Poi c'è ieri. Due fatti, uno sotto l'altro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -230,7 +230,7 @@
         },
         {
           "id": "s12",
-          "text": "Non scrive qualcuno. Non scrive perchÃ©.",
+          "text": "Non scrive qualcuno. Non scrive perché.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -244,7 +244,7 @@
         },
         {
           "id": "s13",
-          "text": "Poi Ã¨ andata al comune, come ogni giorno.",
+          "text": "Poi è andata al comune, come ogni giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -266,7 +266,7 @@
       "sentences": [
         {
           "id": "s14",
-          "text": "Il lavoro Ã¨ stato breve, ma lei ha fatto il lavoro.",
+          "text": "Il lavoro è stato breve, ma lei ha fatto il lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -301,7 +301,7 @@
         },
         {
           "id": "s16",
-          "text": "La cartella chiusa era ancora lÃ¬, accanto al muro.",
+          "text": "La cartella chiusa era ancora lì, accanto al muro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -332,7 +332,7 @@
         },
         {
           "id": "s18",
-          "text": "Ieri c'era una pausa. Oggi c'Ã¨ una cartella. Non Ã¨ la stessa cosa.",
+          "text": "Ieri c'era una pausa. Oggi c'è una cartella. Non è la stessa cosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -403,7 +403,7 @@
         },
         {
           "id": "s22",
-          "text": "Le finestre sono vuote. Non c'Ã¨ una luce. Non serve, di giorno.",
+          "text": "Le finestre sono vuote. Non c'è una luce. Non serve, di giorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -442,7 +442,7 @@
       "sentences": [
         {
           "id": "s24",
-          "text": "Quando Ã¨ sera, Irene Ã¨ di nuovo alla finestra, di proposito.",
+          "text": "Quando è sera, Irene è di nuovo alla finestra, di proposito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -530,7 +530,7 @@
         },
         {
           "id": "s29",
-          "text": "Stasera non c'Ã¨ una luce.",
+          "text": "Stasera non c'è una luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -560,7 +560,7 @@
         },
         {
           "id": "s31",
-          "text": "Di solito c'Ã¨ una luce. Ieri si Ã¨ fermata. Stasera niente.",
+          "text": "Di solito c'è una luce. Ieri si è fermata. Stasera niente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -579,7 +579,7 @@
         },
         {
           "id": "s32",
-          "text": "Quindi ieri non era un orario. Stasera non Ã¨ un orario.",
+          "text": "Quindi ieri non era un orario. Stasera non è un orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -676,7 +676,7 @@
         },
         {
           "id": "s38",
-          "text": "Se ha sbagliato ieri, stasera lo dimostra. Se non ha sbagliato, stasera Ã¨ un altro fatto.",
+          "text": "Se ha sbagliato ieri, stasera lo dimostra. Se non ha sbagliato, stasera è un altro fatto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -723,7 +723,7 @@
         },
         {
           "id": "s40",
-          "text": "Vicino al cancello c'Ã¨ una cosa per terra, nel fosso.",
+          "text": "Vicino al cancello c'è una cosa per terra, nel fosso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -741,7 +741,7 @@
         },
         {
           "id": "s41",
-          "text": "Ãˆ una confezione. Dentro c'erano pile da campeggio.",
+          "text": "È una confezione. Dentro c'erano pile da campeggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -757,7 +757,7 @@
         },
         {
           "id": "s42",
-          "text": "Ora la confezione Ã¨ vuota, o quasi.",
+          "text": "Ora la confezione è vuota, o quasi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -772,7 +772,7 @@
         },
         {
           "id": "s43",
-          "text": "Irene la prende con due dita. Non Ã¨ vecchia.",
+          "text": "Irene la prende con due dita. Non è vecchia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -789,7 +789,7 @@
         },
         {
           "id": "s44",
-          "text": "Non c'Ã¨ polvere. Non c'Ã¨ pioggia secca.",
+          "text": "Non c'è polvere. Non c'è pioggia secca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -804,7 +804,7 @@
         },
         {
           "id": "s45",
-          "text": "C'Ã¨ un prezzo, piccolo, e una data recente.",
+          "text": "C'è un prezzo, piccolo, e una data recente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -895,7 +895,7 @@
         },
         {
           "id": "s50",
-          "text": "Non Ã¨ un video. Non Ã¨ un fantasma. Ãˆ una cosa che si compra.",
+          "text": "Non è un video. Non è un fantasma. È una cosa che si compra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -917,7 +917,7 @@
         },
         {
           "id": "s51",
-          "text": "Ieri sera non c'era luce. PerÃ² le pile ci sono.",
+          "text": "Ieri sera non c'era luce. Però le pile ci sono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -970,7 +970,7 @@
         },
         {
           "id": "s54",
-          "text": "Mimmo ha un video di giorno. Questa confezione Ã¨ per la notte.",
+          "text": "Mimmo ha un video di giorno. Questa confezione è per la notte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1014,10 +1014,10 @@
       "id": "ch09_q01",
       "chapterId": "la-casa-delle-finestre-09",
       "type": "direct",
-      "question": "What did the light do the night before last, according to Ireneâ€™s notes?",
+      "question": "What did the light do the night before last, according to Irene’s notes?",
       "choices": [
         "It paused at window three, not on the timetable",
-        "It followed Mimmoâ€™s video",
+        "It followed Mimmo’s video",
         "There was no light that night"
       ],
       "correctChoice": 0,
@@ -1045,7 +1045,7 @@
       "question": "What does Irene find by the gate?",
       "choices": [
         "A pack for camping batteries",
-        "Saraâ€™s keys",
+        "Sara’s keys",
         "A letter from Alme"
       ],
       "correctChoice": 0,
@@ -1066,5 +1066,15 @@
       "explanation": "Ordinary lights do not come on. The lamp uses batteries.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-09.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 264504
+      }
+    ]
+  }
 }

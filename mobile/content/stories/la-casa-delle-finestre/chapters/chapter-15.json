@@ -81,7 +81,7 @@
         },
         {
           "id": "s03",
-          "text": "C'Ã¨ un foglio, piegato, fermo tra le sbarre.",
+          "text": "C'è un foglio, piegato, fermo tra le sbarre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -97,7 +97,7 @@
         },
         {
           "id": "s04",
-          "text": "Non c'era ieri. O lei non l'ha visto. Oggi c'Ã¨.",
+          "text": "Non c'era ieri. O lei non l'ha visto. Oggi c'è.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -115,7 +115,7 @@
         },
         {
           "id": "s05",
-          "text": "Irene lo prende con due dita. Non Ã¨ vecchio. Non c'Ã¨ pioggia.",
+          "text": "Irene lo prende con due dita. Non è vecchio. Non c'è pioggia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -135,7 +135,7 @@
         },
         {
           "id": "s06",
-          "text": "Apre il foglio in strada, di qua, non di lÃ .",
+          "text": "Apre il foglio in strada, di qua, non di là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -168,7 +168,7 @@
         },
         {
           "id": "s08",
-          "text": "La prima riga Ã¨ un ordine. La seconda Ã¨ una cosa, non una spiegazione.",
+          "text": "La prima riga è un ordine. La seconda è una cosa, non una spiegazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -247,7 +247,7 @@
         },
         {
           "id": "s12",
-          "text": "Dovrei chiamare comunque, pensa. PerÃ² il foglio dice di no.",
+          "text": "Dovrei chiamare comunque, pensa. Però il foglio dice di no.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -265,7 +265,7 @@
         },
         {
           "id": "s13",
-          "text": "Non sa chi l'ha scritto. Sa solo: dopo le due luci, c'Ã¨ carta.",
+          "text": "Non sa chi l'ha scritto. Sa solo: dopo le due luci, c'è carta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -292,7 +292,7 @@
       "sentences": [
         {
           "id": "s14",
-          "text": "Al comune il lavoro Ã¨ come sempre, e non lo Ã¨.",
+          "text": "Al comune il lavoro è come sempre, e non lo è.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -311,7 +311,7 @@
         },
         {
           "id": "s15",
-          "text": "Irene scansiona. Conta. PerÃ² lo stomaco Ã¨ stretto.",
+          "text": "Irene scansiona. Conta. Però lo stomaco è stretto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -344,7 +344,7 @@
         },
         {
           "id": "s17",
-          "text": "C'Ã¨ un calendario sul muro.",
+          "text": "C'è un calendario sul muro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -357,7 +357,7 @@
         },
         {
           "id": "s18",
-          "text": "Alme indica venerdÃ¬ con una penna. Irene conta i giorni sulle dita, sotto il tavolo.",
+          "text": "Alme indica venerdì con una penna. Irene conta i giorni sulle dita, sotto il tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -380,7 +380,7 @@
         },
         {
           "id": "s19",
-          "text": "VenerdÃ¬ distruggiamo le carte vecchie della scuola.",
+          "text": "Venerdì distruggiamo le carte vecchie della scuola.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -412,7 +412,7 @@
         },
         {
           "id": "s21",
-          "text": "Non c'Ã¨ tempo dopo. Il contratto Ã¨ corto. Lei lo sa.",
+          "text": "Non c'è tempo dopo. Il contratto è corto. Lei lo sa.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -431,7 +431,7 @@
         },
         {
           "id": "s22",
-          "text": "Irene guarda venerdÃ¬. Oggi Ã¨ martedÃ¬. VenerdÃ¬ Ã¨ tra tre giorni.",
+          "text": "Irene guarda venerdì. Oggi è martedì. Venerdì è tra tre giorni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -508,7 +508,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "GiÃ¹, Irene apre il quaderno. Copia: NON CARABINIERI. REGISTRI.",
+          "text": "Giù, Irene apre il quaderno. Copia: NON CARABINIERI. REGISTRI.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -525,7 +525,7 @@
         },
         {
           "id": "s27",
-          "text": "Copia anche: venerdÃ¬, tra tre giorni, distruggere.",
+          "text": "Copia anche: venerdì, tra tre giorni, distruggere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -540,7 +540,7 @@
         },
         {
           "id": "s28",
-          "text": "Non c'Ã¨ tempo, pensa. PerÃ² non sa che cosa deve fare.",
+          "text": "Non c'è tempo, pensa. Però non sa che cosa deve fare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -576,7 +576,7 @@
         },
         {
           "id": "s30",
-          "text": "Dovrei dirlo ad Alme. Alme distrugge venerdÃ¬.",
+          "text": "Dovrei dirlo ad Alme. Alme distrugge venerdì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -591,7 +591,7 @@
         },
         {
           "id": "s31",
-          "text": "Non incontra nessuno dietro la scuola. Non corre. Non Ã¨ un film.",
+          "text": "Non incontra nessuno dietro la scuola. Non corre. Non è un film.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -628,7 +628,7 @@
         },
         {
           "id": "s33",
-          "text": "Tre giorni. Registri. Non chiamare. Questo Ã¨ tutto, per ora.",
+          "text": "Tre giorni. Registri. Non chiamare. Questo è tutto, per ora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -646,7 +646,7 @@
         },
         {
           "id": "s34",
-          "text": "Non ha visto Sara. Non ha aperto la scuola. Ha un foglio, e un venerdÃ¬.",
+          "text": "Non ha visto Sara. Non ha aperto la scuola. Ha un foglio, e un venerdì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -691,7 +691,7 @@
         },
         {
           "id": "s36",
-          "text": "VenerdÃ¬ qualcuno le prende. Distrugge. Tre giorni non sono tanti.",
+          "text": "Venerdì qualcuno le prende. Distrugge. Tre giorni non sono tanti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -709,7 +709,7 @@
         },
         {
           "id": "s37",
-          "text": "Dovrei chiamare comunque. Non chiama. Mette una mano sulla tasca, dove c'Ã¨ il foglio, e lavora.",
+          "text": "Dovrei chiamare comunque. Non chiama. Mette una mano sulla tasca, dove c'è il foglio, e lavora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -739,7 +739,7 @@
       "sentences": [
         {
           "id": "s38",
-          "text": "Alme Ã¨ su. Non chiede del foglio. Non sa del foglio.",
+          "text": "Alme è su. Non chiede del foglio. Non sa del foglio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -779,7 +779,7 @@
         },
         {
           "id": "s40",
-          "text": "MartedÃ¬, mercoledÃ¬, giovedÃ¬, venerdÃ¬. Quattro nomi. Tre notti in mezzo.",
+          "text": "Martedì, mercoledì, giovedì, venerdì. Quattro nomi. Tre notti in mezzo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -797,7 +797,7 @@
         },
         {
           "id": "s41",
-          "text": "Dobbiamo, ha detto Alme. Non c'Ã¨ tempo dopo.",
+          "text": "Dobbiamo, ha detto Alme. Non c'è tempo dopo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -834,7 +834,7 @@
         },
         {
           "id": "s43",
-          "text": "Sa solo che venerdÃ¬ Ã¨ una data vera, sul muro, con una penna.",
+          "text": "Sa solo che venerdì è una data vera, sul muro, con una penna.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -855,7 +855,7 @@
         },
         {
           "id": "s44",
-          "text": "I registri sono scatole. Il foglio Ã¨ due parole. Le due cose si toccano, e lei non sa come.",
+          "text": "I registri sono scatole. Il foglio è due parole. Le due cose si toccano, e lei non sa come.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -904,7 +904,7 @@
         },
         {
           "id": "s46",
-          "text": "Quando esce, la grata Ã¨ vuota. Il foglio Ã¨ nel quaderno. VenerdÃ¬ Ã¨ tra tre giorni.",
+          "text": "Quando esce, la grata è vuota. Il foglio è nel quaderno. Venerdì è tra tre giorni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -972,7 +972,7 @@
         },
         {
           "id": "s49",
-          "text": "A casa mette il foglio sotto la pagina di ieri sera. Luci prima. Carta dopo. VenerdÃ¬ dopo ancora.",
+          "text": "A casa mette il foglio sotto la pagina di ieri sera. Luci prima. Carta dopo. Venerdì dopo ancora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -998,7 +998,7 @@
         },
         {
           "id": "s50",
-          "text": "Non c'Ã¨ tempo per capire tutto. C'Ã¨ tempo per non buttare tre giorni.",
+          "text": "Non c'è tempo per capire tutto. C'è tempo per non buttare tre giorni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1019,7 +1019,7 @@
         },
         {
           "id": "s51",
-          "text": "MartedÃ¬ sera. MercoledÃ¬, giovedÃ¬, venerdÃ¬. Irene conta ancora, senza voce.",
+          "text": "Martedì sera. Mercoledì, giovedì, venerdì. Irene conta ancora, senza voce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1058,7 +1058,7 @@
         },
         {
           "id": "s53",
-          "text": "Tre giorni. Registri. Non chiamare. Non Ã¨ un piano. Ãˆ una data, e lei Ã¨ giÃ  in ritardo.",
+          "text": "Tre giorni. Registri. Non chiamare. Non è un piano. È una data, e lei è già in ritardo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1094,7 +1094,7 @@
       "choices": [
         "Do not call Carabinieri. Registers",
         "Come tonight with a key",
-        "Saraâ€™s address"
+        "Sara’s address"
       ],
       "correctChoice": 0,
       "explanation": "Two lines: NON CARABINIERI. REGISTRI.",
@@ -1135,12 +1135,22 @@
       "question": "Does Irene call the Carabinieri in this chapter?",
       "choices": [
         "No. She thinks she should, but she does not",
-        "Yes, from Almeâ€™s office",
+        "Yes, from Alme’s office",
         "Yes, from the grate"
       ],
       "correctChoice": 0,
       "explanation": "I should call anyway. The sheet says no. She does not call.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-15.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 318672
+      }
+    ]
+  }
 }

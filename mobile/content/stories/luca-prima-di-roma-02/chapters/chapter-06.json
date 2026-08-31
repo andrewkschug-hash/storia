@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "√à pomeriggio.",
+          "text": "» pomeriggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -67,7 +67,7 @@
         },
         {
           "id": "s03",
-          "text": "Luca √® nel soggiorno.",
+          "text": "Luca Ë nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -79,7 +79,7 @@
         },
         {
           "id": "s04",
-          "text": "Paolo √® a casa.",
+          "text": "Paolo Ë a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -114,7 +114,7 @@
         },
         {
           "id": "s07",
-          "text": "Alle tre Luca aiuta pap√†.",
+          "text": "Alle tre Luca aiuta pap‡.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -137,7 +137,7 @@
         },
         {
           "id": "s09",
-          "text": "Prego pap√†.",
+          "text": "Prego pap‡.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -278,7 +278,7 @@
         },
         {
           "id": "s19",
-          "text": "La scuola √® finita.",
+          "text": "La scuola Ë finita.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -314,7 +314,7 @@
         },
         {
           "id": "s22",
-          "text": "Paolo √® nel soggiorno.",
+          "text": "Paolo Ë nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -326,7 +326,7 @@
         },
         {
           "id": "s23",
-          "text": "Alle sedici Chiara √® a casa.",
+          "text": "Alle sedici Chiara Ë a casa.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -340,7 +340,7 @@
         },
         {
           "id": "s24",
-          "text": "Sedici √® lo stesso di quattro.",
+          "text": "Sedici Ë lo stesso di quattro.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -385,7 +385,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "Il pomeriggio √® tranquillo.",
+          "text": "Il pomeriggio Ë tranquillo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -476,7 +476,7 @@
         },
         {
           "id": "s33",
-          "text": "La famiglia √® insieme.",
+          "text": "La famiglia Ë insieme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -499,7 +499,7 @@
         },
         {
           "id": "s35",
-          "text": "Poi √® sera.",
+          "text": "Poi Ë sera.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -510,7 +510,7 @@
         },
         {
           "id": "s36",
-          "text": "Ma adesso √® pomeriggio.",
+          "text": "Ma adesso Ë pomeriggio.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -573,14 +573,14 @@
         "Lidia"
       ],
       "correctChoice": 1,
-      "explanation": "Luca aiuta Paolo / pap√†.",
+      "explanation": "Luca aiuta Paolo / pap‡.",
       "chapterId": "luca-prima-di-roma-02-06",
       "difficulty": 1
     },
     {
       "id": "lpr02-ch06-q03",
       "type": "sequence",
-      "question": "What happens at four o‚Äôclock?",
+      "question": "What happens at four oíclock?",
       "choices": [
         "Chiara comes home",
         "They eat dinner",
@@ -591,5 +591,15 @@
       "chapterId": "luca-prima-di-roma-02-06",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-06.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 72888
+      }
+    ]
+  }
 }

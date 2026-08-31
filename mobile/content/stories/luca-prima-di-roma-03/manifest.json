@@ -5,7 +5,7 @@
   "slug": "luca-prima-di-roma-03",
   "level": 1,
   "cefrLevel": "A1",
-  "synopsis": "Luca fa la spesa a Pietralba: lista, banco, prezzi e quantit√†.",
+  "synopsis": "Luca fa la spesa a Pietralba: lista, banco, prezzi e quantit‡.",
   "characterIds": [
     "luca",
     "marta",
@@ -53,7 +53,7 @@
       "id": "luca-prima-di-roma-03-05",
       "number": 5,
       "title": "Can I pay?",
-      "titleIt": "Si pu√≤ pagare?",
+      "titleIt": "Si puÚ pagare?",
       "difficultyLevel": 1,
       "file": "chapter-05.json"
     },
@@ -74,10 +74,14 @@
       "title": "At the supermarket",
       "titleIt": "Al supermercato",
       "description": "A1 present-tense pre-Rome story",
-      "narrativeStage": "Luca fa la spesa a Pietralba: lista, banco, prezzi e quantit√†.",
+      "narrativeStage": "Luca fa la spesa a Pietralba: lista, banco, prezzi e quantit‡.",
       "chapterStart": 1,
       "chapterEnd": 6,
       "status": "planned"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "ready"
+  }
 }

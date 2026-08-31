@@ -3,7 +3,7 @@
   "storyId": "il-villaggio-che-non-esiste",
   "number": 18,
   "title": "Why",
-  "titleIt": "Perch√©",
+  "titleIt": "PerchÈ",
   "difficultyLevel": 2,
   "locationIds": [
     "campo-segnale",
@@ -42,7 +42,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giada richiama subito, perch√© una frase non basta.",
+          "text": "Giada richiama subito, perchÈ una frase non basta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -88,7 +88,7 @@
         },
         {
           "id": "s04",
-          "text": "Perch√© sei andata via?",
+          "text": "PerchÈ sei andata via?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -137,7 +137,7 @@
         },
         {
           "id": "s07",
-          "text": "Perch√© se restavo diventavo la ragazza del paese.",
+          "text": "PerchÈ se restavo diventavo la ragazza del paese.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -251,7 +251,7 @@
         },
         {
           "id": "s14",
-          "text": "√à il padre di Neri?",
+          "text": "» il padre di Neri?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -312,7 +312,7 @@
         },
         {
           "id": "s18",
-          "text": "Quel ragazzo non √® il padre di nessuno che tu conosci l√¨.",
+          "text": "Quel ragazzo non Ë il padre di nessuno che tu conosci lÏ.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -332,7 +332,7 @@
         },
         {
           "id": "s19",
-          "text": "√à andato via anni dopo, o √® restato, non lo so pi√π.",
+          "text": "» andato via anni dopo, o Ë restato, non lo so pi˘.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -352,7 +352,7 @@
         },
         {
           "id": "s20",
-          "text": "Non √® il punto.",
+          "text": "Non Ë il punto.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -370,7 +370,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Allora qual √® il punto?",
+          "text": "Allora qual Ë il punto?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -383,7 +383,7 @@
         },
         {
           "id": "s22",
-          "text": "Il punto √® che Elsa voleva che io fossi la prova.",
+          "text": "Il punto Ë che Elsa voleva che io fossi la prova.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -454,7 +454,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "Giada guarda verso la locanda, dove Elsa avr√† gi√† acceso la luce.",
+          "text": "Giada guarda verso la locanda, dove Elsa avr‡ gi‡ acceso la luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -487,7 +487,7 @@
         },
         {
           "id": "s28",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -496,7 +496,7 @@
         },
         {
           "id": "s29",
-          "text": "Sono andata via perch√© il paese poteva esistere senza di me.",
+          "text": "Sono andata via perchÈ il paese poteva esistere senza di me.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -555,7 +555,7 @@
         },
         {
           "id": "s32",
-          "text": "La ragione per dire: vedi, Anna √® tornata.",
+          "text": "La ragione per dire: vedi, Anna Ë tornata.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -623,7 +623,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Non √® la stessa cosa.",
+          "text": "Non Ë la stessa cosa.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -647,7 +647,7 @@
         },
         {
           "id": "s38",
-          "text": "Gli ho detto la verit√† una sera, prima dell'acqua.",
+          "text": "Gli ho detto la verit‡ una sera, prima dell'acqua.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -838,7 +838,7 @@
         },
         {
           "id": "s50",
-          "text": "Capisci perch√© esiste ancora, e poi esci.",
+          "text": "Capisci perchÈ esiste ancora, e poi esci.",
           "speakerId": "anna-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -918,7 +918,7 @@
         },
         {
           "id": "s55",
-          "text": "Mamma, Elsa √® qui.",
+          "text": "Mamma, Elsa Ë qui.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -1033,7 +1033,7 @@
         },
         {
           "id": "s62",
-          "text": "Non √® il padre di Neri.",
+          "text": "Non Ë il padre di Neri.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -1047,7 +1047,7 @@
         },
         {
           "id": "s63",
-          "text": "E se n'√® andata perch√© voleva che Collevento esistesse senza di lei.",
+          "text": "E se n'Ë andata perchÈ voleva che Collevento esistesse senza di lei.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -1119,7 +1119,7 @@
         },
         {
           "id": "s67",
-          "text": "N√© io.",
+          "text": "NÈ io.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -1166,7 +1166,7 @@
         },
         {
           "id": "s70",
-          "text": "Il paese esisteva prima di Anna, e pu√≤ esistere senza Giada.",
+          "text": "Il paese esisteva prima di Anna, e puÚ esistere senza Giada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1191,7 +1191,7 @@
       "sentences": [
         {
           "id": "s71",
-          "text": "Questa √® la parte difficile da tenere ferma.",
+          "text": "Questa Ë la parte difficile da tenere ferma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1306,7 +1306,7 @@
         },
         {
           "id": "s77",
-          "text": "Stessa mascella, stessa et√†, storia diversa.",
+          "text": "Stessa mascella, stessa et‡, storia diversa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1332,7 +1332,7 @@
         },
         {
           "id": "s79",
-          "text": "Domani, di giorno, andr√† al memorial.",
+          "text": "Domani, di giorno, andr‡ al memorial.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1458,7 +1458,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Dentro, Giada capisce meglio il perch√© della fuga di sua madre.",
+          "text": "Dentro, Giada capisce meglio il perchÈ della fuga di sua madre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1526,7 +1526,7 @@
         },
         {
           "id": "s90",
-          "text": "Giada ripete piano: il paese pu√≤ esistere senza di me.",
+          "text": "Giada ripete piano: il paese puÚ esistere senza di me.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1550,7 +1550,7 @@
       "sentences": [
         {
           "id": "s91",
-          "text": "La frase non cancella la rabbia, ma le d√† una direzione.",
+          "text": "La frase non cancella la rabbia, ma le d‡ una direzione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1629,5 +1629,15 @@
       "explanation": "She tells herself not to make Neri the child of that old silence.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-18.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 286056
+      }
+    ]
+  }
 }

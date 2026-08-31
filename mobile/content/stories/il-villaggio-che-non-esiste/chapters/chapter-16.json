@@ -38,7 +38,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Dopo cena la locanda Ã¨ vuota di clienti.",
+          "text": "Dopo cena la locanda è vuota di clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -54,7 +54,7 @@
         },
         {
           "id": "s02",
-          "text": "C'Ã¨ solo Elsa che asciuga bicchieri e Giada che non aiuta.",
+          "text": "C'è solo Elsa che asciuga bicchieri e Giada che non aiuta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -184,7 +184,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "La stanza era giÃ  pronta.",
+          "text": "La stanza era già pronta.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -269,7 +269,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Tua madre Ã¨ partita.",
+          "text": "Tua madre è partita.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -388,7 +388,7 @@
         },
         {
           "id": "s24",
-          "text": "Aspettare un'ispezione Ã¨ una cosa.",
+          "text": "Aspettare un'ispezione è una cosa.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -401,7 +401,7 @@
         },
         {
           "id": "s25",
-          "text": "Aspettare una ragazza che diceva Â«tornoÂ» Ã¨ un'altra.",
+          "text": "Aspettare una ragazza che diceva «torno» è un'altra.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -464,7 +464,7 @@
         },
         {
           "id": "s29",
-          "text": "Questo non ti dÃ  diritto sulla mia faccia.",
+          "text": "Questo non ti dà diritto sulla mia faccia.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -501,7 +501,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "Quando sei scesa dal treno ho visto una possibilitÃ .",
+          "text": "Quando sei scesa dal treno ho visto una possibilità.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -529,7 +529,7 @@
         },
         {
           "id": "s33",
-          "text": "Una possibilitÃ .",
+          "text": "Una possibilità.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -553,7 +553,7 @@
         },
         {
           "id": "s35",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -568,7 +568,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Una possibilitÃ .",
+          "text": "Una possibilità.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -590,7 +590,7 @@
         },
         {
           "id": "s38",
-          "text": "La confessione Ã¨ netta.",
+          "text": "La confessione è netta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -602,7 +602,7 @@
         },
         {
           "id": "s39",
-          "text": "Non c'Ã¨ magia dentro.",
+          "text": "Non c'è magia dentro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -614,7 +614,7 @@
         },
         {
           "id": "s40",
-          "text": "C'Ã¨ soltanto bisogno, e bisogno fa danni.",
+          "text": "C'è soltanto bisogno, e bisogno fa danni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -743,7 +743,7 @@
         },
         {
           "id": "s48",
-          "text": "Il vuoto c'era giÃ .",
+          "text": "Il vuoto c'era già.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -815,7 +815,7 @@
         },
         {
           "id": "s52",
-          "text": "Dentro, la rabbia Ã¨ piÃ¹ alta dell'acqua.",
+          "text": "Dentro, la rabbia è più alta dell'acqua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -830,7 +830,7 @@
         },
         {
           "id": "s53",
-          "text": "Elsa parla piÃ¹ piano.",
+          "text": "Elsa parla più piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -938,7 +938,7 @@
       "sentences": [
         {
           "id": "s61",
-          "text": "Non perchÃ© sei Anna.",
+          "text": "Non perché sei Anna.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -950,7 +950,7 @@
         },
         {
           "id": "s62",
-          "text": "PerchÃ© fuori, di notte, la strada non perdona.",
+          "text": "Perché fuori, di notte, la strada non perdona.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -1114,7 +1114,7 @@
         },
         {
           "id": "s74",
-          "text": "In camera la foto di Anna Ã¨ ancora sul comodino.",
+          "text": "In camera la foto di Anna è ancora sul comodino.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1155,7 +1155,7 @@
       "sentences": [
         {
           "id": "s76",
-          "text": "Il caffÃ¨ pronto al mattino come per qualcuno atteso.",
+          "text": "Il caffè pronto al mattino come per qualcuno atteso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1524,7 +1524,7 @@
         },
         {
           "id": "s100",
-          "text": "PerÃ² questa, almeno, nasce da una lite vera.",
+          "text": "Però questa, almeno, nasce da una lite vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1546,7 +1546,7 @@
       "sentences": [
         {
           "id": "s101",
-          "text": "E una lite vera Ã¨ piÃ¹ onesta di una stanza giÃ  fatta.",
+          "text": "E una lite vera è più onesta di una stanza già fatta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1566,7 +1566,7 @@
         },
         {
           "id": "s102",
-          "text": "Giada la volta a faccia in giÃ¹.",
+          "text": "Giada la volta a faccia in giù.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1656,5 +1656,15 @@
       "explanation": "She stays because the night road is unsafe, but keeps her name.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-16.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 275832
+      }
+    ]
+  }
 }

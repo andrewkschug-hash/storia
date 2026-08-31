@@ -65,7 +65,7 @@
         },
         {
           "id": "s02",
-          "text": "Non Ã¨ una pagina del libro.",
+          "text": "Non è una pagina del libro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -79,7 +79,7 @@
         },
         {
           "id": "s03",
-          "text": "Ãˆ carta vera, piegata due volte.",
+          "text": "È carta vera, piegata due volte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -93,7 +93,7 @@
         },
         {
           "id": "s04",
-          "text": "Al caffÃ¨ Katia la guarda.",
+          "text": "Al caffè Katia la guarda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -106,7 +106,7 @@
         },
         {
           "id": "s05",
-          "text": "Che cos'hai lÃ¬?",
+          "text": "Che cos'hai lì?",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -208,7 +208,7 @@
         },
         {
           "id": "s13",
-          "text": "Verso le undici il caffÃ¨ Ã¨ quieto.",
+          "text": "Verso le undici il caffè è quieto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -223,7 +223,7 @@
         },
         {
           "id": "s14",
-          "text": "Bruna Ã¨ nel magazzino.",
+          "text": "Bruna è nel magazzino.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -281,7 +281,7 @@
         },
         {
           "id": "s18",
-          "text": "Ãˆ una battuta e anche una veritÃ .",
+          "text": "È una battuta e anche una verità.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -296,7 +296,7 @@
         },
         {
           "id": "s19",
-          "text": "PerchÃ© la lettera Ã¨ per lei, se lui risponde.",
+          "text": "Perché la lettera è per lei, se lui risponde.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -313,7 +313,7 @@
         },
         {
           "id": "s20",
-          "text": "E perchÃ© lei deve smettere di nascondersi.",
+          "text": "E perché lei deve smettere di nascondersi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -334,7 +334,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Sotto il titolo scrive piÃ¹ piano.",
+          "text": "Sotto il titolo scrive più piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -414,7 +414,7 @@
         },
         {
           "id": "s27",
-          "text": "Hai detto che scrivere non Ã¨ parlare.",
+          "text": "Hai detto che scrivere non è parlare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -485,7 +485,7 @@
         },
         {
           "id": "s32",
-          "text": "Scrive la riga piÃ¹ importante.",
+          "text": "Scrive la riga più importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -522,7 +522,7 @@
         },
         {
           "id": "s35",
-          "text": "Non c'Ã¨ poesia.",
+          "text": "Non c'è poesia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -539,7 +539,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "C'Ã¨ un nome.",
+          "text": "C'è un nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -550,7 +550,7 @@
         },
         {
           "id": "s37",
-          "text": "C'Ã¨ una richiesta in voce.",
+          "text": "C'è una richiesta in voce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -675,7 +675,7 @@
       "sentences": [
         {
           "id": "s46",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -735,7 +735,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Una lettera Ã¨ giÃ  un passo fuori.",
+          "text": "Una lettera è già un passo fuori.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -793,7 +793,7 @@
         },
         {
           "id": "s55",
-          "text": "Ma dentro c'Ã¨ il suo nome.",
+          "text": "Ma dentro c'è il suo nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -886,7 +886,7 @@
         },
         {
           "id": "s62",
-          "text": "SÃ¬, sulla carta.",
+          "text": "Sì, sulla carta.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -897,7 +897,7 @@
         },
         {
           "id": "s63",
-          "text": "PerÃ² ho chiesto la voce.",
+          "text": "Però ho chiesto la voce.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -948,7 +948,7 @@
       "choices": [
         "Una lettera per Elena",
         "Questo tavolo balla",
-        "MartedÃ¬ solo"
+        "Martedì solo"
       ],
       "correctChoice": 0,
       "explanation": "She titles the paper Una lettera per Elena as a joke-truth.",
@@ -982,5 +982,15 @@
       "explanation": "She folds it and leaves it between pages of the book.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-18.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 143928
+      }
+    ]
+  }
 }

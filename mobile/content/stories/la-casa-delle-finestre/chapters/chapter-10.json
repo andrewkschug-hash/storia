@@ -39,7 +39,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Oggi Irene Ã¨ sola giÃ¹, con le scatole.",
+          "text": "Oggi Irene è sola giù, con le scatole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -55,7 +55,7 @@
         },
         {
           "id": "s02",
-          "text": "Alme Ã¨ su, in ufficio. Lo scanner Ã¨ acceso.",
+          "text": "Alme è su, in ufficio. Lo scanner è acceso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -72,7 +72,7 @@
         },
         {
           "id": "s03",
-          "text": "Prima fa il lavoro permesso. Ãˆ il suo lavoro.",
+          "text": "Prima fa il lavoro permesso. È il suo lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -196,7 +196,7 @@
         },
         {
           "id": "s10",
-          "text": "Il nastro Ã¨ diverso. La carta Ã¨ diversa. C'Ã¨ ancora la riga: non scansionare.",
+          "text": "Il nastro è diverso. La carta è diversa. C'è ancora la riga: non scansionare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -268,7 +268,7 @@
         },
         {
           "id": "s14",
-          "text": "Dovrei lasciarla, pensa. PerÃ² stamattina c'erano le pile.",
+          "text": "Dovrei lasciarla, pensa. Però stamattina c'erano le pile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -284,7 +284,7 @@
         },
         {
           "id": "s15",
-          "text": "Dovrei dirlo ad Alme. PerÃ² Alme ha detto: viene da me.",
+          "text": "Dovrei dirlo ad Alme. Però Alme ha detto: viene da me.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -337,7 +337,7 @@
       "sentences": [
         {
           "id": "s18",
-          "text": "Dentro c'Ã¨ una relazione, non lunga. Tre pagine.",
+          "text": "Dentro c'è una relazione, non lunga. Tre pagine.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -353,7 +353,7 @@
         },
         {
           "id": "s19",
-          "text": "In alto c'Ã¨ un nome: Sara Neri, insegnante.",
+          "text": "In alto c'è un nome: Sara Neri, insegnante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -386,7 +386,7 @@
         },
         {
           "id": "s21",
-          "text": "Il muro non Ã¨ sicuro, dice la relazione. I bambini no.",
+          "text": "Il muro non è sicuro, dice la relazione. I bambini no.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -420,7 +420,7 @@
         },
         {
           "id": "s23",
-          "text": "Nelle liste del comune la scuola Ã¨ chiusa da due anni.",
+          "text": "Nelle liste del comune la scuola è chiusa da due anni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -439,7 +439,7 @@
         },
         {
           "id": "s24",
-          "text": "Questa relazione Ã¨ di prima. Qualcuno ha chiuso, e ha messo via la carta.",
+          "text": "Questa relazione è di prima. Qualcuno ha chiuso, e ha messo via la carta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -478,7 +478,7 @@
         },
         {
           "id": "s26",
-          "text": "C'Ã¨ una data, due anni fa, o poco piÃ¹. C'Ã¨ una firma.",
+          "text": "C'è una data, due anni fa, o poco più. C'è una firma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -498,7 +498,7 @@
         },
         {
           "id": "s27",
-          "text": "Nelle altre scatole la scuola Ã¨ chiusa, e basta.",
+          "text": "Nelle altre scatole la scuola è chiusa, e basta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -515,7 +515,7 @@
         },
         {
           "id": "s28",
-          "text": "Qui la scuola non Ã¨ solo chiusa. Qui c'Ã¨ un muro, e una paura.",
+          "text": "Qui la scuola non è solo chiusa. Qui c'è un muro, e una paura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -537,7 +537,7 @@
         },
         {
           "id": "s29",
-          "text": "Questa carta non Ã¨ con le altre. Non Ã¨ stata scansionata.",
+          "text": "Questa carta non è con le altre. Non è stata scansionata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -571,7 +571,7 @@
         },
         {
           "id": "s31",
-          "text": "Non Ã¨ giusto, pensa Irene. PerÃ² Ã¨ solo una cartella.",
+          "text": "Non è giusto, pensa Irene. Però è solo una cartella.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -625,7 +625,7 @@
         },
         {
           "id": "s34",
-          "text": "Non copia tutto. Non Ã¨ un avvocato. Ãˆ un'archivista.",
+          "text": "Non copia tutto. Non è un avvocato. È un'archivista.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -699,7 +699,7 @@
         },
         {
           "id": "s38",
-          "text": "Quindi non Ã¨ un archivio di Sara. Ãˆ una carta nascosta.",
+          "text": "Quindi non è un archivio di Sara. È una carta nascosta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -724,7 +724,7 @@
       "sentences": [
         {
           "id": "s39",
-          "text": "Quando alza gli occhi, Alme Ã¨ alla porta.",
+          "text": "Quando alza gli occhi, Alme è alla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -740,7 +740,7 @@
         },
         {
           "id": "s40",
-          "text": "Sorride. Non ha detto il suo nome, giÃ¹.",
+          "text": "Sorride. Non ha detto il suo nome, giù.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -778,7 +778,7 @@
         },
         {
           "id": "s43",
-          "text": "Non conta la quarta. Non Ã¨ nelle tre. Non Ã¨ nel foglio del comune.",
+          "text": "Non conta la quarta. Non è nelle tre. Non è nel foglio del comune.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -810,7 +810,7 @@
         },
         {
           "id": "s45",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -875,7 +875,7 @@
         },
         {
           "id": "s50",
-          "text": "Ãˆ la prima volta che dice di no, cosÃ¬. Una bugia, piccola, chiara.",
+          "text": "È la prima volta che dice di no, così. Una bugia, piccola, chiara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -896,7 +896,7 @@
         },
         {
           "id": "s51",
-          "text": "Dovrei dirlo, pensa. PerÃ² ha detto no.",
+          "text": "Dovrei dirlo, pensa. Però ha detto no.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -924,7 +924,7 @@
         },
         {
           "id": "s53",
-          "text": "Bene. Allora su, un caffÃ¨.",
+          "text": "Bene. Allora su, un caffè.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -937,7 +937,7 @@
         },
         {
           "id": "s54",
-          "text": "Irene sale. Beve il caffÃ¨. Il nome resta giÃ¹, nella cartella, e nel quaderno.",
+          "text": "Irene sale. Beve il caffè. Il nome resta giù, nella cartella, e nel quaderno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -975,7 +975,7 @@
         },
         {
           "id": "s56",
-          "text": "Se c'Ã¨ qualcosa di strano, vieni da me.",
+          "text": "Se c'è qualcosa di strano, vieni da me.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -991,7 +991,7 @@
         },
         {
           "id": "s57",
-          "text": "Lo ha giÃ  detto. Lo dice di nuovo.",
+          "text": "Lo ha già detto. Lo dice di nuovo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1007,7 +1007,7 @@
         },
         {
           "id": "s58",
-          "text": "Irene dice di sÃ¬. Ha giÃ  detto di no, giÃ¹.",
+          "text": "Irene dice di sì. Ha già detto di no, giù.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1025,7 +1025,7 @@
         },
         {
           "id": "s59",
-          "text": "Dopo il caffÃ¨ Irene scende di nuovo, un minuto.",
+          "text": "Dopo il caffè Irene scende di nuovo, un minuto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1042,7 +1042,7 @@
         },
         {
           "id": "s60",
-          "text": "La cartella Ã¨ chiusa, come prima. Il nastro Ã¨ al suo posto.",
+          "text": "La cartella è chiusa, come prima. Il nastro è al suo posto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1062,7 +1062,7 @@
         },
         {
           "id": "s61",
-          "text": "Nessuno deve vedere che l'ha aperta. Ãˆ un pensiero da archivista, e da bugia.",
+          "text": "Nessuno deve vedere che l'ha aperta. È un pensiero da archivista, e da bugia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1084,7 +1084,7 @@
         },
         {
           "id": "s62",
-          "text": "Risale. Alme Ã¨ ancora in ufficio. Non chiede perchÃ© Ã¨ scesa.",
+          "text": "Risale. Alme è ancora in ufficio. Non chiede perché è scesa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1161,5 +1161,15 @@
       "explanation": "Alme asks carefully. Irene says no. It is her first lie.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-10.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 280896
+      }
+    ]
+  }
 }

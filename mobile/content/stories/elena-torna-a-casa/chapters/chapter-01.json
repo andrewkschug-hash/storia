@@ -5,14 +5,28 @@
   "title": "Arrival",
   "titleIt": "A casa",
   "difficultyLevel": 1,
-  "locationIds": ["casa-elena"],
-  "characterIds": ["elena", "teresa", "stefano", "sara"],
+  "locationIds": [
+    "casa-elena"
+  ],
+  "characterIds": [
+    "elena",
+    "teresa",
+    "stefano",
+    "sara"
+  ],
   "events": [
     {
       "id": "ev-01-arrive",
       "summary": "Elena arrives home in a small town and is welcomed by Teresa, Stefano, and Sara.",
-      "characterIds": ["elena", "teresa", "stefano", "sara"],
-      "locationIds": ["casa-elena"],
+      "characterIds": [
+        "elena",
+        "teresa",
+        "stefano",
+        "sara"
+      ],
+      "locationIds": [
+        "casa-elena"
+      ],
       "rememberedFacts": [
         "Elena is home in a small town",
         "Teresa is Elena's mother",
@@ -31,35 +45,74 @@
           "text": "Elena torna a casa oggi.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "tornare", "a", "casa", "oggi"]
+          "lemmas": [
+            "elena",
+            "tornare",
+            "a",
+            "casa",
+            "oggi"
+          ]
         },
         {
           "id": "s02",
           "text": "Elena arriva in un piccolo paese, non lontano.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "arrivare", "in", "un", "piccolo", "paese", "non", "lontano"]
+          "lemmas": [
+            "elena",
+            "arrivare",
+            "in",
+            "un",
+            "piccolo",
+            "paese",
+            "non",
+            "lontano"
+          ]
         },
         {
           "id": "s03",
-          "text": "Il paese √® piccolo e tranquillo.",
+          "text": "Il paese Ë piccolo e tranquillo.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["il", "paese", "essere", "piccolo", "e", "tranquillo"]
+          "lemmas": [
+            "il",
+            "paese",
+            "essere",
+            "piccolo",
+            "e",
+            "tranquillo"
+          ]
         },
         {
           "id": "s04",
           "text": "Elena va alla casa della famiglia, nel paese.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "andare", "alla", "casa", "della", "famiglia", "nel", "paese"]
+          "lemmas": [
+            "elena",
+            "andare",
+            "alla",
+            "casa",
+            "della",
+            "famiglia",
+            "nel",
+            "paese"
+          ]
         },
         {
           "id": "s05",
-          "text": "Elena √® stanca, ma √® molto felice.",
+          "text": "Elena Ë stanca, ma Ë molto felice.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "essere", "stanco", "ma", "essere", "molto", "felice"]
+          "lemmas": [
+            "elena",
+            "essere",
+            "stanco",
+            "ma",
+            "essere",
+            "molto",
+            "felice"
+          ]
         }
       ]
     },
@@ -69,45 +122,82 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Elena √® davanti alla porta di casa.",
+          "text": "Elena Ë davanti alla porta di casa.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "essere", "davanti", "alla", "porta", "di", "casa"]
+          "lemmas": [
+            "elena",
+            "essere",
+            "davanti",
+            "alla",
+            "porta",
+            "di",
+            "casa"
+          ]
         },
         {
           "id": "s07",
           "text": "La porta si apre.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["la", "porta", "si", "aprire"]
+          "lemmas": [
+            "la",
+            "porta",
+            "si",
+            "aprire"
+          ]
         },
         {
           "id": "s08",
-          "text": "C'√® mamma Teresa alla porta.",
+          "text": "C'Ë mamma Teresa alla porta.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["ce", "mamma", "teresa", "alla", "porta"]
+          "lemmas": [
+            "ce",
+            "mamma",
+            "teresa",
+            "alla",
+            "porta"
+          ]
         },
         {
           "id": "s09",
           "text": "Buongiorno, Elena!",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["buongiorno", "elena"]
+          "lemmas": [
+            "buongiorno",
+            "elena"
+          ]
         },
         {
           "id": "s10",
           "text": "Ciao, mamma. Sono a casa.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["ciao", "mamma", "essere", "a", "casa"]
+          "lemmas": [
+            "ciao",
+            "mamma",
+            "essere",
+            "a",
+            "casa"
+          ]
         },
         {
           "id": "s11",
-          "text": "Teresa √® felice e guarda Elena alla porta.",
+          "text": "Teresa Ë felice e guarda Elena alla porta.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["teresa", "essere", "felice", "e", "guardare", "elena", "alla", "porta"]
+          "lemmas": [
+            "teresa",
+            "essere",
+            "felice",
+            "e",
+            "guardare",
+            "elena",
+            "alla",
+            "porta"
+          ]
         }
       ]
     },
@@ -117,45 +207,81 @@
       "sentences": [
         {
           "id": "s12",
-          "text": "Pap√† Stefano √® in casa, anche lui.",
+          "text": "Pap‡ Stefano Ë in casa, anche lui.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["papa", "stefano", "essere", "in", "casa", "anche", "lui"]
+          "lemmas": [
+            "papa",
+            "stefano",
+            "essere",
+            "in",
+            "casa",
+            "anche",
+            "lui"
+          ]
         },
         {
           "id": "s13",
-          "text": "Ciao, pap√†.",
+          "text": "Ciao, pap‡.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["ciao", "papa"]
+          "lemmas": [
+            "ciao",
+            "papa"
+          ]
         },
         {
           "id": "s14",
-          "text": "Ciao, Elena. La casa √® tua.",
+          "text": "Ciao, Elena. La casa Ë tua.",
           "speakerId": "stefano",
           "kind": "dialogue",
-          "lemmas": ["ciao", "elena", "la", "casa", "essere", "tuo"]
+          "lemmas": [
+            "ciao",
+            "elena",
+            "la",
+            "casa",
+            "essere",
+            "tuo"
+          ]
         },
         {
           "id": "s15",
-          "text": "Sara √® in casa con pap√†.",
+          "text": "Sara Ë in casa con pap‡.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["sara", "essere", "in", "casa", "con", "papa"]
+          "lemmas": [
+            "sara",
+            "essere",
+            "in",
+            "casa",
+            "con",
+            "papa"
+          ]
         },
         {
           "id": "s16",
           "text": "Ciao, Elena!",
           "speakerId": "sara",
           "kind": "dialogue",
-          "lemmas": ["ciao", "elena"]
+          "lemmas": [
+            "ciao",
+            "elena"
+          ]
         },
         {
           "id": "s17",
           "text": "Ciao, Sara. Io sono a casa adesso.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["ciao", "sara", "io", "essere", "a", "casa", "adesso"]
+          "lemmas": [
+            "ciao",
+            "sara",
+            "io",
+            "essere",
+            "a",
+            "casa",
+            "adesso"
+          ]
         }
       ]
     },
@@ -165,83 +291,186 @@
       "sentences": [
         {
           "id": "s18",
-          "text": "La famiglia √® insieme in casa.",
+          "text": "La famiglia Ë insieme in casa.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["la", "famiglia", "essere", "insieme", "in", "casa"]
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "insieme",
+            "in",
+            "casa"
+          ]
         },
         {
           "id": "s19",
-          "text": "La casa √® piccola, ma √® bella.",
+          "text": "La casa Ë piccola, ma Ë bella.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["la", "casa", "essere", "piccolo", "ma", "essere", "bello"]
+          "lemmas": [
+            "la",
+            "casa",
+            "essere",
+            "piccolo",
+            "ma",
+            "essere",
+            "bello"
+          ]
         },
         {
           "id": "s20",
           "text": "Elena entra in casa con mamma.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "entrare", "in", "casa", "con", "mamma"]
+          "lemmas": [
+            "elena",
+            "entrare",
+            "in",
+            "casa",
+            "con",
+            "mamma"
+          ]
         },
         {
           "id": "s21",
           "text": "Elena vuole vedere tutto.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "volere", "vedere", "tutto"]
+          "lemmas": [
+            "elena",
+            "volere",
+            "vedere",
+            "tutto"
+          ]
         },
         {
           "id": "s22",
-          "text": "Adesso Elena √® a casa, con la famiglia.",
+          "text": "Adesso Elena Ë a casa, con la famiglia.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["adesso", "elena", "essere", "a", "casa", "con", "la", "famiglia"]
+          "lemmas": [
+            "adesso",
+            "elena",
+            "essere",
+            "a",
+            "casa",
+            "con",
+            "la",
+            "famiglia"
+          ]
         },
         {
           "id": "s23",
-          "text": "Elena √® a casa, e non √® sola.",
+          "text": "Elena Ë a casa, e non Ë sola.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "essere", "a", "casa", "e", "non", "essere", "solo"]
+          "lemmas": [
+            "elena",
+            "essere",
+            "a",
+            "casa",
+            "e",
+            "non",
+            "essere",
+            "solo"
+          ]
         },
         {
           "id": "s24",
-          "text": "Mamma, pap√† e Sara sono qui.",
+          "text": "Mamma, pap‡ e Sara sono qui.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["mamma", "papa", "e", "sara", "essere", "qui"]
+          "lemmas": [
+            "mamma",
+            "papa",
+            "e",
+            "sara",
+            "essere",
+            "qui"
+          ]
         },
         {
           "id": "s25",
-          "text": "Oggi √® un bel giorno per Elena.",
+          "text": "Oggi Ë un bel giorno per Elena.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["oggi", "essere", "un", "bello", "giorno", "per", "elena"]
+          "lemmas": [
+            "oggi",
+            "essere",
+            "un",
+            "bello",
+            "giorno",
+            "per",
+            "elena"
+          ]
         },
         {
           "id": "s26",
-          "text": "Elena parla con mamma, pap√† e Sara in casa.",
+          "text": "Elena parla con mamma, pap‡ e Sara in casa.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "parlare", "con", "mamma", "papa", "e", "sara", "in", "casa"]
+          "lemmas": [
+            "elena",
+            "parlare",
+            "con",
+            "mamma",
+            "papa",
+            "e",
+            "sara",
+            "in",
+            "casa"
+          ]
         },
         {
           "id": "s27",
-          "text": "La casa del paese √® piccola, ma Elena sta bene.",
+          "text": "La casa del paese Ë piccola, ma Elena sta bene.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["la", "casa", "del", "paese", "essere", "piccolo", "ma", "elena", "stare", "bene"]
+          "lemmas": [
+            "la",
+            "casa",
+            "del",
+            "paese",
+            "essere",
+            "piccolo",
+            "ma",
+            "elena",
+            "stare",
+            "bene"
+          ]
         },
         {
           "id": "s28",
-          "text": "Adesso Elena √® a casa, e tutta la famiglia √® felice.",
+          "text": "Adesso Elena Ë a casa, e tutta la famiglia Ë felice.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["adesso", "elena", "essere", "a", "casa", "e", "tutto", "la", "famiglia", "essere", "felice"]
+          "lemmas": [
+            "adesso",
+            "elena",
+            "essere",
+            "a",
+            "casa",
+            "e",
+            "tutto",
+            "la",
+            "famiglia",
+            "essere",
+            "felice"
+          ]
         }
       ]
     }
   ],
-  "questions": []
+  "questions": [],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 83784
+      }
+    ]
+  }
 }

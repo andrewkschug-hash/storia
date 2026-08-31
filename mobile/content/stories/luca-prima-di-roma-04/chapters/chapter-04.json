@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Oggi Ã¨ primavera.",
+          "text": "Oggi è primavera.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -55,7 +55,7 @@
         },
         {
           "id": "s02",
-          "text": "In primavera c'Ã¨ il sole.",
+          "text": "In primavera c'è il sole.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -68,7 +68,7 @@
         },
         {
           "id": "s03",
-          "text": "Adesso Ã¨ primavera a Pietralba.",
+          "text": "Adesso è primavera a Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -81,7 +81,7 @@
         },
         {
           "id": "s04",
-          "text": "La primavera Ã¨ bella.",
+          "text": "La primavera è bella.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -142,7 +142,7 @@
         },
         {
           "id": "s09",
-          "text": "Ogni stagione Ã¨ diversa.",
+          "text": "Ogni stagione è diversa.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -185,7 +185,7 @@
         },
         {
           "id": "s12",
-          "text": "L'estate Ã¨ calda.",
+          "text": "L'estate è calda.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -220,7 +220,7 @@
         },
         {
           "id": "s15",
-          "text": "In autunno il tempo Ã¨ nuvoloso.",
+          "text": "In autunno il tempo è nuvoloso.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -246,7 +246,7 @@
         },
         {
           "id": "s17",
-          "text": "L'inverno Ã¨ freddo.",
+          "text": "L'inverno è freddo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -257,7 +257,7 @@
         },
         {
           "id": "s18",
-          "text": "In inverno non c'Ã¨ il sole.",
+          "text": "In inverno non c'è il sole.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -303,7 +303,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Oggi il tempo Ã¨ di primavera.",
+          "text": "Oggi il tempo è di primavera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -355,7 +355,7 @@
         },
         {
           "id": "s25",
-          "text": "Il parco Ã¨ bello.",
+          "text": "Il parco è bello.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -367,7 +367,7 @@
         },
         {
           "id": "s26",
-          "text": "In primavera il parco Ã¨ bello.",
+          "text": "In primavera il parco è bello.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -392,7 +392,7 @@
         },
         {
           "id": "s28",
-          "text": "Ma oggi Ã¨ primavera.",
+          "text": "Ma oggi è primavera.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -404,7 +404,7 @@
         },
         {
           "id": "s29",
-          "text": "Il sole Ã¨ di primavera.",
+          "text": "Il sole è di primavera.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -479,7 +479,7 @@
         "Autumn"
       ],
       "correctChoice": 1,
-      "explanation": "Oggi Ã¨ primavera.",
+      "explanation": "Oggi è primavera.",
       "chapterId": "luca-prima-di-roma-04-04",
       "difficulty": 1
     },
@@ -511,5 +511,15 @@
       "chapterId": "luca-prima-di-roma-04-04",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 76968
+      }
+    ]
+  }
 }

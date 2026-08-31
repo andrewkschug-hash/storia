@@ -15,7 +15,7 @@
   "events": [
     {
       "id": "ev-la-casa-delle-finestre-21",
-      "summary": "Still Friday, in Almeâ€™s office. Alme says the closure protected children and also her job. She lets one box exist as already destroyed. She tells Irene to go to Piva or not; she will not help twice.",
+      "summary": "Still Friday, in Alme’s office. Alme says the closure protected children and also her job. She lets one box exist as already destroyed. She tells Irene to go to Piva or not; she will not help twice.",
       "characterIds": [
         "irene-colombo",
         "alme"
@@ -24,9 +24,9 @@
         "ufficio-alme"
       ],
       "rememberedFacts": [
-        "It is still Friday, in Almeâ€™s office",
+        "It is still Friday, in Alme’s office",
         "Alme says the closure protected children",
-        "Alme also protected her job and the townâ€™s story",
+        "Alme also protected her job and the town’s story",
         "She allows one box to survive as already shredded",
         "This is not a full confession",
         "She says Irene may go to Piva or not; she will not help twice"
@@ -40,7 +40,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La porta Ã¨ chiusa. Oggi Ã¨ ancora venerdÃ¬. Fuori la macchina fa rumore.",
+          "text": "La porta è chiusa. Oggi è ancora venerdì. Fuori la macchina fa rumore.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -99,7 +99,7 @@
         },
         {
           "id": "s04",
-          "text": "Abbiamo chiuso la scuola perchÃ© i bambini non potevano restare.",
+          "text": "Abbiamo chiuso la scuola perché i bambini non potevano restare.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -117,7 +117,7 @@
         },
         {
           "id": "s05",
-          "text": "Il muro non era sicuro. Questo Ã¨ vero.",
+          "text": "Il muro non era sicuro. Questo è vero.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -153,7 +153,7 @@
         },
         {
           "id": "s07",
-          "text": "Quindi abbiamo chiuso. Quindi il paese dice: Ã¨ vuota.",
+          "text": "Quindi abbiamo chiuso. Quindi il paese dice: è vuota.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -170,7 +170,7 @@
         },
         {
           "id": "s08",
-          "text": "PerÃ² ho protetto anche il mio posto di lavoro. E la storia del paese.",
+          "text": "Però ho protetto anche il mio posto di lavoro. E la storia del paese.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -192,7 +192,7 @@
         },
         {
           "id": "s09",
-          "text": "Non Ã¨ tutta la veritÃ . Ãˆ abbastanza per chiudere una porta, due anni fa.",
+          "text": "Non è tutta la verità. È abbastanza per chiudere una porta, due anni fa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -291,7 +291,7 @@
         },
         {
           "id": "s14",
-          "text": "Per i fogli, quella scatola Ã¨ giÃ  distrutta. Oggi. VenerdÃ¬.",
+          "text": "Per i fogli, quella scatola è già distrutta. Oggi. Venerdì.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -309,7 +309,7 @@
         },
         {
           "id": "s15",
-          "text": "Non Ã¨ coraggio. Non Ã¨ pietÃ  pulita. Ãˆ una cosa piccola, e vile, e utile.",
+          "text": "Non è coraggio. Non è pietà pulita. È una cosa piccola, e vile, e utile.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -369,7 +369,7 @@
         },
         {
           "id": "s18",
-          "text": "Non confesso in piazza. Non lo farÃ².",
+          "text": "Non confesso in piazza. Non lo farò.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -390,7 +390,7 @@
       "sentences": [
         {
           "id": "s19",
-          "text": "Il rumore della macchina continua. VenerdÃ¬ non si ferma per due donne.",
+          "text": "Il rumore della macchina continua. Venerdì non si ferma per due donne.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -428,7 +428,7 @@
         },
         {
           "id": "s21",
-          "text": "La scatola resta giÃ¹. Io non aiuto due volte.",
+          "text": "La scatola resta giù. Io non aiuto due volte.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -445,7 +445,7 @@
         },
         {
           "id": "s22",
-          "text": "Adesso va dal maresciallo Piva, o non va. Questa Ã¨ la sua scelta.",
+          "text": "Adesso va dal maresciallo Piva, o non va. Questa è la sua scelta.",
           "speakerId": "alme",
           "kind": "dialogue",
           "lemmas": [
@@ -466,7 +466,7 @@
         },
         {
           "id": "s23",
-          "text": "Non Ã¨ un ordine. Ãˆ una porta, aperta, dopo una porta chiusa.",
+          "text": "Non è un ordine. È una porta, aperta, dopo una porta chiusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -506,7 +506,7 @@
         },
         {
           "id": "s25",
-          "text": "Non Ã¨ finito il mistero in una stanza. Ãˆ una scatola, e una scelta, e venerdÃ¬ che continua.",
+          "text": "Non è finito il mistero in una stanza. È una scatola, e una scelta, e venerdì che continua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -553,7 +553,7 @@
         },
         {
           "id": "s32",
-          "text": "Fuori Ã¨ ancora pomeriggio. La macchina lavora. Irene cammina verso i carabinieri, o ci pensa. Poi cammina.",
+          "text": "Fuori è ancora pomeriggio. La macchina lavora. Irene cammina verso i carabinieri, o ci pensa. Poi cammina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -586,7 +586,7 @@
       "type": "direct",
       "question": "When and where is this?",
       "choices": [
-        "Still Friday, in Almeâ€™s office",
+        "Still Friday, in Alme’s office",
         "Tuesday at the school",
         "Saturday on the bus"
       ],
@@ -600,7 +600,7 @@
       "type": "character",
       "question": "What does Alme say about the closure?",
       "choices": [
-        "It protected children, and also her job and the townâ€™s story",
+        "It protected children, and also her job and the town’s story",
         "Sara was right and Alme will confess on TV",
         "Quinto is the lamp"
       ],
@@ -633,8 +633,18 @@
         "Sell the USB"
       ],
       "correctChoice": 0,
-      "explanation": "Now you go to Marshal Piva, or you donâ€™t. I do not help twice.",
+      "explanation": "Now you go to Marshal Piva, or you don’t. I do not help twice.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-21.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 153576
+      }
+    ]
+  }
 }

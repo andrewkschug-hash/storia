@@ -28,8 +28,8 @@
       ],
       "rememberedFacts": [
         "From the street she sees more than from the attic",
-        "The lamp is on the second floor, perhaps the teachersâ€™ room, not window three",
-        "A light on Ireneâ€™s stairs is Loredana, who cannot sleep",
+        "The lamp is on the second floor, perhaps the teachers’ room, not window three",
+        "A light on Irene’s stairs is Loredana, who cannot sleep",
         "Not every light is the lamp in the school"
       ]
     }
@@ -145,7 +145,7 @@
         },
         {
           "id": "s06",
-          "text": "Da qua la griglia Ã¨ piÃ¹ larga. Dalla mansarda si vede solo un pezzo.",
+          "text": "Da qua la griglia è più larga. Dalla mansarda si vede solo un pezzo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -189,7 +189,7 @@
         },
         {
           "id": "s08",
-          "text": "Non prova il cancello. Non entra. Sta di qua. La scuola Ã¨ di lÃ .",
+          "text": "Non prova il cancello. Non entra. Sta di qua. La scuola è di là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -243,7 +243,7 @@
         },
         {
           "id": "s11",
-          "text": "Tre Ã¨ di fronte a lei, a casa. Quattro e cinque sono piÃ¹ in lÃ .",
+          "text": "Tre è di fronte a lei, a casa. Quattro e cinque sono più in là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -266,7 +266,7 @@
         },
         {
           "id": "s12",
-          "text": "La luce di stasera non Ã¨ sulla tre. Ãˆ oltre, verso destra.",
+          "text": "La luce di stasera non è sulla tre. È oltre, verso destra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -286,7 +286,7 @@
         },
         {
           "id": "s13",
-          "text": "Sul disegno, al secondo piano a destra, c'Ã¨ la stanza delle prof, o cosÃ¬ sembra.",
+          "text": "Sul disegno, al secondo piano a destra, c'è la stanza delle prof, o così sembra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -309,7 +309,7 @@
         },
         {
           "id": "s14",
-          "text": "Finestra tre Ã¨ piÃ¹ a sinistra. Di fronte alla mansarda.",
+          "text": "Finestra tre è più a sinistra. Di fronte alla mansarda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -327,7 +327,7 @@
         },
         {
           "id": "s15",
-          "text": "Alle nove c'Ã¨ una luce, al secondo piano, a destra.",
+          "text": "Alle nove c'è una luce, al secondo piano, a destra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -345,7 +345,7 @@
         },
         {
           "id": "s16",
-          "text": "Non Ã¨ finestra tre. Non Ã¨ la pausa di ieri. Ãˆ un'altra stanza, di lÃ .",
+          "text": "Non è finestra tre. Non è la pausa di ieri. È un'altra stanza, di là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -368,7 +368,7 @@
         },
         {
           "id": "s17",
-          "text": "Quindi la luce non resta solo dove Irene puÃ² vederla da casa.",
+          "text": "Quindi la luce non resta solo dove Irene può vederla da casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s21",
-          "text": "Dalla strada, stasera, la luce Ã¨ al secondo piano, altrove.",
+          "text": "Dalla strada, stasera, la luce è al secondo piano, altrove.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -459,7 +459,7 @@
         },
         {
           "id": "s22",
-          "text": "Due punti di vista. Due stanze. La persona, se c'Ã¨, si muove.",
+          "text": "Due punti di vista. Due stanze. La persona, se c'è, si muove.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -517,7 +517,7 @@
         },
         {
           "id": "s25",
-          "text": "Poi capisce. Non Ã¨ la scuola. Ãˆ la sua casa, sulle scale, di qua.",
+          "text": "Poi capisce. Non è la scuola. È la sua casa, sulle scale, di qua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -571,7 +571,7 @@
         },
         {
           "id": "s28",
-          "text": "Non Ã¨ una torcia da campeggio. Ãˆ un telefono acceso.",
+          "text": "Non è una torcia da campeggio. È un telefono acceso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -589,7 +589,7 @@
         },
         {
           "id": "s29",
-          "text": "Loredana Ã¨ in vestaglia. Ha i capelli in disordine.",
+          "text": "Loredana è in vestaglia. Ha i capelli in disordine.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -640,7 +640,7 @@
         },
         {
           "id": "s33",
-          "text": "Scusi. Non ho sentito. Guardavo di lÃ .",
+          "text": "Scusi. Non ho sentito. Guardavo di là.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -684,7 +684,7 @@
         },
         {
           "id": "s36",
-          "text": "La scuolaâ€¦",
+          "text": "La scuola…",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -729,7 +729,7 @@
         },
         {
           "id": "s39",
-          "text": "Irene guarda di lÃ . La luce della scuola, al secondo piano, c'Ã¨ ancora.",
+          "text": "Irene guarda di là. La luce della scuola, al secondo piano, c'è ancora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -750,7 +750,7 @@
         },
         {
           "id": "s40",
-          "text": "Loredana Ã¨ di qua, sulle scale. La luce di lÃ  resta accesa.",
+          "text": "Loredana è di qua, sulle scale. La luce di là resta accesa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -770,7 +770,7 @@
         },
         {
           "id": "s41",
-          "text": "Quindi Loredana non Ã¨ quella luce. Sono due.",
+          "text": "Quindi Loredana non è quella luce. Sono due.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -819,7 +819,7 @@
         },
         {
           "id": "s44",
-          "text": "Irene resta di qua. Due luci. Due case. Non Ã¨ la stessa cosa.",
+          "text": "Irene resta di qua. Due luci. Due case. Non è la stessa cosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -840,7 +840,7 @@
         },
         {
           "id": "s45",
-          "text": "Scrive: luce scuola di lÃ . Loredana di qua, sulle scale.",
+          "text": "Scrive: luce scuola di là. Loredana di qua, sulle scale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -891,7 +891,7 @@
         },
         {
           "id": "s48",
-          "text": "Scrive solo dove sono le luci. Di qua. Di lÃ .",
+          "text": "Scrive solo dove sono le luci. Di qua. Di là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -909,7 +909,7 @@
         },
         {
           "id": "s49",
-          "text": "Dalla mansarda, dopo, guarda di nuovo. Finestra tre Ã¨ scura.",
+          "text": "Dalla mansarda, dopo, guarda di nuovo. Finestra tre è scura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -965,7 +965,7 @@
         },
         {
           "id": "s52",
-          "text": "Domani, se c'Ã¨ di nuovo una luce, sa dove stare: di qua, in strada, o di fronte, su.",
+          "text": "Domani, se c'è di nuovo una luce, sa dove stare: di qua, in strada, o di fronte, su.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1008,7 +1008,7 @@
         },
         {
           "id": "s54",
-          "text": "Smette di guardare, per ora. La scuola resta di lÃ , con la sua luce.",
+          "text": "Smette di guardare, per ora. La scuola resta di là, con la sua luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1039,7 +1039,7 @@
       "question": "Why does Irene watch from the street?",
       "choices": [
         "From the attic she only sees the facing windows",
-        "She has Quintoâ€™s key",
+        "She has Quinto’s key",
         "Loredana told her to go in"
       ],
       "correctChoice": 0,
@@ -1053,18 +1053,18 @@
       "question": "Where is the lamp in the school tonight?",
       "choices": [
         "On the second floor to the right, not at window three",
-        "In Ireneâ€™s attic",
+        "In Irene’s attic",
         "In the courtyard"
       ],
       "correctChoice": 0,
-      "explanation": "At nine there is a light on the second floor, to the right. Not yesterdayâ€™s pause.",
+      "explanation": "At nine there is a light on the second floor, to the right. Not yesterday’s pause.",
       "difficulty": 2
     },
     {
       "id": "ch12_q03",
       "chapterId": "la-casa-delle-finestre-12",
       "type": "character",
-      "question": "Who is the light on Ireneâ€™s stairs?",
+      "question": "Who is the light on Irene’s stairs?",
       "choices": [
         "Loredana, who cannot sleep",
         "Sara Neri with a camping lamp",
@@ -1088,5 +1088,15 @@
       "explanation": "Two lights. Two houses. School over there, Loredana on this side.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-12.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 272664
+      }
+    ]
+  }
 }

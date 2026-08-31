@@ -36,10 +36,10 @@
         "cucina-pietralba"
       ],
       "rememberedFacts": [
-        "Marta is Lucaâ€™s mother",
-        "Paolo is Lucaâ€™s father",
-        "Chiara is Lucaâ€™s sister",
-        "Lidia is Lucaâ€™s grandmother"
+        "Marta is Luca’s mother",
+        "Paolo is Luca’s father",
+        "Chiara is Luca’s sister",
+        "Lidia is Luca’s grandmother"
       ]
     }
   ],
@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La famiglia Ã¨ in cucina.",
+          "text": "La famiglia è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -63,7 +63,7 @@
         },
         {
           "id": "s02",
-          "text": "Luca Ã¨ in cucina.",
+          "text": "Luca è in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -75,7 +75,7 @@
         },
         {
           "id": "s03",
-          "text": "C'Ã¨ un tavolo.",
+          "text": "C'è un tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -98,7 +98,7 @@
         },
         {
           "id": "s05",
-          "text": "Marta Ã¨ alla porta della cucina.",
+          "text": "Marta è alla porta della cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -132,7 +132,7 @@
         },
         {
           "id": "s08",
-          "text": "Questa Ã¨ Marta.",
+          "text": "Questa è Marta.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -143,7 +143,7 @@
         },
         {
           "id": "s09",
-          "text": "Marta Ã¨ la mia mamma.",
+          "text": "Marta è la mia mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -166,7 +166,7 @@
         },
         {
           "id": "s11",
-          "text": "Questo Ã¨ Paolo.",
+          "text": "Questo è Paolo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -177,7 +177,7 @@
         },
         {
           "id": "s12",
-          "text": "Paolo Ã¨ il mio papÃ .",
+          "text": "Paolo è il mio papà.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -205,7 +205,7 @@
         },
         {
           "id": "s14",
-          "text": "Chiara Ã¨ qui.",
+          "text": "Chiara è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -216,7 +216,7 @@
         },
         {
           "id": "s15",
-          "text": "Chiara Ã¨ la mia sorella.",
+          "text": "Chiara è la mia sorella.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -229,7 +229,7 @@
         },
         {
           "id": "s16",
-          "text": "Lei Ã¨ piccola.",
+          "text": "Lei è piccola.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -262,7 +262,7 @@
         },
         {
           "id": "s19",
-          "text": "Lidia Ã¨ la mia nonna.",
+          "text": "Lidia è la mia nonna.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -275,7 +275,7 @@
         },
         {
           "id": "s20",
-          "text": "Nonna Lidia Ã¨ a casa.",
+          "text": "Nonna Lidia è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s24",
-          "text": "Mamma papÃ  sorella nonna e io.",
+          "text": "Mamma papà sorella nonna e io.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -338,7 +338,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "La mia famiglia Ã¨ di Pietralba.",
+          "text": "La mia famiglia è di Pietralba.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -364,7 +364,7 @@
         },
         {
           "id": "s27",
-          "text": "Lui Ã¨ papÃ .",
+          "text": "Lui è papà.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -375,7 +375,7 @@
         },
         {
           "id": "s28",
-          "text": "Lei Ã¨ mamma.",
+          "text": "Lei è mamma.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -386,7 +386,7 @@
         },
         {
           "id": "s29",
-          "text": "La famiglia Ã¨ piccola.",
+          "text": "La famiglia è piccola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -398,7 +398,7 @@
         },
         {
           "id": "s30",
-          "text": "Ma la famiglia Ã¨ importante.",
+          "text": "Ma la famiglia è importante.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -411,7 +411,7 @@
         },
         {
           "id": "s31",
-          "text": "Luca Ã¨ felice.",
+          "text": "Luca è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -446,7 +446,7 @@
         },
         {
           "id": "s34",
-          "text": "La mia famiglia Ã¨ qui.",
+          "text": "La mia famiglia è qui.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -459,7 +459,7 @@
         },
         {
           "id": "s35",
-          "text": "Va bene cosÃ¬.",
+          "text": "Va bene così.",
           "speakerId": "lidia",
           "kind": "dialogue",
           "lemmas": [
@@ -477,12 +477,12 @@
       "type": "character",
       "question": "Who is Marta?",
       "choices": [
-        "Lucaâ€™s sister",
-        "Lucaâ€™s mother",
-        "Lucaâ€™s friend"
+        "Luca’s sister",
+        "Luca’s mother",
+        "Luca’s friend"
       ],
       "correctChoice": 1,
-      "explanation": "Marta Ã¨ la mia mamma.",
+      "explanation": "Marta è la mia mamma.",
       "chapterId": "luca-prima-di-roma-01-03",
       "difficulty": 1
     },
@@ -491,12 +491,12 @@
       "type": "character",
       "question": "Who is Lidia?",
       "choices": [
-        "Lucaâ€™s father",
-        "Lucaâ€™s grandmother",
-        "Chiaraâ€™s friend"
+        "Luca’s father",
+        "Luca’s grandmother",
+        "Chiara’s friend"
       ],
       "correctChoice": 1,
-      "explanation": "Lidia Ã¨ la nonna.",
+      "explanation": "Lidia è la nonna.",
       "chapterId": "luca-prima-di-roma-01-03",
       "difficulty": 1
     },
@@ -510,9 +510,19 @@
         "Eight"
       ],
       "correctChoice": 1,
-      "explanation": "Siamo cinque: mamma, papÃ , sorella, nonna, Luca.",
+      "explanation": "Siamo cinque: mamma, papà, sorella, nonna, Luca.",
       "chapterId": "luca-prima-di-roma-01-03",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-03.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 65495
+      }
+    ]
+  }
 }

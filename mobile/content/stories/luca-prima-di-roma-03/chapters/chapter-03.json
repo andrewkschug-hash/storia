@@ -77,7 +77,7 @@
         },
         {
           "id": "s04",
-          "text": "Il pane non √® caro.",
+          "text": "Il pane non Ë caro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -129,7 +129,7 @@
         },
         {
           "id": "s08",
-          "text": "Il latte non √® caro.",
+          "text": "Il latte non Ë caro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -232,7 +232,7 @@
         },
         {
           "id": "s16",
-          "text": "√à troppo caro.",
+          "text": "» troppo caro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -256,7 +256,7 @@
         },
         {
           "id": "s18",
-          "text": "Quello √® economico.",
+          "text": "Quello Ë economico.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -289,7 +289,7 @@
         },
         {
           "id": "s21",
-          "text": "Pina d√† il formaggio economico.",
+          "text": "Pina d‡ il formaggio economico.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -355,7 +355,7 @@
         },
         {
           "id": "s26",
-          "text": "Questo √® troppo caro.",
+          "text": "Questo Ë troppo caro.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -462,7 +462,7 @@
         },
         {
           "id": "s35",
-          "text": "Cinque euro √® troppo.",
+          "text": "Cinque euro Ë troppo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -493,9 +493,9 @@
       "type": "direct",
       "question": "How much is the bread?",
       "choices": [
-        "‚Ç¨2",
-        "‚Ç¨5",
-        "‚Ç¨10"
+        "Ä2",
+        "Ä5",
+        "Ä10"
       ],
       "correctChoice": 0,
       "explanation": "Il pane costa due euro.",
@@ -526,9 +526,19 @@
         "No cheese"
       ],
       "correctChoice": 1,
-      "explanation": "Quello √® economico. Prendo quello.",
+      "explanation": "Quello Ë economico. Prendo quello.",
       "chapterId": "luca-prima-di-roma-03-03",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-03.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 79968
+      }
+    ]
+  }
 }

@@ -41,7 +41,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Oggi Ã¨ giovedÃ¬. Ieri ha visto Sara. Domani Ã¨ venerdÃ¬.",
+          "text": "Oggi è giovedì. Ieri ha visto Sara. Domani è venerdì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -59,7 +59,7 @@
         },
         {
           "id": "s02",
-          "text": "Irene Ã¨ giÃ¹, con le scatole. Lo scanner Ã¨ acceso. Alme Ã¨ su.",
+          "text": "Irene è giù, con le scatole. Lo scanner è acceso. Alme è su.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -116,7 +116,7 @@
         },
         {
           "id": "s05",
-          "text": "Le ore passano. Ha fame, poco. Ha sudore, sÃ¬.",
+          "text": "Le ore passano. Ha fame, poco. Ha sudore, sì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -133,7 +133,7 @@
         },
         {
           "id": "s06",
-          "text": "Mattina: liste. Poi copie. Poi un caffÃ¨, in piedi, senza Alme.",
+          "text": "Mattina: liste. Poi copie. Poi un caffè, in piedi, senza Alme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -171,7 +171,7 @@
         },
         {
           "id": "s08",
-          "text": "Non dovevo, pensa. PerÃ² ieri ha detto: non so. Oggi le mani scelgono.",
+          "text": "Non dovevo, pensa. Però ieri ha detto: non so. Oggi le mani scelgono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -192,7 +192,7 @@
         },
         {
           "id": "s09",
-          "text": "C'Ã¨ una scatola di registri, copie, liste. Non Ã¨ la cartella chiusa. Ãˆ una scatola normale.",
+          "text": "C'è una scatola di registri, copie, liste. Non è la cartella chiusa. È una scatola normale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -216,7 +216,7 @@
         },
         {
           "id": "s10",
-          "text": "Irene la prende. Non la mette sullo scanner. La porta piÃ¹ giÃ¹, nel seminterrato.",
+          "text": "Irene la prende. Non la mette sullo scanner. La porta più giù, nel seminterrato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -238,7 +238,7 @@
         },
         {
           "id": "s11",
-          "text": "LÃ¬ ci sono altre scatole, vecchie, con polvere. Mette questa dietro, dove non si vede subito.",
+          "text": "Lì ci sono altre scatole, vecchie, con polvere. Mette questa dietro, dove non si vede subito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -262,7 +262,7 @@
         },
         {
           "id": "s12",
-          "text": "Ho fatto un errore, dirÃ , se qualcuno chiede. PerÃ² sa: non Ã¨ un errore. Ãˆ una scelta.",
+          "text": "Ho fatto un errore, dirà, se qualcuno chiede. Però sa: non è un errore. È una scelta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -333,7 +333,7 @@
         },
         {
           "id": "s15",
-          "text": "Ho fatto, pensa. Non dovevo. PerÃ² venerdÃ¬ Ã¨ domani, e Sara ha chiesto tempo.",
+          "text": "Ho fatto, pensa. Non dovevo. Però venerdì è domani, e Sara ha chiesto tempo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -355,7 +355,7 @@
         },
         {
           "id": "s16",
-          "text": "Non Ã¨ un eroe. Ha nascosto una scatola. Questo Ã¨ tutto, e pesa.",
+          "text": "Non è un eroe. Ha nascosto una scatola. Questo è tutto, e pesa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -537,7 +537,7 @@
         },
         {
           "id": "s32",
-          "text": "La scatola sta nel seminterrato. Alme ha contato. Lo sguardo Ã¨ stato troppo lungo. Questo Ã¨ il costo, oggi.",
+          "text": "La scatola sta nel seminterrato. Alme ha contato. Lo sguardo è stato troppo lungo. Questo è il costo, oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -564,7 +564,7 @@
         },
         {
           "id": "s33",
-          "text": "Domani Ã¨ venerdÃ¬. Irene sa dove Ã¨ la scatola. Sa anche che Alme sa che manca qualcosa.",
+          "text": "Domani è venerdì. Irene sa dove è la scatola. Sa anche che Alme sa che manca qualcosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -647,5 +647,15 @@
       "explanation": "One is missing. She looks too long. She does not smile this time.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-18.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 182544
+      }
+    ]
+  }
 }

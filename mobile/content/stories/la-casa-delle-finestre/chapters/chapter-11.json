@@ -28,7 +28,7 @@
         "Sara Neri was a teacher here, in the last class photo",
         "People say she wrote, stayed late, exaggerated, and was sent away",
         "Irene is not sure she sees the same woman on a night bus",
-        "The woman‚Äôs bag looks like paper, not shopping"
+        "The womanís bag looks like paper, not shopping"
       ]
     }
   ],
@@ -71,7 +71,7 @@
         },
         {
           "id": "s03",
-          "text": "Una foto √® dell'ultima classe, due anni fa, o poco pi√π.",
+          "text": "Una foto Ë dell'ultima classe, due anni fa, o poco pi˘.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -90,7 +90,7 @@
         },
         {
           "id": "s04",
-          "text": "Dietro gli studenti c'√® un'insegnante.",
+          "text": "Dietro gli studenti c'Ë un'insegnante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -103,7 +103,7 @@
         },
         {
           "id": "s05",
-          "text": "Non √® in centro. √à di lato, vicino a una finestra.",
+          "text": "Non Ë in centro. » di lato, vicino a una finestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -141,7 +141,7 @@
         },
         {
           "id": "s07",
-          "text": "Non sa quale stanza √®. Sa solo: una finestra, una scuola, un'insegnante.",
+          "text": "Non sa quale stanza Ë. Sa solo: una finestra, una scuola, un'insegnante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -161,7 +161,7 @@
         },
         {
           "id": "s08",
-          "text": "Non √® la sua mansarda, quella finestra. √à di l√†, in una classe.",
+          "text": "Non Ë la sua mansarda, quella finestra. » di l‡, in una classe.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -182,7 +182,7 @@
         },
         {
           "id": "s09",
-          "text": "Sotto la foto c'√® un nome piccolo: Sara Neri.",
+          "text": "Sotto la foto c'Ë un nome piccolo: Sara Neri.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -199,7 +199,7 @@
         },
         {
           "id": "s10",
-          "text": "√à la stessa persona della cartella. La stessa data, quasi.",
+          "text": "» la stessa persona della cartella. La stessa data, quasi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -289,7 +289,7 @@
         },
         {
           "id": "s15",
-          "text": "Sara Neri c'√® solo alla fine. Ultima classe, ultima finestra.",
+          "text": "Sara Neri c'Ë solo alla fine. Ultima classe, ultima finestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -331,7 +331,7 @@
       "sentences": [
         {
           "id": "s17",
-          "text": "Un uomo dell'ufficio passa e vede la foto. Non √® Alme.",
+          "text": "Un uomo dell'ufficio passa e vede la foto. Non Ë Alme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -389,7 +389,7 @@
         },
         {
           "id": "s21",
-          "text": "Dicevano anche che portava carte a casa, dice l'uomo, gi√† lontano.",
+          "text": "Dicevano anche che portava carte a casa, dice l'uomo, gi‡ lontano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -408,7 +408,7 @@
         },
         {
           "id": "s22",
-          "text": "Irene non sa se √® vero. Tiene la frase, come l'altra.",
+          "text": "Irene non sa se Ë vero. Tiene la frase, come l'altra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -439,7 +439,7 @@
         },
         {
           "id": "s24",
-          "text": "Via, perch√©?",
+          "text": "Via, perchÈ?",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -449,7 +449,7 @@
         },
         {
           "id": "s25",
-          "text": "Irene sente la sua voce: troppo. Poi √® tardi.",
+          "text": "Irene sente la sua voce: troppo. Poi Ë tardi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -466,7 +466,7 @@
         },
         {
           "id": "s26",
-          "text": "Perch√© esagerava, dice l'uomo. La scuola era la scuola. Basta.",
+          "text": "PerchÈ esagerava, dice l'uomo. La scuola era la scuola. Basta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -484,7 +484,7 @@
         },
         {
           "id": "s27",
-          "text": "Poi prende un caff√® e va.",
+          "text": "Poi prende un caffË e va.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -550,7 +550,7 @@
         },
         {
           "id": "s31",
-          "text": "Esagerava √® la parola del paese. Non √® una data. Non √® una crepa.",
+          "text": "Esagerava Ë la parola del paese. Non Ë una data. Non Ë una crepa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -572,7 +572,7 @@
         },
         {
           "id": "s32",
-          "text": "La relazione c'√®. La foto c'√®. La frase del paese c'√®.",
+          "text": "La relazione c'Ë. La foto c'Ë. La frase del paese c'Ë.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -626,7 +626,7 @@
         },
         {
           "id": "s35",
-          "text": "Non scrive: √® la luce. Non lo sa.",
+          "text": "Non scrive: Ë la luce. Non lo sa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -664,7 +664,7 @@
         },
         {
           "id": "s37",
-          "text": "Non cerca Sara. Torna a casa. La fermata c'√®, sulla strada.",
+          "text": "Non cerca Sara. Torna a casa. La fermata c'Ë, sulla strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -683,7 +683,7 @@
         },
         {
           "id": "s38",
-          "text": "C'√® una fermata dell'autobus, vicino alla piazza, prima della scuola.",
+          "text": "C'Ë una fermata dell'autobus, vicino alla piazza, prima della scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -701,7 +701,7 @@
         },
         {
           "id": "s39",
-          "text": "Irene si ferma perch√© il semaforo √® rosso, non perch√© cerca.",
+          "text": "Irene si ferma perchÈ il semaforo Ë rosso, non perchÈ cerca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -720,7 +720,7 @@
         },
         {
           "id": "s40",
-          "text": "Poi vede la donna. Era gi√† l√¨, o arriva ora: Irene non sa.",
+          "text": "Poi vede la donna. Era gi‡ lÏ, o arriva ora: Irene non sa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -774,7 +774,7 @@
         },
         {
           "id": "s43",
-          "text": "Sembra la donna della foto. Forse. L'et√†, i capelli, il lato.",
+          "text": "Sembra la donna della foto. Forse. L'et‡, i capelli, il lato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -793,7 +793,7 @@
         },
         {
           "id": "s44",
-          "text": "Forse no. √à sera, e la luce √® poca.",
+          "text": "Forse no. » sera, e la luce Ë poca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -832,7 +832,7 @@
         },
         {
           "id": "s46",
-          "text": "Non √® un segnale. √à uno sguardo. Irene non risponde, perch√© non c'√® niente da rispondere.",
+          "text": "Non Ë un segnale. » uno sguardo. Irene non risponde, perchÈ non c'Ë niente da rispondere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -910,7 +910,7 @@
         },
         {
           "id": "s50",
-          "text": "Irene non √® sicura. Non dice: √® lei. Non dice: non √® lei.",
+          "text": "Irene non Ë sicura. Non dice: Ë lei. Non dice: non Ë lei.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -982,7 +982,7 @@
         },
         {
           "id": "s54",
-          "text": "Non √® una prova. √à una sera. Irene lo sa.",
+          "text": "Non Ë una prova. » una sera. Irene lo sa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1015,7 +1015,7 @@
         },
         {
           "id": "s56",
-          "text": "Domani c'√® di nuovo il comune. Domani c'√® di nuovo la foto, nella scatola.",
+          "text": "Domani c'Ë di nuovo il comune. Domani c'Ë di nuovo la foto, nella scatola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1037,7 +1037,7 @@
         },
         {
           "id": "s57",
-          "text": "Che scriveva era vero: la relazione c'√®. Restava, esagerava: questo non lo sa.",
+          "text": "Che scriveva era vero: la relazione c'Ë. Restava, esagerava: questo non lo sa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1067,8 +1067,8 @@
       "question": "Where is Sara Neri in the class photo?",
       "choices": [
         "To the side, near a window, with the last class",
-        "In Irene‚Äôs attic",
-        "Behind Alme‚Äôs desk"
+        "In Ireneís attic",
+        "Behind Almeís desk"
       ],
       "correctChoice": 0,
       "explanation": "She is not in the middle. She is near a window. The name is Sara Neri.",
@@ -1078,11 +1078,11 @@
       "id": "ch11_q02",
       "chapterId": "la-casa-delle-finestre-11",
       "type": "character",
-      "question": "What does the clerk add to ‚Äúshe exaggerated‚Äù?",
+      "question": "What does the clerk add to ìshe exaggeratedî?",
       "choices": [
         "That she wrote, stayed after the children, and was sent away",
         "That she is still the head teacher",
-        "That she is Quinto‚Äôs sister"
+        "That she is Quintoís sister"
       ],
       "correctChoice": 0,
       "explanation": "She wrote. She stayed after the children. Then they sent her away.",
@@ -1099,8 +1099,18 @@
         "Mimmo with a camera"
       ],
       "correctChoice": 0,
-      "explanation": "The face might match. She looks at the school, not at Irene. The bag looks like paper. Irene writes: maybe Sara. I don‚Äôt know.",
+      "explanation": "The face might match. She looks at the school, not at Irene. The bag looks like paper. Irene writes: maybe Sara. I donít know.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-11.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 281952
+      }
+    ]
+  }
 }

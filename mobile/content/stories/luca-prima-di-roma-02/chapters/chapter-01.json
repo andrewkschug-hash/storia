@@ -43,7 +43,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca Ã¨ nel soggiorno.",
+          "text": "Luca è nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -77,7 +77,7 @@
         },
         {
           "id": "s04",
-          "text": "L'orologio Ã¨ sul tavolo.",
+          "text": "L'orologio è sul tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -227,7 +227,7 @@
         },
         {
           "id": "s14",
-          "text": "C'Ã¨ tempo.",
+          "text": "C'è tempo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -280,7 +280,7 @@
         },
         {
           "id": "s19",
-          "text": "SÃ¬ presto.",
+          "text": "Sì presto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s30",
-          "text": "L'orologio Ã¨ qui.",
+          "text": "L'orologio è qui.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -477,7 +477,7 @@
         },
         {
           "id": "s33",
-          "text": "SÃ¬ e alle otto esci.",
+          "text": "Sì e alle otto esci.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -593,5 +593,15 @@
       "chapterId": "luca-prima-di-roma-02-01",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 86064
+      }
+    ]
+  }
 }

@@ -38,7 +38,7 @@
         "cucina-mirella"
       ],
       "rememberedFacts": [
-        "They talk in the cafÃ© storeroom",
+        "They talk in the café storeroom",
         "The conversation is clumsy and true",
         "Pietro says vorrei riprovare, in voce",
         "Elena agrees without making it perfect"
@@ -95,7 +95,7 @@
         },
         {
           "id": "s04",
-          "text": "L'aria odora di caffÃ¨ e di cartone.",
+          "text": "L'aria odora di caffè e di cartone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -110,7 +110,7 @@
         },
         {
           "id": "s05",
-          "text": "C'Ã¨ poco spazio.",
+          "text": "C'è poco spazio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -144,7 +144,7 @@
         },
         {
           "id": "s07",
-          "text": "Pietro chiude la porta a metÃ .",
+          "text": "Pietro chiude la porta a metà.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -180,7 +180,7 @@
         },
         {
           "id": "s10",
-          "text": "Non Ã¨ un segreto sporco.",
+          "text": "Non è un segreto sporco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -199,7 +199,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Ãˆ solo privacy.",
+          "text": "È solo privacy.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -306,7 +306,7 @@
         },
         {
           "id": "s20",
-          "text": "Dorme di piÃ¹.",
+          "text": "Dorme di più.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -358,7 +358,7 @@
         },
         {
           "id": "s24",
-          "text": "Nel libro era piÃ¹ facile.",
+          "text": "Nel libro era più facile.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -475,7 +475,7 @@
         },
         {
           "id": "s33",
-          "text": "Ioâ€¦ vorreiâ€¦",
+          "text": "Io… vorrei…",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -539,7 +539,7 @@
         },
         {
           "id": "s39",
-          "text": "La frase Ã¨ corta.",
+          "text": "La frase è corta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -551,7 +551,7 @@
         },
         {
           "id": "s40",
-          "text": "Ãˆ goffa.",
+          "text": "È goffa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -567,7 +567,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Ãˆ vera.",
+          "text": "È vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -647,7 +647,7 @@
         },
         {
           "id": "s47",
-          "text": "Non sarÃ² bravo.",
+          "text": "Non sarò bravo.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -697,7 +697,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Pietro guarda una cassa di caffÃ¨.",
+          "text": "Pietro guarda una cassa di caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -817,7 +817,7 @@
         },
         {
           "id": "s60",
-          "text": "Vero sÃ¬.",
+          "text": "Vero sì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -845,7 +845,7 @@
         },
         {
           "id": "s62",
-          "text": "C'Ã¨ una fila.",
+          "text": "C'è una fila.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -950,7 +950,7 @@
         },
         {
           "id": "s70",
-          "text": "Il silenzio di Bruna Ã¨ approvazione.",
+          "text": "Il silenzio di Bruna è approvazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -985,7 +985,7 @@
         },
         {
           "id": "s72",
-          "text": "A giovedÃ¬?",
+          "text": "A giovedì?",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -1007,7 +1007,7 @@
         },
         {
           "id": "s74",
-          "text": "Il tuo giorno Ã¨ martedÃ¬.",
+          "text": "Il tuo giorno è martedì.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -1061,7 +1061,7 @@
         },
         {
           "id": "s78",
-          "text": "A giovedÃ¬, allora.",
+          "text": "A giovedì, allora.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -1086,7 +1086,7 @@
         },
         {
           "id": "s80",
-          "text": "Nel magazzino resta l'odore di caffÃ¨.",
+          "text": "Nel magazzino resta l'odore di caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1130,7 +1130,7 @@
         },
         {
           "id": "s83",
-          "text": "Non Ã¨ elegante.",
+          "text": "Non è elegante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1141,7 +1141,7 @@
         },
         {
           "id": "s84",
-          "text": "Ãˆ abbastanza.",
+          "text": "È abbastanza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1151,7 +1151,7 @@
         },
         {
           "id": "s85",
-          "text": "Elena prepara un altro caffÃ¨.",
+          "text": "Elena prepara un altro caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1177,7 +1177,7 @@
         "In Mirella's kitchen"
       ],
       "correctChoice": 0,
-      "explanation": "They go into the magazzino behind the cafÃ©.",
+      "explanation": "They go into the magazzino behind the café.",
       "difficulty": 2
     },
     {
@@ -1208,5 +1208,15 @@
       "explanation": "He asks about Thursday, breaking the Tuesday-only habit.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-20.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 199656
+      }
+    ]
+  }
 }

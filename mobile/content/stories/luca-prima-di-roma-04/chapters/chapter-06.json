@@ -60,7 +60,7 @@
         },
         {
           "id": "s02",
-          "text": "C'Ã¨ tanta gente e Davide non Ã¨ qui.",
+          "text": "C'è tanta gente e Davide non è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -102,7 +102,7 @@
         },
         {
           "id": "s05",
-          "text": "Franco Ã¨ qui.",
+          "text": "Franco è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -122,7 +122,7 @@
         },
         {
           "id": "s07",
-          "text": "Dov'Ã¨ Davide?",
+          "text": "Dov'è Davide?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -132,7 +132,7 @@
         },
         {
           "id": "s08",
-          "text": "Davide Ã¨ al bar.",
+          "text": "Davide è al bar.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -156,7 +156,7 @@
         },
         {
           "id": "s10",
-          "text": "Dov'Ã¨ il bar?",
+          "text": "Dov'è il bar?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -173,7 +173,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Il bar non Ã¨ lontano.",
+          "text": "Il bar non è lontano.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -200,7 +200,7 @@
         },
         {
           "id": "s13",
-          "text": "Il bar Ã¨ vicino.",
+          "text": "Il bar è vicino.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -212,7 +212,7 @@
         },
         {
           "id": "s14",
-          "text": "Non Ã¨ lontano.",
+          "text": "Non è lontano.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -223,7 +223,7 @@
         },
         {
           "id": "s15",
-          "text": "La piazza Ã¨ lontana da qui.",
+          "text": "La piazza è lontana da qui.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -237,7 +237,7 @@
         },
         {
           "id": "s16",
-          "text": "Il bar Ã¨ davanti al parco.",
+          "text": "Il bar è davanti al parco.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -251,7 +251,7 @@
         },
         {
           "id": "s17",
-          "text": "Dietro il bar c'Ã¨ Via Nazionale.",
+          "text": "Dietro il bar c'è Via Nazionale.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -265,7 +265,7 @@
         },
         {
           "id": "s18",
-          "text": "Franco Ã¨ gentile.",
+          "text": "Franco è gentile.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -288,7 +288,7 @@
         },
         {
           "id": "s20",
-          "text": "Il bar Ã¨ accanto al parco.",
+          "text": "Il bar è accanto al parco.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -352,7 +352,7 @@
         },
         {
           "id": "s25",
-          "text": "Davide Ã¨ accanto al bar.",
+          "text": "Davide è accanto al bar.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -420,7 +420,7 @@
         },
         {
           "id": "s31",
-          "text": "Il bar Ã¨ vicino al parco.",
+          "text": "Il bar è vicino al parco.",
           "speakerId": "franco",
           "kind": "dialogue",
           "lemmas": [
@@ -470,7 +470,7 @@
         },
         {
           "id": "s35",
-          "text": "Ora so dov'Ã¨.",
+          "text": "Ora so dov'è.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -520,7 +520,7 @@
         "On a Rome train"
       ],
       "correctChoice": 0,
-      "explanation": "Davide Ã¨ al bar.",
+      "explanation": "Davide è al bar.",
       "chapterId": "luca-prima-di-roma-04-06",
       "difficulty": 1
     },
@@ -538,5 +538,15 @@
       "chapterId": "luca-prima-di-roma-04-06",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-06.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 85176
+      }
+    ]
+  }
 }

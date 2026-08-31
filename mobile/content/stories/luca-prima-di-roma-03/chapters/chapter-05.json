@@ -3,7 +3,7 @@
   "storyId": "luca-prima-di-roma-03",
   "number": 5,
   "title": "Can I pay?",
-  "titleIt": "Si puÃ² pagare?",
+  "titleIt": "Si può pagare?",
   "difficultyLevel": 1,
   "locationIds": [
     "supermercato-pietralba"
@@ -43,7 +43,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca Ã¨ al banco.",
+          "text": "Luca è al banco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -55,7 +55,7 @@
         },
         {
           "id": "s02",
-          "text": "Si puÃ² pagare?",
+          "text": "Si può pagare?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -66,7 +66,7 @@
         },
         {
           "id": "s03",
-          "text": "SÃ¬ va bene.",
+          "text": "Sì va bene.",
           "speakerId": "pina",
           "kind": "dialogue",
           "lemmas": [
@@ -146,7 +146,7 @@
         },
         {
           "id": "s10",
-          "text": "Il prezzo Ã¨ dieci euro.",
+          "text": "Il prezzo è dieci euro.",
           "speakerId": "pina",
           "kind": "dialogue",
           "lemmas": [
@@ -222,7 +222,7 @@
         },
         {
           "id": "s16",
-          "text": "C'Ã¨ lo scontrino?",
+          "text": "C'è lo scontrino?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -233,7 +233,7 @@
         },
         {
           "id": "s17",
-          "text": "SÃ¬ ecco lo scontrino.",
+          "text": "Sì ecco lo scontrino.",
           "speakerId": "pina",
           "kind": "dialogue",
           "lemmas": [
@@ -257,7 +257,7 @@
         },
         {
           "id": "s19",
-          "text": "Lo scontrino Ã¨ importante.",
+          "text": "Lo scontrino è importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -269,7 +269,7 @@
         },
         {
           "id": "s20",
-          "text": "Luca puÃ² pagare.",
+          "text": "Luca può pagare.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -323,7 +323,7 @@
       "sentences": [
         {
           "id": "s24",
-          "text": "Il prezzo Ã¨ dieci euro.",
+          "text": "Il prezzo è dieci euro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -336,7 +336,7 @@
         },
         {
           "id": "s25",
-          "text": "Tutto Ã¨ pronto.",
+          "text": "Tutto è pronto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -347,7 +347,7 @@
         },
         {
           "id": "s26",
-          "text": "La lista Ã¨ pronta.",
+          "text": "La lista è pronta.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -477,7 +477,7 @@
         },
         {
           "id": "s37",
-          "text": "Tutto Ã¨ a casa.",
+          "text": "Tutto è a casa.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -496,9 +496,9 @@
       "type": "direct",
       "question": "How much is everything?",
       "choices": [
-        "â‚¬2",
-        "â‚¬10",
-        "â‚¬50"
+        "€2",
+        "€10",
+        "€50"
       ],
       "correctChoice": 1,
       "explanation": "Tutto costa dieci euro.",
@@ -529,9 +529,19 @@
         "A new list"
       ],
       "correctChoice": 0,
-      "explanation": "C'Ã¨ lo scontrino?",
+      "explanation": "C'è lo scontrino?",
       "chapterId": "luca-prima-di-roma-03-05",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 66984
+      }
+    ]
+  }
 }

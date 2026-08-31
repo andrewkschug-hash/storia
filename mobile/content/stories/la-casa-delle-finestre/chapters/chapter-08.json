@@ -54,7 +54,7 @@
         },
         {
           "id": "s02",
-          "text": "Per√≤ le pagine non dicono se qualcuno la vede.",
+          "text": "PerÚ le pagine non dicono se qualcuno la vede.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -87,7 +87,7 @@
         },
         {
           "id": "s04",
-          "text": "Finestra tre √® di fronte. √à la stanza due, sul foglio.",
+          "text": "Finestra tre Ë di fronte. » la stanza due, sul foglio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -150,7 +150,7 @@
         },
         {
           "id": "s08",
-          "text": "Fuori √® buio. Nessuno cammina in strada.",
+          "text": "Fuori Ë buio. Nessuno cammina in strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -205,7 +205,7 @@
         },
         {
           "id": "s12",
-          "text": "Sulle pagine, a quest'ora, c'era gi√† la prima luce.",
+          "text": "Sulle pagine, a quest'ora, c'era gi‡ la prima luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -254,7 +254,7 @@
         },
         {
           "id": "s15",
-          "text": "Sulle pagine, luned√¨ era tre, quattro, cinque.",
+          "text": "Sulle pagine, lunedÏ era tre, quattro, cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -296,7 +296,7 @@
         },
         {
           "id": "s18",
-          "text": "Poi la luce √® alla finestra tre. Di fronte.",
+          "text": "Poi la luce Ë alla finestra tre. Di fronte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -352,7 +352,7 @@
         },
         {
           "id": "s22",
-          "text": "Irene ricorda i numeri di luned√¨: tre, quattro, cinque.",
+          "text": "Irene ricorda i numeri di lunedÏ: tre, quattro, cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -369,7 +369,7 @@
         },
         {
           "id": "s23",
-          "text": "Ricorda marted√¨: tre, quattro, otto.",
+          "text": "Ricorda martedÏ: tre, quattro, otto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -397,7 +397,7 @@
         },
         {
           "id": "s25",
-          "text": "Questa pausa non √® sul foglio.",
+          "text": "Questa pausa non Ë sul foglio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -486,7 +486,7 @@
         },
         {
           "id": "s31",
-          "text": "Sembra che qualcuno √® l√¨.",
+          "text": "Sembra che qualcuno Ë lÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -524,7 +524,7 @@
         },
         {
           "id": "s34",
-          "text": "Forse la luce √® solo ferma.",
+          "text": "Forse la luce Ë solo ferma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -538,7 +538,7 @@
         },
         {
           "id": "s35",
-          "text": "Se qualcuno √® l√¨, mi vede, pensa Irene.",
+          "text": "Se qualcuno Ë lÏ, mi vede, pensa Irene.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -554,7 +554,7 @@
         },
         {
           "id": "s36",
-          "text": "Se nessuno √® l√¨, √® solo una luce.",
+          "text": "Se nessuno Ë lÏ, Ë solo una luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -616,7 +616,7 @@
         },
         {
           "id": "s40",
-          "text": "Per√≤ resta vicino alla finestra.",
+          "text": "PerÚ resta vicino alla finestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -692,7 +692,7 @@
         },
         {
           "id": "s45",
-          "text": "La finestra tre √® scura.",
+          "text": "La finestra tre Ë scura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -790,7 +790,7 @@
         },
         {
           "id": "s52",
-          "text": "Scrive anche: non √® sulle pagine.",
+          "text": "Scrive anche: non Ë sulle pagine.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -831,7 +831,7 @@
         },
         {
           "id": "s55",
-          "text": "Lascia la pausa. Non scrive il perch√©.",
+          "text": "Lascia la pausa. Non scrive il perchÈ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -870,7 +870,7 @@
       "choices": [
         "It stops. That pause is not on the sheet",
         "It follows Monday exactly, then goes to eight",
-        "Irene‚Äôs lamp answers it"
+        "Ireneís lamp answers it"
       ],
       "correctChoice": 0,
       "explanation": "She waits for it to go on, as on the pages. It stops. This pause is not on the sheet.",
@@ -897,12 +897,22 @@
       "question": "What does Irene keep in the notebook?",
       "choices": [
         "The pause, not the why",
-        "Sara‚Äôs name",
+        "Saraís name",
         "A message in Morse"
       ],
       "correctChoice": 0,
-      "explanation": "She writes ‚Äúmaybe for me,‚Äù then erases it. She leaves the pause. She does not write the why.",
+      "explanation": "She writes ìmaybe for me,î then erases it. She leaves the pause. She does not write the why.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-08.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 200904
+      }
+    ]
+  }
 }

@@ -29,7 +29,7 @@
       ],
       "rememberedFacts": [
         "Mirella wants Elena to stay in Marina di Brenta",
-        "Elena uses the cafÃ© as an escape from home talk",
+        "Elena uses the café as an escape from home talk",
         "Elena's father used to speak on paper",
         "Elena recognizes the habit of writing instead of speaking"
       ]
@@ -42,7 +42,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Domenica Elena Ã¨ a casa di sua madre.",
+          "text": "Domenica Elena è a casa di sua madre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -58,7 +58,7 @@
         },
         {
           "id": "s02",
-          "text": "La cucina di Mirella Ã¨ piccola e calda.",
+          "text": "La cucina di Mirella è piccola e calda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -74,7 +74,7 @@
         },
         {
           "id": "s03",
-          "text": "C'Ã¨ odore di caffÃ¨ e di pane.",
+          "text": "C'è odore di caffè e di pane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -140,7 +140,7 @@
         },
         {
           "id": "s07",
-          "text": "Lavoro al CaffÃ¨ Brenta. Per ora sÃ¬.",
+          "text": "Lavoro al Caffè Brenta. Per ora sì.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -155,7 +155,7 @@
         },
         {
           "id": "s08",
-          "text": "Padova Ã¨ finita.",
+          "text": "Padova è finita.",
           "speakerId": "mirella-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -166,7 +166,7 @@
         },
         {
           "id": "s09",
-          "text": "SÃ¬. Il lavoro lÃ  Ã¨ finito.",
+          "text": "Sì. Il lavoro là è finito.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -200,7 +200,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Qui hai casa. Hai me. Hai il caffÃ¨.",
+          "text": "Qui hai casa. Hai me. Hai il caffè.",
           "speakerId": "mirella-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -216,7 +216,7 @@
         },
         {
           "id": "s12",
-          "text": "Elena sorride, ma Ã¨ stanca di questa pressione dolce.",
+          "text": "Elena sorride, ma è stanca di questa pressione dolce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -233,7 +233,7 @@
         },
         {
           "id": "s13",
-          "text": "Il caffÃ¨ mi piace. Il bancone mi piace.",
+          "text": "Il caffè mi piace. Il bancone mi piace.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -279,7 +279,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Elena beve il caffÃ¨ e sente il silenzio della cucina.",
+          "text": "Elena beve il caffè e sente il silenzio della cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -297,7 +297,7 @@
         },
         {
           "id": "s17",
-          "text": "Al bancone Ã¨ piÃ¹ facile.",
+          "text": "Al bancone è più facile.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -326,7 +326,7 @@
         },
         {
           "id": "s19",
-          "text": "Tuo padre parlava cosÃ¬, sulla carta.",
+          "text": "Tuo padre parlava così, sulla carta.",
           "speakerId": "mirella-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -368,7 +368,7 @@
         },
         {
           "id": "s22",
-          "text": "SÃ¬. Scriveva biglietti. Scriveva frasi corte.",
+          "text": "Sì. Scriveva biglietti. Scriveva frasi corte.",
           "speakerId": "mirella-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -382,7 +382,7 @@
         },
         {
           "id": "s23",
-          "text": "In voce era piÃ¹ chiuso.",
+          "text": "In voce era più chiuso.",
           "speakerId": "mirella-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -409,7 +409,7 @@
         },
         {
           "id": "s25",
-          "text": "Pensa al libro vicino allo zucchero al caffÃ¨.",
+          "text": "Pensa al libro vicino allo zucchero al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -449,7 +449,7 @@
         },
         {
           "id": "s27",
-          "text": "Mamma, io non sono papÃ .",
+          "text": "Mamma, io non sono papà.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -515,7 +515,7 @@
         },
         {
           "id": "s32",
-          "text": "Al caffÃ¨. Devo aiutare Bruna con il bancone.",
+          "text": "Al caffè. Devo aiutare Bruna con il bancone.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -531,7 +531,7 @@
         },
         {
           "id": "s33",
-          "text": "Ãˆ domenica.",
+          "text": "È domenica.",
           "speakerId": "mirella-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -577,7 +577,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Elena pedala verso il CaffÃ¨ Brenta con il vento in faccia.",
+          "text": "Elena pedala verso il Caffè Brenta con il vento in faccia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -596,7 +596,7 @@
         },
         {
           "id": "s37",
-          "text": "Il caffÃ¨ Ã¨ chiuso. La porta Ã¨ scura.",
+          "text": "Il caffè è chiuso. La porta è scura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -629,7 +629,7 @@
         },
         {
           "id": "s39",
-          "text": "Ha usato il caffÃ¨ come scusa.",
+          "text": "Ha usato il caffè come scusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -670,7 +670,7 @@
       "choices": [
         "Elena to stay in town",
         "Elena to return to Padova",
-        "Elena to sell the cafÃ©"
+        "Elena to sell the café"
       ],
       "correctChoice": 0,
       "explanation": "Mirella asks if Elena is staying and lists reasons to stay.",
@@ -683,7 +683,7 @@
       "question": "How did Elena's father speak, according to Mirella?",
       "choices": [
         "On paper",
-        "Only at the cafÃ©",
+        "Only at the café",
         "Never at all"
       ],
       "correctChoice": 0,
@@ -694,15 +694,25 @@
       "id": "ch06_q03",
       "chapterId": "lettera-per-elena-06",
       "type": "direct",
-      "question": "Why does Elena leave for the cafÃ© on Sunday?",
+      "question": "Why does Elena leave for the café on Sunday?",
       "choices": [
         "To escape the heavy talk at home",
         "Because Bruna called her in",
         "To meet Pietro"
       ],
       "correctChoice": 0,
-      "explanation": "The cafÃ© is closed; she used it as an excuse to leave.",
+      "explanation": "The café is closed; she used it as an excuse to leave.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-06.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 121728
+      }
+    ]
+  }
 }

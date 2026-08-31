@@ -3,7 +3,7 @@
   "storyId": "luca-prima-di-roma-04",
   "number": 1,
   "title": "Where is the square?",
-  "titleIt": "Dov'Ã¨ la piazza?",
+  "titleIt": "Dov'è la piazza?",
   "difficultyLevel": 1,
   "locationIds": [
     "pietralba",
@@ -39,7 +39,7 @@
       ],
       "rememberedFacts": [
         "Luca is from Pietralba",
-        "Davide is Lucaâ€™s friend",
+        "Davide is Luca’s friend",
         "The piazza is in the center",
         "The pharmacy is on Via Nazionale",
         "Bar da Franco is near the piazza"
@@ -53,7 +53,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca Ã¨ a Pietralba.",
+          "text": "Luca è a Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -91,7 +91,7 @@
         },
         {
           "id": "s04",
-          "text": "Davide Ã¨ in piazza.",
+          "text": "Davide è in piazza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -123,7 +123,7 @@
         },
         {
           "id": "s07",
-          "text": "La piazza Ã¨ grande.",
+          "text": "La piazza è grande.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -135,7 +135,7 @@
         },
         {
           "id": "s08",
-          "text": "La piazza Ã¨ al centro.",
+          "text": "La piazza è al centro.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -148,7 +148,7 @@
         },
         {
           "id": "s09",
-          "text": "Pietralba Ã¨ un paese piccolo.",
+          "text": "Pietralba è un paese piccolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -161,7 +161,7 @@
         },
         {
           "id": "s10",
-          "text": "Il paese Ã¨ tranquillo e bello.",
+          "text": "Il paese è tranquillo e bello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -181,7 +181,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Dov'Ã¨ la farmacia?",
+          "text": "Dov'è la farmacia?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -192,7 +192,7 @@
         },
         {
           "id": "s12",
-          "text": "La farmacia Ã¨ in Via Nazionale.",
+          "text": "La farmacia è in Via Nazionale.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -206,7 +206,7 @@
         },
         {
           "id": "s13",
-          "text": "Via Nazionale Ã¨ una strada.",
+          "text": "Via Nazionale è una strada.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -232,7 +232,7 @@
         },
         {
           "id": "s15",
-          "text": "La farmacia non Ã¨ lontana.",
+          "text": "La farmacia non è lontana.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -245,7 +245,7 @@
         },
         {
           "id": "s16",
-          "text": "Dov'Ã¨ il parco?",
+          "text": "Dov'è il parco?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -256,7 +256,7 @@
         },
         {
           "id": "s17",
-          "text": "Il parco Ã¨ vicino alla piazza.",
+          "text": "Il parco è vicino alla piazza.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -270,7 +270,7 @@
         },
         {
           "id": "s18",
-          "text": "Il parco Ã¨ piccolo ma bello.",
+          "text": "Il parco è piccolo ma bello.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -284,7 +284,7 @@
         },
         {
           "id": "s19",
-          "text": "Dov'Ã¨ il bar?",
+          "text": "Dov'è il bar?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -295,7 +295,7 @@
         },
         {
           "id": "s20",
-          "text": "Il bar Ã¨ di Franco.",
+          "text": "Il bar è di Franco.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -314,7 +314,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Il bar Ã¨ accanto alla piazza.",
+          "text": "Il bar è accanto alla piazza.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -495,7 +495,7 @@
         "At the train station"
       ],
       "correctChoice": 0,
-      "explanation": "La farmacia Ã¨ in Via Nazionale.",
+      "explanation": "La farmacia è in Via Nazionale.",
       "chapterId": "luca-prima-di-roma-04-01",
       "difficulty": 1
     },
@@ -509,7 +509,7 @@
         "Underground"
       ],
       "correctChoice": 1,
-      "explanation": "Il bar Ã¨ accanto alla piazza.",
+      "explanation": "Il bar è accanto alla piazza.",
       "chapterId": "luca-prima-di-roma-04-01",
       "difficulty": 1
     },
@@ -527,5 +527,15 @@
       "chapterId": "luca-prima-di-roma-04-01",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 78864
+      }
+    ]
+  }
 }

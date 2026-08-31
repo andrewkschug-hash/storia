@@ -95,7 +95,7 @@
         },
         {
           "id": "s04",
-          "text": "Elena lo apre mercoledÃ¬ pomeriggio.",
+          "text": "Elena lo apre mercoledì pomeriggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -126,7 +126,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Oggi ho parlato in voce e non Ã¨ stato un disastro.",
+          "text": "Oggi ho parlato in voce e non è stato un disastro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -177,7 +177,7 @@
         },
         {
           "id": "s10",
-          "text": "GiovedÃ¬ Pietro arriva senza casse.",
+          "text": "Giovedì Pietro arriva senza casse.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -210,7 +210,7 @@
         },
         {
           "id": "s12",
-          "text": "Ordina un caffÃ¨ come un cliente.",
+          "text": "Ordina un caffè come un cliente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -281,7 +281,7 @@
         },
         {
           "id": "s17",
-          "text": "Non Ã¨ poesia.",
+          "text": "Non è poesia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -292,7 +292,7 @@
         },
         {
           "id": "s18",
-          "text": "Ãˆ pratica.",
+          "text": "È pratica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -364,7 +364,7 @@
         },
         {
           "id": "s24",
-          "text": "In voce Ã¨ strano.",
+          "text": "In voce è strano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -406,7 +406,7 @@
         },
         {
           "id": "s27",
-          "text": "Non Ã¨ piÃ¹ anonimo.",
+          "text": "Non è più anonimo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -418,7 +418,7 @@
         },
         {
           "id": "s28",
-          "text": "Non Ã¨ piÃ¹ un doppio gioco.",
+          "text": "Non è più un doppio gioco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -514,7 +514,7 @@
         },
         {
           "id": "s35",
-          "text": "Elena lo sa giÃ , in parte.",
+          "text": "Elena lo sa già, in parte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -804,7 +804,7 @@
       "sentences": [
         {
           "id": "s56",
-          "text": "A martedÃ¬, e forse prima.",
+          "text": "A martedì, e forse prima.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -856,7 +856,7 @@
         },
         {
           "id": "s60",
-          "text": "LunedÃ¬ lei scrive ancora nel libro.",
+          "text": "Lunedì lei scrive ancora nel libro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -982,7 +982,7 @@
         },
         {
           "id": "s69",
-          "text": "Elena Ã¨ d'accordo.",
+          "text": "Elena è d'accordo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1027,7 +1027,7 @@
       "question": "What does Bruna say about the book?",
       "choices": [
         "It remains as a place, not a secret",
-        "It must leave the cafÃ©",
+        "It must leave the café",
         "Only Pietro may write"
       ],
       "correctChoice": 0,
@@ -1048,5 +1048,15 @@
       "explanation": "They return to the wobbling table, now as shared work.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-21.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 164136
+      }
+    ]
+  }
 }

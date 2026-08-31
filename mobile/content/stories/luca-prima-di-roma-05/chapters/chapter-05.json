@@ -54,7 +54,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La festa Ã¨ nel soggiorno.",
+          "text": "La festa è nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -67,7 +67,7 @@
         },
         {
           "id": "s02",
-          "text": "C'Ã¨ musica.",
+          "text": "C'è musica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -77,7 +77,7 @@
         },
         {
           "id": "s03",
-          "text": "C'Ã¨ torta.",
+          "text": "C'è torta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -87,7 +87,7 @@
         },
         {
           "id": "s04",
-          "text": "C'Ã¨ succo.",
+          "text": "C'è succo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -147,7 +147,7 @@
         },
         {
           "id": "s10",
-          "text": "Davide Ã¨ felice.",
+          "text": "Davide è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -168,7 +168,7 @@
         },
         {
           "id": "s12",
-          "text": "La famiglia Ã¨ qui.",
+          "text": "La famiglia è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -192,7 +192,7 @@
         },
         {
           "id": "s14",
-          "text": "Elisa Ã¨ nuova a casa.",
+          "text": "Elisa è nuova a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -253,7 +253,7 @@
         },
         {
           "id": "s19",
-          "text": "Elisa Ã¨ amica di Chiara.",
+          "text": "Elisa è amica di Chiara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -296,7 +296,7 @@
         },
         {
           "id": "s23",
-          "text": "Elisa Ã¨ qui per la prima volta.",
+          "text": "Elisa è qui per la prima volta.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -311,7 +311,7 @@
         },
         {
           "id": "s24",
-          "text": "Luca Ã¨ contento.",
+          "text": "Luca è contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -413,7 +413,7 @@
         },
         {
           "id": "s33",
-          "text": "C'Ã¨ torta e musica.",
+          "text": "C'è torta e musica.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -425,7 +425,7 @@
         },
         {
           "id": "s34",
-          "text": "Lidia Ã¨ alla festa.",
+          "text": "Lidia è alla festa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -437,7 +437,7 @@
         },
         {
           "id": "s35",
-          "text": "Paolo Ã¨ contento.",
+          "text": "Paolo è contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -459,7 +459,7 @@
         },
         {
           "id": "s37",
-          "text": "La festa Ã¨ bella.",
+          "text": "La festa è bella.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -471,7 +471,7 @@
         },
         {
           "id": "s38",
-          "text": "Luca Ã¨ felice.",
+          "text": "Luca è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -482,7 +482,7 @@
         },
         {
           "id": "s39",
-          "text": "Il compleanno Ã¨ importante.",
+          "text": "Il compleanno è importante.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -529,7 +529,7 @@
         },
         {
           "id": "s43",
-          "text": "La musica Ã¨ alta.",
+          "text": "La musica è alta.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -541,7 +541,7 @@
         },
         {
           "id": "s44",
-          "text": "Elisa Ã¨ contenta.",
+          "text": "Elisa è contenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -609,7 +609,7 @@
         },
         {
           "id": "s50",
-          "text": "Chiara Ã¨ felice.",
+          "text": "Chiara è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -641,12 +641,12 @@
       "type": "direct",
       "question": "How is Elisa introduced?",
       "choices": [
-        "Chiaraâ€™s friend",
-        "Lucaâ€™s mother",
+        "Chiara’s friend",
+        "Luca’s mother",
         "A Rome neighbor"
       ],
       "correctChoice": 0,
-      "explanation": "Elisa Ã¨ amica di Chiara.",
+      "explanation": "Elisa è amica di Chiara.",
       "chapterId": "luca-prima-di-roma-05-05",
       "difficulty": 1
     },
@@ -664,5 +664,15 @@
       "chapterId": "luca-prima-di-roma-05-05",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 99648
+      }
+    ]
+  }
 }

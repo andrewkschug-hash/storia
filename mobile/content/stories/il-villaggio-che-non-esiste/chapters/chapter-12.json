@@ -110,7 +110,7 @@
         },
         {
           "id": "s05",
-          "text": "Sotto le fatture c'√® una busta senza francobollo.",
+          "text": "Sotto le fatture c'Ë una busta senza francobollo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -147,7 +147,7 @@
         },
         {
           "id": "s07",
-          "text": "Dentro c'√® una fotografia stampata, non digitale.",
+          "text": "Dentro c'Ë una fotografia stampata, non digitale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -218,7 +218,7 @@
       "sentences": [
         {
           "id": "s11",
-          "text": "Lo stesso modo di tenere la bocca chiusa quando √® arrabbiata.",
+          "text": "Lo stesso modo di tenere la bocca chiusa quando Ë arrabbiata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -284,7 +284,7 @@
         },
         {
           "id": "s15",
-          "text": "Non √® stupita del tutto.",
+          "text": "Non Ë stupita del tutto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -303,7 +303,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Il registro aveva gi√† detto il nome.",
+          "text": "Il registro aveva gi‡ detto il nome.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s17",
-          "text": "Per√≤ vedere il volto √® diverso.",
+          "text": "PerÚ vedere il volto Ë diverso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -332,7 +332,7 @@
         },
         {
           "id": "s18",
-          "text": "Il volto √® una prova che non si pu√≤ spostare con una scala.",
+          "text": "Il volto Ë una prova che non si puÚ spostare con una scala.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -390,7 +390,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Non √® una domanda.",
+          "text": "Non Ë una domanda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -414,7 +414,7 @@
         },
         {
           "id": "s23",
-          "text": "Questa √® mia madre.",
+          "text": "Questa Ë mia madre.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -436,7 +436,7 @@
         },
         {
           "id": "s25",
-          "text": "Allora perch√© mi chiami con il suo nome?",
+          "text": "Allora perchÈ mi chiami con il suo nome?",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -477,7 +477,7 @@
         },
         {
           "id": "s27",
-          "text": "Perch√© sei entrata con la stessa borsa.",
+          "text": "PerchÈ sei entrata con la stessa borsa.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -492,7 +492,7 @@
         },
         {
           "id": "s28",
-          "text": "Con la stessa et√† in faccia.",
+          "text": "Con la stessa et‡ in faccia.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -506,7 +506,7 @@
         },
         {
           "id": "s29",
-          "text": "Con lo stesso modo di guardare la porta come se volessi gi√† andartene.",
+          "text": "Con lo stesso modo di guardare la porta come se volessi gi‡ andartene.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -676,7 +676,7 @@
         },
         {
           "id": "s40",
-          "text": "Come se un volto fosse propriet√† del paese.",
+          "text": "Come se un volto fosse propriet‡ del paese.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -712,7 +712,7 @@
         },
         {
           "id": "s42",
-          "text": "Anna √® partita senza spiegare tutto.",
+          "text": "Anna Ë partita senza spiegare tutto.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -821,7 +821,7 @@
         },
         {
           "id": "s49",
-          "text": "O forse s√¨, e non me l'ha detto.",
+          "text": "O forse sÏ, e non me l'ha detto.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -888,7 +888,7 @@
         },
         {
           "id": "s54",
-          "text": "Questa faccia √® gi√† stata rubata abbastanza.",
+          "text": "Questa faccia Ë gi‡ stata rubata abbastanza.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -938,7 +938,7 @@
         },
         {
           "id": "s57",
-          "text": "Forse perch√© sa di avere torto, o perch√© ha bisogno che qualcuno porti via Anna davvero.",
+          "text": "Forse perchÈ sa di avere torto, o perchÈ ha bisogno che qualcuno porti via Anna davvero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1089,7 +1089,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "Ha gli occhi stanchi di chi ha gi√† deciso qualcosa di difficile.",
+          "text": "Ha gli occhi stanchi di chi ha gi‡ deciso qualcosa di difficile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1132,7 +1132,7 @@
         },
         {
           "id": "s68",
-          "text": "La mandibola s√¨.",
+          "text": "La mandibola sÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1143,7 +1143,7 @@
         },
         {
           "id": "s69",
-          "text": "Il resto √® una straniera giovane.",
+          "text": "Il resto Ë una straniera giovane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1177,7 +1177,7 @@
       "sentences": [
         {
           "id": "s71",
-          "text": "Aiuta perch√© dimostra che Anna non √® un mito fermo.",
+          "text": "Aiuta perchÈ dimostra che Anna non Ë un mito fermo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1195,7 +1195,7 @@
         },
         {
           "id": "s72",
-          "text": "√à una persona che √® cambiata dopo Collevento.",
+          "text": "» una persona che Ë cambiata dopo Collevento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1244,7 +1244,7 @@
         },
         {
           "id": "s75",
-          "text": "Giada chiede dove √® stata scattata la foto.",
+          "text": "Giada chiede dove Ë stata scattata la foto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "s77",
-          "text": "Anna odiava farsi fotografare, per√≤ quel giorno ha detto s√¨.",
+          "text": "Anna odiava farsi fotografare, perÚ quel giorno ha detto sÏ.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -1313,7 +1313,7 @@
         },
         {
           "id": "s79",
-          "text": "La fontana √® la stessa.",
+          "text": "La fontana Ë la stessa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1343,7 +1343,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "E lei non vuole diventare la terza versione di quel s√¨.",
+          "text": "E lei non vuole diventare la terza versione di quel sÏ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1407,7 +1407,7 @@
         },
         {
           "id": "s85",
-          "text": "Il secondo nome √® un confine.",
+          "text": "Il secondo nome Ë un confine.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1442,7 +1442,7 @@
         },
         {
           "id": "s87",
-          "text": "A volte il silenzio √® l'unica scusa che le resta.",
+          "text": "A volte il silenzio Ë l'unica scusa che le resta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1553,5 +1553,15 @@
       "explanation": "She puts it in her pocket, not Elsa's drawer.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-12.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 270504
+      }
+    ]
+  }
 }

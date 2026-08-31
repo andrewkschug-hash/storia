@@ -18,7 +18,7 @@
   "events": [
     {
       "id": "ev-il-villaggio-che-non-esiste-24",
-      "summary": "Giada keeps one photo of the crossed-out Collevento sign. In her head the caption is esisteva. Neri's number stays unused‚Äîa hook for later, not a conquest.",
+      "summary": "Giada keeps one photo of the crossed-out Collevento sign. In her head the caption is esisteva. Neri's number stays unusedóa hook for later, not a conquest.",
       "characterIds": [
         "giada-rinaldi",
         "papa-rinaldi",
@@ -69,7 +69,7 @@
         },
         {
           "id": "s02",
-          "text": "Fuori piove piano su Trento; dentro tutto √® caldo e banale.",
+          "text": "Fuori piove piano su Trento; dentro tutto Ë caldo e banale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -171,7 +171,7 @@
         },
         {
           "id": "s08",
-          "text": "Questo √® tutto?",
+          "text": "Questo Ë tutto?",
           "speakerId": "papa-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -182,7 +182,7 @@
         },
         {
           "id": "s09",
-          "text": "Questo √® abbastanza.",
+          "text": "Questo Ë abbastanza.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -251,7 +251,7 @@
         },
         {
           "id": "s14",
-          "text": "Per√≤ esisteva, e in un certo modo esiste ancora, fuori dalle liste.",
+          "text": "PerÚ esisteva, e in un certo modo esiste ancora, fuori dalle liste.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -331,7 +331,7 @@
         },
         {
           "id": "s19",
-          "text": "Pi√π tardi, come una prova di rispetto.",
+          "text": "Pi˘ tardi, come una prova di rispetto.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -386,7 +386,7 @@
         },
         {
           "id": "s23",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -579,7 +579,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Il numero √® chiaro, scritto in fretta.",
+          "text": "Il numero Ë chiaro, scritto in fretta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -662,7 +662,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Non √® un tradimento.",
+          "text": "Non Ë un tradimento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -674,7 +674,7 @@
         },
         {
           "id": "s42",
-          "text": "√à il rispetto del patto: lui doveva chiedere ai suoi.",
+          "text": "» il rispetto del patto: lui doveva chiedere ai suoi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -692,7 +692,7 @@
         },
         {
           "id": "s43",
-          "text": "Finch√© non lo fa, lei non apre quella strada al posto suo.",
+          "text": "FinchÈ non lo fa, lei non apre quella strada al posto suo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -712,7 +712,7 @@
         },
         {
           "id": "s44",
-          "text": "Forse un libro dopo, o un'estate dopo, quel numero servir√†.",
+          "text": "Forse un libro dopo, o un'estate dopo, quel numero servir‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -730,7 +730,7 @@
         },
         {
           "id": "s45",
-          "text": "Ora serve a ricordare che l'uscita non √® un salvataggio forzato.",
+          "text": "Ora serve a ricordare che l'uscita non Ë un salvataggio forzato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -848,7 +848,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "La linea nera sul nome non le fa pi√π paura da enigma.",
+          "text": "La linea nera sul nome non le fa pi˘ paura da enigma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -910,7 +910,7 @@
         },
         {
           "id": "s55",
-          "text": "Lei ci √® passata, ha detto no, ed √® uscita all'alba.",
+          "text": "Lei ci Ë passata, ha detto no, ed Ë uscita all'alba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -947,7 +947,7 @@
         },
         {
           "id": "s57",
-          "text": "Non √® diventata Anna.",
+          "text": "Non Ë diventata Anna.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1109,7 +1109,7 @@
         },
         {
           "id": "s68",
-          "text": "Pronto, se un giorno la domanda arriver√† dalla voce giusta.",
+          "text": "Pronto, se un giorno la domanda arriver‡ dalla voce giusta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1127,7 +1127,7 @@
         },
         {
           "id": "s69",
-          "text": "Per ora l'estate di Giada pu√≤ iniziare senza conquista.",
+          "text": "Per ora l'estate di Giada puÚ iniziare senza conquista.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1177,7 +1177,7 @@
         },
         {
           "id": "s72",
-          "text": "La mattina dopo metter√† la foto in una cartella privata del telefono.",
+          "text": "La mattina dopo metter‡ la foto in una cartella privata del telefono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1197,7 +1197,7 @@
         },
         {
           "id": "s73",
-          "text": "Non la pubblicher√† e non la user√† come prova per nessuno.",
+          "text": "Non la pubblicher‡ e non la user‡ come prova per nessuno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1216,7 +1216,7 @@
         },
         {
           "id": "s74",
-          "text": "√à un ricordo con confine, non un'arma.",
+          "text": "» un ricordo con confine, non un'arma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1231,7 +1231,7 @@
         },
         {
           "id": "s75",
-          "text": "Il padre prepara caff√® e chiede se vuole uova.",
+          "text": "Il padre prepara caffË e chiede se vuole uova.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1254,7 +1254,7 @@
       "sentences": [
         {
           "id": "s76",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -1277,7 +1277,7 @@
         },
         {
           "id": "s78",
-          "text": "A volte il rispetto √® anche questo: non ripetere la storia a ogni pasto.",
+          "text": "A volte il rispetto Ë anche questo: non ripetere la storia a ogni pasto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1299,7 +1299,7 @@
         },
         {
           "id": "s79",
-          "text": "Giada controlla i contatti: Neri √® l√¨, silenzioso.",
+          "text": "Giada controlla i contatti: Neri Ë lÏ, silenzioso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1333,7 +1333,7 @@
       "sentences": [
         {
           "id": "s81",
-          "text": "Se un giorno lui scriver√† dopo aver chiesto ai suoi, lei risponder√†.",
+          "text": "Se un giorno lui scriver‡ dopo aver chiesto ai suoi, lei risponder‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1353,7 +1353,7 @@
         },
         {
           "id": "s82",
-          "text": "Se non scriver√†, il numero rester√† come una possibilit√† non forzata.",
+          "text": "Se non scriver‡, il numero rester‡ come una possibilit‡ non forzata.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1433,7 +1433,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Lei ha visto il posto, ha detto no, ed √® uscita.",
+          "text": "Lei ha visto il posto, ha detto no, ed Ë uscita.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1452,7 +1452,7 @@
         },
         {
           "id": "s87",
-          "text": "L'estate pu√≤ continuare senza che lei risolva il villaggio.",
+          "text": "L'estate puÚ continuare senza che lei risolva il villaggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1578,7 +1578,7 @@
         "Prova abitata"
       ],
       "correctChoice": 0,
-      "explanation": "Her private caption is esisteva ‚Äî it existed.",
+      "explanation": "Her private caption is esisteva ó it existed.",
       "difficulty": 2
     },
     {
@@ -1595,5 +1595,15 @@
       "explanation": "She saves it but does not call; the number remains unused as a later hook.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-24.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 286800
+      }
+    ]
+  }
 }

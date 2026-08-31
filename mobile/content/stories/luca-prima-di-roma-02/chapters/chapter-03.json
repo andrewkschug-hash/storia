@@ -59,7 +59,7 @@
         },
         {
           "id": "s02",
-          "text": "Paolo Ã¨ qui.",
+          "text": "Paolo è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -70,7 +70,7 @@
         },
         {
           "id": "s03",
-          "text": "Oggi Ã¨ lunedÃ¬.",
+          "text": "Oggi è lunedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -81,7 +81,7 @@
         },
         {
           "id": "s04",
-          "text": "Che giorno Ã¨ oggi?",
+          "text": "Che giorno è oggi?",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -93,7 +93,7 @@
         },
         {
           "id": "s05",
-          "text": "Oggi Ã¨ lunedÃ¬.",
+          "text": "Oggi è lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -104,7 +104,7 @@
         },
         {
           "id": "s06",
-          "text": "Ieri Ã¨ domenica.",
+          "text": "Ieri è domenica.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -115,7 +115,7 @@
         },
         {
           "id": "s07",
-          "text": "Domani Ã¨ martedÃ¬.",
+          "text": "Domani è martedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -138,7 +138,7 @@
         },
         {
           "id": "s09",
-          "text": "LunedÃ¬ martedÃ¬ mercoledÃ¬.",
+          "text": "Lunedì martedì mercoledì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -149,7 +149,7 @@
         },
         {
           "id": "s10",
-          "text": "GiovedÃ¬ venerdÃ¬.",
+          "text": "Giovedì venerdì.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -182,7 +182,7 @@
         },
         {
           "id": "s37",
-          "text": "MercoledÃ¬ e giovedÃ¬ Chiara ha scuola.",
+          "text": "Mercoledì e giovedì Chiara ha scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -196,7 +196,7 @@
         },
         {
           "id": "s38",
-          "text": "VenerdÃ¬ Chiara ha scuola anche.",
+          "text": "Venerdì Chiara ha scuola anche.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -239,7 +239,7 @@
         },
         {
           "id": "s15",
-          "text": "MartedÃ¬ ho scuola.",
+          "text": "Martedì ho scuola.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -288,7 +288,7 @@
         },
         {
           "id": "s19",
-          "text": "LunedÃ¬ Ã¨ il primo giorno di scuola.",
+          "text": "Lunedì è il primo giorno di scuola.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -303,7 +303,7 @@
         },
         {
           "id": "s20",
-          "text": "Oggi Ã¨ lunedÃ¬.",
+          "text": "Oggi è lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -314,7 +314,7 @@
         },
         {
           "id": "s21",
-          "text": "Domani Ã¨ martedÃ¬.",
+          "text": "Domani è martedì.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -375,7 +375,7 @@
         },
         {
           "id": "s40",
-          "text": "Luca resta a casa il lunedÃ¬.",
+          "text": "Luca resta a casa il lunedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -395,7 +395,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "Che giorno Ã¨ domani?",
+          "text": "Che giorno è domani?",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -407,7 +407,7 @@
         },
         {
           "id": "s26",
-          "text": "Domani Ã¨ martedÃ¬.",
+          "text": "Domani è martedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -428,7 +428,7 @@
         },
         {
           "id": "s28",
-          "text": "Ieri Ã¨ domenica.",
+          "text": "Ieri è domenica.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -475,7 +475,7 @@
         },
         {
           "id": "s32",
-          "text": "La settimana Ã¨ lunga.",
+          "text": "La settimana è lunga.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -487,7 +487,7 @@
         },
         {
           "id": "s33",
-          "text": "Ma oggi Ã¨ solo lunedÃ¬.",
+          "text": "Ma oggi è solo lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -511,7 +511,7 @@
         },
         {
           "id": "s35",
-          "text": "Chiara Ã¨ pronta per scuola.",
+          "text": "Chiara è pronta per scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -524,7 +524,7 @@
         },
         {
           "id": "s36",
-          "text": "Oggi Ã¨ un giorno di scuola.",
+          "text": "Oggi è un giorno di scuola.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -551,7 +551,7 @@
         },
         {
           "id": "s42",
-          "text": "Oggi Ã¨ il primo giorno della settimana.",
+          "text": "Oggi è il primo giorno della settimana.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -578,7 +578,7 @@
         "Saturday"
       ],
       "correctChoice": 1,
-      "explanation": "Oggi Ã¨ lunedÃ¬.",
+      "explanation": "Oggi è lunedì.",
       "chapterId": "luca-prima-di-roma-02-03",
       "difficulty": 1
     },
@@ -592,7 +592,7 @@
         "Sunday"
       ],
       "correctChoice": 0,
-      "explanation": "Domani Ã¨ martedÃ¬.",
+      "explanation": "Domani è martedì.",
       "chapterId": "luca-prima-di-roma-02-03",
       "difficulty": 1
     },
@@ -610,5 +610,15 @@
       "chapterId": "luca-prima-di-roma-02-03",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-03.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 108576
+      }
+    ]
+  }
 }

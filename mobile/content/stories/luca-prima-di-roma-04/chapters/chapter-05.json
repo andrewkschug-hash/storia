@@ -73,7 +73,7 @@
         },
         {
           "id": "s02",
-          "text": "La fermata Ã¨ in Via Nazionale.",
+          "text": "La fermata è in Via Nazionale.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -87,7 +87,7 @@
         },
         {
           "id": "s03",
-          "text": "Dov'Ã¨ l'autobus?",
+          "text": "Dov'è l'autobus?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -107,7 +107,7 @@
         },
         {
           "id": "s05",
-          "text": "C'Ã¨ un autobus alle nove.",
+          "text": "C'è un autobus alle nove.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -133,7 +133,7 @@
         },
         {
           "id": "s07",
-          "text": "L'autobus giusto Ã¨ alle dieci.",
+          "text": "L'autobus giusto è alle dieci.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -218,7 +218,7 @@
         },
         {
           "id": "s14",
-          "text": "C'Ã¨ un biglietto?",
+          "text": "C'è un biglietto?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -229,7 +229,7 @@
         },
         {
           "id": "s15",
-          "text": "SÃ¬ il biglietto Ã¨ importante.",
+          "text": "Sì il biglietto è importante.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -277,7 +277,7 @@
         },
         {
           "id": "s19",
-          "text": "La fermata Ã¨ vicino al parco.",
+          "text": "La fermata è vicino al parco.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -422,7 +422,7 @@
         },
         {
           "id": "s31",
-          "text": "Dieci Ã¨ l'orario giusto.",
+          "text": "Dieci è l'orario giusto.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -478,7 +478,7 @@
         },
         {
           "id": "s36",
-          "text": "Il parco Ã¨ vicino.",
+          "text": "Il parco è vicino.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -490,7 +490,7 @@
         },
         {
           "id": "s37",
-          "text": "Il biglietto Ã¨ importante.",
+          "text": "Il biglietto è importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -513,7 +513,7 @@
         },
         {
           "id": "s39",
-          "text": "L'orario Ã¨ giusto.",
+          "text": "L'orario è giusto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -536,7 +536,7 @@
         "No bus"
       ],
       "correctChoice": 1,
-      "explanation": "L'autobus giusto Ã¨ alle dieci.",
+      "explanation": "L'autobus giusto è alle dieci.",
       "chapterId": "luca-prima-di-roma-04-05",
       "difficulty": 1
     },
@@ -550,7 +550,7 @@
         "A map of Rome"
       ],
       "correctChoice": 0,
-      "explanation": "Il biglietto Ã¨ importante.",
+      "explanation": "Il biglietto è importante.",
       "chapterId": "luca-prima-di-roma-04-05",
       "difficulty": 1
     },
@@ -568,5 +568,15 @@
       "chapterId": "luca-prima-di-roma-04-05",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 79176
+      }
+    ]
+  }
 }

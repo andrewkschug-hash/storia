@@ -16,7 +16,7 @@
   "events": [
     {
       "id": "ev-la-casa-delle-finestre-13",
-      "summary": "Loredanaâ€™s daughter was in the last class. She wants the school forgotten. Ireneâ€™s numbered windows hurt her. Loredana is not the night lamp.",
+      "summary": "Loredana’s daughter was in the last class. She wants the school forgotten. Irene’s numbered windows hurt her. Loredana is not the night lamp.",
       "characterIds": [
         "irene-colombo",
         "loredana"
@@ -25,9 +25,9 @@
         "cucina-loredana"
       ],
       "rememberedFacts": [
-        "Loredanaâ€™s daughter was in the last class",
+        "Loredana’s daughter was in the last class",
         "Loredana wants no more talk of the school",
-        "Ireneâ€™s numbered sketch hurts her",
+        "Irene’s numbered sketch hurts her",
         "Loredana is not the night lamp"
       ]
     }
@@ -78,7 +78,7 @@
         },
         {
           "id": "s03",
-          "text": "Loredana Ã¨ in cucina. C'Ã¨ il caffÃ¨, e una tazza per Irene.",
+          "text": "Loredana è in cucina. C'è il caffè, e una tazza per Irene.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -186,7 +186,7 @@
         },
         {
           "id": "s10",
-          "text": "Loredana versa il caffÃ¨. Le mani tremano poco.",
+          "text": "Loredana versa il caffè. Le mani tremano poco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -202,7 +202,7 @@
         },
         {
           "id": "s11",
-          "text": "Non Ã¨ la vestaglia di ieri sera. Ãˆ giorno. PerÃ² gli occhi sono gli stessi.",
+          "text": "Non è la vestaglia di ieri sera. È giorno. Però gli occhi sono gli stessi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -316,7 +316,7 @@
         },
         {
           "id": "s17",
-          "text": "Non Ã¨ morta. Vive altrove. PerÃ² quella scuola Ã¨ finita.",
+          "text": "Non è morta. Vive altrove. Però quella scuola è finita.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -334,7 +334,7 @@
         },
         {
           "id": "s18",
-          "text": "Adesso la scuola Ã¨ chiusa. Lei non parla piÃ¹ di quelle stanze.",
+          "text": "Adesso la scuola è chiusa. Lei non parla più di quelle stanze.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -390,7 +390,7 @@
         },
         {
           "id": "s21",
-          "text": "Tutti dicono: Ã¨ vuota. Io lo dico perchÃ© ho paura, e perchÃ© non voglio.",
+          "text": "Tutti dicono: è vuota. Io lo dico perché ho paura, e perché non voglio.",
           "speakerId": "loredana",
           "kind": "dialogue",
           "lemmas": [
@@ -412,7 +412,7 @@
         },
         {
           "id": "s22",
-          "text": "Irene capisce una cosa nuova: vuota Ã¨ anche una parola per non sentire.",
+          "text": "Irene capisce una cosa nuova: vuota è anche una parola per non sentire.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s23",
-          "text": "Non Ã¨ la luce di lÃ . Loredana era di qua, con il telefono. Due luci.",
+          "text": "Non è la luce di là. Loredana era di qua, con il telefono. Due luci.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -514,7 +514,7 @@
         },
         {
           "id": "s27",
-          "text": "Sulla pagina c'Ã¨ la griglia. Finestre con i numeri. Tre, quattro, cinque.",
+          "text": "Sulla pagina c'è la griglia. Finestre con i numeri. Tre, quattro, cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -534,7 +534,7 @@
         },
         {
           "id": "s28",
-          "text": "C'Ã¨ anche: stanza due, di fronte. C'Ã¨ ieri. C'Ã¨ stasera niente.",
+          "text": "C'è anche: stanza due, di fronte. C'è ieri. C'è stasera niente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -586,7 +586,7 @@
         },
         {
           "id": "s31",
-          "text": "Non Ã¨ cattiveria. Ãˆ un disegno. PerÃ² Loredana piange, senza rumore.",
+          "text": "Non è cattiveria. È un disegno. Però Loredana piange, senza rumore.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -670,7 +670,7 @@
         },
         {
           "id": "s36",
-          "text": "Irene non risponde. Non promette. Beve il caffÃ¨ freddo, e sale.",
+          "text": "Irene non risponde. Non promette. Beve il caffè freddo, e sale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -689,7 +689,7 @@
         },
         {
           "id": "s37",
-          "text": "In mansarda apre il quaderno. Non scrive: Loredana aiuta. Non scrive: Loredana Ã¨ la luce.",
+          "text": "In mansarda apre il quaderno. Non scrive: Loredana aiuta. Non scrive: Loredana è la luce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -730,7 +730,7 @@
         },
         {
           "id": "s39",
-          "text": "Scrive anche: Loredana di qua. La luce di lÃ . Ancora due.",
+          "text": "Scrive anche: Loredana di qua. La luce di là. Ancora due.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -749,7 +749,7 @@
         },
         {
           "id": "s40",
-          "text": "Poi chiude. Dovrei lasciare le finestre. PerÃ² non promette a nessuno.",
+          "text": "Poi chiude. Dovrei lasciare le finestre. Però non promette a nessuno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -768,7 +768,7 @@
         },
         {
           "id": "s41",
-          "text": "Loredana resta giÃ¹. Non sale. Non guarda di lÃ .",
+          "text": "Loredana resta giù. Non sale. Non guarda di là.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -939,7 +939,7 @@
         },
         {
           "id": "s49",
-          "text": "Sa anche che Loredana non Ã¨ la lampada. Questo non cambia il pianto.",
+          "text": "Sa anche che Loredana non è la lampada. Questo non cambia il pianto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -960,7 +960,7 @@
         },
         {
           "id": "s50",
-          "text": "La sera sale senza mostrare il quaderno. La cucina Ã¨ buia. Loredana non chiama.",
+          "text": "La sera sale senza mostrare il quaderno. La cucina è buia. Loredana non chiama.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1036,7 +1036,7 @@
       "type": "character",
       "question": "Who was in the last class?",
       "choices": [
-        "Loredanaâ€™s daughter",
+        "Loredana’s daughter",
         "Alme",
         "Quinto"
       ],
@@ -1064,9 +1064,9 @@
       "type": "event",
       "question": "What hurts Loredana?",
       "choices": [
-        "Ireneâ€™s numbered sketch of the windows",
-        "Mimmoâ€™s video",
-        "Almeâ€™s coffee"
+        "Irene’s numbered sketch of the windows",
+        "Mimmo’s video",
+        "Alme’s coffee"
       ],
       "correctChoice": 0,
       "explanation": "She opens the notebook. You put numbers on her windows.",
@@ -1086,5 +1086,15 @@
       "explanation": "Two lights. Loredana was on this side. Empty is also a word for not feeling.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-13.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 278232
+      }
+    ]
+  }
 }

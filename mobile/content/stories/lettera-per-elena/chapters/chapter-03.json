@@ -3,7 +3,7 @@
   "storyId": "lettera-per-elena",
   "number": 3,
   "title": "Tuesday",
-  "titleIt": "MartedÃ¬",
+  "titleIt": "Martedì",
   "difficultyLevel": 2,
   "locationIds": [
     "caffe-brenta",
@@ -48,7 +48,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "MartedÃ¬ mattina il CaffÃ¨ Brenta apre presto.",
+          "text": "Martedì mattina il Caffè Brenta apre presto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -79,7 +79,7 @@
         },
         {
           "id": "s03",
-          "text": "Katia prepara le tazzine e controlla la macchina del caffÃ¨.",
+          "text": "Katia prepara le tazzine e controlla la macchina del caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -97,7 +97,7 @@
         },
         {
           "id": "s04",
-          "text": "Fuori c'Ã¨ nebbia su Marina di Brenta.",
+          "text": "Fuori c'è nebbia su Marina di Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -112,7 +112,7 @@
         },
         {
           "id": "s05",
-          "text": "Un furgone si ferma davanti al caffÃ¨.",
+          "text": "Un furgone si ferma davanti al caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -147,7 +147,7 @@
         },
         {
           "id": "s07",
-          "text": "Ãˆ Pietro. MartedÃ¬.",
+          "text": "È Pietro. Martedì.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -158,7 +158,7 @@
         },
         {
           "id": "s08",
-          "text": "Pietro entra con due scatole di caffÃ¨.",
+          "text": "Pietro entra con due scatole di caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -243,7 +243,7 @@
         },
         {
           "id": "s14",
-          "text": "Elena, questo Ã¨ Pietro. Porta il caffÃ¨ ogni martedÃ¬.",
+          "text": "Elena, questo è Pietro. Porta il caffè ogni martedì.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -299,7 +299,7 @@
         },
         {
           "id": "s18",
-          "text": "Poi c'Ã¨ un silenzio corto e strano.",
+          "text": "Poi c'è un silenzio corto e strano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -327,7 +327,7 @@
         },
         {
           "id": "s20",
-          "text": "C'Ã¨ tanta nebbia oggi.",
+          "text": "C'è tanta nebbia oggi.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -345,7 +345,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "SÃ¬. Tanto.",
+          "text": "Sì. Tanto.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -401,7 +401,7 @@
         },
         {
           "id": "s25",
-          "text": "Vuoi un caffÃ¨ prima di ripartire?",
+          "text": "Vuoi un caffè prima di ripartire?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s27",
-          "text": "Parlano ancora del tempo, perchÃ© non sanno altro.",
+          "text": "Parlano ancora del tempo, perché non sanno altro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -473,7 +473,7 @@
         },
         {
           "id": "s30",
-          "text": "L'aria tra loro Ã¨ morta.",
+          "text": "L'aria tra loro è morta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -492,7 +492,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "Elena Ã¨ brava al bancone con i clienti.",
+          "text": "Elena è brava al bancone con i clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -633,7 +633,7 @@
         },
         {
           "id": "s40",
-          "text": "A martedÃ¬ prossimo.",
+          "text": "A martedì prossimo.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -650,7 +650,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "SÃ¬. MartedÃ¬.",
+          "text": "Sì. Martedì.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -776,7 +776,7 @@
         },
         {
           "id": "s50",
-          "text": "Ãˆ timido.",
+          "text": "È timido.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -832,7 +832,7 @@
         },
         {
           "id": "s54",
-          "text": "Non c'Ã¨ una riga nuova.",
+          "text": "Non c'è una riga nuova.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -845,7 +845,7 @@
         },
         {
           "id": "s55",
-          "text": "C'Ã¨ ancora vero sotto questo tavolo balla.",
+          "text": "C'è ancora vero sotto questo tavolo balla.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -904,5 +904,15 @@
       "explanation": "He looks at the shelf near the sugar, not at Elena.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-03.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 157848
+      }
+    ]
+  }
 }

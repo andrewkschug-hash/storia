@@ -102,7 +102,7 @@
         },
         {
           "id": "s06",
-          "text": "Pina d√† un etto di formaggio.",
+          "text": "Pina d‡ un etto di formaggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -383,7 +383,7 @@
         },
         {
           "id": "s28",
-          "text": "Lo zucchero non √® nei sacchetti.",
+          "text": "Lo zucchero non Ë nei sacchetti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -423,7 +423,7 @@
         },
         {
           "id": "s31",
-          "text": "Tutto √® pronto.",
+          "text": "Tutto Ë pronto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -517,5 +517,15 @@
       "chapterId": "luca-prima-di-roma-03-04",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 84048
+      }
+    ]
+  }
 }

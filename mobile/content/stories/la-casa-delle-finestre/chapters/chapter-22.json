@@ -43,7 +43,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Venerd√¨ sera Irene va dai carabinieri. Non √® marted√¨. √à tardi, e lei lo sa.",
+          "text": "VenerdÏ sera Irene va dai carabinieri. Non Ë martedÏ. » tardi, e lei lo sa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -149,7 +149,7 @@
         },
         {
           "id": "s06",
-          "text": "Venerd√¨ il comune distrugge carte. Io ho nascosto una scatola. Poi ho fatto una copia.",
+          "text": "VenerdÏ il comune distrugge carte. Io ho nascosto una scatola. Poi ho fatto una copia.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -213,7 +213,7 @@
         },
         {
           "id": "s09",
-          "text": "Doveva venire prima. Il foglio diceva di non chiamare. Per√≤ doveva venire prima.",
+          "text": "Doveva venire prima. Il foglio diceva di non chiamare. PerÚ doveva venire prima.",
           "speakerId": "piva",
           "kind": "dialogue",
           "lemmas": [
@@ -234,7 +234,7 @@
         },
         {
           "id": "s10",
-          "text": "S√¨. Lo so. Sono in ritardo.",
+          "text": "SÏ. Lo so. Sono in ritardo.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -276,7 +276,7 @@
         },
         {
           "id": "s12",
-          "text": "Non √® una storia per la televisione. √à un paese. √à locale.",
+          "text": "Non Ë una storia per la televisione. » un paese. » locale.",
           "speakerId": "piva",
           "kind": "dialogue",
           "lemmas": [
@@ -296,7 +296,7 @@
         },
         {
           "id": "s13",
-          "text": "Controlleremo le carte. Lei ha detto la verit√†. Questo basta, per stasera.",
+          "text": "Controlleremo le carte. Lei ha detto la verit‡. Questo basta, per stasera.",
           "speakerId": "piva",
           "kind": "dialogue",
           "lemmas": [
@@ -316,7 +316,7 @@
         },
         {
           "id": "s14",
-          "text": "Irene lascia una copia dei fatti, non vende niente. Esce. Non √® una festa.",
+          "text": "Irene lascia una copia dei fatti, non vende niente. Esce. Non Ë una festa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -338,7 +338,7 @@
         },
         {
           "id": "s15",
-          "text": "Vicino alla scuola, di sera, c'√® Sara. La borsa c'√®. La rabbia c'√®.",
+          "text": "Vicino alla scuola, di sera, c'Ë Sara. La borsa c'Ë. La rabbia c'Ë.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -371,7 +371,7 @@
         },
         {
           "id": "s17",
-          "text": "S√¨. Tardi. Dopo Alme. Dopo la macchina.",
+          "text": "SÏ. Tardi. Dopo Alme. Dopo la macchina.",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -404,7 +404,7 @@
         },
         {
           "id": "s19",
-          "text": "I registri. Una scatola. Non tutto. Per√≤ non tutto √® morto.",
+          "text": "I registri. Una scatola. Non tutto. PerÚ non tutto Ë morto.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -423,7 +423,7 @@
         },
         {
           "id": "s20",
-          "text": "Irene non chiede un grazie. Sara non lo d√† subito. Poi, piano: va bene. Quasi.",
+          "text": "Irene non chiede un grazie. Sara non lo d‡ subito. Poi, piano: va bene. Quasi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -446,7 +446,7 @@
         },
         {
           "id": "s21",
-          "text": "La scuola resta chiusa. Nessuno entra a festeggiare. Due donne in strada, venerd√¨ sera.",
+          "text": "La scuola resta chiusa. Nessuno entra a festeggiare. Due donne in strada, venerdÏ sera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -490,7 +490,7 @@
         },
         {
           "id": "s23",
-          "text": "Le finestre non sono mai state il reato. La carta s√¨.",
+          "text": "Le finestre non sono mai state il reato. La carta sÏ.",
           "speakerId": "piva",
           "kind": "dialogue",
           "lemmas": [
@@ -550,7 +550,7 @@
         },
         {
           "id": "s26",
-          "text": "Non √® la fine della scuola. √à la fine di questa sera. Locale. Tardi. Vero abbastanza.",
+          "text": "Non Ë la fine della scuola. » la fine di questa sera. Locale. Tardi. Vero abbastanza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -598,7 +598,7 @@
       "choices": [
         "She is angry, then almost relieved",
         "She celebrates on television",
-        "She takes Quinto‚Äôs keys"
+        "She takes Quintoís keys"
       ],
       "correctChoice": 0,
       "explanation": "Anger first. Then: all right. Almost. The school stays closed.",
@@ -632,5 +632,15 @@
       "explanation": "The windows were never the crime. The paper was.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-22.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 171168
+      }
+    ]
+  }
 }

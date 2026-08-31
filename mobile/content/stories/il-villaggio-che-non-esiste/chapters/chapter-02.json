@@ -3,7 +3,7 @@
   "storyId": "il-villaggio-che-non-esiste",
   "number": 2,
   "title": "It's there",
-  "titleIt": "C'√®",
+  "titleIt": "C'Ë",
   "difficultyLevel": 2,
   "locationIds": [
     "collevento-strada",
@@ -99,7 +99,7 @@
         },
         {
           "id": "s04",
-          "text": "Il paese √® piccolo, ma non √® abbandonato: qualcuno vive qui.",
+          "text": "Il paese Ë piccolo, ma non Ë abbandonato: qualcuno vive qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -144,7 +144,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Cammina piano perch√© la valigia tira il braccio a ogni passo.",
+          "text": "Cammina piano perchÈ la valigia tira il braccio a ogni passo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -163,7 +163,7 @@
         },
         {
           "id": "s07",
-          "text": "In una piazzetta c'√® una fontana che fa poco rumore sull'acqua.",
+          "text": "In una piazzetta c'Ë una fontana che fa poco rumore sull'acqua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -199,7 +199,7 @@
         },
         {
           "id": "s09",
-          "text": "Vicino alla fontana una porta di legno √® aperta sulla strada.",
+          "text": "Vicino alla fontana una porta di legno Ë aperta sulla strada.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -218,7 +218,7 @@
         },
         {
           "id": "s10",
-          "text": "Sulla porta c'√® scritto Locanda a mano, con lettere scure.",
+          "text": "Sulla porta c'Ë scritto Locanda a mano, con lettere scure.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -372,7 +372,7 @@
         },
         {
           "id": "s19",
-          "text": "La stanza √® gi√† pronta, da stamattina.",
+          "text": "La stanza Ë gi‡ pronta, da stamattina.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -439,7 +439,7 @@
         },
         {
           "id": "s23",
-          "text": "La stanza c'√®, e oggi c'√® posto per te.",
+          "text": "La stanza c'Ë, e oggi c'Ë posto per te.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -476,7 +476,7 @@
         },
         {
           "id": "s25",
-          "text": "C'√® un tavolo di legno scuro e due sedie diverse tra loro.",
+          "text": "C'Ë un tavolo di legno scuro e due sedie diverse tra loro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -540,7 +540,7 @@
         },
         {
           "id": "s28",
-          "text": "La stanza √® piccola, pulita e gi√† in ordine completo.",
+          "text": "La stanza Ë piccola, pulita e gi‡ in ordine completo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -558,7 +558,7 @@
         },
         {
           "id": "s29",
-          "text": "Il letto √® fatto con lenzuola chiare e un cuscino al centro.",
+          "text": "Il letto Ë fatto con lenzuola chiare e un cuscino al centro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -603,7 +603,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "C'√® anche un asciugamano piegato con cura sul bordo del letto.",
+          "text": "C'Ë anche un asciugamano piegato con cura sul bordo del letto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -769,7 +769,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Il paese c'√®, con gente che vive, cucina e parla piano.",
+          "text": "Il paese c'Ë, con gente che vive, cucina e parla piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -788,7 +788,7 @@
         },
         {
           "id": "s42",
-          "text": "Non √® solo una fermata dimenticata sui binari freddi.",
+          "text": "Non Ë solo una fermata dimenticata sui binari freddi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -805,7 +805,7 @@
         },
         {
           "id": "s43",
-          "text": "Per√≤ qualcosa non torna nella voce di Elsa, troppo sicura.",
+          "text": "PerÚ qualcosa non torna nella voce di Elsa, troppo sicura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -950,5 +950,15 @@
       "explanation": "Elsa says finalmente and prepared a room though Giada booked nothing.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-02.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 185544
+      }
+    ]
+  }
 }

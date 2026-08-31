@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Marta Ã¨ nel soggiorno.",
+          "text": "Marta è nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -71,7 +71,7 @@
         },
         {
           "id": "s03",
-          "text": "Che giorno Ã¨ oggi?",
+          "text": "Che giorno è oggi?",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s04",
-          "text": "Oggi Ã¨ lunedÃ¬.",
+          "text": "Oggi è lunedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -94,7 +94,7 @@
         },
         {
           "id": "s05",
-          "text": "Oggi Ã¨ il dodici maggio.",
+          "text": "Oggi è il dodici maggio.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -107,7 +107,7 @@
         },
         {
           "id": "s06",
-          "text": "Maggio Ã¨ un mese.",
+          "text": "Maggio è un mese.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -202,7 +202,7 @@
         },
         {
           "id": "s38",
-          "text": "Il numero dodici Ã¨ importante oggi.",
+          "text": "Il numero dodici è importante oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -222,7 +222,7 @@
       "sentences": [
         {
           "id": "s13",
-          "text": "Il dodici Ã¨ un numero.",
+          "text": "Il dodici è un numero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -235,7 +235,7 @@
         },
         {
           "id": "s14",
-          "text": "Oggi il numero Ã¨ dodici.",
+          "text": "Oggi il numero è dodici.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -248,7 +248,7 @@
         },
         {
           "id": "s15",
-          "text": "Domani Ã¨ il tredici maggio.",
+          "text": "Domani è il tredici maggio.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -261,7 +261,7 @@
         },
         {
           "id": "s16",
-          "text": "Ieri Ã¨ l'undici maggio.",
+          "text": "Ieri è l'undici maggio.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -273,7 +273,7 @@
         },
         {
           "id": "s17",
-          "text": "Il giorno Ã¨ importante.",
+          "text": "Il giorno è importante.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -298,7 +298,7 @@
         },
         {
           "id": "s19",
-          "text": "Maggio Ã¨ ora.",
+          "text": "Maggio è ora.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -320,7 +320,7 @@
         },
         {
           "id": "s21",
-          "text": "Che mese Ã¨?",
+          "text": "Che mese è?",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -331,7 +331,7 @@
         },
         {
           "id": "s22",
-          "text": "Ãˆ maggio.",
+          "text": "È maggio.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -341,7 +341,7 @@
         },
         {
           "id": "s23",
-          "text": "Il dodici maggio Ã¨ oggi.",
+          "text": "Il dodici maggio è oggi.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -366,7 +366,7 @@
         },
         {
           "id": "s39",
-          "text": "Ieri Ã¨ undici e oggi dodici.",
+          "text": "Ieri è undici e oggi dodici.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -380,7 +380,7 @@
         },
         {
           "id": "s40",
-          "text": "Domani Ã¨ tredici maggio martedÃ¬.",
+          "text": "Domani è tredici maggio martedì.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -421,7 +421,7 @@
         },
         {
           "id": "s27",
-          "text": "Oggi Ã¨ il dodici.",
+          "text": "Oggi è il dodici.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s28",
-          "text": "Domani Ã¨ il tredici.",
+          "text": "Domani è il tredici.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -445,7 +445,7 @@
         },
         {
           "id": "s29",
-          "text": "Ieri Ã¨ l'undici.",
+          "text": "Ieri è l'undici.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -456,7 +456,7 @@
         },
         {
           "id": "s30",
-          "text": "L'anno Ã¨ importante.",
+          "text": "L'anno è importante.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -467,7 +467,7 @@
         },
         {
           "id": "s31",
-          "text": "Oggi Ã¨ una bella giornata.",
+          "text": "Oggi è una bella giornata.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -480,7 +480,7 @@
         },
         {
           "id": "s32",
-          "text": "Il dodici maggio Ã¨ lunedÃ¬.",
+          "text": "Il dodici maggio è lunedì.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -516,7 +516,7 @@
         },
         {
           "id": "s35",
-          "text": "Marta Ã¨ contenta.",
+          "text": "Marta è contenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -571,14 +571,14 @@
     {
       "id": "lpr02-ch04-q01",
       "type": "direct",
-      "question": "What is todayâ€™s date?",
+      "question": "What is today’s date?",
       "choices": [
         "11 May",
         "12 May",
         "13 June"
       ],
       "correctChoice": 1,
-      "explanation": "Oggi Ã¨ il dodici maggio.",
+      "explanation": "Oggi è il dodici maggio.",
       "chapterId": "luca-prima-di-roma-02-04",
       "difficulty": 1
     },
@@ -599,16 +599,26 @@
     {
       "id": "lpr02-ch04-q03",
       "type": "direct",
-      "question": "What is tomorrowâ€™s date?",
+      "question": "What is tomorrow’s date?",
       "choices": [
         "13 May",
         "12 May",
         "1 January"
       ],
       "correctChoice": 0,
-      "explanation": "Domani Ã¨ il tredici maggio.",
+      "explanation": "Domani è il tredici maggio.",
       "chapterId": "luca-prima-di-roma-02-04",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-04.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 92304
+      }
+    ]
+  }
 }

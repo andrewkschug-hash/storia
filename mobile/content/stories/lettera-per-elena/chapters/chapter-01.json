@@ -18,7 +18,7 @@
   "events": [
     {
       "id": "ev-lettera-per-elena-01",
-      "summary": "Elena starts her first shift at CaffÃ¨ Brenta. By the sugar she finds a fat book with one line already written: questo tavolo balla. She answers with vero.",
+      "summary": "Elena starts her first shift at Caffè Brenta. By the sugar she finds a fat book with one line already written: questo tavolo balla. She answers with vero.",
       "characterIds": [
         "elena-marini",
         "bruna"
@@ -30,11 +30,11 @@
         "scaffale-libro"
       ],
       "rememberedFacts": [
-        "Elena starts her first shift at CaffÃ¨ Brenta",
+        "Elena starts her first shift at Caffè Brenta",
         "A fat book sits on the shelf by the sugar",
         "Someone has written questo tavolo balla in the book",
         "Elena writes vero under that line",
-        "Bruna owns the cafÃ© and watches Elena quietly"
+        "Bruna owns the café and watches Elena quietly"
       ]
     }
   ],
@@ -66,7 +66,7 @@
         },
         {
           "id": "s02",
-          "text": "Câ€™Ã¨ nebbia sulla strada e sul CaffÃ¨ Brenta.",
+          "text": "C’è nebbia sulla strada e sul Caffè Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -82,7 +82,7 @@
         },
         {
           "id": "s03",
-          "text": "Ãˆ il suo primo turno. Il cuore le batte forte.",
+          "text": "È il suo primo turno. Il cuore le batte forte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -146,7 +146,7 @@
         },
         {
           "id": "s07",
-          "text": "Bruna apre e lâ€™odore del caffÃ¨ esce subito.",
+          "text": "Bruna apre e l’odore del caffè esce subito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -162,7 +162,7 @@
         },
         {
           "id": "s08",
-          "text": "Dentro Ã¨ ancora quieto: sedie sulle tavole, luci spente.",
+          "text": "Dentro è ancora quieto: sedie sulle tavole, luci spente.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -261,7 +261,7 @@
         },
         {
           "id": "s14",
-          "text": "Vicino allo zucchero câ€™Ã¨ uno scaffale basso.",
+          "text": "Vicino allo zucchero c’è uno scaffale basso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -276,7 +276,7 @@
         },
         {
           "id": "s15",
-          "text": "Sullo scaffale câ€™Ã¨ un libro grosso, spesso e un poâ€™ sporco.",
+          "text": "Sullo scaffale c’è un libro grosso, spesso e un po’ sporco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -301,7 +301,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "La copertina Ã¨ scura e senza titolo.",
+          "text": "La copertina è scura e senza titolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -316,7 +316,7 @@
         },
         {
           "id": "s17",
-          "text": "Che cosâ€™Ã¨ quel libro?",
+          "text": "Che cos’è quel libro?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -395,7 +395,7 @@
         },
         {
           "id": "s22",
-          "text": "Elena serve un cappuccino e un caffÃ¨ corto.",
+          "text": "Elena serve un cappuccino e un caffè corto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -463,7 +463,7 @@
       "sentences": [
         {
           "id": "s26",
-          "text": "Tra un ordine e lâ€™altro, perÃ², guarda lo scaffale.",
+          "text": "Tra un ordine e l’altro, però, guarda lo scaffale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -480,7 +480,7 @@
         },
         {
           "id": "s27",
-          "text": "Il libro grosso sta lÃ¬, fermo, vicino allo zucchero.",
+          "text": "Il libro grosso sta lì, fermo, vicino allo zucchero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -517,7 +517,7 @@
         },
         {
           "id": "s29",
-          "text": "Elena lo nota e sorride tra sÃ©.",
+          "text": "Elena lo nota e sorride tra sé.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -532,7 +532,7 @@
         },
         {
           "id": "s30",
-          "text": "A metÃ  mattina i clienti diminuiscono.",
+          "text": "A metà mattina i clienti diminuiscono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -667,7 +667,7 @@
         },
         {
           "id": "s38",
-          "text": "Non Ã¨ poesia. Ãˆ una cosa vera, come il tavolo alla finestra.",
+          "text": "Non è poesia. È una cosa vera, come il tavolo alla finestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -687,7 +687,7 @@
         },
         {
           "id": "s39",
-          "text": "Sotto la riga câ€™Ã¨ spazio bianco.",
+          "text": "Sotto la riga c’è spazio bianco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -839,7 +839,7 @@
         },
         {
           "id": "s49",
-          "text": "SÃ¬. Solo un attimo.",
+          "text": "Sì. Solo un attimo.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -871,7 +871,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Il turno continua: caffÃ¨, cappuccini, un panino.",
+          "text": "Il turno continua: caffè, cappuccini, un panino.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -922,7 +922,7 @@
         },
         {
           "id": "s54",
-          "text": "Mangia in piedi. Il primo giorno Ã¨ cosÃ¬.",
+          "text": "Mangia in piedi. Il primo giorno è così.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -979,7 +979,7 @@
       "choices": [
         "Questo tavolo balla",
         "Oggi ho paura del silenzio",
-        "MartedÃ¬ porto il caffÃ¨"
+        "Martedì porto il caffè"
       ],
       "correctChoice": 0,
       "explanation": "Elena finds the practical note questo tavolo balla.",
@@ -999,5 +999,15 @@
       "explanation": "She answers with the single word vero.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 185016
+      }
+    ]
+  }
 }

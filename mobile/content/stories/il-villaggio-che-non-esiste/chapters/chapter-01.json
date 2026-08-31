@@ -36,7 +36,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giada √® sul treno per Trento da quasi due ore.",
+          "text": "Giada Ë sul treno per Trento da quasi due ore.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -137,7 +137,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Dentro c'√® anche la borsa vecchia di sua madre, presa senza chiedere.",
+          "text": "Dentro c'Ë anche la borsa vecchia di sua madre, presa senza chiedere.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -157,7 +157,7 @@
         },
         {
           "id": "s07",
-          "text": "Il treno √® lento, caldo e quasi vuoto in questo tratto.",
+          "text": "Il treno Ë lento, caldo e quasi vuoto in questo tratto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -279,7 +279,7 @@
         },
         {
           "id": "s13",
-          "text": "Quando si sveglia, il treno sta gi√† frenando con un suono lungo.",
+          "text": "Quando si sveglia, il treno sta gi‡ frenando con un suono lungo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -364,7 +364,7 @@
         },
         {
           "id": "s17",
-          "text": "Sul marciapiede non c'√® nessun altro passeggero, solo aria ferma.",
+          "text": "Sul marciapiede non c'Ë nessun altro passeggero, solo aria ferma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -419,7 +419,7 @@
         },
         {
           "id": "s20",
-          "text": "La fermata √® piccola: una panchina, un cestino, niente biglietteria.",
+          "text": "La fermata Ë piccola: una panchina, un cestino, niente biglietteria.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -443,7 +443,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Non c'√® orario sul muro e non c'√® una voce che spiega.",
+          "text": "Non c'Ë orario sul muro e non c'Ë una voce che spiega.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -500,7 +500,7 @@
         },
         {
           "id": "s24",
-          "text": "Sul cartello c'√® scritto Collevento a lettere ancora leggibili.",
+          "text": "Sul cartello c'Ë scritto Collevento a lettere ancora leggibili.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -577,7 +577,7 @@
         },
         {
           "id": "s28",
-          "text": "Collevento non √® Trento, e non √® sulla sua lista di fermate.",
+          "text": "Collevento non Ë Trento, e non Ë sulla sua lista di fermate.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -640,7 +640,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "La strada sale verso le case; in fondo c'√® un filo di fumo.",
+          "text": "La strada sale verso le case; in fondo c'Ë un filo di fumo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -661,7 +661,7 @@
         },
         {
           "id": "s32",
-          "text": "Forse c'√® un paese vero, non solo una fermata morta.",
+          "text": "Forse c'Ë un paese vero, non solo una fermata morta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -716,7 +716,7 @@
         },
         {
           "id": "s35",
-          "text": "Non √® uno scherzo fatto ieri sera da un ragazzo.",
+          "text": "Non Ë uno scherzo fatto ieri sera da un ragazzo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -761,7 +761,7 @@
         },
         {
           "id": "s37",
-          "text": "Dietro di lei il treno √® gi√† lontano tra le curve delle colline.",
+          "text": "Dietro di lei il treno Ë gi‡ lontano tra le curve delle colline.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -782,7 +782,7 @@
         },
         {
           "id": "s38",
-          "text": "Davanti c'√® solo il nome cancellato e una salita silenziosa.",
+          "text": "Davanti c'Ë solo il nome cancellato e una salita silenziosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -843,7 +843,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Sa solo che questa non √® la stazione di Trento.",
+          "text": "Sa solo che questa non Ë la stazione di Trento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -924,5 +924,15 @@
       "explanation": "The platform is empty and the train leaves at once.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 161904
+      }
+    ]
+  }
 }

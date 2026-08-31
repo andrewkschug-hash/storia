@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "GiovedÃ¬ piove piano su Marina di Brenta.",
+          "text": "Giovedì piove piano su Marina di Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -59,7 +59,7 @@
         },
         {
           "id": "s02",
-          "text": "Il CaffÃ¨ Brenta ha pochi clienti.",
+          "text": "Il Caffè Brenta ha pochi clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -141,7 +141,7 @@
         },
         {
           "id": "s07",
-          "text": "Non Ã¨ una domanda forte. Ãˆ una frase quieta.",
+          "text": "Non è una domanda forte. È una frase quieta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -305,7 +305,7 @@
         },
         {
           "id": "s19",
-          "text": "PerchÃ©?",
+          "text": "Perché?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -314,7 +314,7 @@
         },
         {
           "id": "s20",
-          "text": "PerchÃ© se lo scrivo, poi Ã¨ vero.",
+          "text": "Perché se lo scrivo, poi è vero.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -346,7 +346,7 @@
         },
         {
           "id": "s22",
-          "text": "Per lei il libro Ã¨ piÃ¹ facile della voce.",
+          "text": "Per lei il libro è più facile della voce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -363,7 +363,7 @@
         },
         {
           "id": "s23",
-          "text": "Per Katia Ã¨ il contrario: la carta fa paura.",
+          "text": "Per Katia è il contrario: la carta fa paura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -380,7 +380,7 @@
         },
         {
           "id": "s24",
-          "text": "Bruna esce dal magazzino con un sacco di caffÃ¨.",
+          "text": "Bruna esce dal magazzino con un sacco di caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -471,7 +471,7 @@
         },
         {
           "id": "s30",
-          "text": "Alcune frasi sono pratiche: il tavolo, il caffÃ¨, il martedÃ¬.",
+          "text": "Alcune frasi sono pratiche: il tavolo, il caffè, il martedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -557,7 +557,7 @@
         },
         {
           "id": "s35",
-          "text": "Alla sera chiudono il caffÃ¨ insieme.",
+          "text": "Alla sera chiudono il caffè insieme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -618,7 +618,7 @@
         },
         {
           "id": "s39",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -645,7 +645,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Lo so. Ãˆ una regola di Bruna.",
+          "text": "Lo so. È una regola di Bruna.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -676,7 +676,7 @@
         },
         {
           "id": "s43",
-          "text": "Non Ã¨ solo una regola.",
+          "text": "Non è solo una regola.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -689,7 +689,7 @@
         },
         {
           "id": "s44",
-          "text": "Ãˆ anche protezione.",
+          "text": "È anche protezione.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -738,7 +738,7 @@
         },
         {
           "id": "s47",
-          "text": "Lo ha giÃ  scritto nel libro, dove nessuno ammette.",
+          "text": "Lo ha già scritto nel libro, dove nessuno ammette.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -854,5 +854,15 @@
       "explanation": "She says if she writes it, then it becomes true.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 157224
+      }
+    ]
+  }
 }

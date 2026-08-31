@@ -24,7 +24,7 @@
   "events": [
     {
       "id": "ev-luca-prima-di-roma-05-01",
-      "summary": "Today is Lucaâ€™s birthday on 12 May. He is 24. The family says auguri.",
+      "summary": "Today is Luca’s birthday on 12 May. He is 24. The family says auguri.",
       "characterIds": [
         "luca",
         "marta",
@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Oggi Ã¨ il compleanno di Luca.",
+          "text": "Oggi è il compleanno di Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -64,7 +64,7 @@
         },
         {
           "id": "s02",
-          "text": "Oggi Ã¨ lunedÃ¬, il dodici maggio.",
+          "text": "Oggi è lunedì, il dodici maggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -78,7 +78,7 @@
         },
         {
           "id": "s03",
-          "text": "Il dodici maggio Ã¨ il compleanno di Luca.",
+          "text": "Il dodici maggio è il compleanno di Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -129,7 +129,7 @@
         },
         {
           "id": "s07",
-          "text": "Luca Ã¨ nel soggiorno.",
+          "text": "Luca è nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -141,7 +141,7 @@
         },
         {
           "id": "s08",
-          "text": "La famiglia Ã¨ a casa.",
+          "text": "La famiglia è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -186,7 +186,7 @@
         },
         {
           "id": "s12",
-          "text": "Il compleanno Ã¨ oggi.",
+          "text": "Il compleanno è oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -198,7 +198,7 @@
         },
         {
           "id": "s13",
-          "text": "Luca Ã¨ a casa oggi.",
+          "text": "Luca è a casa oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -217,7 +217,7 @@
       "sentences": [
         {
           "id": "s14",
-          "text": "Paolo Ã¨ qui.",
+          "text": "Paolo è qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -238,7 +238,7 @@
         },
         {
           "id": "s16",
-          "text": "Grazie papÃ .",
+          "text": "Grazie papà.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -267,7 +267,7 @@
         },
         {
           "id": "s19",
-          "text": "Lidia Ã¨ a casa.",
+          "text": "Lidia è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -299,7 +299,7 @@
         },
         {
           "id": "s22",
-          "text": "Sabato c'Ã¨ una festa.",
+          "text": "Sabato c'è una festa.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -311,7 +311,7 @@
         },
         {
           "id": "s23",
-          "text": "La festa Ã¨ a casa.",
+          "text": "La festa è a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -324,7 +324,7 @@
         },
         {
           "id": "s24",
-          "text": "La festa Ã¨ nel soggiorno.",
+          "text": "La festa è nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -367,7 +367,7 @@
       "sentences": [
         {
           "id": "s27",
-          "text": "Luca Ã¨ felice.",
+          "text": "Luca è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -378,7 +378,7 @@
         },
         {
           "id": "s28",
-          "text": "Marta Ã¨ felice.",
+          "text": "Marta è felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -389,7 +389,7 @@
         },
         {
           "id": "s29",
-          "text": "Chiara Ã¨ contenta.",
+          "text": "Chiara è contenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -400,7 +400,7 @@
         },
         {
           "id": "s30",
-          "text": "Il compleanno Ã¨ importante.",
+          "text": "Il compleanno è importante.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -412,7 +412,7 @@
         },
         {
           "id": "s31",
-          "text": "Il dodici maggio Ã¨ il mio giorno.",
+          "text": "Il dodici maggio è il mio giorno.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -450,7 +450,7 @@
         },
         {
           "id": "s34",
-          "text": "Oggi Ã¨ un giorno importante.",
+          "text": "Oggi è un giorno importante.",
           "speakerId": "paolo",
           "kind": "dialogue",
           "lemmas": [
@@ -473,7 +473,7 @@
         },
         {
           "id": "s36",
-          "text": "Pietralba Ã¨ piccola ma la famiglia Ã¨ grande.",
+          "text": "Pietralba è piccola ma la famiglia è grande.",
           "speakerId": "lidia",
           "kind": "dialogue",
           "lemmas": [
@@ -489,7 +489,7 @@
         },
         {
           "id": "s37",
-          "text": "La famiglia Ã¨ qui per Luca.",
+          "text": "La famiglia è qui per Luca.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -503,7 +503,7 @@
         },
         {
           "id": "s38",
-          "text": "Il compleanno di Luca Ã¨ oggi.",
+          "text": "Il compleanno di Luca è oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -533,14 +533,14 @@
     {
       "id": "lpr05-ch01-q01",
       "type": "direct",
-      "question": "What date is Lucaâ€™s birthday?",
+      "question": "What date is Luca’s birthday?",
       "choices": [
         "11 May",
         "12 May",
         "1 January"
       ],
       "correctChoice": 1,
-      "explanation": "Oggi Ã¨ il dodici maggio.",
+      "explanation": "Oggi è il dodici maggio.",
       "chapterId": "luca-prima-di-roma-05-01",
       "difficulty": 1
     },
@@ -568,9 +568,19 @@
         "At the supermarket"
       ],
       "correctChoice": 0,
-      "explanation": "La festa Ã¨ a casa.",
+      "explanation": "La festa è a casa.",
       "chapterId": "luca-prima-di-roma-05-01",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 85296
+      }
+    ]
+  }
 }

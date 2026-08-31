@@ -556,5 +556,200 @@
       "chapterId": "luca-prima-di-roma-03-01",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-01.mp3",
+    "segments": [
+      {
+        "sentenceId": "s01",
+        "startMs": 0,
+        "endMs": 2304
+      },
+      {
+        "sentenceId": "s02",
+        "startMs": 2304,
+        "endMs": 4392
+      },
+      {
+        "sentenceId": "s03",
+        "startMs": 4392,
+        "endMs": 7296
+      },
+      {
+        "sentenceId": "s04",
+        "startMs": 7296,
+        "endMs": 8760
+      },
+      {
+        "sentenceId": "s05",
+        "startMs": 8760,
+        "endMs": 10008
+      },
+      {
+        "sentenceId": "s06",
+        "startMs": 10008,
+        "endMs": 11904
+      },
+      {
+        "sentenceId": "s07",
+        "startMs": 11904,
+        "endMs": 14400
+      },
+      {
+        "sentenceId": "s08",
+        "startMs": 14400,
+        "endMs": 16608
+      },
+      {
+        "sentenceId": "s09",
+        "startMs": 16608,
+        "endMs": 18936
+      },
+      {
+        "sentenceId": "s10",
+        "startMs": 18936,
+        "endMs": 20640
+      },
+      {
+        "sentenceId": "s11",
+        "startMs": 20640,
+        "endMs": 21936
+      },
+      {
+        "sentenceId": "s12",
+        "startMs": 21936,
+        "endMs": 24552
+      },
+      {
+        "sentenceId": "s13",
+        "startMs": 24552,
+        "endMs": 26808
+      },
+      {
+        "sentenceId": "s14",
+        "startMs": 26808,
+        "endMs": 28056
+      },
+      {
+        "sentenceId": "s15",
+        "startMs": 28056,
+        "endMs": 29952
+      },
+      {
+        "sentenceId": "s16",
+        "startMs": 29952,
+        "endMs": 32376
+      },
+      {
+        "sentenceId": "s17",
+        "startMs": 32376,
+        "endMs": 34584
+      },
+      {
+        "sentenceId": "s18",
+        "startMs": 34584,
+        "endMs": 37488
+      },
+      {
+        "sentenceId": "s19",
+        "startMs": 37488,
+        "endMs": 38784
+      },
+      {
+        "sentenceId": "s20",
+        "startMs": 38784,
+        "endMs": 41208
+      },
+      {
+        "sentenceId": "s21",
+        "startMs": 41208,
+        "endMs": 43056
+      },
+      {
+        "sentenceId": "s22",
+        "startMs": 43056,
+        "endMs": 44760
+      },
+      {
+        "sentenceId": "s23",
+        "startMs": 44760,
+        "endMs": 46584
+      },
+      {
+        "sentenceId": "s24",
+        "startMs": 46584,
+        "endMs": 48312
+      },
+      {
+        "sentenceId": "s25",
+        "startMs": 48312,
+        "endMs": 50688
+      },
+      {
+        "sentenceId": "s26",
+        "startMs": 50688,
+        "endMs": 52344
+      },
+      {
+        "sentenceId": "s27",
+        "startMs": 52344,
+        "endMs": 53952
+      },
+      {
+        "sentenceId": "s28",
+        "startMs": 53952,
+        "endMs": 55920
+      },
+      {
+        "sentenceId": "s29",
+        "startMs": 55920,
+        "endMs": 58056
+      },
+      {
+        "sentenceId": "s30",
+        "startMs": 58056,
+        "endMs": 59904
+      },
+      {
+        "sentenceId": "s31",
+        "startMs": 59904,
+        "endMs": 62352
+      },
+      {
+        "sentenceId": "s32",
+        "startMs": 62352,
+        "endMs": 64080
+      },
+      {
+        "sentenceId": "s33",
+        "startMs": 64080,
+        "endMs": 67296
+      },
+      {
+        "sentenceId": "s34",
+        "startMs": 67296,
+        "endMs": 69504
+      },
+      {
+        "sentenceId": "s35",
+        "startMs": 69504,
+        "endMs": 70920
+      },
+      {
+        "sentenceId": "s36",
+        "startMs": 70920,
+        "endMs": 73704
+      },
+      {
+        "sentenceId": "s37",
+        "startMs": 73704,
+        "endMs": 76440
+      },
+      {
+        "sentenceId": "s38",
+        "startMs": 76440,
+        "endMs": 78696
+      }
+    ]
+  }
 }

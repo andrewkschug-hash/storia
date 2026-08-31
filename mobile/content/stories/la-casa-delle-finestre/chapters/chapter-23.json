@@ -37,7 +37,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Di sera Irene Ã¨ in mansarda. Ha spento la luce della stanza.",
+          "text": "Di sera Irene è in mansarda. Ha spento la luce della stanza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -57,7 +57,7 @@
         },
         {
           "id": "s02",
-          "text": "Guarda la scuola. La griglia Ã¨ scura. Tutte le finestre. Anche la tre, di fronte.",
+          "text": "Guarda la scuola. La griglia è scura. Tutte le finestre. Anche la tre, di fronte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -80,7 +80,7 @@
         },
         {
           "id": "s03",
-          "text": "Non c'Ã¨ una lampada. Non c'Ã¨ una pausa. Non c'Ã¨ un orario.",
+          "text": "Non c'è una lampada. Non c'è una pausa. Non c'è un orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -100,7 +100,7 @@
         },
         {
           "id": "s04",
-          "text": "Sembra vuota. Lo sembrava anche prima. Adesso lo Ã¨, di notte, in un altro modo.",
+          "text": "Sembra vuota. Lo sembrava anche prima. Adesso lo è, di notte, in un altro modo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -143,7 +143,7 @@
         },
         {
           "id": "s06",
-          "text": "Ancora guarda. Non perchÃ© Ã¨ una detective. PerchÃ© i suoi occhi hanno imparato quella riga.",
+          "text": "Ancora guarda. Non perché è una detective. Perché i suoi occhi hanno imparato quella riga.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -367,7 +367,7 @@
         },
         {
           "id": "s16",
-          "text": "Irene non Ã¨ sicura di preferire questo.",
+          "text": "Irene non è sicura di preferire questo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -426,7 +426,7 @@
         },
         {
           "id": "s19",
-          "text": "Ascolta le scale. Loredana non scende. Nessuno chiama. VenerdÃ¬ Ã¨ ancora oggi, o quasi.",
+          "text": "Ascolta le scale. Loredana non scende. Nessuno chiama. Venerdì è ancora oggi, o quasi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -535,11 +535,21 @@
       "choices": [
         "No. She is not sure she prefers the dark",
         "Yes, at once",
-        "She sleeps at Loredanaâ€™s"
+        "She sleeps at Loredana’s"
       ],
       "correctChoice": 0,
       "explanation": "She does not sleep. The facing window stays dark. She is not sure she prefers this.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-23.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 147648
+      }
+    ]
+  }
 }

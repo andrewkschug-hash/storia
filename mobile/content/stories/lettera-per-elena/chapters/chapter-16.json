@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Fuori dall'ospedale il vento √® freddo.",
+          "text": "Fuori dall'ospedale il vento Ë freddo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -162,7 +162,7 @@
         },
         {
           "id": "s09",
-          "text": "Perch√© sei arrabbiato?",
+          "text": "PerchÈ sei arrabbiato?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -173,7 +173,7 @@
         },
         {
           "id": "s10",
-          "text": "Perch√© sei venuta.",
+          "text": "PerchÈ sei venuta.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -216,7 +216,7 @@
         },
         {
           "id": "s13",
-          "text": "Non √® il tuo problema.",
+          "text": "Non Ë il tuo problema.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -244,7 +244,7 @@
         },
         {
           "id": "s15",
-          "text": "Ha aspettato fuori perch√© si preoccupava.",
+          "text": "Ha aspettato fuori perchÈ si preoccupava.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -264,7 +264,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Ha portato una bottiglia d'acqua e non sa perch√©.",
+          "text": "Ha portato una bottiglia d'acqua e non sa perchÈ.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -281,7 +281,7 @@
         },
         {
           "id": "s17",
-          "text": "Ora l'acqua √® ancora nella borsa.",
+          "text": "Ora l'acqua Ë ancora nella borsa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -307,7 +307,7 @@
         },
         {
           "id": "s19",
-          "text": "Dentro c'√® Sergio.",
+          "text": "Dentro c'Ë Sergio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s20",
-          "text": "Fuori c'√® una donna che conosce le sue frasi segrete.",
+          "text": "Fuori c'Ë una donna che conosce le sue frasi segrete.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -355,7 +355,7 @@
         },
         {
           "id": "s22",
-          "text": "Non √® vero.",
+          "text": "Non Ë vero.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -366,7 +366,7 @@
         },
         {
           "id": "s23",
-          "text": "Tu mi hai gi√† parlato di lui.",
+          "text": "Tu mi hai gi‡ parlato di lui.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -477,7 +477,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "Quello non √® parlare.",
+          "text": "Quello non Ë parlare.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -526,7 +526,7 @@
         },
         {
           "id": "s35",
-          "text": "Quindi tu gi√† mi parli.",
+          "text": "Quindi tu gi‡ mi parli.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -592,7 +592,7 @@
         },
         {
           "id": "s40",
-          "text": "Scrivere non √® parlare.",
+          "text": "Scrivere non Ë parlare.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -610,7 +610,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Parlare √® qui.",
+          "text": "Parlare Ë qui.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -679,7 +679,7 @@
       "sentences": [
         {
           "id": "s46",
-          "text": "Allora perch√© nel libro sei coraggioso?",
+          "text": "Allora perchÈ nel libro sei coraggioso?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -717,7 +717,7 @@
         },
         {
           "id": "s49",
-          "text": "Perch√© al bancone c'√® gente.",
+          "text": "PerchÈ al bancone c'Ë gente.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -730,7 +730,7 @@
         },
         {
           "id": "s50",
-          "text": "Perch√© io balbetto.",
+          "text": "PerchÈ io balbetto.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -747,7 +747,7 @@
       "sentences": [
         {
           "id": "s51",
-          "text": "Perch√© Sergio‚Ä¶",
+          "text": "PerchÈ SergioÖ",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -827,7 +827,7 @@
         },
         {
           "id": "s57",
-          "text": "Ma non posso vivere per sempre cos√¨.",
+          "text": "Ma non posso vivere per sempre cosÏ.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -869,7 +869,7 @@
         },
         {
           "id": "s60",
-          "text": "Non voglio fingere che sei solo il marted√¨.",
+          "text": "Non voglio fingere che sei solo il martedÏ.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -919,7 +919,7 @@
         },
         {
           "id": "s63",
-          "text": "Allora non leggere pi√π.",
+          "text": "Allora non leggere pi˘.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -1006,7 +1006,7 @@
         },
         {
           "id": "s70",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -1035,7 +1035,7 @@
         },
         {
           "id": "s72",
-          "text": "Poi √® diventata grande.",
+          "text": "Poi Ë diventata grande.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -1060,7 +1060,7 @@
         },
         {
           "id": "s74",
-          "text": "Elena parla pi√π piano.",
+          "text": "Elena parla pi˘ piano.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1072,7 +1072,7 @@
         },
         {
           "id": "s75",
-          "text": "Per me era gi√† vita.",
+          "text": "Per me era gi‡ vita.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -1195,7 +1195,7 @@
         },
         {
           "id": "s83",
-          "text": "Il litigio √® questo.",
+          "text": "Il litigio Ë questo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1235,7 +1235,7 @@
       "sentences": [
         {
           "id": "s86",
-          "text": "Due verit√† che non coincidono.",
+          "text": "Due verit‡ che non coincidono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1248,7 +1248,7 @@
         },
         {
           "id": "s87",
-          "text": "Nessuno dei due √® completamente in torto.",
+          "text": "Nessuno dei due Ë completamente in torto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1478,5 +1478,15 @@
       "explanation": "The van leaves; the argument stays open.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-16.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 238032
+      }
+    ]
+  }
 }

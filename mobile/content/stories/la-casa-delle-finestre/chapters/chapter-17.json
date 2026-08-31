@@ -42,7 +42,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Oggi Ã¨ mercoledÃ¬. Ieri era martedÃ¬. VenerdÃ¬ Ã¨ tra due giorni.",
+          "text": "Oggi è mercoledì. Ieri era martedì. Venerdì è tra due giorni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s03",
-          "text": "Non va alla fermata. Gira dietro la scuola, di lÃ , verso la palestra chiusa.",
+          "text": "Non va alla fermata. Gira dietro la scuola, di là, verso la palestra chiusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -124,7 +124,7 @@
         },
         {
           "id": "s05",
-          "text": "C'Ã¨ una donna. Ha una borsa grande, rigida, come carta.",
+          "text": "C'è una donna. Ha una borsa grande, rigida, come carta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -142,7 +142,7 @@
         },
         {
           "id": "s06",
-          "text": "Irene guarda il viso. Ãˆ la foto. Ãˆ la fermata. Forse non Ã¨ piÃ¹ forse.",
+          "text": "Irene guarda il viso. È la foto. È la fermata. Forse non è più forse.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -182,7 +182,7 @@
         },
         {
           "id": "s08",
-          "text": "Lei Ã¨ Irene. Io sono Sara Neri.",
+          "text": "Lei è Irene. Io sono Sara Neri.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -230,7 +230,7 @@
         },
         {
           "id": "s11",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -239,7 +239,7 @@
         },
         {
           "id": "s12",
-          "text": "Irene respira. Voleva un nome. Adesso ce l'ha, e non Ã¨ piÃ¹ facile.",
+          "text": "Irene respira. Voleva un nome. Adesso ce l'ha, e non è più facile.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -297,7 +297,7 @@
         },
         {
           "id": "s15",
-          "text": "Irene non dice grazie. Non dice ti denuncio. Sta lÃ¬, sul cemento.",
+          "text": "Irene non dice grazie. Non dice ti denuncio. Sta lì, sul cemento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -323,7 +323,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "Irene tiene le mani chiuse. Non Ã¨ un film. Ãˆ una persona, di giorno, dietro la palestra.",
+          "text": "Irene tiene le mani chiuse. Non è un film. È una persona, di giorno, dietro la palestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -348,7 +348,7 @@
         },
         {
           "id": "s17",
-          "text": "PerchÃ© le stanze? PerchÃ© la pausa? PerchÃ© tre luci lente?",
+          "text": "Perché le stanze? Perché la pausa? Perché tre luci lente?",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -383,7 +383,7 @@
         },
         {
           "id": "s19",
-          "text": "Nel corridoio non c'Ã¨ luce. Uso le stanze. Avevo l'orario vecchio, in testa.",
+          "text": "Nel corridoio non c'è luce. Uso le stanze. Avevo l'orario vecchio, in testa.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -463,7 +463,7 @@
         },
         {
           "id": "s23",
-          "text": "VenerdÃ¬ Alme distrugge. I registri delle classi, le copie, le liste.",
+          "text": "Venerdì Alme distrugge. I registri delle classi, le copie, le liste.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -503,7 +503,7 @@
         },
         {
           "id": "s25",
-          "text": "Una scatola. La metti dove non Ã¨. Un giorno, due. Basta.",
+          "text": "Una scatola. La metti dove non è. Un giorno, due. Basta.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -522,7 +522,7 @@
         },
         {
           "id": "s26",
-          "text": "Non Ã¨ un furto da film. Ãˆ tempo. VenerdÃ¬ Ã¨ tra due giorni.",
+          "text": "Non è un furto da film. È tempo. Venerdì è tra due giorni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -585,7 +585,7 @@
         },
         {
           "id": "s29",
-          "text": "Adesso una donna dice: perdi una scatola. Irene non Ã¨ piÃ¹ solo una che conta finestre.",
+          "text": "Adesso una donna dice: perdi una scatola. Irene non è più solo una che conta finestre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -657,7 +657,7 @@
         },
         {
           "id": "s33",
-          "text": "Oggi Ã¨ mercoledÃ¬. Domani Ã¨ giovedÃ¬. Poi venerdÃ¬.",
+          "text": "Oggi è mercoledì. Domani è giovedì. Poi venerdì.",
           "speakerId": "sara-neri",
           "kind": "dialogue",
           "lemmas": [
@@ -673,7 +673,7 @@
         },
         {
           "id": "s34",
-          "text": "Irene se ne va di qua, verso la strada. Non entra. Non dice di sÃ¬.",
+          "text": "Irene se ne va di qua, verso la strada. Non entra. Non dice di sì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -696,7 +696,7 @@
         },
         {
           "id": "s35",
-          "text": "Scrive dopo, in mansarda: Sara Ã¨ la luce. Chiede tempo, non la scuola. Io: non so.",
+          "text": "Scrive dopo, in mansarda: Sara è la luce. Chiede tempo, non la scuola. Io: non so.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -757,7 +757,7 @@
       "question": "What does Sara ask Irene to do?",
       "choices": [
         "Lose or delay a box at work, not enter the school",
-        "Take Quintoâ€™s key tonight",
+        "Take Quinto’s key tonight",
         "Call the Carabinieri at once"
       ],
       "correctChoice": 0,
@@ -770,13 +770,23 @@
       "type": "inference",
       "question": "What does Irene answer?",
       "choices": [
-        "I donâ€™t know",
+        "I don’t know",
         "Yes, I will steal the files",
         "No, never"
       ],
       "correctChoice": 0,
-      "explanation": "She does not say yes. She says: I donâ€™t know.",
+      "explanation": "She does not say yes. She says: I don’t know.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-17.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 225792
+      }
+    ]
+  }
 }

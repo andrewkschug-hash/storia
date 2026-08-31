@@ -48,7 +48,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Marted√¨ arriva con nebbia bassa.",
+          "text": "MartedÏ arriva con nebbia bassa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -61,7 +61,7 @@
         },
         {
           "id": "s02",
-          "text": "Il van di Pietro si ferma davanti al caff√®.",
+          "text": "Il van di Pietro si ferma davanti al caffË.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -308,7 +308,7 @@
         },
         {
           "id": "s20",
-          "text": "Ha gi√† scritto tutto.",
+          "text": "Ha gi‡ scritto tutto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -374,7 +374,7 @@
         },
         {
           "id": "s25",
-          "text": "Un cliente entra e chiede un caff√®.",
+          "text": "Un cliente entra e chiede un caffË.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -478,7 +478,7 @@
         },
         {
           "id": "s32",
-          "text": "Io‚Ä¶ io sono Pietro.",
+          "text": "IoÖ io sono Pietro.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -501,7 +501,7 @@
         },
         {
           "id": "s34",
-          "text": "Lo sa gi√†.",
+          "text": "Lo sa gi‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -512,7 +512,7 @@
         },
         {
           "id": "s35",
-          "text": "Ma sentirlo √® un'altra cosa.",
+          "text": "Ma sentirlo Ë un'altra cosa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -572,7 +572,7 @@
         },
         {
           "id": "s40",
-          "text": "Non √® una risata cattiva.",
+          "text": "Non Ë una risata cattiva.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -591,7 +591,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "√à sollievo.",
+          "text": "» sollievo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -601,7 +601,7 @@
         },
         {
           "id": "s42",
-          "text": "√à tenerezza.",
+          "text": "» tenerezza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -611,7 +611,7 @@
         },
         {
           "id": "s43",
-          "text": "√à la comicit√† di una verit√† detta male.",
+          "text": "» la comicit‡ di una verit‡ detta male.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -789,7 +789,7 @@
         },
         {
           "id": "s57",
-          "text": "Serve un caff√® a Pietro.",
+          "text": "Serve un caffË a Pietro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -851,7 +851,7 @@
         },
         {
           "id": "s62",
-          "text": "Fuori dal libro √® pi√π difficile.",
+          "text": "Fuori dal libro Ë pi˘ difficile.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -916,7 +916,7 @@
         },
         {
           "id": "s67",
-          "text": "Pietro mette gi√π la tazza.",
+          "text": "Pietro mette gi˘ la tazza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -982,7 +982,7 @@
         },
         {
           "id": "s72",
-          "text": "Non √® un film.",
+          "text": "Non Ë un film.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -994,7 +994,7 @@
         },
         {
           "id": "s73",
-          "text": "√à un marted√¨ con nebbia e casse di caff√®.",
+          "text": "» un martedÏ con nebbia e casse di caffË.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1075,5 +1075,15 @@
       "explanation": "Elena suggests working now and talking behind later.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-19.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 165384
+      }
+    ]
+  }
 }

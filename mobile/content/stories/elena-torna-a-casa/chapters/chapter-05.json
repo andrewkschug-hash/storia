@@ -5,14 +5,28 @@
   "title": "Breakfast",
   "titleIt": "Colazione",
   "difficultyLevel": 1,
-  "locationIds": ["cucina-elena"],
-  "characterIds": ["elena", "teresa", "stefano", "sara"],
+  "locationIds": [
+    "cucina-elena"
+  ],
+  "characterIds": [
+    "elena",
+    "teresa",
+    "stefano",
+    "sara"
+  ],
   "events": [
     {
       "id": "ev-05-colazione",
       "summary": "The family has breakfast together: bread, coffee, milk, fruit, water.",
-      "characterIds": ["elena", "teresa", "stefano", "sara"],
-      "locationIds": ["cucina-elena"],
+      "characterIds": [
+        "elena",
+        "teresa",
+        "stefano",
+        "sara"
+      ],
+      "locationIds": [
+        "cucina-elena"
+      ],
       "rememberedFacts": [
         "The family eats breakfast in the kitchen",
         "Elena drinks coffee and water",
@@ -27,38 +41,79 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La famiglia √® in cucina per la colazione.",
+          "text": "La famiglia Ë in cucina per la colazione.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["la", "famiglia", "essere", "in", "cucina", "per", "la", "colazione"]
+          "lemmas": [
+            "la",
+            "famiglia",
+            "essere",
+            "in",
+            "cucina",
+            "per",
+            "la",
+            "colazione"
+          ]
         },
         {
           "id": "s02",
           "text": "Sul tavolo ci sono pane, latte e frutta.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["sul", "tavolo", "ci", "essere", "pane", "latte", "e", "frutta"]
+          "lemmas": [
+            "sul",
+            "tavolo",
+            "ci",
+            "essere",
+            "pane",
+            "latte",
+            "e",
+            "frutta"
+          ]
         },
         {
           "id": "s03",
           "text": "Elena ha fame, e Sara ha fame anche lei.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "avere", "fame", "e", "sara", "avere", "fame", "anche", "lei"]
+          "lemmas": [
+            "elena",
+            "avere",
+            "fame",
+            "e",
+            "sara",
+            "avere",
+            "fame",
+            "anche",
+            "lei"
+          ]
         },
         {
           "id": "s04",
-          "text": "Pap√† Stefano √® al tavolo, pronto.",
+          "text": "Pap‡ Stefano Ë al tavolo, pronto.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["papa", "stefano", "essere", "al", "tavolo", "pronto"]
+          "lemmas": [
+            "papa",
+            "stefano",
+            "essere",
+            "al",
+            "tavolo",
+            "pronto"
+          ]
         },
         {
           "id": "s05",
-          "text": "Buongiorno. La colazione √® pronta.",
+          "text": "Buongiorno. La colazione Ë pronta.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["buongiorno", "la", "colazione", "essere", "pronto"]
+          "lemmas": [
+            "buongiorno",
+            "la",
+            "colazione",
+            "essere",
+            "pronto"
+          ]
         }
       ]
     },
@@ -71,42 +126,80 @@
           "text": "Elena, vuoi pane?",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["elena", "volere", "pane"]
+          "lemmas": [
+            "elena",
+            "volere",
+            "pane"
+          ]
         },
         {
           "id": "s07",
-          "text": "S√¨, mamma. Voglio pane e caff√®.",
+          "text": "SÏ, mamma. Voglio pane e caffË.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["si_yes", "mamma", "volere", "pane", "e", "caffe"]
+          "lemmas": [
+            "si_yes",
+            "mamma",
+            "volere",
+            "pane",
+            "e",
+            "caffe"
+          ]
         },
         {
           "id": "s08",
           "text": "Elena prende il pane e mangia.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "prendere", "il", "pane", "e", "mangiare"]
+          "lemmas": [
+            "elena",
+            "prendere",
+            "il",
+            "pane",
+            "e",
+            "mangiare"
+          ]
         },
         {
           "id": "s09",
-          "text": "Il pane √® buono, molto buono.",
+          "text": "Il pane Ë buono, molto buono.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["il", "pane", "essere", "buono", "molto", "buono"]
+          "lemmas": [
+            "il",
+            "pane",
+            "essere",
+            "buono",
+            "molto",
+            "buono"
+          ]
         },
         {
           "id": "s10",
-          "text": "Sara beve il latte, non il caff√®.",
+          "text": "Sara beve il latte, non il caffË.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["sara", "bere", "il", "latte", "non", "il", "caffe"]
+          "lemmas": [
+            "sara",
+            "bere",
+            "il",
+            "latte",
+            "non",
+            "il",
+            "caffe"
+          ]
         },
         {
           "id": "s11",
           "text": "Io voglio latte, grazie.",
           "speakerId": "sara",
           "kind": "dialogue",
-          "lemmas": ["io", "volere", "latte", "grazie"]
+          "lemmas": [
+            "io",
+            "volere",
+            "latte",
+            "grazie"
+          ]
         }
       ]
     },
@@ -116,38 +209,74 @@
       "sentences": [
         {
           "id": "s12",
-          "text": "Elena beve il caff√® e un po' di acqua.",
+          "text": "Elena beve il caffË e un po' di acqua.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "bere", "il", "caffe", "e", "un", "poco", "di", "acqua"]
+          "lemmas": [
+            "elena",
+            "bere",
+            "il",
+            "caffe",
+            "e",
+            "un",
+            "poco",
+            "di",
+            "acqua"
+          ]
         },
         {
           "id": "s13",
           "text": "Stefano prende la frutta dal tavolo.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["stefano", "prendere", "la", "frutta", "dal", "tavolo"]
+          "lemmas": [
+            "stefano",
+            "prendere",
+            "la",
+            "frutta",
+            "dal",
+            "tavolo"
+          ]
         },
         {
           "id": "s14",
           "text": "Vuoi frutta, Elena?",
           "speakerId": "stefano",
           "kind": "dialogue",
-          "lemmas": ["volere", "frutta", "elena"]
+          "lemmas": [
+            "volere",
+            "frutta",
+            "elena"
+          ]
         },
         {
           "id": "s15",
-          "text": "S√¨, pap√†. La frutta √® buona.",
+          "text": "SÏ, pap‡. La frutta Ë buona.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["si_yes", "papa", "la", "frutta", "essere", "buono"]
+          "lemmas": [
+            "si_yes",
+            "papa",
+            "la",
+            "frutta",
+            "essere",
+            "buono"
+          ]
         },
         {
           "id": "s16",
           "text": "Elena mangia la frutta e beve acqua.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "mangiare", "la", "frutta", "e", "bere", "acqua"]
+          "lemmas": [
+            "elena",
+            "mangiare",
+            "la",
+            "frutta",
+            "e",
+            "bere",
+            "acqua"
+          ]
         }
       ]
     },
@@ -157,83 +286,187 @@
       "sentences": [
         {
           "id": "s17",
-          "text": "Oggi la colazione √® insieme, in famiglia.",
+          "text": "Oggi la colazione Ë insieme, in famiglia.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["oggi", "la", "colazione", "essere", "insieme", "in", "famiglia"]
+          "lemmas": [
+            "oggi",
+            "la",
+            "colazione",
+            "essere",
+            "insieme",
+            "in",
+            "famiglia"
+          ]
         },
         {
           "id": "s18",
           "text": "Elena sta bene, qui al tavolo.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "stare", "bene", "qui", "al", "tavolo"]
+          "lemmas": [
+            "elena",
+            "stare",
+            "bene",
+            "qui",
+            "al",
+            "tavolo"
+          ]
         },
         {
           "id": "s19",
-          "text": "Domani la colazione √® di nuovo qui.",
+          "text": "Domani la colazione Ë di nuovo qui.",
           "speakerId": "teresa",
           "kind": "dialogue",
-          "lemmas": ["domani", "la", "colazione", "essere", "di", "nuovo", "qui"]
+          "lemmas": [
+            "domani",
+            "la",
+            "colazione",
+            "essere",
+            "di",
+            "nuovo",
+            "qui"
+          ]
         },
         {
           "id": "s20",
           "text": "Va bene, mamma. Io ho sempre fame di mattina.",
           "speakerId": "elena",
           "kind": "dialogue",
-          "lemmas": ["andare", "bene", "mamma", "io", "avere", "sempre", "fame", "di", "mattina"]
+          "lemmas": [
+            "andare",
+            "bene",
+            "mamma",
+            "io",
+            "avere",
+            "sempre",
+            "fame",
+            "di",
+            "mattina"
+          ]
         },
         {
           "id": "s21",
-          "text": "Stefano sorride e beve il caff√®.",
+          "text": "Stefano sorride e beve il caffË.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["stefano", "sorridere", "e", "bere", "il", "caffe"]
+          "lemmas": [
+            "stefano",
+            "sorridere",
+            "e",
+            "bere",
+            "il",
+            "caffe"
+          ]
         },
         {
           "id": "s22",
           "text": "La famiglia mangia, beve e parla.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["la", "famiglia", "mangiare", "bere", "e", "parlare"]
+          "lemmas": [
+            "la",
+            "famiglia",
+            "mangiare",
+            "bere",
+            "e",
+            "parlare"
+          ]
         },
         {
           "id": "s23",
-          "text": "A casa, la colazione √® un bel momento.",
+          "text": "A casa, la colazione Ë un bel momento.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["a", "casa", "la", "colazione", "essere", "un", "bello", "momento"]
+          "lemmas": [
+            "a",
+            "casa",
+            "la",
+            "colazione",
+            "essere",
+            "un",
+            "bello",
+            "momento"
+          ]
         },
         {
           "id": "s24",
-          "text": "Elena beve caff√® e acqua, e mangia pane.",
+          "text": "Elena beve caffË e acqua, e mangia pane.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["elena", "bere", "caffe", "e", "acqua", "e", "mangiare", "pane"]
+          "lemmas": [
+            "elena",
+            "bere",
+            "caffe",
+            "e",
+            "acqua",
+            "e",
+            "mangiare",
+            "pane"
+          ]
         },
         {
           "id": "s25",
           "text": "Sara beve latte e mangia un po' di frutta.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["sara", "bere", "latte", "e", "mangiare", "un", "poco", "di", "frutta"]
+          "lemmas": [
+            "sara",
+            "bere",
+            "latte",
+            "e",
+            "mangiare",
+            "un",
+            "poco",
+            "di",
+            "frutta"
+          ]
         },
         {
           "id": "s26",
           "text": "Stefano e Teresa sono al tavolo, con le figlie.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["stefano", "e", "teresa", "essere", "al", "tavolo", "con", "le", "figlia"]
+          "lemmas": [
+            "stefano",
+            "e",
+            "teresa",
+            "essere",
+            "al",
+            "tavolo",
+            "con",
+            "le",
+            "figlia"
+          ]
         },
         {
           "id": "s27",
           "text": "Ogni mattina la famiglia vuole la colazione insieme.",
           "speakerId": null,
           "kind": "narration",
-          "lemmas": ["ogni", "mattina", "la", "famiglia", "volere", "la", "colazione", "insieme"]
+          "lemmas": [
+            "ogni",
+            "mattina",
+            "la",
+            "famiglia",
+            "volere",
+            "la",
+            "colazione",
+            "insieme"
+          ]
         }
       ]
     }
   ],
-  "questions": []
+  "questions": [],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 75168
+      }
+    ]
+  }
 }

@@ -42,7 +42,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Ãˆ ancora giovedÃ¬, dopo il lavoro. Irene non va subito a casa.",
+          "text": "È ancora giovedì, dopo il lavoro. Irene non va subito a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -82,7 +82,7 @@
         },
         {
           "id": "s03",
-          "text": "Quinto Ã¨ lÃ¬, vicino al cancello, senza tanica. Le chiavi ci sono, in tasca.",
+          "text": "Quinto è lì, vicino al cancello, senza tanica. Le chiavi ci sono, in tasca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -183,7 +183,7 @@
         },
         {
           "id": "s09",
-          "text": "Irene ascolta. Non Ã¨ un discorso lungo. Ãˆ un fatto, tardi.",
+          "text": "Irene ascolta. Non è un discorso lungo. È un fatto, tardi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -241,7 +241,7 @@
         },
         {
           "id": "s12",
-          "text": "Irene guarda il cancello. La catena c'Ã¨ ancora, per ora.",
+          "text": "Irene guarda il cancello. La catena c'è ancora, per ora.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -259,7 +259,7 @@
         },
         {
           "id": "s13",
-          "text": "PerchÃ© me lo dice?",
+          "text": "Perché me lo dice?",
           "speakerId": "irene-colombo",
           "kind": "dialogue",
           "lemmas": [
@@ -271,7 +271,7 @@
         },
         {
           "id": "s14",
-          "text": "PerchÃ© lei guarda. PerchÃ© io annaffio piante morte, e lei conta finestre.",
+          "text": "Perché lei guarda. Perché io annaffio piante morte, e lei conta finestre.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -363,7 +363,7 @@
         },
         {
           "id": "s18",
-          "text": "Annaffio piante morte cosÃ¬ non vado su.",
+          "text": "Annaffio piante morte così non vado su.",
           "speakerId": "quinto-belli",
           "kind": "dialogue",
           "lemmas": [
@@ -395,7 +395,7 @@
         },
         {
           "id": "s20",
-          "text": "Irene resta di qua. Non entra. Non Ã¨ la sua porta.",
+          "text": "Irene resta di qua. Non entra. Non è la sua porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -414,7 +414,7 @@
         },
         {
           "id": "s21",
-          "text": "PiÃ¹ tardi, tornando a casa, passa di nuovo. Guarda il cancello.",
+          "text": "Più tardi, tornando a casa, passa di nuovo. Guarda il cancello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s22",
-          "text": "La catena non c'Ã¨. Il cancello Ã¨ chiuso, ma senza catena. Una volta.",
+          "text": "La catena non c'è. Il cancello è chiuso, ma senza catena. Una volta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -454,7 +454,7 @@
         },
         {
           "id": "s23",
-          "text": "Non Ã¨ per lei. Lo sa. Ãˆ per Sara, se Sara entra, a modo suo.",
+          "text": "Non è per lei. Lo sa. È per Sara, se Sara entra, a modo suo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -520,7 +520,7 @@
         },
         {
           "id": "s26",
-          "text": "Domani Ã¨ venerdÃ¬. Oggi resta giovedÃ¬, ancora, fino alla notte.",
+          "text": "Domani è venerdì. Oggi resta giovedì, ancora, fino alla notte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -562,7 +562,7 @@
       "choices": [
         "The cracks, before the closure",
         "That Irene is the lamp",
-        "Almeâ€™s USB"
+        "Alme’s USB"
       ],
       "correctChoice": 0,
       "explanation": "I knew about the cracks. I saw them upstairs.",
@@ -596,5 +596,15 @@
       "explanation": "It is not for her. It is for Sara, in her way. Irene does not try the gate.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-19.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 154176
+      }
+    ]
+  }
 }

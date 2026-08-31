@@ -3,7 +3,7 @@
   "storyId": "la-casa-delle-finestre",
   "number": 20,
   "title": "Friday",
-  "titleIt": "VenerdÃ¬",
+  "titleIt": "Venerdì",
   "locationIds": [
     "comune",
     "ufficio-alme",
@@ -39,7 +39,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Oggi Ã¨ venerdÃ¬. Non Ã¨ martedÃ¬. Non Ã¨ mercoledÃ¬. Non Ã¨ giovedÃ¬.",
+          "text": "Oggi è venerdì. Non è martedì. Non è mercoledì. Non è giovedì.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -59,7 +59,7 @@
         },
         {
           "id": "s02",
-          "text": "Al comune la macchina per distruggere Ã¨ accesa. Fa rumore. Puzza di carta calda.",
+          "text": "Al comune la macchina per distruggere è accesa. Fa rumore. Puzza di carta calda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -81,7 +81,7 @@
         },
         {
           "id": "s03",
-          "text": "Alme Ã¨ in ufficio presto. Dice: oggi. Non c'Ã¨ tempo. Manca poco.",
+          "text": "Alme è in ufficio presto. Dice: oggi. Non c'è tempo. Manca poco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -163,7 +163,7 @@
         },
         {
           "id": "s07",
-          "text": "Adesso Ã¨ tardi per chiamare Piva, pensa. Adesso Ã¨ tardi per dire non so.",
+          "text": "Adesso è tardi per chiamare Piva, pensa. Adesso è tardi per dire non so.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -205,7 +205,7 @@
         },
         {
           "id": "s09",
-          "text": "Non Ã¨ internet. Non Ã¨ un film. Ãˆ una copia, se riesce.",
+          "text": "Non è internet. Non è un film. È una copia, se riesce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -231,7 +231,7 @@
       "sentences": [
         {
           "id": "s10",
-          "text": "Quando Alme parla al telefono, Irene Ã¨ sola un minuto, giÃ¹.",
+          "text": "Quando Alme parla al telefono, Irene è sola un minuto, giù.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -269,7 +269,7 @@
         },
         {
           "id": "s12",
-          "text": "Copia le cartelle giÃ  scansionate. Copia in fretta, non tutto, abbastanza.",
+          "text": "Copia le cartelle già scansionate. Copia in fretta, non tutto, abbastanza.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -372,7 +372,7 @@
         },
         {
           "id": "s17",
-          "text": "La scatola del seminterrato resta giÃ¹. Per ora. Irene non la porta su.",
+          "text": "La scatola del seminterrato resta giù. Per ora. Irene non la porta su.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -420,7 +420,7 @@
         },
         {
           "id": "s19",
-          "text": "Alme Ã¨ lÃ¬. Non urla. Non corre. Ãˆ solo nel corridoio, di fronte.",
+          "text": "Alme è lì. Non urla. Non corre. È solo nel corridoio, di fronte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -471,7 +471,7 @@
         },
         {
           "id": "s22",
-          "text": "Non Ã¨ un grido. Ãˆ una frase, piano, come il caffÃ¨ di altri giorni, e non lo Ã¨.",
+          "text": "Non è un grido. È una frase, piano, come il caffè di altri giorni, e non lo è.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -517,7 +517,7 @@
         },
         {
           "id": "s24",
-          "text": "Oggi Ã¨ venerdÃ¬. La macchina lavora. La copia Ã¨ in tasca. Alme ha detto: venga con me.",
+          "text": "Oggi è venerdì. La macchina lavora. La copia è in tasca. Alme ha detto: venga con me.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -542,7 +542,7 @@
         },
         {
           "id": "s25",
-          "text": "Irene non sa ancora che cosa farÃ  Alme. Sa solo che il corridoio Ã¨ finito, e la porta Ã¨ aperta.",
+          "text": "Irene non sa ancora che cosa farà Alme. Sa solo che il corridoio è finito, e la porta è aperta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -616,7 +616,7 @@
       "question": "What does Irene put in her pocket?",
       "choices": [
         "A USB stick with copies",
-        "Quintoâ€™s key",
+        "Quinto’s key",
         "The whole basement box"
       ],
       "correctChoice": 0,
@@ -641,7 +641,7 @@
       "id": "ch20_q04",
       "chapterId": "la-casa-delle-finestre-20",
       "type": "inference",
-      "question": "Do we know Almeâ€™s final choice yet?",
+      "question": "Do we know Alme’s final choice yet?",
       "choices": [
         "No. Irene only knows the door is open",
         "Yes. Alme lets the box go",
@@ -651,5 +651,15 @@
       "explanation": "Irene does not yet know what Alme will do. That is the next chapter.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-20.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 166968
+      }
+    ]
+  }
 }

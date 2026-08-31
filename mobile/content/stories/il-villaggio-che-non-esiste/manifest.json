@@ -5,7 +5,7 @@
   "slug": "il-villaggio-che-non-esiste",
   "level": 2,
   "cefrLevel": "A2+",
-  "synopsis": "Giada scende a Collevento, cancellata dall'orario. Il paese c'Ã¨. Dopo il tramonto la strada Ã¨ acqua.",
+  "synopsis": "Giada scende a Collevento, cancellata dall'orario. Il paese c'è. Dopo il tramonto la strada è acqua.",
   "characterIds": [
     "giada-rinaldi",
     "elsa",
@@ -40,7 +40,7 @@
       "id": "il-villaggio-che-non-esiste-02",
       "number": 2,
       "title": "It's there",
-      "titleIt": "C'Ã¨",
+      "titleIt": "C'è",
       "difficultyLevel": 2,
       "file": "chapter-02.json"
     },
@@ -64,7 +64,7 @@
       "id": "il-villaggio-che-non-esiste-05",
       "number": 5,
       "title": "Dad on the phone",
-      "titleIt": "PapÃ  al telefono",
+      "titleIt": "Papà al telefono",
       "difficultyLevel": 2,
       "file": "chapter-05.json"
     },
@@ -168,7 +168,7 @@
       "id": "il-villaggio-che-non-esiste-18",
       "number": 18,
       "title": "Why",
-      "titleIt": "PerchÃ©",
+      "titleIt": "Perché",
       "difficultyLevel": 2,
       "file": "chapter-18.json"
     },
@@ -228,11 +228,15 @@
       "cefrLevel": "A2+",
       "title": "The village that does not exist",
       "titleIt": "Il villaggio che non esiste",
-      "description": "An A2+ folkloric mystery about maps, water, and mistaken identity â€” without magic.",
+      "description": "An A2+ folkloric mystery about maps, water, and mistaken identity — without magic.",
       "narrativeStage": "Giada learns why Collevento does not exist on the map.",
       "chapterStart": 1,
       "chapterEnd": 24,
       "status": "available"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "failed"
+  }
 }

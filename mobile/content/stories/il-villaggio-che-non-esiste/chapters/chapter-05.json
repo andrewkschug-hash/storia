@@ -3,7 +3,7 @@
   "storyId": "il-villaggio-che-non-esiste",
   "number": 5,
   "title": "Dad on the phone",
-  "titleIt": "Pap√† al telefono",
+  "titleIt": "Pap‡ al telefono",
   "difficultyLevel": 2,
   "locationIds": [
     "campo-segnale",
@@ -101,7 +101,7 @@
         },
         {
           "id": "s04",
-          "text": "Il prato √® aperto, con erba bassa e un palo di legno storto.",
+          "text": "Il prato Ë aperto, con erba bassa e un palo di legno storto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -122,7 +122,7 @@
         },
         {
           "id": "s05",
-          "text": "L√¨, vicino al palo, appare una tacca di segnale sul telefono.",
+          "text": "LÏ, vicino al palo, appare una tacca di segnale sul telefono.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -195,7 +195,7 @@
         },
         {
           "id": "s09",
-          "text": "Pap√†, sono io. Sto bene, ma non sono a Trento.",
+          "text": "Pap‡, sono io. Sto bene, ma non sono a Trento.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -248,7 +248,7 @@
         },
         {
           "id": "s12",
-          "text": "Collevento? Non conosco questo nome, non √® sulle mie mappe.",
+          "text": "Collevento? Non conosco questo nome, non Ë sulle mie mappe.",
           "speakerId": "papa-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -266,7 +266,7 @@
         },
         {
           "id": "s13",
-          "text": "C'√® una fermata con il nome cancellato sul cartello, una linea nera.",
+          "text": "C'Ë una fermata con il nome cancellato sul cartello, una linea nera.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -303,7 +303,7 @@
         },
         {
           "id": "s15",
-          "text": "Non c'√® il prossimo treno, pap√†.",
+          "text": "Non c'Ë il prossimo treno, pap‡.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -323,7 +323,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "La fermata √® vuota e non c'√® orario sul muro di cemento.",
+          "text": "La fermata Ë vuota e non c'Ë orario sul muro di cemento.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -379,7 +379,7 @@
         },
         {
           "id": "s19",
-          "text": "Chiedo. Qui dicono cose strane, per√≤.",
+          "text": "Chiedo. Qui dicono cose strane, perÚ.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s23",
-          "text": "Non √® un film, Giada.",
+          "text": "Non Ë un film, Giada.",
           "speakerId": "papa-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -454,7 +454,7 @@
         },
         {
           "id": "s24",
-          "text": "Lo so. Per√≤ qui lo dicono sul serio, senza ridere.",
+          "text": "Lo so. PerÚ qui lo dicono sul serio, senza ridere.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -622,7 +622,7 @@
         },
         {
           "id": "s33",
-          "text": "S√¨, con mio padre.",
+          "text": "SÏ, con mio padre.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -650,7 +650,7 @@
         },
         {
           "id": "s35",
-          "text": "Non c'√®.",
+          "text": "Non c'Ë.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -666,7 +666,7 @@
       "sentences": [
         {
           "id": "s36",
-          "text": "Non c'√® da anni, per i passeggeri, su questa linea.",
+          "text": "Non c'Ë da anni, per i passeggeri, su questa linea.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -718,7 +718,7 @@
         },
         {
           "id": "s39",
-          "text": "Si esce quando si pu√≤.",
+          "text": "Si esce quando si puÚ.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -774,7 +774,7 @@
         },
         {
           "id": "s42",
-          "text": "Ha parlato con il padre, e questo √® vero e concreto.",
+          "text": "Ha parlato con il padre, e questo Ë vero e concreto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -793,7 +793,7 @@
         },
         {
           "id": "s43",
-          "text": "Per√≤ resta a Collevento, senza prossimo treno e senza orario.",
+          "text": "PerÚ resta a Collevento, senza prossimo treno e senza orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -811,7 +811,7 @@
         },
         {
           "id": "s44",
-          "text": "Il campo del segnale sembra gi√† lontano, dietro le case.",
+          "text": "Il campo del segnale sembra gi‡ lontano, dietro le case.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -874,7 +874,7 @@
         },
         {
           "id": "s47",
-          "text": "Giada pensa al campo del segnale e alla voce del padre, tagliata a met√†.",
+          "text": "Giada pensa al campo del segnale e alla voce del padre, tagliata a met‡.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -896,7 +896,7 @@
         },
         {
           "id": "s48",
-          "text": "Senza treno e senza orario, le regole del paese pesano di pi√π.",
+          "text": "Senza treno e senza orario, le regole del paese pesano di pi˘.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -960,5 +960,15 @@
       "explanation": "Elsa says there has been no passenger train for years.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-05.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 179304
+      }
+    ]
+  }
 }

@@ -2,7 +2,7 @@
   "id": "luca-prima-di-roma-04-03",
   "storyId": "luca-prima-di-roma-04",
   "number": 3,
-  "title": "Whatâ€™s the weather like?",
+  "title": "What’s the weather like?",
   "titleIt": "Che tempo fa?",
   "difficultyLevel": 1,
   "locationIds": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s04",
-          "text": "C'Ã¨ il sole.",
+          "text": "C'è il sole.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -115,7 +115,7 @@
         },
         {
           "id": "s07",
-          "text": "Il tempo Ã¨ bello.",
+          "text": "Il tempo è bello.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -139,7 +139,7 @@
         },
         {
           "id": "s09",
-          "text": "Il sole Ã¨ forte.",
+          "text": "Il sole è forte.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -204,7 +204,7 @@
         },
         {
           "id": "s14",
-          "text": "Il tempo non Ã¨ nuvoloso.",
+          "text": "Il tempo non è nuvoloso.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -217,7 +217,7 @@
         },
         {
           "id": "s15",
-          "text": "Il tempo Ã¨ bello e chiaro.",
+          "text": "Il tempo è bello e chiaro.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -231,7 +231,7 @@
         },
         {
           "id": "s16",
-          "text": "Davide Ã¨ contento.",
+          "text": "Davide è contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -278,7 +278,7 @@
         },
         {
           "id": "s20",
-          "text": "La piazza Ã¨ al sole.",
+          "text": "La piazza è al sole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -308,7 +308,7 @@
         },
         {
           "id": "s22",
-          "text": "Il parco Ã¨ vicino.",
+          "text": "Il parco è vicino.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -320,7 +320,7 @@
         },
         {
           "id": "s23",
-          "text": "Al parco c'Ã¨ il sole.",
+          "text": "Al parco c'è il sole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -383,7 +383,7 @@
         },
         {
           "id": "s28",
-          "text": "Oggi il tempo Ã¨ diverso.",
+          "text": "Oggi il tempo è diverso.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -396,7 +396,7 @@
         },
         {
           "id": "s29",
-          "text": "Il parco Ã¨ bello e caldo.",
+          "text": "Il parco è bello e caldo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -459,7 +459,7 @@
         },
         {
           "id": "s34",
-          "text": "Il tempo Ã¨ bello.",
+          "text": "Il tempo è bello.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -496,7 +496,7 @@
         "Snowy and icy"
       ],
       "correctChoice": 0,
-      "explanation": "C'Ã¨ il sole. Fa caldo.",
+      "explanation": "C'è il sole. Fa caldo.",
       "chapterId": "luca-prima-di-roma-04-03",
       "difficulty": 1
     },
@@ -528,5 +528,15 @@
       "chapterId": "luca-prima-di-roma-04-03",
       "difficulty": 1
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-03.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 81024
+      }
+    ]
+  }
 }

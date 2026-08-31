@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "MartedÃ¬ di nuovo. Elena aspetta il furgone.",
+          "text": "Martedì di nuovo. Elena aspetta il furgone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -96,7 +96,7 @@
         },
         {
           "id": "s04",
-          "text": "Pietro entra con un sacco di chicchi di caffÃ¨.",
+          "text": "Pietro entra con un sacco di chicchi di caffè.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -149,7 +149,7 @@
         },
         {
           "id": "s08",
-          "text": "Oggi... oggi al bancone c'Ã¨ molto rumore.",
+          "text": "Oggi... oggi al bancone c'è molto rumore.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -164,7 +164,7 @@
         },
         {
           "id": "s09",
-          "text": "SÃ¬.",
+          "text": "Sì.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -173,7 +173,7 @@
         },
         {
           "id": "s10",
-          "text": "Non Ã¨ quello che voleva dire.",
+          "text": "Non è quello che voleva dire.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -235,7 +235,7 @@
         },
         {
           "id": "s14",
-          "text": "Nebbia. Come sempre al martedÃ¬.",
+          "text": "Nebbia. Come sempre al martedì.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -323,7 +323,7 @@
         },
         {
           "id": "s20",
-          "text": "I chicchi di caffÃ¨ cadono sul pavimento con un rumore piccolo e ridicolo.",
+          "text": "I chicchi di caffè cadono sul pavimento con un rumore piccolo e ridicolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -387,7 +387,7 @@
         },
         {
           "id": "s24",
-          "text": "Pietro Ã¨ in ginocchio e raccoglie i chicchi con le mani.",
+          "text": "Pietro è in ginocchio e raccoglie i chicchi con le mani.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -472,7 +472,7 @@
         },
         {
           "id": "s29",
-          "text": "Il caffÃ¨ sul pavimento Ã¨ un peccato.",
+          "text": "Il caffè sul pavimento è un peccato.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -536,7 +536,7 @@
         },
         {
           "id": "s33",
-          "text": "Ãˆ una risata corta, goffa, vera.",
+          "text": "È una risata corta, goffa, vera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -550,7 +550,7 @@
         },
         {
           "id": "s34",
-          "text": "Ãˆ meglio del silenzio morto di martedÃ¬ scorso.",
+          "text": "È meglio del silenzio morto di martedì scorso.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -566,7 +566,7 @@
         },
         {
           "id": "s35",
-          "text": "Quando il pavimento Ã¨ pulito, Pietro firma il foglio sul bancone.",
+          "text": "Quando il pavimento è pulito, Pietro firma il foglio sul bancone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -609,7 +609,7 @@
         },
         {
           "id": "s37",
-          "text": "Mi piace il martedÃ¬.",
+          "text": "Mi piace il martedì.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -703,7 +703,7 @@
         },
         {
           "id": "s43",
-          "text": "A martedÃ¬.",
+          "text": "A martedì.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -849,11 +849,21 @@
       "choices": [
         "Oggi ho parlato male",
         "Sei Pietro",
-        "MartedÃ¬ Ã¨ finito"
+        "Martedì è finito"
       ],
       "correctChoice": 0,
       "explanation": "She admits in the book that she spoke badly.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-07.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 143208
+      }
+    ]
+  }
 }

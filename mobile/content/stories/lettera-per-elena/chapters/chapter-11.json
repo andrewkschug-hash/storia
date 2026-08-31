@@ -48,7 +48,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Marted√¨. Il furgone di Pietro arriva come sempre, un poco in ritardo.",
+          "text": "MartedÏ. Il furgone di Pietro arriva come sempre, un poco in ritardo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -68,7 +68,7 @@
         },
         {
           "id": "s02",
-          "text": "Pietro entra con le scatole di caff√® e i capelli umidi di nebbia.",
+          "text": "Pietro entra con le scatole di caffË e i capelli umidi di nebbia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -89,7 +89,7 @@
         },
         {
           "id": "s03",
-          "text": "Nel caff√® il frigorifero fa un rumore forte, continuo, quasi arrabbiato.",
+          "text": "Nel caffË il frigorifero fa un rumore forte, continuo, quasi arrabbiato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -177,7 +177,7 @@
         },
         {
           "id": "s08",
-          "text": "Poi prova una battuta, come fanno le persone quando l'aria √® troppo quieta.",
+          "text": "Poi prova una battuta, come fanno le persone quando l'aria Ë troppo quieta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -240,7 +240,7 @@
         },
         {
           "id": "s12",
-          "text": "Katia alza gli occhi al cielo e dice che la battuta √® vecchia.",
+          "text": "Katia alza gli occhi al cielo e dice che la battuta Ë vecchia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -272,7 +272,7 @@
         },
         {
           "id": "s14",
-          "text": "Si ferma con una tazza in mano, a met√† strada tra il bancone e lo scaffale.",
+          "text": "Si ferma con una tazza in mano, a met‡ strada tra il bancone e lo scaffale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -296,7 +296,7 @@
         },
         {
           "id": "s15",
-          "text": "La frase √® la stessa del libro.",
+          "text": "La frase Ë la stessa del libro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -413,7 +413,7 @@
         },
         {
           "id": "s23",
-          "text": "S√¨.",
+          "text": "SÏ.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -497,7 +497,7 @@
         },
         {
           "id": "s29",
-          "text": "Costa, per√≤.",
+          "text": "Costa, perÚ.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -569,7 +569,7 @@
         },
         {
           "id": "s33",
-          "text": "A marted√¨.",
+          "text": "A martedÏ.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -579,7 +579,7 @@
         },
         {
           "id": "s34",
-          "text": "Elena resta ferma finch√© il motore non parte.",
+          "text": "Elena resta ferma finchÈ il motore non parte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -673,7 +673,7 @@
         },
         {
           "id": "s40",
-          "text": "Nel pomeriggio, quando il caff√® cala, apre di nuovo il libro.",
+          "text": "Nel pomeriggio, quando il caffË cala, apre di nuovo il libro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -748,7 +748,7 @@
         },
         {
           "id": "s44",
-          "text": "Non √® pi√π solo carta.",
+          "text": "Non Ë pi˘ solo carta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -761,7 +761,7 @@
         },
         {
           "id": "s45",
-          "text": "√à una verit√† caduta per sbaglio dalla bocca di un uomo quieto.",
+          "text": "» una verit‡ caduta per sbaglio dalla bocca di un uomo quieto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -801,7 +801,7 @@
         },
         {
           "id": "s47",
-          "text": "Non dice niente a Katia, anche se Katia ha gi√† visto tutto.",
+          "text": "Non dice niente a Katia, anche se Katia ha gi‡ visto tutto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -853,7 +853,7 @@
         },
         {
           "id": "s50",
-          "text": "Prima dell'arrivo di Pietro, Elena ha gi√† preparato lo spazio per le scatole.",
+          "text": "Prima dell'arrivo di Pietro, Elena ha gi‡ preparato lo spazio per le scatole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -884,7 +884,7 @@
       "choices": [
         "Oggi ho paura del silenzio",
         "Questo tavolo balla",
-        "Non √® un gioco"
+        "Non Ë un gioco"
       ],
       "correctChoice": 0,
       "explanation": "He uses the book line as a fridge joke.",
@@ -918,5 +918,15 @@
       "explanation": "He does not notice the freeze.",
       "difficulty": 2
     }
-  ]
+  ],
+  "audio": {
+    "src": "audio/chapter-11.mp3",
+    "segments": [
+      {
+        "sentenceId": null,
+        "startMs": 0,
+        "endMs": 162192
+      }
+    ]
+  }
 }

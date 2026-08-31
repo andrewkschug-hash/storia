@@ -186,5 +186,9 @@
       "difficultyLevel": 1,
       "file": "chapter-20.json"
     }
-  ]
+  ],
+  "audio": {
+    "enabled": true,
+    "status": "failed"
+  }
 }
