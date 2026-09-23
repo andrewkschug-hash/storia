@@ -1,0 +1,11 @@
+{
+  "name": "storia-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix mobile run dev",
+    "web": "npm --prefix mobile run web",
+    "start": "npm --prefix mobile start",
+    "test": "npm --prefix mobile test",
+    "typecheck": "npm --prefix mobile run typecheck"
+  }
+}

@@ -127,7 +127,11 @@ export default function ReaderScreen() {
     setChapterPlayback(audio.getChapterPlaybackProgress());
   };
 
-  const dismissMindset = async () => {
+  const dismissMindset = () => {
+    setShowMindsetModal(false);
+  };
+
+  const handleDontShowMindsetAgain = async () => {
     setShowMindsetModal(false);
     await markReadingMindsetSeen();
   };
@@ -884,7 +888,8 @@ export default function ReaderScreen() {
 
       <ReadingMindsetModal
         visible={showMindsetModal}
-        onDismiss={() => void dismissMindset()}
+        onDismiss={dismissMindset}
+        onDontShowAgain={() => void handleDontShowMindsetAgain()}
       />
     </View>
   );

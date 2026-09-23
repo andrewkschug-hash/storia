@@ -8,9 +8,10 @@ import { useLayout } from '@/src/theme/useLayout';
 type Props = {
   visible: boolean;
   onDismiss: () => void;
+  onDontShowAgain?: () => void;
 };
 
-export function ReadingMindsetModal({ visible, onDismiss }: Props) {
+export function ReadingMindsetModal({ visible, onDismiss, onDontShowAgain }: Props) {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const layout = useLayout();
@@ -148,6 +149,23 @@ export function ReadingMindsetModal({ visible, onDismiss }: Props) {
                 Iniziamo • Start Reading
               </Text>
             </Pressable>
+
+            {/* Do Not Show Again */}
+            <Pressable
+              onPress={onDontShowAgain ?? onDismiss}
+              accessibilityRole="button"
+              accessibilityLabel="Do not show again"
+              hitSlop={8}
+              style={({ pressed }) => [
+                styles.dontShowBtn,
+                {
+                  opacity: pressed ? 0.6 : 1,
+                },
+              ]}>
+              <Text style={[Typography.caption, styles.dontShowText, { color: colors.textMuted }]}>
+                Do not show again
+              </Text>
+            </Pressable>
           </ScrollView>
         </View>
       </View>
@@ -233,5 +251,16 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.md,
     borderRadius: Radii.md,
     minHeight: 50,
+  },
+  dontShowBtn: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: Spacing.sm,
+    marginTop: Spacing.xs,
+    minHeight: 44,
+  },
+  dontShowText: {
+    fontSize: 14,
+    textAlign: 'center',
   },
 });

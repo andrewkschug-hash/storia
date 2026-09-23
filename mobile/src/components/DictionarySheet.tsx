@@ -46,9 +46,9 @@ export function DictionarySheet({
 
   return (
     <Modal transparent animationType={settings.reducedMotion ? 'none' : 'fade'} visible={!!lookup} onRequestClose={onClose}>
-      <Pressable style={styles.backdrop} onPress={onClose} accessibilityLabel="Close dictionary">
-        <Pressable
-          onPress={(e) => e.stopPropagation()}
+      <View style={styles.backdrop}>
+        <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel="Close dictionary" />
+        <View
           style={[
             styles.sheet,
             {
@@ -225,14 +225,21 @@ export function DictionarySheet({
               </Text>
             </Pressable>
           </View>
-        </Pressable>
-      </Pressable>
+        </View>
+      </View>
     </Modal>
   );
 }
 
 const styles = StyleSheet.create({
   backdrop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    width: '100%',
+    height: '100%',
     flex: 1,
     justifyContent: 'flex-end',
     backgroundColor: 'rgba(15, 22, 20, 0.35)',
@@ -247,6 +254,7 @@ const styles = StyleSheet.create({
     maxWidth: 580,
     width: '100%',
     alignSelf: 'center',
+    zIndex: 10000,
   },
   titleRow: {
     flexDirection: 'row',
