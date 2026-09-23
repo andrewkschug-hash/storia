@@ -11,6 +11,9 @@ export type WordLookup = {
   lemmaItalian: string;
   english: string;
   partOfSpeech?: string;
+  gender?: 'masculine' | 'feminine' | 'neutral' | string;
+  number?: 'singular' | 'plural' | string;
+  grammarTag?: string;
   sentenceText: string;
   sentenceId: string;
   chapterId: string;

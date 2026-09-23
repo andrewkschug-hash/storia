@@ -64,7 +64,8 @@ export function ReaderSentence({
     parts.push(
       <Text
         key={`tok-${index}`}
-        onPress={() => {
+        onPress={(e) => {
+          e?.stopPropagation?.();
           markNestedPress();
           onPressToken?.(sentence, token, index);
         }}

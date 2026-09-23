@@ -51,12 +51,15 @@ export default function RootLayout() {
   }, []);
 
   useEffect(() => {
-    if (loaded && accountReady) {
+    if (loaded && (accountReady || Platform.OS === 'web')) {
       void SplashScreen.hideAsync();
     }
   }, [loaded, accountReady]);
 
-  if (!loaded || !accountReady) {
+  // On Web, render immediately once fonts are ready so visitors don't stare at the logo splash screen
+  const isReady = Platform.OS === 'web' ? loaded : (loaded && accountReady);
+
+  if (!isReady) {
     if (Platform.OS === 'web') {
       const bg = systemScheme === 'dark' ? Colors.dark.background : Colors.light.background;
       return (

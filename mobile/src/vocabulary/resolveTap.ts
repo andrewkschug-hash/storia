@@ -5,6 +5,7 @@ import {
   type LexiconIndex,
 } from '@/src/vocabulary/dictionaryIndex';
 import { formGlossFor } from '@/src/vocabulary/formGlosses';
+import { resolveWordGrammar } from '@/src/vocabulary/morphology';
 import type {
   DictionaryLookup,
   PhraseLookup,
@@ -82,13 +83,17 @@ export function resolveLemmaForm(
   vocab: UserVocabularyState,
 ): WordLookup {
   const entry = lookupLemmaId(index, lemmaId);
+  const grammar = resolveWordGrammar(surface, lemmaId, entry);
   return {
     kind: 'word',
     surface,
     lemmaId,
     lemmaItalian: entry?.italian ?? lemmaId,
     english: displayEnglishForForm(surface, lemmaId, entry),
-    partOfSpeech: entry?.partOfSpeech,
+    partOfSpeech: grammar.partOfSpeech ?? entry?.partOfSpeech,
+    gender: grammar.gender,
+    number: grammar.number,
+    grammarTag: grammar.grammarTag,
     sentenceText,
     sentenceId,
     chapterId,
@@ -116,13 +121,17 @@ function wordFromToken(
   entry: LexiconEntry | undefined,
   vocab: UserVocabularyState,
 ): WordLookup {
+  const grammar = resolveWordGrammar(surface, lemmaId, entry);
   return {
     kind: 'word',
     surface,
     lemmaId,
     lemmaItalian: entry?.italian ?? lemmaId,
     english: displayEnglishForForm(surface, lemmaId, entry),
-    partOfSpeech: entry?.partOfSpeech,
+    partOfSpeech: grammar.partOfSpeech ?? entry?.partOfSpeech,
+    gender: grammar.gender,
+    number: grammar.number,
+    grammarTag: grammar.grammarTag,
     sentenceText: ctx.sentence.text,
     sentenceId: ctx.sentence.id,
     chapterId: ctx.chapterId,

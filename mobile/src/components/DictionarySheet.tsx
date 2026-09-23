@@ -84,15 +84,35 @@ export function DictionarySheet({
 
           {lookup.kind === 'word' ? (
             <>
-              {!familiar ? (
-                <Text
-                  style={[
-                    type.label,
-                    { color: colors.textSecondary, marginTop: Spacing.xs },
-                  ]}>
-                  {lookup.lemmaItalian}
-                </Text>
-              ) : null}
+              <View style={styles.metaRow}>
+                {!familiar ? (
+                  <Text
+                    style={[
+                      type.label,
+                      { color: colors.textSecondary },
+                    ]}>
+                    {lookup.lemmaItalian}
+                  </Text>
+                ) : null}
+                {lookup.grammarTag ? (
+                  <View
+                    style={[
+                      styles.grammarBadge,
+                      {
+                        backgroundColor: colors.backgroundHigher,
+                        borderColor: colors.border,
+                      },
+                    ]}>
+                    <Text
+                      style={[
+                        type.caption,
+                        { color: colors.tint, fontWeight: '600', fontSize: 12 },
+                      ]}>
+                      {lookup.grammarTag}
+                    </Text>
+                  </View>
+                ) : null}
+              </View>
               <Text
                 style={[
                   familiar ? type.body : type.label,
@@ -216,6 +236,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     backgroundColor: 'rgba(15, 22, 20, 0.35)',
+    zIndex: 9999,
   },
   sheet: {
     borderTopLeftRadius: Radii.lg,
@@ -232,6 +253,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: Spacing.sm,
     marginTop: Spacing.sm,
+  },
+  metaRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    gap: Spacing.xs,
+    marginTop: Spacing.xs,
+  },
+  grammarBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: Radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignSelf: 'flex-start',
   },
   handle: {
     alignSelf: 'center',
