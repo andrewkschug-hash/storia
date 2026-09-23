@@ -52,7 +52,7 @@ export type PasswordAuthInput = {
 
 export const DEVELOPER_EMAILS = new Set([
   'andrewkschug@gmail.com',
-  ...(process.env.EXPO_PUBLIC_DEVELOPER_EMAILS?.split(',').map((e) => e.trim().toLowerCase()) ?? []),
+  ...(process.env.EXPO_PUBLIC_DEVELOPER_EMAILS?.split(',').map((e: string) => e.trim().toLowerCase()) ?? []),
 ]);
 
 export function isDeveloperEmail(email?: string | null): boolean {
