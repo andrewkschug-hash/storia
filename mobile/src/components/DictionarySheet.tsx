@@ -158,11 +158,12 @@ export function DictionarySheet({
             </Text>
           ) : null}
 
-          {onExploreTranslation ? (
+          {/* Option to translate only for full sentences, never on a singular word */}
+          {onExploreTranslation && lookup.kind === 'sentence' ? (
             <Pressable
               onPress={onExploreTranslation}
               accessibilityRole="button"
-              accessibilityLabel="Explore Italian in Translation Explorer"
+              accessibilityLabel="Translate sentence in Translation Explorer"
               style={({ pressed }) => [
                 styles.exploreBtn,
                 {
@@ -172,56 +173,25 @@ export function DictionarySheet({
                 },
               ]}>
               <Text style={[type.label, { color: colors.tint, fontWeight: '600' }]}>
-                🌐 Explore Italian →
+                🌐 Translate Sentence →
               </Text>
             </Pressable>
           ) : null}
 
           <View style={styles.actions}>
-            {lookup.kind !== 'sentence' ? (
-              <Pressable
-                onPress={onSave}
-                accessibilityRole="button"
-                accessibilityLabel={saveLabel ?? (saved ? 'Saved' : 'Save word')}
-                style={({ pressed }) => [
-                  styles.saveBtn,
-                  {
-                    backgroundColor: saved ? colors.progressTrack : colors.tint,
-                    opacity: pressed ? 0.88 : 1,
-                  },
-                ]}>
-                <Text
-                  style={[
-                    type.button,
-                    { color: saved ? colors.textSecondary : colors.onTint },
-                  ]}>
-                  {saveLabel ?? (saved ? 'Saved' : 'Save')}
-                </Text>
-              </Pressable>
-            ) : null}
-
             <Pressable
               onPress={onClose}
               accessibilityRole="button"
-              accessibilityLabel="Close"
-              hitSlop={12}
+              accessibilityLabel={lookup.kind === 'sentence' ? (closeLabel ?? 'Continue reading') : 'Close'}
               style={({ pressed }) => [
-                lookup.kind === 'sentence' ? styles.saveBtn : styles.closeBtn,
+                styles.closeBtnFull,
                 {
-                  borderColor: colors.border,
-                  backgroundColor:
-                    lookup.kind === 'sentence' ? colors.tint : 'transparent',
-                  opacity: pressed ? 0.7 : 1,
+                  backgroundColor: colors.tint,
+                  opacity: pressed ? 0.88 : 1,
                 },
               ]}>
-              <Text
-                style={[
-                  type.button,
-                  {
-                    color: lookup.kind === 'sentence' ? colors.onTint : colors.textSecondary,
-                  },
-                ]}>
-                {lookup.kind === 'sentence' ? (closeLabel ?? 'Continue reading') : '✕'}
+              <Text style={[type.button, { color: colors.onTint }]}>
+                {lookup.kind === 'sentence' ? (closeLabel ?? 'Continue reading') : 'Close'}
               </Text>
             </Pressable>
           </View>
@@ -304,6 +274,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: Radii.md,
     borderWidth: StyleSheet.hairlineWidth,
+  },
+  closeBtnFull: {
+    flex: 1,
+    alignItems: 'center',
+    paddingVertical: Spacing.md,
+    borderRadius: Radii.md,
+    minHeight: 48,
+    justifyContent: 'center',
   },
   exploreBtn: {
     marginTop: Spacing.md,

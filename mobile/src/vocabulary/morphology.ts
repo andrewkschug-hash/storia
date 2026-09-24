@@ -79,10 +79,35 @@ export function resolveWordGrammar(
     };
   }
 
+const MASCULINE_A_NOUNS = new Set([
+  'luca',
+  'andrea',
+  'nicola',
+  'mattia',
+  'elia',
+  'davide',
+  'papa',
+  'poeta',
+  'problema',
+  'tema',
+  'cinema',
+  'clima',
+  'sistema',
+  'programma',
+  'pianeta',
+  'dramma',
+  'collega',
+  'turista',
+  'artista',
+]);
+
   // 5. Nouns and Adjectives: deduce gender and number from endings & lexicon entry
   if (pos === 'noun' || pos === 'adjective' || !pos) {
     if (!gender) {
-      if (normSurface.endsWith('o')) {
+      if (MASCULINE_A_NOUNS.has(normSurface) || MASCULINE_A_NOUNS.has(normLemma)) {
+        gender = 'masculine';
+        number = 'singular';
+      } else if (normSurface.endsWith('o')) {
         gender = 'masculine';
         number = 'singular';
       } else if (normSurface.endsWith('a')) {

@@ -63,4 +63,11 @@ describe('resolveWordGrammar', () => {
     const prep = resolveWordGrammar('con', 'con', { partOfSpeech: 'preposition' });
     expect(prep.grammarTag).toBe('Preposition');
   });
+
+  it('infers masculine for masculine -a names and nouns like Luca', () => {
+    const res = resolveWordGrammar('Luca', 'luca', { partOfSpeech: 'noun' });
+    expect(res.gender).toBe('masculine');
+    expect(res.number).toBe('singular');
+    expect(res.grammarTag).toBe('Noun · Masculine, Singular');
+  });
 });

@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { useRef, type ReactNode } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { useAccessibility } from '@/src/accessibility/AccessibilityProvider';
 import type { Sentence, Token } from '@/src/content/schemas';
@@ -11,7 +11,7 @@ type Props = {
   activeTokenIndex?: number | null;
   phraseRange?: { start: number; end: number } | null;
   onPressToken?: (sentence: Sentence, token: Token, tokenIndex: number) => void;
-  /** Tap beside a word, or hold the sentence, for the English translation */
+  /** Tap beside a word, or tap the sentence line, for the English translation */
   onPressSentenceBackground?: (sentence: Sentence) => void;
   hasAudio?: boolean;
   isPlaying?: boolean;
@@ -21,6 +21,7 @@ type Props = {
 /**
  * Renders each token as a generous tap target.
  * Tapping a token inside a phrase resolves via VocabularyService (phrase preferred).
+ * Tapping the sentence line opens full sentence translation.
  */
 export function ReaderSentence({
   sentence,
@@ -34,10 +35,14 @@ export function ReaderSentence({
   onPlayAudio,
 }: Props) {
   const { colors, type } = useAccessibility();
+  const skipSentencePress = useRef(false);
   const isDialogue = sentence.kind === 'dialogue';
   const baseStyle = isDialogue ? type.readerDialogue : type.reader;
 
   const openSentence = () => onPressSentenceBackground?.(sentence);
+  const markNestedPress = () => {
+    skipSentencePress.current = true;
+  };
 
   const parts: ReactNode[] = [];
   let cursor = 0;
@@ -62,7 +67,11 @@ export function ReaderSentence({
     parts.push(
       <Text
         key={`tok-${index}`}
-        onPress={() => onPressToken?.(sentence, token, index)}
+        onPress={(e) => {
+          e?.stopPropagation?.();
+          markNestedPress();
+          onPressToken?.(sentence, token, index);
+        }}
         accessibilityRole="button"
         accessibilityLabel={`Look up ${token.surface}`}
         style={[
@@ -94,7 +103,11 @@ export function ReaderSentence({
   const audioGlyph = hasAudio ? (
     <Text
       key="audio"
-      onPress={() => onPlayAudio?.(sentence)}
+      onPress={(e) => {
+        e?.stopPropagation?.();
+        markNestedPress();
+        onPlayAudio?.(sentence);
+      }}
       accessibilityRole="button"
       accessibilityLabel={isPlaying ? 'Pause sentence audio' : 'Play sentence audio'}
       style={[
@@ -110,10 +123,20 @@ export function ReaderSentence({
   ) : null;
 
   return (
-    <View
-      style={[
+    <Pressable
+      onPress={() => {
+        if (skipSentencePress.current) {
+          skipSentencePress.current = false;
+          return;
+        }
+        openSentence();
+      }}
+      accessibilityRole="button"
+      accessibilityLabel={`Sentence: ${sentence.text}. Tap for translation.`}
+      style={({ pressed }) => [
         styles.wrap,
         highlighted && { backgroundColor: colors.sentenceHighlight },
+        pressed && { opacity: 0.95 },
       ]}>
       {isDialogue ? (
         <View>
@@ -132,7 +155,7 @@ export function ReaderSentence({
           {audioGlyph}
         </Text>
       )}
-    </View>
+    </Pressable>
   );
 }
 
