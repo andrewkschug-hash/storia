@@ -406,10 +406,14 @@ export async function signInWithPassword(input: PasswordAuthInput): Promise<Loca
     throw new Error('Email and password are required.');
   }
   if (!isSupabaseConfigured()) {
-    const existing = await readLocalAccount();
-    if (existing && existing.email.toLowerCase() === email.toLowerCase()) {
-      applyDeveloperUnlock(existing);
-      return existing;
+    if (allowsLocalAuthFallback()) {
+      const existing = await readLocalAccount();
+      if (existing && existing.email.toLowerCase() === email.toLowerCase()) {
+        applyDeveloperUnlock(existing);
+        return existing;
+      }
+      const displayName = input.displayName?.trim() || email.split('@')[0] || 'Learner';
+      return saveAccount({ email, displayName });
     }
     throw new Error(AUTH_CONFIG_MESSAGE);
   }
