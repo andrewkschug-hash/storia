@@ -98,7 +98,7 @@
         },
         {
           "id": "s04",
-          "text": "Lo dice a se stessa mentre gira la chiave del Caffè Brenta.",
+          "text": "Lo dice a se stessa mentre gira la chiave del CaffÃ¨ Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -118,7 +118,7 @@
         },
         {
           "id": "s05",
-          "text": "Dentro c'è già odore di caffè e di cornetti caldi.",
+          "text": "Dentro c'Ã¨ giÃ  odore di caffÃ¨ e di cornetti caldi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -317,7 +317,7 @@
         },
         {
           "id": "s17",
-          "text": "Il bancone è il suo teatro sicuro: lì sa cosa dire.",
+          "text": "Il bancone Ã¨ il suo teatro sicuro: lÃ¬ sa cosa dire.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -400,7 +400,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "C'è una risposta nuova, scritta con inchiostro scuro.",
+          "text": "C'Ã¨ una risposta nuova, scritta con inchiostro scuro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -416,7 +416,7 @@
         },
         {
           "id": "s22",
-          "text": "Non è una rottura.",
+          "text": "Non Ã¨ una rottura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -428,7 +428,7 @@
         },
         {
           "id": "s23",
-          "text": "È mio fratello.",
+          "text": "Ãˆ mio fratello.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -690,7 +690,7 @@
         },
         {
           "id": "s39",
-          "text": "Ma Elena sa anche un'altra cosa, più scomoda.",
+          "text": "Ma Elena sa anche un'altra cosa, piÃ¹ scomoda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -746,7 +746,7 @@
       "question": "What does the new note clarify?",
       "choices": [
         "It is about a brother after an accident",
-        "It is about Bruna selling the café",
+        "It is about Bruna selling the cafÃ©",
         "It is about sugar prices"
       ],
       "correctChoice": 0,

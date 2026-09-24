@@ -43,7 +43,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca Ë al supermercato.",
+          "text": "Luca √® al supermercato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -55,7 +55,7 @@
         },
         {
           "id": "s02",
-          "text": "Luca Ë al banco.",
+          "text": "Luca √® al banco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -67,7 +67,7 @@
         },
         {
           "id": "s03",
-          "text": "Signora Pina Ë al banco.",
+          "text": "Signora Pina √® al banco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -124,7 +124,7 @@
         },
         {
           "id": "s08",
-          "text": "Sulla lista c'Ë pane.",
+          "text": "Sulla lista c'√® pane.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -136,7 +136,7 @@
         },
         {
           "id": "s09",
-          "text": "Sulla lista c'Ë latte.",
+          "text": "Sulla lista c'√® latte.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -199,7 +199,7 @@
       "sentences": [
         {
           "id": "s14",
-          "text": "Pina d‡ il pane.",
+          "text": "Pina d√† il pane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -245,7 +245,7 @@
         },
         {
           "id": "s18",
-          "text": "SÏ grazie.",
+          "text": "S√¨ grazie.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -255,7 +255,7 @@
         },
         {
           "id": "s19",
-          "text": "Pina d‡ il formaggio.",
+          "text": "Pina d√† il formaggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -384,7 +384,7 @@
         },
         {
           "id": "s30",
-          "text": "La lista Ë qui.",
+          "text": "La lista √® qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -409,7 +409,7 @@
         },
         {
           "id": "s32",
-          "text": "Il pane Ë qui.",
+          "text": "Il pane √® qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -421,7 +421,7 @@
         },
         {
           "id": "s33",
-          "text": "Il formaggio Ë qui.",
+          "text": "Il formaggio √® qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -433,7 +433,7 @@
         },
         {
           "id": "s34",
-          "text": "Il latte Ë qui.",
+          "text": "Il latte √® qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -445,7 +445,7 @@
         },
         {
           "id": "s35",
-          "text": "Tutto Ë al banco.",
+          "text": "Tutto √® al banco.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -515,7 +515,7 @@
         "Paolo"
       ],
       "correctChoice": 1,
-      "explanation": "Signora Pina Ë al banco.",
+      "explanation": "Signora Pina √® al banco.",
       "chapterId": "luca-prima-di-roma-03-02",
       "difficulty": 1
     },

@@ -9,10 +9,10 @@
   "audio": false,
   "wiredToApp": false,
   "blockedOnGlobalRegistry": [
-    "content/characters.json — append Elena cast (do not edit Luca rows)",
-    "content/locations.json — append Castelbianco locations (do not edit Luca rows)",
-    "content/lexicon/italian-core.json — append lexicon-additions.json only (do not edit existing lemmas)",
-    "src/content/index.ts — currently hardcodes luca-a-roma as the only loaded story"
+    "content/characters.json  -  append Elena cast (do not edit Luca rows)",
+    "content/locations.json  -  append Castelbianco locations (do not edit Luca rows)",
+    "content/lexicon/italian-core.json  -  append lexicon-additions.json only (do not edit existing lemmas)",
+    "src/content/index.ts  -  currently hardcodes luca-a-roma as the only loaded story"
   ],
   "doNotModify": [
     "content/stories/luca-a-roma/**",

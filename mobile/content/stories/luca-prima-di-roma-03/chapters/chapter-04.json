@@ -102,7 +102,7 @@
         },
         {
           "id": "s06",
-          "text": "Pina d‡ un etto di formaggio.",
+          "text": "Pina d√† un etto di formaggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -383,7 +383,7 @@
         },
         {
           "id": "s28",
-          "text": "Lo zucchero non Ë nei sacchetti.",
+          "text": "Lo zucchero non √® nei sacchetti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -423,7 +423,7 @@
         },
         {
           "id": "s31",
-          "text": "Tutto Ë pronto.",
+          "text": "Tutto √® pronto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [

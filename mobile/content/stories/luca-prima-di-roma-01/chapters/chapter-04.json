@@ -51,7 +51,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Questa è casa mia.",
+          "text": "Questa Ã¨ casa mia.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -63,7 +63,7 @@
         },
         {
           "id": "s02",
-          "text": "La casa è piccola.",
+          "text": "La casa Ã¨ piccola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -89,7 +89,7 @@
         },
         {
           "id": "s04",
-          "text": "C'è una cucina.",
+          "text": "C'Ã¨ una cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -100,7 +100,7 @@
         },
         {
           "id": "s05",
-          "text": "La cucina è grande.",
+          "text": "La cucina Ã¨ grande.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -112,7 +112,7 @@
         },
         {
           "id": "s06",
-          "text": "C'è un tavolo.",
+          "text": "C'Ã¨ un tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -135,7 +135,7 @@
         },
         {
           "id": "s08",
-          "text": "C'è una finestra.",
+          "text": "C'Ã¨ una finestra.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -146,7 +146,7 @@
         },
         {
           "id": "s09",
-          "text": "La finestra è aperta.",
+          "text": "La finestra Ã¨ aperta.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -158,7 +158,7 @@
         },
         {
           "id": "s10",
-          "text": "Marta è in cucina.",
+          "text": "Marta Ã¨ in cucina.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -222,7 +222,7 @@
         },
         {
           "id": "s15",
-          "text": "C'è un soggiorno.",
+          "text": "C'Ã¨ un soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -233,7 +233,7 @@
         },
         {
           "id": "s16",
-          "text": "Il soggiorno è piccolo.",
+          "text": "Il soggiorno Ã¨ piccolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -245,7 +245,7 @@
         },
         {
           "id": "s17",
-          "text": "C'è una porta.",
+          "text": "C'Ã¨ una porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -256,7 +256,7 @@
         },
         {
           "id": "s18",
-          "text": "La porta è chiusa.",
+          "text": "La porta Ã¨ chiusa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -268,7 +268,7 @@
         },
         {
           "id": "s19",
-          "text": "C'è una foto.",
+          "text": "C'Ã¨ una foto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -279,7 +279,7 @@
         },
         {
           "id": "s20",
-          "text": "La foto è della famiglia.",
+          "text": "La foto Ã¨ della famiglia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -316,7 +316,7 @@
         },
         {
           "id": "s23",
-          "text": "Luca è in camera.",
+          "text": "Luca Ã¨ in camera.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -344,7 +344,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "C'è un letto.",
+          "text": "C'Ã¨ un letto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -355,7 +355,7 @@
         },
         {
           "id": "s26",
-          "text": "C'è una sedia.",
+          "text": "C'Ã¨ una sedia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -366,7 +366,7 @@
         },
         {
           "id": "s27",
-          "text": "C'è un libro sul letto.",
+          "text": "C'Ã¨ un libro sul letto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -379,7 +379,7 @@
         },
         {
           "id": "s28",
-          "text": "La camera è piccola.",
+          "text": "La camera Ã¨ piccola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -391,7 +391,7 @@
         },
         {
           "id": "s29",
-          "text": "C'è anche un bagno.",
+          "text": "C'Ã¨ anche un bagno.",
           "speakerId": "marta",
           "kind": "dialogue",
           "lemmas": [
@@ -427,7 +427,7 @@
         },
         {
           "id": "s32",
-          "text": "La casa non è grande.",
+          "text": "La casa non Ã¨ grande.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -440,7 +440,7 @@
         },
         {
           "id": "s33",
-          "text": "Ma la casa è bella.",
+          "text": "Ma la casa Ã¨ bella.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -496,7 +496,7 @@
     {
       "id": "lpr01-ch04-q02",
       "type": "direct",
-      "question": "What is in Luca’s bedroom?",
+      "question": "What is in Lucaâ€™s bedroom?",
       "choices": [
         "A bed, a chair, and a book",
         "A supermarket list",
@@ -517,7 +517,7 @@
         "There is no house"
       ],
       "correctChoice": 1,
-      "explanation": "La casa è piccola. Ma è bella.",
+      "explanation": "La casa Ã¨ piccola. Ma Ã¨ bella.",
       "chapterId": "luca-prima-di-roma-01-04",
       "difficulty": 1
     }

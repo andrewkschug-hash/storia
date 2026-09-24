@@ -28,7 +28,7 @@
       "rememberedFacts": [
         "Sara is Elena's sister",
         "Mamma is Teresa",
-        "Pap‡ is Stefano",
+        "Pap√† is Stefano",
         "Elena is twenty"
       ]
     }
@@ -40,7 +40,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Sara Ë in casa con Elena.",
+          "text": "Sara √® in casa con Elena.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -148,7 +148,7 @@
         },
         {
           "id": "s09",
-          "text": "SÏ, il mio nome Ë Elena.",
+          "text": "S√¨, il mio nome √® Elena.",
           "speakerId": "elena",
           "kind": "dialogue",
           "lemmas": [
@@ -162,7 +162,7 @@
         },
         {
           "id": "s10",
-          "text": "Sara Ë la sorella di Elena.",
+          "text": "Sara √® la sorella di Elena.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -206,7 +206,7 @@
         },
         {
           "id": "s13",
-          "text": "E pap‡? Come si chiama?",
+          "text": "E pap√†? Come si chiama?",
           "speakerId": "elena",
           "kind": "dialogue",
           "lemmas": [
@@ -219,7 +219,7 @@
         },
         {
           "id": "s14",
-          "text": "Pap‡ si chiama Stefano.",
+          "text": "Pap√† si chiama Stefano.",
           "speakerId": "sara",
           "kind": "dialogue",
           "lemmas": [
@@ -243,7 +243,7 @@
         },
         {
           "id": "s16",
-          "text": "La famiglia ha un nome: mamma, pap‡, Elena e Sara.",
+          "text": "La famiglia ha un nome: mamma, pap√†, Elena e Sara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -318,7 +318,7 @@
         },
         {
           "id": "s21",
-          "text": "Sara Ë giovane, e Elena ha venti anni.",
+          "text": "Sara √® giovane, e Elena ha venti anni.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -334,7 +334,7 @@
         },
         {
           "id": "s22",
-          "text": "Mamma Teresa Ë in cucina, e ascolta.",
+          "text": "Mamma Teresa √® in cucina, e ascolta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -349,7 +349,7 @@
         },
         {
           "id": "s23",
-          "text": "La famiglia Ë qui, in casa.",
+          "text": "La famiglia √® qui, in casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -363,7 +363,7 @@
         },
         {
           "id": "s24",
-          "text": "Elena Ë a casa, con sua sorella.",
+          "text": "Elena √® a casa, con sua sorella.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -393,7 +393,7 @@
         },
         {
           "id": "s26",
-          "text": "Il nome di mamma Ë Teresa, in famiglia.",
+          "text": "Il nome di mamma √® Teresa, in famiglia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -409,7 +409,7 @@
         },
         {
           "id": "s27",
-          "text": "Elena ha venti anni, e Sara Ë giovane.",
+          "text": "Elena ha venti anni, e Sara √® giovane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [

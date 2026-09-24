@@ -43,7 +43,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca è nel soggiorno.",
+          "text": "Luca Ã¨ nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -77,7 +77,7 @@
         },
         {
           "id": "s04",
-          "text": "L'orologio è sul tavolo.",
+          "text": "L'orologio Ã¨ sul tavolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -227,7 +227,7 @@
         },
         {
           "id": "s14",
-          "text": "C'è tempo.",
+          "text": "C'Ã¨ tempo.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -280,7 +280,7 @@
         },
         {
           "id": "s19",
-          "text": "Sì presto.",
+          "text": "SÃ¬ presto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s30",
-          "text": "L'orologio è qui.",
+          "text": "L'orologio Ã¨ qui.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -477,7 +477,7 @@
         },
         {
           "id": "s33",
-          "text": "Sì e alle otto esci.",
+          "text": "SÃ¬ e alle otto esci.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [

@@ -41,7 +41,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "La famiglia Ë in cucina per la colazione.",
+          "text": "La famiglia √® in cucina per la colazione.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -90,7 +90,7 @@
         },
         {
           "id": "s04",
-          "text": "Pap‡ Stefano Ë al tavolo, pronto.",
+          "text": "Pap√† Stefano √® al tavolo, pronto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -104,7 +104,7 @@
         },
         {
           "id": "s05",
-          "text": "Buongiorno. La colazione Ë pronta.",
+          "text": "Buongiorno. La colazione √® pronta.",
           "speakerId": "teresa",
           "kind": "dialogue",
           "lemmas": [
@@ -134,7 +134,7 @@
         },
         {
           "id": "s07",
-          "text": "SÏ, mamma. Voglio pane e caffË.",
+          "text": "S√¨, mamma. Voglio pane e caff√®.",
           "speakerId": "elena",
           "kind": "dialogue",
           "lemmas": [
@@ -162,7 +162,7 @@
         },
         {
           "id": "s09",
-          "text": "Il pane Ë buono, molto buono.",
+          "text": "Il pane √® buono, molto buono.",
           "speakerId": "elena",
           "kind": "dialogue",
           "lemmas": [
@@ -176,7 +176,7 @@
         },
         {
           "id": "s10",
-          "text": "Sara beve il latte, non il caffË.",
+          "text": "Sara beve il latte, non il caff√®.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -209,7 +209,7 @@
       "sentences": [
         {
           "id": "s12",
-          "text": "Elena beve il caffË e un po' di acqua.",
+          "text": "Elena beve il caff√® e un po' di acqua.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -251,7 +251,7 @@
         },
         {
           "id": "s15",
-          "text": "SÏ, pap‡. La frutta Ë buona.",
+          "text": "S√¨, pap√†. La frutta √® buona.",
           "speakerId": "elena",
           "kind": "dialogue",
           "lemmas": [
@@ -286,7 +286,7 @@
       "sentences": [
         {
           "id": "s17",
-          "text": "Oggi la colazione Ë insieme, in famiglia.",
+          "text": "Oggi la colazione √® insieme, in famiglia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -315,7 +315,7 @@
         },
         {
           "id": "s19",
-          "text": "Domani la colazione Ë di nuovo qui.",
+          "text": "Domani la colazione √® di nuovo qui.",
           "speakerId": "teresa",
           "kind": "dialogue",
           "lemmas": [
@@ -347,7 +347,7 @@
         },
         {
           "id": "s21",
-          "text": "Stefano sorride e beve il caffË.",
+          "text": "Stefano sorride e beve il caff√®.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -375,7 +375,7 @@
         },
         {
           "id": "s23",
-          "text": "A casa, la colazione Ë un bel momento.",
+          "text": "A casa, la colazione √® un bel momento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -391,7 +391,7 @@
         },
         {
           "id": "s24",
-          "text": "Elena beve caffË e acqua, e mangia pane.",
+          "text": "Elena beve caff√® e acqua, e mangia pane.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [

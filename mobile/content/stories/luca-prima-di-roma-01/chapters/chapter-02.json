@@ -59,7 +59,7 @@
         },
         {
           "id": "s01b",
-          "text": "Chiara è la sorella di Luca.",
+          "text": "Chiara Ã¨ la sorella di Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -151,7 +151,7 @@
         },
         {
           "id": "s09",
-          "text": "Sedici è poco.",
+          "text": "Sedici Ã¨ poco.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -162,7 +162,7 @@
         },
         {
           "id": "s10",
-          "text": "Ventiquattro è molto.",
+          "text": "Ventiquattro Ã¨ molto.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -250,7 +250,7 @@
         },
         {
           "id": "s17",
-          "text": "Sedici è l'età di Chiara.",
+          "text": "Sedici Ã¨ l'etÃ  di Chiara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -263,7 +263,7 @@
         },
         {
           "id": "s18",
-          "text": "Ventiquattro è l'età di Luca.",
+          "text": "Ventiquattro Ã¨ l'etÃ  di Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -371,7 +371,7 @@
         },
         {
           "id": "s27",
-          "text": "Venticinque è più di ventiquattro.",
+          "text": "Venticinque Ã¨ piÃ¹ di ventiquattro.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -384,7 +384,7 @@
         },
         {
           "id": "s28",
-          "text": "Davide è grande.",
+          "text": "Davide Ã¨ grande.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -395,7 +395,7 @@
         },
         {
           "id": "s29",
-          "text": "Luca è grande anche.",
+          "text": "Luca Ã¨ grande anche.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -419,7 +419,7 @@
         },
         {
           "id": "s31",
-          "text": "Chi è più grande?",
+          "text": "Chi Ã¨ piÃ¹ grande?",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -460,7 +460,7 @@
         },
         {
           "id": "s35",
-          "text": "Trenta è un numero grande.",
+          "text": "Trenta Ã¨ un numero grande.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [

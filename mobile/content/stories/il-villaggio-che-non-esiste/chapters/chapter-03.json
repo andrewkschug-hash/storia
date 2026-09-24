@@ -165,7 +165,7 @@
         },
         {
           "id": "s08",
-          "text": "Anna diceva così.",
+          "text": "Anna diceva cosÃ¬.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -176,7 +176,7 @@
         },
         {
           "id": "s09",
-          "text": "Chi è Anna? Io non la conosco.",
+          "text": "Chi Ã¨ Anna? Io non la conosco.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -227,7 +227,7 @@
         },
         {
           "id": "s12",
-          "text": "Mi chiamo Giada, e ho diciassette anni, non di più.",
+          "text": "Mi chiamo Giada, e ho diciassette anni, non di piÃ¹.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -274,7 +274,7 @@
         },
         {
           "id": "s15",
-          "text": "Sì, diciassette. Devo raggiungere mio padre a Trento.",
+          "text": "SÃ¬, diciassette. Devo raggiungere mio padre a Trento.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -411,7 +411,7 @@
         },
         {
           "id": "s23",
-          "text": "Giada mangia perché ha davvero fame dopo il viaggio lungo.",
+          "text": "Giada mangia perchÃ© ha davvero fame dopo il viaggio lungo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -429,7 +429,7 @@
         },
         {
           "id": "s24",
-          "text": "La minestra è buona, semplice, di verdure e brodo chiaro.",
+          "text": "La minestra Ã¨ buona, semplice, di verdure e brodo chiaro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -447,7 +447,7 @@
         },
         {
           "id": "s25",
-          "text": "Però le mani le tremano un poco sul cucchiaio di metallo.",
+          "text": "PerÃ² le mani le tremano un poco sul cucchiaio di metallo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -517,7 +517,7 @@
         },
         {
           "id": "s29",
-          "text": "Perché no? È ancora giorno, e posso camminare.",
+          "text": "PerchÃ© no? Ãˆ ancora giorno, e posso camminare.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -533,7 +533,7 @@
         },
         {
           "id": "s30",
-          "text": "Perché è tardi per partire da qui senza un piano.",
+          "text": "PerchÃ© Ã¨ tardi per partire da qui senza un piano.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -557,7 +557,7 @@
       "sentences": [
         {
           "id": "s31",
-          "text": "E perché in questo paese le cose hanno un'ora precisa.",
+          "text": "E perchÃ© in questo paese le cose hanno un'ora precisa.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -575,7 +575,7 @@
         },
         {
           "id": "s32",
-          "text": "Giada non ride; aspetta una spiegazione migliore e più chiara.",
+          "text": "Giada non ride; aspetta una spiegazione migliore e piÃ¹ chiara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -624,7 +624,7 @@
         },
         {
           "id": "s35",
-          "text": "Poi decidi se restare una notte in più o se partire.",
+          "text": "Poi decidi se restare una notte in piÃ¹ o se partire.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -659,7 +659,7 @@
         },
         {
           "id": "s37",
-          "text": "Anna diceva così, con la stessa voce sicura e giovane.",
+          "text": "Anna diceva cosÃ¬, con la stessa voce sicura e giovane.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -695,7 +695,7 @@
         },
         {
           "id": "s39",
-          "text": "Non sono Anna, e non lo sarò per te.",
+          "text": "Non sono Anna, e non lo sarÃ² per te.",
           "speakerId": "giada-rinaldi",
           "kind": "dialogue",
           "lemmas": [
@@ -764,7 +764,7 @@
         },
         {
           "id": "s43",
-          "text": "Ma la faccia è la stessa, e la borsa anche, quasi uguale.",
+          "text": "Ma la faccia Ã¨ la stessa, e la borsa anche, quasi uguale.",
           "speakerId": "elsa",
           "kind": "dialogue",
           "lemmas": [
@@ -866,7 +866,7 @@
         },
         {
           "id": "s48",
-          "text": "E questo fa più paura di una storia inventata per i bambini.",
+          "text": "E questo fa piÃ¹ paura di una storia inventata per i bambini.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [

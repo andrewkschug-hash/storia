@@ -46,7 +46,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Luca Ë a Pietralba.",
+          "text": "Luca √® a Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -58,7 +58,7 @@
         },
         {
           "id": "s02",
-          "text": "Pietralba Ë un paese piccolo.",
+          "text": "Pietralba √® un paese piccolo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -71,7 +71,7 @@
         },
         {
           "id": "s03",
-          "text": "Pietralba non Ë Roma.",
+          "text": "Pietralba non √® Roma.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s04",
-          "text": "Luca Ë a casa.",
+          "text": "Luca √® a casa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -95,7 +95,7 @@
         },
         {
           "id": "s05",
-          "text": "Luca Ë nel soggiorno.",
+          "text": "Luca √® nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -107,7 +107,7 @@
         },
         {
           "id": "s06",
-          "text": "C'Ë una persona alla porta.",
+          "text": "C'√® una persona alla porta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -132,7 +132,7 @@
         },
         {
           "id": "s08",
-          "text": "Davide Ë qui.",
+          "text": "Davide √® qui.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -321,7 +321,7 @@
         },
         {
           "id": "s24",
-          "text": "Davide Ë di Pietralba.",
+          "text": "Davide √® di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -339,7 +339,7 @@
       "sentences": [
         {
           "id": "s25",
-          "text": "Luca Ë di Pietralba.",
+          "text": "Luca √® di Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -351,7 +351,7 @@
         },
         {
           "id": "s26",
-          "text": "Roma Ë lontana.",
+          "text": "Roma √® lontana.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -362,7 +362,7 @@
         },
         {
           "id": "s27",
-          "text": "SÏ Roma Ë lontana.",
+          "text": "S√¨ Roma √® lontana.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -397,7 +397,7 @@
         },
         {
           "id": "s30",
-          "text": "Davide Ë contento.",
+          "text": "Davide √® contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -408,7 +408,7 @@
         },
         {
           "id": "s31",
-          "text": "Luca Ë contento.",
+          "text": "Luca √® contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -419,7 +419,7 @@
         },
         {
           "id": "s32",
-          "text": "Pietralba Ë piccola ma bella.",
+          "text": "Pietralba √® piccola ma bella.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -505,14 +505,14 @@
     {
       "id": "lpr01-ch01-q01",
       "type": "direct",
-      "question": "What is the protagonistís name?",
+      "question": "What is the protagonist‚Äôs name?",
       "choices": [
         "Davide",
         "Luca",
         "Paolo"
       ],
       "correctChoice": 1,
-      "explanation": "He says ìMi chiamo Luca.î",
+      "explanation": "He says ‚ÄúMi chiamo Luca.‚Äù",
       "chapterId": "luca-prima-di-roma-01-01",
       "difficulty": 1
     },

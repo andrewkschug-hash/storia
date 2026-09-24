@@ -268,7 +268,7 @@
       "choices": [
         "Back to Rome",
         "To a new country",
-        "Nowhere—they stay on the train"
+        "Nowhere - they stay on the train"
       ],
       "correctChoice": 0,
       "explanation": "They return to Rome after helping Marco.",
@@ -286,7 +286,7 @@
         "Nothing at all"
       ],
       "correctChoice": 0,
-      "explanation": "He has casa, lavoro, and amici—home, work, and friends.",
+      "explanation": "He has casa, lavoro, and amici - home, work, and friends.",
       "difficulty": 1
     },
     {

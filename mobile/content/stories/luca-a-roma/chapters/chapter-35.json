@@ -19,7 +19,7 @@
   "events": [
     {
       "id": "ev-35-festa",
-      "summary": "People arrive gradually; the room fills; the owner notices; someone plans to return—evidence, not a permanent save.",
+      "summary": "People arrive gradually; the room fills; the owner notices; someone plans to return - evidence, not a permanent save.",
       "characterIds": [
         "luca",
         "giulia",
@@ -976,7 +976,7 @@
       "type": "inference",
       "question": "What does the full room prove for now?",
       "choices": [
-        "People can come back — evidence of a possible future, not a permanent save",
+        "People can come back  -  evidence of a possible future, not a permanent save",
         "The café is sold the same day",
         "Marco is leaving forever"
       ],

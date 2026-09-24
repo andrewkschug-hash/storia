@@ -85,7 +85,7 @@
       "name": "L'ingegnere",
       "gender": "male",
       "ageDescription": "middle-aged",
-      "description": "Company man. Polite compensation smile. Leaves in a high car at sunset — rules are for residents.",
+      "description": "Company man. Polite compensation smile. Leaves in a high car at sunset  -  rules are for residents.",
       "storyRole": "company man",
       "relationships": ["Represents the dam project"],
       "knownLocationIds": ["piazza-collevento", "strada-diga", "edificio-idroelettrico"],

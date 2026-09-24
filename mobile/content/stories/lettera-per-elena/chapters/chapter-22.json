@@ -21,7 +21,7 @@
   "events": [
     {
       "id": "ev-lettera-per-elena-22",
-      "summary": "On a foggy Thursday—not only Tuesday—Pietro comes during a work shift; they stay open to each other without a wedding ending.",
+      "summary": "On a foggy Thursday - not only Tuesday - Pietro comes during a work shift; they stay open to each other without a wedding ending.",
       "characterIds": [
         "elena-marini",
         "pietro-baldo",
@@ -50,7 +50,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giovedì mattina la nebbia copre Marina di Brenta.",
+          "text": "GiovedÃ¬ mattina la nebbia copre Marina di Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -78,7 +78,7 @@
         },
         {
           "id": "s03",
-          "text": "Apre il Caffè Brenta con Bruna.",
+          "text": "Apre il CaffÃ¨ Brenta con Bruna.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -120,7 +120,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Lo zucchero è pieno.",
+          "text": "Lo zucchero Ã¨ pieno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -132,7 +132,7 @@
         },
         {
           "id": "s07",
-          "text": "Il libro è sullo scaffale.",
+          "text": "Il libro Ã¨ sullo scaffale.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -161,7 +161,7 @@
         },
         {
           "id": "s09",
-          "text": "Oggi non è martedì.",
+          "text": "Oggi non Ã¨ martedÃ¬.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -280,7 +280,7 @@
         },
         {
           "id": "s18",
-          "text": "Non è un discorso lungo.",
+          "text": "Non Ã¨ un discorso lungo.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -293,7 +293,7 @@
         },
         {
           "id": "s19",
-          "text": "È un giovedì di lavoro.",
+          "text": "Ãˆ un giovedÃ¬ di lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -329,7 +329,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Il tavolo non balla più.",
+          "text": "Il tavolo non balla piÃ¹.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -410,7 +410,7 @@
         },
         {
           "id": "s27",
-          "text": "Quando c'è spazio, parla.",
+          "text": "Quando c'Ã¨ spazio, parla.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -491,7 +491,7 @@
         },
         {
           "id": "s33",
-          "text": "Sì.",
+          "text": "SÃ¬.",
           "speakerId": "pietro-baldo",
           "kind": "dialogue",
           "lemmas": [
@@ -599,7 +599,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Non è il suo lavoro.",
+          "text": "Non Ã¨ il suo lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -699,7 +699,7 @@
         },
         {
           "id": "s48",
-          "text": "Da giovedì.",
+          "text": "Da giovedÃ¬.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -709,7 +709,7 @@
         },
         {
           "id": "s49",
-          "text": "A metà mattina aprono il libro insieme.",
+          "text": "A metÃ  mattina aprono il libro insieme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -758,7 +758,7 @@
         },
         {
           "id": "s52",
-          "text": "Noi sì, un poco, ma in piedi.",
+          "text": "Noi sÃ¬, un poco, ma in piedi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -949,7 +949,7 @@
       "sentences": [
         {
           "id": "s66",
-          "text": "C'è lavoro.",
+          "text": "C'Ã¨ lavoro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -959,7 +959,7 @@
         },
         {
           "id": "s67",
-          "text": "C'è nebbia che va via.",
+          "text": "C'Ã¨ nebbia che va via.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -972,7 +972,7 @@
         },
         {
           "id": "s68",
-          "text": "C'è un uomo che viene anche di giovedì.",
+          "text": "C'Ã¨ un uomo che viene anche di giovedÃ¬.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -988,7 +988,7 @@
         },
         {
           "id": "s69",
-          "text": "C'è una donna che dice le cose al bancone.",
+          "text": "C'Ã¨ una donna che dice le cose al bancone.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1005,7 +1005,7 @@
         },
         {
           "id": "s70",
-          "text": "C'è un libro che resta aperto a chi vuole.",
+          "text": "C'Ã¨ un libro che resta aperto a chi vuole.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1054,7 +1054,7 @@
         },
         {
           "id": "s73",
-          "text": "Elena guarda la porta dopo che Pietro è uscito.",
+          "text": "Elena guarda la porta dopo che Pietro Ã¨ uscito.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1139,7 +1139,7 @@
         },
         {
           "id": "s79",
-          "text": "Come la porta del caffè.",
+          "text": "Come la porta del caffÃ¨.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -1206,7 +1206,7 @@
       "question": "How does the story end?",
       "choices": [
         "Open: work, fog lifting, no wedding",
-        "With a wedding at the café",
+        "With a wedding at the cafÃ©",
         "With Elena leaving town forever"
       ],
       "correctChoice": 0,

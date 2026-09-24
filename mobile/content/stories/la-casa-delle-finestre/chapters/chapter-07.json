@@ -141,7 +141,7 @@
         },
         {
           "id": "s08",
-          "text": "È una fotocopia, un po' chiara.",
+          "text": "Ãˆ una fotocopia, un po' chiara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -173,7 +173,7 @@
         },
         {
           "id": "s10",
-          "text": "In alto c'è una parola: orario.",
+          "text": "In alto c'Ã¨ una parola: orario.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -261,7 +261,7 @@
         },
         {
           "id": "s16",
-          "text": "Però questo è un orario. È una carta della scuola.",
+          "text": "PerÃ² questo Ã¨ un orario. Ãˆ una carta della scuola.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -315,7 +315,7 @@
         },
         {
           "id": "s19",
-          "text": "È un orario vecchio, in una scatola aperta.",
+          "text": "Ãˆ un orario vecchio, in una scatola aperta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -367,7 +367,7 @@
         },
         {
           "id": "s22",
-          "text": "Il tavolo è piccolo. Le due pagine ci stanno.",
+          "text": "Il tavolo Ã¨ piccolo. Le due pagine ci stanno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -399,7 +399,7 @@
         },
         {
           "id": "s24",
-          "text": "Lunedì, ore nove: classe 1A, stanza due.",
+          "text": "LunedÃ¬, ore nove: classe 1A, stanza due.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -441,7 +441,7 @@
         },
         {
           "id": "s27",
-          "text": "Martedì, ore nove: di nuovo 1A, stanza due.",
+          "text": "MartedÃ¬, ore nove: di nuovo 1A, stanza due.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -469,7 +469,7 @@
         },
         {
           "id": "s29",
-          "text": "Poi, però, classe 3C, stanza otto, piano tre.",
+          "text": "Poi, perÃ², classe 3C, stanza otto, piano tre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -601,7 +601,7 @@
         },
         {
           "id": "s38",
-          "text": "Lunedì, sull'orario: stanza due, tre, quattro.",
+          "text": "LunedÃ¬, sull'orario: stanza due, tre, quattro.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -615,7 +615,7 @@
         },
         {
           "id": "s39",
-          "text": "Lunedì, sulle luci: tre, poi quattro, poi cinque.",
+          "text": "LunedÃ¬, sulle luci: tre, poi quattro, poi cinque.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -631,7 +631,7 @@
         },
         {
           "id": "s40",
-          "text": "Martedì, sull'orario: stanza due, tre, otto.",
+          "text": "MartedÃ¬, sull'orario: stanza due, tre, otto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -645,7 +645,7 @@
         },
         {
           "id": "s41",
-          "text": "Martedì, sulle luci: tre, poi quattro, poi otto.",
+          "text": "MartedÃ¬, sulle luci: tre, poi quattro, poi otto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -691,7 +691,7 @@
         },
         {
           "id": "s44",
-          "text": "Irene non sa ancora perché.",
+          "text": "Irene non sa ancora perchÃ©.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -754,7 +754,7 @@
         },
         {
           "id": "s48",
-          "text": "In una casella c'è un cerchio, a penna vecchia.",
+          "text": "In una casella c'Ã¨ un cerchio, a penna vecchia.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -771,7 +771,7 @@
         },
         {
           "id": "s49",
-          "text": "Non è la sua penna.",
+          "text": "Non Ã¨ la sua penna.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -784,7 +784,7 @@
         },
         {
           "id": "s50",
-          "text": "Il cerchio è sulla stanza due, lunedì, ore nove.",
+          "text": "Il cerchio Ã¨ sulla stanza due, lunedÃ¬, ore nove.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -813,7 +813,7 @@
         },
         {
           "id": "s52",
-          "text": "Stanza due è finestra tre.",
+          "text": "Stanza due Ã¨ finestra tre.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -826,7 +826,7 @@
         },
         {
           "id": "s53",
-          "text": "Finestra tre è di fronte alla mansarda.",
+          "text": "Finestra tre Ã¨ di fronte alla mansarda.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -855,7 +855,7 @@
         },
         {
           "id": "s55",
-          "text": "Sì. Quella stanza è proprio di fronte.",
+          "text": "SÃ¬. Quella stanza Ã¨ proprio di fronte.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -885,7 +885,7 @@
         },
         {
           "id": "s57",
-          "text": "Irene non capisce perché.",
+          "text": "Irene non capisce perchÃ©.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -938,7 +938,7 @@
       "choices": [
         "A photocopy of an old timetable",
         "The non scansionare folder already open",
-        "Quinto’s keys"
+        "Quintoâ€™s keys"
       ],
       "correctChoice": 0,
       "explanation": "At the back of a box she finds a faint photocopy. The word at the top is orario.",
@@ -952,7 +952,7 @@
       "choices": [
         "They coincide: the numbers look the same",
         "The lights are random and do not match",
-        "They only happen on Mimmo’s video"
+        "They only happen on Mimmoâ€™s video"
       ],
       "correctChoice": 0,
       "explanation": "She looks at one page, then the other. Le due pagine coincidono. She does not know why.",
@@ -969,7 +969,7 @@
         "Yes. It is Mimmo"
       ],
       "correctChoice": 0,
-      "explanation": "The sheet has classes and rooms, not a person’s name.",
+      "explanation": "The sheet has classes and rooms, not a personâ€™s name.",
       "difficulty": 2
     },
     {
@@ -978,9 +978,9 @@
       "type": "inference",
       "question": "What is special about the circled cell?",
       "choices": [
-        "It is room two, the room that faces Irene’s attic",
+        "It is room two, the room that faces Ireneâ€™s attic",
         "It tells her to call the Carabinieri",
-        "It is Alme’s office number"
+        "It is Almeâ€™s office number"
       ],
       "correctChoice": 0,
       "explanation": "The old circle is on room two at nine on Monday. That is window three, opposite the mansarda.",

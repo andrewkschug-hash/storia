@@ -5,7 +5,7 @@
  */
 export function tokenizeItalian(text: string): { surface: string; start: number; end: number }[] {
   const tokens: { surface: string; start: number; end: number }[] = [];
-  const re = /[\p{L}\p{N}’']+/gu;
+  const re = /[\p{L}\p{N}’'\uFFFD]+/gu;
   let match: RegExpExecArray | null;
   while ((match = re.exec(text)) !== null) {
     tokens.push({

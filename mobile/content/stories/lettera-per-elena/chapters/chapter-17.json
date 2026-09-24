@@ -132,7 +132,7 @@
       "sentences": [
         {
           "id": "s06",
-          "text": "Lo scaffale è vuoto.",
+          "text": "Lo scaffale Ã¨ vuoto.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -144,7 +144,7 @@
         },
         {
           "id": "s07",
-          "text": "C'è solo lo zucchero.",
+          "text": "C'Ã¨ solo lo zucchero.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -156,7 +156,7 @@
         },
         {
           "id": "s08",
-          "text": "Dov'è il libro?",
+          "text": "Dov'Ã¨ il libro?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -218,7 +218,7 @@
         },
         {
           "id": "s13",
-          "text": "Perché?",
+          "text": "PerchÃ©?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -227,7 +227,7 @@
         },
         {
           "id": "s14",
-          "text": "Perché ieri sera ti ho vista.",
+          "text": "PerchÃ© ieri sera ti ho vista.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -261,7 +261,7 @@
       "sentences": [
         {
           "id": "s16",
-          "text": "E Pietro non è venuto a salutare.",
+          "text": "E Pietro non Ã¨ venuto a salutare.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -288,7 +288,7 @@
         },
         {
           "id": "s18",
-          "text": "Il libro non è un nascondiglio per litigi.",
+          "text": "Il libro non Ã¨ un nascondiglio per litigi.",
           "speakerId": "bruna",
           "kind": "dialogue",
           "lemmas": [
@@ -333,7 +333,7 @@
       "sentences": [
         {
           "id": "s21",
-          "text": "Quindi è serio.",
+          "text": "Quindi Ã¨ serio.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -430,7 +430,7 @@
         },
         {
           "id": "s28",
-          "text": "Non c'è pagina da aprire.",
+          "text": "Non c'Ã¨ pagina da aprire.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -443,7 +443,7 @@
         },
         {
           "id": "s29",
-          "text": "Martedì Pietro porta il caffè.",
+          "text": "MartedÃ¬ Pietro porta il caffÃ¨.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -765,7 +765,7 @@
         },
         {
           "id": "s52",
-          "text": "Sì.",
+          "text": "SÃ¬.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -858,7 +858,7 @@
         },
         {
           "id": "s59",
-          "text": "Il secondo giorno è peggio.",
+          "text": "Il secondo giorno Ã¨ peggio.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [

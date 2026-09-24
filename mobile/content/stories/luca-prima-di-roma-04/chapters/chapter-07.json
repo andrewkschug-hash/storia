@@ -57,7 +57,7 @@
         },
         {
           "id": "s02",
-          "text": "Questa è la stazione di Pietralba.",
+          "text": "Questa Ã¨ la stazione di Pietralba.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -71,7 +71,7 @@
         },
         {
           "id": "s03",
-          "text": "La stazione è piccola.",
+          "text": "La stazione Ã¨ piccola.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -83,7 +83,7 @@
         },
         {
           "id": "s04",
-          "text": "Dov'è il binario?",
+          "text": "Dov'Ã¨ il binario?",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -94,7 +94,7 @@
         },
         {
           "id": "s05",
-          "text": "Il binario è uno.",
+          "text": "Il binario Ã¨ uno.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -106,7 +106,7 @@
         },
         {
           "id": "s06",
-          "text": "C'è un treno alle undici.",
+          "text": "C'Ã¨ un treno alle undici.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -129,7 +129,7 @@
         },
         {
           "id": "s08",
-          "text": "L'orario è alla stazione.",
+          "text": "L'orario Ã¨ alla stazione.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -273,7 +273,7 @@
         },
         {
           "id": "s19",
-          "text": "Il treno è piccolo.",
+          "text": "Il treno Ã¨ piccolo.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -285,7 +285,7 @@
         },
         {
           "id": "s20",
-          "text": "Undici è l'orario del treno.",
+          "text": "Undici Ã¨ l'orario del treno.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -342,7 +342,7 @@
         },
         {
           "id": "s24",
-          "text": "La stazione di Pietralba è vicina.",
+          "text": "La stazione di Pietralba Ã¨ vicina.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -356,7 +356,7 @@
         },
         {
           "id": "s25",
-          "text": "Il binario è vuoto adesso.",
+          "text": "Il binario Ã¨ vuoto adesso.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -381,7 +381,7 @@
         },
         {
           "id": "s27",
-          "text": "Luca è contento a Pietralba.",
+          "text": "Luca Ã¨ contento a Pietralba.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -394,7 +394,7 @@
         },
         {
           "id": "s28",
-          "text": "Domani è un altro giorno.",
+          "text": "Domani Ã¨ un altro giorno.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -445,7 +445,7 @@
         },
         {
           "id": "s32",
-          "text": "La stazione è qui a Pietralba.",
+          "text": "La stazione Ã¨ qui a Pietralba.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -459,7 +459,7 @@
         },
         {
           "id": "s33",
-          "text": "Il binario uno è libero.",
+          "text": "Il binario uno Ã¨ libero.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -484,7 +484,7 @@
         "A metro stop in Rome"
       ],
       "correctChoice": 1,
-      "explanation": "Questa è la stazione di Pietralba.",
+      "explanation": "Questa Ã¨ la stazione di Pietralba.",
       "chapterId": "luca-prima-di-roma-04-07",
       "difficulty": 1
     },
@@ -512,7 +512,7 @@
         "20:00"
       ],
       "correctChoice": 0,
-      "explanation": "C'è un treno alle undici.",
+      "explanation": "C'Ã¨ un treno alle undici.",
       "chapterId": "luca-prima-di-roma-04-07",
       "difficulty": 1
     }

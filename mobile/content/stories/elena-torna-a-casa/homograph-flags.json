@@ -45,7 +45,7 @@
     {
       "lemmaId": "strada",
       "existing": "noun: street",
-      "risk": "Do not add via in 12B. via is street vs away/preposition — defer."
+      "risk": "Do not add via in 12B. via is street vs away/preposition  -  defer."
     }
   ],
   "newLemmasWithHomographNotes": [

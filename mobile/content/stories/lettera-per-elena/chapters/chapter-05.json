@@ -44,7 +44,7 @@
       "sentences": [
         {
           "id": "s01",
-          "text": "Giovedì piove piano su Marina di Brenta.",
+          "text": "GiovedÃ¬ piove piano su Marina di Brenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -59,7 +59,7 @@
         },
         {
           "id": "s02",
-          "text": "Il Caffè Brenta ha pochi clienti.",
+          "text": "Il CaffÃ¨ Brenta ha pochi clienti.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -141,7 +141,7 @@
         },
         {
           "id": "s07",
-          "text": "Non è una domanda forte. È una frase quieta.",
+          "text": "Non Ã¨ una domanda forte. Ãˆ una frase quieta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -305,7 +305,7 @@
         },
         {
           "id": "s19",
-          "text": "Perché?",
+          "text": "PerchÃ©?",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -314,7 +314,7 @@
         },
         {
           "id": "s20",
-          "text": "Perché se lo scrivo, poi è vero.",
+          "text": "PerchÃ© se lo scrivo, poi Ã¨ vero.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -346,7 +346,7 @@
         },
         {
           "id": "s22",
-          "text": "Per lei il libro è più facile della voce.",
+          "text": "Per lei il libro Ã¨ piÃ¹ facile della voce.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -363,7 +363,7 @@
         },
         {
           "id": "s23",
-          "text": "Per Katia è il contrario: la carta fa paura.",
+          "text": "Per Katia Ã¨ il contrario: la carta fa paura.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -380,7 +380,7 @@
         },
         {
           "id": "s24",
-          "text": "Bruna esce dal magazzino con un sacco di caffè.",
+          "text": "Bruna esce dal magazzino con un sacco di caffÃ¨.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -471,7 +471,7 @@
         },
         {
           "id": "s30",
-          "text": "Alcune frasi sono pratiche: il tavolo, il caffè, il martedì.",
+          "text": "Alcune frasi sono pratiche: il tavolo, il caffÃ¨, il martedÃ¬.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -557,7 +557,7 @@
         },
         {
           "id": "s35",
-          "text": "Alla sera chiudono il caffè insieme.",
+          "text": "Alla sera chiudono il caffÃ¨ insieme.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -618,7 +618,7 @@
         },
         {
           "id": "s39",
-          "text": "Sì.",
+          "text": "SÃ¬.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -645,7 +645,7 @@
       "sentences": [
         {
           "id": "s41",
-          "text": "Lo so. È una regola di Bruna.",
+          "text": "Lo so. Ãˆ una regola di Bruna.",
           "speakerId": "elena-marini",
           "kind": "dialogue",
           "lemmas": [
@@ -676,7 +676,7 @@
         },
         {
           "id": "s43",
-          "text": "Non è solo una regola.",
+          "text": "Non Ã¨ solo una regola.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -689,7 +689,7 @@
         },
         {
           "id": "s44",
-          "text": "È anche protezione.",
+          "text": "Ãˆ anche protezione.",
           "speakerId": "katia",
           "kind": "dialogue",
           "lemmas": [
@@ -738,7 +738,7 @@
         },
         {
           "id": "s47",
-          "text": "Lo ha già scritto nel libro, dove nessuno ammette.",
+          "text": "Lo ha giÃ  scritto nel libro, dove nessuno ammette.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [

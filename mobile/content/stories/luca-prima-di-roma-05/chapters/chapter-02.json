@@ -60,7 +60,7 @@
         },
         {
           "id": "s02",
-          "text": "Davide è nel soggiorno.",
+          "text": "Davide Ã¨ nel soggiorno.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -102,7 +102,7 @@
         },
         {
           "id": "s06",
-          "text": "Sì vengo.",
+          "text": "SÃ¬ vengo.",
           "speakerId": "davide",
           "kind": "dialogue",
           "lemmas": [
@@ -112,7 +112,7 @@
         },
         {
           "id": "s07",
-          "text": "Sabato c'è la festa.",
+          "text": "Sabato c'Ã¨ la festa.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -134,7 +134,7 @@
         },
         {
           "id": "s09",
-          "text": "L'invito è per sabato.",
+          "text": "L'invito Ã¨ per sabato.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -146,7 +146,7 @@
         },
         {
           "id": "s10",
-          "text": "Davide dice sì.",
+          "text": "Davide dice sÃ¬.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -157,7 +157,7 @@
         },
         {
           "id": "s11",
-          "text": "Luca è contento.",
+          "text": "Luca Ã¨ contento.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -179,7 +179,7 @@
         },
         {
           "id": "s13",
-          "text": "Sabato è il giorno della festa.",
+          "text": "Sabato Ã¨ il giorno della festa.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -199,7 +199,7 @@
       "sentences": [
         {
           "id": "s14",
-          "text": "Chiara è con Elisa.",
+          "text": "Chiara Ã¨ con Elisa.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -211,7 +211,7 @@
         },
         {
           "id": "s15",
-          "text": "Elisa è amica di Chiara.",
+          "text": "Elisa Ã¨ amica di Chiara.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -224,7 +224,7 @@
         },
         {
           "id": "s16",
-          "text": "Elisa è qui oggi.",
+          "text": "Elisa Ã¨ qui oggi.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -362,7 +362,7 @@
         },
         {
           "id": "s28",
-          "text": "L'invito è per la festa.",
+          "text": "L'invito Ã¨ per la festa.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -375,7 +375,7 @@
         },
         {
           "id": "s29",
-          "text": "La festa è sabato.",
+          "text": "La festa Ã¨ sabato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -387,7 +387,7 @@
         },
         {
           "id": "s30",
-          "text": "Davide è felice.",
+          "text": "Davide Ã¨ felice.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -398,7 +398,7 @@
         },
         {
           "id": "s31",
-          "text": "Chiara è contenta.",
+          "text": "Chiara Ã¨ contenta.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -430,7 +430,7 @@
         },
         {
           "id": "s34",
-          "text": "Sabato è un giorno importante.",
+          "text": "Sabato Ã¨ un giorno importante.",
           "speakerId": "chiara",
           "kind": "dialogue",
           "lemmas": [
@@ -456,7 +456,7 @@
         },
         {
           "id": "s36",
-          "text": "Davide dice sì a sabato.",
+          "text": "Davide dice sÃ¬ a sabato.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -516,7 +516,7 @@
         },
         {
           "id": "s42",
-          "text": "L'invito è pronto.",
+          "text": "L'invito Ã¨ pronto.",
           "speakerId": "luca",
           "kind": "dialogue",
           "lemmas": [
@@ -527,7 +527,7 @@
         },
         {
           "id": "s43",
-          "text": "Davide è un amico di Luca.",
+          "text": "Davide Ã¨ un amico di Luca.",
           "speakerId": null,
           "kind": "narration",
           "lemmas": [
@@ -575,7 +575,7 @@
         "Tomorrow morning"
       ],
       "correctChoice": 1,
-      "explanation": "Sabato c'è la festa.",
+      "explanation": "Sabato c'Ã¨ la festa.",
       "chapterId": "luca-prima-di-roma-05-02",
       "difficulty": 1
     },
@@ -589,7 +589,7 @@
         "He is in Rome"
       ],
       "correctChoice": 0,
-      "explanation": "Sì vengo.",
+      "explanation": "SÃ¬ vengo.",
       "chapterId": "luca-prima-di-roma-05-02",
       "difficulty": 1
     },
