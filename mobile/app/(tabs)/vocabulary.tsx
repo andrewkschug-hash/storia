@@ -22,6 +22,7 @@ import {
 } from '@/src/components/notebook';
 import { getContentBundle, LUCA_STORY_ID } from '@/src/content';
 import { grammarNoteForBatch, type GrammarNote } from '@/src/content/lessonBatches';
+import { grammarCheckpointId } from '@/src/content/storyPath';
 import { readerHref } from '@/src/content/storyHrefs';
 import { navLog } from '@/src/navigation/diagnostics';
 import { usePeekProgress } from '@/src/progress/usePeekProgress';
@@ -135,6 +136,34 @@ export default function VocabularyScreen() {
     return maxChapter;
   }, [progress]);
 
+  // Derive highest chapter completed by the learner
+  const highestCompletedChapter = useMemo(() => {
+    let maxCompleted = 0;
+    if (progress?.completedChapterIds) {
+      for (const id of progress.completedChapterIds) {
+        const match = id.match(/\d+$/);
+        if (match) maxCompleted = Math.max(maxCompleted, parseInt(match[0], 10));
+      }
+    }
+    return maxCompleted;
+  }, [progress?.completedChapterIds]);
+
+  // Check if learner has completed practice reviews or self-assessments
+  const hasCompletedPractice = useMemo(() => {
+    if (!vocabState) return false;
+    const hasLemmaReview = Object.values(vocabState.lemmas ?? {}).some(
+      (l) => (l.reviewCount ?? 0) > 0 || l.lastReviewedAt != null || l.lastSelfAssessment != null,
+    );
+    const hasPhraseReview = Object.values(vocabState.phrases ?? {}).some(
+      (p) => (p.reviewCount ?? 0) > 0 || p.lastReviewedAt != null || p.lastSelfAssessment != null,
+    );
+    return hasLemmaReview || hasPhraseReview;
+  }, [vocabState]);
+
+  const completedCheckpointsSet = useMemo(() => {
+    return new Set(progress?.completedCheckpointIds ?? []);
+  }, [progress?.completedCheckpointIds]);
+
   // Audio speech handler
   const handlePlayAudio = useCallback(async (id: string, text: string) => {
     try {
@@ -210,24 +239,58 @@ export default function VocabularyScreen() {
   }, [filteredWords, wordsFilter.groupBy, highestChapter]);
 
   const availablePhrases = useMemo(() => {
-    return NOTEBOOK_PHRASES.filter((p) => p.chapterNumber <= highestChapter);
-  }, [highestChapter]);
+    const storyId = progress?.storyId ?? LUCA_STORY_ID;
+    return NOTEBOOK_PHRASES.filter((p) => {
+      // 1. Appears if story containing this phrase has been completed
+      if (highestCompletedChapter >= p.chapterNumber) return true;
+      // 2. Appears if grammar lesson for this batch has been completed
+      const batchEnd = Math.ceil(p.chapterNumber / 5) * 5;
+      if (
+        completedCheckpointsSet.has(grammarCheckpointId(storyId, batchEnd)) ||
+        completedCheckpointsSet.has(`${storyId}:grammar:${batchEnd}`)
+      ) {
+        return true;
+      }
+      // 3. Appears if practice has been completed
+      if (hasCompletedPractice && p.chapterNumber <= highestChapter) return true;
+      return false;
+    });
+  }, [highestCompletedChapter, completedCheckpointsSet, hasCompletedPractice, highestChapter, progress?.storyId]);
 
   const availableGrammar = useMemo(() => {
-    return NOTEBOOK_GRAMMAR_INSIGHTS.filter((g) => g.chapterRange.start <= highestChapter);
-  }, [highestChapter]);
+    const storyId = progress?.storyId ?? LUCA_STORY_ID;
+    return NOTEBOOK_GRAMMAR_INSIGHTS.filter((g) => {
+      // 1. Appears if story batch has been completed
+      if (
+        highestCompletedChapter >= g.chapterRange.end ||
+        highestCompletedChapter >= g.lessonChapterNumber
+      ) {
+        return true;
+      }
+      // 2. Appears if grammar lesson has been completed
+      if (
+        completedCheckpointsSet.has(grammarCheckpointId(storyId, g.lessonChapterNumber)) ||
+        completedCheckpointsSet.has(`${storyId}:grammar:${g.lessonChapterNumber}`)
+      ) {
+        return true;
+      }
+      // 3. Appears if practice has been completed
+      if (hasCompletedPractice && g.chapterRange.start <= highestChapter) return true;
+      return false;
+    });
+  }, [highestCompletedChapter, completedCheckpointsSet, hasCompletedPractice, highestChapter, progress?.storyId]);
 
   const filteredPhrases = useMemo(() => {
-    return filterNotebookPhrases(NOTEBOOK_PHRASES, phrasesFilter, optimisticSaved, highestChapter);
-  }, [phrasesFilter, optimisticSaved, highestChapter]);
+    return filterNotebookPhrases(availablePhrases, phrasesFilter, optimisticSaved, highestChapter);
+  }, [availablePhrases, phrasesFilter, optimisticSaved, highestChapter]);
 
   const phraseSections = useMemo(() => {
     return groupPhrasesByChronology(filteredPhrases);
   }, [filteredPhrases]);
 
   const filteredGrammar = useMemo(() => {
-    return filterNotebookGrammar(NOTEBOOK_GRAMMAR_INSIGHTS, grammarFilter, highestChapter);
-  }, [grammarFilter, highestChapter]);
+    return filterNotebookGrammar(availableGrammar, grammarFilter, highestChapter);
+  }, [availableGrammar, grammarFilter, highestChapter]);
 
   // Check if active filters exist for the current lens
   const hasActiveFilters = useMemo(() => {
@@ -501,7 +564,13 @@ export default function VocabularyScreen() {
                       onStartReading={() =>
                         router.push(readerHref(LUCA_STORY_ID, 'luca-a-roma-01'))
                       }
-                      filteredMessage="No phrases matching this filter."
+                      filteredMessage={
+                        hasActiveFilters
+                          ? 'No phrases matching this filter.'
+                          : availablePhrases.length === 0
+                            ? 'Complete your first chapter, a grammar lesson, or a practice session to unlock memorable story phrases.'
+                            : undefined
+                      }
                     />
                   ) : (
                     phraseSections.map((sec) => (
@@ -540,7 +609,13 @@ export default function VocabularyScreen() {
                       onStartReading={() =>
                         router.push(readerHref(LUCA_STORY_ID, 'luca-a-roma-01'))
                       }
-                      filteredMessage="No grammar patterns matching this filter."
+                      filteredMessage={
+                        hasActiveFilters
+                          ? 'No grammar patterns matching this filter.'
+                          : availableGrammar.length === 0
+                            ? 'Complete a story batch, a grammar lesson, or a practice session to unlock grammar insights.'
+                            : undefined
+                      }
                     />
                   ) : (
                     <View style={styles.sectionBlock}>
