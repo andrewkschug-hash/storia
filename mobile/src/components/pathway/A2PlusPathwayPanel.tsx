@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { PathwayWorldCard } from '@/src/components/pathway/PathwayWorldCard';
 import { StoryPathPanel } from '@/src/components/storiesLibrary/StoryPathPanel';
@@ -17,6 +17,7 @@ type Props = {
   onSelectAvailable: (pathway: PathwayDefinition) => void;
   onOpenStoryChapter: (storyId: string, chapterId: string) => void;
   onShowHint: (message: string) => void;
+  onOpenPathwayGate?: () => void;
 };
 
 export function A2PlusPathwayPanel({
@@ -27,6 +28,7 @@ export function A2PlusPathwayPanel({
   onSelectAvailable,
   onOpenStoryChapter,
   onShowHint,
+  onOpenPathwayGate,
 }: Props) {
   const { colors } = useTheme();
   const [expandedStoryId, setExpandedStoryId] = useState<string | null>(null);
@@ -37,12 +39,15 @@ export function A2PlusPathwayPanel({
         <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
         <View style={styles.breakTextContent}>
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-            A Reading Break
+            🌿 A Well-Deserved Break · A2+
           </Text>
           <Text style={[styles.breakTitle, { color: colors.text }]}>
-            Even Luca changes stories once in a while.
+            Luca's Reading Corner
           </Text>
           <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
+            After completing his journey in Rome, Luca takes a quiet evening at home to unwind with independent Italian novels.
+          </Text>
+          <Text style={[Typography.caption, { color: colors.tint, marginTop: Spacing.xs }]}>
             {lockedHint}
           </Text>
         </View>
@@ -57,14 +62,31 @@ export function A2PlusPathwayPanel({
         <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
         <View style={styles.breakTextContent}>
           <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
-            A Reading Break
+            🌿 A Well-Deserved Break · A2+
           </Text>
           <Text style={[styles.breakTitle, { color: colors.text }]}>
-            Even Luca changes stories once in a while.
+            Luca's Reading Corner
           </Text>
           <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-            Explore short novels and stories chosen for you. New genres, new worlds, same Italian.
+            After a demanding week at the Rome café, Luca is taking a quiet evening at home in his apartment to unwind. He has three intriguing Italian novels on his coffee table, and he needs your help choosing which one to read!
           </Text>
+          {onOpenPathwayGate ? (
+            <Pressable
+              accessibilityRole="button"
+              onPress={onOpenPathwayGate}
+              style={({ pressed }) => [
+                styles.noteButton,
+                {
+                  backgroundColor: colors.accentSoft,
+                  borderColor: colors.border,
+                  opacity: pressed ? 0.75 : 1,
+                },
+              ]}>
+              <Text style={[Typography.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
+                📖 Why is Luca reading? Read his note →
+              </Text>
+            </Pressable>
+          ) : null}
         </View>
         <View style={[styles.hairline, { backgroundColor: colors.divider }]} />
       </View>
@@ -145,6 +167,14 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 30,
     marginTop: 2,
+  },
+  noteButton: {
+    marginTop: Spacing.sm,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.md,
+    borderRadius: Radii.sm,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignSelf: 'flex-start',
   },
 });
 

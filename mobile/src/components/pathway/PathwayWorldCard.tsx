@@ -37,7 +37,7 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
       ]}>
       <View style={styles.headerRow}>
         <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.2 }]}>
-          A2+ · {pathway.genreIt ?? pathway.genre}
+          A2+ · {pathway.genre}
         </Text>
         {primary ? (
           <Text style={[Typography.caption, { color: colors.highlight, fontFamily: 'Literata_600SemiBold' }]}>
@@ -49,12 +49,15 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
       <Text style={[styles.title, { color: colors.text }]}>
         {pathway.titleIt}
       </Text>
-
-      <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
-        {pathway.hookIt ?? pathway.hookEn}
+      <Text style={[Typography.caption, { color: colors.textMuted, marginTop: 2, fontStyle: 'italic' }]}>
+        {pathway.titleEn}
       </Text>
 
-      {pathway.lucaQuoteIt ? (
+      <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs, fontSize: 14, lineHeight: 20 }]}>
+        {pathway.descriptionEn ?? pathway.hookEn}
+      </Text>
+
+      {pathway.lucaQuoteEn || pathway.lucaQuoteIt ? (
         <View
           style={[
             styles.quoteContainer,
@@ -65,7 +68,7 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
             },
           ]}>
           <Text style={[Typography.caption, { color: colors.textSecondary, fontStyle: 'italic' }]}>
-            Luca: “{pathway.lucaQuoteIt}”
+            Luca: “{pathway.lucaQuoteEn ?? pathway.lucaQuoteIt}”
           </Text>
         </View>
       ) : null}
@@ -73,7 +76,7 @@ export function PathwayWorldCard({ pathway, selected, primary, onPress }: Props)
       <View style={styles.footer}>
         {available ? (
           <Text style={[Typography.label, { color: colors.tint, fontFamily: 'Literata_600SemiBold' }]}>
-            {selected ? 'Close chapters ▴' : primary ? 'Continue reading →' : 'Read this story →'}
+            {selected ? 'Close chapters ▴' : primary ? 'Continue reading →' : 'Read this book with Luca →'}
           </Text>
         ) : (
           <Text style={[Typography.label, { color: colors.textMuted }]}>Coming soon 🔒</Text>

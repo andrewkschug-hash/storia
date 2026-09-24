@@ -299,6 +299,7 @@ export default function StoriesScreen() {
             }}
             onSelectPathway={(pathway) => void openPathwayStory(pathway, false)}
             onA2PlusTabFocus={onA2PlusTabFocus}
+            onOpenPathwayGate={() => setShowPathwayGate(true)}
           />
             </>
           )}

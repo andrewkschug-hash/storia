@@ -38,6 +38,7 @@ type Props = {
   onOpenSpeak: (storyId: string, sceneId: string) => void;
   onSelectPathway: (pathway: PathwayDefinition) => void;
   onA2PlusTabFocus?: () => void;
+  onOpenPathwayGate?: () => void;
 };
 
 function tabForChapterNumber(number: number): LibraryTab {
@@ -74,6 +75,7 @@ export function StoryList({
   onOpenSpeak,
   onSelectPathway,
   onA2PlusTabFocus,
+  onOpenPathwayGate,
 }: Props) {
   const { colors } = useTheme();
   const currentChapter = chapterStatuses.find((chapter) => chapter.id === currentChapterId);
@@ -184,6 +186,7 @@ export function StoryList({
           onSelectAvailable={onSelectPathway}
           onOpenStoryChapter={onOpenStoryChapter}
           onShowHint={showHint}
+          onOpenPathwayGate={onOpenPathwayGate}
         />
       ) : (
       <View style={{ gap: 10 }}>

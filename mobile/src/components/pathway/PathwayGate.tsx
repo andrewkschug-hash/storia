@@ -13,10 +13,10 @@ type Props = {
 };
 
 /**
- * "Una pausa di lettura" — 3-beat diegetic transition after Luca a Roma Ch 40.
- * 1. Emotional landing (Luca takes a break at the café).
- * 2. Luca acts as diegetic host ("Cosa vuoi leggere?").
- * 3. Book-cover cards for independent stories.
+ * A Well-Deserved Break - narrative transition after Luca a Roma Ch 40.
+ * 1. Emotional landing in English (Luca resting at home in his Rome apartment).
+ * 2. Luca asks the reader for help choosing a book.
+ * 3. Book-cover cards with English descriptions.
  */
 export function PathwayGate({ visible, onBeginPathway, onNotNow }: Props) {
   const { colors } = useTheme();
@@ -37,20 +37,24 @@ export function PathwayGate({ visible, onBeginPathway, onNotNow }: Props) {
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}>
           <View style={styles.inner}>
-            {/* Beat 1: Emotional landing */}
+            {/* Beat 1: Connecting A2 to Luca resting at home */}
             <View style={styles.beatOne}>
-              <Text style={[Typography.chapterEyebrow, { color: colors.tint }]}>
-                🌿 Una pausa di lettura
+              <Text style={[Typography.chapterEyebrow, { color: colors.tint, letterSpacing: 1.4 }]}>
+                🌿 A Well-Deserved Break · A2+
               </Text>
-              <Text style={[Typography.body, { color: colors.text, marginTop: Spacing.md }]}>
-                Luca si siede al tavolino del bar.
+
+              <Text style={[styles.headline, { color: colors.text }]}>
+                Luca is resting at home in Rome.
               </Text>
+
+              <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
+                After months of intense shifts at the café, adjusting to city life, and making the big decision to stay in Rome ("for now, this is home"), Luca finally has a quiet evening all to himself.
+              </Text>
+
               <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-                Per un momento, non pensa al lavoro, ai clienti o al futuro.
+                Far from the clatter of espresso cups and the rush of customers, he sits on the sofa with a warm drink, ready to unwind. He wants to pick up a book and get lost in a great story, but three intriguing titles are sitting on his table, and he cannot decide where to begin.
               </Text>
-              <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.xs }]}>
-                Prende il telefono.
-              </Text>
+
               <View
                 style={[
                   styles.lucaReflection,
@@ -59,20 +63,20 @@ export function PathwayGate({ visible, onBeginPathway, onNotNow }: Props) {
                 <Text
                   style={[
                     Typography.readerDialogue,
-                    { color: colors.text, fontSize: 18, lineHeight: 28 },
+                    { color: colors.text, fontSize: 16, lineHeight: 24, fontStyle: 'italic' },
                   ]}>
-                  «Forse è il momento di leggere qualcosa di diverso.»
+                  “I finally have a peaceful evening to read... but every book here looks so captivating. Which one should I open first?”
                 </Text>
               </View>
             </View>
 
-            {/* Beat 2: Luca as host */}
+            {/* Beat 2: User prompt to help Luca choose */}
             <View style={styles.beatTwo}>
               <Text style={[Typography.body, { color: colors.textSecondary }]}>
-                Anche Luca ogni tanto cambia storia. Ci sono storie nuove da scoprire.
+                Help Luca choose which book to pick up first. You will read the story right alongside him!
               </Text>
-              <Text style={[Typography.heroTitle, { color: colors.text, marginTop: Spacing.sm }]}>
-                Cosa vuoi leggere?
+              <Text style={[styles.subHeadline, { color: colors.text, marginTop: Spacing.xs }]}>
+                Which book should Luca read?
               </Text>
             </View>
 
@@ -94,7 +98,7 @@ export function PathwayGate({ visible, onBeginPathway, onNotNow }: Props) {
               onPress={onNotNow}
               style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1, marginTop: Spacing.xl }]}>
               <Text style={[Typography.label, { color: colors.textMuted, textAlign: 'center' }]}>
-                Per ora no
+                I will help him decide later
               </Text>
             </Pressable>
           </View>
@@ -121,6 +125,17 @@ const styles = StyleSheet.create({
   },
   beatOne: {
     marginBottom: Spacing.lg,
+  },
+  headline: {
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 26,
+    lineHeight: 32,
+    marginTop: Spacing.xs,
+  },
+  subHeadline: {
+    fontFamily: 'CormorantGaramond_600SemiBold',
+    fontSize: 22,
+    lineHeight: 28,
   },
   lucaReflection: {
     marginTop: Spacing.md,
