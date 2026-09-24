@@ -254,7 +254,7 @@ export default function AccountScreen() {
                         maxWidth: wide ? 280 : undefined,
                       },
                     ]}>
-                    Read Italian through stories — one page at a time.
+                    Read Italian through stories, one page at a time.
                   </Text>
                 ) : null}
 

@@ -151,7 +151,7 @@ export default function ReviewScreen() {
             {phase === 'feedback' ? (
               <View style={{ marginTop: Spacing.xl }}>
                 <Text style={[type.label, { color: correct ? colors.tint : colors.danger }]}>
-                  {correct ? '✓ Esatto!' : 'Not quite — you’ll see it again.'}
+                  {correct ? '✓ Esatto!' : 'Not quite. You’ll see it again.'}
                 </Text>
                 {current.exampleAfter ? (
                   <Text

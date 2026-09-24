@@ -89,7 +89,7 @@ export default function LevelReadinessScreen() {
       ? {
           eyebrow: 'Continue reading',
           title: "Luca's story opens up.",
-          body: 'The next chapters are a little longer, with more past tense — the same story, told with more Italian.',
+          body: 'The next chapters are a little longer, with more past tense: the same story, told with more Italian.',
           tryLabel: 'Continue',
           stayLabel: 'Browse other stories',
           nextChapter: 25,
@@ -97,7 +97,7 @@ export default function LevelReadinessScreen() {
       : {
           eyebrow: 'Continue reading',
           title: crossA1 ? a1StatusTitle(crossA1.status) : 'Ready for more',
-          body: crossA1?.message ?? 'The next chapters ask a little more of you — same story, richer language.',
+          body: crossA1?.message ?? 'The next chapters ask a little more of you: same story, richer language.',
           tryLabel: 'Continue',
           stayLabel: 'Browse other stories',
           nextChapter: 21,

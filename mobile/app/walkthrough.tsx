@@ -485,7 +485,7 @@ export default function WalkthroughScreen() {
               {state.comprehensionChoice !== null ? (
                 <Text style={[Typography.caption, { color: colors.textMuted, marginTop: Spacing.md }]}>
                   {state.comprehensionChoice === WALKTHROUGH_QUESTION.correctIndex
-                    ? 'Yes — he goes into the bar. Reading becomes understanding.'
+                    ? 'Yes, he goes into the bar. Reading becomes understanding.'
                     : 'Not quite. Luca entra nel bar.'}
                 </Text>
               ) : null}
@@ -496,7 +496,7 @@ export default function WalkthroughScreen() {
             <View style={styles.block}>
               <Text style={[Typography.caption, { color: colors.tint }]}>Say it in Italian</Text>
               <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.sm }]}>
-                Once you understand something, you can try saying it. No microphone — just try it out
+                Once you understand something, you can try saying it. No microphone, just try it out
                 loud, then check.
               </Text>
               <View

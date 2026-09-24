@@ -158,8 +158,8 @@ export default function OnboardingScreen() {
                 When you finish reading
               </Text>
               <Text style={[Typography.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
-                Tap Continue at the end of a chapter. A few short questions check the story — then the next
-                chapter unlocks.
+                Tap Continue at the end of a chapter. A few short questions check your understanding of the
+                story, then the next chapter unlocks.
               </Text>
               <View
                 style={[styles.sample, { backgroundColor: colors.backgroundElevated, borderColor: colors.border }]}>

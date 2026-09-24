@@ -103,8 +103,8 @@ function feedbackCopy(
         title: 'Almost there!',
         hint:
           inputMode === 'speak'
-            ? 'Very close — check the wording below.'
-            : 'Very close — check the phrasing below.',
+            ? 'Very close. Check the wording below.'
+            : 'Very close. Check the phrasing below.',
       };
     default:
       return { title: 'Keep practicing!', hint: 'Here is the target Italian to learn from.' };

@@ -100,7 +100,7 @@ export default function PracticeScreen() {
               <Text style={[type.heroTitle, { color: colors.text }]}>Nice work.</Text>
               <Text style={[type.body, { color: colors.textSecondary, marginTop: Spacing.md }]}>
                 {items.length === 0
-                  ? 'Nothing to practice right now. Keep reading — new words will show up here.'
+                  ? 'Nothing to practice right now. Keep reading. New words will show up here.'
                   : 'That session is done. Your Italian tab will reflect what you worked on.'}
               </Text>
               <Pressable
